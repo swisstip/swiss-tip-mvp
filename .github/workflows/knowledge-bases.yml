@@ -1,0 +1,89 @@
+# Check the committed knowledge bases (releases/<pack>): every release passes
+# its acceptance suite and regression pack, its reports and its readiness
+# record are those of exactly these files, the catalogues validate, and the
+# server answers the round trips on them.
+#
+# These checks are about the data. The code that runs them lives in the code
+# repository (swisstip/swiss-tip) and is installed from PyPI at the version
+# given, or from a checkout of that repository when a ref is given; the
+# package build over there serves a synthetic release and runs none of
+# these checks, so a pack that is being rebuilt or waits for its attestation
+# cannot fail a package build, and a code change cannot fail a pack.
+#
+#   push that changes a pack, the place register or its checks   run the checks
+#   run the workflow by hand                                      run the checks, optionally on another code version
+name: Knowledge bases
+
+on:
+  push:
+    paths:
+      - "releases/**"
+      - "config/**"
+      - "scripts/test/**"
+      - ".github/workflows/knowledge-bases.yml"
+  workflow_dispatch:
+    inputs:
+      swisstip_version:
+        description: swisstip-core, swisstip-mcp and swisstip-builder version from PyPI
+        type: string
+        default: "0.2.5"
+      code_ref:
+        description: Instead of PyPI, a branch, tag or commit of swisstip/swiss-tip to install the code from (empty means PyPI)
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: knowledge-bases-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  packs:
+    runs-on: ubuntu-latest
+    env:
+      VERSION: ${{ inputs.swisstip_version || '0.2.5' }}
+      CODE_REF: ${{ inputs.code_ref }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/checkout@v7
+        if: env.CODE_REF != ''
+        with:
+          repository: swisstip/swiss-tip
+          ref: ${{ env.CODE_REF }}
+          path: code
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+
+      - name: Install the code from PyPI
+        if: env.CODE_REF == ''
+        run: |
+          python -m pip install "swisstip-core==$VERSION" "swisstip-mcp==$VERSION" "swisstip-builder[office]==$VERSION"
+          echo "code: PyPI $VERSION"
+
+      - name: Install the code from the checkout
+        if: env.CODE_REF != ''
+        run: |
+          python -m pip install \
+            -e code/packages/core -e code/packages/runtime -e code/apps/mcp-server \
+            -e code/packages/ingestion -e "code/packages/extraction[office]" -e code/packages/build -e code/packages/concepts \
+            -e code/apps/knowledge-builder
+          echo "code: swisstip/swiss-tip $(git -C code rev-parse HEAD)"
+
+      - name: Checks of the committed packs
+        run: python -m unittest discover -s scripts/test/packs
+
+      - name: Round trips on the committed releases
+        run: |
+          python scripts/test/mcp/check_server.py --release releases/mvp-zurich/release.json
+          python scripts/test/mcp/check_wallisellen.py
+
+      - name: The harness's own tests and the deployment template
+        run: |
+          python -m pip install -r scripts/test/mock-mcp/requirements.txt
+          python -m unittest discover -s scripts/test/mock-mcp -p test_opencode_harness.py
+          python -m unittest discover -s deploy/aws -p test_template.py

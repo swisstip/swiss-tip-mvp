@@ -1,0 +1,334 @@
+# Swiss TIP on AWS
+
+**Last update:** 20 September 2026
+
+One CloudFormation template, [swiss-tip.yaml](swiss-tip.yaml), creates one
+EC2 instance that serves the Swiss TIP MCP server to the internet: the slim
+release image and the embedding sidecar from `ghcr.io`, as the code
+repository's [compose.yaml](https://github.com/swisstip/swiss-tip/blob/main/compose.yaml) runs them, behind
+[Caddy](https://caddyserver.com), which obtains the HTTPS certificate. With a
+second domain the instance also runs the OpenCode web interface
+([docker/opencode](https://github.com/swisstip/swiss-tip/blob/main/docker/opencode/README.md)) behind a name and a
+password. The MCP endpoint is open unless it is given a name and a password
+too. The stack is created in the AWS console from that one file; nothing is
+installed on your machine and no repository access is needed on the host.
+
+[Tested and not tested](#tested-and-not-tested) says what has been run where.
+
+## What the stack creates
+
+| Resource | What for |
+| --- | --- |
+| EC2 instance, Amazon Linux 2023, x86_64, `t3.small` by default | Docker with four containers at most: the server, the sidecar, Caddy and, with a demo domain, the web interface |
+| Elastic IP | a public address that survives a stop and start; the A records point at it |
+| Security group | ports 80 and 443 in (443 also over UDP, for HTTP/3); no SSH port |
+| IAM role and instance profile | Session Manager for a shell without SSH, and reading the secrets below |
+| Secrets Manager secret, only with a demo domain | the web interface's password: the one given, or else one the stack generates |
+| Secrets Manager secret, only with `McpUsername` | the MCP endpoint's password, in the same way |
+| Route 53 A records, only with a hosted zone ID | the domains, pointed at the Elastic IP |
+
+The root volume is an encrypted gp3 volume of 20 GiB. The instance metadata
+service takes session tokens only and answers one hop, so a container cannot
+read the instance's credentials.
+
+## Parameters
+
+| Parameter | Default | Meaning |
+| --- | --- | --- |
+| `Pack` | `mvp-zurich` | the knowledge pack; the image is `<Registry>/swiss-tip:<Pack>-slim` |
+| `SslipNames` | `none` | HTTPS without a domain of your own: `mcp` serves the MCP endpoint on `https://<ip>.sslip.io/mcp`, `mcp-and-demo` runs the web interface too, on `demo.<ip>.sslip.io`. `<ip>` is the Elastic IP with hyphens, for example `51-96-83-1`; [sslip.io](https://sslip.io) resolves it to the address and Caddy obtains the certificate. Needs `McpDomain` and `DemoDomain` empty |
+| `McpDomain` | empty | for example `mcp.example.ai`; then `https://<domain>/mcp`. Empty (and `SslipNames` `none`): plain HTTP on port 80 of the Elastic IP |
+| `DemoDomain` | empty | for example `demo.example.ai`; then the web interface runs on the instance too, over HTTPS and behind the password. Empty (and `SslipNames` other than `mcp-and-demo`): no web interface on this host |
+| `HostedZoneId` | empty | only when the domains are in Route 53: the zone in which the A records are created |
+| `McpUsername`, `McpPassword` | empty | empty: the MCP endpoint is open. A name: every path of the endpoint, `/health` too, asks for it and the password (basic credentials); the password is the one given, or else generated. Needs `McpDomain` or `SslipNames`, so that they travel over HTTPS only |
+| `DemoUsername`, `DemoPassword` | `opencode`, empty | the web interface's name, and its password: the one given, or else generated. A hosted web interface always has a password |
+| `Registry` | `ghcr.io/swisstip` | the image prefix; the packages must be public, the host logs in nowhere |
+| `InstanceType` | `t3.small` | `t3.small`, `t3.medium`, `t3.large`, `c7i-flex.large` or `m7i-flex.large`; x86 only, because the images are built for x86 |
+| `CpuCredits` | `unlimited` | T3 only: `unlimited` keeps the latency under sustained load and bills the surplus, `standard` throttles to the baseline |
+| `VolumeGiB`, `SwapGiB` | 20, 2 | the root volume, and a swap file as headroom while the model loads |
+| `LatestAmi` | the current Amazon Linux 2023 | leave as it is |
+
+The embedding model takes 1.2 GiB of memory
+([measured](https://github.com/swisstip/swiss-tip/blob/main/docker/README.md#measured)), so 2 GiB is the least that
+serves hybrid search, and the web interface wants `t3.medium` or more beside
+it. On `t3.small` all four containers did run together
+([tested](#tested-and-not-tested)), with little memory to spare. The
+Free plan refuses to change an instance's type, so a stack that started small
+stays small; a bigger host is a new stack. The web interface does not have to
+run here: the same image runs on a
+laptop against the hosted endpoint
+([docker/opencode](https://github.com/swisstip/swiss-tip/blob/main/docker/opencode/README.md#against-a-hosted-server)),
+and the instance then carries the server alone.
+
+A password is 8 to 64 letters, digits, dots, underscores, tildes or hyphens,
+so that it survives the host's `.env` file unquoted; a name is up to 32 of
+the same without the tilde. Both password parameters are `NoEcho`. A
+password reaches the host through its secret, which the instance reads at
+its first start, never through the instance's user data, which the account
+can read back. Leave `McpUsername` empty for an endpoint a test harness must
+reach without credentials.
+
+## Before you start
+
+- An AWS account and a region, for example `eu-central-1` (Frankfurt). The
+  region needs its default VPC, which every new account has; the template
+  names no network.
+- The images on `ghcr.io` must be public and current: the workflow
+  [Container images](../../.github/workflows/container-images.yml) pushes
+  them, `swiss-tip-opencode` with `images: opencode` or `all`, and a new
+  package starts private ([container images](https://github.com/swisstip/swiss-tip/blob/main/docker/README.md#build-on-github)).
+- For HTTPS, a domain whose DNS you can edit.
+
+## Create the stack
+
+In the console: CloudFormation, "Create stack", "With new resources",
+"Upload a template file", this directory's `swiss-tip.yaml`. Name the stack,
+fill in the parameters, and on the last page acknowledge that the stack
+creates IAM resources. The stack is complete after about three minutes; the
+host then installs Docker and pulls the images, so the endpoint answers some
+minutes later. The "Outputs" tab has the addresses:
+
+| Output | Meaning |
+| --- | --- |
+| `PublicIp` | the Elastic IP for the A records |
+| `McpEndpoint`, `Health` | the MCP endpoint for a client, and `/health` beside it |
+| `McpPasswordSecret` | with `McpUsername`: the secret that holds the endpoint's password (Secrets Manager console, the secret, "Retrieve secret value") |
+| `DemoUrl`, `DemoPasswordSecret` | with a demo domain: the web interface, and the secret that holds its password, read in the same way |
+| `Shell` | a shell on the instance with Session Manager |
+
+With the AWS CLI instead:
+
+```shell
+aws cloudformation deploy --stack-name swiss-tip --template-file deploy/aws/swiss-tip.yaml \
+  --capabilities CAPABILITY_IAM --parameter-overrides McpDomain=mcp.example.ai
+aws cloudformation describe-stacks --stack-name swiss-tip --query "Stacks[0].Outputs"
+```
+
+## Point the domains at it
+
+Unless `HostedZoneId` did it, create an A record for each domain with the
+value of `PublicIp` where the domain is registered. Caddy asks for the
+certificate as soon as the name resolves to the instance and retries until
+then; `sudo docker compose restart caddy` in `/opt/swiss-tip` makes it ask at
+once. Every new stack asks for a new certificate, and Let's Encrypt issues
+five a week for the same name.
+
+With `SslipNames` there is nothing to point: the names contain the address.
+A public name is logged with its certificate, and scanners were fetching the
+open MCP endpoint seconds after it was issued; the web interface is behind
+its password. The names are the address's, so a new stack has new ones.
+
+A host that was created without them takes them by hand, because the host
+script runs once and a changed stack parameter does not reach it. In
+`/opt/swiss-tip/.env` set `SWISSTIP_MCP_SITE=<ip>.sslip.io`, and for the web
+interface `SWISSTIP_DEMO_SITE=demo.<ip>.sslip.io`, `COMPOSE_PROFILES=demo`,
+`OPENCODE_SERVER_USERNAME` and an `OPENCODE_SERVER_PASSWORD`, then `sudo
+docker compose up -d`. The plain `http://<PublicIp>/mcp` then stops
+answering, because Caddy serves that site on its name only.
+
+## Check it
+
+```shell
+curl https://mcp.example.ai/health
+python scripts/test/mcp/check_server.py --url https://mcp.example.ai/mcp --require-hybrid
+python docker/demo-opencode/check_interface.py --url https://demo.example.ai --password <password>
+```
+
+Behind a name and a password the first two take them as `curl -u
+<name>:<password>` and `--username <name> --password <password>`, and the
+third takes `--username` when the name is not `opencode`.
+
+`/health` names the release and `search.configured_mode: hybrid`. The round
+trip is the one the image workflow runs, and `--require-hybrid` fails on any
+search that fell back to lexical; it is written for the `mvp-zurich` release
+of the same commit. The interface check expects 401 without credentials, then
+a project, `swiss_tip` connected, a default model and the welcome panel. A
+client connects with `claude mcp add --transport http swiss-tip
+https://mcp.example.ai/mcp`, or as the
+[image README](../../releases/mvp-zurich/README.md) shows for other clients.
+
+With `McpUsername` the client sends basic credentials with every request:
+the header `Authorization: Basic <token>`, where the token is the base64 of
+`<name>:<password>` (`printf '%s' '<name>:<password>' | base64`).
+
+```shell
+claude mcp add --transport http swiss-tip https://mcp.example.ai/mcp --header "Authorization: Basic <token>"
+```
+
+In an OpenCode configuration it is `"headers": {"Authorization": "Basic
+<token>"}` in the `swiss_tip` entry. The OpenCode image builds that entry
+itself from `SWISSTIP_MCP_USERNAME` and `SWISSTIP_MCP_PASSWORD`
+([docker/opencode](https://github.com/swisstip/swiss-tip/blob/main/docker/opencode/README.md#against-a-hosted-server)).
+The web interface on this host needs none of it: it reaches the server on
+the Compose network, not through Caddy.
+
+## Operate
+
+A shell opens from the `Shell` output (Session Manager); the files are in
+`/opt/swiss-tip`, and `.env` is readable by root only, so Compose runs with
+`sudo`.
+
+```shell
+sudo tail -n 40 /var/log/cloud-init-output.log   # the host setup, once, at the first start
+cd /opt/swiss-tip
+sudo docker compose ps
+sudo docker compose logs -f swiss-tip            # one line per tool call
+sudo docker compose logs caddy                   # certificates, and one line per request to the MCP site
+sudo systemctl restart swiss-tip                 # pull the moving tags and recreate what changed: a new release
+```
+
+- **A new release.** The workflow moves `swiss-tip:<pack>-slim`; then
+  `sudo systemctl restart swiss-tip`. The same happens at every boot.
+- **Another setting.** The host script runs once, so a changed stack
+  parameter does not reach a running host. Edit `/opt/swiss-tip/.env` and
+  restart the service, or delete the stack and create it again, which also
+  changes the Elastic IP.
+- **The web interface on and off.** `COMPOSE_PROFILES=demo` in `.env` starts
+  it with the service; `sudo docker compose stop demo` stops it and leaves
+  the server alone. Hosted, it refuses to start without a password.
+- **Names and passwords.** They are `SWISSTIP_MCP_USERNAME`,
+  `SWISSTIP_MCP_PASSWORD`, `OPENCODE_SERVER_USERNAME` and
+  `OPENCODE_SERVER_PASSWORD` in `.env`. Change them there and run `sudo
+  docker compose up -d`, which recreates Caddy or the web interface and
+  leaves the server alone; removing both MCP lines opens the endpoint. The
+  secrets of the stack keep the first values.
+- **The sidecar after a server crash.** The sidecar lives in the server's
+  network namespace. When Docker restarts a crashed server, the sidecar
+  stays behind in the old namespace and every search falls back to lexical,
+  saying so. A timer runs `/opt/swiss-tip/watchdog.sh` every two minutes: it
+  asks for the model from inside the server's container and recreates the
+  sidecar alone when there is no answer.
+- **Stop and start.** A stopped instance costs its volume and its address
+  only; started again, the service brings everything up.
+- **Delete.** Deleting the stack removes every resource it created.
+
+## Cost
+
+Rough figures for Frankfurt; [AWS pricing](https://aws.amazon.com/ec2/pricing/on-demand/)
+has the current ones. `t3.small` is about 0.02 USD an hour, the public IPv4
+address 0.005 USD an hour, the 20 GiB volume about 2 USD a month and each
+secret 0.40 USD a month: about 20 USD a month in all. With `CpuCredits:
+unlimited`, sustained load above the baseline of 20 % a vCPU is billed at
+0.05 USD a vCPU-hour, at most about 0.08 USD an hour on `t3.small`. An
+account created since 15 July 2025 starts on the Free plan with up to 200 USD
+of credits for six months, which these charges draw on; `t3.small`,
+`c7i-flex.large` and `m7i-flex.large` are among its eligible instance types.
+Set a budget with an alert in the Billing console either way.
+
+## How the host is set up
+
+The instance's user data is one script, run once by cloud-init. It makes the
+swap file, installs Docker from the distribution and Docker Compose from its
+GitHub release by digest, writes `/opt/swiss-tip/compose.yaml`, `Caddyfile`,
+`caddy-start.sh` and `.env`, reads each password from its secret into `.env`,
+and enables three systemd units: `swiss-tip.service` (pull, then
+`docker compose up -d`, at every boot, retried on failure),
+and `swiss-tip-watchdog.service` with its timer.
+
+[compose.yaml](compose.yaml), [Caddyfile](Caddyfile) and
+[caddy-start.sh](caddy-start.sh) in this directory are the files the host
+gets: a stack is created from one file, so the template carries them in its
+own text. [inline_files.py](inline_files.py) writes them into it after a
+change, and [test_template.py](test_template.py) fails when the two differ
+by a byte. Only Caddy publishes ports.
+
+The MCP endpoint's name and password are Caddy's to ask for, not the
+server's: the server, its package and its images are the same with and
+without them. `caddy-start.sh` is Caddy's entry point. With both variables
+set it hashes the password and writes the `basic_auth` block that the MCP
+site of the `Caddyfile` imports; without them it writes nothing, the import
+matches no file and the site is open; with one of the two it ends with an
+error. Caddy keeps the hash only. Its bcrypt cost is low on purpose: every
+request is checked against it, the hash never leaves the host, and the
+password itself is in `.env` beside it. The server, the
+sidecar and the web interface are reachable from Caddy alone; the web
+interface's site defaults to a port nobody publishes, so without a demo
+domain it is not served even if its container runs.
+
+```shell
+./.venv/Scripts/python.exe -m unittest discover -s deploy/aws
+```
+
+## The same files without AWS
+
+On any host with Docker, from this directory; `.localhost` names get a
+certificate of Caddy's own authority, so `curl` needs `-k`:
+
+```shell
+SWISSTIP_MCP_SITE=mcp.localhost SWISSTIP_DEMO_SITE=demo.localhost COMPOSE_PROFILES=demo \
+  OPENCODE_SERVER_PASSWORD=... SWISSTIP_HTTP_PORT=8080 SWISSTIP_HTTPS_PORT=8443 docker compose up -d --wait
+curl -k --resolve mcp.localhost:8443:127.0.0.1 https://mcp.localhost:8443/health
+```
+
+`SWISSTIP_MCP_USERNAME` and `SWISSTIP_MCP_PASSWORD` beside them put the MCP
+site behind a name and a password, and `OPENCODE_SERVER_USERNAME` names the
+web interface's user. On a trusted network, `SWISSTIP_MCP_SITE=:80` serves
+plain HTTP on every name, where a password travels unprotected.
+
+## Tested and not tested
+
+Tested on 18 September 2026 on one Windows laptop with Docker Desktop, with
+the images of `ghcr.io` and a local build of the OpenCode image:
+
+- `cfn-lint` 1.57.0 reports nothing for the template in `eu-central-1`,
+  `eu-central-2` and `us-east-1`, and `bash -n` accepts the host script.
+- `compose.yaml` and the `Caddyfile` as above, with `.localhost` names: all
+  four containers healthy; over HTTPS through Caddy, `/health` with
+  `search.configured_mode: hybrid` and an MCP `initialize` under a host name
+  the server does not know; the web interface 401 without credentials and
+  200 with them, its project and `swiss_tip connected` routes, and its event
+  stream arriving at once. Only Caddy had published ports.
+- With `SWISSTIP_MCP_USERNAME` and `SWISSTIP_MCP_PASSWORD`: the MCP site
+  answered 401 without credentials and with a wrong password, on `/health`
+  and on `/mcp`, and 200 with them, over HTTPS and over plain HTTP; an MCP
+  `initialize` with them succeeded; five requests took 4 to 30 ms each with
+  the password and 4 to 14 ms without. Setting the two variables
+  recreated Caddy and not the server. The round trip (`check_server.py
+  --username --password --require-hybrid`) ran through the protected site
+  with every search hybrid and one failure, the one it also has against the
+  open site: the check of the coverage root is written for a newer release
+  than the published image served. Without credentials, and with wrong
+  ones, it ended with one line that says so. The OpenCode image, started with
+  `docker run` against that site, ended with one error line without
+  credentials, with a wrong password and with a name alone, and with both
+  reported `swiss_tip connected`; Caddy logged its `/mcp` requests as the
+  user's, with status 200. With `OPENCODE_SERVER_USERNAME=visitor` the web
+  interface accepted that name with its password and refused `opencode` and
+  the MCP site's credentials. A name with a space ended Caddy's start with
+  one error line.
+- The watchdog's check and remedy by hand: after `docker restart` of the
+  server the check from inside its container failed, recreating the sidecar
+  alone made it pass, and the server was not restarted by it.
+
+Tested in an AWS account on 20 September 2026, in `eu-central-2` (Zurich),
+with `McpDomain` and `DemoDomain` empty and the published images public: the
+console flow of [Create the stack](#create-the-stack) end to end, including
+the IAM capability acknowledgement; `CREATE_COMPLETE` in about three minutes;
+`/health` on the Elastic IP over plain HTTP answering `mvp-zurich-2026-09-19-v15`
+with `search.configured_mode: hybrid` a few minutes after; and
+`check_server.py --require-hybrid` against the endpoint, `0 failure(s)`,
+every search hybrid. The host script ran to completion on Amazon Linux 2023
+and the `Shell` output opened a working Session Manager session.
+
+The same host was then given sslip.io names and the web interface by hand, as
+[Point the domains at it](#point-the-domains-at-it) describes, on `t3.small`
+and the Free plan: Let's Encrypt issued certificates for `<ip>.sslip.io` and
+`demo.<ip>.sslip.io`, the four containers ran (`demo` healthy), `check_server.py
+--require-hybrid` passed over HTTPS with 0 failures on its second run (on the
+first, the first search fell back to lexical while the embedding model loaded,
+with 235 MB of memory available and 403 MB of swap in use), and the web
+interface answered a sample question through the hosted server. A change of
+the instance type to `t3.medium` in a stack update was refused: "This
+operation is not available for free plan accounts".
+
+The `SslipNames` parameter, the split of the Elastic IP into an address and its
+attachment, and the outputs that follow are checked by `cfn-lint` 1.57.0 (no
+findings in `eu-central-1`, `eu-central-2` and `us-east-1`) and by
+`test_template.py`, and have not been run in an AWS account.
+
+Not tested: `SslipNames` and a stack created with it, the certificate from
+Let's Encrypt for a domain of one's own, the Route 53 records,
+`McpDomain`/`McpUsername`/`DemoDomain` and the secrets they create (given or
+generated password), the two rules on those parameters, and the watchdog and
+restart behaviour over a longer run. The Free plan's eligibility of every
+resource is not verified either.

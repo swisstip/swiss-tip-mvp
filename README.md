@@ -88,7 +88,10 @@ instead of guessing. The absence of an answer is itself an answer.
 | --- | --- |
 | `config/places/` | The Swiss place register: the country, the 26 cantons and every municipality with their codes, official names and accepted aliases, embedded in every release so that a caller's place resolves to the jurisdiction a fact is published for |
 | `releases/<pack>/` | One pack: `sources.json` (the source catalogue), `curation.yaml` (the facts a curator writes), `release.json` (the built, hashed release), `readiness.json` (its attestation), `semantic-index.json`, the acceptance and regression suites with their reports, and the pack's README |
-| `scripts/test/` | The checks of the packs: suites, reports, readiness records, catalogues, and round trips against the served release |
+| `scripts/test/` | The checks of the packs: suites, reports, readiness records, catalogues, round trips against the served release, the regression runner and the OpenCode harness |
+| `docker/` | The pack images and the demo image; the generic images they build on are in the code repository |
+| `deploy/aws/` | One CloudFormation template that hosts the two-container setup on an EC2 instance behind HTTPS |
+| `docs/` | The acceptance-test documents of the packs, the related work, and the hackathon pitch |
 
 A pack is built, reviewed and served with the tools of the code repository:
 the knowledge builder and the admin console take this checkout as their
@@ -105,8 +108,16 @@ Built for the **Swiss {ai} Weeks** hackathon in Zurich, 24 and 25 September
 
 ## Status
 
-Initial setup. This describes the intended shape of the first pack; the pack
-files are not here yet, and the repository table above names the layout
-they will take. Further MVP packs would follow the same shape - a
-municipal pack for Wallisellen, and the source catalogue for full coverage
-across all 26 cantons.
+- **Served and reviewed:** `mvp-zurich`, the pack described above, with
+  every fact reviewed by one person and an attested readiness record.
+- **Served on request and reviewed:** `mvp-wallisellen`, a municipal pack
+  whose facts an assistant wrote and one person reviewed.
+- **Checked:** every push that changes a pack replays its acceptance suite
+  and regression pack and runs the round trips against the served release
+  ([knowledge-bases.yml](.github/workflows/knowledge-bases.yml)); the
+  container images are built, tested and pushed by
+  [container-images.yml](.github/workflows/container-images.yml).
+
+What the packs cover is in [COVERAGE.md](COVERAGE.md); what is weak or
+missing is in [LIMITATIONS.md](LIMITATIONS.md). The facts were reviewed by
+one person against the excerpts, which is not a legal review.

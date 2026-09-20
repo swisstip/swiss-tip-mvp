@@ -1,0 +1,607 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >-
+  Swiss TIP on one EC2 instance: the MCP server and the embedding sidecar from
+  ghcr.io behind Caddy, with HTTPS when a domain is given (or free sslip.io names), and optionally the
+  OpenCode web interface behind a name and a password; the MCP endpoint can
+  have a name and a password too. The instance has an Elastic IP, no SSH port
+  and no key pair; a shell is opened with Session Manager. See
+  deploy/aws/README.md in the repository.
+
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label: {default: What is served}
+        Parameters: [Pack, SslipNames, McpDomain, DemoDomain, HostedZoneId, Registry]
+      - Label: {default: Names and passwords (optional)}
+        Parameters: [McpUsername, McpPassword, DemoUsername, DemoPassword]
+      - Label: {default: The instance}
+        Parameters: [InstanceType, CpuCredits, VolumeGiB, SwapGiB, LatestAmi]
+    ParameterLabels:
+      SslipNames: {default: Free sslip.io names instead of a domain}
+      McpDomain: {default: Domain of the MCP endpoint}
+      DemoDomain: {default: Domain of the web interface}
+
+Parameters:
+  Pack:
+    Type: String
+    Default: mvp-zurich
+    AllowedValues: [mvp-zurich, mvp-wallisellen]
+    Description: The knowledge pack; the image is <Registry>/swiss-tip:<Pack>-slim.
+  SslipNames:
+    Type: String
+    Default: none
+    AllowedValues: [none, mcp, mcp-and-demo]
+    Description: >-
+      HTTPS without a domain of your own: sslip.io resolves <Elastic IP with hyphens>.sslip.io to the
+      Elastic IP, and Caddy obtains a certificate for that name. mcp: the MCP endpoint is served on
+      https://<ip>.sslip.io/mcp. mcp-and-demo: the web interface runs too, on demo.<ip>.sslip.io, behind
+      DemoUsername and a password. Needs McpDomain and DemoDomain empty. none (default): the two domains
+      below decide.
+  McpDomain:
+    Type: String
+    Default: ""
+    AllowedPattern: "^$|^[a-z0-9]([a-z0-9.-]*[a-z0-9])?$"
+    Description: >-
+      For example mcp.example.ai. Its A record must point at the Elastic IP of the outputs; Caddy then
+      serves https://<domain>/mcp with a certificate it obtains. Empty: plain HTTP on port 80 of the IP.
+  DemoDomain:
+    Type: String
+    Default: ""
+    AllowedPattern: "^$|^[a-z0-9]([a-z0-9.-]*[a-z0-9])?$"
+    Description: >-
+      For example demo.example.ai. Given, the OpenCode web interface runs on the instance too, over HTTPS
+      only and behind DemoUsername and a password. Empty: no web interface on this host.
+  HostedZoneId:
+    Type: String
+    Default: ""
+    AllowedPattern: "^$|^[A-Z0-9]+$"
+    Description: >-
+      Only when the domains are in Route 53: the hosted zone, in which the A records are then created.
+      Empty: create the A records where the domain is registered.
+  McpUsername:
+    Type: String
+    Default: ""
+    AllowedPattern: "^$|^[A-Za-z0-9._-]{1,32}$"
+    ConstraintDescription: 1 to 32 letters, digits, dots, underscores or hyphens
+    Description: >-
+      Empty (default): the MCP endpoint is open, as a test harness that sends no credentials needs it.
+      A name: the endpoint asks for it and a password (basic credentials) on every path, /health too;
+      McpDomain or SslipNames is then required, so that they travel over HTTPS.
+  McpPassword:
+    Type: String
+    NoEcho: true
+    Default: ""
+    AllowedPattern: "^$|^[A-Za-z0-9._~-]{8,64}$"
+    ConstraintDescription: 8 to 64 letters, digits, dots, underscores, tildes or hyphens
+    Description: The password that goes with McpUsername. Empty with a name - one is generated; see the outputs.
+  DemoUsername:
+    Type: String
+    Default: opencode
+    AllowedPattern: "^[A-Za-z0-9._-]{1,32}$"
+    ConstraintDescription: 1 to 32 letters, digits, dots, underscores or hyphens
+    Description: The name the web interface asks for. Only when the web interface is hosted (DemoDomain or mcp-and-demo).
+  DemoPassword:
+    Type: String
+    NoEcho: true
+    Default: ""
+    AllowedPattern: "^$|^[A-Za-z0-9._~-]{8,64}$"
+    ConstraintDescription: 8 to 64 letters, digits, dots, underscores, tildes or hyphens
+    Description: >-
+      The web interface's password. Empty - one is generated; see the outputs. A hosted web interface
+      always has one, because whoever reaches it can spend the model budget.
+  Registry:
+    Type: String
+    Default: ghcr.io/swisstip
+    AllowedPattern: "^[a-z0-9]([a-z0-9./_-]*[a-z0-9])?$"
+    Description: The image prefix. The packages must be public; the host logs in nowhere.
+  InstanceType:
+    Type: String
+    Default: t3.small
+    AllowedValues: [t3.small, t3.medium, t3.large, c7i-flex.large, m7i-flex.large]
+    Description: >-
+      x86 only, 2 GiB or more: the embedding model takes 1.2 GiB. With the web interface, t3.medium or
+      larger. t3.small, c7i-flex.large and m7i-flex.large are eligible on the AWS Free plan.
+  CpuCredits:
+    Type: String
+    Default: unlimited
+    AllowedValues: [unlimited, standard]
+    Description: >-
+      T3 only. unlimited keeps the latency under sustained load and bills the surplus (at most about
+      0.08 USD an hour on t3.small); standard throttles to the baseline instead.
+  VolumeGiB:
+    Type: Number
+    Default: 20
+    MinValue: 12
+    MaxValue: 100
+    Description: The root volume (gp3, encrypted). The images take about 3 GiB.
+  SwapGiB:
+    Type: Number
+    Default: 2
+    MinValue: 0
+    MaxValue: 8
+    Description: A swap file, as headroom while the model loads on a 2 GiB instance. 0 for none.
+  LatestAmi:
+    Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
+    Default: /aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64
+    Description: Amazon Linux 2023, x86_64. Leave as it is.
+
+Rules:
+  SslipNamesTakeNoDomain:
+    RuleCondition: !Not [!Equals [!Ref SslipNames, none]]
+    Assertions:
+      - Assert: !And [!Equals [!Ref McpDomain, ""], !Equals [!Ref DemoDomain, ""]]
+        AssertDescription: SslipNames replaces McpDomain and DemoDomain; leave both empty.
+  McpPasswordOverHttps:
+    RuleCondition: !Not [!Equals [!Ref McpUsername, ""]]
+    Assertions:
+      - Assert: !Or
+          - !Not [!Equals [!Ref McpDomain, ""]]
+          - !Not [!Equals [!Ref SslipNames, none]]
+        AssertDescription: McpUsername needs McpDomain or SslipNames - a name and a password travel over HTTPS only.
+  McpPasswordNeedsName:
+    RuleCondition: !Not [!Equals [!Ref McpPassword, ""]]
+    Assertions:
+      - Assert: !Not [!Equals [!Ref McpUsername, ""]]
+        AssertDescription: McpPassword is used with McpUsername only.
+
+Conditions:
+  HasMcpDomain: !Not [!Equals [!Ref McpDomain, ""]]
+  HasDemoDomain: !Not [!Equals [!Ref DemoDomain, ""]]
+  SslipMcp: !Not [!Equals [!Ref SslipNames, none]]
+  SslipDemo: !Equals [!Ref SslipNames, mcp-and-demo]
+  HostDemo: !Or [!Condition HasDemoDomain, !Condition SslipDemo]
+  ProtectMcp: !Not [!Equals [!Ref McpUsername, ""]]
+  McpPasswordGiven: !Not [!Equals [!Ref McpPassword, ""]]
+  DemoPasswordGiven: !Not [!Equals [!Ref DemoPassword, ""]]
+  HasSecrets: !Or [!Condition ProtectMcp, !Condition HostDemo]
+  HasZone: !Not [!Equals [!Ref HostedZoneId, ""]]
+  McpRecordWanted: !And [!Condition HasZone, !Condition HasMcpDomain]
+  DemoRecordWanted: !And [!Condition HasZone, !Condition HasDemoDomain]
+  IsBurstable: !Or
+    - !Equals [!Ref InstanceType, t3.small]
+    - !Equals [!Ref InstanceType, t3.medium]
+    - !Equals [!Ref InstanceType, t3.large]
+
+Resources:
+  SecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Swiss TIP - HTTP and HTTPS in, no SSH
+      SecurityGroupIngress:
+        - {IpProtocol: tcp, FromPort: 80, ToPort: 80, CidrIp: 0.0.0.0/0, Description: HTTP and the certificate challenge}
+        - {IpProtocol: tcp, FromPort: 443, ToPort: 443, CidrIp: 0.0.0.0/0, Description: HTTPS}
+        - {IpProtocol: udp, FromPort: 443, ToPort: 443, CidrIp: 0.0.0.0/0, Description: HTTP/3}
+      Tags:
+        - {Key: Name, Value: !Ref "AWS::StackName"}
+
+  # A password given as a parameter, or else generated here. The instance reads it from the secret at its
+  # first start, so it is never in the user data; the Secrets Manager console shows it to you.
+  McpSecret:
+    Type: AWS::SecretsManager::Secret
+    Condition: ProtectMcp
+    Properties:
+      Description: !Sub "Password of the Swiss TIP MCP endpoint of stack ${AWS::StackName}; the name is ${McpUsername}"
+      SecretString: !If [McpPasswordGiven, !Ref McpPassword, !Ref "AWS::NoValue"]
+      GenerateSecretString: !If [McpPasswordGiven, !Ref "AWS::NoValue", {PasswordLength: 24, ExcludePunctuation: true}]
+
+  DemoSecret:
+    Type: AWS::SecretsManager::Secret
+    Condition: HostDemo
+    Properties:
+      Description: !Sub "Password of the Swiss TIP web interface of stack ${AWS::StackName}; the name is ${DemoUsername}"
+      SecretString: !If [DemoPasswordGiven, !Ref DemoPassword, !Ref "AWS::NoValue"]
+      GenerateSecretString: !If [DemoPasswordGiven, !Ref "AWS::NoValue", {PasswordLength: 24, ExcludePunctuation: true}]
+
+  Role:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: {Service: ec2.amazonaws.com}
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - !Sub "arn:${AWS::Partition}:iam::aws:policy/AmazonSSMManagedInstanceCore"
+      Policies:
+        - !If
+          - HasSecrets
+          - PolicyName: read-passwords
+            PolicyDocument:
+              Version: "2012-10-17"
+              Statement:
+                - Effect: Allow
+                  Action: secretsmanager:GetSecretValue
+                  Resource:
+                    - !If [ProtectMcp, !Ref McpSecret, !Ref "AWS::NoValue"]
+                    - !If [HostDemo, !Ref DemoSecret, !Ref "AWS::NoValue"]
+          - !Ref "AWS::NoValue"
+
+  InstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles: [!Ref Role]
+
+  Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref LatestAmi
+      InstanceType: !Ref InstanceType
+      IamInstanceProfile: !Ref InstanceProfile
+      SecurityGroupIds: [!GetAtt SecurityGroup.GroupId]
+      CreditSpecification: !If [IsBurstable, {CPUCredits: !Ref CpuCredits}, !Ref "AWS::NoValue"]
+      # Session tokens only, and one hop: the containers cannot reach the instance's credentials.
+      MetadataOptions: {HttpEndpoint: enabled, HttpTokens: required, HttpPutResponseHopLimit: 1}
+      BlockDeviceMappings:
+        - DeviceName: /dev/xvda
+          Ebs: {VolumeSize: !Ref VolumeGiB, VolumeType: gp3, Encrypted: true, DeleteOnTermination: true}
+      Tags:
+        - {Key: Name, Value: !Ref "AWS::StackName"}
+      # Runs once, at the first start; the output is /var/log/cloud-init-output.log. The first part sets
+      # the stack's values, the second is the same for every stack: its compose.yaml, Caddyfile and
+      # caddy-start.sh are the files beside this template, byte for byte (test_template.py), and nothing
+      # in it is substituted. Names are in it, passwords are not: the host reads them from their secrets.
+      UserData:
+        Fn::Base64:
+          Fn::Join:
+            - ""
+            - - !Sub
+                - |
+                  #!/bin/bash
+                  set -euo pipefail
+                  REGION='${AWS::Region}'
+                  REGISTRY='${Registry}'
+                  PACK='${Pack}'
+                  MCP_SITE='${McpSite}'
+                  DEMO_SITE='${DemoSite}'
+                  PROFILES='${Profiles}'
+                  MCP_USERNAME='${McpUsername}'
+                  MCP_SECRET='${McpSecretArn}'
+                  DEMO_USERNAME='${DemoUsername}'
+                  DEMO_SECRET='${DemoSecretArn}'
+                  SWAP_GIB='${SwapGiB}'
+                - McpSite: !If
+                    - HasMcpDomain
+                    - !Ref McpDomain
+                    - !If [SslipMcp, !Join ["", [!Join ["-", !Split [".", !Ref ElasticIp]], ".sslip.io"]], ":80"]
+                  DemoSite: !If
+                    - HasDemoDomain
+                    - !Ref DemoDomain
+                    - !If [SslipDemo, !Join ["", ["demo.", !Join ["-", !Split [".", !Ref ElasticIp]], ".sslip.io"]], ":4096"]
+                  Profiles: !If [HostDemo, demo, ""]
+                  McpSecretArn: !If [ProtectMcp, !Ref McpSecret, ""]
+                  DemoSecretArn: !If [HostDemo, !Ref DemoSecret, ""]
+              - |
+                COMPOSE_VERSION=v5.5.1
+                COMPOSE_SHA256=db1889184726840f75c4f9c001048430d4f25b3be3cb084d3ddd762bc0aed576
+
+                # Swap first: headroom for everything below on a 2 GiB instance. dd, not fallocate: xfs.
+                if [ "$SWAP_GIB" -gt 0 ] && [ ! -f /swapfile ]; then
+                  dd if=/dev/zero of=/swapfile bs=1M count=$((SWAP_GIB * 1024)) status=none
+                  chmod 600 /swapfile
+                  mkswap /swapfile
+                  swapon /swapfile
+                  echo '/swapfile none swap sw 0 0' >> /etc/fstab
+                fi
+
+                # Docker from the distribution, Compose from its release, by digest. The Elastic IP is attached
+                # while this runs and replaces the first public address, which can cost a download its connection.
+                for attempt in 1 2 3 4 5; do dnf install -y docker && break; sleep 15; done
+                plugins=/usr/local/lib/docker/cli-plugins
+                mkdir -p "$plugins"
+                curl -fsSL --retry 5 -o "$plugins/docker-compose" \
+                  "https://github.com/docker/compose/releases/download/$COMPOSE_VERSION/docker-compose-linux-x86_64"
+                echo "$COMPOSE_SHA256  $plugins/docker-compose" | sha256sum -c -
+                chmod 755 "$plugins/docker-compose"
+                systemctl enable --now docker
+
+                mkdir -p /opt/swiss-tip
+                cd /opt/swiss-tip
+
+                cat > compose.yaml <<'SWISSTIP_COMPOSE'
+                # Swiss TIP on one public host: the MCP server and the embedding sidecar of
+                # the repository's compose.yaml, with Caddy in front as the only published
+                # service, and the OpenCode web interface behind the profile "demo". The
+                # CloudFormation template beside this file writes it to /opt/swiss-tip with
+                # the Caddyfile and an .env; it also runs anywhere else Docker does.
+                #
+                #   SWISSTIP_MCP_SITE    the MCP server's site address: a domain whose DNS
+                #                        points here, served over HTTPS with a certificate
+                #                        Caddy obtains, or :80 (default) for plain HTTP
+                #   SWISSTIP_DEMO_SITE   the same for the web interface; the default is a
+                #                        port that is not published, so it is not served
+                #   COMPOSE_PROFILES     demo to start the web interface, which then refuses
+                #                        to start without OPENCODE_SERVER_PASSWORD; its user
+                #                        name is opencode, or OPENCODE_SERVER_USERNAME
+                #   SWISSTIP_MCP_USERNAME, SWISSTIP_MCP_PASSWORD
+                #                        both set: the MCP site asks for them (basic
+                #                        credentials); both empty (default): it is open
+                #   SWISSTIP_PACK, SWISSTIP_REGISTRY   as in the repository's compose.yaml
+                name: swiss-tip
+
+                services:
+                  swiss-tip:
+                    image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip:${SWISSTIP_PACK:-mvp-zurich}-slim
+                    command: ["--semantic-index", "/srv/swiss-tip/semantic-index.json"]
+                    restart: unless-stopped
+
+                  embeddings:
+                    image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip-ollama:qwen3-embedding-0.6b
+                    network_mode: "service:swiss-tip"
+                    restart: unless-stopped
+
+                  demo:
+                    profiles: ["demo"]
+                    image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip-opencode:latest
+                    environment:
+                      - SWISSTIP_MCP_URL=http://swiss-tip:8000/mcp
+                      - SWISSTIP_REQUIRE_PASSWORD=1
+                      - SWISSTIP_DEMO_MODEL
+                      - OPENCODE_SERVER_USERNAME
+                      - OPENCODE_SERVER_PASSWORD
+                      - OPENCODE_API_KEY
+                    depends_on:
+                      swiss-tip:
+                        condition: service_healthy
+                    restart: unless-stopped
+
+                  caddy:
+                    image: caddy:2.11
+                    entrypoint: ["/bin/sh", "/etc/caddy/caddy-start.sh"]
+                    environment:
+                      - SWISSTIP_MCP_SITE=${SWISSTIP_MCP_SITE:-:80}
+                      - SWISSTIP_DEMO_SITE=${SWISSTIP_DEMO_SITE:-:4096}
+                      - SWISSTIP_MCP_USERNAME
+                      - SWISSTIP_MCP_PASSWORD
+                    ports:
+                      - "${SWISSTIP_HTTP_PORT:-80}:80"
+                      - "${SWISSTIP_HTTPS_PORT:-443}:443"
+                      - "${SWISSTIP_HTTPS_PORT:-443}:443/udp"
+                    volumes:
+                      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+                      - ./caddy-start.sh:/etc/caddy/caddy-start.sh:ro
+                      - caddy-data:/data
+                      - caddy-config:/config
+                    depends_on:
+                      - swiss-tip
+                    restart: unless-stopped
+
+                volumes:
+                  caddy-data:
+                  caddy-config:
+                SWISSTIP_COMPOSE
+
+                cat > Caddyfile <<'SWISSTIP_CADDYFILE'
+                # Caddy in front of Swiss TIP. A site address that is a domain is served over
+                # HTTPS with a certificate Caddy obtains and renews (the DNS name must point
+                # at this host, ports 80 and 443 open); :80 is plain HTTP on every name.
+                # Upstream names are resolved per request, so the demo site stays
+                # configured while the demo container is absent and answers 502 then.
+
+                # caddy-start.sh writes auth/mcp.caddy when the MCP site has a name and a
+                # password; a pattern that matches no file imports nothing.
+                {$SWISSTIP_MCP_SITE} {
+                	import /etc/caddy/auth/mcp*.caddy
+                	encode zstd gzip
+                	reverse_proxy swiss-tip:8000
+                	log
+                }
+
+                # The web interface asks for basic credentials itself (OPENCODE_SERVER_PASSWORD).
+                # Its event stream is passed on as it arrives.
+                {$SWISSTIP_DEMO_SITE} {
+                	reverse_proxy demo:4096 {
+                		flush_interval -1
+                	}
+                }
+                SWISSTIP_CADDYFILE
+
+                cat > caddy-start.sh <<'SWISSTIP_CADDY_START'
+                #!/bin/sh
+                # Start Caddy, after writing what the Caddyfile imports for a site behind a
+                # name and a password. With SWISSTIP_MCP_USERNAME and SWISSTIP_MCP_PASSWORD
+                # the MCP site asks for basic credentials on every path, /health included;
+                # without them nothing is written and the site is open. Caddy keeps a hash,
+                # not the password; the cost is low because every request is checked against
+                # it, and the password is as long as its owner makes it.
+                set -eu
+
+                auth=/etc/caddy/auth
+                mkdir -p "$auth"
+                rm -f "$auth"/*.caddy
+
+                # The name goes into the Caddyfile as it is, where a space or a brace would be syntax.
+                case "${SWISSTIP_MCP_USERNAME:-}" in
+                    *[!A-Za-z0-9._-]*)
+                        echo "caddy-start: SWISSTIP_MCP_USERNAME may hold letters, digits, dots, underscores and hyphens only" >&2
+                        exit 64 ;;
+                esac
+
+                if [ -n "${SWISSTIP_MCP_USERNAME:-}" ] && [ -n "${SWISSTIP_MCP_PASSWORD:-}" ]; then
+                    hash=$(caddy hash-password --algorithm bcrypt --bcrypt-cost 8 --plaintext "$SWISSTIP_MCP_PASSWORD")
+                    printf 'basic_auth {\n\t%s %s\n}\n' "$SWISSTIP_MCP_USERNAME" "$hash" > "$auth/mcp.caddy"
+                    echo "caddy-start: the MCP site asks for the password of $SWISSTIP_MCP_USERNAME" >&2
+                elif [ -n "${SWISSTIP_MCP_USERNAME:-}${SWISSTIP_MCP_PASSWORD:-}" ]; then
+                    echo "caddy-start: SWISSTIP_MCP_USERNAME and SWISSTIP_MCP_PASSWORD go together; one of them is empty" >&2
+                    exit 64
+                else
+                    echo "caddy-start: the MCP site is open" >&2
+                fi
+
+                exec caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
+                SWISSTIP_CADDY_START
+
+                # Compose reads .env beside compose.yaml, COMPOSE_PROFILES included.
+                umask 077
+                cat > .env <<ENV
+                SWISSTIP_REGISTRY=$REGISTRY
+                SWISSTIP_PACK=$PACK
+                SWISSTIP_MCP_SITE=$MCP_SITE
+                SWISSTIP_DEMO_SITE=$DEMO_SITE
+                COMPOSE_PROFILES=$PROFILES
+                ENV
+                read_secret() {
+                  aws secretsmanager get-secret-value --region "$REGION" --secret-id "$1" --query SecretString --output text
+                }
+                if [ -n "$MCP_SECRET" ]; then
+                  password=$(read_secret "$MCP_SECRET")
+                  echo "SWISSTIP_MCP_USERNAME=$MCP_USERNAME" >> .env
+                  echo "SWISSTIP_MCP_PASSWORD=$password" >> .env
+                fi
+                if [ -n "$DEMO_SECRET" ]; then
+                  password=$(read_secret "$DEMO_SECRET")
+                  echo "OPENCODE_SERVER_USERNAME=$DEMO_USERNAME" >> .env
+                  echo "OPENCODE_SERVER_PASSWORD=$password" >> .env
+                fi
+                umask 022
+
+                # The sidecar lives in the server's network namespace. When Docker restarts a crashed server,
+                # the sidecar stays behind in the old namespace and every search falls back to lexical; the
+                # watchdog notices that from inside the server's container and recreates the sidecar alone.
+                cat > watchdog.sh <<'SWISSTIP_WATCHDOG'
+                #!/bin/bash
+                cd /opt/swiss-tip || exit 1
+                check='import urllib.request; urllib.request.urlopen("http://127.0.0.1:11434/api/version", timeout=5)'
+                docker compose exec -T swiss-tip python -c "$check" 2>/dev/null && exit 0
+                echo "the embedding sidecar does not answer in the server's namespace; bringing the services up and recreating it"
+                docker compose up -d
+                docker compose up -d --force-recreate --no-deps embeddings
+                SWISSTIP_WATCHDOG
+                chmod 755 watchdog.sh
+
+                # Started at every boot, and the way to update: systemctl restart swiss-tip pulls the moving tags.
+                cat > /etc/systemd/system/swiss-tip.service <<'UNIT'
+                [Unit]
+                Description=Swiss TIP: MCP server, embedding sidecar and Caddy (Docker Compose)
+                Requires=docker.service
+                After=docker.service network-online.target
+                Wants=network-online.target
+
+                [Service]
+                Type=oneshot
+                RemainAfterExit=yes
+                WorkingDirectory=/opt/swiss-tip
+                ExecStartPre=-/usr/bin/docker compose pull --quiet
+                ExecStart=/usr/bin/docker compose up -d --remove-orphans
+                ExecStop=/usr/bin/docker compose down
+                TimeoutStartSec=1800
+                Restart=on-failure
+                RestartSec=30
+
+                [Install]
+                WantedBy=multi-user.target
+                UNIT
+
+                cat > /etc/systemd/system/swiss-tip-watchdog.service <<'UNIT'
+                [Unit]
+                Description=Swiss TIP: keep the embedding sidecar in the server's network namespace
+                After=swiss-tip.service
+                Requires=docker.service
+
+                [Service]
+                Type=oneshot
+                ExecStart=/opt/swiss-tip/watchdog.sh
+                UNIT
+
+                cat > /etc/systemd/system/swiss-tip-watchdog.timer <<'UNIT'
+                [Unit]
+                Description=Swiss TIP: check the embedding sidecar every two minutes
+
+                [Timer]
+                OnBootSec=10min
+                OnUnitActiveSec=2min
+
+                [Install]
+                WantedBy=timers.target
+                UNIT
+
+                systemctl daemon-reload
+                systemctl enable --now swiss-tip.service || echo "the first start failed; systemd retries it every 30 s"
+                systemctl enable --now swiss-tip-watchdog.timer
+
+                # For the log: the server as the host sees it, once it answers.
+                for attempt in $(seq 1 60); do
+                  if docker compose exec -T swiss-tip python -c \
+                    'import urllib.request; print(urllib.request.urlopen("http://127.0.0.1:8000/health", timeout=4).read().decode())'
+                  then break; fi
+                  sleep 5
+                done
+                docker compose ps
+
+  # The address and its attachment are two resources: the instance's user data names the address (the
+  # sslip.io names), so the address cannot depend on the instance.
+  ElasticIp:
+    Type: AWS::EC2::EIP
+    Properties:
+      Domain: vpc
+      Tags:
+        - {Key: Name, Value: !Ref "AWS::StackName"}
+
+  ElasticIpAttachment:
+    Type: AWS::EC2::EIPAssociation
+    Properties:
+      AllocationId: !GetAtt ElasticIp.AllocationId
+      InstanceId: !Ref Instance
+
+  McpRecord:
+    Type: AWS::Route53::RecordSet
+    Condition: McpRecordWanted
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: !Ref McpDomain
+      Type: A
+      TTL: "300"
+      ResourceRecords: [!Ref ElasticIp]
+
+  DemoRecord:
+    Type: AWS::Route53::RecordSet
+    Condition: DemoRecordWanted
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: !Ref DemoDomain
+      Type: A
+      TTL: "300"
+      ResourceRecords: [!Ref ElasticIp]
+
+Outputs:
+  PublicIp:
+    Description: The Elastic IP. Point the A records of the domains at it, unless HostedZoneId did that.
+    Value: !Ref ElasticIp
+  McpEndpoint:
+    Description: >-
+      The MCP endpoint for a client; it answers some minutes after the stack is complete. With McpUsername
+      the client sends the header "Authorization: Basic" and the base64 of name:password.
+    Value: !If
+      - HasMcpDomain
+      - !Sub "https://${McpDomain}/mcp"
+      - !If
+        - SslipMcp
+        - !Join ["", ["https://", !Join ["-", !Split [".", !Ref ElasticIp]], ".sslip.io/mcp"]]
+        - !Sub "http://${ElasticIp}/mcp"
+  Health:
+    Description: Release, counts and search mode of the server.
+    Value: !If
+      - HasMcpDomain
+      - !Sub "https://${McpDomain}/health"
+      - !If
+        - SslipMcp
+        - !Join ["", ["https://", !Join ["-", !Split [".", !Ref ElasticIp]], ".sslip.io/health"]]
+        - !Sub "http://${ElasticIp}/health"
+  McpPasswordSecret:
+    Condition: ProtectMcp
+    Description: The secret with the MCP endpoint's password. Secrets Manager console, this secret, "Retrieve secret value".
+    Value: !Ref McpSecret
+  DemoUrl:
+    Condition: HostDemo
+    Description: The OpenCode web interface; the name is DemoUsername, the password is in DemoPasswordSecret.
+    Value: !If
+      - HasDemoDomain
+      - !Sub "https://${DemoDomain}/"
+      - !Join ["", ["https://demo.", !Join ["-", !Split [".", !Ref ElasticIp]], ".sslip.io/"]]
+  DemoPasswordSecret:
+    Condition: HostDemo
+    Description: The secret with the web interface's password. Secrets Manager console, this secret, "Retrieve secret value".
+    Value: !Ref DemoSecret
+  Shell:
+    Description: A shell on the instance with Session Manager; no SSH port is open.
+    Value: !Sub "https://${AWS::Region}.console.aws.amazon.com/systems-manager/session-manager/${Instance}?region=${AWS::Region}"
