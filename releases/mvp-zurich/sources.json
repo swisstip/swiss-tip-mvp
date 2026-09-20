@@ -1,0 +1,3334 @@
+{
+  "schema_version": "source-catalog/v1",
+  "artifact_id": "residence-sources-mvp-zurich",
+  "version": "draft-8",
+  "knowledge_space_id": "hackathon",
+  "title": "Residence permits, moving to Switzerland and naturalisation - MVP sources (federal and Canton Zurich)",
+  "status": "SOURCES_ONLY",
+  "scope": {
+    "country_code": "CH",
+    "canton_codes": [
+      "CH-ZH"
+    ],
+    "description": "MVP scope: Swiss federal foundations for residence permits plus Canton of Zurich and City of Zurich entry points, extended on 15 September 2026 with the topics a newly arrived resident meets next (social insurance on arrival and departure, tax at source, the foreign driving licence, health insurance and premium reduction) and with naturalisation, at the same three levels. Other cantons are in the swiss-residence pack. Extended on 17 September 2026 with the contact pages of the Zurich offices these topics name: addresses, opening and telephone hours and directions where published. Extended again on 17 September 2026 with the daily-life duties of a newcomer in the City of Zurich: waste, parking and vehicles, dogs, school, taxes, the radio and television fee and emergencies. Extended on 18 September 2026 with voting rights and the Zurich tax-at-source tariff pages, and with the questions of expats settling in: family allowances and parental leave, housing and rent, customs on moving, marriage, pillar 3a, unemployment, accident insurance and leaving the City of Zurich.",
+    "exclusions": [
+      "Tourism unrelated to residence",
+      "Full asylum/protection casework",
+      "Private relocation advice",
+      "Authenticated application portals",
+      "Complete municipal coverage",
+      "Tax tariff tables, premium and allowance calculators, individual amounts",
+      "Live data (timetables, vote results, current premiums)"
+    ]
+  },
+  "planning_topics": [
+    {
+      "topic_id": "entry-visas",
+      "label": "Entry and visas"
+    },
+    {
+      "topic_id": "residence-permits",
+      "label": "Residence permits and documents"
+    },
+    {
+      "topic_id": "work-eu-efta",
+      "label": "Working as an EU/EFTA national"
+    },
+    {
+      "topic_id": "work-third-country",
+      "label": "Working as a third-country national"
+    },
+    {
+      "topic_id": "family-reunification",
+      "label": "Family reunification"
+    },
+    {
+      "topic_id": "study-no-employment",
+      "label": "Study, retirement and residence without employment"
+    },
+    {
+      "topic_id": "settlement-renewal",
+      "label": "Settlement, renewal and changes of status"
+    },
+    {
+      "topic_id": "registration-moving",
+      "label": "Registration, changing canton and departure"
+    },
+    {
+      "topic_id": "integration-language",
+      "label": "Integration and language requirements"
+    },
+    {
+      "topic_id": "health-insurance",
+      "label": "Health insurance on taking up residence"
+    },
+    {
+      "topic_id": "housing",
+      "label": "Housing and renting"
+    },
+    {
+      "topic_id": "tax-social-insurance",
+      "label": "Tax and social insurance on taking up residence"
+    },
+    {
+      "topic_id": "legal-bases",
+      "label": "Federal legal bases and administrative guidance"
+    },
+    {
+      "topic_id": "competent-authorities",
+      "label": "Competent cantonal and municipal authorities"
+    },
+    {
+      "topic_id": "driving-licence",
+      "label": "Driving licence after taking up residence"
+    },
+    {
+      "topic_id": "naturalisation",
+      "label": "Naturalisation"
+    },
+    {
+      "topic_id": "daily-life",
+      "label": "Daily life after moving in"
+    },
+    {
+      "topic_id": "political-rights",
+      "label": "Political rights of foreign residents"
+    }
+  ],
+  "language_discovery": {
+    "seed_languages_are_hints": true,
+    "method": "Later inspect html lang, hreflang and visible language navigation. Record declarations and detected section languages independently.",
+    "scope": "New language URLs or hosts outside explicit allowlists require catalogue updates before crawling.",
+    "parallel_content": "Independent snapshots, hashes, timestamps and source revisions; no equivalence from URL patterns alone.",
+    "projection_targets": [
+      "en",
+      "de",
+      "fr",
+      "it",
+      "rm"
+    ],
+    "evaluated_routes": [],
+    "preferred_seed_language": "de",
+    "selection_policy": "Prefer a verified official German seed when choosing only one language version for a limited MVP run. Named scan sets and explicit --source selectors retain every selected language version, with German seeds scheduled first. Keep the recorded local language when no German equivalent has been verified; never guess translated URL slugs or silently fall back after a failed crawl."
+  },
+  "crawl_profiles": {
+    "smoke": {
+      "max_depth": 0,
+      "max_pages": 1,
+      "max_requests": 5,
+      "max_total_bytes": 3000000,
+      "max_response_bytes": 2000000,
+      "max_duration_seconds": 60,
+      "request_timeout_seconds": 15,
+      "delay_seconds": 2,
+      "max_redirects": 2,
+      "max_links_per_page": 200,
+      "max_queued_urls": 50,
+      "max_failures": 2
+    },
+    "sample": {
+      "max_depth": 1,
+      "max_pages": 5,
+      "max_requests": 10,
+      "max_total_bytes": 10000000,
+      "max_response_bytes": 2000000,
+      "max_duration_seconds": 120,
+      "request_timeout_seconds": 15,
+      "delay_seconds": 2,
+      "max_redirects": 2,
+      "max_links_per_page": 500,
+      "max_queued_urls": 100,
+      "max_failures": 3
+    }
+  },
+  "scan_sets": {
+    "smoke": [
+      "ch-sem-residence-de",
+      "zh-overview"
+    ],
+    "zurich": [
+      "zh-overview",
+      "zh-eu-efta",
+      "zh-work-third-country",
+      "zh-no-employment",
+      "zh-family",
+      "zh-biometric-documents",
+      "zh-settlement",
+      "zh-integration",
+      "zh-welcome-residence",
+      "zurich-city-arrival"
+    ],
+    "federal": [
+      "ch-sem-residence-de",
+      "ch-sem-eu-efta",
+      "ch-sem-third-country",
+      "ch-sem-work-third-country",
+      "ch-sem-free-movement-faq",
+      "ch-sem-entry",
+      "ch-sem-entry-faq",
+      "ch-sem-biometric-documents",
+      "ch-sem-authorities",
+      "ch-sem-directives",
+      "ch-fedlex-aig",
+      "ch-fedlex-vzae",
+      "ch-fedlex-fza",
+      "ch-chch-permits",
+      "ch-chch-family",
+      "ch-chch-work",
+      "ch-bsv-ahv",
+      "ch-bag-health-insurance",
+      "ch-bazg-moving",
+      "ch-bwo-housing",
+      "ch-estv-tax-at-source",
+      "ch-sem-residence-en",
+      "ch-sem-residence-fr",
+      "ch-sem-residence-it",
+      "ch-sem-notification-procedure"
+    ],
+    "all": [
+      "ch-bag-accident-insurance",
+      "ch-bag-health-insurance",
+      "ch-bag-premium-reduction",
+      "ch-bazg-moving",
+      "ch-bsv-ahv",
+      "ch-bsv-bvg-departure",
+      "ch-bsv-family-allowances",
+      "ch-bsv-parental-leave",
+      "ch-bsv-pillar-3a",
+      "ch-bwo-housing",
+      "ch-bwo-reference-rate",
+      "ch-chch-driving-licence-exchange",
+      "ch-chch-family",
+      "ch-chch-housing",
+      "ch-chch-marriage",
+      "ch-chch-moving",
+      "ch-chch-naturalisation",
+      "ch-chch-permits",
+      "ch-chch-pillar-3a",
+      "ch-chch-voting",
+      "ch-chch-work",
+      "ch-eda-visa",
+      "ch-estv-tax-at-source",
+      "ch-fedlex-aig",
+      "ch-fedlex-bueg",
+      "ch-fedlex-buev",
+      "ch-fedlex-bv",
+      "ch-fedlex-dbg",
+      "ch-fedlex-fza",
+      "ch-fedlex-fzg",
+      "ch-fedlex-kvg",
+      "ch-fedlex-or",
+      "ch-fedlex-qstv",
+      "ch-fedlex-rv-ahv",
+      "ch-fedlex-vev",
+      "ch-fedlex-vzae",
+      "ch-fedlex-vzv",
+      "ch-seco-unemployment",
+      "ch-sem-authorities",
+      "ch-sem-biometric-documents",
+      "ch-sem-citizenship",
+      "ch-sem-directives",
+      "ch-sem-entry",
+      "ch-sem-entry-faq",
+      "ch-sem-eu-efta",
+      "ch-sem-free-movement-faq",
+      "ch-sem-notification-procedure",
+      "ch-sem-residence-de",
+      "ch-sem-residence-en",
+      "ch-sem-residence-fr",
+      "ch-sem-residence-it",
+      "ch-sem-third-country",
+      "ch-sem-work-third-country",
+      "ch-serafe-household-fee",
+      "ch-zas-contribution-refund",
+      "zh-awa-office",
+      "zh-biometric-documents",
+      "zh-dogs",
+      "zh-eu-efta",
+      "zh-family",
+      "zh-fedlex-kv",
+      "zh-foreign-driving-licence",
+      "zh-gemeindeamt-naturalisation-office",
+      "zh-integration",
+      "zh-migrationsamt-office",
+      "zh-naturalisation",
+      "zh-no-employment",
+      "zh-overview",
+      "zh-premium-reduction",
+      "zh-rental-forms",
+      "zh-settlement",
+      "zh-steueramt-office",
+      "zh-strassenverkehrsamt-office",
+      "zh-sva-contact",
+      "zh-sva-family-allowances",
+      "zh-sva-health-insurance",
+      "zh-tax-at-source",
+      "zh-tax-at-source-directive",
+      "zh-unemployment",
+      "zh-vehicles",
+      "zh-voting",
+      "zh-welcome-residence",
+      "zh-work-permits-contact",
+      "zh-work-third-country",
+      "zurich-city-arrival",
+      "zurich-city-departure",
+      "zurich-city-dog-control",
+      "zurich-city-emergency",
+      "zurich-city-first-steps",
+      "zurich-city-marriage",
+      "zurich-city-naturalisation",
+      "zurich-city-parking-permits",
+      "zurich-city-registration-office",
+      "zurich-city-school",
+      "zurich-city-taxes",
+      "zurich-city-waste"
+    ],
+    "multilingual": [
+      "ch-sem-residence-de",
+      "ch-sem-residence-en",
+      "ch-sem-residence-fr",
+      "ch-sem-residence-it"
+    ],
+    "moving": [
+      "ch-zas-contribution-refund",
+      "ch-fedlex-rv-ahv",
+      "ch-bsv-bvg-departure",
+      "ch-fedlex-fzg",
+      "ch-bsv-family-allowances",
+      "ch-bsv-parental-leave",
+      "zh-sva-family-allowances",
+      "ch-fedlex-dbg",
+      "ch-fedlex-qstv",
+      "zh-tax-at-source",
+      "zh-tax-at-source-directive",
+      "ch-fedlex-vzv",
+      "ch-chch-driving-licence-exchange",
+      "zh-foreign-driving-licence",
+      "ch-bag-premium-reduction",
+      "ch-fedlex-kvg",
+      "zh-premium-reduction",
+      "zh-sva-health-insurance",
+      "ch-chch-moving"
+    ],
+    "naturalisation": [
+      "ch-sem-citizenship",
+      "ch-fedlex-bueg",
+      "ch-fedlex-buev",
+      "ch-chch-naturalisation",
+      "zh-naturalisation",
+      "zurich-city-naturalisation"
+    ],
+    "contacts": [
+      "zh-migrationsamt-office",
+      "zh-gemeindeamt-naturalisation-office",
+      "zh-strassenverkehrsamt-office",
+      "zh-steueramt-office",
+      "zh-awa-office",
+      "zh-work-permits-contact",
+      "zh-sva-contact",
+      "zurich-city-registration-office"
+    ],
+    "daily-life": [
+      "zurich-city-first-steps",
+      "zurich-city-waste",
+      "zurich-city-parking-permits",
+      "zurich-city-dog-control",
+      "zh-dogs",
+      "zurich-city-school",
+      "zurich-city-taxes",
+      "zh-vehicles",
+      "ch-serafe-household-fee",
+      "zurich-city-emergency"
+    ],
+    "entry": [
+      "ch-sem-entry",
+      "ch-sem-entry-faq",
+      "ch-eda-visa",
+      "ch-fedlex-vev",
+      "zh-family"
+    ],
+    "voting-tax": [
+      "ch-fedlex-bv",
+      "zh-fedlex-kv",
+      "zh-voting",
+      "ch-chch-voting",
+      "zh-tax-at-source"
+    ],
+    "expat-life": [
+      "ch-fedlex-or",
+      "ch-chch-housing",
+      "ch-bwo-reference-rate",
+      "zh-rental-forms",
+      "ch-chch-marriage",
+      "zurich-city-marriage",
+      "ch-bsv-pillar-3a",
+      "ch-chch-pillar-3a",
+      "ch-seco-unemployment",
+      "zh-unemployment",
+      "ch-bag-accident-insurance",
+      "zurich-city-departure",
+      "ch-bsv-family-allowances",
+      "ch-bsv-parental-leave",
+      "zh-sva-family-allowances",
+      "ch-bazg-moving"
+    ]
+  },
+  "build_notes": [
+    "Only source references and operator-authored planning metadata are stored. No pages, quotations, legal claims, extracted topics/concepts, facts or rules are included.",
+    "Ready means eligible for a later test, not verified live, robots-approved, complete, authoritative on every linked topic or extraction-ready.",
+    "Robots, redirects, public-network checks and request/byte/time limits are enforced by SafeCrawler at run time. Query URLs remain disabled. Do not submit forms or log in.",
+    "Defaults scan the five smoke seeds only and do not make requests unless --crawl is supplied. Limits are per source and aggregate ceilings are printed in the plan.",
+    "Planning topic hints are for operator selection only. Do not feed them as expected concepts to source-first extraction or human annotation.",
+    "HTML content capture is opt-in at a later operator run. PDF documents and JavaScript-only applications need later adapters; record exclusions instead of claiming successful extraction.",
+    "Record requested/final URL, retrieval time, byte hash, content type, declared/detected language, source identity and jurisdiction with every later snapshot. Preserve municipal applicability.",
+    "Run the existing concepts CLI on saved pages. Cross-document topic clustering, review, supported operations and release publication remain later build stages.",
+    "German is preferred for single-version MVP seeds and crawl ordering. Multilingual selections retain all chosen official versions; candidate parallel page groups require later content alignment. Evidence selection is a planned separate policy and must not equate German preference with legal precedence.",
+    "Extension of 15 September 2026: the sources of the moving-to-Switzerland topics and naturalisation are registry seeds here and, with their subpages, explicit links in sources.md; the bounded downloader fetches every listed page at depth zero and follows no link. The scan sets smoke, federal, zurich and multilingual are the residence-topic sets of the rehearsal and are unchanged; moving and naturalisation select the extension; all selects everything. A run directory is bound to the catalogue bytes, so the extension needs a new run directory into which the saved pages of the rehearsal run are copied with their hashes before the new pages are downloaded.",
+    "Extension of 17 September 2026: the contact pages of the cantonal and city offices the pack names (Migration Office, Naturalisation Division, Road Traffic Office, Cantonal Tax Office, Office for the Economy, SVA Zurich, City of Zurich Population Office) are registry seeds in the scan set contacts and, with their subpages, explicit links in sources.md. The draft-3 catalogue needs a new run directory; the saved pages, Fedlex documents and text records of the draft-2 run are carried over with their hashes before the new pages are downloaded.",
+    "Extension of 17 September 2026 (daily life): the City of Zurich pages on first steps, waste, parking permits, dog control, public school, taxes and emergencies, the Canton of Zurich pages on dogs and on vehicles after a move, and the SERAFE pages on the household radio and television fee are registry seeds in the scan set daily-life and, with their subpages, explicit links in sources.md. The draft-4 catalogue needs a new run directory; the draft-3 run is carried over with its hashes before the new pages are downloaded.",
+    "Extension of 17 September 2026 (entry and visas): the SEM pages on entry with and without a visa, the 90-in-180-days stay rule, ETIAS, the Entry/Exit System, the Schengen area and the visa application, and the FDFA visa page are explicit links in sources.md, under the existing seeds ch-sem-entry and ch-sem-entry-faq and the new seed ch-eda-visa. The Canton of Zurich pages on family reunification by holders of an L permit and by recognised refugees are explicit links under the existing seed zh-family. The Ordinance on Entry and the Granting of Visas (VEV, SR 142.204) is the new legal-basis seed ch-fedlex-vev and is fetched through the Fedlex plugin like the other acts. The scan set entry selects these seeds. The draft-5 catalogue needs a new run directory; the draft-4 run is carried over with its hashes before the new pages are downloaded.",
+    "Extension of 18 September 2026 (voting rights and tax-at-source tariffs): the Federal Constitution (SR 101) and the Constitution of the Canton of Zurich (SR 131.211) are legal-basis seeds fetched through the Fedlex plugin; the Canton of Zurich page on who may vote and the ch.ch page on the right to vote are registry seeds; the Canton of Zurich tariff page and the calculation parameters of the current tax-at-source tariffs (PDF) are explicit links under the existing seed zh-tax-at-source, whose path allowlist gains the tax-at-source document folder. The tariff tables themselves stay out. The scan set voting-tax selects these seeds. The draft-6 catalogue is re-planned in place; saved pages, Fedlex documents and text records are kept.",
+    "Extension of 18 September 2026 (expat life): the Code of Obligations (SR 220) is a legal-basis seed fetched through the Fedlex plugin; ch.ch's pages on renting, marriage and the third pillar, the Federal Office for Housing's page on the reference interest rate, the Canton of Zurich's tenancy forms and unemployment pages, the City of Zurich's marriage and departure pages, the FSIO's pillar 3a FAQ, SECO's unemployment FAQ and the FOPH's accident-insurance pages are registry seeds, with their subpages as explicit links in sources.md. The family allowance, parental leave and customs sources of the earlier extensions join the scan set expat-life unchanged. The draft-7 catalogue is re-planned in place; saved pages, Fedlex documents and text records are kept.",
+    "Extension of 19 September 2026 (English versions): the English versions of the SEM, FOPH, FOCBS, SECO and SERAFE pages the release cites, and the German version of the SEM residence overview whose English version it cites, are explicit links in their own section of sources.md, without registry seeds. They were found through the German pages' declared language alternates and checked live; a fact cites the English passage next to the German one only after the two were compared. The SEM residence FAQ has no English version."
+  ],
+  "sources": [
+    {
+      "definition": {
+        "source_id": "ch-bag-health-insurance",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherungspflicht-fuer-in-der-schweiz-wohnhafte-versicherte",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-versicherungspflicht-fuer-in-der-schweiz-wohnhafte-versicherte"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Health insurance for persons resident in Switzerland",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherungspflicht-fuer-in-der-schweiz-wohnhafte-versicherte",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-moving",
+        "start_url": "https://www.bazg.admin.ch/de/vorgehen-umzug-in-die-schweiz",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/vorgehen-umzug-in-die-schweiz"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Moving to Switzerland: customs procedure",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.bazg.admin.ch/de/vorgehen-umzug-in-die-schweiz",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bsv-ahv",
+        "start_url": "https://www.bsv.admin.ch/de/ahv-uebersicht",
+        "allowed_hosts": [
+          "www.bsv.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/ahv-uebersicht"
+        ],
+        "canonical_authority": "Federal Social Insurance Office (FSIO/BSV)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Old-age and survivors insurance (AHV) overview",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.bsv.admin.ch/de/ahv-uebersicht",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "German official AHV overview from BSV selected for first-pillar source planning. Replaces the English ch.ch first-pillar seed; no German ch.ch counterpart was verified. Crawler access and content language remain build-time checks."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bwo-housing",
+        "start_url": "https://www.bwo.admin.ch/de/broschuere-wohnen-in-der-schweiz",
+        "allowed_hosts": [
+          "www.bwo.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/broschuere-wohnen-in-der-schweiz"
+        ],
+        "canonical_authority": "Federal Office for Housing (FOH/BWO)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Housing in Switzerland - official brochure index",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P2",
+      "topic_hints": [
+        "housing"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.bwo.admin.ch/de/broschuere-wohnen-in-der-schweiz",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "HTML index of multilingual housing brochures. PDF content needs a later adapter; discover each actual language version independently."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-family",
+        "start_url": "https://www.ch.ch/de/auslander-in-der-schweiz/einreise-in-die-schweiz/familiennachzug/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/auslander-in-der-schweiz/einreise-in-die-schweiz/familiennachzug/"
+        ],
+        "canonical_authority": "ch.ch - Swiss authorities' information portal",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Family reunification",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "family-reunification"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ch.ch/de/auslander-in-der-schweiz/einreise-in-die-schweiz/aufenthaltsbewilligung/",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-permits",
+        "start_url": "https://www.ch.ch/de/auslander-in-der-schweiz/einreise-in-die-schweiz/aufenthaltsbewilligung/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/auslander-in-der-schweiz/einreise-in-die-schweiz/aufenthaltsbewilligung/"
+        ],
+        "canonical_authority": "ch.ch - Swiss authorities' information portal",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Residence permits: application and renewal",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "residence-permits",
+        "settlement-renewal"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ch.ch/de/auslander-in-der-schweiz/in-der-schweiz-arbeiten/",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-work",
+        "start_url": "https://www.ch.ch/de/auslander-in-der-schweiz/in-der-schweiz-arbeiten/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/auslander-in-der-schweiz/in-der-schweiz-arbeiten/"
+        ],
+        "canonical_authority": "ch.ch - Swiss authorities' information portal",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Working in Switzerland as a foreign national",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "work-eu-efta",
+        "work-third-country"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.ch.ch/de/auslander-in-der-schweiz/in-der-schweiz-arbeiten/",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-estv-tax-at-source",
+        "start_url": "https://www.estv.admin.ch/de/quellensteuer",
+        "allowed_hosts": [
+          "www.estv.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/quellensteuer"
+        ],
+        "canonical_authority": "Federal Tax Administration (FTA/ESTV)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Swiss tax at source",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P2",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.estv.admin.ch/de/quellensteuer",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-aig",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/2007/758/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Foreign Nationals and Integration Act (AIG/LEI), SR 142.20",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-fza",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/2002/243/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/2002/243/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Agreement on the Free Movement of Persons, SR 0.142.112.681",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/2002/243/de",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-vzae",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/2007/759/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/2007/759/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Admission, Residence and Employment Ordinance (VZAE/OASA), SR 142.201",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/2007/759/de",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-authorities",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+          "/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Cantonal immigration and employment authorities",
+      "authority_level": "federal",
+      "source_kind": "authority_directory",
+      "priority": "P0",
+      "topic_hints": [
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Authority discovery reference for all 26 cantons. Includes municipal offices and Liechtenstein; those are not implicitly added to crawl scope."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-biometric-documents",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/biometr_auslaenderausweis.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/themen/aufenthalt/biometr_auslaenderausweis.html",
+          "/sem/de/home/themen/aufenthalt/biometr_auslaenderausweis/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Biometric residence permits",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/biometr_auslaenderausweis.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-directives",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/publiservice/weisungen-kreisschreiben/auslaenderbereich.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/publiservice/weisungen-kreisschreiben/auslaenderbereich.html",
+          "/sem/de/home/publiservice/weisungen-kreisschreiben/auslaenderbereich/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "SEM directives - foreign nationals",
+      "authority_level": "federal",
+      "source_kind": "official_directives",
+      "priority": "P1",
+      "topic_hints": [
+        "legal-bases",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/publiservice/weisungen-kreisschreiben/auslaenderbereich.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "HTML index is crawlable; linked PDF directives need a later PDF acquisition/normalization step and separately reviewed paths."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-entry",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/themen/einreise.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/themen/einreise.html",
+          "/sem/de/home/themen/einreise/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Entry and visa information",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "entry-visas"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/themen/einreise.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-entry-faq",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/themen/einreise/faq.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/themen/einreise/faq.html",
+          "/sem/de/home/themen/einreise/faq/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Entry FAQ",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "entry-visas"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/themen/einreise/faq.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-eu-efta",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/themen/aufenthalt/eu_efta.html",
+          "/sem/de/home/themen/aufenthalt/eu_efta/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Residence permits for EU/EFTA nationals",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "residence-permits",
+        "work-eu-efta",
+        "settlement-renewal"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-free-movement-faq",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html",
+          "/sem/de/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Free movement of persons FAQ",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-eu-efta",
+        "family-reunification",
+        "study-no-employment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-residence-de",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/themen/aufenthalt.html",
+          "/sem/de/home/themen/aufenthalt/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "SEM residence overview (de)",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "residence-permits",
+        "settlement-renewal"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "German entry point preferred for a single-version MVP selection. Capture independently; candidate page grouping does not prove equivalent sections, synchronized revisions or concept identity."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-residence-en",
+        "start_url": "https://www.sem.admin.ch/sem/en/home/themen/aufenthalt.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/en/home/themen/aufenthalt.html",
+          "/sem/en/home/themen/aufenthalt/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "en"
+      },
+      "title": "SEM residence overview (en)",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "residence-permits",
+        "settlement-renewal"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/en/home/themen/aufenthalt.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Official language version retained in multilingual, federal and all scan sets. Capture independently; candidate page grouping does not prove equivalent sections, synchronized revisions or concept identity."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-residence-fr",
+        "start_url": "https://www.sem.admin.ch/sem/fr/home/themen/aufenthalt.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/fr/home/themen/aufenthalt.html",
+          "/sem/fr/home/themen/aufenthalt/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "fr"
+      },
+      "title": "SEM residence overview (fr)",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "residence-permits",
+        "settlement-renewal"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/fr/home/themen/aufenthalt.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Official language version retained in multilingual, federal and all scan sets. Capture independently; candidate page grouping does not prove equivalent sections, synchronized revisions or concept identity."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-residence-it",
+        "start_url": "https://www.sem.admin.ch/sem/it/home/themen/aufenthalt.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/it/home/themen/aufenthalt.html",
+          "/sem/it/home/themen/aufenthalt/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "it"
+      },
+      "title": "SEM residence overview (it)",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "residence-permits",
+        "settlement-renewal"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/it/home/themen/aufenthalt.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Official language version retained in multilingual, federal and all scan sets. Capture independently; candidate page grouping does not prove equivalent sections, synchronized revisions or concept identity."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-third-country",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/themen/aufenthalt/nicht_eu_efta.html",
+          "/sem/de/home/themen/aufenthalt/nicht_eu_efta/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Residence permits for non-EU/EFTA nationals",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "residence-permits",
+        "work-third-country",
+        "settlement-renewal"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-work-third-country",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige.html",
+          "/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Admission to work for non-EU/EFTA nationals",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-third-country"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-biometric-documents",
+        "start_url": "https://www.zh.ch/de/migration-integration/aufenthalt/biometrische-auslaenderausweise.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/migration-integration/aufenthalt/biometrische-auslaenderausweise.html",
+          "/de/migration-integration/aufenthalt/biometrische-auslaenderausweise/"
+        ],
+        "canonical_authority": "Canton Zurich - Migration Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - Biometric residence documents",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/migration-integration/aufenthalt.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-eu-efta",
+        "start_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige.html",
+          "/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige/"
+        ],
+        "canonical_authority": "Canton Zurich - Migration Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - Residence for EU/EFTA nationals",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-eu-efta",
+        "residence-permits",
+        "study-no-employment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/migration-integration/aufenthalt.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-family",
+        "start_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen.html",
+          "/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/"
+        ],
+        "canonical_authority": "Canton Zurich - Migration Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - Family reunification for third-country nationals",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "family-reunification"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/migration-integration/aufenthalt.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-integration",
+        "start_url": "https://www.zh.ch/de/migration-integration/integration.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/migration-integration/integration.html",
+          "/de/migration-integration/integration/"
+        ],
+        "canonical_authority": "Canton Zurich",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - integration",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "integration-language"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/migration-integration/integration.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-no-employment",
+        "start_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige.html",
+          "/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige/"
+        ],
+        "canonical_authority": "Canton Zurich - Migration Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - Residence without employment for third-country nationals",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "study-no-employment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/migration-integration/aufenthalt.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-overview",
+        "start_url": "https://www.zh.ch/de/migration-integration/aufenthalt.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/migration-integration/aufenthalt.html",
+          "/de/migration-integration/aufenthalt/"
+        ],
+        "canonical_authority": "Canton Zurich - Migration Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - Residence overview",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "residence-permits",
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/migration-integration/aufenthalt.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-settlement",
+        "start_url": "https://www.zh.ch/de/migration-integration/niederlassungsbewilligung.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/migration-integration/niederlassungsbewilligung.html",
+          "/de/migration-integration/niederlassungsbewilligung/"
+        ],
+        "canonical_authority": "Canton Zurich - Migration Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - settlement permit",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "settlement-renewal",
+        "integration-language"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.zh.ch/de/migration-integration/niederlassungsbewilligung.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-welcome-residence",
+        "start_url": "https://www.zh.ch/de/migration-integration/willkommen/deutsch/aufenthalt-und-familiennachzug.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/migration-integration/willkommen/deutsch/aufenthalt-und-familiennachzug.html",
+          "/de/migration-integration/willkommen/deutsch/aufenthalt-und-familiennachzug/"
+        ],
+        "canonical_authority": "Canton Zurich",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - residence and family reunification for newcomers",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "family-reunification",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.zh.ch/de/migration-integration/willkommen/deutsch/aufenthalt-und-familiennachzug.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-work-third-country",
+        "start_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-mit-erwerbstaetigkeit-fuer-drittstaatsangehoerige.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/migration-integration/aufenthalt/aufenthalt-mit-erwerbstaetigkeit-fuer-drittstaatsangehoerige.html",
+          "/de/migration-integration/aufenthalt/aufenthalt-mit-erwerbstaetigkeit-fuer-drittstaatsangehoerige/"
+        ],
+        "canonical_authority": "Canton Zurich - Migration Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - Residence with employment for third-country nationals",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-third-country"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/migration-integration/aufenthalt.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-arrival",
+        "start_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/zuzug.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/lebenslagen/einwohner-services/umziehen-melden/zuzug.html",
+          "/de/lebenslagen/einwohner-services/umziehen-melden/zuzug/"
+        ],
+        "canonical_authority": "City of Zurich - Population Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - registering an arrival",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/zuzug.html",
+        "located_on": "2026-09-06"
+      },
+      "scan_status": "ready",
+      "notes": "Municipal procedure for the City of Zurich only; do not generalize to every municipality in Canton Zurich.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-notification-procedure",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren.html",
+          "/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Notification procedure for short-term employment (Meldeverfahren)",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-eu-efta",
+        "work-third-country"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html",
+        "located_on": "2026-09-13"
+      },
+      "scan_status": "ready",
+      "notes": "Added on 2026-09-13 for the four notification concepts the KB1 migration had dropped (TODO.md, Missing page): EU/EFTA employment of up to three months, who notifies, posted service providers, UK nationals. The page was saved on 10 and 11 September 2026 in the predecessor's runs and imported from there; no new request was made."
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-citizenship",
+        "start_url": "https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/de/home/integration-einbuergerung/schweizer-werden.html",
+          "/sem/de/home/integration-einbuergerung/schweizer-werden/"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Acquiring Swiss citizenship (ordinary and facilitated naturalisation)",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "naturalisation"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden.html",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "Entry page of the SEM citizenship section; the ordinary, spouse, third-generation and FAQ subpages are listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-bueg",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/2016/404/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/2016/404/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Swiss Citizenship Act (BueG/LN), SR 141.0",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "naturalisation",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/2016/404/de",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-buev",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/2016/405/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/2016/405/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Swiss Citizenship Ordinance (BueV/OLN), SR 141.01",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "naturalisation",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/2016/405/de",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-naturalisation",
+        "start_url": "https://www.ch.ch/de/auslander-in-der-schweiz/einburgerung/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/auslander-in-der-schweiz/einburgerung/"
+        ],
+        "canonical_authority": "ch.ch - Swiss authorities' information portal",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Application for ordinary or facilitated naturalisation",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "naturalisation"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.ch.ch/de/auslander-in-der-schweiz/einburgerung/",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "www.ch.ch answers any client whose User-Agent does not begin like a browser's with an 'Error Page (404)' served as HTTP 200; the crawler's browser-compatible User-Agent recovers the page and the gap report classifies the soft error page."
+    },
+    {
+      "definition": {
+        "source_id": "zh-naturalisation",
+        "start_url": "https://www.zh.ch/de/migration-integration/einbuergerung.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/migration-integration/einbuergerung.html",
+          "/de/migration-integration/einbuergerung/"
+        ],
+        "canonical_authority": "Canton Zurich - Office for Municipalities (Gemeindeamt), Naturalisation Division",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - naturalisation",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "naturalisation"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.zh.ch/de/migration-integration/einbuergerung.html",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "Entry page of the cantonal naturalisation section; the ordinary, application and facilitated subpages are listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-naturalisation",
+        "start_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/lebenslagen/einwohner-services/einbuergerung.html",
+          "/de/lebenslagen/einwohner-services/einbuergerung/"
+        ],
+        "canonical_authority": "City of Zurich - Population Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - naturalisation and city citizenship",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "naturalisation"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung.html",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "Municipal procedure for the City of Zurich only; do not generalize to every municipality in Canton Zurich. The ordinary, facilitated, city-citizenship, language and civic-knowledge subpages are listed in sources.md.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "ch-zas-contribution-refund",
+        "start_url": "https://www.zas.admin.ch/de/rueckverguetungen",
+        "allowed_hosts": [
+          "www.zas.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/"
+        ],
+        "canonical_authority": "Central Compensation Office (CCO/ZAS) - Swiss Compensation Office",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Refund of AHV contributions on leaving Switzerland",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.zas.admin.ch/de/rueckverguetungen",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "Federal office that pays the refunds; the leaving-Switzerland, agreement-state, pension-abroad and bilateral-agreement subpages are listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-rv-ahv",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/1996/688_688_688/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/1996/688_688_688/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Ordinance on the refund of AHV contributions paid by foreign nationals (RV-AHV), SR 831.131.12",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/1996/688_688_688/de",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bsv-bvg-departure",
+        "start_url": "https://faq.bsv.admin.ch/de/berufliche-vorsorge-und-3-saeule/kann-ich-mein-bvg-altersguthaben-bar-beziehen-wenn-ich-die-schweiz",
+        "allowed_hosts": [
+          "faq.bsv.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/berufliche-vorsorge-und-3-saeule/kann-ich-mein-bvg-altersguthaben-bar-beziehen-wenn-ich-die-schweiz"
+        ],
+        "canonical_authority": "Federal Social Insurance Office (FSIO/BSV)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Cash payment of occupational pension assets on leaving Switzerland (BSV FAQ)",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://faq.bsv.admin.ch/de/berufliche-vorsorge-und-3-saeule/kann-ich-mein-bvg-altersguthaben-bar-beziehen-wenn-ich-die-schweiz",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "One FAQ answer on the BSV FAQ host; the EU/EFTA restriction on the mandatory part since 1 June 2007 is stated here. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-fzg",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/1994/2386_2386_2386/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/1994/2386_2386_2386/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Vested Benefits Act (FZG/LFLP), SR 831.42",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/1994/2386_2386_2386/de",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bsv-family-allowances",
+        "start_url": "https://www.bsv.admin.ch/de/familienzulagen-leistungen-und-voraussetzungen",
+        "allowed_hosts": [
+          "www.bsv.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/familienzulagen-leistungen-und-voraussetzungen",
+          "/de/familienzulagen",
+          "/dam/de/sd-web/"
+        ],
+        "canonical_authority": "Federal Social Insurance Office (FSIO/BSV)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Family allowances: benefits and conditions",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.bsv.admin.ch/de/familienzulagen-leistungen-und-voraussetzungen",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "Federal minimum child and training allowances; the overview page and the per-canton rates PDF are listed in sources.md (PDF paragraphs are extracted, tables are read as text). Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bsv-parental-leave",
+        "start_url": "https://www.bsv.admin.ch/de/eo-elternschaft",
+        "allowed_hosts": [
+          "www.bsv.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/eo-elternschaft",
+          "/de/eo-bei-mutterschaft",
+          "/de/eo-bei-vaterschaft",
+          "/de/eo-bei-adoption"
+        ],
+        "canonical_authority": "Federal Social Insurance Office (FSIO/BSV)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Leave and income compensation for maternity, the other parent and adoption",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.bsv.admin.ch/de/eo-elternschaft",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "The maternity, other-parent and adoption subpages are listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-sva-family-allowances",
+        "start_url": "https://svazurich.ch/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/sinn-und-zweck.html",
+        "allowed_hosts": [
+          "svazurich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/"
+        ],
+        "canonical_authority": "SVA Zurich - cantonal social insurance office (Sozialversicherungsanstalt des Kantons Zuerich)",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - family allowances (cantonal amounts)",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://svazurich.ch/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/sinn-und-zweck.html",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "Cantonal compensation office; the employee and non-employed subpages are listed in sources.md. robots.txt allows the path for the crawler's token. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-dbg",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/1991/1184_1184_1184/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Federal Direct Tax Act (DBG/LIFD), SR 642.11",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-qstv",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/2018/274/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/2018/274/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Tax at Source Ordinance of the FDF (QStV/OIS), SR 642.118.2",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/2018/274/de",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence. Article 9 carries the gross-income threshold of the mandatory subsequent ordinary assessment."
+    },
+    {
+      "definition": {
+        "source_id": "zh-tax-at-source",
+        "start_url": "https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/steuern-finanzen/steuern/quellensteuer.html",
+          "/de/steuern-finanzen/steuern/quellensteuer/",
+          "/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/quellensteuer/"
+        ],
+        "canonical_authority": "Canton Zurich - Cantonal Tax Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - tax at source",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer.html",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "Entry page; the liable-persons, subsequent-ordinary-assessment and tariff subpages and the calculation parameters of the current tariffs (PDF) are listed in sources.md. The tariff tables and the tariff calculator are out of scope. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-tax-at-source-directive",
+        "start_url": "https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-87-3.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-87-3.html",
+          "/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-87-3/"
+        ],
+        "canonical_authority": "Canton Zurich - Cantonal Tax Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - directive on the taxation at source of employees (ZStB 87.3)",
+      "authority_level": "cantonal",
+      "source_kind": "official_directives",
+      "priority": "P0",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-87-3.html",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "Cantonal tax book entry of 25 October 2023, valid from 1 January 2024; states the CHF 120,000 threshold and the double-earner rule. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-vzv",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/1976/2423_2423_2423/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/1976/2423_2423_2423/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Ordinance on the Admission of Persons and Vehicles to Road Traffic (VZV/OAC), SR 741.51",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "driving-licence",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/1976/2423_2423_2423/de",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence. Article 42 governs foreign driving licences after taking up residence."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-driving-licence-exchange",
+        "start_url": "https://www.ch.ch/de/ausweise-und-dokumente/fuhrerausweis/fuhrerausweis-umtauschen/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/ausweise-und-dokumente/fuhrerausweis/fuhrerausweis-umtauschen/"
+        ],
+        "canonical_authority": "ch.ch - Swiss authorities' information portal",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Exchanging a driving licence in Switzerland",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "driving-licence"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.ch.ch/de/ausweise-und-dokumente/fuhrerausweis/fuhrerausweis-umtauschen/",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "www.ch.ch answers any client whose User-Agent does not begin like a browser's with an 'Error Page (404)' served as HTTP 200; the crawler's browser-compatible User-Agent recovers the page and the gap report classifies the soft error page. Covers the exchange of foreign licences after taking up residence alongside loss and theft; only the foreign-licence statements are in scope."
+    },
+    {
+      "definition": {
+        "source_id": "zh-foreign-driving-licence",
+        "start_url": "https://www.zh.ch/de/mobilitaet/fuehrerausweis-fahren-lernen/auslaendischer-fuehrerausweis.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/mobilitaet/fuehrerausweis-fahren-lernen/auslaendischer-fuehrerausweis.html",
+          "/de/mobilitaet/fuehrerausweis-fahren-lernen/auslaendischer-fuehrerausweis/"
+        ],
+        "canonical_authority": "Canton Zurich - Road Traffic Office (Strassenverkehrsamt)",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - exchanging a foreign driving licence",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "driving-licence"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.zh.ch/de/mobilitaet/fuehrerausweis-fahren-lernen/auslaendischer-fuehrerausweis.html",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "States the 12-month exchange period, the states whose licences are exchanged without a control drive and the control drive for all others; the procedure and control-drive subpages are listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-premium-reduction",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienverbilligung",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-praemienverbilligung"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Health insurance: premium reduction",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienverbilligung",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "Federal frame of the cantonal premium reduction (the canton decides who and how much; minimum reductions for children and young adults in training). Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-kvg",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/1995/1328_1328_1328/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Health Insurance Act (KVG/LAMal), SR 832.10",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/de",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence."
+    },
+    {
+      "definition": {
+        "source_id": "zh-premium-reduction",
+        "start_url": "https://www.zh.ch/de/gesundheit/praemienverbilligung_krankenversicherung.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/gesundheit/praemienverbilligung_krankenversicherung.html",
+          "/de/gesundheit/praemienverbilligung_krankenversicherung/"
+        ],
+        "canonical_authority": "Canton Zurich - Health Directorate",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - premium reduction for health insurance",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.zh.ch/de/gesundheit/praemienverbilligung_krankenversicherung.html",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "Names the SVA Zurich as the implementing office and the application requirement. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-sva-health-insurance",
+        "start_url": "https://svazurich.ch/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/krankenversicherungspflicht0/krankenversicherungspflicht-wer-hat-anspruch.html",
+        "allowed_hosts": [
+          "svazurich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/"
+        ],
+        "canonical_authority": "SVA Zurich - cantonal social insurance office (Sozialversicherungsanstalt des Kantons Zuerich)",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - exemption from the health insurance duty and premium reduction (SVA Zurich)",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://svazurich.ch/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/krankenversicherungspflicht0/krankenversicherungspflicht-wer-hat-anspruch.html",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "Cantonal office deciding exemption requests since 1 October 2023 and running the premium reduction; the exemption-request and premium-reduction-entitlement subpages are listed in sources.md. robots.txt allows the path for the crawler's token. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-moving",
+        "start_url": "https://www.ch.ch/de/auslander-in-der-schweiz/in-der-schweiz-leben/umzug-in-die-schweiz/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/auslander-in-der-schweiz/in-der-schweiz-leben/umzug-in-die-schweiz/"
+        ],
+        "canonical_authority": "ch.ch - Swiss authorities' information portal",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Moving to Switzerland: the official checklist",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P2",
+      "topic_hints": [
+        "registration-moving",
+        "health-insurance",
+        "driving-licence"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.ch.ch/de/auslander-in-der-schweiz/in-der-schweiz-leben/umzug-in-die-schweiz/",
+        "located_on": "2026-09-15"
+      },
+      "scan_status": "ready",
+      "notes": "www.ch.ch answers any client whose User-Agent does not begin like a browser's with an 'Error Page (404)' served as HTTP 200; the crawler's browser-compatible User-Agent recovers the page and the gap report classifies the soft error page."
+    },
+    {
+      "definition": {
+        "source_id": "zh-migrationsamt-office",
+        "start_url": "https://www.zh.ch/de/sicherheitsdirektion/migrationsamt.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/sicherheitsdirektion/migrationsamt.html",
+          "/de/sicherheitsdirektion/migrationsamt/"
+        ],
+        "canonical_authority": "Canton Zurich - Migration Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - Migration Office: contact, counter and telephone hours",
+      "authority_level": "cantonal",
+      "source_kind": "authority_directory",
+      "priority": "P1",
+      "topic_hints": [
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/sicherheitsdirektion/migrationsamt.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Office page with the contact block (address, counter hours, telephone and hours, no e-mail); the organisation subpage (Contact Center) is listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-gemeindeamt-naturalisation-office",
+        "start_url": "https://www.zh.ch/de/direktion-der-justiz-und-des-innern/gemeindeamt/abteilung-einbuergerungen.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/direktion-der-justiz-und-des-innern/gemeindeamt/abteilung-einbuergerungen.html"
+        ],
+        "canonical_authority": "Canton Zurich - Office for Municipalities, Naturalisation Division",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - Naturalisation Division of the Gemeindeamt: contact and telephone hours",
+      "authority_level": "cantonal",
+      "source_kind": "authority_directory",
+      "priority": "P1",
+      "topic_hints": [
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/direktion-der-justiz-und-des-innern/gemeindeamt/abteilung-einbuergerungen.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Division page with the contact block (address, postal address, telephone, telephone hours, e-mail); the staff table names individual employees and is not curated. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-strassenverkehrsamt-office",
+        "start_url": "https://www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/sicherheitsdirektion/strassenverkehrsamt.html",
+          "/de/sicherheitsdirektion/strassenverkehrsamt/"
+        ],
+        "canonical_authority": "Canton Zurich - Road Traffic Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - Road Traffic Office: contact, locations and opening hours",
+      "authority_level": "cantonal",
+      "source_kind": "authority_directory",
+      "priority": "P1",
+      "topic_hints": [
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Office page with the contact block; the locations and opening-hours subpage (every location with counter, theory-test and telephone hours and the special opening days) is listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-steueramt-office",
+        "start_url": "https://www.zh.ch/de/finanzdirektion/steueramt.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/finanzdirektion/steueramt.html"
+        ],
+        "canonical_authority": "Canton Zurich - Cantonal Tax Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - Cantonal Tax Office: contact and office hours",
+      "authority_level": "cantonal",
+      "source_kind": "authority_directory",
+      "priority": "P1",
+      "topic_hints": [
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/finanzdirektion/steueramt.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Office page with the contact block; the tax-at-source contact is on the zh-tax-at-source page. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-awa-office",
+        "start_url": "https://www.zh.ch/de/volkswirtschaftsdirektion/amt-fuer-wirtschaft.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/volkswirtschaftsdirektion/amt-fuer-wirtschaft.html"
+        ],
+        "canonical_authority": "Canton Zurich - Office for the Economy",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - Office for the Economy (Amt für Wirtschaft): contact",
+      "authority_level": "cantonal",
+      "source_kind": "authority_directory",
+      "priority": "P1",
+      "topic_hints": [
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/volkswirtschaftsdirektion/amt-fuer-wirtschaft.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Office page with the contact block (address, telephone and hours, e-mail). Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-work-permits-contact",
+        "start_url": "https://www.zh.ch/de/wirtschaft-arbeit/erwerbstaetigkeit-auslaender.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/wirtschaft-arbeit/erwerbstaetigkeit-auslaender.html"
+        ],
+        "canonical_authority": "Canton Zurich - Office for the Economy",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - employment of foreign nationals: work-permit and notification-procedure contacts",
+      "authority_level": "cantonal",
+      "source_kind": "authority_directory",
+      "priority": "P1",
+      "topic_hints": [
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/wirtschaft-arbeit/erwerbstaetigkeit-auslaender.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Topic page reached from https://www.zh.ch/arbeitsbewilligungen; its contact block names the work-permit desk, the notification-procedure hotline and the Migration Office. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-sva-contact",
+        "start_url": "https://svazurich.ch/ueber-uns/sva-zuerich/kontakt.html",
+        "allowed_hosts": [
+          "svazurich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/ueber-uns/sva-zuerich/kontakt.html",
+          "/ueber-uns/sva-zuerich/kontakt/"
+        ],
+        "canonical_authority": "SVA Zurich - cantonal social insurance office (Sozialversicherungsanstalt des Kantons Zuerich)",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "SVA Zurich: contact, customer service on site, telephone numbers and holiday opening hours",
+      "authority_level": "cantonal",
+      "source_kind": "authority_directory",
+      "priority": "P1",
+      "topic_hints": [
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://svazurich.ch/ueber-uns/sva-zuerich/kontakt.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Contact page; the on-site customer service (address and directions), telephone and holiday opening-hours subpages are listed in sources.md. robots.txt allows the path for the crawler's token. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-registration-office",
+        "start_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/online-schalter/personenmeldeamt-terminpflicht.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/lebenslagen/einwohner-services/online-schalter/personenmeldeamt-terminpflicht.html"
+        ],
+        "canonical_authority": "City of Zurich - Population Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - Population Office: appointments, services without appointment, contact and opening hours",
+      "authority_level": "municipal",
+      "source_kind": "authority_directory",
+      "priority": "P1",
+      "topic_hints": [
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/online-schalter/personenmeldeamt-terminpflicht.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Municipal office of the City of Zurich only. The address, telephone and timetable link are attributes of the page's contact component, which the extractor reads since 17 September 2026. Seed located on an official site; crawler accessibility and content language must be checked at build time.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-first-steps",
+        "start_url": "https://www.stadt-zuerich.ch/de/lebenslagen/neu-in-zuerich/erste-schritte.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/lebenslagen/neu-in-zuerich/"
+        ],
+        "canonical_authority": "City of Zurich",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - first steps after moving in",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.stadt-zuerich.ch/de/lebenslagen/neu-in-zuerich/erste-schritte.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Newcomer checklist of the City of Zurich: registration, utilities, vehicles, health insurance, service booklet, dogs, self-employment, school. Seed located on an official site; crawler accessibility and content language must be checked at build time.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-waste",
+        "start_url": "https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/umwelt-und-energie/entsorgung.html",
+          "/de/umwelt-und-energie/entsorgung/"
+        ],
+        "canonical_authority": "City of Zurich - Entsorgung + Recycling Zürich (ERZ)",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - waste disposal and recycling",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Waste disposal of the City of Zurich: Züri-Sack, what goes where, collection points and times, the disposal calendar, fees, and the detail pages of each collection; the subpages are listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-parking-permits",
+        "start_url": "https://www.stadt-zuerich.ch/de/mobilitaet/parkieren/parkbewilligungen.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/mobilitaet/parkieren/parkbewilligungen.html",
+          "/de/mobilitaet/parkieren/parkbewilligungen/"
+        ],
+        "canonical_authority": "City of Zurich - Dienstabteilung Verkehr",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - parking permits and the blue zone",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.stadt-zuerich.ch/de/mobilitaet/parkieren/parkbewilligungen.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Parking permits of the City of Zurich: resident parking card, parking disc in the blue zone, day permits; the subpages are listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-dog-control",
+        "start_url": "https://www.stadt-zuerich.ch/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle.html",
+          "/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle/"
+        ],
+        "canonical_authority": "City of Zurich - Stadtpolizei, Hundekontrolle",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - dog registration and dog tax",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.stadt-zuerich.ch/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Dog registration, dog tax and contact of the City of Zurich's dog control; the registration subpage is listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "zh-dogs",
+        "start_url": "https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html"
+        ],
+        "canonical_authority": "Canton Zurich - Veterinary Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - keeping a dog (cantonal rules)",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Cantonal rules for dog keepers: registration, microchip, breeds subject to a permit, courses. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-school",
+        "start_url": "https://www.stadt-zuerich.ch/de/bildung/volksschule/schullaufbahn/einschulung.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/bildung/volksschule/"
+        ],
+        "canonical_authority": "City of Zurich - Schulamt",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - enrolment in public school",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.stadt-zuerich.ch/de/bildung/volksschule/schullaufbahn/einschulung.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Public school of the City of Zurich: school entry, kindergarten, school ambassadors for other languages, school holidays; the pages are listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-taxes",
+        "start_url": "https://www.stadt-zuerich.ch/de/lebenslagen/steuern/natuerliche-personen/steuererklaerung.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/lebenslagen/steuern/"
+        ],
+        "canonical_authority": "City of Zurich - Steueramt",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - tax return of individuals and tax office contact",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.stadt-zuerich.ch/de/lebenslagen/steuern/natuerliche-personen/steuererklaerung.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Ordinary taxation of individuals in the City of Zurich: the tax return and the tax office's contacts; the contact page is listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "zh-vehicles",
+        "start_url": "https://www.zh.ch/de/mobilitaet/fahrzeuge-kontrollschilder/umzug-melden.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/mobilitaet/fahrzeuge-kontrollschilder/"
+        ],
+        "canonical_authority": "Canton Zurich - Road Traffic Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - vehicles after a move and vehicle import",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "driving-licence",
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/mobilitaet/fahrzeuge-kontrollschilder/umzug-melden.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Reporting a move with a vehicle and importing a vehicle into the Canton of Zurich; the import page is listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-serafe-household-fee",
+        "start_url": "https://www.serafe.ch/de/abgabe/abgabeuebersicht/",
+        "allowed_hosts": [
+          "www.serafe.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/abgabe/",
+          "/de/abgabebefreiung/"
+        ],
+        "canonical_authority": "SERAFE AG - collection agency for the radio and television fee, appointed by the Confederation",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Radio and television fee for households",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance",
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.serafe.ch/de/abgabe/abgabeuebersicht/",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "The household fee under the Federal Act on Radio and Television, collected by SERAFE AG on the Confederation's behalf: amount and exemptions; the exemption page is listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-emergency",
+        "start_url": "https://www.stadt-zuerich.ch/de/stadtleben/notfall/notfaelle/medizinischer-notfall.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stadtleben/notfall/"
+        ],
+        "canonical_authority": "City of Zurich - Schutz & Rettung Zürich",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - what to do in a medical emergency",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.stadt-zuerich.ch/de/stadtleben/notfall/notfaelle/medizinischer-notfall.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Emergency numbers and what to do in a medical emergency. Seed located on an official site; crawler accessibility and content language must be checked at build time.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "ch-eda-visa",
+        "start_url": "https://www.eda.admin.ch/de/visabestimmungen-fuer-die-einreise-in-die-schweiz",
+        "allowed_hosts": [
+          "www.eda.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/visabestimmungen-fuer-die-einreise-in-die-schweiz"
+        ],
+        "canonical_authority": "Federal Department of Foreign Affairs (FDFA)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "FDFA - visa requirements for entry into Switzerland",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "entry-visas"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.eda.admin.ch/eda/de/home/einreise-und-aufenthaltinderschweiz/visa.html",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "ready",
+      "notes": "Schengen visa (type C) and national visa (type D), where and when to apply, processing time. The former address /eda/de/home/einreise-und-aufenthaltinderschweiz/visa.html redirects here. On 17 September 2026 the host answered 403 to a browser User-Agent and 200 to the crawler's own. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-vev",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/2018/493/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/2018/493/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Ordinance on Entry and the Granting of Visas (VEV/OEV), SR 142.204",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "entry-visas",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/2018/493/de",
+        "located_on": "2026-09-17"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence. Articles 3 and 4 carry the entry requirements for short and longer stays, articles 8 and 9 the visa requirement for each."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-bv",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/1999/404/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/1999/404/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Federal Constitution of the Swiss Confederation (BV/Cst.), SR 101",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "political-rights",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/1999/404/de",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence. Article 136 carries the political rights in federal matters, article 39 the cantons' power over political rights in cantonal and communal matters."
+    },
+    {
+      "definition": {
+        "source_id": "zh-fedlex-kv",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/2006/14_fga/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/2006/14_fga/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Constitution of the Canton of Zurich (KV), SR 131.211 (federally guaranteed cantonal constitution)",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "political-rights",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/2006/14_fga/de",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence. The cantonal constitution is published in the classified compilation of federal law because the Confederation guarantees it; article 22 carries the right to vote in cantonal and communal matters."
+    },
+    {
+      "definition": {
+        "source_id": "zh-voting",
+        "start_url": "https://www.zh.ch/de/politik-staat/wahlen-abstimmungen/so-stimme-ich-ab.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/politik-staat/wahlen-abstimmungen/so-stimme-ich-ab.html"
+        ],
+        "canonical_authority": "Canton Zurich - elections and votes",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - how to vote (who is entitled to vote)",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "political-rights"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.zh.ch/de/politik-staat/wahlen-abstimmungen/so-stimme-ich-ab.html",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "States who is entitled to vote in the canton and the exception for elections and votes of the Evangelical Reformed church. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-voting",
+        "start_url": "https://www.ch.ch/de/abstimmungen-und-wahlen/abstimmungen/stimm-und-wahlrecht/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/abstimmungen-und-wahlen/abstimmungen/stimm-und-wahlrecht/"
+        ],
+        "canonical_authority": "ch.ch - Swiss authorities' information portal",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "The right to vote and to elect in Switzerland",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "political-rights"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.ch.ch/de/abstimmungen-und-wahlen/abstimmungen/stimm-und-wahlrecht/",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "www.ch.ch answers any client whose User-Agent does not begin like a browser's with an 'Error Page (404)' served as HTTP 200; the crawler's browser-compatible User-Agent recovers the page and the gap report classifies the soft error page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-or",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/27/317_321_377/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/27/317_321_377/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Code of Obligations (OR/CO), SR 220",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "housing",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/27/317_321_377/de",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Stable ELI reference. Browser returned the JavaScript application shell. Use a later Fedlex document/data adapter, select the applicable version and preserve its language; do not treat shell HTML as legal evidence. The tenancy articles 253 to 273c carry the deposit, notice periods, rent increases and the challenge of the initial rent."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-housing",
+        "start_url": "https://www.ch.ch/de/wohnen/miete/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/wohnen/miete/"
+        ],
+        "canonical_authority": "ch.ch - Swiss authorities' information portal",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Renting a home: tenancy agreement, rent and defects",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "housing"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.ch.ch/de/wohnen/miete/",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "www.ch.ch answers any client whose User-Agent does not begin like a browser's with an 'Error Page (404)' served as HTTP 200; the crawler's browser-compatible User-Agent recovers the page and the gap report classifies the soft error page. The subpages are listed in sources.md."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bwo-reference-rate",
+        "start_url": "https://www.bwo.admin.ch/de/referenzzinssatz",
+        "allowed_hosts": [
+          "www.bwo.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/referenzzinssatz"
+        ],
+        "canonical_authority": "Federal Office for Housing BWO",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "The mortgage reference interest rate for rents",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "housing"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.bwo.admin.ch/de/referenzzinssatz",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-rental-forms",
+        "start_url": "https://www.zh.ch/de/direktion-der-justiz-und-des-innern/generalsekretariat/formulare-mietwesen.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/direktion-der-justiz-und-des-innern/generalsekretariat/formulare-mietwesen.html"
+        ],
+        "canonical_authority": "Canton Zurich - Directorate of Justice and Home Affairs",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - forms in tenancy matters (initial rent form)",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "housing"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.zh.ch/de/direktion-der-justiz-und-des-innern/generalsekretariat/formulare-mietwesen.html",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "States the canton-wide duty to notify the initial rent on the official form. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-marriage",
+        "start_url": "https://www.ch.ch/de/familie-und-partnerschaft/heirat--konkubinat--partenariat/heiraten/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/familie-und-partnerschaft/heirat--konkubinat--partenariat/heiraten/"
+        ],
+        "canonical_authority": "ch.ch - Swiss authorities' information portal",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Getting married in Switzerland",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "family-reunification"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.ch.ch/de/familie-und-partnerschaft/heirat--konkubinat--partenariat/heiraten/",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "www.ch.ch answers any client whose User-Agent does not begin like a browser's with an 'Error Page (404)' served as HTTP 200; the crawler's browser-compatible User-Agent recovers the page and the gap report classifies the soft error page."
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-marriage",
+        "start_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/heiraten/ehevorbereitung.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/lebenslagen/einwohner-services/heiraten/"
+        ],
+        "canonical_authority": "City of Zurich - Civil Registry Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - marriage preparation and documents",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "family-reunification"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/heiraten/ehevorbereitung.html",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "The subpages for foreign nationals and the documents are listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "ch-bsv-pillar-3a",
+        "start_url": "https://faq.bsv.admin.ch/de/3-saeule/wer-kann-eine-saeule-3a-gebundene-selbstvorsorge-einrichten",
+        "allowed_hosts": [
+          "faq.bsv.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/3-saeule/"
+        ],
+        "canonical_authority": "Federal Social Insurance Office FSIO",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "FSIO FAQ: pillar 3a",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://faq.bsv.admin.ch/de/3-saeule/wer-kann-eine-saeule-3a-gebundene-selbstvorsorge-einrichten",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "The contribution FAQ is listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-pillar-3a",
+        "start_url": "https://www.ch.ch/de/pensionierung/altersvorsorge/3-saule--private-vorsorge-/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/pensionierung/altersvorsorge/3-saule--private-vorsorge-/"
+        ],
+        "canonical_authority": "ch.ch - Swiss authorities' information portal",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "The third pillar: 3a and 3b",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.ch.ch/de/pensionierung/altersvorsorge/3-saule--private-vorsorge-/",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "www.ch.ch answers any client whose User-Agent does not begin like a browser's with an 'Error Page (404)' served as HTTP 200; the crawler's browser-compatible User-Agent recovers the page and the gap report classifies the soft error page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-unemployment",
+        "start_url": "https://www.arbeit.swiss/de/faq-zur-arbeitslosenentschaedigung",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/faq-zur-arbeitslosenentschaedigung",
+          "/de/anmeldung-und-registrierung"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Unemployment benefit: FAQ and signing on with the RAV",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.arbeit.swiss/de/faq-zur-arbeitslosenentschaedigung",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "The signing-on page is listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zh-unemployment",
+        "start_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung.html"
+        ],
+        "canonical_authority": "Canton Zurich - Office for the Economy",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich - unemployment benefit",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "tax-social-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung.html",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-accident-insurance",
+        "start_url": "https://www.bag.admin.ch/de/unfallversicherung-wer-ist-obligatorisch-versichert",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/unfallversicherung-wer-ist-obligatorisch-versichert",
+          "/de/krankenversicherung-zur-sistierung-der-unfalldeckung-berechtigte-versicherte"
+        ],
+        "canonical_authority": "Federal Office of Public Health FOPH",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Accident insurance: who is compulsorily insured",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.bag.admin.ch/de/unfallversicherung-wer-ist-obligatorisch-versichert",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "The page on suspending the accident cover of health insurance is listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+    },
+    {
+      "definition": {
+        "source_id": "zurich-city-departure",
+        "start_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/wegzug.html",
+        "allowed_hosts": [
+          "www.stadt-zuerich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/lebenslagen/einwohner-services/umziehen-melden/wegzug.html",
+          "/de/lebenslagen/steuern/natuerliche-personen/lebenssituationen/wegzug-ins-ausland.html"
+        ],
+        "canonical_authority": "City of Zurich - Population Office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "City of Zurich - leaving the city and moving abroad",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/wegzug.html",
+        "located_on": "2026-09-18"
+      },
+      "scan_status": "ready",
+      "notes": "The Tax Office's page on moving abroad is listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time.",
+      "municipality": {
+        "name": "Zurich",
+        "bfs_code": "0261"
+      }
+    }
+  ],
+  "parallel_page_groups": [
+    {
+      "group_id": "ch-sem-residence-overview",
+      "source_ids": [
+        "ch-sem-residence-de",
+        "ch-sem-residence-en",
+        "ch-sem-residence-fr",
+        "ch-sem-residence-it"
+      ],
+      "alignment_status": "NOT_EVALUATED",
+      "notes": "Official language entry points for the SEM residence overview. Candidate grouping only: later compare independently captured page versions and align supported sections and concepts. Group membership alone establishes neither content equivalence nor a shared concept, document or evidence ID."
+    }
+  ],
+  "evidence_selection_policy": {
+    "status": "PLANNED_NOT_IMPLEMENTED",
+    "eligibility": "Apply explicit scope, jurisdiction, applicability, effective date and source_languages filters before ranking evidence. Query and answer languages never imply a source-language filter.",
+    "ranking": "Prefer authoritative, current evidence that supports the requested claim. German is only a final tie-breaker among verified equivalent, equally suitable official versions.",
+    "duplicate_support": "Group verified equivalent sections of compatible source revisions when selecting evidence; translations of one source do not count as independent corroboration. Retain all source references and expose material differences or conflicts.",
+    "identity": "Reviewed concept equivalence permits shared language-neutral concept IDs and multilingual term metadata. Documents, snapshots, sections, evidence IDs, URLs, source languages and hashes remain independently identified.",
+    "answer_language": "The calling LLM chooses the answer language independently and cites the selected original evidence. Localized retrieval metadata is not factual evidence."
+  }
+}
