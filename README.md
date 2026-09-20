@@ -82,6 +82,20 @@ responsibly rather than plausibly:
 And when a question falls outside the pack, the server should say so by name
 instead of guessing. The absence of an answer is itself an answer.
 
+## Repository
+
+| Path | Contents |
+| --- | --- |
+| `config/places/` | The Swiss place register: the country, the 26 cantons and every municipality with their codes, official names and accepted aliases, embedded in every release so that a caller's place resolves to the jurisdiction a fact is published for |
+| `releases/<pack>/` | One pack: `sources.json` (the source catalogue), `curation.yaml` (the facts a curator writes), `release.json` (the built, hashed release), `readiness.json` (its attestation), `semantic-index.json`, the acceptance and regression suites with their reports, and the pack's README |
+| `scripts/test/` | The checks of the packs: suites, reports, readiness records, catalogues, and round trips against the served release |
+
+A pack is built, reviewed and served with the tools of the code repository:
+the knowledge builder and the admin console take this checkout as their
+packs directory, and the server takes a pack's `release.json`. The pack
+files are written by those tools and attested; they are never edited by hand.
+Contributor conventions are in [AGENTS.md](AGENTS.md).
+
 ## The hackathon
 
 Built for the **Swiss {ai} Weeks** hackathon in Zurich, 24 and 25 September
@@ -92,6 +106,7 @@ Built for the **Swiss {ai} Weeks** hackathon in Zurich, 24 and 25 September
 ## Status
 
 Initial setup. This describes the intended shape of the first pack; the pack
-files are not here yet. Further MVP packs would follow the same shape - a
+files are not here yet, and the repository table above names the layout
+they will take. Further MVP packs would follow the same shape - a
 municipal pack for Wallisellen, and the source catalogue for full coverage
 across all 26 cantons.

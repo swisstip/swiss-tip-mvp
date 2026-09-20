@@ -1,0 +1,12 @@
+# Packs are hashed byte for byte: the plan pins sources.json, the release pins
+# the saved responses and the text dataset, and the readiness record pins the
+# release file. Never convert their line endings: a CRLF checkout on Windows
+# would break every hash.
+releases/** -text
+# The place register is embedded in every release the same way.
+config/** -text
+# Written to a Linux host and mounted into containers: a CRLF checkout on
+# Windows would break them.
+deploy/**/*.sh text eol=lf
+deploy/**/Caddyfile text eol=lf
+docker/**/*.sh text eol=lf
