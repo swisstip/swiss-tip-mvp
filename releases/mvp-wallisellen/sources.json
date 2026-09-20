@@ -1,0 +1,353 @@
+{
+  "schema_version": "source-catalog/v1",
+  "artifact_id": "wallisellen-sources-mvp",
+  "version": "draft-1",
+  "knowledge_space_id": "hackathon",
+  "title": "Stadt Wallisellen - municipal knowledge MVP sources",
+  "status": "SOURCES_ONLY",
+  "scope": {
+    "country_code": "CH",
+    "canton_codes": [
+      "CH-ZH"
+    ],
+    "description": "Resident-facing information published by Stadt Wallisellen about the municipality, its administration, services, public life and local facilities.",
+    "exclusions": [
+      "News articles, event listings, job vacancies and other short-lived announcements.",
+      "Complete municipal legislation and downloadable files; the MVP points callers to the official collections.",
+      "Information whose authoritative publisher is another municipality, the canton or the Confederation."
+    ]
+  },
+  "planning_topics": [
+    {
+      "topic_id": "city-services",
+      "label": "City services and contact"
+    },
+    {
+      "topic_id": "registration-civil-status",
+      "label": "Registration and civil status"
+    },
+    {
+      "topic_id": "waste-environment",
+      "label": "Waste, energy and environment"
+    },
+    {
+      "topic_id": "construction-mobility",
+      "label": "Construction, housing and mobility"
+    },
+    {
+      "topic_id": "taxes-finance",
+      "label": "Taxes and municipal finance"
+    },
+    {
+      "topic_id": "politics-administration",
+      "label": "Politics and administration"
+    },
+    {
+      "topic_id": "education",
+      "label": "Education and careers"
+    },
+    {
+      "topic_id": "family-social-health",
+      "label": "Families, social services and health"
+    },
+    {
+      "topic_id": "leisure-culture",
+      "label": "Leisure, sport and culture"
+    },
+    {
+      "topic_id": "economy-local-profile",
+      "label": "Economy, history and local profile"
+    }
+  ],
+  "language_discovery": {
+    "seed_languages_are_hints": true,
+    "method": "Inspect the saved page language and any visible language navigation. The official municipal pages selected for this MVP are published in German.",
+    "scope": "New language URLs or hosts outside the explicit allowlist require a catalogue update before acquisition.",
+    "parallel_content": "Every language version would receive its own snapshot, hashes and document identity; no translated routes are assumed.",
+    "projection_targets": [
+      "de",
+      "en"
+    ],
+    "evaluated_routes": [],
+    "preferred_seed_language": "de",
+    "selection_policy": "Use the official German page. English concept labels and fact statements are editorial projections and never replace the cited German evidence."
+  },
+  "crawl_profiles": {
+    "smoke": {
+      "max_depth": 0,
+      "max_pages": 1,
+      "max_requests": 5,
+      "max_total_bytes": 3000000,
+      "max_response_bytes": 2000000,
+      "max_duration_seconds": 60,
+      "request_timeout_seconds": 15,
+      "delay_seconds": 2,
+      "max_redirects": 2,
+      "max_links_per_page": 200,
+      "max_queued_urls": 50,
+      "max_failures": 2
+    },
+    "sample": {
+      "max_depth": 1,
+      "max_pages": 5,
+      "max_requests": 10,
+      "max_total_bytes": 10000000,
+      "max_response_bytes": 2000000,
+      "max_duration_seconds": 120,
+      "request_timeout_seconds": 15,
+      "delay_seconds": 2,
+      "max_redirects": 2,
+      "max_links_per_page": 500,
+      "max_queued_urls": 100,
+      "max_failures": 3
+    }
+  },
+  "scan_sets": {
+    "smoke": [
+      "wallisellen-services",
+      "wallisellen-residents"
+    ],
+    "resident": [
+      "wallisellen-services",
+      "wallisellen-residents",
+      "wallisellen-environment",
+      "wallisellen-construction",
+      "wallisellen-education",
+      "wallisellen-social"
+    ],
+    "civic": [
+      "wallisellen-politics",
+      "wallisellen-finance",
+      "wallisellen-profile"
+    ],
+    "all": [
+      "wallisellen-services",
+      "wallisellen-residents",
+      "wallisellen-environment",
+      "wallisellen-construction",
+      "wallisellen-finance",
+      "wallisellen-politics",
+      "wallisellen-education",
+      "wallisellen-social",
+      "wallisellen-leisure",
+      "wallisellen-profile"
+    ]
+  },
+  "build_notes": [
+    "The registry contains official municipal entry points; sources.md adds the exact stable landing pages selected for the MVP snapshot.",
+    "Ready means eligible for a bounded request, not an assertion that the live page is complete or unchanged.",
+    "The downloader snapshots only the explicitly listed URLs and does not submit forms, sign in or follow links recursively.",
+    "Dynamic news, events, jobs, individual people and commercial-directory entries are deliberately not acquired."
+  ],
+  "parallel_page_groups": [],
+  "evidence_selection_policy": {
+    "status": "PLANNED_NOT_IMPLEMENTED",
+    "eligibility": "Apply explicit scope, jurisdiction, applicability, effective date and source language filters before ranking evidence.",
+    "ranking": "Prefer the narrow official service page over a general landing page when both support the same statement.",
+    "duplicate_support": "Related navigation pages do not count as independent corroboration. Retain the exact cited page and snapshot identity.",
+    "identity": "Documents, snapshots, sections, evidence IDs, URLs, source languages and hashes remain independently identified.",
+    "answer_language": "The calling LLM chooses the answer language and cites the selected original German evidence. English retrieval metadata is not factual evidence."
+  },
+  "sources": [
+    {
+      "definition": {
+        "source_id": "wallisellen-services",
+        "start_url": "https://www.wallisellen.ch/dienstleistungen",
+        "allowed_hosts": ["www.wallisellen.ch"],
+        "allowed_path_prefixes": ["/"],
+        "canonical_authority": "Stadt Wallisellen",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Municipal services",
+      "authority_level": "municipal",
+      "municipality": {"name": "Wallisellen", "bfs_code": "0069"},
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": ["city-services"],
+      "discovery": {"method": "official_page_link", "reference_url": "https://www.wallisellen.ch/", "located_on": "2026-09-15"},
+      "scan_status": "ready",
+      "notes": "Official service directory linked from the main navigation."
+    },
+    {
+      "definition": {
+        "source_id": "wallisellen-residents",
+        "start_url": "https://www.wallisellen.ch/bevoelkerungsdienste",
+        "allowed_hosts": ["www.wallisellen.ch"],
+        "allowed_path_prefixes": ["/"],
+        "canonical_authority": "Stadt Wallisellen",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Population services",
+      "authority_level": "municipal",
+      "municipality": {"name": "Wallisellen", "bfs_code": "0069"},
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": ["registration-civil-status"],
+      "discovery": {"method": "official_page_link", "reference_url": "https://www.wallisellen.ch/", "located_on": "2026-09-15"},
+      "scan_status": "ready",
+      "notes": "Official population-services entry point linked from the main navigation."
+    },
+    {
+      "definition": {
+        "source_id": "wallisellen-environment",
+        "start_url": "https://www.wallisellen.ch/entsorgung",
+        "allowed_hosts": ["www.wallisellen.ch"],
+        "allowed_path_prefixes": ["/"],
+        "canonical_authority": "Stadt Wallisellen",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Waste disposal",
+      "authority_level": "municipal",
+      "municipality": {"name": "Wallisellen", "bfs_code": "0069"},
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": ["waste-environment"],
+      "discovery": {"method": "official_page_link", "reference_url": "https://www.wallisellen.ch/", "located_on": "2026-09-15"},
+      "scan_status": "ready",
+      "notes": "Official disposal entry point linked from the main navigation."
+    },
+    {
+      "definition": {
+        "source_id": "wallisellen-construction",
+        "start_url": "https://www.wallisellen.ch/bauenwallisellen",
+        "allowed_hosts": ["www.wallisellen.ch"],
+        "allowed_path_prefixes": ["/"],
+        "canonical_authority": "Stadt Wallisellen",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Building in Wallisellen",
+      "authority_level": "municipal",
+      "municipality": {"name": "Wallisellen", "bfs_code": "0069"},
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": ["construction-mobility"],
+      "discovery": {"method": "official_page_link", "reference_url": "https://www.wallisellen.ch/", "located_on": "2026-09-15"},
+      "scan_status": "ready",
+      "notes": "Official construction entry point linked from the main navigation."
+    },
+    {
+      "definition": {
+        "source_id": "wallisellen-finance",
+        "start_url": "https://www.wallisellen.ch/steuern",
+        "allowed_hosts": ["www.wallisellen.ch"],
+        "allowed_path_prefixes": ["/"],
+        "canonical_authority": "Stadt Wallisellen",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Taxes",
+      "authority_level": "municipal",
+      "municipality": {"name": "Wallisellen", "bfs_code": "0069"},
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": ["taxes-finance"],
+      "discovery": {"method": "official_page_link", "reference_url": "https://www.wallisellen.ch/", "located_on": "2026-09-15"},
+      "scan_status": "ready",
+      "notes": "Official municipal tax entry point linked from the main navigation."
+    },
+    {
+      "definition": {
+        "source_id": "wallisellen-politics",
+        "start_url": "https://www.wallisellen.ch/politik",
+        "allowed_hosts": ["www.wallisellen.ch"],
+        "allowed_path_prefixes": ["/"],
+        "canonical_authority": "Stadt Wallisellen",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Municipal politics",
+      "authority_level": "municipal",
+      "municipality": {"name": "Wallisellen", "bfs_code": "0069"},
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": ["politics-administration"],
+      "discovery": {"method": "official_page_link", "reference_url": "https://www.wallisellen.ch/", "located_on": "2026-09-15"},
+      "scan_status": "ready",
+      "notes": "Official politics entry point linked from the main navigation."
+    },
+    {
+      "definition": {
+        "source_id": "wallisellen-education",
+        "start_url": "https://www.wallisellen.ch/bildung",
+        "allowed_hosts": ["www.wallisellen.ch"],
+        "allowed_path_prefixes": ["/"],
+        "canonical_authority": "Stadt Wallisellen",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Education",
+      "authority_level": "municipal",
+      "municipality": {"name": "Wallisellen", "bfs_code": "0069"},
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": ["education"],
+      "discovery": {"method": "official_page_link", "reference_url": "https://www.wallisellen.ch/", "located_on": "2026-09-15"},
+      "scan_status": "ready",
+      "notes": "Official education entry point linked from the main navigation."
+    },
+    {
+      "definition": {
+        "source_id": "wallisellen-social",
+        "start_url": "https://www.wallisellen.ch/gesellschaft",
+        "allowed_hosts": ["www.wallisellen.ch"],
+        "allowed_path_prefixes": ["/"],
+        "canonical_authority": "Stadt Wallisellen",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Community and social topics",
+      "authority_level": "municipal",
+      "municipality": {"name": "Wallisellen", "bfs_code": "0069"},
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": ["family-social-health"],
+      "discovery": {"method": "official_page_link", "reference_url": "https://www.wallisellen.ch/", "located_on": "2026-09-15"},
+      "scan_status": "ready",
+      "notes": "Official community entry point linked from the main navigation."
+    },
+    {
+      "definition": {
+        "source_id": "wallisellen-leisure",
+        "start_url": "https://www.wallisellen.ch/freizeit",
+        "allowed_hosts": ["www.wallisellen.ch"],
+        "allowed_path_prefixes": ["/"],
+        "canonical_authority": "Stadt Wallisellen",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Leisure",
+      "authority_level": "municipal",
+      "municipality": {"name": "Wallisellen", "bfs_code": "0069"},
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": ["leisure-culture"],
+      "discovery": {"method": "official_page_link", "reference_url": "https://www.wallisellen.ch/", "located_on": "2026-09-15"},
+      "scan_status": "ready",
+      "notes": "Official leisure entry point linked from the main navigation."
+    },
+    {
+      "definition": {
+        "source_id": "wallisellen-profile",
+        "start_url": "https://www.wallisellen.ch/portraitkennzahlen",
+        "allowed_hosts": ["www.wallisellen.ch"],
+        "allowed_path_prefixes": ["/"],
+        "canonical_authority": "Stadt Wallisellen",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Municipal profile and key figures",
+      "authority_level": "municipal",
+      "municipality": {"name": "Wallisellen", "bfs_code": "0069"},
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": ["economy-local-profile"],
+      "discovery": {"method": "official_page_link", "reference_url": "https://www.wallisellen.ch/", "located_on": "2026-09-15"},
+      "scan_status": "ready",
+      "notes": "Official profile page linked from the main navigation."
+    }
+  ]
+}

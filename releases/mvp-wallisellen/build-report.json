@@ -1,0 +1,2722 @@
+{
+  "release_id": "mvp-wallisellen-2026-09-18-v1",
+  "built_at": "2026-09-18T14:45:22.710471+00:00",
+  "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-wallisellen\\text",
+  "concepts": 30,
+  "facts": 99,
+  "evidence": 99,
+  "documents": 48,
+  "citation_outcomes": {
+    "same-snapshot": 99
+  },
+  "dropped": [],
+  "facts_resolved": [
+    {
+      "fact_id": "city-contact-hours-1",
+      "citations": [
+        {
+          "document_id": "doc-def30616abfbe4ef5b92",
+          "outcome": "same-snapshot",
+          "start": 4114,
+          "end": 4890,
+          "block_ids": [
+            "doc-def30616abfbe4ef5b92:b00211"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "city-contact-hours-2",
+      "citations": [
+        {
+          "document_id": "doc-def30616abfbe4ef5b92",
+          "outcome": "same-snapshot",
+          "start": 4114,
+          "end": 4890,
+          "block_ids": [
+            "doc-def30616abfbe4ef5b92:b00211"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "digital-city-services-1",
+      "citations": [
+        {
+          "document_id": "doc-99f54285d0f9a9ddb5dd",
+          "outcome": "same-snapshot",
+          "start": 4987,
+          "end": 5317,
+          "block_ids": [
+            "doc-99f54285d0f9a9ddb5dd:b00231",
+            "doc-99f54285d0f9a9ddb5dd:b00232",
+            "doc-99f54285d0f9a9ddb5dd:b00233",
+            "doc-99f54285d0f9a9ddb5dd:b00234",
+            "doc-99f54285d0f9a9ddb5dd:b00235"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "digital-city-services-2",
+      "citations": [
+        {
+          "document_id": "doc-99f54285d0f9a9ddb5dd",
+          "outcome": "same-snapshot",
+          "start": 5469,
+          "end": 5571,
+          "block_ids": [
+            "doc-99f54285d0f9a9ddb5dd:b00241",
+            "doc-99f54285d0f9a9ddb5dd:b00242"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "digital-city-services-3",
+      "citations": [
+        {
+          "document_id": "doc-99f54285d0f9a9ddb5dd",
+          "outcome": "same-snapshot",
+          "start": 5744,
+          "end": 5798,
+          "block_ids": [
+            "doc-99f54285d0f9a9ddb5dd:b00246",
+            "doc-99f54285d0f9a9ddb5dd:b00247"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "digital-city-services-4",
+      "citations": [
+        {
+          "document_id": "doc-283625f42dd950ed9186",
+          "outcome": "same-snapshot",
+          "start": 4148,
+          "end": 8044,
+          "block_ids": [
+            "doc-283625f42dd950ed9186:b00213"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "population-services-1",
+      "citations": [
+        {
+          "document_id": "doc-725056f6fb7bf4fac6ab",
+          "outcome": "same-snapshot",
+          "start": 4132,
+          "end": 4895,
+          "block_ids": [
+            "doc-725056f6fb7bf4fac6ab:b00210",
+            "doc-725056f6fb7bf4fac6ab:b00211",
+            "doc-725056f6fb7bf4fac6ab:b00212",
+            "doc-725056f6fb7bf4fac6ab:b00213",
+            "doc-725056f6fb7bf4fac6ab:b00214",
+            "doc-725056f6fb7bf4fac6ab:b00215",
+            "doc-725056f6fb7bf4fac6ab:b00216",
+            "doc-725056f6fb7bf4fac6ab:b00217",
+            "doc-725056f6fb7bf4fac6ab:b00218",
+            "doc-725056f6fb7bf4fac6ab:b00219",
+            "doc-725056f6fb7bf4fac6ab:b00220",
+            "doc-725056f6fb7bf4fac6ab:b00221",
+            "doc-725056f6fb7bf4fac6ab:b00222",
+            "doc-725056f6fb7bf4fac6ab:b00223",
+            "doc-725056f6fb7bf4fac6ab:b00224"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-bevoelkerungsdienste",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "population-services-2",
+      "citations": [
+        {
+          "document_id": "doc-f5be0108826ced83ad29",
+          "outcome": "same-snapshot",
+          "start": 5617,
+          "end": 6556,
+          "block_ids": [
+            "doc-f5be0108826ced83ad29:b00220"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-steuern",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "population-services-3",
+      "citations": [
+        {
+          "document_id": "doc-f5be0108826ced83ad29",
+          "outcome": "same-snapshot",
+          "start": 6558,
+          "end": 7428,
+          "block_ids": [
+            "doc-f5be0108826ced83ad29:b00221"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-steuern",
+          "basis": "Municipal authority guidance, referring to revidierte Hundeverordnung (per 1. Juni 2025)",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance, referring to revidierte Hundeverordnung (per 1. Juni 2025)"
+    },
+    {
+      "fact_id": "moving-registration-1",
+      "citations": [
+        {
+          "document_id": "doc-4d4e915cebb61156ab3d",
+          "outcome": "same-snapshot",
+          "start": 4138,
+          "end": 4343,
+          "block_ids": [
+            "doc-4d4e915cebb61156ab3d:b00210"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "moving-registration-2",
+      "citations": [
+        {
+          "document_id": "doc-4d4e915cebb61156ab3d",
+          "outcome": "same-snapshot",
+          "start": 4345,
+          "end": 4512,
+          "block_ids": [
+            "doc-4d4e915cebb61156ab3d:b00211",
+            "doc-4d4e915cebb61156ab3d:b00212"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "moving-registration-3",
+      "citations": [
+        {
+          "document_id": "doc-4d4e915cebb61156ab3d",
+          "outcome": "same-snapshot",
+          "start": 4683,
+          "end": 4835,
+          "block_ids": [
+            "doc-4d4e915cebb61156ab3d:b00215",
+            "doc-4d4e915cebb61156ab3d:b00216"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "moving-registration-4",
+      "citations": [
+        {
+          "document_id": "doc-4d4e915cebb61156ab3d",
+          "outcome": "same-snapshot",
+          "start": 4991,
+          "end": 5121,
+          "block_ids": [
+            "doc-4d4e915cebb61156ab3d:b00219",
+            "doc-4d4e915cebb61156ab3d:b00220"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "moving-registration-5",
+      "citations": [
+        {
+          "document_id": "doc-4d4e915cebb61156ab3d",
+          "outcome": "same-snapshot",
+          "start": 5255,
+          "end": 5378,
+          "block_ids": [
+            "doc-4d4e915cebb61156ab3d:b00223",
+            "doc-4d4e915cebb61156ab3d:b00224"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "moving-registration-6",
+      "citations": [
+        {
+          "document_id": "doc-4d4e915cebb61156ab3d",
+          "outcome": "same-snapshot",
+          "start": 5505,
+          "end": 5624,
+          "block_ids": [
+            "doc-4d4e915cebb61156ab3d:b00227",
+            "doc-4d4e915cebb61156ab3d:b00228"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "civil-status-and-naturalisation-1",
+      "citations": [
+        {
+          "document_id": "doc-0a7d4438b7d7d19065a3",
+          "outcome": "same-snapshot",
+          "start": 4307,
+          "end": 4391,
+          "block_ids": [
+            "doc-0a7d4438b7d7d19065a3:b00214",
+            "doc-0a7d4438b7d7d19065a3:b00215"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "civil-status-and-naturalisation-2",
+      "citations": [
+        {
+          "document_id": "doc-0cb06b7603d257be336d",
+          "outcome": "same-snapshot",
+          "start": 4122,
+          "end": 4272,
+          "block_ids": [
+            "doc-0cb06b7603d257be336d:b00210",
+            "doc-0cb06b7603d257be336d:b00211",
+            "doc-0cb06b7603d257be336d:b00212",
+            "doc-0cb06b7603d257be336d:b00213"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "waste-disposal-services-1",
+      "citations": [
+        {
+          "document_id": "doc-cac3045bd9dc616dc709",
+          "outcome": "same-snapshot",
+          "start": 4160,
+          "end": 4290,
+          "block_ids": [
+            "doc-cac3045bd9dc616dc709:b00213",
+            "doc-cac3045bd9dc616dc709:b00214",
+            "doc-cac3045bd9dc616dc709:b00215"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-tiefbau-landschaft",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "waste-disposal-services-2",
+      "citations": [
+        {
+          "document_id": "doc-cac3045bd9dc616dc709",
+          "outcome": "same-snapshot",
+          "start": 4292,
+          "end": 4659,
+          "block_ids": [
+            "doc-cac3045bd9dc616dc709:b00216",
+            "doc-cac3045bd9dc616dc709:b00217",
+            "doc-cac3045bd9dc616dc709:b00218",
+            "doc-cac3045bd9dc616dc709:b00219",
+            "doc-cac3045bd9dc616dc709:b00220"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-tiefbau-landschaft",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-disposal-services-3",
+      "citations": [
+        {
+          "document_id": "doc-df25aa220b26136abfaf",
+          "outcome": "same-snapshot",
+          "start": 4184,
+          "end": 9814,
+          "block_ids": [
+            "doc-df25aa220b26136abfaf:b00214",
+            "doc-df25aa220b26136abfaf:b00215",
+            "doc-df25aa220b26136abfaf:b00216",
+            "doc-df25aa220b26136abfaf:b00217",
+            "doc-df25aa220b26136abfaf:b00218"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-disposal-services-4",
+      "citations": [
+        {
+          "document_id": "doc-11e4a0e2ed03c315c678",
+          "outcome": "same-snapshot",
+          "start": 4178,
+          "end": 4319,
+          "block_ids": [
+            "doc-11e4a0e2ed03c315c678:b00214"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "waste-disposal-services-5",
+      "citations": [
+        {
+          "document_id": "doc-9f4ca2bff73e416791f8",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 372,
+          "block_ids": [
+            "doc-9f4ca2bff73e416791f8:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "waste-disposal-services-6",
+      "citations": [
+        {
+          "document_id": "doc-9f4ca2bff73e416791f8",
+          "outcome": "same-snapshot",
+          "start": 374,
+          "end": 4378,
+          "block_ids": [
+            "doc-9f4ca2bff73e416791f8:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-categories-1",
+      "citations": [
+        {
+          "document_id": "doc-9f77954647e90c57ed3a",
+          "outcome": "same-snapshot",
+          "start": 4174,
+          "end": 4629,
+          "block_ids": [
+            "doc-9f77954647e90c57ed3a:b00214",
+            "doc-9f77954647e90c57ed3a:b00215",
+            "doc-9f77954647e90c57ed3a:b00216",
+            "doc-9f77954647e90c57ed3a:b00217",
+            "doc-9f77954647e90c57ed3a:b00218",
+            "doc-9f77954647e90c57ed3a:b00219",
+            "doc-9f77954647e90c57ed3a:b00220",
+            "doc-9f77954647e90c57ed3a:b00221",
+            "doc-9f77954647e90c57ed3a:b00222",
+            "doc-9f77954647e90c57ed3a:b00223",
+            "doc-9f77954647e90c57ed3a:b00224",
+            "doc-9f77954647e90c57ed3a:b00225",
+            "doc-9f77954647e90c57ed3a:b00226",
+            "doc-9f77954647e90c57ed3a:b00227",
+            "doc-9f77954647e90c57ed3a:b00228",
+            "doc-9f77954647e90c57ed3a:b00229",
+            "doc-9f77954647e90c57ed3a:b00230",
+            "doc-9f77954647e90c57ed3a:b00231",
+            "doc-9f77954647e90c57ed3a:b00232",
+            "doc-9f77954647e90c57ed3a:b00233",
+            "doc-9f77954647e90c57ed3a:b00234",
+            "doc-9f77954647e90c57ed3a:b00235",
+            "doc-9f77954647e90c57ed3a:b00236",
+            "doc-9f77954647e90c57ed3a:b00237",
+            "doc-9f77954647e90c57ed3a:b00238",
+            "doc-9f77954647e90c57ed3a:b00239",
+            "doc-9f77954647e90c57ed3a:b00240",
+            "doc-9f77954647e90c57ed3a:b00241",
+            "doc-9f77954647e90c57ed3a:b00242"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-collection-schedule-1",
+      "citations": [
+        {
+          "document_id": "doc-f6c534f6cde645e50e01",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1329,
+          "block_ids": [
+            "doc-f6c534f6cde645e50e01:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-tiefbau-landschaft",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-collection-schedule-2",
+      "citations": [
+        {
+          "document_id": "doc-df25aa220b26136abfaf",
+          "outcome": "same-snapshot",
+          "start": 4262,
+          "end": 9770,
+          "block_ids": [
+            "doc-df25aa220b26136abfaf:b00217"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-collection-schedule-3",
+      "citations": [
+        {
+          "document_id": "doc-df25aa220b26136abfaf",
+          "outcome": "same-snapshot",
+          "start": 4262,
+          "end": 9770,
+          "block_ids": [
+            "doc-df25aa220b26136abfaf:b00217"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-collection-schedule-4",
+      "citations": [
+        {
+          "document_id": "doc-df25aa220b26136abfaf",
+          "outcome": "same-snapshot",
+          "start": 4262,
+          "end": 9770,
+          "block_ids": [
+            "doc-df25aa220b26136abfaf:b00217"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-collection-schedule-5",
+      "citations": [
+        {
+          "document_id": "doc-df25aa220b26136abfaf",
+          "outcome": "same-snapshot",
+          "start": 4262,
+          "end": 9770,
+          "block_ids": [
+            "doc-df25aa220b26136abfaf:b00217"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-collection-schedule-6",
+      "citations": [
+        {
+          "document_id": "doc-df25aa220b26136abfaf",
+          "outcome": "same-snapshot",
+          "start": 4262,
+          "end": 9770,
+          "block_ids": [
+            "doc-df25aa220b26136abfaf:b00217"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-collection-schedule-7",
+      "citations": [
+        {
+          "document_id": "doc-df25aa220b26136abfaf",
+          "outcome": "same-snapshot",
+          "start": 4262,
+          "end": 9770,
+          "block_ids": [
+            "doc-df25aa220b26136abfaf:b00217"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-collection-schedule-8",
+      "citations": [
+        {
+          "document_id": "doc-df25aa220b26136abfaf",
+          "outcome": "same-snapshot",
+          "start": 4262,
+          "end": 9770,
+          "block_ids": [
+            "doc-df25aa220b26136abfaf:b00217"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-set-out-rules-and-fees-1",
+      "citations": [
+        {
+          "document_id": "doc-e88fbcbef74b1405e20a",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 4076,
+          "block_ids": [
+            "doc-e88fbcbef74b1405e20a:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-tiefbau-landschaft",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-set-out-rules-and-fees-2",
+      "citations": [
+        {
+          "document_id": "doc-f6c534f6cde645e50e01",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1329,
+          "block_ids": [
+            "doc-f6c534f6cde645e50e01:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-tiefbau-landschaft",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-set-out-rules-and-fees-3",
+      "citations": [
+        {
+          "document_id": "doc-9f4ca2bff73e416791f8",
+          "outcome": "same-snapshot",
+          "start": 374,
+          "end": 4378,
+          "block_ids": [
+            "doc-9f4ca2bff73e416791f8:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-set-out-rules-and-fees-4",
+      "citations": [
+        {
+          "document_id": "doc-9f4ca2bff73e416791f8",
+          "outcome": "same-snapshot",
+          "start": 374,
+          "end": 4378,
+          "block_ids": [
+            "doc-9f4ca2bff73e416791f8:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "waste-set-out-rules-and-fees-5",
+      "citations": [
+        {
+          "document_id": "doc-8eb3101b4619164baee1",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1945,
+          "block_ids": [
+            "doc-8eb3101b4619164baee1:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "energy-and-climate-1",
+      "citations": [
+        {
+          "document_id": "doc-9b3f6e9b61970e05ae5b",
+          "outcome": "same-snapshot",
+          "start": 4452,
+          "end": 4544,
+          "block_ids": [
+            "doc-9b3f6e9b61970e05ae5b:b00218",
+            "doc-9b3f6e9b61970e05ae5b:b00219"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "energy-and-climate-2",
+      "citations": [
+        {
+          "document_id": "doc-9b3f6e9b61970e05ae5b",
+          "outcome": "same-snapshot",
+          "start": 4640,
+          "end": 4796,
+          "block_ids": [
+            "doc-9b3f6e9b61970e05ae5b:b00222",
+            "doc-9b3f6e9b61970e05ae5b:b00223"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "energy-and-climate-3",
+      "citations": [
+        {
+          "document_id": "doc-9b3f6e9b61970e05ae5b",
+          "outcome": "same-snapshot",
+          "start": 5364,
+          "end": 5974,
+          "block_ids": [
+            "doc-9b3f6e9b61970e05ae5b:b00230",
+            "doc-9b3f6e9b61970e05ae5b:b00231",
+            "doc-9b3f6e9b61970e05ae5b:b00232",
+            "doc-9b3f6e9b61970e05ae5b:b00233",
+            "doc-9b3f6e9b61970e05ae5b:b00234",
+            "doc-9b3f6e9b61970e05ae5b:b00235"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "building-and-spatial-planning-1",
+      "citations": [
+        {
+          "document_id": "doc-e8c26faa8d1071f0b5d8",
+          "outcome": "same-snapshot",
+          "start": 4974,
+          "end": 5200,
+          "block_ids": [
+            "doc-e8c26faa8d1071f0b5d8:b00216",
+            "doc-e8c26faa8d1071f0b5d8:b00217"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "building-and-spatial-planning-2",
+      "citations": [
+        {
+          "document_id": "doc-e8c26faa8d1071f0b5d8",
+          "outcome": "same-snapshot",
+          "start": 6030,
+          "end": 6100,
+          "block_ids": [
+            "doc-e8c26faa8d1071f0b5d8:b00224",
+            "doc-e8c26faa8d1071f0b5d8:b00225"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "public-space-and-mobility-1",
+      "citations": [
+        {
+          "document_id": "doc-1b7eef9fe0c07fa5935b",
+          "outcome": "same-snapshot",
+          "start": 4524,
+          "end": 4710,
+          "block_ids": [
+            "doc-1b7eef9fe0c07fa5935b:b00214",
+            "doc-1b7eef9fe0c07fa5935b:b00215"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "public-space-and-mobility-2",
+      "citations": [
+        {
+          "document_id": "doc-1b7eef9fe0c07fa5935b",
+          "outcome": "same-snapshot",
+          "start": 5772,
+          "end": 6651,
+          "block_ids": [
+            "doc-1b7eef9fe0c07fa5935b:b00226",
+            "doc-1b7eef9fe0c07fa5935b:b00227",
+            "doc-1b7eef9fe0c07fa5935b:b00228",
+            "doc-1b7eef9fe0c07fa5935b:b00229",
+            "doc-1b7eef9fe0c07fa5935b:b00230",
+            "doc-1b7eef9fe0c07fa5935b:b00231",
+            "doc-1b7eef9fe0c07fa5935b:b00232",
+            "doc-1b7eef9fe0c07fa5935b:b00233",
+            "doc-1b7eef9fe0c07fa5935b:b00234",
+            "doc-1b7eef9fe0c07fa5935b:b00235",
+            "doc-1b7eef9fe0c07fa5935b:b00236",
+            "doc-1b7eef9fe0c07fa5935b:b00237",
+            "doc-1b7eef9fe0c07fa5935b:b00238",
+            "doc-1b7eef9fe0c07fa5935b:b00239"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "public-space-and-mobility-3",
+      "citations": [
+        {
+          "document_id": "doc-1b7eef9fe0c07fa5935b",
+          "outcome": "same-snapshot",
+          "start": 5952,
+          "end": 6156,
+          "block_ids": [
+            "doc-1b7eef9fe0c07fa5935b:b00230",
+            "doc-1b7eef9fe0c07fa5935b:b00231"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "housing-1",
+      "citations": [
+        {
+          "document_id": "doc-e4c1ef385c6289a30b32",
+          "outcome": "same-snapshot",
+          "start": 4106,
+          "end": 4249,
+          "block_ids": [
+            "doc-e4c1ef385c6289a30b32:b00210",
+            "doc-e4c1ef385c6289a30b32:b00211"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "housing-2",
+      "citations": [
+        {
+          "document_id": "doc-e4c1ef385c6289a30b32",
+          "outcome": "same-snapshot",
+          "start": 4396,
+          "end": 4787,
+          "block_ids": [
+            "doc-e4c1ef385c6289a30b32:b00214",
+            "doc-e4c1ef385c6289a30b32:b00215",
+            "doc-e4c1ef385c6289a30b32:b00216",
+            "doc-e4c1ef385c6289a30b32:b00217",
+            "doc-e4c1ef385c6289a30b32:b00218",
+            "doc-e4c1ef385c6289a30b32:b00219"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "housing-3",
+      "citations": [
+        {
+          "document_id": "doc-e4c1ef385c6289a30b32",
+          "outcome": "same-snapshot",
+          "start": 4904,
+          "end": 5025,
+          "block_ids": [
+            "doc-e4c1ef385c6289a30b32:b00222",
+            "doc-e4c1ef385c6289a30b32:b00223"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "municipal-tax-services-1",
+      "citations": [
+        {
+          "document_id": "doc-f5be0108826ced83ad29",
+          "outcome": "same-snapshot",
+          "start": 4108,
+          "end": 4537,
+          "block_ids": [
+            "doc-f5be0108826ced83ad29:b00210",
+            "doc-f5be0108826ced83ad29:b00211"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-steuern",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "municipal-tax-services-2",
+      "citations": [
+        {
+          "document_id": "doc-f5be0108826ced83ad29",
+          "outcome": "same-snapshot",
+          "start": 4539,
+          "end": 5036,
+          "block_ids": [
+            "doc-f5be0108826ced83ad29:b00212",
+            "doc-f5be0108826ced83ad29:b00213"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-steuern",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "municipal-tax-services-3",
+      "citations": [
+        {
+          "document_id": "doc-f5be0108826ced83ad29",
+          "outcome": "same-snapshot",
+          "start": 5325,
+          "end": 5417,
+          "block_ids": [
+            "doc-f5be0108826ced83ad29:b00216",
+            "doc-f5be0108826ced83ad29:b00217"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-steuern",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "municipal-tax-services-4",
+      "citations": [
+        {
+          "document_id": "doc-f5be0108826ced83ad29",
+          "outcome": "same-snapshot",
+          "start": 8725,
+          "end": 9414,
+          "block_ids": [
+            "doc-f5be0108826ced83ad29:b00231",
+            "doc-f5be0108826ced83ad29:b00232",
+            "doc-f5be0108826ced83ad29:b00233",
+            "doc-f5be0108826ced83ad29:b00234",
+            "doc-f5be0108826ced83ad29:b00235"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-steuern",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "municipal-tax-services-5",
+      "citations": [
+        {
+          "document_id": "doc-f5be0108826ced83ad29",
+          "outcome": "same-snapshot",
+          "start": 9454,
+          "end": 9558,
+          "block_ids": [
+            "doc-f5be0108826ced83ad29:b00239"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-steuern",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "tax-rate-and-finance-1",
+      "citations": [
+        {
+          "document_id": "doc-66449d3f465a2e024a8f",
+          "outcome": "same-snapshot",
+          "start": 4126,
+          "end": 4552,
+          "block_ids": [
+            "doc-66449d3f465a2e024a8f:b00209"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "tax-rate-and-finance-2",
+      "citations": [
+        {
+          "document_id": "doc-1d4da2d7b3c7f6a18c1c",
+          "outcome": "same-snapshot",
+          "start": 4140,
+          "end": 5111,
+          "block_ids": [
+            "doc-1d4da2d7b3c7f6a18c1c:b00209",
+            "doc-1d4da2d7b3c7f6a18c1c:b00210"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-council-1",
+      "citations": [
+        {
+          "document_id": "doc-1e2c9f8196f990032b0f",
+          "outcome": "same-snapshot",
+          "start": 4290,
+          "end": 4873,
+          "block_ids": [
+            "doc-1e2c9f8196f990032b0f:b00209",
+            "doc-1e2c9f8196f990032b0f:b00210"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "city-council-2",
+      "citations": [
+        {
+          "document_id": "doc-ee9e5ef827ee0424cfaf",
+          "outcome": "same-snapshot",
+          "start": 4290,
+          "end": 4873,
+          "block_ids": [
+            "doc-ee9e5ef827ee0424cfaf:b00209",
+            "doc-ee9e5ef827ee0424cfaf:b00210"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "municipal-assembly-1",
+      "citations": [
+        {
+          "document_id": "doc-331691eacfa4726b815e",
+          "outcome": "same-snapshot",
+          "start": 4148,
+          "end": 4318,
+          "block_ids": [
+            "doc-331691eacfa4726b815e:b00209"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "municipal-assembly-2",
+      "citations": [
+        {
+          "document_id": "doc-331691eacfa4726b815e",
+          "outcome": "same-snapshot",
+          "start": 4422,
+          "end": 4679,
+          "block_ids": [
+            "doc-331691eacfa4726b815e:b00214",
+            "doc-331691eacfa4726b815e:b00215",
+            "doc-331691eacfa4726b815e:b00216",
+            "doc-331691eacfa4726b815e:b00217",
+            "doc-331691eacfa4726b815e:b00218",
+            "doc-331691eacfa4726b815e:b00219"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "municipal-assembly-3",
+      "citations": [
+        {
+          "document_id": "doc-331691eacfa4726b815e",
+          "outcome": "same-snapshot",
+          "start": 4681,
+          "end": 5218,
+          "block_ids": [
+            "doc-331691eacfa4726b815e:b00220",
+            "doc-331691eacfa4726b815e:b00221",
+            "doc-331691eacfa4726b815e:b00222",
+            "doc-331691eacfa4726b815e:b00223",
+            "doc-331691eacfa4726b815e:b00224",
+            "doc-331691eacfa4726b815e:b00225",
+            "doc-331691eacfa4726b815e:b00226",
+            "doc-331691eacfa4726b815e:b00227",
+            "doc-331691eacfa4726b815e:b00228",
+            "doc-331691eacfa4726b815e:b00229"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "municipal-legal-collection-1",
+      "citations": [
+        {
+          "document_id": "doc-0574873c0bac3a4553d7",
+          "outcome": "same-snapshot",
+          "start": 4332,
+          "end": 4490,
+          "block_ids": [
+            "doc-0574873c0bac3a4553d7:b00222",
+            "doc-0574873c0bac3a4553d7:b00223",
+            "doc-0574873c0bac3a4553d7:b00224",
+            "doc-0574873c0bac3a4553d7:b00225",
+            "doc-0574873c0bac3a4553d7:b00226",
+            "doc-0574873c0bac3a4553d7:b00227",
+            "doc-0574873c0bac3a4553d7:b00228",
+            "doc-0574873c0bac3a4553d7:b00229"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "schools-and-careers-1",
+      "citations": [
+        {
+          "document_id": "doc-0381589e28bfea532884",
+          "outcome": "same-snapshot",
+          "start": 3991,
+          "end": 4340,
+          "block_ids": [
+            "doc-0381589e28bfea532884:b00200"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "schools-and-careers-2",
+      "citations": [
+        {
+          "document_id": "doc-c0952c229a7a7b113ec5",
+          "outcome": "same-snapshot",
+          "start": 3987,
+          "end": 4348,
+          "block_ids": [
+            "doc-c0952c229a7a7b113ec5:b00200"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "schools-and-careers-3",
+      "citations": [
+        {
+          "document_id": "doc-96be5ac7d63ee833e360",
+          "outcome": "same-snapshot",
+          "start": 4033,
+          "end": 4642,
+          "block_ids": [
+            "doc-96be5ac7d63ee833e360:b00201",
+            "doc-96be5ac7d63ee833e360:b00202"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "family-support-and-childcare-1",
+      "citations": [
+        {
+          "document_id": "doc-7ea5b93db8c157b7f959",
+          "outcome": "same-snapshot",
+          "start": 4492,
+          "end": 4630,
+          "block_ids": [
+            "doc-7ea5b93db8c157b7f959:b00207",
+            "doc-7ea5b93db8c157b7f959:b00208"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "family-support-and-childcare-2",
+      "citations": [
+        {
+          "document_id": "doc-7ea5b93db8c157b7f959",
+          "outcome": "same-snapshot",
+          "start": 5520,
+          "end": 5672,
+          "block_ids": [
+            "doc-7ea5b93db8c157b7f959:b00219",
+            "doc-7ea5b93db8c157b7f959:b00220"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "older-resident-services-1",
+      "citations": [
+        {
+          "document_id": "doc-21ce0040e7bc4025aa44",
+          "outcome": "same-snapshot",
+          "start": 4566,
+          "end": 4770,
+          "block_ids": [
+            "doc-21ce0040e7bc4025aa44:b00211",
+            "doc-21ce0040e7bc4025aa44:b00212"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "older-resident-services-2",
+      "citations": [
+        {
+          "document_id": "doc-21ce0040e7bc4025aa44",
+          "outcome": "same-snapshot",
+          "start": 4978,
+          "end": 8332,
+          "block_ids": [
+            "doc-21ce0040e7bc4025aa44:b00215",
+            "doc-21ce0040e7bc4025aa44:b00216",
+            "doc-21ce0040e7bc4025aa44:b00217",
+            "doc-21ce0040e7bc4025aa44:b00218",
+            "doc-21ce0040e7bc4025aa44:b00219",
+            "doc-21ce0040e7bc4025aa44:b00220",
+            "doc-21ce0040e7bc4025aa44:b00221",
+            "doc-21ce0040e7bc4025aa44:b00222",
+            "doc-21ce0040e7bc4025aa44:b00223",
+            "doc-21ce0040e7bc4025aa44:b00224",
+            "doc-21ce0040e7bc4025aa44:b00225",
+            "doc-21ce0040e7bc4025aa44:b00226",
+            "doc-21ce0040e7bc4025aa44:b00227",
+            "doc-21ce0040e7bc4025aa44:b00228",
+            "doc-21ce0040e7bc4025aa44:b00229",
+            "doc-21ce0040e7bc4025aa44:b00230",
+            "doc-21ce0040e7bc4025aa44:b00231",
+            "doc-21ce0040e7bc4025aa44:b00232",
+            "doc-21ce0040e7bc4025aa44:b00233",
+            "doc-21ce0040e7bc4025aa44:b00234",
+            "doc-21ce0040e7bc4025aa44:b00235",
+            "doc-21ce0040e7bc4025aa44:b00236",
+            "doc-21ce0040e7bc4025aa44:b00237",
+            "doc-21ce0040e7bc4025aa44:b00238",
+            "doc-21ce0040e7bc4025aa44:b00239",
+            "doc-21ce0040e7bc4025aa44:b00240",
+            "doc-21ce0040e7bc4025aa44:b00241",
+            "doc-21ce0040e7bc4025aa44:b00242",
+            "doc-21ce0040e7bc4025aa44:b00243",
+            "doc-21ce0040e7bc4025aa44:b00244",
+            "doc-21ce0040e7bc4025aa44:b00245",
+            "doc-21ce0040e7bc4025aa44:b00246",
+            "doc-21ce0040e7bc4025aa44:b00247",
+            "doc-21ce0040e7bc4025aa44:b00248",
+            "doc-21ce0040e7bc4025aa44:b00249",
+            "doc-21ce0040e7bc4025aa44:b00250",
+            "doc-21ce0040e7bc4025aa44:b00251",
+            "doc-21ce0040e7bc4025aa44:b00252"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "older-resident-services-3",
+      "citations": [
+        {
+          "document_id": "doc-21ce0040e7bc4025aa44",
+          "outcome": "same-snapshot",
+          "start": 8334,
+          "end": 8455,
+          "block_ids": [
+            "doc-21ce0040e7bc4025aa44:b00253",
+            "doc-21ce0040e7bc4025aa44:b00254"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "health-and-care-1",
+      "citations": [
+        {
+          "document_id": "doc-2454977927ae55050e3a",
+          "outcome": "same-snapshot",
+          "start": 4976,
+          "end": 5152,
+          "block_ids": [
+            "doc-2454977927ae55050e3a:b00211",
+            "doc-2454977927ae55050e3a:b00212"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "health-and-care-2",
+      "citations": [
+        {
+          "document_id": "doc-2454977927ae55050e3a",
+          "outcome": "same-snapshot",
+          "start": 5332,
+          "end": 6106,
+          "block_ids": [
+            "doc-2454977927ae55050e3a:b00215",
+            "doc-2454977927ae55050e3a:b00216",
+            "doc-2454977927ae55050e3a:b00217",
+            "doc-2454977927ae55050e3a:b00218",
+            "doc-2454977927ae55050e3a:b00219",
+            "doc-2454977927ae55050e3a:b00220",
+            "doc-2454977927ae55050e3a:b00221",
+            "doc-2454977927ae55050e3a:b00222",
+            "doc-2454977927ae55050e3a:b00223",
+            "doc-2454977927ae55050e3a:b00224"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "youth-and-volunteering-1",
+      "citations": [
+        {
+          "document_id": "doc-abd558c34587b57881a1",
+          "outcome": "same-snapshot",
+          "start": 4568,
+          "end": 4762,
+          "block_ids": [
+            "doc-abd558c34587b57881a1:b00207",
+            "doc-abd558c34587b57881a1:b00208"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "youth-and-volunteering-2",
+      "citations": [
+        {
+          "document_id": "doc-abd558c34587b57881a1",
+          "outcome": "same-snapshot",
+          "start": 5386,
+          "end": 6017,
+          "block_ids": [
+            "doc-abd558c34587b57881a1:b00219",
+            "doc-abd558c34587b57881a1:b00220",
+            "doc-abd558c34587b57881a1:b00221",
+            "doc-abd558c34587b57881a1:b00222",
+            "doc-abd558c34587b57881a1:b00223",
+            "doc-abd558c34587b57881a1:b00224"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "youth-and-volunteering-3",
+      "citations": [
+        {
+          "document_id": "doc-c778401cce30dbfe4af0",
+          "outcome": "same-snapshot",
+          "start": 4006,
+          "end": 4681,
+          "block_ids": [
+            "doc-c778401cce30dbfe4af0:b00203",
+            "doc-c778401cce30dbfe4af0:b00204",
+            "doc-c778401cce30dbfe4af0:b00205",
+            "doc-c778401cce30dbfe4af0:b00206",
+            "doc-c778401cce30dbfe4af0:b00207"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-familien-freiwillige",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "recreation-sport-and-playgrounds-1",
+      "citations": [
+        {
+          "document_id": "doc-43772f47894f383ddf2f",
+          "outcome": "same-snapshot",
+          "start": 4053,
+          "end": 4206,
+          "block_ids": [
+            "doc-43772f47894f383ddf2f:b00206",
+            "doc-43772f47894f383ddf2f:b00207",
+            "doc-43772f47894f383ddf2f:b00208",
+            "doc-43772f47894f383ddf2f:b00209",
+            "doc-43772f47894f383ddf2f:b00210"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "recreation-sport-and-playgrounds-2",
+      "citations": [
+        {
+          "document_id": "doc-f950a3861284e476cbd1",
+          "outcome": "same-snapshot",
+          "start": 4040,
+          "end": 4610,
+          "block_ids": [
+            "doc-f950a3861284e476cbd1:b00206",
+            "doc-f950a3861284e476cbd1:b00207",
+            "doc-f950a3861284e476cbd1:b00208",
+            "doc-f950a3861284e476cbd1:b00209",
+            "doc-f950a3861284e476cbd1:b00210",
+            "doc-f950a3861284e476cbd1:b00211",
+            "doc-f950a3861284e476cbd1:b00212",
+            "doc-f950a3861284e476cbd1:b00213",
+            "doc-f950a3861284e476cbd1:b00214",
+            "doc-f950a3861284e476cbd1:b00215",
+            "doc-f950a3861284e476cbd1:b00216",
+            "doc-f950a3861284e476cbd1:b00217",
+            "doc-f950a3861284e476cbd1:b00218",
+            "doc-f950a3861284e476cbd1:b00219",
+            "doc-f950a3861284e476cbd1:b00220",
+            "doc-f950a3861284e476cbd1:b00221",
+            "doc-f950a3861284e476cbd1:b00222",
+            "doc-f950a3861284e476cbd1:b00223",
+            "doc-f950a3861284e476cbd1:b00224",
+            "doc-f950a3861284e476cbd1:b00225"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "recreation-sport-and-playgrounds-3",
+      "citations": [
+        {
+          "document_id": "doc-d6ffe523163f0dc88a32",
+          "outcome": "same-snapshot",
+          "start": 4038,
+          "end": 5038,
+          "block_ids": [
+            "doc-d6ffe523163f0dc88a32:b00206",
+            "doc-d6ffe523163f0dc88a32:b00207",
+            "doc-d6ffe523163f0dc88a32:b00208",
+            "doc-d6ffe523163f0dc88a32:b00209",
+            "doc-d6ffe523163f0dc88a32:b00210",
+            "doc-d6ffe523163f0dc88a32:b00211",
+            "doc-d6ffe523163f0dc88a32:b00212",
+            "doc-d6ffe523163f0dc88a32:b00213",
+            "doc-d6ffe523163f0dc88a32:b00214",
+            "doc-d6ffe523163f0dc88a32:b00215",
+            "doc-d6ffe523163f0dc88a32:b00216",
+            "doc-d6ffe523163f0dc88a32:b00217",
+            "doc-d6ffe523163f0dc88a32:b00218",
+            "doc-d6ffe523163f0dc88a32:b00219",
+            "doc-d6ffe523163f0dc88a32:b00220",
+            "doc-d6ffe523163f0dc88a32:b00221",
+            "doc-d6ffe523163f0dc88a32:b00222",
+            "doc-d6ffe523163f0dc88a32:b00223",
+            "doc-d6ffe523163f0dc88a32:b00224",
+            "doc-d6ffe523163f0dc88a32:b00225",
+            "doc-d6ffe523163f0dc88a32:b00226",
+            "doc-d6ffe523163f0dc88a32:b00227",
+            "doc-d6ffe523163f0dc88a32:b00228",
+            "doc-d6ffe523163f0dc88a32:b00229",
+            "doc-d6ffe523163f0dc88a32:b00230",
+            "doc-d6ffe523163f0dc88a32:b00231",
+            "doc-d6ffe523163f0dc88a32:b00232",
+            "doc-d6ffe523163f0dc88a32:b00233",
+            "doc-d6ffe523163f0dc88a32:b00234",
+            "doc-d6ffe523163f0dc88a32:b00235"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "facilities-museum-and-culture-1",
+      "citations": [
+        {
+          "document_id": "doc-8db80a28c94240a70176",
+          "outcome": "same-snapshot",
+          "start": 4064,
+          "end": 6138,
+          "block_ids": [
+            "doc-8db80a28c94240a70176:b00206",
+            "doc-8db80a28c94240a70176:b00207",
+            "doc-8db80a28c94240a70176:b00208",
+            "doc-8db80a28c94240a70176:b00209",
+            "doc-8db80a28c94240a70176:b00210",
+            "doc-8db80a28c94240a70176:b00211",
+            "doc-8db80a28c94240a70176:b00212",
+            "doc-8db80a28c94240a70176:b00213",
+            "doc-8db80a28c94240a70176:b00214",
+            "doc-8db80a28c94240a70176:b00215",
+            "doc-8db80a28c94240a70176:b00216",
+            "doc-8db80a28c94240a70176:b00217",
+            "doc-8db80a28c94240a70176:b00218",
+            "doc-8db80a28c94240a70176:b00219",
+            "doc-8db80a28c94240a70176:b00220",
+            "doc-8db80a28c94240a70176:b00221",
+            "doc-8db80a28c94240a70176:b00222",
+            "doc-8db80a28c94240a70176:b00223",
+            "doc-8db80a28c94240a70176:b00224",
+            "doc-8db80a28c94240a70176:b00225",
+            "doc-8db80a28c94240a70176:b00226",
+            "doc-8db80a28c94240a70176:b00227",
+            "doc-8db80a28c94240a70176:b00228",
+            "doc-8db80a28c94240a70176:b00229",
+            "doc-8db80a28c94240a70176:b00230",
+            "doc-8db80a28c94240a70176:b00231",
+            "doc-8db80a28c94240a70176:b00232",
+            "doc-8db80a28c94240a70176:b00233",
+            "doc-8db80a28c94240a70176:b00234",
+            "doc-8db80a28c94240a70176:b00235",
+            "doc-8db80a28c94240a70176:b00236",
+            "doc-8db80a28c94240a70176:b00237",
+            "doc-8db80a28c94240a70176:b00238",
+            "doc-8db80a28c94240a70176:b00239",
+            "doc-8db80a28c94240a70176:b00240",
+            "doc-8db80a28c94240a70176:b00241",
+            "doc-8db80a28c94240a70176:b00242",
+            "doc-8db80a28c94240a70176:b00243",
+            "doc-8db80a28c94240a70176:b00244",
+            "doc-8db80a28c94240a70176:b00245",
+            "doc-8db80a28c94240a70176:b00246",
+            "doc-8db80a28c94240a70176:b00247",
+            "doc-8db80a28c94240a70176:b00248",
+            "doc-8db80a28c94240a70176:b00249"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "facilities-museum-and-culture-2",
+      "citations": [
+        {
+          "document_id": "doc-67f7fce1ceb389e4adee",
+          "outcome": "same-snapshot",
+          "start": 4012,
+          "end": 4888,
+          "block_ids": [
+            "doc-67f7fce1ceb389e4adee:b00203",
+            "doc-67f7fce1ceb389e4adee:b00204",
+            "doc-67f7fce1ceb389e4adee:b00205"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "facilities-museum-and-culture-3",
+      "citations": [
+        {
+          "document_id": "doc-74e4c990b536d9da5414",
+          "outcome": "same-snapshot",
+          "start": 4022,
+          "end": 4380,
+          "block_ids": [
+            "doc-74e4c990b536d9da5414:b00203",
+            "doc-74e4c990b536d9da5414:b00204"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "facilities-museum-and-culture-4",
+      "citations": [
+        {
+          "document_id": "doc-8db80a28c94240a70176",
+          "outcome": "same-snapshot",
+          "start": 4932,
+          "end": 6138,
+          "block_ids": [
+            "doc-8db80a28c94240a70176:b00230",
+            "doc-8db80a28c94240a70176:b00231",
+            "doc-8db80a28c94240a70176:b00232",
+            "doc-8db80a28c94240a70176:b00233",
+            "doc-8db80a28c94240a70176:b00234",
+            "doc-8db80a28c94240a70176:b00235",
+            "doc-8db80a28c94240a70176:b00236",
+            "doc-8db80a28c94240a70176:b00237",
+            "doc-8db80a28c94240a70176:b00238",
+            "doc-8db80a28c94240a70176:b00239",
+            "doc-8db80a28c94240a70176:b00240",
+            "doc-8db80a28c94240a70176:b00241",
+            "doc-8db80a28c94240a70176:b00242",
+            "doc-8db80a28c94240a70176:b00243",
+            "doc-8db80a28c94240a70176:b00244",
+            "doc-8db80a28c94240a70176:b00245",
+            "doc-8db80a28c94240a70176:b00246",
+            "doc-8db80a28c94240a70176:b00247",
+            "doc-8db80a28c94240a70176:b00248",
+            "doc-8db80a28c94240a70176:b00249"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "facilities-museum-and-culture-5",
+      "citations": [
+        {
+          "document_id": "doc-67f7fce1ceb389e4adee",
+          "outcome": "same-snapshot",
+          "start": 4012,
+          "end": 4888,
+          "block_ids": [
+            "doc-67f7fce1ceb389e4adee:b00203",
+            "doc-67f7fce1ceb389e4adee:b00204",
+            "doc-67f7fce1ceb389e4adee:b00205"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "wallisellen-profile-1",
+      "citations": [
+        {
+          "document_id": "doc-e967b4b5e1204e96e40b",
+          "outcome": "same-snapshot",
+          "start": 4007,
+          "end": 4680,
+          "block_ids": [
+            "doc-e967b4b5e1204e96e40b:b00202",
+            "doc-e967b4b5e1204e96e40b:b00203"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "wallisellen-profile-2",
+      "citations": [
+        {
+          "document_id": "doc-e967b4b5e1204e96e40b",
+          "outcome": "same-snapshot",
+          "start": 4803,
+          "end": 4959,
+          "block_ids": [
+            "doc-e967b4b5e1204e96e40b:b00207",
+            "doc-e967b4b5e1204e96e40b:b00208",
+            "doc-e967b4b5e1204e96e40b:b00209"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "wallisellen-profile-3",
+      "citations": [
+        {
+          "document_id": "doc-e967b4b5e1204e96e40b",
+          "outcome": "same-snapshot",
+          "start": 4961,
+          "end": 5243,
+          "block_ids": [
+            "doc-e967b4b5e1204e96e40b:b00210",
+            "doc-e967b4b5e1204e96e40b:b00211",
+            "doc-e967b4b5e1204e96e40b:b00212",
+            "doc-e967b4b5e1204e96e40b:b00213"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "wallisellen-profile-4",
+      "citations": [
+        {
+          "document_id": "doc-01851a33f0076b0ea4ad",
+          "outcome": "same-snapshot",
+          "start": 3992,
+          "end": 5710,
+          "block_ids": [
+            "doc-01851a33f0076b0ea4ad:b00202",
+            "doc-01851a33f0076b0ea4ad:b00203",
+            "doc-01851a33f0076b0ea4ad:b00204",
+            "doc-01851a33f0076b0ea4ad:b00205",
+            "doc-01851a33f0076b0ea4ad:b00206",
+            "doc-01851a33f0076b0ea4ad:b00207",
+            "doc-01851a33f0076b0ea4ad:b00208",
+            "doc-01851a33f0076b0ea4ad:b00209",
+            "doc-01851a33f0076b0ea4ad:b00210",
+            "doc-01851a33f0076b0ea4ad:b00211",
+            "doc-01851a33f0076b0ea4ad:b00212",
+            "doc-01851a33f0076b0ea4ad:b00213",
+            "doc-01851a33f0076b0ea4ad:b00214",
+            "doc-01851a33f0076b0ea4ad:b00215",
+            "doc-01851a33f0076b0ea4ad:b00216",
+            "doc-01851a33f0076b0ea4ad:b00217",
+            "doc-01851a33f0076b0ea4ad:b00218",
+            "doc-01851a33f0076b0ea4ad:b00219",
+            "doc-01851a33f0076b0ea4ad:b00220",
+            "doc-01851a33f0076b0ea4ad:b00221",
+            "doc-01851a33f0076b0ea4ad:b00222",
+            "doc-01851a33f0076b0ea4ad:b00223",
+            "doc-01851a33f0076b0ea4ad:b00224",
+            "doc-01851a33f0076b0ea4ad:b00225"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "business-location-support-1",
+      "citations": [
+        {
+          "document_id": "doc-aa0b91cde292fb5f81c0",
+          "outcome": "same-snapshot",
+          "start": 3958,
+          "end": 4125,
+          "block_ids": [
+            "doc-aa0b91cde292fb5f81c0:b00200"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "emergency-numbers-1",
+      "citations": [
+        {
+          "document_id": "doc-a1db07025fd0e6e18141",
+          "outcome": "same-snapshot",
+          "start": 3996,
+          "end": 4288,
+          "block_ids": [
+            "doc-a1db07025fd0e6e18141:b00202",
+            "doc-a1db07025fd0e6e18141:b00203"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "emergency-numbers-2",
+      "citations": [
+        {
+          "document_id": "doc-a1db07025fd0e6e18141",
+          "outcome": "same-snapshot",
+          "start": 3996,
+          "end": 4288,
+          "block_ids": [
+            "doc-a1db07025fd0e6e18141:b00202",
+            "doc-a1db07025fd0e6e18141:b00203"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "emergency-numbers-3",
+      "citations": [
+        {
+          "document_id": "doc-a1db07025fd0e6e18141",
+          "outcome": "same-snapshot",
+          "start": 4290,
+          "end": 4792,
+          "block_ids": [
+            "doc-a1db07025fd0e6e18141:b00204",
+            "doc-a1db07025fd0e6e18141:b00205"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "naturalisation-1",
+      "citations": [
+        {
+          "document_id": "doc-e6761e37a472c0281ccf",
+          "outcome": "same-snapshot",
+          "start": 4170,
+          "end": 4352,
+          "block_ids": [
+            "doc-e6761e37a472c0281ccf:b00213",
+            "doc-e6761e37a472c0281ccf:b00214",
+            "doc-e6761e37a472c0281ccf:b00215",
+            "doc-e6761e37a472c0281ccf:b00216"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-stadtratskanzlei",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "naturalisation-2",
+      "citations": [
+        {
+          "document_id": "doc-e6761e37a472c0281ccf",
+          "outcome": "same-snapshot",
+          "start": 4354,
+          "end": 4624,
+          "block_ids": [
+            "doc-e6761e37a472c0281ccf:b00217",
+            "doc-e6761e37a472c0281ccf:b00218",
+            "doc-e6761e37a472c0281ccf:b00219",
+            "doc-e6761e37a472c0281ccf:b00220",
+            "doc-e6761e37a472c0281ccf:b00221"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-stadtratskanzlei",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "naturalisation-3",
+      "citations": [
+        {
+          "document_id": "doc-e6761e37a472c0281ccf",
+          "outcome": "same-snapshot",
+          "start": 4626,
+          "end": 4916,
+          "block_ids": [
+            "doc-e6761e37a472c0281ccf:b00222"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-stadtratskanzlei",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "naturalisation-4",
+      "citations": [
+        {
+          "document_id": "doc-e6761e37a472c0281ccf",
+          "outcome": "same-snapshot",
+          "start": 4918,
+          "end": 5606,
+          "block_ids": [
+            "doc-e6761e37a472c0281ccf:b00223",
+            "doc-e6761e37a472c0281ccf:b00224",
+            "doc-e6761e37a472c0281ccf:b00225",
+            "doc-e6761e37a472c0281ccf:b00226",
+            "doc-e6761e37a472c0281ccf:b00227",
+            "doc-e6761e37a472c0281ccf:b00228",
+            "doc-e6761e37a472c0281ccf:b00229",
+            "doc-e6761e37a472c0281ccf:b00230",
+            "doc-e6761e37a472c0281ccf:b00231",
+            "doc-e6761e37a472c0281ccf:b00232",
+            "doc-e6761e37a472c0281ccf:b00233"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-stadtratskanzlei",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "naturalisation-5",
+      "citations": [
+        {
+          "document_id": "doc-e6761e37a472c0281ccf",
+          "outcome": "same-snapshot",
+          "start": 5608,
+          "end": 5876,
+          "block_ids": [
+            "doc-e6761e37a472c0281ccf:b00234",
+            "doc-e6761e37a472c0281ccf:b00235",
+            "doc-e6761e37a472c0281ccf:b00236",
+            "doc-e6761e37a472c0281ccf:b00237",
+            "doc-e6761e37a472c0281ccf:b00238"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-stadtratskanzlei",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "naturalisation-6",
+      "citations": [
+        {
+          "document_id": "doc-8a5ec33b3406e8966253",
+          "outcome": "same-snapshot",
+          "start": 4170,
+          "end": 4543,
+          "block_ids": [
+            "doc-8a5ec33b3406e8966253:b00213",
+            "doc-8a5ec33b3406e8966253:b00214",
+            "doc-8a5ec33b3406e8966253:b00215",
+            "doc-8a5ec33b3406e8966253:b00216",
+            "doc-8a5ec33b3406e8966253:b00217",
+            "doc-8a5ec33b3406e8966253:b00218",
+            "doc-8a5ec33b3406e8966253:b00219",
+            "doc-8a5ec33b3406e8966253:b00220"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-stadtratskanzlei",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "naturalisation-7",
+      "citations": [
+        {
+          "document_id": "doc-e6761e37a472c0281ccf",
+          "outcome": "same-snapshot",
+          "start": 6089,
+          "end": 6267,
+          "block_ids": [
+            "doc-e6761e37a472c0281ccf:b00242",
+            "doc-e6761e37a472c0281ccf:b00243",
+            "doc-e6761e37a472c0281ccf:b00244",
+            "doc-e6761e37a472c0281ccf:b00245"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-stadtratskanzlei",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "administration-contacts-1",
+      "citations": [
+        {
+          "document_id": "doc-f75838e600b1496fbd33",
+          "outcome": "same-snapshot",
+          "start": 4140,
+          "end": 4641,
+          "block_ids": [
+            "doc-f75838e600b1496fbd33:b00213"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    },
+    {
+      "fact_id": "administration-contacts-2",
+      "citations": [
+        {
+          "document_id": "doc-f83614f9348fbdc29dc7",
+          "outcome": "same-snapshot",
+          "start": 4134,
+          "end": 5778,
+          "block_ids": [
+            "doc-f83614f9348fbdc29dc7:b00213"
+          ],
+          "warnings": [],
+          "institution_id": "wallisellen-city",
+          "basis": "Municipal authority directory",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority directory"
+    }
+  ],
+  "source_terms": 33,
+  "institutions": [
+    {
+      "institution_id": "wallisellen-bevoelkerungsdienste",
+      "name": "City of Wallisellen, Population Services",
+      "level": "municipal",
+      "jurisdiction": "CH-ZH-69",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "wallisellen-city",
+      "name": "City of Wallisellen",
+      "level": "municipal",
+      "jurisdiction": "CH-ZH-69",
+      "documents": 40,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "wallisellen-familien-freiwillige",
+      "name": "City of Wallisellen, Families and Volunteers",
+      "level": "municipal",
+      "jurisdiction": "CH-ZH-69",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "wallisellen-stadtratskanzlei",
+      "name": "City of Wallisellen, City Council Chancellery",
+      "level": "municipal",
+      "jurisdiction": "CH-ZH-69",
+      "documents": 2,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "wallisellen-steuern",
+      "name": "City of Wallisellen, Tax Office",
+      "level": "municipal",
+      "jurisdiction": "CH-ZH-69",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "wallisellen-tiefbau-landschaft",
+      "name": "City of Wallisellen, Civil Engineering and Landscape (Environment)",
+      "level": "municipal",
+      "jurisdiction": "CH-ZH-69",
+      "documents": 3,
+      "from_catalogue": false
+    }
+  ],
+  "institutions_unused": [],
+  "documents_attributed": [
+    {
+      "document_id": "doc-01851a33f0076b0ea4ad",
+      "source_url": "https://www.wallisellen.ch/sehenswuerdigkeiten",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-0381589e28bfea532884",
+      "source_url": "https://www.wallisellen.ch/bildungueber",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-0574873c0bac3a4553d7",
+      "source_url": "https://www.wallisellen.ch/rechtssammlung",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-0a7d4438b7d7d19065a3",
+      "source_url": "https://www.wallisellen.ch/geburtehetod",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-0cb06b7603d257be336d",
+      "source_url": "https://www.wallisellen.ch/einbuergerung",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-11e4a0e2ed03c315c678",
+      "source_url": "https://www.wallisellen.ch/abfallorte",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-1b7eef9fe0c07fa5935b",
+      "source_url": "https://www.wallisellen.ch/verkehrbereich",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-1d4da2d7b3c7f6a18c1c",
+      "source_url": "https://www.wallisellen.ch/budget",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-1e2c9f8196f990032b0f",
+      "source_url": "https://www.wallisellen.ch/politik",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-21ce0040e7bc4025aa44",
+      "source_url": "https://www.wallisellen.ch/alter",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-2454977927ae55050e3a",
+      "source_url": "https://www.wallisellen.ch/gesundheit",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-283625f42dd950ed9186",
+      "source_url": "https://www.wallisellen.ch/online-schalter",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-331691eacfa4726b815e",
+      "source_url": "https://www.wallisellen.ch/sitzung",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-43772f47894f383ddf2f",
+      "source_url": "https://www.wallisellen.ch/naherholung",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-4d4e915cebb61156ab3d",
+      "source_url": "https://www.wallisellen.ch/umzug",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-66449d3f465a2e024a8f",
+      "source_url": "https://www.wallisellen.ch/steuerfuss",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-67f7fce1ceb389e4adee",
+      "source_url": "https://www.wallisellen.ch/freizeitortsmuseum",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-725056f6fb7bf4fac6ab",
+      "source_url": "https://www.wallisellen.ch/bevoelkerungsdienste",
+      "institution_id": "wallisellen-bevoelkerungsdienste",
+      "institution_rule": "registry rule www.wallisellen.ch/bevoelkerungsdienste"
+    },
+    {
+      "document_id": "doc-74e4c990b536d9da5414",
+      "source_url": "https://www.wallisellen.ch/kulturfoerderung",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-7ea5b93db8c157b7f959",
+      "source_url": "https://www.wallisellen.ch/familien",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-8a5ec33b3406e8966253",
+      "source_url": "https://www.wallisellen.ch/_rte/thema2/1566",
+      "institution_id": "wallisellen-stadtratskanzlei",
+      "institution_rule": "registry rule www.wallisellen.ch/_rte/thema2/1566"
+    },
+    {
+      "document_id": "doc-8db80a28c94240a70176",
+      "source_url": "https://www.wallisellen.ch/raeume",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-8eb3101b4619164baee1",
+      "source_url": "https://www.wallisellen.ch/_doc/4236797",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-96be5ac7d63ee833e360",
+      "source_url": "https://www.wallisellen.ch/bildungprivateschulen",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-99f54285d0f9a9ddb5dd",
+      "source_url": "https://www.wallisellen.ch/",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-9b3f6e9b61970e05ae5b",
+      "source_url": "https://www.wallisellen.ch/energie",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-9f4ca2bff73e416791f8",
+      "source_url": "https://www.wallisellen.ch/_doc/6512240",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-9f77954647e90c57ed3a",
+      "source_url": "https://www.wallisellen.ch/abfallarten",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-a1db07025fd0e6e18141",
+      "source_url": "https://www.wallisellen.ch/telefonnummern",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-aa0b91cde292fb5f81c0",
+      "source_url": "https://www.wallisellen.ch/wirtschaftsstandort",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-abd558c34587b57881a1",
+      "source_url": "https://www.wallisellen.ch/jugend",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-c0952c229a7a7b113ec5",
+      "source_url": "https://www.wallisellen.ch/berufsberatung",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-c778401cce30dbfe4af0",
+      "source_url": "https://www.wallisellen.ch/freiwilligenarbeit",
+      "institution_id": "wallisellen-familien-freiwillige",
+      "institution_rule": "registry rule www.wallisellen.ch/freiwilligenarbeit"
+    },
+    {
+      "document_id": "doc-cac3045bd9dc616dc709",
+      "source_url": "https://www.wallisellen.ch/entsorgung",
+      "institution_id": "wallisellen-tiefbau-landschaft",
+      "institution_rule": "registry rule www.wallisellen.ch/entsorgung"
+    },
+    {
+      "document_id": "doc-d6ffe523163f0dc88a32",
+      "source_url": "https://www.wallisellen.ch/spielplaetze",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-def30616abfbe4ef5b92",
+      "source_url": "https://www.wallisellen.ch/verwaltungueber",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-df25aa220b26136abfaf",
+      "source_url": "https://www.wallisellen.ch/abfallsammlung",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-e4c1ef385c6289a30b32",
+      "source_url": "https://www.wallisellen.ch/wohnen",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-e6761e37a472c0281ccf",
+      "source_url": "https://www.wallisellen.ch/_rte/thema2/1567",
+      "institution_id": "wallisellen-stadtratskanzlei",
+      "institution_rule": "registry rule www.wallisellen.ch/_rte/thema2/1567"
+    },
+    {
+      "document_id": "doc-e88fbcbef74b1405e20a",
+      "source_url": "https://www.wallisellen.ch/_doc/4212374",
+      "institution_id": "wallisellen-tiefbau-landschaft",
+      "institution_rule": "registry rule www.wallisellen.ch/_doc/4212374"
+    },
+    {
+      "document_id": "doc-e8c26faa8d1071f0b5d8",
+      "source_url": "https://www.wallisellen.ch/bauenwallisellen",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-e967b4b5e1204e96e40b",
+      "source_url": "https://www.wallisellen.ch/portraitkennzahlen",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-ee9e5ef827ee0424cfaf",
+      "source_url": "https://www.wallisellen.ch/politikueber",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-f5be0108826ced83ad29",
+      "source_url": "https://www.wallisellen.ch/steuern",
+      "institution_id": "wallisellen-steuern",
+      "institution_rule": "registry rule www.wallisellen.ch/steuern"
+    },
+    {
+      "document_id": "doc-f6c534f6cde645e50e01",
+      "source_url": "https://www.wallisellen.ch/_doc/7129504",
+      "institution_id": "wallisellen-tiefbau-landschaft",
+      "institution_rule": "registry rule www.wallisellen.ch/_doc/7129504"
+    },
+    {
+      "document_id": "doc-f75838e600b1496fbd33",
+      "source_url": "https://www.wallisellen.ch/departemente",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-f83614f9348fbdc29dc7",
+      "source_url": "https://www.wallisellen.ch/aemter",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    },
+    {
+      "document_id": "doc-f950a3861284e476cbd1",
+      "source_url": "https://www.wallisellen.ch/sport",
+      "institution_id": "wallisellen-city",
+      "institution_rule": "registry rule www.wallisellen.ch"
+    }
+  ],
+  "basis_kinds": {
+    "directory": 23,
+    "guidance": 76
+  },
+  "place_register": {
+    "url": "https://www.agvchapp.bfs.admin.ch/api/communes/snapshot?date=18-09-2026",
+    "accessed_on": "2026-09-18",
+    "raw_sha256": "e0748c06c754dbde20f04425a7f58c2a718e77982ea10fb8f969ac9d21a83b7d",
+    "places": 2137,
+    "aliases": 115
+  },
+  "validation_issues": []
+}

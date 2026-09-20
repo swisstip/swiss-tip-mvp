@@ -1,0 +1,184 @@
+{
+  "schema_version": "swiss-tip-pipeline-report/v1",
+  "pack": "mvp-wallisellen",
+  "root": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026",
+  "run": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-wallisellen",
+  "started_at": "2026-09-19T14:08:05.159459+00:00",
+  "finished_at": "2026-09-19T14:08:11.329857+00:00",
+  "options": {
+    "download": false,
+    "retry_failed": false,
+    "workers": 1,
+    "scope": "attributed",
+    "thorough": false,
+    "update_curation": false,
+    "release_id": null,
+    "attested_by": "Alexander Bobrovsky",
+    "stages": "accept..ready"
+  },
+  "stages": [
+    {
+      "stage": "acquire",
+      "started_at": "2026-09-16T16:58:43.004758+00:00",
+      "status": "skipped",
+      "reason": "run exists for this catalogue; pass --download to fetch",
+      "targets": 55,
+      "counts": {
+        "saved": 55
+      },
+      "seconds": 0.0
+    },
+    {
+      "stage": "gaps",
+      "started_at": "2026-09-16T16:58:43.053414+00:00",
+      "status": "ran",
+      "targets": 55,
+      "counts": {
+        "status": {
+          "saved": 55
+        },
+        "kind": {
+          "catalogue": 55
+        },
+        "gap": {
+          "none": 55
+        },
+        "gap_by_kind": {
+          "catalogue": {
+            "none": 55
+          }
+        },
+        "retriable": 0,
+        "not_retriable": 0,
+        "informational": 0,
+        "registry_sources_planned": 10,
+        "registry_sources_not_in_plan": 0,
+        "outstanding": 0,
+        "approved": 0
+      },
+      "seconds": 0.5
+    },
+    {
+      "stage": "extract",
+      "started_at": "2026-09-16T16:58:43.574742+00:00",
+      "status": "ran",
+      "records": 55,
+      "eligible": 54,
+      "blocks": 12122,
+      "extracted_now": 5,
+      "reused": 50,
+      "failed_in_selection": 0,
+      "superseded": 0,
+      "unavailable": 0,
+      "seconds": 2.6
+    },
+    {
+      "stage": "validate-text",
+      "started_at": "2026-09-16T16:58:46.165291+00:00",
+      "status": "ran",
+      "records": 55,
+      "blocks": 12122,
+      "raw_responses_rehashed": false,
+      "checks": {
+        "records readable": "passed",
+        "content hash, block offsets and block hashes": "passed",
+        "saved responses present with the recorded hash": "skipped",
+        "index matches the records on disk": "passed",
+        "eligible records have a reading view": "passed"
+      },
+      "seconds": 0.5
+    },
+    {
+      "stage": "build",
+      "started_at": "2026-09-18T14:45:18.956508+00:00",
+      "status": "ran",
+      "release_id": "mvp-wallisellen-2026-09-18-v1",
+      "concepts": 30,
+      "facts": 99,
+      "evidence": 99,
+      "documents": 48,
+      "citation_outcomes": {
+        "same-snapshot": 99
+      },
+      "dropped": 0,
+      "curation_updated": false,
+      "inputs_sha256": "18c406ae193a456f1d2c53cf9b720ebbf442c612eba6232a2c21a9881cc63e1a",
+      "seconds": 4.2
+    },
+    {
+      "stage": "validate-release",
+      "started_at": "2026-09-18T14:45:23.169105+00:00",
+      "status": "ran",
+      "release_id": "mvp-wallisellen-2026-09-18-v1",
+      "checked_against_text": true,
+      "saved_responses_rehashed": false,
+      "seconds": 0.4
+    },
+    {
+      "stage": "health",
+      "started_at": "2026-09-18T14:45:23.584150+00:00",
+      "status": "ran",
+      "release_id": "mvp-wallisellen-2026-09-18-v1",
+      "topics": 10,
+      "concepts": 30,
+      "facts": 99,
+      "evidence": 99,
+      "jurisdictions": 1,
+      "languages": [
+        "de"
+      ],
+      "stale_from": "2026-10-16",
+      "review_statuses": {
+        "human-reviewed": 99
+      },
+      "institution_levels": {
+        "municipal": 48
+      },
+      "basis_kinds": {
+        "directory": 23,
+        "guidance": 76
+      },
+      "seconds": 0.7
+    },
+    {
+      "stage": "accept",
+      "started_at": "2026-09-19T14:08:05.159474+00:00",
+      "status": "ran",
+      "release_id": "mvp-wallisellen-2026-09-18-v1",
+      "suite_sha256": "96dec905fb4d08b2e19d3e6fb4c10e9a316d5e4a76f7747b2eb6626892ad4216",
+      "as_of": "2026-09-16",
+      "cases": 45,
+      "blocking": 45,
+      "failed": [],
+      "quarantined": [],
+      "quarantined_failed": [],
+      "seconds": 0.4
+    },
+    {
+      "stage": "ready",
+      "started_at": "2026-09-19T14:08:05.575393+00:00",
+      "status": "ran",
+      "release_id": "mvp-wallisellen-2026-09-18-v1",
+      "release_sha256": "338f45fabdb41b3973ebd5e45a6e5fa09e5c9d6c9ac0d14963c20d40bec791a7",
+      "attested_by": "Alexander Bobrovsky",
+      "attested_at": "2026-09-19T14:08:05.575461+00:00",
+      "gates": {
+        "G1": "passed",
+        "G2": "passed",
+        "G3": "passed",
+        "G4": "passed",
+        "G5": "passed",
+        "G6": "passed"
+      },
+      "cases": {
+        "total": 45,
+        "blocking": 45,
+        "quarantined": []
+      },
+      "stale_from": "2026-10-16",
+      "seconds": 5.8
+    }
+  ],
+  "exit_code": 0,
+  "facts_dropped": 0
+}

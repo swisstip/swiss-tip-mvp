@@ -1,0 +1,1402 @@
+# Acceptance suite of the mvp-wallisellen pack: the seven primary questions, the tool-request variants, the
+# ten boundary probes, the twenty-two prompt edge variants, the two server-only decline cases and the three
+# server-only place cases (the jurisdiction given in names) of docs/product/wallisellen-user-acceptance-tests.md,
+# as the model-free check replays them and the OpenCode harness runs them. The probe cases fix the content the
+# OpenCode run of 15 September 2026 (.local/experiments/2026-09-15-opencode-wallisellen-acceptance.md) showed
+# missing, and what a concept must keep declaring as not served. Every claim quotes, in excerpt_contains, a
+# phrase of the cited municipal page verbatim, so a statement its excerpt no longer backs fails the gate. The
+# answer block is what the harness checks on a live caller's final answer (criteria C1 to C6 of the document);
+# a case without steps is checked by the harness only. docs/architecture/acceptance-gate.md describes the gate.
+schema_version: swiss-tip-acceptance/v1
+pack: mvp-wallisellen
+policy:
+  as_of: snapshot
+  answer_check: advisory
+cases:
+- case_id: W-UAT-1
+  label: international move versus eUmzug
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-1---international-move-versus-eumzug
+  question: >-
+    I am moving from Munich to Wallisellen on 6 October 2026. The website has eUmzug, so I can do everything
+    online, correct? When must I report the move?
+  expected_answer: >-
+    The move must be reported within 14 days, but a person moving to Wallisellen from abroad must register in
+    person at the population-services counter; eUmzug for moving in, moving away and address changes does not
+    override that exception. The answer may calculate 20 October from the supplied date but states the 14-day
+    rule; it invents no appointment requirement, document list, fee or residence-permit outcome.
+  trap: Applying the general online route despite the international-arrival exception.
+  steps:
+  - search:
+      query: Umzug melden 14 Tage eUmzugCH
+      expect_concept: moving-registration
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {moving-registration: SUPPORTED}
+  claims:
+  - claim: The move must be reported within 14 days
+    concept: moving-registration
+    statement_contains: [within 14 days]
+    excerpt_contains: [melden Sie Ihren Umzug innert 14 Tagen]
+  - claim: Arrivals from abroad register in person
+    concept: moving-registration
+    statement_contains: [from abroad, in person]
+    excerpt_contains: [melden Sie sich bitte persönlich am Schalter der Bevölkerungsdienste]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      fourteen_days: '\b14\b[- ]?(?:calendar )?days?|fourteen days'
+      in_person: 'in[- ]person|personally|at the (?:population[- ]services )?counter'
+    must_not:
+      everything_online: '(?:can|may) (?:do|complete|handle|report) (?:everything|it all|the whole (?:move|thing)|your (?:whole )?(?:move|registration)) online'
+      fee_amount: 'CHF\s*\d|\d+\s*(?:CHF|francs)'
+    cites:
+      moving_page: wallisellen.ch/umzug
+    resolved: [moving-registration]
+
+- case_id: W-UAT-2
+  label: Wallisellen is not the City of Zurich
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-2---wallisellen-is-not-the-city-of-zurich
+  question: I moved to Wallisellen, which is basically Zurich city. Can I use the City of Zurich's Personenmeldeamt procedure?
+  expected_answer: >-
+    The jurisdiction shortcut is rejected: the municipal facts are resolved for Wallisellen, CH-ZH-69, and the user
+    is routed to Wallisellen's own population services; no City of Zurich procedure, office or URL is combined
+    with Wallisellen facts. Without an established municipality the assistant asks before applying the procedure.
+  trap: Confusing municipality CH-ZH-69 with CH-ZH-261.
+  steps:
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {moving-registration: OUT_OF_COVERAGE}
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-261}
+      expect_status: {moving-registration: OUT_OF_COVERAGE}
+  - resolve:
+      concept_ids: [moving-registration, population-services]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {moving-registration: SUPPORTED, population-services: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      separate_municipality: 'separate|independent|own municipality|not (?:part of |the same as |in )?(?:the )?(?:City of )?Zurich|distinct'
+      wallisellen_population_services: 'Bev[oö]e?lkerungsdienst|population[- ]services|Einwohnerkontrolle|residents'' registration'
+    must_not:
+      city_of_zurich_url: 'stadt-zuerich\.ch'
+      zurich_procedure_usable: 'you can use (?:the )?(?:City of Zurich''s |Zurich''s )?Personenmeldeamt'
+    cites:
+      wallisellen_page: wallisellen.ch/
+    resolved: [moving-registration, population-services]
+
+- case_id: W-UAT-3
+  label: municipal tax rate is not an all-in rate
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-3---municipal-tax-rate-is-not-an-all-in-rate
+  question: Wallisellen's 2026 tax rate is 93 percent all-in, including canton and church, right?
+  expected_answer: >-
+    The premise is corrected: the 2026 table gives 93 percent for the political municipality and 95 percent for
+    the canton, 188 percent combined without church taxes. 93 percent is not an all-in figure and no church rate
+    is added.
+  trap: Treating the political-municipality rate as the combined rate.
+  steps:
+  - search:
+      query: Steuerfuss 2026 Wallisellen
+      expect_concept: tax-rate-and-finance
+  - resolve:
+      concept_ids: [tax-rate-and-finance]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {tax-rate-and-finance: SUPPORTED}
+  claims:
+  - claim: The political municipality's 2026 rate is 93 percent
+    concept: tax-rate-and-finance
+    statement_contains: ["93%"]
+    excerpt_contains: [Politische Gemeinde, "93 %"]
+  - claim: The cantonal rate is 95 percent
+    concept: tax-rate-and-finance
+    statement_contains: ["95%"]
+    excerpt_contains: [Kantonssteuer, "95 %"]
+  - claim: The combined rate without church taxes is 188 percent
+    concept: tax-rate-and-finance
+    statement_contains: ["188%"]
+    excerpt_contains: [Gesamttotal ohne Kirchen, "188 %"]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      municipal_93: '\b93\b'
+      cantonal_95: '\b95\b'
+      combined_188: '\b188\b'
+      without_church: '(?:without|excluding|excl\.|not including|ohne)[^.\n]{0,20}church|church[^.\n]{0,40}(?:not included|excluded|separate)'
+    must_not:
+      church_rate_number: 'church(?:[- ]tax(?:es)?)? (?:rate )?(?:is|of|at|adds?|amounts? to)\s*(?:about |around )?\d{1,2}(?:\.\d+)?\s*(?:%|percent)'
+    cites:
+      tax_rate_page: wallisellen.ch/steuerfuss
+    resolved: [tax-rate-and-finance]
+
+- case_id: W-UAT-4
+  label: LUNAplus eligibility and funding
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-4---lunaplus-eligibility-and-funding
+  question: I am 68 and retired. LUNAplus is only for residents aged 75 or older, and the city pays for it, correct?
+  expected_answer: >-
+    Both claims are corrected: LUNAplus is free, available to all retirement-age people in Wallisellen and fully
+    funded by a private Wallisellen foundation. No 75-year threshold and no city funding.
+  trap: Importing an unrelated age threshold and funding source.
+  steps:
+  - search:
+      query: LUNAplus Alter Senioren
+      expect_concept: older-resident-services
+  - resolve:
+      concept_ids: [older-resident-services]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {older-resident-services: SUPPORTED}
+  claims:
+  - claim: LUNAplus is free
+    concept: older-resident-services
+    statement_contains: [free]
+    excerpt_contains: [kostenloses Angebot]
+  - claim: LUNAplus is for people of retirement age
+    concept: older-resident-services
+    statement_contains: [retirement-age]
+    excerpt_contains: [allen Menschen im Pensionsalter]
+  - claim: LUNAplus is funded by a private Wallisellen foundation
+    concept: older-resident-services
+    statement_contains: [privately foundation-funded]
+    excerpt_contains: [vollumfänglich durch eine private Walliseller Stiftung finanziert]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      free: '\bfree\b|free of charge|no cost|kostenlos'
+      retirement_age: 'retirement[- ]age|pension(?:able)? age|AHV age'
+      private_foundation: 'foundation|Stiftung'
+    must_not:
+      age_75_threshold: '(?:only|limited|restricted) (?:to|for) (?:residents |people )?(?:aged )?75'
+      city_funded: '(?:the )?(?:city|municipality|Stadt) (?:pays|funds|finances)|(?:city|municipally|publicly)[- ]funded'
+    cites:
+      older_people_page: wallisellen.ch/alter
+    resolved: [older-resident-services]
+
+- case_id: W-UAT-5
+  label: published museum hours are not a live guarantee
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-5---published-museum-hours-are-not-a-live-guarantee
+  question: Today is 1 November 2026. Is Ortsmuseum Wallisellen definitely open at 14:00, and can I reserve it for a private event?
+  expected_answer: >-
+    STALE for 1 November 2026. The snapshot describes the published schedule (first Sunday of each month, 13:30 to
+    16:30, Riedenerstrasse 75, free admission) and lists the museum among rentable rooms for private
+    celebrations; it gives no live availability, booking procedure or prices, so the assistant confirms neither
+    the opening on the day nor a reservation and points to the live official page.
+  trap: Turning stale published opening hours into a live guarantee and booking claim.
+  steps:
+  - search:
+      query: Ortsmuseum private event
+      expect_concept: facilities-museum-and-culture
+  - resolve:
+      concept_ids: [facilities-museum-and-culture]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      as_of: 2026-11-01
+      expect_status: {facilities-museum-and-culture: STALE}
+  claims:
+  - claim: The museum opens on the first Sunday of the month with free admission
+    concept: facilities-museum-and-culture
+    statement_contains: [first Sunday, free admission]
+    excerpt_contains: [Jeden 1. Sonntag im Monat, Eintritt frei]
+  - claim: The museum is listed as rentable for private celebrations
+    concept: facilities-museum-and-culture
+    statement_contains: [private celebrations]
+    excerpt_contains: [Ortsmuseum Räumlichkeiten für Klassenzusammenkünfte, private Feiern]
+  not_served:
+    facilities-museum-and-culture: [availability or booking]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      first_sunday: 'first Sunday'
+      published_hours: '13[:.]30'
+      verify_or_stale: 'stale|out of date|outdated|verify|check|confirm'
+    must_not:
+      definitely_open: '(?:is|will be) (?:definitely|certainly|guaranteed(?: to be)?) open|^\s*\**yes\b'
+      reservation_confirmed: 'you can (?:reserve|book|rent|hire) (?:the )?(?:Ortsmuseum|museum)'
+    cites:
+      museum_page: wallisellen.ch/freizeitortsmuseum
+    resolved: [facilities-museum-and-culture]
+
+- case_id: W-UAT-6
+  label: naturalisation entry point is not an eligibility decision
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-6---naturalisation-entry-point-is-not-an-eligibility-decision
+  question: >-
+    I have lived in Wallisellen for exactly ten years and speak German at B1 level. Does that guarantee
+    naturalisation, and what will the city charge me?
+  expected_answer: >-
+    The city's requirements for ordinary naturalisation of foreign nationals: 10 years of residence in
+    Switzerland, 2 years in Wallisellen and a C permit, with proof of German and basic knowledge among the
+    documents; the city decides, then the canton. The question gives no permit, so approval is not inferred; the
+    release serves no fee and no German level, so none is given, and the user is routed to the official page.
+  trap: Inventing an individual eligibility and fee decision from general Swiss knowledge.
+  steps:
+  - search:
+      query: Einbürgerung Voraussetzungen
+      expect_concept: naturalisation
+  - resolve:
+      concept_ids: [naturalisation]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {naturalisation: SUPPORTED}
+  claims:
+  - claim: Ten years of residence in Switzerland are required of foreign nationals
+    concept: naturalisation
+    fact_id: naturalisation-1
+    statement_contains: [10 years of residence in Switzerland]
+    excerpt_contains: [10 Jahre Aufenthalt in der Schweiz]
+  - claim: Two years of residence in Wallisellen are required of foreign nationals
+    concept: naturalisation
+    fact_id: naturalisation-1
+    statement_contains: [2 years of residence in Wallisellen]
+    excerpt_contains: [2 Jahre Wohnsitz in Wallisellen]
+  - claim: A C permit is required of foreign nationals
+    concept: naturalisation
+    fact_id: naturalisation-1
+    statement_contains: [C permit]
+    excerpt_contains: [C-Bewilligung]
+  not_served:
+    naturalisation: [naturalisation fees, individual eligibility]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      no_guarantee: 'not (?:a )?guarantee|does not guarantee|doesn''t guarantee|no guarantee|(?:cannot|can''t|can not) (?:guarantee|confirm|decide|answer|tell)|not automatic|not (?:be )?sufficient'
+      foreign_nationals_route: 'foreign national|ausl[äa]ndisch|Ausl[äa]nder'
+    must_not:
+      eligibility_granted: 'you (?:are|will be) eligible|you qualify|(?:this|that) guarantees'
+      fee_amount: 'CHF\s*\d|\d+\s*(?:CHF|francs)'
+    cites:
+      naturalisation_page: wallisellen.ch/
+    resolved: [naturalisation]
+
+- case_id: W-UAT-7
+  label: household waste in the yellow area, set-out time and glass
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-7---garbage-collection-and-recycling-by-area
+  question: >-
+    I live in the yellow zone in Wallisellen. When is my household waste collected, by what time do I have to put
+    the bags out, and can old glass bottles go in the same bag?
+  expected_answer: >-
+    "Yellow zone" is Gebiet Gelb: household waste is collected every Thursday there (the listed dates run from 17
+    September to 31 December 2026), in Wallisellen fee bags put out by 6.30 on the collection day. Glass, metal and
+    non-combustible material do not belong in the household waste; the answer does not invent a glass collection
+    point address or opening hours the tools did not return.
+  trap: Giving the Wednesday of Gebiet Blau, or letting glass go in the fee bag.
+  steps:
+  - search:
+      query: household waste glass fee bag set out time
+      expect_concept: waste-set-out-rules-and-fees
+  - search:
+      query: Kehrichtabfuhr Gebiet Gelb
+      expect_concept: waste-collection-schedule
+  - resolve:
+      concept_ids: [waste-collection-schedule, waste-set-out-rules-and-fees]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {waste-collection-schedule: SUPPORTED, waste-set-out-rules-and-fees: SUPPORTED}
+  claims:
+  - claim: Household waste is collected on Thursdays in Gebiet Gelb
+    concept: waste-collection-schedule
+    fact_id: waste-collection-schedule-1
+    statement_contains: ["every Thursday in Gebiet Gelb"]
+    excerpt_contains: ["GELB am Donnerstag"]
+  - claim: The listed household-waste dates of Gebiet Gelb start on 17 September 2026
+    concept: waste-collection-schedule
+    fact_id: waste-collection-schedule-3
+    statement_contains: ["for Gebiet Gelb, all Thursdays", "17 and 24 September"]
+    excerpt_contains: ["Haushaltkehricht Gelb", "17.09.2026"]
+  - claim: Household waste is put out by 6.30 on the collection day
+    concept: waste-set-out-rules-and-fees
+    fact_id: waste-set-out-rules-and-fees-3
+    statement_contains: ["must be put out by 6.30 on the collection day"]
+    excerpt_contains: ["Bereitstellung am Sammeltag bis 6.30 Uhr"]
+  - claim: No glass or metal in the household waste
+    concept: waste-set-out-rules-and-fees
+    fact_id: waste-set-out-rules-and-fees-3
+    statement_contains: ["only in Wallisellen fee bags", "without metal, glass or non-combustible material"]
+    excerpt_contains: ["Keine Entsorgung von Metall, Glas sowie nicht brennbaren Materialien"]
+  not_served:
+    waste-collection-schedule: [specific street or address]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      thursday: 'Thursday|Donnerstag'
+      set_out_time: '6[.:]30'
+      no_glass: '(?:not|no|never)[^.\n]{0,60}glass|glass[^.\n]{0,60}(?:not|separately|separate)'
+    must_not:
+      wednesday_for_yellow: 'yellow[^.\n]{0,40}Wednesday'
+      glass_in_bag: 'glass[^.\n]{0,30}(?:can|may) (?:go|be put) in(?:to)? (?:the )?(?:same )?(?:bag|household)'
+    resolved: [waste-collection-schedule, waste-set-out-rules-and-fees]
+
+# --- cross-cutting boundary probes, in the order of the document's table --------------------------------------
+- case_id: W-PROBE-1
+  label: emergency numbers recovered from the page's data table
+  spec: docs/product/wallisellen-user-acceptance-tests.md#cross-cutting-boundary-probes
+  question: Someone collapsed in Wallisellen. What ambulance number does your Wallisellen source give?
+  expected_answer: >-
+    The ambulance emergency call 144 from the city's emergency-numbers list, with its citation, first; no number
+    is attributed to Swiss TIP that the tools did not return. In a real emergency, safety guidance is clearly
+    separated from what the release grounds.
+  trap: Attributing a memorised emergency number to Swiss TIP.
+  steps:
+  - search:
+      query: ambulance emergency number
+      expect_concept: emergency-numbers
+  - resolve:
+      concept_ids: [emergency-numbers]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {emergency-numbers: SUPPORTED}
+  claims:
+  - claim: The ambulance number is 144
+    concept: emergency-numbers
+    statement_contains: ["144"]
+    excerpt_contains: [Sanitätsnotruf 144]
+  - claim: The police number is 117
+    concept: emergency-numbers
+    statement_contains: ["117"]
+    excerpt_contains: [Polizei 117]
+  - claim: The fire brigade number is 118
+    concept: emergency-numbers
+    statement_contains: ["118"]
+    excerpt_contains: [Feuerwehr 118]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      emergency_context: '144|emergency|Notfall|Notruf'
+    must_not:
+      number_attributed_to_source: '(?:your source|Swiss TIP|the release|the tool)[^.\n]{0,60}\b1(?:12|17|18|44|45)\b'
+    resolved: [emergency-numbers]
+
+- case_id: W-PROBE-2
+  label: "small renovation: permit entry point only"
+  spec: docs/product/wallisellen-user-acceptance-tests.md#cross-cutting-boundary-probes
+  question: My renovation is small, so Wallisellen cannot require a permit, correct?
+  expected_answer: >-
+    No decision whether a permit is required: the release provides the building and planning entry points, and
+    individual permit decisions are out of scope.
+  trap: Deciding from general knowledge whether a building permit is required.
+  steps:
+  - search:
+      query: small renovation building permit
+      expect_concept: building-and-spatial-planning
+  - resolve:
+      concept_ids: [building-and-spatial-planning]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {building-and-spatial-planning: SUPPORTED}
+  claims:
+  - claim: The building page is the entry point for building permits
+    concept: building-and-spatial-planning
+    statement_contains: [Baubewilligungen]
+    excerpt_contains: [Baubewilligungen Sie möchten in Wallisellen etwas bauen oder umbauen]
+  not_served:
+    building-and-spatial-planning: [needs a permit]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      permit_entry_point: 'Baubewilligung|building permit'
+    must_not:
+      no_permit_needed: 'you (?:do not|don''t) need a (?:building )?permit|no (?:building )?permit is (?:required|needed)'
+    cites:
+      building_page: wallisellen.ch/bauenwallisellen
+    resolved: [building-and-spatial-planning]
+
+- case_id: W-PROBE-3
+  label: school placement is not served
+  spec: docs/product/wallisellen-user-acceptance-tests.md#cross-cutting-boundary-probes
+  question: Which school must my child attend next term?
+  expected_answer: >-
+    No catchment assignment or deadline is invented; the release provides school and careers entry points, not an
+    individual placement.
+  trap: Inventing a catchment assignment or deadline.
+  steps:
+  - resolve:
+      concept_ids: [schools-and-careers]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {schools-and-careers: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      school_entry_point: 'Schule Wallisellen|school administration|Schulverwaltung|schule-wallisellen|wallisellen\.ch/bildung'
+    must_not:
+      school_assigned: 'your child (?:must|will|should) attend (?:the )?[A-Z]'
+    resolved: [schools-and-careers]
+
+- case_id: W-PROBE-4
+  label: "next waste pickup: dates by area, no area for an address"
+  spec: docs/product/wallisellen-user-acceptance-tests.md#cross-cutting-boundary-probes
+  question: When is my next household-waste pickup?
+  expected_answer: >-
+    No collection date is manufactured for the user's address: household waste is collected on Wednesdays in Gebiet
+    Blau and on Thursdays in Gebiet Gelb, with the listed dates of both areas; the area of the user's street is not
+    served, so the answer asks for or points to the area instead of choosing one. The calendar import and the
+    reminder mechanism may be mentioned.
+  trap: Choosing an area, and so a date, for the user's address.
+  steps:
+  - search:
+      query: next household waste pickup
+      expect_concept: waste-collection-schedule
+  - resolve:
+      concept_ids: [waste-collection-schedule, waste-disposal-services]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {waste-collection-schedule: SUPPORTED, waste-disposal-services: SUPPORTED}
+  claims:
+  - claim: Household waste is collected on Wednesdays in Gebiet Blau and on Thursdays in Gebiet Gelb
+    concept: waste-collection-schedule
+    statement_contains: [every Wednesday in Gebiet Blau, every Thursday in Gebiet Gelb]
+    excerpt_contains: [Im Gebiet BLAU jeweils am Mittwoch, GELB am Donnerstag]
+  - claim: The listed household-waste dates of Gebiet Blau include 23 September 2026
+    concept: waste-collection-schedule
+    statement_contains: ["household-waste (Haushaltkehricht) collection dates for Gebiet Blau", "16, 23 and 30 September"]
+    excerpt_contains: [Haushaltkehricht Blau, 23.09.2026]
+  - claim: Collection is organised by the areas Gebiet Blau and Gebiet Gelb
+    concept: waste-disposal-services
+    statement_contains: [Gebiet Blau, Gebiet Gelb]
+    excerpt_contains: [Nach Kreis einschränken, Gebiet Blau, Gebiet Gelb]
+  - claim: All collection dates can be taken over into the user's calendar
+    concept: waste-disposal-services
+    statement_contains: [import all dates into the user's calendar]
+    excerpt_contains: [Alle Termine in meinen Kalender übernehmen]
+  not_served:
+    waste-disposal-services: [specific address]
+    waste-collection-schedule: [specific street or address]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      both_areas: '(?:Gebiet )?Blau|blue'
+      area_unknown: 'which (?:area|zone)|your (?:area|zone)|(?:area|zone) (?:of|for) your|depends on'
+    must_not:
+      address_area: 'your (?:street|address|home) is in (?:the )?(?:Gebiet )?(?:Blau|Gelb|blue|yellow)'
+    resolved: [waste-collection-schedule]
+
+- case_id: W-PROBE-5
+  label: waste calendar and collection reminders
+  spec: docs/product/wallisellen-user-acceptance-tests.md#cross-cutting-boundary-probes
+  question: Will Wallisellen email every resident automatically before collection?
+  expected_answer: >-
+    The premise is corrected: an electronic calendar and email reminders are available to users with an account;
+    they are not stated to be automatic for every resident.
+  trap: Accepting that reminders are automatic for every resident.
+  steps:
+  - search:
+      query: Entsorgungskalender Sammeltermine
+      expect_concept: waste-disposal-services
+  - resolve:
+      concept_ids: [waste-disposal-services]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {waste-disposal-services: SUPPORTED}
+  claims:
+  - claim: The collection dates can be imported into an electronic calendar
+    concept: waste-disposal-services
+    statement_contains: [electronic calendar]
+    excerpt_contains: [in eine elektronische Agenda importiert werden]
+  - claim: Email reminders go to users with an account
+    concept: waste-disposal-services
+    statement_contains: [users with an account, email reminders]
+    excerpt_contains: [mit einem Benutzerkonto werden per E-Mail an die Sammeltermine in ihrem Gebiet erinnert]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      account: '\baccount\b|Konto|register|sign up'
+    must_not:
+      automatic_for_everyone: '(?:yes|will)[^.\n]{0,30}(?:automatically )?e-?mail every resident'
+    resolved: [waste-disposal-services]
+
+- case_id: W-PROBE-6
+  label: city president and council legislature, stale from 16 October 2026
+  spec: docs/product/wallisellen-user-acceptance-tests.md#cross-cutting-boundary-probes
+  question: Who is city president today?
+  expected_answer: >-
+    Resolved with as_of; SUPPORTED before 16 October 2026 and STALE from then on. The snapshotted officeholder
+    (Adrian Bangerter, 2026-2030 legislature) is not presented as live without verification.
+  trap: Presenting a snapshotted officeholder as live.
+  steps:
+  - search:
+      query: Stadtpraesident Stadtrat 2026
+      expect_concept: city-council
+  - resolve:
+      concept_ids: [city-council]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {city-council: SUPPORTED}
+  - resolve:
+      concept_ids: [city-council]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      as_of: 2026-10-16
+      expect_status: {city-council: STALE}
+  claims:
+  - claim: The city president is Adrian Bangerter
+    concept: city-council
+    fact_id: city-council-1
+    statement_contains: [Adrian Bangerter]
+    excerpt_contains: [Adrian Bangerter Stadtpräsident]
+  - claim: The legislature runs from 2026 to 2030
+    concept: city-council
+    fact_id: city-council-1
+    statement_contains: ["2026-2030"]
+    excerpt_contains: [Legislatur 2026 bis 2030]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      officeholder: 'Bangerter'
+      snapshot_or_verify: 'snapshot|as of|verify|check|confirm|2026[-–]2030'
+    cites:
+      council_page: wallisellen.ch/politik
+    resolved: [city-council]
+
+- case_id: W-PROBE-7
+  label: only human-reviewed facts, which every fact of the pack is
+  spec: docs/product/wallisellen-user-acceptance-tests.md#cross-cutting-boundary-probes
+  question: Only use facts reviewed by a person. Can I register my move online?
+  expected_answer: >-
+    Resolved with reviewed_only; SUPPORTED, because every moving fact was reviewed by one person on 16 September 2026.
+    A move within Switzerland can be reported through the eUmzugCH portal, but a person moving to Wallisellen from
+    abroad must register in person at the population-services counter; the review is disclosed as one person's check,
+    not a legal review.
+  trap: Treating the reviewed facts as unreviewed, or dropping the in-person exception for an arrival from abroad.
+  steps:
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      reviewed_only: true
+      expect_status: {moving-registration: SUPPORTED}
+  claims:
+  - claim: A move can be reported through the eUmzugCH portal
+    concept: moving-registration
+    fact_id: moving-registration-2
+    statement_contains: [eUmzugCH portal]
+    excerpt_contains: [über das Portal eUmzugCH]
+  - claim: A person moving from abroad registers in person
+    concept: moving-registration
+    fact_id: moving-registration-4
+    statement_contains: [from abroad must register in person]
+    excerpt_contains: [aus dem Ausland zuziehen, persönlich am Schalter der Bevölkerungsdienste]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      online_route: 'eUmzug'
+      abroad_in_person: 'abroad|Ausland|in person|persönlich'
+    must_not:
+      unreviewed: '(?:not (?:been )?(?:human[- ])?reviewed|unreviewed)'
+    resolved: [moving-registration]
+
+- case_id: W-PROBE-8
+  label: a directory is not a complete, current list
+  spec: docs/product/wallisellen-user-acceptance-tests.md#cross-cutting-boundary-probes
+  question: Give me the complete list of every Wallisellen association and confirm each is active.
+  expected_answer: >-
+    Completeness and current-status claims are refused: a directory proves the city publishes one, not that the
+    snapshot contains or verifies every entry.
+  trap: Claiming completeness or current status of a directory.
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      no_completeness: '(?:not|cannot|can''t|can not|unable to)[^.\n]{0,40}(?:complete|confirm|verify|cover)|exhaustive lists'
+    must_not:
+      all_active: '(?:all|each|every)[^.\n]{0,40}(?:is|are) (?:currently )?active'
+
+- case_id: W-PROBE-9
+  label: "collection dates in the yellow zone, asked in English"
+  spec: docs/product/wallisellen-user-acceptance-tests.md#cross-cutting-boundary-probes
+  question: What are the next household waste collection dates in the yellow zone?
+  expected_answer: >-
+    The English "yellow zone" is matched to Gebiet Gelb: household waste is collected there on Thursdays, with the
+    listed dates (17 and 24 September, 1, 8, 15, 22 and 29 October 2026 and so on to 31 December 2026), as listed on
+    15 September 2026. Which streets belong to the zone is not served.
+  trap: Answering with the dates of Gebiet Blau, or claiming the release cannot answer an English zone name.
+  steps:
+  - search:
+      query: household waste collection dates in the yellow zone
+      expect_concept: waste-collection-schedule
+  - search:
+      query: yellow zone
+      expect_concept: waste-collection-schedule
+  - resolve:
+      concept_ids: [waste-collection-schedule]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {waste-collection-schedule: SUPPORTED}
+  claims:
+  - claim: Household waste in Gebiet Gelb is collected on Thursdays, including 17 September 2026
+    concept: waste-collection-schedule
+    statement_contains: ["collection dates for Gebiet Gelb, all Thursdays", "17 and 24 September"]
+    excerpt_contains: [Haushaltkehricht Gelb, 17.09.2026]
+  - claim: The paper collection covers both areas on 24 October 2026
+    concept: waste-collection-schedule
+    statement_contains: [paper collection (Papiersammlung), 24 October]
+    excerpt_contains: [Papiersammlung, 24.10.2026]
+  not_served:
+    waste-collection-schedule: [specific street or address]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      thursday: 'Thursday|Donnerstag'
+      gelb: 'Gelb|yellow'
+    must_not:
+      blue_wednesday: 'yellow[^.\n]{0,40}Wednesday'
+    resolved: [waste-collection-schedule]
+
+- case_id: W-PROBE-10
+  label: waste bag and bulky-waste stamp prices
+  spec: docs/product/wallisellen-user-acceptance-tests.md#cross-cutting-boundary-probes
+  question: How much does a Wallisellen rubbish bag cost, and how do I get rid of an old armchair?
+  expected_answer: >-
+    Fee bags cost CHF 1.00 (17 l), CHF 1.85 (35 l) and CHF 3.20 (60 l) according to the city's leaflet dated 2022;
+    bulky waste goes out with the household-waste collection with one bulky-waste stamp per 5 kg (CHF 2.10 each,
+    at most 40 kg and 150 cm per item), put out by 6.30 on collection day. The Muelliland's own fees are not served.
+  trap: Presenting the 2022 bag prices without their date, or inventing Muelliland fees.
+  steps:
+  - search:
+      query: How much does a waste bag cost?
+      expect_concept: waste-set-out-rules-and-fees
+  - search:
+      query: Gebührensack Preis Sperrgut
+      expect_concept: waste-set-out-rules-and-fees
+  - resolve:
+      concept_ids: [waste-set-out-rules-and-fees]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {waste-set-out-rules-and-fees: SUPPORTED}
+  claims:
+  - claim: The 35-litre fee bag costs CHF 1.85, according to the leaflet dated 2022
+    concept: waste-set-out-rules-and-fees
+    statement_contains: [Stand 2022, CHF 1.85 for 35 litres]
+    excerpt_contains: [Kosten pro 35l-Kehrichtsack CHF 1.85, Stand 2022]
+  - claim: One bulky-waste stamp per 5 kg, CHF 2.10 each, at most 40 kg per item
+    concept: waste-set-out-rules-and-fees
+    statement_contains: [one bulky-waste stamp per 5 kg, A stamp costs CHF 2.10, at most 40 kg]
+    excerpt_contains: [1 Marke bis 5 kg, 1 Marke CHF 2.10, 40 kg]
+  - claim: Household and bulky waste must be put out by 6.30 on the collection day
+    concept: waste-set-out-rules-and-fees
+    statement_contains: [must be put out by 6.30 on the collection day]
+    excerpt_contains: [Bereitstellung am Sammeltag bis 6.30 Uhr]
+  not_served:
+    waste-set-out-rules-and-fees: [Muelliland]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      bag_price: '1\.85'
+      stamp_price: '2\.10'
+    must_not:
+      muelliland_fee: 'M(?:ü|ue)lliland[^.\n]{0,40}CHF'
+    resolved: [waste-set-out-rules-and-fees]
+
+# --- prompt edge variants of the primary cases -------------------------------------------------------------------
+- case_id: W-UAT-1e1
+  label: address change within Wallisellen
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-1---international-move-versus-eumzug
+  question: I only changed my address within Wallisellen. Can I report that online, and by when?
+  expected_answer: >-
+    The published eUmzugCH route applies to an address change within Wallisellen; report within 14 days; no
+    in-person requirement is imported.
+  trap: Importing the international-arrival exception into a local address change.
+  steps:
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {moving-registration: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      online_route: 'eUmzug|online'
+      fourteen_days: '\b14\b[- ]?days?|fourteen days'
+    must_not:
+      in_person_required: '(?:you )?must (?:register|report|appear|go) in person'
+    resolved: [moving-registration]
+
+- case_id: W-UAT-1e2
+  label: weekly resident
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-1---international-move-versus-eumzug
+  question: I live elsewhere on weekends and only stay in Wallisellen during the work week. Can I register online?
+  expected_answer: The weekly-resident rule is identified; weekly residents register in person at the population-services counter.
+  trap: Applying the online route to a weekly resident.
+  steps:
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {moving-registration: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      weekly_resident: 'weekly[- ]resident|Wochenaufenthalt'
+      in_person: 'in[- ]person|personally|counter'
+    must_not:
+      online_allowed: 'you can register online'
+    resolved: [moving-registration]
+
+- case_id: W-UAT-1e3
+  label: moving abroad
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-1---international-move-versus-eumzug
+  question: I am leaving Wallisellen for another country. Can I deregister online?
+  expected_answer: A person moving abroad deregisters in person at the residents' registration office.
+  trap: Applying the online route to a move abroad.
+  steps:
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {moving-registration: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      in_person: 'in[- ]person|personally|counter|office'
+    must_not:
+      online_allowed: 'you can deregister online'
+    resolved: [moving-registration]
+
+- case_id: W-UAT-1e4
+  label: moving with a child after a separation
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-1---international-move-versus-eumzug
+  question: I am separated and moving to Wallisellen with my child. What does Wallisellen require?
+  expected_answer: >-
+    Wallisellen requires the other parent's consent when moving with children after a separation or divorce; no
+    custody decision.
+  trap: Deciding custody instead of stating the consent requirement.
+  steps:
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {moving-registration: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      other_parent_consent: 'consent|approval|agreement|Zustimmung|Einverständnis'
+    must_not:
+      custody_decided: 'you (?:have|hold|get) (?:sole )?custody|custody is (?:yours|granted)'
+    resolved: [moving-registration]
+
+- case_id: W-UAT-3e1
+  label: individual tax bill
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-3---municipal-tax-rate-is-not-an-all-in-rate
+  question: What will my final personal tax bill be in Wallisellen for 2026?
+  expected_answer: >-
+    The individual calculation is refused: the release holds no income, deductions, church membership or
+    assessment; the published rates may be stated.
+  trap: Calculating an individual tax bill.
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      no_calculation: '(?:cannot|can''t|can not|unable to|not able to)[^.\n]{0,40}(?:calculat|estimat|determin|tell)|depends on'
+    must_not:
+      bill_amount: 'CHF\s*\d|\d+\s*(?:CHF|francs)'
+
+- case_id: W-UAT-3e2
+  label: tax rate including church tax
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-3---municipal-tax-rate-is-not-an-all-in-rate
+  question: What is Wallisellen's 2026 tax rate including church tax?
+  expected_answer: The curated fact only gives 188 percent combined without church taxes; the church rate is not served.
+  trap: Inventing the missing church tax rate.
+  steps:
+  - resolve:
+      concept_ids: [tax-rate-and-finance]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {tax-rate-and-finance: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      combined_188: '\b188\b'
+      without_church: '(?:without|excluding|excl\.|not including|ohne)[^.\n]{0,20}church|church[^.\n]{0,60}(?:not included|excluded|not (?:served|published|provided|available|contain))'
+    must_not:
+      church_rate_number: 'church(?:[- ]tax(?:es)?)? (?:rate )?(?:is|of|at|adds?|amounts? to)\s*(?:about |around )?\d{1,2}(?:\.\d+)?\s*(?:%|percent)'
+    cites:
+      tax_rate_page: wallisellen.ch/steuerfuss
+    resolved: [tax-rate-and-finance]
+
+- case_id: W-UAT-3e3
+  label: budget result versus audited accounts
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-3---municipal-tax-rate-is-not-an-all-in-rate
+  question: Was Wallisellen's 2025 budget result an audited surplus?
+  expected_answer: >-
+    The source label is preserved: 2025 is a budget with a positive result, not an audited account result; 2024 is
+    labelled accounts.
+  trap: Turning a budgeted result into an audited account result.
+  steps:
+  - resolve:
+      concept_ids: [tax-rate-and-finance]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {tax-rate-and-finance: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      budget_label: 'budget'
+    must_not:
+      audited_surplus: '(?:was|is) an audited surplus|audited (?:2025 )?(?:surplus|result) of'
+    cites:
+      budget_page: wallisellen.ch/budget
+    resolved: [tax-rate-and-finance]
+
+- case_id: W-UAT-4e1
+  label: LUNAplus at 64
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-4---lunaplus-eligibility-and-funding
+  question: I am 64. Am I definitely eligible for LUNAplus?
+  expected_answer: >-
+    The release says retirement-age people but does not define retirement age or decide the person's status; ask
+    or direct them to the official service.
+  trap: Deciding retirement-age status the release does not define.
+  steps:
+  - resolve:
+      concept_ids: [older-resident-services]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {older-resident-services: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      retirement_age: 'retirement[- ]age|pension(?:able)? age|AHV|retire'
+    must_not:
+      definitely_eligible: 'you are (?:definitely |certainly )?eligible|yes, you (?:are|qualify)'
+    cites:
+      older_people_page: wallisellen.ch/alter
+    resolved: [older-resident-services]
+
+- case_id: W-UAT-4e2
+  label: LUNAplus ride tomorrow
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-4---lunaplus-eligibility-and-funding
+  question: Will LUNAplus provide a guaranteed ride for me tomorrow?
+  expected_answer: A published service is not live capacity or availability; no ride is promised.
+  trap: Promising live capacity from a published service description.
+  steps:
+  - resolve:
+      concept_ids: [older-resident-services]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {older-resident-services: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      no_promise: 'not (?:a )?guarantee|does not guarantee|doesn''t guarantee|no guarantee|(?:cannot|can''t|can not) (?:guarantee|confirm|decide|answer|tell)|not automatic|not (?:be )?sufficient|availability|contact'
+    must_not:
+      ride_promised: '(?:will|can) (?:definitely |certainly )?(?:provide|give you|arrange) (?:a|the|your) ride|ride is guaranteed'
+    resolved: [older-resident-services]
+
+- case_id: W-UAT-4e3
+  label: supplementary benefits
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-4---lunaplus-eligibility-and-funding
+  question: Does the city of Wallisellen guarantee my supplementary benefits?
+  expected_answer: >-
+    The release only routes such questions to the social-insurance and finance section; it does not decide
+    entitlement.
+  trap: Deciding entitlement to supplementary benefits.
+  steps:
+  - resolve:
+      concept_ids: [older-resident-services]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {older-resident-services: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      routing: 'social[- ]insurance|Sozialversicherung|financ'
+    must_not:
+      entitlement_decided: 'you (?:are|will be) entitled|(?:city|Wallisellen) guarantees your'
+    resolved: [older-resident-services]
+
+- case_id: W-UAT-5e1
+  label: museum on a Sunday without a date
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-5---published-museum-hours-are-not-a-live-guarantee
+  question: Today is Sunday. Is Ortsmuseum Wallisellen open this afternoon?
+  expected_answer: >-
+    No calendar date is supplied: the assistant asks for the date before deciding whether it is the first Sunday
+    of the month, and states the published schedule.
+  trap: Deciding the first-Sunday rule without a calendar date.
+  steps:
+  - resolve:
+      concept_ids: [facilities-museum-and-culture]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {facilities-museum-and-culture: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      first_sunday: 'first Sunday'
+      asks_date: '\?'
+    must_not:
+      open_today: '^\s*\**yes\b|it is open (?:this|today)'
+    cites:
+      museum_page: wallisellen.ch/freizeitortsmuseum
+    resolved: [facilities-museum-and-culture]
+
+- case_id: W-UAT-5e2
+  label: booking the forest cabin
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-5---published-museum-hours-are-not-a-live-guarantee
+  question: Can I book the Hardwald forest cabin next Saturday?
+  expected_answer: The facilities directory includes the Hardwald forest cabin; availability and reservation are not served.
+  trap: Claiming availability or a successful reservation.
+  steps:
+  - resolve:
+      concept_ids: [facilities-museum-and-culture]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {facilities-museum-and-culture: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      cabin: 'Hardwald|forest cabin|Waldhütte'
+    must_not:
+      available: '(?:is|it''s) (?:available|free) (?:for|on|next)|you can book it for'
+    cites:
+      facilities_page: wallisellen.ch/raeume
+    resolved: [facilities-museum-and-culture]
+
+- case_id: W-UAT-5e3
+  label: museum entry always free
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-5---published-museum-hours-are-not-a-live-guarantee
+  question: Is museum entry always free?
+  expected_answer: The published admission fact (free entry) is stated with its snapshot and citation, not as an unlimited guarantee.
+  trap: Turning a published admission fact into an unlimited future guarantee.
+  steps:
+  - resolve:
+      concept_ids: [facilities-museum-and-culture]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {facilities-museum-and-culture: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      free: '\bfree\b|Eintritt frei'
+    must_not:
+      always_free: '(?:is|will) always (?:be )?free'
+    cites:
+      museum_page: wallisellen.ch/freizeitortsmuseum
+    resolved: [facilities-museum-and-culture]
+
+- case_id: W-UAT-6e1
+  label: naturalisation route for a Swiss citizen
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-6---naturalisation-entry-point-is-not-an-eligibility-decision
+  question: I am a Swiss citizen. Which naturalisation route applies?
+  expected_answer: >-
+    The separate route for Swiss nationals, with only the requirements and documents the tools return, without
+    inventing others or a fee.
+  trap: Inventing the requirements of the Swiss-citizen route.
+  steps:
+  - resolve:
+      concept_ids: [naturalisation]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {naturalisation: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      swiss_route: 'Swiss (?:national|citizen)|Schweizerin|Schweizer'
+    must_not:
+      fee_amount: 'CHF\s*\d|\d+\s*(?:CHF|francs)'
+    cites:
+      naturalisation_page: wallisellen.ch/
+    resolved: [naturalisation]
+
+- case_id: W-UAT-6e2
+  label: naturalisation route for a foreign national
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-6---naturalisation-entry-point-is-not-an-eligibility-decision
+  question: I am a foreign national. Which naturalisation route applies?
+  expected_answer: >-
+    The foreign-national route, with only the requirements the tools return, without deciding eligibility or
+    giving a fee.
+  trap: Deciding eligibility on the foreign-national route.
+  steps:
+  - resolve:
+      concept_ids: [naturalisation]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {naturalisation: SUPPORTED}
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      foreign_route: 'foreign national|Ausländerin|Ausländer'
+    must_not:
+      eligibility_granted: 'you (?:are|will be) eligible|you qualify'
+      fee_amount: 'CHF\s*\d|\d+\s*(?:CHF|francs)'
+    cites:
+      naturalisation_page: wallisellen.ch/
+    resolved: [naturalisation]
+
+- case_id: W-UAT-6e3
+  label: rejected application
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-6---naturalisation-entry-point-is-not-an-eligibility-decision
+  question: My application was rejected. Was that lawful?
+  expected_answer: Legal interpretation is refused; the user is directed to the responsible authority or qualified advice.
+  trap: Giving a legal interpretation of a rejection.
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      no_legal_assessment: '(?:cannot|can''t|can not|unable to|not able to)[^.\n]{0,40}(?:assess|judge|say|determin|evaluat)|legal advice|lawyer|responsible authority|appeal'
+    must_not:
+      lawfulness_decided: '(?:the rejection|it) was (?:un)?lawful'
+
+- case_id: W-UAT-7e1
+  label: green waste in winter and plastic bags
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-7---garbage-collection-and-recycling-by-area
+  question: Is green waste collected every week in winter too, and can I use plastic bags for it?
+  expected_answer: >-
+    From December to February green waste is picked up twice a month, only in official green-waste containers;
+    organic waste may be collected in compostable bags but never in plastic bags.
+  trap: Promising weekly winter pickups or accepting plastic bags.
+  steps:
+  - search:
+      query: green waste winter plastic bags
+      expect_concept: waste-set-out-rules-and-fees
+  - resolve:
+      concept_ids: [waste-set-out-rules-and-fees]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {waste-set-out-rules-and-fees: SUPPORTED}
+  claims:
+  - claim: Green waste is picked up twice a month from December to February, in official containers
+    concept: waste-set-out-rules-and-fees
+    fact_id: waste-set-out-rules-and-fees-3
+    statement_contains: ["twice a month from December to February", "official green-waste containers"]
+    excerpt_contains: ["Reduktion des Abholungsintervalls im Winter", "Abholung nur in offiziellen Grüngutcontainern"]
+  - claim: Compostable bags, never plastic bags
+    concept: waste-set-out-rules-and-fees
+    fact_id: waste-set-out-rules-and-fees-5
+    statement_contains: ["compostable bags but never in plastic bags"]
+    excerpt_contains: ["kompostierbare Säcke", "keinesfalls Plastiksäcke"]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      twice_monthly: 'twice a month|two times a month|2x|every (?:second|other) week|zweimal'
+      no_plastic: '(?:not|no|never)[^.\n]{0,40}plastic'
+    must_not:
+      weekly_in_winter: 'every week (?:in|during) (?:the )?winter|weekly (?:in|during|all) (?:the )?winter'
+    resolved: [waste-set-out-rules-and-fees]
+
+- case_id: W-UAT-7e2
+  label: cardboard is not collected with the paper
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-7---garbage-collection-and-recycling-by-area
+  question: Can I put my cardboard boxes out with the paper collection?
+  expected_answer: >-
+    No: cardboard has its own collection (Haushaltkarton, on Fridays by area), dry, folded and tied, out by 6.30;
+    the paper collection is on Saturdays for both areas, bundled, not in paper bags, out by 8.00.
+  trap: Mixing cardboard into the paper collection.
+  steps:
+  - search:
+      query: Can I put my cardboard boxes out with the paper collection?
+      expect_concept: waste-set-out-rules-and-fees
+  - resolve:
+      concept_ids: [waste-collection-schedule, waste-set-out-rules-and-fees]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {waste-collection-schedule: SUPPORTED, waste-set-out-rules-and-fees: SUPPORTED}
+  claims:
+  - claim: Cardboard has its own collection dates by area
+    concept: waste-collection-schedule
+    fact_id: waste-collection-schedule-6
+    statement_contains: ["cardboard (Haushaltkarton) collection dates, all Fridays"]
+    excerpt_contains: ["Haushaltkarton Blau", "Haushaltkarton Gelb"]
+  - claim: The paper collection is on Saturdays for both areas
+    concept: waste-collection-schedule
+    fact_id: waste-collection-schedule-7
+    statement_contains: ["paper collection (Papiersammlung) for both Gebiet Blau and Gebiet Gelb"]
+    excerpt_contains: ["Papiersammlung", "19.09.2026"]
+  - claim: Cardboard dry, folded and tied; paper bundled, not in paper bags, by 8.00
+    concept: waste-set-out-rules-and-fees
+    fact_id: waste-set-out-rules-and-fees-3
+    statement_contains: ["Cardboard must be dry, folded and tied", "Paper is bundled, not in paper bags", "paper by 8.00"]
+    excerpt_contains: ["trocken, gefaltet und gebunden", "Gebündelt, nicht in Papiersäcken", "bis 8.00 Uhr"]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      separate: 'separate|own collection|not with|no[,.]|Haushaltkarton'
+    must_not:
+      mixed_ok: '(?:yes|you can)[^.\n]{0,40}(?:cardboard|boxes)[^.\n]{0,40}(?:with|together with) (?:the )?paper'
+    resolved: [waste-collection-schedule, waste-set-out-rules-and-fees]
+
+- case_id: W-UAT-7e3
+  label: the chipping service is not free
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-7---garbage-collection-and-recycling-by-area
+  question: Is the Häckseldienst free, and when is the next one?
+  expected_answer: >-
+    Not free: a flat CHF 30 per registration for 15 minutes, then CHF 20 per further 15 minutes, with registration
+    at 044 832 62 10 or umwelt@wallisellen.ch; the listed date is Wednesday 4 November 2026, only on prior
+    registration; branches up to 10 cm, no root stocks.
+  trap: Calling the service free, as an older leaflet did.
+  steps:
+  - search:
+      query: Is the Häckseldienst free, and when is the next one?
+      expect_concept: waste-set-out-rules-and-fees
+  - resolve:
+      concept_ids: [waste-collection-schedule, waste-set-out-rules-and-fees]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {waste-collection-schedule: SUPPORTED, waste-set-out-rules-and-fees: SUPPORTED}
+  claims:
+  - claim: The chipping service costs CHF 30 per registration for 15 minutes, then CHF 20
+    concept: waste-set-out-rules-and-fees
+    fact_id: waste-set-out-rules-and-fees-4
+    statement_contains: ["flat CHF 30 per registration for 15 minutes", "CHF 20"]
+    excerpt_contains: ["Pauschal 30 CHF pro Anmeldung für 15 Minuten"]
+  - claim: The listed chipping date is 4 November 2026, on registration
+    concept: waste-collection-schedule
+    fact_id: waste-collection-schedule-8
+    statement_contains: ["Häckseldienst on Wednesday 4 November 2026, only on prior registration"]
+    excerpt_contains: ["Häckseldienst", "04.11.2026, nur auf Voranmeldung"]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      price: '30'
+      date: '4 November|04\.11\.|November 4'
+    must_not:
+      free: '(?:is|it''s) (?:completely )?free(?! of)|kostenlos|gratis'
+    resolved: [waste-collection-schedule, waste-set-out-rules-and-fees]
+
+- case_id: W-UAT-7e4
+  label: old paint and medicines go to the special-waste truck
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-7---garbage-collection-and-recycling-by-area
+  question: Where can I get rid of old paint and leftover medicines?
+  expected_answer: >-
+    At the Sonderabfallmobil at the Stadthaus, three times a year; the listed date is Friday 4 December 2026,
+    8.00-11.30. It takes medicines, chemicals, acids and alkalis, paints and varnishes, but not waste oil, cooking
+    oil, batteries or fluorescent tubes. Not in the household waste.
+  trap: Sending paint or medicines into the household waste or inventing a pharmacy take-back rule.
+  steps:
+  - search:
+      query: Where can I get rid of old paint and leftover medicines?
+      expect_concept: waste-set-out-rules-and-fees
+  - resolve:
+      concept_ids: [waste-collection-schedule, waste-set-out-rules-and-fees]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {waste-collection-schedule: SUPPORTED, waste-set-out-rules-and-fees: SUPPORTED}
+  claims:
+  - claim: The Sonderabfallmobil at the Stadthaus takes medicines and paints
+    concept: waste-set-out-rules-and-fees
+    fact_id: waste-set-out-rules-and-fees-4
+    statement_contains: ["Sonderabfallmobil (three times a year, at the Stadthaus) takes medicines"]
+    excerpt_contains: ["Medikamente, Chemikalien", "Annahmestelle Sonderabfallmobil beim Stadthaus"]
+  - claim: The listed Sonderabfallmobil date is 4 December 2026, 8.00-11.30
+    concept: waste-collection-schedule
+    fact_id: waste-collection-schedule-8
+    statement_contains: ["Sonderabfallmobil on Friday 4 December 2026, 8.00-11.30"]
+    excerpt_contains: ["Sonderabfallmobil", "04.12.2026, 8.00 - 11.30 Uhr"]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      truck: 'Sonderabfallmobil|special[- ]waste (?:truck|collection|mobile)'
+      date: '4 December|04\.12\.|December 4'
+    must_not:
+      household_waste: '(?:paint|medicines?)[^.\n]{0,40}(?:can|may) (?:go|be put) in(?:to)? (?:the )?(?:household|fee bag)'
+    resolved: [waste-collection-schedule, waste-set-out-rules-and-fees]
+
+- case_id: W-UAT-7e5
+  label: next paper collection, asked in German with a date
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-7---garbage-collection-and-recycling-by-area
+  question: Heute ist der 16. September 2026. Wann ist die nächste Papiersammlung, und wie muss ich das Papier bereitstellen?
+  expected_answer: >-
+    In German: Samstag, 19. September 2026, für beide Gebiete; gebündelt, nicht in Papiersäcken, bis 8.00 Uhr am
+    Sammeltag; the English statements are not official translations.
+  trap: Giving a date from another year or month, or answering in English.
+  steps:
+  - search:
+      query: Wann ist die nächste Papiersammlung
+      expect_concept: waste-collection-schedule
+  - search:
+      query: Papier bereitstellen
+      expect_concept: waste-set-out-rules-and-fees
+  - resolve:
+      concept_ids: [waste-collection-schedule, waste-set-out-rules-and-fees]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      as_of: 2026-09-16
+      expect_status: {waste-collection-schedule: SUPPORTED, waste-set-out-rules-and-fees: SUPPORTED}
+  claims:
+  - claim: The next paper collection after 16 September 2026 is on 19 September 2026
+    concept: waste-collection-schedule
+    fact_id: waste-collection-schedule-7
+    statement_contains: ["Saturdays 19 September"]
+    excerpt_contains: ["Papiersammlung", "19.09.2026"]
+  - claim: Paper is bundled, not in paper bags, and out by 8.00
+    concept: waste-set-out-rules-and-fees
+    fact_id: waste-set-out-rules-and-fees-3
+    statement_contains: ["Paper is bundled, not in paper bags", "paper by 8.00"]
+    excerpt_contains: ["Gebündelt, nicht in Papiersäcken", "bis 8.00 Uhr"]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      date: '19\. ?September|19\.0?9\.'
+      bundled: 'gebündelt|bündeln|Bündel'
+      time: '8[.:]00'
+    must_not:
+      paper_bags_ok: 'in Papiersäcke(?:n)? (?:bereitstellen|erlaubt)'
+    resolved: [waste-collection-schedule, waste-set-out-rules-and-fees]
+
+- case_id: W-UAT-7e6
+  label: a broken toaster is not household waste
+  spec: docs/product/wallisellen-user-acceptance-tests.md#w-uat-7---garbage-collection-and-recycling-by-area
+  question: My toaster is broken. Can I throw it in the household waste?
+  expected_answer: >-
+    No: household waste takes no metal or non-combustible material. The ReparierBar (old fire station,
+    Zentralstrasse 4, Saturdays 9.00-12.00 on the listed dates) repairs electronic items free of charge, material
+    charged, and the Muelliland main collection point takes waste of all kinds, some fractions against a fee; no
+    fee is invented.
+  trap: Allowing the toaster in the fee bag or inventing a disposal fee.
+  steps:
+  - search:
+      query: My toaster is broken. Can I throw it in the household waste?
+      expect_concept: waste-categories
+  - resolve:
+      concept_ids: [waste-disposal-services, waste-set-out-rules-and-fees]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {waste-disposal-services: SUPPORTED, waste-set-out-rules-and-fees: SUPPORTED}
+  claims:
+  - claim: No metal or non-combustible material in the household waste
+    concept: waste-set-out-rules-and-fees
+    fact_id: waste-set-out-rules-and-fees-3
+    statement_contains: ["without metal, glass or non-combustible material"]
+    excerpt_contains: ["Keine Entsorgung von Metall, Glas sowie nicht brennbaren Materialien"]
+  - claim: The ReparierBar repairs electronic items free of charge
+    concept: waste-disposal-services
+    fact_id: waste-disposal-services-6
+    statement_contains: ["ReparierBar", "electronic", "free of charge"]
+    excerpt_contains: ["Die ReparierBar ist jeweils geöffnet an Samstagen", "Das Angebot ist kostenlos"]
+  not_served:
+    waste-set-out-rules-and-fees: [Muelliland]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      not_household: '(?:not|no|shouldn''t|should not|cannot|can''t)[^.\n]{0,60}(?:household|fee bag|bag)'
+      repair_or_depot: 'ReparierBar|repair|M(?:ü|ue)lliland'
+    must_not:
+      toaster_ok: '(?:yes|you can)[^.\n]{0,30}(?:throw|put|dispose)[^.\n]{0,30}household'
+      invented_fee: 'M(?:ü|ue)lliland[^.\n]{0,40}CHF'
+    resolved: [waste-disposal-services, waste-set-out-rules-and-fees]
+
+# --- decline cases: the server must reject the request --------------------------------------------------------------
+# Checked by the model-free replay only (no answer block): what a caller answers after the rejection is not tested.
+- case_id: W-DECLINE-1
+  label: "Rejected: a neighbouring municipality (Dübendorf)"
+  spec: docs/product/wallisellen-user-acceptance-tests.md#decline-cases
+  question: I live in Dübendorf, right next to Wallisellen. How and by when do I report my move there?
+  expected_answer: >-
+    Wallisellen's moving facts are not served for Dübendorf: OUT_OF_COVERAGE with jurisdiction_not_covered.
+  steps:
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-191}
+      expect_status: {moving-registration: OUT_OF_COVERAGE}
+      expect_gap: {moving-registration: jurisdiction_not_covered}
+
+- case_id: W-DECLINE-2
+  label: "Rejected: a topic the release does not publish (insurer premiums)"
+  spec: docs/product/wallisellen-user-acceptance-tests.md#decline-cases
+  question: Which health insurer is the cheapest for a family living in Wallisellen?
+  expected_answer: >-
+    No concept covers insurer premiums; a resolve of a guessed concept ID returns OUT_OF_COVERAGE with
+    concept_not_published.
+  steps:
+  - resolve:
+      concept_ids: [health-insurance-premiums]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-69}
+      expect_status: {health-insurance-premiums: OUT_OF_COVERAGE}
+      expect_gap: {health-insurance-premiums: concept_not_published}
+
+- case_id: W-PLACE-1
+  label: "The place given in names: Wallisellen, in English and in German"
+  spec: docs/product/wallisellen-user-acceptance-tests.md#place-cases
+  question: I have just moved to Wallisellen. By when do I have to report my move?
+  expected_answer: >-
+    The caller names the place instead of its code. The city alone is turned into CH-ZH-69 and supplies the canton;
+    the German form with the generic words a caller copies from the user ("Kanton Zürich", "Stadt Wallisellen") and
+    the short codes reach the same place, every part is recognised, and the 14-day rule is served.
+  steps:
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {city: Wallisellen}
+      expect_status: {moving-registration: SUPPORTED}
+      expect_scope: CH-ZH-69
+      expect_not_recognised: []
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {country: Schweiz, canton: Kanton Zürich, city: Stadt Wallisellen}
+      expect_status: {moving-registration: SUPPORTED}
+      expect_scope: CH-ZH-69
+      expect_not_recognised: []
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton: ZH, city: "69"}
+      expect_status: {moving-registration: SUPPORTED}
+      expect_scope: CH-ZH-69
+  claims:
+  - claim: The move must be reported within 14 days
+    concept: moving-registration
+    statement_contains: [within 14 days]
+    excerpt_contains: [melden Sie Ihren Umzug innert 14 Tagen]
+
+- case_id: W-PLACE-2
+  label: "Rejected: another municipality given by name (Dübendorf, the City of Zurich)"
+  spec: docs/product/wallisellen-user-acceptance-tests.md#place-cases
+  question: I live in Dübendorf, right next to Wallisellen. How and by when do I report my move there?
+  expected_answer: >-
+    As W-DECLINE-1 and W-UAT-2, with the municipality named. The place register turns Dübendorf into CH-ZH-191 and
+    Zürich into CH-ZH-261, so the request runs for that municipality and Wallisellen's moving facts are not served:
+    OUT_OF_COVERAGE with jurisdiction_not_covered.
+  trap: Serving Wallisellen's facts to a neighbour because the name was not placed and the request fell back to the canton.
+  steps:
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {city: Dübendorf}
+      expect_status: {moving-registration: OUT_OF_COVERAGE}
+      expect_gap: {moving-registration: jurisdiction_not_covered}
+      expect_scope: CH-ZH-191
+      expect_not_recognised: []
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton: Zurich, city: Zürich}
+      expect_status: {moving-registration: OUT_OF_COVERAGE}
+      expect_gap: {moving-registration: jurisdiction_not_covered}
+      expect_scope: CH-ZH-261
+  must_not_serve: [moving-registration-1]
+
+- case_id: W-PLACE-3
+  label: "A place the register cannot place: a misspelling, a postcode, a shared name, another canton, another country"
+  spec: docs/product/wallisellen-user-acceptance-tests.md#place-cases
+  question: I moved to Walisellen, 8304. By when do I have to report my move?
+  expected_answer: >-
+    Nothing is guessed. A misspelt city next to its canton runs for the canton and a postcode alone for the
+    country, each named in not_recognised, and the municipal facts are not served. A name several municipalities
+    share and a city outside the given canton are rejected as invalid arguments on jurisdiction.city. Another
+    country is OUT_OF_COVERAGE.
+  trap: Guessing the nearest name, or reading a postcode as a municipality number.
+  steps:
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton: Zurich, city: Walisellen}
+      expect_status: {moving-registration: OUT_OF_COVERAGE}
+      expect_gap: {moving-registration: jurisdiction_not_covered}
+      expect_scope: CH-ZH
+      expect_not_recognised: [city]
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {city: "8304"}
+      expect_status: {moving-registration: OUT_OF_COVERAGE}
+      expect_scope: CH
+      expect_not_recognised: [city]
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {city: Buchs}
+      expect_error: jurisdiction.city
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {canton: Bern, city: Wallisellen}
+      expect_error: jurisdiction.city
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {country: Germany, city: Wallisellen}
+      expect_status: {moving-registration: OUT_OF_COVERAGE}
+      expect_gap: {moving-registration: jurisdiction_not_covered}
+
+- case_id: W-PLACE-4
+  label: "The place comes from the user's words only: a move within Switzerland to Wallisellen"
+  spec: docs/product/wallisellen-user-acceptance-tests.md#place-cases
+  question: I have just moved from Winterthur to Wallisellen. By when do I have to report my move, and can I do it online?
+  expected_answer: >-
+    The session's prompt states neither the municipality nor its code: the caller takes the place from the user's
+    words and gives it to resolve, where the server turns the name into CH-ZH-69. The move must be reported within
+    14 days, and a move within Switzerland can be reported through the eUmzugCH portal; the in-person exceptions
+    (arrival from abroad, weekly residents) do not apply and are not presented as if they did. Nothing of Winterthur,
+    the place the user left, or of the City of Zurich is served; no fee, document list or appointment is invented.
+  trap: >-
+    Resolving for the canton only, for Winterthur or for the City of Zurich because no code was given, or sending a
+    guessed municipality number.
+  steps:
+  - resolve:
+      concept_ids: [moving-registration]
+      jurisdiction: {city: Wallisellen}
+      expect_status: {moving-registration: SUPPORTED}
+      expect_scope: CH-ZH-69
+      expect_not_recognised: []
+  claims:
+  - claim: The move must be reported within 14 days
+    concept: moving-registration
+    statement_contains: [within 14 days]
+    excerpt_contains: [melden Sie Ihren Umzug innert 14 Tagen]
+  - claim: A move can be reported through the eUmzugCH portal
+    concept: moving-registration
+    statement_contains: [eUmzugCH portal]
+    excerpt_contains: [über das Portal eUmzugCH]
+  answer:
+    criteria: [C1, C2, C3, C4, C5, C6]
+    must_mention:
+      fourteen_days: '\b14\b[- ]?(?:calendar )?days?|fourteen days'
+      online_portal: 'eUmzug'
+    must_not:
+      fee_amount: 'CHF\s*\d|\d+\s*(?:CHF|francs)'
+      in_person_required: '(?:you|one) (?:must|have to|need to) (?:register|report|appear|come) in[- ]person'
+    cites:
+      moving_page: wallisellen.ch/umzug
+    resolved: [moving-registration]
