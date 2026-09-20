@@ -1,0 +1,1390 @@
+{
+  "migrated_at": "2026-09-12T21:19:42.002974+00:00",
+  "source": "SwissTIP predecessor release hackathon-residence-semantic-2026-09-12-v6 (scripts/corpora/residence_mvp_curated.py)",
+  "old_text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026-SwissTIP\\.local\\intermediate\\hackathon-residence-2026-09-11-v1",
+  "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich\\text",
+  "concepts": 35,
+  "facts": 84,
+  "old_concepts": 35,
+  "old_facts": 84,
+  "citation_outcomes": {
+    "same-text": 76,
+    "moved": 8
+  },
+  "dropped": [],
+  "citations": [
+    {
+      "fact_id": "permit-authority-1",
+      "old_document_id": "doc-02369c71495279e06a62",
+      "old_blocks": [
+        77,
+        77
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/en/home/themen/aufenthalt.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-dccf33fdeb5e8071c812",
+      "warnings": [],
+      "new_blocks": [
+        77,
+        77
+      ]
+    },
+    {
+      "fact_id": "aig-short-stay-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        192,
+        194
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        192,
+        194
+      ]
+    },
+    {
+      "fact_id": "aig-short-stay-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        194,
+        194
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        194,
+        194
+      ]
+    },
+    {
+      "fact_id": "aig-work-permit-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        195,
+        196
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        195,
+        196
+      ]
+    },
+    {
+      "fact_id": "aig-work-permit-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        197,
+        198
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        197,
+        198
+      ]
+    },
+    {
+      "fact_id": "aig-registration-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        199,
+        200
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        199,
+        200
+      ]
+    },
+    {
+      "fact_id": "aig-registration-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        201,
+        202
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        201,
+        202
+      ]
+    },
+    {
+      "fact_id": "permit-l-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        386,
+        388
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        386,
+        388
+      ]
+    },
+    {
+      "fact_id": "permit-l-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        389,
+        390
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        389,
+        390
+      ]
+    },
+    {
+      "fact_id": "permit-b-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        391,
+        394
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        391,
+        394
+      ]
+    },
+    {
+      "fact_id": "permit-b-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        394,
+        396
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        394,
+        396
+      ]
+    },
+    {
+      "fact_id": "permit-c-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        400,
+        401
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        400,
+        401
+      ]
+    },
+    {
+      "fact_id": "permit-c-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        402,
+        410
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        402,
+        410
+      ]
+    },
+    {
+      "fact_id": "permit-c-3",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        411,
+        411
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        411,
+        411
+      ]
+    },
+    {
+      "fact_id": "aig-study-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        314,
+        324
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        314,
+        324
+      ]
+    },
+    {
+      "fact_id": "aig-study-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        325,
+        325
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        325,
+        325
+      ]
+    },
+    {
+      "fact_id": "integration-criteria-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        668,
+        677
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        668,
+        677
+      ]
+    },
+    {
+      "fact_id": "integration-criteria-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        678,
+        678
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        678,
+        678
+      ]
+    },
+    {
+      "fact_id": "family-swiss-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        474,
+        475
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        474,
+        475
+      ]
+    },
+    {
+      "fact_id": "family-c-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        484,
+        495
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        484,
+        495
+      ]
+    },
+    {
+      "fact_id": "family-c-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        496,
+        497
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        496,
+        497
+      ]
+    },
+    {
+      "fact_id": "family-b-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        503,
+        514
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        503,
+        514
+      ]
+    },
+    {
+      "fact_id": "family-b-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        515,
+        516
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        515,
+        516
+      ]
+    },
+    {
+      "fact_id": "family-deadlines-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        539,
+        541
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        539,
+        541
+      ]
+    },
+    {
+      "fact_id": "family-deadlines-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        542,
+        546
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        542,
+        546
+      ]
+    },
+    {
+      "fact_id": "family-deadlines-3",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        547,
+        547
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        547,
+        547
+      ]
+    },
+    {
+      "fact_id": "family-separation-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        563,
+        568
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        563,
+        568
+      ]
+    },
+    {
+      "fact_id": "canton-change-1",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        425,
+        426
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        425,
+        426
+      ]
+    },
+    {
+      "fact_id": "canton-change-2",
+      "old_document_id": "doc-18355c7dc9a45a38b413",
+      "old_blocks": [
+        427,
+        429
+      ],
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
+      "outcome": "same-text",
+      "new_document_id": "doc-fc0686a4061f390100e7",
+      "warnings": [],
+      "new_blocks": [
+        427,
+        429
+      ]
+    },
+    {
+      "fact_id": "third-country-work-1",
+      "old_document_id": "doc-d7e5fa9b1ea72ea04a52",
+      "old_blocks": [
+        74,
+        76
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-015229bef7e56c4f0933",
+      "warnings": [],
+      "new_blocks": [
+        74,
+        76
+      ]
+    },
+    {
+      "fact_id": "third-country-work-2",
+      "old_document_id": "doc-d7e5fa9b1ea72ea04a52",
+      "old_blocks": [
+        77,
+        77
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-015229bef7e56c4f0933",
+      "warnings": [],
+      "new_blocks": [
+        77,
+        77
+      ]
+    },
+    {
+      "fact_id": "biometric-permit-1",
+      "old_document_id": "doc-026495cd7a981ddc2584",
+      "old_blocks": [
+        90,
+        90
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/biometr_auslaenderausweis.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-2b57b2ce38c2a01c369a",
+      "warnings": [],
+      "new_blocks": [
+        90,
+        90
+      ]
+    },
+    {
+      "fact_id": "biometric-permit-2",
+      "old_document_id": "doc-026495cd7a981ddc2584",
+      "old_blocks": [
+        92,
+        92
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/biometr_auslaenderausweis.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-2b57b2ce38c2a01c369a",
+      "warnings": [],
+      "new_blocks": [
+        92,
+        92
+      ]
+    },
+    {
+      "fact_id": "language-evidence-1",
+      "old_document_id": "doc-e4faac52bfd9dc95c90f",
+      "old_blocks": [
+        157,
+        157
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/faq.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-1cdc22126488f970c3cf",
+      "warnings": [],
+      "new_blocks": [
+        157,
+        157
+      ]
+    },
+    {
+      "fact_id": "language-evidence-2",
+      "old_document_id": "doc-e4faac52bfd9dc95c90f",
+      "old_blocks": [
+        154,
+        154
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/faq.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-1cdc22126488f970c3cf",
+      "warnings": [],
+      "new_blocks": [
+        154,
+        154
+      ]
+    },
+    {
+      "fact_id": "social-assistance-review-1",
+      "old_document_id": "doc-e4faac52bfd9dc95c90f",
+      "old_blocks": [
+        220,
+        223
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/faq.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-1cdc22126488f970c3cf",
+      "warnings": [],
+      "new_blocks": [
+        220,
+        223
+      ]
+    },
+    {
+      "fact_id": "zh-eu-registration-1",
+      "old_document_id": "doc-6fc4e12e684157ef4978",
+      "old_blocks": [
+        63,
+        66
+      ],
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-66553fde673cc7f06804",
+      "warnings": [],
+      "new_blocks": [
+        63,
+        66
+      ]
+    },
+    {
+      "fact_id": "zh-eu-registration-2",
+      "old_document_id": "doc-6fc4e12e684157ef4978",
+      "old_blocks": [
+        75,
+        75
+      ],
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-66553fde673cc7f06804",
+      "warnings": [],
+      "new_blocks": [
+        75,
+        75
+      ]
+    },
+    {
+      "fact_id": "zh-eu-l-1",
+      "old_document_id": "doc-6fc4e12e684157ef4978",
+      "old_blocks": [
+        81,
+        82
+      ],
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-66553fde673cc7f06804",
+      "warnings": [],
+      "new_blocks": [
+        81,
+        82
+      ]
+    },
+    {
+      "fact_id": "zh-eu-b-1",
+      "old_document_id": "doc-6fc4e12e684157ef4978",
+      "old_blocks": [
+        85,
+        86
+      ],
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-66553fde673cc7f06804",
+      "warnings": [],
+      "new_blocks": [
+        85,
+        86
+      ]
+    },
+    {
+      "fact_id": "zh-eu-self-employment-1",
+      "old_document_id": "doc-6fc4e12e684157ef4978",
+      "old_blocks": [
+        95,
+        100
+      ],
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-66553fde673cc7f06804",
+      "warnings": [],
+      "new_blocks": [
+        95,
+        100
+      ]
+    },
+    {
+      "fact_id": "zh-eu-nonworking-1",
+      "old_document_id": "doc-6fc4e12e684157ef4978",
+      "old_blocks": [
+        103,
+        110
+      ],
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-66553fde673cc7f06804",
+      "warnings": [],
+      "new_blocks": [
+        103,
+        110
+      ]
+    },
+    {
+      "fact_id": "zh-eu-family-documents-1",
+      "old_document_id": "doc-6fc4e12e684157ef4978",
+      "old_blocks": [
+        118,
+        123
+      ],
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-66553fde673cc7f06804",
+      "warnings": [],
+      "new_blocks": [
+        118,
+        123
+      ]
+    },
+    {
+      "fact_id": "zh-third-country-retirement-1",
+      "old_document_id": "doc-3198cb2abda7d67422f7",
+      "old_blocks": [
+        50,
+        56
+      ],
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-d014e967e94edec3b92f",
+      "warnings": [],
+      "new_blocks": [
+        50,
+        56
+      ]
+    },
+    {
+      "fact_id": "city-zurich-arrival-1",
+      "old_document_id": "doc-34ef0ec737a996b68d08",
+      "old_blocks": [
+        31,
+        33
+      ],
+      "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/zuzug.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-561b0e2fb8c75967f0cd",
+      "warnings": [],
+      "new_blocks": [
+        31,
+        33
+      ]
+    },
+    {
+      "fact_id": "city-zurich-arrival-documents-1",
+      "old_document_id": "doc-34ef0ec737a996b68d08",
+      "old_blocks": [
+        34,
+        42
+      ],
+      "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/zuzug.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-561b0e2fb8c75967f0cd",
+      "warnings": [],
+      "new_blocks": [
+        34,
+        42
+      ]
+    },
+    {
+      "fact_id": "eu-employment-registration-deadline-1",
+      "old_document_id": "doc-094ef42324485ec86493",
+      "old_blocks": [
+        98,
+        99
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-958cfbd396639e26e288",
+      "warnings": [],
+      "new_blocks": [
+        98,
+        99
+      ]
+    },
+    {
+      "fact_id": "eu-employment-registration-deadline-2",
+      "old_document_id": "doc-094ef42324485ec86493",
+      "old_blocks": [
+        100,
+        100
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-958cfbd396639e26e288",
+      "warnings": [],
+      "new_blocks": [
+        100,
+        100
+      ]
+    },
+    {
+      "fact_id": "health-insurance-enrolment-1",
+      "old_document_id": "doc-f09ebbb4481ad243ff38",
+      "old_blocks": [
+        45,
+        46
+      ],
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherungspflicht-fuer-in-der-schweiz-wohnhafte-versicherte",
+      "outcome": "same-text",
+      "new_document_id": "doc-e494fce7ee1b673e639f",
+      "warnings": [],
+      "new_blocks": [
+        45,
+        46
+      ]
+    },
+    {
+      "fact_id": "health-insurance-enrolment-2",
+      "old_document_id": "doc-f09ebbb4481ad243ff38",
+      "old_blocks": [
+        47,
+        48
+      ],
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherungspflicht-fuer-in-der-schweiz-wohnhafte-versicherte",
+      "outcome": "same-text",
+      "new_document_id": "doc-e494fce7ee1b673e639f",
+      "warnings": [],
+      "new_blocks": [
+        47,
+        48
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-ag",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        79,
+        80
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        79,
+        80
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-ai",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        84,
+        85
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        84,
+        85
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-ar",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        89,
+        90
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        89,
+        90
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-be",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        94,
+        95
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        94,
+        95
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-bl",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        108,
+        109
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        108,
+        109
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-bs",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        113,
+        114
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        113,
+        114
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-fr",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        123,
+        124
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        123,
+        124
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-ge",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        128,
+        129
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        128,
+        129
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-gl",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        133,
+        134
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        133,
+        134
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-gr",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        138,
+        139
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        138,
+        139
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-ju",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        143,
+        144
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        143,
+        144
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-lu",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        148,
+        149
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        148,
+        149
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-ne",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        153,
+        154
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        153,
+        154
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-nw",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        158,
+        159
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        158,
+        159
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-ow",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        163,
+        164
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        163,
+        164
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-sg",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        168,
+        169
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        168,
+        169
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-sh",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        175,
+        176
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        175,
+        176
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-so",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        180,
+        181
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        180,
+        181
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-sz",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        185,
+        186
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        185,
+        186
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-tg",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        190,
+        191
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        190,
+        191
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-ti",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        195,
+        196
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        195,
+        196
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-ur",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        200,
+        201
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        200,
+        201
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-vd",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        205,
+        206
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        205,
+        206
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-vs",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        213,
+        214
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        213,
+        214
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-zg",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        218,
+        219
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        218,
+        219
+      ]
+    },
+    {
+      "fact_id": "cantonal-migration-contact-zh",
+      "old_document_id": "doc-c9b704219cdcddd9107e",
+      "old_blocks": [
+        223,
+        223
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "outcome": "same-text",
+      "new_document_id": "doc-af5d9087266c17e8fe30",
+      "warnings": [],
+      "new_blocks": [
+        223,
+        223
+      ]
+    },
+    {
+      "fact_id": "eu-short-employment-1",
+      "old_document_id": "doc-9b1cdec8a0d1eb938c6c",
+      "old_blocks": [
+        92,
+        100
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren.html",
+      "outcome": "moved",
+      "new_document_id": "doc-fa449b84a9ef0219d6ca",
+      "warnings": [],
+      "new_blocks": [
+        92,
+        100
+      ]
+    },
+    {
+      "fact_id": "eu-short-employment-2",
+      "old_document_id": "doc-9b1cdec8a0d1eb938c6c",
+      "old_blocks": [
+        93,
+        93
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren.html",
+      "outcome": "moved",
+      "new_document_id": "doc-fa449b84a9ef0219d6ca",
+      "warnings": [],
+      "new_blocks": [
+        93,
+        93
+      ]
+    },
+    {
+      "fact_id": "notification-responsibility-1",
+      "old_document_id": "doc-9b1cdec8a0d1eb938c6c",
+      "old_blocks": [
+        104,
+        104
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren.html",
+      "outcome": "moved",
+      "new_document_id": "doc-fa449b84a9ef0219d6ca",
+      "warnings": [],
+      "new_blocks": [
+        104,
+        104
+      ]
+    },
+    {
+      "fact_id": "posted-service-notification-1",
+      "old_document_id": "doc-9b1cdec8a0d1eb938c6c",
+      "old_blocks": [
+        89,
+        91
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren.html",
+      "outcome": "moved",
+      "new_document_id": "doc-fa449b84a9ef0219d6ca",
+      "warnings": [],
+      "new_blocks": [
+        89,
+        91
+      ]
+    },
+    {
+      "fact_id": "posted-service-notification-2",
+      "old_document_id": "doc-9b1cdec8a0d1eb938c6c",
+      "old_blocks": [
+        117,
+        120
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren.html",
+      "outcome": "moved",
+      "new_document_id": "doc-fa449b84a9ef0219d6ca",
+      "warnings": [],
+      "new_blocks": [
+        117,
+        120
+      ]
+    },
+    {
+      "fact_id": "uk-new-employment-1",
+      "old_document_id": "doc-9b1cdec8a0d1eb938c6c",
+      "old_blocks": [
+        181,
+        182
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren.html",
+      "outcome": "moved",
+      "new_document_id": "doc-fa449b84a9ef0219d6ca",
+      "warnings": [
+        "neighbourhood-changed"
+      ],
+      "new_blocks": [
+        181,
+        182
+      ]
+    },
+    {
+      "fact_id": "uk-new-employment-2",
+      "old_document_id": "doc-9b1cdec8a0d1eb938c6c",
+      "old_blocks": [
+        181,
+        183
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren.html",
+      "outcome": "moved",
+      "new_document_id": "doc-fa449b84a9ef0219d6ca",
+      "warnings": [
+        "neighbourhood-changed"
+      ],
+      "new_blocks": [
+        181,
+        183
+      ]
+    },
+    {
+      "fact_id": "uk-new-employment-3",
+      "old_document_id": "doc-9b1cdec8a0d1eb938c6c",
+      "old_blocks": [
+        176,
+        177
+      ],
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren.html",
+      "outcome": "moved",
+      "new_document_id": "doc-fa449b84a9ef0219d6ca",
+      "warnings": [],
+      "new_blocks": [
+        176,
+        177
+      ]
+    }
+  ],
+  "amendments": [
+    {
+      "amended_at": "2026-09-13T15:05:22.100557+00:00",
+      "reason": "The SEM notification-procedure page joined the catalogue as ch-sem-notification-procedure and the run (imported from the predecessor's 10 and 11 September runs); the eight facts of the four dropped concepts were relocated onto its record by .local/scripts/add_notification_concepts.py.",
+      "concepts": [
+        "eu-short-employment",
+        "notification-responsibility",
+        "posted-service-notification",
+        "uk-new-employment"
+      ],
+      "facts": [
+        "eu-short-employment-1",
+        "eu-short-employment-2",
+        "notification-responsibility-1",
+        "posted-service-notification-1",
+        "posted-service-notification-2",
+        "uk-new-employment-1",
+        "uk-new-employment-2",
+        "uk-new-employment-3"
+      ],
+      "citation_outcomes": {
+        "moved": 8
+      }
+    }
+  ]
+}

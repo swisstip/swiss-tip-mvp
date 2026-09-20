@@ -1,0 +1,59 @@
+{
+  "schema_version": "swiss-tip-readiness/v1",
+  "pack": "mvp-zurich",
+  "release_id": "mvp-zurich-2026-09-19-v15",
+  "release_sha256": "9600b89119ab9a58bc1adb8d5d2570d12c23236a5f0677faf4507e563c3e1092",
+  "content_sha256": "7e225933d2ab068edf3f89a9543b45ce97f1fdb192ab743c600e0ec5af9a82ac",
+  "suite_sha256": "86c0709a60d8fab5863e7cee09abaa738fbb78f2718ea7aa73dc28fa5bfdf94d",
+  "attested_at": "2026-09-19T18:46:48.708170Z",
+  "attested_by": "Alexander Bobrovsky",
+  "gates": [
+    {
+      "gate": "G1",
+      "title": "the release validates against the text dataset and the re-hashed saved responses",
+      "status": "passed",
+      "detail": "164 saved responses re-hashed"
+    },
+    {
+      "gate": "G2",
+      "title": "the build dropped no fact",
+      "status": "passed",
+      "detail": "0 dropped"
+    },
+    {
+      "gate": "G3",
+      "title": "every blocking acceptance case passes",
+      "status": "passed",
+      "detail": "80 blocking case(s) pass"
+    },
+    {
+      "gate": "G4",
+      "title": "stale_from lies at least 14 days after the attestation and after the policy date",
+      "status": "passed",
+      "detail": "stale from 2026-11-18, runway until 2026-10-03, policy date 2026-09-19"
+    },
+    {
+      "gate": "G5",
+      "title": "the graded live-caller sessions meet the answer policy (answer_check advisory)",
+      "status": "passed",
+      "detail": "acceptance-answers.json is for another release or suite"
+    },
+    {
+      "gate": "G6",
+      "title": "the committed acceptance report is the report of this release and this suite",
+      "status": "passed",
+      "detail": "acceptance-report.json matches"
+    }
+  ],
+  "cases": {
+    "total": 80,
+    "blocking": 80,
+    "quarantined": []
+  },
+  "review_statuses": {
+    "human-reviewed": 601
+  },
+  "snapshot_date": "2026-09-19",
+  "stale_from": "2026-11-18",
+  "min_runway_days": 14
+}
