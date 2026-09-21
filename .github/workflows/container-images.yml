@@ -60,7 +60,7 @@ on:
       swisstip_mcp_version:
         description: swisstip-mcp version from PyPI (the tag of the basic and semantic images in ghcr.io)
         type: string
-        default: 0.2.5
+        default: 0.3.0
       code_ref:
         description: Branch, tag or commit of swisstip/swiss-tip whose slim Dockerfile and compose.yaml are used
         type: string

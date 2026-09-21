@@ -1,6 +1,6 @@
 # Limitations
 
-**Last update:** 20 September 2026
+**Last update:** 21 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
 claim. It applies to the committed release `mvp-zurich-2026-09-19-v15` and is
@@ -801,9 +801,9 @@ implemented.
   of the whole release: a subject published for Zurich only still reads
   `strong` for a user in Bern, who learns from `published_elsewhere` and the
   guidance that it is not published for their place. And the code is in
-  packages 0.2.5, which are not on PyPI yet: 0.2.4 and the published images
-  reject a `search` that carries the field, and the image Dockerfiles, which
-  pin 0.2.5, build only once it is published.
+  packages 0.2.5 and later: 0.2.4 and an image built on it reject a `search`
+  that carries the field. The image Dockerfiles pin 0.3.0, which is not on
+  PyPI yet, and build only once it is published.
   Without the field, a question from another canton or municipality ranks the
   Canton and City of Zurich concepts next to the federal ones, and `resolve`
   sorts them out afterwards. Of the 64 cross-jurisdiction questions of the

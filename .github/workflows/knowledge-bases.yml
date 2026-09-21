@@ -26,7 +26,7 @@ on:
       swisstip_version:
         description: swisstip-core, swisstip-mcp and swisstip-builder version from PyPI
         type: string
-        default: "0.2.5"
+        default: "0.3.0"
       code_ref:
         description: Instead of PyPI, a branch, tag or commit of swisstip/swiss-tip to install the code from (empty means PyPI)
         type: string
@@ -43,7 +43,7 @@ jobs:
   packs:
     runs-on: ubuntu-latest
     env:
-      VERSION: ${{ inputs.swisstip_version || '0.2.5' }}
+      VERSION: ${{ inputs.swisstip_version || '0.3.0' }}
       CODE_REF: ${{ inputs.code_ref }}
     steps:
       - uses: actions/checkout@v7
