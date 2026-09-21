@@ -1,6 +1,6 @@
 ﻿# Swisscom Trusted Information Platform
 
-**Last update:** 17 September 2026
+**Last update:** 21 September 2026
 
 ## First-Round Pitch Deck - Maximum 10 Minutes
 
@@ -210,6 +210,6 @@ Keep detailed crawler design, database schemas, Swiss Hike, autonomous refresh a
 
 ## Additional info for Q&A - Corpus preparation
 
-The nationwide corpus, fetched and extracted on 10 and 11 September 2026, holds **12,117 official pages** of 12,461 download targets from a catalogue of **59 federal and cantonal sources covering all 26 cantons**, including Fedlex, with a text dataset of 12,117 records. Its text records stay outside Git; its 304 concept candidates passed automated review only, and no release is built from it.
+The nationwide corpus holds **12,117 official pages** of 12,461 download targets from a catalogue of **59 federal and cantonal sources covering all 26 cantons**, including Fedlex, with a text dataset of 12,117 records. Its text records stay outside Git; its 304 concept candidates passed automated review only, and no release is built from it.
 
 Use the [corpus statistics appendix](full-presentation.md#slide-26---additional-info-nationwide-residence-permit-corpus) as backup outside the timed seven-slide presentation. It records acquisition and extraction results alongside failed downloads and unfinished review, language and OCR work. These counts do not establish exhaustive coverage or end-to-end retrieval quality.

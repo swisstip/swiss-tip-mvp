@@ -1,6 +1,6 @@
 ﻿# Full Pitch Presentation - Swisscom Trusted Information Platform
 
-**Last update:** 17 September 2026
+**Last update:** 21 September 2026
 
 This deck describes the proposed product and acceptance evidence. It does not establish implementation validation, except where a slide says so: slide 9 shows the implemented review status of each fact, and slide 10 reports the implemented and tested jurisdiction hierarchy. The implemented contract is narrower than the proposal and is specified in [docs/architecture/tool-contracts.md](https://github.com/swisstip/swiss-tip/blob/main/docs/architecture/tool-contracts.md): four tools, four statuses (`SUPPORTED`, `NEEDS_CONTEXT`, `OUT_OF_COVERAGE`, `STALE`), no five-language projections, and German and English search terms. Slide 13 is optional P2 stretch material; slides 14-23 cover the future product. These appendix topics are outside P0/P1 acceptance scope.
 
@@ -246,7 +246,7 @@ This is a contract example, not an assertion about legal requirements in Zurich.
 
 Two things follow. The assistant can say which statements a person stands behind and which are assistant-authored, instead of presenting both in the same voice. And for a question where an unreviewed statement is not good enough, it sets `reviewed_only` on the request: concepts with no confirmed fact then return `OUT_OF_COVERAGE` with a `review_status_not_met` gap naming the statuses their facts actually carry, rather than the statement. Reliability stops being a disclaimer and becomes a filter the caller controls per request.
 
-**Speaker note:** be exact about today's release. All 290 facts are `human-reviewed` by one named reviewer against their cited excerpts, 249 of them confirmed in bulk groups that stay marked on the fact, among them all 149 facts of the five topics added on 15 September (social insurance, tax at source, driving licence, health insurance, naturalisation) and 29 of the 37 facts drafted from the EU free movement agreement on 16 September; it is not a legal review. So `reviewed_only` serves every fact today, and it earns its place the moment the knowledge grows: a new fact is withheld from a cautious caller until someone confirms it, with no contract change. Every result also carries the release-wide counts in `limitations`, so aggregate and per-fact views agree.
+**Speaker note:** be exact about today's release. All 290 facts are `human-reviewed` by one named reviewer against their cited excerpts, 249 of them confirmed in bulk groups that stay marked on the fact, among them all 149 facts of the five moving-to-Switzerland topics (social insurance, tax at source, driving licence, health insurance, naturalisation) and 29 of the 37 facts drafted from the EU free movement agreement; it is not a legal review. So `reviewed_only` serves every fact today, and it earns its place the moment the knowledge grows: a new fact is withheld from a cautious caller until someone confirms it, with no contract change. Every result also carries the release-wide counts in `limitations`, so aggregate and per-fact views agree.
 
 ---
 
@@ -541,7 +541,7 @@ Server evaluation starts at the structured request. Caller integration evaluatio
 
 **A larger evidence base for the next release: federal sources, including Fedlex, and the migration and residence pages of all 26 cantons.**
 
-Downloaded on 10 and 11 September 2026 by the predecessor's tooling and imported byte for byte with hash verification. The run stays outside Git in `.local/swiss-residence/` (4.4 GB); nothing from it is served.
+Downloaded and imported byte for byte with hash verification. The run stays outside Git in `.local/swiss-residence/` (4.4 GB); nothing from it is served.
 
 | Measure | Recorded result |
 |---|---:|
@@ -552,12 +552,12 @@ Downloaded on 10 and 11 September 2026 by the predecessor's tooling and imported
 | Text records / eligible records | 12,117 / 11,445 |
 | Text blocks | 1,254,670 |
 | Extracted text | 176.6 M characters |
-| Concept candidates packaged from the predecessor's extraction | 304 of 377 |
+| Concept candidates packaged from the assistant batches | 304 of 377 |
 | Documents cited by those candidates | 69 |
 
-**Extraction:** the text dataset was adopted from the predecessor's records by URL and raw hash; 565 records are excluded (537 application shells, 28 error pages), 107 have no extractable text, 237 PDF records have pages without embedded text, and 2,605 share their normalized text with another record. Details: [extraction design, section 10](https://github.com/swisstip/swiss-tip/blob/main/docs/architecture/extraction.md).
+**Extraction:** 565 records of the text dataset are excluded (537 application shells, 28 error pages), 107 have no extractable text, 237 PDF records have pages without embedded text, and 2,605 share their normalized text with another record. Details: [extraction design, section 9](https://github.com/swisstip/swiss-tip/blob/main/docs/architecture/extraction.md).
 
-**Concept candidates:** 337 of the predecessor's 377 retained candidates were anchored by exact quotation, 40 dropped for an ambiguous or missing quotation, and 33 skipped (32 for an unresolved municipal jurisdiction). The 304 packaged candidates carry `model-candidate-automated-review`: they passed automated review only, and no person has read them. Details: migration record `.local/experiments/2026-09-13-concept-legacy-migration.md`.
+**Concept candidates:** 337 of the 377 retained candidates are anchored by exact quotation, 40 dropped for an ambiguous or missing quotation, and 33 skipped (32 for an unresolved municipal jurisdiction). The 304 packaged candidates carry `model-candidate-automated-review`: they passed automated review only, and no person has read them. Details: migration record `.local/experiments/2026-09-13-concept-legacy-migration.md`.
 
 **Coverage and review remain incomplete:** 344 download targets failed, among them two Basel-Landschaft catalogue pages denied by robots.txt and HTTP 403, a Lucerne host that no longer resolves and a Thurgau certificate error; the discovered pages also hold 528 application shells and 233 dead links. The discovered pages are an unreviewed harvest, OCR is out of scope, and no KB2 release is built or served.
 

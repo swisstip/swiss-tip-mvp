@@ -1,6 +1,6 @@
 # SwissTIP - One-minute jury pitch
 
-**Last update:** 18 September 2026
+**Last update:** 21 September 2026
 
 *Spoken script: approximately one minute at a measured pace.*
 
@@ -22,7 +22,7 @@ SwissTIP: trusted knowledge, reusable across AI.
 
 ## Additional info for Q&A
 
-The served Zurich release holds 77 concepts and 290 facts from 44 cited documents in seven topics: residence permits and registration (with the text of the EU free movement agreement, added on 16 September 2026), the cantonal migration offices, and, added on 15 September 2026, social insurance on arrival and departure, tax at source, the foreign driving licence, health insurance and premium reduction, and naturalisation, at the federal, Canton of Zurich and City of Zurich levels. Every fact is `human-reviewed` by one named reviewer against its cited excerpt, the 149 facts of the added topics and 29 of the 37 treaty facts in bulk groups; it is not a legal review ([COVERAGE.md](../../COVERAGE.md), [LIMITATIONS.md](../../LIMITATIONS.md)). Its search terms are German and English: German questions, including one Zurich German case, rank the right concept first offline, while French and Italian terms exist only where an excerpt is French or Italian. The seventeen acceptance cases pass the model-free check; the ten cases of the added topics have no live caller run yet.
+The served Zurich release holds 77 concepts and 290 facts from 44 cited documents in seven topics: residence permits and registration (with the text of the EU free movement agreement), the cantonal migration offices, social insurance on arrival and departure, tax at source, the foreign driving licence, health insurance and premium reduction, and naturalisation, at the federal, Canton of Zurich and City of Zurich levels. Every fact is `human-reviewed` by one named reviewer against its cited excerpt, the 149 facts of the moving-to-Switzerland and naturalisation topics and 29 of the 37 treaty facts in bulk groups; it is not a legal review ([COVERAGE.md](../../COVERAGE.md), [LIMITATIONS.md](../../LIMITATIONS.md)). Its search terms are German and English: German questions, including one Zurich German case, rank the right concept first offline, while French and Italian terms exist only where an excerpt is French or Italian. The seventeen acceptance cases pass the model-free check; the ten cases of the added topics have no live caller run yet.
 
 For the next release, the nationwide corpus, fetched and extracted outside Git, holds **12,117 official pages** of 12,461 download targets, from a catalogue of **59 federal and cantonal sources covering all 26 cantons**, with a text dataset of 12,117 records ([releases/README.md](../../releases/README.md)). Its 304 concept candidates passed automated review only; no KB2 release is built or served.
 
