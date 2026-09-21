@@ -13,7 +13,12 @@
 # builds on from ghcr.io, so they must have been pushed before, with the
 # swisstip-mcp version given here (swisstip_mcp_version), and this repository
 # must be able to read their packages: they are public, or each of them names
-# this repository under "Manage Actions access" in its package settings.
+# this repository under "Manage Actions access" in its package settings. A
+# version rehearsed there from TestPyPI is built on the same way, by its tag;
+# package_index: testpypi only tells the check client installed here where to
+# find that version. As there, the branch the run was started from decides
+# two things: the default branch refuses package_index: testpypi, and the
+# demo image's latest tag is pushed from the default branch only.
 #
 # The pack images (docker/<pack>) and the demo image (docker/demo-opencode)
 # are defined here, with the packs they carry. The slim image (docker/slim),
@@ -58,9 +63,14 @@ on:
         options: [all, packs, mvp-zurich, mvp-wallisellen, demo]
         default: all
       swisstip_mcp_version:
-        description: swisstip-mcp version from PyPI (the tag of the basic and semantic images in ghcr.io)
+        description: swisstip-mcp version (the tag of the basic and semantic images in ghcr.io)
         type: string
         default: 0.3.0
+      package_index:
+        description: Index the check client is installed from; testpypi rehearses a version that is not released yet
+        type: choice
+        options: [pypi, testpypi]
+        default: pypi
       code_ref:
         description: Branch, tag or commit of swisstip/swiss-tip whose slim Dockerfile and compose.yaml are used
         type: string
@@ -84,6 +94,9 @@ jobs:
     env:
       IMAGES: ${{ inputs.images }}
       VERSION: ${{ inputs.swisstip_mcp_version }}
+      PACKAGE_INDEX: ${{ inputs.package_index }}
+      REF_NAME: ${{ github.ref_name }}
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -125,9 +138,27 @@ jobs:
             demo)            packs=""; demo=1 ;;
             *) echo "unknown selection $IMAGES"; exit 1 ;;
           esac
+          # The images come from ghcr.io under the version's tag whatever the index; only the check client
+          # installed below is a package, and a rehearsed version is on TestPyPI, not on PyPI.
+          case "$PACKAGE_INDEX" in
+            pypi)     index="" ;;
+            testpypi) index="https://test.pypi.org/simple/" ;;
+            *) echo "unknown package index $PACKAGE_INDEX"; exit 1 ;;
+          esac
+          # The default branch builds releases and nothing else, so a rehearsal belongs on another branch.
+          if [ -n "$index" ] && [ "$REF_NAME" = "$DEFAULT_BRANCH" ]; then
+            echo "::error::$DEFAULT_BRANCH builds from PyPI only; run package_index testpypi from another branch"
+            exit 1
+          fi
+          # The demo image's latest tag is what a pull without a tag gets, so it is pushed from the default
+          # branch only; the release images carry no latest tag at all.
+          latest=0
+          if [ "$REF_NAME" = "$DEFAULT_BRANCH" ]; then latest=1; fi
           registry="ghcr.io/${GITHUB_REPOSITORY_OWNER,,}"
           code_sha=$(git -C code rev-parse HEAD)
           {
+            echo "INDEX_URL=$index"
+            echo "PUSH_LATEST=$latest"
             echo "BUILD_PACKS=$packs"
             echo "BUILD_DEMO=$demo"
             echo "REGISTRY=$registry"
@@ -138,9 +169,12 @@ jobs:
             echo "DEMO_IMAGE=$registry/swiss-tip-demo"
           } >> "$GITHUB_ENV"
           echo "packs=${packs:-none} demo=$demo version=$VERSION registry=$registry code=$code_sha"
+          echo "index=$PACKAGE_INDEX ${index:-https://pypi.org/simple/}, branch $REF_NAME of $DEFAULT_BRANCH, demo latest pushed: $latest"
 
       - name: Install the check client
-        run: python -m pip install "swisstip-mcp==$VERSION"
+        run: |
+          python -m pip install ${INDEX_URL:+--index-url "$INDEX_URL" --extra-index-url https://pypi.org/simple/} \
+            "swisstip-mcp==$VERSION"
 
       - uses: docker/login-action@v4
         with:
@@ -233,6 +267,8 @@ jobs:
             --build-arg BASE_IMAGE="$PACK_IMAGE:$release_id" \
             --label org.opencontainers.image.revision="$GITHUB_SHA" \
             -t "$DEMO_IMAGE:$release_id" -t "$DEMO_IMAGE:mvp-zurich" -t "$DEMO_IMAGE:latest" docker/demo-opencode
+          demo_tags="$DEMO_IMAGE:$release_id $DEMO_IMAGE:mvp-zurich"
+          if [ "$PUSH_LATEST" = 1 ]; then demo_tags="$demo_tags $DEMO_IMAGE:latest"; fi
           # The interface is only as good as the routes it reads: one project
           # to open a session in, the knowledge base connected, a model set,
           # the welcome panel with its sample questions. No question is asked
@@ -251,7 +287,7 @@ jobs:
           if [ "$(docker inspect --format '{{.State.Health.Status}}' demo)" != healthy ]; then docker logs demo | tail -40; exit 1; fi
           python docker/demo-opencode/check_interface.py --url http://127.0.0.1:4200 --password workflow-check
           docker rm -f demo
-          echo "$DEMO_IMAGE:$release_id $DEMO_IMAGE:mvp-zurich $DEMO_IMAGE:latest" >> "$RUNNER_TEMP/push.txt"
+          echo "$demo_tags" >> "$RUNNER_TEMP/push.txt"
           echo "::endgroup::"
 
       - name: Push the tested images
@@ -267,7 +303,7 @@ jobs:
           {
             echo "### Container images"
             echo
-            echo "Selection \`$IMAGES\`, swisstip-mcp \`$VERSION\`, code \`$CODE_SHA\`, pushed: \`${{ inputs.push }}\`"
+            echo "Selection \`$IMAGES\`, swisstip-mcp \`$VERSION\` from \`$PACKAGE_INDEX\`, code \`$CODE_SHA\`, pushed: \`${{ inputs.push }}\`"
             echo
             if [ -f "$RUNNER_TEMP/push.txt" ]; then
               echo "Built and tested:"
