@@ -112,7 +112,8 @@ jobs:
             /releases/mvp-wallisellen/semantic-index.json
             /scripts/test/mcp/check_server.py
 
-      # The code repository: the slim Dockerfile, compose.yaml and the check search.
+      # The code repository: the slim Dockerfile, compose.yaml, the check search, and the files the demo
+      # image shares with the OpenCode image, which live there and are not copied into this repository.
       - uses: actions/checkout@v7
         with:
           repository: swisstip/swiss-tip
@@ -123,6 +124,7 @@ jobs:
             /compose.yaml
             /docker/slim/
             /docker/mcp/check_semantic.py
+            /docker/opencode/
 
       - uses: actions/setup-python@v7
         with:
@@ -265,6 +267,7 @@ jobs:
           # The base is the pack image of this run, or the one pushed before.
           docker build -f docker/demo-opencode/Dockerfile \
             --build-arg BASE_IMAGE="$PACK_IMAGE:$release_id" \
+            --build-context shared=code/docker/opencode \
             --label org.opencontainers.image.revision="$GITHUB_SHA" \
             -t "$DEMO_IMAGE:$release_id" -t "$DEMO_IMAGE:mvp-zurich" -t "$DEMO_IMAGE:latest" docker/demo-opencode
           demo_tags="$DEMO_IMAGE:$release_id $DEMO_IMAGE:mvp-zurich"
@@ -278,14 +281,14 @@ jobs:
           # sends none.
           docker run -d --name demo -p 4200:4096 "$DEMO_IMAGE:$release_id"
           for attempt in $(seq 1 120); do curl -fs -o /dev/null http://127.0.0.1:4200/ && break; sleep 1; done
-          python docker/demo-opencode/check_interface.py --url http://127.0.0.1:4200
+          python code/docker/opencode/check_interface.py --url http://127.0.0.1:4200
           docker rm -f demo
           docker run -d --name demo -p 4200:4096 -e OPENCODE_SERVER_PASSWORD=workflow-check "$DEMO_IMAGE:$release_id"
           for attempt in $(seq 1 120); do
             [ "$(docker inspect --format '{{.State.Health.Status}}' demo)" = healthy ] && break; sleep 1
           done
           if [ "$(docker inspect --format '{{.State.Health.Status}}' demo)" != healthy ]; then docker logs demo | tail -40; exit 1; fi
-          python docker/demo-opencode/check_interface.py --url http://127.0.0.1:4200 --password workflow-check
+          python code/docker/opencode/check_interface.py --url http://127.0.0.1:4200 --password workflow-check
           docker rm -f demo
           echo "$demo_tags" >> "$RUNNER_TEMP/push.txt"
           echo "::endgroup::"

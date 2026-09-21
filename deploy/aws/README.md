@@ -134,7 +134,7 @@ answering, because Caddy serves that site on its name only.
 ```shell
 curl https://mcp.example.ai/health
 python scripts/test/mcp/check_server.py --url https://mcp.example.ai/mcp --require-hybrid
-python docker/demo-opencode/check_interface.py --url https://demo.example.ai --password <password>
+python <code>/docker/opencode/check_interface.py --url https://demo.example.ai --password <password>
 ```
 
 Behind a name and a password the first two take them as `curl -u
