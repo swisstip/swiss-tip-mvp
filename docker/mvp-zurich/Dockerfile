@@ -4,13 +4,13 @@
 # foreign nationals in Switzerland, from residence permits and registration
 # to social insurance, tax at source, the driving licence, health insurance
 # and naturalisation, federal rules with Canton and City of Zurich. The base
-# image (docker/semantic) plus the release, its readiness record and its
+# image (docker/mcp) plus the release, its readiness record and its
 # semantic index, and the image README the pack publishes. The build context
 # is the pack directory, a checkout's releases/mvp-zurich or the same four
 # files downloaded from a GitHub release. Published as ghcr.io/<owner>/swiss-tip:<release_id> by the
 # workflow container-images.yml.
 #
-#   docker build -t swiss-tip-semantic:0.3.0 docker/semantic
+#   docker build -t swiss-tip-mcp:0.3.0 docker/mcp
 #   docker build -f docker/mvp-zurich/Dockerfile -t swiss-tip:mvp-zurich releases/mvp-zurich
 #   docker run --rm -p 8000:8000 swiss-tip:mvp-zurich          MCP on http://127.0.0.1:8000/mcp
 #   docker run --rm -i swiss-tip:mvp-zurich --transport stdio
@@ -19,7 +19,7 @@
 # when a search on the bundled model does not run hybrid (an index for
 # another release or another model digest).
 
-ARG BASE_IMAGE=swiss-tip-semantic:0.3.0
+ARG BASE_IMAGE=swiss-tip-mcp:0.3.0
 FROM ${BASE_IMAGE}
 ARG RELEASE_ID=""
 ARG RELEASE_CONTENT_SHA256=""

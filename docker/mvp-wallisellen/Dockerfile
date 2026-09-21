@@ -2,12 +2,12 @@
 #
 # Swiss TIP MCP server with semantic search on the mvp-wallisellen release:
 # official Stadt Wallisellen information for residents and visitors. The base
-# image (docker/semantic) plus the release, its readiness record and its
+# image (docker/mcp) plus the release, its readiness record and its
 # semantic index. The build context is the pack directory, a checkout's
 # releases/mvp-wallisellen or the same three files downloaded from a GitHub
 # release.
 #
-#   docker build -t swiss-tip-semantic:0.3.0 docker/semantic
+#   docker build -t swiss-tip-mcp:0.3.0 docker/mcp
 #   docker build -f docker/mvp-wallisellen/Dockerfile -t swiss-tip:mvp-wallisellen releases/mvp-wallisellen
 #   docker run --rm -p 8000:8000 swiss-tip:mvp-wallisellen     MCP on http://127.0.0.1:8000/mcp
 #   docker run --rm -i swiss-tip:mvp-wallisellen --transport stdio
@@ -16,7 +16,7 @@
 # when a search on the bundled model does not run hybrid (an index for
 # another release or another model digest).
 
-ARG BASE_IMAGE=swiss-tip-semantic:0.3.0
+ARG BASE_IMAGE=swiss-tip-mcp:0.3.0
 FROM ${BASE_IMAGE}
 ARG RELEASE_ID=""
 ARG RELEASE_CONTENT_SHA256=""

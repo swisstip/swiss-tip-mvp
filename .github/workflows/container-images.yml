@@ -7,7 +7,7 @@
 #   mvp-wallisellen  one pack
 #   demo             the OpenCode demo image, on the Zurich pack image in ghcr.io
 #
-# The images that hold no release (basic, semantic, the embedding sidecar,
+# The images that hold no release (both MCP images, the embedding sidecar,
 # OpenCode) are built, tested and pushed by the workflow of the same name in
 # the code repository, swisstip/swiss-tip. This workflow pulls the ones it
 # builds on from ghcr.io, so they must have been pushed before, with the
@@ -22,12 +22,12 @@
 #
 # The pack images (docker/<pack>) and the demo image (docker/demo-opencode)
 # are defined here, with the packs they carry. The slim image (docker/slim),
-# compose.yaml and the check search (docker/semantic/check_semantic.py) are
+# compose.yaml and the check search (docker/mcp/check_semantic.py) are
 # the code repository's, which is checked out next to this one at the ref
 # given (code_ref).
 #
 # A pack is two release images: the pack image with Ollama inside, on the
-# semantic image, and the slim image without it, on the basic image. The slim
+# MCP image, and the slim image without it, on the slim MCP image. The slim
 # image is tested as compose.yaml runs it, beside the embedding sidecar of
 # ghcr.io.
 #
@@ -63,7 +63,7 @@ on:
         options: [all, packs, mvp-zurich, mvp-wallisellen, demo]
         default: all
       swisstip_mcp_version:
-        description: swisstip-mcp version (the tag of the basic and semantic images in ghcr.io)
+        description: swisstip-mcp version (the tag of both MCP images in ghcr.io)
         type: string
         default: 0.3.0
       package_index:
@@ -122,7 +122,7 @@ jobs:
           sparse-checkout: |
             /compose.yaml
             /docker/slim/
-            /docker/semantic/check_semantic.py
+            /docker/mcp/check_semantic.py
 
       - uses: actions/setup-python@v7
         with:
@@ -163,8 +163,8 @@ jobs:
             echo "BUILD_DEMO=$demo"
             echo "REGISTRY=$registry"
             echo "CODE_SHA=$code_sha"
+            echo "MCP_SLIM_IMAGE=$registry/swiss-tip-mcp-slim"
             echo "MCP_IMAGE=$registry/swiss-tip-mcp"
-            echo "SEMANTIC_IMAGE=$registry/swiss-tip-semantic"
             echo "PACK_IMAGE=$registry/swiss-tip"
             echo "DEMO_IMAGE=$registry/swiss-tip-demo"
           } >> "$GITHUB_ENV"
@@ -203,7 +203,7 @@ jobs:
             tag_args=""; for tag in $tags; do tag_args="$tag_args -t $tag"; done
             # The build itself fails unless the release is ready and a check search runs hybrid on the bundled model.
             docker build -f "docker/$pack/Dockerfile" \
-              --build-arg BASE_IMAGE="$SEMANTIC_IMAGE:$VERSION" \
+              --build-arg BASE_IMAGE="$MCP_IMAGE:$VERSION" \
               --build-arg RELEASE_ID="$release_id" --build-arg RELEASE_CONTENT_SHA256="$digest" \
               --build-arg REVISION="$GITHUB_SHA" \
               $tag_args "releases/$pack"
@@ -221,12 +221,12 @@ jobs:
             echo "::endgroup::"
 
             echo "::group::$pack $release_id slim"
-            # The slim release image: the same release on the basic image, without Ollama. Its build fails
+            # The slim release image: the same release on the slim MCP image, without Ollama. Its build fails
             # unless the release is ready and the semantic index was built for exactly this release.
             slim_tags="$PACK_IMAGE:$release_id-slim $PACK_IMAGE:$pack-slim"
             slim_tag_args=""; for tag in $slim_tags; do slim_tag_args="$slim_tag_args -t $tag"; done
             docker build -f code/docker/slim/Dockerfile \
-              --build-arg BASE_IMAGE="$MCP_IMAGE:$VERSION" --build-arg PACK="$pack" \
+              --build-arg BASE_IMAGE="$MCP_SLIM_IMAGE:$VERSION" --build-arg PACK="$pack" \
               --build-arg RELEASE_ID="$release_id" --build-arg RELEASE_CONTENT_SHA256="$digest" \
               --build-arg REVISION="$GITHUB_SHA" \
               $slim_tag_args "releases/$pack"
@@ -242,7 +242,7 @@ jobs:
             if [ "$mode" != hybrid ]; then docker compose -f code/compose.yaml logs | tail -40; exit 1; fi
             # From inside the server's container: the sidecar answers on loopback with the index's model digest.
             docker compose -f code/compose.yaml exec -T swiss-tip python - /srv/swiss-tip/release.json /srv/swiss-tip/semantic-index.json "$query" \
-              < code/docker/semantic/check_semantic.py
+              < code/docker/mcp/check_semantic.py
             if [ "$pack" = mvp-zurich ]; then
               python scripts/test/mcp/check_server.py --url "http://127.0.0.1:$SWISSTIP_PORT/mcp" --require-hybrid
             fi

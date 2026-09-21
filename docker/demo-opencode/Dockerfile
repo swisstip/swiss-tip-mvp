@@ -67,7 +67,7 @@ ENV OPENCODE_PORT=4096 \
 
 USER root
 # The directories are made here, because COPY would create /etc/swiss-tip
-# unreadable (0644), as the basic image notes for its documents directory.
+# unreadable (0644), as the slim MCP image notes for its documents directory.
 # There is no browser in the container, and opencode web starts one; the
 # link makes that a silent success instead of a logged stack trace. Git is
 # for the workspace below, not for the agent, which has no shell.
