@@ -1,7 +1,7 @@
 # Swiss TIP MCP server - container image
 
 ```text
-ghcr.io/bobrovsky420/swiss-tip:mvp-zurich-2026-09-18-v10
+ghcr.io/swisstip/swiss-tip:mvp-zurich-2026-09-18-v10
 ```
 
 Swiss TIP, the Swisscom Trusted Information Platform, is an MCP (Model
@@ -287,7 +287,7 @@ Not covered, and answered as out of coverage:
 ## Run the container
 
 ```shell
-docker run --rm -p 8000:8000 ghcr.io/bobrovsky420/swiss-tip:mvp-zurich-2026-09-18-v10
+docker run --rm -p 8000:8000 ghcr.io/swisstip/swiss-tip:mvp-zurich-2026-09-18-v10
 ```
 
 | Address | What it serves |
@@ -343,11 +343,11 @@ without session affinity.
 
 ### Two containers
 
-The slim image `ghcr.io/bobrovsky420/swiss-tip:mvp-zurich-2026-09-18-v10-slim`
+The slim image `ghcr.io/swisstip/swiss-tip:mvp-zurich-2026-09-18-v10-slim`
 (moving tag `mvp-zurich-slim`, about 60 MB to pull) carries the same server,
 release and semantic index without Ollama and the model. On its own it
 serves lexical search. Hybrid search comes from the embedding sidecar
-`ghcr.io/bobrovsky420/swiss-tip-ollama:qwen3-embedding-0.6b`, the same
+`ghcr.io/swisstip/swiss-tip-ollama:qwen3-embedding-0.6b`, the same
 CPU-only Ollama and model in a container of its own, which joins the server's
 network namespace; the model stays on the loopback address and is reachable
 from nowhere else. With the repository's `compose.yaml`, which needs no
@@ -360,10 +360,10 @@ docker compose up -d --wait
 Or with Docker alone:
 
 ```shell
-docker run -d --name swiss-tip -p 8000:8000 ghcr.io/bobrovsky420/swiss-tip:mvp-zurich-2026-09-18-v10-slim \
+docker run -d --name swiss-tip -p 8000:8000 ghcr.io/swisstip/swiss-tip:mvp-zurich-2026-09-18-v10-slim \
   --semantic-index /srv/swiss-tip/semantic-index.json
 docker run -d --name swiss-tip-embeddings --network container:swiss-tip \
-  ghcr.io/bobrovsky420/swiss-tip-ollama:qwen3-embedding-0.6b
+  ghcr.io/swisstip/swiss-tip-ollama:qwen3-embedding-0.6b
 ```
 
 The addresses, the tools and the answers are those of the single image. If
@@ -437,7 +437,7 @@ image over stdio; Docker must be installed where the client runs:
   "mcpServers": {
     "swiss-tip": {
       "command": "docker",
-      "args": ["run", "--rm", "-i", "ghcr.io/bobrovsky420/swiss-tip:mvp-zurich-2026-09-18-v10", "--transport", "stdio"]
+      "args": ["run", "--rm", "-i", "ghcr.io/swisstip/swiss-tip:mvp-zurich-2026-09-18-v10", "--transport", "stdio"]
     }
   }
 }
