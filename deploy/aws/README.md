@@ -1,6 +1,6 @@
 # Swiss TIP on AWS
 
-**Last update:** 20 September 2026
+**Last update:** 21 September 2026
 
 One CloudFormation template, [swiss-tip.yaml](swiss-tip.yaml), creates one
 EC2 instance that serves the Swiss TIP MCP server to the internet: the slim
@@ -73,10 +73,13 @@ reach without credentials.
 - An AWS account and a region, for example `eu-central-1` (Frankfurt). The
   region needs its default VPC, which every new account has; the template
   names no network.
-- The images on `ghcr.io` must be public and current: the workflow
+- The images on `ghcr.io` must be public and current. The workflow
   [Container images](../../.github/workflows/container-images.yml) pushes
-  them, `swiss-tip-opencode` with `images: opencode` or `all`, and a new
-  package starts private ([container images](https://github.com/swisstip/swiss-tip/blob/main/docker/README.md#build-on-github)).
+  the slim release image; the code repository's
+  [workflow of the same name](https://github.com/swisstip/swiss-tip/blob/main/.github/workflows/container-images.yml)
+  pushes the embedding sidecar, and `swiss-tip-opencode` with `images:
+  opencode` or `all`. A new package starts private
+  ([container images](https://github.com/swisstip/swiss-tip/blob/main/docker/README.md#build-on-github)).
 - For HTTPS, a domain whose DNS you can edit.
 
 ## Create the stack

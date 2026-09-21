@@ -1,28 +1,30 @@
-# Build the container images on one runner, test them, and push them to
-# GitHub Container Registry. Started by hand; choose which images:
+# Build the container images that hold a pack on one runner, test them, and
+# push them to GitHub Container Registry. Started by hand; choose which images:
 #
-#   all              basic, semantic, the embedding sidecar, both packs, the demo and OpenCode, in that order
-#   mcp              the basic image only
-#   semantic         the semantic image only, on the basic image in ghcr.io
-#   ollama           the embedding sidecar only, out of the semantic image in ghcr.io
-#   packs            both packs, on the semantic and basic images in ghcr.io
-#   mvp-zurich       one pack, on the semantic and basic images in ghcr.io
-#   mvp-wallisellen  one pack, on the semantic and basic images in ghcr.io
-#   demo             the OpenCode demo image, on the Zurich pack image
-#   opencode         the OpenCode image, which holds the agent and its web interface only
+#   all              both packs and the demo, in that order
+#   packs            both packs
+#   mvp-zurich       one pack
+#   mvp-wallisellen  one pack
+#   demo             the OpenCode demo image, on the Zurich pack image in ghcr.io
 #
-# The generic images (basic, semantic, sidecar, slim, OpenCode) and
-# compose.yaml are defined in the code repository, swisstip/swiss-tip, which
-# is checked out next to this one at the ref given (code_ref); the pack
-# images (docker/<pack>) and the demo image (docker/demo-opencode) are
-# defined here, with the packs they carry.
+# The images that hold no release (basic, semantic, the embedding sidecar,
+# OpenCode) are built, tested and pushed by the workflow of the same name in
+# the code repository, swisstip/swiss-tip. This workflow pulls the ones it
+# builds on from ghcr.io, so they must have been pushed before, with the
+# swisstip-mcp version given here (swisstip_mcp_version), and this repository
+# must be able to read their packages: they are public, or each of them names
+# this repository under "Manage Actions access" in its package settings.
+#
+# The pack images (docker/<pack>) and the demo image (docker/demo-opencode)
+# are defined here, with the packs they carry. The slim image (docker/slim),
+# compose.yaml and the check search (docker/semantic/check_semantic.py) are
+# the code repository's, which is checked out next to this one at the ref
+# given (code_ref).
 #
 # A pack is two release images: the pack image with Ollama inside, on the
-# semantic image, and the slim image without it (the code repository's
-# docker/slim), on the basic image. The slim image is tested as compose.yaml
-# runs it, beside the embedding sidecar (docker/ollama) of the same run or
-# of ghcr.io, so the sidecar must have been pushed before a run that selects
-# only packs.
+# semantic image, and the slim image without it, on the basic image. The slim
+# image is tested as compose.yaml runs it, beside the embedding sidecar of
+# ghcr.io.
 #
 # The demo image is a test image, not part of the product; "all" builds it
 # last, on the Zurich pack image of the same run, and "demo" alone builds it
@@ -30,16 +32,8 @@
 # carries latest: it is only ever built on mvp-zurich, so latest names one
 # pack, and a pull without a tag gets the demo of the current release.
 #
-# The OpenCode image is a test image too: the demo's agent and web interface
-# without a server, a release or a model, for the profile "demo" of
-# compose.yaml or a server elsewhere. It is tested as that profile runs it,
-# beside the slim Zurich image and the sidecar of the same run or of
-# ghcr.io, and pushed as swiss-tip-opencode with the OpenCode version and
-# latest: it holds no release, so a new release does not change it.
-#
-# An image built earlier in the same run is used as the base directly, so a
-# run without push also works for "all". An image not selected is pulled from
-# ghcr.io and must have been pushed before. A selected pack without a
+# A pack image built earlier in the same run is the demo's base directly, so
+# a run without push also works for "all". A selected pack without a
 # release.json is skipped with a warning, so a pack that has no release yet
 # does not cost the other images their push; every image is pushed only after
 # all of them are built and tested.
@@ -47,16 +41,12 @@
 # A pack image is the release image: it is pushed as ghcr.io/<owner>/swiss-tip
 # with the tags <release_id>, content-<first 12 hex digits of the release's
 # content digest> and <pack>, the moving tag of that pack; the slim image is
-# pushed beside it as <release_id>-slim and <pack>-slim. The sidecar is
-# pushed as ghcr.io/<owner>/swiss-tip-ollama with the tags <model> and
-# <model>-<first 12 hex digits of the model digest>, the model tag written
-# with a hyphen (qwen3-embedding-0.6b). The release image
-# carries no latest tag, so a pull of it names a release or a pack; the basic
-# image keeps swiss-tip-mcp:latest. Its labels name
-# the release (org.opencontainers.image.version, swiss-tip.release.id,
-# swiss-tip.release.content-sha256); the images built from the code
-# repository carry its commit as org.opencontainers.image.revision, the pack
-# and demo images carry this repository's.
+# pushed beside it as <release_id>-slim and <pack>-slim. The release image
+# carries no latest tag, so a pull of it names a release or a pack. Its
+# labels name the release (org.opencontainers.image.version,
+# swiss-tip.release.id, swiss-tip.release.content-sha256); the pack, slim and
+# demo images carry this repository's commit as
+# org.opencontainers.image.revision.
 name: Container images
 
 on:
@@ -65,14 +55,14 @@ on:
       images:
         description: Images to build
         type: choice
-        options: [all, mcp, semantic, ollama, packs, mvp-zurich, mvp-wallisellen, demo, opencode]
+        options: [all, packs, mvp-zurich, mvp-wallisellen, demo]
         default: all
       swisstip_mcp_version:
-        description: swisstip-mcp version from PyPI (the basic and semantic image tag)
+        description: swisstip-mcp version from PyPI (the tag of the basic and semantic images in ghcr.io)
         type: string
         default: 0.2.5
       code_ref:
-        description: Branch, tag or commit of swisstip/swiss-tip whose Dockerfiles and compose.yaml are used
+        description: Branch, tag or commit of swisstip/swiss-tip whose slim Dockerfile and compose.yaml are used
         type: string
         default: main
       push:
@@ -109,7 +99,7 @@ jobs:
             /releases/mvp-wallisellen/semantic-index.json
             /scripts/test/mcp/check_server.py
 
-      # The code repository: the generic Dockerfiles, compose.yaml, LICENSE and NOTICE.
+      # The code repository: the slim Dockerfile, compose.yaml and the check search.
       - uses: actions/checkout@v7
         with:
           repository: swisstip/swiss-tip
@@ -117,10 +107,9 @@ jobs:
           path: code
           sparse-checkout-cone-mode: false
           sparse-checkout: |
-            /LICENSE
-            /NOTICE
             /compose.yaml
-            /docker/
+            /docker/slim/
+            /docker/semantic/check_semantic.py
 
       - uses: actions/setup-python@v7
         with:
@@ -128,37 +117,27 @@ jobs:
 
       - name: Select images
         run: |
-          demo=0; sidecar=0; opencode=0
+          demo=0
           case "$IMAGES" in
-            all)             mcp=1; semantic=1; sidecar=1; packs="mvp-zurich mvp-wallisellen"; demo=1; opencode=1 ;;
-            mcp)             mcp=1; semantic=0; packs="" ;;
-            semantic)        mcp=0; semantic=1; packs="" ;;
-            ollama)          mcp=0; semantic=0; sidecar=1; packs="" ;;
-            packs)           mcp=0; semantic=0; packs="mvp-zurich mvp-wallisellen" ;;
-            mvp-zurich|mvp-wallisellen) mcp=0; semantic=0; packs="$IMAGES" ;;
-            demo)            mcp=0; semantic=0; packs=""; demo=1 ;;
-            opencode)        mcp=0; semantic=0; packs=""; opencode=1 ;;
+            all)             packs="mvp-zurich mvp-wallisellen"; demo=1 ;;
+            packs)           packs="mvp-zurich mvp-wallisellen" ;;
+            mvp-zurich|mvp-wallisellen) packs="$IMAGES" ;;
+            demo)            packs=""; demo=1 ;;
             *) echo "unknown selection $IMAGES"; exit 1 ;;
           esac
           registry="ghcr.io/${GITHUB_REPOSITORY_OWNER,,}"
           code_sha=$(git -C code rev-parse HEAD)
           {
-            echo "BUILD_MCP=$mcp"
-            echo "BUILD_SEMANTIC=$semantic"
-            echo "BUILD_SIDECAR=$sidecar"
             echo "BUILD_PACKS=$packs"
             echo "BUILD_DEMO=$demo"
-            echo "BUILD_OPENCODE=$opencode"
             echo "REGISTRY=$registry"
             echo "CODE_SHA=$code_sha"
             echo "MCP_IMAGE=$registry/swiss-tip-mcp"
             echo "SEMANTIC_IMAGE=$registry/swiss-tip-semantic"
-            echo "SIDECAR_IMAGE=$registry/swiss-tip-ollama"
             echo "PACK_IMAGE=$registry/swiss-tip"
             echo "DEMO_IMAGE=$registry/swiss-tip-demo"
-            echo "OPENCODE_IMAGE=$registry/swiss-tip-opencode"
           } >> "$GITHUB_ENV"
-          echo "basic=$mcp semantic=$semantic sidecar=$sidecar packs=${packs:-none} demo=$demo opencode=$opencode version=$VERSION registry=$registry code=$code_sha"
+          echo "packs=${packs:-none} demo=$demo version=$VERSION registry=$registry code=$code_sha"
 
       - name: Install the check client
         run: python -m pip install "swisstip-mcp==$VERSION"
@@ -168,48 +147,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build and test the basic image
-        if: env.BUILD_MCP == '1'
-        run: |
-          docker build -f code/docker/mcp/Dockerfile --build-arg SWISSTIP_MCP_VERSION="$VERSION" \
-            --label org.opencontainers.image.revision="$CODE_SHA" \
-            -t "$MCP_IMAGE:$VERSION" -t "$MCP_IMAGE:latest" code
-          docker run -d --name basic -p 8001:8000 -v "$PWD/releases/mvp-zurich:/srv/swiss-tip:ro" "$MCP_IMAGE:$VERSION"
-          for attempt in $(seq 1 30); do curl -fs -o /dev/null http://127.0.0.1:8001/health && break; sleep 1; done
-          python scripts/test/mcp/check_server.py --url http://127.0.0.1:8001/mcp
-          docker rm -f basic
-          echo "$MCP_IMAGE:$VERSION $MCP_IMAGE:latest" >> "$RUNNER_TEMP/push.txt"
-
-      - name: Build the semantic image
-        if: env.BUILD_SEMANTIC == '1'
-        run: |
-          docker build --build-arg BASE_IMAGE="$MCP_IMAGE:$VERSION" \
-            --label org.opencontainers.image.revision="$CODE_SHA" \
-            -t "$SEMANTIC_IMAGE:$VERSION" code/docker/semantic
-          echo "$SEMANTIC_IMAGE:$VERSION" >> "$RUNNER_TEMP/push.txt"
-
-      - name: Build and test the embedding sidecar
-        if: env.BUILD_SIDECAR == '1'
-        run: |
-          # Ollama and the model are copied out of the semantic image of this run, or of ghcr.io; the build
-          # itself fails unless the copied model has the expected digest and loads.
-          docker build --build-arg SEMANTIC_IMAGE="$SEMANTIC_IMAGE:$VERSION" \
-            --label org.opencontainers.image.revision="$CODE_SHA" \
-            -t sidecar:build code/docker/ollama
-          model=$(docker image inspect --format '{{ index .Config.Labels "swiss-tip.embedding.model" }}' sidecar:build)
-          digest=$(docker image inspect --format '{{ index .Config.Labels "swiss-tip.embedding.model-digest" }}' sidecar:build)
-          # qwen3-embedding:0.6b is tagged qwen3-embedding-0.6b, the tag compose.yaml names, and with the model digest.
-          tags="$SIDECAR_IMAGE:${model//:/-} $SIDECAR_IMAGE:${model//:/-}-${digest:0:12}"
-          for tag in $tags; do docker tag sidecar:build "$tag"; done
-          # On its own it must report healthy, which means the model is loaded.
-          docker run -d --name sidecar sidecar:build
-          for attempt in $(seq 1 90); do
-            [ "$(docker inspect --format '{{.State.Health.Status}}' sidecar)" = healthy ] && break; sleep 1
-          done
-          if [ "$(docker inspect --format '{{.State.Health.Status}}' sidecar)" != healthy ]; then docker logs sidecar | tail -40; exit 1; fi
-          docker rm -f sidecar
-          echo "$tags" >> "$RUNNER_TEMP/push.txt"
 
       - name: Build and test the pack images
         if: env.BUILD_PACKS != ''
@@ -259,7 +196,7 @@ jobs:
               --build-arg RELEASE_ID="$release_id" --build-arg RELEASE_CONTENT_SHA256="$digest" \
               --build-arg REVISION="$GITHUB_SHA" \
               $slim_tag_args "releases/$pack"
-            # Tested as compose.yaml runs it: beside the embedding sidecar of this run, or the one pushed before.
+            # Tested as compose.yaml runs it: beside the embedding sidecar of ghcr.io.
             case "$pack" in
               mvp-zurich) query="Can my wife join me in Switzerland if I have a B permit?" ;;
               *)          query="Where can I dispose of old electronic devices?" ;;
@@ -315,39 +252,6 @@ jobs:
           python docker/demo-opencode/check_interface.py --url http://127.0.0.1:4200 --password workflow-check
           docker rm -f demo
           echo "$DEMO_IMAGE:$release_id $DEMO_IMAGE:mvp-zurich $DEMO_IMAGE:latest" >> "$RUNNER_TEMP/push.txt"
-          echo "::endgroup::"
-
-      - name: Build and test the OpenCode image
-        if: env.BUILD_OPENCODE == '1'
-        run: |
-          echo "::group::opencode"
-          # The context is the code repository's root, for LICENSE and NOTICE. The tag is the OpenCode version:
-          # the image holds no release, so a new release does not change it.
-          docker build -f code/docker/opencode/Dockerfile \
-            --label org.opencontainers.image.revision="$CODE_SHA" \
-            -t opencode:build code
-          version=$(docker image inspect --format '{{ index .Config.Labels "swiss-tip.demo.opencode.version" }}' opencode:build)
-          [ -n "$version" ] || { echo "the image carries no swiss-tip.demo.opencode.version label to take its tag from"; exit 1; }
-          tags="$OPENCODE_IMAGE:$version $OPENCODE_IMAGE:latest"
-          for tag in $tags; do docker tag opencode:build "$tag"; done
-          # Tested as compose.yaml runs it: the profile "demo" beside the slim Zurich image and the
-          # embedding sidecar of this run, or the ones pushed before. The generic image carries no sample
-          # questions; the pack's demo image carries the Zurich panel.
-          export SWISSTIP_REGISTRY="$REGISTRY" SWISSTIP_PACK=mvp-zurich SWISSTIP_PORT=8190 SWISSTIP_DEMO_PORT=4210
-          docker compose -f code/compose.yaml up -d --wait || { docker compose -f code/compose.yaml logs | tail -60; exit 1; }
-          server=$(docker inspect --format '{{.State.StartedAt}}' "$(docker compose -f code/compose.yaml ps -q swiss-tip)")
-          docker compose -f code/compose.yaml --profile demo up -d --wait || { docker compose -f code/compose.yaml --profile demo logs | tail -60; exit 1; }
-          python docker/demo-opencode/check_interface.py --url http://127.0.0.1:4210 --questions none
-          # With a password the interface is recreated: 401 without credentials, the routes with them.
-          OPENCODE_SERVER_PASSWORD=workflow-check docker compose -f code/compose.yaml --profile demo up -d --wait \
-            || { docker compose -f code/compose.yaml --profile demo logs | tail -60; exit 1; }
-          python docker/demo-opencode/check_interface.py --url http://127.0.0.1:4210 --password workflow-check --questions none
-          # Switching the interface on, and recreating it, leaves the server's container alone.
-          if [ "$(docker inspect --format '{{.State.StartedAt}}' "$(docker compose -f code/compose.yaml ps -q swiss-tip)")" != "$server" ]; then
-            echo "the server was restarted by the demo profile"; exit 1
-          fi
-          docker compose -f code/compose.yaml --profile demo down
-          echo "$tags" >> "$RUNNER_TEMP/push.txt"
           echo "::endgroup::"
 
       - name: Push the tested images

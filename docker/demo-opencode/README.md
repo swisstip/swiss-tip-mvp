@@ -1,6 +1,6 @@
 # Swiss TIP demo image: OpenCode with the Zurich knowledge base
 
-**Last update:** 20 September 2026
+**Last update:** 21 September 2026
 
 A test image, not a release image. It is the `mvp-zurich` pack image with
 the [OpenCode](https://opencode.ai) agent and its web interface on top, so
@@ -200,7 +200,7 @@ python docker/demo-opencode/check_interface.py --url http://127.0.0.1:4096 --pas
 
 The pack image must exist first; see [../README.md](https://github.com/swisstip/swiss-tip/blob/main/docker/README.md). On
 GitHub, the workflow [Container images](../../.github/workflows/container-images.yml)
-builds, tests and pushes this image with the input `images: all`, on the
+of this repository builds, tests and pushes this image with the input `images: all`, on the
 Zurich pack image of the same run, or `images: demo`, on the one of `ghcr.io`, as
 `ghcr.io/<owner>/swiss-tip-demo:<release_id>`, `:mvp-zurich` and `:latest`. The release image has no `latest`, because it is built for more than one pack; this image is built on `mvp-zurich` only, so `latest` is unambiguous.
 
