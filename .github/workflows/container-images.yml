@@ -165,7 +165,6 @@ jobs:
             echo "BUILD_DEMO=$demo"
             echo "REGISTRY=$registry"
             echo "CODE_SHA=$code_sha"
-            echo "MCP_SLIM_IMAGE=$registry/swiss-tip-mcp-slim"
             echo "MCP_IMAGE=$registry/swiss-tip-mcp"
             echo "PACK_IMAGE=$registry/swiss-tip"
             echo "DEMO_IMAGE=$registry/swiss-tip-demo"
@@ -228,7 +227,7 @@ jobs:
             slim_tags="$PACK_IMAGE:$release_id-slim $PACK_IMAGE:$pack-slim"
             slim_tag_args=""; for tag in $slim_tags; do slim_tag_args="$slim_tag_args -t $tag"; done
             docker build -f code/docker/slim/Dockerfile \
-              --build-arg BASE_IMAGE="$MCP_SLIM_IMAGE:$VERSION" --build-arg PACK="$pack" \
+              --build-arg BASE_IMAGE="$MCP_IMAGE:$VERSION-slim" --build-arg PACK="$pack" \
               --build-arg RELEASE_ID="$release_id" --build-arg RELEASE_CONTENT_SHA256="$digest" \
               --build-arg REVISION="$GITHUB_SHA" \
               $slim_tag_args "releases/$pack"
