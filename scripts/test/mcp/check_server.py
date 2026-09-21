@@ -28,6 +28,7 @@ import argparse
 import asyncio
 from contextlib import asynccontextmanager
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -152,10 +153,12 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
                   {"CH", "CH-ZH", "CH-ZH-261", "CH-BE", "CH-TI"} <= set(body["jurisdictions"]) and len(body["jurisdictions"]) == 28)
             languages = [q["code"] for q in body.get("query_languages") or []]
             search_tool = next(t for t in tools if t.name == "search")
-            note = "Write search queries in German (preferred) or English"
+            # swisstip-mcp 0.3.0 asks for one search and no longer calls German "preferred"; servers up to 0.2.5
+            # carry the older sentence.
+            note = re.compile(r"Write (the search query|search queries) in German( \(preferred\))? or English:")
             check(f"query languages {languages} are named in the instructions, the search description and the query field",
-                  languages[:2] == ["de", "en"] and note in (init.instructions or "") and note in search_tool.description
-                  and note in search_tool.inputSchema["properties"]["query"]["description"])
+                  languages[:2] == ["de", "en"] and note.search(init.instructions or "") and note.search(search_tool.description)
+                  and note.search(search_tool.inputSchema["properties"]["query"]["description"]))
             if health is not None:
                 check(f"health route beside the endpoint is ok and names the served release: {health.get('release_id')}",
                       health.get("status") == "ok" and health.get("release_id") == body["release_id"]

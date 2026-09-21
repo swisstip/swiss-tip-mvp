@@ -63,11 +63,13 @@ class ZurichReleaseTests(unittest.TestCase):
         init, listed, root, resolved = asyncio.run(run())
         # The release's query languages reach the caller before its first search: in the instructions, in the search
         # description and in the query field, and on the coverage root.
-        note = "Write search queries in German (preferred) or English"
-        self.assertIn(note, init.instructions)
+        # swisstip-mcp 0.3.0 asks for one search and no longer calls German "preferred"; the published 0.2.5 that
+        # the workflow installs until then carries the older sentence.
+        note = r"Write (the search query|search queries) in German( \(preferred\))? or English:"
+        self.assertRegex(init.instructions, note)
         search = next(t for t in listed if t.name == "search")
-        self.assertIn(note, search.description)
-        self.assertIn(note, search.inputSchema["properties"]["query"]["description"])
+        self.assertRegex(search.description, note)
+        self.assertRegex(search.inputSchema["properties"]["query"]["description"], note)
         self.assertEqual([q["code"] for q in root.structuredContent["query_languages"]], ["de", "en"])
         self.assertFalse(root.isError)
         self.assertLess(len(root.content[0].text.encode("utf-8")), 6000)
