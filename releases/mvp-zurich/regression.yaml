@@ -8566,8 +8566,6 @@ cases:
   expected_answer: Search finds third-country-work-procedure with a strong match; resolve serves third-country-work-procedure
     for the Canton of Zurich (population third_country); a work permit does not by itself give the right to enter, so a visa
     may still be needed.
-  blocking: false
-  quarantine_reason: 'third-country-work-procedure is no longer among the first three hybrid hits after the concepts of 2026-09-22 entered the embedding index (entry-visa-need, aig-short-stay, fza-entry; hybrid replay on mvp-zurich-2026-09-22-v1). The case was already weak lexically before.'
   steps:
   - search:
       query: Arbeitsbewilligung genehmigt trotzdem Visum noetig fuer Einreise
@@ -9038,8 +9036,6 @@ cases:
   language: en
   expected_answer: Search finds tax-at-source-tariff-codes with a strong match with the abbreviated codes L and M; resolve
     serves tax-at-source-tariff-codes.
-  blocking: false
-  quarantine_reason: 'The verdict fell from strong to weak while the ranking improved: tax-at-source-tariff-codes rose from third to second, but the anchored weight fell from 1.5665 to 1.4803 against the threshold of 1.5 (lexical replay on mvp-zurich-2026-09-22-v1). See LIMITATIONS.md, ''Retrieval limitations''.'
   steps:
   - search:
       query: Am I taxed under code L or code M as a German cross-border commuter in Zurich?
@@ -9430,8 +9426,6 @@ cases:
   expected_answer: Search finds family-b with a strong match; resolve for a B-permit sponsor serves family-b, where language-course
     enrolment can replace the certificate for initial issuance, and rejects family-c (context_not_covered), which needs a
     C-permit sponsor.
-  blocking: false
-  quarantine_reason: 'family-b is no longer among the first three hybrid hits after the three Zurich family-reunification concepts of 2026-09-22 entered the embedding index (family-requirements, zh-family-refugee-asylum, family-swiss; hybrid replay on mvp-zurich-2026-09-22-v1).'
   steps:
   - search:
       query: I hold a Swiss residence permit B, not the settlement permit C. My husband hasn't passed a German exam yet but

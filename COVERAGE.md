@@ -5,7 +5,10 @@
 What the Swiss TIP MCP server serves today, and what it does not. This file
 describes the committed release that the server loads by default; it is
 updated from that release whenever the knowledge base changes (see
-[AGENTS.md](AGENTS.md), "Coverage and limitations documents").
+[AGENTS.md](AGENTS.md), "Coverage and limitations documents"). The
+submission is `mvp-zurich`; `mvp-wallisellen` was a proof of concept that a
+second, municipal pack can be built with the same tooling, is frozen at its
+attested release and is not extended, tested or documented further.
 
 **Release:** `mvp-zurich-2026-09-22-v1` (pack `mvp-zurich`, KB1)<br>
 **Content digest:** `2823ab3fad3b042436d0fd1a38d913016031ac17562afe9dffcb774e80341be2`<br>
@@ -47,6 +50,11 @@ graded
 live-caller session covers the `fza-*` concepts, the office contacts, the
 daily-life topics, the cross-jurisdiction cases, entry and visas, voting
 rights, the tax-at-source tariffs or the expat-life topics<br>
+**Coverage of the run:** `curation-coverage.md` next to the release lists,
+per candidate record of the run, which content sections a fact cites, which a
+disposition in `curation-coverage.yaml` settles and which are open; on this
+release 525 of 2,076 units are cited, 267 dispositioned and 1,284 open (see
+[LIMITATIONS.md](LIMITATIONS.md), "Retrieval limitations")<br>
 **Publishers and basis:** every cited document names the institution that
 published it (105 federal, 51 cantonal, 40 municipal) and every excerpt what
 it is: 450 facts rest on an authority's own guidance, 77 on an office

@@ -4,15 +4,15 @@
   "release_id": "mvp-zurich-2026-09-22-v1",
   "content_sha256": "2823ab3fad3b042436d0fd1a38d913016031ac17562afe9dffcb774e80341be2",
   "acceptance_sha256": "0ee9fde2a28ac6b96bc5fed54778c176542c2a78f00178d3710e92880e501714",
-  "regression_sha256": "5cd576233854c31c16ad8c099dfa733b7abf7d7ade4c1c66318a5d68e4db3103",
-  "checked_at": "2026-09-22T08:14:21.925259+00:00",
+  "regression_sha256": "c7d365a1fd04a8b4f8c5deb41d7141fd8d96f28764919f27c36d05a11bf2bf41",
+  "checked_at": "2026-09-22T10:09:28.915569+00:00",
   "as_of": "2026-09-19",
   "passed": true,
   "runs": {
     "lexical": {
       "retrieval_mode": "lexical",
       "cases": 587,
-      "passed": 556,
+      "passed": 557,
       "failed": [],
       "quarantined": [
         "Q-EN-2",
@@ -42,12 +42,9 @@
         "Q-DE-90",
         "Q-FR-12",
         "Q-IT-7",
-        "Q-TR-1",
         "Q-RU-1",
         "N-EN-T7",
         "N-EN-J13",
-        "N-EN-A4",
-        "CTX-5",
         "CTX-25",
         "XC-39",
         "XC-45",
@@ -84,7 +81,6 @@
         "Q-RU-1",
         "N-EN-T7",
         "N-EN-J13",
-        "N-EN-A4",
         "CTX-25",
         "XC-39",
         "XC-45",
@@ -101,8 +97,6 @@
         "Q-DE-63",
         "Q-EN-78",
         "Q-DE-79",
-        "Q-TR-1",
-        "CTX-5",
         "XM-18",
         "OOS-43",
         "OOS-46",
@@ -264,7 +258,7 @@
               "hits": [
                 "zh-tax-at-source-liability",
                 "tax-at-source-liability",
-                "aig-study"
+                "naturalisation-facilitated-spouse"
               ],
               "match_strength": "strong",
               "judged": true
@@ -359,7 +353,7 @@
               "hits": [
                 "naturalisation-ordinary",
                 "naturalisation-facilitated-spouse",
-                "zh-naturalisation-ordinary"
+                "zh-tax-at-source-liability"
               ],
               "match_strength": "strong",
               "judged": true
@@ -378,7 +372,7 @@
               "hits": [
                 "naturalisation-facilitated-spouse",
                 "naturalisation-third-generation",
-                "city-zurich-naturalisation-facilitated"
+                "city-zurich-naturalisation"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1197,8 +1191,8 @@
               "query": "family reunification with an L permit in Zurich",
               "translated": false,
               "hits": [
-                "zh-family-b-c-permit",
                 "zh-family-l-permit",
+                "zh-family-b-c-permit",
                 "fza-family-members"
               ],
               "match_strength": "strong",
@@ -1218,7 +1212,7 @@
               "hits": [
                 "zh-political-rights",
                 "political-rights-federal",
-                "city-zurich-marriage"
+                "city-zurich-naturalisation"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1426,7 +1420,7 @@
               "hits": [
                 "unemployment-benefit",
                 "social-assistance-review",
-                "fza-employee-permit"
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1445,7 +1439,7 @@
               "hits": [
                 "accident-insurance",
                 "zh-sva-contact",
-                "entry-visa-fee-insurance"
+                "fza-social-security"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1540,12 +1534,12 @@
               "hits": [
                 "permit-card-eu-efta",
                 "canton-change",
-                "entry-visa-types"
+                "eu-employment-registration-deadline"
               ],
               "match_strength": "strong",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-2 (English: Short-stay permit: AIG Article 32): search 'What is the difference between an L permit and a B permit?' no longer finds permit-l within the first 3 hits: ['permit-card-eu-efta', 'canton-change', 'entry-visa-types']"
+                "Q-EN-2 (English: Short-stay permit: AIG Article 32): search 'What is the difference between an L permit and a B permit?' no longer finds permit-l within the first 3 hits: ['permit-card-eu-efta', 'canton-change', 'eu-employment-registration-deadline']"
               ]
             }
           ]
@@ -1560,9 +1554,9 @@
               "query": "After how many years can I get a C permit?",
               "translated": false,
               "hits": [
-                "parental-leave",
                 "permit-c-five-years",
-                "permit-c"
+                "permit-c",
+                "parental-leave"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1653,17 +1647,17 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['fza-family-members', 'permit-c-five-years', 'naturalisation-ordinary']",
-            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' reports match_strength weak, expected strong (signals {'lexical_share': 0.264, 'anchored_weight': 1.055})"
+            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['naturalisation-ordinary', 'permit-c-five-years', 'permit-c']",
+            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3152, 'anchored_weight': 1.3822})"
           ],
           "searches": [
             {
               "query": "I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?",
               "translated": false,
               "hits": [
-                "fza-family-members",
+                "naturalisation-ordinary",
                 "permit-c-five-years",
-                "naturalisation-ordinary"
+                "permit-c"
               ],
               "match_strength": "weak",
               "judged": true
@@ -1709,7 +1703,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-10 (English: Zurich EU/EFTA self-employment documentation): search \"I'm a French citizen and want to work as a self-employed graphic designer in the canton of Zurich. What evidence do I need to provide?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2245, 'anchored_weight': 1.3585})"
+                "Q-EN-10 (English: Zurich EU/EFTA self-employment documentation): search \"I'm a French citizen and want to work as a self-employed graphic designer in the canton of Zurich. What evidence do I need to provide?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2057, 'anchored_weight': 1.3585})"
               ]
             }
           ]
@@ -1726,7 +1720,7 @@
               "hits": [
                 "zh-third-country-retirement",
                 "zh-entry-permit-non-working",
-                "zh-naturalisation-ordinary"
+                "zh-tax-at-source-ordinary-assessment"
               ],
               "match_strength": "strong",
               "judged": false
@@ -1878,7 +1872,7 @@
               "hits": [
                 "fza-equal-treatment",
                 "zh-foreign-licence-exchange",
-                "zh-eu-nonworking"
+                "zh-tax-at-source-ordinary-assessment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1936,8 +1930,8 @@
               "translated": false,
               "hits": [
                 "permit-l",
-                "entry-etias",
-                "permit-card-eu-efta"
+                "permit-card-eu-efta",
+                "zh-eu-l"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1968,7 +1962,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-DE-4 (German: Settlement permit: AIG Article 34): search 'Ab wann erhalte ich die Niederlassungsbewilligung C?' no longer finds permit-c within the first 3 hits: ['fza-self-employment', 'city-zurich-school-languages', 'family-c']"
+            "Q-DE-4 (German: Settlement permit: AIG Article 34): search 'Ab wann erhalte ich die Niederlassungsbewilligung C?' no longer finds permit-c within the first 3 hits: ['fza-self-employment', 'family-c', 'naturalisation-ordinary']"
           ],
           "searches": [
             {
@@ -1976,8 +1970,8 @@
               "translated": false,
               "hits": [
                 "fza-self-employment",
-                "city-zurich-school-languages",
-                "family-c"
+                "family-c",
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -2072,15 +2066,14 @@
               "query": "Ich habe eine B-Bewilligung und ziehe von Zürich in den Kanton Bern. Brauche ich eine neue Bewilligung?",
               "translated": false,
               "hits": [
+                "canton-change",
                 "zh-vehicle-registration-move",
-                "city-zurich-first-steps",
-                "zh-naturalisation-ordinary"
+                "city-zurich-first-steps"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-9 (German: Change of canton under AIG Article 37): search 'Ich habe eine B-Bewilligung und ziehe von Zürich in den Kanton Bern. Brauche ich eine neue Bewilligung?' no longer finds canton-change within the first 3 hits: ['zh-vehicle-registration-move', 'city-zurich-first-steps', 'zh-naturalisation-ordinary']",
-                "Q-DE-9 (German: Change of canton under AIG Article 37): search 'Ich habe eine B-Bewilligung und ziehe von Zürich in den Kanton Bern. Brauche ich eine neue Bewilligung?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3829, 'anchored_weight': 1.3686})"
+                "Q-DE-9 (German: Change of canton under AIG Article 37): search 'Ich habe eine B-Bewilligung und ziehe von Zürich in den Kanton Bern. Brauche ich eine neue Bewilligung?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3465, 'anchored_weight': 1.3686})"
               ]
             }
           ]
@@ -2109,7 +2102,8 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-DE-11 (German: Family reunification with a residence-permit sponsor): search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' no longer finds family-b within the first 3 hits: ['family-swiss', 'family-eu-efta', 'family-requirements']"
+            "Q-DE-11 (German: Family reunification with a residence-permit sponsor): search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' no longer finds family-b within the first 3 hits: ['family-swiss', 'family-eu-efta', 'family-requirements']",
+            "Q-DE-11 (German: Family reunification with a residence-permit sponsor): search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4499, 'anchored_weight': 1.2929})"
           ],
           "searches": [
             {
@@ -2120,7 +2114,7 @@
                 "family-eu-efta",
                 "family-requirements"
               ],
-              "match_strength": "strong",
+              "match_strength": "weak",
               "judged": true
             }
           ]
@@ -2423,7 +2417,7 @@
               "hits": [
                 "zh-tax-at-source-liability",
                 "tax-at-source-liability",
-                "aig-study"
+                "permit-c"
               ],
               "match_strength": "strong",
               "judged": true
@@ -2652,8 +2646,8 @@
               "query": "Quellensteuer B-Bewilligung Arbeit in Zürich spanische Staatsangehörige",
               "translated": true,
               "hits": [
-                "zh-tax-at-source-ordinary-assessment",
                 "zh-tax-at-source-liability",
+                "zh-tax-at-source-ordinary-assessment",
                 "zh-tax-at-source-tariffs"
               ],
               "match_strength": "strong",
@@ -2972,17 +2966,17 @@
               "query": "How long is my residnce permit B valid and when do I have to renwe it?",
               "translated": false,
               "hits": [
-                "fza-employee-permit",
                 "permit-b",
+                "fza-employee-permit",
                 "aig-short-stay",
                 "eu-permit-mobility",
-                "entry-short-stay-rule"
+                "eu-employment-registration-deadline"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' no longer finds permit-renewal within the first 5 hits: ['fza-employee-permit', 'permit-b', 'aig-short-stay', 'eu-permit-mobility', 'entry-short-stay-rule']",
-                "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3299, 'anchored_weight': 0.9846})"
+                "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' no longer finds permit-renewal within the first 5 hits: ['permit-b', 'fza-employee-permit', 'aig-short-stay', 'eu-permit-mobility', 'eu-employment-registration-deadline']",
+                "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4048, 'anchored_weight': 1.3599})"
               ]
             }
           ]
@@ -3368,8 +3362,8 @@
               "translated": false,
               "hits": [
                 "tax-at-source-liability",
-                "tax-at-source-tariff-codes",
-                "zh-tax-at-source-tariffs"
+                "permit-card-eu-efta",
+                "permit-types"
               ],
               "match_strength": "strong",
               "judged": true
@@ -4639,7 +4633,7 @@
           "passed": false,
           "issues": [
             "XC-1 (Another canton, English: permit for a six-month contract in Bern): search \"I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?\" no longer finds fza-employee-permit within the first 3 hits: ['eu-short-employment', 'fza-job-search', 'uk-new-employment']",
-            "XC-1 (Another canton, English: permit for a six-month contract in Bern): search \"I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.366, 'anchored_weight': 1.3416})"
+            "XC-1 (Another canton, English: permit for a six-month contract in Bern): search \"I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.318, 'anchored_weight': 1.3416})"
           ],
           "searches": [
             {
@@ -4727,7 +4721,7 @@
               "hits": [
                 "family-b",
                 "zh-family-b-c-permit",
-                "fza-family-members"
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -4802,8 +4796,8 @@
               "translated": false,
               "hits": [
                 "zh-tax-at-source-ordinary-assessment",
-                "tax-at-source-liability",
-                "zh-tax-at-source-liability"
+                "zh-tax-at-source-liability",
+                "tax-at-source-liability"
               ],
               "match_strength": "strong",
               "judged": true
@@ -4822,7 +4816,7 @@
               "hits": [
                 "zh-tax-at-source-liability",
                 "tax-at-source-liability",
-                "aig-study"
+                "naturalisation-facilitated-spouse"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5012,8 +5006,8 @@
               "translated": false,
               "hits": [
                 "canton-change",
-                "fza-mobility",
-                "zh-vehicle-registration-move"
+                "naturalisation-ordinary",
+                "fza-mobility"
               ],
               "match_strength": "strong",
               "judged": false
@@ -5051,7 +5045,7 @@
               "hits": [
                 "tax-at-source-liability",
                 "zh-tax-at-source-liability",
-                "zh-tax-at-source-tariffs"
+                "zh-tax-at-source-ordinary-assessment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5152,7 +5146,7 @@
               "hits": [
                 "zh-tax-at-source-ordinary-assessment",
                 "tax-at-source-liability",
-                "city-zurich-tax-return"
+                "zh-tax-at-source-liability"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5296,8 +5290,8 @@
               "translated": false,
               "hits": [
                 "entry-visa-types",
-                "entry-visa-fee-insurance",
-                "permit-card-eu-efta"
+                "entry-visa-application",
+                "entry-visa-fee-insurance"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5430,11 +5424,8 @@
                 "zh-family-l-permit",
                 "permit-l"
               ],
-              "match_strength": "weak",
-              "judged": false,
-              "unjudged_issues": [
-                "Q-EN-48 (Entry and visas: My husband has a short-stay L permit in Zurich, can I join him?): search 'My husband has a short-stay L permit in Zurich, can I join him?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2884, 'anchored_weight': 1.105})"
-              ]
+              "match_strength": "strong",
+              "judged": false
             }
           ]
         },
@@ -5563,8 +5554,8 @@
               "translated": false,
               "hits": [
                 "entry-visa-application",
-                "third-country-work-procedure",
-                "entry-visa-need"
+                "entry-visa-types",
+                "third-country-work-procedure"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5853,7 +5844,7 @@
               "hits": [
                 "zh-political-rights",
                 "political-rights-federal",
-                "zh-eu-nonworking"
+                "family-c"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6487,7 +6478,8 @@
               "translated": false,
               "hits": [
                 "tenancy-agreement",
-                "rent-changes"
+                "rent-changes",
+                "zh-tax-at-source-tariffs"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6575,8 +6567,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' no longer finds permit-types within the first 3 hits: ['family-b', 'family-deadlines', 'city-zurich-kindergarten']",
-            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2895, 'anchored_weight': 0.9343})"
+            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2428, 'anchored_weight': 0.9343})"
           ],
           "searches": [
             {
@@ -6584,8 +6575,8 @@
               "translated": false,
               "hits": [
                 "family-b",
-                "family-deadlines",
-                "city-zurich-kindergarten"
+                "naturalisation-ordinary",
+                "permit-types"
               ],
               "match_strength": "weak",
               "judged": true
@@ -6603,8 +6594,8 @@
               "translated": false,
               "hits": [
                 "aig-study",
-                "marriage-switzerland",
-                "naturalisation-third-generation"
+                "naturalisation-ordinary",
+                "marriage-switzerland"
               ],
               "match_strength": "strong",
               "judged": false
@@ -6659,8 +6650,8 @@
               "query": "I have a C permit. My wife and our 15-year-old daughter want to join me, but my daughter doesn't speak any German yet. Does she also need to prove language skills?",
               "translated": false,
               "hits": [
-                "language-evidence",
                 "family-c",
+                "language-evidence",
                 "fza-family-members"
               ],
               "match_strength": "strong",
@@ -6764,7 +6755,7 @@
               "hits": [
                 "notification-responsibility",
                 "eu-short-employment",
-                "uk-new-employment"
+                "zh-tax-at-source-ordinary-assessment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6867,7 +6858,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-90 (English: Schengen visa type C coverage): search \"I'm coming to Zurich for a two-week business trip - does an ordinary Schengen visa cover that, or do I need something else?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1486, 'anchored_weight': 1.02})"
+                "Q-EN-90 (English: Schengen visa type C coverage): search \"I'm coming to Zurich for a two-week business trip - does an ordinary Schengen visa cover that, or do I need something else?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1594, 'anchored_weight': 1.1828})"
               ]
             }
           ]
@@ -6962,7 +6953,7 @@
               "hits": [
                 "zh-dog-keeping",
                 "city-zurich-dog-registration",
-                "zh-road-traffic-office-locations"
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7079,8 +7070,8 @@
               "translated": false,
               "hits": [
                 "ahv-pension-abroad",
-                "zh-entry-permit-non-working",
-                "pillar-3a"
+                "ahv-contribution-refund",
+                "zh-entry-permit-non-working"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7118,7 +7109,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "ahv-pension-abroad",
-                "pillar-3a"
+                "bvg-cash-out-departure"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7333,15 +7324,12 @@
               "query": "Ich habe eine Kurzaufenthaltsbewilligung L und möchte die Stelle wechseln. Geht das einfach so?",
               "translated": false,
               "hits": [
-                "fza-mobility",
                 "permit-l",
-                "eu-job-search"
+                "fza-mobility",
+                "permit-card-eu-efta"
               ],
-              "match_strength": "weak",
-              "judged": false,
-              "unjudged_issues": [
-                "Q-DE-76 (German: Short-stay permit: AIG Article 32): search 'Ich habe eine Kurzaufenthaltsbewilligung L und möchte die Stelle wechseln. Geht das einfach so?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3233, 'anchored_weight': 1.2399})"
-              ]
+              "match_strength": "strong",
+              "judged": false
             }
           ]
         },
@@ -7355,15 +7343,12 @@
               "query": "Kann meine Aufenthaltsbewilligung B trotz besonderem Integrationsbedarf verlängert werden?",
               "translated": false,
               "hits": [
-                "zh-permit-c-five-years",
                 "permit-b",
+                "zh-permit-c-five-years",
                 "zh-entry-permit-non-working"
               ],
-              "match_strength": "weak",
-              "judged": false,
-              "unjudged_issues": [
-                "Q-DE-77 (German: Residence permit: AIG Article 33): search 'Kann meine Aufenthaltsbewilligung B trotz besonderem Integrationsbedarf verlängert werden?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4324, 'anchored_weight': 1.3544})"
-              ]
+              "match_strength": "strong",
+              "judged": false
             }
           ]
         },
@@ -7852,13 +7837,13 @@
               "hits": [
                 "family-b",
                 "family-deadlines",
-                "city-zurich-arrival-documents"
+                "zh-eu-l"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-FR-10 (French: Zurich: family reunification by holders of a short-stay L permit): search 'zusätzliche Dokumente Kind nachziehen Kurzaufenthaltsbewilligung L Kanton Zürich geschieden' no longer finds zh-family-l-permit within the first 3 hits: ['family-b', 'family-deadlines', 'city-zurich-arrival-documents']",
-                "Q-FR-10 (French: Zurich: family reunification by holders of a short-stay L permit): search 'zusätzliche Dokumente Kind nachziehen Kurzaufenthaltsbewilligung L Kanton Zürich geschieden' reports match_strength weak, expected strong (signals {'lexical_share': 0.2677, 'anchored_weight': 1.3777})"
+                "Q-FR-10 (French: Zurich: family reunification by holders of a short-stay L permit): search 'zusätzliche Dokumente Kind nachziehen Kurzaufenthaltsbewilligung L Kanton Zürich geschieden' no longer finds zh-family-l-permit within the first 3 hits: ['family-b', 'family-deadlines', 'zh-eu-l']",
+                "Q-FR-10 (French: Zurich: family reunification by holders of a short-stay L permit): search 'zusätzliche Dokumente Kind nachziehen Kurzaufenthaltsbewilligung L Kanton Zürich geschieden' reports match_strength weak, expected strong (signals {'lexical_share': 0.2438, 'anchored_weight': 1.3777})"
               ]
             }
           ]
@@ -8173,7 +8158,7 @@
         },
         {
           "case_id": "Q-TR-1",
-          "blocking": false,
+          "blocking": true,
           "passed": true,
           "issues": [],
           "searches": [
@@ -8223,9 +8208,9 @@
               "query": "B-Bewilligung zwei Wochen Aufenthalt bei Freunden in Bern anderer Kanton Bewilligung nötig",
               "translated": true,
               "hits": [
-                "aig-registration",
                 "canton-change",
-                "eu-short-employment"
+                "aig-registration",
+                "family-separation"
               ],
               "match_strength": "strong",
               "judged": true
@@ -8477,7 +8462,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1282, 'anchored_weight': 1.0108})"
+            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1243, 'anchored_weight': 1.0483})"
           ],
           "searches": [
             {
@@ -8486,7 +8471,7 @@
               "hits": [
                 "city-zurich-kindergarten",
                 "unemployment-benefit",
-                "zh-unemployment-benefit"
+                "zh-control-drive"
               ],
               "match_strength": "weak",
               "judged": true
@@ -8514,21 +8499,19 @@
         },
         {
           "case_id": "N-EN-A4",
-          "blocking": false,
-          "passed": false,
-          "issues": [
-            "N-EN-A4 (English with tariff codes L and M: tax-at-source-tariff-codes): search 'Am I taxed under code L or code M as a German cross-border commuter in Zurich?' reports match_strength weak, expected strong (signals {'lexical_share': 0.418, 'anchored_weight': 1.4803})"
-          ],
+          "blocking": true,
+          "passed": true,
+          "issues": [],
           "searches": [
             {
               "query": "Am I taxed under code L or code M as a German cross-border commuter in Zurich?",
               "translated": false,
               "hits": [
-                "fza-cross-border-commuter",
                 "permit-card-eu-efta",
+                "fza-cross-border-commuter",
                 "tax-at-source-tariff-codes"
               ],
-              "match_strength": "weak",
+              "match_strength": "strong",
               "judged": true
             }
           ]
@@ -8804,7 +8787,7 @@
         },
         {
           "case_id": "CTX-5",
-          "blocking": false,
+          "blocking": true,
           "passed": true,
           "issues": [],
           "searches": [
@@ -8813,13 +8796,13 @@
               "translated": false,
               "hits": [
                 "family-c",
-                "family-requirements",
-                "zh-family-refugee-asylum"
+                "zh-family-b-c-permit",
+                "family-requirements"
               ],
               "match_strength": "strong",
               "judged": false,
               "unjudged_issues": [
-                "CTX-5 (Different sponsor status, English: family-b versus family-c): search \"I hold a Swiss residence permit B, not the settlement permit C. My husband hasn't passed a German exam yet but is enrolled in an A1 course - can he still join me under family reunification?\" no longer finds family-b within the first 3 hits: ['family-c', 'family-requirements', 'zh-family-refugee-asylum']"
+                "CTX-5 (Different sponsor status, English: family-b versus family-c): search \"I hold a Swiss residence permit B, not the settlement permit C. My husband hasn't passed a German exam yet but is enrolled in an A1 course - can he still join me under family reunification?\" no longer finds family-b within the first 3 hits: ['family-c', 'zh-family-b-c-permit', 'family-requirements']"
               ]
             }
           ]
@@ -8901,14 +8884,14 @@
               "translated": false,
               "hits": [
                 "eu-employment-registration-deadline",
-                "notification-responsibility",
-                "third-country-work-conditions"
+                "naturalisation-ordinary",
+                "notification-responsibility"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "CTX-12 (Context routing, English: short EU/EFTA job versus the UK rule): search \"I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?\" no longer finds eu-short-employment within the first 3 hits: ['eu-employment-registration-deadline', 'notification-responsibility', 'third-country-work-conditions']",
-                "CTX-12 (Context routing, English: short EU/EFTA job versus the UK rule): search \"I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1897, 'anchored_weight': 1.292})"
+                "CTX-12 (Context routing, English: short EU/EFTA job versus the UK rule): search \"I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?\" no longer finds eu-short-employment within the first 3 hits: ['eu-employment-registration-deadline', 'naturalisation-ordinary', 'notification-responsibility']",
+                "CTX-12 (Context routing, English: short EU/EFTA job versus the UK rule): search \"I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1867, 'anchored_weight': 1.3751})"
               ]
             }
           ]
@@ -9012,8 +8995,8 @@
               "translated": false,
               "hits": [
                 "political-rights-federal",
-                "zh-political-rights",
-                "naturalisation-ordinary"
+                "naturalisation-ordinary",
+                "zh-political-rights"
               ],
               "match_strength": "strong",
               "judged": true
@@ -9544,7 +9527,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XC-45 (Another canton, English: an EU/EFTA sponsor bringing dependent parents to Graubünden): search \"I'm an EU citizen with a residence permit in Graubünden. Can I bring my dependent parents to live with me?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3983, 'anchored_weight': 1.4174})"
+            "XC-45 (Another canton, English: an EU/EFTA sponsor bringing dependent parents to Graubünden): search \"I'm an EU citizen with a residence permit in Graubünden. Can I bring my dependent parents to live with me?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3447, 'anchored_weight': 1.4174})"
           ],
           "searches": [
             {
@@ -9772,7 +9755,7 @@
               "hits": [
                 "city-zurich-population-office",
                 "permit-renewal",
-                "entry-etias"
+                "permit-card-eu-efta"
               ],
               "match_strength": "strong",
               "judged": true
@@ -9784,7 +9767,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.7066, 'anchored_weight': 1.5729})"
+            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6046, 'anchored_weight': 1.5729})"
           ],
           "searches": [
             {
@@ -9792,8 +9775,8 @@
               "translated": false,
               "hits": [
                 "city-zurich-naturalisation",
-                "marriage-switzerland",
-                "entry-short-stay-rule"
+                "permit-card-eu-efta",
+                "canton-change"
               ],
               "match_strength": "strong",
               "judged": true
@@ -10042,8 +10025,8 @@
               "translated": false,
               "hits": [
                 "zh-permit-c-five-years",
-                "family-deadlines",
-                "permit-c-five-years"
+                "permit-c-five-years",
+                "permit-c"
               ],
               "match_strength": "strong",
               "judged": true
@@ -10062,7 +10045,7 @@
               "hits": [
                 "family-c",
                 "zh-permit-c-five-years",
-                "city-zurich-naturalisation-language"
+                "zh-family-b-c-permit"
               ],
               "match_strength": "strong",
               "judged": true
@@ -10087,8 +10070,8 @@
               "translated": false,
               "hits": [
                 "permit-c-five-years",
-                "fza-self-employment",
-                "zh-permit-c-five-years"
+                "zh-permit-c-five-years",
+                "permit-c"
               ],
               "match_strength": "strong",
               "judged": true
@@ -10218,8 +10201,8 @@
               "translated": false,
               "hits": [
                 "zh-family-b-c-permit",
-                "zh-family-l-permit",
-                "fza-family-members"
+                "family-b",
+                "zh-family-l-permit"
               ],
               "match_strength": "strong",
               "judged": true
@@ -10466,7 +10449,7 @@
     "hybrid": {
       "retrieval_mode": "hybrid",
       "cases": 587,
-      "passed": 552,
+      "passed": 553,
       "failed": [],
       "quarantined": [
         "Q-EN-2",
@@ -10496,12 +10479,9 @@
         "Q-DE-90",
         "Q-FR-12",
         "Q-IT-7",
-        "Q-TR-1",
         "Q-RU-1",
         "N-EN-T7",
         "N-EN-J13",
-        "N-EN-A4",
-        "CTX-5",
         "CTX-25",
         "XC-39",
         "XC-45",
@@ -10539,7 +10519,6 @@
         "Q-RU-1",
         "N-EN-T7",
         "N-EN-J13",
-        "CTX-5",
         "CTX-25",
         "XC-39",
         "XM-15",
@@ -10558,8 +10537,6 @@
         "Q-EN-99",
         "Q-FR-12",
         "Q-IT-7",
-        "Q-TR-1",
-        "N-EN-A4",
         "XC-45"
       ],
       "unjudged_steps": 0,
@@ -10716,8 +10693,8 @@
               "query": "B-Bewilligung heiraten Schweizer weiterhin an der Quelle besteuert",
               "translated": false,
               "hits": [
-                "zh-tax-at-source-liability",
                 "naturalisation-facilitated-spouse",
+                "zh-tax-at-source-liability",
                 "tax-at-source-liability"
               ],
               "match_strength": "strong",
@@ -10831,8 +10808,8 @@
               "translated": false,
               "hits": [
                 "naturalisation-facilitated-spouse",
-                "family-swiss",
-                "zh-naturalisation-facilitated"
+                "naturalisation-ordinary",
+                "family-swiss"
               ],
               "match_strength": "strong",
               "judged": true
@@ -11651,8 +11628,8 @@
               "query": "family reunification with an L permit in Zurich",
               "translated": false,
               "hits": [
-                "zh-family-b-c-permit",
                 "zh-family-l-permit",
+                "zh-family-b-c-permit",
                 "zh-family-fza"
               ],
               "match_strength": "strong",
@@ -11672,7 +11649,7 @@
               "hits": [
                 "zh-political-rights",
                 "political-rights-federal",
-                "city-zurich-citizenship-swiss"
+                "zh-permit-c-five-years"
               ],
               "match_strength": "strong",
               "judged": true
@@ -12053,8 +12030,8 @@
               "translated": false,
               "hits": [
                 "permit-renewal",
-                "aig-short-stay",
-                "city-zurich-population-office"
+                "naturalisation-ordinary",
+                "permit-card-eu-efta"
               ],
               "match_strength": "strong",
               "judged": true
@@ -12104,16 +12081,16 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['family-b', 'naturalisation-ordinary', 'family-requirements']"
+            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['naturalisation-ordinary', 'zh-family-b-c-permit', 'zh-permit-c-five-years']"
           ],
           "searches": [
             {
               "query": "I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?",
               "translated": false,
               "hits": [
-                "family-b",
                 "naturalisation-ordinary",
-                "family-requirements"
+                "zh-family-b-c-permit",
+                "zh-permit-c-five-years"
               ],
               "match_strength": "strong",
               "judged": true
@@ -12382,8 +12359,8 @@
               "translated": false,
               "hits": [
                 "permit-l",
-                "zh-eu-l",
-                "permit-card-eu-efta"
+                "permit-card-eu-efta",
+                "zh-eu-l"
               ],
               "match_strength": "strong",
               "judged": true
@@ -12518,7 +12495,7 @@
               "hits": [
                 "canton-change",
                 "zh-vehicle-registration-move",
-                "zh-naturalisation-ordinary"
+                "zh-family-b-c-permit"
               ],
               "match_strength": "strong",
               "judged": true
@@ -13411,7 +13388,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' no longer finds permit-renewal within the first 5 hits: ['permit-b', 'aig-short-stay', 'entry-short-stay-rule', 'eu-permit-mobility', 'permit-card-eu-efta']"
+            "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' no longer finds permit-renewal within the first 5 hits: ['permit-b', 'aig-short-stay', 'permit-card-eu-efta', 'naturalisation-ordinary', 'eu-permit-mobility']"
           ],
           "searches": [
             {
@@ -13420,9 +13397,9 @@
               "hits": [
                 "permit-b",
                 "aig-short-stay",
-                "entry-short-stay-rule",
-                "eu-permit-mobility",
-                "permit-card-eu-efta"
+                "permit-card-eu-efta",
+                "naturalisation-ordinary",
+                "eu-permit-mobility"
               ],
               "match_strength": "strong",
               "judged": true
@@ -13554,8 +13531,8 @@
               "translated": false,
               "hits": [
                 "tax-at-source-liability",
-                "zh-tax-at-source-ordinary-assessment",
-                "zh-tax-at-source-liability"
+                "zh-tax-at-source-liability",
+                "zh-tax-at-source-ordinary-assessment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -15144,7 +15121,7 @@
               "hits": [
                 "family-b",
                 "zh-family-b-c-permit",
-                "zh-family-l-permit"
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -15465,7 +15442,7 @@
               "hits": [
                 "tax-at-source-liability",
                 "zh-tax-at-source-liability",
-                "zh-tax-at-source-tariffs"
+                "zh-tax-at-source-ordinary-assessment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -15562,7 +15539,7 @@
               "hits": [
                 "tax-at-source-liability",
                 "zh-tax-at-source-ordinary-assessment",
-                "city-zurich-tax-return"
+                "zh-tax-at-source-liability"
               ],
               "match_strength": "strong",
               "judged": true
@@ -15706,8 +15683,8 @@
               "translated": false,
               "hits": [
                 "entry-visa-types",
-                "entry-visa-fee-insurance",
-                "entry-visa-application"
+                "entry-visa-application",
+                "entry-visa-fee-insurance"
               ],
               "match_strength": "strong",
               "judged": true
@@ -15971,8 +15948,8 @@
               "translated": false,
               "hits": [
                 "entry-visa-application",
-                "entry-visa-need",
-                "entry-visa-types"
+                "entry-visa-types",
+                "entry-visa-need"
               ],
               "match_strength": "strong",
               "judged": true
@@ -16067,7 +16044,7 @@
               "hits": [
                 "zh-political-rights",
                 "political-rights-federal",
-                "city-zurich-citizenship-swiss"
+                "zh-eu-b"
               ],
               "match_strength": "strong",
               "judged": true
@@ -16983,17 +16960,16 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' no longer finds permit-types within the first 3 hits: ['permit-card-eu-efta', 'fza-self-employment', 'aig-work-permit']",
-            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2895, 'anchored_weight': 0.9343, 'best_semantic_score': 0.6047})"
+            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2428, 'anchored_weight': 0.9343, 'best_semantic_score': 0.6047})"
           ],
           "searches": [
             {
               "query": "A colleague of mine has an F permit. What kind of permit is that?",
               "translated": false,
               "hits": [
+                "permit-types",
                 "permit-card-eu-efta",
-                "fza-self-employment",
-                "aig-work-permit"
+                "permit-card-third-country"
               ],
               "match_strength": "weak",
               "judged": true
@@ -17069,9 +17045,9 @@
               "query": "I have a C permit. My wife and our 15-year-old daughter want to join me, but my daughter doesn't speak any German yet. Does she also need to prove language skills?",
               "translated": false,
               "hits": [
-                "language-evidence",
                 "family-c",
-                "city-zurich-naturalisation-language"
+                "language-evidence",
+                "zh-permit-c-five-years"
               ],
               "match_strength": "strong",
               "judged": true
@@ -17358,7 +17334,7 @@
               "hits": [
                 "zh-dog-keeping",
                 "city-zurich-dog-registration",
-                "zh-foreign-licence-exchange"
+                "zh-control-drive"
               ],
               "match_strength": "strong",
               "judged": true
@@ -17471,7 +17447,7 @@
               "hits": [
                 "ahv-pension-abroad",
                 "ahv-contribution-refund",
-                "fza-right-to-remain"
+                "bvg-cash-out-departure"
               ],
               "match_strength": "strong",
               "judged": true
@@ -17509,7 +17485,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "ahv-pension-abroad",
-                "pillar-3a"
+                "bvg-cash-out-departure"
               ],
               "match_strength": "strong",
               "judged": true
@@ -17717,8 +17693,8 @@
               "translated": false,
               "hits": [
                 "permit-l",
-                "canton-change",
-                "fza-mobility"
+                "permit-card-eu-efta",
+                "canton-change"
               ],
               "match_strength": "strong",
               "judged": true
@@ -17735,8 +17711,8 @@
               "query": "Kann meine Aufenthaltsbewilligung B trotz besonderem Integrationsbedarf verlängert werden?",
               "translated": false,
               "hits": [
-                "zh-permit-c-five-years",
                 "permit-b",
+                "zh-permit-c-five-years",
                 "family-separation"
               ],
               "match_strength": "strong",
@@ -18510,7 +18486,7 @@
         },
         {
           "case_id": "Q-TR-1",
-          "blocking": false,
+          "blocking": true,
           "passed": true,
           "issues": [],
           "searches": [
@@ -18557,8 +18533,8 @@
               "translated": true,
               "hits": [
                 "canton-change",
-                "aig-short-stay",
-                "family-b"
+                "family-b",
+                "zh-eu-b"
               ],
               "match_strength": "strong",
               "judged": true
@@ -18801,7 +18777,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1282, 'anchored_weight': 1.0108, 'best_semantic_score': 0.4836})"
+            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1243, 'anchored_weight': 1.0483, 'best_semantic_score': 0.4836})"
           ],
           "searches": [
             {
@@ -18810,7 +18786,7 @@
               "hits": [
                 "city-zurich-kindergarten",
                 "unemployment-benefit",
-                "zh-unemployment-benefit"
+                "zh-control-drive"
               ],
               "match_strength": "weak",
               "judged": true
@@ -18838,7 +18814,7 @@
         },
         {
           "case_id": "N-EN-A4",
-          "blocking": false,
+          "blocking": true,
           "passed": true,
           "issues": [],
           "searches": [
@@ -18848,7 +18824,7 @@
               "hits": [
                 "zh-tax-at-source-tariffs",
                 "tax-at-source-tariff-codes",
-                "zh-tax-at-source-liability"
+                "zh-tax-at-source-ordinary-assessment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -19111,19 +19087,17 @@
         },
         {
           "case_id": "CTX-5",
-          "blocking": false,
-          "passed": false,
-          "issues": [
-            "CTX-5 (Different sponsor status, English: family-b versus family-c): search \"I hold a Swiss residence permit B, not the settlement permit C. My husband hasn't passed a German exam yet but is enrolled in an A1 course - can he still join me under family reunification?\" no longer finds family-b within the first 3 hits: ['family-requirements', 'family-swiss', 'zh-family-b-c-permit']"
-          ],
+          "blocking": true,
+          "passed": true,
+          "issues": [],
           "searches": [
             {
               "query": "I hold a Swiss residence permit B, not the settlement permit C. My husband hasn't passed a German exam yet but is enrolled in an A1 course - can he still join me under family reunification?",
               "translated": false,
               "hits": [
-                "family-requirements",
-                "family-swiss",
-                "zh-family-b-c-permit"
+                "zh-family-b-c-permit",
+                "family-b",
+                "family-requirements"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20052,8 +20026,8 @@
               "translated": false,
               "hits": [
                 "permit-renewal",
-                "entry-visa-fee-insurance",
-                "zh-permit-card"
+                "permit-card-eu-efta",
+                "entry-visa-fee-insurance"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20065,16 +20039,16 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.7066, 'anchored_weight': 1.5729, 'best_semantic_score': 0.6022})"
+            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6046, 'anchored_weight': 1.5729, 'best_semantic_score': 0.6022})"
           ],
           "searches": [
             {
               "query": "Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?",
               "translated": false,
               "hits": [
-                "aig-short-stay",
-                "family-separation",
-                "family-b"
+                "permit-b",
+                "family-b",
+                "family-separation"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20328,8 +20302,8 @@
               "query": "Für welche Länder gilt die C-Bewilligung schon nach fünf Jahren?",
               "translated": false,
               "hits": [
-                "zh-permit-c-five-years",
                 "permit-c-five-years",
+                "zh-permit-c-five-years",
                 "permit-c"
               ],
               "match_strength": "strong",
@@ -20349,7 +20323,7 @@
               "hits": [
                 "city-zurich-naturalisation-language",
                 "zh-permit-c-five-years",
-                "zh-family-b-c-permit"
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20375,7 +20349,7 @@
               "hits": [
                 "zh-permit-c-five-years",
                 "permit-c-five-years",
-                "permit-c"
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20507,8 +20481,8 @@
               "translated": false,
               "hits": [
                 "zh-family-b-c-permit",
-                "zh-family-l-permit",
-                "family-b"
+                "family-b",
+                "zh-family-l-permit"
               ],
               "match_strength": "strong",
               "judged": true

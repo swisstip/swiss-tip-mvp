@@ -11,16 +11,16 @@ Live-caller grades: 51 graded sessions of 17 acceptance cases on the earlier rel
 | [User acceptance cases](#user-acceptance-cases) | 66 | 0 | 66 | 66 |
 | [Declines at resolve](#declines-at-resolve) | 9 | 0 | 9 | 9 |
 | [Declines at search](#declines-at-search) | 7 | 0 | 7 | 7 |
-| [Plain questions](#plain-questions) | 271 | 22 | 255 | 256 |
+| [Plain questions](#plain-questions) | 271 | 21 | 255 | 256 |
 | [Translated variants of acceptance cases](#translated-variants-of-acceptance-cases) | 1 | 0 | 1 | 1 |
-| [Questions with typos, jargon or abbreviations](#questions-with-typos-jargon-or-abbreviations) | 58 | 5 | 54 | 54 |
-| [Context routing](#context-routing) | 30 | 2 | 29 | 28 |
+| [Questions with typos, jargon or abbreviations](#questions-with-typos-jargon-or-abbreviations) | 58 | 4 | 55 | 54 |
+| [Context routing](#context-routing) | 30 | 1 | 29 | 29 |
 | [Dates](#dates) | 8 | 0 | 8 | 8 |
 | [Places given by name](#places-given-by-name) | 12 | 0 | 12 | 12 |
 | [Asked from another canton](#asked-from-another-canton) | 46 | 3 | 43 | 44 |
 | [Asked from another Zurich municipality](#asked-from-another-zurich-municipality) | 19 | 4 | 16 | 15 |
 | [Declined questions](#declined-questions) | 60 | 8 | 56 | 52 |
-| All | 587 | 44 | 556 | 552 |
+| All | 587 | 41 | 557 | 553 |
 
 ## Contents
 
@@ -493,8 +493,8 @@ Acceptance suite, blocking; spec: [docs/product/user-acceptance-tests.md#uat-11-
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-tax-at-source-liability`, `tax-at-source-liability`, `aig-study` | strong |
-| hybrid | pass | `zh-tax-at-source-liability`, `naturalisation-facilitated-spouse`, `tax-at-source-liability` | strong |
+| lexical | pass | `zh-tax-at-source-liability`, `tax-at-source-liability`, `naturalisation-facilitated-spouse` | strong |
+| hybrid | pass | `naturalisation-facilitated-spouse`, `zh-tax-at-source-liability`, `tax-at-source-liability` | strong |
 
 Live caller on `mvp-zurich-2026-09-16-v2`: 3 of 3 sessions graded, trap held in 3, every criterion met in 0; 4 unsupported specifics noted by the graders.
 
@@ -701,7 +701,7 @@ Acceptance suite, blocking; spec: [docs/product/user-acceptance-tests.md#uat-16-
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `naturalisation-ordinary`, `naturalisation-facilitated-spouse`, `zh-naturalisation-ordinary` | strong |
+| lexical | pass | `naturalisation-ordinary`, `naturalisation-facilitated-spouse`, `zh-tax-at-source-liability` | strong |
 | hybrid | pass | `naturalisation-ordinary`, `naturalisation-facilitated-spouse`, `city-zurich-citizenship-swiss` | strong |
 
 Live caller on `mvp-zurich-2026-09-16-v2`: 3 of 3 sessions graded, trap held in 3, every criterion met in 0; 4 unsupported specifics noted by the graders.
@@ -741,8 +741,8 @@ Acceptance suite, blocking; spec: [docs/product/user-acceptance-tests.md#uat-17-
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `naturalisation-facilitated-spouse`, `naturalisation-third-generation`, `city-zurich-naturalisation-facilitated` | strong |
-| hybrid | pass | `naturalisation-facilitated-spouse`, `family-swiss`, `zh-naturalisation-facilitated` | strong |
+| lexical | pass | `naturalisation-facilitated-spouse`, `naturalisation-third-generation`, `city-zurich-naturalisation` | strong |
+| hybrid | pass | `naturalisation-facilitated-spouse`, `naturalisation-ordinary`, `family-swiss` | strong |
 
 Live caller on `mvp-zurich-2026-09-16-v2`: 3 of 3 sessions graded, trap held in 3, every criterion met in 0; 4 unsupported specifics noted by the graders.
 
@@ -1819,8 +1819,8 @@ Acceptance suite, blocking; spec: [docs/product/user-acceptance-tests.md#uat-50-
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-family-b-c-permit`, `zh-family-l-permit`, `fza-family-members` | strong |
-| hybrid | pass | `zh-family-b-c-permit`, `zh-family-l-permit`, `zh-family-fza` | strong |
+| lexical | pass | `zh-family-l-permit`, `zh-family-b-c-permit`, `fza-family-members` | strong |
+| hybrid | pass | `zh-family-l-permit`, `zh-family-b-c-permit`, `zh-family-fza` | strong |
 
 <a id="uat-51"></a>
 
@@ -1852,8 +1852,8 @@ Acceptance suite, blocking; spec: [docs/product/user-acceptance-tests.md#uat-51-
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-political-rights`, `political-rights-federal`, `city-zurich-marriage` | strong |
-| hybrid | pass | `zh-political-rights`, `political-rights-federal`, `city-zurich-citizenship-swiss` | strong |
+| lexical | pass | `zh-political-rights`, `political-rights-federal`, `city-zurich-naturalisation` | strong |
+| hybrid | pass | `zh-political-rights`, `political-rights-federal`, `zh-permit-c-five-years` | strong |
 
 <a id="uat-52"></a>
 
@@ -2192,7 +2192,7 @@ Acceptance suite, blocking; spec: [docs/product/user-acceptance-tests.md#uat-62-
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `unemployment-benefit`, `social-assistance-review`, `fza-employee-permit` | strong |
+| lexical | pass | `unemployment-benefit`, `social-assistance-review`, `naturalisation-ordinary` | strong |
 | hybrid | pass | `unemployment-benefit`, `fza-employee-permit`, `social-assistance-review` | strong |
 
 <a id="uat-63"></a>
@@ -2222,7 +2222,7 @@ Acceptance suite, blocking; spec: [docs/product/user-acceptance-tests.md#uat-63-
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `accident-insurance`, `zh-sva-contact`, `entry-visa-fee-insurance` | strong |
+| lexical | pass | `accident-insurance`, `zh-sva-contact`, `fza-social-security` | strong |
 | hybrid | pass | `accident-insurance`, `health-insurance-enrolment`, `zh-sva-contact` | strong |
 
 <a id="uat-64"></a>
@@ -2969,7 +2969,7 @@ Acceptance suite, blocking; spec: [docs/product/user-acceptance-tests.md#decline
 | [Q-SQ-1](#q-sq-1) | Jam shtetas i një vendi jo-BE dhe leja ime e punës për një vend pune në Zürich është... | sq | blocking | pass | pass |
 | [Q-SR-1](#q-sr-1) | Imam boravišnu dozvolu B i planiram da provedem dve nedelje kod prijatelja u Bernu. Da li... | sr | blocking | pass | pass |
 | [Q-TA-1](#q-ta-1) | நாங்கள் எங்கள் பிள்ளைக்கு பராமரிப்பு பதிவு செய்ய விரும்புகிறோம், எப்போது பதிவு செய்யலாம்? | ta | blocking | pass | pass |
-| [Q-TR-1](#q-tr-1) | Türk vatandaşıyım ve Zürih'te bir iş için çalışma iznim onaylandı. İsviçre'ye girmek için... | tr | quarantined | pass (not judged) | pass |
+| [Q-TR-1](#q-tr-1) | Türk vatandaşıyım ve Zürih'te bir iş için çalışma iznim onaylandı. İsviçre'ye girmek için... | tr | blocking | pass (not judged) | pass |
 | [Q-UK-1](#q-uk-1) | Що запитає диспетчер, якщо я зателефоную на номер 144? | uk | blocking | pass | pass |
 
 <a id="q-en-1"></a>
@@ -3016,7 +3016,7 @@ Regression pack, quarantined.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `permit-card-eu-efta`, `canton-change`, `entry-visa-types` | strong |
+| lexical | pass (not judged) | `permit-card-eu-efta`, `canton-change`, `eu-employment-registration-deadline` | strong |
 | hybrid | fail | `permit-card-eu-efta`, `canton-change`, `zh-eu-l` | strong |
 
 - hybrid: search 'What is the difference between an L permit and a B permit?' no longer finds permit-l within the first 3 hits: ['permit-card-eu-efta', 'canton-change', 'zh-eu-l']
@@ -3041,7 +3041,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `parental-leave`, `permit-c-five-years`, `permit-c` | strong |
+| lexical | pass | `permit-c-five-years`, `permit-c`, `parental-leave` | strong |
 | hybrid | pass | `permit-c`, `permit-c-five-years`, `zh-permit-c-five-years` | strong |
 
 <a id="q-en-4"></a>
@@ -3088,7 +3088,7 @@ Regression pack, blocking.
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
 | lexical | pass | `permit-renewal`, `city-zurich-population-office`, `health-insurance-deadline` | strong |
-| hybrid | pass | `permit-renewal`, `aig-short-stay`, `city-zurich-population-office` | strong |
+| hybrid | pass | `permit-renewal`, `naturalisation-ordinary`, `permit-card-eu-efta` | strong |
 
 <a id="q-en-6"></a>
 
@@ -3157,12 +3157,12 @@ Regression pack, quarantined.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | fail | `fza-family-members`, `permit-c-five-years`, `naturalisation-ordinary` | weak |
-| hybrid | fail | `family-b`, `naturalisation-ordinary`, `family-requirements` | strong |
+| lexical | fail | `naturalisation-ordinary`, `permit-c-five-years`, `permit-c` | weak |
+| hybrid | fail | `naturalisation-ordinary`, `zh-family-b-c-permit`, `zh-permit-c-five-years` | strong |
 
-- lexical: search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['fza-family-members', 'permit-c-five-years', 'naturalisation-ordinary']
-- lexical: search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' reports match_strength weak, expected strong (signals {'lexical_share': 0.264, 'anchored_weight': 1.055})
-- hybrid: search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['family-b', 'naturalisation-ordinary', 'family-requirements']
+- lexical: search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['naturalisation-ordinary', 'permit-c-five-years', 'permit-c']
+- lexical: search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3152, 'anchored_weight': 1.3822})
+- hybrid: search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['naturalisation-ordinary', 'zh-family-b-c-permit', 'zh-permit-c-five-years']
 
 <a id="q-en-9"></a>
 
@@ -3233,7 +3233,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `zh-third-country-retirement`, `zh-entry-permit-non-working`, `zh-naturalisation-ordinary` | strong |
+| lexical | pass (not judged) | `zh-third-country-retirement`, `zh-entry-permit-non-working`, `zh-tax-at-source-ordinary-assessment` | strong |
 | hybrid | pass | `zh-entry-permit-non-working`, `zh-third-country-retirement`, `zh-naturalisation-ordinary` | strong |
 
 <a id="q-en-12"></a>
@@ -3417,7 +3417,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `fza-equal-treatment`, `zh-foreign-licence-exchange`, `zh-eu-nonworking` | strong |
+| lexical | pass | `fza-equal-treatment`, `zh-foreign-licence-exchange`, `zh-tax-at-source-ordinary-assessment` | strong |
 | hybrid | pass | `fza-equal-treatment`, `zh-eu-nonworking`, `fza-right-to-remain` | strong |
 
 <a id="q-en-20"></a>
@@ -3997,8 +3997,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `entry-visa-types`, `entry-visa-fee-insurance`, `permit-card-eu-efta` | strong |
-| hybrid | pass | `entry-visa-types`, `entry-visa-fee-insurance`, `entry-visa-application` | strong |
+| lexical | pass | `entry-visa-types`, `entry-visa-application`, `entry-visa-fee-insurance` | strong |
+| hybrid | pass | `entry-visa-types`, `entry-visa-application`, `entry-visa-fee-insurance` | strong |
 
 <a id="q-en-42"></a>
 
@@ -4166,7 +4166,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `zh-eu-l`, `zh-family-l-permit`, `permit-l` | weak |
+| lexical | pass (not judged) | `zh-eu-l`, `zh-family-l-permit`, `permit-l` | strong |
 | hybrid | pass | `zh-family-l-permit`, `zh-eu-l`, `family-member-rights` | strong |
 
 <a id="q-en-49"></a>
@@ -4292,7 +4292,7 @@ Regression pack, blocking.
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
 | lexical | pass | `zh-political-rights`, `political-rights-federal`, `zh-tax-at-source-tariffs` | strong |
-| hybrid | pass | `zh-political-rights`, `political-rights-federal`, `city-zurich-citizenship-swiss` | strong |
+| hybrid | pass | `zh-political-rights`, `political-rights-federal`, `zh-eu-b` | strong |
 
 <a id="q-en-54"></a>
 
@@ -4873,13 +4873,11 @@ Regression pack, quarantined.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | fail | `family-b`, `family-deadlines`, `city-zurich-kindergarten` | weak |
-| hybrid | fail | `permit-card-eu-efta`, `fza-self-employment`, `aig-work-permit` | weak |
+| lexical | fail | `family-b`, `naturalisation-ordinary`, `permit-types` | weak |
+| hybrid | fail | `permit-types`, `permit-card-eu-efta`, `permit-card-third-country` | weak |
 
-- lexical: search 'A colleague of mine has an F permit. What kind of permit is that?' no longer finds permit-types within the first 3 hits: ['family-b', 'family-deadlines', 'city-zurich-kindergarten']
-- lexical: search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2895, 'anchored_weight': 0.9343})
-- hybrid: search 'A colleague of mine has an F permit. What kind of permit is that?' no longer finds permit-types within the first 3 hits: ['permit-card-eu-efta', 'fza-self-employment', 'aig-work-permit']
-- hybrid: search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2895, 'anchored_weight': 0.9343, 'best_semantic_score': 0.6047})
+- lexical: search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2428, 'anchored_weight': 0.9343})
+- hybrid: search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2428, 'anchored_weight': 0.9343, 'best_semantic_score': 0.6047})
 
 <a id="q-en-77"></a>
 
@@ -4905,7 +4903,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `aig-study`, `marriage-switzerland`, `naturalisation-third-generation` | strong |
+| lexical | pass (not judged) | `aig-study`, `naturalisation-ordinary`, `marriage-switzerland` | strong |
 | hybrid | pass | `aig-study`, `naturalisation-ordinary`, `entry-requirements-eu-efta` | strong |
 
 <a id="q-en-78"></a>
@@ -4990,8 +4988,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `language-evidence`, `family-c`, `fza-family-members` | strong |
-| hybrid | pass | `language-evidence`, `family-c`, `city-zurich-naturalisation-language` | strong |
+| lexical | pass (not judged) | `family-c`, `language-evidence`, `fza-family-members` | strong |
+| hybrid | pass | `family-c`, `language-evidence`, `zh-permit-c-five-years` | strong |
 
 <a id="q-en-81"></a>
 
@@ -5128,7 +5126,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `notification-responsibility`, `eu-short-employment`, `uk-new-employment` | strong |
+| lexical | pass | `notification-responsibility`, `eu-short-employment`, `zh-tax-at-source-ordinary-assessment` | strong |
 | hybrid | pass | `notification-responsibility`, `eu-short-employment`, `posted-service-notification` | strong |
 
 <a id="q-en-86"></a>
@@ -5405,8 +5403,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-dog-keeping`, `city-zurich-dog-registration`, `zh-road-traffic-office-locations` | strong |
-| hybrid | pass | `zh-dog-keeping`, `city-zurich-dog-registration`, `zh-foreign-licence-exchange` | strong |
+| lexical | pass | `zh-dog-keeping`, `city-zurich-dog-registration`, `naturalisation-ordinary` | strong |
+| hybrid | pass | `zh-dog-keeping`, `city-zurich-dog-registration`, `zh-control-drive` | strong |
 
 <a id="q-en-96"></a>
 
@@ -5572,8 +5570,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `ahv-pension-abroad`, `zh-entry-permit-non-working`, `pillar-3a` | strong |
-| hybrid | pass | `ahv-pension-abroad`, `ahv-contribution-refund`, `fza-right-to-remain` | strong |
+| lexical | pass | `ahv-pension-abroad`, `ahv-contribution-refund`, `zh-entry-permit-non-working` | strong |
+| hybrid | pass | `ahv-pension-abroad`, `ahv-contribution-refund`, `bvg-cash-out-departure` | strong |
 
 <a id="q-en-102"></a>
 
@@ -5627,8 +5625,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `ahv-contribution-refund`, `ahv-pension-abroad`, `pillar-3a` | strong |
-| hybrid | pass | `ahv-contribution-refund`, `ahv-pension-abroad`, `pillar-3a` | strong |
+| lexical | pass | `ahv-contribution-refund`, `ahv-pension-abroad`, `bvg-cash-out-departure` | strong |
+| hybrid | pass | `ahv-contribution-refund`, `ahv-pension-abroad`, `bvg-cash-out-departure` | strong |
 
 <a id="q-en-104"></a>
 
@@ -5879,8 +5877,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-family-b-c-permit`, `zh-family-l-permit`, `fza-family-members` | strong |
-| hybrid | pass | `zh-family-b-c-permit`, `zh-family-l-permit`, `family-b` | strong |
+| lexical | pass | `zh-family-b-c-permit`, `family-b`, `zh-family-l-permit` | strong |
+| hybrid | pass | `zh-family-b-c-permit`, `family-b`, `zh-family-l-permit` | strong |
 
 <a id="q-en-114"></a>
 
@@ -6205,8 +6203,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `permit-l`, `entry-etias`, `permit-card-eu-efta` | strong |
-| hybrid | pass | `permit-l`, `zh-eu-l`, `permit-card-eu-efta` | strong |
+| lexical | pass | `permit-l`, `permit-card-eu-efta`, `zh-eu-l` | strong |
+| hybrid | pass | `permit-l`, `permit-card-eu-efta`, `zh-eu-l` | strong |
 
 <a id="q-de-3"></a>
 
@@ -6252,10 +6250,10 @@ Regression pack, quarantined.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | fail | `fza-self-employment`, `city-zurich-school-languages`, `family-c` | strong |
+| lexical | fail | `fza-self-employment`, `family-c`, `naturalisation-ordinary` | strong |
 | hybrid | pass | `permit-c`, `naturalisation-ordinary`, `family-c` | strong |
 
-- lexical: search 'Ab wann erhalte ich die Niederlassungsbewilligung C?' no longer finds permit-c within the first 3 hits: ['fza-self-employment', 'city-zurich-school-languages', 'family-c']
+- lexical: search 'Ab wann erhalte ich die Niederlassungsbewilligung C?' no longer finds permit-c within the first 3 hits: ['fza-self-employment', 'family-c', 'naturalisation-ordinary']
 
 <a id="q-de-5"></a>
 
@@ -6373,8 +6371,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `zh-vehicle-registration-move`, `city-zurich-first-steps`, `zh-naturalisation-ordinary` | weak |
-| hybrid | pass | `canton-change`, `zh-vehicle-registration-move`, `zh-naturalisation-ordinary` | strong |
+| lexical | pass (not judged) | `canton-change`, `zh-vehicle-registration-move`, `city-zurich-first-steps` | weak |
+| hybrid | pass | `canton-change`, `zh-vehicle-registration-move`, `zh-family-b-c-permit` | strong |
 
 <a id="q-de-10"></a>
 
@@ -6420,10 +6418,11 @@ Regression pack, quarantined.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | fail | `family-swiss`, `family-eu-efta`, `family-requirements` | strong |
+| lexical | fail | `family-swiss`, `family-eu-efta`, `family-requirements` | weak |
 | hybrid | fail | `family-swiss`, `naturalisation-facilitated-spouse`, `family-requirements` | strong |
 
 - lexical: search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' no longer finds family-b within the first 3 hits: ['family-swiss', 'family-eu-efta', 'family-requirements']
+- lexical: search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4499, 'anchored_weight': 1.2929})
 - hybrid: search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' no longer finds family-b within the first 3 hits: ['family-swiss', 'naturalisation-facilitated-spouse', 'family-requirements']
 
 <a id="q-de-12"></a>
@@ -6795,7 +6794,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-tax-at-source-liability`, `tax-at-source-liability`, `aig-study` | strong |
+| lexical | pass | `zh-tax-at-source-liability`, `tax-at-source-liability`, `permit-c` | strong |
 | hybrid | pass | `zh-tax-at-source-liability`, `tax-at-source-liability`, `zh-naturalisation-ordinary` | strong |
 
 <a id="q-de-28"></a>
@@ -7446,8 +7445,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `entry-visa-application`, `third-country-work-procedure`, `entry-visa-need` | strong |
-| hybrid | pass | `entry-visa-application`, `entry-visa-need`, `entry-visa-types` | strong |
+| lexical | pass | `entry-visa-application`, `entry-visa-types`, `third-country-work-procedure` | strong |
+| hybrid | pass | `entry-visa-application`, `entry-visa-types`, `entry-visa-need` | strong |
 
 <a id="q-de-53"></a>
 
@@ -8043,8 +8042,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `fza-mobility`, `permit-l`, `eu-job-search` | weak |
-| hybrid | pass | `permit-l`, `canton-change`, `fza-mobility` | strong |
+| lexical | pass (not judged) | `permit-l`, `fza-mobility`, `permit-card-eu-efta` | strong |
+| hybrid | pass | `permit-l`, `permit-card-eu-efta`, `canton-change` | strong |
 
 <a id="q-de-77"></a>
 
@@ -8070,8 +8069,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `zh-permit-c-five-years`, `permit-b`, `zh-entry-permit-non-working` | weak |
-| hybrid | pass | `zh-permit-c-five-years`, `permit-b`, `family-separation` | strong |
+| lexical | pass (not judged) | `permit-b`, `zh-permit-c-five-years`, `zh-entry-permit-non-working` | strong |
+| hybrid | pass | `permit-b`, `zh-permit-c-five-years`, `family-separation` | strong |
 
 <a id="q-de-78"></a>
 
@@ -8762,8 +8761,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-permit-c-five-years`, `family-deadlines`, `permit-c-five-years` | strong |
-| hybrid | pass | `zh-permit-c-five-years`, `permit-c-five-years`, `permit-c` | strong |
+| lexical | pass | `zh-permit-c-five-years`, `permit-c-five-years`, `permit-c` | strong |
+| hybrid | pass | `permit-c-five-years`, `zh-permit-c-five-years`, `permit-c` | strong |
 
 <a id="q-de-103"></a>
 
@@ -8789,8 +8788,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `family-c`, `zh-permit-c-five-years`, `city-zurich-naturalisation-language` | strong |
-| hybrid | pass | `city-zurich-naturalisation-language`, `zh-permit-c-five-years`, `zh-family-b-c-permit` | strong |
+| lexical | pass | `family-c`, `zh-permit-c-five-years`, `zh-family-b-c-permit` | strong |
+| hybrid | pass | `city-zurich-naturalisation-language`, `zh-permit-c-five-years`, `naturalisation-ordinary` | strong |
 
 <a id="q-de-104"></a>
 
@@ -9078,7 +9077,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `family-b`, `family-deadlines`, `city-zurich-arrival-documents` | weak |
+| lexical | pass (not judged) | `family-b`, `family-deadlines`, `zh-eu-l` | weak |
 | hybrid | pass | `zh-family-l-permit`, `zh-eu-family-documents`, `zh-family-swiss-sponsor` | strong |
 
 <a id="q-fr-11"></a>
@@ -9415,7 +9414,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-tax-at-source-ordinary-assessment`, `zh-tax-at-source-liability`, `zh-tax-at-source-tariffs` | strong |
+| lexical | pass | `zh-tax-at-source-liability`, `zh-tax-at-source-ordinary-assessment`, `zh-tax-at-source-tariffs` | strong |
 | hybrid | pass | `zh-tax-at-source-liability`, `zh-tax-at-source-tariffs`, `zh-eu-b` | strong |
 
 <a id="q-es-2"></a>
@@ -9821,8 +9820,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `aig-registration`, `canton-change`, `eu-short-employment` | strong |
-| hybrid | pass | `canton-change`, `aig-short-stay`, `family-b` | strong |
+| lexical | pass | `canton-change`, `aig-registration`, `family-separation` | strong |
+| hybrid | pass | `canton-change`, `family-b`, `zh-eu-b` | strong |
 
 <a id="q-ta-1"></a>
 
@@ -9855,13 +9854,12 @@ Regression pack, blocking.
 
 ### Q-TR-1: Turkish: Third-country workers: exemptions, application, visa and registration
 
-Regression pack, quarantined.
+Regression pack, blocking.
 
 > Türk vatandaşıyım ve Zürih'te bir iş için çalışma iznim onaylandı. İsviçre'ye girmek için ayrıca vizeye de ihtiyacım var mı?
 
 - **Language:** tr
 - **Expected answer:** Search finds third-country-work-procedure with a strong match; resolve serves third-country-work-procedure for the Canton of Zurich (population third_country); a work permit does not by itself give the right to enter, so a visa may still be needed.
-- **Quarantined because:** third-country-work-procedure is no longer among the first three hybrid hits after the concepts of 2026-09-22 entered the embedding index (entry-visa-need, aig-short-stay, fza-entry; hybrid replay on mvp-zurich-2026-09-22-v1). The case was already weak lexically before.
 
 **Steps**
 
@@ -9974,7 +9972,7 @@ Regression pack, blocking; spec: [docs/product/user-acceptance-tests.md#uat-7-sw
 | [N-EN-A1](#n-en-a1) | What does Art. 42 AIG say about the spouse of a Swiss citizen? | en | blocking | pass | pass |
 | [N-EN-A2](#n-en-a2) | Can I get an IPV subsidy in canton ZH after moving from abroad? | en | blocking | pass | pass |
 | [N-EN-A3](#n-en-a3) | Does FZA let Switzerland refuse EU citizens for public-sector jobs that involve... | en | blocking | pass | pass |
-| [N-EN-A4](#n-en-a4) | Am I taxed under code L or code M as a German cross-border commuter in Zurich? | en | quarantined | fail | pass |
+| [N-EN-A4](#n-en-a4) | Am I taxed under code L or code M as a German cross-border commuter in Zurich? | en | blocking | pass | pass |
 | [N-EN-J1](#n-en-j1) | Do I get PR after 10 years in Switzerland? | en | blocking | pass | pass |
 | [N-EN-J2](#n-en-j2) | Do I need a work visa to take a job in Zurich as an Indian national? | en | blocking | pass (not judged) | pass |
 | [N-EN-J3](#n-en-j3) | Can I cash out my Pensionskasse when I leave Switzerland for good? | en | blocking | pass | pass |
@@ -10255,7 +10253,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `tax-at-source-liability`, `tax-at-source-tariff-codes`, `zh-tax-at-source-tariffs` | strong |
+| lexical | pass | `tax-at-source-liability`, `permit-card-eu-efta`, `permit-types` | strong |
 | hybrid | pass | `tax-at-source-liability`, `zh-tax-at-source-tariffs`, `zh-tax-at-source-liability` | strong |
 
 <a id="n-de-j6"></a>
@@ -10847,13 +10845,12 @@ Regression pack, blocking.
 
 ### N-EN-A4: English with tariff codes L and M: tax-at-source-tariff-codes
 
-Regression pack, quarantined.
+Regression pack, blocking.
 
 > Am I taxed under code L or code M as a German cross-border commuter in Zurich?
 
 - **Language:** en
 - **Expected answer:** Search finds tax-at-source-tariff-codes with a strong match with the abbreviated codes L and M; resolve serves tax-at-source-tariff-codes.
-- **Quarantined because:** The verdict fell from strong to weak while the ranking improved: tax-at-source-tariff-codes rose from third to second, but the anchored weight fell from 1.5665 to 1.4803 against the threshold of 1.5 (lexical replay on mvp-zurich-2026-09-22-v1). See LIMITATIONS.md, 'Retrieval limitations'.
 
 **Steps**
 
@@ -10868,10 +10865,8 @@ Regression pack, quarantined.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | fail | `fza-cross-border-commuter`, `permit-card-eu-efta`, `tax-at-source-tariff-codes` | weak |
-| hybrid | pass | `zh-tax-at-source-tariffs`, `tax-at-source-tariff-codes`, `zh-tax-at-source-liability` | strong |
-
-- lexical: search 'Am I taxed under code L or code M as a German cross-border commuter in Zurich?' reports match_strength weak, expected strong (signals {'lexical_share': 0.418, 'anchored_weight': 1.4803})
+| lexical | pass | `permit-card-eu-efta`, `fza-cross-border-commuter`, `tax-at-source-tariff-codes` | strong |
+| hybrid | pass | `zh-tax-at-source-tariffs`, `tax-at-source-tariff-codes`, `zh-tax-at-source-ordinary-assessment` | strong |
 
 <a id="n-en-j1"></a>
 
@@ -10963,7 +10958,7 @@ Regression pack, blocking.
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
 | lexical | pass | `tax-at-source-liability`, `zh-tax-at-source-ordinary-assessment`, `zh-tax-office-contact` | strong |
-| hybrid | pass | `tax-at-source-liability`, `zh-tax-at-source-ordinary-assessment`, `zh-tax-at-source-liability` | strong |
+| hybrid | pass | `tax-at-source-liability`, `zh-tax-at-source-liability`, `zh-tax-at-source-ordinary-assessment` | strong |
 
 <a id="n-en-j5"></a>
 
@@ -11183,11 +11178,11 @@ Regression pack, quarantined.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | fail | `city-zurich-kindergarten`, `unemployment-benefit`, `zh-unemployment-benefit` | weak |
-| hybrid | fail | `city-zurich-kindergarten`, `unemployment-benefit`, `zh-unemployment-benefit` | weak |
+| lexical | fail | `city-zurich-kindergarten`, `unemployment-benefit`, `zh-control-drive` | weak |
+| hybrid | fail | `city-zurich-kindergarten`, `unemployment-benefit`, `zh-control-drive` | weak |
 
-- lexical: search "I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?" reports match_strength weak, expected strong (signals {'lexical_share': 0.1282, 'anchored_weight': 1.0108})
-- hybrid: search "I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?" reports match_strength weak, expected strong (signals {'lexical_share': 0.1282, 'anchored_weight': 1.0108, 'best_semantic_score': 0.4836})
+- lexical: search "I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?" reports match_strength weak, expected strong (signals {'lexical_share': 0.1243, 'anchored_weight': 1.0483})
+- hybrid: search "I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?" reports match_strength weak, expected strong (signals {'lexical_share': 0.1243, 'anchored_weight': 1.0483, 'best_semantic_score': 0.4836})
 
 <a id="n-en-t1"></a>
 
@@ -11210,10 +11205,10 @@ Regression pack, quarantined.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `fza-employee-permit`, `permit-b`, `aig-short-stay`, `eu-permit-mobility`, `entry-short-stay-rule` | weak |
-| hybrid | fail | `permit-b`, `aig-short-stay`, `entry-short-stay-rule`, `eu-permit-mobility`, `permit-card-eu-efta` | strong |
+| lexical | pass (not judged) | `permit-b`, `fza-employee-permit`, `aig-short-stay`, `eu-permit-mobility`, `eu-employment-registration-deadline` | weak |
+| hybrid | fail | `permit-b`, `aig-short-stay`, `permit-card-eu-efta`, `naturalisation-ordinary`, `eu-permit-mobility` | strong |
 
-- hybrid: search 'How long is my residnce permit B valid and when do I have to renwe it?' no longer finds permit-renewal within the first 5 hits: ['permit-b', 'aig-short-stay', 'entry-short-stay-rule', 'eu-permit-mobility', 'permit-card-eu-efta']
+- hybrid: search 'How long is my residnce permit B valid and when do I have to renwe it?' no longer finds permit-renewal within the first 5 hits: ['permit-b', 'aig-short-stay', 'permit-card-eu-efta', 'naturalisation-ordinary', 'eu-permit-mobility']
 
 <a id="n-en-t2"></a>
 
@@ -11427,7 +11422,7 @@ Regression pack, blocking.
 | [CTX-2](#ctx-2) | Kann ich meinen Zuzug in die Stadt Zürich online erledigen, oder muss ich persönlich... | de | blocking | pass | pass |
 | [CTX-3](#ctx-3) | I'm posted to Zurich for a year by my French employer and stay covered by French social... | en | blocking | pass | pass |
 | [CTX-4](#ctx-4) | Ich ziehe von Basel-Stadt in die Stadt Zürich um, weil ich hier eine neue Stelle antrete... | de | blocking | pass | pass |
-| [CTX-5](#ctx-5) | I hold a Swiss residence permit B, not the settlement permit C. My husband hasn't passed... | en | quarantined | pass (not judged) | fail |
+| [CTX-5](#ctx-5) | I hold a Swiss residence permit B, not the settlement permit C. My husband hasn't passed... | en | blocking | pass (not judged) | pass |
 | [CTX-6](#ctx-6) | My partner holds a short-stay L permit in the Canton of Zurich. We've gathered everything... | en | blocking | pass | pass |
 | [CTX-7](#ctx-7) | Ich bin 58, EU-Bürgerin, und möchte mich nach der Pensionierung im Kanton Zürich... | de | blocking | pass (not judged) | pass |
 | [CTX-8](#ctx-8) | Is my residence permit only valid in the canton that issued it, or can I work anywhere in... | en | blocking | pass | pass |
@@ -11560,13 +11555,12 @@ Regression pack, blocking.
 
 ### CTX-5: Different sponsor status, English: family-b versus family-c
 
-Regression pack, quarantined.
+Regression pack, blocking.
 
 > I hold a Swiss residence permit B, not the settlement permit C. My husband hasn't passed a German exam yet but is enrolled in an A1 course - can he still join me under family reunification?
 
 - **Language:** en
 - **Expected answer:** Search finds family-b with a strong match; resolve for a B-permit sponsor serves family-b, where language-course enrolment can replace the certificate for initial issuance, and rejects family-c (context_not_covered), which needs a C-permit sponsor.
-- **Quarantined because:** family-b is no longer among the first three hybrid hits after the three Zurich family-reunification concepts of 2026-09-22 entered the embedding index (family-requirements, zh-family-refugee-asylum, family-swiss; hybrid replay on mvp-zurich-2026-09-22-v1).
 
 **Steps**
 
@@ -11583,10 +11577,8 @@ Regression pack, quarantined.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `family-c`, `family-requirements`, `zh-family-refugee-asylum` | strong |
-| hybrid | fail | `family-requirements`, `family-swiss`, `zh-family-b-c-permit` | strong |
-
-- hybrid: search "I hold a Swiss residence permit B, not the settlement permit C. My husband hasn't passed a German exam yet but is enrolled in an A1 course - can he still join me under family reunification?" no longer finds family-b within the first 3 hits: ['family-requirements', 'family-swiss', 'zh-family-b-c-permit']
+| lexical | pass (not judged) | `family-c`, `zh-family-b-c-permit`, `family-requirements` | strong |
+| hybrid | pass | `zh-family-b-c-permit`, `family-b`, `family-requirements` | strong |
 
 <a id="ctx-6"></a>
 
@@ -11761,7 +11753,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `eu-employment-registration-deadline`, `notification-responsibility`, `third-country-work-conditions` | weak |
+| lexical | pass (not judged) | `eu-employment-registration-deadline`, `naturalisation-ordinary`, `notification-responsibility` | weak |
 | hybrid | pass | `zh-third-country-work`, `eu-short-employment`, `notification-responsibility` | strong |
 
 <a id="ctx-13"></a>
@@ -11976,7 +11968,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `political-rights-federal`, `zh-political-rights`, `naturalisation-ordinary` | strong |
+| lexical | pass | `political-rights-federal`, `naturalisation-ordinary`, `zh-political-rights` | strong |
 | hybrid | pass | `political-rights-federal`, `zh-political-rights`, `naturalisation-ordinary` | strong |
 
 <a id="ctx-21"></a>
@@ -12896,7 +12888,7 @@ Regression pack, quarantined.
 | hybrid | fail | `eu-short-employment`, `third-country-work-procedure`, `aig-short-stay` | strong |
 
 - lexical: search "I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?" no longer finds fza-employee-permit within the first 3 hits: ['eu-short-employment', 'fza-job-search', 'uk-new-employment']
-- lexical: search "I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?" reports match_strength weak, expected strong (signals {'lexical_share': 0.366, 'anchored_weight': 1.3416})
+- lexical: search "I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?" reports match_strength weak, expected strong (signals {'lexical_share': 0.318, 'anchored_weight': 1.3416})
 - hybrid: search "I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?" no longer finds fza-employee-permit within the first 3 hits: ['eu-short-employment', 'third-country-work-procedure', 'aig-short-stay']
 
 <a id="xc-2"></a>
@@ -13014,8 +13006,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `family-b`, `zh-family-b-c-permit`, `fza-family-members` | strong |
-| hybrid | pass | `family-b`, `zh-family-b-c-permit`, `zh-family-l-permit` | strong |
+| lexical | pass | `family-b`, `zh-family-b-c-permit`, `naturalisation-ordinary` | strong |
+| hybrid | pass | `family-b`, `zh-family-b-c-permit`, `naturalisation-ordinary` | strong |
 
 <a id="xc-6"></a>
 
@@ -13133,7 +13125,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-tax-at-source-ordinary-assessment`, `tax-at-source-liability`, `zh-tax-at-source-liability` | strong |
+| lexical | pass | `zh-tax-at-source-ordinary-assessment`, `zh-tax-at-source-liability`, `tax-at-source-liability` | strong |
 | hybrid | pass | `tax-at-source-liability`, `zh-tax-at-source-ordinary-assessment`, `zh-tax-at-source-liability` | strong |
 
 <a id="xc-10"></a>
@@ -13162,7 +13154,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-tax-at-source-liability`, `tax-at-source-liability`, `aig-study` | strong |
+| lexical | pass | `zh-tax-at-source-liability`, `tax-at-source-liability`, `naturalisation-facilitated-spouse` | strong |
 | hybrid | pass | `zh-tax-at-source-liability`, `tax-at-source-liability`, `naturalisation-facilitated-spouse` | strong |
 
 <a id="xc-11"></a>
@@ -13451,7 +13443,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass (not judged) | `canton-change`, `fza-mobility`, `zh-vehicle-registration-move` | strong |
+| lexical | pass (not judged) | `canton-change`, `naturalisation-ordinary`, `fza-mobility` | strong |
 | hybrid | pass | `canton-change`, `naturalisation-ordinary`, `zh-vehicle-registration-move` | strong |
 
 <a id="xc-21"></a>
@@ -13510,8 +13502,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `tax-at-source-liability`, `zh-tax-at-source-liability`, `zh-tax-at-source-tariffs` | strong |
-| hybrid | pass | `tax-at-source-liability`, `zh-tax-at-source-liability`, `zh-tax-at-source-tariffs` | strong |
+| lexical | pass | `tax-at-source-liability`, `zh-tax-at-source-liability`, `zh-tax-at-source-ordinary-assessment` | strong |
+| hybrid | pass | `tax-at-source-liability`, `zh-tax-at-source-liability`, `zh-tax-at-source-ordinary-assessment` | strong |
 
 <a id="xc-23"></a>
 
@@ -13568,7 +13560,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-political-rights`, `political-rights-federal`, `zh-eu-nonworking` | strong |
+| lexical | pass | `zh-political-rights`, `political-rights-federal`, `family-c` | strong |
 | hybrid | pass | `zh-political-rights`, `political-rights-federal`, `naturalisation-ordinary` | strong |
 
 <a id="xc-25"></a>
@@ -13593,7 +13585,7 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `tenancy-agreement`, `rent-changes` | strong |
+| lexical | pass | `tenancy-agreement`, `rent-changes`, `zh-tax-at-source-tariffs` | strong |
 | hybrid | pass | `tenancy-agreement`, `rent-changes`, `zh-initial-rent-form` | strong |
 
 <a id="xc-26"></a>
@@ -14163,7 +14155,7 @@ Regression pack, quarantined.
 | lexical | fail | `family-eu-efta`, `zh-eu-nonworking`, `fza-non-working` | weak |
 | hybrid | pass | `family-eu-efta`, `fza-family-members`, `zh-eu-nonworking` | strong |
 
-- lexical: search "I'm an EU citizen with a residence permit in Graubünden. Can I bring my dependent parents to live with me?" reports match_strength weak, expected strong (signals {'lexical_share': 0.3983, 'anchored_weight': 1.4174})
+- lexical: search "I'm an EU citizen with a residence permit in Graubünden. Can I bring my dependent parents to live with me?" reports match_strength weak, expected strong (signals {'lexical_share': 0.3447, 'anchored_weight': 1.4174})
 
 <a id="xc-46"></a>
 
@@ -14187,8 +14179,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `permit-c-five-years`, `fza-self-employment`, `zh-permit-c-five-years` | strong |
-| hybrid | pass | `zh-permit-c-five-years`, `permit-c-five-years`, `permit-c` | strong |
+| lexical | pass | `permit-c-five-years`, `zh-permit-c-five-years`, `permit-c` | strong |
+| hybrid | pass | `zh-permit-c-five-years`, `permit-c-five-years`, `naturalisation-ordinary` | strong |
 
 ## Asked from another Zurich municipality
 
@@ -14332,8 +14324,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `zh-tax-at-source-ordinary-assessment`, `tax-at-source-liability`, `city-zurich-tax-return` | strong |
-| hybrid | pass | `tax-at-source-liability`, `zh-tax-at-source-ordinary-assessment`, `city-zurich-tax-return` | strong |
+| lexical | pass | `zh-tax-at-source-ordinary-assessment`, `tax-at-source-liability`, `zh-tax-at-source-liability` | strong |
+| hybrid | pass | `tax-at-source-liability`, `zh-tax-at-source-ordinary-assessment`, `zh-tax-at-source-liability` | strong |
 
 <a id="xm-5"></a>
 
@@ -15793,8 +15785,8 @@ Regression pack, blocking.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | pass | `city-zurich-population-office`, `permit-renewal`, `entry-etias` | strong |
-| hybrid | pass | `permit-renewal`, `entry-visa-fee-insurance`, `zh-permit-card` | strong |
+| lexical | pass | `city-zurich-population-office`, `permit-renewal`, `permit-card-eu-efta` | strong |
+| hybrid | pass | `permit-renewal`, `permit-card-eu-efta`, `entry-visa-fee-insurance` | strong |
 
 <a id="oos-42"></a>
 
@@ -15817,11 +15809,11 @@ Regression pack, quarantined.
 
 | Mode | Result | First hits | Match |
 | --- | --- | --- | --- |
-| lexical | fail | `city-zurich-naturalisation`, `marriage-switzerland`, `entry-short-stay-rule` | strong |
-| hybrid | fail | `aig-short-stay`, `family-separation`, `family-b` | strong |
+| lexical | fail | `city-zurich-naturalisation`, `permit-card-eu-efta`, `canton-change` | strong |
+| hybrid | fail | `permit-b`, `family-b`, `family-separation` | strong |
 
-- lexical: search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.7066, 'anchored_weight': 1.5729})
-- hybrid: search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.7066, 'anchored_weight': 1.5729, 'best_semantic_score': 0.6022})
+- lexical: search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6046, 'anchored_weight': 1.5729})
+- hybrid: search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6046, 'anchored_weight': 1.5729, 'best_semantic_score': 0.6022})
 
 <a id="oos-43"></a>
 

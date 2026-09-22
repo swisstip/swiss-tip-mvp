@@ -6,7 +6,23 @@ What the Swiss TIP MCP server does not do well, does not do yet, or does not
 claim. It applies to the committed release `mvp-zurich-2026-09-22-v1` (second build of that day) and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
-[COVERAGE.md](COVERAGE.md).
+[COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
+outside the submission: its release stays attested and frozen, and nothing
+below is measured on it.
+
+- **Pages the run holds that no fact cites.** Until 22 September 2026 nothing
+  in the pipeline compared the text dataset with the release: the release's
+  document list is derived from its citations, so validating it could not
+  find a saved page outside it. The audit of that day found 29 catalogued
+  German pages and five federal acts fetched and never cited, one of them
+  holding the five-year settlement rule an acceptance case forbade. The build
+  now has a `coverage` stage (`curation-coverage.json` and `.md` next to the
+  release) that lists every content section of every candidate record no
+  fact cites and no disposition in `curation-coverage.yaml` names; the pack
+  runs it under `coverage_policy: report`, so an open section is a number in
+  that report and not yet a build error. The first report and the
+  dispositions written against it are described under "Retrieval
+  limitations".
 
 ## Review status: reviewed by one person, not by a lawyer
 
@@ -691,15 +707,23 @@ implemented.
   EU/EFTA labour markets) are routed to `third_country` only and are
   rejected for a UK national with `context_not_covered`. Whether they apply
   to UK nationals is a curation question the release does not answer.
-- **Permit letters F, N and S are not searchable.** `permit-types` lists
-  every permit card, and since release `mvp-zurich-2026-09-19-v10` its
-  search words name the F, N and S cards too ("Ausweis F", "Asylsuchende",
-  "Schutzbedürftige", "F permit provisionally admitted foreigners"). Lexical
-  search drops one-letter words, though, and the embedding does not pick up
-  the letter: "A colleague of mine has an F permit. What kind of permit is
-  that?" still reads `weak` and misses the concept in both modes (46th
-  lexically). The publisher's "vorläufig aufgenommene Ausländer" was left
-  out of the search words because it made the out-of-scope question on
+- **The permit letter S is not searchable lexically; F and N are since
+  22 September 2026.** `permit-types` lists every permit card, and since
+  release `mvp-zurich-2026-09-19-v10` its search words name the F, N and S
+  cards too ("Ausweis F", "Asylsuchende", "Schutzbedürftige", "F permit
+  provisionally admitted foreigners"). Until swisstip-runtime commit 603fa23
+  lexical search dropped one-letter words, so no card letter reached the
+  concept; since then one-character tokens are kept, and "A colleague of mine
+  has an F permit. What kind of permit is that?" ranks `permit-types` third
+  lexically and first in hybrid search, the mode the published image serves
+  (it was 46th). The verdict still reads `weak` in both modes, because "kind"
+  matches the German "Kind" of the family concepts, so Q-EN-76 stays
+  quarantined for that reason. The letter S is a stopword: "s" is the Zurich
+  German article ("Wo isch s Amt z Winterthur?"), so an S card reaches the
+  concept through the embedding only, and a pack that names a type S or Z
+  pays for that choice; the S permit is listed, not published, and OOS-45
+  stays quarantined. The publisher's "vorläufig aufgenommene Ausländer" was
+  left out of the search words because it made the out-of-scope question on
   applying for temporary protection ("vorläufiger Schutz") read `strong`.
 
 ## Retrieval limitations
@@ -787,6 +811,28 @@ implemented.
   "not covered" declines a question the release answers, which is the cost
   of this drift; raising or normalising the threshold is a change to
   `service.py` in the code repository and has not been made.
+- **The first coverage report: 1,284 units nobody has answered for.** The
+  `coverage` stage joined the text dataset of the run with this release on
+  22 September 2026 (`releases/mvp-zurich/curation-coverage.json` and `.md`).
+  Of 337 candidate records it asks for 2,076 units: 321 pages by their
+  content sections, 15 statutes as one unit each (a curator cites articles
+  from a law; its other articles are not a gap), one tariff page rolled up to
+  its top two heading levels, and 76 sections of repeated site boilerplate
+  (telephone hours, the "no e-mail address" note) set aside. Facts cite 525
+  units; 23 dispositions drafted by the assistant for the reviewer settle 267
+  more (the French and Italian SEM pages as duplicates of the cited German
+  ones, sixteen hub and link pages as navigation, five asylum pages against
+  the manifest's `asylum` entry); **1,284 units in 213 documents are
+  unclassified**. Two groups, 309 units, need a scope decision the manifest
+  does not yet state and a disposition therefore cannot cite: the Canton of
+  Zurich's integration-programme pages for practitioners (234) and SEM's
+  border-management and air-carrier pages (75); adding those entries to
+  `out_of_scope` changes the served manifest and needs the ready stage again.
+  The rest is content someone saved and nobody read: among it the SEM FAQ
+  pages, of which the pack cites a handful of answers out of forty to seventy
+  each (128 open units), and 414 units on Canton of Zurich pages. The pack
+  runs the stage under `coverage_policy: report`; the number is a fact about
+  the release, not yet a build error.
 - **Four concepts of 22 September 2026 displaced an expected concept.**
   `city-zurich-naturalisation-language` and `-civics` pushed
   `city-zurich-naturalisation` from third to fourth of 44 for the German
@@ -805,6 +851,10 @@ implemented.
   family concepts took all three places of `family-eu-efta` (Q-EN-78) and
   `naturalisation-third-generation` took the second place of
   `zh-naturalisation-facilitated` (XM-18). All three still pass lexically.
+  With the tokeniser of swisstip-runtime 603fa23 (one-character tokens kept,
+  22 September 2026) three quarantined cases pass again in both modes and
+  are blocking again: CTX-5, N-EN-A4 and Q-TR-1; the pack passes 557 cases
+  lexically and 553 with hybrid search, of 587, with 41 quarantined.
 - **Lexical search has no spelling tolerance.** A misspelled key word is a
   missing token: "helth insurence" or "renwe" lose the strong match that the
   correctly spelled question gets, and the container's lexical fallback

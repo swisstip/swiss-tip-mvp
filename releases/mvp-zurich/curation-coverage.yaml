@@ -1,0 +1,181 @@
+schema_version: swiss-tip-curation-coverage/v1
+pack: mvp-zurich
+dispositions:
+- kind: duplicate
+  reason: The French versions of SEM pages the catalogue lists next to the German ones. The German page is the cited
+    one; French excerpts are cited only where a cantonal office name is French, and those units stay cited.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  url_prefix: https://www.sem.admin.ch/sem/fr/
+  known_documents:
+  - doc-0117c398522640c44c08
+  - doc-048744690d286488453e
+  - doc-16d8e1afae29d7d977b4
+  - doc-194e491f8c925efa96fb
+  - doc-1d31a3eb156089c123e9
+  - doc-33f872239bf3efe3c5cc
+  - doc-4ea17df2a9c194d67783
+  - doc-4f183240f35d4bab1cc0
+  - doc-50629e24f1b86bec1914
+  - doc-6dd91f516e84af918c60
+  - doc-74e034de04cd8b479538
+  - doc-7ae1f53555b05619d191
+  - doc-7b83e51360f28b1302ed
+  - doc-be4bf9218731e99a4a57
+  - doc-c2e4c35b44248c1b2668
+  - doc-c3dc9a5f906e7ce2606d
+  - doc-d0beb4aa38aa20b1e4f4
+  - doc-d6df3c6c3ca876302beb
+  - doc-e53da5021749ca35858e
+- kind: duplicate
+  reason: The Italian versions of SEM pages the catalogue lists next to the German ones. The German page is the
+    cited one; Italian excerpts are cited only where a cantonal office name is Italian, and those units stay cited.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  url_prefix: https://www.sem.admin.ch/sem/it/
+  known_documents:
+  - doc-0c9e03199af083cbba3f
+  - doc-107761ad33a669fff298
+  - doc-275ae8b9066eed734108
+  - doc-3384486ff21c7bc1d64a
+  - doc-39475da2259cc28c83e4
+  - doc-3bf3b58af42b55e79a81
+  - doc-454f97f0cfaf731b413c
+  - doc-455bf5c6756d809c19dc
+  - doc-484542e6614be76d48dd
+  - doc-4978b8335c1e8ba92768
+  - doc-4ab22b092a0c691792fb
+  - doc-5d5befec6c41da776c99
+  - doc-8f00a78c7659888ec754
+  - doc-9bcc2f95c51275ac6a60
+  - doc-a9e6402fe06e3918a04c
+  - doc-d050dd07da5f070bb84d
+  - doc-d2802a9e4ee77f963308
+  - doc-d895bfa755508859b386
+  - doc-e8d29a6825f42c558b72
+- kind: navigation
+  reason: 'The chapter pages of the SEM directives: each lists the PDF directives of its chapter, which the catalogue
+    does not fetch. Fetching them is an acquisition change, not a disposition.'
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  url_prefix: https://www.sem.admin.ch/sem/de/home/publiservice/weisungen-kreisschreiben/
+  known_documents:
+  - doc-0fed00db0de8c1cc9c36
+  - doc-18811da7cc14b6770c42
+  - doc-2075d355d858d6dc04ec
+  - doc-3e35e4bd628c3247cbce
+  - doc-7399de1faad8ce9f6f16
+  - doc-7a532bebbfebfc54c4bb
+  - doc-8e5c32503b2b510b59b9
+  - doc-985aff40081c53ba0cd9
+  - doc-99c4a66431eadf2be274
+  - doc-a008739bb6419e8cc243
+  - doc-c4967480c486df26eb64
+  - doc-c63b137533ec10d98d48
+  - doc-c97d2b08fa899e87b5e5
+  - doc-db6ed19f639ce113dce5
+- kind: navigation
+  reason: Hub of the Migration Office's residence pages; its children are cited.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-a0e7246112d61ad60df1
+- kind: navigation
+  reason: Hub of the cantonal naturalisation pages; its children are cited.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-b9be0a62ff2397dbcfee
+- kind: navigation
+  reason: Hub of the integration pages; a link list for practitioners and residents.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-79a45851710a6e6d7971
+- kind: navigation
+  reason: Hub of the City of Zurich waste pages; its children are cited.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-9d68da869b253d1e73cc
+- kind: navigation
+  reason: Navigation to the fee overview and the legal bases; the fee table itself is not in the extracted text.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-c1f16a788a87f6d16e6b
+- kind: navigation
+  reason: Navigation to the waste-group pages, which are cited.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-a52da80d7811ee254066
+- kind: navigation
+  reason: Hub of the SEM entry pages; its children are cited.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-dc5f96bafefd650a52d1
+- kind: navigation
+  reason: Navigation to the entry information pages, which are cited.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-e7c08d4b66a97a31a498
+- kind: navigation
+  reason: A link list of addresses; the cantonal directory the pack serves is cited from its own page.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-84ef4c65f11f35dbe1fb
+- kind: navigation
+  reason: A link list of addresses; the cantonal directory the pack serves is cited from its own page.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-e183ec4adc565b6cfa57
+- kind: navigation
+  reason: A link to the FDFA representation finder; no content of its own.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-3ac1dc4ed79c8fc24b3b
+- kind: navigation
+  reason: A link to the cantonal authority list; no content of its own.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-ec91d9bae72da425d45e
+- kind: navigation
+  reason: Overview of the EU/EFTA permit cards; each card's page is cited.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-239b09506fc070827848
+- kind: navigation
+  reason: Overview of the third-country permit cards; the card pages and the roll-out note are cited.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-f2a82e55188699dfb2c9
+- kind: navigation
+  reason: A page about ordering a brochure in twelve languages; the brochure itself is not in the run.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-dbee3b501bbce48562d2
+- kind: out_of_scope
+  reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-fa315a94917a96e1f096
+  out_of_scope_entry: asylum
+- kind: out_of_scope
+  reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-aae152acfcb887b384fc
+  out_of_scope_entry: asylum
+- kind: out_of_scope
+  reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-0f4b30d945bb1bf6040b
+  out_of_scope_entry: asylum
+- kind: out_of_scope
+  reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-79322d2379e0a3c7a9de
+  out_of_scope_entry: asylum
+- kind: out_of_scope
+  reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
+  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  date: '2026-09-22'
+  document_id: doc-94cf8439510adc29ced0
+  out_of_scope_entry: asylum
