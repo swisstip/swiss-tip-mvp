@@ -1,6 +1,6 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, not clean, 23 disposition(s), generated 2026-09-22T10:01:18.
+Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, not clean, 23 disposition(s), generated 2026-09-22T10:49:29.
 
 337 candidate records ({'section': 321, 'document': 15, 'rolled_up': 1}) with 2076 units a curator answers for: 525 cited, 267 dispositioned, **1284 unclassified**; 76 boilerplate sections were not asked for. Documents: {'unclassified': 91, 'partly_cited': 122, 'cited': 53, 'dispositioned': 71}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 
@@ -1634,6 +1634,22 @@ Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, no
 | `doc-ea8ce303e3ee8fb3a83a` | section-0047 | Arbeitslosen­entschädigung > Spezielle Situationen > Lohnzahlungsverzug des Arbeitgebers | 200-207 | 681 |
 | `doc-ea8ce303e3ee8fb3a83a` | section-0048 | Arbeitslosen­entschädigung > Spezielle Situationen > Entschädigung bei Insolvenz des Arbeitgebers | 208-210 | 217 |
 | `doc-ea8ce303e3ee8fb3a83a` | section-0049 | Arbeitslosen­entschädigung > Spezielle Situationen > Erklärvideos | 211-213 | 103 |
+
+## Repeated sections
+
+Texts that recur in five or more candidate records and were set aside as boilerplate, with the page or pages where a fact cites them (at least half of the text's characters). `cited_nowhere` is repeated information the release serves from no page.
+
+| Status | Pages | Cited on | Heading | Text |
+| --- | ---: | --- | --- | --- |
+| cited_nowhere | 10 | - | (no heading) | dieser browser ist veraltet und birgt sicherheitsrisiken. die webseite der sva zürich ist für diesen |
+| cited_nowhere | 10 | - | I. Ausländerbereich > Weisungen | weisungen und erläuterungen i. ausländerbereich (weisungen aig). ohne kapitel 4. (pdf, 2 mb, 15.06.2 |
+| cited_nowhere | 9 | - | Bewilligung beantragen > Anleitung > Migrationsamt > Spezielle Öffnungszeiten | unser amt ist am montag, 14. september ab 11.30 uhr geschlossen. ab dienstag, 15. september 2026 sin |
+| cited_nowhere | 5 | - | Familiennachzug beantragen > Anleitung > Migrationsamt > Spezielle Öffnungszeiten | unser amt ist am montag, 14. september ab 11.30 uhr geschlossen. ab dienstag, 15. september 2026 sin |
+| cited_on_several_pages | 25 | [Erwerbstätigkeit von Ausländerinnen und Ausländern / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/erwerbstaetigkeit-auslaender.html); [Standorte und Öffnungszeiten des Strassenverkehrsamts / Kanton Zürich](https://www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt/standorte-oeffnungszeiten.html) | Prämienverbilligung > Weiterführende Informationen | verwenden sie die akkordeon-bedienelemente, um die sichtbarkeit der jeweiligen panels (unterhalb der |
+| cited_on_several_pages | 7 | [Familiennachzug durch Personen mit einer L-Bewilligung beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-l-bewilligung-beantragen.html); [Einreisebewilligung für Rentnerinnen und Rentner beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige/einreisebewilligung-fuer-rentnerinnen-und-rentner-beantragen.html); [Familiennachzug durch Schweizer Staatsangehörige beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-schweizer-staatsangehoerige-beantragen.html); [Familiennachzug nach dem Freizügigkeitsabkommen beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-nach-dem-freizuegigkeitsabkommen-beantragen.html); [Familiennachzug durch Personen mit einer B- oder C-Bewilligung beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-b-oder-c-bewilligung-beantragen.html) | Einreisebewilligung für nahe Verwandte beantragen > Anleitung > Nutzungsmöglichkeiten | sie können uns die vollständigen unterlagen direkt am schalter, online oder per post einreichen. |
+| cited_once | 9 | [Migrationsamt / Kanton Zürich](https://www.zh.ch/de/sicherheitsdirektion/migrationsamt.html) | Bewilligung beantragen > Anleitung > Migrationsamt > Adresse | berninastrasse 45 postfach 8090 zürich route (google) adresse wurde kopiert adresse konnte nicht kop |
+| cited_once | 5 | [Einbürgerung und Stadtbürgerrecht / Stadt Zürich](https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung.html) | Navigation > Sprunglink > Stadtkanzlei | stadthaus einbürgerungen stadthausquai 17 8001 zürich telefon +41 44 412 31 09 |
+| cited_once | 5 | [Familiennachzug durch Personen mit einer B- oder C-Bewilligung beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-b-oder-c-bewilligung-beantragen.html) | Familiennachzug beantragen > Anleitung > Vielen Dank | vielen dank, ihr gesuch wird nun überprüft und bearbeitet. bitte beachten sie, dass die prüfung des  |
 
 ## Sources
 

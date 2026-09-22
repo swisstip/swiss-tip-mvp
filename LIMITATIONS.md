@@ -818,7 +818,17 @@ implemented.
   content sections, 15 statutes as one unit each (a curator cites articles
   from a law; its other articles are not a gap), one tariff page rolled up to
   its top two heading levels, and 76 sections of repeated site boilerplate
-  (telephone hours, the "no e-mail address" note) set aside. Facts cite 525
+  set aside and traced to their citations. Nine texts recur on five or more
+  pages: the Migrationsamt's Berninastrasse address with its counter hours
+  (nine pages) and the Stadthaus Einbürgerungen address (five) are each cited
+  once, from the office's own page; the sentence that documents can be handed
+  in at the counter, online or by post is a fact on five of the seven
+  application guides that carry it; four texts are cited nowhere and rightly
+  so (an SVA browser warning, the SEM directive list a navigation rule
+  covers, two variants of the Migrationsamt's notice of a closure on
+  14 September 2026); and an accordion widget instruction on 25 Canton of
+  Zurich pages lies inside cited block ranges on two of them, which a
+  reviewer may narrow. Facts cite 525
   units; 23 dispositions drafted by the assistant for the reviewer settle 267
   more (the French and Italian SEM pages as duplicates of the cited German
   ones, sixteen hub and link pages as navigation, five asylum pages against

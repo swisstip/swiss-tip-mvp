@@ -8,13 +8,14 @@
   "dispositions": 23,
   "policy": "report",
   "today": "2026-09-22",
-  "generated_at": "2026-09-22T10:01:18.405919+00:00",
+  "generated_at": "2026-09-22T10:49:29.582698+00:00",
   "rules": {
     "reference_kinds": [
       "plugin-document"
     ],
     "boilerplate_min_documents": 5,
-    "oversize_sections": 100
+    "oversize_sections": 100,
+    "repeated_match_share": 0.5
   },
   "counts": {
     "candidates": 337,
@@ -28,6 +29,12 @@
     "dispositioned_sections": 267,
     "unclassified_sections": 1284,
     "boilerplate_sections": 76,
+    "repeated_texts": 9,
+    "repeated_by_citation": {
+      "cited_nowhere": 4,
+      "cited_on_several_pages": 2,
+      "cited_once": 3
+    },
     "documents": {
       "unclassified": 91,
       "partly_cited": 122,
@@ -25291,6 +25298,178 @@
       "boilerplate": 0,
       "unclassified": 0,
       "status": "dispositioned"
+    }
+  ],
+  "repeated_sections": [
+    {
+      "status": "cited_nowhere",
+      "pages": 10,
+      "heading_path": [],
+      "text": "dieser browser ist veraltet und birgt sicherheitsrisiken. die webseite der sva zürich ist für diesen browser nicht optimiert. deshalb werden einige inhalte nich",
+      "characters": 182,
+      "cited_on": []
+    },
+    {
+      "status": "cited_nowhere",
+      "pages": 10,
+      "heading_path": [
+        "I. Ausländerbereich",
+        "Weisungen"
+      ],
+      "text": "weisungen und erläuterungen i. ausländerbereich (weisungen aig). ohne kapitel 4. (pdf, 2 mb, 15.06.2026) (stand 15. juni 2026) weisungen aig. kapitel 4 «aufenth",
+      "characters": 243,
+      "cited_on": []
+    },
+    {
+      "status": "cited_nowhere",
+      "pages": 9,
+      "heading_path": [
+        "Bewilligung beantragen",
+        "Anleitung",
+        "Migrationsamt",
+        "Spezielle Öffnungszeiten"
+      ],
+      "text": "unser amt ist am montag, 14. september ab 11.30 uhr geschlossen. ab dienstag, 15. september 2026 sind wir wieder für sie erreichbar. danke für ihre kenntnisnahm",
+      "characters": 162,
+      "cited_on": []
+    },
+    {
+      "status": "cited_nowhere",
+      "pages": 5,
+      "heading_path": [
+        "Familiennachzug beantragen",
+        "Anleitung",
+        "Migrationsamt",
+        "Spezielle Öffnungszeiten"
+      ],
+      "text": "unser amt ist am montag, 14. september ab 11.30 uhr geschlossen. ab dienstag, 15. september 2026 sind wir wieder für sie erreichbar. danke für ihre kenntnisnahm",
+      "characters": 192,
+      "cited_on": []
+    },
+    {
+      "status": "cited_on_several_pages",
+      "pages": 25,
+      "heading_path": [
+        "Prämienverbilligung",
+        "Weiterführende Informationen"
+      ],
+      "text": "verwenden sie die akkordeon-bedienelemente, um die sichtbarkeit der jeweiligen panels (unterhalb der bedienelemente) umzuschalten.",
+      "characters": 130,
+      "cited_on": [
+        {
+          "document_id": "doc-6a4c4aa06458f9782f9a",
+          "source_url": "https://www.zh.ch/de/wirtschaft-arbeit/erwerbstaetigkeit-auslaender.html",
+          "title": "Erwerbstätigkeit von Ausländerinnen und Ausländern | Kanton Zürich",
+          "share": 1.0
+        },
+        {
+          "document_id": "doc-f90a4619e9f1d8370d4b",
+          "source_url": "https://www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt/standorte-oeffnungszeiten.html",
+          "title": "Standorte und Öffnungszeiten des Strassenverkehrsamts | Kanton Zürich",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "status": "cited_on_several_pages",
+      "pages": 7,
+      "heading_path": [
+        "Einreisebewilligung für nahe Verwandte beantragen",
+        "Anleitung",
+        "Nutzungsmöglichkeiten"
+      ],
+      "text": "sie können uns die vollständigen unterlagen direkt am schalter, online oder per post einreichen.",
+      "characters": 96,
+      "cited_on": [
+        {
+          "document_id": "doc-28471454d291716bb922",
+          "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-l-bewilligung-beantragen.html",
+          "title": "Familiennachzug durch Personen mit einer L-Bewilligung beantragen | Kanton Zürich",
+          "share": 1.0
+        },
+        {
+          "document_id": "doc-451d08b440cd87bb5ec4",
+          "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige/einreisebewilligung-fuer-rentnerinnen-und-rentner-beantragen.html",
+          "title": "Einreisebewilligung für Rentnerinnen und Rentner beantragen | Kanton Zürich",
+          "share": 1.0
+        },
+        {
+          "document_id": "doc-5126e3273ddd44c85c8c",
+          "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-schweizer-staatsangehoerige-beantragen.html",
+          "title": "Familiennachzug durch Schweizer Staatsangehörige beantragen | Kanton Zürich",
+          "share": 1.0
+        },
+        {
+          "document_id": "doc-7522016c9c5677a1d873",
+          "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-nach-dem-freizuegigkeitsabkommen-beantragen.html",
+          "title": "Familiennachzug nach dem Freizügigkeitsabkommen beantragen | Kanton Zürich",
+          "share": 1.0
+        },
+        {
+          "document_id": "doc-b84c4109386ec6f24386",
+          "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-b-oder-c-bewilligung-beantragen.html",
+          "title": "Familiennachzug durch Personen mit einer B- oder C-Bewilligung beantragen | Kanton Zürich",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "status": "cited_once",
+      "pages": 9,
+      "heading_path": [
+        "Bewilligung beantragen",
+        "Anleitung",
+        "Migrationsamt",
+        "Adresse"
+      ],
+      "text": "berninastrasse 45 postfach 8090 zürich route (google) adresse wurde kopiert adresse konnte nicht kopiert werden montag bis freitag 08.00 bis 16.30 uhr",
+      "characters": 150,
+      "cited_on": [
+        {
+          "document_id": "doc-f392ed9809d8c121bfb0",
+          "source_url": "https://www.zh.ch/de/sicherheitsdirektion/migrationsamt.html",
+          "title": "Migrationsamt | Kanton Zürich",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "status": "cited_once",
+      "pages": 5,
+      "heading_path": [
+        "Navigation",
+        "Sprunglink",
+        "Stadtkanzlei"
+      ],
+      "text": "stadthaus einbürgerungen stadthausquai 17 8001 zürich telefon +41 44 412 31 09",
+      "characters": 78,
+      "cited_on": [
+        {
+          "document_id": "doc-d254f967fba39da03b30",
+          "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung.html",
+          "title": "Einbürgerung und Stadtbürgerrecht | Stadt Zürich",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "status": "cited_once",
+      "pages": 5,
+      "heading_path": [
+        "Familiennachzug beantragen",
+        "Anleitung",
+        "Vielen Dank"
+      ],
+      "text": "vielen dank, ihr gesuch wird nun überprüft und bearbeitet. bitte beachten sie, dass die prüfung des gesuchs mehrere monate dauern kann.",
+      "characters": 135,
+      "cited_on": [
+        {
+          "document_id": "doc-b84c4109386ec6f24386",
+          "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-b-oder-c-bewilligung-beantragen.html",
+          "title": "Familiennachzug durch Personen mit einer B- oder C-Bewilligung beantragen | Kanton Zürich",
+          "share": 1.0
+        }
+      ]
     }
   ],
   "findings": {

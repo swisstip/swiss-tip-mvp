@@ -53,8 +53,11 @@ rights, the tax-at-source tariffs or the expat-life topics<br>
 **Coverage of the run:** `curation-coverage.md` next to the release lists,
 per candidate record of the run, which content sections a fact cites, which a
 disposition in `curation-coverage.yaml` settles and which are open; on this
-release 525 of 2,076 units are cited, 267 dispositioned and 1,284 open (see
-[LIMITATIONS.md](LIMITATIONS.md), "Retrieval limitations")<br>
+release 525 of 2,076 units are cited, 267 dispositioned and 1,284 open;
+repeated boilerplate (contact cards, closure notices) is set aside and traced
+to the page where a fact cites it, so the Migrationsamt address and hours are
+served once, from the office's own page (see [LIMITATIONS.md](LIMITATIONS.md),
+"Retrieval limitations")<br>
 **Publishers and basis:** every cited document names the institution that
 published it (105 federal, 51 cantonal, 40 municipal) and every excerpt what
 it is: 450 facts rest on an authority's own guidance, 77 on an office

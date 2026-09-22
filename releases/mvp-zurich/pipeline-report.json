@@ -3,8 +3,8 @@
   "pack": "mvp-zurich",
   "root": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\swiss-tip-mvp",
   "run": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich",
-  "started_at": "2026-09-22T10:01:14.650943+00:00",
-  "finished_at": "2026-09-22T10:01:18.422694+00:00",
+  "started_at": "2026-09-22T10:49:25.670389+00:00",
+  "finished_at": "2026-09-22T10:49:29.602462+00:00",
   "options": {
     "download": false,
     "retry_failed": false,
@@ -138,7 +138,7 @@
     },
     {
       "stage": "coverage",
-      "started_at": "2026-09-22T10:01:14.650973+00:00",
+      "started_at": "2026-09-22T10:49:25.670397+00:00",
       "status": "ran",
       "release_id": "mvp-zurich-2026-09-22-v1",
       "policy": "report",
@@ -154,6 +154,12 @@
       "dispositioned_sections": 267,
       "unclassified_sections": 1284,
       "boilerplate_sections": 76,
+      "repeated_texts": 9,
+      "repeated_by_citation": {
+        "cited_nowhere": 4,
+        "cited_on_several_pages": 2,
+        "cited_once": 3
+      },
       "documents": {
         "unclassified": 91,
         "partly_cited": 122,
@@ -167,7 +173,7 @@
         "new_under_rule": 0,
         "unused_rule": 0
       },
-      "seconds": 3.8
+      "seconds": 3.9
     },
     {
       "stage": "health",
