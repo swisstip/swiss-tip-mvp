@@ -828,7 +828,11 @@ implemented.
   covers, two variants of the Migrationsamt's notice of a closure on
   14 September 2026); and an accordion widget instruction on 25 Canton of
   Zurich pages lies inside cited block ranges on two of them, which a
-  reviewer may narrow. Facts cite 525
+  reviewer may narrow. The threshold is the pack's `boilerplate_min_pages`
+  (the default five, counted per host); below it the text index still marks
+  283 sections on 98 candidate records as repeated on two or more pages of
+  their host, and the reading views carry the mark on every block, so a
+  reader knows a card is a card before deciding what to cite. Facts cite 525
   units; 23 dispositions drafted by the assistant for the reviewer settle 267
   more (the French and Italian SEM pages as duplicates of the cited German
   ones, sixteen hub and link pages as navigation, five asylum pages against

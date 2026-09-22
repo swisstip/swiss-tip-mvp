@@ -3,8 +3,8 @@
   "pack": "mvp-zurich",
   "root": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\swiss-tip-mvp",
   "run": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich",
-  "started_at": "2026-09-22T10:49:25.670389+00:00",
-  "finished_at": "2026-09-22T10:49:29.602462+00:00",
+  "started_at": "2026-09-22T11:04:46.192286+00:00",
+  "finished_at": "2026-09-22T11:04:50.664184+00:00",
   "options": {
     "download": false,
     "retry_failed": false,
@@ -82,7 +82,7 @@
     },
     {
       "stage": "extract",
-      "started_at": "2026-09-22T09:56:22.694324+00:00",
+      "started_at": "2026-09-22T11:04:40.374197+00:00",
       "status": "ran",
       "records": 553,
       "eligible": 536,
@@ -92,11 +92,11 @@
       "failed_in_selection": 0,
       "superseded": 3,
       "unavailable": 5,
-      "seconds": 2.0
+      "seconds": 3.4
     },
     {
       "stage": "validate-text",
-      "started_at": "2026-09-22T09:56:24.728763+00:00",
+      "started_at": "2026-09-22T11:04:43.759167+00:00",
       "status": "ran",
       "records": 553,
       "blocks": 113452,
@@ -108,7 +108,7 @@
         "index matches the records on disk": "passed",
         "eligible records have a reading view": "passed"
       },
-      "seconds": 1.6
+      "seconds": 1.4
     },
     {
       "stage": "build",
@@ -138,7 +138,7 @@
     },
     {
       "stage": "coverage",
-      "started_at": "2026-09-22T10:49:25.670397+00:00",
+      "started_at": "2026-09-22T11:04:46.192300+00:00",
       "status": "ran",
       "release_id": "mvp-zurich-2026-09-22-v1",
       "policy": "report",
@@ -173,7 +173,7 @@
         "new_under_rule": 0,
         "unused_rule": 0
       },
-      "seconds": 3.9
+      "seconds": 4.5
     },
     {
       "stage": "health",

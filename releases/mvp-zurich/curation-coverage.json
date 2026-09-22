@@ -3,17 +3,17 @@
   "pack": "mvp-zurich",
   "release_id": "mvp-zurich-2026-09-22-v1",
   "content_sha256": "2823ab3fad3b042436d0fd1a38d913016031ac17562afe9dffcb774e80341be2",
-  "text_index_sha256": "9a568976fa0586b6d0ad71176f9927d053c1c7f3ff83f25788e305aabfe75ce9",
+  "text_index_sha256": "d144ffbc1f4cc8d01ad2369c9449a09080d0c60013270bf3967472aa0f34a60a",
   "dispositions_sha256": "1d14091c04d040ed7d3a2fa124f2f434fa75fb99bb45a9e682a496aa8dbab44b",
   "dispositions": 23,
   "policy": "report",
   "today": "2026-09-22",
-  "generated_at": "2026-09-22T10:49:29.582698+00:00",
+  "generated_at": "2026-09-22T11:04:50.642653+00:00",
   "rules": {
     "reference_kinds": [
       "plugin-document"
     ],
-    "boilerplate_min_documents": 5,
+    "boilerplate_min_pages": 5,
     "oversize_sections": 100,
     "repeated_match_share": 0.5
   },
@@ -25303,6 +25303,7 @@
   "repeated_sections": [
     {
       "status": "cited_nowhere",
+      "host": "svazurich.ch",
       "pages": 10,
       "heading_path": [],
       "text": "dieser browser ist veraltet und birgt sicherheitsrisiken. die webseite der sva zürich ist für diesen browser nicht optimiert. deshalb werden einige inhalte nich",
@@ -25311,6 +25312,7 @@
     },
     {
       "status": "cited_nowhere",
+      "host": "www.sem.admin.ch",
       "pages": 10,
       "heading_path": [
         "I. Ausländerbereich",
@@ -25322,6 +25324,7 @@
     },
     {
       "status": "cited_nowhere",
+      "host": "www.zh.ch",
       "pages": 9,
       "heading_path": [
         "Bewilligung beantragen",
@@ -25335,6 +25338,7 @@
     },
     {
       "status": "cited_nowhere",
+      "host": "www.zh.ch",
       "pages": 5,
       "heading_path": [
         "Familiennachzug beantragen",
@@ -25348,6 +25352,7 @@
     },
     {
       "status": "cited_on_several_pages",
+      "host": "www.zh.ch",
       "pages": 25,
       "heading_path": [
         "Prämienverbilligung",
@@ -25372,6 +25377,7 @@
     },
     {
       "status": "cited_on_several_pages",
+      "host": "www.zh.ch",
       "pages": 7,
       "heading_path": [
         "Einreisebewilligung für nahe Verwandte beantragen",
@@ -25415,6 +25421,7 @@
     },
     {
       "status": "cited_once",
+      "host": "www.zh.ch",
       "pages": 9,
       "heading_path": [
         "Bewilligung beantragen",
@@ -25435,6 +25442,7 @@
     },
     {
       "status": "cited_once",
+      "host": "www.stadt-zuerich.ch",
       "pages": 5,
       "heading_path": [
         "Navigation",
@@ -25454,6 +25462,7 @@
     },
     {
       "status": "cited_once",
+      "host": "www.zh.ch",
       "pages": 5,
       "heading_path": [
         "Familiennachzug beantragen",
