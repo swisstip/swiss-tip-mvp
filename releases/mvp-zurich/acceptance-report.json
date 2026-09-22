@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-acceptance-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-19-v15",
-  "content_sha256": "7e225933d2ab068edf3f89a9543b45ce97f1fdb192ab743c600e0ec5af9a82ac",
-  "suite_sha256": "86c0709a60d8fab5863e7cee09abaa738fbb78f2718ea7aa73dc28fa5bfdf94d",
-  "checked_at": "2026-09-19T18:46:48.702401+00:00",
+  "release_id": "mvp-zurich-2026-09-22-v1",
+  "content_sha256": "2823ab3fad3b042436d0fd1a38d913016031ac17562afe9dffcb774e80341be2",
+  "suite_sha256": "0ee9fde2a28ac6b96bc5fed54778c176542c2a78f00178d3710e92880e501714",
+  "checked_at": "2026-09-22T08:14:36.674139+00:00",
   "as_of": "2026-09-19",
   "passed": true,
-  "cases": 80,
-  "blocking": 80,
+  "cases": 82,
+  "blocking": 82,
   "failed": [],
   "quarantined": [],
   "quarantined_failed": [],
@@ -417,29 +417,42 @@
         {
           "tool": "resolve",
           "concept_ids": [
-            "permit-c"
+            "permit-c",
+            "permit-c-five-years"
           ],
           "as_of": "2026-09-19",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
-            "permit-c": "SUPPORTED"
+            "permit-c": "SUPPORTED",
+            "permit-c-five-years": "SUPPORTED"
           },
           "gaps": {
-            "permit-c": []
+            "permit-c": [],
+            "permit-c-five-years": []
           },
           "facts": {
             "permit-c": [
               "permit-c-1",
               "permit-c-2",
-              "permit-c-3"
+              "permit-c-3",
+              "permit-c-4"
+            ],
+            "permit-c-five-years": [
+              "permit-c-five-years-1",
+              "permit-c-five-years-2",
+              "permit-c-five-years-3"
             ]
           },
           "bases": {
             "permit-c": [
               "Federal act: AIG, SR 142.20, Art. 34",
               "Federal act: AIG, SR 142.20, Art. 34 Abs. 2 bis 4",
-              "Federal act: AIG, SR 142.20, Art. 34 Abs. 5"
+              "Federal act: AIG, SR 142.20, Art. 34 Abs. 5",
+              "Federal ordinance: VZAE, SR 142.201, Art. 62"
+            ],
+            "permit-c-five-years": [
+              "Federal authority guidance"
             ]
           },
           "passed": true
@@ -467,6 +480,14 @@
           "concept": "permit-c",
           "fact_ids": [
             "permit-c-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The five-year route rests on settlement agreements and names its states",
+          "concept": "permit-c-five-years",
+          "fact_ids": [
+            "permit-c-five-years-3"
           ],
           "passed": true
         }
@@ -1042,6 +1063,7 @@
               "Cantonal directive: Zürcher Steuerbuch 87.3, Rz 24"
             ],
             "tax-at-source-liability": [
+              "Federal act: DBG, SR 642.11, Art. 83",
               "Federal authority guidance",
               "Federal ordinance: QStV, SR 642.118.2, Art. 9 Abs. 1, referring to DBG, SR 642.11, Art. 89 Abs. 1 Bst. a",
               "Federal ordinance: QStV, SR 642.118.2, Art. 9 Abs. 3",
@@ -1086,6 +1108,7 @@
           "bases": {
             "zh-tax-at-source-liability": [],
             "tax-at-source-liability": [
+              "Federal act: DBG, SR 642.11, Art. 83",
               "Federal authority guidance",
               "Federal ordinance: QStV, SR 642.118.2, Art. 9 Abs. 1, referring to DBG, SR 642.11, Art. 89 Abs. 1 Bst. a",
               "Federal ordinance: QStV, SR 642.118.2, Art. 9 Abs. 3",
@@ -1227,6 +1250,7 @@
               "Cantonal directive: Zürcher Steuerbuch 87.3, Rz 24"
             ],
             "tax-at-source-liability": [
+              "Federal act: DBG, SR 642.11, Art. 83",
               "Federal authority guidance",
               "Federal ordinance: QStV, SR 642.118.2, Art. 9 Abs. 1, referring to DBG, SR 642.11, Art. 89 Abs. 1 Bst. a",
               "Federal ordinance: QStV, SR 642.118.2, Art. 9 Abs. 3",
@@ -1732,11 +1756,14 @@
               "zh-health-insurance-exemption-2",
               "zh-health-insurance-exemption-3",
               "zh-health-insurance-exemption-4",
-              "zh-health-insurance-exemption-5"
+              "zh-health-insurance-exemption-5",
+              "zh-health-insurance-exemption-6",
+              "zh-health-insurance-exemption-7"
             ]
           },
           "bases": {
             "health-insurance-deadline": [
+              "Federal act: KVG, SR 832.10, Art. 3",
               "Federal authority guidance"
             ],
             "zh-health-insurance-exemption": [
@@ -2114,9 +2141,10 @@
           },
           "bases": {
             "naturalisation-ordinary": [
+              "Federal act: BüG, SR 141.0, Art. 11",
+              "Federal act: BüG, SR 141.0, Art. 9",
               "Federal authority guidance",
-              "Federal authority guidance, referring to BüG, SR 141.0, Art. 9",
-              "Federal authority guidance, referring to BüV, SR 141.01, Art. 6"
+              "Federal ordinance: BüV, SR 141.01, Art. 6"
             ],
             "zh-naturalisation-ordinary": [
               "Cantonal authority guidance"
@@ -2184,9 +2212,10 @@
           },
           "bases": {
             "naturalisation-ordinary": [
+              "Federal act: BüG, SR 141.0, Art. 11",
+              "Federal act: BüG, SR 141.0, Art. 9",
               "Federal authority guidance",
-              "Federal authority guidance, referring to BüG, SR 141.0, Art. 9",
-              "Federal authority guidance, referring to BüV, SR 141.01, Art. 6"
+              "Federal ordinance: BüV, SR 141.01, Art. 6"
             ],
             "zh-naturalisation-ordinary": [
               "Cantonal authority guidance"
@@ -2317,8 +2346,8 @@
           "expect_concept": "naturalisation-facilitated-spouse",
           "hits": [
             "naturalisation-facilitated-spouse",
-            "city-zurich-naturalisation-facilitated",
-            "zh-naturalisation-facilitated"
+            "naturalisation-third-generation",
+            "city-zurich-naturalisation-facilitated"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -2376,6 +2405,7 @@
           },
           "bases": {
             "naturalisation-facilitated-spouse": [
+              "Federal act: BüG, SR 141.0, Art. 21",
               "Federal authority guidance",
               "Federal authority guidance, referring to BüV, SR 141.01, Art. 25"
             ],
@@ -2709,8 +2739,8 @@
           "expect_concept": "city-zurich-population-office",
           "hits": [
             "city-zurich-population-office",
-            "city-zurich-departure",
-            "city-zurich-arrival"
+            "zh-permit-card",
+            "city-zurich-departure"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -3061,7 +3091,8 @@
           "expect_concept": "city-zurich-household-waste",
           "hits": [
             "city-zurich-household-waste",
-            "city-zurich-organic-paper-cardboard"
+            "city-zurich-organic-paper-cardboard",
+            "city-zurich-waste-sorting"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -3151,7 +3182,7 @@
           "hits": [
             "city-zurich-bulky-waste-pickup",
             "city-zurich-recycling-centres",
-            "city-zurich-hazardous-waste"
+            "city-zurich-waste-sorting"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -3341,8 +3372,8 @@
           "expect_concept": "city-zurich-parking-permits",
           "hits": [
             "city-zurich-parking-permits",
-            "city-zurich-arrival",
-            "city-zurich-arrival-documents"
+            "permit-card-third-country",
+            "health-insurance-deadline"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -4033,7 +4064,7 @@
           "hits": [
             "eu-employment-registration-deadline",
             "zh-eu-nonworking",
-            "zh-eu-registration"
+            "fza-employee-permit"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -4305,12 +4336,12 @@
       "steps": [
         {
           "tool": "search",
-          "query": "ordinary naturalisation requirements years of residence municipality Bern cost",
+          "query": "ordinary naturalisation conditions settlement permit ten years residence Bern",
           "expect_concept": "naturalisation-ordinary",
           "hits": [
-            "zh-naturalisation-ordinary",
             "naturalisation-ordinary",
-            "city-zurich-naturalisation"
+            "permit-c",
+            "zh-naturalisation-ordinary"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -4366,9 +4397,10 @@
           },
           "bases": {
             "naturalisation-ordinary": [
+              "Federal act: BüG, SR 141.0, Art. 11",
+              "Federal act: BüG, SR 141.0, Art. 9",
               "Federal authority guidance",
-              "Federal authority guidance, referring to BüG, SR 141.0, Art. 9",
-              "Federal authority guidance, referring to BüV, SR 141.01, Art. 6"
+              "Federal ordinance: BüV, SR 141.01, Art. 6"
             ],
             "zh-naturalisation-ordinary": [],
             "city-zurich-naturalisation": [],
@@ -4591,6 +4623,7 @@
           },
           "bases": {
             "tax-at-source-liability": [
+              "Federal act: DBG, SR 642.11, Art. 83",
               "Federal authority guidance",
               "Federal ordinance: QStV, SR 642.118.2, Art. 9 Abs. 1, referring to DBG, SR 642.11, Art. 89 Abs. 1 Bst. a",
               "Federal ordinance: QStV, SR 642.118.2, Art. 9 Abs. 3",
@@ -5460,8 +5493,8 @@
           "expect_concept": null,
           "hits": [
             "aig-study",
-            "family-swiss",
-            "zh-tax-at-source-liability"
+            "city-zurich-naturalisation-language",
+            "family-swiss"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -5485,7 +5518,7 @@
           "hits": [
             "ahv-contribution-refund",
             "city-zurich-marriage",
-            "zh-initial-rent-form"
+            "permit-c-five-years"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -5509,7 +5542,7 @@
           "hits": [
             "aig-short-stay",
             "third-country-work",
-            "uk-new-employment"
+            "third-country-work-conditions"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -5683,8 +5716,8 @@
           "expect_concept": "entry-visa-types",
           "hits": [
             "entry-visa-types",
-            "zh-naturalisation-ordinary",
-            "third-country-work-procedure"
+            "third-country-work-procedure",
+            "uk-new-employment"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -6007,9 +6040,9 @@
           "query": "family reunification with an L permit in Zurich",
           "expect_concept": "zh-family-l-permit",
           "hits": [
+            "zh-family-b-c-permit",
             "zh-family-l-permit",
-            "fza-family-members",
-            "zh-family-refugee-asylum"
+            "fza-family-members"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -7261,6 +7294,191 @@
           "concept": "moving-goods-customs",
           "fact_ids": [
             "moving-goods-customs-6"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-65",
+      "label": "German citizen after five years in Zurich",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "settlement permit after five years German citizen",
+          "expect_concept": "zh-permit-c-five-years",
+          "hits": [
+            "zh-permit-c-five-years",
+            "permit-c-five-years",
+            "fza-self-employment"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "permit-c-five-years",
+            "zh-permit-c-five-years"
+          ],
+          "as_of": "2026-09-19",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "permit-c-five-years": "SUPPORTED",
+            "zh-permit-c-five-years": "SUPPORTED"
+          },
+          "gaps": {
+            "permit-c-five-years": [
+              "more_specific_jurisdiction_available"
+            ],
+            "zh-permit-c-five-years": [
+              "more_specific_jurisdiction_available"
+            ]
+          },
+          "facts": {
+            "permit-c-five-years": [
+              "permit-c-five-years-1",
+              "permit-c-five-years-2",
+              "permit-c-five-years-3"
+            ],
+            "zh-permit-c-five-years": [
+              "zh-permit-c-five-years-1",
+              "zh-permit-c-five-years-2",
+              "zh-permit-c-five-years-3",
+              "zh-permit-c-five-years-4",
+              "zh-permit-c-five-years-5",
+              "zh-permit-c-five-years-6"
+            ]
+          },
+          "bases": {
+            "permit-c-five-years": [
+              "Federal authority guidance"
+            ],
+            "zh-permit-c-five-years": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Germany is among the countries with a settlement agreement",
+          "concept": "zh-permit-c-five-years",
+          "fact_ids": [
+            "zh-permit-c-five-years-4"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Five years without interruption, integration and no revocation grounds",
+          "concept": "zh-permit-c-five-years",
+          "fact_ids": [
+            "zh-permit-c-five-years-3"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "German nationals submit no language evidence",
+          "concept": "zh-permit-c-five-years",
+          "fact_ids": [
+            "zh-permit-c-five-years-6"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "SEM names the five-year states federally",
+          "concept": "permit-c-five-years",
+          "fact_ids": [
+            "permit-c-five-years-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-66",
+      "label": "US citizen asking about the five-year settlement permit",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "US citizen settlement permit five years Zurich",
+          "expect_concept": "zh-permit-c-five-years",
+          "hits": [
+            "zh-permit-c-five-years",
+            "zh-foreign-licence-exchange",
+            "permit-c-five-years"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "zh-permit-c-five-years"
+          ],
+          "as_of": "2026-09-19",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "zh-permit-c-five-years": "SUPPORTED"
+          },
+          "gaps": {
+            "zh-permit-c-five-years": [
+              "more_specific_jurisdiction_available"
+            ]
+          },
+          "facts": {
+            "zh-permit-c-five-years": [
+              "zh-permit-c-five-years-1",
+              "zh-permit-c-five-years-2",
+              "zh-permit-c-five-years-3",
+              "zh-permit-c-five-years-4",
+              "zh-permit-c-five-years-5",
+              "zh-permit-c-five-years-6"
+            ]
+          },
+          "bases": {
+            "zh-permit-c-five-years": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The United States is among the countries with a settlement treaty",
+          "concept": "zh-permit-c-five-years",
+          "fact_ids": [
+            "zh-permit-c-five-years-5"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Five years without interruption, integration and no revocation grounds",
+          "concept": "zh-permit-c-five-years",
+          "fact_ids": [
+            "zh-permit-c-five-years-3"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "German at A2 spoken and A1 written",
+          "concept": "zh-permit-c-five-years",
+          "fact_ids": [
+            "zh-permit-c-five-years-6"
           ],
           "passed": true
         }

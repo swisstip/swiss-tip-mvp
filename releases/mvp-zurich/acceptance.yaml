@@ -288,19 +288,23 @@ cases:
   question: 'I am an Indian citizen. I have lived in Switzerland for ten years: three years on an L permit and then
     seven years on a B permit. Can I apply for a C permit now?'
   expected_answer: 'The Art. 34(2) conditions: ten years on L or B permits, the last five continuously on B, integration,
-    no revocation grounds; temporary stays do not count toward the continuous five years; shorter routes exist in
-    the law but are not published, so no five-year rule is quoted for any nationality. Applied to the user, the
-    ten-year total and the five continuous years on B are met; integration and revocation grounds remain for the
-    authority. The Fedlex AIG page is cited.'
-  trap: Counting ten years of presence and saying yes; quoting the five-year rule of some nationals from memory.
+    no revocation grounds; temporary stays do not count toward the continuous five years. The five-year routes the
+    release serves rest on settlement agreements, and SEM''s list of those states does not include India, so the
+    ten-year rule applies to the user. Applied to the user, the ten-year total and the five continuous years on B
+    are met; integration and revocation grounds remain for the authority. The Fedlex AIG page and the SEM page are
+    cited.'
+  trap: Counting ten years of presence and saying yes; quoting a five-year rule for a nationality the served list
+    does not name.
   steps:
   - resolve:
       concept_ids:
       - permit-c
+      - permit-c-five-years
       context:
         population: third_country
       expect_status:
         permit-c: SUPPORTED
+        permit-c-five-years: SUPPORTED
   claims:
   - claim: Ten years on L or B permits are required
     concept: permit-c
@@ -320,6 +324,13 @@ cases:
     - not a universal waiting period
     excerpt_contains:
     - kann nach einem kürzeren Aufenthalt erteilt werden
+  - claim: The five-year route rests on settlement agreements and names its states
+    concept: permit-c-five-years
+    fact_id: permit-c-five-years-3
+    statement_contains:
+    - after a lawful and uninterrupted stay of five years
+    excerpt_contains:
+    - ordnungsgemässen und ununterbrochenen Aufenthalt von fünf Jahren
   answer:
     criteria:
     - A1
@@ -333,11 +344,12 @@ cases:
       last_five_years_continuous: (last )?five years|5 years|fünf
       integration_and_revocation_conditions: integration
     must_not:
-      eu_five_year_rule_from_memory: EU/EFTA (citizens|nationals)[^.]*(5|five) years
+      five_year_rule_applied_to_the_user: you (can|could|may|will|would)[^.]{0,80}(5|five) years
     cites:
       fedlex: fedlex
     resolved:
     - permit-c
+    - permit-c-five-years
 - case_id: UAT-6
   label: social assistance and the permit
   spec: docs/product/user-acceptance-tests.md#uat-6-social-assistance-and-the-permit
@@ -3059,7 +3071,7 @@ cases:
     decides eligibility.'
   steps:
   - search:
-      query: ordinary naturalisation requirements years of residence municipality Bern cost
+      query: ordinary naturalisation conditions settlement permit ten years residence Bern
       expect_concept: naturalisation-ordinary
       expect_strength: strong
   - resolve:
@@ -5129,3 +5141,140 @@ cases:
       customs: bazg\.admin\.ch|ch\.ch/de/auslander
     resolved:
     - moving-goods-customs
+- case_id: UAT-65
+  label: German citizen after five years in Zurich
+  spec: docs/product/user-acceptance-tests.md#uat-65-german-citizen-after-five-years-in-zurich
+  question: As a German citizen with five years in Zurich, can I get the settlement permit already, or only after
+    ten years?
+  expected_answer: 'No: Germany is one of the countries with a settlement agreement, and the Canton of Zurich grants
+    the settlement permit to their nationals after five years of uninterrupted residence, provided they are well
+    integrated and meet the integration criteria and no grounds for revocation are present. German nationals submit
+    no language evidence. SEM names Germany in the same list for the five-year route. The conditions are the
+    authority''s to assess; the SEM and Zurich Migrationsamt pages are cited.'
+  trap: Applying the ten-year rule of AIG Article 34(2) to every nationality, or asking a German national for the
+    German language certificate the page exempts them from.
+  steps:
+  - search:
+      query: settlement permit after five years German citizen
+      expect_concept: zh-permit-c-five-years
+      expect_strength: strong
+  - resolve:
+      concept_ids:
+      - permit-c-five-years
+      - zh-permit-c-five-years
+      jurisdiction:
+        canton_code: CH-ZH
+      expect_status:
+        permit-c-five-years: SUPPORTED
+        zh-permit-c-five-years: SUPPORTED
+  claims:
+  - claim: Germany is among the countries with a settlement agreement
+    concept: zh-permit-c-five-years
+    fact_id: zh-permit-c-five-years-4
+    statement_contains:
+    - Belgium, Germany, Denmark
+    excerpt_contains:
+    - Länder mit Niederlassungsvereinbarungen
+  - claim: Five years without interruption, integration and no revocation grounds
+    concept: zh-permit-c-five-years
+    fact_id: zh-permit-c-five-years-3
+    statement_contains:
+    - five years without interruption
+    excerpt_contains:
+    - fünf Jahre ununterbrochen in der Schweiz gelebt haben
+  - claim: German nationals submit no language evidence
+    concept: zh-permit-c-five-years
+    fact_id: zh-permit-c-five-years-6
+    statement_contains:
+    - submit no language evidence
+    excerpt_contains:
+    - müssen keinen Sprachnachweis vorlegen
+  - claim: SEM names the five-year states federally
+    concept: permit-c-five-years
+    fact_id: permit-c-five-years-3
+    statement_contains:
+    - after a lawful and uninterrupted stay of five years
+    excerpt_contains:
+    - ordnungsgemässen und ununterbrochenen Aufenthalt von fünf Jahren
+  answer:
+    criteria:
+    - A1
+    - A2
+    - A3
+    - A4
+    - A5
+    - A6
+    - A7
+    must_mention:
+      five_years: five years|5 years
+      no_language_certificate: no language|without a language|not.{0,20}language
+    cites:
+      zurich: zh\.ch
+    resolved:
+    - permit-c-five-years
+    - zh-permit-c-five-years
+- case_id: UAT-66
+  label: US citizen asking about the five-year settlement permit
+  spec: docs/product/user-acceptance-tests.md#uat-66-us-citizen-asking-about-the-five-year-settlement-permit
+  question: I'm American and have been living in Zurich for five years. My Italian colleague told me she can apply
+    for the C permit now. Does that apply to me too?
+  expected_answer: 'Yes, by nationality: the Canton of Zurich lists the United States of America among the countries
+    with settlement treaties, whose nationals can obtain the settlement permit after five years of uninterrupted
+    residence with the integration criteria met and no grounds for revocation. Unlike her, the user submits
+    evidence of German at A2 spoken and A1 written, because the exemption covers Germany, Austria and Liechtenstein
+    only. SEM''s five-year list is the EU/EFTA one and does not name the United States; the Zurich page is what
+    covers it. The conditions are the authority''s to assess.'
+  trap: Answering ten years because the user is a third-country national, or carrying the language exemption of
+    Germany, Austria and Liechtenstein over to other nationals.
+  steps:
+  - search:
+      query: US citizen settlement permit five years Zurich
+      expect_concept: zh-permit-c-five-years
+      expect_strength: strong
+  - resolve:
+      concept_ids:
+      - zh-permit-c-five-years
+      jurisdiction:
+        canton_code: CH-ZH
+      context:
+        population: third_country
+      expect_status:
+        zh-permit-c-five-years: SUPPORTED
+  claims:
+  - claim: The United States is among the countries with a settlement treaty
+    concept: zh-permit-c-five-years
+    fact_id: zh-permit-c-five-years-5
+    statement_contains:
+    - United States of America
+    excerpt_contains:
+    - Vereinigte Staaten von Amerika
+  - claim: Five years without interruption, integration and no revocation grounds
+    concept: zh-permit-c-five-years
+    fact_id: zh-permit-c-five-years-3
+    statement_contains:
+    - five years without interruption
+    excerpt_contains:
+    - fünf Jahre ununterbrochen in der Schweiz gelebt haben
+  - claim: German at A2 spoken and A1 written
+    concept: zh-permit-c-five-years
+    fact_id: zh-permit-c-five-years-6
+    statement_contains:
+    - A2 spoken and A1 written
+    excerpt_contains:
+    - Niveau A2 mündlich und auf dem Niveau A1 schriftlich
+  answer:
+    criteria:
+    - A1
+    - A2
+    - A3
+    - A4
+    - A5
+    - A6
+    - A7
+    must_mention:
+      five_years: five years|5 years
+      language_evidence: A2|language
+    cites:
+      zurich: zh\.ch
+    resolved:
+    - zh-permit-c-five-years

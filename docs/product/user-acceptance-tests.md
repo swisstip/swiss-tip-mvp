@@ -1,6 +1,6 @@
 # User acceptance tests
 
-**Last update:** 21 September 2026<br>
+**Last update:** 22 September 2026<br>
 **Scope:** the two standing cases of section 3.3 of the
 [functional specification](https://github.com/swisstip/swiss-tip/blob/main/docs/product/functional-specification.md), four further
 cases chosen because the popular answer misses an exception in the law, a
@@ -17,7 +17,8 @@ from a Zurich municipality other than the city, which expect everything the
 release serves for that place and nothing published for another; six
 entry-and-visa cases (UAT-45 to UAT-50); three cases on voting rights and the
 tax-at-source tariff (UAT-51 to UAT-53); eleven expat-life cases (UAT-54 to
-UAT-64); and sixteen
+UAT-64); two settlement-permit cases on the five-year routes by nationality
+(UAT-65 and UAT-66); and sixteen
 server-only decline cases (DECLINE-1 to
 DECLINE-9 and SEARCH-DECLINE-1 to SEARCH-DECLINE-7) that check the server
 rejects a request the release does not cover, at the resolve step and at
@@ -79,7 +80,7 @@ citation, context and efficiency requirements below apply in both modes.
 | UAT-2e | Third-country national (an Indian citizen), in German: may I work in Switzerland, under which conditions | Mixing in EU/EFTA rules; inventing quotas and procedures; translating the question into English before searching, and answering in English, although the release carries German aliases and the search accepts German | `third-country-work`, `aig-work-permit`, `permit-authority`, `permit-b` |
 | UAT-3 | B permit holder wants to bring a 13-year-old child after four years | A plain yes; the twelve-month deadline for children over twelve is missed | `family-deadlines`, `family-b` |
 | UAT-4 | Spouse of a Swiss citizen separating after two years of marriage | Three years of marriage treated as the only route; loss predicted as certain | `family-separation`, `family-swiss` |
-| UAT-5 | Ten years in Switzerland, three on an L permit: C permit now? | Counting presence instead of the last five continuous years on B; quoting a five-year rule from memory | `permit-c` |
+| UAT-5 | Ten years in Switzerland, three on an L permit: C permit now? | Counting presence instead of the last five continuous years on B; carrying the five-year rule over to a nationality the served list does not name | `permit-c`, `permit-c-five-years` |
 | UAT-6 | B permit holder about to need social assistance: is the permit revoked? | Automatic revocation asserted | `social-assistance-review`, `permit-b` |
 | UAT-7 | Swiss citizen, in Zurich German: residence permit for a Brazilian spouse, and by when to claim reunification | Applying the Art. 44 conditions (housing, income, language) to a Swiss sponsor; translating the dialect into English before searching | `family-swiss`, `family-deadlines`, `permit-authority` |
 | UAT-8 | German citizen leaving for good: can the AHV contributions be refunded | A plain yes with the refund form; the refund exists only for nationals of states without a social security agreement and of the named agreement states | `ahv-contribution-refund`, `ahv-pension-abroad` (planned) |
@@ -139,6 +140,8 @@ citation, context and efficiency requirements below apply in both modes.
 | UAT-62 | Ten months of work on a B permit, job lost: unemployment benefit? | A plain yes because of the B permit, ignoring the 12 months of contributions | `unemployment-benefit`, `zh-unemployment-benefit` |
 | UAT-63 | Cleaner working six hours a week: insured for a skiing accident? | The employer's insurance assumed to cover leisure accidents whatever the hours | `accident-insurance` |
 | UAT-64 | Moving from Munich with furniture and a car, in German: customs duty? | Duty on everything, or duty-free without prior use and the form | `moving-goods-customs` |
+| UAT-65 | German citizen, five years in Zurich: settlement permit already, or only after ten years? | The ten-year rule applied to every nationality; a language certificate asked of a German national | `permit-c-five-years`, `zh-permit-c-five-years` |
+| UAT-66 | US citizen, five years in Zurich, after an Italian colleague's remark: does the five-year route apply? | Ten years because the user is a third-country national; the language exemption carried over from Germany, Austria and Liechtenstein | `zh-permit-c-five-years` |
 
 ## Acceptance criteria that apply to every case
 
@@ -159,8 +162,9 @@ bytes of returned tool-output strings: 20,000 and 30,000 bytes respectively,
 excluding transport framing.
 
 A7, for UAT-3 to UAT-6, UAT-8 to UAT-17, the daily-life cases with a
-named trap (UAT-24 to UAT-26, UAT-28 to UAT-30, UAT-32 and UAT-33) and the
-cross-jurisdiction cases UAT-40 and UAT-43: the grounded answer states the
+named trap (UAT-24 to UAT-26, UAT-28 to UAT-30, UAT-32 and UAT-33), the
+cross-jurisdiction cases UAT-40 and UAT-43 and the settlement-permit cases
+UAT-65 and UAT-66: the grounded answer states the
 exception in the law that the popular answer misses. The control run without
 the server shows whether the model states it on its own; the comparison is
 part of the record, not of the verdict.
@@ -385,37 +389,41 @@ unconditional permit; ten years on L or B permits with the last five years
 continuously on B, integration and no revocation grounds; paragraphs 3 and 4
 offer shorter routes so ten years is not universal; temporary stays do not
 count toward the continuous five years, education stays count under a
-condition).
+condition) and, since 22 September 2026, the five-year routes by nationality
+(`permit-c-five-years`: SEM's list of the states whose nationals reach the
+settlement permit after five years, and that the free movement agreement
+itself carries no settlement provisions).
 
 **User:** "I am an Indian citizen. I have lived in Switzerland for ten years:
 three years on an L permit and then seven years on a B permit. Can I apply
 for a C permit now?"
 
 **The trap.** The popular answer counts ten years of presence and says yes,
-or quotes the five-year rule of EU/EFTA and some other nationals from
-memory. The law asks for the last five years continuously on a residence
-permit, excludes temporary stays from that period, and makes the ten years
-a baseline rather than a universal rule.
+or carries the five-year rule of the settlement-agreement states over to a
+nationality the served list does not name. The law asks for the last five
+years continuously on a residence permit, excludes temporary stays from that
+period, and makes the ten years a baseline rather than a universal rule.
 
 **Expected**
 
-- The assistant resolves `permit-c` (no context).
+- The assistant resolves `permit-c` and `permit-c-five-years`.
 - The answer states the Art. 34(2) conditions: ten years on L or B permits,
-  the last five continuous on B, integration, no revocation grounds; that
-  temporary stays do not count toward the continuous five years; and that
-  shorter routes exist in the law but are not published in this release,
-  so it does not quote a five-year rule for any nationality.
+  the last five continuous on B, integration, no revocation grounds; and that
+  temporary stays do not count toward the continuous five years.
+- It says why the five-year route does not help this user: it rests on
+  settlement agreements, and the served list of those states does not name
+  India.
 - Applied to the user: seven continuous years on B satisfy the five-year
   condition and the ten-year total is met; integration and revocation
   grounds remain to be assessed by the authority.
-- It cites the Fedlex AIG page.
+- It cites the Fedlex AIG page and the SEM page.
 
 | ID | Variation | Expected |
 | --- | --- | --- |
 | 5a | Five years on L, five on B | Ten years met, five continuous years on B met on the day; same caveats |
 | 5b | Eight years on B with a one-year gap abroad in the last five | The continuous five-year condition is the issue; the release states the condition and does not decide the gap |
 | 5c | Four years of studies, then six years on B | Education stays count only when followed by two uninterrupted years with a residence permit for a durable stay; the assistant states the condition rather than adding the years |
-| 5d | EU/EFTA citizen asks the same | The release publishes no nationality-based shorter period; the assistant says so rather than quoting five years from memory |
+| 5d | EU/EFTA citizen asks the same | Covered since 22 September 2026: if the state is on the served list the five-year route applies (UAT-65), and for the EU states the list does not name, the ten-year rule stands |
 | 5e | The user asks whether a C permit can be taken away | Not published (revocation grounds are referenced, not served); the assistant says so |
 
 ## UAT-6: social assistance and the permit
@@ -2034,6 +2042,50 @@ a week with the same employer; below that through the health insurance.
 
 Duty-free with the move of residence, 6 months of prior use and continued
 use, form 18.44 at the entry customs office, within two years of the move.
+
+## Settlement-permit cases
+
+UAT-65 and UAT-66 check the two concepts added on 22 September 2026,
+`permit-c-five-years` (SEM) and `zh-permit-c-five-years` (the Migration
+Office of the Canton of Zurich), which publish the five-year routes to the
+settlement permit that rest on settlement agreements and treaties. Until
+then the release served the ten-year rule of AIG Art. 34 alone, and the
+recorded UAT-5 sessions showed a caller inventing the exclusion it could
+not read anywhere ("there are no special EU/EFTA shortcuts that apply to
+you"). Both pages were already in the catalogue and the text dataset; no
+source was added. Budgets and criteria A1 to A6 are those of the
+single-turn cases, A7 applies to both. The nine facts are
+`assistant-authored-unreviewed` until the reviewer confirms them, so both
+cases run against unreviewed statements and every result's `limitations`
+says so. The questions, expected answers, traps and claims are in
+`releases/mvp-zurich/acceptance.yaml`.
+
+Neither case decides an application: the pages state conditions, and
+whether a particular person meets them is the Migration Office's
+assessment. The distinction the Migration Office's own directive draws
+between an agreement that confers an entitlement and a treaty that does not
+is **not** published here: the web pages put both lists under "can obtain",
+and the release says no more than they do.
+
+### UAT-65: German citizen after five years in Zurich
+
+"As a German citizen with five years in Zurich, can I get the settlement
+permit already, or only after ten years?" Germany is on the list of
+countries with a settlement agreement; five years of uninterrupted
+residence, the integration criteria and no grounds for revocation; German
+nationals submit no language evidence. SEM's page names Germany in the same
+five-year list.
+
+### UAT-66: US citizen asking about the five-year settlement permit
+
+"I'm American and have been living in Zurich for five years. My Italian
+colleague told me she can apply for the C permit now. Does that apply to me
+too?" The Canton of Zurich lists the United States of America among the
+countries with settlement treaties, so the five-year route is open on the
+same conditions; unlike the colleague and unlike German, Austrian and
+Liechtenstein nationals, the user submits evidence of German at A2 spoken
+and A1 written. SEM's five-year list is the EU/EFTA one and does not name
+the United States.
 
 ## Decline cases
 

@@ -1,13 +1,13 @@
 {
-  "release_id": "mvp-zurich-2026-09-19-v15",
-  "built_at": "2026-09-19T18:39:56.211713+00:00",
+  "release_id": "mvp-zurich-2026-09-22-v1",
+  "built_at": "2026-09-22T08:07:00.776866+00:00",
   "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich\\text",
-  "concepts": 133,
-  "facts": 601,
-  "evidence": 800,
-  "documents": 164,
+  "concepts": 151,
+  "facts": 687,
+  "evidence": 900,
+  "documents": 196,
   "citation_outcomes": {
-    "same-snapshot": 800
+    "same-snapshot": 900
   },
   "dropped": [],
   "facts_resolved": [
@@ -329,6 +329,90 @@
       "basis": "Federal act: AIG, SR 142.20, Art. 34 Abs. 5"
     },
     {
+      "fact_id": "permit-c-4",
+      "citations": [
+        {
+          "document_id": "doc-aac76776dd74c7f8441c",
+          "outcome": "same-snapshot",
+          "start": 62609,
+          "end": 63326,
+          "block_ids": [
+            "doc-aac76776dd74c7f8441c:b00665",
+            "doc-aac76776dd74c7f8441c:b00666",
+            "doc-aac76776dd74c7f8441c:b00667",
+            "doc-aac76776dd74c7f8441c:b00668",
+            "doc-aac76776dd74c7f8441c:b00669"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: VZAE, SR 142.201, Art. 62",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/2007/759/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: VZAE, SR 142.201, Art. 62"
+    },
+    {
+      "fact_id": "permit-c-five-years-1",
+      "citations": [
+        {
+          "document_id": "doc-4c2cfb5c0cacd4b77321",
+          "outcome": "same-snapshot",
+          "start": 2439,
+          "end": 2854,
+          "block_ids": [
+            "doc-4c2cfb5c0cacd4b77321:b00081"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "permit-c-five-years-2",
+      "citations": [
+        {
+          "document_id": "doc-4c2cfb5c0cacd4b77321",
+          "outcome": "same-snapshot",
+          "start": 2856,
+          "end": 3670,
+          "block_ids": [
+            "doc-4c2cfb5c0cacd4b77321:b00082"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "permit-c-five-years-3",
+      "citations": [
+        {
+          "document_id": "doc-4c2cfb5c0cacd4b77321",
+          "outcome": "same-snapshot",
+          "start": 2856,
+          "end": 3670,
+          "block_ids": [
+            "doc-4c2cfb5c0cacd4b77321:b00082"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
       "fact_id": "permit-types-1",
       "citations": [
         {
@@ -351,6 +435,289 @@
         }
       ],
       "basis": "Portal summary of federal rules"
+    },
+    {
+      "fact_id": "permit-card-eu-efta-1",
+      "citations": [
+        {
+          "document_id": "doc-b9f0f7f478a3e7753470",
+          "outcome": "same-snapshot",
+          "start": 2327,
+          "end": 3399,
+          "block_ids": [
+            "doc-b9f0f7f478a3e7753470:b00078",
+            "doc-b9f0f7f478a3e7753470:b00079",
+            "doc-b9f0f7f478a3e7753470:b00080",
+            "doc-b9f0f7f478a3e7753470:b00081",
+            "doc-b9f0f7f478a3e7753470:b00082",
+            "doc-b9f0f7f478a3e7753470:b00083"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "permit-card-eu-efta-2",
+      "citations": [
+        {
+          "document_id": "doc-83c102f8041c8d7cb98d",
+          "outcome": "same-snapshot",
+          "start": 2335,
+          "end": 3320,
+          "block_ids": [
+            "doc-83c102f8041c8d7cb98d:b00078",
+            "doc-83c102f8041c8d7cb98d:b00079",
+            "doc-83c102f8041c8d7cb98d:b00080",
+            "doc-83c102f8041c8d7cb98d:b00081",
+            "doc-83c102f8041c8d7cb98d:b00082"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "permit-card-eu-efta-3",
+      "citations": [
+        {
+          "document_id": "doc-a08db9ee519e5d5386e4",
+          "outcome": "same-snapshot",
+          "start": 2371,
+          "end": 2897,
+          "block_ids": [
+            "doc-a08db9ee519e5d5386e4:b00078",
+            "doc-a08db9ee519e5d5386e4:b00079",
+            "doc-a08db9ee519e5d5386e4:b00080",
+            "doc-a08db9ee519e5d5386e4:b00081"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "permit-card-eu-efta-4",
+      "citations": [
+        {
+          "document_id": "doc-69fcd94e262dfe24f7da",
+          "outcome": "same-snapshot",
+          "start": 2327,
+          "end": 3600,
+          "block_ids": [
+            "doc-69fcd94e262dfe24f7da:b00078",
+            "doc-69fcd94e262dfe24f7da:b00079",
+            "doc-69fcd94e262dfe24f7da:b00080",
+            "doc-69fcd94e262dfe24f7da:b00081",
+            "doc-69fcd94e262dfe24f7da:b00082"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "permit-card-third-country-1",
+      "citations": [
+        {
+          "document_id": "doc-7fb93c70047754936bc4",
+          "outcome": "same-snapshot",
+          "start": 2310,
+          "end": 2793,
+          "block_ids": [
+            "doc-7fb93c70047754936bc4:b00077",
+            "doc-7fb93c70047754936bc4:b00078",
+            "doc-7fb93c70047754936bc4:b00079",
+            "doc-7fb93c70047754936bc4:b00080"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "permit-card-third-country-2",
+      "citations": [
+        {
+          "document_id": "doc-15b24dfd1b4e56b1520e",
+          "outcome": "same-snapshot",
+          "start": 2278,
+          "end": 3431,
+          "block_ids": [
+            "doc-15b24dfd1b4e56b1520e:b00078",
+            "doc-15b24dfd1b4e56b1520e:b00079",
+            "doc-15b24dfd1b4e56b1520e:b00080",
+            "doc-15b24dfd1b4e56b1520e:b00081"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "permit-card-third-country-3",
+      "citations": [
+        {
+          "document_id": "doc-f2a82e55188699dfb2c9",
+          "outcome": "same-snapshot",
+          "start": 2667,
+          "end": 3423,
+          "block_ids": [
+            "doc-f2a82e55188699dfb2c9:b00085",
+            "doc-f2a82e55188699dfb2c9:b00086"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "travel-documents-foreign-nationals-1",
+      "citations": [
+        {
+          "document_id": "doc-922e276a8a0082617d5d",
+          "outcome": "same-snapshot",
+          "start": 2321,
+          "end": 2601,
+          "block_ids": [
+            "doc-922e276a8a0082617d5d:b00080"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "travel-documents-foreign-nationals-2",
+      "citations": [
+        {
+          "document_id": "doc-922e276a8a0082617d5d",
+          "outcome": "same-snapshot",
+          "start": 2682,
+          "end": 3268,
+          "block_ids": [
+            "doc-922e276a8a0082617d5d:b00083",
+            "doc-922e276a8a0082617d5d:b00084",
+            "doc-922e276a8a0082617d5d:b00085"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "travel-documents-foreign-nationals-3",
+      "citations": [
+        {
+          "document_id": "doc-922e276a8a0082617d5d",
+          "outcome": "same-snapshot",
+          "start": 3287,
+          "end": 3491,
+          "block_ids": [
+            "doc-922e276a8a0082617d5d:b00087"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "travel-documents-foreign-nationals-4",
+      "citations": [
+        {
+          "document_id": "doc-922e276a8a0082617d5d",
+          "outcome": "same-snapshot",
+          "start": 3504,
+          "end": 4607,
+          "block_ids": [
+            "doc-922e276a8a0082617d5d:b00089",
+            "doc-922e276a8a0082617d5d:b00090",
+            "doc-922e276a8a0082617d5d:b00091",
+            "doc-922e276a8a0082617d5d:b00092"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "travel-documents-foreign-nationals-5",
+      "citations": [
+        {
+          "document_id": "doc-922e276a8a0082617d5d",
+          "outcome": "same-snapshot",
+          "start": 5388,
+          "end": 5839,
+          "block_ids": [
+            "doc-922e276a8a0082617d5d:b00105",
+            "doc-922e276a8a0082617d5d:b00106"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-922e276a8a0082617d5d",
+          "outcome": "same-snapshot",
+          "start": 6319,
+          "end": 6557,
+          "block_ids": [
+            "doc-922e276a8a0082617d5d:b00111"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
     },
     {
       "fact_id": "permit-renewal-1",
@@ -1143,6 +1510,188 @@
       "basis": "Portal summary of federal rules"
     },
     {
+      "fact_id": "third-country-work-conditions-1",
+      "citations": [
+        {
+          "document_id": "doc-e5e7b97428984c9f26c5",
+          "outcome": "same-snapshot",
+          "start": 2157,
+          "end": 3299,
+          "block_ids": [
+            "doc-e5e7b97428984c9f26c5:b00076",
+            "doc-e5e7b97428984c9f26c5:b00077",
+            "doc-e5e7b97428984c9f26c5:b00078"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "third-country-work-conditions-2",
+      "citations": [
+        {
+          "document_id": "doc-e5e7b97428984c9f26c5",
+          "outcome": "same-snapshot",
+          "start": 4211,
+          "end": 4678,
+          "block_ids": [
+            "doc-e5e7b97428984c9f26c5:b00093",
+            "doc-e5e7b97428984c9f26c5:b00094"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "third-country-work-conditions-3",
+      "citations": [
+        {
+          "document_id": "doc-e5e7b97428984c9f26c5",
+          "outcome": "same-snapshot",
+          "start": 4975,
+          "end": 7065,
+          "block_ids": [
+            "doc-e5e7b97428984c9f26c5:b00100",
+            "doc-e5e7b97428984c9f26c5:b00101",
+            "doc-e5e7b97428984c9f26c5:b00102"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "third-country-work-conditions-4",
+      "citations": [
+        {
+          "document_id": "doc-e5e7b97428984c9f26c5",
+          "outcome": "same-snapshot",
+          "start": 7212,
+          "end": 8709,
+          "block_ids": [
+            "doc-e5e7b97428984c9f26c5:b00108",
+            "doc-e5e7b97428984c9f26c5:b00109",
+            "doc-e5e7b97428984c9f26c5:b00110",
+            "doc-e5e7b97428984c9f26c5:b00111",
+            "doc-e5e7b97428984c9f26c5:b00112"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "third-country-work-conditions-5",
+      "citations": [
+        {
+          "document_id": "doc-e5e7b97428984c9f26c5",
+          "outcome": "same-snapshot",
+          "start": 8947,
+          "end": 11366,
+          "block_ids": [
+            "doc-e5e7b97428984c9f26c5:b00117",
+            "doc-e5e7b97428984c9f26c5:b00118",
+            "doc-e5e7b97428984c9f26c5:b00119",
+            "doc-e5e7b97428984c9f26c5:b00120",
+            "doc-e5e7b97428984c9f26c5:b00121"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "third-country-work-conditions-6",
+      "citations": [
+        {
+          "document_id": "doc-e5e7b97428984c9f26c5",
+          "outcome": "same-snapshot",
+          "start": 11715,
+          "end": 13133,
+          "block_ids": [
+            "doc-e5e7b97428984c9f26c5:b00131",
+            "doc-e5e7b97428984c9f26c5:b00132",
+            "doc-e5e7b97428984c9f26c5:b00133",
+            "doc-e5e7b97428984c9f26c5:b00134"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "third-country-work-conditions-7",
+      "citations": [
+        {
+          "document_id": "doc-e5e7b97428984c9f26c5",
+          "outcome": "same-snapshot",
+          "start": 13198,
+          "end": 15819,
+          "block_ids": [
+            "doc-e5e7b97428984c9f26c5:b00137",
+            "doc-e5e7b97428984c9f26c5:b00138",
+            "doc-e5e7b97428984c9f26c5:b00139",
+            "doc-e5e7b97428984c9f26c5:b00140",
+            "doc-e5e7b97428984c9f26c5:b00141",
+            "doc-e5e7b97428984c9f26c5:b00142",
+            "doc-e5e7b97428984c9f26c5:b00143"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "third-country-work-conditions-8",
+      "citations": [
+        {
+          "document_id": "doc-e5e7b97428984c9f26c5",
+          "outcome": "same-snapshot",
+          "start": 15845,
+          "end": 15992,
+          "block_ids": [
+            "doc-e5e7b97428984c9f26c5:b00146"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
       "fact_id": "eu-short-employment-1",
       "citations": [
         {
@@ -1759,6 +2308,457 @@
       "basis": "Cantonal authority guidance"
     },
     {
+      "fact_id": "zh-third-country-work-1",
+      "citations": [
+        {
+          "document_id": "doc-3a6a7f0bc6a14dd20aed",
+          "outcome": "same-snapshot",
+          "start": 1124,
+          "end": 1394,
+          "block_ids": [
+            "doc-3a6a7f0bc6a14dd20aed:b00049"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-third-country-work-2",
+      "citations": [
+        {
+          "document_id": "doc-3a6a7f0bc6a14dd20aed",
+          "outcome": "same-snapshot",
+          "start": 1582,
+          "end": 2595,
+          "block_ids": [
+            "doc-3a6a7f0bc6a14dd20aed:b00058",
+            "doc-3a6a7f0bc6a14dd20aed:b00059",
+            "doc-3a6a7f0bc6a14dd20aed:b00060",
+            "doc-3a6a7f0bc6a14dd20aed:b00061",
+            "doc-3a6a7f0bc6a14dd20aed:b00062",
+            "doc-3a6a7f0bc6a14dd20aed:b00063"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-third-country-work-3",
+      "citations": [
+        {
+          "document_id": "doc-3a6a7f0bc6a14dd20aed",
+          "outcome": "same-snapshot",
+          "start": 4778,
+          "end": 6445,
+          "block_ids": [
+            "doc-3a6a7f0bc6a14dd20aed:b00078",
+            "doc-3a6a7f0bc6a14dd20aed:b00079",
+            "doc-3a6a7f0bc6a14dd20aed:b00080",
+            "doc-3a6a7f0bc6a14dd20aed:b00081",
+            "doc-3a6a7f0bc6a14dd20aed:b00082",
+            "doc-3a6a7f0bc6a14dd20aed:b00083",
+            "doc-3a6a7f0bc6a14dd20aed:b00084",
+            "doc-3a6a7f0bc6a14dd20aed:b00085",
+            "doc-3a6a7f0bc6a14dd20aed:b00086",
+            "doc-3a6a7f0bc6a14dd20aed:b00087"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-third-country-work-4",
+      "citations": [
+        {
+          "document_id": "doc-3a6a7f0bc6a14dd20aed",
+          "outcome": "same-snapshot",
+          "start": 2955,
+          "end": 3409,
+          "block_ids": [
+            "doc-3a6a7f0bc6a14dd20aed:b00068",
+            "doc-3a6a7f0bc6a14dd20aed:b00069"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-third-country-work-5",
+      "citations": [
+        {
+          "document_id": "doc-3a6a7f0bc6a14dd20aed",
+          "outcome": "same-snapshot",
+          "start": 6675,
+          "end": 7050,
+          "block_ids": [
+            "doc-3a6a7f0bc6a14dd20aed:b00091"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-third-country-work-6",
+      "citations": [
+        {
+          "document_id": "doc-3a6a7f0bc6a14dd20aed",
+          "outcome": "same-snapshot",
+          "start": 7101,
+          "end": 8881,
+          "block_ids": [
+            "doc-3a6a7f0bc6a14dd20aed:b00093",
+            "doc-3a6a7f0bc6a14dd20aed:b00094",
+            "doc-3a6a7f0bc6a14dd20aed:b00095",
+            "doc-3a6a7f0bc6a14dd20aed:b00096",
+            "doc-3a6a7f0bc6a14dd20aed:b00097",
+            "doc-3a6a7f0bc6a14dd20aed:b00098",
+            "doc-3a6a7f0bc6a14dd20aed:b00099",
+            "doc-3a6a7f0bc6a14dd20aed:b00100"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-permit-card-1",
+      "citations": [
+        {
+          "document_id": "doc-16aa932b35f8b7f9ff91",
+          "outcome": "same-snapshot",
+          "start": 1106,
+          "end": 2298,
+          "block_ids": [
+            "doc-16aa932b35f8b7f9ff91:b00049",
+            "doc-16aa932b35f8b7f9ff91:b00050",
+            "doc-16aa932b35f8b7f9ff91:b00051",
+            "doc-16aa932b35f8b7f9ff91:b00052",
+            "doc-16aa932b35f8b7f9ff91:b00053",
+            "doc-16aa932b35f8b7f9ff91:b00054",
+            "doc-16aa932b35f8b7f9ff91:b00055",
+            "doc-16aa932b35f8b7f9ff91:b00056",
+            "doc-16aa932b35f8b7f9ff91:b00057"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-permit-card-2",
+      "citations": [
+        {
+          "document_id": "doc-16aa932b35f8b7f9ff91",
+          "outcome": "same-snapshot",
+          "start": 2320,
+          "end": 3070,
+          "block_ids": [
+            "doc-16aa932b35f8b7f9ff91:b00059",
+            "doc-16aa932b35f8b7f9ff91:b00060",
+            "doc-16aa932b35f8b7f9ff91:b00061",
+            "doc-16aa932b35f8b7f9ff91:b00062",
+            "doc-16aa932b35f8b7f9ff91:b00063",
+            "doc-16aa932b35f8b7f9ff91:b00064"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-permit-card-3",
+      "citations": [
+        {
+          "document_id": "doc-16aa932b35f8b7f9ff91",
+          "outcome": "same-snapshot",
+          "start": 3504,
+          "end": 4378,
+          "block_ids": [
+            "doc-16aa932b35f8b7f9ff91:b00071",
+            "doc-16aa932b35f8b7f9ff91:b00072",
+            "doc-16aa932b35f8b7f9ff91:b00073",
+            "doc-16aa932b35f8b7f9ff91:b00074",
+            "doc-16aa932b35f8b7f9ff91:b00075",
+            "doc-16aa932b35f8b7f9ff91:b00076"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-permit-card-4",
+      "citations": [
+        {
+          "document_id": "doc-3d3f66c4e8551600ba18",
+          "outcome": "same-snapshot",
+          "start": 1158,
+          "end": 2238,
+          "block_ids": [
+            "doc-3d3f66c4e8551600ba18:b00051",
+            "doc-3d3f66c4e8551600ba18:b00052",
+            "doc-3d3f66c4e8551600ba18:b00053",
+            "doc-3d3f66c4e8551600ba18:b00054",
+            "doc-3d3f66c4e8551600ba18:b00055",
+            "doc-3d3f66c4e8551600ba18:b00056",
+            "doc-3d3f66c4e8551600ba18:b00057",
+            "doc-3d3f66c4e8551600ba18:b00058",
+            "doc-3d3f66c4e8551600ba18:b00059"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-3d3f66c4e8551600ba18",
+          "outcome": "same-snapshot",
+          "start": 2864,
+          "end": 3104,
+          "block_ids": [
+            "doc-3d3f66c4e8551600ba18:b00073"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-permit-card-5",
+      "citations": [
+        {
+          "document_id": "doc-3fe8c1612d3a52906267",
+          "outcome": "same-snapshot",
+          "start": 1124,
+          "end": 1277,
+          "block_ids": [
+            "doc-3fe8c1612d3a52906267:b00051"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-16aa932b35f8b7f9ff91",
+          "outcome": "same-snapshot",
+          "start": 5900,
+          "end": 6436,
+          "block_ids": [
+            "doc-16aa932b35f8b7f9ff91:b00084",
+            "doc-16aa932b35f8b7f9ff91:b00085"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-entry-permit-non-working-1",
+      "citations": [
+        {
+          "document_id": "doc-451d08b440cd87bb5ec4",
+          "outcome": "same-snapshot",
+          "start": 1202,
+          "end": 1685,
+          "block_ids": [
+            "doc-451d08b440cd87bb5ec4:b00051",
+            "doc-451d08b440cd87bb5ec4:b00052",
+            "doc-451d08b440cd87bb5ec4:b00053",
+            "doc-451d08b440cd87bb5ec4:b00054",
+            "doc-451d08b440cd87bb5ec4:b00055",
+            "doc-451d08b440cd87bb5ec4:b00056"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-entry-permit-non-working-2",
+      "citations": [
+        {
+          "document_id": "doc-451d08b440cd87bb5ec4",
+          "outcome": "same-snapshot",
+          "start": 1709,
+          "end": 3049,
+          "block_ids": [
+            "doc-451d08b440cd87bb5ec4:b00058",
+            "doc-451d08b440cd87bb5ec4:b00059",
+            "doc-451d08b440cd87bb5ec4:b00060",
+            "doc-451d08b440cd87bb5ec4:b00061",
+            "doc-451d08b440cd87bb5ec4:b00062",
+            "doc-451d08b440cd87bb5ec4:b00063",
+            "doc-451d08b440cd87bb5ec4:b00064",
+            "doc-451d08b440cd87bb5ec4:b00065",
+            "doc-451d08b440cd87bb5ec4:b00066",
+            "doc-451d08b440cd87bb5ec4:b00067",
+            "doc-451d08b440cd87bb5ec4:b00068",
+            "doc-451d08b440cd87bb5ec4:b00069",
+            "doc-451d08b440cd87bb5ec4:b00070",
+            "doc-451d08b440cd87bb5ec4:b00071",
+            "doc-451d08b440cd87bb5ec4:b00072"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-451d08b440cd87bb5ec4",
+          "outcome": "same-snapshot",
+          "start": 3666,
+          "end": 3811,
+          "block_ids": [
+            "doc-451d08b440cd87bb5ec4:b00093",
+            "doc-451d08b440cd87bb5ec4:b00094"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-entry-permit-non-working-3",
+      "citations": [
+        {
+          "document_id": "doc-49f266bcd26a6137ae23",
+          "outcome": "same-snapshot",
+          "start": 1192,
+          "end": 1615,
+          "block_ids": [
+            "doc-49f266bcd26a6137ae23:b00051",
+            "doc-49f266bcd26a6137ae23:b00052",
+            "doc-49f266bcd26a6137ae23:b00053",
+            "doc-49f266bcd26a6137ae23:b00054",
+            "doc-49f266bcd26a6137ae23:b00055"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-entry-permit-non-working-4",
+      "citations": [
+        {
+          "document_id": "doc-49f266bcd26a6137ae23",
+          "outcome": "same-snapshot",
+          "start": 1639,
+          "end": 3756,
+          "block_ids": [
+            "doc-49f266bcd26a6137ae23:b00057",
+            "doc-49f266bcd26a6137ae23:b00058",
+            "doc-49f266bcd26a6137ae23:b00059",
+            "doc-49f266bcd26a6137ae23:b00060",
+            "doc-49f266bcd26a6137ae23:b00061",
+            "doc-49f266bcd26a6137ae23:b00062",
+            "doc-49f266bcd26a6137ae23:b00063",
+            "doc-49f266bcd26a6137ae23:b00064",
+            "doc-49f266bcd26a6137ae23:b00065",
+            "doc-49f266bcd26a6137ae23:b00066",
+            "doc-49f266bcd26a6137ae23:b00067",
+            "doc-49f266bcd26a6137ae23:b00068",
+            "doc-49f266bcd26a6137ae23:b00069",
+            "doc-49f266bcd26a6137ae23:b00070",
+            "doc-49f266bcd26a6137ae23:b00071",
+            "doc-49f266bcd26a6137ae23:b00072",
+            "doc-49f266bcd26a6137ae23:b00073",
+            "doc-49f266bcd26a6137ae23:b00074",
+            "doc-49f266bcd26a6137ae23:b00075",
+            "doc-49f266bcd26a6137ae23:b00076",
+            "doc-49f266bcd26a6137ae23:b00077",
+            "doc-49f266bcd26a6137ae23:b00078"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-49f266bcd26a6137ae23",
+          "outcome": "same-snapshot",
+          "start": 4494,
+          "end": 4649,
+          "block_ids": [
+            "doc-49f266bcd26a6137ae23:b00101",
+            "doc-49f266bcd26a6137ae23:b00102"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
       "fact_id": "zh-third-country-retirement-1",
       "citations": [
         {
@@ -1774,6 +2774,170 @@
             "doc-d014e967e94edec3b92f:b00054",
             "doc-d014e967e94edec3b92f:b00055",
             "doc-d014e967e94edec3b92f:b00056"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-permit-c-five-years-1",
+      "citations": [
+        {
+          "document_id": "doc-614da06bc3d0c76de81f",
+          "outcome": "same-snapshot",
+          "start": 3295,
+          "end": 4101,
+          "block_ids": [
+            "doc-614da06bc3d0c76de81f:b00082",
+            "doc-614da06bc3d0c76de81f:b00083",
+            "doc-614da06bc3d0c76de81f:b00084",
+            "doc-614da06bc3d0c76de81f:b00085",
+            "doc-614da06bc3d0c76de81f:b00086",
+            "doc-614da06bc3d0c76de81f:b00087",
+            "doc-614da06bc3d0c76de81f:b00088",
+            "doc-614da06bc3d0c76de81f:b00089"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-permit-c-five-years-2",
+      "citations": [
+        {
+          "document_id": "doc-614da06bc3d0c76de81f",
+          "outcome": "same-snapshot",
+          "start": 4103,
+          "end": 4767,
+          "block_ids": [
+            "doc-614da06bc3d0c76de81f:b00090",
+            "doc-614da06bc3d0c76de81f:b00091",
+            "doc-614da06bc3d0c76de81f:b00092",
+            "doc-614da06bc3d0c76de81f:b00093",
+            "doc-614da06bc3d0c76de81f:b00094",
+            "doc-614da06bc3d0c76de81f:b00095",
+            "doc-614da06bc3d0c76de81f:b00096"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-permit-c-five-years-3",
+      "citations": [
+        {
+          "document_id": "doc-614da06bc3d0c76de81f",
+          "outcome": "same-snapshot",
+          "start": 4769,
+          "end": 5498,
+          "block_ids": [
+            "doc-614da06bc3d0c76de81f:b00097",
+            "doc-614da06bc3d0c76de81f:b00098",
+            "doc-614da06bc3d0c76de81f:b00099",
+            "doc-614da06bc3d0c76de81f:b00100",
+            "doc-614da06bc3d0c76de81f:b00101",
+            "doc-614da06bc3d0c76de81f:b00102"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-permit-c-five-years-4",
+      "citations": [
+        {
+          "document_id": "doc-614da06bc3d0c76de81f",
+          "outcome": "same-snapshot",
+          "start": 5500,
+          "end": 5677,
+          "block_ids": [
+            "doc-614da06bc3d0c76de81f:b00103",
+            "doc-614da06bc3d0c76de81f:b00104",
+            "doc-614da06bc3d0c76de81f:b00105",
+            "doc-614da06bc3d0c76de81f:b00106",
+            "doc-614da06bc3d0c76de81f:b00107",
+            "doc-614da06bc3d0c76de81f:b00108",
+            "doc-614da06bc3d0c76de81f:b00109",
+            "doc-614da06bc3d0c76de81f:b00110",
+            "doc-614da06bc3d0c76de81f:b00111",
+            "doc-614da06bc3d0c76de81f:b00112",
+            "doc-614da06bc3d0c76de81f:b00113",
+            "doc-614da06bc3d0c76de81f:b00114"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-permit-c-five-years-5",
+      "citations": [
+        {
+          "document_id": "doc-614da06bc3d0c76de81f",
+          "outcome": "same-snapshot",
+          "start": 5679,
+          "end": 5878,
+          "block_ids": [
+            "doc-614da06bc3d0c76de81f:b00115",
+            "doc-614da06bc3d0c76de81f:b00116",
+            "doc-614da06bc3d0c76de81f:b00117",
+            "doc-614da06bc3d0c76de81f:b00118",
+            "doc-614da06bc3d0c76de81f:b00119",
+            "doc-614da06bc3d0c76de81f:b00120",
+            "doc-614da06bc3d0c76de81f:b00121",
+            "doc-614da06bc3d0c76de81f:b00122",
+            "doc-614da06bc3d0c76de81f:b00123",
+            "doc-614da06bc3d0c76de81f:b00124",
+            "doc-614da06bc3d0c76de81f:b00125",
+            "doc-614da06bc3d0c76de81f:b00126",
+            "doc-614da06bc3d0c76de81f:b00127",
+            "doc-614da06bc3d0c76de81f:b00128"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-permit-c-five-years-6",
+      "citations": [
+        {
+          "document_id": "doc-614da06bc3d0c76de81f",
+          "outcome": "same-snapshot",
+          "start": 6393,
+          "end": 6706,
+          "block_ids": [
+            "doc-614da06bc3d0c76de81f:b00134",
+            "doc-614da06bc3d0c76de81f:b00135",
+            "doc-614da06bc3d0c76de81f:b00136"
           ],
           "warnings": [],
           "institution_id": "zh-migrationsamt",
@@ -3755,6 +4919,167 @@
       "basis": "Federal authority directory"
     },
     {
+      "fact_id": "ahv-agreement-states-1",
+      "citations": [
+        {
+          "document_id": "doc-d7cabca9200534ba2f45",
+          "outcome": "same-snapshot",
+          "start": 250,
+          "end": 659,
+          "block_ids": [
+            "doc-d7cabca9200534ba2f45:b00014",
+            "doc-d7cabca9200534ba2f45:b00015",
+            "doc-d7cabca9200534ba2f45:b00016"
+          ],
+          "warnings": [],
+          "institution_id": "ch-zas",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-agreement-states-2",
+      "citations": [
+        {
+          "document_id": "doc-ab60e3608ad2acda5817",
+          "outcome": "same-snapshot",
+          "start": 273,
+          "end": 1432,
+          "block_ids": [
+            "doc-ab60e3608ad2acda5817:b00015",
+            "doc-ab60e3608ad2acda5817:b00016",
+            "doc-ab60e3608ad2acda5817:b00017",
+            "doc-ab60e3608ad2acda5817:b00018",
+            "doc-ab60e3608ad2acda5817:b00019"
+          ],
+          "warnings": [],
+          "institution_id": "ch-zas",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-agreement-states-3",
+      "citations": [
+        {
+          "document_id": "doc-ab60e3608ad2acda5817",
+          "outcome": "same-snapshot",
+          "start": 1623,
+          "end": 2108,
+          "block_ids": [
+            "doc-ab60e3608ad2acda5817:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-zas",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-agreement-states-4",
+      "citations": [
+        {
+          "document_id": "doc-ab60e3608ad2acda5817",
+          "outcome": "same-snapshot",
+          "start": 2131,
+          "end": 2465,
+          "block_ids": [
+            "doc-ab60e3608ad2acda5817:b00025",
+            "doc-ab60e3608ad2acda5817:b00026",
+            "doc-ab60e3608ad2acda5817:b00027",
+            "doc-ab60e3608ad2acda5817:b00028",
+            "doc-ab60e3608ad2acda5817:b00029",
+            "doc-ab60e3608ad2acda5817:b00030",
+            "doc-ab60e3608ad2acda5817:b00031",
+            "doc-ab60e3608ad2acda5817:b00032"
+          ],
+          "warnings": [],
+          "institution_id": "ch-zas",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-agreement-states-5",
+      "citations": [
+        {
+          "document_id": "doc-ab60e3608ad2acda5817",
+          "outcome": "same-snapshot",
+          "start": 2531,
+          "end": 3742,
+          "block_ids": [
+            "doc-ab60e3608ad2acda5817:b00035",
+            "doc-ab60e3608ad2acda5817:b00036",
+            "doc-ab60e3608ad2acda5817:b00037",
+            "doc-ab60e3608ad2acda5817:b00038",
+            "doc-ab60e3608ad2acda5817:b00039",
+            "doc-ab60e3608ad2acda5817:b00040",
+            "doc-ab60e3608ad2acda5817:b00041",
+            "doc-ab60e3608ad2acda5817:b00042"
+          ],
+          "warnings": [],
+          "institution_id": "ch-zas",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-agreement-states-6",
+      "citations": [
+        {
+          "document_id": "doc-ab60e3608ad2acda5817",
+          "outcome": "same-snapshot",
+          "start": 3965,
+          "end": 4313,
+          "block_ids": [
+            "doc-ab60e3608ad2acda5817:b00049"
+          ],
+          "warnings": [],
+          "institution_id": "ch-zas",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-agreement-states-7",
+      "citations": [
+        {
+          "document_id": "doc-ab60e3608ad2acda5817",
+          "outcome": "same-snapshot",
+          "start": 4505,
+          "end": 5019,
+          "block_ids": [
+            "doc-ab60e3608ad2acda5817:b00055",
+            "doc-ab60e3608ad2acda5817:b00056"
+          ],
+          "warnings": [],
+          "institution_id": "ch-zas",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
       "fact_id": "ahv-contribution-refund-1",
       "citations": [
         {
@@ -4370,9 +5695,25 @@
           "basis": "Federal authority guidance",
           "basis_rule": "default",
           "basis_warnings": []
+        },
+        {
+          "document_id": "doc-5f038736fe92a346d1a5",
+          "outcome": "same-snapshot",
+          "start": 112099,
+          "end": 112692,
+          "block_ids": [
+            "doc-5f038736fe92a346d1a5:b00914",
+            "doc-5f038736fe92a346d1a5:b00915",
+            "doc-5f038736fe92a346d1a5:b00916"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: DBG, SR 642.11, Art. 83",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/",
+          "basis_warnings": []
         }
       ],
-      "basis": "Federal authority guidance"
+      "basis": "Federal act: DBG, SR 642.11, Art. 83"
     },
     {
       "fact_id": "tax-at-source-liability-2",
@@ -5482,9 +6823,24 @@
           "basis": "Federal authority guidance",
           "basis_rule": "default",
           "basis_warnings": []
+        },
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 2810,
+          "end": 3109,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00047",
+            "doc-8486b6ce38b9f3f0c014:b00048"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 3",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
         }
       ],
-      "basis": "Federal authority guidance"
+      "basis": "Federal act: KVG, SR 832.10, Art. 3"
     },
     {
       "fact_id": "health-insurance-deadline-2",
@@ -5840,6 +7196,55 @@
             "doc-6ea083d5d353d3a54bc0:b00455",
             "doc-6ea083d5d353d3a54bc0:b00456",
             "doc-6ea083d5d353d3a54bc0:b00457"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-health-insurance-exemption-6",
+      "citations": [
+        {
+          "document_id": "doc-42e6fd401649e8cf7deb",
+          "outcome": "same-snapshot",
+          "start": 10807,
+          "end": 11303,
+          "block_ids": [
+            "doc-42e6fd401649e8cf7deb:b00437",
+            "doc-42e6fd401649e8cf7deb:b00438",
+            "doc-42e6fd401649e8cf7deb:b00439",
+            "doc-42e6fd401649e8cf7deb:b00440",
+            "doc-42e6fd401649e8cf7deb:b00441",
+            "doc-42e6fd401649e8cf7deb:b00442",
+            "doc-42e6fd401649e8cf7deb:b00443",
+            "doc-42e6fd401649e8cf7deb:b00444"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-health-insurance-exemption-7",
+      "citations": [
+        {
+          "document_id": "doc-42e6fd401649e8cf7deb",
+          "outcome": "same-snapshot",
+          "start": 11305,
+          "end": 11959,
+          "block_ids": [
+            "doc-42e6fd401649e8cf7deb:b00445",
+            "doc-42e6fd401649e8cf7deb:b00446",
+            "doc-42e6fd401649e8cf7deb:b00447"
           ],
           "warnings": [],
           "institution_id": "zh-sva",
@@ -6250,9 +7655,29 @@
           "basis": "Federal authority guidance, referring to BüG, SR 141.0, Art. 9",
           "basis_rule": "citation",
           "basis_warnings": []
+        },
+        {
+          "document_id": "doc-b453b5c4f8f48f94400a",
+          "outcome": "same-snapshot",
+          "start": 4237,
+          "end": 4898,
+          "block_ids": [
+            "doc-b453b5c4f8f48f94400a:b00046",
+            "doc-b453b5c4f8f48f94400a:b00047",
+            "doc-b453b5c4f8f48f94400a:b00048",
+            "doc-b453b5c4f8f48f94400a:b00049",
+            "doc-b453b5c4f8f48f94400a:b00050",
+            "doc-b453b5c4f8f48f94400a:b00051",
+            "doc-b453b5c4f8f48f94400a:b00052"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: BüG, SR 141.0, Art. 9",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/2016/404/",
+          "basis_warnings": []
         }
       ],
-      "basis": "Federal authority guidance, referring to BüG, SR 141.0, Art. 9"
+      "basis": "Federal act: BüG, SR 141.0, Art. 9"
     },
     {
       "fact_id": "naturalisation-ordinary-3",
@@ -6346,9 +7771,44 @@
           "basis": "Federal authority guidance",
           "basis_rule": "default",
           "basis_warnings": []
+        },
+        {
+          "document_id": "doc-b453b5c4f8f48f94400a",
+          "outcome": "same-snapshot",
+          "start": 5746,
+          "end": 7017,
+          "block_ids": [
+            "doc-b453b5c4f8f48f94400a:b00064",
+            "doc-b453b5c4f8f48f94400a:b00065",
+            "doc-b453b5c4f8f48f94400a:b00066",
+            "doc-b453b5c4f8f48f94400a:b00067",
+            "doc-b453b5c4f8f48f94400a:b00068",
+            "doc-b453b5c4f8f48f94400a:b00069",
+            "doc-b453b5c4f8f48f94400a:b00070",
+            "doc-b453b5c4f8f48f94400a:b00071",
+            "doc-b453b5c4f8f48f94400a:b00072",
+            "doc-b453b5c4f8f48f94400a:b00073",
+            "doc-b453b5c4f8f48f94400a:b00074",
+            "doc-b453b5c4f8f48f94400a:b00075",
+            "doc-b453b5c4f8f48f94400a:b00076",
+            "doc-b453b5c4f8f48f94400a:b00077",
+            "doc-b453b5c4f8f48f94400a:b00078",
+            "doc-b453b5c4f8f48f94400a:b00079",
+            "doc-b453b5c4f8f48f94400a:b00080",
+            "doc-b453b5c4f8f48f94400a:b00081",
+            "doc-b453b5c4f8f48f94400a:b00082",
+            "doc-b453b5c4f8f48f94400a:b00083",
+            "doc-b453b5c4f8f48f94400a:b00084",
+            "doc-b453b5c4f8f48f94400a:b00085"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: BüG, SR 141.0, Art. 11",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/2016/404/",
+          "basis_warnings": []
         }
       ],
-      "basis": "Federal authority guidance"
+      "basis": "Federal act: BüG, SR 141.0, Art. 11"
     },
     {
       "fact_id": "naturalisation-ordinary-6",
@@ -6367,9 +7827,34 @@
           "basis": "Federal authority guidance, referring to BüV, SR 141.01, Art. 6",
           "basis_rule": "citation",
           "basis_warnings": []
+        },
+        {
+          "document_id": "doc-65e986edfa25a003b565",
+          "outcome": "same-snapshot",
+          "start": 5719,
+          "end": 6687,
+          "block_ids": [
+            "doc-65e986edfa25a003b565:b00071",
+            "doc-65e986edfa25a003b565:b00072",
+            "doc-65e986edfa25a003b565:b00073",
+            "doc-65e986edfa25a003b565:b00074",
+            "doc-65e986edfa25a003b565:b00075",
+            "doc-65e986edfa25a003b565:b00076",
+            "doc-65e986edfa25a003b565:b00077",
+            "doc-65e986edfa25a003b565:b00078",
+            "doc-65e986edfa25a003b565:b00079",
+            "doc-65e986edfa25a003b565:b00080",
+            "doc-65e986edfa25a003b565:b00081",
+            "doc-65e986edfa25a003b565:b00082"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: BüV, SR 141.01, Art. 6",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/2016/405/",
+          "basis_warnings": []
         }
       ],
-      "basis": "Federal authority guidance, referring to BüV, SR 141.01, Art. 6"
+      "basis": "Federal ordinance: BüV, SR 141.01, Art. 6"
     },
     {
       "fact_id": "naturalisation-ordinary-7",
@@ -7018,6 +8503,319 @@
       "basis": "Municipal authority guidance"
     },
     {
+      "fact_id": "naturalisation-third-generation-1",
+      "citations": [
+        {
+          "document_id": "doc-d7418165689182dcd557",
+          "outcome": "same-snapshot",
+          "start": 2428,
+          "end": 3257,
+          "block_ids": [
+            "doc-d7418165689182dcd557:b00082",
+            "doc-d7418165689182dcd557:b00083",
+            "doc-d7418165689182dcd557:b00084",
+            "doc-d7418165689182dcd557:b00085",
+            "doc-d7418165689182dcd557:b00086",
+            "doc-d7418165689182dcd557:b00087",
+            "doc-d7418165689182dcd557:b00088",
+            "doc-d7418165689182dcd557:b00089"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-b453b5c4f8f48f94400a",
+          "outcome": "same-snapshot",
+          "start": 13336,
+          "end": 14250,
+          "block_ids": [
+            "doc-b453b5c4f8f48f94400a:b00149",
+            "doc-b453b5c4f8f48f94400a:b00150",
+            "doc-b453b5c4f8f48f94400a:b00151",
+            "doc-b453b5c4f8f48f94400a:b00152",
+            "doc-b453b5c4f8f48f94400a:b00153",
+            "doc-b453b5c4f8f48f94400a:b00154",
+            "doc-b453b5c4f8f48f94400a:b00155",
+            "doc-b453b5c4f8f48f94400a:b00156",
+            "doc-b453b5c4f8f48f94400a:b00157",
+            "doc-b453b5c4f8f48f94400a:b00158",
+            "doc-b453b5c4f8f48f94400a:b00159",
+            "doc-b453b5c4f8f48f94400a:b00160"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: BüG, SR 141.0, Art. 24a",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: BüG, SR 141.0, Art. 24a"
+    },
+    {
+      "fact_id": "naturalisation-third-generation-2",
+      "citations": [
+        {
+          "document_id": "doc-d7418165689182dcd557",
+          "outcome": "same-snapshot",
+          "start": 3300,
+          "end": 4495,
+          "block_ids": [
+            "doc-d7418165689182dcd557:b00091",
+            "doc-d7418165689182dcd557:b00092",
+            "doc-d7418165689182dcd557:b00093",
+            "doc-d7418165689182dcd557:b00094",
+            "doc-d7418165689182dcd557:b00095",
+            "doc-d7418165689182dcd557:b00096",
+            "doc-d7418165689182dcd557:b00097",
+            "doc-d7418165689182dcd557:b00098"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "naturalisation-third-generation-3",
+      "citations": [
+        {
+          "document_id": "doc-d7418165689182dcd557",
+          "outcome": "same-snapshot",
+          "start": 4644,
+          "end": 4870,
+          "block_ids": [
+            "doc-d7418165689182dcd557:b00102"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "naturalisation-third-generation-4",
+      "citations": [
+        {
+          "document_id": "doc-d7418165689182dcd557",
+          "outcome": "same-snapshot",
+          "start": 4912,
+          "end": 5875,
+          "block_ids": [
+            "doc-d7418165689182dcd557:b00104",
+            "doc-d7418165689182dcd557:b00105",
+            "doc-d7418165689182dcd557:b00106",
+            "doc-d7418165689182dcd557:b00107",
+            "doc-d7418165689182dcd557:b00108",
+            "doc-d7418165689182dcd557:b00109",
+            "doc-d7418165689182dcd557:b00110",
+            "doc-d7418165689182dcd557:b00111",
+            "doc-d7418165689182dcd557:b00112",
+            "doc-d7418165689182dcd557:b00113",
+            "doc-d7418165689182dcd557:b00114"
+          ],
+          "warnings": [],
+          "institution_id": "ch-sem",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-naturalisation-language-1",
+      "citations": [
+        {
+          "document_id": "doc-e531378f6761d7894a5f",
+          "outcome": "same-snapshot",
+          "start": 56,
+          "end": 452,
+          "block_ids": [
+            "doc-e531378f6761d7894a5f:b00004",
+            "doc-e531378f6761d7894a5f:b00005",
+            "doc-e531378f6761d7894a5f:b00006",
+            "doc-e531378f6761d7894a5f:b00007",
+            "doc-e531378f6761d7894a5f:b00008"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-65e986edfa25a003b565",
+          "outcome": "same-snapshot",
+          "start": 5719,
+          "end": 6079,
+          "block_ids": [
+            "doc-65e986edfa25a003b565:b00071",
+            "doc-65e986edfa25a003b565:b00072",
+            "doc-65e986edfa25a003b565:b00073"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: BüV, SR 141.01, Art. 6",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/2016/405/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: BüV, SR 141.01, Art. 6"
+    },
+    {
+      "fact_id": "city-zurich-naturalisation-language-2",
+      "citations": [
+        {
+          "document_id": "doc-e531378f6761d7894a5f",
+          "outcome": "same-snapshot",
+          "start": 464,
+          "end": 954,
+          "block_ids": [
+            "doc-e531378f6761d7894a5f:b00010",
+            "doc-e531378f6761d7894a5f:b00011",
+            "doc-e531378f6761d7894a5f:b00012",
+            "doc-e531378f6761d7894a5f:b00013",
+            "doc-e531378f6761d7894a5f:b00014",
+            "doc-e531378f6761d7894a5f:b00015",
+            "doc-e531378f6761d7894a5f:b00016",
+            "doc-e531378f6761d7894a5f:b00017"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-naturalisation-language-3",
+      "citations": [
+        {
+          "document_id": "doc-e531378f6761d7894a5f",
+          "outcome": "same-snapshot",
+          "start": 980,
+          "end": 1609,
+          "block_ids": [
+            "doc-e531378f6761d7894a5f:b00019",
+            "doc-e531378f6761d7894a5f:b00020",
+            "doc-e531378f6761d7894a5f:b00021",
+            "doc-e531378f6761d7894a5f:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-naturalisation-language-4",
+      "citations": [
+        {
+          "document_id": "doc-e531378f6761d7894a5f",
+          "outcome": "same-snapshot",
+          "start": 1622,
+          "end": 2213,
+          "block_ids": [
+            "doc-e531378f6761d7894a5f:b00024",
+            "doc-e531378f6761d7894a5f:b00025",
+            "doc-e531378f6761d7894a5f:b00026",
+            "doc-e531378f6761d7894a5f:b00027",
+            "doc-e531378f6761d7894a5f:b00028",
+            "doc-e531378f6761d7894a5f:b00029",
+            "doc-e531378f6761d7894a5f:b00030"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-naturalisation-civics-1",
+      "citations": [
+        {
+          "document_id": "doc-59cb523cc17b8a9db3cd",
+          "outcome": "same-snapshot",
+          "start": 56,
+          "end": 523,
+          "block_ids": [
+            "doc-59cb523cc17b8a9db3cd:b00004",
+            "doc-59cb523cc17b8a9db3cd:b00005",
+            "doc-59cb523cc17b8a9db3cd:b00006"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-naturalisation-civics-2",
+      "citations": [
+        {
+          "document_id": "doc-59cb523cc17b8a9db3cd",
+          "outcome": "same-snapshot",
+          "start": 535,
+          "end": 1135,
+          "block_ids": [
+            "doc-59cb523cc17b8a9db3cd:b00008",
+            "doc-59cb523cc17b8a9db3cd:b00009",
+            "doc-59cb523cc17b8a9db3cd:b00010"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-naturalisation-civics-3",
+      "citations": [
+        {
+          "document_id": "doc-59cb523cc17b8a9db3cd",
+          "outcome": "same-snapshot",
+          "start": 1164,
+          "end": 1695,
+          "block_ids": [
+            "doc-59cb523cc17b8a9db3cd:b00013",
+            "doc-59cb523cc17b8a9db3cd:b00014",
+            "doc-59cb523cc17b8a9db3cd:b00015",
+            "doc-59cb523cc17b8a9db3cd:b00016",
+            "doc-59cb523cc17b8a9db3cd:b00017"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
       "fact_id": "naturalisation-facilitated-spouse-1",
       "citations": [
         {
@@ -7051,9 +8849,28 @@
           "basis": "Federal authority guidance",
           "basis_rule": "default",
           "basis_warnings": []
+        },
+        {
+          "document_id": "doc-b453b5c4f8f48f94400a",
+          "outcome": "same-snapshot",
+          "start": 10538,
+          "end": 11004,
+          "block_ids": [
+            "doc-b453b5c4f8f48f94400a:b00122",
+            "doc-b453b5c4f8f48f94400a:b00123",
+            "doc-b453b5c4f8f48f94400a:b00124",
+            "doc-b453b5c4f8f48f94400a:b00125",
+            "doc-b453b5c4f8f48f94400a:b00126",
+            "doc-b453b5c4f8f48f94400a:b00127"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: BüG, SR 141.0, Art. 21",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/2016/404/",
+          "basis_warnings": []
         }
       ],
-      "basis": "Federal authority guidance"
+      "basis": "Federal act: BüG, SR 141.0, Art. 21"
     },
     {
       "fact_id": "naturalisation-facilitated-spouse-2",
@@ -7585,6 +9402,276 @@
           ],
           "warnings": [],
           "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-citizenship-swiss-1",
+      "citations": [
+        {
+          "document_id": "doc-27c93a60636593379a39",
+          "outcome": "same-snapshot",
+          "start": 56,
+          "end": 1043,
+          "block_ids": [
+            "doc-27c93a60636593379a39:b00004",
+            "doc-27c93a60636593379a39:b00005",
+            "doc-27c93a60636593379a39:b00006",
+            "doc-27c93a60636593379a39:b00007"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-citizenship-swiss-2",
+      "citations": [
+        {
+          "document_id": "doc-27c93a60636593379a39",
+          "outcome": "same-snapshot",
+          "start": 1062,
+          "end": 1355,
+          "block_ids": [
+            "doc-27c93a60636593379a39:b00009",
+            "doc-27c93a60636593379a39:b00010",
+            "doc-27c93a60636593379a39:b00011",
+            "doc-27c93a60636593379a39:b00012"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-citizenship-swiss-3",
+      "citations": [
+        {
+          "document_id": "doc-27c93a60636593379a39",
+          "outcome": "same-snapshot",
+          "start": 1429,
+          "end": 3159,
+          "block_ids": [
+            "doc-27c93a60636593379a39:b00015",
+            "doc-27c93a60636593379a39:b00016",
+            "doc-27c93a60636593379a39:b00017",
+            "doc-27c93a60636593379a39:b00018",
+            "doc-27c93a60636593379a39:b00019",
+            "doc-27c93a60636593379a39:b00020",
+            "doc-27c93a60636593379a39:b00021",
+            "doc-27c93a60636593379a39:b00022",
+            "doc-27c93a60636593379a39:b00023",
+            "doc-27c93a60636593379a39:b00024",
+            "doc-27c93a60636593379a39:b00025",
+            "doc-27c93a60636593379a39:b00026",
+            "doc-27c93a60636593379a39:b00027",
+            "doc-27c93a60636593379a39:b00028",
+            "doc-27c93a60636593379a39:b00029",
+            "doc-27c93a60636593379a39:b00030",
+            "doc-27c93a60636593379a39:b00031",
+            "doc-27c93a60636593379a39:b00032",
+            "doc-27c93a60636593379a39:b00033",
+            "doc-27c93a60636593379a39:b00034",
+            "doc-27c93a60636593379a39:b00035",
+            "doc-27c93a60636593379a39:b00036",
+            "doc-27c93a60636593379a39:b00037",
+            "doc-27c93a60636593379a39:b00038",
+            "doc-27c93a60636593379a39:b00039",
+            "doc-27c93a60636593379a39:b00040",
+            "doc-27c93a60636593379a39:b00041"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-citizenship-swiss-4",
+      "citations": [
+        {
+          "document_id": "doc-27c93a60636593379a39",
+          "outcome": "same-snapshot",
+          "start": 3181,
+          "end": 4652,
+          "block_ids": [
+            "doc-27c93a60636593379a39:b00044",
+            "doc-27c93a60636593379a39:b00045",
+            "doc-27c93a60636593379a39:b00046",
+            "doc-27c93a60636593379a39:b00047",
+            "doc-27c93a60636593379a39:b00048",
+            "doc-27c93a60636593379a39:b00049",
+            "doc-27c93a60636593379a39:b00050",
+            "doc-27c93a60636593379a39:b00051",
+            "doc-27c93a60636593379a39:b00052",
+            "doc-27c93a60636593379a39:b00053",
+            "doc-27c93a60636593379a39:b00054",
+            "doc-27c93a60636593379a39:b00055",
+            "doc-27c93a60636593379a39:b00056",
+            "doc-27c93a60636593379a39:b00057",
+            "doc-27c93a60636593379a39:b00058",
+            "doc-27c93a60636593379a39:b00059",
+            "doc-27c93a60636593379a39:b00060"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-einbuergerungen",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-waste-sorting-1",
+      "citations": [
+        {
+          "document_id": "doc-d8541f35904a97708a4f",
+          "outcome": "same-snapshot",
+          "start": 456,
+          "end": 1173,
+          "block_ids": [
+            "doc-d8541f35904a97708a4f:b00008",
+            "doc-d8541f35904a97708a4f:b00009",
+            "doc-d8541f35904a97708a4f:b00010",
+            "doc-d8541f35904a97708a4f:b00011"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-erz",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-waste-sorting-2",
+      "citations": [
+        {
+          "document_id": "doc-d8541f35904a97708a4f",
+          "outcome": "same-snapshot",
+          "start": 1175,
+          "end": 2567,
+          "block_ids": [
+            "doc-d8541f35904a97708a4f:b00012",
+            "doc-d8541f35904a97708a4f:b00013",
+            "doc-d8541f35904a97708a4f:b00014",
+            "doc-d8541f35904a97708a4f:b00015",
+            "doc-d8541f35904a97708a4f:b00016",
+            "doc-d8541f35904a97708a4f:b00017",
+            "doc-d8541f35904a97708a4f:b00018",
+            "doc-d8541f35904a97708a4f:b00019",
+            "doc-d8541f35904a97708a4f:b00020",
+            "doc-d8541f35904a97708a4f:b00021",
+            "doc-d8541f35904a97708a4f:b00022",
+            "doc-d8541f35904a97708a4f:b00023",
+            "doc-d8541f35904a97708a4f:b00024"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-erz",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-waste-sorting-3",
+      "citations": [
+        {
+          "document_id": "doc-d8541f35904a97708a4f",
+          "outcome": "same-snapshot",
+          "start": 2569,
+          "end": 3938,
+          "block_ids": [
+            "doc-d8541f35904a97708a4f:b00025",
+            "doc-d8541f35904a97708a4f:b00026",
+            "doc-d8541f35904a97708a4f:b00027",
+            "doc-d8541f35904a97708a4f:b00028",
+            "doc-d8541f35904a97708a4f:b00029",
+            "doc-d8541f35904a97708a4f:b00030",
+            "doc-d8541f35904a97708a4f:b00031",
+            "doc-d8541f35904a97708a4f:b00032",
+            "doc-d8541f35904a97708a4f:b00033",
+            "doc-d8541f35904a97708a4f:b00034",
+            "doc-d8541f35904a97708a4f:b00035",
+            "doc-d8541f35904a97708a4f:b00036",
+            "doc-d8541f35904a97708a4f:b00037",
+            "doc-d8541f35904a97708a4f:b00038"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-erz",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-waste-sorting-4",
+      "citations": [
+        {
+          "document_id": "doc-d8541f35904a97708a4f",
+          "outcome": "same-snapshot",
+          "start": 3940,
+          "end": 5243,
+          "block_ids": [
+            "doc-d8541f35904a97708a4f:b00039",
+            "doc-d8541f35904a97708a4f:b00040",
+            "doc-d8541f35904a97708a4f:b00041",
+            "doc-d8541f35904a97708a4f:b00042",
+            "doc-d8541f35904a97708a4f:b00043",
+            "doc-d8541f35904a97708a4f:b00044",
+            "doc-d8541f35904a97708a4f:b00045"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-erz",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-zurich-waste-sorting-5",
+      "citations": [
+        {
+          "document_id": "doc-d8541f35904a97708a4f",
+          "outcome": "same-snapshot",
+          "start": 5245,
+          "end": 6834,
+          "block_ids": [
+            "doc-d8541f35904a97708a4f:b00046",
+            "doc-d8541f35904a97708a4f:b00047",
+            "doc-d8541f35904a97708a4f:b00048",
+            "doc-d8541f35904a97708a4f:b00049",
+            "doc-d8541f35904a97708a4f:b00050",
+            "doc-d8541f35904a97708a4f:b00051",
+            "doc-d8541f35904a97708a4f:b00052",
+            "doc-d8541f35904a97708a4f:b00053",
+            "doc-d8541f35904a97708a4f:b00054"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-erz",
           "basis": "Municipal authority guidance",
           "basis_rule": "default",
           "basis_warnings": []
@@ -13076,6 +15163,368 @@
       "basis": "Cantonal authority guidance"
     },
     {
+      "fact_id": "zh-family-b-c-permit-1",
+      "citations": [
+        {
+          "document_id": "doc-b84c4109386ec6f24386",
+          "outcome": "same-snapshot",
+          "start": 1149,
+          "end": 2436,
+          "block_ids": [
+            "doc-b84c4109386ec6f24386:b00051",
+            "doc-b84c4109386ec6f24386:b00052",
+            "doc-b84c4109386ec6f24386:b00053",
+            "doc-b84c4109386ec6f24386:b00054",
+            "doc-b84c4109386ec6f24386:b00055",
+            "doc-b84c4109386ec6f24386:b00056",
+            "doc-b84c4109386ec6f24386:b00057",
+            "doc-b84c4109386ec6f24386:b00058",
+            "doc-b84c4109386ec6f24386:b00059",
+            "doc-b84c4109386ec6f24386:b00060",
+            "doc-b84c4109386ec6f24386:b00061"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-family-b-c-permit-2",
+      "citations": [
+        {
+          "document_id": "doc-b84c4109386ec6f24386",
+          "outcome": "same-snapshot",
+          "start": 1419,
+          "end": 1766,
+          "block_ids": [
+            "doc-b84c4109386ec6f24386:b00054"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-family-b-c-permit-3",
+      "citations": [
+        {
+          "document_id": "doc-b84c4109386ec6f24386",
+          "outcome": "same-snapshot",
+          "start": 2532,
+          "end": 5146,
+          "block_ids": [
+            "doc-b84c4109386ec6f24386:b00064",
+            "doc-b84c4109386ec6f24386:b00065",
+            "doc-b84c4109386ec6f24386:b00066",
+            "doc-b84c4109386ec6f24386:b00067",
+            "doc-b84c4109386ec6f24386:b00068",
+            "doc-b84c4109386ec6f24386:b00069",
+            "doc-b84c4109386ec6f24386:b00070",
+            "doc-b84c4109386ec6f24386:b00071",
+            "doc-b84c4109386ec6f24386:b00072",
+            "doc-b84c4109386ec6f24386:b00073",
+            "doc-b84c4109386ec6f24386:b00074",
+            "doc-b84c4109386ec6f24386:b00075",
+            "doc-b84c4109386ec6f24386:b00076",
+            "doc-b84c4109386ec6f24386:b00077",
+            "doc-b84c4109386ec6f24386:b00078",
+            "doc-b84c4109386ec6f24386:b00079",
+            "doc-b84c4109386ec6f24386:b00080",
+            "doc-b84c4109386ec6f24386:b00081",
+            "doc-b84c4109386ec6f24386:b00082",
+            "doc-b84c4109386ec6f24386:b00083"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-family-b-c-permit-4",
+      "citations": [
+        {
+          "document_id": "doc-b84c4109386ec6f24386",
+          "outcome": "same-snapshot",
+          "start": 5148,
+          "end": 7698,
+          "block_ids": [
+            "doc-b84c4109386ec6f24386:b00084",
+            "doc-b84c4109386ec6f24386:b00085",
+            "doc-b84c4109386ec6f24386:b00086",
+            "doc-b84c4109386ec6f24386:b00087",
+            "doc-b84c4109386ec6f24386:b00088",
+            "doc-b84c4109386ec6f24386:b00089",
+            "doc-b84c4109386ec6f24386:b00090",
+            "doc-b84c4109386ec6f24386:b00091",
+            "doc-b84c4109386ec6f24386:b00092",
+            "doc-b84c4109386ec6f24386:b00093",
+            "doc-b84c4109386ec6f24386:b00094",
+            "doc-b84c4109386ec6f24386:b00095",
+            "doc-b84c4109386ec6f24386:b00096",
+            "doc-b84c4109386ec6f24386:b00097",
+            "doc-b84c4109386ec6f24386:b00098",
+            "doc-b84c4109386ec6f24386:b00099",
+            "doc-b84c4109386ec6f24386:b00100",
+            "doc-b84c4109386ec6f24386:b00101"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-family-b-c-permit-5",
+      "citations": [
+        {
+          "document_id": "doc-b84c4109386ec6f24386",
+          "outcome": "same-snapshot",
+          "start": 7723,
+          "end": 7819,
+          "block_ids": [
+            "doc-b84c4109386ec6f24386:b00103"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-b84c4109386ec6f24386",
+          "outcome": "same-snapshot",
+          "start": 8666,
+          "end": 8802,
+          "block_ids": [
+            "doc-b84c4109386ec6f24386:b00127",
+            "doc-b84c4109386ec6f24386:b00128"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-family-swiss-sponsor-1",
+      "citations": [
+        {
+          "document_id": "doc-5126e3273ddd44c85c8c",
+          "outcome": "same-snapshot",
+          "start": 1182,
+          "end": 2359,
+          "block_ids": [
+            "doc-5126e3273ddd44c85c8c:b00051",
+            "doc-5126e3273ddd44c85c8c:b00052",
+            "doc-5126e3273ddd44c85c8c:b00053",
+            "doc-5126e3273ddd44c85c8c:b00054",
+            "doc-5126e3273ddd44c85c8c:b00055",
+            "doc-5126e3273ddd44c85c8c:b00056",
+            "doc-5126e3273ddd44c85c8c:b00057",
+            "doc-5126e3273ddd44c85c8c:b00058",
+            "doc-5126e3273ddd44c85c8c:b00059",
+            "doc-5126e3273ddd44c85c8c:b00060",
+            "doc-5126e3273ddd44c85c8c:b00061"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-family-swiss-sponsor-2",
+      "citations": [
+        {
+          "document_id": "doc-5126e3273ddd44c85c8c",
+          "outcome": "same-snapshot",
+          "start": 1420,
+          "end": 1969,
+          "block_ids": [
+            "doc-5126e3273ddd44c85c8c:b00054",
+            "doc-5126e3273ddd44c85c8c:b00055"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-family-swiss-sponsor-3",
+      "citations": [
+        {
+          "document_id": "doc-5126e3273ddd44c85c8c",
+          "outcome": "same-snapshot",
+          "start": 2639,
+          "end": 3729,
+          "block_ids": [
+            "doc-5126e3273ddd44c85c8c:b00064",
+            "doc-5126e3273ddd44c85c8c:b00065",
+            "doc-5126e3273ddd44c85c8c:b00066",
+            "doc-5126e3273ddd44c85c8c:b00067",
+            "doc-5126e3273ddd44c85c8c:b00068",
+            "doc-5126e3273ddd44c85c8c:b00069",
+            "doc-5126e3273ddd44c85c8c:b00070",
+            "doc-5126e3273ddd44c85c8c:b00071",
+            "doc-5126e3273ddd44c85c8c:b00072",
+            "doc-5126e3273ddd44c85c8c:b00073",
+            "doc-5126e3273ddd44c85c8c:b00074"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-family-swiss-sponsor-4",
+      "citations": [
+        {
+          "document_id": "doc-5126e3273ddd44c85c8c",
+          "outcome": "same-snapshot",
+          "start": 3731,
+          "end": 5826,
+          "block_ids": [
+            "doc-5126e3273ddd44c85c8c:b00075",
+            "doc-5126e3273ddd44c85c8c:b00076",
+            "doc-5126e3273ddd44c85c8c:b00077",
+            "doc-5126e3273ddd44c85c8c:b00078",
+            "doc-5126e3273ddd44c85c8c:b00079",
+            "doc-5126e3273ddd44c85c8c:b00080",
+            "doc-5126e3273ddd44c85c8c:b00081",
+            "doc-5126e3273ddd44c85c8c:b00082",
+            "doc-5126e3273ddd44c85c8c:b00083",
+            "doc-5126e3273ddd44c85c8c:b00084",
+            "doc-5126e3273ddd44c85c8c:b00085",
+            "doc-5126e3273ddd44c85c8c:b00086",
+            "doc-5126e3273ddd44c85c8c:b00087",
+            "doc-5126e3273ddd44c85c8c:b00088"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-family-fza-1",
+      "citations": [
+        {
+          "document_id": "doc-7522016c9c5677a1d873",
+          "outcome": "same-snapshot",
+          "start": 1149,
+          "end": 1727,
+          "block_ids": [
+            "doc-7522016c9c5677a1d873:b00051",
+            "doc-7522016c9c5677a1d873:b00052",
+            "doc-7522016c9c5677a1d873:b00053",
+            "doc-7522016c9c5677a1d873:b00054",
+            "doc-7522016c9c5677a1d873:b00055",
+            "doc-7522016c9c5677a1d873:b00056",
+            "doc-7522016c9c5677a1d873:b00057"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-family-fza-2",
+      "citations": [
+        {
+          "document_id": "doc-7522016c9c5677a1d873",
+          "outcome": "same-snapshot",
+          "start": 1970,
+          "end": 2832,
+          "block_ids": [
+            "doc-7522016c9c5677a1d873:b00060",
+            "doc-7522016c9c5677a1d873:b00061",
+            "doc-7522016c9c5677a1d873:b00062",
+            "doc-7522016c9c5677a1d873:b00063",
+            "doc-7522016c9c5677a1d873:b00064",
+            "doc-7522016c9c5677a1d873:b00065",
+            "doc-7522016c9c5677a1d873:b00066",
+            "doc-7522016c9c5677a1d873:b00067",
+            "doc-7522016c9c5677a1d873:b00068"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-family-fza-3",
+      "citations": [
+        {
+          "document_id": "doc-7522016c9c5677a1d873",
+          "outcome": "same-snapshot",
+          "start": 2834,
+          "end": 4869,
+          "block_ids": [
+            "doc-7522016c9c5677a1d873:b00069",
+            "doc-7522016c9c5677a1d873:b00070",
+            "doc-7522016c9c5677a1d873:b00071",
+            "doc-7522016c9c5677a1d873:b00072",
+            "doc-7522016c9c5677a1d873:b00073",
+            "doc-7522016c9c5677a1d873:b00074",
+            "doc-7522016c9c5677a1d873:b00075",
+            "doc-7522016c9c5677a1d873:b00076",
+            "doc-7522016c9c5677a1d873:b00077",
+            "doc-7522016c9c5677a1d873:b00078",
+            "doc-7522016c9c5677a1d873:b00079",
+            "doc-7522016c9c5677a1d873:b00080",
+            "doc-7522016c9c5677a1d873:b00081",
+            "doc-7522016c9c5677a1d873:b00082"
+          ],
+          "warnings": [],
+          "institution_id": "zh-migrationsamt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
       "fact_id": "zh-family-refugee-asylum-1",
       "citations": [
         {
@@ -16698,8 +19147,8 @@
       "basis": "Municipal authority guidance"
     }
   ],
-  "source_terms": 1120,
-  "questions": 322,
+  "source_terms": 1237,
+  "questions": 358,
   "institutions": [
     {
       "institution_id": "ch-bag",
@@ -16762,7 +19211,7 @@
       "name": "Fedlex, the Swiss federal law collection (Federal Chancellery)",
       "level": "federal",
       "jurisdiction": "CH",
-      "documents": 10,
+      "documents": 15,
       "from_catalogue": false
     },
     {
@@ -16778,7 +19227,7 @@
       "name": "State Secretariat for Migration SEM",
       "level": "federal",
       "jurisdiction": "CH",
-      "documents": 35,
+      "documents": 46,
       "from_catalogue": false
     },
     {
@@ -16794,7 +19243,7 @@
       "name": "Central Compensation Office CCO",
       "level": "federal",
       "jurisdiction": "CH",
-      "documents": 3,
+      "documents": 4,
       "from_catalogue": false
     },
     {
@@ -16802,7 +19251,7 @@
       "name": "City of Zurich, Naturalisation Division",
       "level": "municipal",
       "jurisdiction": "CH-ZH-261",
-      "documents": 3,
+      "documents": 6,
       "from_catalogue": false
     },
     {
@@ -16810,7 +19259,7 @@
       "name": "City of Zurich, Waste Disposal and Recycling (ERZ)",
       "level": "municipal",
       "jurisdiction": "CH-ZH-261",
-      "documents": 12,
+      "documents": 13,
       "from_catalogue": false
     },
     {
@@ -16906,7 +19355,7 @@
       "name": "Canton of Zurich, Migration Office",
       "level": "cantonal",
       "jurisdiction": "CH-ZH",
-      "documents": 6,
+      "documents": 16,
       "from_catalogue": false
     },
     {
@@ -16938,7 +19387,7 @@
       "name": "SVA Zürich, the cantonal social insurance office",
       "level": "cantonal",
       "jurisdiction": "CH-ZH",
-      "documents": 9,
+      "documents": 10,
       "from_catalogue": false
     },
     {
@@ -16989,10 +19438,22 @@
       "institution_rule": "registry rule www.ch.ch"
     },
     {
+      "document_id": "doc-15b24dfd1b4e56b1520e",
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta/ausweis_g__grenzgaengerbewilligung.html",
+      "institution_id": "ch-sem",
+      "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
       "document_id": "doc-1631ee5aec5b0914091c",
       "source_url": "https://www.bag.admin.ch/de/krankenversicherung-zur-sistierung-der-unfalldeckung-berechtigte-versicherte",
       "institution_id": "ch-bag",
       "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
+      "document_id": "doc-16aa932b35f8b7f9ff91",
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/biometrische-auslaenderausweise.html",
+      "institution_id": "zh-migrationsamt",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
     },
     {
       "document_id": "doc-1763e58f746ce7c2100a",
@@ -17085,6 +19546,12 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-27c93a60636593379a39",
+      "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung/stadtbuergerrecht.html",
+      "institution_id": "zh-261-einbuergerungen",
+      "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung"
+    },
+    {
       "document_id": "doc-28471454d291716bb922",
       "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-l-bewilligung-beantragen.html",
       "institution_id": "zh-migrationsamt",
@@ -17163,6 +19630,18 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-3a6a7f0bc6a14dd20aed",
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-mit-erwerbstaetigkeit-fuer-drittstaatsangehoerige.html",
+      "institution_id": "zh-migrationsamt",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
+      "document_id": "doc-3d3f66c4e8551600ba18",
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige/auslaenderausweis-beantragen.html",
+      "institution_id": "zh-migrationsamt",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
       "document_id": "doc-3e746d83b3058c7ef473",
       "source_url": "https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/biometr_auslaenderausweis.html",
       "institution_id": "ch-sem",
@@ -17175,10 +19654,22 @@
       "institution_rule": "registry rule www.bsv.admin.ch"
     },
     {
+      "document_id": "doc-3fe8c1612d3a52906267",
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/biometrische-auslaenderausweise/biometrie.html",
+      "institution_id": "zh-migrationsamt",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
       "document_id": "doc-40854d7d26db9f3bba00",
       "source_url": "https://www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt.html",
       "institution_id": "zh-strassenverkehrsamt",
       "institution_rule": "registry rule www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt"
+    },
+    {
+      "document_id": "doc-42e6fd401649e8cf7deb",
+      "source_url": "https://svazurich.ch/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/krankenversicherungspflicht0/krankenversicherungspflicht-anmeldung.html",
+      "institution_id": "zh-sva",
+      "institution_rule": "registry rule svazurich.ch"
     },
     {
       "document_id": "doc-4405a0d68192037f30b3",
@@ -17193,6 +19684,12 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-451d08b440cd87bb5ec4",
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige/einreisebewilligung-fuer-rentnerinnen-und-rentner-beantragen.html",
+      "institution_id": "zh-migrationsamt",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
       "document_id": "doc-486750863d61559b066b",
       "source_url": "https://www.serafe.ch/en/exemption-from-the-fee/basic-principle/",
       "institution_id": "ch-serafe",
@@ -17205,10 +19702,22 @@
       "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
+      "document_id": "doc-49f266bcd26a6137ae23",
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige/einreisebewilligung-fuer-nahe-verwandte-beantragen.html",
+      "institution_id": "zh-migrationsamt",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
       "document_id": "doc-4ba41844a0259a01bd2d",
       "source_url": "https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/Quellensteuerpflichtige-Personen.html",
       "institution_id": "zh-steueramt",
       "institution_rule": "registry rule www.zh.ch/de/steuern-finanzen/"
+    },
+    {
+      "document_id": "doc-4c2cfb5c0cacd4b77321",
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_c_eu_efta.html",
+      "institution_id": "ch-sem",
+      "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
       "document_id": "doc-4f9c56f3313549edc7e8",
@@ -17227,6 +19736,12 @@
       "source_url": "https://www.sem.admin.ch/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum/aufenthaltsrechner.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-5126e3273ddd44c85c8c",
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-schweizer-staatsangehoerige-beantragen.html",
+      "institution_id": "zh-migrationsamt",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
     },
     {
       "document_id": "doc-51784d2aafc3d54b47f6",
@@ -17253,6 +19768,12 @@
       "institution_rule": "registry rule www.ch.ch"
     },
     {
+      "document_id": "doc-59cb523cc17b8a9db3cd",
+      "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung/grundkenntnisse.html",
+      "institution_id": "zh-261-einbuergerungen",
+      "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung"
+    },
+    {
       "document_id": "doc-5ba510af38c7a4246318",
       "source_url": "https://www.ch.ch/de/wohnen/miete/mietvertrag-und-pachtvertrag/",
       "institution_id": "ch-chch",
@@ -17277,10 +19798,22 @@
       "institution_rule": "registry rule www.bsv.admin.ch"
     },
     {
+      "document_id": "doc-5f038736fe92a346d1a5",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de",
+      "institution_id": "ch-fedlex",
+      "institution_rule": "registry rule www.fedlex.admin.ch"
+    },
+    {
       "document_id": "doc-5f9c03deab1696cbe981",
       "source_url": "https://www.stadt-zuerich.ch/de/mobilitaet/parkieren/parkbewilligungen/parkscheibe.html",
       "institution_id": "zh-261-verkehr",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/mobilitaet/parkieren"
+    },
+    {
+      "document_id": "doc-614da06bc3d0c76de81f",
+      "source_url": "https://www.zh.ch/de/migration-integration/niederlassungsbewilligung.html",
+      "institution_id": "zh-migrationsamt",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
     },
     {
       "document_id": "doc-64ce4d24871f7047d407",
@@ -17289,10 +19822,22 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-65e986edfa25a003b565",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2016/405/de",
+      "institution_id": "ch-fedlex",
+      "institution_rule": "registry rule www.fedlex.admin.ch"
+    },
+    {
       "document_id": "doc-66553fde673cc7f06804",
       "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige.html",
       "institution_id": "zh-migrationsamt",
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
+      "document_id": "doc-69fcd94e262dfe24f7da",
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_g_eu_efta.html",
+      "institution_id": "ch-sem",
+      "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
       "document_id": "doc-6a4c4aa06458f9782f9a",
@@ -17373,6 +19918,12 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/mobilitaet/parkieren"
     },
     {
+      "document_id": "doc-7522016c9c5677a1d873",
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-nach-dem-freizuegigkeitsabkommen-beantragen.html",
+      "institution_id": "zh-migrationsamt",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
       "document_id": "doc-77294958483b9993cf03",
       "source_url": "https://www.serafe.ch/de/abgabe/abgabeuebersicht/",
       "institution_id": "ch-serafe",
@@ -17391,6 +19942,12 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/bildung/volksschule"
     },
     {
+      "document_id": "doc-7fb93c70047754936bc4",
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta/ausweis_ci__aufenthalt_erwerb.html",
+      "institution_id": "ch-sem",
+      "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
       "document_id": "doc-80035af2969524751879",
       "source_url": "https://www.sem.admin.ch/sem/en/home/integration-einbuergerung/schweizer-werden/verheiratet.html",
       "institution_id": "ch-sem",
@@ -17401,6 +19958,18 @@
       "source_url": "https://www.arbeit.swiss/en/jobseekers/signing-on-and-registration",
       "institution_id": "ch-seco",
       "institution_rule": "registry rule www.arbeit.swiss"
+    },
+    {
+      "document_id": "doc-83c102f8041c8d7cb98d",
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_l_eu_efta.html",
+      "institution_id": "ch-sem",
+      "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-8486b6ce38b9f3f0c014",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/de",
+      "institution_id": "ch-fedlex",
+      "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
       "document_id": "doc-859ecc73c600eb5a82a2",
@@ -17435,6 +20004,12 @@
     {
       "document_id": "doc-9108317b2ccbef351701",
       "source_url": "https://www.sem.admin.ch/sem/en/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html",
+      "institution_id": "ch-sem",
+      "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-922e276a8a0082617d5d",
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/reisedokumente.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
     },
@@ -17511,6 +20086,12 @@
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/einbuergerung"
     },
     {
+      "document_id": "doc-a08db9ee519e5d5386e4",
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_ci_eu_efta.html",
+      "institution_id": "ch-sem",
+      "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
       "document_id": "doc-a16cede1d5d2e9ae9fc4",
       "source_url": "https://www.bsv.admin.ch/de/familienzulagen-leistungen-und-voraussetzungen",
       "institution_id": "ch-bsv",
@@ -17547,10 +20128,22 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-aac76776dd74c7f8441c",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/759/de",
+      "institution_id": "ch-fedlex",
+      "institution_rule": "registry rule www.fedlex.admin.ch"
+    },
+    {
       "document_id": "doc-aaca2a8359cc911aa50f",
       "source_url": "https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer.html",
       "institution_id": "zh-steueramt",
       "institution_rule": "registry rule www.zh.ch/de/steuern-finanzen/"
+    },
+    {
+      "document_id": "doc-ab60e3608ad2acda5817",
+      "source_url": "https://www.zas.admin.ch/de/bilaterale-abkommen",
+      "institution_id": "ch-zas",
+      "institution_rule": "registry rule www.zas.admin.ch"
     },
     {
       "document_id": "doc-af5d9087266c17e8fe30",
@@ -17587,6 +20180,24 @@
       "source_url": "https://www.zh.ch/de/finanzdirektion/steueramt.html",
       "institution_id": "zh-steueramt",
       "institution_rule": "registry rule www.zh.ch/de/finanzdirektion/steueramt"
+    },
+    {
+      "document_id": "doc-b453b5c4f8f48f94400a",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/2016/404/de",
+      "institution_id": "ch-fedlex",
+      "institution_rule": "registry rule www.fedlex.admin.ch"
+    },
+    {
+      "document_id": "doc-b84c4109386ec6f24386",
+      "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-b-oder-c-bewilligung-beantragen.html",
+      "institution_id": "zh-migrationsamt",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
+      "document_id": "doc-b9f0f7f478a3e7753470",
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_b_eu_efta.html",
+      "institution_id": "ch-sem",
+      "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
       "document_id": "doc-ba688d36b51f3415942d",
@@ -17715,10 +20326,22 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle"
     },
     {
+      "document_id": "doc-d7418165689182dcd557",
+      "source_url": "https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden/3-generation.html",
+      "institution_id": "ch-sem",
+      "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
       "document_id": "doc-d7cabca9200534ba2f45",
       "source_url": "https://www.zas.admin.ch/de/staatsangehoerigkeit-eines-staates-mit-sozialversicherungsabkommen-ahv",
       "institution_id": "ch-zas",
       "institution_rule": "registry rule www.zas.admin.ch"
+    },
+    {
+      "document_id": "doc-d8541f35904a97708a4f",
+      "source_url": "https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/korrekt-entsorgen.html",
+      "institution_id": "zh-261-erz",
+      "institution_rule": "registry rule www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung"
     },
     {
       "document_id": "doc-d9800378b0f5ad0049df",
@@ -17805,6 +20428,18 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/stadtleben/notfall"
     },
     {
+      "document_id": "doc-e531378f6761d7894a5f",
+      "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung/deutschkenntnisse.html",
+      "institution_id": "zh-261-einbuergerungen",
+      "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung"
+    },
+    {
+      "document_id": "doc-e5e7b97428984c9f26c5",
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige/grundlagen_zur_arbeitsmarktzulassung.html",
+      "institution_id": "ch-sem",
+      "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
       "document_id": "doc-e6d7d2b3b10bbffeebaa",
       "source_url": "https://www.zh.ch/de/migration-integration/einbuergerung/ordentliche-einbuergerung/einbuergerungsgesuch-einreichen.html",
       "institution_id": "zh-gemeindeamt",
@@ -17883,6 +20518,12 @@
       "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
+      "document_id": "doc-f2a82e55188699dfb2c9",
+      "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta.html",
+      "institution_id": "ch-sem",
+      "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
       "document_id": "doc-f373f87980ac42c88f80",
       "source_url": "https://www.bag.admin.ch/en/accident-insurance-who-is-subject-to-compulsory-insurance",
       "institution_id": "ch-bag",
@@ -17938,12 +20579,12 @@
     }
   ],
   "basis_kinds": {
-    "guidance": 373,
-    "act": 43,
+    "guidance": 450,
+    "act": 49,
+    "ordinance": 17,
     "summary": 50,
     "treaty": 37,
     "directory": 77,
-    "ordinance": 14,
     "directive": 7
   },
   "place_register": {
