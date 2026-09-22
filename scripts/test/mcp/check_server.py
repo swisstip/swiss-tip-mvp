@@ -242,8 +242,10 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             check(f"search with the German two-month-contract question finds the notification concept: {hits[:3]}",
                   SHORT_EMPLOYMENT in hits[:3])
             # No word of this query may reach a published term: "occupation" left it in release v15, whose source term
-            # "occupational accidents" shares the six-letter stem, and gave a weak incidental hit.
-            quota = await session.call_tool("search", {"query": "annual quota limit shortage priority check order"})
+            # "occupational accidents" shares the six-letter stem, and "priority" in release 2026-09-22-v1, which
+            # publishes the priority of the domestic workforce as an admission condition
+            # (third-country-work-conditions). The quotas themselves stay out of scope, so the query keeps its subject.
+            quota = await session.call_tool("search", {"query": "annual quota limit shortage check order"})
             check("search for quotas returns no lexical hits without asserting domain noncoverage",
                   quota.structuredContent["results"] == []
                   and "does not establish" in (quota.structuredContent.get("guidance_for_caller") or ""))
