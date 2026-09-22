@@ -4,11 +4,11 @@
   "release_id": "mvp-zurich-2026-09-22-v1",
   "content_sha256": "2823ab3fad3b042436d0fd1a38d913016031ac17562afe9dffcb774e80341be2",
   "text_index_sha256": "d144ffbc1f4cc8d01ad2369c9449a09080d0c60013270bf3967472aa0f34a60a",
-  "dispositions_sha256": "1d14091c04d040ed7d3a2fa124f2f434fa75fb99bb45a9e682a496aa8dbab44b",
+  "dispositions_sha256": "6baf28873a687db7f70333e09b701d078cb2e1697b43abba3a13145668d8c937",
   "dispositions": 23,
   "policy": "report",
   "today": "2026-09-22",
-  "generated_at": "2026-09-22T11:04:50.642653+00:00",
+  "generated_at": "2026-09-22T11:23:52.803930+00:00",
   "rules": {
     "reference_kinds": [
       "plugin-document"

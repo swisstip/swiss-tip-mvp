@@ -833,8 +833,8 @@ implemented.
   283 sections on 98 candidate records as repeated on two or more pages of
   their host, and the reading views carry the mark on every block, so a
   reader knows a card is a card before deciding what to cite. Facts cite 525
-  units; 23 dispositions drafted by the assistant for the reviewer settle 267
-  more (the French and Italian SEM pages as duplicates of the cited German
+  units; 23 dispositions, drafted by the assistant and reviewed and signed by
+  the pack's reviewer on 22 September 2026, settle 267 more (the French and Italian SEM pages as duplicates of the cited German
   ones, sixteen hub and link pages as navigation, five asylum pages against
   the manifest's `asylum` entry); **1,284 units in 213 documents are
   unclassified**. Two groups, 309 units, need a scope decision the manifest

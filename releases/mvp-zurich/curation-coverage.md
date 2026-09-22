@@ -1,6 +1,6 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, not clean, 23 disposition(s), generated 2026-09-22T11:04:50.
+Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, not clean, 23 disposition(s), generated 2026-09-22T11:23:52.
 
 337 candidate records ({'section': 321, 'document': 15, 'rolled_up': 1}) with 2076 units a curator answers for: 525 cited, 267 dispositioned, **1284 unclassified**; 76 boilerplate sections were not asked for. Documents: {'unclassified': 91, 'partly_cited': 122, 'cited': 53, 'dispositioned': 71}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 

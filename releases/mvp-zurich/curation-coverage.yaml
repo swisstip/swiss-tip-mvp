@@ -2,9 +2,9 @@ schema_version: swiss-tip-curation-coverage/v1
 pack: mvp-zurich
 dispositions:
 - kind: duplicate
-  reason: The French versions of SEM pages the catalogue lists next to the German ones. The German page is the cited
-    one; French excerpts are cited only where a cantonal office name is French, and those units stay cited.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  reason: The French versions of SEM pages the catalogue lists next to the German ones. The German page is the one
+    the pack reads; no fact cites a French page.
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   url_prefix: https://www.sem.admin.ch/sem/fr/
   known_documents:
@@ -29,8 +29,8 @@ dispositions:
   - doc-e53da5021749ca35858e
 - kind: duplicate
   reason: The Italian versions of SEM pages the catalogue lists next to the German ones. The German page is the
-    cited one; Italian excerpts are cited only where a cantonal office name is Italian, and those units stay cited.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+    one the pack reads; no fact cites an Italian page.
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   url_prefix: https://www.sem.admin.ch/sem/it/
   known_documents:
@@ -56,7 +56,7 @@ dispositions:
 - kind: navigation
   reason: 'The chapter pages of the SEM directives: each lists the PDF directives of its chapter, which the catalogue
     does not fetch. Fetching them is an acquisition change, not a disposition.'
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   url_prefix: https://www.sem.admin.ch/sem/de/home/publiservice/weisungen-kreisschreiben/
   known_documents:
@@ -76,106 +76,106 @@ dispositions:
   - doc-db6ed19f639ce113dce5
 - kind: navigation
   reason: Hub of the Migration Office's residence pages; its children are cited.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-a0e7246112d61ad60df1
 - kind: navigation
   reason: Hub of the cantonal naturalisation pages; its children are cited.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-b9be0a62ff2397dbcfee
 - kind: navigation
   reason: Hub of the integration pages; a link list for practitioners and residents.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-79a45851710a6e6d7971
 - kind: navigation
   reason: Hub of the City of Zurich waste pages; its children are cited.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-9d68da869b253d1e73cc
 - kind: navigation
   reason: Navigation to the fee overview and the legal bases; the fee table itself is not in the extracted text.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-c1f16a788a87f6d16e6b
 - kind: navigation
   reason: Navigation to the waste-group pages, which are cited.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-a52da80d7811ee254066
 - kind: navigation
   reason: Hub of the SEM entry pages; its children are cited.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-dc5f96bafefd650a52d1
 - kind: navigation
   reason: Navigation to the entry information pages, which are cited.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-e7c08d4b66a97a31a498
 - kind: navigation
   reason: A link list of addresses; the cantonal directory the pack serves is cited from its own page.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-84ef4c65f11f35dbe1fb
 - kind: navigation
   reason: A link list of addresses; the cantonal directory the pack serves is cited from its own page.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-e183ec4adc565b6cfa57
 - kind: navigation
   reason: A link to the FDFA representation finder; no content of its own.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-3ac1dc4ed79c8fc24b3b
 - kind: navigation
   reason: A link to the cantonal authority list; no content of its own.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-ec91d9bae72da425d45e
 - kind: navigation
   reason: Overview of the EU/EFTA permit cards; each card's page is cited.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-239b09506fc070827848
 - kind: navigation
   reason: Overview of the third-country permit cards; the card pages and the roll-out note are cited.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-f2a82e55188699dfb2c9
 - kind: navigation
   reason: A page about ordering a brochure in twelve languages; the brochure itself is not in the run.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-dbee3b501bbce48562d2
 - kind: out_of_scope
   reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-fa315a94917a96e1f096
   out_of_scope_entry: asylum
 - kind: out_of_scope
   reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-aae152acfcb887b384fc
   out_of_scope_entry: asylum
 - kind: out_of_scope
   reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-0f4b30d945bb1bf6040b
   out_of_scope_entry: asylum
 - kind: out_of_scope
   reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-79322d2379e0a3c7a9de
   out_of_scope_entry: asylum
 - kind: out_of_scope
   reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
-  author: assistant (Claude), drafted from curation-coverage.json for the reviewer
+  author: Alexander Bobrovsky
   date: '2026-09-22'
   document_id: doc-94cf8439510adc29ced0
   out_of_scope_entry: asylum
