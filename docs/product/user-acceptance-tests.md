@@ -18,9 +18,10 @@ release serves for that place and nothing published for another; six
 entry-and-visa cases (UAT-45 to UAT-50); three cases on voting rights and the
 tax-at-source tariff (UAT-51 to UAT-53); eleven expat-life cases (UAT-54 to
 UAT-64); two settlement-permit cases on the five-year routes by nationality
-(UAT-65 and UAT-66); and sixteen
+(UAT-65 and UAT-66); five cases on the integration offers of the Canton of
+Zurich (UAT-67 to UAT-71); and seventeen
 server-only decline cases (DECLINE-1 to
-DECLINE-9 and SEARCH-DECLINE-1 to SEARCH-DECLINE-7) that check the server
+DECLINE-10 and SEARCH-DECLINE-1 to SEARCH-DECLINE-7) that check the server
 rejects a request the release does not cover, at the resolve step and at
 the search step.<br>
 **System under test:** the Swiss TIP MCP server (`apps/mcp-server`) on the
@@ -142,6 +143,11 @@ citation, context and efficiency requirements below apply in both modes.
 | UAT-64 | Moving from Munich with furniture and a car, in German: customs duty? | Duty on everything, or duty-free without prior use and the form | `moving-goods-customs` |
 | UAT-65 | German citizen, five years in Zurich: settlement permit already, or only after ten years? | The ten-year rule applied to every nationality; a language certificate asked of a German national | `permit-c-five-years`, `zh-permit-c-five-years` |
 | UAT-66 | US citizen, five years in Zurich, after an Italian colleague's remark: does the five-year route apply? | Ten years because the user is a third-country national; the language exemption carried over from Germany, Austria and Liechtenstein | `zh-permit-c-five-years` |
+| UAT-67 | Brazilian newcomer in Winterthur looking for a German course and for advice on choosing one | The cantonal database only, although Winterthur keeps its own; invented course names, dates or prices | `zh-integration-offers` |
+| UAT-68 | Family on a family-reunification permit, two weeks in the canton: whose job is it to inform them? | The Migration Office named as the body that informs about integration offers; a welcome talk promised | `zh-newcomer-first-information` |
+| UAT-69 | Remarks about skin colour at work: is it racist discrimination, and who advises? | A definition without an address; the described behaviour called punishable although Article 261bis covers acts in public | `zh-racism-protection` |
+| UAT-70 | Association in Uster asking for 4,000 francs for a neighbourhood festival | The 31 October deadline or the 50,000-franc maximum of the larger projects; the money promised | `zh-integration-project-funding` |
+| UAT-71 | Tamil associations in the canton: are there any, and how to find one? | Associations named from general knowledge; or claiming the canton has no directory | `zh-migrant-associations` |
 
 ## Acceptance criteria that apply to every case
 
@@ -2087,6 +2093,63 @@ Liechtenstein nationals, the user submits evidence of German at A2 spoken
 and A1 written. SEM's five-year list is the EU/EFTA one and does not name
 the United States.
 
+### UAT-67: Newcomer looking for a German course
+
+"I moved to Winterthur from Brazil last month and my German is poor. Where do
+I find a German course, and is there someone who can advise me which one
+fits?" The offer database of the Fachstelle Integration lists what the canton
+finances with the municipalities, searched by category and municipality. For
+choosing a course there is advice: many municipalities have integration
+contact persons, and where a municipality has none the cantonal
+German-course advice is free and available in 16 languages; the canton also
+keeps a German-course and language-examination database. Winterthur is one of
+the two cities with their own databases, which the answer should name.
+
+### UAT-68: Who informs a newly arrived family
+
+"We arrived in the Canton of Zurich two weeks ago on a family reunification
+permit. Nobody has told us anything about courses or counselling. Whose job is
+that?" The municipalities inform newly arrived migrants soon after arrival,
+give a first orientation and arrange access to German courses where needed;
+the canton supports them with a guide. People in family reunification are one
+of the three groups the canton names as needing support early. For further
+advice there are the regular services and migration-specific counselling, for
+which the Fachstelle keeps a list updated at least once a year and with no
+claim to completeness.
+
+### UAT-69: Where to turn after racist discrimination
+
+"My colleague keeps making remarks about my skin colour and my manager laughs
+along. Is that racist discrimination, and who advises me in Zurich?" The
+canton counts demeaning statements as a form of racist discrimination and
+names the workplace as a place where it occurs. ZüRAS advises those affected,
+in several languages and free for people living in the canton, run by the AOZ
+on behalf of canton and city. Beyond the canton there are the counselling
+network for victims of racism and the reporting platform for online hate
+speech. The legal bases are BV Art. 8(2), StGB Art. 261bis for acts committed
+in public, and AIG Art. 53; whether this case is punishable is not the
+service's to decide.
+
+### UAT-70: An association asks for project money
+
+"Our association in Uster wants to run a neighbourhood festival for Swiss and
+migrant families and needs about 4,000 francs. Can the Canton of Zurich
+contribute, and how do we apply?" Yes in principle: non-profit organisations
+seated in the canton can apply, and the festival falls under the priority
+"living together and participation". At 4,000 francs it is a small project:
+up to 5,000 francs, rolling while funds last, simplified rules, a budget on
+the mandatory template, and a web form that cannot be saved in between. The
+deadline of 31 October 2026 and the 50,000-franc maximum belong to the larger
+projects.
+
+### UAT-71: Finding an association of one's own community
+
+"Are there Tamil associations in the Canton of Zurich, and how do I find one
+near me?" The release does not publish associations by community; it publishes
+the platform for migrant associations, searchable by criteria such as
+municipality or region, on which associations register themselves. The answer
+points at the platform instead of naming associations.
+
 ## Decline cases
 
 These cases check that the server rejects a request the release does not
@@ -2125,6 +2188,7 @@ mode.
 | SEARCH-DECLINE-7 | "What are the opening hours of the Zurich city library?" | `search` | `weak` |
 | DECLINE-8 | "Wir wohnen in Wädenswil. Wann sind die Herbstferien 2026, und ab wann geht meine Tochter, die im Juni vier wird, in den Kindergarten?" (City of Zurich school dates asked for another Zurich municipality) | `city-zurich-school-holidays`, `city-zurich-kindergarten` for `CH-ZH-293` | both `OUT_OF_COVERAGE`, `jurisdiction_not_covered` naming `CH-ZH-261`; no cantonal or federal concept covers school dates, so nothing is served |
 | DECLINE-9 | "Which rubbish bags do I have to use in Basel, and what do they cost?" (City of Zurich waste rules asked for another canton) | `city-zurich-household-waste` for `CH-BS-2701` | `OUT_OF_COVERAGE`, `jurisdiction_not_covered`; nothing is served |
+| DECLINE-10 | "Which accredited IAZH offer types can I assign a refugee to, and how is the cost shared with the canton?" (the canton's integration funding and its refugee support system, named in `out_of_scope`) | `zh-iazh-accredited-offers` for `CH-ZH` | `OUT_OF_COVERAGE`, `concept_not_published` |
 
 DECLINE-3, DECLINE-4 and DECLINE-6 to DECLINE-9 check the rejection of a
 Zurich concept for another place at the server alone. The cross-jurisdiction

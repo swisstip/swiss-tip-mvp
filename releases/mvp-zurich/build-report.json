@@ -1,13 +1,13 @@
 {
-  "release_id": "mvp-zurich-2026-09-22-v1",
-  "built_at": "2026-09-22T08:07:00.776866+00:00",
+  "release_id": "mvp-zurich-2026-09-22-v6",
+  "built_at": "2026-09-22T12:50:22.350977+00:00",
   "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich\\text",
-  "concepts": 151,
-  "facts": 687,
-  "evidence": 900,
-  "documents": 196,
+  "concepts": 156,
+  "facts": 712,
+  "evidence": 926,
+  "documents": 203,
   "citation_outcomes": {
-    "same-snapshot": 900
+    "same-snapshot": 926
   },
   "dropped": [],
   "facts_resolved": [
@@ -19145,10 +19145,676 @@
         }
       ],
       "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "zh-integration-offers-1",
+      "citations": [
+        {
+          "document_id": "doc-6b7ab84cf9fe70b4dbb5",
+          "outcome": "same-snapshot",
+          "start": 1391,
+          "end": 2341,
+          "block_ids": [
+            "doc-6b7ab84cf9fe70b4dbb5:b00055",
+            "doc-6b7ab84cf9fe70b4dbb5:b00056",
+            "doc-6b7ab84cf9fe70b4dbb5:b00057",
+            "doc-6b7ab84cf9fe70b4dbb5:b00058",
+            "doc-6b7ab84cf9fe70b4dbb5:b00059"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-integration-offers-2",
+      "citations": [
+        {
+          "document_id": "doc-6b7ab84cf9fe70b4dbb5",
+          "outcome": "same-snapshot",
+          "start": 4208,
+          "end": 4942,
+          "block_ids": [
+            "doc-6b7ab84cf9fe70b4dbb5:b00145",
+            "doc-6b7ab84cf9fe70b4dbb5:b00146",
+            "doc-6b7ab84cf9fe70b4dbb5:b00147",
+            "doc-6b7ab84cf9fe70b4dbb5:b00148",
+            "doc-6b7ab84cf9fe70b4dbb5:b00149",
+            "doc-6b7ab84cf9fe70b4dbb5:b00150"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-integration-offers-3",
+      "citations": [
+        {
+          "document_id": "doc-6b7ab84cf9fe70b4dbb5",
+          "outcome": "same-snapshot",
+          "start": 4944,
+          "end": 5282,
+          "block_ids": [
+            "doc-6b7ab84cf9fe70b4dbb5:b00151",
+            "doc-6b7ab84cf9fe70b4dbb5:b00152",
+            "doc-6b7ab84cf9fe70b4dbb5:b00153",
+            "doc-6b7ab84cf9fe70b4dbb5:b00154",
+            "doc-6b7ab84cf9fe70b4dbb5:b00155",
+            "doc-6b7ab84cf9fe70b4dbb5:b00156"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-newcomer-first-information-1",
+      "citations": [
+        {
+          "document_id": "doc-b26607e2d663c7ebc8cc",
+          "outcome": "same-snapshot",
+          "start": 1604,
+          "end": 1926,
+          "block_ids": [
+            "doc-b26607e2d663c7ebc8cc:b00060",
+            "doc-b26607e2d663c7ebc8cc:b00061"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-newcomer-first-information-2",
+      "citations": [
+        {
+          "document_id": "doc-b26607e2d663c7ebc8cc",
+          "outcome": "same-snapshot",
+          "start": 1928,
+          "end": 2672,
+          "block_ids": [
+            "doc-b26607e2d663c7ebc8cc:b00062",
+            "doc-b26607e2d663c7ebc8cc:b00063",
+            "doc-b26607e2d663c7ebc8cc:b00064",
+            "doc-b26607e2d663c7ebc8cc:b00065"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-newcomer-first-information-3",
+      "citations": [
+        {
+          "document_id": "doc-b26607e2d663c7ebc8cc",
+          "outcome": "same-snapshot",
+          "start": 2674,
+          "end": 2985,
+          "block_ids": [
+            "doc-b26607e2d663c7ebc8cc:b00066",
+            "doc-b26607e2d663c7ebc8cc:b00067",
+            "doc-b26607e2d663c7ebc8cc:b00068",
+            "doc-b26607e2d663c7ebc8cc:b00069",
+            "doc-b26607e2d663c7ebc8cc:b00070"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-newcomer-first-information-4",
+      "citations": [
+        {
+          "document_id": "doc-b26607e2d663c7ebc8cc",
+          "outcome": "same-snapshot",
+          "start": 2987,
+          "end": 4584,
+          "block_ids": [
+            "doc-b26607e2d663c7ebc8cc:b00071",
+            "doc-b26607e2d663c7ebc8cc:b00072",
+            "doc-b26607e2d663c7ebc8cc:b00073",
+            "doc-b26607e2d663c7ebc8cc:b00074",
+            "doc-b26607e2d663c7ebc8cc:b00075",
+            "doc-b26607e2d663c7ebc8cc:b00076",
+            "doc-b26607e2d663c7ebc8cc:b00077",
+            "doc-b26607e2d663c7ebc8cc:b00078",
+            "doc-b26607e2d663c7ebc8cc:b00079",
+            "doc-b26607e2d663c7ebc8cc:b00080",
+            "doc-b26607e2d663c7ebc8cc:b00081",
+            "doc-b26607e2d663c7ebc8cc:b00082",
+            "doc-b26607e2d663c7ebc8cc:b00083"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-newcomer-first-information-5",
+      "citations": [
+        {
+          "document_id": "doc-097ba90229a71bb8bdba",
+          "outcome": "same-snapshot",
+          "start": 3377,
+          "end": 3608,
+          "block_ids": [
+            "doc-097ba90229a71bb8bdba:b00080",
+            "doc-097ba90229a71bb8bdba:b00081",
+            "doc-097ba90229a71bb8bdba:b00082"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-racism-protection-1",
+      "citations": [
+        {
+          "document_id": "doc-5028cb30ffd4a8de19e1",
+          "outcome": "same-snapshot",
+          "start": 1518,
+          "end": 3811,
+          "block_ids": [
+            "doc-5028cb30ffd4a8de19e1:b00059",
+            "doc-5028cb30ffd4a8de19e1:b00060",
+            "doc-5028cb30ffd4a8de19e1:b00061",
+            "doc-5028cb30ffd4a8de19e1:b00062",
+            "doc-5028cb30ffd4a8de19e1:b00063",
+            "doc-5028cb30ffd4a8de19e1:b00064",
+            "doc-5028cb30ffd4a8de19e1:b00065",
+            "doc-5028cb30ffd4a8de19e1:b00066",
+            "doc-5028cb30ffd4a8de19e1:b00067",
+            "doc-5028cb30ffd4a8de19e1:b00068",
+            "doc-5028cb30ffd4a8de19e1:b00069",
+            "doc-5028cb30ffd4a8de19e1:b00070",
+            "doc-5028cb30ffd4a8de19e1:b00071",
+            "doc-5028cb30ffd4a8de19e1:b00072",
+            "doc-5028cb30ffd4a8de19e1:b00073",
+            "doc-5028cb30ffd4a8de19e1:b00074",
+            "doc-5028cb30ffd4a8de19e1:b00075",
+            "doc-5028cb30ffd4a8de19e1:b00076",
+            "doc-5028cb30ffd4a8de19e1:b00077",
+            "doc-5028cb30ffd4a8de19e1:b00078",
+            "doc-5028cb30ffd4a8de19e1:b00079",
+            "doc-5028cb30ffd4a8de19e1:b00080",
+            "doc-5028cb30ffd4a8de19e1:b00081",
+            "doc-5028cb30ffd4a8de19e1:b00082",
+            "doc-5028cb30ffd4a8de19e1:b00083",
+            "doc-5028cb30ffd4a8de19e1:b00084",
+            "doc-5028cb30ffd4a8de19e1:b00085"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-racism-protection-2",
+      "citations": [
+        {
+          "document_id": "doc-5028cb30ffd4a8de19e1",
+          "outcome": "same-snapshot",
+          "start": 4036,
+          "end": 4574,
+          "block_ids": [
+            "doc-5028cb30ffd4a8de19e1:b00088",
+            "doc-5028cb30ffd4a8de19e1:b00089",
+            "doc-5028cb30ffd4a8de19e1:b00090",
+            "doc-5028cb30ffd4a8de19e1:b00091",
+            "doc-5028cb30ffd4a8de19e1:b00092"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-racism-protection-3",
+      "citations": [
+        {
+          "document_id": "doc-5028cb30ffd4a8de19e1",
+          "outcome": "same-snapshot",
+          "start": 4576,
+          "end": 5145,
+          "block_ids": [
+            "doc-5028cb30ffd4a8de19e1:b00093",
+            "doc-5028cb30ffd4a8de19e1:b00094",
+            "doc-5028cb30ffd4a8de19e1:b00095",
+            "doc-5028cb30ffd4a8de19e1:b00096",
+            "doc-5028cb30ffd4a8de19e1:b00097",
+            "doc-5028cb30ffd4a8de19e1:b00098",
+            "doc-5028cb30ffd4a8de19e1:b00099",
+            "doc-5028cb30ffd4a8de19e1:b00100"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-racism-protection-4",
+      "citations": [
+        {
+          "document_id": "doc-5028cb30ffd4a8de19e1",
+          "outcome": "same-snapshot",
+          "start": 5147,
+          "end": 6170,
+          "block_ids": [
+            "doc-5028cb30ffd4a8de19e1:b00101",
+            "doc-5028cb30ffd4a8de19e1:b00102",
+            "doc-5028cb30ffd4a8de19e1:b00103",
+            "doc-5028cb30ffd4a8de19e1:b00104",
+            "doc-5028cb30ffd4a8de19e1:b00105",
+            "doc-5028cb30ffd4a8de19e1:b00106",
+            "doc-5028cb30ffd4a8de19e1:b00107",
+            "doc-5028cb30ffd4a8de19e1:b00108",
+            "doc-5028cb30ffd4a8de19e1:b00109",
+            "doc-5028cb30ffd4a8de19e1:b00110",
+            "doc-5028cb30ffd4a8de19e1:b00111",
+            "doc-5028cb30ffd4a8de19e1:b00112"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-racism-protection-5",
+      "citations": [
+        {
+          "document_id": "doc-5028cb30ffd4a8de19e1",
+          "outcome": "same-snapshot",
+          "start": 8264,
+          "end": 10290,
+          "block_ids": [
+            "doc-5028cb30ffd4a8de19e1:b00130",
+            "doc-5028cb30ffd4a8de19e1:b00131",
+            "doc-5028cb30ffd4a8de19e1:b00132",
+            "doc-5028cb30ffd4a8de19e1:b00133",
+            "doc-5028cb30ffd4a8de19e1:b00134",
+            "doc-5028cb30ffd4a8de19e1:b00135",
+            "doc-5028cb30ffd4a8de19e1:b00136",
+            "doc-5028cb30ffd4a8de19e1:b00137",
+            "doc-5028cb30ffd4a8de19e1:b00138",
+            "doc-5028cb30ffd4a8de19e1:b00139",
+            "doc-5028cb30ffd4a8de19e1:b00140",
+            "doc-5028cb30ffd4a8de19e1:b00141",
+            "doc-5028cb30ffd4a8de19e1:b00142"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-racism-protection-6",
+      "citations": [
+        {
+          "document_id": "doc-5028cb30ffd4a8de19e1",
+          "outcome": "same-snapshot",
+          "start": 11211,
+          "end": 11611,
+          "block_ids": [
+            "doc-5028cb30ffd4a8de19e1:b00149",
+            "doc-5028cb30ffd4a8de19e1:b00150",
+            "doc-5028cb30ffd4a8de19e1:b00151",
+            "doc-5028cb30ffd4a8de19e1:b00152",
+            "doc-5028cb30ffd4a8de19e1:b00153"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-migrant-associations-1",
+      "citations": [
+        {
+          "document_id": "doc-097ba90229a71bb8bdba",
+          "outcome": "same-snapshot",
+          "start": 1466,
+          "end": 2499,
+          "block_ids": [
+            "doc-097ba90229a71bb8bdba:b00057",
+            "doc-097ba90229a71bb8bdba:b00058",
+            "doc-097ba90229a71bb8bdba:b00059",
+            "doc-097ba90229a71bb8bdba:b00060",
+            "doc-097ba90229a71bb8bdba:b00061",
+            "doc-097ba90229a71bb8bdba:b00062",
+            "doc-097ba90229a71bb8bdba:b00063"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-migrant-associations-2",
+      "citations": [
+        {
+          "document_id": "doc-097ba90229a71bb8bdba",
+          "outcome": "same-snapshot",
+          "start": 2501,
+          "end": 2736,
+          "block_ids": [
+            "doc-097ba90229a71bb8bdba:b00064",
+            "doc-097ba90229a71bb8bdba:b00065",
+            "doc-097ba90229a71bb8bdba:b00066"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-migrant-associations-3",
+      "citations": [
+        {
+          "document_id": "doc-097ba90229a71bb8bdba",
+          "outcome": "same-snapshot",
+          "start": 2738,
+          "end": 2839,
+          "block_ids": [
+            "doc-097ba90229a71bb8bdba:b00067",
+            "doc-097ba90229a71bb8bdba:b00068",
+            "doc-097ba90229a71bb8bdba:b00069"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-integration-project-funding-1",
+      "citations": [
+        {
+          "document_id": "doc-5386be4702ee65f46a87",
+          "outcome": "same-snapshot",
+          "start": 1652,
+          "end": 2574,
+          "block_ids": [
+            "doc-5386be4702ee65f46a87:b00060",
+            "doc-5386be4702ee65f46a87:b00061",
+            "doc-5386be4702ee65f46a87:b00062",
+            "doc-5386be4702ee65f46a87:b00063",
+            "doc-5386be4702ee65f46a87:b00064",
+            "doc-5386be4702ee65f46a87:b00065",
+            "doc-5386be4702ee65f46a87:b00066",
+            "doc-5386be4702ee65f46a87:b00067",
+            "doc-5386be4702ee65f46a87:b00068"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-integration-project-funding-2",
+      "citations": [
+        {
+          "document_id": "doc-5386be4702ee65f46a87",
+          "outcome": "same-snapshot",
+          "start": 2576,
+          "end": 2796,
+          "block_ids": [
+            "doc-5386be4702ee65f46a87:b00069",
+            "doc-5386be4702ee65f46a87:b00070"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-integration-project-funding-3",
+      "citations": [
+        {
+          "document_id": "doc-5386be4702ee65f46a87",
+          "outcome": "same-snapshot",
+          "start": 2798,
+          "end": 3219,
+          "block_ids": [
+            "doc-5386be4702ee65f46a87:b00071",
+            "doc-5386be4702ee65f46a87:b00072",
+            "doc-5386be4702ee65f46a87:b00073",
+            "doc-5386be4702ee65f46a87:b00074"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-integration-project-funding-4",
+      "citations": [
+        {
+          "document_id": "doc-5386be4702ee65f46a87",
+          "outcome": "same-snapshot",
+          "start": 3251,
+          "end": 3841,
+          "block_ids": [
+            "doc-5386be4702ee65f46a87:b00076",
+            "doc-5386be4702ee65f46a87:b00077",
+            "doc-5386be4702ee65f46a87:b00078",
+            "doc-5386be4702ee65f46a87:b00079",
+            "doc-5386be4702ee65f46a87:b00080",
+            "doc-5386be4702ee65f46a87:b00081",
+            "doc-5386be4702ee65f46a87:b00082",
+            "doc-5386be4702ee65f46a87:b00083",
+            "doc-5386be4702ee65f46a87:b00084",
+            "doc-5386be4702ee65f46a87:b00085"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-integration-project-funding-5",
+      "citations": [
+        {
+          "document_id": "doc-5386be4702ee65f46a87",
+          "outcome": "same-snapshot",
+          "start": 3843,
+          "end": 4025,
+          "block_ids": [
+            "doc-5386be4702ee65f46a87:b00086",
+            "doc-5386be4702ee65f46a87:b00087"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-integration-project-funding-6",
+      "citations": [
+        {
+          "document_id": "doc-5386be4702ee65f46a87",
+          "outcome": "same-snapshot",
+          "start": 4027,
+          "end": 4607,
+          "block_ids": [
+            "doc-5386be4702ee65f46a87:b00088",
+            "doc-5386be4702ee65f46a87:b00089",
+            "doc-5386be4702ee65f46a87:b00090",
+            "doc-5386be4702ee65f46a87:b00091",
+            "doc-5386be4702ee65f46a87:b00092",
+            "doc-5386be4702ee65f46a87:b00093",
+            "doc-5386be4702ee65f46a87:b00094",
+            "doc-5386be4702ee65f46a87:b00095"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-integration-project-funding-7",
+      "citations": [
+        {
+          "document_id": "doc-0ab169e59cf112d166c6",
+          "outcome": "same-snapshot",
+          "start": 1983,
+          "end": 2332,
+          "block_ids": [
+            "doc-0ab169e59cf112d166c6:b00061",
+            "doc-0ab169e59cf112d166c6:b00062",
+            "doc-0ab169e59cf112d166c6:b00063",
+            "doc-0ab169e59cf112d166c6:b00064"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-603af2c75387379addec",
+          "outcome": "same-snapshot",
+          "start": 2109,
+          "end": 2670,
+          "block_ids": [
+            "doc-603af2c75387379addec:b00062",
+            "doc-603af2c75387379addec:b00063",
+            "doc-603af2c75387379addec:b00064",
+            "doc-603af2c75387379addec:b00065",
+            "doc-603af2c75387379addec:b00066",
+            "doc-603af2c75387379addec:b00067"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-integration-project-funding-8",
+      "citations": [
+        {
+          "document_id": "doc-5386be4702ee65f46a87",
+          "outcome": "same-snapshot",
+          "start": 4609,
+          "end": 4846,
+          "block_ids": [
+            "doc-5386be4702ee65f46a87:b00096",
+            "doc-5386be4702ee65f46a87:b00097",
+            "doc-5386be4702ee65f46a87:b00098",
+            "doc-5386be4702ee65f46a87:b00099",
+            "doc-5386be4702ee65f46a87:b00100",
+            "doc-5386be4702ee65f46a87:b00101"
+          ],
+          "warnings": [],
+          "institution_id": "zh-fachstelle-integration",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
     }
   ],
-  "source_terms": 1237,
-  "questions": 358,
+  "source_terms": 1271,
+  "questions": 368,
   "institutions": [
     {
       "institution_id": "ch-bag",
@@ -19327,6 +19993,14 @@
       "from_catalogue": false
     },
     {
+      "institution_id": "zh-fachstelle-integration",
+      "name": "Canton of Zurich, Integration Office",
+      "level": "cantonal",
+      "jurisdiction": "CH-ZH",
+      "documents": 7,
+      "from_catalogue": false
+    },
+    {
       "institution_id": "zh-gemeindeamt",
       "name": "Canton of Zurich, Office for Municipalities, Naturalisation Division",
       "level": "cantonal",
@@ -19412,6 +20086,18 @@
       "source_url": "https://faq.bsv.admin.ch/de/berufliche-vorsorge-und-3-saeule/kann-ich-mein-bvg-altersguthaben-bar-beziehen-wenn-ich-die-schweiz",
       "institution_id": "ch-bsv",
       "institution_rule": "registry rule faq.bsv.admin.ch"
+    },
+    {
+      "document_id": "doc-097ba90229a71bb8bdba",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/migrantische-organisationen.html",
+      "institution_id": "zh-fachstelle-integration",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/integration/"
+    },
+    {
+      "document_id": "doc-0ab169e59cf112d166c6",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-kleinprojekte-von-gesamtkosten-von-maximal-5000-franken.html",
+      "institution_id": "zh-fachstelle-integration",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/integration/"
     },
     {
       "document_id": "doc-0f8403619c62603b1a4e",
@@ -19726,6 +20412,12 @@
       "institution_rule": "registry rule www.estv.admin.ch"
     },
     {
+      "document_id": "doc-5028cb30ffd4a8de19e1",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html",
+      "institution_id": "zh-fachstelle-integration",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/integration/"
+    },
+    {
       "document_id": "doc-50452600d419ef7376d6",
       "source_url": "https://www.ch.ch/de/pensionierung/altersvorsorge/3-saule--private-vorsorge-/",
       "institution_id": "ch-chch",
@@ -19748,6 +20440,12 @@
       "source_url": "https://www.sem.admin.ch/sem/en/home/themen/einreise/faq.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-5386be4702ee65f46a87",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html",
+      "institution_id": "zh-fachstelle-integration",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/integration/"
     },
     {
       "document_id": "doc-5447fac13d7896291834",
@@ -19810,6 +20508,12 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/mobilitaet/parkieren"
     },
     {
+      "document_id": "doc-603af2c75387379addec",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-projekte-mit-gesamtkosten-ueber-5000-franken.html",
+      "institution_id": "zh-fachstelle-integration",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/integration/"
+    },
+    {
       "document_id": "doc-614da06bc3d0c76de81f",
       "source_url": "https://www.zh.ch/de/migration-integration/niederlassungsbewilligung.html",
       "institution_id": "zh-migrationsamt",
@@ -19856,6 +20560,12 @@
       "source_url": "https://www.zh.ch/de/volkswirtschaftsdirektion/amt-fuer-wirtschaft.html",
       "institution_id": "zh-awa",
       "institution_rule": "registry rule www.zh.ch/de/volkswirtschaftsdirektion/amt-fuer-wirtschaft"
+    },
+    {
+      "document_id": "doc-6b7ab84cf9fe70b4dbb5",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/integrationsangebote.html",
+      "institution_id": "zh-fachstelle-integration",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/integration/"
     },
     {
       "document_id": "doc-6beed430d9345d0f3ef2",
@@ -20174,6 +20884,12 @@
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/einreise/visumantragsformular.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-b26607e2d663c7ebc8cc",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/foerderbereiche.html",
+      "institution_id": "zh-fachstelle-integration",
+      "institution_rule": "registry rule www.zh.ch/de/migration-integration/integration/"
     },
     {
       "document_id": "doc-b30d930e5eb4e146f3c0",
@@ -20579,7 +21295,7 @@
     }
   ],
   "basis_kinds": {
-    "guidance": 450,
+    "guidance": 475,
     "act": 49,
     "ordinance": 17,
     "summary": 50,

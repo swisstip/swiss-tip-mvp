@@ -1,11 +1,11 @@
 {
   "manifest": {
     "schema_version": "swiss-tip-release/v1",
-    "release_id": "mvp-zurich-2026-09-22-v1",
+    "release_id": "mvp-zurich-2026-09-22-v6",
     "pack": "mvp-zurich",
     "title": "Living in Switzerland as a foreign national: entry and visas, residence, family benefits, housing, social insurance, taxes and household fees, driving licence and vehicles, health insurance, naturalisation, voting rights and daily life in the City of Zurich; federal rules and Zurich",
-    "created_at": "2026-09-22T08:07:00.776866Z",
-    "scope_statement": "Foreign nationals and newcomers in Switzerland: federal rules with Canton of Zurich and City of Zurich procedures. Entry and visas: the visa duty, the visa types C and D, the 90-in-180-days rule, the entry requirements, ETIAS and the Entry/Exit System. Residence permits and registration (AIG, the free-movement agreement FZA, SEM and ch.ch guidance, Zurich procedures), the migration-office contact of every canton, and the Zurich offices' addresses, opening hours and contacts. Marriage and leaving the City of Zurich. Family allowances and parental leave. Renting a home. Social insurance on leaving, pillar 3a and unemployment. Tax at source with its tariff codes and the Zurich tariff rules, the City of Zurich tax return and tax office, and the radio and television fee. Driving licence, vehicles and household goods after a move, and City of Zurich parking permits. Health and accident insurance and premium reduction. Naturalisation and voting rights. Life in the City of Zurich: first steps, waste and recycling, dogs, kindergarten and school holidays, and medical emergencies.",
+    "created_at": "2026-09-22T12:50:22.350977Z",
+    "scope_statement": "Foreign nationals and newcomers in Switzerland: federal rules with Canton of Zurich and City of Zurich procedures. Entry and visas: the visa duty, the visa types C and D, the 90-in-180-days rule, the entry requirements, ETIAS and the Entry/Exit System. Residence permits and registration (AIG, the free-movement agreement FZA, SEM and ch.ch guidance, Zurich procedures), the migration-office contact of every canton, and the Zurich offices' addresses, opening hours and contacts. Marriage and leaving the City of Zurich. Family allowances and parental leave. Renting a home. Social insurance on leaving, pillar 3a and unemployment. Tax at source with its tariff codes and the Zurich tariff rules, the City of Zurich tax return and tax office, and the radio and television fee. Driving licence, vehicles and household goods after a move, and City of Zurich parking permits. Health and accident insurance and premium reduction. Naturalisation and voting rights. Life in the City of Zurich: first steps, waste and recycling, dogs, kindergarten and school holidays, and medical emergencies. Integration offers and German courses.",
     "out_of_scope": [
       "Other topics: schooling beyond kindergarten entry and school holidays, asylum, other social insurance benefits, finding a home, and utilities.",
       "Fees and appointment availability for any permit.",
@@ -14,7 +14,8 @@
       "Cantons other than Zurich beyond their migration-office contact, and municipal procedures outside the City of Zurich; federal rules still apply there and are served with a caveat.",
       "Eligibility decisions for a specific person: the rules route population groups to pre-authored statements and compute no outcome.",
       "Live data such as current processing times, appointment slots or insurer premiums.",
-      "Any country other than Switzerland, including German and Austrian rules that look similar."
+      "Any country other than Switzerland, including German and Austrian rules that look similar.",
+      "Integration funding for municipalities and providers, and the refugee support system Integrationsagenda IAZH."
     ],
     "out_of_scope_response": "Tell the user that this service does not cover their question, quote the scope statement, and do not answer from general knowledge as if it were grounded.",
     "jurisdictions": [
@@ -57,18 +58,18 @@
       "stale_from": "2026-11-18"
     },
     "provenance_kinds": {
-      "curated-statement": 687
+      "curated-statement": 712
     },
     "review_statuses": {
-      "human-reviewed": 687
+      "human-reviewed": 712
     },
     "institution_levels": {
       "federal": 105,
-      "cantonal": 51,
+      "cantonal": 58,
       "municipal": 40
     },
     "basis_kinds": {
-      "guidance": 450,
+      "guidance": 475,
       "act": 49,
       "ordinance": 17,
       "summary": 50,
@@ -102,14 +103,14 @@
     },
     "limitations": [
       "Every statement was written by an assistant reading the cited pages and checked against its cited excerpt by one named reviewer (`reviewed_by` on each fact); this is not a legal review.",
-      "Every fact was confirmed by the reviewer in the admin console's review queue, many in bulk groups (a `review:` note on each fact names its group); the review history by date is in LIMITATIONS.md of the repository.",
-      "114 excerpts of the English (once the German) version of a cited federal page stand next to the reviewed excerpts of 112 facts; the assistant added them after comparing both versions, and no person has reviewed them.",
+      "Every fact was confirmed by the reviewer in the admin console's review queue, many in bulk groups; the review history is in LIMITATIONS.md of the repository.",
+      "114 English excerpts of cited federal pages stand next to the reviewed excerpts of 112 facts; no person has reviewed them.",
       "English statements paraphrase the cited original-language text; they are not official translations.",
       "Conditions route population groups to statements; they do not decide eligibility for a specific person.",
-      "Office addresses, opening and telephone hours and closing days are those the saved pages state; a location or channel a page does not list is not served, and special closing days are served only where a page lists them.",
+      "Office addresses, opening and telephone hours and closing days are those the saved pages state; a location, channel or closing day a page does not list is not served.",
       "Validity is unbounded unless the cited page states a date; freshness measures the age of the saved copy, not whether the page changed."
     ],
-    "content_sha256": "2823ab3fad3b042436d0fd1a38d913016031ac17562afe9dffcb774e80341be2"
+    "content_sha256": "9518b36a60a99ae5cdd1bf34be3ca5af79112382fd8a59419ce9cf7bf9eb8f41"
   },
   "documents": [
     {
@@ -137,6 +138,32 @@
       "accessed_on": "2026-09-15",
       "raw_sha256": "35e17093f06d4cadd73ce7be2edc7e15ee56e2f0a0a87886edafabf3c0659998",
       "content_sha256": "6c47f2f6b884af6a49807d6773010ad200a9e64e1cc907fcd2e35b00a93f840a"
+    },
+    {
+      "document_id": "doc-097ba90229a71bb8bdba",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/migrantische-organisationen.html",
+      "document_url": "https://www.zh.ch/de/migration-integration/integration/migrantische-organisationen.html",
+      "version_uri": null,
+      "title": "Migrantische Vereine | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "raw_sha256": "d77fcc4c7b732ddf05fb1634179a7cf3a9332da27006eeca57147b8ac9b416f3",
+      "content_sha256": "999c061a06616059bf467ec9b0ae6af120b06d2c31e37892eae59e2655563dfc"
+    },
+    {
+      "document_id": "doc-0ab169e59cf112d166c6",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-kleinprojekte-von-gesamtkosten-von-maximal-5000-franken.html",
+      "document_url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-kleinprojekte-von-gesamtkosten-von-maximal-5000-franken.html",
+      "version_uri": null,
+      "title": "Kleinprojekte von maximal 5'000 Franken | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "raw_sha256": "54b4bbd647c2e4e48ed737781ba47201e2fecd2593c61a638dc06bdaa58b3cae",
+      "content_sha256": "accedefcbe04145e964577965c868a4a1823ee7581bd34eb34dbe36aa28cf02d"
     },
     {
       "document_id": "doc-0f8403619c62603b1a4e",
@@ -815,6 +842,19 @@
       "content_sha256": "504a0e50c42dd4a99c140eeb5779fc3c0b2a9765e65cdd3c79c488af1aa891ee"
     },
     {
+      "document_id": "doc-5028cb30ffd4a8de19e1",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html",
+      "document_url": "https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html",
+      "version_uri": null,
+      "title": "Schutz vor rassistischer Diskriminierung | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "raw_sha256": "be1902d31743bb9328f9c0bd51a3cef3bb648e2739d84c78d159865cea9d94bb",
+      "content_sha256": "4b883c79b0594fa06f6501fc004a9620cce2a8e3a91968a7ccb7d1f57809fd72"
+    },
+    {
       "document_id": "doc-50452600d419ef7376d6",
       "source_url": "https://www.ch.ch/de/pensionierung/altersvorsorge/3-saule--private-vorsorge-/",
       "document_url": "https://www.ch.ch/de/pensionierung/altersvorsorge/3-saule--private-vorsorge-/",
@@ -865,6 +905,19 @@
       "accessed_on": "2026-09-11",
       "raw_sha256": "adbb66a8e134f0c75f174136ae30c17833f90ba103950dbeda511b547218fe5f",
       "content_sha256": "5f1aa8b80c982ae29f85e478d5684fa116e61262c478bd933f241551bc90f0f7"
+    },
+    {
+      "document_id": "doc-5386be4702ee65f46a87",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html",
+      "document_url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html",
+      "version_uri": null,
+      "title": "Förderung von Integrationsprojekten | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "raw_sha256": "5cd3600a6e80606270d05f53a4081272ce25bd9c6892e2eb74e85ea7c3b29962",
+      "content_sha256": "6e90c4fe9739a4d6110c0af46c21262ddedc1a38ebb4c7d3deedc949033c40ab"
     },
     {
       "document_id": "doc-5447fac13d7896291834",
@@ -997,6 +1050,19 @@
       "content_sha256": "4498fc7188967f17f503c525c4e999aced2efbea33f3ed24f32cadd3c20481bb"
     },
     {
+      "document_id": "doc-603af2c75387379addec",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-projekte-mit-gesamtkosten-ueber-5000-franken.html",
+      "document_url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-projekte-mit-gesamtkosten-ueber-5000-franken.html",
+      "version_uri": null,
+      "title": "Projekte über 5'000 Franken | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "raw_sha256": "e88942532449a44101f75cb8e8c737065efd9ac4713280b3fce9a93e78e4d6d7",
+      "content_sha256": "d06d86de9fb195b105ef382557f4eb3ed794fb164c398ccaafa6bf5cf67da401"
+    },
+    {
       "document_id": "doc-614da06bc3d0c76de81f",
       "source_url": "https://www.zh.ch/de/migration-integration/niederlassungsbewilligung.html",
       "document_url": "https://www.zh.ch/de/migration-integration/niederlassungsbewilligung.html",
@@ -1099,6 +1165,19 @@
       "accessed_on": "2026-09-17",
       "raw_sha256": "c0f32208643985a881cedde2349aa4741b18499bd33cd4fe4709d26032402354",
       "content_sha256": "d7d9741fa487b59acaa54062e1a9a65db41a65a3b50aa090a2813e0a53cf4763"
+    },
+    {
+      "document_id": "doc-6b7ab84cf9fe70b4dbb5",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/integrationsangebote.html",
+      "document_url": "https://www.zh.ch/de/migration-integration/integration/integrationsangebote.html",
+      "version_uri": null,
+      "title": "Integrationsangebote | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "raw_sha256": "2308053374951098590e727082abe834c3cccd2dc6e5cc723e88d0dc4ffd3751",
+      "content_sha256": "b3fde41d97c072bd335b00e1acc7a7e9a5f0e0fe7382279189fa3245e0434a07"
     },
     {
       "document_id": "doc-6beed430d9345d0f3ef2",
@@ -1788,6 +1867,19 @@
       "accessed_on": "2026-09-11",
       "raw_sha256": "36f5f7cc72e293310c877e8bee1357d237625d7d395e1d5c37cada5796da9784",
       "content_sha256": "c2d46ac6603214ab954d2318c1867f1d6819d133d1c5f21d057009b775514e22"
+    },
+    {
+      "document_id": "doc-b26607e2d663c7ebc8cc",
+      "source_url": "https://www.zh.ch/de/migration-integration/integration/foerderbereiche.html",
+      "document_url": "https://www.zh.ch/de/migration-integration/integration/foerderbereiche.html",
+      "version_uri": null,
+      "title": "Förderbereiche | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "raw_sha256": "5bab505e36b55754d7e68afac5b530d832116776d8b8b6983f9596ea1da84e2d",
+      "content_sha256": "01bd0db17fd46fb2ced445d3c483f62cd7d1db4371e5e2987a5c920760d78fec"
     },
     {
       "document_id": "doc-b30d930e5eb4e146f3c0",
@@ -2741,6 +2833,11 @@
       "topic_id": "housing",
       "title": "Renting a home",
       "description": "Lease, deposit, notice, rent increases and defects (Code of Obligations, ch.ch, BWO); the Zurich initial-rent form."
+    },
+    {
+      "topic_id": "integration",
+      "title": "Integration offers and German courses",
+      "description": "Integration offers and German courses in the Canton of Zurich, first information and counselling for newcomers, protection from racist discrimination, migrant associations and contributions to integration projects (Fachstelle Integration)."
     }
   ],
   "concepts": [
@@ -10891,6 +10988,254 @@
         "the amount of tax owed after departure, which is not stated",
         "health insurance, pension, or social security deregistration steps",
         "moving within the City of Zurich without leaving it"
+      ]
+    },
+    {
+      "concept_id": "zh-integration-offers",
+      "topic_id": "integration",
+      "label": "Zurich: finding integration offers and German courses",
+      "description": "The cantonal offer database, the free German-course advice in 16 languages, the cantonal German-course database, and the separate offers of the cities of Zurich and Winterthur.",
+      "aliases": [
+        "integration offers Zurich",
+        "German courses in the Canton of Zurich",
+        "where to find a German course",
+        "language course database Zurich",
+        "Deutschkurs finden Kanton Zürich",
+        "Integrationsangebote Kanton Zürich",
+        "Angebotsdatenbank",
+        "Fachstelle Integration",
+        "Deutschkursberatung",
+        "Deutschkurs-Datenbank",
+        "Sprachprüfungen",
+        "Begrüssungsgespräche",
+        "Spielgruppen mit Sprachbildung",
+        "Wohngemeinde"
+      ],
+      "questions": [
+        "Where do I find a German course or an integration offer in the Canton of Zurich?",
+        "Wo finde ich einen Deutschkurs im Kanton Zürich?"
+      ],
+      "jurisdictions": [
+        "CH-ZH"
+      ],
+      "required_context": [],
+      "context_schema": {},
+      "fact_ids": [
+        "zh-integration-offers-1",
+        "zh-integration-offers-2",
+        "zh-integration-offers-3"
+      ],
+      "required_user_facts": [],
+      "decision_rule": null,
+      "notes": [
+        "Added on 2026-09-22 from pages that were in the run since the first crawl and that no fact cited; the reviewer decided on 2026-09-22 that the resident-facing integration pages of the Canton of Zurich are in scope.",
+        "Aliases, questions and the description were authored by the assistant on 2026-09-22 for discovery; they are not taken from the cited page.",
+        "source_terms were chosen on 2026-09-22 by the assistant from the words of the cited excerpts; each occurs verbatim in the evidence and the build verifies it. They are the publisher's terms, not translations."
+      ],
+      "not_served": [
+        "which offers exist in a given municipality, and their dates, prices and free places",
+        "the courses and examinations themselves, their levels and their fees",
+        "the language requirements for a permit or for naturalisation, which the pack serves from the Migration Office and the Office for Municipalities"
+      ]
+    },
+    {
+      "concept_id": "zh-newcomer-first-information",
+      "topic_id": "integration",
+      "label": "Zurich: first information and counselling for newcomers",
+      "description": "Who informs people newly arrived from abroad in the Canton of Zurich, who is pointed to offers early, and the counselling organisations the canton lists.",
+      "aliases": [
+        "first information for newcomers Zurich",
+        "who informs newcomers in the canton",
+        "counselling for migrants Zurich",
+        "advice centres for migrants",
+        "Erstinformation Kanton Zürich",
+        "Beratungsstellen für Migrantinnen und Migranten",
+        "Willkommen im Kanton Zürich",
+        "Erstinformation",
+        "neu Zugezogene",
+        "Integrationsangebote",
+        "Beratungsstellen",
+        "Fachstelle Integration",
+        "Familiennachzug",
+        "Integrationsförderbedarf"
+      ],
+      "questions": [
+        "Who informs me about living in the Canton of Zurich after I arrive from abroad?",
+        "Wer informiert neu zugezogene Personen im Kanton Zürich?"
+      ],
+      "jurisdictions": [
+        "CH-ZH"
+      ],
+      "required_context": [],
+      "context_schema": {},
+      "fact_ids": [
+        "zh-newcomer-first-information-1",
+        "zh-newcomer-first-information-2",
+        "zh-newcomer-first-information-3",
+        "zh-newcomer-first-information-4",
+        "zh-newcomer-first-information-5"
+      ],
+      "required_user_facts": [],
+      "decision_rule": null,
+      "notes": [
+        "Added on 2026-09-22 from pages that were in the run since the first crawl and that no fact cited.",
+        "Aliases, questions and the description were authored by the assistant on 2026-09-22 for discovery; they are not taken from the cited pages.",
+        "source_terms were chosen on 2026-09-22 by the assistant from the words of the cited excerpts; each occurs verbatim in the evidence and the build verifies it. They are the publisher's terms, not translations.",
+        "The Förderbereiche page describes the seven funding areas of the cantonal integration programme. Only its information and counselling area is served here; the areas addressed to municipalities and providers are dispositioned in curation-coverage.yaml."
+      ],
+      "not_served": [
+        "what a particular municipality offers, and whether it holds a welcome talk",
+        "the registration itself and the residence-permit procedure, which the pack serves from the Migration Office",
+        "the counselling organisations by name, and whether one of them handles a given case"
+      ]
+    },
+    {
+      "concept_id": "zh-racism-protection",
+      "topic_id": "integration",
+      "label": "Zurich: protection from racist discrimination",
+      "description": "What the Canton of Zurich says racist discrimination is, the counselling centre ZüRAS, the national bodies and reporting platforms, and the legal bases.",
+      "aliases": [
+        "racism counselling Zurich",
+        "where to report racist discrimination",
+        "discrimination because of origin or religion",
+        "ZüRAS",
+        "Rassismus Beratung Kanton Zürich",
+        "rassistische Diskriminierung melden",
+        "rassistische Diskriminierung",
+        "Anlaufstelle",
+        "Beratungsnetz für Rassismusopfer",
+        "Fachstelle für Rassismusbekämpfung",
+        "Eidgenössischen Kommission gegen Rassismus",
+        "Mehrfachdiskriminierung",
+        "Herabsetzung"
+      ],
+      "questions": [
+        "Where can I get advice in the Canton of Zurich if I experience racist discrimination?",
+        "Wohin kann ich mich im Kanton Zürich wenden, wenn ich rassistisch diskriminiert werde?"
+      ],
+      "jurisdictions": [
+        "CH-ZH"
+      ],
+      "required_context": [],
+      "context_schema": {},
+      "fact_ids": [
+        "zh-racism-protection-1",
+        "zh-racism-protection-2",
+        "zh-racism-protection-3",
+        "zh-racism-protection-4",
+        "zh-racism-protection-5",
+        "zh-racism-protection-6"
+      ],
+      "required_user_facts": [],
+      "decision_rule": null,
+      "notes": [
+        "Added on 2026-09-22 from a page that was in the run since the first crawl and that no fact cited.",
+        "Aliases, questions and the description were authored by the assistant on 2026-09-22 for discovery; they are not taken from the cited page.",
+        "source_terms were chosen on 2026-09-22 by the assistant from the words of the cited excerpts; each occurs verbatim in the evidence and the build verifies it. They are the publisher's terms, not translations."
+      ],
+      "not_served": [
+        "legal advice on an individual case, and whether a given incident is punishable",
+        "the outcome of a report or a complaint, and the procedure before a court or an authority",
+        "the training offers for authorities and institutions, which the page addresses to them and not to residents"
+      ]
+    },
+    {
+      "concept_id": "zh-migrant-associations",
+      "topic_id": "integration",
+      "label": "Zurich: platform for migrant associations",
+      "description": "The cantonal platform on which migrant and religious associations of the Canton of Zurich can be found and can register, and the Migrazin newsletter.",
+      "aliases": [
+        "migrant associations Zurich",
+        "find an association of my country",
+        "platform for migrant associations",
+        "Migrantenvereine Kanton Zürich",
+        "migrantische Vereine",
+        "Migrazin",
+        "Plattform für Migrantenvereine",
+        "migrantische",
+        "Vernetzung",
+        "Fachstelle Integration"
+      ],
+      "questions": [
+        "How do I find an association of migrants from my country in the Canton of Zurich?",
+        "Wie finde ich einen migrantischen Verein im Kanton Zürich?"
+      ],
+      "jurisdictions": [
+        "CH-ZH"
+      ],
+      "required_context": [],
+      "context_schema": {},
+      "fact_ids": [
+        "zh-migrant-associations-1",
+        "zh-migrant-associations-2",
+        "zh-migrant-associations-3"
+      ],
+      "required_user_facts": [],
+      "decision_rule": null,
+      "notes": [
+        "Added on 2026-09-22 from a page that was in the run since the first crawl and that no fact cited.",
+        "Aliases, questions and the description were authored by the assistant on 2026-09-22 for discovery; they are not taken from the cited page.",
+        "source_terms were chosen on 2026-09-22 by the assistant from the words of the cited excerpts; each occurs verbatim in the evidence and the build verifies it. They are the publisher's terms, not translations.",
+        "The third fact carries the name, e-mail address and telephone number of the contact person as the page published them on the access date; the served excerpt shows the date, and a name can change without the page changing its address."
+      ],
+      "not_served": [
+        "which associations exist, and their addresses, activities and languages",
+        "whether an association is recognised, funded or supervised by the canton",
+        "the networking events themselves and their dates"
+      ]
+    },
+    {
+      "concept_id": "zh-integration-project-funding",
+      "topic_id": "integration",
+      "label": "Zurich: funding for integration projects",
+      "description": "The Canton of Zurich's contributions to integration projects under the cantonal integration programme KIP 3, who may apply, the two funding priorities, the amounts and the deadlines.",
+      "aliases": [
+        "funding for an integration project Zurich",
+        "money for a project with migrants",
+        "project contribution integration canton Zurich",
+        "Projektförderung Integration Kanton Zürich",
+        "Gesuch Integrationsprojekt",
+        "Kleinprojekte Integration",
+        "Projektförderung",
+        "Kleinprojekte",
+        "Förderbeitrag",
+        "Eingabetermin",
+        "gemeinnützige Organisationen",
+        "Migrationsgeschichte",
+        "Budget"
+      ],
+      "questions": [
+        "Can my association get money from the Canton of Zurich for an integration project?",
+        "Wie kann ich ein Gesuch für ein Integrationsprojekt im Kanton Zürich einreichen?"
+      ],
+      "jurisdictions": [
+        "CH-ZH"
+      ],
+      "required_context": [],
+      "context_schema": {},
+      "fact_ids": [
+        "zh-integration-project-funding-1",
+        "zh-integration-project-funding-2",
+        "zh-integration-project-funding-3",
+        "zh-integration-project-funding-4",
+        "zh-integration-project-funding-5",
+        "zh-integration-project-funding-6",
+        "zh-integration-project-funding-7",
+        "zh-integration-project-funding-8"
+      ],
+      "required_user_facts": [],
+      "decision_rule": null,
+      "notes": [
+        "Added on 2026-09-22 from pages that were in the run since the first crawl and that no fact cited.",
+        "Aliases, questions and the description were authored by the assistant on 2026-09-22 for discovery; they are not taken from the cited pages.",
+        "source_terms were chosen on 2026-09-22 by the assistant from the words of the cited excerpts; each occurs verbatim in the evidence and the build verifies it. They are the publisher's terms, not translations.",
+        "The amounts and deadlines belong to the funding period KIP 3 (2024-2027); the dated facts carry valid_through so that the server marks them when they expire."
+      ],
+      "not_served": [
+        "whether a particular project will be funded, and how much it will receive",
+        "the funding guidelines, the budget template and the concept template themselves",
+        "the separate funding programme for projects addressed to refugees, which is outside the pack's scope",
+        "the projects funded in earlier calls"
       ]
     }
   ],
@@ -31753,6 +32098,732 @@
           "level": "municipal",
           "kind": "guidance",
           "label": "Municipal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-integration-offers-1",
+      "concept_id": "zh-integration-offers",
+      "statement": "The Fachstelle Integration of the Canton of Zurich runs an offer database of the integration offers that the canton finances together with the municipalities from the federal integration credit; to find an offer a user selects a category and their municipality of residence in the search mask and opens the details of an entry. The page names welcome talks for newcomers, German courses and playgroups with integrated language support as examples of what many municipalities offer.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-integration-offers-1-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-integration-offers-2",
+      "concept_id": "zh-integration-offers",
+      "statement": "Many municipalities in the Canton of Zurich have contact persons for integration who also give advice on German courses; where the municipality of residence offers no such advice, residents can turn to the cantonal German-course advice, which is free and available in 16 languages. The canton also keeps a German-course database listing German courses and language examinations in the Canton of Zurich, and the page states that language examinations matter for the residence permit, for naturalisation and for education and work.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-integration-offers-2-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-integration-offers-3",
+      "concept_id": "zh-integration-offers",
+      "statement": "The cities of Zurich and Winterthur keep their own offer databases, which the cantonal page links separately: German courses and the moving-from-abroad pages of the City of Zurich, and the infoDesk / welcomeDesk and German courses of the City of Winterthur.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-integration-offers-3-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-newcomer-first-information-1",
+      "concept_id": "zh-newcomer-first-information",
+      "statement": "The Canton of Zurich states as an aim of its integration programme that everyone newly arrived from abroad is welcomed in Switzerland and informed about the most important living conditions and integration offers, and that personally conveyed and multilingual information is central so that newcomers can orient themselves and settle in quickly at their new place of residence.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-newcomer-first-information-1-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-newcomer-first-information-2",
+      "concept_id": "zh-newcomer-first-information",
+      "statement": "In the Canton of Zurich it is first of all the municipalities that inform newly arrived migrants as soon as possible after their arrival about the local living conditions, give them a first orientation at their new place of residence and, where needed, arrange access to German courses and other integration offers. The Fachstelle Integration provides the municipalities with a guide for planning and running first-information offers, which also addresses municipalities that do not take part in the cantonal integration programme.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-newcomer-first-information-2-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-newcomer-first-information-3",
+      "concept_id": "zh-newcomer-first-information",
+      "statement": "People with a particular need for integration support should be pointed to suitable offers as early as possible; the canton names three groups in particular: persons in family reunification, persons threatened by or affected by poverty, and persons with training and skilled-worker potential.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-newcomer-first-information-3-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-newcomer-first-information-4",
+      "concept_id": "zh-newcomer-first-information",
+      "statement": "For further information, migrants can use the topic-specific counselling of the regular services or migration-specific counselling offers. The Fachstelle Integration provides authorities, institutions and private persons with a list of organisations that offer migration-specific and topic-specific counselling in the Canton of Zurich; the organisations on it show expertise in counselling different target groups and follow recognised quality standards. The Fachstelle updates the list at least once a year and states that it makes no claim to completeness; further offers can be reported to integration@ji.zh.ch.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-newcomer-first-information-4-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-newcomer-first-information-5",
+      "concept_id": "zh-newcomer-first-information",
+      "statement": "The Canton of Zurich publishes information for a good start at the new place of residence on its page \"Willkommen im Kanton Zürich\", with links to further information and to suitable information points.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-newcomer-first-information-5-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-racism-protection-1",
+      "concept_id": "zh-racism-protection",
+      "statement": "The Canton of Zurich describes racist discrimination as acts that demean people because of their skin colour, their origin, their language, their ethnic-cultural belonging or their religion, and names demeaning statements, exclusion, refusal of a service and violence as forms of it. It states that racism can be structural, can happen intentionally or unintentionally, can occur together with discrimination on other grounds, and can occur at work, when looking for a flat or at school; people with a Swiss passport can experience it too.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-racism-protection-1-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-racism-protection-2",
+      "concept_id": "zh-racism-protection",
+      "statement": "The Zurich counselling centre against racism, ZüRAS, advises people who experience racist discrimination. Counselling is possible in several languages and is free for people who live in the Canton of Zurich. ZüRAS is run by the Asylorganisation Zürich (AOZ) on behalf of the canton and the city.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-racism-protection-2-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-racism-protection-3",
+      "concept_id": "zh-racism-protection",
+      "statement": "Besides the counselling and specialist offices in the Canton of Zurich, the page names two further places for cases of racism in Switzerland: the reporting platform for online racism, where cases of hate speech on the internet and in social media can be reported (www.reportonlineracism.ch), and the counselling network for victims of racism, a network of specialist offices across Switzerland that advise in cases of racism (www.network-racism.ch).",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-racism-protection-3-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-racism-protection-4",
+      "concept_id": "zh-racism-protection",
+      "statement": "The federal Service for Combating Racism is responsible for preventing racism and coordinates activities at national, cantonal and communal level, and has published a monitoring report on racist discrimination in Switzerland every two years since 2012, available online since 2024. The Federal Commission against Racism advises, produces publications and carries out prevention, and its online legal guide explains the legal situation and includes a glossary of the most important terms. The foundation against racism and antisemitism GRA records racist and antisemitic incidents across Switzerland.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-racism-protection-4-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-racism-protection-5",
+      "concept_id": "zh-racism-protection",
+      "statement": "The Canton of Zurich names three legal bases for protection from racist discrimination: the Federal Constitution, which since 2000 holds as a fundamental right in Article 8 paragraph 2 that nobody may be discriminated against because of origin, \"race\", language, way of life or religious conviction, a right the Zurich cantonal constitution has held since 2005; the Criminal Code, which in Article 261bis punishes certain discriminating acts committed in public, including the public demeaning of persons or groups because of their \"race\", ethnicity or religion, hate speech and calls for violence against them, and the refusal of a service offered to the general public on one of those grounds; and the Foreign Nationals and Integration Act, which since 2019 holds in Article 53 that the Confederation, the cantons and the communes take account of the concerns of integration and of protection from discrimination when performing their tasks.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-racism-protection-5-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-racism-protection-6",
+      "concept_id": "zh-racism-protection",
+      "statement": "For discrimination on other grounds the Canton of Zurich names other offices than the Fachstelle Integration: discrimination because of sex or sexual orientation belongs to the Fachstelle Gleichstellung, and discrimination because of a disability to the Koordinationsstelle Behindertenrechte.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-racism-protection-6-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-migrant-associations-1",
+      "concept_id": "zh-migrant-associations",
+      "statement": "The Fachstelle Integration of the Canton of Zurich runs a platform for migrant associations on which migrant and religious associations active in the canton can be searched by various criteria, for example by municipality or region, and on which associations can register themselves. The canton launched the platform at the beginning of 2015 to strengthen networking and ease the flow of information, and states that migrant and religious associations inform, advise and enable exchange, mostly as voluntary work.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-migrant-associations-1-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-migrant-associations-2",
+      "concept_id": "zh-migrant-associations",
+      "statement": "With the newsletter Migrazin the Fachstelle Integration sends information from the Canton of Zurich to migrant and religious associations; associations that want to receive it write to the Fachstelle to sign up, and earlier issues can be viewed on the page.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-migrant-associations-2-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-migrant-associations-3",
+      "concept_id": "zh-migrant-associations",
+      "statement": "The Fachstelle Integration names a contact person for migrant organisations; on the access date of the page this was Deniz Yüksel, deniz.yueksel@ji.zh.ch, +41 43 259 25 27.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-migrant-associations-3-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-integration-project-funding-1",
+      "concept_id": "zh-integration-project-funding",
+      "statement": "Under the cantonal integration programme KIP 3 the Canton of Zurich has up to 300,000 francs a year available in 2024 to 2027 for projects that concern people with a migration history and/or are (co-)developed by them, particularly when they also involve migrants who can take part less well in social life, for example for language or financial reasons. The Fachstelle Integration states that it will also support projects during the cantonal integration programme KIP 4 (2028-2032), with 31 October 2027 as the first deadline, and that projects addressed specifically to refugees have their own funding programme.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": "2027-12-31",
+      "evidence_ids": [
+        "e-zh-integration-project-funding-1-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-integration-project-funding-2",
+      "concept_id": "zh-integration-project-funding",
+      "statement": "Small projects with total costs of up to 5,000 francs can be submitted to the Canton of Zurich on a rolling basis as long as funds are still available, and simplified rules for submission and reporting apply to them.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-integration-project-funding-2-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-integration-project-funding-3",
+      "concept_id": "zh-integration-project-funding",
+      "statement": "For projects with total costs above 5,000 francs, 31 October 2026 is the last possible deadline within KIP 3. The maximum contribution per application is 50,000 francs, the Fachstelle Integration examines such applications within two months, and only projects completed by the end of 2027 at the latest can still be funded.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": "2026-10-31",
+      "evidence_ids": [
+        "e-zh-integration-project-funding-3-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-integration-project-funding-4",
+      "concept_id": "zh-integration-project-funding",
+      "statement": "The Canton of Zurich funds projects in two priority areas in 2024 to 2027: living together and participation, where projects are supported that promote encounters, the participation of migrants in public life and voluntary work in the field of migration; and dealing with diversity and protection from discrimination, where projects are supported that promote a constructive approach to social diversity and that develop and implement measures against discrimination and racism. Only projects that concentrate on one or both of these areas receive contributions.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": "2027-12-31",
+      "evidence_ids": [
+        "e-zh-integration-project-funding-4-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-integration-project-funding-5",
+      "concept_id": "zh-integration-project-funding",
+      "statement": "Municipalities and public as well as private non-profit organisations with their seat or a regional branch in the Canton of Zurich, such as associations or foundations, can apply for a contribution to an integration project.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-integration-project-funding-5-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-integration-project-funding-6",
+      "concept_id": "zh-integration-project-funding",
+      "statement": "Applications are submitted online, and the Canton of Zurich asks applicants to read its project funding guidelines for KIP 3 (2024-2027) first. There are separate forms for small projects and for larger projects. Questions about submitting a project and about reporting go to the specialists of the Fachstelle Integration, and the canton recommends contacting it before a first application.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-integration-project-funding-6-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-integration-project-funding-7",
+      "concept_id": "zh-integration-project-funding",
+      "statement": "The application pages of the Canton of Zurich state what an application needs: for a small project up to 5,000 francs a budget on the template the page provides; for a project above 5,000 francs a budget on that mandatory template and a concept or project description, for which the canton's template or the applicant's own may be used. Both pages warn that the web form cannot be saved in between, so all information and documents should be at hand.",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-integration-project-funding-7-1",
+        "e-zh-integration-project-funding-7-2"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "zh-integration-project-funding-8",
+      "concept_id": "zh-integration-project-funding",
+      "statement": "The Fachstelle Integration names one specialist per funding area for questions about submitting a project and about reporting; on the access date of the page these were Maria Gstöhl, maria.gstoehl@ji.zh.ch, +41 43 259 25 30, for the area \"living together and participation\", and Deniz Yüksel, deniz.yueksel@ji.zh.ch, +41 43 259 25 27, for the area \"dealing with diversity and protection from discrimination\".",
+      "language": "en",
+      "jurisdiction": "CH-ZH",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-zh-integration-project-funding-8-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": null,
+        "reviewed_on": "2026-09-22",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "review: confirmed in a bulk review of 25 facts (Alexander Bobrovsky, 2026-09-22)"
+        ],
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
         }
       }
     }
@@ -55904,6 +56975,782 @@
         "kind": "guidance",
         "label": "Municipal authority guidance"
       }
+    },
+    {
+      "evidence_id": "e-zh-integration-offers-1-1",
+      "document_id": "doc-6b7ab84cf9fe70b4dbb5",
+      "source_title": "Integrationsangebote | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/integrationsangebote.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 1391,
+      "end_offset": 2341,
+      "original_excerpt": "Kantonale Angebotsdatenbank\n\nIm Kanton Zürich gibt es zahlreiche Integrationsangebote. Sie helfen dabei, sich am Wohnort einzuleben und Kontakte zu knüpfen. Viele Gemeinden bieten Begrüssungsgespräche für Neuzugezogene an, Deutschkurse, Spielgruppen mit Sprachbildung und vieles mehr.\n\nSuchen Sie einen Deutschkurs? Oder suchen Sie einen Treffpunkt, an dem Sie Kontakte knüpfen und sich mit anderen Menschen austauschen können? Benötigen Sie eine Beratung oder suchen Sie für ihr Kind eine Spielgruppe mit integrierter Sprachförderung?\n\nDie Angebotsdatenbank der kantonalen Fachstelle Integration bietet einen Überblick über die Integrationsangebote im Kanton Zürich, die gemeinsam mit Gemeinden mit Mitteln des Integrationsförderkredites des Bundes finanziert sind.\n\nUm ein entsprechendes Angebot zu finden, wählen Sie in der Suchmaske eine Kategorie sowie Ihre Wohngemeinde aus. Klicken Sie auf «Details» für ausführliche Informationen zum Angebot.",
+      "excerpt_sha256": "3eb82af7acdc5b235615d284168aefadd0d217c32ecfa22364198ce28f569d47",
+      "block_ids": [
+        "doc-6b7ab84cf9fe70b4dbb5:b00055",
+        "doc-6b7ab84cf9fe70b4dbb5:b00056",
+        "doc-6b7ab84cf9fe70b4dbb5:b00057",
+        "doc-6b7ab84cf9fe70b4dbb5:b00058",
+        "doc-6b7ab84cf9fe70b4dbb5:b00059"
+      ],
+      "content_sha256": "b3fde41d97c072bd335b00e1acc7a7e9a5f0e0fe7382279189fa3245e0434a07",
+      "raw_sha256": "2308053374951098590e727082abe834c3cccd2dc6e5cc723e88d0dc4ffd3751",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-integration-offers-2-1",
+      "document_id": "doc-6b7ab84cf9fe70b4dbb5",
+      "source_title": "Integrationsangebote | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/integrationsangebote.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 4208,
+      "end_offset": 4942,
+      "original_excerpt": "Deutschkursberatung im Kanton Zürich\n\nZahlreiche Gemeinden haben Ansprechpersonen für die Integration. Diese bieten auch Beratungsgespräche zu Deutschkursen an. Sollte in Ihrer Wohngemeinde keine Beratung zur Verfügung stehen, können Sie sich an die kantonale Deutschkursberatung wenden. Die Beratung ist kostenlos und in 16 Sprachen verfügbar.\n\nZudem gibt es eine kantonale Deutschkurs-Datenbank. Dort finden Sie Deutschkurse und Sprachprüfungen im Kanton Zürich. Sprachprüfungen sind wichtig für die Aufenthaltsbewilligung, die Einbürgerung sowie für Bildung und Arbeit.\n\nDie Städte Zürich und Winterthur haben eigene Angebote (siehe unten).\n\nDeutschkursberatung im Kanton Zürich\n\nKantonale Deutschkursdatenbank: Deutschkurse suchen",
+      "excerpt_sha256": "a50008ea913e9d8622643633f9995a27258640d0c45227704a6879cc23e95410",
+      "block_ids": [
+        "doc-6b7ab84cf9fe70b4dbb5:b00145",
+        "doc-6b7ab84cf9fe70b4dbb5:b00146",
+        "doc-6b7ab84cf9fe70b4dbb5:b00147",
+        "doc-6b7ab84cf9fe70b4dbb5:b00148",
+        "doc-6b7ab84cf9fe70b4dbb5:b00149",
+        "doc-6b7ab84cf9fe70b4dbb5:b00150"
+      ],
+      "content_sha256": "b3fde41d97c072bd335b00e1acc7a7e9a5f0e0fe7382279189fa3245e0434a07",
+      "raw_sha256": "2308053374951098590e727082abe834c3cccd2dc6e5cc723e88d0dc4ffd3751",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-integration-offers-3-1",
+      "document_id": "doc-6b7ab84cf9fe70b4dbb5",
+      "source_title": "Integrationsangebote | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/integrationsangebote.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 4944,
+      "end_offset": 5282,
+      "original_excerpt": "Angebote in den Städten Zürich und Winterthur\n\nDie Städte Zürich und Winterthur haben eigene Angebotsdatenbanken. Hier finden Sie die entsprechenden Hinweise für die städtischen Integrationsangebote:\n\nStadt Zürich: Deutschkurse\n\nStadt Zürich: Zuzug aus dem Ausland\n\nStadt Winterthur: infoDesk / welcomeDesk\n\nStadt Winterthur: Deutschkurse",
+      "excerpt_sha256": "769cc0ec305cb85b5117bcb32d1833903ac6045922c58282771bf63b1782bd05",
+      "block_ids": [
+        "doc-6b7ab84cf9fe70b4dbb5:b00151",
+        "doc-6b7ab84cf9fe70b4dbb5:b00152",
+        "doc-6b7ab84cf9fe70b4dbb5:b00153",
+        "doc-6b7ab84cf9fe70b4dbb5:b00154",
+        "doc-6b7ab84cf9fe70b4dbb5:b00155",
+        "doc-6b7ab84cf9fe70b4dbb5:b00156"
+      ],
+      "content_sha256": "b3fde41d97c072bd335b00e1acc7a7e9a5f0e0fe7382279189fa3245e0434a07",
+      "raw_sha256": "2308053374951098590e727082abe834c3cccd2dc6e5cc723e88d0dc4ffd3751",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-newcomer-first-information-1-1",
+      "document_id": "doc-b26607e2d663c7ebc8cc",
+      "source_title": "Förderbereiche | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderbereiche.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 1604,
+      "end_offset": 1926,
+      "original_excerpt": "Information\n\nAlle aus dem Ausland neu Zugezogene werden in der Schweiz willkommen geheissen und über die wichtigsten Lebensbedingungen und Integrationsangebote informiert. Damit neu Zugezogene sich rasch am neuen Wohnort orientieren und einleben können, sind persönlich vermittelte und mehrsprachige Informationen zentral.",
+      "excerpt_sha256": "e4bb83747f0ad5ac2f8cd5052185e43ce242868360863af65872b4fc53dead93",
+      "block_ids": [
+        "doc-b26607e2d663c7ebc8cc:b00060",
+        "doc-b26607e2d663c7ebc8cc:b00061"
+      ],
+      "content_sha256": "01bd0db17fd46fb2ced445d3c483f62cd7d1db4371e5e2987a5c920760d78fec",
+      "raw_sha256": "5bab505e36b55754d7e68afac5b530d832116776d8b8b6983f9596ea1da84e2d",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-newcomer-first-information-2-1",
+      "document_id": "doc-b26607e2d663c7ebc8cc",
+      "source_title": "Förderbereiche | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderbereiche.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 1928,
+      "end_offset": 2672,
+      "original_excerpt": "Für Integrationsbeauftragte (IB)\n\nIm Kanton Zürich sind es an erster Stelle die Gemeinden, welche neu zugezogene Migrantinnen und Migranten möglichst bald nach ihrer Ankunft über die hiesigen Lebensbedingungen informieren, ihnen erste Orientierung am neuen Wohnort geben und bei Bedarf Zugang zu Deutschkursen und anderen Integrationsangeboten vermitteln.\n\nDie Fachstelle Integration stellt den Gemeinden einen Leitfaden für die Planung und Durchführung von Erstinformationsangeboten zur Verfügung. Der Leitfaden richtet sich auch an Gemeinden, die nicht am Kantonalen Integrationsprogramm (KIP) teilnehmen und Erstinformationsgefässe aufbauen oder weiterentwickeln wollen.\n\nDownload Leitfaden Erstinformation PDF | 13 Seiten | Deutsch | 226 KB",
+      "excerpt_sha256": "244b3dcf9b4aa916254821bec0a86342836ea9bd8814e18372669b2e8057255c",
+      "block_ids": [
+        "doc-b26607e2d663c7ebc8cc:b00062",
+        "doc-b26607e2d663c7ebc8cc:b00063",
+        "doc-b26607e2d663c7ebc8cc:b00064",
+        "doc-b26607e2d663c7ebc8cc:b00065"
+      ],
+      "content_sha256": "01bd0db17fd46fb2ced445d3c483f62cd7d1db4371e5e2987a5c920760d78fec",
+      "raw_sha256": "5bab505e36b55754d7e68afac5b530d832116776d8b8b6983f9596ea1da84e2d",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-newcomer-first-information-3-1",
+      "document_id": "doc-b26607e2d663c7ebc8cc",
+      "source_title": "Förderbereiche | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderbereiche.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 2674,
+      "end_offset": 2985,
+      "original_excerpt": "Abklärung Integrationsbedarf\n\nWer besonderen Integrationsförderbedarf hat, soll möglichst früh auf geeignete Angebote hingewiesen werden. Angesprochen sind damit insbesondere\n\nPersonen im Familiennachzug,\n\nArmutsbedrohte oder von Armut betroffene Personen und\n\nPersonen mit Ausbildungs- und Fachkräftepotenzial.",
+      "excerpt_sha256": "37d2cd4448d0f7b9f6652f61018271849a757666aae78242230ce256831c245c",
+      "block_ids": [
+        "doc-b26607e2d663c7ebc8cc:b00066",
+        "doc-b26607e2d663c7ebc8cc:b00067",
+        "doc-b26607e2d663c7ebc8cc:b00068",
+        "doc-b26607e2d663c7ebc8cc:b00069",
+        "doc-b26607e2d663c7ebc8cc:b00070"
+      ],
+      "content_sha256": "01bd0db17fd46fb2ced445d3c483f62cd7d1db4371e5e2987a5c920760d78fec",
+      "raw_sha256": "5bab505e36b55754d7e68afac5b530d832116776d8b8b6983f9596ea1da84e2d",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-newcomer-first-information-4-1",
+      "document_id": "doc-b26607e2d663c7ebc8cc",
+      "source_title": "Förderbereiche | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderbereiche.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 2987,
+      "end_offset": 4584,
+      "original_excerpt": "Beratung\n\nFür weiterführende Informationen stehen den Migrantinnen und Migranten themenspezifische Beratungen der Regelstrukturen oder migrationsspezifische Beratungsangebote zur Verfügung.\n\nAuch Fachpersonen und Institutionen sowie weitere interessierte Kreise können bei Prozessen der transkulturellen Öffnung, bei der Bereitstellung von spezifischen Massnahmen und beim Abbau von Integrationshemmnissen entsprechend beraten werden.\n\nDie gesamte Bevölkerung soll über die besondere Situation von Migrantinnen und Migranten, die Ziele und Grundprinzipien der Integrationspolitik sowie die Integrationsförderung informiert werden.\n\nBeratungsstellen und Unterstützungsangebote\n\nEs gibt viele Beratungsstellen und Unterstützungsangebote im Kanton Zürich. Die Fachstelle Integration stellt Behörden, Institutionen und Privatpersonen eine Liste mit Organisationen zur Verfügung, die migrationsspezifische und themenspezifische Beratungen im Kanton Zürich anbieten.\n\nDie Fachstelle Integration hat Organisationen in die Liste aufgenommen, die folgende Kriterien erfüllen:\n\nVorteile:\n\nSie weisen Expertise in der thematischen Beratung von verschiedenen Zielgruppen aus.\n\nSie orientieren sich an anerkannten Qualitätsstandards und dem jeweiligen aktuellen Forschungsstand.\n\nDownload Beratungsstellen und Unterstützungsangebote im Kanton Zürich XLSX | deutsch | 57 KB\n\nDie Fachstelle aktualisiert die oben stehende Liste mindestens einmal pro Jahr. Es besteht kein Anspruch auf Vollständigkeit.\n\nMöchten Sie diese Liste mit einem weiteren Angebot ergänzen, kontaktieren Sie uns unter integration@ji.zh.ch.",
+      "excerpt_sha256": "524cd6f74e057596e3b4df44c563715e27940977120e639cdc11c724a40f3444",
+      "block_ids": [
+        "doc-b26607e2d663c7ebc8cc:b00071",
+        "doc-b26607e2d663c7ebc8cc:b00072",
+        "doc-b26607e2d663c7ebc8cc:b00073",
+        "doc-b26607e2d663c7ebc8cc:b00074",
+        "doc-b26607e2d663c7ebc8cc:b00075",
+        "doc-b26607e2d663c7ebc8cc:b00076",
+        "doc-b26607e2d663c7ebc8cc:b00077",
+        "doc-b26607e2d663c7ebc8cc:b00078",
+        "doc-b26607e2d663c7ebc8cc:b00079",
+        "doc-b26607e2d663c7ebc8cc:b00080",
+        "doc-b26607e2d663c7ebc8cc:b00081",
+        "doc-b26607e2d663c7ebc8cc:b00082",
+        "doc-b26607e2d663c7ebc8cc:b00083"
+      ],
+      "content_sha256": "01bd0db17fd46fb2ced445d3c483f62cd7d1db4371e5e2987a5c920760d78fec",
+      "raw_sha256": "5bab505e36b55754d7e68afac5b530d832116776d8b8b6983f9596ea1da84e2d",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-newcomer-first-information-5-1",
+      "document_id": "doc-097ba90229a71bb8bdba",
+      "source_title": "Migrantische Vereine | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/migrantische-organisationen.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 3377,
+      "end_offset": 3608,
+      "original_excerpt": "Willkommen im Kanton Zürich\n\nNeu Zugezogene erhalten auf «Willkommen im Kanton Zürich» Informationen für einen guten Start am neuen Wohnort, mit Links zu weiterführenden Informationen und geeigneten Auskunftsstellen.\n\nMehr erfahren",
+      "excerpt_sha256": "584a5ce77e6bf1965440aeb828d8f5dc205b4a29005116822e13676e30073951",
+      "block_ids": [
+        "doc-097ba90229a71bb8bdba:b00080",
+        "doc-097ba90229a71bb8bdba:b00081",
+        "doc-097ba90229a71bb8bdba:b00082"
+      ],
+      "content_sha256": "999c061a06616059bf467ec9b0ae6af120b06d2c31e37892eae59e2655563dfc",
+      "raw_sha256": "d77fcc4c7b732ddf05fb1634179a7cf3a9332da27006eeca57147b8ac9b416f3",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-racism-protection-1-1",
+      "document_id": "doc-5028cb30ffd4a8de19e1",
+      "source_title": "Schutz vor rassistischer Diskriminierung | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 1518,
+      "end_offset": 3811,
+      "original_excerpt": "Rassistische Diskriminierung\n\nRassistische Diskriminierung oder Rassismus meint Handlungen, die Menschen herabsetzen aufgrund von:\n\nihrer Hautfarbe\n\nihrer Herkunft\n\nihrer Sprache\n\nihrer ethnisch-kulturellen Zugehörigkeit («Rasse»)\n\nund/oder ihrer Religion\n\nRassistische Diskriminierung kann unterschiedliche Formen annehmen. Zum Beispiel:\n\nabwertende Äusserungen\n\nAusgrenzung\n\nVerweigerung einer Dienstleistung\n\nGewaltausübung\n\nRassismus kann strukturell bedingt sein. Das heisst: Menschen werden wegen Strukturen in der Gesellschaft, in der Politik oder wegen Gesetzen diskriminiert. Rassismus kann absichtlich oder unabsichtlich geschehen. Rassismus kann zusammen mit weiteren Diskriminierungsformen auftreten, zum Beispiel wegen des Geschlechts oder einer Behinderung (Mehrfachdiskriminierung). Rassismus kann an verschiedenen Orten auftreten: Bei der Arbeit, Wohnungssuche oder in der Schule.\n\nIn der Schweiz erleben unterschiedliche Personengruppen rassistische Diskriminierung wie Ausländerfeindlichkeit, Anti-Schwarzen-Rassismus, Antisemitismus, antimuslimischen Rassismus oder Antiziganismus. Zum Beispiel:\n\nPersonen mit Migrations- und Fluchtgeschichte\n\nPoC (People of Color)\n\njüdische und muslimische Personen\n\nweitere Minderheiten wie Jenische, Sinti oder Roma\n\nAuch Menschen mit Schweizer Pass können rassistische Diskriminierung erfahren.\n\nFür fast 60 Prozent der Menschen in der Schweiz ist Rassismus ein gesellschaftliches Problem (Bundesamt für Statistik – Erhebung zum Zusammenleben in der Schweiz, 2023).\n\nRassistische Diskriminierung schadet den betroffenen Personen. Sie verletzt sie in ihrer Menschenwürde. Sie gibt ihnen das Gefühl, nicht willkommen zu sein. Rassismus belastet Menschen psychisch und beeinträchtigt ihre Lebensqualität. Rassismus nimmt den Menschen die Möglichkeiten, ihr volles Potenzial auszuschöpfen. Das heisst: Sie können zum Beispiel nicht ihren Fähigkeiten angemessene Ausbildungen besuchen.\n\nRassismus ist für die ganze Gesellschaft ein Problem:\n\nRassismus grenzt ganze Gruppen aus.\n\nRassismus führt zu sozialer Ungleichheit.\n\nRassismus gefährdet den Zusammenhalt.\n\nMenschen können sich weniger gut integrieren, wenn sie Rassismus erleben.\n\nDer Schutz vor rassistischer Diskriminierung ist deshalb ein wichtiges Ziel in der Integrationsförderung.",
+      "excerpt_sha256": "d1f22f0595534a0869fd9bcb7de23b045b1b1549149f758da53946c7fed3257a",
+      "block_ids": [
+        "doc-5028cb30ffd4a8de19e1:b00059",
+        "doc-5028cb30ffd4a8de19e1:b00060",
+        "doc-5028cb30ffd4a8de19e1:b00061",
+        "doc-5028cb30ffd4a8de19e1:b00062",
+        "doc-5028cb30ffd4a8de19e1:b00063",
+        "doc-5028cb30ffd4a8de19e1:b00064",
+        "doc-5028cb30ffd4a8de19e1:b00065",
+        "doc-5028cb30ffd4a8de19e1:b00066",
+        "doc-5028cb30ffd4a8de19e1:b00067",
+        "doc-5028cb30ffd4a8de19e1:b00068",
+        "doc-5028cb30ffd4a8de19e1:b00069",
+        "doc-5028cb30ffd4a8de19e1:b00070",
+        "doc-5028cb30ffd4a8de19e1:b00071",
+        "doc-5028cb30ffd4a8de19e1:b00072",
+        "doc-5028cb30ffd4a8de19e1:b00073",
+        "doc-5028cb30ffd4a8de19e1:b00074",
+        "doc-5028cb30ffd4a8de19e1:b00075",
+        "doc-5028cb30ffd4a8de19e1:b00076",
+        "doc-5028cb30ffd4a8de19e1:b00077",
+        "doc-5028cb30ffd4a8de19e1:b00078",
+        "doc-5028cb30ffd4a8de19e1:b00079",
+        "doc-5028cb30ffd4a8de19e1:b00080",
+        "doc-5028cb30ffd4a8de19e1:b00081",
+        "doc-5028cb30ffd4a8de19e1:b00082",
+        "doc-5028cb30ffd4a8de19e1:b00083",
+        "doc-5028cb30ffd4a8de19e1:b00084",
+        "doc-5028cb30ffd4a8de19e1:b00085"
+      ],
+      "content_sha256": "4b883c79b0594fa06f6501fc004a9620cce2a8e3a91968a7ccb7d1f57809fd72",
+      "raw_sha256": "be1902d31743bb9328f9c0bd51a3cef3bb648e2739d84c78d159865cea9d94bb",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-racism-protection-2-1",
+      "document_id": "doc-5028cb30ffd4a8de19e1",
+      "source_title": "Schutz vor rassistischer Diskriminierung | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 4036,
+      "end_offset": 4574,
+      "original_excerpt": "Anlaufstelle gegen Rassismus in Zürich\n\nDie Zürcher Anlaufstelle Rassismus – ZüRAS berät Menschen, die rassistische Diskriminierung erleben. Die Beratung ist in verschiedenen Sprachen möglich. Sie ist gratis für Menschen, die im Kanton Zürich wohnen. ZüRAS wird im Auftrag des Kantons und der Stadt Zürich von der Asylorganisation Zürich (AOZ) betrieben.\n\nZüRAS – Zürcher Anlaufstelle Rassismus\n\nBestellung Flyer Zürcher Anlaufstelle Rassismus – ZüRAS\n\nDownload Flyer Zürcher Anlaufstelle Rassismus ZüRAS PDF | 6 Seiten | Deutsch | 346 KB",
+      "excerpt_sha256": "1d742764371b2b0c5fbd31478b270134166f15a6bddc9dd040ec045e281e4947",
+      "block_ids": [
+        "doc-5028cb30ffd4a8de19e1:b00088",
+        "doc-5028cb30ffd4a8de19e1:b00089",
+        "doc-5028cb30ffd4a8de19e1:b00090",
+        "doc-5028cb30ffd4a8de19e1:b00091",
+        "doc-5028cb30ffd4a8de19e1:b00092"
+      ],
+      "content_sha256": "4b883c79b0594fa06f6501fc004a9620cce2a8e3a91968a7ccb7d1f57809fd72",
+      "raw_sha256": "be1902d31743bb9328f9c0bd51a3cef3bb648e2739d84c78d159865cea9d94bb",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-racism-protection-3-1",
+      "document_id": "doc-5028cb30ffd4a8de19e1",
+      "source_title": "Schutz vor rassistischer Diskriminierung | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 4576,
+      "end_offset": 5145,
+      "original_excerpt": "Weitere Fachstellen in der Schweiz\n\nNeben den Beratungs- und Fachstellen im Kanton Zürich gibt es in der Schweiz weitere Fachstellen und Meldeplattformen für Rassismus.\n\nMeldeplattform für rassistische Online-Hassrede\n\nAuf der Meldeplattform für Online-Rassismus können Sie Fälle von Hassrede im Internet und in den Sozialen Medien melden:\n\nwww.reportonlineracism.ch\n\nBeratungsnetz für Rassismusopfer\n\nDas Beratungsnetz für Rassismusopfer ist ein Netzwerk von Fachstellen in der gesamten Schweiz, die Beratungen bei Fällen von Rassismus anbieten:\n\nwww.network-racism.ch",
+      "excerpt_sha256": "4bad235225d4e9250dd40f897c46ea090d4f4d95cfb07b1923b268c0b9806b02",
+      "block_ids": [
+        "doc-5028cb30ffd4a8de19e1:b00093",
+        "doc-5028cb30ffd4a8de19e1:b00094",
+        "doc-5028cb30ffd4a8de19e1:b00095",
+        "doc-5028cb30ffd4a8de19e1:b00096",
+        "doc-5028cb30ffd4a8de19e1:b00097",
+        "doc-5028cb30ffd4a8de19e1:b00098",
+        "doc-5028cb30ffd4a8de19e1:b00099",
+        "doc-5028cb30ffd4a8de19e1:b00100"
+      ],
+      "content_sha256": "4b883c79b0594fa06f6501fc004a9620cce2a8e3a91968a7ccb7d1f57809fd72",
+      "raw_sha256": "be1902d31743bb9328f9c0bd51a3cef3bb648e2739d84c78d159865cea9d94bb",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-racism-protection-4-1",
+      "document_id": "doc-5028cb30ffd4a8de19e1",
+      "source_title": "Schutz vor rassistischer Diskriminierung | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 5147,
+      "end_offset": 6170,
+      "original_excerpt": "Fachstelle für Rassismusbekämpfung (FRB)\n\nDie Fachstelle für Rassismusbekämpfung ist zuständig für die Prävention von Rassismus und koordiniert Aktivitäten auf nationaler, kantonaler und kommunaler Ebene.\n\nSeit 2012 veröffentlicht sie alle zwei Jahre einen Monitoring-Bericht zur Analyse von rassistischer Diskriminierung in der Schweiz. Seit 2024 sind die Informationen online verfügbar.\n\nRassismus in Zahlen\n\nGlossar\n\nEidgenössische Kommission gegen Rassismus (EKR)\n\nDie Eidgenössischen Kommission gegen Rassismus berät, erarbeitet Publikationen und leistet Rassismusprävention. Ihr Online-Rechtsratgeber bietet Informationen zur Rechtslage und umfasst ein Glossar zu den wichtigsten Begriffen.\n\nEidgenössischen Kommission gegen Rassismus (EKR)\n\nOnline-Rechtsratgeber rassistische Diskriminierung\n\nStiftung gegen Rassismus und Antisemitismus (GRA)\n\nDie Stiftung gegen Rassismus und Antisemitismus GRA erfasst rassistische und antisemitische Vorfälle in der ganzen Schweiz.\n\nStiftung gegen Rassismus und Antisemitismus GRA",
+      "excerpt_sha256": "c4667ad5efbba966e9021d9800a12dbc66ded5706be1206a49d26415f42e3a94",
+      "block_ids": [
+        "doc-5028cb30ffd4a8de19e1:b00101",
+        "doc-5028cb30ffd4a8de19e1:b00102",
+        "doc-5028cb30ffd4a8de19e1:b00103",
+        "doc-5028cb30ffd4a8de19e1:b00104",
+        "doc-5028cb30ffd4a8de19e1:b00105",
+        "doc-5028cb30ffd4a8de19e1:b00106",
+        "doc-5028cb30ffd4a8de19e1:b00107",
+        "doc-5028cb30ffd4a8de19e1:b00108",
+        "doc-5028cb30ffd4a8de19e1:b00109",
+        "doc-5028cb30ffd4a8de19e1:b00110",
+        "doc-5028cb30ffd4a8de19e1:b00111",
+        "doc-5028cb30ffd4a8de19e1:b00112"
+      ],
+      "content_sha256": "4b883c79b0594fa06f6501fc004a9620cce2a8e3a91968a7ccb7d1f57809fd72",
+      "raw_sha256": "be1902d31743bb9328f9c0bd51a3cef3bb648e2739d84c78d159865cea9d94bb",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-racism-protection-5-1",
+      "document_id": "doc-5028cb30ffd4a8de19e1",
+      "source_title": "Schutz vor rassistischer Diskriminierung | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 8264,
+      "end_offset": 10290,
+      "original_excerpt": "Rechtliche Grundlagen\n\nDer Schutz vor rassistischer Diskriminierung ist an verschiedenen Stellen in den Schweizer Gesetzen zu finden:\n\nIn der Verfassung: Seit 2000 hält die Bundesverfassung (Art. 8 Abs. 2 BV) als Grundrecht fest, dass niemand aufgrund der Herkunft, «Rasse», Sprache, Lebensform oder religiösen Überzeugung diskriminiert werden darf. Die Zürcher Kantonsverfassung hält dieses Grundrecht seit 2005 fest.\n\nIm Strafrecht: Das Strafgesetzbuch stellt bestimmte diskriminierende Handlungen unter Strafe, wenn sie öffentlich stattfinden (Art. 261bis). Dazu zählen Handlungen, wie die öffentliche Herabsetzung von Personen oder Gruppen wegen ihrer «Rasse», Ethnie oder Religion sowie Hassrede und Aufrufe zur Gewalt gegen sie. Auch die Verweigerung einer für die Allgemeinheit angebotenen Dienstleistung aufgrund eines der genannten Merkmale ist strafbar.\n\nIm Ausländer- und Integrationsgesetz (AIG): Das Gesetz hält seit 2019 (Art. 53) fest, dass «Bund, Kantone und Gemeinden «bei der Erfüllung ihrer Aufgaben die Anliegen der Integration und des Schutzes vor Diskriminierung» berücksichtigen.\n\nBundesverfassung der Schweizerischen Eidgenossenschaft\n\nSchweizerisches Strafgesetzbuch – Art. 261bis Diskriminierung und Aufruf zu Hass\n\nKantonsverfassung\n\nAusländer- und Integrationsgesetz, AIG\n\nDer Zürcher Regierungsrat hat in seinen Richtlinien zur Regierungspolitik Ziele und Massnahmen formuliert - unter anderem die Erarbeitung eines Aktionsplans zur Umsetzung von Massnahmen gegen Diskriminierung. Sie sollen der rasch zunehmenden Vielfalt der Gesellschaft gerecht werden.\n\nRichtlinien der Regierungspolitik 2023–2027\n\nSeit der Einführung der Kantonalen Integrationsprogramme (KIP) im Jahr 2014 ist der Diskriminierungsschutz ein verbindlicher Bereich der staatlichen Integrationsförderung. Im Kanton Zürich ist der Schutz vor rassistischer Diskriminierung seit dem zweiten Kantonalen Integrationsprogramm (KIP 3) ein Schwerpunkt der Integrationsförderung.\n\nKantonales Integrationsprogramm Zürich 2024–2027 (KIP 3)",
+      "excerpt_sha256": "eccfe5e22b021fc432b0bb7d2b80d24c5bd4d8c6d776ca8cfeb394dccaa56027",
+      "block_ids": [
+        "doc-5028cb30ffd4a8de19e1:b00130",
+        "doc-5028cb30ffd4a8de19e1:b00131",
+        "doc-5028cb30ffd4a8de19e1:b00132",
+        "doc-5028cb30ffd4a8de19e1:b00133",
+        "doc-5028cb30ffd4a8de19e1:b00134",
+        "doc-5028cb30ffd4a8de19e1:b00135",
+        "doc-5028cb30ffd4a8de19e1:b00136",
+        "doc-5028cb30ffd4a8de19e1:b00137",
+        "doc-5028cb30ffd4a8de19e1:b00138",
+        "doc-5028cb30ffd4a8de19e1:b00139",
+        "doc-5028cb30ffd4a8de19e1:b00140",
+        "doc-5028cb30ffd4a8de19e1:b00141",
+        "doc-5028cb30ffd4a8de19e1:b00142"
+      ],
+      "content_sha256": "4b883c79b0594fa06f6501fc004a9620cce2a8e3a91968a7ccb7d1f57809fd72",
+      "raw_sha256": "be1902d31743bb9328f9c0bd51a3cef3bb648e2739d84c78d159865cea9d94bb",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-racism-protection-6-1",
+      "document_id": "doc-5028cb30ffd4a8de19e1",
+      "source_title": "Schutz vor rassistischer Diskriminierung | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 11211,
+      "end_offset": 11611,
+      "original_excerpt": "Andere Arten von Diskriminierung\n\nDiskriminierung kann auch aufgrund anderer Merkmale auftreten. Zum Beispiel wegen des Geschlechts oder der sexuellen Orientierung. Dafür ist im Kanton Zürich die Fachstelle Gleichstellung zuständig:\n\nFachstelle Gleichstellung\n\nFür Diskriminierung wegen einer Behinderung ist die Koordinationsstelle Behindertenrechte zuständig:\n\nKoordinationsstelle Behindertenrechte",
+      "excerpt_sha256": "572fdfb88332a35f962dd351a3a0660e58eb0637b056548f85f169324a938836",
+      "block_ids": [
+        "doc-5028cb30ffd4a8de19e1:b00149",
+        "doc-5028cb30ffd4a8de19e1:b00150",
+        "doc-5028cb30ffd4a8de19e1:b00151",
+        "doc-5028cb30ffd4a8de19e1:b00152",
+        "doc-5028cb30ffd4a8de19e1:b00153"
+      ],
+      "content_sha256": "4b883c79b0594fa06f6501fc004a9620cce2a8e3a91968a7ccb7d1f57809fd72",
+      "raw_sha256": "be1902d31743bb9328f9c0bd51a3cef3bb648e2739d84c78d159865cea9d94bb",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-migrant-associations-1-1",
+      "document_id": "doc-097ba90229a71bb8bdba",
+      "source_title": "Migrantische Vereine | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/migrantische-organisationen.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 1466,
+      "end_offset": 2499,
+      "original_excerpt": "Plattform für Migrantenvereine\n\nSuchen Sie einen bestimmten migrantischen Verein im Kanton Zürich? Möchten Sie wissen, welche migrantischen oder religiös tätige Organisationen in Ihrer Gemeinde oder in einer bestimmten Region tätig sind?\n\nBesuchen Sie unsere Plattform für Migrantenvereine, wo Sie nach verschiedenen Kriterien suchen können.\n\nMigrantenvereine\n\nMigrantische und religiöse Vereine leisten viel – meist unbemerkt von der Öffentlichkeit und in ehrenamtlicher Tätigkeit. Sie informieren, beraten und fördern die Möglichkeit, sich auszutauschen und zu vernetzen. All dies hilft, um sich leichter in unserer Gesellschaft zurechtzufinden.\n\nDie Fachstelle Integration unterstützt die migrantischen und religiösen Vereine in ihrer wichtigen Integrationsarbeit. Um die Vernetzung zu verstärken und den Informationsfluss zu erleichtern, wurde Anfang 2015 die «Plattform für Migrantenvereine» lanciert. Allen Interessierten wird mit der Plattform eine einfache Möglichkeit zur Kontaktaufnahme geboten.\n\nRegistrieren Sie sich hier",
+      "excerpt_sha256": "78d6135190f7e591071c3c02cee32590f170d3f8aa9ac134886ee35d1c3f84d4",
+      "block_ids": [
+        "doc-097ba90229a71bb8bdba:b00057",
+        "doc-097ba90229a71bb8bdba:b00058",
+        "doc-097ba90229a71bb8bdba:b00059",
+        "doc-097ba90229a71bb8bdba:b00060",
+        "doc-097ba90229a71bb8bdba:b00061",
+        "doc-097ba90229a71bb8bdba:b00062",
+        "doc-097ba90229a71bb8bdba:b00063"
+      ],
+      "content_sha256": "999c061a06616059bf467ec9b0ae6af120b06d2c31e37892eae59e2655563dfc",
+      "raw_sha256": "d77fcc4c7b732ddf05fb1634179a7cf3a9332da27006eeca57147b8ac9b416f3",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-migrant-associations-2-1",
+      "document_id": "doc-097ba90229a71bb8bdba",
+      "source_title": "Migrantische Vereine | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/migrantische-organisationen.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 2501,
+      "end_offset": 2736,
+      "original_excerpt": "Migrazin\n\nMit dem Newsletter Migrazin versendet die Fachstelle Integration Informationen vom Kanton Zürich an migrantische und religiöse Vereine.\n\nGerne schicken wir Ihnen künftig das Migrazin. Schreiben Sie uns und melden Sie sich an:",
+      "excerpt_sha256": "dcecbbda0f67ac8b11cc01f723d919ddb85582ceb4fa485bcfedd4ad450baa47",
+      "block_ids": [
+        "doc-097ba90229a71bb8bdba:b00064",
+        "doc-097ba90229a71bb8bdba:b00065",
+        "doc-097ba90229a71bb8bdba:b00066"
+      ],
+      "content_sha256": "999c061a06616059bf467ec9b0ae6af120b06d2c31e37892eae59e2655563dfc",
+      "raw_sha256": "d77fcc4c7b732ddf05fb1634179a7cf3a9332da27006eeca57147b8ac9b416f3",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-migrant-associations-3-1",
+      "document_id": "doc-097ba90229a71bb8bdba",
+      "source_title": "Migrantische Vereine | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/migrantische-organisationen.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 2738,
+      "end_offset": 2839,
+      "original_excerpt": "Deniz Yüksel\n\nAnsprechperson für migrantische Organisationen\n\ndeniz.yueksel@ji.zh.ch +41 43 259 25 27",
+      "excerpt_sha256": "37b1664b29909c9f1e5c7c7e910b730f3b0f73317b51893d798e27b24aef9ccc",
+      "block_ids": [
+        "doc-097ba90229a71bb8bdba:b00067",
+        "doc-097ba90229a71bb8bdba:b00068",
+        "doc-097ba90229a71bb8bdba:b00069"
+      ],
+      "content_sha256": "999c061a06616059bf467ec9b0ae6af120b06d2c31e37892eae59e2655563dfc",
+      "raw_sha256": "d77fcc4c7b732ddf05fb1634179a7cf3a9332da27006eeca57147b8ac9b416f3",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-integration-project-funding-1-1",
+      "document_id": "doc-5386be4702ee65f46a87",
+      "source_title": "Förderung von Integrationsprojekten | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 1652,
+      "end_offset": 2574,
+      "original_excerpt": "Finanzielle Beiträge\n\nWährend der Jahre 2024–2027 stehen gemäss kantonalem Integrationsprogramm (KIP 3) jährlich bis zu 300'000 Franken für Projekte zur Verfügung, die\n\nMenschen mit Migrationsgeschichte betreffen und/oder\n\nvon diesen (mit-)entwickelt werden.\n\nBesonders wenn sie auch Migrantinnen und Migranten einbeziehen, die weniger gut am gesellschaftlichen Leben teilhaben können. Zum Beispiel aus Sprach- oder Finanzgründen.\n\nDie Fachstelle Integration unterstützt auch während des Kantonalen Integrationsprogrammes 2028-2032 (KIP 4) Projekte. Der erste Eingabetermin hierfür ist der 31.Oktober 2027.\n\nNähere Informationen zur kantonalen Projektförderung während des KIP 4 werden zu einem späteren Zeitpunkt hier ausgeschrieben.\n\nFür Projekte, die sich speziell an geflüchtete Personen richten, gibt es im Rahmen der Integrationsagenda Kanton Zürich (IAZH) ein eigenes Förderprogramm.\n\nFörderprogramm für Geflüchtete",
+      "excerpt_sha256": "0fc689719aa2e56599314acc23433150f79709b73a94163757052678a12a7140",
+      "block_ids": [
+        "doc-5386be4702ee65f46a87:b00060",
+        "doc-5386be4702ee65f46a87:b00061",
+        "doc-5386be4702ee65f46a87:b00062",
+        "doc-5386be4702ee65f46a87:b00063",
+        "doc-5386be4702ee65f46a87:b00064",
+        "doc-5386be4702ee65f46a87:b00065",
+        "doc-5386be4702ee65f46a87:b00066",
+        "doc-5386be4702ee65f46a87:b00067",
+        "doc-5386be4702ee65f46a87:b00068"
+      ],
+      "content_sha256": "6e90c4fe9739a4d6110c0af46c21262ddedc1a38ebb4c7d3deedc949033c40ab",
+      "raw_sha256": "5cd3600a6e80606270d05f53a4081272ce25bd9c6892e2eb74e85ea7c3b29962",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-integration-project-funding-2-1",
+      "document_id": "doc-5386be4702ee65f46a87",
+      "source_title": "Förderung von Integrationsprojekten | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 2576,
+      "end_offset": 2796,
+      "original_excerpt": "Kleinprojekte\n\nKleinprojekte mit Gesamtkosten bis zu 5000 Franken können laufend eingeben werden, sofern noch Fördermittel verfügbar sind. Für Kleinprojekte gelten vereinfachte Einreichungs- und Berichterstattungsregeln.",
+      "excerpt_sha256": "533aad585ad908ac3e25fb29c0adc7d7fc76949cc3d42d78a63ef82a1d16eed3",
+      "block_ids": [
+        "doc-5386be4702ee65f46a87:b00069",
+        "doc-5386be4702ee65f46a87:b00070"
+      ],
+      "content_sha256": "6e90c4fe9739a4d6110c0af46c21262ddedc1a38ebb4c7d3deedc949033c40ab",
+      "raw_sha256": "5cd3600a6e80606270d05f53a4081272ce25bd9c6892e2eb74e85ea7c3b29962",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-integration-project-funding-3-1",
+      "document_id": "doc-5386be4702ee65f46a87",
+      "source_title": "Förderung von Integrationsprojekten | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 2798,
+      "end_offset": 3219,
+      "original_excerpt": "Grössere Projekte\n\nFür Projekte mit Gesamtkosten über 5000 Franken ist der 31. Oktober 2026 der letztmögliche Eingabetermin im Rahmen des KIP 3.\n\nDer maximale Förderbeitrag pro Gesuch beträgt 50'000 Franken. Die Fachstelle Integration prüft Gesuche für Projekte mit Gesamtkosten über 5000 Franken innerhalb von zwei Monaten.\n\nEs könnten nur noch Projekte gefördert werden, die bis spätestens Ende 2027 abgeschlossen sind.",
+      "excerpt_sha256": "832dd30fb314ad7c5865cf7daaa60f5f51964102bdcfe253a85c5b1c5d9acf17",
+      "block_ids": [
+        "doc-5386be4702ee65f46a87:b00071",
+        "doc-5386be4702ee65f46a87:b00072",
+        "doc-5386be4702ee65f46a87:b00073",
+        "doc-5386be4702ee65f46a87:b00074"
+      ],
+      "content_sha256": "6e90c4fe9739a4d6110c0af46c21262ddedc1a38ebb4c7d3deedc949033c40ab",
+      "raw_sha256": "5cd3600a6e80606270d05f53a4081272ce25bd9c6892e2eb74e85ea7c3b29962",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-integration-project-funding-4-1",
+      "document_id": "doc-5386be4702ee65f46a87",
+      "source_title": "Förderung von Integrationsprojekten | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 3251,
+      "end_offset": 3841,
+      "original_excerpt": "Zusammenleben und Partizipation\n\nEs erhalten Projekte Unterstützung,\n\ndie Begegnungen,\n\ndie Teilnahme von Migrantinnen und Migranten am öffentlichen Leben und\n\ndie Freiwilligenarbeit im Migrationsbereich fördern.\n\nUmgang mit Vielfalt und Diskriminierungsschutz\n\nEs erhalten Projekte Unterstützung,\n\ndie den konstruktiven Umgang mit der gesellschaftlichen Vielfalt fördern und\n\ndie Massnahmen zur Bekämpfung von Diskriminierung und Rassismus entwickeln und umsetzen.\n\nBitte beachten Sie, dass nur Projekte Förderbeiträge bekommen, die sich auf einen oder beide dieser Bereiche konzentrieren.",
+      "excerpt_sha256": "9efbf4e04095af3101ccbe72cbc16c36f409503ef27db9a2f39c4ec62fc2dbd0",
+      "block_ids": [
+        "doc-5386be4702ee65f46a87:b00076",
+        "doc-5386be4702ee65f46a87:b00077",
+        "doc-5386be4702ee65f46a87:b00078",
+        "doc-5386be4702ee65f46a87:b00079",
+        "doc-5386be4702ee65f46a87:b00080",
+        "doc-5386be4702ee65f46a87:b00081",
+        "doc-5386be4702ee65f46a87:b00082",
+        "doc-5386be4702ee65f46a87:b00083",
+        "doc-5386be4702ee65f46a87:b00084",
+        "doc-5386be4702ee65f46a87:b00085"
+      ],
+      "content_sha256": "6e90c4fe9739a4d6110c0af46c21262ddedc1a38ebb4c7d3deedc949033c40ab",
+      "raw_sha256": "5cd3600a6e80606270d05f53a4081272ce25bd9c6892e2eb74e85ea7c3b29962",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-integration-project-funding-5-1",
+      "document_id": "doc-5386be4702ee65f46a87",
+      "source_title": "Förderung von Integrationsprojekten | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 3843,
+      "end_offset": 4025,
+      "original_excerpt": "Wer ein Gesuch stellen kann\n\nGemeinden und öffentliche sowie private gemeinnützige Organisationen mit Sitz oder regionaler Niederlassung im Kanton Zürich (Vereine, Stiftungen o. Ä.).",
+      "excerpt_sha256": "374198d19ed9c46532dde9f45e6b8b006b4f1186813191fb942e1c562d76a81e",
+      "block_ids": [
+        "doc-5386be4702ee65f46a87:b00086",
+        "doc-5386be4702ee65f46a87:b00087"
+      ],
+      "content_sha256": "6e90c4fe9739a4d6110c0af46c21262ddedc1a38ebb4c7d3deedc949033c40ab",
+      "raw_sha256": "5cd3600a6e80606270d05f53a4081272ce25bd9c6892e2eb74e85ea7c3b29962",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-integration-project-funding-6-1",
+      "document_id": "doc-5386be4702ee65f46a87",
+      "source_title": "Förderung von Integrationsprojekten | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 4027,
+      "end_offset": 4607,
+      "original_excerpt": "Gesuche einreichen\n\nSie können Ihr Gesuch online einreichen. Bevor Sie Ihr Gesuch einreichen, lesen Sie bitte die Projekt-Förderrichtlinien.\n\nDownload Richtlinien Projektförderung KIP 3 (2024–2027) PDF | 9 Seiten | Deutsch | 159 KB\n\nGesuche für Kleinprojekte einreichen\n\nStarten\n\nGesuche für grössere Projekte einreichen\n\nStarten\n\nBei Fragen zum Einreichen eines Projekts und zur Berichterstattung können Sie sich an die Fachspezialistinnen der Fachstelle Integration wenden. Wenn Sie zum ersten Mal ein Projekt einreichen, empfehlen wir Ihnen, vorher mit uns Kontakt aufzunehmen:",
+      "excerpt_sha256": "a2f30f31ce0fec47e3d37336fe78d5fd8c1165d0934c6436b478ca8533453ea4",
+      "block_ids": [
+        "doc-5386be4702ee65f46a87:b00088",
+        "doc-5386be4702ee65f46a87:b00089",
+        "doc-5386be4702ee65f46a87:b00090",
+        "doc-5386be4702ee65f46a87:b00091",
+        "doc-5386be4702ee65f46a87:b00092",
+        "doc-5386be4702ee65f46a87:b00093",
+        "doc-5386be4702ee65f46a87:b00094",
+        "doc-5386be4702ee65f46a87:b00095"
+      ],
+      "content_sha256": "6e90c4fe9739a4d6110c0af46c21262ddedc1a38ebb4c7d3deedc949033c40ab",
+      "raw_sha256": "5cd3600a6e80606270d05f53a4081272ce25bd9c6892e2eb74e85ea7c3b29962",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-integration-project-funding-7-1",
+      "document_id": "doc-0ab169e59cf112d166c6",
+      "source_title": "Kleinprojekte von maximal 5'000 Franken | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-kleinprojekte-von-gesamtkosten-von-maximal-5000-franken.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 1983,
+      "end_offset": 2332,
+      "original_excerpt": "Erforderliche Unterlagen\n\nBitte beachten Sie, dass das Webformular nicht zwischengespeichert werden kann. Halten Sie für die Eingabe alle erforderlichen Informationen und Unterlagen bereit.\n\nFür den Antrag benötigen Sie ein Budget. Verwenden Sie für das Budget zwingend diese Vorlage:\n\nDownload Budgetformular Projektförderung XLSX | Deutsch | 12 KB",
+      "excerpt_sha256": "6103d7fc84b96e06d75cd012e501219112aaf281e05cee0a1481f7cbd690c3d3",
+      "block_ids": [
+        "doc-0ab169e59cf112d166c6:b00061",
+        "doc-0ab169e59cf112d166c6:b00062",
+        "doc-0ab169e59cf112d166c6:b00063",
+        "doc-0ab169e59cf112d166c6:b00064"
+      ],
+      "content_sha256": "accedefcbe04145e964577965c868a4a1823ee7581bd34eb34dbe36aa28cf02d",
+      "raw_sha256": "54b4bbd647c2e4e48ed737781ba47201e2fecd2593c61a638dc06bdaa58b3cae",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-integration-project-funding-7-2",
+      "document_id": "doc-603af2c75387379addec",
+      "source_title": "Projekte über 5'000 Franken | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-projekte-mit-gesamtkosten-ueber-5000-franken.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 2109,
+      "end_offset": 2670,
+      "original_excerpt": "Erforderliche Dokumente\n\nBitte beachten Sie, dass das Webformular nicht zwischengespeichert werden kann. Halten Sie für die Eingabe alle erforderlichen Informationen und Unterlagen bereit. Für den Antrag benötigen Sie folgende Unterlagen:\n\nBudget (Die im Download zur Verfügung gestellte Vorlage ist zwingend zu verwenden.)\n\nKonzept bzw. Projektbeschrieb (Es kann die im Download zur Verfügung gestellte oder eine eigene Vorlage verwendet werden.)\n\nDownload Budgetformular Projektförderung XLSX | Deutsch | 12 KB\n\nDownload Vorlage Konzept DOCX | Deutsch | 67 KB",
+      "excerpt_sha256": "03fbccc7c06b0003fab667a0a3437ae2d9f38f1b13064d15bffd38ac2fbff7ed",
+      "block_ids": [
+        "doc-603af2c75387379addec:b00062",
+        "doc-603af2c75387379addec:b00063",
+        "doc-603af2c75387379addec:b00064",
+        "doc-603af2c75387379addec:b00065",
+        "doc-603af2c75387379addec:b00066",
+        "doc-603af2c75387379addec:b00067"
+      ],
+      "content_sha256": "d06d86de9fb195b105ef382557f4eb3ed794fb164c398ccaafa6bf5cf67da401",
+      "raw_sha256": "e88942532449a44101f75cb8e8c737065efd9ac4713280b3fce9a93e78e4d6d7",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "e-zh-integration-project-funding-8-1",
+      "document_id": "doc-5386be4702ee65f46a87",
+      "source_title": "Förderung von Integrationsprojekten | Kanton Zürich",
+      "publisher": "Canton of Zurich, Integration Office",
+      "institution_id": "zh-fachstelle-integration",
+      "url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html",
+      "language": "de",
+      "accessed_on": "2026-09-11",
+      "start_offset": 4609,
+      "end_offset": 4846,
+      "original_excerpt": "Maria Gstöhl\n\nFür den Förderbereich «Zusammenleben und Partizipation»\n\nmaria.gstoehl@ji.zh.ch +41 43 259 25 30\n\nDeniz Yüksel\n\nFür den Förderbereich «Umgang mit Vielfalt und Diskriminierungsschutz»\n\ndeniz.yueksel@ji.zh.ch +41 43 259 25 27",
+      "excerpt_sha256": "cfff41b83b4bd17f69eef52c84047d190b7d68fb55e242e9b94f06648b25f09f",
+      "block_ids": [
+        "doc-5386be4702ee65f46a87:b00096",
+        "doc-5386be4702ee65f46a87:b00097",
+        "doc-5386be4702ee65f46a87:b00098",
+        "doc-5386be4702ee65f46a87:b00099",
+        "doc-5386be4702ee65f46a87:b00100",
+        "doc-5386be4702ee65f46a87:b00101"
+      ],
+      "content_sha256": "6e90c4fe9739a4d6110c0af46c21262ddedc1a38ebb4c7d3deedc949033c40ab",
+      "raw_sha256": "5cd3600a6e80606270d05f53a4081272ce25bd9c6892e2eb74e85ea7c3b29962",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
     }
   ],
   "institutions": [
@@ -56079,6 +57926,14 @@
       "institution_id": "zh-awa",
       "name": "Canton of Zurich, Office for the Economy",
       "native_name": "Amt für Wirtschaft des Kantons Zürich",
+      "level": "cantonal",
+      "body": "administration",
+      "jurisdiction": "CH-ZH"
+    },
+    {
+      "institution_id": "zh-fachstelle-integration",
+      "name": "Canton of Zurich, Integration Office",
+      "native_name": "Fachstelle Integration des Kantons Zürich (Direktion der Justiz und des Innern)",
       "level": "cantonal",
       "body": "administration",
       "jurisdiction": "CH-ZH"

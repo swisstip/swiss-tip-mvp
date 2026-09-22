@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-acceptance-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-22-v1",
-  "content_sha256": "2823ab3fad3b042436d0fd1a38d913016031ac17562afe9dffcb774e80341be2",
-  "suite_sha256": "0ee9fde2a28ac6b96bc5fed54778c176542c2a78f00178d3710e92880e501714",
-  "checked_at": "2026-09-22T08:14:36.674139+00:00",
+  "release_id": "mvp-zurich-2026-09-22-v6",
+  "content_sha256": "9518b36a60a99ae5cdd1bf34be3ca5af79112382fd8a59419ce9cf7bf9eb8f41",
+  "suite_sha256": "46c62d7c48b4953f502ed203e2d6ced98f6f8ff54cd77f84e1864fdd2d5f84d8",
+  "checked_at": "2026-09-22T12:53:58.630005+00:00",
   "as_of": "2026-09-19",
   "passed": true,
-  "cases": 82,
-  "blocking": 82,
+  "cases": 88,
+  "blocking": 88,
   "failed": [],
   "quarantined": [],
   "quarantined_failed": [],
@@ -1200,7 +1200,7 @@
           "hits": [
             "zh-tax-at-source-liability",
             "tax-at-source-liability",
-            "aig-study"
+            "naturalisation-facilitated-spouse"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -1855,7 +1855,7 @@
           "hits": [
             "zh-premium-reduction",
             "premium-reduction",
-            "zh-sva-telephone-numbers"
+            "accident-insurance"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -2074,7 +2074,7 @@
           "hits": [
             "naturalisation-ordinary",
             "naturalisation-facilitated-spouse",
-            "zh-naturalisation-ordinary"
+            "zh-tax-at-source-liability"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -2347,7 +2347,7 @@
           "hits": [
             "naturalisation-facilitated-spouse",
             "naturalisation-third-generation",
-            "city-zurich-naturalisation-facilitated"
+            "city-zurich-naturalisation"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -5564,9 +5564,9 @@
           "query": "Wann sind die nächsten eidgenössischen Abstimmungen?",
           "expect_concept": null,
           "hits": [
+            "zh-racism-protection",
             "political-rights-federal",
-            "zh-political-rights",
-            "zh-tax-at-source-liability"
+            "zh-political-rights"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -5717,7 +5717,7 @@
           "hits": [
             "entry-visa-types",
             "third-country-work-procedure",
-            "uk-new-employment"
+            "marriage-switzerland"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -6040,8 +6040,8 @@
           "query": "family reunification with an L permit in Zurich",
           "expect_concept": "zh-family-l-permit",
           "hits": [
-            "zh-family-b-c-permit",
             "zh-family-l-permit",
+            "zh-family-b-c-permit",
             "fza-family-members"
           ],
           "retrieval_mode": "lexical",
@@ -6114,7 +6114,7 @@
           "hits": [
             "zh-political-rights",
             "political-rights-federal",
-            "city-zurich-marriage"
+            "city-zurich-naturalisation"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -7063,7 +7063,7 @@
           "hits": [
             "unemployment-benefit",
             "social-assistance-review",
-            "fza-employee-permit"
+            "naturalisation-ordinary"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -7158,7 +7158,7 @@
           "hits": [
             "accident-insurance",
             "zh-sva-contact",
-            "entry-visa-fee-insurance"
+            "fza-social-security"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -7483,6 +7483,419 @@
           "passed": true
         }
       ]
+    },
+    {
+      "case_id": "UAT-67",
+      "label": "Newcomer looking for a German course in the canton",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "German course integration offer Canton of Zurich",
+          "expect_concept": "zh-integration-offers",
+          "hits": [
+            "zh-integration-offers",
+            "zh-newcomer-first-information",
+            "zh-dog-keeping"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "zh-integration-offers"
+          ],
+          "as_of": "2026-09-19",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "zh-integration-offers": "SUPPORTED"
+          },
+          "gaps": {
+            "zh-integration-offers": []
+          },
+          "facts": {
+            "zh-integration-offers": [
+              "zh-integration-offers-1",
+              "zh-integration-offers-2",
+              "zh-integration-offers-3"
+            ]
+          },
+          "bases": {
+            "zh-integration-offers": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The Fachstelle Integration runs an offer database searched by category and municipality",
+          "concept": "zh-integration-offers",
+          "fact_ids": [
+            "zh-integration-offers-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The cantonal German-course advice is free and available in 16 languages",
+          "concept": "zh-integration-offers",
+          "fact_ids": [
+            "zh-integration-offers-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Zurich and Winterthur keep their own databases",
+          "concept": "zh-integration-offers",
+          "fact_ids": [
+            "zh-integration-offers-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-68",
+      "label": "Who informs a newly arrived family, and who is pointed to offers early",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "who informs newcomers Canton of Zurich first information",
+          "expect_concept": "zh-newcomer-first-information",
+          "hits": [
+            "zh-newcomer-first-information",
+            "city-zurich-first-steps",
+            "zh-migrationsamt-contact"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "zh-newcomer-first-information"
+          ],
+          "as_of": "2026-09-19",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "zh-newcomer-first-information": "SUPPORTED"
+          },
+          "gaps": {
+            "zh-newcomer-first-information": []
+          },
+          "facts": {
+            "zh-newcomer-first-information": [
+              "zh-newcomer-first-information-1",
+              "zh-newcomer-first-information-2",
+              "zh-newcomer-first-information-3",
+              "zh-newcomer-first-information-4",
+              "zh-newcomer-first-information-5"
+            ]
+          },
+          "bases": {
+            "zh-newcomer-first-information": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The municipalities inform newly arrived migrants after arrival",
+          "concept": "zh-newcomer-first-information",
+          "fact_ids": [
+            "zh-newcomer-first-information-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Persons in family reunification are named as having a particular need",
+          "concept": "zh-newcomer-first-information",
+          "fact_ids": [
+            "zh-newcomer-first-information-3"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The Fachstelle keeps a list of counselling organisations",
+          "concept": "zh-newcomer-first-information",
+          "fact_ids": [
+            "zh-newcomer-first-information-4"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-69",
+      "label": "Where to turn after racist discrimination at work",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "advice racist discrimination Zurich",
+          "expect_concept": "zh-racism-protection",
+          "hits": [
+            "zh-racism-protection",
+            "city-zurich-naturalisation-contact",
+            "zh-newcomer-first-information"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "zh-racism-protection"
+          ],
+          "as_of": "2026-09-19",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "zh-racism-protection": "SUPPORTED"
+          },
+          "gaps": {
+            "zh-racism-protection": []
+          },
+          "facts": {
+            "zh-racism-protection": [
+              "zh-racism-protection-1",
+              "zh-racism-protection-2",
+              "zh-racism-protection-3",
+              "zh-racism-protection-4",
+              "zh-racism-protection-5",
+              "zh-racism-protection-6"
+            ]
+          },
+          "bases": {
+            "zh-racism-protection": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "ZüRAS advises free of charge for people living in the canton",
+          "concept": "zh-racism-protection",
+          "fact_ids": [
+            "zh-racism-protection-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Demeaning statements are a form of racist discrimination",
+          "concept": "zh-racism-protection",
+          "fact_ids": [
+            "zh-racism-protection-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Article 261bis covers acts committed in public",
+          "concept": "zh-racism-protection",
+          "fact_ids": [
+            "zh-racism-protection-5"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-70",
+      "label": "An association asks for money for an integration project",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "funding integration project association Canton of Zurich",
+          "expect_concept": "zh-integration-project-funding",
+          "hits": [
+            "zh-integration-project-funding",
+            "zh-migrant-associations",
+            "cantonal-migration-contact"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "zh-integration-project-funding"
+          ],
+          "as_of": "2026-09-19",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "zh-integration-project-funding": "SUPPORTED"
+          },
+          "gaps": {
+            "zh-integration-project-funding": []
+          },
+          "facts": {
+            "zh-integration-project-funding": [
+              "zh-integration-project-funding-1",
+              "zh-integration-project-funding-2",
+              "zh-integration-project-funding-3",
+              "zh-integration-project-funding-4",
+              "zh-integration-project-funding-5",
+              "zh-integration-project-funding-6",
+              "zh-integration-project-funding-7",
+              "zh-integration-project-funding-8"
+            ]
+          },
+          "bases": {
+            "zh-integration-project-funding": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Small projects up to 5,000 francs are submitted on a rolling basis",
+          "concept": "zh-integration-project-funding",
+          "fact_ids": [
+            "zh-integration-project-funding-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Non-profit organisations seated in the canton can apply",
+          "concept": "zh-integration-project-funding",
+          "fact_ids": [
+            "zh-integration-project-funding-5"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "A budget on the canton's template is required",
+          "concept": "zh-integration-project-funding",
+          "fact_ids": [
+            "zh-integration-project-funding-7"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-71",
+      "label": "Finding an association of one's own community",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "platform migrant associations Canton of Zurich",
+          "expect_concept": "zh-migrant-associations",
+          "hits": [
+            "zh-migrant-associations",
+            "zh-integration-project-funding",
+            "cantonal-migration-contact"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "zh-migrant-associations"
+          ],
+          "as_of": "2026-09-19",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "zh-migrant-associations": "SUPPORTED"
+          },
+          "gaps": {
+            "zh-migrant-associations": []
+          },
+          "facts": {
+            "zh-migrant-associations": [
+              "zh-migrant-associations-1",
+              "zh-migrant-associations-2",
+              "zh-migrant-associations-3"
+            ]
+          },
+          "bases": {
+            "zh-migrant-associations": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The platform can be searched by criteria such as municipality or region",
+          "concept": "zh-migrant-associations",
+          "fact_ids": [
+            "zh-migrant-associations-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "DECLINE-10",
+      "label": "Rejected: the canton's integration funding machinery (accredited offers for case-leading bodies)",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "zh-iazh-accredited-offers"
+          ],
+          "as_of": "2026-09-19",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "zh-iazh-accredited-offers": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "zh-iazh-accredited-offers": [
+              "concept_not_published"
+            ]
+          },
+          "facts": {
+            "zh-iazh-accredited-offers": []
+          },
+          "bases": {
+            "zh-iazh-accredited-offers": []
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
     }
   ]
 }

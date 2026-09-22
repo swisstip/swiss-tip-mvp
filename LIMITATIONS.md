@@ -3,7 +3,7 @@
 **Last update:** 22 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
-claim. It applies to the committed release `mvp-zurich-2026-09-22-v1` (second build of that day) and is
+claim. It applies to the committed release `mvp-zurich-2026-09-22-v6` and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
 [COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
@@ -26,7 +26,7 @@ below is measured on it.
 
 ## Review status: reviewed by one person, not by a lawyer
 
-**All 687 facts are `human-reviewed`**, by one named reviewer: the 104 facts
+**All 712 facts are `human-reviewed`**, by one named reviewer: the 104 facts
 of the residence topic (78) and of the cantonal migration-office contacts
 (26) on 14 September 2026, the 149 facts of the five topics added on
 15 September 2026, social insurance (25), tax at source (26), driving
@@ -729,7 +729,7 @@ implemented.
 ## Retrieval limitations
 
 - **Authored search words are the assistant's, and they move rarity
-  weights.** All 151 concepts carry authored aliases and at least one
+  weights.** All 156 concepts carry authored aliases and at least one
   English and one German sample question; the build refuses a concept
   without one in each language (`question_languages` of the curation, told
   by the questions' function words). On 19 September 2026 the last 13
@@ -811,13 +811,13 @@ implemented.
   "not covered" declines a question the release answers, which is the cost
   of this drift; raising or normalising the threshold is a change to
   `service.py` in the code repository and has not been made.
-- **The first coverage report: 1,284 units nobody has answered for.** The
+- **The coverage report: 975 units nobody has answered for.** The
   `coverage` stage joined the text dataset of the run with this release on
   22 September 2026 (`releases/mvp-zurich/curation-coverage.json` and `.md`).
-  Of 337 candidate records it asks for 2,076 units: 321 pages by their
+  Of 337 candidate records it asks for 2,077 units: 321 pages by their
   content sections, 15 statutes as one unit each (a curator cites articles
   from a law; its other articles are not a gap), one tariff page rolled up to
-  its top two heading levels, and 76 sections of repeated site boilerplate
+  its top two heading levels, and 75 sections of repeated site boilerplate
   set aside and traced to their citations. Nine texts recur on five or more
   pages: the Migrationsamt's Berninastrasse address with its counter hours
   (nine pages) and the Stadthaus Einbürgerungen address (five) are each cited
@@ -832,16 +832,28 @@ implemented.
   (the default five, counted per host); below it the text index still marks
   283 sections on 98 candidate records as repeated on two or more pages of
   their host, and the reading views carry the mark on every block, so a
-  reader knows a card is a card before deciding what to cite. Facts cite 525
-  units; 23 dispositions, drafted by the assistant and reviewed and signed by
-  the pack's reviewer on 22 September 2026, settle 267 more (the French and Italian SEM pages as duplicates of the cited German
-  ones, sixteen hub and link pages as navigation, five asylum pages against
-  the manifest's `asylum` entry); **1,284 units in 213 documents are
-  unclassified**. Two groups, 309 units, need a scope decision the manifest
-  does not yet state and a disposition therefore cannot cite: the Canton of
-  Zurich's integration-programme pages for practitioners (234) and SEM's
-  border-management and air-carrier pages (75); adding those entries to
-  `out_of_scope` changes the served manifest and needs the ready stage again.
+  reader knows a card is a card before deciding what to cite. Facts cite 558
+  units; 41 dispositions (23 drafted by the assistant and reviewed and signed
+  by the pack's reviewer on 22 September 2026, two deferrals and sixteen
+  entries recording the reviewer's two scope decisions of the same day)
+  settle 544 more (the French and Italian SEM pages as duplicates of the
+  cited German ones, sixteen hub and link pages as navigation, five asylum
+  pages against the manifest's `asylum` entry, and the integration pages
+  described below); **975 units in 156 documents are
+  unclassified**. Two groups, 309 units, needed a scope decision, taken on
+  22 September 2026. SEM's border-management and air-carrier pages (30 pages,
+  75 units) are deferred by two `deferred` rules until 31 December 2026, when
+  the decision falls due again. Of the Canton of Zurich's 27 integration
+  pages (234 units) the reviewer took the resident-facing seven into scope:
+  30 of their sections are now cited by the 25 facts of the `integration`
+  topic, and the rest of those pages is dispositioned section by section
+  (the other funding areas of the programme and the training offers for
+  authorities as `out_of_scope`, the leads and the pointers that repeat a
+  cited page as `duplicate`, the database widget as `navigation`, and the
+  past calls, the events placeholder and the canton's two reports on racism
+  as `deferred` until 31 December 2026). The other 20 pages, the support
+  system for refugees (Integrationsagenda IAZH) and the cantonal integration
+  programmes, are `out_of_scope` against the manifest entry added that day.
   The rest is content someone saved and nobody read: among it the SEM FAQ
   pages, of which the pack cites a handful of answers out of forty to seventy
   each (128 open units), and 414 units on Canton of Zurich pages. The pack
@@ -1141,17 +1153,22 @@ answer. Recorded runs show three behaviours the release cannot prevent:
 - The release's `readiness.json` records that these gates passed on the
   file, with a freshness runway to 17 November 2026; the container serves no
   release without such a record. The record of 22 September 2026 was
-  attested by the reviewer after the review of all 687 facts, and it binds
+  attested by the reviewer after the review of all 712 facts, and it binds
   the bytes of this release; a further change to the release or the suite
   needs the ready stage again.
 - **The coverage root is close to its bound.** `get_coverage` answers in one
   call under 6 KB, which the pack README promises and the check
   `scripts/test/packs/test_zurich_release.py` enforces. On this release the
-  root is 5,999 bytes now that every fact is reviewed and the served
-  review-status line names one status; it was 6,033 while 83 facts were
-  open. The check's bound was 6,000 bytes and was raised to 6,144,
-  the binary kilobyte the README means; the next topic or limitation added
-  should trim that text rather than raise the bound again. The attestation covers the place register only
+  root is 6,040 bytes now that every fact is reviewed and the served
+  review-status line names one status; it was 6,074 while the 25 integration
+  facts were open. The check's bound was 6,000 bytes and was raised once to
+  6,144, the binary kilobyte the README means. The integration topic of
+  22 September 2026 pushed the root 194 bytes over that bound, and the bound
+  stayed: the new out-of-scope entry was cut to one line and three
+  limitations were shortened (the review-history pointer, the office-address
+  sentence and the English-excerpt sentence), which paid for the topic and
+  for the scope statement's new clause. The next topic added should trim
+  that text again rather than raise the bound. The attestation covers the place register only
   through the gates: the register's 2,137 places and the other-language
   names were not read by a person. The answer-quality gate (graded
   live-caller runs bound to the release, `acceptance-answers.json`) is

@@ -290,9 +290,9 @@ cases:
   expected_answer: 'The Art. 34(2) conditions: ten years on L or B permits, the last five continuously on B, integration,
     no revocation grounds; temporary stays do not count toward the continuous five years. The five-year routes the
     release serves rest on settlement agreements, and SEM''s list of those states does not include India, so the
-    ten-year rule applies to the user. Applied to the user, the ten-year total and the five continuous years on B
-    are met; integration and revocation grounds remain for the authority. The Fedlex AIG page and the SEM page are
-    cited.'
+    ten-year rule applies to the user. Applied to the user, the ten-year total and the five continuous years on
+    B are met; integration and revocation grounds remain for the authority. The Fedlex AIG page and the SEM page
+    are cited.'
   trap: Counting ten years of presence and saying yes; quoting a five-year rule for a nationality the served list
     does not name.
   steps:
@@ -3740,8 +3740,8 @@ cases:
   label: 'Rejected: a topic the release does not publish (secondary school)'
   spec: docs/product/user-acceptance-tests.md#decline-cases
   question: My 13-year-old daughter is moving with us to the city of Zurich. How does she get into a Gymnasium?
-  expected_answer: No concept covers schooling beyond kindergarten entry; a resolve of a guessed concept ID returns OUT_OF_COVERAGE
-    with concept_not_published.
+  expected_answer: No concept covers schooling beyond kindergarten entry; a resolve of a guessed concept ID returns
+    OUT_OF_COVERAGE with concept_not_published.
   steps:
   - resolve:
       concept_ids:
@@ -4377,12 +4377,12 @@ cases:
   spec: docs/product/user-acceptance-tests.md#uat-51-voting-in-the-city-elections-after-twelve-years-on-a-c-permit
   question: I have had a C permit for twelve years and live in the city of Zurich. Can I vote in the city elections
     next spring?
-  expected_answer: 'No. In the Canton of Zurich, including the City, the right to vote and elect in cantonal and communal
-    matters belongs to Swiss citizens who live in the canton and are 18 or over (Constitution of the Canton of Zurich,
-    Art. 22); foreign nationals cannot vote or elect at federal level either, whatever their permit or length of stay.
-    The one exception the canton names is the elections and votes of the Evangelical Reformed church, where B, C
-    and Ci permit holders may vote. The cantonal constitution (Fedlex) and the Canton of Zurich''s voting page are
-    cited; naturalisation may be named as the route to the vote.'
+  expected_answer: No. In the Canton of Zurich, including the City, the right to vote and elect in cantonal and
+    communal matters belongs to Swiss citizens who live in the canton and are 18 or over (Constitution of the Canton
+    of Zurich, Art. 22); foreign nationals cannot vote or elect at federal level either, whatever their permit or
+    length of stay. The one exception the canton names is the elections and votes of the Evangelical Reformed church,
+    where B, C and Ci permit holders may vote. The cantonal constitution (Fedlex) and the Canton of Zurich's voting
+    page are cited; naturalisation may be named as the route to the vote.
   trap: A yes because of the long stay or the C permit, or "some municipalities allow it" carried over from other
     cantons; the church exception presented as a general municipal vote.
   steps:
@@ -4448,13 +4448,13 @@ cases:
   spec: docs/product/user-acceptance-tests.md#uat-52-the-tax-at-source-in-winterthur-compared-with-the-city-of-zurich
   question: I live in Winterthur, have a B permit and am taxed at source. How much tax at source do I pay, and would
     it be less if I lived in the city of Zurich?
-  expected_answer: 'The release serves no amount: the deduction depends on the tariff code (civil status, number of children,
-    church tax Y or N) and the gross monthly salary, and the Canton of Zurich''s tariff tables apply to the whole
-    canton. The 2026 tariffs are calculated with the cantonal tax multiplier of 98 per cent and the weighted average
-    of the municipal tax multipliers (109.90 per cent without church tax, 116.00 per cent with), so moving to the
-    City of Zurich does not change the tax at source. The Cantonal Tax Office''s tariff calculator determines the
-    code (not legally binding) and its tariff page publishes the tables. The tariff page and the 2026 calculation
-    parameters are cited.'
+  expected_answer: 'The release serves no amount: the deduction depends on the tariff code (civil status, number
+    of children, church tax Y or N) and the gross monthly salary, and the Canton of Zurich''s tariff tables apply
+    to the whole canton. The 2026 tariffs are calculated with the cantonal tax multiplier of 98 per cent and the
+    weighted average of the municipal tax multipliers (109.90 per cent without church tax, 116.00 per cent with),
+    so moving to the City of Zurich does not change the tax at source. The Cantonal Tax Office''s tariff calculator
+    determines the code (not legally binding) and its tariff page publishes the tables. The tariff page and the
+    2026 calculation parameters are cited.'
   trap: A percentage of salary quoted from memory, or Winterthur's own municipal tax multiplier said to change the
     deduction, or the ordinary tax rates of the two municipalities compared.
   steps:
@@ -4520,14 +4520,14 @@ cases:
   spec: docs/product/user-acceptance-tests.md#uat-53-voting-rights-of-a-c-permit-holder-in-bern-in-german
   question: Ich wohne seit zehn Jahren mit einer C-Bewilligung in Bern. Darf ich bei den kantonalen Wahlen abstimmen?
   language: de
-  expected_answer: 'In German, from the federal facts: foreign nationals cannot vote or elect at federal level; depending
-    on the canton and the commune they may have a vote in cantonal and communal matters, and at cantonal level the
-    cantons of Jura and Neuchâtel grant it (without the right to stand for election). The release publishes no rule
-    of the Canton of Bern and says so instead of answering yes or no for Bern; the cantons regulate political rights
-    in cantonal matters (Federal Constitution Art. 39). ch.ch and the Federal Constitution are cited. The Canton of
-    Zurich''s rule is not given as Bern''s.'
-  trap: 'The Canton of Zurich''s rule (Swiss citizens only, Constitution of the Canton of Zurich Art. 22) or its church
-    exception given for Bern, or a plain yes or no for Bern from general knowledge.'
+  expected_answer: 'In German, from the federal facts: foreign nationals cannot vote or elect at federal level;
+    depending on the canton and the commune they may have a vote in cantonal and communal matters, and at cantonal
+    level the cantons of Jura and Neuchâtel grant it (without the right to stand for election). The release publishes
+    no rule of the Canton of Bern and says so instead of answering yes or no for Bern; the cantons regulate political
+    rights in cantonal matters (Federal Constitution Art. 39). ch.ch and the Federal Constitution are cited. The
+    Canton of Zurich''s rule is not given as Bern''s.'
+  trap: The Canton of Zurich's rule (Swiss citizens only, Constitution of the Canton of Zurich Art. 22) or its church
+    exception given for Bern, or a plain yes or no for Bern from general knowledge.
   steps:
   - search:
       query: Stimmrecht Ausländer kantonale Wahlen C-Bewilligung Bern
@@ -4596,12 +4596,14 @@ cases:
 - case_id: UAT-54
   label: Family allowance for a 17-year-old in vocational school in Zurich
   spec: docs/product/user-acceptance-tests.md#uat-54-family-allowance-for-a-17-year-old-in-zurich
-  question: I work full-time in Zurich and my 17-year-old son is at a vocational school. How much family allowance do we get
-    per month, and how do I claim it?
-  expected_answer: In the Canton of Zurich a child in education from 16 to 25 gets the education allowance of CHF 268 per
-    month (the child allowance is CHF 215 to age 12 and CHF 268 to 16); an employee claims it through the employer, who pays
-    it with the wage after the family compensation fund has checked the conditions. The SVA Zurich pages are cited.
-  trap: The child allowance of CHF 215 for a 17-year-old, another canton's rate, or a claim at SVA Zurich by an employee.
+  question: I work full-time in Zurich and my 17-year-old son is at a vocational school. How much family allowance
+    do we get per month, and how do I claim it?
+  expected_answer: In the Canton of Zurich a child in education from 16 to 25 gets the education allowance of CHF
+    268 per month (the child allowance is CHF 215 to age 12 and CHF 268 to 16); an employee claims it through the
+    employer, who pays it with the wage after the family compensation fund has checked the conditions. The SVA Zurich
+    pages are cited.
+  trap: The child allowance of CHF 215 for a 17-year-old, another canton's rate, or a claim at SVA Zurich by an
+    employee.
   steps:
   - search:
       query: family allowance education allowance Zurich
@@ -4650,11 +4652,11 @@ cases:
 - case_id: UAT-55
   label: 'Paternity leave: length, timing and pay'
   spec: docs/product/user-acceptance-tests.md#uat-55-paternity-leave
-  question: My wife is giving birth in March. How much paternity leave do I get in Switzerland, when must I take it, and how
-    much is paid?
-  expected_answer: Two weeks, to be taken within six months of the birth, in one block or day by day; the allowance is 80
-    percent of the average earned income before the birth, at most CHF 220 per day, 14 daily allowances, so at most CHF 3,080.
-    The FSIO page is cited.
+  question: My wife is giving birth in March. How much paternity leave do I get in Switzerland, when must I take
+    it, and how much is paid?
+  expected_answer: Two weeks, to be taken within six months of the birth, in one block or day by day; the allowance
+    is 80 percent of the average earned income before the birth, at most CHF 220 per day, 14 daily allowances, so
+    at most CHF 3,080. The FSIO page is cited.
   trap: Four weeks or more, leave only in one block right after the birth, or full pay.
   steps:
   - search:
@@ -4695,11 +4697,11 @@ cases:
 - case_id: UAT-56
   label: A deposit of four months' rent paid to the landlord
   spec: docs/product/user-acceptance-tests.md#uat-56-a-deposit-of-four-months-rent
-  question: The landlord of a flat in Zurich asks me for a deposit of four months' rent paid into his own account. Is that
-    allowed?
-  expected_answer: 'No: for a home the landlord may ask at most three months'' rent as security, and a cash deposit must be
-    placed at a bank in a savings or deposit account in the tenant''s name (Code of Obligations Art. 257e); ch.ch adds that
-    the deposit is owed only if the lease requires it. The Code of Obligations is cited.'
+  question: The landlord of a flat in Zurich asks me for a deposit of four months' rent paid into his own account.
+    Is that allowed?
+  expected_answer: 'No: for a home the landlord may ask at most three months'' rent as security, and a cash deposit
+    must be placed at a bank in a savings or deposit account in the tenant''s name (Code of Obligations Art. 257e);
+    ch.ch adds that the deposit is owed only if the lease requires it. The Code of Obligations is cited.'
   trap: Accepting four months because the market is tight, or paying into the landlord's own account.
   steps:
   - search:
@@ -4740,12 +4742,13 @@ cases:
 - case_id: UAT-57
   label: A rent increase announced by e-mail, in German
   spec: docs/product/user-acceptance-tests.md#uat-57-a-rent-increase-by-e-mail-in-german
-  question: Mein Vermieter in Zürich schreibt mir per E-Mail, dass die Miete ab nächstem Monat um 5 Prozent steigt. Muss ich
-    das akzeptieren?
+  question: Mein Vermieter in Zürich schreibt mir per E-Mail, dass die Miete ab nächstem Monat um 5 Prozent steigt.
+    Muss ich das akzeptieren?
   language: de
-  expected_answer: 'In German: no, not in that form. A rent increase must be notified on a form approved by the canton, with
-    reasons, and must reach the tenant at least 10 days before the notice period begins; it takes effect at the earliest on
-    the next termination date (Code of Obligations Art. 269d). The Code of Obligations or ch.ch is cited.'
+  expected_answer: 'In German: no, not in that form. A rent increase must be notified on a form approved by the
+    canton, with reasons, and must reach the tenant at least 10 days before the notice period begins; it takes effect
+    at the earliest on the next termination date (Code of Obligations Art. 269d). The Code of Obligations or ch.ch
+    is cited.'
   trap: Accepting an increase by e-mail, or from next month.
   steps:
   - search:
@@ -4792,13 +4795,13 @@ cases:
 - case_id: UAT-58
   label: Challenging the initial rent in Winterthur
   spec: docs/product/user-acceptance-tests.md#uat-58-challenging-the-initial-rent-in-winterthur
-  question: I just moved into a flat in Winterthur and found out the previous tenant paid 15 percent less. Can I do anything
-    about the rent?
-  expected_answer: Yes, within 30 days of taking over the flat the tenant can challenge the initial rent at the conciliation
-    authority if the landlord raised it significantly compared with the previous rent (Code of Obligations Art. 270; ch.ch
-    names 10 percent more as an example). In the Canton of Zurich, which includes Winterthur, the landlord must notify the
-    initial rent on the official form when a new lease for a home is concluded. The Code of Obligations and the Canton of
-    Zurich forms page are cited.
+  question: I just moved into a flat in Winterthur and found out the previous tenant paid 15 percent less. Can I
+    do anything about the rent?
+  expected_answer: Yes, within 30 days of taking over the flat the tenant can challenge the initial rent at the
+    conciliation authority if the landlord raised it significantly compared with the previous rent (Code of Obligations
+    Art. 270; ch.ch names 10 percent more as an example). In the Canton of Zurich, which includes Winterthur, the
+    landlord must notify the initial rent on the official form when a new lease for a home is concluded. The Code
+    of Obligations and the Canton of Zurich forms page are cited.
   trap: No challenge after signing, a deadline of months, or the City of Zurich's offices given for Winterthur.
   steps:
   - search:
@@ -4849,12 +4852,13 @@ cases:
 - case_id: UAT-59
   label: Marrying a Brazilian fiancée in the City of Zurich
   spec: docs/product/user-acceptance-tests.md#uat-59-marrying-a-brazilian-fiancee-in-zurich
-  question: My fiancée is Brazilian and lives in Brazil; I live in the city of Zurich on a B permit. Can we marry in Zurich,
-    and how early must we start?
-  expected_answer: Yes, if both are lawfully in Switzerland for the preparation and the wedding (a visa or a permit card);
-    without a lawful stay nobody can marry in Switzerland. The documents from the home country can take between 3 days and
-    6 months to obtain, must reach the City of Zurich civil registry office at the latest 2 months before the wedding, and
-    the marriage preparation must be completed at the latest 1 month before. The City of Zurich pages are cited.
+  question: My fiancée is Brazilian and lives in Brazil; I live in the city of Zurich on a B permit. Can we marry
+    in Zurich, and how early must we start?
+  expected_answer: Yes, if both are lawfully in Switzerland for the preparation and the wedding (a visa or a permit
+    card); without a lawful stay nobody can marry in Switzerland. The documents from the home country can take between
+    3 days and 6 months to obtain, must reach the City of Zurich civil registry office at the latest 2 months before
+    the wedding, and the marriage preparation must be completed at the latest 1 month before. The City of Zurich
+    pages are cited.
   trap: Marrying without a lawful stay being checked, or starting a few weeks before the date.
   steps:
   - search:
@@ -4903,13 +4907,13 @@ cases:
 - case_id: UAT-60
   label: 'Leaving the City of Zurich for good: deregistration and taxes'
   spec: docs/product/user-acceptance-tests.md#uat-60-leaving-zurich-for-good
-  question: I am leaving Zurich for good and moving back to India next month. When do I have to deregister, and what happens
-    with my taxes?
-  expected_answer: Report the departure at the earliest 30 days before and at the latest 14 days after moving out, for a move
-    abroad with the deregistration declaration through the contact form or in person by appointment; moving abroad ends the
-    tax liability in the City of Zurich and all taxes, including provisional ones, become due, so the person contacts the
-    City's tax office; a tax representative in Switzerland is needed in the cases the page names. The City of Zurich pages
-    are cited.
+  question: I am leaving Zurich for good and moving back to India next month. When do I have to deregister, and
+    what happens with my taxes?
+  expected_answer: Report the departure at the earliest 30 days before and at the latest 14 days after moving out,
+    for a move abroad with the deregistration declaration through the contact form or in person by appointment;
+    moving abroad ends the tax liability in the City of Zurich and all taxes, including provisional ones, become
+    due, so the person contacts the City's tax office; a tax representative in Switzerland is needed in the cases
+    the page names. The City of Zurich pages are cited.
   trap: No deadline, or leaving with taxes open and no representative.
   steps:
   - search:
@@ -4948,11 +4952,11 @@ cases:
 - case_id: UAT-61
   label: 'Pillar 3a: this year''s maximum and withdrawal on leaving'
   spec: docs/product/user-acceptance-tests.md#uat-61-pillar-3a-contributions-and-withdrawal-on-leaving
-  question: I'm an employee with a pension fund. How much can I pay into pillar 3a this year, and can I get the money out
-    when I leave Switzerland for good?
-  expected_answer: In 2026 an employee affiliated to a pension fund may pay at most CHF 7,258 into pillar 3a, deductible from
-    taxes; leaving Switzerland permanently is one of the cases for an early lump-sum withdrawal. The FSIO FAQ and ch.ch are
-    cited.
+  question: I'm an employee with a pension fund. How much can I pay into pillar 3a this year, and can I get the
+    money out when I leave Switzerland for good?
+  expected_answer: In 2026 an employee affiliated to a pension fund may pay at most CHF 7,258 into pillar 3a, deductible
+    from taxes; leaving Switzerland permanently is one of the cases for an early lump-sum withdrawal. The FSIO FAQ
+    and ch.ch are cited.
   trap: The self-employed maximum of CHF 36,288 for an employee, or no withdrawal before retirement.
   steps:
   - search:
@@ -4992,10 +4996,11 @@ cases:
   label: Unemployment benefit after ten months of work on a B permit
   spec: docs/product/user-acceptance-tests.md#uat-62-unemployment-benefit-after-ten-months
   question: I came to Zurich ten months ago on a B permit and just lost my job. Do I get unemployment benefit?
-  expected_answer: 'Not on the contributions alone: a claimant must prove at least 12 months of contribution period within
-    the last 2 years, besides living in Switzerland with a valid permit; the page names exemptions (education, illness, accident,
-    maternity, a stay in an institution) and the answer asks whether one applies instead of deciding. The person should still
-    sign on with the RAV at the latest on the first day for which benefit is claimed. The SECO pages are cited.'
+  expected_answer: 'Not on the contributions alone: a claimant must prove at least 12 months of contribution period
+    within the last 2 years, besides living in Switzerland with a valid permit; the page names exemptions (education,
+    illness, accident, maternity, a stay in an institution) and the answer asks whether one applies instead of deciding.
+    The person should still sign on with the RAV at the latest on the first day for which benefit is claimed. The
+    SECO pages are cited.'
   trap: A plain yes because the person holds a B permit, ignoring the 12 months of contributions.
   steps:
   - search:
@@ -5044,9 +5049,9 @@ cases:
   label: A skiing accident when working six hours a week
   spec: docs/product/user-acceptance-tests.md#uat-63-a-skiing-accident-on-six-hours-a-week
   question: I work 6 hours a week as a cleaner for one family. Am I insured if I have a skiing accident?
-  expected_answer: 'Not through the employer: employees are insured against non-occupational accidents only with at least
-    8 hours per week with the same employer; below that the person must be insured against accidents through the compulsory
-    health insurance (and must not suspend its accident cover). The FOPH pages are cited.'
+  expected_answer: 'Not through the employer: employees are insured against non-occupational accidents only with
+    at least 8 hours per week with the same employer; below that the person must be insured against accidents through
+    the compulsory health insurance (and must not suspend its accident cover). The FOPH pages are cited.'
   trap: Assuming the employer's accident insurance covers leisure accidents whatever the hours.
   steps:
   - search:
@@ -5087,10 +5092,11 @@ cases:
   spec: docs/product/user-acceptance-tests.md#uat-64-customs-on-furniture-and-a-car-in-german
   question: Wir ziehen von München nach Zürich. Müssen wir für unsere Möbel und unser Auto Zoll bezahlen?
   language: de
-  expected_answer: 'In German: household goods and the car can be imported duty-free when the residence moves to Switzerland
-    and the goods were used personally for at least 6 months and continue to be used; the form 18.44 is presented to the entry
-    customs office during its opening hours for commercial goods, EU nationals prove the move by other means than a permit,
-    and the import must happen within two years of the move. The BAZG page and ch.ch are cited.'
+  expected_answer: 'In German: household goods and the car can be imported duty-free when the residence moves to
+    Switzerland and the goods were used personally for at least 6 months and continue to be used; the form 18.44
+    is presented to the entry customs office during its opening hours for commercial goods, EU nationals prove the
+    move by other means than a permit, and the import must happen within two years of the move. The BAZG page and
+    ch.ch are cited.'
   trap: Duty on everything, or duty-free without the 6 months of prior use and the form.
   steps:
   - search:
@@ -5149,8 +5155,8 @@ cases:
   expected_answer: 'No: Germany is one of the countries with a settlement agreement, and the Canton of Zurich grants
     the settlement permit to their nationals after five years of uninterrupted residence, provided they are well
     integrated and meet the integration criteria and no grounds for revocation are present. German nationals submit
-    no language evidence. SEM names Germany in the same list for the five-year route. The conditions are the
-    authority''s to assess; the SEM and Zurich Migrationsamt pages are cited.'
+    no language evidence. SEM names Germany in the same list for the five-year route. The conditions are the authority''s
+    to assess; the SEM and Zurich Migrationsamt pages are cited.'
   trap: Applying the ten-year rule of AIG Article 34(2) to every nationality, or asking a German national for the
     German language certificate the page exempts them from.
   steps:
@@ -5220,10 +5226,10 @@ cases:
     for the C permit now. Does that apply to me too?
   expected_answer: 'Yes, by nationality: the Canton of Zurich lists the United States of America among the countries
     with settlement treaties, whose nationals can obtain the settlement permit after five years of uninterrupted
-    residence with the integration criteria met and no grounds for revocation. Unlike her, the user submits
-    evidence of German at A2 spoken and A1 written, because the exemption covers Germany, Austria and Liechtenstein
-    only. SEM''s five-year list is the EU/EFTA one and does not name the United States; the Zurich page is what
-    covers it. The conditions are the authority''s to assess.'
+    residence with the integration criteria met and no grounds for revocation. Unlike her, the user submits evidence
+    of German at A2 spoken and A1 written, because the exemption covers Germany, Austria and Liechtenstein only.
+    SEM''s five-year list is the EU/EFTA one and does not name the United States; the Zurich page is what covers
+    it. The conditions are the authority''s to assess.'
   trap: Answering ten years because the user is a third-country national, or carrying the language exemption of
     Germany, Austria and Liechtenstein over to other nationals.
   steps:
@@ -5278,3 +5284,316 @@ cases:
       zurich: zh\.ch
     resolved:
     - zh-permit-c-five-years
+- case_id: UAT-67
+  label: Newcomer looking for a German course in the canton
+  spec: docs/product/user-acceptance-tests.md#uat-67-newcomer-looking-for-a-german-course
+  question: I moved to Winterthur from Brazil last month and my German is poor. Where do I find a German course,
+    and is there someone who can advise me which one fits?
+  expected_answer: 'The cantonal offer database of the Fachstelle Integration lists the integration offers the canton
+    finances with the municipalities; a user picks a category and their municipality. For choosing a course there
+    is advice: many municipalities have integration contact persons, and where the municipality has none the cantonal
+    German-course advice is free and available in 16 languages. The canton also keeps a German-course and language-examination
+    database. Winterthur is one of the two cities with their own databases (infoDesk/welcomeDesk, its own German
+    courses), which the answer should name.'
+  trap: Sending the user to the cantonal database only, although the page says Winterthur keeps its own, or inventing
+    course names, dates or prices, which the release does not serve.
+  language: en
+  steps:
+  - search:
+      query: German course integration offer Canton of Zurich
+      expect_concept: zh-integration-offers
+      expect_strength: strong
+  - resolve:
+      concept_ids:
+      - zh-integration-offers
+      jurisdiction: &id004
+        canton_code: CH-ZH
+      expect_status:
+        zh-integration-offers: SUPPORTED
+  claims:
+  - claim: The Fachstelle Integration runs an offer database searched by category and municipality
+    concept: zh-integration-offers
+    fact_id: zh-integration-offers-1
+    statement_contains:
+    - offer database
+    excerpt_contains:
+    - Angebotsdatenbank
+  - claim: The cantonal German-course advice is free and available in 16 languages
+    concept: zh-integration-offers
+    fact_id: zh-integration-offers-2
+    statement_contains:
+    - 16 languages
+    excerpt_contains:
+    - kostenlos und in 16 Sprachen verfügbar
+  - claim: Zurich and Winterthur keep their own databases
+    concept: zh-integration-offers
+    fact_id: zh-integration-offers-3
+    statement_contains:
+    - Winterthur
+    excerpt_contains:
+    - eigene Angebotsdatenbanken
+  answer:
+    criteria: &id005
+    - A1
+    - A2
+    - A3
+    - A4
+    - A5
+    - A6
+    - A7
+    must_mention:
+      advice: German-course advice|Deutschkursberatung|16 languages
+      winterthur: Winterthur
+    cites:
+      canton: zh\.ch
+    resolved:
+    - zh-integration-offers
+- case_id: UAT-68
+  label: Who informs a newly arrived family, and who is pointed to offers early
+  spec: docs/product/user-acceptance-tests.md#uat-68-who-informs-a-newly-arrived-family
+  question: We arrived in the Canton of Zurich two weeks ago on a family reunification permit. Nobody has told us
+    anything about courses or counselling. Whose job is that?
+  expected_answer: The municipalities inform newly arrived migrants soon after arrival about local living conditions,
+    give a first orientation and, where needed, arrange access to German courses and other integration offers; the
+    canton supports them with a guide for first-information offers. People in family reunification are one of the
+    three groups the canton names as having a particular need for support, so they should be pointed to offers early.
+    For further advice there are the regular services and migration-specific counselling, for which the Fachstelle
+    Integration keeps a list of organisations, updated at least once a year and with no claim to completeness. The
+    canton's «Willkommen im Kanton Zürich» page carries information for a good start.
+  trap: Naming the Migration Office as the body that informs newcomers about integration offers, or promising a
+    welcome talk that the user's municipality may not hold.
+  language: en
+  steps:
+  - search:
+      query: who informs newcomers Canton of Zurich first information
+      expect_concept: zh-newcomer-first-information
+      expect_strength: strong
+  - resolve:
+      concept_ids:
+      - zh-newcomer-first-information
+      jurisdiction: *id004
+      expect_status:
+        zh-newcomer-first-information: SUPPORTED
+  claims:
+  - claim: The municipalities inform newly arrived migrants after arrival
+    concept: zh-newcomer-first-information
+    fact_id: zh-newcomer-first-information-2
+    statement_contains:
+    - municipalities
+    excerpt_contains:
+    - Im Kanton Zürich sind es an erster Stelle die Gemeinden
+  - claim: Persons in family reunification are named as having a particular need
+    concept: zh-newcomer-first-information
+    fact_id: zh-newcomer-first-information-3
+    statement_contains:
+    - family reunification
+    excerpt_contains:
+    - Personen im Familiennachzug
+  - claim: The Fachstelle keeps a list of counselling organisations
+    concept: zh-newcomer-first-information
+    fact_id: zh-newcomer-first-information-4
+    statement_contains:
+    - list of organisations
+    excerpt_contains:
+    - Liste mit Organisationen
+  answer:
+    criteria: *id005
+    must_mention:
+      who: municipalit|Gemeinde
+      group: family reunification
+    cites:
+      canton: zh\.ch
+    resolved:
+    - zh-newcomer-first-information
+- case_id: UAT-69
+  label: Where to turn after racist discrimination at work
+  spec: docs/product/user-acceptance-tests.md#uat-69-where-to-turn-after-racist-discrimination
+  question: My colleague keeps making remarks about my skin colour and my manager laughs along. Is that racist discrimination,
+    and who advises me in Zurich?
+  expected_answer: ZüRAS, the Zurich counselling centre against racism, advises people who experience racist discrimination;
+    counselling is possible in several languages and free for people living in the Canton of Zurich, and it is run
+    by the AOZ on behalf of canton and city. The canton counts demeaning statements as a form of racist discrimination
+    and names the workplace as a place where it occurs. Beyond the canton there are the counselling network for
+    victims of racism and the reporting platform for online hate speech. The legal bases are the Federal Constitution
+    (Art. 8(2)), the Criminal Code (Art. 261bis, for acts in public) and AIG Art. 53. Whether this particular case
+    is punishable is not something the service decides.
+  trap: Answering with a general definition of racism and no address, or promising that the described behaviour
+    is punishable under Article 261bis, which applies to acts committed in public.
+  language: en
+  steps:
+  - search:
+      query: advice racist discrimination Zurich
+      expect_concept: zh-racism-protection
+      expect_strength: strong
+  - resolve:
+      concept_ids:
+      - zh-racism-protection
+      jurisdiction: *id004
+      expect_status:
+        zh-racism-protection: SUPPORTED
+  claims:
+  - claim: ZüRAS advises free of charge for people living in the canton
+    concept: zh-racism-protection
+    fact_id: zh-racism-protection-2
+    statement_contains:
+    - ZüRAS
+    excerpt_contains:
+    - gratis für Menschen, die im Kanton Zürich wohnen
+  - claim: Demeaning statements are a form of racist discrimination
+    concept: zh-racism-protection
+    fact_id: zh-racism-protection-1
+    statement_contains:
+    - demeaning statements
+    excerpt_contains:
+    - abwertende Äusserungen
+  - claim: Article 261bis covers acts committed in public
+    concept: zh-racism-protection
+    fact_id: zh-racism-protection-5
+    statement_contains:
+    - in public
+    excerpt_contains:
+    - wenn sie öffentlich stattfinden
+  answer:
+    criteria:
+    - A1
+    - A2
+    - A3
+    - A4
+    - A5
+    - A6
+    - A7
+    - A9
+    must_mention:
+      office: ZüRAS
+      free: free|gratis
+    must_not:
+      verdict: is a crime|you can press charges successfully
+    cites:
+      canton: zh\.ch
+    resolved:
+    - zh-racism-protection
+- case_id: UAT-70
+  label: An association asks for money for an integration project
+  spec: docs/product/user-acceptance-tests.md#uat-70-an-association-asks-for-project-money
+  question: Our association in Uster wants to run a neighbourhood festival for Swiss and migrant families and needs
+    about 4,000 francs. Can the Canton of Zurich contribute, and how do we apply?
+  expected_answer: 'Yes in principle: municipalities and public or private non-profit organisations with their seat
+    or a regional branch in the canton can apply, and a festival that brings migrants and the resident population
+    together falls under the priority «living together and participation». At 4,000 francs it is a small project:
+    up to 5,000 francs, submitted on a rolling basis while funds last, with simplified rules, a budget on the canton''s
+    mandatory template, and a web form that cannot be saved in between. The contact for this area is named on the
+    page. Whether the project is funded is the Fachstelle''s decision.'
+  trap: Quoting the deadline of 31 October 2026 or the 50,000-franc maximum, which belong to projects above 5,000
+    francs, or promising the money.
+  language: en
+  steps:
+  - search:
+      query: funding integration project association Canton of Zurich
+      expect_concept: zh-integration-project-funding
+      expect_strength: strong
+  - resolve:
+      concept_ids:
+      - zh-integration-project-funding
+      jurisdiction: *id004
+      expect_status:
+        zh-integration-project-funding: SUPPORTED
+  claims:
+  - claim: Small projects up to 5,000 francs are submitted on a rolling basis
+    concept: zh-integration-project-funding
+    fact_id: zh-integration-project-funding-2
+    statement_contains:
+    - 5,000 francs
+    excerpt_contains:
+    - Kleinprojekte mit Gesamtkosten bis zu 5000 Franken
+  - claim: Non-profit organisations seated in the canton can apply
+    concept: zh-integration-project-funding
+    fact_id: zh-integration-project-funding-5
+    statement_contains:
+    - non-profit organisations
+    excerpt_contains:
+    - gemeinnützige Organisationen mit Sitz oder regionaler Niederlassung im Kanton Zürich
+  - claim: A budget on the canton's template is required
+    concept: zh-integration-project-funding
+    fact_id: zh-integration-project-funding-7
+    statement_contains:
+    - budget
+    excerpt_contains:
+    - Budgetformular
+  answer:
+    criteria: *id005
+    must_mention:
+      amount: 5,000|5000
+      rolling: rolling|laufend|any time
+    must_not:
+      wrong_deadline: 31 October 2026
+    cites:
+      canton: zh\.ch
+    resolved:
+    - zh-integration-project-funding
+- case_id: UAT-71
+  label: Finding an association of one's own community
+  spec: docs/product/user-acceptance-tests.md#uat-71-finding-an-association-of-ones-own-community
+  question: Are there Tamil associations in the Canton of Zurich, and how do I find one near me?
+  expected_answer: The canton does not publish a list of associations by community in the served facts, but it runs
+    the platform for migrant associations, on which migrant and religious associations active in the canton can
+    be searched by criteria such as municipality or region, and on which associations can register themselves. Which
+    associations exist and what they do is not part of the release; the answer points at the platform instead of
+    naming associations.
+  trap: Naming Tamil associations from general knowledge, or claiming the canton keeps no such directory.
+  language: en
+  steps:
+  - search:
+      query: platform migrant associations Canton of Zurich
+      expect_concept: zh-migrant-associations
+      expect_strength: strong
+  - resolve:
+      concept_ids:
+      - zh-migrant-associations
+      jurisdiction: *id004
+      expect_status:
+        zh-migrant-associations: SUPPORTED
+  claims:
+  - claim: The platform can be searched by criteria such as municipality or region
+    concept: zh-migrant-associations
+    fact_id: zh-migrant-associations-1
+    statement_contains:
+    - searched by various criteria
+    excerpt_contains:
+    - nach verschiedenen Kriterien suchen
+  not_served:
+    zh-migrant-associations:
+    - which associations exist
+  answer:
+    criteria:
+    - A1
+    - A2
+    - A3
+    - A4
+    - A5
+    - A6
+    - A7
+    - A3
+    must_mention:
+      platform: platform|Plattform
+    must_not:
+      invented: Tamil Association of|Tamilischer Verein
+    cites:
+      canton: zh\.ch
+    resolved:
+    - zh-migrant-associations
+- case_id: DECLINE-10
+  label: 'Rejected: the canton''s integration funding machinery (accredited offers for case-leading bodies)'
+  spec: docs/product/user-acceptance-tests.md#decline-cases
+  question: I work at a municipal social service. Which accredited IAZH offer types can I assign a refugee to, and
+    how is the cost shared with the canton?
+  expected_answer: The release does not publish the support system for refugees or the integration funding of municipalities
+    and providers; a resolve of a guessed concept ID returns OUT_OF_COVERAGE with concept_not_published.
+  steps:
+  - resolve:
+      concept_ids:
+      - zh-iazh-accredited-offers
+      jurisdiction: *id004
+      expect_status:
+        zh-iazh-accredited-offers: OUT_OF_COVERAGE
+      expect_gap:
+        zh-iazh-accredited-offers: concept_not_published

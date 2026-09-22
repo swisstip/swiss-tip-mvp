@@ -179,3 +179,235 @@ dispositions:
   date: '2026-09-22'
   document_id: doc-94cf8439510adc29ced0
   out_of_scope_entry: asylum
+- kind: deferred
+  reason: 'SEM''s information for authorities on border management: the Integrated Border Management action plan
+    and its measures, the Schengen information systems, legal bases and data protection. Whether the pack covers
+    border management is undecided (decision deferred on 22 September 2026); excluded until the reaffirm date. Sections
+    a fact already cites stay cited.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  url_prefix: https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/
+  known_documents:
+  - doc-051f5a29e5ab9e1503c8
+  - doc-052d5b6752ace3f90e06
+  - doc-237dc1ad3f54efc8ca51
+  - doc-276831391d6e09f9fcd3
+  - doc-2a254be149555047da6d
+  - doc-3f11c3eb0a8a0f29f62a
+  - doc-43785a6de114a6d68c27
+  - doc-5df25c52055bb7691111
+  - doc-6a86babfe32aa8ee3a2f
+  - doc-6beed430d9345d0f3ef2
+  - doc-856a2faaea9433f79b38
+  - doc-86f9c9c69f2819c495c2
+  - doc-8e99cc232a1d69cd3892
+  - doc-ab41f4dfe1d7269c7d0e
+  - doc-b393cb8cde53026f81a7
+  - doc-c3cfc1f2725da06bad18
+  - doc-d99fba8a15d4a1e0a452
+  - doc-da639f64abedbf821c94
+  - doc-ddad0900e64e4bf8e1ba
+  - doc-e101f3f21a55444e0289
+  - doc-e1044c27c2b427132169
+  - doc-e2f540317e24e9ee1b0b
+  - doc-e6efd5668e2b9beea894
+  - doc-e8203871a08aa9a49a13
+  reaffirm_by: '2026-12-31'
+- kind: deferred
+  reason: 'SEM''s information for air carriers: the API reporting duty, carrier sanctions (CASA) and the related
+    administrative procedures. Whether the pack covers air-carrier duties is undecided (decision deferred on 22
+    September 2026); excluded until the reaffirm date.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  url_prefix: https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/
+  known_documents:
+  - doc-270fb187245aab308216
+  - doc-37d30d2a65fea6396233
+  - doc-44916bb7a0bec9a4e64c
+  - doc-4e315819e6e32c9890f1
+  - doc-56a56dfa11c3d8ae0db0
+  - doc-90f54f561135075db636
+  reaffirm_by: '2026-12-31'
+- kind: out_of_scope
+  reason: 'The support system for refugees of the Canton of Zurich (Integrationsagenda IAZH) and everything the
+    canton publishes about running it: accredited offer types, accreditation, cost sharing and reporting, trainings
+    and newsletters for case-leading bodies and providers, and the practice recommendations. The reviewer decided
+    on 22 September 2026 that this is outside the pack''s scope; the manifest names it.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  url_prefix: https://www.zh.ch/de/migration-integration/integration/integrationsagenda
+  known_documents:
+  - doc-104abf6c7048b37f09df
+  - doc-208634eba1d97aebfc30
+  - doc-2642590582c26192108d
+  - doc-368c0fba131961f7dc56
+  - doc-3c72847ef089a81809ef
+  - doc-50906cecaa878c115429
+  - doc-666d656c548dad5f38f8
+  - doc-689f2d54395d4f6516b7
+  - doc-7f6365a43b0683ca845c
+  - doc-a12fe8f3ca61a0765af1
+  - doc-a14eb88f2da881e9c8fe
+  - doc-a192c70d4004b7bd03d5
+  - doc-b11cd2f3e9fa9a4c902c
+  - doc-b9d94af8ebac301582da
+  - doc-c50a0804f718793b4cb2
+  - doc-e21bef3c8342c5510aad
+  - doc-eb71073ea8a70a47c7b0
+  - doc-ee0a9e00d0175b0b6155
+  - doc-fd258968991182717e4b
+  out_of_scope_entry: integration funding for municipalities and providers
+- kind: out_of_scope
+  reason: 'The cantonal integration programmes KIP 1 to KIP 3 with their funding, reporting documents and final
+    reports: the canton''s programme machinery for municipalities and providers, not a resident''s question. The
+    offers it finances are served from the offer database page.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-6be9702fb1331355a86f
+  out_of_scope_entry: integration funding for municipalities and providers
+- kind: out_of_scope
+  reason: The remaining funding areas of the cantonal integration programme as the canton describes them for the
+    system (language measures for integration officers and providers, employability, early childhood, living together,
+    interpreting for staff of the regular structures). The information and counselling area of the same page is
+    cited, and the offers themselves are found through the offer database.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-b26607e2d663c7ebc8cc
+  section_ids:
+  - section-0007
+  - section-0016
+  - section-0017
+  - section-0018
+  - section-0019
+  - section-0022
+  out_of_scope_entry: integration funding for municipalities and providers
+- kind: duplicate
+  reason: 'Pointers that repeat content the pack cites from the pages that own it: the language requirements for
+    a permit and for naturalisation (Migration Office, Office for Municipalities), the support of projects (foerderung-integrationsprojekte.html)
+    and the protection from racist discrimination (schutz-vor-rassistischer-diskriminierung.html).'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-b26607e2d663c7ebc8cc
+  section_ids:
+  - section-0015
+  - section-0020
+  - section-0021
+- kind: duplicate
+  reason: The page's own lead, which restates the sections below it that the facts cite.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-5386be4702ee65f46a87
+  section_ids:
+  - section-0007
+- kind: deferred
+  reason: The calls of 2018 to 2023 and the projects they funded. Past calls a resident cannot apply to any more;
+    the pack could summarise them and has not.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-5386be4702ee65f46a87
+  section_ids:
+  - section-0022
+  - section-0024
+  - section-0026
+  reaffirm_by: '2026-12-31'
+- kind: duplicate
+  reason: Who may apply, what is funded, the guidelines, the amount and the deadlines, which the facts cite from
+    foerderung-integrationsprojekte.html; this page repeats them as a step-by-step guide. Its list of required documents
+    is cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-0ab169e59cf112d166c6
+  section_ids:
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+- kind: duplicate
+  reason: Who may apply, what is funded, the guidelines, the amount and the deadlines, which the facts cite from
+    foerderung-integrationsprojekte.html; this page repeats them as a step-by-step guide. Its list of required documents
+    is cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-603af2c75387379addec
+  section_ids:
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+- kind: duplicate
+  reason: The page's own lead, which restates the description of the offer database that the first fact cites.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-6b7ab84cf9fe70b4dbb5
+  section_ids:
+  - section-0007
+- kind: navigation
+  reason: 'The embedded search widget of the offer database: its column headers, its paging controls and the search
+    tips for using them. The database''s content is not in the saved page.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-6b7ab84cf9fe70b4dbb5
+  section_ids:
+  - section-0011
+  - section-0012
+  - section-0013
+- kind: out_of_scope
+  reason: 'How municipalities and providers have an out-of-date offer corrected: addressed to the providers of the
+    funded offers, not to residents.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-6b7ab84cf9fe70b4dbb5
+  section_ids:
+  - section-0014
+  out_of_scope_entry: integration funding for municipalities and providers
+- kind: duplicate
+  reason: The page's own lead and its two teasers for the German-course advice and the offer database, which the
+    facts cite from integrationsangebote.html.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-097ba90229a71bb8bdba
+  section_ids:
+  - section-0007
+  - section-0017
+  - section-0018
+- kind: deferred
+  reason: A placeholder announcing that networking events will be announced here; it carries no event and no date
+    today. To be read again when the page names one.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-097ba90229a71bb8bdba
+  section_ids:
+  - section-0013
+  reaffirm_by: '2026-12-31'
+- kind: duplicate
+  reason: The page's own lead, the one-sentence introduction to the counselling offices that the ZüRAS fact cites,
+    and the pointer to the project funding that the pack cites from foerderung-integrationsprojekte.html.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-5028cb30ffd4a8de19e1
+  section_ids:
+  - section-0007
+  - section-0010
+  - section-0021
+- kind: out_of_scope
+  reason: 'The training offers on racism prevention and dealing with diversity that the Fachstelle Integration lists
+    for authorities and institutions, with its contact for them: addressed to public bodies, not to residents.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-5028cb30ffd4a8de19e1
+  section_ids:
+  - section-0018
+  - section-0019
+  - section-0020
+  out_of_scope_entry: integration funding for municipalities and providers
+- kind: deferred
+  reason: 'The canton''s specialist report and the external expert report behind the postulate 92/2023 on a cantonal
+    action plan against racism: policy documents the pack could summarise and has not.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-5028cb30ffd4a8de19e1
+  section_ids:
+  - section-0023
+  reaffirm_by: '2026-12-31'

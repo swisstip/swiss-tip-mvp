@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-curation-coverage-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-22-v1",
-  "content_sha256": "2823ab3fad3b042436d0fd1a38d913016031ac17562afe9dffcb774e80341be2",
+  "release_id": "mvp-zurich-2026-09-22-v6",
+  "content_sha256": "9518b36a60a99ae5cdd1bf34be3ca5af79112382fd8a59419ce9cf7bf9eb8f41",
   "text_index_sha256": "d144ffbc1f4cc8d01ad2369c9449a09080d0c60013270bf3967472aa0f34a60a",
-  "dispositions_sha256": "6baf28873a687db7f70333e09b701d078cb2e1697b43abba3a13145668d8c937",
-  "dispositions": 23,
+  "dispositions_sha256": "9fc572e6af1e9f27ea7391c856ce09587283eb61b57e9c33d6f76ca2b305571d",
+  "dispositions": 41,
   "policy": "report",
   "today": "2026-09-22",
-  "generated_at": "2026-09-22T11:23:52.803930+00:00",
+  "generated_at": "2026-09-22T12:50:27.889330+00:00",
   "rules": {
     "reference_kinds": [
       "plugin-document"
@@ -24,11 +24,11 @@
       "document": 15,
       "rolled_up": 1
     },
-    "content_sections": 2076,
-    "cited_sections": 525,
-    "dispositioned_sections": 267,
-    "unclassified_sections": 1284,
-    "boilerplate_sections": 76,
+    "content_sections": 2077,
+    "cited_sections": 558,
+    "dispositioned_sections": 544,
+    "unclassified_sections": 975,
+    "boilerplate_sections": 75,
     "repeated_texts": 9,
     "repeated_by_citation": {
       "cited_nowhere": 4,
@@ -36,10 +36,11 @@
       "cited_once": 3
     },
     "documents": {
-      "unclassified": 91,
-      "partly_cited": 122,
+      "unclassified": 36,
+      "partly_cited": 120,
       "cited": 53,
-      "dispositioned": 71
+      "dispositioned": 119,
+      "cited_and_dispositioned": 9
     },
     "findings": {
       "stale": 0,
@@ -6421,25 +6422,14 @@
       "unit": "section",
       "units": 1,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 1,
       "boilerplate": 0,
-      "unclassified": 1,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Aussen- und Binnengrenzen der Schweiz"
-          ],
-          "first_block": 78,
-          "last_block": 84,
-          "characters": 569,
-          "section_ids": [
-            "section-0011"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 1
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-237dc1ad3f54efc8ca51",
@@ -6452,38 +6442,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Integrierte Grenzverwaltung / Integrated Border Management (IBM)"
-          ],
-          "first_block": 74,
-          "last_block": 84,
-          "characters": 3326,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Integrierte Grenzverwaltung / Integrated Border Management (IBM)",
-            "4-Filter Modell"
-          ],
-          "first_block": 85,
-          "last_block": 92,
-          "characters": 334,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-051f5a29e5ab9e1503c8",
@@ -6496,64 +6462,14 @@
       "unit": "section",
       "units": 4,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 0,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Aktionsplan IBM"
-          ],
-          "first_block": 89,
-          "last_block": 92,
-          "characters": 1412,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Aktionsplan IBM",
-            "Schlüsselmassnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 98,
-          "characters": 1715,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Aktionsplan IBM",
-            "Standardmassnahmen"
-          ],
-          "first_block": 99,
-          "last_block": 107,
-          "characters": 1947,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Aktionsplan IBM",
-            "Monitoring und Rhythmus der Weiterentwicklung des Aktionsplans"
-          ],
-          "first_block": 108,
-          "last_block": 115,
-          "characters": 588,
-          "section_ids": [
-            "section-0014"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 4
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-052d5b6752ace3f90e06",
@@ -6566,38 +6482,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "a) Grenzkontrolle"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 727,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "a) Grenzkontrolle",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 111,
-          "characters": 7234,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-c3cfc1f2725da06bad18",
@@ -6610,38 +6502,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "b) Such- und Rettungseinsätze auf See"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 368,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "b) Such- und Rettungseinsätze auf See",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 98,
-          "characters": 332,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-5df25c52055bb7691111",
@@ -6654,38 +6522,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "c) Risikoanalyse"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 253,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "c) Risikoanalyse",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 105,
-          "characters": 3951,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-3f11c3eb0a8a0f29f62a",
@@ -6698,38 +6542,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "d) Informationsaustausch und Zusammenarbeit zwischen den Mitgliedstaaten sowie mit der Europäischen Agentur für die Grenz- und Küstenwache (Frontex)"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 462,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "d) Informationsaustausch und Zusammenarbeit zwischen den Mitgliedstaaten sowie mit der Europäischen Agentur für die Grenz- und Küstenwache (Frontex)",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 105,
-          "characters": 2006,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-e101f3f21a55444e0289",
@@ -6742,38 +6562,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "e) Zusammenarbeit zwischen den nationalen Behörden"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 563,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "e) Zusammenarbeit zwischen den nationalen Behörden",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 105,
-          "characters": 4445,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-da639f64abedbf821c94",
@@ -6786,38 +6582,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "f) Zusammenarbeit zwischen den Organen, Einrichtungen und sonstigen Stellen der Union"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 301,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "f) Zusammenarbeit zwischen den Organen, Einrichtungen und sonstigen Stellen der Union",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 98,
-          "characters": 549,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-8e99cc232a1d69cd3892",
@@ -6830,38 +6602,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "g) Zusammenarbeit mit Drittstaaten"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 368,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "g) Zusammenarbeit mit Drittstaaten",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 107,
-          "characters": 3513,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-ddad0900e64e4bf8e1ba",
@@ -6874,38 +6622,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "h) Kontrollen innerhalb des Schengen-Raums (inkl. Binnengrenzkontrollen)"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 305,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "h) Kontrollen innerhalb des Schengen-Raums (inkl. Binnengrenzkontrollen)",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 107,
-          "characters": 3400,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-2a254be149555047da6d",
@@ -6918,38 +6642,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "i) Rückkehr"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 200,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "i) Rückkehr",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 107,
-          "characters": 3568,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-86f9c9c69f2819c495c2",
@@ -6962,38 +6662,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "j) Einsatz moderner Technologien"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 172,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "j) Einsatz moderner Technologien",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 105,
-          "characters": 10537,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-e2f540317e24e9ee1b0b",
@@ -7006,38 +6682,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "k) Qualitätssicherungs­mechanismen"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 324,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "k) Qualitätssicherungs­mechanismen",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 105,
-          "characters": 2733,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-ab41f4dfe1d7269c7d0e",
@@ -7050,38 +6702,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "l) Solidaritätsmechanismen"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 168,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "l) Solidaritätsmechanismen",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 103,
-          "characters": 2179,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-856a2faaea9433f79b38",
@@ -7094,38 +6722,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "m) Grundrechte"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 265,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "m) Grundrechte",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 103,
-          "characters": 3046,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-b393cb8cde53026f81a7",
@@ -7138,38 +6742,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "n) Aus- und Weiterbildung"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 265,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "n) Aus- und Weiterbildung",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 105,
-          "characters": 4401,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-6a86babfe32aa8ee3a2f",
@@ -7182,38 +6762,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "o) Forschung und Innovation"
-          ],
-          "first_block": 90,
-          "last_block": 92,
-          "characters": 265,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "o) Forschung und Innovation",
-            "Strategische Ziele der IBM-Strategie III und Massnahmen"
-          ],
-          "first_block": 93,
-          "last_block": 104,
-          "characters": 2081,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-43785a6de114a6d68c27",
@@ -7226,25 +6782,14 @@
       "unit": "section",
       "units": 1,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 1,
       "boilerplate": 0,
-      "unclassified": 1,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Informationssysteme im Schengenbereich"
-          ],
-          "first_block": 77,
-          "last_block": 84,
-          "characters": 868,
-          "section_ids": [
-            "section-0011"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 1
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-e6efd5668e2b9beea894",
@@ -7257,25 +6802,14 @@
       "unit": "section",
       "units": 1,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 1,
       "boilerplate": 0,
-      "unclassified": 1,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Datenschutz"
-          ],
-          "first_block": 78,
-          "last_block": 83,
-          "characters": 631,
-          "section_ids": [
-            "section-0011"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 1
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-6beed430d9345d0f3ef2",
@@ -7288,65 +6822,14 @@
       "unit": "section",
       "units": 5,
       "cited": 1,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 0,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Entry/Exit System (EES)",
-            "Stand der Arbeiten auf EU-Ebene"
-          ],
-          "first_block": 84,
-          "last_block": 85,
-          "characters": 496,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Entry/Exit System (EES)",
-            "Stand der Arbeiten in der Schweiz"
-          ],
-          "first_block": 86,
-          "last_block": 91,
-          "characters": 1242,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Entry/Exit System (EES)",
-            "Dokumentation"
-          ],
-          "first_block": 95,
-          "last_block": 108,
-          "characters": 554,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Entry/Exit System (EES)",
-            "Links"
-          ],
-          "first_block": 109,
-          "last_block": 115,
-          "characters": 190,
-          "section_ids": [
-            "section-0016"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 4
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-e1044c27c2b427132169",
@@ -7359,65 +6842,14 @@
       "unit": "section",
       "units": 4,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 0,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Interoperabilität (IOP)",
-            "Überblick"
-          ],
-          "first_block": 75,
-          "last_block": 82,
-          "characters": 1471,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Interoperabilität (IOP)",
-            "Interoperabilität (IOP) / Interopérabilité / Interoperabilità / Interoperability"
-          ],
-          "first_block": 83,
-          "last_block": 85,
-          "characters": 234,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Interoperabilität (IOP)",
-            "Umsetzung in der Schweiz"
-          ],
-          "first_block": 86,
-          "last_block": 87,
-          "characters": 472,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Interoperabilität (IOP)",
-            "Weiterführende Informationen"
-          ],
-          "first_block": 88,
-          "last_block": 96,
-          "characters": 264,
-          "section_ids": [
-            "section-0015"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 4
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-e8203871a08aa9a49a13",
@@ -7430,40 +6862,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "VII. Visa",
-            "Visumvorschriften"
-          ],
-          "first_block": 76,
-          "last_block": 80,
-          "characters": 110,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "VII. Visa",
-            "Visumvorschriften",
-            "Fragen zur Einreise"
-          ],
-          "first_block": 81,
-          "last_block": 86,
-          "characters": 169,
-          "section_ids": [
-            "section-0013"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-276831391d6e09f9fcd3",
@@ -7476,39 +6882,14 @@
       "unit": "section",
       "units": 3,
       "cited": 1,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Schengen-Raum",
-            "Karte"
-          ],
-          "first_block": 83,
-          "last_block": 85,
-          "characters": 20,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Schengen-Raum",
-            "Karte: Schengen-Raum"
-          ],
-          "first_block": 86,
-          "last_block": 91,
-          "characters": 134,
-          "section_ids": [
-            "section-0013"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-95bd5f94a6483fb62d81",
@@ -8661,65 +8042,14 @@
       "unit": "section",
       "units": 4,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 0,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Advance Passenger Information (API)",
-            "Rechtliche Grundlagen"
-          ],
-          "first_block": 75,
-          "last_block": 85,
-          "characters": 3005,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Advance Passenger Information (API)",
-            "Zweck des Systems"
-          ],
-          "first_block": 86,
-          "last_block": 87,
-          "characters": 864,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Advance Passenger Information (API)",
-            "Zugriffsrechte und Datenkategorien"
-          ],
-          "first_block": 88,
-          "last_block": 102,
-          "characters": 1897,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Advance Passenger Information (API)",
-            "Der Meldepflicht unterstellte Abflugdestinationen"
-          ],
-          "first_block": 103,
-          "last_block": 105,
-          "characters": 557,
-          "section_ids": [
-            "section-0015"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 4
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-44916bb7a0bec9a4e64c",
@@ -8732,78 +8062,14 @@
       "unit": "section",
       "units": 5,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 5,
       "boilerplate": 0,
-      "unclassified": 5,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Übersicht API-Meldepflicht für Luftverkehrsunternehmen",
-            "Umfang der Meldepflicht"
-          ],
-          "first_block": 76,
-          "last_block": 78,
-          "characters": 1902,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Übersicht API-Meldepflicht für Luftverkehrsunternehmen",
-            "Anordnungen oder Aufhebungen der Meldepflicht"
-          ],
-          "first_block": 79,
-          "last_block": 81,
-          "characters": 581,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Übersicht API-Meldepflicht für Luftverkehrsunternehmen",
-            "Geplante oder laufende Verfahren betreffend Anordnung oder Aufhebung der Meldepflicht"
-          ],
-          "first_block": 82,
-          "last_block": 83,
-          "characters": 280,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Übersicht API-Meldepflicht für Luftverkehrsunternehmen",
-            "Technische Informationen für die Übermittlung von API-Daten"
-          ],
-          "first_block": 84,
-          "last_block": 88,
-          "characters": 428,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Übersicht API-Meldepflicht für Luftverkehrsunternehmen",
-            "Verletzung der Meldeflicht"
-          ],
-          "first_block": 89,
-          "last_block": 91,
-          "characters": 242,
-          "section_ids": [
-            "section-0016"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 5
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-56a56dfa11c3d8ae0db0",
@@ -8816,41 +8082,14 @@
       "unit": "section",
       "units": 2,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Carrier Sanctions (CASA)",
-            "Verfahren gegen Luftverkehrsunternehmen",
-            "Sorgfaltspflicht"
-          ],
-          "first_block": 78,
-          "last_block": 84,
-          "characters": 895,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Carrier Sanctions (CASA)",
-            "Verfahren gegen Luftverkehrsunternehmen",
-            "Meldepflicht"
-          ],
-          "first_block": 85,
-          "last_block": 91,
-          "characters": 607,
-          "section_ids": [
-            "section-0014"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-90f54f561135075db636",
@@ -8863,25 +8102,14 @@
       "unit": "section",
       "units": 1,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 1,
       "boilerplate": 0,
-      "unclassified": 1,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Wesentliche Rechtsgrundlagen"
-          ],
-          "first_block": 77,
-          "last_block": 92,
-          "characters": 1385,
-          "section_ids": [
-            "section-0011"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 1
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-270fb187245aab308216",
@@ -8894,91 +8122,14 @@
       "unit": "section",
       "units": 6,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 6,
       "boilerplate": 0,
-      "unclassified": 6,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Verwaltungsverfahren in Bezug auf die Meldepflicht",
-            "Eröffnung oder Nichteröffnung eines Verfahrens durch das SEM"
-          ],
-          "first_block": 78,
-          "last_block": 80,
-          "characters": 572,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Verwaltungsverfahren in Bezug auf die Meldepflicht",
-            "Stellungnahme der Luftverkehrsunternehmen"
-          ],
-          "first_block": 81,
-          "last_block": 82,
-          "characters": 268,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Verwaltungsverfahren in Bezug auf die Meldepflicht",
-            "Sanktion"
-          ],
-          "first_block": 83,
-          "last_block": 84,
-          "characters": 474,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Verwaltungsverfahren in Bezug auf die Meldepflicht",
-            "Rechtsmittel"
-          ],
-          "first_block": 85,
-          "last_block": 87,
-          "characters": 234,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Verwaltungsverfahren in Bezug auf die Meldepflicht",
-            "Vollstreckung (Art. 39–40 VwVG)"
-          ],
-          "first_block": 88,
-          "last_block": 89,
-          "characters": 119,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Verwaltungsverfahren in Bezug auf die Meldepflicht",
-            "Rechtsprechung"
-          ],
-          "first_block": 90,
-          "last_block": 106,
-          "characters": 6146,
-          "section_ids": [
-            "section-0017"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 6
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-4e315819e6e32c9890f1",
@@ -8991,91 +8142,14 @@
       "unit": "section",
       "units": 6,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 6,
       "boilerplate": 0,
-      "unclassified": 6,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht",
-            "Vorgehen der Grenzkontrollbehörden"
-          ],
-          "first_block": 78,
-          "last_block": 79,
-          "characters": 401,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht",
-            "Eröffnung oder Nichteröffnung eines Verfahrens durch das SEM"
-          ],
-          "first_block": 80,
-          "last_block": 82,
-          "characters": 351,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht",
-            "Stellungnahme der Luftverkehrsunternehmen"
-          ],
-          "first_block": 83,
-          "last_block": 84,
-          "characters": 279,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht",
-            "Sanktion"
-          ],
-          "first_block": 85,
-          "last_block": 86,
-          "characters": 316,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht",
-            "Rechtsmittel"
-          ],
-          "first_block": 87,
-          "last_block": 89,
-          "characters": 234,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht",
-            "Vollstreckung (Art. 39–40 VwVG)"
-          ],
-          "first_block": 90,
-          "last_block": 95,
-          "characters": 275,
-          "section_ids": [
-            "section-0017"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 6
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-b12bf0089b2c91d0c2b0",
@@ -15246,204 +14320,16 @@
       "attribution_kind": "in-scope",
       "unit": "section",
       "units": 15,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 5,
+      "dispositioned": 9,
       "boilerplate": 1,
-      "unclassified": 14,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Förderbereiche"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 206,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Förderbereiche",
-            "Information, Abklärung Integrationsförderbedarf und Beratung",
-            "Information"
-          ],
-          "first_block": 60,
-          "last_block": 61,
-          "characters": 309,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Förderbereiche",
-            "Information, Abklärung Integrationsförderbedarf und Beratung",
-            "Information",
-            "Für Integrationsbeauftragte (IB)"
-          ],
-          "first_block": 62,
-          "last_block": 65,
-          "characters": 706,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Förderbereiche",
-            "Information, Abklärung Integrationsförderbedarf und Beratung",
-            "Abklärung Integrationsbedarf"
-          ],
-          "first_block": 66,
-          "last_block": 70,
-          "characters": 275,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Förderbereiche",
-            "Information, Abklärung Integrationsförderbedarf und Beratung",
-            "Beratung"
-          ],
-          "first_block": 71,
-          "last_block": 74,
-          "characters": 616,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Förderbereiche",
-            "Information, Abklärung Integrationsförderbedarf und Beratung",
-            "Beratung",
-            "Beratungsstellen und Unterstützungsangebote"
-          ],
-          "first_block": 75,
-          "last_block": 83,
-          "characters": 906,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Förderbereiche",
-            "Sprache"
-          ],
-          "first_block": 84,
-          "last_block": 90,
-          "characters": 904,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Förderbereiche",
-            "Sprache",
-            "Für Integrationsbeauftragte und anbietende Institutionen"
-          ],
-          "first_block": 91,
-          "last_block": 97,
-          "characters": 1434,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Förderbereiche",
-            "Ausbildungs- und Arbeitsmarktfähigkeit"
-          ],
-          "first_block": 98,
-          "last_block": 99,
-          "characters": 332,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0018",
-          "heading_path": [
-            "Förderbereiche",
-            "Frühe Kindheit"
-          ],
-          "first_block": 100,
-          "last_block": 101,
-          "characters": 404,
-          "section_ids": [
-            "section-0018"
-          ]
-        },
-        {
-          "section_id": "section-0019",
-          "heading_path": [
-            "Förderbereiche",
-            "Zusammenleben und Partizipation"
-          ],
-          "first_block": 102,
-          "last_block": 103,
-          "characters": 494,
-          "section_ids": [
-            "section-0019"
-          ]
-        },
-        {
-          "section_id": "section-0020",
-          "heading_path": [
-            "Förderbereiche",
-            "Zusammenleben und Partizipation",
-            "Unterstützung von Projekten"
-          ],
-          "first_block": 104,
-          "last_block": 107,
-          "characters": 411,
-          "section_ids": [
-            "section-0020"
-          ]
-        },
-        {
-          "section_id": "section-0021",
-          "heading_path": [
-            "Förderbereiche",
-            "Umgang mit Vielfalt und Schutz vor Diskriminierung"
-          ],
-          "first_block": 108,
-          "last_block": 112,
-          "characters": 621,
-          "section_ids": [
-            "section-0021"
-          ]
-        },
-        {
-          "section_id": "section-0022",
-          "heading_path": [
-            "Förderbereiche",
-            "Dolmetschen"
-          ],
-          "first_block": 113,
-          "last_block": 115,
-          "characters": 414,
-          "section_ids": [
-            "section-0022"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 6,
+        "duplicate": 3
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-5386be4702ee65f46a87",
@@ -15455,194 +14341,16 @@
       "attribution_kind": "in-scope",
       "unit": "section",
       "units": 15,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 9,
+      "dispositioned": 4,
       "boilerplate": 2,
-      "unclassified": 13,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Förderung von Integrationsprojekten"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 329,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Finanzielle Beiträge"
-          ],
-          "first_block": 60,
-          "last_block": 68,
-          "characters": 886,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Finanzielle Beiträge",
-            "Kleinprojekte"
-          ],
-          "first_block": 69,
-          "last_block": 70,
-          "characters": 205,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Finanzielle Beiträge",
-            "Grössere Projekte"
-          ],
-          "first_block": 71,
-          "last_block": 74,
-          "characters": 398,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Förderschwerpunkte 2024–2027",
-            "Zusammenleben und Partizipation"
-          ],
-          "first_block": 76,
-          "last_block": 80,
-          "characters": 173,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Förderschwerpunkte 2024–2027",
-            "Umgang mit Vielfalt und Diskriminierungsschutz"
-          ],
-          "first_block": 81,
-          "last_block": 85,
-          "characters": 322,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Wer ein Gesuch stellen kann"
-          ],
-          "first_block": 86,
-          "last_block": 87,
-          "characters": 153,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Gesuche einreichen"
-          ],
-          "first_block": 88,
-          "last_block": 95,
-          "characters": 548,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Gesuche einreichen",
-            "Maria Gstöhl"
-          ],
-          "first_block": 96,
-          "last_block": 98,
-          "characters": 94,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0018",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Gesuche einreichen",
-            "Deniz Yüksel"
-          ],
-          "first_block": 99,
-          "last_block": 101,
-          "characters": 109,
-          "section_ids": [
-            "section-0018"
-          ]
-        },
-        {
-          "section_id": "section-0022",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Vergangene Ausschreibungen",
-            "Schwerpunktausschreibung 2022–2023",
-            "Sozialräumliche Gemeinschaftsprojekte «Vielfältig, lokal, engagiert»"
-          ],
-          "first_block": 107,
-          "last_block": 110,
-          "characters": 591,
-          "section_ids": [
-            "section-0022"
-          ]
-        },
-        {
-          "section_id": "section-0024",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Vergangene Ausschreibungen",
-            "Schwerpunktausschreibung 2020–2021",
-            "Freiwilligenarbeit von Migrantinnen und Migranten stärken"
-          ],
-          "first_block": 112,
-          "last_block": 115,
-          "characters": 514,
-          "section_ids": [
-            "section-0024"
-          ]
-        },
-        {
-          "section_id": "section-0026",
-          "heading_path": [
-            "Förderung von Integrationsprojekten",
-            "Vergangene Ausschreibungen",
-            "Schwerpunktausschreibung 2018–2019",
-            "Partizipation von Migrantinnen und Migranten stärken"
-          ],
-          "first_block": 117,
-          "last_block": 120,
-          "characters": 660,
-          "section_ids": [
-            "section-0026"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1,
+        "deferred": 3
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-0ab169e59cf112d166c6",
@@ -15654,98 +14362,15 @@
       "attribution_kind": "in-scope",
       "unit": "section",
       "units": 6,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 5,
       "boilerplate": 0,
-      "unclassified": 6,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen",
-            "Anleitung",
-            "Wer ein Gesuch stellen kann"
-          ],
-          "first_block": 50,
-          "last_block": 51,
-          "characters": 153,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen",
-            "Anleitung",
-            "Welche Projekte gefördert werden"
-          ],
-          "first_block": 52,
-          "last_block": 53,
-          "characters": 174,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen",
-            "Anleitung",
-            "Förderrichtlinien lesen"
-          ],
-          "first_block": 54,
-          "last_block": 56,
-          "characters": 211,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen",
-            "Anleitung",
-            "Projektbeitrag"
-          ],
-          "first_block": 57,
-          "last_block": 58,
-          "characters": 82,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen",
-            "Anleitung",
-            "Eingabetermine"
-          ],
-          "first_block": 59,
-          "last_block": 60,
-          "characters": 48,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen",
-            "Anleitung",
-            "Erforderliche Unterlagen"
-          ],
-          "first_block": 61,
-          "last_block": 64,
-          "characters": 319,
-          "section_ids": [
-            "section-0014"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 5
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-603af2c75387379addec",
@@ -15757,98 +14382,15 @@
       "attribution_kind": "in-scope",
       "unit": "section",
       "units": 6,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 5,
       "boilerplate": 0,
-      "unclassified": 6,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen",
-            "Anleitung",
-            "Wer ein Gesuch stellen kann"
-          ],
-          "first_block": 50,
-          "last_block": 51,
-          "characters": 153,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen",
-            "Anleitung",
-            "Welche Projekte gefördert werden"
-          ],
-          "first_block": 52,
-          "last_block": 53,
-          "characters": 174,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen",
-            "Anleitung",
-            "Förderrichtlinien lesen"
-          ],
-          "first_block": 54,
-          "last_block": 56,
-          "characters": 211,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen",
-            "Anleitung",
-            "Projektbeiträge"
-          ],
-          "first_block": 57,
-          "last_block": 59,
-          "characters": 179,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen",
-            "Anleitung",
-            "Eingabetermine"
-          ],
-          "first_block": 60,
-          "last_block": 61,
-          "characters": 81,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen",
-            "Anleitung",
-            "Erforderliche Dokumente"
-          ],
-          "first_block": 62,
-          "last_block": 67,
-          "characters": 528,
-          "section_ids": [
-            "section-0014"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 5
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-2642590582c26192108d",
@@ -15861,132 +14403,14 @@
       "unit": "section",
       "units": 9,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 9,
       "boilerplate": 0,
-      "unclassified": 9,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Integrationsagenda",
-            "Themen"
-          ],
-          "first_block": 49,
-          "last_block": 56,
-          "characters": 88,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Integrationsagenda",
-            "Integrationsagenda Schweiz"
-          ],
-          "first_block": 65,
-          "last_block": 67,
-          "characters": 725,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Integrationsagenda",
-            "Ziele der Integrationsagenda"
-          ],
-          "first_block": 68,
-          "last_block": 74,
-          "characters": 760,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Integrationsagenda",
-            "Zielgruppen"
-          ],
-          "first_block": 75,
-          "last_block": 81,
-          "characters": 538,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Integrationsagenda",
-            "Integrationsagenda im Kanton Zürich"
-          ],
-          "first_block": 82,
-          "last_block": 90,
-          "characters": 1164,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Integrationsagenda",
-            "Gemeinsam umsetzen"
-          ],
-          "first_block": 91,
-          "last_block": 94,
-          "characters": 1159,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Integrationsagenda",
-            "Gemeinsam umsetzen",
-            "Integrationsagenda Kanton Zürich (Umsetzungskonzept IAZH)"
-          ],
-          "first_block": 95,
-          "last_block": 97,
-          "characters": 156,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Integrationsagenda",
-            "Monitoring des Fördersystems für Geflüchtete (IAZH)"
-          ],
-          "first_block": 100,
-          "last_block": 102,
-          "characters": 633,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0018",
-          "heading_path": [
-            "Integrationsagenda",
-            "Monitoring des Fördersystems für Geflüchtete (IAZH)",
-            "Monitoring-Bericht 2025 Integrationsagenda Kanton Zürich (IAZH)"
-          ],
-          "first_block": 103,
-          "last_block": 109,
-          "characters": 446,
-          "section_ids": [
-            "section-0018"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 9
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-ee0a9e00d0175b0b6155",
@@ -15999,77 +14423,14 @@
       "unit": "section",
       "units": 5,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 5,
       "boilerplate": 0,
-      "unclassified": 5,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Akkreditierung von Fördermassnahmen"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 180,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Akkreditierung von Fördermassnahmen",
-            "Akkreditierung von Angeboten"
-          ],
-          "first_block": 54,
-          "last_block": 57,
-          "characters": 394,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Akkreditierung von Fördermassnahmen",
-            "Fragen und Anmeldung E-Mailing"
-          ],
-          "first_block": 58,
-          "last_block": 61,
-          "characters": 334,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Akkreditierung von Fördermassnahmen",
-            "Akkreditierte Angebotsarten im Fördersystem IAZH"
-          ],
-          "first_block": 62,
-          "last_block": 68,
-          "characters": 1166,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Akkreditierung von Fördermassnahmen",
-            "Ergänzende Angebote"
-          ],
-          "first_block": 69,
-          "last_block": 72,
-          "characters": 211,
-          "section_ids": [
-            "section-0012"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 5
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-689f2d54395d4f6516b7",
@@ -16082,79 +14443,14 @@
       "unit": "section",
       "units": 5,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 5,
       "boilerplate": 0,
-      "unclassified": 5,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Begleitung von Geflüchteten"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 138,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Begleitung von Geflüchteten",
-            "Integrationsorientierte Fallführung"
-          ],
-          "first_block": 55,
-          "last_block": 59,
-          "characters": 1445,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Begleitung von Geflüchteten",
-            "Fallführende Stellen",
-            "In den kantonalen Asyl- und Flüchtlingsstrukturen"
-          ],
-          "first_block": 61,
-          "last_block": 65,
-          "characters": 821,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Begleitung von Geflüchteten",
-            "Fallführende Stellen",
-            "In den Gemeinden"
-          ],
-          "first_block": 66,
-          "last_block": 73,
-          "characters": 1308,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Begleitung von Geflüchteten",
-            "Potenzialabklärung"
-          ],
-          "first_block": 74,
-          "last_block": 81,
-          "characters": 871,
-          "section_ids": [
-            "section-0013"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 5
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-368c0fba131961f7dc56",
@@ -16167,134 +14463,14 @@
       "unit": "section",
       "units": 9,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 9,
       "boilerplate": 0,
-      "unclassified": 9,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Fördermassnahmen für Geflüchtete"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 210,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Fördermassnahmen für Geflüchtete",
-            "Die Fördermassnahmen"
-          ],
-          "first_block": 54,
-          "last_block": 57,
-          "characters": 708,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Fördermassnahmen für Geflüchtete",
-            "Akkreditierte Angebote"
-          ],
-          "first_block": 58,
-          "last_block": 65,
-          "characters": 481,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Fördermassnahmen für Geflüchtete",
-            "Akkreditierte Angebote",
-            "Kantonaler Angebotskatalog IAZH"
-          ],
-          "first_block": 66,
-          "last_block": 68,
-          "characters": 351,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Fördermassnahmen für Geflüchtete",
-            "Ergänzende Angebote"
-          ],
-          "first_block": 69,
-          "last_block": 70,
-          "characters": 400,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Fördermassnahmen für Geflüchtete",
-            "Ergänzende Angebote",
-            "Tandemprogramm"
-          ],
-          "first_block": 71,
-          "last_block": 73,
-          "characters": 367,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Fördermassnahmen für Geflüchtete",
-            "Ergänzende Angebote",
-            "Schlüsselpersonen-Angebote"
-          ],
-          "first_block": 74,
-          "last_block": 76,
-          "characters": 390,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Fördermassnahmen für Geflüchtete",
-            "Ergänzende Angebote",
-            "Angebote für Personen mit psychischen Belastungen"
-          ],
-          "first_block": 77,
-          "last_block": 79,
-          "characters": 449,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Fördermassnahmen für Geflüchtete",
-            "Ergänzende Angebote",
-            "Finanzielle Zuschüsse zur Arbeitsmarktintegration"
-          ],
-          "first_block": 80,
-          "last_block": 86,
-          "characters": 1069,
-          "section_ids": [
-            "section-0016"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 9
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-104abf6c7048b37f09df",
@@ -16307,132 +14483,14 @@
       "unit": "section",
       "units": 9,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 9,
       "boilerplate": 0,
-      "unclassified": 9,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Förderung der Freiwilligenarbeit für und mit Geflüchteten"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 296,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Förderung der Freiwilligenarbeit für und mit Geflüchteten",
-            "Unterstützung von Aktivitäten"
-          ],
-          "first_block": 56,
-          "last_block": 61,
-          "characters": 528,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Förderung der Freiwilligenarbeit für und mit Geflüchteten",
-            "Unterstützung von Aktivitäten",
-            "Massnahmen zur Stärkung der Freiwilligenarbeit"
-          ],
-          "first_block": 62,
-          "last_block": 68,
-          "characters": 686,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Förderung der Freiwilligenarbeit für und mit Geflüchteten",
-            "Unterstützung von Aktivitäten",
-            "Projekte im Bereich soziale Integration"
-          ],
-          "first_block": 69,
-          "last_block": 74,
-          "characters": 446,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Förderung der Freiwilligenarbeit für und mit Geflüchteten",
-            "Wer ein Gesuch stellen kann"
-          ],
-          "first_block": 75,
-          "last_block": 78,
-          "characters": 335,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Förderung der Freiwilligenarbeit für und mit Geflüchteten",
-            "Gesuche einreichen"
-          ],
-          "first_block": 79,
-          "last_block": 86,
-          "characters": 501,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Förderung der Freiwilligenarbeit für und mit Geflüchteten",
-            "Gesuche einreichen",
-            "Maria Gstöhl"
-          ],
-          "first_block": 87,
-          "last_block": 88,
-          "characters": 39,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Förderung der Freiwilligenarbeit für und mit Geflüchteten",
-            "Unterstützte Projekte ab 2022"
-          ],
-          "first_block": 89,
-          "last_block": 91,
-          "characters": 442,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Förderung der Freiwilligenarbeit für und mit Geflüchteten",
-            "Tandemprogramm"
-          ],
-          "first_block": 92,
-          "last_block": 94,
-          "characters": 602,
-          "section_ids": [
-            "section-0016"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 9
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-50906cecaa878c115429",
@@ -16445,113 +14503,14 @@
       "unit": "section",
       "units": 7,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 7,
       "boilerplate": 0,
-      "unclassified": 7,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Gesuch einreichen für das Förderprogramm «qualifiziert engagiert»",
-            "Anleitung",
-            "Wer ein Gesuch stellen kann"
-          ],
-          "first_block": 50,
-          "last_block": 51,
-          "characters": 180,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Gesuch einreichen für das Förderprogramm «qualifiziert engagiert»",
-            "Anleitung",
-            "Was gefördert wird"
-          ],
-          "first_block": 52,
-          "last_block": 55,
-          "characters": 330,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Gesuch einreichen für das Förderprogramm «qualifiziert engagiert»",
-            "Anleitung",
-            "Projektbeiträge"
-          ],
-          "first_block": 56,
-          "last_block": 58,
-          "characters": 172,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Gesuch einreichen für das Förderprogramm «qualifiziert engagiert»",
-            "Anleitung",
-            "Eingabetermine"
-          ],
-          "first_block": 59,
-          "last_block": 61,
-          "characters": 120,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Gesuch einreichen für das Förderprogramm «qualifiziert engagiert»",
-            "Anleitung",
-            "Erforderliche Unterlagen"
-          ],
-          "first_block": 62,
-          "last_block": 68,
-          "characters": 572,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Gesuch einreichen für das Förderprogramm «qualifiziert engagiert»",
-            "Anleitung",
-            "Rahmenbedingungen",
-            "Vertragliche Grundlage"
-          ],
-          "first_block": 70,
-          "last_block": 71,
-          "characters": 254,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Gesuch einreichen für das Förderprogramm «qualifiziert engagiert»",
-            "Anleitung",
-            "Rahmenbedingungen",
-            "Berichterstattung"
-          ],
-          "first_block": 72,
-          "last_block": 75,
-          "characters": 443,
-          "section_ids": [
-            "section-0016"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 7
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-666d656c548dad5f38f8",
@@ -16564,137 +14523,14 @@
       "unit": "section",
       "units": 9,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 9,
       "boilerplate": 0,
-      "unclassified": 9,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Informationen für Fachpersonen"
-          ],
-          "first_block": 48,
-          "last_block": 50,
-          "characters": 129,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Informationen für Fachpersonen",
-            "Newsletter"
-          ],
-          "first_block": 56,
-          "last_block": 58,
-          "characters": 446,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Informationen für Fachpersonen",
-            "E-Mailings"
-          ],
-          "first_block": 59,
-          "last_block": 63,
-          "characters": 572,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Informationen für Fachpersonen",
-            "E-Mailings",
-            "Newsletter Fachstelle Integration"
-          ],
-          "first_block": 64,
-          "last_block": 72,
-          "characters": 500,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Informationen für Fachpersonen",
-            "Veranstaltungen zur IAZH"
-          ],
-          "first_block": 73,
-          "last_block": 75,
-          "characters": 536,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Informationen für Fachpersonen",
-            "Veranstaltungen zur IAZH",
-            "Online-Schulungen zum Fördersystem für Geflüchtete (Integrationsagenda Kanton Zürich, IAZH)"
-          ],
-          "first_block": 76,
-          "last_block": 77,
-          "characters": 217,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Informationen für Fachpersonen",
-            "Veranstaltungen zur IAZH",
-            "Online-Schulungen zum Fördersystem für Geflüchtete (Integrationsagenda Kanton Zürich, IAZH)",
-            "Einführungs-Schulungen"
-          ],
-          "first_block": 78,
-          "last_block": 85,
-          "characters": 451,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Informationen für Fachpersonen",
-            "Veranstaltungen zur IAZH",
-            "Online-Schulungen zum Fördersystem für Geflüchtete (Integrationsagenda Kanton Zürich, IAZH)",
-            "Praxisaustausch mit Fokus Abklärung und Erstinformation"
-          ],
-          "first_block": 86,
-          "last_block": 92,
-          "characters": 540,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Informationen für Fachpersonen",
-            "Veranstaltungen zur IAZH",
-            "Online-Schulungen zum Fördersystem für Geflüchtete (Integrationsagenda Kanton Zürich, IAZH)",
-            "Praxisaustausch mit Fokus Sprache, Bildung, Arbeitsintegration"
-          ],
-          "first_block": 93,
-          "last_block": 101,
-          "characters": 520,
-          "section_ids": [
-            "section-0016"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 9
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-eb71073ea8a70a47c7b0",
@@ -16707,27 +14543,14 @@
       "unit": "section",
       "units": 1,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 1,
       "boilerplate": 0,
-      "unclassified": 1,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Sich für den Newsletter anmelden",
-            "Anleitung",
-            "Für wen dieser Newsletter nützlich ist"
-          ],
-          "first_block": 50,
-          "last_block": 53,
-          "characters": 351,
-          "section_ids": [
-            "section-0009"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 1
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-7f6365a43b0683ca845c",
@@ -16740,85 +14563,14 @@
       "unit": "section",
       "units": 5,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 5,
       "boilerplate": 0,
-      "unclassified": 5,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Zur Einführungs-Schulung Fördersystem für Geflüchtete IAZH anmelden",
-            "Anleitung",
-            "Diese Veranstaltung richtet sich an"
-          ],
-          "first_block": 50,
-          "last_block": 51,
-          "characters": 65,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Zur Einführungs-Schulung Fördersystem für Geflüchtete IAZH anmelden",
-            "Anleitung",
-            "Teilnahme"
-          ],
-          "first_block": 52,
-          "last_block": 53,
-          "characters": 96,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Zur Einführungs-Schulung Fördersystem für Geflüchtete IAZH anmelden",
-            "Anleitung",
-            "Programm",
-            "Inhalt"
-          ],
-          "first_block": 55,
-          "last_block": 56,
-          "characters": 484,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Zur Einführungs-Schulung Fördersystem für Geflüchtete IAZH anmelden",
-            "Anleitung",
-            "Programm",
-            "Kosten"
-          ],
-          "first_block": 57,
-          "last_block": 58,
-          "characters": 26,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Zur Einführungs-Schulung Fördersystem für Geflüchtete IAZH anmelden",
-            "Anleitung",
-            "Termin"
-          ],
-          "first_block": 59,
-          "last_block": 61,
-          "characters": 88,
-          "section_ids": [
-            "section-0014"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 5
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-b11cd2f3e9fa9a4c902c",
@@ -16831,85 +14583,14 @@
       "unit": "section",
       "units": 5,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 5,
       "boilerplate": 0,
-      "unclassified": 5,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Sich zum Praxisaustausch Sprache, Bildung, Arbeitsintegration anmelden",
-            "Anleitung",
-            "Diese Veranstaltung richtet sich an"
-          ],
-          "first_block": 50,
-          "last_block": 51,
-          "characters": 60,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Sich zum Praxisaustausch Sprache, Bildung, Arbeitsintegration anmelden",
-            "Anleitung",
-            "Online teilnehmen"
-          ],
-          "first_block": 52,
-          "last_block": 53,
-          "characters": 106,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Sich zum Praxisaustausch Sprache, Bildung, Arbeitsintegration anmelden",
-            "Anleitung",
-            "Programm",
-            "Inhalt"
-          ],
-          "first_block": 55,
-          "last_block": 64,
-          "characters": 687,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Sich zum Praxisaustausch Sprache, Bildung, Arbeitsintegration anmelden",
-            "Anleitung",
-            "Programm",
-            "Kosten"
-          ],
-          "first_block": 65,
-          "last_block": 66,
-          "characters": 26,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Sich zum Praxisaustausch Sprache, Bildung, Arbeitsintegration anmelden",
-            "Anleitung",
-            "Termin"
-          ],
-          "first_block": 67,
-          "last_block": 68,
-          "characters": 50,
-          "section_ids": [
-            "section-0014"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 5
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-e21bef3c8342c5510aad",
@@ -16922,53 +14603,14 @@
       "unit": "section",
       "units": 3,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 3,
       "boilerplate": 0,
-      "unclassified": 3,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Online-Handbuch IAZH",
-            "Themen"
-          ],
-          "first_block": 49,
-          "last_block": 57,
-          "characters": 395,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Online-Handbuch IAZH",
-            "Aktuell: Unterstützungsmassnahmen Status S"
-          ],
-          "first_block": 61,
-          "last_block": 64,
-          "characters": 346,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Online-Handbuch IAZH",
-            "Aktuell: Unterstützungsmassnahmen Status S",
-            "Fachstelle Integration: Koordination und Kontakt"
-          ],
-          "first_block": 65,
-          "last_block": 74,
-          "characters": 782,
-          "section_ids": [
-            "section-0011"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 3
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-208634eba1d97aebfc30",
@@ -16981,162 +14623,14 @@
       "unit": "section",
       "units": 11,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 11,
       "boilerplate": 0,
-      "unclassified": 11,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Integrationsorientierte Beratung und Begleitung"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 180,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Integrationsorientierte Beratung und Begleitung",
-            "Integrationsorientierte Beratung und Begleitung"
-          ],
-          "first_block": 55,
-          "last_block": 60,
-          "characters": 1333,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Integrationsorientierte Beratung und Begleitung",
-            "Operative Steuerung durch die fallführenden Stellen"
-          ],
-          "first_block": 61,
-          "last_block": 77,
-          "characters": 2084,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Integrationsorientierte Beratung und Begleitung",
-            "Empfehlungen für die Praxis",
-            "Spezifische Integrationsförderung im Bildungsbereich"
-          ],
-          "first_block": 79,
-          "last_block": 86,
-          "characters": 1043,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Integrationsorientierte Beratung und Begleitung",
-            "Empfehlungen für die Praxis",
-            "Chancengleiche Förderung und Diskriminierungsschutz"
-          ],
-          "first_block": 87,
-          "last_block": 92,
-          "characters": 1697,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Integrationsorientierte Beratung und Begleitung",
-            "Empfehlungen für die Praxis",
-            "Familienergänzende Betreuung"
-          ],
-          "first_block": 93,
-          "last_block": 94,
-          "characters": 737,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Integrationsorientierte Beratung und Begleitung",
-            "Empfehlungen für die Praxis",
-            "Interkulturelles Dolmetschen"
-          ],
-          "first_block": 95,
-          "last_block": 97,
-          "characters": 450,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Integrationsorientierte Beratung und Begleitung",
-            "Empfehlungen für die Praxis",
-            "Case Load integrationsorientierte Fallführung"
-          ],
-          "first_block": 98,
-          "last_block": 100,
-          "characters": 376,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Integrationsorientierte Beratung und Begleitung",
-            "Empfehlungen für die Praxis",
-            "Sprachtests"
-          ],
-          "first_block": 101,
-          "last_block": 106,
-          "characters": 1474,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0018",
-          "heading_path": [
-            "Integrationsorientierte Beratung und Begleitung",
-            "Empfehlungen für die Praxis",
-            "Dauer des Erstintegrationsprozesses"
-          ],
-          "first_block": 107,
-          "last_block": 108,
-          "characters": 437,
-          "section_ids": [
-            "section-0018"
-          ]
-        },
-        {
-          "section_id": "section-0019",
-          "heading_path": [
-            "Integrationsorientierte Beratung und Begleitung",
-            "Potenzialabklärung"
-          ],
-          "first_block": 109,
-          "last_block": 139,
-          "characters": 5457,
-          "section_ids": [
-            "section-0019"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 11
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-b9d94af8ebac301582da",
@@ -17149,131 +14643,14 @@
       "unit": "section",
       "units": 9,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 9,
       "boilerplate": 0,
-      "unclassified": 9,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Das Fördersystem für ­Geflüchtete"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 211,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Das Fördersystem für ­Geflüchtete",
-            "Zielgruppen"
-          ],
-          "first_block": 57,
-          "last_block": 64,
-          "characters": 644,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Das Fördersystem für ­Geflüchtete",
-            "Gemeindebasierte Ausrichtung und Umsetzung"
-          ],
-          "first_block": 65,
-          "last_block": 67,
-          "characters": 643,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Das Fördersystem für ­Geflüchtete",
-            "Frühzeitiger Start der Förderung"
-          ],
-          "first_block": 68,
-          "last_block": 69,
-          "characters": 389,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Das Fördersystem für ­Geflüchtete",
-            "Frühzeitiger Start der Förderung",
-            "Muttersprachliche Erstinformation"
-          ],
-          "first_block": 70,
-          "last_block": 72,
-          "characters": 570,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Das Fördersystem für ­Geflüchtete",
-            "Frühzeitiger Start der Förderung",
-            "Integrationscoaching"
-          ],
-          "first_block": 73,
-          "last_block": 75,
-          "characters": 531,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Das Fördersystem für ­Geflüchtete",
-            "Übersicht der Fördermassnahmen"
-          ],
-          "first_block": 76,
-          "last_block": 81,
-          "characters": 625,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Das Fördersystem für ­Geflüchtete",
-            "Systematischer Informationsfluss bei der Fallübergabe"
-          ],
-          "first_block": 82,
-          "last_block": 85,
-          "characters": 463,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Das Fördersystem für ­Geflüchtete",
-            "Engere Begleitung dank ­integrationsorientierter Fallführung"
-          ],
-          "first_block": 86,
-          "last_block": 87,
-          "characters": 373,
-          "section_ids": [
-            "section-0016"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 9
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-fd258968991182717e4b",
@@ -17286,362 +14663,14 @@
       "unit": "section",
       "units": 25,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 25,
       "boilerplate": 0,
-      "unclassified": 25,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Ergänzende Angebote IAZH"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 269,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Tandemprogramm"
-          ],
-          "first_block": 55,
-          "last_block": 58,
-          "characters": 1016,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Tandemprogramm",
-            "Stephan und Rahemullah sind ein Tandem"
-          ],
-          "first_block": 59,
-          "last_block": 65,
-          "characters": 288,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Tandemprogramm",
-            "Zielgruppen"
-          ],
-          "first_block": 66,
-          "last_block": 67,
-          "characters": 449,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Tandemprogramm",
-            "Regionen"
-          ],
-          "first_block": 68,
-          "last_block": 75,
-          "characters": 725,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Tandemprogramm",
-            "Anmeldung"
-          ],
-          "first_block": 76,
-          "last_block": 80,
-          "characters": 717,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Tandemprogramm",
-            "Maria Gstöhl"
-          ],
-          "first_block": 81,
-          "last_block": 83,
-          "characters": 115,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Tandemprogramm",
-            "Evaluationsbericht des Tandemprogramms"
-          ],
-          "first_block": 84,
-          "last_block": 86,
-          "characters": 272,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Schlüsselpersonen-Angebote"
-          ],
-          "first_block": 87,
-          "last_block": 89,
-          "characters": 907,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Schlüsselpersonen-Angebote",
-            "Zielgruppen"
-          ],
-          "first_block": 90,
-          "last_block": 91,
-          "characters": 106,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0018",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Schlüsselpersonen-Angebote",
-            "Regionen"
-          ],
-          "first_block": 92,
-          "last_block": 94,
-          "characters": 728,
-          "section_ids": [
-            "section-0018"
-          ]
-        },
-        {
-          "section_id": "section-0022",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Schlüsselpersonen-Angebote",
-            "Anmeldung"
-          ],
-          "first_block": 101,
-          "last_block": 104,
-          "characters": 515,
-          "section_ids": [
-            "section-0022"
-          ]
-        },
-        {
-          "section_id": "section-0023",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Schlüsselpersonen-Angebote",
-            "Frank Will"
-          ],
-          "first_block": 105,
-          "last_block": 107,
-          "characters": 65,
-          "section_ids": [
-            "section-0023"
-          ]
-        },
-        {
-          "section_id": "section-0024",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Psychische Gesundheit von Geflüchteten stärken"
-          ],
-          "first_block": 108,
-          "last_block": 109,
-          "characters": 502,
-          "section_ids": [
-            "section-0024"
-          ]
-        },
-        {
-          "section_id": "section-0025",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Psychische Gesundheit von Geflüchteten stärken",
-            "Integrationsangebote für Personen mit psychischen Belastungen"
-          ],
-          "first_block": 110,
-          "last_block": 111,
-          "characters": 393,
-          "section_ids": [
-            "section-0025"
-          ]
-        },
-        {
-          "section_id": "section-0026",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Psychische Gesundheit von Geflüchteten stärken",
-            "Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag"
-          ],
-          "first_block": 112,
-          "last_block": 117,
-          "characters": 571,
-          "section_ids": [
-            "section-0026"
-          ]
-        },
-        {
-          "section_id": "section-0027",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Psychische Gesundheit von Geflüchteten stärken",
-            "Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag",
-            "Umsetzung"
-          ],
-          "first_block": 118,
-          "last_block": 119,
-          "characters": 315,
-          "section_ids": [
-            "section-0027"
-          ]
-        },
-        {
-          "section_id": "section-0028",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Psychische Gesundheit von Geflüchteten stärken",
-            "Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag",
-            "Sprachen"
-          ],
-          "first_block": 120,
-          "last_block": 121,
-          "characters": 167,
-          "section_ids": [
-            "section-0028"
-          ]
-        },
-        {
-          "section_id": "section-0029",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Psychische Gesundheit von Geflüchteten stärken",
-            "Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag",
-            "Durchführungsorte"
-          ],
-          "first_block": 122,
-          "last_block": 123,
-          "characters": 213,
-          "section_ids": [
-            "section-0029"
-          ]
-        },
-        {
-          "section_id": "section-0030",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Psychische Gesundheit von Geflüchteten stärken",
-            "Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag",
-            "Zielgruppe"
-          ],
-          "first_block": 124,
-          "last_block": 125,
-          "characters": 108,
-          "section_ids": [
-            "section-0030"
-          ]
-        },
-        {
-          "section_id": "section-0031",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Psychische Gesundheit von Geflüchteten stärken",
-            "Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag",
-            "Anmeldungen für das Angebot SPIRIT"
-          ],
-          "first_block": 126,
-          "last_block": 130,
-          "characters": 304,
-          "section_ids": [
-            "section-0031"
-          ]
-        },
-        {
-          "section_id": "section-0032",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Psychische Gesundheit von Geflüchteten stärken",
-            "Joy Kramer"
-          ],
-          "first_block": 131,
-          "last_block": 133,
-          "characters": 84,
-          "section_ids": [
-            "section-0032"
-          ]
-        },
-        {
-          "section_id": "section-0033",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Finanzielle Zuschüsse zur Arbeitsmarktintegration von Geflüchteten"
-          ],
-          "first_block": 134,
-          "last_block": 138,
-          "characters": 1115,
-          "section_ids": [
-            "section-0033"
-          ]
-        },
-        {
-          "section_id": "section-0034",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Finanzielle Zuschüsse zur Arbeitsmarktintegration von Geflüchteten",
-            "Weitere Informationen für Arbeitgebende"
-          ],
-          "first_block": 139,
-          "last_block": 142,
-          "characters": 325,
-          "section_ids": [
-            "section-0034"
-          ]
-        },
-        {
-          "section_id": "section-0035",
-          "heading_path": [
-            "Ergänzende Angebote IAZH",
-            "Finanzielle Zuschüsse zur Arbeitsmarktintegration von Geflüchteten",
-            "Isabel Izzo"
-          ],
-          "first_block": 143,
-          "last_block": 145,
-          "characters": 72,
-          "section_ids": [
-            "section-0035"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 25
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-a192c70d4004b7bd03d5",
@@ -17654,131 +14683,14 @@
       "unit": "section",
       "units": 9,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 9,
       "boilerplate": 0,
-      "unclassified": 9,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Finanzierung und Reporting"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 185,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Finanzierung und Reporting",
-            "Kostenbeteiligung"
-          ],
-          "first_block": 59,
-          "last_block": 60,
-          "characters": 666,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Finanzierung und Reporting",
-            "Kostenbeteiligung",
-            "Kostenbeteiligung 2026"
-          ],
-          "first_block": 61,
-          "last_block": 65,
-          "characters": 944,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Finanzierung und Reporting",
-            "Kostenbeteiligung",
-            "Kostenbeteiligung 2027"
-          ],
-          "first_block": 66,
-          "last_block": 69,
-          "characters": 553,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Finanzierung und Reporting",
-            "Zielgruppe IAZH"
-          ],
-          "first_block": 70,
-          "last_block": 74,
-          "characters": 1052,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Finanzierung und Reporting",
-            "Zielgruppe Schutzstatus S"
-          ],
-          "first_block": 75,
-          "last_block": 80,
-          "characters": 931,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Finanzierung und Reporting",
-            "Verträge mit den Gemeinden"
-          ],
-          "first_block": 81,
-          "last_block": 83,
-          "characters": 575,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Finanzierung und Reporting",
-            "Vergütung der Anbietenden"
-          ],
-          "first_block": 84,
-          "last_block": 86,
-          "characters": 550,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Finanzierung und Reporting",
-            "Reporting und Abrechnungsprozess"
-          ],
-          "first_block": 87,
-          "last_block": 93,
-          "characters": 1035,
-          "section_ids": [
-            "section-0016"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 9
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-c50a0804f718793b4cb2",
@@ -17791,103 +14703,14 @@
       "unit": "section",
       "units": 7,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 7,
       "boilerplate": 0,
-      "unclassified": 7,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Reporting IAZH: Anleitung und Erläuterungen"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 129,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Reporting IAZH: Anleitung und Erläuterungen",
-            "Einleitung"
-          ],
-          "first_block": 57,
-          "last_block": 68,
-          "characters": 2863,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Reporting IAZH: Anleitung und Erläuterungen",
-            "Daten erfassen"
-          ],
-          "first_block": 69,
-          "last_block": 75,
-          "characters": 1207,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Reporting IAZH: Anleitung und Erläuterungen",
-            "Vollständigkeits- und Richtigkeitserklärung"
-          ],
-          "first_block": 76,
-          "last_block": 78,
-          "characters": 452,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Reporting IAZH: Anleitung und Erläuterungen",
-            "Daten übermitteln"
-          ],
-          "first_block": 79,
-          "last_block": 81,
-          "characters": 223,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Reporting IAZH: Anleitung und Erläuterungen",
-            "Verarbeitung Reporting-Daten"
-          ],
-          "first_block": 82,
-          "last_block": 90,
-          "characters": 1363,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Reporting IAZH: Anleitung und Erläuterungen",
-            "Finanzbuchhaltung"
-          ],
-          "first_block": 91,
-          "last_block": 93,
-          "characters": 167,
-          "section_ids": [
-            "section-0014"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 7
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-a12fe8f3ca61a0765af1",
@@ -17900,64 +14723,14 @@
       "unit": "section",
       "units": 4,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 0,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Grundlagen der IAS"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 75,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Grundlagen der IAS",
-            "Integrationsagenda Schweiz"
-          ],
-          "first_block": 54,
-          "last_block": 59,
-          "characters": 1247,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Grundlagen der IAS",
-            "Die gemeinsame Umsetzung im Kanton Zürich"
-          ],
-          "first_block": 60,
-          "last_block": 68,
-          "characters": 1137,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Grundlagen der IAS",
-            "Schnittstellen Sozialhilfe und Integration"
-          ],
-          "first_block": 69,
-          "last_block": 74,
-          "characters": 1169,
-          "section_ids": [
-            "section-0011"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 4
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-a14eb88f2da881e9c8fe",
@@ -17970,25 +14743,14 @@
       "unit": "section",
       "units": 1,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 1,
       "boilerplate": 0,
-      "unclassified": 1,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Grundsätze des Fördersystems"
-          ],
-          "first_block": 48,
-          "last_block": 67,
-          "characters": 3283,
-          "section_ids": [
-            "section-0007"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 1
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-3c72847ef089a81809ef",
@@ -18001,272 +14763,14 @@
       "unit": "section",
       "units": 18,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 18,
       "boilerplate": 0,
-      "unclassified": 18,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 219,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Kantonaler Angebotskatalog IAZH"
-          ],
-          "first_block": 53,
-          "last_block": 55,
-          "characters": 631,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote"
-          ],
-          "first_block": 56,
-          "last_block": 63,
-          "characters": 260,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Abklärung"
-          ],
-          "first_block": 64,
-          "last_block": 66,
-          "characters": 500,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Abklärung",
-            "Kompetenzerfassung"
-          ],
-          "first_block": 67,
-          "last_block": 71,
-          "characters": 1262,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Abklärung",
-            "Praxisassessment"
-          ],
-          "first_block": 72,
-          "last_block": 80,
-          "characters": 1313,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Bildung"
-          ],
-          "first_block": 81,
-          "last_block": 83,
-          "characters": 347,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Bildung",
-            "Vollschulische Bildungsangebote"
-          ],
-          "first_block": 84,
-          "last_block": 95,
-          "characters": 1218,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Bildung",
-            "Bildungsmodule"
-          ],
-          "first_block": 96,
-          "last_block": 101,
-          "characters": 842,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Sprache"
-          ],
-          "first_block": 102,
-          "last_block": 104,
-          "characters": 627,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0018",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Sprache",
-            "Deutsch mit Ziel Arbeitsmarkt"
-          ],
-          "first_block": 105,
-          "last_block": 109,
-          "characters": 828,
-          "section_ids": [
-            "section-0018"
-          ]
-        },
-        {
-          "section_id": "section-0019",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Sprache",
-            "Deutsch lokal"
-          ],
-          "first_block": 110,
-          "last_block": 112,
-          "characters": 461,
-          "section_ids": [
-            "section-0019"
-          ]
-        },
-        {
-          "section_id": "section-0020",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Sprache",
-            "Alphabetisierungskurse"
-          ],
-          "first_block": 113,
-          "last_block": 120,
-          "characters": 579,
-          "section_ids": [
-            "section-0020"
-          ]
-        },
-        {
-          "section_id": "section-0021",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Arbeitsintegration"
-          ],
-          "first_block": 121,
-          "last_block": 124,
-          "characters": 957,
-          "section_ids": [
-            "section-0021"
-          ]
-        },
-        {
-          "section_id": "section-0022",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Arbeitsintegration",
-            "Interne Arbeitseinsätze"
-          ],
-          "first_block": 125,
-          "last_block": 133,
-          "characters": 1126,
-          "section_ids": [
-            "section-0022"
-          ]
-        },
-        {
-          "section_id": "section-0023",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Arbeitsintegration",
-            "Externe Arbeitseinsätze"
-          ],
-          "first_block": 134,
-          "last_block": 142,
-          "characters": 1312,
-          "section_ids": [
-            "section-0023"
-          ]
-        },
-        {
-          "section_id": "section-0024",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Arbeitsintegration",
-            "Branchenqualifizierung"
-          ],
-          "first_block": 143,
-          "last_block": 144,
-          "characters": 539,
-          "section_ids": [
-            "section-0024"
-          ]
-        },
-        {
-          "section_id": "section-0025",
-          "heading_path": [
-            "Kantonaler Angebotskatalog IAZH",
-            "Akkreditierte Angebote",
-            "Arbeitsintegration",
-            "Jobcoaching"
-          ],
-          "first_block": 145,
-          "last_block": 149,
-          "characters": 2303,
-          "section_ids": [
-            "section-0025"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 18
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-6b7ab84cf9fe70b4dbb5",
@@ -18278,122 +14782,17 @@
       "attribution_kind": "in-scope",
       "unit": "section",
       "units": 8,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 3,
+      "dispositioned": 5,
       "boilerplate": 0,
-      "unclassified": 8,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Integrationsangebote"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 201,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Integrationsangebote",
-            "Kantonale Angebotsdatenbank"
-          ],
-          "first_block": 55,
-          "last_block": 59,
-          "characters": 915,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Integrationsangebote",
-            "Kantonale Angebotsdatenbank"
-          ],
-          "first_block": 133,
-          "last_block": 133,
-          "characters": 151,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Integrationsangebote",
-            "Kantonale Angebotsdatenbank",
-            "Seite Navigation"
-          ],
-          "first_block": 134,
-          "last_block": 138,
-          "characters": 73,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Integrationsangebote",
-            "Kantonale Angebotsdatenbank",
-            "Seite Navigation",
-            "Tipps zur Suche"
-          ],
-          "first_block": 139,
-          "last_block": 142,
-          "characters": 371,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Integrationsangebote",
-            "Kantonale Angebotsdatenbank",
-            "Seite Navigation",
-            "Aktualisierung Angebote"
-          ],
-          "first_block": 143,
-          "last_block": 144,
-          "characters": 172,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Integrationsangebote",
-            "Deutschkursberatung im Kanton Zürich"
-          ],
-          "first_block": 145,
-          "last_block": 150,
-          "characters": 688,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Integrationsangebote",
-            "Angebote in den Städten Zürich und Winterthur"
-          ],
-          "first_block": 151,
-          "last_block": 156,
-          "characters": 283,
-          "section_ids": [
-            "section-0016"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1,
+        "navigation": 3,
+        "out_of_scope": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-6be9702fb1331355a86f",
@@ -18406,159 +14805,14 @@
       "unit": "section",
       "units": 12,
       "cited": 0,
-      "dispositioned": 0,
-      "boilerplate": 1,
-      "unclassified": 11,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Kantonale Integrationsprogramme"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 119,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Kantonale Integrationsprogramme",
-            "Kantonales Integrationsprogramm 2024–2027 (KIP 3)"
-          ],
-          "first_block": 59,
-          "last_block": 78,
-          "characters": 1426,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Kantonale Integrationsprogramme",
-            "Kantonales Integrationsprogramm 2024–2027 (KIP 3)",
-            "Kantonales Integrationsprogramm 2024–2027 (KIP 3)"
-          ],
-          "first_block": 79,
-          "last_block": 87,
-          "characters": 233,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Kantonale Integrationsprogramme",
-            "Kantonales Integrationsprogramm 2022–2023 (KIP 2bis)"
-          ],
-          "first_block": 88,
-          "last_block": 95,
-          "characters": 2521,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Kantonale Integrationsprogramme",
-            "Zweites Kantonales Integrationsprogramm (2018–2021)"
-          ],
-          "first_block": 96,
-          "last_block": 105,
-          "characters": 950,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Kantonale Integrationsprogramme",
-            "Zweites Kantonales Integrationsprogramm (2018–2021)",
-            "Schlussbericht"
-          ],
-          "first_block": 106,
-          "last_block": 111,
-          "characters": 703,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Kantonale Integrationsprogramme",
-            "Neuausrichtung der Integrationsförderung"
-          ],
-          "first_block": 112,
-          "last_block": 116,
-          "characters": 1646,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Kantonale Integrationsprogramme",
-            "Finanzierung"
-          ],
-          "first_block": 117,
-          "last_block": 121,
-          "characters": 857,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Kantonale Integrationsprogramme",
-            "Reporting"
-          ],
-          "first_block": 122,
-          "last_block": 125,
-          "characters": 390,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Kantonale Integrationsprogramme",
-            "Reporting",
-            "Reportingunterlagen für Gemeinden"
-          ],
-          "first_block": 126,
-          "last_block": 137,
-          "characters": 1003,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0019",
-          "heading_path": [
-            "Kantonale Integrationsprogramme",
-            "Reporting",
-            "Reportingunterlagen für Anbietende und ergänzende Angebote IAZH"
-          ],
-          "first_block": 142,
-          "last_block": 143,
-          "characters": 279,
-          "section_ids": [
-            "section-0019"
-          ]
-        }
-      ]
+      "dispositioned": 12,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 12
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-097ba90229a71bb8bdba",
@@ -18570,121 +14824,16 @@
       "attribution_kind": "in-scope",
       "unit": "section",
       "units": 9,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 4,
+      "dispositioned": 4,
       "boilerplate": 1,
-      "unclassified": 8,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Migrantische Vereine"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 210,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Migrantische Vereine",
-            "Plattform für Migrantenvereine"
-          ],
-          "first_block": 57,
-          "last_block": 63,
-          "characters": 991,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Migrantische Vereine",
-            "Migrazin"
-          ],
-          "first_block": 64,
-          "last_block": 66,
-          "characters": 223,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Migrantische Vereine",
-            "Migrazin",
-            "Deniz Yüksel"
-          ],
-          "first_block": 67,
-          "last_block": 71,
-          "characters": 281,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Migrantische Vereine",
-            "Vernetzungstreffen"
-          ],
-          "first_block": 77,
-          "last_block": 78,
-          "characters": 127,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Migrantische Vereine",
-            "Informationen für neu Zugezogene",
-            "Willkommen im Kanton Zürich"
-          ],
-          "first_block": 80,
-          "last_block": 82,
-          "characters": 200,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Migrantische Vereine",
-            "Deutschkurse und Integrationsangebote",
-            "Deutschkursberatung und Deutschkurse finden"
-          ],
-          "first_block": 84,
-          "last_block": 86,
-          "characters": 271,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0018",
-          "heading_path": [
-            "Migrantische Vereine",
-            "Deutschkurse und Integrationsangebote",
-            "Integrationsangebote"
-          ],
-          "first_block": 87,
-          "last_block": 89,
-          "characters": 267,
-          "section_ids": [
-            "section-0018"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 3,
+        "deferred": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-5028cb30ffd4a8de19e1",
@@ -18696,248 +14845,17 @@
       "attribution_kind": "in-scope",
       "unit": "section",
       "units": 17,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 10,
+      "dispositioned": 7,
       "boilerplate": 0,
-      "unclassified": 17,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung"
-          ],
-          "first_block": 48,
-          "last_block": 49,
-          "characters": 249,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Rassistische Diskriminierung"
-          ],
-          "first_block": 59,
-          "last_block": 85,
-          "characters": 2213,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Beratungs- und Fachstellen"
-          ],
-          "first_block": 86,
-          "last_block": 87,
-          "characters": 193,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Beratungs- und Fachstellen",
-            "Anlaufstelle gegen Rassismus in Zürich"
-          ],
-          "first_block": 88,
-          "last_block": 92,
-          "characters": 492,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Beratungs- und Fachstellen",
-            "Weitere Fachstellen in der Schweiz"
-          ],
-          "first_block": 93,
-          "last_block": 94,
-          "characters": 132,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Beratungs- und Fachstellen",
-            "Weitere Fachstellen in der Schweiz",
-            "Meldeplattform für rassistische Online-Hassrede"
-          ],
-          "first_block": 95,
-          "last_block": 97,
-          "characters": 145,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Beratungs- und Fachstellen",
-            "Weitere Fachstellen in der Schweiz",
-            "Beratungsnetz für Rassismusopfer"
-          ],
-          "first_block": 98,
-          "last_block": 100,
-          "characters": 165,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Beratungs- und Fachstellen",
-            "Weitere Fachstellen in der Schweiz",
-            "Fachstelle für Rassismusbekämpfung (FRB)"
-          ],
-          "first_block": 101,
-          "last_block": 105,
-          "characters": 370,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Beratungs- und Fachstellen",
-            "Weitere Fachstellen in der Schweiz",
-            "Eidgenössische Kommission gegen Rassismus (EKR)"
-          ],
-          "first_block": 106,
-          "last_block": 109,
-          "characters": 325,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Beratungs- und Fachstellen",
-            "Weitere Fachstellen in der Schweiz",
-            "Stiftung gegen Rassismus und Antisemitismus (GRA)"
-          ],
-          "first_block": 110,
-          "last_block": 112,
-          "characters": 170,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0018",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Weiterbildungsangebote für Behörden"
-          ],
-          "first_block": 113,
-          "last_block": 114,
-          "characters": 457,
-          "section_ids": [
-            "section-0018"
-          ]
-        },
-        {
-          "section_id": "section-0019",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Weiterbildungsangebote für Behörden",
-            "Deniz Yüksel"
-          ],
-          "first_block": 115,
-          "last_block": 117,
-          "characters": 89,
-          "section_ids": [
-            "section-0019"
-          ]
-        },
-        {
-          "section_id": "section-0020",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Weiterbildungsangebote für Behörden",
-            "Übersicht Weiterbildungsangebote"
-          ],
-          "first_block": 118,
-          "last_block": 125,
-          "characters": 1021,
-          "section_ids": [
-            "section-0020"
-          ]
-        },
-        {
-          "section_id": "section-0021",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Unterstützung von Projekten"
-          ],
-          "first_block": 126,
-          "last_block": 129,
-          "characters": 385,
-          "section_ids": [
-            "section-0021"
-          ]
-        },
-        {
-          "section_id": "section-0022",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Rechtliche Grundlagen"
-          ],
-          "first_block": 130,
-          "last_block": 142,
-          "characters": 1981,
-          "section_ids": [
-            "section-0022"
-          ]
-        },
-        {
-          "section_id": "section-0023",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Fachliche Grundlagen"
-          ],
-          "first_block": 143,
-          "last_block": 148,
-          "characters": 887,
-          "section_ids": [
-            "section-0023"
-          ]
-        },
-        {
-          "section_id": "section-0024",
-          "heading_path": [
-            "Schutz vor rassistischer Diskriminierung",
-            "Andere Arten von Diskriminierung"
-          ],
-          "first_block": 149,
-          "last_block": 153,
-          "characters": 360,
-          "section_ids": [
-            "section-0024"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 3,
+        "out_of_scope": 3,
+        "deferred": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-614da06bc3d0c76de81f",
@@ -24711,9 +20629,9 @@
       "documents": 44,
       "units": 117,
       "cited": 17,
-      "dispositioned": 9,
+      "dispositioned": 84,
       "boilerplate": 0,
-      "unclassified": 91,
+      "unclassified": 16,
       "status": "partly_covered"
     },
     {
@@ -24940,12 +20858,12 @@
       "source_id": "zh-integration",
       "title": "Zurich - integration",
       "documents": 28,
-      "units": 247,
-      "cited": 0,
-      "dispositioned": 13,
-      "boilerplate": 5,
-      "unclassified": 234,
-      "status": "partly_covered"
+      "units": 248,
+      "cited": 33,
+      "dispositioned": 215,
+      "boilerplate": 4,
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "zh-migrationsamt-office",

@@ -10,15 +10,15 @@ submission is `mvp-zurich`; `mvp-wallisellen` was a proof of concept that a
 second, municipal pack can be built with the same tooling, is frozen at its
 attested release and is not extended, tested or documented further.
 
-**Release:** `mvp-zurich-2026-09-22-v1` (pack `mvp-zurich`, KB1)<br>
-**Content digest:** `2823ab3fad3b042436d0fd1a38d913016031ac17562afe9dffcb774e80341be2`<br>
+**Release:** `mvp-zurich-2026-09-22-v6` (pack `mvp-zurich`, KB1)<br>
+**Content digest:** `9518b36a60a99ae5cdd1bf34be3ca5af79112382fd8a59419ce9cf7bf9eb8f41`<br>
 **Snapshot date:** 19 September 2026, the latest access date of a cited page
 (10 of the 196 were saved on 19 September, 25 on 18 September, 47 on 17
 September, 49 on 15 September, 59 on 11 September and 6 on 10 or 14
 September); maximum age 60 days, stale from 18 November 2026<br>
-**Contents:** 16 topics, 151 concepts, 687 facts, 900 evidence excerpts
-(786 German, 114 English), 196 cited documents<br>
-**Review:** all 687 facts are `human-reviewed` by one named reviewer, confirmed
+**Contents:** 17 topics, 156 concepts, 712 facts, 926 evidence excerpts
+(812 German, 114 English), 203 cited documents<br>
+**Review:** all 712 facts are `human-reviewed` by one named reviewer, confirmed
 in the console: the 104 of the residence and contacts topics on 14 September
 2026, the 149 of the five topics added on 15 September 2026 that day, the
 37 of the 13 `fza-*` concepts, drafted from the Agreement on the Free Movement
@@ -36,7 +36,9 @@ and languages") are not reviewed by a person. The 92 facts of
 22 September 2026 were confirmed in the console that day: the 9 of
 `permit-c-five-years` and `zh-permit-c-five-years`, the 77 of the twenty
 concepts curated from pages the catalogue already held, and the 6 whose
-review was reopened when a second citation of the law was added to them. Not
+review was reopened when a second citation of the law was added to them. The
+25 facts of the integration topic were confirmed in one bulk group on
+22 September 2026. Not
 a legal review (see [LIMITATIONS.md](LIMITATIONS.md))<br>
 **Places:** the release embeds a place register, so a caller names the
 user's place instead of a code: Switzerland, the 26 cantons and the 2,110
@@ -44,7 +46,7 @@ municipalities of the Federal Statistical Office's register of
 municipalities (snapshot of 18 September 2026), with 115 other-language
 names on 50 of them (see "Jurisdictions and languages")<br>
 **Readiness:** attested on 22 September 2026 by the reviewer, after the
-review of all 687 facts: `readiness.json` names this release and binds its
+review of all 712 facts: `readiness.json` names this release and binds its
 bytes, so the server with `--require-ready` and the pack image serve it. No
 graded
 live-caller session covers the `fza-*` concepts, the office contacts, the
@@ -53,7 +55,7 @@ rights, the tax-at-source tariffs or the expat-life topics<br>
 **Coverage of the run:** `curation-coverage.md` next to the release lists,
 per candidate record of the run, which content sections a fact cites, which a
 disposition in `curation-coverage.yaml` settles and which are open; on this
-release 525 of 2,076 units are cited, 267 dispositioned and 1,284 open;
+release 558 of 2,077 units are cited, 544 dispositioned and 975 open;
 repeated boilerplate (contact cards, closure notices) is set aside and traced
 to the page where a fact cites it, so the Migrationsamt address and hours are
 served once, from the office's own page (see [LIMITATIONS.md](LIMITATIONS.md),
@@ -499,6 +501,31 @@ challenge of the initial rent within 30 days, defects, and the Canton of
 Zurich's duty to notify the initial rent on the official form. Rent levels,
 flats on offer and the address of an individual conciliation authority are
 not served.
+
+### Integration offers and German courses (`integration`) - 5 concepts
+
+| Concept | Subject | Jurisdiction | Facts |
+| --- | --- | --- | ---: |
+| `zh-integration-offers` | Finding integration offers and German courses | CH-ZH | 3 |
+| `zh-newcomer-first-information` | First information and counselling for newcomers | CH-ZH | 5 |
+| `zh-racism-protection` | Protection from racist discrimination | CH-ZH | 6 |
+| `zh-migrant-associations` | Platform for migrant associations | CH-ZH | 3 |
+| `zh-integration-project-funding` | Contributions to integration projects | CH-ZH | 8 |
+
+Added on 22 September 2026 from seven pages of the Canton of Zurich's
+Fachstelle Integration that the run had held since the first crawl and that
+no fact cited: the offer database and the free German-course advice in 16
+languages, the municipalities' duty to inform newcomers and the three groups
+the canton names as needing support early, ZüRAS and the national bodies
+against racism with the legal bases (BV Art. 8(2), StGB Art. 261bis, AIG
+Art. 53), the platform for migrant associations, and the project
+contributions under KIP 3 with their amounts, deadlines and applicants. The
+canton's integration funding for municipalities and providers and its
+support system for refugees (Integrationsagenda IAZH) are out of scope by the
+reviewer's decision of 22 September 2026 and are named in the manifest's
+`out_of_scope`; the pages that carry them are dispositioned in
+`curation-coverage.yaml`. Which offers exist in a given municipality, their
+dates and prices, and whether a project is funded are not served.
 
 ## Context fields of the added topics
 

@@ -3,8 +3,8 @@
   "pack": "mvp-zurich",
   "root": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\swiss-tip-mvp",
   "run": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich",
-  "started_at": "2026-09-22T11:23:48.254928+00:00",
-  "finished_at": "2026-09-22T11:23:52.829469+00:00",
+  "started_at": "2026-09-22T12:53:57.227912+00:00",
+  "finished_at": "2026-09-22T12:54:09.299693+00:00",
   "options": {
     "download": false,
     "retry_failed": false,
@@ -13,8 +13,8 @@
     "thorough": false,
     "update_curation": false,
     "release_id": null,
-    "attested_by": null,
-    "stages": "coverage..coverage"
+    "attested_by": "Alexander Bobrovsky",
+    "stages": "accept..ready"
   },
   "stages": [
     {
@@ -112,35 +112,35 @@
     },
     {
       "stage": "build",
-      "started_at": "2026-09-22T08:06:57.236817+00:00",
+      "started_at": "2026-09-22T12:50:18.391297+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-22-v1",
-      "concepts": 151,
-      "facts": 687,
-      "evidence": 900,
-      "documents": 196,
+      "release_id": "mvp-zurich-2026-09-22-v6",
+      "concepts": 156,
+      "facts": 712,
+      "evidence": 926,
+      "documents": 203,
       "citation_outcomes": {
-        "same-snapshot": 900
+        "same-snapshot": 926
       },
       "dropped": 0,
       "curation_updated": false,
-      "inputs_sha256": "8cbe7660487e5b28e88cb52f46c911e1a01ad2edfb4937018de832c86ff427e6",
-      "seconds": 4.5
+      "inputs_sha256": "0cb09b49b85d9e6b6c53e5bdd84e837623e389b906b7b07ecf133250eb6036c1",
+      "seconds": 5.3
     },
     {
       "stage": "validate-release",
-      "started_at": "2026-09-22T08:07:01.761157+00:00",
+      "started_at": "2026-09-22T12:50:23.665483+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-22-v1",
+      "release_id": "mvp-zurich-2026-09-22-v6",
       "checked_against_text": true,
       "saved_responses_rehashed": false,
       "seconds": 1.4
     },
     {
       "stage": "coverage",
-      "started_at": "2026-09-22T11:23:48.254945+00:00",
+      "started_at": "2026-09-22T12:50:25.078396+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-22-v1",
+      "release_id": "mvp-zurich-2026-09-22-v6",
       "policy": "report",
       "clean": false,
       "candidates": 337,
@@ -149,11 +149,11 @@
         "document": 15,
         "rolled_up": 1
       },
-      "content_sections": 2076,
-      "cited_sections": 525,
-      "dispositioned_sections": 267,
-      "unclassified_sections": 1284,
-      "boilerplate_sections": 76,
+      "content_sections": 2077,
+      "cited_sections": 558,
+      "dispositioned_sections": 544,
+      "unclassified_sections": 975,
+      "boilerplate_sections": 75,
       "repeated_texts": 9,
       "repeated_by_citation": {
         "cited_nowhere": 4,
@@ -161,10 +161,11 @@
         "cited_once": 3
       },
       "documents": {
-        "unclassified": 91,
-        "partly_cited": 122,
+        "unclassified": 36,
+        "partly_cited": 120,
         "cited": 53,
-        "dispositioned": 71
+        "dispositioned": 119,
+        "cited_and_dispositioned": 9
       },
       "findings": {
         "stale": 0,
@@ -173,17 +174,17 @@
         "new_under_rule": 0,
         "unused_rule": 0
       },
-      "seconds": 4.6
+      "seconds": 2.8
     },
     {
       "stage": "health",
-      "started_at": "2026-09-22T08:07:03.143046+00:00",
+      "started_at": "2026-09-22T12:50:27.922637+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-22-v1",
-      "topics": 16,
-      "concepts": 151,
-      "facts": 687,
-      "evidence": 900,
+      "release_id": "mvp-zurich-2026-09-22-v6",
+      "topics": 17,
+      "concepts": 156,
+      "facts": 712,
+      "evidence": 926,
       "jurisdictions": 28,
       "languages": [
         "de",
@@ -191,15 +192,15 @@
       ],
       "stale_from": "2026-11-18",
       "review_statuses": {
-        "human-reviewed": 687
+        "human-reviewed": 712
       },
       "institution_levels": {
         "federal": 105,
-        "cantonal": 51,
+        "cantonal": 58,
         "municipal": 40
       },
       "basis_kinds": {
-        "guidance": 450,
+        "guidance": 475,
         "act": 49,
         "ordinance": 17,
         "summary": 50,
@@ -207,30 +208,30 @@
         "directory": 77,
         "directive": 7
       },
-      "seconds": 1.4
+      "seconds": 1.1
     },
     {
       "stage": "accept",
-      "started_at": "2026-09-22T08:14:35.396946+00:00",
+      "started_at": "2026-09-22T12:53:57.227929+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-22-v1",
-      "suite_sha256": "0ee9fde2a28ac6b96bc5fed54778c176542c2a78f00178d3710e92880e501714",
+      "release_id": "mvp-zurich-2026-09-22-v6",
+      "suite_sha256": "46c62d7c48b4953f502ed203e2d6ced98f6f8ff54cd77f84e1864fdd2d5f84d8",
       "as_of": "2026-09-19",
-      "cases": 82,
-      "blocking": 82,
+      "cases": 88,
+      "blocking": 88,
       "failed": [],
       "quarantined": [],
       "quarantined_failed": [],
-      "seconds": 1.3
+      "seconds": 1.4
     },
     {
       "stage": "ready",
-      "started_at": "2026-09-22T08:14:36.680493+00:00",
+      "started_at": "2026-09-22T12:53:58.638051+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-22-v1",
-      "release_sha256": "e8233c5b8e59824443af708d92f302d97be432c708c2149fe06163cad784ce69",
+      "release_id": "mvp-zurich-2026-09-22-v6",
+      "release_sha256": "66180ffe4efe09647af31d16f75d4815011f80e6c3c8b3b639acb231c01ce92c",
       "attested_by": "Alexander Bobrovsky",
-      "attested_at": "2026-09-22T08:14:36.680555+00:00",
+      "attested_at": "2026-09-22T12:53:58.638139+00:00",
       "gates": {
         "G1": "passed",
         "G2": "passed",
@@ -240,12 +241,12 @@
         "G6": "passed"
       },
       "cases": {
-        "total": 82,
-        "blocking": 82,
+        "total": 88,
+        "blocking": 88,
         "quarantined": []
       },
       "stale_from": "2026-11-18",
-      "seconds": 45.8
+      "seconds": 10.7
     }
   ],
   "exit_code": 0,

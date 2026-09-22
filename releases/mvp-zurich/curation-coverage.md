@@ -1,8 +1,8 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, not clean, 23 disposition(s), generated 2026-09-22T11:23:52.
+Release `mvp-zurich-2026-09-22-v6` (content `9518b36a60a9`), policy `report`, not clean, 41 disposition(s), generated 2026-09-22T12:50:27.
 
-337 candidate records ({'section': 321, 'document': 15, 'rolled_up': 1}) with 2076 units a curator answers for: 525 cited, 267 dispositioned, **1284 unclassified**; 76 boilerplate sections were not asked for. Documents: {'unclassified': 91, 'partly_cited': 122, 'cited': 53, 'dispositioned': 71}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
+337 candidate records ({'section': 321, 'document': 15, 'rolled_up': 1}) with 2077 units a curator answers for: 558 cited, 544 dispositioned, **975 unclassified**; 75 boilerplate sections were not asked for. Documents: {'unclassified': 36, 'partly_cited': 120, 'cited': 53, 'dispositioned': 119, 'cited_and_dispositioned': 9}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 
 ## Documents
 
@@ -19,35 +19,7 @@ Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, no
 | unclassified | [Wie werde ich Schweizerin oder Schweizer](https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden.html) `doc-a51c61294f44050bec82` | section | 7 | 0 | 0 | 0 | 7 | ch-sem-citizenship |
 | unclassified | [Verfahren](https://www.sem.admin.ch/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige/verfahrensablauf.html) `doc-d730abb70b2cd9d7b687` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-work-third-country |
 | unclassified | [Fachinformationen zur Einreise in die Schweiz oder den Schengen-Raum](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise.html) `doc-df95692fe72c9af232f2` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [Aussen- und Binnengrenzen der Schweiz](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/grenzen.html) `doc-d99fba8a15d4a1e0a452` | section | 1 | 0 | 0 | 0 | 1 | ch-sem-entry |
-| unclassified | [Integrierte Grenzverwaltung / Integrated Border Management (IBM)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm.html) `doc-237dc1ad3f54efc8ca51` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [Aktionsplan IBM](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan.html) `doc-051f5a29e5ab9e1503c8` | section | 4 | 0 | 0 | 0 | 4 | ch-sem-entry |
-| unclassified | [a) Grenzkontrolle](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-a.html) `doc-052d5b6752ace3f90e06` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [b) Such- und Rettungseinsätze auf See](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-b.html) `doc-c3cfc1f2725da06bad18` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [c) Risikoanalyse](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-c.html) `doc-5df25c52055bb7691111` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [d) Informationsaustausch und Zusammenarbeit zwischen den Mitgliedstaaten sowie mit der Europäischen Agentur für die Grenz- und Küstenwache (Frontex)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-d.html) `doc-3f11c3eb0a8a0f29f62a` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [e) Zusammenarbeit zwischen den nationalen Behörden](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-e.html) `doc-e101f3f21a55444e0289` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [f) Zusammenarbeit zwischen den Organen, Einrichtungen und sonstigen Stellen der Union](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-f.html) `doc-da639f64abedbf821c94` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [g) Zusammenarbeit mit Drittstaaten](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-g.html) `doc-8e99cc232a1d69cd3892` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [h) Kontrollen innerhalb des Schengen-Raums (inkl. Binnengrenzkontrollen)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-h.html) `doc-ddad0900e64e4bf8e1ba` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [i) Rückkehr](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-i.html) `doc-2a254be149555047da6d` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [j) Einsatz moderner Technologien](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-j.html) `doc-86f9c9c69f2819c495c2` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [k) Qualitätssicherungs­mechanismen](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-k.html) `doc-e2f540317e24e9ee1b0b` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [l) Solidaritätsmechanismen](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-l.html) `doc-ab41f4dfe1d7269c7d0e` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [m) Grundrechte](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-m.html) `doc-856a2faaea9433f79b38` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [n) Aus- und Weiterbildung](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-n.html) `doc-b393cb8cde53026f81a7` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [o) Forschung und Innovation](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-o.html) `doc-6a86babfe32aa8ee3a2f` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [Informationssysteme im Schengenbereich](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen.html) `doc-43785a6de114a6d68c27` | section | 1 | 0 | 0 | 0 | 1 | ch-sem-entry |
-| unclassified | [Datenschutz](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/datenschutz.html) `doc-e6efd5668e2b9beea894` | section | 1 | 0 | 0 | 0 | 1 | ch-sem-entry |
-| unclassified | [Interoperabilität (IOP)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/iop.html) `doc-e1044c27c2b427132169` | section | 4 | 0 | 0 | 0 | 4 | ch-sem-entry |
-| unclassified | [VII. Visa](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/rechtsgrundlagen-einreise.html) `doc-e8203871a08aa9a49a13` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
 | unclassified | [Informationen für Luftverkehrsunternehmen](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr.html) `doc-ff23c665b9178ecfa10d` | section | 1 | 0 | 0 | 0 | 1 | ch-sem-entry |
-| unclassified | [Advance Passenger Information (API)](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/api.html) `doc-37d30d2a65fea6396233` | section | 4 | 0 | 0 | 0 | 4 | ch-sem-entry |
-| unclassified | [Übersicht API-Meldepflicht für Luftverkehrsunternehmen](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/api/meldepflicht.html) `doc-44916bb7a0bec9a4e64c` | section | 5 | 0 | 0 | 0 | 5 | ch-sem-entry |
-| unclassified | [Carrier Sanctions (CASA)](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/casa.html) `doc-56a56dfa11c3d8ae0db0` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
-| unclassified | [Wesentliche Rechtsgrundlagen](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/casa/rechtsgrundlagen.html) `doc-90f54f561135075db636` | section | 1 | 0 | 0 | 0 | 1 | ch-sem-entry |
-| unclassified | [Verwaltungsverfahren in Bezug auf die Meldepflicht](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/casa/verfahren_meldepflicht.html) `doc-270fb187245aab308216` | section | 6 | 0 | 0 | 0 | 6 | ch-sem-entry |
-| unclassified | [Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/casa/verfahren_sorgfaltspflicht.html) `doc-4e315819e6e32c9890f1` | section | 6 | 0 | 0 | 0 | 6 | ch-sem-entry |
 | unclassified | [FAQ – Swiss citizenship](https://www.sem.admin.ch/sem/en/home/integration-einbuergerung/schweizer-werden/faq.html) `doc-d3e1f569b0613331c422` | section | 1 | 0 | 0 | 0 | 1 |  |
 | unclassified | [Further information](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/adressen.html) `doc-c25065d814741dbe255a` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-residence-en |
 | unclassified | [Residence permits for EU/EFTA nationals](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/eu_efta.html) `doc-fb280fef4fd3b68ee87d` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-residence-en |
@@ -67,33 +39,6 @@ Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, no
 | unclassified | [Verlassen der Schweiz](https://www.zas.admin.ch/de/verlassen-der-schweiz) `doc-2762a65962b06c05dc9e` | section | 6 | 0 | 0 | 0 | 6 |  |
 | unclassified | [Steueramt / Kanton Zürich](https://www.zh.ch/de/finanzdirektion/steueramt.html) `doc-b30d930e5eb4e146f3c0` | section | 10 | 0 | 0 | 0 | 10 | zh-steueramt-office |
 | unclassified | [Familiennachzug von Drittstaatsangehörigen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen.html) `doc-0f4f03404f99ee66351b` | section | 12 | 0 | 0 | 1 | 11 | zh-family |
-| unclassified | [Förderbereiche / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/foerderbereiche.html) `doc-b26607e2d663c7ebc8cc` | section | 15 | 0 | 0 | 1 | 14 | zh-integration |
-| unclassified | [Förderung von Integrationsprojekten / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html) `doc-5386be4702ee65f46a87` | section | 15 | 0 | 0 | 2 | 13 | zh-integration |
-| unclassified | [Kleinprojekte von maximal 5'000 Franken / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-kleinprojekte-von-gesamtkosten-von-maximal-5000-franken.html) `doc-0ab169e59cf112d166c6` | section | 6 | 0 | 0 | 0 | 6 | zh-integration |
-| unclassified | [Projekte über 5'000 Franken / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-projekte-mit-gesamtkosten-ueber-5000-franken.html) `doc-603af2c75387379addec` | section | 6 | 0 | 0 | 0 | 6 | zh-integration |
-| unclassified | [Integrationsagenda / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda.html) `doc-2642590582c26192108d` | section | 9 | 0 | 0 | 0 | 9 | zh-integration |
-| unclassified | [Akkreditierung von Fördermassnahmen / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/akkreditierung-von-foerdermassnahmen.html) `doc-ee0a9e00d0175b0b6155` | section | 5 | 0 | 0 | 0 | 5 | zh-integration |
-| unclassified | [Begleitung von Geflüchteten / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/begleitung-von-gefluechteten.html) `doc-689f2d54395d4f6516b7` | section | 5 | 0 | 0 | 0 | 5 | zh-integration |
-| unclassified | [Fördermassnahmen für Geflüchtete / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/foerdermassnahmen-fuer-gefluechtete.html) `doc-368c0fba131961f7dc56` | section | 9 | 0 | 0 | 0 | 9 | zh-integration |
-| unclassified | [Förderung der Freiwilligenarbeit für und mit Geflüchteten (qualifiziert engagiert) / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/foerderung-der-freiwilligenarbeit-fuer-und-mit-gefluechteten-qualifiziert-engagiert.html) `doc-104abf6c7048b37f09df` | section | 9 | 0 | 0 | 0 | 9 | zh-integration |
-| unclassified | [Gesuch einreichen für das Förderprogramm «qualifiziert engagiert» / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/foerderung-der-freiwilligenarbeit-fuer-und-mit-gefluechteten-qualifiziert-engagiert/gesuch-einreichen-fuer-das-foerderprogram-qualifiziert-engagiert.html) `doc-50906cecaa878c115429` | section | 7 | 0 | 0 | 0 | 7 | zh-integration |
-| unclassified | [Informationen für Fachpersonen / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/informationen-fuer-fachpersonen.html) `doc-666d656c548dad5f38f8` | section | 9 | 0 | 0 | 0 | 9 | zh-integration |
-| unclassified | [Sich für den Newsletter der Fachstelle Integration anmelden / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/informationen-fuer-fachpersonen/anmeldung-newsletter.html) `doc-eb71073ea8a70a47c7b0` | section | 1 | 0 | 0 | 0 | 1 | zh-integration |
-| unclassified | [Online-Schulung: Einführung in das Fördersystem für Geflüchtete IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/informationen-fuer-fachpersonen/online-schulung-einfuehrung-foerdersystem-fuer-gefluechtete-iazh.html) `doc-7f6365a43b0683ca845c` | section | 5 | 0 | 0 | 0 | 5 | zh-integration |
-| unclassified | [Praxisaustausch mit Fokus Sprache, Bildung und Arbeitsintegration / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/informationen-fuer-fachpersonen/praxisaustausch-sprache-bildung-arbeitsintegration.html) `doc-b11cd2f3e9fa9a4c902c` | section | 5 | 0 | 0 | 0 | 5 | zh-integration |
-| unclassified | [Online-Handbuch IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh.html) `doc-e21bef3c8342c5510aad` | section | 3 | 0 | 0 | 0 | 3 | zh-integration |
-| unclassified | [Integrationsorientierte Beratung und Begleitung / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/beratung-und-begleitung-von-gefluechteten.html) `doc-208634eba1d97aebfc30` | section | 11 | 0 | 0 | 0 | 11 | zh-integration |
-| unclassified | [Das Fördersystem für Geflüchtete / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/das-neue-integrationsfoerdersystem-fuer-gefluechtete--iazh.html) `doc-b9d94af8ebac301582da` | section | 9 | 0 | 0 | 0 | 9 | zh-integration |
-| unclassified | [Ergänzende Angebote IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/ergaenzende-angebote-iazh.html) `doc-fd258968991182717e4b` | section | 25 | 0 | 0 | 0 | 25 | zh-integration |
-| unclassified | [Finanzierung und Reporting / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/finanzierung-reporting.html) `doc-a192c70d4004b7bd03d5` | section | 9 | 0 | 0 | 0 | 9 | zh-integration |
-| unclassified | [Reporting IAZH: Anleitung und Erläuterungen / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/finanzierung-reporting/reporting-iazh--anleitung-und-erlaeuterungen.html) `doc-c50a0804f718793b4cb2` | section | 7 | 0 | 0 | 0 | 7 | zh-integration |
-| unclassified | [Grundlagen der IAS / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/grundlagen-der-ias.html) `doc-a12fe8f3ca61a0765af1` | section | 4 | 0 | 0 | 0 | 4 | zh-integration |
-| unclassified | [Grundsätze / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/grundsaetze-des-foerdersystems.html) `doc-a14eb88f2da881e9c8fe` | section | 1 | 0 | 0 | 0 | 1 | zh-integration |
-| unclassified | [Kantonaler Angebotskatalog IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/kantonaler-angebotskatalog-iazh.html) `doc-3c72847ef089a81809ef` | section | 18 | 0 | 0 | 0 | 18 | zh-integration |
-| unclassified | [Integrationsangebote / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsangebote.html) `doc-6b7ab84cf9fe70b4dbb5` | section | 8 | 0 | 0 | 0 | 8 | zh-integration |
-| unclassified | [Kantonale Integrationsprogramme / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/kantonale-integrationsprogramme.html) `doc-6be9702fb1331355a86f` | section | 12 | 0 | 0 | 1 | 11 | zh-integration |
-| unclassified | [Migrantische Vereine / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/migrantische-organisationen.html) `doc-097ba90229a71bb8bdba` | section | 9 | 0 | 0 | 1 | 8 | zh-integration |
-| unclassified | [Schutz vor rassistischer Diskriminierung / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html) `doc-5028cb30ffd4a8de19e1` | section | 17 | 0 | 0 | 0 | 17 | zh-integration |
 | unclassified | [Aufenthalt und Familiennachzug – Informationen für Neuzugezogene / Kanton Zürich](https://www.zh.ch/de/migration-integration/willkommen/deutsch/aufenthalt-und-familiennachzug.html) `doc-8f8dd62b09afe981714b` | section | 5 | 0 | 0 | 1 | 4 | zh-welcome-residence |
 | unclassified | [Strassenverkehrsamt / Kanton Zürich](https://www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt.html) `doc-40854d7d26db9f3bba00` | section | 12 | 0 | 0 | 1 | 11 | zh-strassenverkehrsamt-office |
 | unclassified | [Quellensteuer / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer.html) `doc-aaca2a8359cc911aa50f` | rolled_up | 6 | 0 | 0 | 0 | 6 | zh-tax-at-source |
@@ -156,8 +101,6 @@ Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, no
 | partly_cited | [Ausweis Ci (Aufenthaltsbewilligung mit Erwerbstätigkeit)](https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta/ausweis_ci__aufenthalt_erwerb.html) `doc-7fb93c70047754936bc4` | section | 2 | 1 | 0 | 0 | 1 | ch-sem-residence-de, ch-sem-third-country |
 | partly_cited | [Ausweis G (Grenzgängerbewilligung)](https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta/ausweis_g__grenzgaengerbewilligung.html) `doc-15b24dfd1b4e56b1520e` | section | 2 | 1 | 0 | 0 | 1 | ch-sem-residence-de, ch-sem-third-country |
 | partly_cited | [Reisedokumente für ausländische Personen](https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/reisedokumente.html) `doc-922e276a8a0082617d5d` | section | 9 | 5 | 0 | 0 | 4 | ch-sem-residence-de |
-| partly_cited | [Entry/Exit System (EES)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/ees.html) `doc-6beed430d9345d0f3ef2` | section | 5 | 1 | 0 | 0 | 4 | ch-sem-entry |
-| partly_cited | [Schengen-Raum](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/schengen.html) `doc-276831391d6e09f9fcd3` | section | 3 | 1 | 0 | 0 | 2 | ch-sem-entry |
 | partly_cited | [FAQ – Einreise](https://www.sem.admin.ch/sem/de/home/themen/einreise/faq.html) `doc-95bd5f94a6483fb62d81` | section | 74 | 12 | 0 | 0 | 62 | ch-sem-entry-faq |
 | partly_cited | [Brauche ich ein ETIAS?](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/etias.html) `doc-c1b1be0f5c7479ddb67a` | section | 12 | 6 | 0 | 0 | 6 | ch-sem-entry |
 | partly_cited | [Regeln zur Berechnung der Aufenthaltsdauer](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum/aufenthaltsrechner.html) `doc-be90aa2fdbcbaef2a63b` | section | 5 | 2 | 0 | 0 | 3 | ch-sem-entry |
@@ -221,6 +164,15 @@ Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, no
 | partly_cited | [Merkblatt des kantonalen Steueramtes über die Quellenbesteuerung von Arbeitnehmerinnen und Arbeitnehmern / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-87-3.html) `doc-afaa2c9780fc736c5705` | section | 17 | 3 | 0 | 0 | 14 | zh-tax-at-source-directive |
 | partly_cited | [Hunde / Kanton Zürich](https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html) `doc-cfa52df67bc1a2de79f0` | section | 33 | 9 | 0 | 1 | 23 | zh-dogs |
 | partly_cited | [Arbeitslosenentschädigung / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung.html) `doc-ea8ce303e3ee8fb3a83a` | section | 37 | 3 | 0 | 2 | 32 | zh-unemployment |
+| cited_and_dispositioned | [Entry/Exit System (EES)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/ees.html) `doc-6beed430d9345d0f3ef2` | section | 5 | 1 | 4 | 0 | 0 | ch-sem-entry |
+| cited_and_dispositioned | [Schengen-Raum](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/schengen.html) `doc-276831391d6e09f9fcd3` | section | 3 | 1 | 2 | 0 | 0 | ch-sem-entry |
+| cited_and_dispositioned | [Förderbereiche / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/foerderbereiche.html) `doc-b26607e2d663c7ebc8cc` | section | 15 | 5 | 9 | 1 | 0 | zh-integration |
+| cited_and_dispositioned | [Förderung von Integrationsprojekten / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html) `doc-5386be4702ee65f46a87` | section | 15 | 9 | 4 | 2 | 0 | zh-integration |
+| cited_and_dispositioned | [Kleinprojekte von maximal 5'000 Franken / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-kleinprojekte-von-gesamtkosten-von-maximal-5000-franken.html) `doc-0ab169e59cf112d166c6` | section | 6 | 1 | 5 | 0 | 0 | zh-integration |
+| cited_and_dispositioned | [Projekte über 5'000 Franken / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-projekte-mit-gesamtkosten-ueber-5000-franken.html) `doc-603af2c75387379addec` | section | 6 | 1 | 5 | 0 | 0 | zh-integration |
+| cited_and_dispositioned | [Integrationsangebote / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsangebote.html) `doc-6b7ab84cf9fe70b4dbb5` | section | 8 | 3 | 5 | 0 | 0 | zh-integration |
+| cited_and_dispositioned | [Migrantische Vereine / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/migrantische-organisationen.html) `doc-097ba90229a71bb8bdba` | section | 9 | 4 | 4 | 1 | 0 | zh-integration |
+| cited_and_dispositioned | [Schutz vor rassistischer Diskriminierung / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html) `doc-5028cb30ffd4a8de19e1` | section | 17 | 10 | 7 | 0 | 0 | zh-integration |
 | dispositioned | [Broschüre «Wohnen in der Schweiz»](https://www.bwo.admin.ch/de/broschuere-wohnen-in-der-schweiz) `doc-dbee3b501bbce48562d2` | section | 6 | 0 | 6 | 0 | 0 | ch-bwo-housing |
 | dispositioned | [I. Ausländerbereich](https://www.sem.admin.ch/sem/de/home/publiservice/weisungen-kreisschreiben/auslaenderbereich.html) `doc-99c4a66431eadf2be274` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-directives |
 | dispositioned | [7 Angehörige von diplomatischen Vertretungen und intergouvernementalen Organisationen, Stagiaires und Delegierte bei internationalen Organisationen](https://www.sem.admin.ch/sem/de/home/publiservice/weisungen-kreisschreiben/auslaenderbereich/angehoerige_von_diplomatischen.html) `doc-7399de1faad8ce9f6f16` | section | 1 | 0 | 1 | 0 | 0 | ch-sem-directives |
@@ -247,7 +199,35 @@ Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, no
 | dispositioned | [Weiterführende Adressen](https://www.sem.admin.ch/sem/de/home/themen/einreise/adressen.html) `doc-84ef4c65f11f35dbe1fb` | section | 1 | 0 | 1 | 0 | 0 | ch-sem-entry |
 | dispositioned | [Adressen der kantonalen Fremdenpolizeibehörden](https://www.sem.admin.ch/sem/de/home/themen/einreise/adressen/kantonale_fremdenpolizeibehoerden.html) `doc-ec91d9bae72da425d45e` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
 | dispositioned | [Schweizer Vertretungen im Ausland](https://www.sem.admin.ch/sem/de/home/themen/einreise/adressen/schweizer_vertretungen.html) `doc-3ac1dc4ed79c8fc24b3b` | section | 1 | 0 | 1 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Aussen- und Binnengrenzen der Schweiz](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/grenzen.html) `doc-d99fba8a15d4a1e0a452` | section | 1 | 0 | 1 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Integrierte Grenzverwaltung / Integrated Border Management (IBM)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm.html) `doc-237dc1ad3f54efc8ca51` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Aktionsplan IBM](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan.html) `doc-051f5a29e5ab9e1503c8` | section | 4 | 0 | 4 | 0 | 0 | ch-sem-entry |
+| dispositioned | [a) Grenzkontrolle](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-a.html) `doc-052d5b6752ace3f90e06` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [b) Such- und Rettungseinsätze auf See](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-b.html) `doc-c3cfc1f2725da06bad18` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [c) Risikoanalyse](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-c.html) `doc-5df25c52055bb7691111` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [d) Informationsaustausch und Zusammenarbeit zwischen den Mitgliedstaaten sowie mit der Europäischen Agentur für die Grenz- und Küstenwache (Frontex)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-d.html) `doc-3f11c3eb0a8a0f29f62a` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [e) Zusammenarbeit zwischen den nationalen Behörden](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-e.html) `doc-e101f3f21a55444e0289` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [f) Zusammenarbeit zwischen den Organen, Einrichtungen und sonstigen Stellen der Union](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-f.html) `doc-da639f64abedbf821c94` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [g) Zusammenarbeit mit Drittstaaten](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-g.html) `doc-8e99cc232a1d69cd3892` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [h) Kontrollen innerhalb des Schengen-Raums (inkl. Binnengrenzkontrollen)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-h.html) `doc-ddad0900e64e4bf8e1ba` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [i) Rückkehr](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-i.html) `doc-2a254be149555047da6d` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [j) Einsatz moderner Technologien](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-j.html) `doc-86f9c9c69f2819c495c2` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [k) Qualitätssicherungs­mechanismen](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-k.html) `doc-e2f540317e24e9ee1b0b` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [l) Solidaritätsmechanismen](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-l.html) `doc-ab41f4dfe1d7269c7d0e` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [m) Grundrechte](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-m.html) `doc-856a2faaea9433f79b38` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [n) Aus- und Weiterbildung](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-n.html) `doc-b393cb8cde53026f81a7` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [o) Forschung und Innovation](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-o.html) `doc-6a86babfe32aa8ee3a2f` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Informationssysteme im Schengenbereich](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen.html) `doc-43785a6de114a6d68c27` | section | 1 | 0 | 1 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Datenschutz](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/datenschutz.html) `doc-e6efd5668e2b9beea894` | section | 1 | 0 | 1 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Interoperabilität (IOP)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/iop.html) `doc-e1044c27c2b427132169` | section | 4 | 0 | 4 | 0 | 0 | ch-sem-entry |
+| dispositioned | [VII. Visa](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/rechtsgrundlagen-einreise.html) `doc-e8203871a08aa9a49a13` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
 | dispositioned | [Informationen zur Einreise in die Schweiz](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise.html) `doc-e7c08d4b66a97a31a498` | section | 1 | 0 | 1 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Advance Passenger Information (API)](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/api.html) `doc-37d30d2a65fea6396233` | section | 4 | 0 | 4 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Übersicht API-Meldepflicht für Luftverkehrsunternehmen](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/api/meldepflicht.html) `doc-44916bb7a0bec9a4e64c` | section | 5 | 0 | 5 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Carrier Sanctions (CASA)](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/casa.html) `doc-56a56dfa11c3d8ae0db0` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Wesentliche Rechtsgrundlagen](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/casa/rechtsgrundlagen.html) `doc-90f54f561135075db636` | section | 1 | 0 | 1 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Verwaltungsverfahren in Bezug auf die Meldepflicht](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/casa/verfahren_meldepflicht.html) `doc-270fb187245aab308216` | section | 6 | 0 | 6 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/casa/verfahren_sorgfaltspflicht.html) `doc-4e315819e6e32c9890f1` | section | 6 | 0 | 6 | 0 | 0 | ch-sem-entry |
 | dispositioned | [Séjour](https://www.sem.admin.ch/sem/fr/home/themen/aufenthalt.html) `doc-048744690d286488453e` | section | 3 | 0 | 3 | 0 | 0 | ch-sem-residence-fr |
 | dispositioned | [Autres adresses](https://www.sem.admin.ch/sem/fr/home/themen/aufenthalt/adressen.html) `doc-74e034de04cd8b479538` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-residence-fr |
 | dispositioned | [Carte de séjour biométrique](https://www.sem.admin.ch/sem/fr/home/themen/aufenthalt/biometr_auslaenderausweis.html) `doc-4ea17df2a9c194d67783` | section | 6 | 0 | 6 | 0 | 0 | ch-sem-residence-fr |
@@ -292,6 +272,26 @@ Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, no
 | dispositioned | [Aufenthalt / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt.html) `doc-a0e7246112d61ad60df1` | section | 3 | 0 | 3 | 0 | 0 | zh-overview |
 | dispositioned | [Einbürgerung / Kanton Zürich](https://www.zh.ch/de/migration-integration/einbuergerung.html) `doc-b9be0a62ff2397dbcfee` | section | 6 | 0 | 6 | 0 | 0 | zh-naturalisation |
 | dispositioned | [Integration / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration.html) `doc-79a45851710a6e6d7971` | section | 13 | 0 | 13 | 0 | 0 | zh-integration |
+| dispositioned | [Integrationsagenda / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda.html) `doc-2642590582c26192108d` | section | 9 | 0 | 9 | 0 | 0 | zh-integration |
+| dispositioned | [Akkreditierung von Fördermassnahmen / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/akkreditierung-von-foerdermassnahmen.html) `doc-ee0a9e00d0175b0b6155` | section | 5 | 0 | 5 | 0 | 0 | zh-integration |
+| dispositioned | [Begleitung von Geflüchteten / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/begleitung-von-gefluechteten.html) `doc-689f2d54395d4f6516b7` | section | 5 | 0 | 5 | 0 | 0 | zh-integration |
+| dispositioned | [Fördermassnahmen für Geflüchtete / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/foerdermassnahmen-fuer-gefluechtete.html) `doc-368c0fba131961f7dc56` | section | 9 | 0 | 9 | 0 | 0 | zh-integration |
+| dispositioned | [Förderung der Freiwilligenarbeit für und mit Geflüchteten (qualifiziert engagiert) / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/foerderung-der-freiwilligenarbeit-fuer-und-mit-gefluechteten-qualifiziert-engagiert.html) `doc-104abf6c7048b37f09df` | section | 9 | 0 | 9 | 0 | 0 | zh-integration |
+| dispositioned | [Gesuch einreichen für das Förderprogramm «qualifiziert engagiert» / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/foerderung-der-freiwilligenarbeit-fuer-und-mit-gefluechteten-qualifiziert-engagiert/gesuch-einreichen-fuer-das-foerderprogram-qualifiziert-engagiert.html) `doc-50906cecaa878c115429` | section | 7 | 0 | 7 | 0 | 0 | zh-integration |
+| dispositioned | [Informationen für Fachpersonen / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/informationen-fuer-fachpersonen.html) `doc-666d656c548dad5f38f8` | section | 9 | 0 | 9 | 0 | 0 | zh-integration |
+| dispositioned | [Sich für den Newsletter der Fachstelle Integration anmelden / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/informationen-fuer-fachpersonen/anmeldung-newsletter.html) `doc-eb71073ea8a70a47c7b0` | section | 1 | 0 | 1 | 0 | 0 | zh-integration |
+| dispositioned | [Online-Schulung: Einführung in das Fördersystem für Geflüchtete IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/informationen-fuer-fachpersonen/online-schulung-einfuehrung-foerdersystem-fuer-gefluechtete-iazh.html) `doc-7f6365a43b0683ca845c` | section | 5 | 0 | 5 | 0 | 0 | zh-integration |
+| dispositioned | [Praxisaustausch mit Fokus Sprache, Bildung und Arbeitsintegration / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/informationen-fuer-fachpersonen/praxisaustausch-sprache-bildung-arbeitsintegration.html) `doc-b11cd2f3e9fa9a4c902c` | section | 5 | 0 | 5 | 0 | 0 | zh-integration |
+| dispositioned | [Online-Handbuch IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh.html) `doc-e21bef3c8342c5510aad` | section | 3 | 0 | 3 | 0 | 0 | zh-integration |
+| dispositioned | [Integrationsorientierte Beratung und Begleitung / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/beratung-und-begleitung-von-gefluechteten.html) `doc-208634eba1d97aebfc30` | section | 11 | 0 | 11 | 0 | 0 | zh-integration |
+| dispositioned | [Das Fördersystem für Geflüchtete / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/das-neue-integrationsfoerdersystem-fuer-gefluechtete--iazh.html) `doc-b9d94af8ebac301582da` | section | 9 | 0 | 9 | 0 | 0 | zh-integration |
+| dispositioned | [Ergänzende Angebote IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/ergaenzende-angebote-iazh.html) `doc-fd258968991182717e4b` | section | 25 | 0 | 25 | 0 | 0 | zh-integration |
+| dispositioned | [Finanzierung und Reporting / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/finanzierung-reporting.html) `doc-a192c70d4004b7bd03d5` | section | 9 | 0 | 9 | 0 | 0 | zh-integration |
+| dispositioned | [Reporting IAZH: Anleitung und Erläuterungen / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/finanzierung-reporting/reporting-iazh--anleitung-und-erlaeuterungen.html) `doc-c50a0804f718793b4cb2` | section | 7 | 0 | 7 | 0 | 0 | zh-integration |
+| dispositioned | [Grundlagen der IAS / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/grundlagen-der-ias.html) `doc-a12fe8f3ca61a0765af1` | section | 4 | 0 | 4 | 0 | 0 | zh-integration |
+| dispositioned | [Grundsätze / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/grundsaetze-des-foerdersystems.html) `doc-a14eb88f2da881e9c8fe` | section | 1 | 0 | 1 | 0 | 0 | zh-integration |
+| dispositioned | [Kantonaler Angebotskatalog IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/kantonaler-angebotskatalog-iazh.html) `doc-3c72847ef089a81809ef` | section | 18 | 0 | 18 | 0 | 0 | zh-integration |
+| dispositioned | [Kantonale Integrationsprogramme / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/kantonale-integrationsprogramme.html) `doc-6be9702fb1331355a86f` | section | 12 | 0 | 12 | 0 | 0 | zh-integration |
 | cited | [Spezielle Öffnungszeiten](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/oeffnungszeiten-ueber-die-feiertage.html) `doc-71f912c1a94b986fba26` | section | 3 | 2 | 0 | 1 | 0 |  |
 | cited | [Fedlex: Ordinance on the Admission of Persons and Vehicles to Road Traffic, SR 741.51](https://www.fedlex.admin.ch/eli/cc/1976/2423_2423_2423/de) `doc-dfca7405da5498665eac` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-vzv |
 | cited | [Fedlex: Federal Direct Tax Act, SR 642.11](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) `doc-5f038736fe92a346d1a5` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-dbg |
@@ -678,57 +678,6 @@ Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, no
 | `doc-922e276a8a0082617d5d` | section-0021 | Reisedokumente für ausländische Personen > Links | 118-124 | 217 |
 | `doc-df95692fe72c9af232f2` | section-0011 | Fachinformationen zur Einreise in die Schweiz oder den Schengen-Raum | 77-88 | 1170 |
 | `doc-df95692fe72c9af232f2` | section-0012 | Fachinformationen zur Einreise in die Schweiz oder den Schengen-Raum > Hinweis zum Zoll und zur Warenkontrolle | 89-94 | 619 |
-| `doc-d99fba8a15d4a1e0a452` | section-0011 | Aussen- und Binnengrenzen der Schweiz | 78-84 | 569 |
-| `doc-237dc1ad3f54efc8ca51` | section-0011 | Integrierte Grenzverwaltung / Integrated Border Management (IBM) | 74-84 | 3326 |
-| `doc-237dc1ad3f54efc8ca51` | section-0012 | Integrierte Grenzverwaltung / Integrated Border Management (IBM) > 4-Filter Modell | 85-92 | 334 |
-| `doc-051f5a29e5ab9e1503c8` | section-0011 | Aktionsplan IBM | 89-92 | 1412 |
-| `doc-051f5a29e5ab9e1503c8` | section-0012 | Aktionsplan IBM > Schlüsselmassnahmen | 93-98 | 1715 |
-| `doc-051f5a29e5ab9e1503c8` | section-0013 | Aktionsplan IBM > Standardmassnahmen | 99-107 | 1947 |
-| `doc-051f5a29e5ab9e1503c8` | section-0014 | Aktionsplan IBM > Monitoring und Rhythmus der Weiterentwicklung des Aktionsplans | 108-115 | 588 |
-| `doc-052d5b6752ace3f90e06` | section-0011 | a) Grenzkontrolle | 90-92 | 727 |
-| `doc-052d5b6752ace3f90e06` | section-0012 | a) Grenzkontrolle > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-111 | 7234 |
-| `doc-c3cfc1f2725da06bad18` | section-0011 | b) Such- und Rettungseinsätze auf See | 90-92 | 368 |
-| `doc-c3cfc1f2725da06bad18` | section-0012 | b) Such- und Rettungseinsätze auf See > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-98 | 332 |
-| `doc-5df25c52055bb7691111` | section-0011 | c) Risikoanalyse | 90-92 | 253 |
-| `doc-5df25c52055bb7691111` | section-0012 | c) Risikoanalyse > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-105 | 3951 |
-| `doc-3f11c3eb0a8a0f29f62a` | section-0011 | d) Informationsaustausch und Zusammenarbeit zwischen den Mitgliedstaaten sowie mit der Europäischen Agentur für die Grenz- und Küstenwache (Frontex) | 90-92 | 462 |
-| `doc-3f11c3eb0a8a0f29f62a` | section-0012 | d) Informationsaustausch und Zusammenarbeit zwischen den Mitgliedstaaten sowie mit der Europäischen Agentur für die Grenz- und Küstenwache (Frontex) > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-105 | 2006 |
-| `doc-e101f3f21a55444e0289` | section-0011 | e) Zusammenarbeit zwischen den nationalen Behörden | 90-92 | 563 |
-| `doc-e101f3f21a55444e0289` | section-0012 | e) Zusammenarbeit zwischen den nationalen Behörden > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-105 | 4445 |
-| `doc-da639f64abedbf821c94` | section-0011 | f) Zusammenarbeit zwischen den Organen, Einrichtungen und sonstigen Stellen der Union | 90-92 | 301 |
-| `doc-da639f64abedbf821c94` | section-0012 | f) Zusammenarbeit zwischen den Organen, Einrichtungen und sonstigen Stellen der Union > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-98 | 549 |
-| `doc-8e99cc232a1d69cd3892` | section-0011 | g) Zusammenarbeit mit Drittstaaten | 90-92 | 368 |
-| `doc-8e99cc232a1d69cd3892` | section-0012 | g) Zusammenarbeit mit Drittstaaten > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-107 | 3513 |
-| `doc-ddad0900e64e4bf8e1ba` | section-0011 | h) Kontrollen innerhalb des Schengen-Raums (inkl. Binnengrenzkontrollen) | 90-92 | 305 |
-| `doc-ddad0900e64e4bf8e1ba` | section-0012 | h) Kontrollen innerhalb des Schengen-Raums (inkl. Binnengrenzkontrollen) > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-107 | 3400 |
-| `doc-2a254be149555047da6d` | section-0011 | i) Rückkehr | 90-92 | 200 |
-| `doc-2a254be149555047da6d` | section-0012 | i) Rückkehr > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-107 | 3568 |
-| `doc-86f9c9c69f2819c495c2` | section-0011 | j) Einsatz moderner Technologien | 90-92 | 172 |
-| `doc-86f9c9c69f2819c495c2` | section-0012 | j) Einsatz moderner Technologien > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-105 | 10537 |
-| `doc-e2f540317e24e9ee1b0b` | section-0011 | k) Qualitätssicherungs­mechanismen | 90-92 | 324 |
-| `doc-e2f540317e24e9ee1b0b` | section-0012 | k) Qualitätssicherungs­mechanismen > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-105 | 2733 |
-| `doc-ab41f4dfe1d7269c7d0e` | section-0011 | l) Solidaritätsmechanismen | 90-92 | 168 |
-| `doc-ab41f4dfe1d7269c7d0e` | section-0012 | l) Solidaritätsmechanismen > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-103 | 2179 |
-| `doc-856a2faaea9433f79b38` | section-0011 | m) Grundrechte | 90-92 | 265 |
-| `doc-856a2faaea9433f79b38` | section-0012 | m) Grundrechte > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-103 | 3046 |
-| `doc-b393cb8cde53026f81a7` | section-0011 | n) Aus- und Weiterbildung | 90-92 | 265 |
-| `doc-b393cb8cde53026f81a7` | section-0012 | n) Aus- und Weiterbildung > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-105 | 4401 |
-| `doc-6a86babfe32aa8ee3a2f` | section-0011 | o) Forschung und Innovation | 90-92 | 265 |
-| `doc-6a86babfe32aa8ee3a2f` | section-0012 | o) Forschung und Innovation > Strategische Ziele der IBM-Strategie III und Massnahmen | 93-104 | 2081 |
-| `doc-43785a6de114a6d68c27` | section-0011 | Informationssysteme im Schengenbereich | 77-84 | 868 |
-| `doc-e6efd5668e2b9beea894` | section-0011 | Datenschutz | 78-83 | 631 |
-| `doc-6beed430d9345d0f3ef2` | section-0012 | Entry/Exit System (EES) > Stand der Arbeiten auf EU-Ebene | 84-85 | 496 |
-| `doc-6beed430d9345d0f3ef2` | section-0013 | Entry/Exit System (EES) > Stand der Arbeiten in der Schweiz | 86-91 | 1242 |
-| `doc-6beed430d9345d0f3ef2` | section-0015 | Entry/Exit System (EES) > Dokumentation | 95-108 | 554 |
-| `doc-6beed430d9345d0f3ef2` | section-0016 | Entry/Exit System (EES) > Links | 109-115 | 190 |
-| `doc-e1044c27c2b427132169` | section-0012 | Interoperabilität (IOP) > Überblick | 75-82 | 1471 |
-| `doc-e1044c27c2b427132169` | section-0013 | Interoperabilität (IOP) > Interoperabilität (IOP) / Interopérabilité / Interoperabilità / Interoperability | 83-85 | 234 |
-| `doc-e1044c27c2b427132169` | section-0014 | Interoperabilität (IOP) > Umsetzung in der Schweiz | 86-87 | 472 |
-| `doc-e1044c27c2b427132169` | section-0015 | Interoperabilität (IOP) > Weiterführende Informationen | 88-96 | 264 |
-| `doc-e8203871a08aa9a49a13` | section-0012 | VII. Visa > Visumvorschriften | 76-80 | 110 |
-| `doc-e8203871a08aa9a49a13` | section-0013 | VII. Visa > Visumvorschriften > Fragen zur Einreise | 81-86 | 169 |
-| `doc-276831391d6e09f9fcd3` | section-0012 | Schengen-Raum > Karte | 83-85 | 20 |
-| `doc-276831391d6e09f9fcd3` | section-0013 | Schengen-Raum > Karte: Schengen-Raum | 86-91 | 134 |
 | `doc-95bd5f94a6483fb62d81` | section-0011 | FAQ – Einreise | 77-95 | 1915 |
 | `doc-95bd5f94a6483fb62d81` | section-0012 | FAQ – Einreise > 1. Reisedokumente | 96-97 | 91 |
 | `doc-95bd5f94a6483fb62d81` | section-0013 | FAQ – Einreise > 1. Reisedokumente > Welche Reisedokumente benötigen Schweizer Staatsangehörige zur Einreise in die Schweiz? | 98-104 | 523 |
@@ -801,30 +750,6 @@ Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, no
 | `doc-be90aa2fdbcbaef2a63b` | section-0016 | Regeln zur Berechnung der Aufenthaltsdauer > Beispiel 2 – Einreise zu früh: | 95-103 | 559 |
 | `doc-be90aa2fdbcbaef2a63b` | section-0017 | Regeln zur Berechnung der Aufenthaltsdauer > Beispiel 3 – mehrere Einreisen: | 104-122 | 658 |
 | `doc-ff23c665b9178ecfa10d` | section-0011 | Informationen für Luftverkehrsunternehmen | 74-82 | 425 |
-| `doc-37d30d2a65fea6396233` | section-0012 | Advance Passenger Information (API) > Rechtliche Grundlagen | 75-85 | 3005 |
-| `doc-37d30d2a65fea6396233` | section-0013 | Advance Passenger Information (API) > Zweck des Systems | 86-87 | 864 |
-| `doc-37d30d2a65fea6396233` | section-0014 | Advance Passenger Information (API) > Zugriffsrechte und Datenkategorien | 88-102 | 1897 |
-| `doc-37d30d2a65fea6396233` | section-0015 | Advance Passenger Information (API) > Der Meldepflicht unterstellte Abflugdestinationen | 103-105 | 557 |
-| `doc-44916bb7a0bec9a4e64c` | section-0012 | Übersicht API-Meldepflicht für Luftverkehrsunternehmen > Umfang der Meldepflicht | 76-78 | 1902 |
-| `doc-44916bb7a0bec9a4e64c` | section-0013 | Übersicht API-Meldepflicht für Luftverkehrsunternehmen > Anordnungen oder Aufhebungen der Meldepflicht | 79-81 | 581 |
-| `doc-44916bb7a0bec9a4e64c` | section-0014 | Übersicht API-Meldepflicht für Luftverkehrsunternehmen > Geplante oder laufende Verfahren betreffend Anordnung oder Aufhebung der Meldepflicht | 82-83 | 280 |
-| `doc-44916bb7a0bec9a4e64c` | section-0015 | Übersicht API-Meldepflicht für Luftverkehrsunternehmen > Technische Informationen für die Übermittlung von API-Daten | 84-88 | 428 |
-| `doc-44916bb7a0bec9a4e64c` | section-0016 | Übersicht API-Meldepflicht für Luftverkehrsunternehmen > Verletzung der Meldeflicht | 89-91 | 242 |
-| `doc-56a56dfa11c3d8ae0db0` | section-0013 | Carrier Sanctions (CASA) > Verfahren gegen Luftverkehrsunternehmen > Sorgfaltspflicht | 78-84 | 895 |
-| `doc-56a56dfa11c3d8ae0db0` | section-0014 | Carrier Sanctions (CASA) > Verfahren gegen Luftverkehrsunternehmen > Meldepflicht | 85-91 | 607 |
-| `doc-90f54f561135075db636` | section-0011 | Wesentliche Rechtsgrundlagen | 77-92 | 1385 |
-| `doc-270fb187245aab308216` | section-0012 | Verwaltungsverfahren in Bezug auf die Meldepflicht > Eröffnung oder Nichteröffnung eines Verfahrens durch das SEM | 78-80 | 572 |
-| `doc-270fb187245aab308216` | section-0013 | Verwaltungsverfahren in Bezug auf die Meldepflicht > Stellungnahme der Luftverkehrsunternehmen | 81-82 | 268 |
-| `doc-270fb187245aab308216` | section-0014 | Verwaltungsverfahren in Bezug auf die Meldepflicht > Sanktion | 83-84 | 474 |
-| `doc-270fb187245aab308216` | section-0015 | Verwaltungsverfahren in Bezug auf die Meldepflicht > Rechtsmittel | 85-87 | 234 |
-| `doc-270fb187245aab308216` | section-0016 | Verwaltungsverfahren in Bezug auf die Meldepflicht > Vollstreckung (Art. 39–40 VwVG) | 88-89 | 119 |
-| `doc-270fb187245aab308216` | section-0017 | Verwaltungsverfahren in Bezug auf die Meldepflicht > Rechtsprechung | 90-106 | 6146 |
-| `doc-4e315819e6e32c9890f1` | section-0012 | Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht > Vorgehen der Grenzkontrollbehörden | 78-79 | 401 |
-| `doc-4e315819e6e32c9890f1` | section-0013 | Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht > Eröffnung oder Nichteröffnung eines Verfahrens durch das SEM | 80-82 | 351 |
-| `doc-4e315819e6e32c9890f1` | section-0014 | Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht > Stellungnahme der Luftverkehrsunternehmen | 83-84 | 279 |
-| `doc-4e315819e6e32c9890f1` | section-0015 | Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht > Sanktion | 85-86 | 316 |
-| `doc-4e315819e6e32c9890f1` | section-0016 | Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht > Rechtsmittel | 87-89 | 234 |
-| `doc-4e315819e6e32c9890f1` | section-0017 | Verwaltungsverfahren bei möglicher Verletzung der Sorgfaltspflicht > Vollstreckung (Art. 39–40 VwVG) | 90-95 | 275 |
 | `doc-958cfbd396639e26e288` | section-0012 | FAQ – Fragen zur Personenfreizügigkeit > Welche Staatsangehörigen profitieren vom Abkommen über die Personenfreizügigkeit? | 88-90 | 197 |
 | `doc-958cfbd396639e26e288` | section-0013 | FAQ – Fragen zur Personenfreizügigkeit > Aufenthalt mit Erwerbstätigkeit | 91-94 | 482 |
 | `doc-958cfbd396639e26e288` | section-0014 | FAQ – Fragen zur Personenfreizügigkeit > Erwerbstätigkeit bis drei Monate (Arbeitsverhältnis von höchstens drei Monaten): | 95-97 | 233 |
@@ -1089,240 +1014,6 @@ Release `mvp-zurich-2026-09-22-v1` (content `2823ab3fad3b`), policy `report`, no
 | `doc-e6d7d2b3b10bbffeebaa` | section-0017 | Einbürgerungsgesuch einreichen > Anleitung > Alles vorbereitet und vollständig? | 110-112 | 187 |
 | `doc-e6d7d2b3b10bbffeebaa` | section-0022 | Einbürgerungsgesuch einreichen > Anleitung > Wie geht es weiter? | 124-126 | 185 |
 | `doc-e6d7d2b3b10bbffeebaa` | section-0023 | Einbürgerungsgesuch einreichen > Anleitung > Wie geht es weiter? > Adress- und Zivilstandsänderungen | 127-129 | 209 |
-| `doc-b26607e2d663c7ebc8cc` | section-0007 | Förderbereiche | 48-49 | 206 |
-| `doc-b26607e2d663c7ebc8cc` | section-0010 | Förderbereiche > Information, Abklärung Integrationsförderbedarf und Beratung > Information | 60-61 | 309 |
-| `doc-b26607e2d663c7ebc8cc` | section-0011 | Förderbereiche > Information, Abklärung Integrationsförderbedarf und Beratung > Information > Für Integrationsbeauftragte (IB) | 62-65 | 706 |
-| `doc-b26607e2d663c7ebc8cc` | section-0012 | Förderbereiche > Information, Abklärung Integrationsförderbedarf und Beratung > Abklärung Integrationsbedarf | 66-70 | 275 |
-| `doc-b26607e2d663c7ebc8cc` | section-0013 | Förderbereiche > Information, Abklärung Integrationsförderbedarf und Beratung > Beratung | 71-74 | 616 |
-| `doc-b26607e2d663c7ebc8cc` | section-0014 | Förderbereiche > Information, Abklärung Integrationsförderbedarf und Beratung > Beratung > Beratungsstellen und Unterstützungsangebote | 75-83 | 906 |
-| `doc-b26607e2d663c7ebc8cc` | section-0015 | Förderbereiche > Sprache | 84-90 | 904 |
-| `doc-b26607e2d663c7ebc8cc` | section-0016 | Förderbereiche > Sprache > Für Integrationsbeauftragte und anbietende Institutionen | 91-97 | 1434 |
-| `doc-b26607e2d663c7ebc8cc` | section-0017 | Förderbereiche > Ausbildungs- und Arbeitsmarktfähigkeit | 98-99 | 332 |
-| `doc-b26607e2d663c7ebc8cc` | section-0018 | Förderbereiche > Frühe Kindheit | 100-101 | 404 |
-| `doc-b26607e2d663c7ebc8cc` | section-0019 | Förderbereiche > Zusammenleben und Partizipation | 102-103 | 494 |
-| `doc-b26607e2d663c7ebc8cc` | section-0020 | Förderbereiche > Zusammenleben und Partizipation > Unterstützung von Projekten | 104-107 | 411 |
-| `doc-b26607e2d663c7ebc8cc` | section-0021 | Förderbereiche > Umgang mit Vielfalt und Schutz vor Diskriminierung | 108-112 | 621 |
-| `doc-b26607e2d663c7ebc8cc` | section-0022 | Förderbereiche > Dolmetschen | 113-115 | 414 |
-| `doc-5386be4702ee65f46a87` | section-0007 | Förderung von Integrationsprojekten | 48-49 | 329 |
-| `doc-5386be4702ee65f46a87` | section-0009 | Förderung von Integrationsprojekten > Finanzielle Beiträge | 60-68 | 886 |
-| `doc-5386be4702ee65f46a87` | section-0010 | Förderung von Integrationsprojekten > Finanzielle Beiträge > Kleinprojekte | 69-70 | 205 |
-| `doc-5386be4702ee65f46a87` | section-0011 | Förderung von Integrationsprojekten > Finanzielle Beiträge > Grössere Projekte | 71-74 | 398 |
-| `doc-5386be4702ee65f46a87` | section-0013 | Förderung von Integrationsprojekten > Förderschwerpunkte 2024–2027 > Zusammenleben und Partizipation | 76-80 | 173 |
-| `doc-5386be4702ee65f46a87` | section-0014 | Förderung von Integrationsprojekten > Förderschwerpunkte 2024–2027 > Umgang mit Vielfalt und Diskriminierungsschutz | 81-85 | 322 |
-| `doc-5386be4702ee65f46a87` | section-0015 | Förderung von Integrationsprojekten > Wer ein Gesuch stellen kann | 86-87 | 153 |
-| `doc-5386be4702ee65f46a87` | section-0016 | Förderung von Integrationsprojekten > Gesuche einreichen | 88-95 | 548 |
-| `doc-5386be4702ee65f46a87` | section-0017 | Förderung von Integrationsprojekten > Gesuche einreichen > Maria Gstöhl | 96-98 | 94 |
-| `doc-5386be4702ee65f46a87` | section-0018 | Förderung von Integrationsprojekten > Gesuche einreichen > Deniz Yüksel | 99-101 | 109 |
-| `doc-5386be4702ee65f46a87` | section-0022 | Förderung von Integrationsprojekten > Vergangene Ausschreibungen > Schwerpunktausschreibung 2022–2023 > Sozialräumliche Gemeinschaftsprojekte «Vielfältig, lokal, engagiert» | 107-110 | 591 |
-| `doc-5386be4702ee65f46a87` | section-0024 | Förderung von Integrationsprojekten > Vergangene Ausschreibungen > Schwerpunktausschreibung 2020–2021 > Freiwilligenarbeit von Migrantinnen und Migranten stärken | 112-115 | 514 |
-| `doc-5386be4702ee65f46a87` | section-0026 | Förderung von Integrationsprojekten > Vergangene Ausschreibungen > Schwerpunktausschreibung 2018–2019 > Partizipation von Migrantinnen und Migranten stärken | 117-120 | 660 |
-| `doc-0ab169e59cf112d166c6` | section-0009 | Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen > Anleitung > Wer ein Gesuch stellen kann | 50-51 | 153 |
-| `doc-0ab169e59cf112d166c6` | section-0010 | Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen > Anleitung > Welche Projekte gefördert werden | 52-53 | 174 |
-| `doc-0ab169e59cf112d166c6` | section-0011 | Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen > Anleitung > Förderrichtlinien lesen | 54-56 | 211 |
-| `doc-0ab169e59cf112d166c6` | section-0012 | Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen > Anleitung > Projektbeitrag | 57-58 | 82 |
-| `doc-0ab169e59cf112d166c6` | section-0013 | Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen > Anleitung > Eingabetermine | 59-60 | 48 |
-| `doc-0ab169e59cf112d166c6` | section-0014 | Gesuch für Integrationsprojekte mit Gesamtkosten von maximal 5'000 Franken einreichen > Anleitung > Erforderliche Unterlagen | 61-64 | 319 |
-| `doc-603af2c75387379addec` | section-0009 | Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen > Anleitung > Wer ein Gesuch stellen kann | 50-51 | 153 |
-| `doc-603af2c75387379addec` | section-0010 | Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen > Anleitung > Welche Projekte gefördert werden | 52-53 | 174 |
-| `doc-603af2c75387379addec` | section-0011 | Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen > Anleitung > Förderrichtlinien lesen | 54-56 | 211 |
-| `doc-603af2c75387379addec` | section-0012 | Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen > Anleitung > Projektbeiträge | 57-59 | 179 |
-| `doc-603af2c75387379addec` | section-0013 | Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen > Anleitung > Eingabetermine | 60-61 | 81 |
-| `doc-603af2c75387379addec` | section-0014 | Gesuch für Integrationsprojekte mit Gesamtkosten über 5'000 Franken einreichen > Anleitung > Erforderliche Dokumente | 62-67 | 528 |
-| `doc-2642590582c26192108d` | section-0008 | Integrationsagenda > Themen | 49-56 | 88 |
-| `doc-2642590582c26192108d` | section-0010 | Integrationsagenda > Integrationsagenda Schweiz | 65-67 | 725 |
-| `doc-2642590582c26192108d` | section-0011 | Integrationsagenda > Ziele der Integrationsagenda | 68-74 | 760 |
-| `doc-2642590582c26192108d` | section-0012 | Integrationsagenda > Zielgruppen | 75-81 | 538 |
-| `doc-2642590582c26192108d` | section-0013 | Integrationsagenda > Integrationsagenda im Kanton Zürich | 82-90 | 1164 |
-| `doc-2642590582c26192108d` | section-0014 | Integrationsagenda > Gemeinsam umsetzen | 91-94 | 1159 |
-| `doc-2642590582c26192108d` | section-0015 | Integrationsagenda > Gemeinsam umsetzen > Integrationsagenda Kanton Zürich (Umsetzungskonzept IAZH) | 95-97 | 156 |
-| `doc-2642590582c26192108d` | section-0017 | Integrationsagenda > Monitoring des Fördersystems für Geflüchtete (IAZH) | 100-102 | 633 |
-| `doc-2642590582c26192108d` | section-0018 | Integrationsagenda > Monitoring des Fördersystems für Geflüchtete (IAZH) > Monitoring-Bericht 2025 Integrationsagenda Kanton Zürich (IAZH) | 103-109 | 446 |
-| `doc-ee0a9e00d0175b0b6155` | section-0007 | Akkreditierung von Fördermassnahmen | 48-49 | 180 |
-| `doc-ee0a9e00d0175b0b6155` | section-0009 | Akkreditierung von Fördermassnahmen > Akkreditierung von Angeboten | 54-57 | 394 |
-| `doc-ee0a9e00d0175b0b6155` | section-0010 | Akkreditierung von Fördermassnahmen > Fragen und Anmeldung E-Mailing | 58-61 | 334 |
-| `doc-ee0a9e00d0175b0b6155` | section-0011 | Akkreditierung von Fördermassnahmen > Akkreditierte Angebotsarten im Fördersystem IAZH | 62-68 | 1166 |
-| `doc-ee0a9e00d0175b0b6155` | section-0012 | Akkreditierung von Fördermassnahmen > Ergänzende Angebote | 69-72 | 211 |
-| `doc-689f2d54395d4f6516b7` | section-0007 | Begleitung von Geflüchteten | 48-49 | 138 |
-| `doc-689f2d54395d4f6516b7` | section-0009 | Begleitung von Geflüchteten > Integrationsorientierte Fallführung | 55-59 | 1445 |
-| `doc-689f2d54395d4f6516b7` | section-0011 | Begleitung von Geflüchteten > Fallführende Stellen > In den kantonalen Asyl- und Flüchtlingsstrukturen | 61-65 | 821 |
-| `doc-689f2d54395d4f6516b7` | section-0012 | Begleitung von Geflüchteten > Fallführende Stellen > In den Gemeinden | 66-73 | 1308 |
-| `doc-689f2d54395d4f6516b7` | section-0013 | Begleitung von Geflüchteten > Potenzialabklärung | 74-81 | 871 |
-| `doc-368c0fba131961f7dc56` | section-0007 | Fördermassnahmen für Geflüchtete | 48-49 | 210 |
-| `doc-368c0fba131961f7dc56` | section-0009 | Fördermassnahmen für Geflüchtete > Die Fördermassnahmen | 54-57 | 708 |
-| `doc-368c0fba131961f7dc56` | section-0010 | Fördermassnahmen für Geflüchtete > Akkreditierte Angebote | 58-65 | 481 |
-| `doc-368c0fba131961f7dc56` | section-0011 | Fördermassnahmen für Geflüchtete > Akkreditierte Angebote > Kantonaler Angebotskatalog IAZH | 66-68 | 351 |
-| `doc-368c0fba131961f7dc56` | section-0012 | Fördermassnahmen für Geflüchtete > Ergänzende Angebote | 69-70 | 400 |
-| `doc-368c0fba131961f7dc56` | section-0013 | Fördermassnahmen für Geflüchtete > Ergänzende Angebote > Tandemprogramm | 71-73 | 367 |
-| `doc-368c0fba131961f7dc56` | section-0014 | Fördermassnahmen für Geflüchtete > Ergänzende Angebote > Schlüsselpersonen-Angebote | 74-76 | 390 |
-| `doc-368c0fba131961f7dc56` | section-0015 | Fördermassnahmen für Geflüchtete > Ergänzende Angebote > Angebote für Personen mit psychischen Belastungen | 77-79 | 449 |
-| `doc-368c0fba131961f7dc56` | section-0016 | Fördermassnahmen für Geflüchtete > Ergänzende Angebote > Finanzielle Zuschüsse zur Arbeitsmarktintegration | 80-86 | 1069 |
-| `doc-104abf6c7048b37f09df` | section-0007 | Förderung der Freiwilligenarbeit für und mit Geflüchteten | 48-49 | 296 |
-| `doc-104abf6c7048b37f09df` | section-0009 | Förderung der Freiwilligenarbeit für und mit Geflüchteten > Unterstützung von Aktivitäten | 56-61 | 528 |
-| `doc-104abf6c7048b37f09df` | section-0010 | Förderung der Freiwilligenarbeit für und mit Geflüchteten > Unterstützung von Aktivitäten > Massnahmen zur Stärkung der Freiwilligenarbeit | 62-68 | 686 |
-| `doc-104abf6c7048b37f09df` | section-0011 | Förderung der Freiwilligenarbeit für und mit Geflüchteten > Unterstützung von Aktivitäten > Projekte im Bereich soziale Integration | 69-74 | 446 |
-| `doc-104abf6c7048b37f09df` | section-0012 | Förderung der Freiwilligenarbeit für und mit Geflüchteten > Wer ein Gesuch stellen kann | 75-78 | 335 |
-| `doc-104abf6c7048b37f09df` | section-0013 | Förderung der Freiwilligenarbeit für und mit Geflüchteten > Gesuche einreichen | 79-86 | 501 |
-| `doc-104abf6c7048b37f09df` | section-0014 | Förderung der Freiwilligenarbeit für und mit Geflüchteten > Gesuche einreichen > Maria Gstöhl | 87-88 | 39 |
-| `doc-104abf6c7048b37f09df` | section-0015 | Förderung der Freiwilligenarbeit für und mit Geflüchteten > Unterstützte Projekte ab 2022 | 89-91 | 442 |
-| `doc-104abf6c7048b37f09df` | section-0016 | Förderung der Freiwilligenarbeit für und mit Geflüchteten > Tandemprogramm | 92-94 | 602 |
-| `doc-50906cecaa878c115429` | section-0009 | Gesuch einreichen für das Förderprogramm «qualifiziert engagiert» > Anleitung > Wer ein Gesuch stellen kann | 50-51 | 180 |
-| `doc-50906cecaa878c115429` | section-0010 | Gesuch einreichen für das Förderprogramm «qualifiziert engagiert» > Anleitung > Was gefördert wird | 52-55 | 330 |
-| `doc-50906cecaa878c115429` | section-0011 | Gesuch einreichen für das Förderprogramm «qualifiziert engagiert» > Anleitung > Projektbeiträge | 56-58 | 172 |
-| `doc-50906cecaa878c115429` | section-0012 | Gesuch einreichen für das Förderprogramm «qualifiziert engagiert» > Anleitung > Eingabetermine | 59-61 | 120 |
-| `doc-50906cecaa878c115429` | section-0013 | Gesuch einreichen für das Förderprogramm «qualifiziert engagiert» > Anleitung > Erforderliche Unterlagen | 62-68 | 572 |
-| `doc-50906cecaa878c115429` | section-0015 | Gesuch einreichen für das Förderprogramm «qualifiziert engagiert» > Anleitung > Rahmenbedingungen > Vertragliche Grundlage | 70-71 | 254 |
-| `doc-50906cecaa878c115429` | section-0016 | Gesuch einreichen für das Förderprogramm «qualifiziert engagiert» > Anleitung > Rahmenbedingungen > Berichterstattung | 72-75 | 443 |
-| `doc-666d656c548dad5f38f8` | section-0007 | Informationen für Fachpersonen | 48-50 | 129 |
-| `doc-666d656c548dad5f38f8` | section-0009 | Informationen für Fachpersonen > Newsletter | 56-58 | 446 |
-| `doc-666d656c548dad5f38f8` | section-0010 | Informationen für Fachpersonen > E-Mailings | 59-63 | 572 |
-| `doc-666d656c548dad5f38f8` | section-0011 | Informationen für Fachpersonen > E-Mailings > Newsletter Fachstelle Integration | 64-72 | 500 |
-| `doc-666d656c548dad5f38f8` | section-0012 | Informationen für Fachpersonen > Veranstaltungen zur IAZH | 73-75 | 536 |
-| `doc-666d656c548dad5f38f8` | section-0013 | Informationen für Fachpersonen > Veranstaltungen zur IAZH > Online-Schulungen zum Fördersystem für Geflüchtete (Integrationsagenda Kanton Zürich, IAZH) | 76-77 | 217 |
-| `doc-666d656c548dad5f38f8` | section-0014 | Informationen für Fachpersonen > Veranstaltungen zur IAZH > Online-Schulungen zum Fördersystem für Geflüchtete (Integrationsagenda Kanton Zürich, IAZH) > Einführungs-Schulungen | 78-85 | 451 |
-| `doc-666d656c548dad5f38f8` | section-0015 | Informationen für Fachpersonen > Veranstaltungen zur IAZH > Online-Schulungen zum Fördersystem für Geflüchtete (Integrationsagenda Kanton Zürich, IAZH) > Praxisaustausch mit Fokus Abklärung und Erstinformation | 86-92 | 540 |
-| `doc-666d656c548dad5f38f8` | section-0016 | Informationen für Fachpersonen > Veranstaltungen zur IAZH > Online-Schulungen zum Fördersystem für Geflüchtete (Integrationsagenda Kanton Zürich, IAZH) > Praxisaustausch mit Fokus Sprache, Bildung, Arbeitsintegration | 93-101 | 520 |
-| `doc-eb71073ea8a70a47c7b0` | section-0009 | Sich für den Newsletter anmelden > Anleitung > Für wen dieser Newsletter nützlich ist | 50-53 | 351 |
-| `doc-7f6365a43b0683ca845c` | section-0009 | Zur Einführungs-Schulung Fördersystem für Geflüchtete IAZH anmelden > Anleitung > Diese Veranstaltung richtet sich an | 50-51 | 65 |
-| `doc-7f6365a43b0683ca845c` | section-0010 | Zur Einführungs-Schulung Fördersystem für Geflüchtete IAZH anmelden > Anleitung > Teilnahme | 52-53 | 96 |
-| `doc-7f6365a43b0683ca845c` | section-0012 | Zur Einführungs-Schulung Fördersystem für Geflüchtete IAZH anmelden > Anleitung > Programm > Inhalt | 55-56 | 484 |
-| `doc-7f6365a43b0683ca845c` | section-0013 | Zur Einführungs-Schulung Fördersystem für Geflüchtete IAZH anmelden > Anleitung > Programm > Kosten | 57-58 | 26 |
-| `doc-7f6365a43b0683ca845c` | section-0014 | Zur Einführungs-Schulung Fördersystem für Geflüchtete IAZH anmelden > Anleitung > Termin | 59-61 | 88 |
-| `doc-b11cd2f3e9fa9a4c902c` | section-0009 | Sich zum Praxisaustausch Sprache, Bildung, Arbeitsintegration anmelden > Anleitung > Diese Veranstaltung richtet sich an | 50-51 | 60 |
-| `doc-b11cd2f3e9fa9a4c902c` | section-0010 | Sich zum Praxisaustausch Sprache, Bildung, Arbeitsintegration anmelden > Anleitung > Online teilnehmen | 52-53 | 106 |
-| `doc-b11cd2f3e9fa9a4c902c` | section-0012 | Sich zum Praxisaustausch Sprache, Bildung, Arbeitsintegration anmelden > Anleitung > Programm > Inhalt | 55-64 | 687 |
-| `doc-b11cd2f3e9fa9a4c902c` | section-0013 | Sich zum Praxisaustausch Sprache, Bildung, Arbeitsintegration anmelden > Anleitung > Programm > Kosten | 65-66 | 26 |
-| `doc-b11cd2f3e9fa9a4c902c` | section-0014 | Sich zum Praxisaustausch Sprache, Bildung, Arbeitsintegration anmelden > Anleitung > Termin | 67-68 | 50 |
-| `doc-e21bef3c8342c5510aad` | section-0008 | Online-Handbuch IAZH > Themen | 49-57 | 395 |
-| `doc-e21bef3c8342c5510aad` | section-0010 | Online-Handbuch IAZH > Aktuell: Unterstützungsmassnahmen Status S | 61-64 | 346 |
-| `doc-e21bef3c8342c5510aad` | section-0011 | Online-Handbuch IAZH > Aktuell: Unterstützungsmassnahmen Status S > Fachstelle Integration: Koordination und Kontakt | 65-74 | 782 |
-| `doc-208634eba1d97aebfc30` | section-0007 | Integrationsorientierte Beratung und Begleitung | 48-49 | 180 |
-| `doc-208634eba1d97aebfc30` | section-0009 | Integrationsorientierte Beratung und Begleitung > Integrationsorientierte Beratung und Begleitung | 55-60 | 1333 |
-| `doc-208634eba1d97aebfc30` | section-0010 | Integrationsorientierte Beratung und Begleitung > Operative Steuerung durch die fallführenden Stellen | 61-77 | 2084 |
-| `doc-208634eba1d97aebfc30` | section-0012 | Integrationsorientierte Beratung und Begleitung > Empfehlungen für die Praxis > Spezifische Integrationsförderung im Bildungsbereich | 79-86 | 1043 |
-| `doc-208634eba1d97aebfc30` | section-0013 | Integrationsorientierte Beratung und Begleitung > Empfehlungen für die Praxis > Chancengleiche Förderung und Diskriminierungsschutz | 87-92 | 1697 |
-| `doc-208634eba1d97aebfc30` | section-0014 | Integrationsorientierte Beratung und Begleitung > Empfehlungen für die Praxis > Familienergänzende Betreuung | 93-94 | 737 |
-| `doc-208634eba1d97aebfc30` | section-0015 | Integrationsorientierte Beratung und Begleitung > Empfehlungen für die Praxis > Interkulturelles Dolmetschen | 95-97 | 450 |
-| `doc-208634eba1d97aebfc30` | section-0016 | Integrationsorientierte Beratung und Begleitung > Empfehlungen für die Praxis > Case Load integrationsorientierte Fallführung | 98-100 | 376 |
-| `doc-208634eba1d97aebfc30` | section-0017 | Integrationsorientierte Beratung und Begleitung > Empfehlungen für die Praxis > Sprachtests | 101-106 | 1474 |
-| `doc-208634eba1d97aebfc30` | section-0018 | Integrationsorientierte Beratung und Begleitung > Empfehlungen für die Praxis > Dauer des Erstintegrationsprozesses | 107-108 | 437 |
-| `doc-208634eba1d97aebfc30` | section-0019 | Integrationsorientierte Beratung und Begleitung > Potenzialabklärung | 109-139 | 5457 |
-| `doc-b9d94af8ebac301582da` | section-0007 | Das Fördersystem für ­Geflüchtete | 48-49 | 211 |
-| `doc-b9d94af8ebac301582da` | section-0009 | Das Fördersystem für ­Geflüchtete > Zielgruppen | 57-64 | 644 |
-| `doc-b9d94af8ebac301582da` | section-0010 | Das Fördersystem für ­Geflüchtete > Gemeindebasierte Ausrichtung und Umsetzung | 65-67 | 643 |
-| `doc-b9d94af8ebac301582da` | section-0011 | Das Fördersystem für ­Geflüchtete > Frühzeitiger Start der Förderung | 68-69 | 389 |
-| `doc-b9d94af8ebac301582da` | section-0012 | Das Fördersystem für ­Geflüchtete > Frühzeitiger Start der Förderung > Muttersprachliche Erstinformation | 70-72 | 570 |
-| `doc-b9d94af8ebac301582da` | section-0013 | Das Fördersystem für ­Geflüchtete > Frühzeitiger Start der Förderung > Integrationscoaching | 73-75 | 531 |
-| `doc-b9d94af8ebac301582da` | section-0014 | Das Fördersystem für ­Geflüchtete > Übersicht der Fördermassnahmen | 76-81 | 625 |
-| `doc-b9d94af8ebac301582da` | section-0015 | Das Fördersystem für ­Geflüchtete > Systematischer Informationsfluss bei der Fallübergabe | 82-85 | 463 |
-| `doc-b9d94af8ebac301582da` | section-0016 | Das Fördersystem für ­Geflüchtete > Engere Begleitung dank ­integrationsorientierter Fallführung | 86-87 | 373 |
-| `doc-fd258968991182717e4b` | section-0007 | Ergänzende Angebote IAZH | 48-49 | 269 |
-| `doc-fd258968991182717e4b` | section-0009 | Ergänzende Angebote IAZH > Tandemprogramm | 55-58 | 1016 |
-| `doc-fd258968991182717e4b` | section-0010 | Ergänzende Angebote IAZH > Tandemprogramm > Stephan und Rahemullah sind ein Tandem | 59-65 | 288 |
-| `doc-fd258968991182717e4b` | section-0011 | Ergänzende Angebote IAZH > Tandemprogramm > Zielgruppen | 66-67 | 449 |
-| `doc-fd258968991182717e4b` | section-0012 | Ergänzende Angebote IAZH > Tandemprogramm > Regionen | 68-75 | 725 |
-| `doc-fd258968991182717e4b` | section-0013 | Ergänzende Angebote IAZH > Tandemprogramm > Anmeldung | 76-80 | 717 |
-| `doc-fd258968991182717e4b` | section-0014 | Ergänzende Angebote IAZH > Tandemprogramm > Maria Gstöhl | 81-83 | 115 |
-| `doc-fd258968991182717e4b` | section-0015 | Ergänzende Angebote IAZH > Tandemprogramm > Evaluationsbericht des Tandemprogramms | 84-86 | 272 |
-| `doc-fd258968991182717e4b` | section-0016 | Ergänzende Angebote IAZH > Schlüsselpersonen-Angebote | 87-89 | 907 |
-| `doc-fd258968991182717e4b` | section-0017 | Ergänzende Angebote IAZH > Schlüsselpersonen-Angebote > Zielgruppen | 90-91 | 106 |
-| `doc-fd258968991182717e4b` | section-0018 | Ergänzende Angebote IAZH > Schlüsselpersonen-Angebote > Regionen | 92-94 | 728 |
-| `doc-fd258968991182717e4b` | section-0022 | Ergänzende Angebote IAZH > Schlüsselpersonen-Angebote > Anmeldung | 101-104 | 515 |
-| `doc-fd258968991182717e4b` | section-0023 | Ergänzende Angebote IAZH > Schlüsselpersonen-Angebote > Frank Will | 105-107 | 65 |
-| `doc-fd258968991182717e4b` | section-0024 | Ergänzende Angebote IAZH > Psychische Gesundheit von Geflüchteten stärken | 108-109 | 502 |
-| `doc-fd258968991182717e4b` | section-0025 | Ergänzende Angebote IAZH > Psychische Gesundheit von Geflüchteten stärken > Integrationsangebote für Personen mit psychischen Belastungen | 110-111 | 393 |
-| `doc-fd258968991182717e4b` | section-0026 | Ergänzende Angebote IAZH > Psychische Gesundheit von Geflüchteten stärken > Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag | 112-117 | 571 |
-| `doc-fd258968991182717e4b` | section-0027 | Ergänzende Angebote IAZH > Psychische Gesundheit von Geflüchteten stärken > Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag > Umsetzung | 118-119 | 315 |
-| `doc-fd258968991182717e4b` | section-0028 | Ergänzende Angebote IAZH > Psychische Gesundheit von Geflüchteten stärken > Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag > Sprachen | 120-121 | 167 |
-| `doc-fd258968991182717e4b` | section-0029 | Ergänzende Angebote IAZH > Psychische Gesundheit von Geflüchteten stärken > Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag > Durchführungsorte | 122-123 | 213 |
-| `doc-fd258968991182717e4b` | section-0030 | Ergänzende Angebote IAZH > Psychische Gesundheit von Geflüchteten stärken > Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag > Zielgruppe | 124-125 | 108 |
-| `doc-fd258968991182717e4b` | section-0031 | Ergänzende Angebote IAZH > Psychische Gesundheit von Geflüchteten stärken > Pilotprojekt SPIRIT – Strategien für mehr Stärke im Alltag > Anmeldungen für das Angebot SPIRIT | 126-130 | 304 |
-| `doc-fd258968991182717e4b` | section-0032 | Ergänzende Angebote IAZH > Psychische Gesundheit von Geflüchteten stärken > Joy Kramer | 131-133 | 84 |
-| `doc-fd258968991182717e4b` | section-0033 | Ergänzende Angebote IAZH > Finanzielle Zuschüsse zur Arbeitsmarktintegration von Geflüchteten | 134-138 | 1115 |
-| `doc-fd258968991182717e4b` | section-0034 | Ergänzende Angebote IAZH > Finanzielle Zuschüsse zur Arbeitsmarktintegration von Geflüchteten > Weitere Informationen für Arbeitgebende | 139-142 | 325 |
-| `doc-fd258968991182717e4b` | section-0035 | Ergänzende Angebote IAZH > Finanzielle Zuschüsse zur Arbeitsmarktintegration von Geflüchteten > Isabel Izzo | 143-145 | 72 |
-| `doc-a192c70d4004b7bd03d5` | section-0007 | Finanzierung und Reporting | 48-49 | 185 |
-| `doc-a192c70d4004b7bd03d5` | section-0009 | Finanzierung und Reporting > Kostenbeteiligung | 59-60 | 666 |
-| `doc-a192c70d4004b7bd03d5` | section-0010 | Finanzierung und Reporting > Kostenbeteiligung > Kostenbeteiligung 2026 | 61-65 | 944 |
-| `doc-a192c70d4004b7bd03d5` | section-0011 | Finanzierung und Reporting > Kostenbeteiligung > Kostenbeteiligung 2027 | 66-69 | 553 |
-| `doc-a192c70d4004b7bd03d5` | section-0012 | Finanzierung und Reporting > Zielgruppe IAZH | 70-74 | 1052 |
-| `doc-a192c70d4004b7bd03d5` | section-0013 | Finanzierung und Reporting > Zielgruppe Schutzstatus S | 75-80 | 931 |
-| `doc-a192c70d4004b7bd03d5` | section-0014 | Finanzierung und Reporting > Verträge mit den Gemeinden | 81-83 | 575 |
-| `doc-a192c70d4004b7bd03d5` | section-0015 | Finanzierung und Reporting > Vergütung der Anbietenden | 84-86 | 550 |
-| `doc-a192c70d4004b7bd03d5` | section-0016 | Finanzierung und Reporting > Reporting und Abrechnungsprozess | 87-93 | 1035 |
-| `doc-c50a0804f718793b4cb2` | section-0007 | Reporting IAZH: Anleitung und Erläuterungen | 48-49 | 129 |
-| `doc-c50a0804f718793b4cb2` | section-0009 | Reporting IAZH: Anleitung und Erläuterungen > Einleitung | 57-68 | 2863 |
-| `doc-c50a0804f718793b4cb2` | section-0010 | Reporting IAZH: Anleitung und Erläuterungen > Daten erfassen | 69-75 | 1207 |
-| `doc-c50a0804f718793b4cb2` | section-0011 | Reporting IAZH: Anleitung und Erläuterungen > Vollständigkeits- und Richtigkeitserklärung | 76-78 | 452 |
-| `doc-c50a0804f718793b4cb2` | section-0012 | Reporting IAZH: Anleitung und Erläuterungen > Daten übermitteln | 79-81 | 223 |
-| `doc-c50a0804f718793b4cb2` | section-0013 | Reporting IAZH: Anleitung und Erläuterungen > Verarbeitung Reporting-Daten | 82-90 | 1363 |
-| `doc-c50a0804f718793b4cb2` | section-0014 | Reporting IAZH: Anleitung und Erläuterungen > Finanzbuchhaltung | 91-93 | 167 |
-| `doc-a12fe8f3ca61a0765af1` | section-0007 | Grundlagen der IAS | 48-49 | 75 |
-| `doc-a12fe8f3ca61a0765af1` | section-0009 | Grundlagen der IAS > Integrationsagenda Schweiz | 54-59 | 1247 |
-| `doc-a12fe8f3ca61a0765af1` | section-0010 | Grundlagen der IAS > Die gemeinsame Umsetzung im Kanton Zürich | 60-68 | 1137 |
-| `doc-a12fe8f3ca61a0765af1` | section-0011 | Grundlagen der IAS > Schnittstellen Sozialhilfe und Integration | 69-74 | 1169 |
-| `doc-a14eb88f2da881e9c8fe` | section-0007 | Grundsätze des Fördersystems | 48-67 | 3283 |
-| `doc-3c72847ef089a81809ef` | section-0007 | Kantonaler Angebotskatalog IAZH | 48-49 | 219 |
-| `doc-3c72847ef089a81809ef` | section-0009 | Kantonaler Angebotskatalog IAZH > Kantonaler Angebotskatalog IAZH | 53-55 | 631 |
-| `doc-3c72847ef089a81809ef` | section-0010 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote | 56-63 | 260 |
-| `doc-3c72847ef089a81809ef` | section-0011 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Abklärung | 64-66 | 500 |
-| `doc-3c72847ef089a81809ef` | section-0012 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Abklärung > Kompetenzerfassung | 67-71 | 1262 |
-| `doc-3c72847ef089a81809ef` | section-0013 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Abklärung > Praxisassessment | 72-80 | 1313 |
-| `doc-3c72847ef089a81809ef` | section-0014 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Bildung | 81-83 | 347 |
-| `doc-3c72847ef089a81809ef` | section-0015 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Bildung > Vollschulische Bildungsangebote | 84-95 | 1218 |
-| `doc-3c72847ef089a81809ef` | section-0016 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Bildung > Bildungsmodule | 96-101 | 842 |
-| `doc-3c72847ef089a81809ef` | section-0017 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Sprache | 102-104 | 627 |
-| `doc-3c72847ef089a81809ef` | section-0018 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Sprache > Deutsch mit Ziel Arbeitsmarkt | 105-109 | 828 |
-| `doc-3c72847ef089a81809ef` | section-0019 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Sprache > Deutsch lokal | 110-112 | 461 |
-| `doc-3c72847ef089a81809ef` | section-0020 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Sprache > Alphabetisierungskurse | 113-120 | 579 |
-| `doc-3c72847ef089a81809ef` | section-0021 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Arbeitsintegration | 121-124 | 957 |
-| `doc-3c72847ef089a81809ef` | section-0022 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Arbeitsintegration > Interne Arbeitseinsätze | 125-133 | 1126 |
-| `doc-3c72847ef089a81809ef` | section-0023 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Arbeitsintegration > Externe Arbeitseinsätze | 134-142 | 1312 |
-| `doc-3c72847ef089a81809ef` | section-0024 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Arbeitsintegration > Branchenqualifizierung | 143-144 | 539 |
-| `doc-3c72847ef089a81809ef` | section-0025 | Kantonaler Angebotskatalog IAZH > Akkreditierte Angebote > Arbeitsintegration > Jobcoaching | 145-149 | 2303 |
-| `doc-6b7ab84cf9fe70b4dbb5` | section-0007 | Integrationsangebote | 48-49 | 201 |
-| `doc-6b7ab84cf9fe70b4dbb5` | section-0009 | Integrationsangebote > Kantonale Angebotsdatenbank | 55-59 | 915 |
-| `doc-6b7ab84cf9fe70b4dbb5` | section-0011 | Integrationsangebote > Kantonale Angebotsdatenbank | 133-133 | 151 |
-| `doc-6b7ab84cf9fe70b4dbb5` | section-0012 | Integrationsangebote > Kantonale Angebotsdatenbank > Seite Navigation | 134-138 | 73 |
-| `doc-6b7ab84cf9fe70b4dbb5` | section-0013 | Integrationsangebote > Kantonale Angebotsdatenbank > Seite Navigation > Tipps zur Suche | 139-142 | 371 |
-| `doc-6b7ab84cf9fe70b4dbb5` | section-0014 | Integrationsangebote > Kantonale Angebotsdatenbank > Seite Navigation > Aktualisierung Angebote | 143-144 | 172 |
-| `doc-6b7ab84cf9fe70b4dbb5` | section-0015 | Integrationsangebote > Deutschkursberatung im Kanton Zürich | 145-150 | 688 |
-| `doc-6b7ab84cf9fe70b4dbb5` | section-0016 | Integrationsangebote > Angebote in den Städten Zürich und Winterthur | 151-156 | 283 |
-| `doc-6be9702fb1331355a86f` | section-0007 | Kantonale Integrationsprogramme | 48-49 | 119 |
-| `doc-6be9702fb1331355a86f` | section-0009 | Kantonale Integrationsprogramme > Kantonales Integrationsprogramm 2024–2027 (KIP 3) | 59-78 | 1426 |
-| `doc-6be9702fb1331355a86f` | section-0010 | Kantonale Integrationsprogramme > Kantonales Integrationsprogramm 2024–2027 (KIP 3) > Kantonales Integrationsprogramm 2024–2027 (KIP 3) | 79-87 | 233 |
-| `doc-6be9702fb1331355a86f` | section-0011 | Kantonale Integrationsprogramme > Kantonales Integrationsprogramm 2022–2023 (KIP 2bis) | 88-95 | 2521 |
-| `doc-6be9702fb1331355a86f` | section-0012 | Kantonale Integrationsprogramme > Zweites Kantonales Integrationsprogramm (2018–2021) | 96-105 | 950 |
-| `doc-6be9702fb1331355a86f` | section-0013 | Kantonale Integrationsprogramme > Zweites Kantonales Integrationsprogramm (2018–2021) > Schlussbericht | 106-111 | 703 |
-| `doc-6be9702fb1331355a86f` | section-0014 | Kantonale Integrationsprogramme > Neuausrichtung der Integrationsförderung | 112-116 | 1646 |
-| `doc-6be9702fb1331355a86f` | section-0015 | Kantonale Integrationsprogramme > Finanzierung | 117-121 | 857 |
-| `doc-6be9702fb1331355a86f` | section-0016 | Kantonale Integrationsprogramme > Reporting | 122-125 | 390 |
-| `doc-6be9702fb1331355a86f` | section-0017 | Kantonale Integrationsprogramme > Reporting > Reportingunterlagen für Gemeinden | 126-137 | 1003 |
-| `doc-6be9702fb1331355a86f` | section-0019 | Kantonale Integrationsprogramme > Reporting > Reportingunterlagen für Anbietende und ergänzende Angebote IAZH | 142-143 | 279 |
-| `doc-097ba90229a71bb8bdba` | section-0007 | Migrantische Vereine | 48-49 | 210 |
-| `doc-097ba90229a71bb8bdba` | section-0009 | Migrantische Vereine > Plattform für Migrantenvereine | 57-63 | 991 |
-| `doc-097ba90229a71bb8bdba` | section-0010 | Migrantische Vereine > Migrazin | 64-66 | 223 |
-| `doc-097ba90229a71bb8bdba` | section-0011 | Migrantische Vereine > Migrazin > Deniz Yüksel | 67-71 | 281 |
-| `doc-097ba90229a71bb8bdba` | section-0013 | Migrantische Vereine > Vernetzungstreffen | 77-78 | 127 |
-| `doc-097ba90229a71bb8bdba` | section-0015 | Migrantische Vereine > Informationen für neu Zugezogene > Willkommen im Kanton Zürich | 80-82 | 200 |
-| `doc-097ba90229a71bb8bdba` | section-0017 | Migrantische Vereine > Deutschkurse und Integrationsangebote > Deutschkursberatung und Deutschkurse finden | 84-86 | 271 |
-| `doc-097ba90229a71bb8bdba` | section-0018 | Migrantische Vereine > Deutschkurse und Integrationsangebote > Integrationsangebote | 87-89 | 267 |
-| `doc-5028cb30ffd4a8de19e1` | section-0007 | Schutz vor rassistischer Diskriminierung | 48-49 | 249 |
-| `doc-5028cb30ffd4a8de19e1` | section-0009 | Schutz vor rassistischer Diskriminierung > Rassistische Diskriminierung | 59-85 | 2213 |
-| `doc-5028cb30ffd4a8de19e1` | section-0010 | Schutz vor rassistischer Diskriminierung > Beratungs- und Fachstellen | 86-87 | 193 |
-| `doc-5028cb30ffd4a8de19e1` | section-0011 | Schutz vor rassistischer Diskriminierung > Beratungs- und Fachstellen > Anlaufstelle gegen Rassismus in Zürich | 88-92 | 492 |
-| `doc-5028cb30ffd4a8de19e1` | section-0012 | Schutz vor rassistischer Diskriminierung > Beratungs- und Fachstellen > Weitere Fachstellen in der Schweiz | 93-94 | 132 |
-| `doc-5028cb30ffd4a8de19e1` | section-0013 | Schutz vor rassistischer Diskriminierung > Beratungs- und Fachstellen > Weitere Fachstellen in der Schweiz > Meldeplattform für rassistische Online-Hassrede | 95-97 | 145 |
-| `doc-5028cb30ffd4a8de19e1` | section-0014 | Schutz vor rassistischer Diskriminierung > Beratungs- und Fachstellen > Weitere Fachstellen in der Schweiz > Beratungsnetz für Rassismusopfer | 98-100 | 165 |
-| `doc-5028cb30ffd4a8de19e1` | section-0015 | Schutz vor rassistischer Diskriminierung > Beratungs- und Fachstellen > Weitere Fachstellen in der Schweiz > Fachstelle für Rassismusbekämpfung (FRB) | 101-105 | 370 |
-| `doc-5028cb30ffd4a8de19e1` | section-0016 | Schutz vor rassistischer Diskriminierung > Beratungs- und Fachstellen > Weitere Fachstellen in der Schweiz > Eidgenössische Kommission gegen Rassismus (EKR) | 106-109 | 325 |
-| `doc-5028cb30ffd4a8de19e1` | section-0017 | Schutz vor rassistischer Diskriminierung > Beratungs- und Fachstellen > Weitere Fachstellen in der Schweiz > Stiftung gegen Rassismus und Antisemitismus (GRA) | 110-112 | 170 |
-| `doc-5028cb30ffd4a8de19e1` | section-0018 | Schutz vor rassistischer Diskriminierung > Weiterbildungsangebote für Behörden | 113-114 | 457 |
-| `doc-5028cb30ffd4a8de19e1` | section-0019 | Schutz vor rassistischer Diskriminierung > Weiterbildungsangebote für Behörden > Deniz Yüksel | 115-117 | 89 |
-| `doc-5028cb30ffd4a8de19e1` | section-0020 | Schutz vor rassistischer Diskriminierung > Weiterbildungsangebote für Behörden > Übersicht Weiterbildungsangebote | 118-125 | 1021 |
-| `doc-5028cb30ffd4a8de19e1` | section-0021 | Schutz vor rassistischer Diskriminierung > Unterstützung von Projekten | 126-129 | 385 |
-| `doc-5028cb30ffd4a8de19e1` | section-0022 | Schutz vor rassistischer Diskriminierung > Rechtliche Grundlagen | 130-142 | 1981 |
-| `doc-5028cb30ffd4a8de19e1` | section-0023 | Schutz vor rassistischer Diskriminierung > Fachliche Grundlagen | 143-148 | 887 |
-| `doc-5028cb30ffd4a8de19e1` | section-0024 | Schutz vor rassistischer Diskriminierung > Andere Arten von Diskriminierung | 149-153 | 360 |
 | `doc-614da06bc3d0c76de81f` | section-0007 | Niederlassungsbewilligung | 48-49 | 258 |
 | `doc-614da06bc3d0c76de81f` | section-0009 | Niederlassungsbewilligung > Erklärvideo Niederlassungsbewilligung | 57-63 | 185 |
 | `doc-614da06bc3d0c76de81f` | section-0010 | Niederlassungsbewilligung > Video Settlement Permit (EN) | 64-70 | 199 |
@@ -1698,7 +1389,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | partly_covered | `ch-sem-biometric-documents` Biometric residence permits | 1 | 6 | 2 | 0 | 0 | 4 |
 | nothing | `ch-sem-citizenship` Acquiring Swiss citizenship (ordinary and facilitated naturalisation) | 1 | 7 | 0 | 0 | 0 | 7 |
 | dispositioned | `ch-sem-directives` SEM directives - foreign nationals | 14 | 37 | 0 | 37 | 0 | 0 |
-| partly_covered | `ch-sem-entry` Entry and visa information | 44 | 117 | 17 | 9 | 0 | 91 |
+| partly_covered | `ch-sem-entry` Entry and visa information | 44 | 117 | 17 | 84 | 0 | 16 |
 | partly_covered | `ch-sem-entry-faq` Entry FAQ | 1 | 74 | 12 | 0 | 0 | 62 |
 | partly_covered | `ch-sem-eu-efta` Residence permits for EU/EFTA nationals | 6 | 11 | 5 | 2 | 0 | 4 |
 | partly_covered | `ch-sem-free-movement-faq` Free movement of persons FAQ | 1 | 26 | 1 | 0 | 0 | 25 |
@@ -1719,7 +1410,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | cited | `zh-fedlex-kv` Constitution of the Canton of Zurich (KV), SR 131.211 (federally guaranteed cantonal constitution) | 1 | 1 | 1 | 0 | 0 | 0 |
 | partly_covered | `zh-foreign-driving-licence` Zurich - exchanging a foreign driving licence | 1 | 33 | 6 | 0 | 2 | 27 |
 | partly_covered | `zh-gemeindeamt-naturalisation-office` Zurich - Naturalisation Division of the Gemeindeamt: contact and telephone hours | 1 | 4 | 1 | 0 | 0 | 3 |
-| partly_covered | `zh-integration` Zurich - integration | 28 | 247 | 0 | 13 | 5 | 234 |
+| cited | `zh-integration` Zurich - integration | 28 | 248 | 33 | 215 | 4 | 0 |
 | partly_covered | `zh-migrationsamt-office` Zurich - Migration Office: contact, counter and telephone hours | 1 | 9 | 1 | 0 | 0 | 8 |
 | dispositioned | `zh-naturalisation` Zurich - naturalisation | 1 | 6 | 0 | 6 | 0 | 0 |
 | partly_covered | `zh-no-employment` Zurich - Residence without employment for third-country nationals | 3 | 23 | 8 | 0 | 6 | 15 |
