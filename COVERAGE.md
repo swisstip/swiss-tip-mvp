@@ -10,15 +10,16 @@ submission is `mvp-zurich`; `mvp-wallisellen` was a proof of concept that a
 second, municipal pack can be built with the same tooling, is frozen at its
 attested release and is not extended, tested or documented further.
 
-**Release:** `mvp-zurich-2026-09-22-v7` (pack `mvp-zurich`, KB1)<br>
-**Content digest:** `48418016d8bc90f81db4dc8b417d6c33fcfd0f099d832d551fd3df750dc35730`<br>
-**Snapshot date:** 22 September 2026, the latest access date of a cited page
-(22 of the 225 were saved on 22 September, 10 on 19 September, 25 on 18
-September, 47 on 17 September, 49 on 15 September, 66 on 11 September and 6 on
-10 or 14 September); maximum age 60 days, stale from 21 November 2026<br>
-**Contents:** 18 topics, 171 concepts, 825 facts, 1,039 evidence excerpts
-(925 German, 114 English), 225 cited documents<br>
-**Review:** all 825 facts are `human-reviewed` by one named reviewer, confirmed
+**Release:** `mvp-zurich-2026-09-23-v13` (pack `mvp-zurich`, KB1)<br>
+**Content digest:** `835fa93b4aa5b6638daf3ed30d973e34b477be0e427e00a92c4b6f750668bc50`<br>
+**Snapshot date:** 23 September 2026, the latest access date of a cited page
+(2 of the 238 were saved on 23 September, 33 on 22 September, 10 on 19
+September, 25 on 18 September, 47 on 17 September, 49 on 15 September, 66 on
+11 September and 6 on 10 or 14 September); maximum age 60 days, stale from
+22 November 2026<br>
+**Contents:** 18 topics, 183 concepts, 923 facts, 1,148 evidence excerpts
+(1,034 German, 114 English), 238 cited documents<br>
+**Review:** all 923 facts are `human-reviewed` by one named reviewer, confirmed
 in the console: the 104 of the residence and contacts topics on 14 September
 2026, the 149 of the five topics added on 15 September 2026 that day, the
 37 of the 13 `fza-*` concepts, drafted from the Agreement on the Free Movement
@@ -41,7 +42,11 @@ review was reopened when a second citation of the law was added to them. The
 22 September 2026. The 113 facts of the customs topic were confirmed on
 23 September 2026, hardest first: the 23 that carry a number, then the five
 concepts that rest on a single page, then the rest; no statement was corrected
-in that review. Not
+in that review. The 98 facts of the basic health insurance wave were confirmed
+the same day, also hardest first: the 13 that carry a number, a date or a
+threshold, then nine judgement calls the coordinating assistant recorded for
+the reviewer to overturn, then the six German legal terms rendered into
+English, then the rest. Not
 a legal review (see [LIMITATIONS.md](LIMITATIONS.md))<br>
 **Places:** the release embeds a place register, so a caller names the
 user's place instead of a code: Switzerland, the 26 cantons and the 2,110
@@ -49,9 +54,9 @@ municipalities of the Federal Statistical Office's register of
 municipalities (snapshot of 18 September 2026), with 115 other-language
 names on 50 of them (see "Jurisdictions and languages")<br>
 **Readiness:** the release is **not yet attested**; `readiness.json` still
-names `mvp-zurich-2026-09-22-v6`, which was attested on 22 September 2026 after
-the review of its 712 facts. Until the reviewer attests this release, the
-server with `--require-ready` and the pack image keep serving v6. No
+names `mvp-zurich-2026-09-22-v7`, which was attested on 22 September 2026.
+Until the reviewer attests this release, the server with `--require-ready` and
+the pack image keep serving v7. No
 graded
 live-caller session covers the `fza-*` concepts, the office contacts, the
 daily-life topics, the cross-jurisdiction cases, entry and visas, voting
@@ -66,12 +71,17 @@ to the page where a fact cites it, so the Migrationsamt address and hours are
 served once, from the office's own page (see [LIMITATIONS.md](LIMITATIONS.md),
 "Retrieval limitations")<br>
 **Publishers and basis:** every cited document names the institution that
-published it (127 federal, 58 cantonal, 40 municipal) and every excerpt what
-it is: 588 facts rest on an authority's own guidance, 77 on an office
+published it (140 federal, 58 cantonal, 40 municipal) and every excerpt what
+it is: 654 facts rest on an authority's own guidance, 74 on an office
 directory (the SEM list of cantonal offices and the Zurich offices' own
-contact entries), 50 on a ch.ch or priminfo portal summary, 49 on a federal
-act, 37 on the Agreement on the Free Movement of Persons, 17 on a federal
-ordinance and 7 on a cantonal directive (see "Cited sources")
+contact entries), 66 on a federal act, 50 on a ch.ch or priminfo portal
+summary, 37 on the Agreement on the Free Movement of Persons, 35 on a federal
+ordinance and 7 on a cantonal directive. The health insurance wave of
+23 September 2026 raised the two legal kinds most: the amounts of cost sharing
+and the rules on changing insurer, on treatment abroad and on suspending the
+insurance are served with the KVG, the KVV or the KLV beside the authority's
+own page, because the FOPH pages state those figures without a date
+(see "Cited sources")
 
 ## Scope statement
 
@@ -138,7 +148,7 @@ that lists them. Gap messages name a place next to its code (`CH-ZH-261
 user anywhere can be placed; it publishes no fact of its own.
 
 Statements are published in English (`en`); the excerpts they cite are in the
-language of the source page, German (`de`) for 686 excerpts. On 112 facts of
+language of the source page, German (`de`) for 1,034 excerpts. On 112 facts of
 27 concepts the English version of the same SEM, FOPH, FOCBS, SECO or SERAFE
 page is cited next to the German excerpt the statement was written from (113
 English excerpts), and on one fact the German SEM residence overview next to

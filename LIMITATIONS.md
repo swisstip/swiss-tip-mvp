@@ -3,7 +3,7 @@
 **Last update:** 23 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
-claim. It applies to the committed release `mvp-zurich-2026-09-22-v7` and is
+claim. It applies to the committed release `mvp-zurich-2026-09-23-v13` and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
 [COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
@@ -26,7 +26,7 @@ below is measured on it.
 
 ## Review status: reviewed by one person, not by a lawyer
 
-**All 825 facts are `human-reviewed`**, by one named reviewer: the 104 facts
+**All 923 facts are `human-reviewed`**, by one named reviewer: the 104 facts
 of the residence topic (78) and of the cantonal migration-office contacts
 (26) on 14 September 2026, the 149 facts of the five topics added on
 15 September 2026, social insurance (25), tax at source (26), driving
@@ -226,6 +226,9 @@ review, which the coverage root no longer carries since release
 | 17 September 2026 | 49 (entry and visas, and two Zurich family-reunification concepts) | in bulk groups |
 | 18 September 2026 | 29 (voting rights, tax-at-source tariffs) | 5 one by one, 24 in bulk groups |
 | 18 September 2026 | 106 (expat life) | in two bulk groups of 100 and 6 |
+| 22 September 2026 | 117 (settlement permit 57, integration 25, naturalisation 19, and 16 across four other topics) | in bulk groups |
+| 23 September 2026 | 113 (customs) | hardest first: the 23 that carry a number, then the five single-page concepts, then the rest |
+| 23 September 2026 | 98 (basic health insurance) | hardest first, against a written brief: the 13 that carry a number, a date or a threshold, then nine recorded judgement calls, then six German legal terms rendered into English, then the rest |
 
 ## Gaps in the English versions of 19 September 2026
 
@@ -691,6 +694,26 @@ implemented.
 
 ## Routing defects the regression pack found
 
+- **What the health insurance wave cost the regression pack
+  (23 September 2026).** Taking the topic from eight concepts to seventeen moved
+  the rankings across the whole pack, and the replay of
+  `mvp-zurich-2026-09-23-v13` shows both directions of it. Sixteen quarantined
+  cases now pass lexically and fifteen with hybrid search. Five cases were lost
+  and are quarantined with the measurement behind each: Q-EN-17 and XC-12 still
+  find the concept they ask for and only fell from `strong` to `weak`, because
+  `match_strength` is a share of the lexical weight and the topic grew;
+  Q-EN-79 lost to `health-insurance-deadline`, which now carries the answer at
+  least as well as the two-fact `health-insurance-enrolment` it asks for;
+  Q-DE-13, Q-DE-60 and Q-DE-101 lost lexically to a health insurance concept and
+  pass with hybrid search; XC-13 and XM-16 lost the other way round. Measuring
+  each match named one mechanism: the tokeniser stems to six characters and a
+  short alias contributes each of its tokens on its own, so one everyday German
+  word can carry a concept into an unrelated question - `krank`, `hohe`,
+  `anpass`, `arbeit`. Six aliases written in that wave were removed for it,
+  which recovered XM-16 lexically; `Mutterschaftsurlaub` and
+  `Mutterschaftsleistungen` cannot be separated at all, because six characters
+  make them the same token.
+
 - **A fact served to a group its statement excludes.**
   `zh-foreign-licence-exchange-11` ("professional drivers other than those
   with a licence from an EU or EFTA state must exchange the licence before
@@ -760,10 +783,51 @@ implemented.
   says it, and each names the other in its notes. The release does not
   resolve the difference, because neither page does.
 
+## Basic health insurance: what the release does not publish
+
+The wave of 23 September 2026 took the `health-insurance` topic from eight
+concepts to seventeen and served much of it from the act and the ordinances
+(KVG, KVV, KLV) beside the Federal Office of Public Health's own pages, because
+those pages state the cost-sharing amounts without a date. Four things are
+deliberately absent, and an answer that supplies them is not coming from this
+release.
+
+- **No premium, and no calculator.** The release publishes what makes premiums
+  differ - the canton, the premium region, the age group, the chosen franchise
+  and model - and never an amount, an average or a rate. The federal premium
+  comparison exists and the release does not reproduce it.
+- **No ombudsman, and no complaint route.** The plain-language portal names an
+  ombudsman as where to go when an insurer does not settle a bill. No official
+  source in this release carries that body, so `health-insurance-billing`
+  declares it as not served, together with how long an insurer may take to
+  reimburse and what to do when the bill cannot be paid.
+- **No European health insurance card.** The card appears in this corpus only on
+  a plain-language page, which may not carry a statement on its own (D4 of the
+  work order). What the release serves instead is the ordinance's own rule: the
+  insurance pays for treatment abroad in an emergency, an emergency needs a
+  temporary stay and a return journey that is not reasonable, there is none
+  where someone travels abroad in order to be treated, and at most twice the
+  Swiss amount is reimbursed.
+- **No division of a monthly premium.** The plain-language portal states that
+  an insurer bills to the day when a child is born at the end of a month, when
+  someone registers mid-month or when someone dies. Neither the act nor the
+  ordinance says so. What the release carries is the day on which cover begins
+  and ends (KVG Art. 5, KVV Art. 7 para. 3), which is the part that is grounded.
+
+Two further boundaries are worth naming. Supplementary insurance is a contract
+under the insurance contract act: the release serves the edge of the compulsory
+insurance against it - that an insurer may refuse an applicant, that the notice
+periods differ, that the old insurer may not make a change of basic insurance
+conditional on giving up the supplementary cover - and not what any policy
+covers. And the financing and supervision of the system, including how the
+Confederation and the cantons share the cost of premium reductions, is
+dispositioned as deferred rather than served, because it is not a question a
+resident asks about their own premium.
+
 ## Retrieval limitations
 
 - **Authored search words are the assistant's, and they move rarity
-  weights.** All 171 concepts carry authored aliases and at least one
+  weights.** All 183 concepts carry authored aliases and at least one
   English and one German sample question; the build refuses a concept
   without one in each language (`question_languages` of the curation, told
   by the questions' function words). On 19 September 2026 the last 13

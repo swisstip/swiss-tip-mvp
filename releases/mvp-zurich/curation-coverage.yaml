@@ -702,3 +702,642 @@ dispositions:
   - section-0006
   - section-0007
   - section-0009
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0004
+- kind: out_of_scope
+  reason: 'What the federal premium calculator can do. The release publishes the rules and not the prices, and names no calculator''s behaviour.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0007
+  out_of_scope_entry: 'every calculator'
+- kind: navigation
+  reason: 'Boxes for ordering printed material and for asking the publisher a question.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0008
+  - section-0068
+  - section-0069
+- kind: navigation
+  reason: 'A pointer to where information on health insurance can be found, rather than a rule.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0010
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. These answers restate the duty to insure, its three-month deadline, the consequence of a late registration, the free choice among insurers and their duty to accept, the exemptions, the end of the insurance and the case of a move abroad, all of which health-insurance-deadline, health-insurance-enrolment, zh-health-insurance-exemption and health-insurance-insured-abroad carry.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0018
+  - section-0019
+  - section-0020
+  - section-0021
+  - section-0022
+  - section-0027
+- kind: deferred
+  reason: 'Whether the insurer may charge a whole month''s premium when a child is born at the end of a month, when someone registers in Switzerland mid-month or when someone dies at the start of one. The reviewer asked on 23 September 2026 for this to be served, but neither the act nor the ordinance states how the monthly premium is divided; what is grounded is that cover begins and ends on a named day, which health-insurance-deadline now carries. To be looked at again if a rule on the division of the premium is found.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0015
+  - section-0016
+  - section-0017
+  reaffirm_by: '2027-03-31'
+- kind: deferred
+  reason: 'What to do when an insurer does not answer an application to join. A complaint route, which the release does not serve for any authority or insurer.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0023
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Suspending the accident cover and suspending the insurance during long service are carried by accident-insurance and by health-insurance-service-suspension, the second of which this wave added from the act and the ordinance.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0024
+  - section-0025
+- kind: deferred
+  reason: 'Whether the duty to insure continues during a temporary stay abroad for travel or study. Neighbouring on health-insurance-abroad, which serves what the insurance pays abroad rather than who remains subject to the duty while away.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0026
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Every one of these answers on cost sharing - the franchise and the retention and their caps, the hospital contribution, maternity, bathing cures and aids, the franchise on a change of insurer or across the turn of the year, the combination with a model or a bonus insurance, and the retention of 40 per cent - is carried by health-insurance-cost-sharing, which holds nineteen facts.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0029
+  - section-0030
+  - section-0031
+  - section-0032
+  - section-0033
+  - section-0034
+  - section-0035
+  - section-0036
+  - section-0037
+  - section-0038
+  - section-0039
+  - section-0040
+  - section-0041
+  - section-0042
+  - section-0043
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. The notice periods, the effect of a late joining and the hand-over between the old and the new insurer are carried by health-insurance-change, which rests on Art. 7 of the act rather than on this page''s calendar dates.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0046
+  - section-0047
+  - section-0048
+  - section-0049
+  - section-0050
+  - section-0051
+  - section-0053
+  - section-0055
+  - section-0056
+- kind: deferred
+  reason: 'The notice periods of a supplementary insurance, which is a contract under the insurance contract act and not part of the compulsory insurance this release serves.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0052
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. That arrears block a change of insurer is carried by health-insurance-unpaid-premiums from Art. 64a para. 6 of the act.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0054
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Whether a supplementary insurance is still needed for the free choice of hospital is carried by health-insurance-supplementary.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0058
+- kind: deferred
+  reason: 'Treatment abroad. What the release serves of this answer - the emergency, what counts as one and the ceiling of twice the Swiss amount - it carries from Art. 36 of the ordinance. The rest of the section is the European health insurance card and the coordination rules, which the reviewer decided on 23 September 2026 to leave not served because they appear only on a plain-language page and D4 forbids that as a lone source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0060
+  reaffirm_by: '2027-03-31'
+- kind: deferred
+  reason: 'Medicines and aids bought abroad. The reviewer decided on 23 September 2026 to leave this out of the wave.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0061
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. The reimbursement principle and the two systems by which a bill is settled are carried by health-insurance-billing from Art. 42 of the act, which this wave added.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0063
+  - section-0064
+  - section-0065
+- kind: deferred
+  reason: 'The tiers soldant, a third way of settling a bill that Art. 42 of the act does not name; the release carries the two systems the act sets up.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0066
+  reaffirm_by: '2027-03-31'
+- kind: deferred
+  reason: 'What the billing systems mean in practice - how long an insurer usually takes to reimburse, what to do when the bill cannot be paid, and the ombudsman. None of it is in the act or the ordinance, and the ombudsman has no source in this release at all, so health-insurance-billing declares all three as not served.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0067
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. The franchise and the retention, the worked example, the three model families and the routes to a lower premium are carried by health-insurance-cost-sharing, health-insurance-models, health-insurance-change and premium-reduction.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e735f7a09d6dd3ae6741
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0020
+  - section-0021
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Dropping the accident cover when the employer insures it is carried by accident-insurance, which also states the threshold in hours; this page''s plain-language twin states that threshold more loosely and was deliberately not cited for it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e735f7a09d6dd3ae6741
+  section_ids:
+  - section-0018
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Suspending the insurance during service is carried by health-insurance-service-suspension from Art. 3 para. 4 of the act and Art. 10a of the ordinance, which this wave added.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e735f7a09d6dd3ae6741
+  section_ids:
+  - section-0019
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. What basic insurance is and pays for, what the insured pays themselves, the three model families and the right to change insurer are carried by health-insurance-benefits, health-insurance-cost-sharing, health-insurance-models and health-insurance-change.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-5e5954d1f6e0e96050f7
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0018
+- kind: duplicate
+  reason: 'A worked example of the franchise that was deliberately not cited: it has the insurer pay the rest of the bill without mentioning the retention of 10 per cent, which contradicts health-insurance-cost-sharing-3. The same page''s other example, and the one on the page about saving, are arithmetically complete.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-5e5954d1f6e0e96050f7
+  section_ids:
+  - section-0010
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. The change of insurer, of franchise and of model, and the warning about arrears, are carried by health-insurance-change, health-insurance-cost-sharing, health-insurance-models and health-insurance-unpaid-premiums, each from the act or the ordinance rather than from this page''s calendar dates.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e3a0c411d388f9d8af8f
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. What a premium reduction is, who grants it, the cantons'' competence and the joint institution for people abroad are carried by premium-reduction and health-insurance-insured-abroad.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-0c3c607cd47664b50658
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0010
+  - section-0012
+  - section-0013
+  - section-0014
+- kind: deferred
+  reason: 'The table of the premium-reduction office of every canton. Group E of the work order extends the pack to all 26 cantons; this table is read in that wave rather than here, where only the Zurich office is served.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-0c3c607cd47664b50658
+  section_ids:
+  - section-0009
+  reaffirm_by: '2027-03-31'
+- kind: deferred
+  reason: 'How the Confederation and the cantons finance the premium reduction between them. The financing of the system is not a question a resident asks about their own premium.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-0c3c607cd47664b50658
+  section_ids:
+  - section-0015
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'A list of links to further pages.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-0c3c607cd47664b50658
+  section_ids:
+  - section-0016
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Who must be insured in Switzerland while living abroad, the limited offer of insurers, the premium per state of residence and who grants the premium reduction are carried by health-insurance-insured-abroad.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-2e4546e6622f10a0de97
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+- kind: out_of_scope
+  reason: 'An overview of the premiums for each state of residence. The release carries the rule that the premium follows the state of residence and not the amounts.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-2e4546e6622f10a0de97
+  section_ids:
+  - section-0013
+  out_of_scope_entry: 'insurance premiums and premium reductions'
+- kind: navigation
+  reason: 'A list of links to further pages.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-2e4546e6622f10a0de97
+  section_ids:
+  - section-0014
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0002
+- kind: navigation
+  reason: 'The heading of a link to the list of cantonal authorities.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0003
+- kind: duplicate
+  reason: 'When the insurance of a cross-border commuter begins and ends, which health-insurance-deadline now carries from Art. 5 of the act and Art. 7 of the ordinance.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0005
+- kind: deferred
+  reason: 'Cross-border commuters from a state outside the EU, EFTA and the United Kingdom, whom health-insurance-cross-border-commuter declares as not served because the right of option rests on agreements that do not reach them.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0008
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0024
+  - section-0025
+  - section-0026
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0027
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-b78c155affebebdb3ac3
+  section_ids:
+  - section-0002
+- kind: deferred
+  reason: 'How the tariffs between insurers and providers are set and approved. A question about the machinery of the system rather than about what a resident pays or receives.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-b78c155affebebdb3ac3
+  section_ids:
+  - section-0004
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The question lines of the page''s accordion on medicines, vaccinations and maternity benefits; the answers behind them are cited from the sections that state them, and health-insurance-benefits and health-insurance-cost-sharing carry them.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-b78c155affebebdb3ac3
+  section_ids:
+  - section-0012
+  - section-0016
+  - section-0017
+- kind: navigation
+  reason: 'A newsletter box and the publisher''s postal address block.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-b78c155affebebdb3ac3
+  section_ids:
+  - section-0022
+  - section-0031
+- kind: duplicate
+  reason: 'The phases of the premium approval process, which health-insurance-premium-regions carries in five facts added in this wave - who calculates, who submits, what the office examines, that cost coverage is kept per canton, and that the office approves and publishes.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-d27fc848afce0db98807
+  section_ids:
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0009
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-d27fc848afce0db98807
+  section_ids:
+  - section-0032
+- kind: deferred
+  reason: 'How the Confederation and the cantons finance the premium reduction, and how the office monitors it. The financing and the supervision of the system are not questions a resident asks about their own premium.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-d43ca41415a4f2f2c9c3
+  section_ids:
+  - section-0005
+  - section-0006
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-d43ca41415a4f2f2c9c3
+  section_ids:
+  - section-0015
+- kind: deferred
+  reason: 'The English version of the financing and monitoring sections, deferred for the same reason as the German page.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-380255d8847870b7c0f3
+  section_ids:
+  - section-0005
+  - section-0006
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'An empty leading section and the publisher''s postal address block.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-380255d8847870b7c0f3
+  section_ids:
+  - section-0001
+  - section-0013
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-38f8f9f8e3a5024b8196
+  section_ids:
+  - section-0005
+- kind: deferred
+  reason: 'Advice on looking after one''s health, on asking a pharmacy about a minor complaint and on getting a second opinion before an operation. The page frames all three as advice rather than as entitlements, and the second opinion it makes conditional on asking the insurer, so none of them is a rule the release can state.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-38f8f9f8e3a5024b8196
+  section_ids:
+  - section-0006
+  - section-0007
+  - section-0008
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. What a supplementary insurance is, and that it sits outside the compulsory insurance, is carried by health-insurance-supplementary and health-insurance-benefits.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-faac7633f8f4608f6d70
+  section_ids:
+  - section-0005
+  - section-0006
+- kind: deferred
+  reason: 'What the supplementary policies cover and how they are cancelled. Supplementary insurance is a contract under the insurance contract act; the release serves the boundary of the compulsory insurance and not the private policies beyond it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-faac7633f8f4608f6d70
+  section_ids:
+  - section-0007
+  - section-0008
+  reaffirm_by: '2027-03-31'
+- kind: out_of_scope
+  reason: 'The average premium as a statistical measure, the year''s rise in per cent and the standard premium. The release carries what makes premiums differ and never an amount or a rate.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-bad28b3d0044b0143434
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  out_of_scope_entry: 'insurance premiums and premium reductions'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-fcdb3a04d407cd5a1875
+  section_ids:
+  - section-0002
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-fcdb3a04d407cd5a1875
+  section_ids:
+  - section-0003
+  - section-0004
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-a2ba95d86bd9041085b6
+  section_ids:
+  - section-0004
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-a2ba95d86bd9041085b6
+  section_ids:
+  - section-0005
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-c91304c05bdefe12e21b
+  section_ids:
+  - section-0002
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-c91304c05bdefe12e21b
+  section_ids:
+  - section-0004
+- kind: duplicate
+  reason: 'When the duty to insure ends, which health-insurance-deadline now carries from Art. 5 para. 3 of the act and Art. 7 para. 3 of the ordinance.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e494fce7ee1b673e639f
+  section_ids:
+  - section-0004
+- kind: out_of_scope
+  reason: 'The insurance of people staying without papers, which the pack does not serve.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e494fce7ee1b673e639f
+  section_ids:
+  - section-0005
+  out_of_scope_entry: 'asylum'
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-1631ee5aec5b0914091c
+  section_ids:
+  - section-0008
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-1631ee5aec5b0914091c
+  section_ids:
+  - section-0009
+- kind: duplicate
+  reason: 'Who is not compulsorily insured against accidents, which accident-insurance carries.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-6e45b9e28dd55e61b3a3
+  section_ids:
+  - section-0003
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-6e45b9e28dd55e61b3a3
+  section_ids:
+  - section-0006
+- kind: duplicate
+  reason: 'The English version of the section on who is not compulsorily insured against accidents, which accident-insurance carries from the German page.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-f373f87980ac42c88f80
+  section_ids:
+  - section-0003
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-f373f87980ac42c88f80
+  section_ids:
+  - section-0006
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-10dfed4288411da300f1
+  section_ids:
+  - section-0008
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-10dfed4288411da300f1
+  section_ids:
+  - section-0009
+- kind: duplicate
+  reason: 'The higher retention on a medicine that can be exchanged for a generic, which health-insurance-cost-sharing carries.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-7e46ce8537f76f1736a8
+  section_ids:
+  - section-0005
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-d6ba6d241671ed943a29
+  section_ids:
+  - section-0014
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-0b415d97d57dc63b4f38
+  section_ids:
+  - section-0002
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-53179c28edeeaf2a28d0
+  section_ids:
+  - section-0011

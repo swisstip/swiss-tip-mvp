@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-acceptance-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-22-v7",
-  "content_sha256": "48418016d8bc90f81db4dc8b417d6c33fcfd0f099d832d551fd3df750dc35730",
-  "suite_sha256": "ffe4472c2163e0cd26d94bb329ffc1df5bf974da240170f1a5c551509ba27c0e",
-  "checked_at": "2026-09-23T06:44:10.767888+00:00",
-  "as_of": "2026-09-22",
+  "release_id": "mvp-zurich-2026-09-23-v13",
+  "content_sha256": "835fa93b4aa5b6638daf3ed30d973e34b477be0e427e00a92c4b6f750668bc50",
+  "suite_sha256": "40fa88463d968ec49a8e0712c6ceee66f48de1cffe2ba879a6a3ca3c9dade053",
+  "checked_at": "2026-09-23T08:47:32.725905+00:00",
+  "as_of": "2026-09-23",
   "passed": true,
-  "cases": 98,
-  "blocking": 98,
+  "cases": 110,
+  "blocking": 110,
   "failed": [],
   "quarantined": [],
   "quarantined_failed": [],
@@ -27,7 +27,7 @@
           "hits": [
             "eu-employment-registration-deadline",
             "zh-eu-registration",
-            "zh-political-rights"
+            "health-insurance-deadline"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -40,7 +40,7 @@
             "eu-employment-registration-deadline",
             "zh-eu-registration"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -80,7 +80,7 @@
           "concept_ids": [
             "city-zurich-arrival"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -159,7 +159,7 @@
             "permit-b",
             "permit-l"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -284,7 +284,7 @@
             "family-b",
             "family-deadlines"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -355,7 +355,7 @@
           "concept_ids": [
             "family-separation"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -420,7 +420,7 @@
             "permit-c",
             "permit-c-five-years"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -506,7 +506,7 @@
             "social-assistance-review",
             "permit-b"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -588,7 +588,7 @@
             "family-swiss",
             "family-deadlines"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -678,7 +678,7 @@
             "ahv-contribution-refund",
             "ahv-pension-abroad"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -720,7 +720,7 @@
           "concept_ids": [
             "ahv-contribution-refund"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -751,7 +751,7 @@
           "concept_ids": [
             "ahv-contribution-refund"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -856,7 +856,7 @@
           "concept_ids": [
             "bvg-cash-out-departure"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -892,7 +892,7 @@
           "concept_ids": [
             "bvg-cash-out-departure"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -1002,7 +1002,7 @@
             "zh-tax-at-source-liability",
             "tax-at-source-liability"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1078,7 +1078,7 @@
             "zh-tax-at-source-liability",
             "tax-at-source-liability"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-BE",
           "not_recognised": {},
           "statuses": {
@@ -1213,7 +1213,7 @@
             "zh-tax-at-source-liability",
             "tax-at-source-liability"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1330,7 +1330,7 @@
             "zh-foreign-licence-exchange",
             "foreign-licence-exchange"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1377,7 +1377,7 @@
           "concept_ids": [
             "zh-foreign-licence-exchange"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1410,7 +1410,7 @@
           "concept_ids": [
             "zh-foreign-licence-exchange"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1432,7 +1432,7 @@
           "concept_ids": [
             "zh-foreign-licence-exchange"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -1575,7 +1575,7 @@
             "zh-foreign-licence-exchange",
             "zh-control-drive"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1621,7 +1621,7 @@
           "concept_ids": [
             "zh-foreign-licence-exchange"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1715,8 +1715,8 @@
           "expect_concept": "health-insurance-deadline",
           "hits": [
             "health-insurance-deadline",
-            "health-insurance-enrolment",
-            "zh-premium-reduction"
+            "health-insurance-change",
+            "health-insurance-enrolment"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -1729,7 +1729,7 @@
             "health-insurance-deadline",
             "zh-health-insurance-exemption"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1749,7 +1749,10 @@
               "health-insurance-deadline-5",
               "health-insurance-deadline-6",
               "health-insurance-deadline-7",
-              "health-insurance-deadline-8"
+              "health-insurance-deadline-8",
+              "health-insurance-deadline-9",
+              "health-insurance-deadline-10",
+              "health-insurance-deadline-11"
             ],
             "zh-health-insurance-exemption": [
               "zh-health-insurance-exemption-1",
@@ -1764,7 +1767,9 @@
           "bases": {
             "health-insurance-deadline": [
               "Federal act: KVG, SR 832.10, Art. 3",
-              "Federal authority guidance"
+              "Federal act: KVG, SR 832.10, Art. 5",
+              "Federal authority guidance",
+              "Federal ordinance: KVV, SR 832.102, Art. 7"
             ],
             "zh-health-insurance-exemption": [
               "Cantonal authority guidance",
@@ -1855,7 +1860,7 @@
           "hits": [
             "zh-premium-reduction",
             "premium-reduction",
-            "zh-sva-telephone-numbers"
+            "accident-insurance"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -1868,7 +1873,7 @@
             "zh-premium-reduction",
             "premium-reduction"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1902,6 +1907,7 @@
               "Cantonal authority guidance"
             ],
             "premium-reduction": [
+              "Federal act: KVG, SR 832.10, Art. 65",
               "Federal authority guidance"
             ]
           },
@@ -1912,7 +1918,7 @@
           "concept_ids": [
             "zh-premium-reduction"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1944,7 +1950,7 @@
           "concept_ids": [
             "zh-premium-reduction"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1966,7 +1972,7 @@
           "concept_ids": [
             "zh-premium-reduction"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-69",
           "not_recognised": {},
           "statuses": {
@@ -2088,7 +2094,7 @@
             "zh-naturalisation-ordinary",
             "city-zurich-naturalisation"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -2162,7 +2168,7 @@
             "zh-naturalisation-ordinary",
             "city-zurich-naturalisation"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-69",
           "not_recognised": {},
           "statuses": {
@@ -2361,7 +2367,7 @@
             "zh-naturalisation-facilitated",
             "city-zurich-naturalisation-facilitated"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -2512,7 +2518,7 @@
           "concept_ids": [
             "zh-migrationsamt-contact"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -2592,7 +2598,7 @@
           "concept_ids": [
             "zh-migrationsamt-contact"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -2664,7 +2670,7 @@
           "concept_ids": [
             "zh-road-traffic-office-locations"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -2752,7 +2758,7 @@
           "concept_ids": [
             "city-zurich-population-office"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -2833,7 +2839,7 @@
             "zh-sva-contact",
             "zh-sva-telephone-numbers"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -2933,7 +2939,7 @@
           "concept_ids": [
             "zh-tax-office-contact"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -3004,7 +3010,7 @@
             "city-zurich-dog-registration",
             "zh-dog-keeping"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3104,7 +3110,7 @@
           "concept_ids": [
             "city-zurich-household-waste"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3196,7 +3202,7 @@
             "city-zurich-recycling-centres",
             "city-zurich-hazardous-waste"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3305,7 +3311,7 @@
           "concept_ids": [
             "city-zurich-recycling-centres"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3385,7 +3391,7 @@
           "concept_ids": [
             "city-zurich-parking-permits"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3459,7 +3465,7 @@
             "zh-vehicle-registration-move",
             "city-zurich-first-steps"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3560,7 +3566,7 @@
           "concept_ids": [
             "city-zurich-kindergarten"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3641,7 +3647,7 @@
           "concept_ids": [
             "city-zurich-tax-return"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3710,7 +3716,7 @@
           "concept_ids": [
             "radio-tv-household-fee"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3787,7 +3793,7 @@
           "concept_ids": [
             "city-zurich-medical-emergency"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3856,7 +3862,7 @@
           "concept_ids": [
             "zh-road-traffic-office-locations"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3940,7 +3946,7 @@
             "cantonal-migration-contact",
             "zh-eu-l"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-BE",
           "not_recognised": {},
           "statuses": {
@@ -4080,7 +4086,7 @@
             "cantonal-migration-contact",
             "zh-eu-registration"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-AG",
           "not_recognised": {},
           "statuses": {
@@ -4146,7 +4152,7 @@
             "city-zurich-arrival",
             "zh-migrationsamt-contact"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-AG",
           "not_recognised": {},
           "statuses": {
@@ -4244,7 +4250,7 @@
             "zh-control-drive",
             "zh-road-traffic-office-locations"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-SG",
           "not_recognised": {},
           "statuses": {
@@ -4356,7 +4362,7 @@
             "city-zurich-naturalisation",
             "zh-naturalisation-division-contact"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-BE-351",
           "not_recognised": {},
           "statuses": {
@@ -4465,8 +4471,8 @@
           "expect_concept": "premium-reduction",
           "hits": [
             "premium-reduction",
-            "zh-premium-reduction",
-            "zh-sva-telephone-numbers"
+            "health-insurance-insured-abroad",
+            "zh-premium-reduction"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -4480,7 +4486,7 @@
             "zh-premium-reduction",
             "zh-sva-contact"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-LU",
           "not_recognised": {},
           "statuses": {
@@ -4512,6 +4518,7 @@
           },
           "bases": {
             "premium-reduction": [
+              "Federal act: KVG, SR 832.10, Art. 65",
               "Federal authority guidance"
             ],
             "zh-premium-reduction": [],
@@ -4584,7 +4591,7 @@
             "zh-tax-at-source-liability",
             "zh-tax-office-contact"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZG",
           "not_recognised": {},
           "statuses": {
@@ -4698,7 +4705,7 @@
             "cantonal-migration-contact",
             "zh-migrationsamt-contact"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-BE",
           "not_recognised": {},
           "statuses": {
@@ -4751,7 +4758,7 @@
           "hits": [
             "eu-employment-registration-deadline",
             "zh-eu-registration",
-            "city-zurich-arrival-documents"
+            "health-insurance-deadline"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -4765,7 +4772,7 @@
             "zh-eu-registration",
             "zh-eu-b"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -4817,7 +4824,7 @@
             "city-zurich-arrival-documents",
             "city-zurich-population-office"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -4911,7 +4918,7 @@
             "zh-dog-keeping",
             "city-zurich-dog-registration"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-198",
           "not_recognised": {},
           "statuses": {
@@ -5016,7 +5023,7 @@
             "city-zurich-parking-permits",
             "city-zurich-first-steps"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-62",
           "not_recognised": {},
           "statuses": {
@@ -5095,7 +5102,7 @@
           "concept_ids": [
             "gymnasium-admission"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -5129,7 +5136,7 @@
           "concept_ids": [
             "eu-employment-registration-deadline"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "DE",
           "not_recognised": {},
           "statuses": {
@@ -5165,7 +5172,7 @@
             "zh-eu-registration",
             "cantonal-migration-contact"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-GE",
           "not_recognised": {},
           "statuses": {
@@ -5228,7 +5235,7 @@
             "zh-eu-registration",
             "city-zurich-arrival"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -5273,7 +5280,7 @@
           "concept_ids": [
             "third-country-work"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -5308,7 +5315,7 @@
             "zh-migrationsamt-contact",
             "cantonal-migration-contact"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-BE",
           "not_recognised": {},
           "statuses": {
@@ -5359,7 +5366,7 @@
           "concept_ids": [
             "city-zurich-population-office"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -5394,7 +5401,7 @@
             "city-zurich-school-holidays",
             "city-zurich-kindergarten"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-293",
           "not_recognised": {},
           "statuses": {
@@ -5434,7 +5441,7 @@
           "concept_ids": [
             "city-zurich-household-waste"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-BS-2701",
           "not_recognised": {},
           "statuses": {
@@ -5469,8 +5476,8 @@
           "expect_concept": null,
           "hits": [
             "zh-family-allowances",
-            "zh-tax-at-source-tariffs",
-            "customs-import-vat-rate"
+            "health-insurance-cost-sharing",
+            "zh-tax-at-source-tariffs"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -5517,8 +5524,8 @@
           "expect_concept": null,
           "hits": [
             "ahv-contribution-refund",
-            "city-zurich-marriage",
-            "customs-leaving-with-goods"
+            "health-insurance-abroad",
+            "health-insurance-billing"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -5541,8 +5548,8 @@
           "expect_concept": null,
           "hits": [
             "aig-short-stay",
-            "third-country-work",
-            "third-country-work-conditions"
+            "health-insurance-cross-border-commuter",
+            "third-country-work"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -5650,7 +5657,7 @@
           "concept_ids": [
             "entry-short-stay-rule"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -5730,7 +5737,7 @@
             "entry-visa-types",
             "entry-visa-application"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -5822,7 +5829,7 @@
           "concept_ids": [
             "entry-visa-fee-insurance"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -5901,7 +5908,7 @@
             "entry-etias",
             "entry-exit-system"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -5990,7 +5997,7 @@
           "concept_ids": [
             "entry-visa-need"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -6054,7 +6061,7 @@
           "concept_ids": [
             "zh-family-l-permit"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -6127,7 +6134,7 @@
             "zh-political-rights",
             "political-rights-federal"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -6225,7 +6232,7 @@
             "zh-tax-at-source-tariffs",
             "tax-at-source-tariff-codes"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -6326,7 +6333,7 @@
             "political-rights-federal",
             "zh-political-rights"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-BE",
           "not_recognised": {},
           "statuses": {
@@ -6418,7 +6425,7 @@
             "zh-family-allowances",
             "family-allowances"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -6507,7 +6514,7 @@
           "concept_ids": [
             "parental-leave"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -6581,7 +6588,7 @@
           "concept_ids": [
             "tenancy-agreement"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -6661,7 +6668,7 @@
           "concept_ids": [
             "rent-changes"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -6725,7 +6732,8 @@
           "expect_concept": "rent-changes",
           "hits": [
             "rent-changes",
-            "zh-initial-rent-form"
+            "zh-initial-rent-form",
+            "health-insurance-premium-regions"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -6738,7 +6746,7 @@
             "rent-changes",
             "zh-initial-rent-form"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -6827,7 +6835,7 @@
             "city-zurich-marriage",
             "marriage-switzerland"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -6925,7 +6933,7 @@
           "concept_ids": [
             "city-zurich-departure"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -7000,7 +7008,7 @@
           "concept_ids": [
             "pillar-3a"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7063,7 +7071,7 @@
           "hits": [
             "unemployment-benefit",
             "social-assistance-review",
-            "naturalisation-ordinary"
+            "fza-employee-permit"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -7076,7 +7084,7 @@
             "unemployment-benefit",
             "zh-unemployment-benefit"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7158,7 +7166,7 @@
           "hits": [
             "accident-insurance",
             "zh-sva-contact",
-            "fza-social-security"
+            "health-insurance-premium-regions"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -7170,7 +7178,7 @@
           "concept_ids": [
             "accident-insurance"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7243,7 +7251,7 @@
           "concept_ids": [
             "moving-goods-customs"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -7336,7 +7344,7 @@
             "permit-c-five-years",
             "zh-permit-c-five-years"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7438,7 +7446,7 @@
           "concept_ids": [
             "zh-permit-c-five-years"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7520,7 +7528,7 @@
           "concept_ids": [
             "zh-integration-offers"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7597,7 +7605,7 @@
           "concept_ids": [
             "zh-newcomer-first-information"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7676,7 +7684,7 @@
           "concept_ids": [
             "zh-racism-protection"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7756,7 +7764,7 @@
           "concept_ids": [
             "zh-integration-project-funding"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7838,7 +7846,7 @@
           "concept_ids": [
             "zh-migrant-associations"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7885,7 +7893,7 @@
           "concept_ids": [
             "zh-iazh-accredited-offers"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7932,7 +7940,7 @@
           "concept_ids": [
             "customs-travel-allowance"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -8007,7 +8015,7 @@
           "concept_ids": [
             "customs-duty-free-quantities"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -8081,7 +8089,7 @@
           "concept_ids": [
             "customs-declaring-goods"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -8153,7 +8161,7 @@
           "hits": [
             "customs-internet-orders",
             "customs-returns-and-repairs",
-            "city-zurich-departure"
+            "health-insurance-abroad"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -8165,7 +8173,7 @@
           "concept_ids": [
             "customs-internet-orders"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -8246,7 +8254,7 @@
             "customs-internet-orders",
             "customs-mail-order-vat"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -8336,7 +8344,7 @@
           "concept_ids": [
             "customs-returns-and-repairs"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -8414,7 +8422,7 @@
             "moving-goods-customs",
             "customs-moving-vehicle"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -8501,7 +8509,7 @@
           "hits": [
             "customs-importing-pets",
             "city-zurich-dog-registration",
-            "customs-declaring-goods"
+            "health-insurance-deadline"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -8514,7 +8522,7 @@
             "customs-importing-pets",
             "zh-dog-keeping"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -8589,8 +8597,8 @@
           "expect_concept": "customs-leaving-with-goods",
           "hits": [
             "customs-leaving-with-goods",
-            "zh-premium-reduction",
-            "zh-tax-at-source-ordinary-assessment"
+            "accident-insurance",
+            "zh-premium-reduction"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -8602,7 +8610,7 @@
           "concept_ids": [
             "customs-leaving-with-goods"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -8659,7 +8667,7 @@
           "concept_ids": [
             "customs-tariff-rate"
           ],
-          "as_of": "2026-09-22",
+          "as_of": "2026-09-23",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -8675,6 +8683,849 @@
           },
           "bases": {
             "customs-tariff-rate": []
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "UAT-81",
+      "label": "A broken arm and the bill",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Franchise und Selbstbehalt Kinder Hoechstbetrag",
+          "expect_concept": "health-insurance-cost-sharing",
+          "hits": [
+            "health-insurance-cost-sharing",
+            "city-zurich-first-steps",
+            "family-b"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-cost-sharing"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-cost-sharing": "SUPPORTED"
+          },
+          "gaps": {
+            "health-insurance-cost-sharing": []
+          },
+          "facts": {
+            "health-insurance-cost-sharing": [
+              "health-insurance-cost-sharing-1",
+              "health-insurance-cost-sharing-2",
+              "health-insurance-cost-sharing-3",
+              "health-insurance-cost-sharing-4",
+              "health-insurance-cost-sharing-5",
+              "health-insurance-cost-sharing-6",
+              "health-insurance-cost-sharing-7",
+              "health-insurance-cost-sharing-8",
+              "health-insurance-cost-sharing-9",
+              "health-insurance-cost-sharing-10",
+              "health-insurance-cost-sharing-11",
+              "health-insurance-cost-sharing-12",
+              "health-insurance-cost-sharing-13",
+              "health-insurance-cost-sharing-14",
+              "health-insurance-cost-sharing-15",
+              "health-insurance-cost-sharing-16",
+              "health-insurance-cost-sharing-17",
+              "health-insurance-cost-sharing-18",
+              "health-insurance-cost-sharing-19"
+            ]
+          },
+          "bases": {
+            "health-insurance-cost-sharing": [
+              "Federal authority guidance",
+              "Federal ordinance: KVV, SR 832.102, Art. 103",
+              "Federal ordinance: KVV, SR 832.102, Art. 104",
+              "Federal ordinance: KVV, SR 832.102, Art. 93",
+              "Federal ordinance: KVV, SR 832.102, Art. 94"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Children and adolescents pay no franchise",
+          "concept": "health-insurance-cost-sharing",
+          "fact_ids": [
+            "health-insurance-cost-sharing-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The retention is 10 per cent, capped at 350 francs a year for children",
+          "concept": "health-insurance-cost-sharing",
+          "fact_ids": [
+            "health-insurance-cost-sharing-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-82",
+      "label": "The cheaper family-doctor model",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "eingeschraenkte Wahl der Leistungserbringer Hausarztmodell",
+          "expect_concept": "health-insurance-models",
+          "hits": [
+            "health-insurance-models",
+            "health-insurance-change",
+            "health-insurance-cost-sharing"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-models"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-models": "SUPPORTED"
+          },
+          "gaps": {
+            "health-insurance-models": []
+          },
+          "facts": {
+            "health-insurance-models": [
+              "health-insurance-models-1",
+              "health-insurance-models-2",
+              "health-insurance-models-3",
+              "health-insurance-models-6",
+              "health-insurance-models-7",
+              "health-insurance-models-8",
+              "health-insurance-models-9",
+              "health-insurance-models-10",
+              "health-insurance-models-11",
+              "health-insurance-models-12"
+            ]
+          },
+          "bases": {
+            "health-insurance-models": [
+              "Federal authority guidance",
+              "Federal ordinance: KVV, SR 832.102, Art. 100"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Moving out of a restricted model is possible only at the end of a calendar year",
+          "concept": "health-insurance-models",
+          "fact_ids": [
+            "health-insurance-models-12"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-83",
+      "label": "Changing insurer after a rise",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Kuendigungsfrist Krankenkasse wechseln nach Praemienerhoehung",
+          "expect_concept": "health-insurance-change",
+          "hits": [
+            "health-insurance-change",
+            "health-insurance-cost-sharing",
+            "health-insurance-models"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-change"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-change": "SUPPORTED"
+          },
+          "gaps": {
+            "health-insurance-change": []
+          },
+          "facts": {
+            "health-insurance-change": [
+              "health-insurance-change-1",
+              "health-insurance-change-2",
+              "health-insurance-change-3",
+              "health-insurance-change-4",
+              "health-insurance-change-5",
+              "health-insurance-change-6"
+            ]
+          },
+          "bases": {
+            "health-insurance-change": [
+              "Federal act: KVG, SR 832.10, Art. 7"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The ordinary notice is three months to the end of a calendar half-year",
+          "concept": "health-insurance-change",
+          "fact_ids": [
+            "health-insurance-change-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The announcement of a new premium opens a one-month notice period",
+          "concept": "health-insurance-change",
+          "fact_ids": [
+            "health-insurance-change-2"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-84",
+      "label": "Why my premium differs from my colleague's",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Praemienregion Kanton Altersgruppe Unterschiede",
+          "expect_concept": "health-insurance-premium-regions",
+          "hits": [
+            "health-insurance-premium-regions",
+            "health-insurance-insured-abroad",
+            "health-insurance-deadline"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-premium-regions"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-premium-regions": "SUPPORTED"
+          },
+          "gaps": {
+            "health-insurance-premium-regions": []
+          },
+          "facts": {
+            "health-insurance-premium-regions": [
+              "health-insurance-premium-regions-1",
+              "health-insurance-premium-regions-2",
+              "health-insurance-premium-regions-3",
+              "health-insurance-premium-regions-4",
+              "health-insurance-premium-regions-5",
+              "health-insurance-premium-regions-6",
+              "health-insurance-premium-regions-7",
+              "health-insurance-premium-regions-8",
+              "health-insurance-premium-regions-9",
+              "health-insurance-premium-regions-10",
+              "health-insurance-premium-regions-11",
+              "health-insurance-premium-regions-12",
+              "health-insurance-premium-regions-13",
+              "health-insurance-premium-regions-14"
+            ]
+          },
+          "bases": {
+            "health-insurance-premium-regions": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The insurers calculate the premiums and the office approves and publishes them",
+          "concept": "health-insurance-premium-regions",
+          "fact_ids": [
+            "health-insurance-premium-regions-10"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-85",
+      "label": "Glasses, and whether supplementary insurance is needed",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Leistungsumfang Grundversicherung bei allen Versicherern gleich",
+          "expect_concept": "health-insurance-benefits",
+          "hits": [
+            "zh-health-insurance-exemption",
+            "health-insurance-benefits",
+            "health-insurance-enrolment"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-benefits",
+            "health-insurance-supplementary"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-benefits": "SUPPORTED",
+            "health-insurance-supplementary": "SUPPORTED"
+          },
+          "gaps": {
+            "health-insurance-benefits": [],
+            "health-insurance-supplementary": []
+          },
+          "facts": {
+            "health-insurance-benefits": [
+              "health-insurance-benefits-1",
+              "health-insurance-benefits-2",
+              "health-insurance-benefits-3",
+              "health-insurance-benefits-4",
+              "health-insurance-benefits-5"
+            ],
+            "health-insurance-supplementary": [
+              "health-insurance-supplementary-1",
+              "health-insurance-supplementary-2"
+            ]
+          },
+          "bases": {
+            "health-insurance-benefits": [
+              "Federal authority guidance",
+              "Federal ordinance: KLV, SR 832.112.31, Art. 17"
+            ],
+            "health-insurance-supplementary": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Every insurer must cover the same scope of benefits laid down by law",
+          "concept": "health-insurance-benefits",
+          "fact_ids": [
+            "health-insurance-benefits-2"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-86",
+      "label": "Months of unpaid premiums",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Praemien nicht bezahlt Mahnung Betreibung Krankenkasse",
+          "expect_concept": "health-insurance-unpaid-premiums",
+          "hits": [
+            "health-insurance-unpaid-premiums",
+            "health-insurance-deadline",
+            "health-insurance-premium-regions"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-unpaid-premiums"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-unpaid-premiums": "SUPPORTED"
+          },
+          "gaps": {
+            "health-insurance-unpaid-premiums": []
+          },
+          "facts": {
+            "health-insurance-unpaid-premiums": [
+              "health-insurance-unpaid-premiums-1",
+              "health-insurance-unpaid-premiums-2",
+              "health-insurance-unpaid-premiums-3",
+              "health-insurance-unpaid-premiums-4",
+              "health-insurance-unpaid-premiums-5"
+            ]
+          },
+          "bases": {
+            "health-insurance-unpaid-premiums": [
+              "Federal act: KVG, SR 832.10",
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Arrears block a change of insurer until they are paid in full",
+          "concept": "health-insurance-unpaid-premiums",
+          "fact_ids": [
+            "health-insurance-unpaid-premiums-5"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-87",
+      "label": "Living in Germany, working in Zurich",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Grenzgaenger Optionsrecht Befreiung von der Versicherungspflicht",
+          "expect_concept": "health-insurance-cross-border-commuter",
+          "hits": [
+            "health-insurance-cross-border-commuter",
+            "zh-health-insurance-exemption",
+            "health-insurance-service-suspension"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-cross-border-commuter"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-cross-border-commuter": "SUPPORTED"
+          },
+          "gaps": {
+            "health-insurance-cross-border-commuter": []
+          },
+          "facts": {
+            "health-insurance-cross-border-commuter": [
+              "health-insurance-cross-border-commuter-1",
+              "health-insurance-cross-border-commuter-2",
+              "health-insurance-cross-border-commuter-3",
+              "health-insurance-cross-border-commuter-4",
+              "health-insurance-cross-border-commuter-5",
+              "health-insurance-cross-border-commuter-6",
+              "health-insurance-cross-border-commuter-7"
+            ]
+          },
+          "bases": {
+            "health-insurance-cross-border-commuter": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The application for exemption goes to the canton of work within three months",
+          "concept": "health-insurance-cross-border-commuter",
+          "fact_ids": [
+            "health-insurance-cross-border-commuter-3"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "A merely tacit exercise of the right of option is not legally valid",
+          "concept": "health-insurance-cross-border-commuter",
+          "fact_ids": [
+            "health-insurance-cross-border-commuter-4"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-88",
+      "label": "Three weeks in Italy",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Notfall im Ausland Kosten uebernommen Ferien",
+          "expect_concept": "health-insurance-abroad",
+          "hits": [
+            "health-insurance-abroad",
+            "city-zurich-departure",
+            "health-insurance-insured-abroad"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-abroad"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-abroad": "SUPPORTED"
+          },
+          "gaps": {
+            "health-insurance-abroad": []
+          },
+          "facts": {
+            "health-insurance-abroad": [
+              "health-insurance-abroad-1",
+              "health-insurance-abroad-2",
+              "health-insurance-abroad-3",
+              "health-insurance-abroad-4",
+              "health-insurance-abroad-5",
+              "health-insurance-abroad-6"
+            ]
+          },
+          "bases": {
+            "health-insurance-abroad": [
+              "Federal authority guidance",
+              "Federal ordinance: KVV, SR 832.102, Art. 36"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Emergency treatment abroad is covered, and what counts as an emergency",
+          "concept": "health-insurance-abroad",
+          "fact_ids": [
+            "health-insurance-abroad-3"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "At most twice the Swiss amount is covered",
+          "concept": "health-insurance-abroad",
+          "fact_ids": [
+            "health-insurance-abroad-6"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-89",
+      "label": "A pensioner in Portugal",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Praemien fuer Versicherte mit Wohnsitz im Ausland Praemienverbilligung Rentner",
+          "expect_concept": "health-insurance-insured-abroad",
+          "hits": [
+            "health-insurance-insured-abroad",
+            "health-insurance-deadline",
+            "health-insurance-enrolment"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-insured-abroad"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-insured-abroad": "SUPPORTED"
+          },
+          "gaps": {
+            "health-insurance-insured-abroad": []
+          },
+          "facts": {
+            "health-insurance-insured-abroad": [
+              "health-insurance-insured-abroad-1",
+              "health-insurance-insured-abroad-2",
+              "health-insurance-insured-abroad-3",
+              "health-insurance-insured-abroad-4",
+              "health-insurance-insured-abroad-5",
+              "health-insurance-insured-abroad-6",
+              "health-insurance-insured-abroad-7",
+              "health-insurance-insured-abroad-8"
+            ]
+          },
+          "bases": {
+            "health-insurance-insured-abroad": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The premium follows the state of residence",
+          "concept": "health-insurance-insured-abroad",
+          "fact_ids": [
+            "health-insurance-insured-abroad-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "For pensioners the Confederation is responsible, through the joint institution",
+          "concept": "health-insurance-insured-abroad",
+          "fact_ids": [
+            "health-insurance-insured-abroad-5"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-90",
+      "label": "A bill from the doctor, not from the insurer",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Arztrechnung Rueckerstattung Tiers garant Tiers payant",
+          "expect_concept": "health-insurance-billing",
+          "hits": [
+            "health-insurance-billing"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-billing"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-billing": "SUPPORTED"
+          },
+          "gaps": {
+            "health-insurance-billing": []
+          },
+          "facts": {
+            "health-insurance-billing": [
+              "health-insurance-billing-1",
+              "health-insurance-billing-2",
+              "health-insurance-billing-3",
+              "health-insurance-billing-4",
+              "health-insurance-billing-5",
+              "health-insurance-billing-6"
+            ]
+          },
+          "bases": {
+            "health-insurance-billing": [
+              "Federal act: KVG, SR 832.10, Art. 42"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The insured owes the provider and claims reimbursement from the insurer",
+          "concept": "health-insurance-billing",
+          "fact_ids": [
+            "health-insurance-billing-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "By agreement the insurer owes the payment instead",
+          "concept": "health-insurance-billing",
+          "fact_ids": [
+            "health-insurance-billing-2"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-91",
+      "label": "Four months of service",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Versicherungspflicht sistiert Militaerdienst Praemien",
+          "expect_concept": "health-insurance-service-suspension",
+          "hits": [
+            "health-insurance-service-suspension",
+            "accident-insurance",
+            "health-insurance-change"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-service-suspension"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-service-suspension": "SUPPORTED"
+          },
+          "gaps": {
+            "health-insurance-service-suspension": []
+          },
+          "facts": {
+            "health-insurance-service-suspension": [
+              "health-insurance-service-suspension-1",
+              "health-insurance-service-suspension-2",
+              "health-insurance-service-suspension-3",
+              "health-insurance-service-suspension-4",
+              "health-insurance-service-suspension-5"
+            ]
+          },
+          "bases": {
+            "health-insurance-service-suspension": [
+              "Federal act: KVG, SR 832.10, Art. 3",
+              "Federal ordinance: KVV, SR 832.102"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The duty to insure is suspended beyond 60 consecutive days",
+          "concept": "health-insurance-service-suspension",
+          "fact_ids": [
+            "health-insurance-service-suspension-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The insurer has to be told at least eight weeks beforehand",
+          "concept": "health-insurance-service-suspension",
+          "fact_ids": [
+            "health-insurance-service-suspension-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "DECLINE-12",
+      "label": "What a premium costs",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-premium",
+            "premium-calculator"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-premium": "OUT_OF_COVERAGE",
+            "premium-calculator": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "health-insurance-premium": [
+              "concept_not_published"
+            ],
+            "premium-calculator": [
+              "concept_not_published"
+            ]
+          },
+          "facts": {
+            "health-insurance-premium": [],
+            "premium-calculator": []
+          },
+          "bases": {
+            "health-insurance-premium": [],
+            "premium-calculator": []
           },
           "passed": true
         }

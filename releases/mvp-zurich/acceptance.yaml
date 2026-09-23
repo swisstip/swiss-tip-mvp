@@ -5987,3 +5987,443 @@ cases:
       jurisdiction: {canton_code: CH-ZH}
       expect_status: {customs-tariff-rate: OUT_OF_COVERAGE}
       expect_gap: {customs-tariff-rate: concept_not_published}
+- case_id: UAT-81
+  label: A broken arm and the bill
+  spec: docs/product/user-acceptance-tests.md#uat-81-a-broken-arm-and-the-bill
+  question: My son fell off his bike and the bill is 1,200 francs. We have the lowest franchise.
+    What do we actually have to pay ourselves?
+  expected_answer: The two parts of cost sharing, kept apart. The ordinary franchise is 300 francs
+    a calendar year, but children and adolescents pay no franchise at all; on top of the franchise
+    comes the retention of 10 per cent of the costs above it, capped at 700 francs a year for
+    adults and 350 francs a year for children. The answer must apply the child's figures here.
+  trap: Treating the franchise as the whole of the cost sharing, or quoting the adult's cap for a
+    child.
+  language: en
+  steps:
+  - search:
+      query: Franchise und Selbstbehalt Kinder Hoechstbetrag
+      expect_concept: health-insurance-cost-sharing
+  - resolve:
+      concept_ids: [health-insurance-cost-sharing]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-cost-sharing: SUPPORTED}
+  claims:
+  - claim: Children and adolescents pay no franchise
+    concept: health-insurance-cost-sharing
+    fact_id: health-insurance-cost-sharing-2
+    statement_contains: ['children']
+    excerpt_contains: ['Franchise']
+  - claim: The retention is 10 per cent, capped at 350 francs a year for children
+    concept: health-insurance-cost-sharing
+    fact_id: health-insurance-cost-sharing-3
+    statement_contains: ['350']
+    excerpt_contains: ['Selbstbehalt']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      retention: '10'
+    must_not:
+      adult_cap_for_child: 'Kind.{0,40}700|child.{0,40}700'
+    cites:
+      foph: 'bag\.admin\.ch|fedlex\.admin\.ch'
+    resolved: [health-insurance-cost-sharing]
+- case_id: UAT-82
+  label: The cheaper family-doctor model
+  spec: docs/product/user-acceptance-tests.md#uat-82-the-cheaper-family-doctor-model
+  question: My insurer offers a family-doctor model that is 15 per cent cheaper. What am I giving
+    up?
+  expected_answer: What restricting the choice of provider means in practice. The insured
+    undertakes to consult the model's first point of contact before any other treatment, and in
+    return the insurer may reduce the premium. Moving into such a model is possible at any time,
+    but moving out of it, or to another insurer, only at the end of a calendar year keeping the
+    ordinary notice periods. The release carries no discount percentage and the answer must not
+    confirm or invent one.
+  trap: Presenting the discount without the obligation, claiming the choice of doctor is
+    unaffected, or stating a percentage as if the release held it.
+  language: en
+  steps:
+  - search:
+      query: eingeschraenkte Wahl der Leistungserbringer Hausarztmodell
+      expect_concept: health-insurance-models
+  - resolve:
+      concept_ids: [health-insurance-models]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-models: SUPPORTED}
+  claims:
+  - claim: Moving out of a restricted model is possible only at the end of a calendar year
+    concept: health-insurance-models
+    fact_id: health-insurance-models-12
+    statement_contains: ['end of a calendar year']
+    excerpt_contains: ['Ende eines Kalenderjahres']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      first_contact: 'first point of contact|Erstkontakt|zuerst'
+    must_not:
+      invented_discount: '15 ?(per cent|%|Prozent)'
+    cites:
+      foph: 'bag\.admin\.ch|fedlex\.admin\.ch'
+    resolved: [health-insurance-models]
+- case_id: UAT-83
+  label: Changing insurer after a rise
+  spec: docs/product/user-acceptance-tests.md#uat-83-changing-insurer-after-a-rise
+  question: My premium is going up again. Can I switch insurer, and by when?
+  expected_answer: Both notice periods the act sets apart. The ordinary one is three months to the
+    end of a calendar half-year. When the new premium is notified, a shorter one opens - one
+    month's notice to the end of the month before the month from which the new premium applies,
+    and the insurer must notify the approved premiums at least two months in advance. The new
+    insurer may not refuse an applicant for basic insurance, the old cover runs until the new
+    insurer has confirmed cover without interruption, and the old insurer may not make the change
+    conditional on giving up a supplementary insurance.
+  trap: Saying the insured can leave at any time, presenting the end-of-November date as the only
+    rule, or that a poor claims history can be refused.
+  language: en
+  steps:
+  - search:
+      query: Kuendigungsfrist Krankenkasse wechseln nach Praemienerhoehung
+      expect_concept: health-insurance-change
+  - resolve:
+      concept_ids: [health-insurance-change]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-change: SUPPORTED}
+  claims:
+  - claim: The ordinary notice is three months to the end of a calendar half-year
+    concept: health-insurance-change
+    fact_id: health-insurance-change-1
+    statement_contains: ['three months']
+    excerpt_contains: ['dreimonatigen Kündigungsfrist']
+  - claim: The announcement of a new premium opens a one-month notice period
+    concept: health-insurance-change
+    fact_id: health-insurance-change-2
+    statement_contains: ["month's notice"]
+    excerpt_contains: ['einmonatigen Kündigungsfrist']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      periods: 'three months|drei Monate'
+    must_not:
+      any_time: 'jederzeit kuendigen|leave at any time'
+    cites:
+      law: 'fedlex\.admin\.ch|bag\.admin\.ch'
+    resolved: [health-insurance-change]
+- case_id: UAT-84
+  label: Why my premium differs from my colleague's
+  spec: docs/product/user-acceptance-tests.md#uat-84-why-my-premium-differs-from-my-colleagues
+  question: My colleague lives two towns away and pays less than I do for the same insurer. How is
+    that possible?
+  expected_answer: The things that make premiums differ - the canton, the premium region within it
+    and the age group - and who sets the regions. The insurers calculate the premiums and the
+    Federal Office of Public Health approves and publishes them, checking that the expected premium
+    income covers the expected costs for each insurer and each canton separately. No amount is
+    given, because the release publishes the rules and not the prices.
+  trap: Inventing a figure, or explaining the difference by the insurer alone.
+  language: en
+  steps:
+  - search:
+      query: Praemienregion Kanton Altersgruppe Unterschiede
+      expect_concept: health-insurance-premium-regions
+  - resolve:
+      concept_ids: [health-insurance-premium-regions]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-premium-regions: SUPPORTED}
+  claims:
+  - claim: The insurers calculate the premiums and the office approves and publishes them
+    concept: health-insurance-premium-regions
+    fact_id: health-insurance-premium-regions-10
+    statement_contains: ['approves']
+    excerpt_contains: ['genehmigt und publiziert']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      region: 'region|Region'
+    must_not:
+      invented_amount: '[0-9]{3,4} (francs|Franken) (a|per) month|monatlich [0-9]{3,4}'
+    cites:
+      foph: 'bag\.admin\.ch'
+    resolved: [health-insurance-premium-regions]
+- case_id: UAT-85
+  label: Glasses, and whether supplementary insurance is needed
+  spec: docs/product/user-acceptance-tests.md#uat-85-glasses-and-whether-supplementary-insurance-is-needed
+  question: Does basic insurance pay for my glasses, and do I need supplementary insurance?
+  expected_answer: Basic insurance covers the same scope of benefits at every insurer, laid down by
+    law, and an insurer may not pay beyond it; only benefits that are effective, appropriate and
+    economical are covered. Supplementary insurance is a different contract, and where the cited
+    pages do not say whether glasses are covered the answer must say so rather than guess.
+  trap: Answering from general knowledge about glasses, or suggesting the scope of basic insurance
+    differs between insurers.
+  language: en
+  steps:
+  - search:
+      query: Leistungsumfang Grundversicherung bei allen Versicherern gleich
+      expect_concept: health-insurance-benefits
+  - resolve:
+      concept_ids: [health-insurance-benefits, health-insurance-supplementary]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-benefits: SUPPORTED, health-insurance-supplementary: SUPPORTED}
+  claims:
+  - claim: Every insurer must cover the same scope of benefits laid down by law
+    concept: health-insurance-benefits
+    fact_id: health-insurance-benefits-2
+    statement_contains: ['same scope']
+    excerpt_contains: ['Leistungsumfang']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      same_scope: 'same|gleich'
+    must_not:
+      invented_glasses_rule: 'Brille.{0,40}(zahlt|uebernimmt)|glasses are covered'
+    cites:
+      foph: 'bag\.admin\.ch'
+    resolved: [health-insurance-benefits, health-insurance-supplementary]
+- case_id: UAT-86
+  label: Months of unpaid premiums
+  spec: docs/product/user-acceptance-tests.md#uat-86-months-of-unpaid-premiums
+  question: I lost my job and have not paid my premiums for four months. Can they cancel my
+    insurance?
+  expected_answer: The sequence the pages state - a reminder, then debt enforcement - what the
+    canton does with a list of defaulters, and what stays covered while the arrears stand. The
+    answer must add that the arrears block a change of insurer until they are paid in full,
+    although arrears for the children alone do not block the parent's own change.
+  trap: Saying that cover simply ends, or sending the caller to a cheaper insurer they cannot join.
+  language: en
+  steps:
+  - search:
+      query: Praemien nicht bezahlt Mahnung Betreibung Krankenkasse
+      expect_concept: health-insurance-unpaid-premiums
+  - resolve:
+      concept_ids: [health-insurance-unpaid-premiums]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-unpaid-premiums: SUPPORTED}
+  claims:
+  - claim: Arrears block a change of insurer until they are paid in full
+    concept: health-insurance-unpaid-premiums
+    fact_id: health-insurance-unpaid-premiums-5
+    statement_contains: ['may not change insurer']
+    excerpt_contains: ['säumige versicherte Person']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      enforcement: 'Betreibung|debt enforcement'
+    must_not:
+      cover_ends: 'Versicherung endet|insurance simply ends|cover ends'
+    cites:
+      law: 'fedlex\.admin\.ch|bag\.admin\.ch'
+    resolved: [health-insurance-unpaid-premiums]
+- case_id: UAT-87
+  label: Living in Germany, working in Zurich
+  spec: docs/product/user-acceptance-tests.md#uat-87-living-in-germany-working-in-zurich
+  question: I live in Konstanz and start work in Zurich next month. Which country's health
+    insurance do I take?
+  expected_answer: The place-of-work principle makes Swiss insurance the rule, for the worker and
+    for their non-working family members. The agreements with the neighbouring states open a right
+    of option to be insured in the country of residence instead, and an application for exemption
+    has to be filed with the authority of the canton of work within three months of the start of
+    the employment relationship. A merely tacit exercise of the option is not legally valid.
+  trap: Answering "Switzerland, because you work there" without the option, or asserting that the
+    choice is made once and for all.
+  language: en
+  steps:
+  - search:
+      query: Grenzgaenger Optionsrecht Befreiung von der Versicherungspflicht
+      expect_concept: health-insurance-cross-border-commuter
+  - resolve:
+      concept_ids: [health-insurance-cross-border-commuter]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-cross-border-commuter: SUPPORTED}
+  claims:
+  - claim: The application for exemption goes to the canton of work within three months
+    concept: health-insurance-cross-border-commuter
+    fact_id: health-insurance-cross-border-commuter-3
+    statement_contains: ['three months']
+    excerpt_contains: ['innerhalb von drei Monaten']
+  - claim: A merely tacit exercise of the right of option is not legally valid
+    concept: health-insurance-cross-border-commuter
+    fact_id: health-insurance-cross-border-commuter-4
+    statement_contains: ['tacit']
+    excerpt_contains: ['nicht rechtsgültig']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      option: 'Optionsrecht|right of option'
+    must_not:
+      once_and_for_all: 'nur einmal|only once|once and for all'
+    cites:
+      foph: 'bag\.admin\.ch'
+    resolved: [health-insurance-cross-border-commuter]
+- case_id: UAT-88
+  label: Three weeks in Italy
+  spec: docs/product/user-acceptance-tests.md#uat-88-three-weeks-in-italy
+  question: We are going to Italy for three weeks. Are we covered if something happens?
+  expected_answer: Basic insurance pays for treatment given abroad in an emergency, and an
+    emergency exists where the person needs treatment during a temporary stay abroad and a return
+    journey to Switzerland is not reasonable; there is none where someone travels abroad in order
+    to be treated. At most twice the amount that would be reimbursed in Switzerland is covered.
+    The release does not carry the European health insurance card.
+  trap: Promising that everything is covered anywhere, or presenting the card as the instrument the
+    release describes.
+  language: en
+  steps:
+  - search:
+      query: Notfall im Ausland Kosten uebernommen Ferien
+      expect_concept: health-insurance-abroad
+  - resolve:
+      concept_ids: [health-insurance-abroad]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-abroad: SUPPORTED}
+  claims:
+  - claim: Emergency treatment abroad is covered, and what counts as an emergency
+    concept: health-insurance-abroad
+    fact_id: health-insurance-abroad-3
+    statement_contains: ['emergency']
+    excerpt_contains: ['in Notfällen im Ausland']
+  - claim: At most twice the Swiss amount is covered
+    concept: health-insurance-abroad
+    fact_id: health-insurance-abroad-6
+    statement_contains: ['twice']
+    excerpt_contains: ['doppelte Betrag']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      emergency: 'Notfall|emergency'
+    must_not:
+      everything_covered: 'alles gedeckt|everything is covered'
+    cites:
+      law: 'fedlex\.admin\.ch|bag\.admin\.ch'
+    resolved: [health-insurance-abroad]
+- case_id: UAT-89
+  label: A pensioner in Portugal
+  spec: docs/product/user-acceptance-tests.md#uat-89-a-pensioner-in-portugal
+  question: I have retired to Portugal and kept my Swiss health insurance. Why is my premium not
+    the one I paid in Zurich, and can I still get a premium reduction?
+  expected_answer: A person living in an EU or EFTA state or the United Kingdom who is compulsorily
+    insured in Switzerland pays the premium that applies to their state of residence, and the
+    insurer calculates a separate premium per state from the costs there. For pensioners and their
+    family members the premium reduction is the Confederation's business, carried out by the joint
+    institution under the health insurance act, not the canton's. No amount is named for any
+    country.
+  trap: Applying the Zurich premium or the cantonal premium reduction to someone who no longer
+    lives in Switzerland.
+  language: en
+  steps:
+  - search:
+      query: Praemien fuer Versicherte mit Wohnsitz im Ausland Praemienverbilligung Rentner
+      expect_concept: health-insurance-insured-abroad
+  - resolve:
+      concept_ids: [health-insurance-insured-abroad]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-insured-abroad: SUPPORTED}
+  claims:
+  - claim: The premium follows the state of residence
+    concept: health-insurance-insured-abroad
+    fact_id: health-insurance-insured-abroad-1
+    statement_contains: ['state of residence']
+    excerpt_contains: ['Wohnsitzstaat geltenden Prämien']
+  - claim: For pensioners the Confederation is responsible, through the joint institution
+    concept: health-insurance-insured-abroad
+    fact_id: health-insurance-insured-abroad-5
+    statement_contains: ['Confederation']
+    excerpt_contains: ['Gemeinsame Einrichtung']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      residence_state: 'Wohnsitzstaat|state of residence|country of residence'
+    must_not:
+      cantonal_reduction: 'Kanton Z(ue|ü)rich zahlt|the canton of Zurich grants'
+    cites:
+      foph: 'bag\.admin\.ch'
+    resolved: [health-insurance-insured-abroad]
+- case_id: UAT-90
+  label: A bill from the doctor, not from the insurer
+  spec: docs/product/user-acceptance-tests.md#uat-90-a-bill-from-the-doctor-not-from-the-insurer
+  question: My doctor sent the bill to me and not to my health insurer. Is that allowed?
+  expected_answer: That is the ordinary case. Unless the insurer and the provider have agreed
+    otherwise, the insured person owes the provider the payment and then has a claim for
+    reimbursement against the insurer, which is the tiers garant system; the other arrangement, in
+    which the insurer owes the payment, exists by agreement and covers the insurer's share for
+    inpatient treatment. The bill has to be detailed and comprehensible and to carry what is needed
+    to check how the payment was calculated.
+  trap: Telling the caller the doctor made a mistake, or inventing a deadline for the insurer to
+    reimburse or a body to complain to.
+  language: en
+  steps:
+  - search:
+      query: Arztrechnung Rueckerstattung Tiers garant Tiers payant
+      expect_concept: health-insurance-billing
+  - resolve:
+      concept_ids: [health-insurance-billing]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-billing: SUPPORTED}
+  claims:
+  - claim: The insured owes the provider and claims reimbursement from the insurer
+    concept: health-insurance-billing
+    fact_id: health-insurance-billing-1
+    statement_contains: ['tiers garant']
+    excerpt_contains: ['System des Tiers garant']
+  - claim: By agreement the insurer owes the payment instead
+    concept: health-insurance-billing
+    fact_id: health-insurance-billing-2
+    statement_contains: ['tiers payant']
+    excerpt_contains: ['System des Tiers payant']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      reimbursement: 'Rueckerstattung|R(ue|ü)ckerstattung|reimburse'
+    must_not:
+      invented_deadline: '30 (Tage|days).{0,30}(erstatt|reimburs)|Ombudsstelle|ombudsman'
+    cites:
+      law: 'fedlex\.admin\.ch'
+    resolved: [health-insurance-billing]
+- case_id: UAT-91
+  label: Four months of service
+  spec: docs/product/user-acceptance-tests.md#uat-91-four-months-of-service
+  question: I am starting four months of civilian service. Do I keep paying my health insurance?
+  expected_answer: The duty to insure is suspended for people subject to the military insurance for
+    more than 60 consecutive days, and the suspension begins on the day they become subject to it.
+    The insured is freed from paying premiums from that start only if they tell their insurer at
+    least eight weeks beforehand; otherwise the insurer stops charging from the next date it can
+    manage, at the latest eight weeks after being told.
+  trap: Answering that premiums simply continue, or that the suspension happens by itself without
+    the caller doing anything.
+  language: en
+  steps:
+  - search:
+      query: Versicherungspflicht sistiert Militaerdienst Praemien
+      expect_concept: health-insurance-service-suspension
+  - resolve:
+      concept_ids: [health-insurance-service-suspension]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-service-suspension: SUPPORTED}
+  claims:
+  - claim: The duty to insure is suspended beyond 60 consecutive days
+    concept: health-insurance-service-suspension
+    fact_id: health-insurance-service-suspension-1
+    statement_contains: ['60 consecutive days']
+    excerpt_contains: ['60 aufeinander folgenden Tagen']
+  - claim: The insurer has to be told at least eight weeks beforehand
+    concept: health-insurance-service-suspension
+    fact_id: health-insurance-service-suspension-3
+    statement_contains: ['eight weeks']
+    excerpt_contains: ['mindestens acht Wochen vor deren Beginn']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      threshold: '60'
+    must_not:
+      automatic: 'automatisch sistiert|happens automatically'
+    cites:
+      law: 'fedlex\.admin\.ch'
+    resolved: [health-insurance-service-suspension]
+- case_id: DECLINE-12
+  label: What a premium costs
+  spec: docs/product/user-acceptance-tests.md#decline-cases
+  question: Which insurer is cheapest for me at 8006 Zurich with a 2,500-franc franchise?
+  expected_answer: The release publishes what makes premiums differ and never an amount, and every
+    calculator is named in out_of_scope, so a resolve of a guessed concept ID returns
+    OUT_OF_COVERAGE with concept_not_published.
+  language: en
+  steps:
+  - resolve:
+      concept_ids: [health-insurance-premium, premium-calculator]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {health-insurance-premium: OUT_OF_COVERAGE, premium-calculator: OUT_OF_COVERAGE}
+      expect_gap: {health-insurance-premium: concept_not_published, premium-calculator: concept_not_published}

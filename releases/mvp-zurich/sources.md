@@ -435,6 +435,16 @@ Federal (priminfo, published by the FOPH):
 - [priminfo: supplementary insurance, in plain language](https://www.priminfo.admin.ch/de/versicherungen/zusatzversicherungen)
 - [priminfo: the average premium](https://www.priminfo.admin.ch/de/zahlen-und-fakten/mittlere_praemie)
 - [priminfo: changing insurer](https://www.priminfo.admin.ch/de/zahlen-und-fakten/wechsel)
+## Legal bases of health insurance
+
+The ordinances behind the health-insurance topic, added on 23 September 2026
+(`health-insurance-law` scan set) so that the cost-sharing amounts can be served with
+the date from which they apply: the FOPH pages state the figures without one. Their ELI
+addresses were resolved from the Fedlex metadata service by SR number, not guessed.
+
+- [Fedlex: Ordinance on Health Insurance, KVV, SR 832.102](https://www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/de)
+- [Fedlex: Ordinance on Benefits in Compulsory Health Insurance, KLV, SR 832.112.31](https://www.fedlex.admin.ch/eli/cc/1995/4964_4964_4964/de)
+
 ## English versions of federal pages
 
 The English versions of the SEM, FOPH, FOCBS, SECO (arbeit.swiss) and SERAFE

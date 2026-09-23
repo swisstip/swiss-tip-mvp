@@ -1,8 +1,8 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-22-v7` (content `48418016d8bc`), policy `report`, not clean, 76 disposition(s), generated 2026-09-23T06:44:08.
+Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, not clean, 149 disposition(s), generated 2026-09-23T08:47:28.
 
-442 candidate records ({'section': 425, 'document': 15, 'rolled_up': 2}) with 2827 units a curator answers for: 618 cited, 613 dispositioned, **1596 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 93, 'partly_cited': 119, 'cited': 58, 'empty': 23, 'cited_and_dispositioned': 26, 'dispositioned': 123}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
+444 candidate records ({'section': 425, 'document': 17, 'rolled_up': 2}) with 2829 units a curator answers for: 649 cited, 794 dispositioned, **1386 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 73, 'partly_cited': 112, 'cited': 61, 'empty': 23, 'cited_and_dispositioned': 43, 'dispositioned': 132}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 
 ## Documents
 
@@ -41,17 +41,6 @@ Release `mvp-zurich-2026-09-22-v7` (content `48418016d8bc`), policy `report`, no
 | unclassified | [Returning to Switzerland, EU/EFTA or third countries / arbeit.swiss](https://www.arbeit.swiss/en/returning-to-switzerland) `doc-6f212eeca0d54d0940e8` | section | 14 | 0 | 0 | 1 | 13 |  |
 | unclassified | [Short-time working compensation / arbeit.swiss](https://www.arbeit.swiss/en/short-time-working-compensation) `doc-92859f76d868578d25ad` | section | 8 | 0 | 0 | 1 | 7 |  |
 | unclassified | [Signing on and registration / arbeit.swiss](https://www.arbeit.swiss/en/signing-on-and-registration) `doc-66bfe101b39f2d0ea6a9` | section | 5 | 0 | 0 | 1 | 4 |  |
-| unclassified | [Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz](https://www.bag.admin.ch/de/krankenversicherung-grenzgaengerinnen-und-grenzgaenger-in-der-schweiz) `doc-73316a716c25d7263406` | section | 12 | 0 | 0 | 0 | 12 | ch-bag-grenzgaenger |
-| unclassified | [Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte](https://www.bag.admin.ch/de/krankenversicherung-kostenbeteiligung-fuer-in-der-schweiz-wohnhafte-versicherte) `doc-7e46ce8537f76f1736a8` | section | 5 | 0 | 0 | 1 | 4 | ch-bag-kostenbeteiligung |
-| unclassified | [Krankenversicherung: Leistungen im Ausland](https://www.bag.admin.ch/de/krankenversicherung-leistungen-im-ausland) `doc-a2ba95d86bd9041085b6` | section | 4 | 0 | 0 | 0 | 4 | ch-bag-leistungen-im-ausland |
-| unclassified | [Krankenversicherung: Leistungen und Tarife](https://www.bag.admin.ch/de/krankenversicherung-leistungen-und-tarife) `doc-b78c155affebebdb3ac3` | section | 8 | 0 | 0 | 0 | 8 | ch-bag-leistungen-tarife |
-| unclassified | [Krankenversicherung: Prämien und Kostenbeteiligung](https://www.bag.admin.ch/de/krankenversicherung-praemien-und-kostenbeteiligung) `doc-c91304c05bdefe12e21b` | section | 4 | 0 | 0 | 1 | 3 | ch-bag-praemien-kostenbeteiligung |
-| unclassified | [Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK](https://www.bag.admin.ch/de/krankenversicherung-praemien-und-praemienverbilligung-eueftauk) `doc-d6ba6d241671ed943a29` | section | 5 | 0 | 0 | 1 | 4 | ch-bag-praemien-eu-efta-uk |
-| unclassified | [Krankenversicherung: Prämienausstände](https://www.bag.admin.ch/de/krankenversicherung-praemienausstaende) `doc-0b415d97d57dc63b4f38` | section | 5 | 0 | 0 | 1 | 4 | ch-bag-praemienausstaende |
-| unclassified | [Krankenversicherung: Prämienregionen](https://www.bag.admin.ch/de/krankenversicherung-praemienregionen) `doc-53179c28edeeaf2a28d0` | section | 2 | 0 | 0 | 0 | 2 | ch-bag-praemienregionen |
-| unclassified | [Krankenversicherung: Prämienvergleich](https://www.bag.admin.ch/de/krankenversicherung-praemienvergleich) `doc-d27fc848afce0db98807` | section | 9 | 0 | 0 | 0 | 9 | ch-bag-praemienvergleich |
-| unclassified | [Krankenversicherung: Versicherte, die im Ausland wohnen](https://www.bag.admin.ch/de/krankenversicherung-versicherte-die-im-ausland-wohnen) `doc-fcdb3a04d407cd5a1875` | section | 5 | 0 | 0 | 1 | 4 | ch-bag-versicherte-im-ausland |
-| unclassified | [Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer](https://www.bag.admin.ch/de/krankenversicherung-versicherungsmodelle-mit-eingeschraenkter-wahl-der-leistungserbringer) `doc-28f3362905346a6a6da4` | section | 7 | 0 | 0 | 1 | 6 | ch-bag-versicherungsmodelle |
 | unclassified | [BSV: types and rates of family allowances per canton, 2026 (PDF)](https://www.bsv.admin.ch/dam/de/sd-web/acU7RgJgeisY/Arten%20und%20Ans%C3%A4tze%20der%20Familienzulagen_2026.pdf) `doc-3f3d4751491356fbdf8a` | section | 1 | 0 | 0 | 0 | 1 |  |
 | unclassified | [Alters- und Hinterlassenenversicherung (AHV) - Übersicht](https://www.bsv.admin.ch/de/ahv-uebersicht) `doc-08accda64b5e8e778ea6` | section | 7 | 0 | 0 | 0 | 7 | ch-bsv-ahv |
 | unclassified | [Gesuch um ordentliche oder erleichterte Einbürgerung in der Schweiz](https://www.ch.ch/de/auslander-in-der-schweiz/einburgerung/) `doc-5115531c627ecfe1109e` | section | 5 | 0 | 0 | 0 | 5 | ch-chch-naturalisation |
@@ -59,15 +48,6 @@ Release `mvp-zurich-2026-09-22-v7` (content `48418016d8bc`), policy `report`, no
 | unclassified | [Heiraten in der Schweiz](https://www.ch.ch/de/familie-und-partnerschaft/heirat--konkubinat--partenariat/heiraten/) `doc-1763e58f746ce7c2100a` | section | 2 | 0 | 0 | 0 | 2 | ch-chch-marriage |
 | unclassified | [Miete](https://www.ch.ch/de/wohnen/miete/) `doc-fabe4f3082ee4b4931b7` | section | 2 | 0 | 0 | 0 | 2 | ch-chch-housing |
 | unclassified | [Wohnen: Ruhezeiten, Mietzins und Mängel in der Schweiz](https://www.ch.ch/de/wohnen/miete/larm--mangel--mietzins/) `doc-10bb67123311f6518f86` | section | 2 | 0 | 0 | 0 | 2 |  |
-| unclassified | [FAQ – Priminfo](https://www.priminfo.admin.ch/de/faq) `doc-107094215a49831a8c83` | section | 58 | 0 | 0 | 1 | 57 | ch-priminfo-faq |
-| unclassified | [Sparen mit der Grundversicherung – Priminfo](https://www.priminfo.admin.ch/de/sparen/grundversicherung) `doc-e735f7a09d6dd3ae6741` | section | 20 | 0 | 0 | 3 | 17 | ch-priminfo-sparen-grundversicherung |
-| unclassified | [Selbstverantwortung – Priminfo](https://www.priminfo.admin.ch/de/sparen/selbstverantwortung) `doc-38f8f9f8e3a5024b8196` | section | 7 | 0 | 0 | 3 | 4 | ch-priminfo-sparen-selbstverantwortung |
-| unclassified | [EU/EFTA/UK – Priminfo](https://www.priminfo.admin.ch/de/versicherungen/eu_efta) `doc-2e4546e6622f10a0de97` | section | 13 | 0 | 0 | 3 | 10 | ch-priminfo-eu-efta |
-| unclassified | [Grundversicherung – Priminfo](https://www.priminfo.admin.ch/de/versicherungen/grundversicherung) `doc-5e5954d1f6e0e96050f7` | section | 17 | 0 | 0 | 3 | 14 | ch-priminfo-grundversicherung |
-| unclassified | [Prämienverbilligung – Priminfo](https://www.priminfo.admin.ch/de/versicherungen/verbilligung) `doc-0c3c607cd47664b50658` | section | 14 | 0 | 0 | 3 | 11 | ch-priminfo-verbilligung |
-| unclassified | [Zusatzversicherungen – Priminfo](https://www.priminfo.admin.ch/de/versicherungen/zusatzversicherungen) `doc-faac7633f8f4608f6d70` | section | 7 | 0 | 0 | 3 | 4 | ch-priminfo-zusatzversicherungen |
-| unclassified | [Mittlere Prämie – Priminfo](https://www.priminfo.admin.ch/de/zahlen-und-fakten/mittlere_praemie) `doc-bad28b3d0044b0143434` | section | 7 | 0 | 0 | 3 | 4 | ch-priminfo-mittlere-praemie |
-| unclassified | [Wechsel der Krankenkasse – Priminfo](https://www.priminfo.admin.ch/de/zahlen-und-fakten/wechsel) `doc-e3a0c411d388f9d8af8f` | section | 15 | 0 | 0 | 3 | 12 | ch-priminfo-wechsel |
 | unclassified | [Wie werde ich Schweizerin oder Schweizer](https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden.html) `doc-a51c61294f44050bec82` | section | 7 | 0 | 0 | 0 | 7 | ch-sem-citizenship |
 | unclassified | [Verfahren](https://www.sem.admin.ch/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige/verfahrensablauf.html) `doc-d730abb70b2cd9d7b687` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-work-third-country |
 | unclassified | [Fachinformationen zur Einreise in die Schweiz oder den Schengen-Raum](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise.html) `doc-df95692fe72c9af232f2` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
@@ -117,13 +97,6 @@ Release `mvp-zurich-2026-09-22-v7` (content `48418016d8bc`), policy `report`, no
 | partly_cited | [FAQ zur Arbeitslosenentschädigung / arbeit.swiss](https://www.arbeit.swiss/de/faq-zur-arbeitslosenentschaedigung) `doc-3582d03d795fd5c90cf8` | section | 20 | 8 | 0 | 1 | 11 | ch-seco-unemployment |
 | partly_cited | [FAQs on unemployment benefit / arbeit.swiss](https://www.arbeit.swiss/en/jobseekers/faqs-on-unemployment-benefit) `doc-ce6137f089827679b46b` | section | 20 | 7 | 0 | 1 | 12 |  |
 | partly_cited | [Signing on and registration / arbeit.swiss](https://www.arbeit.swiss/en/jobseekers/signing-on-and-registration) `doc-8348f22bf583137fd376` | section | 5 | 2 | 0 | 1 | 2 |  |
-| partly_cited | [Krankenversicherung: Prämienverbilligung](https://www.bag.admin.ch/de/krankenversicherung-praemienverbilligung) `doc-d43ca41415a4f2f2c9c3` | section | 6 | 3 | 0 | 0 | 3 | ch-bag-premium-reduction |
-| partly_cited | [Krankenversicherung: Versicherungspflicht für in der Schweiz wohnhafte Versicherte](https://www.bag.admin.ch/de/krankenversicherung-versicherungspflicht-fuer-in-der-schweiz-wohnhafte-versicherte) `doc-e494fce7ee1b673e639f` | section | 6 | 3 | 0 | 1 | 2 | ch-bag-health-insurance |
-| partly_cited | [Krankenversicherung: Zur Sistierung der Unfalldeckung berechtigte Versicherte](https://www.bag.admin.ch/de/krankenversicherung-zur-sistierung-der-unfalldeckung-berechtigte-versicherte) `doc-1631ee5aec5b0914091c` | section | 5 | 3 | 0 | 0 | 2 |  |
-| partly_cited | [Unfallversicherung: Wer ist obligatorisch versichert?](https://www.bag.admin.ch/de/unfallversicherung-wer-ist-obligatorisch-versichert) `doc-6e45b9e28dd55e61b3a3` | section | 3 | 1 | 0 | 0 | 2 | ch-bag-accident-insurance |
-| partly_cited | [Accident insurance: Who is subject to compulsory insurance?](https://www.bag.admin.ch/en/accident-insurance-who-is-subject-to-compulsory-insurance) `doc-f373f87980ac42c88f80` | section | 3 | 1 | 0 | 0 | 2 |  |
-| partly_cited | [Health insurance: Insured persons eligible to suspend accident cover](https://www.bag.admin.ch/en/health-insurance-insured-persons-eligible-to-suspend-accident-cover) `doc-10dfed4288411da300f1` | section | 5 | 3 | 0 | 0 | 2 |  |
-| partly_cited | [Health insurance: Premium subsidies](https://www.bag.admin.ch/en/health-insurance-premium-subsidies) `doc-380255d8847870b7c0f3` | section | 7 | 3 | 0 | 0 | 4 |  |
 | partly_cited | [EO bei Adoption](https://www.bsv.admin.ch/de/eo-bei-adoption) `doc-3ea9b1655f1a9db36e5e` | section | 7 | 2 | 0 | 0 | 5 |  |
 | partly_cited | [EO bei Mutterschaft](https://www.bsv.admin.ch/de/eo-bei-mutterschaft) `doc-bc31bd2012fbdd654c09` | section | 9 | 4 | 0 | 0 | 5 |  |
 | partly_cited | [EO bei Vaterschaft](https://www.bsv.admin.ch/de/eo-bei-vaterschaft) `doc-859ecc73c600eb5a82a2` | section | 8 | 3 | 0 | 0 | 5 |  |
@@ -243,6 +216,23 @@ Release `mvp-zurich-2026-09-22-v7` (content `48418016d8bc`), policy `report`, no
 | empty | [Health insurance (KV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Health-insurance-KV) `doc-74b7e2a1f977c532fab5` | section | 0 | 0 | 0 | 0 | 0 |  |
 | empty | [Occupational benefit plan (BV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Occupational-benefit-plan-BV) `doc-d9b7566e9cd37efb9554` | section | 0 | 0 | 0 | 0 | 0 |  |
 | empty | [Unemployment insurance (ALV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Unemployment-insurance-ALV) `doc-3b48de1a3bb4b9655717` | section | 0 | 0 | 0 | 0 | 0 |  |
+| cited_and_dispositioned | [Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz](https://www.bag.admin.ch/de/krankenversicherung-grenzgaengerinnen-und-grenzgaenger-in-der-schweiz) `doc-73316a716c25d7263406` | section | 12 | 4 | 8 | 0 | 0 | ch-bag-grenzgaenger |
+| cited_and_dispositioned | [Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte](https://www.bag.admin.ch/de/krankenversicherung-kostenbeteiligung-fuer-in-der-schweiz-wohnhafte-versicherte) `doc-7e46ce8537f76f1736a8` | section | 5 | 3 | 1 | 1 | 0 | ch-bag-kostenbeteiligung |
+| cited_and_dispositioned | [Krankenversicherung: Leistungen im Ausland](https://www.bag.admin.ch/de/krankenversicherung-leistungen-im-ausland) `doc-a2ba95d86bd9041085b6` | section | 4 | 2 | 2 | 0 | 0 | ch-bag-leistungen-im-ausland |
+| cited_and_dispositioned | [Krankenversicherung: Leistungen und Tarife](https://www.bag.admin.ch/de/krankenversicherung-leistungen-und-tarife) `doc-b78c155affebebdb3ac3` | section | 8 | 1 | 7 | 0 | 0 | ch-bag-leistungen-tarife |
+| cited_and_dispositioned | [Krankenversicherung: Prämien und Kostenbeteiligung](https://www.bag.admin.ch/de/krankenversicherung-praemien-und-kostenbeteiligung) `doc-c91304c05bdefe12e21b` | section | 4 | 1 | 2 | 1 | 0 | ch-bag-praemien-kostenbeteiligung |
+| cited_and_dispositioned | [Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK](https://www.bag.admin.ch/de/krankenversicherung-praemien-und-praemienverbilligung-eueftauk) `doc-d6ba6d241671ed943a29` | section | 5 | 3 | 1 | 1 | 0 | ch-bag-praemien-eu-efta-uk |
+| cited_and_dispositioned | [Krankenversicherung: Prämienausstände](https://www.bag.admin.ch/de/krankenversicherung-praemienausstaende) `doc-0b415d97d57dc63b4f38` | section | 5 | 3 | 1 | 1 | 0 | ch-bag-praemienausstaende |
+| cited_and_dispositioned | [Krankenversicherung: Prämienregionen](https://www.bag.admin.ch/de/krankenversicherung-praemienregionen) `doc-53179c28edeeaf2a28d0` | section | 2 | 1 | 1 | 0 | 0 | ch-bag-praemienregionen |
+| cited_and_dispositioned | [Krankenversicherung: Prämienverbilligung](https://www.bag.admin.ch/de/krankenversicherung-praemienverbilligung) `doc-d43ca41415a4f2f2c9c3` | section | 6 | 3 | 3 | 0 | 0 | ch-bag-premium-reduction |
+| cited_and_dispositioned | [Krankenversicherung: Prämienvergleich](https://www.bag.admin.ch/de/krankenversicherung-praemienvergleich) `doc-d27fc848afce0db98807` | section | 9 | 4 | 5 | 0 | 0 | ch-bag-praemienvergleich |
+| cited_and_dispositioned | [Krankenversicherung: Versicherte, die im Ausland wohnen](https://www.bag.admin.ch/de/krankenversicherung-versicherte-die-im-ausland-wohnen) `doc-fcdb3a04d407cd5a1875` | section | 5 | 1 | 3 | 1 | 0 | ch-bag-versicherte-im-ausland |
+| cited_and_dispositioned | [Krankenversicherung: Versicherungspflicht für in der Schweiz wohnhafte Versicherte](https://www.bag.admin.ch/de/krankenversicherung-versicherungspflicht-fuer-in-der-schweiz-wohnhafte-versicherte) `doc-e494fce7ee1b673e639f` | section | 6 | 3 | 2 | 1 | 0 | ch-bag-health-insurance |
+| cited_and_dispositioned | [Krankenversicherung: Zur Sistierung der Unfalldeckung berechtigte Versicherte](https://www.bag.admin.ch/de/krankenversicherung-zur-sistierung-der-unfalldeckung-berechtigte-versicherte) `doc-1631ee5aec5b0914091c` | section | 5 | 3 | 2 | 0 | 0 |  |
+| cited_and_dispositioned | [Unfallversicherung: Wer ist obligatorisch versichert?](https://www.bag.admin.ch/de/unfallversicherung-wer-ist-obligatorisch-versichert) `doc-6e45b9e28dd55e61b3a3` | section | 3 | 1 | 2 | 0 | 0 | ch-bag-accident-insurance |
+| cited_and_dispositioned | [Accident insurance: Who is subject to compulsory insurance?](https://www.bag.admin.ch/en/accident-insurance-who-is-subject-to-compulsory-insurance) `doc-f373f87980ac42c88f80` | section | 3 | 1 | 2 | 0 | 0 |  |
+| cited_and_dispositioned | [Health insurance: Insured persons eligible to suspend accident cover](https://www.bag.admin.ch/en/health-insurance-insured-persons-eligible-to-suspend-accident-cover) `doc-10dfed4288411da300f1` | section | 5 | 3 | 2 | 0 | 0 |  |
+| cited_and_dispositioned | [Health insurance: Premium subsidies](https://www.bag.admin.ch/en/health-insurance-premium-subsidies) `doc-380255d8847870b7c0f3` | section | 7 | 3 | 4 | 0 | 0 |  |
 | cited_and_dispositioned | [Allgemeine Informationen zu Freimengen und Wertfreigrenzen](https://www.bazg.admin.ch/de/allgemeine-informationen-zu-freimengen-und-wertfreigrenzen) `doc-2be14eb81766abd0a5f6` | section | 7 | 3 | 3 | 1 | 0 | ch-bazg-freimengen-allgemein |
 | cited_and_dispositioned | [Ausreise aus der Schweiz mit Privatwaren](https://www.bazg.admin.ch/de/ausreise-aus-der-schweiz-mit-privatwaren) `doc-714a0981c5b41126870d` | section | 6 | 2 | 3 | 1 | 0 | ch-bazg-ausreise-privatwaren |
 | cited_and_dispositioned | [Empfangen von Briefen und Paketen](https://www.bazg.admin.ch/de/empfangen-von-briefen-und-paketen) `doc-d25c75b6384595c370a9` | section | 13 | 8 | 4 | 1 | 0 | ch-bazg-briefe-pakete |
@@ -274,6 +264,15 @@ Release `mvp-zurich-2026-09-22-v7` (content `48418016d8bc`), policy `report`, no
 | dispositioned | [Interneteinkauf, Post- und Kuriersendungen](https://www.bazg.admin.ch/de/interneteinkauf-post-und-kuriersendungen) `doc-ae795262d1d362f6fd9e` | section | 5 | 0 | 5 | 0 | 0 | ch-bazg-interneteinkauf |
 | dispositioned | [Umzug (Übersiedlungsgut)](https://www.bazg.admin.ch/de/umzug-uebersiedlungsgut) `doc-c53e2f40414767a5ee38` | section | 4 | 0 | 4 | 0 | 0 | ch-bazg-uebersiedlungsgut |
 | dispositioned | [Broschüre «Wohnen in der Schweiz»](https://www.bwo.admin.ch/de/broschuere-wohnen-in-der-schweiz) `doc-dbee3b501bbce48562d2` | section | 6 | 0 | 6 | 0 | 0 | ch-bwo-housing |
+| dispositioned | [FAQ – Priminfo](https://www.priminfo.admin.ch/de/faq) `doc-107094215a49831a8c83` | section | 58 | 0 | 57 | 1 | 0 | ch-priminfo-faq |
+| dispositioned | [Sparen mit der Grundversicherung – Priminfo](https://www.priminfo.admin.ch/de/sparen/grundversicherung) `doc-e735f7a09d6dd3ae6741` | section | 20 | 0 | 17 | 3 | 0 | ch-priminfo-sparen-grundversicherung |
+| dispositioned | [Selbstverantwortung – Priminfo](https://www.priminfo.admin.ch/de/sparen/selbstverantwortung) `doc-38f8f9f8e3a5024b8196` | section | 7 | 0 | 4 | 3 | 0 | ch-priminfo-sparen-selbstverantwortung |
+| dispositioned | [EU/EFTA/UK – Priminfo](https://www.priminfo.admin.ch/de/versicherungen/eu_efta) `doc-2e4546e6622f10a0de97` | section | 13 | 0 | 10 | 3 | 0 | ch-priminfo-eu-efta |
+| dispositioned | [Grundversicherung – Priminfo](https://www.priminfo.admin.ch/de/versicherungen/grundversicherung) `doc-5e5954d1f6e0e96050f7` | section | 17 | 0 | 14 | 3 | 0 | ch-priminfo-grundversicherung |
+| dispositioned | [Prämienverbilligung – Priminfo](https://www.priminfo.admin.ch/de/versicherungen/verbilligung) `doc-0c3c607cd47664b50658` | section | 14 | 0 | 11 | 3 | 0 | ch-priminfo-verbilligung |
+| dispositioned | [Zusatzversicherungen – Priminfo](https://www.priminfo.admin.ch/de/versicherungen/zusatzversicherungen) `doc-faac7633f8f4608f6d70` | section | 7 | 0 | 4 | 3 | 0 | ch-priminfo-zusatzversicherungen |
+| dispositioned | [Mittlere Prämie – Priminfo](https://www.priminfo.admin.ch/de/zahlen-und-fakten/mittlere_praemie) `doc-bad28b3d0044b0143434` | section | 7 | 0 | 4 | 3 | 0 | ch-priminfo-mittlere-praemie |
+| dispositioned | [Wechsel der Krankenkasse – Priminfo](https://www.priminfo.admin.ch/de/zahlen-und-fakten/wechsel) `doc-e3a0c411d388f9d8af8f` | section | 15 | 0 | 12 | 3 | 0 | ch-priminfo-wechsel |
 | dispositioned | [I. Ausländerbereich](https://www.sem.admin.ch/sem/de/home/publiservice/weisungen-kreisschreiben/auslaenderbereich.html) `doc-99c4a66431eadf2be274` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-directives |
 | dispositioned | [7 Angehörige von diplomatischen Vertretungen und intergouvernementalen Organisationen, Stagiaires und Delegierte bei internationalen Organisationen](https://www.sem.admin.ch/sem/de/home/publiservice/weisungen-kreisschreiben/auslaenderbereich/angehoerige_von_diplomatischen.html) `doc-7399de1faad8ce9f6f16` | section | 1 | 0 | 1 | 0 | 0 | ch-sem-directives |
 | dispositioned | [4 Aufenthalt mit Erwerbstätigkeit](https://www.sem.admin.ch/sem/de/home/publiservice/weisungen-kreisschreiben/auslaenderbereich/aufenthalt_mit_erwerbstaetigkeit.html) `doc-c63b137533ec10d98d48` | section | 4 | 0 | 4 | 0 | 0 | ch-sem-directives |
@@ -393,6 +392,7 @@ Release `mvp-zurich-2026-09-22-v7` (content `48418016d8bc`), policy `report`, no
 | dispositioned | [Kantonaler Angebotskatalog IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/kantonaler-angebotskatalog-iazh.html) `doc-3c72847ef089a81809ef` | section | 18 | 0 | 18 | 0 | 0 | zh-integration |
 | dispositioned | [Kantonale Integrationsprogramme / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/kantonale-integrationsprogramme.html) `doc-6be9702fb1331355a86f` | section | 12 | 0 | 12 | 0 | 0 | zh-integration |
 | cited | [Spezielle Öffnungszeiten](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/oeffnungszeiten-ueber-die-feiertage.html) `doc-71f912c1a94b986fba26` | section | 3 | 2 | 0 | 1 | 0 |  |
+| cited | [Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer](https://www.bag.admin.ch/de/krankenversicherung-versicherungsmodelle-mit-eingeschraenkter-wahl-der-leistungserbringer) `doc-28f3362905346a6a6da4` | section | 7 | 6 | 0 | 1 | 0 | ch-bag-versicherungsmodelle |
 | cited | [Einfuhrsteuer: Steuerobjekt und Steuersätze](https://www.bazg.admin.ch/de/einfuhrsteuer-mehrwertsteuer-auf-warenimporte) `doc-4fb0420bc83d13e5d3ab` | section | 2 | 1 | 0 | 1 | 0 | ch-bazg-einfuhrsteuer |
 | cited | [Rücksendung, Reparatur, Veredelung](https://www.bazg.admin.ch/de/interneteinkauf-ruecksendung-reparatur-veredelung) `doc-2c7277cf602672dbbb30` | section | 4 | 4 | 0 | 0 | 0 | ch-bazg-ruecksendung-reparatur |
 | cited | [Versandhandel und Plattformbesteuerung](https://www.bazg.admin.ch/de/regelung-mwst-versandhandel-und-plattformbesteuerung) `doc-583848329b9eb858ddcd` | section | 1 | 1 | 0 | 0 | 0 | ch-bazg-versandhandel-mwst |
@@ -402,6 +402,8 @@ Release `mvp-zurich-2026-09-22-v7` (content `48418016d8bc`), policy `report`, no
 | cited | [Fedlex: Federal Direct Tax Act, SR 642.11](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) `doc-5f038736fe92a346d1a5` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-dbg |
 | cited | [Fedlex: Vested Benefits Act, SR 831.42](https://www.fedlex.admin.ch/eli/cc/1994/2386_2386_2386/de) `doc-f0e81df15090dfa0442c` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-fzg |
 | cited | [Fedlex: Health Insurance Act, SR 832.10](https://www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/de) `doc-8486b6ce38b9f3f0c014` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-kvg |
+| cited | [Fedlex: Ordinance on Health Insurance, KVV, SR 832.102](https://www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/de) `doc-dd924487a604f77a494b` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-kvv |
+| cited | [Fedlex: Ordinance on Benefits in Compulsory Health Insurance, KLV, SR 832.112.31](https://www.fedlex.admin.ch/eli/cc/1995/4964_4964_4964/de) `doc-e4821453f6936b7c292f` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-klv |
 | cited | [Fedlex: ordinance on the refund of AHV contributions paid by foreign nationals, SR 831.131.12](https://www.fedlex.admin.ch/eli/cc/1996/688_688_688/de) `doc-2beff3b94d248dc44aad` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-rv-ahv |
 | cited | [Fedlex: Federal Constitution, SR 101](https://www.fedlex.admin.ch/eli/cc/1999/404/de) `doc-8da950d67c9fda5a71d0` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-bv |
 | cited | [FZA / ALCP, SR 0.142.112.681](https://www.fedlex.admin.ch/eli/cc/2002/243/de) `doc-d999428032a97434954d` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-fza |
@@ -854,83 +856,6 @@ Release `mvp-zurich-2026-09-22-v7` (content `48418016d8bc`), policy `report`, no
 | `doc-66bfe101b39f2d0ea6a9` | section-0003 | Signing on and registration > Signing on with the RAV | 34-40 | 737 |
 | `doc-66bfe101b39f2d0ea6a9` | section-0004 | Signing on and registration > Registering for Job-Room | 41-49 | 989 |
 | `doc-66bfe101b39f2d0ea6a9` | section-0005 | Signing on and registration > The services offered by RAVs and unemployment insurance funds | 50-77 | 2506 |
-| `doc-73316a716c25d7263406` | section-0002 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz | 17-19 | 454 |
-| `doc-73316a716c25d7263406` | section-0003 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz > Zuständige kantonale Stellen für Gesuche um Befreiung von der obligatorischen Krankenversicherung | 20-21 | 30 |
-| `doc-73316a716c25d7263406` | section-0004 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz > Grenzgänger aus einem EU-/EFTA-Staat oder UK – Versicherung am Erwerbsort | 22-23 | 359 |
-| `doc-73316a716c25d7263406` | section-0005 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz > Beginn und Ende der Versicherung | 24-25 | 634 |
-| `doc-73316a716c25d7263406` | section-0006 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz > Optionsrecht | 26-28 | 1444 |
-| `doc-73316a716c25d7263406` | section-0007 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz > Modalitäten zur Ausübung des Optionsrechts mit Frankreich | 29-31 | 922 |
-| `doc-73316a716c25d7263406` | section-0008 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz > Grenzgängerinnen und Grenzgänger aus einem Land ausserhalb EU/EFTA/UK | 32-34 | 724 |
-| `doc-73316a716c25d7263406` | section-0009 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz > Familienangehörige von Grenzgängerinnen und Grenzgängern aus Italien | 35-36 | 253 |
-| `doc-73316a716c25d7263406` | section-0024 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz > Weiterführende Themen > Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK | 68-70 | 420 |
-| `doc-73316a716c25d7263406` | section-0025 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz > Weiterführende Themen > Kostenbeteiligung der in der Schweiz versicherten Personen | 71-73 | 225 |
-| `doc-73316a716c25d7263406` | section-0026 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz > Weiterführende Themen > Leistungen im Ausland für Versicherte mit Wohnsitz im Ausland | 74-76 | 328 |
-| `doc-73316a716c25d7263406` | section-0027 | Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz > Bundesamt für Gesundheit BAG | 77-79 | 153 |
-| `doc-7e46ce8537f76f1736a8` | section-0002 | Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte | 17-18 | 194 |
-| `doc-7e46ce8537f76f1736a8` | section-0003 | Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte > Kostenbeteiligung | 19-23 | 751 |
-| `doc-7e46ce8537f76f1736a8` | section-0004 | Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte > Von der Kostenbeteiligung ausgenommene Leistungen | 24-28 | 716 |
-| `doc-7e46ce8537f76f1736a8` | section-0005 | Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte > Höherer Selbstbehalt für bestimmte Arzneimittel | 29-30 | 222 |
-| `doc-a2ba95d86bd9041085b6` | section-0002 | Krankenversicherung: Leistungen im Ausland | 17-18 | 68 |
-| `doc-a2ba95d86bd9041085b6` | section-0003 | Krankenversicherung: Leistungen im Ausland > Leistungen im Ausland für Versicherte mit Wohnsitz in der Schweiz | 19-21 | 325 |
-| `doc-a2ba95d86bd9041085b6` | section-0004 | Krankenversicherung: Leistungen im Ausland > Leistungen im Ausland für Versicherte mit Wohnsitz im Ausland | 22-24 | 328 |
-| `doc-a2ba95d86bd9041085b6` | section-0005 | Krankenversicherung: Leistungen im Ausland > Bundesamt für Gesundheit BAG | 25-29 | 190 |
-| `doc-b78c155affebebdb3ac3` | section-0002 | Krankenversicherung: Leistungen und Tarife | 17-18 | 249 |
-| `doc-b78c155affebebdb3ac3` | section-0003 | Krankenversicherung: Leistungen und Tarife > Leistungen | 19-24 | 1594 |
-| `doc-b78c155affebebdb3ac3` | section-0004 | Krankenversicherung: Leistungen und Tarife > Tarife | 25-31 | 1196 |
-| `doc-b78c155affebebdb3ac3` | section-0012 | Krankenversicherung: Leistungen und Tarife > Häufig gestellte Fragen zu Leistungen (FAQ) > Arzneimittel | 51-52 | 92 |
-| `doc-b78c155affebebdb3ac3` | section-0016 | Krankenversicherung: Leistungen und Tarife > Häufig gestellte Fragen zu Leistungen (FAQ) > Impfungen | 62-63 | 138 |
-| `doc-b78c155affebebdb3ac3` | section-0017 | Krankenversicherung: Leistungen und Tarife > Häufig gestellte Fragen zu Leistungen (FAQ) > Leistungen bei Mutterschaft | 64-65 | 143 |
-| `doc-b78c155affebebdb3ac3` | section-0022 | Krankenversicherung: Leistungen und Tarife > Häufig gestellte Fragen zu Leistungen (FAQ) > Übernimmt die obligatorische Krankenpflegeversicherung zahnärztliche Behandlungen? > Newsletter Leistungen Krankenversicherungen | 74-75 | 64 |
-| `doc-b78c155affebebdb3ac3` | section-0031 | Krankenversicherung: Leistungen und Tarife > Bundesamt für Gesundheit BAG | 92-96 | 221 |
-| `doc-c91304c05bdefe12e21b` | section-0002 | Krankenversicherung: Prämien und Kostenbeteiligung | 17-18 | 253 |
-| `doc-c91304c05bdefe12e21b` | section-0003 | Krankenversicherung: Prämien und Kostenbeteiligung > Prämien | 19-23 | 478 |
-| `doc-c91304c05bdefe12e21b` | section-0004 | Krankenversicherung: Prämien und Kostenbeteiligung > Kostenbeteiligung | 24-28 | 550 |
-| `doc-d6ba6d241671ed943a29` | section-0002 | Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK | 17-18 | 345 |
-| `doc-d6ba6d241671ed943a29` | section-0003 | Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK > Prämien EU/EFTA/UK | 19-20 | 505 |
-| `doc-d6ba6d241671ed943a29` | section-0004 | Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK > Verbilligung der EU-/EFTA-/UK-Prämien | 21-22 | 909 |
-| `doc-d6ba6d241671ed943a29` | section-0014 | Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK > Weiterführende Themen > Krankenversicherung: Versicherungspflicht | 44-46 | 307 |
-| `doc-0b415d97d57dc63b4f38` | section-0002 | Krankenversicherung: Prämienausstände | 17-18 | 210 |
-| `doc-0b415d97d57dc63b4f38` | section-0003 | Krankenversicherung: Prämienausstände > Nichtbezahlung der Prämien | 19-23 | 280 |
-| `doc-0b415d97d57dc63b4f38` | section-0004 | Krankenversicherung: Prämienausstände > Übernahme der ausstehenden Prämien und Kostenbeteiligungen durch die Kantone bei Ausstellung eines Verlustscheins | 24-25 | 137 |
-| `doc-0b415d97d57dc63b4f38` | section-0005 | Krankenversicherung: Prämienausstände > Kantonale Liste der Versicherten, die ihre Prämien nicht zahlen, und Aussetzung der Kostenübernahme | 26-28 | 459 |
-| `doc-53179c28edeeaf2a28d0` | section-0002 | Krankenversicherung: Prämienregionen | 17-22 | 1594 |
-| `doc-53179c28edeeaf2a28d0` | section-0011 | Krankenversicherung: Prämienregionen > Bundesamt für Gesundheit BAG | 40-44 | 190 |
-| `doc-d43ca41415a4f2f2c9c3` | section-0005 | Krankenversicherung: Prämienverbilligung > Finanzierung durch Bund und Kantone | 29-31 | 1154 |
-| `doc-d43ca41415a4f2f2c9c3` | section-0006 | Krankenversicherung: Prämienverbilligung > Monitoring der Prämienverbilligung | 32-33 | 381 |
-| `doc-d43ca41415a4f2f2c9c3` | section-0015 | Krankenversicherung: Prämienverbilligung > Bundesamt für Gesundheit BAG | 52-54 | 153 |
-| `doc-d27fc848afce0db98807` | section-0002 | Krankenversicherung: Prämienvergleich | 17-19 | 253 |
-| `doc-d27fc848afce0db98807` | section-0003 | Krankenversicherung: Prämienvergleich > Prämiengenehmigung | 20-22 | 595 |
-| `doc-d27fc848afce0db98807` | section-0004 | Krankenversicherung: Prämienvergleich > Prämiengenehmigungsprozess | 23-24 | 115 |
-| `doc-d27fc848afce0db98807` | section-0005 | Krankenversicherung: Prämienvergleich > Prämiengenehmigungsprozess > Phase 1 | 25-26 | 209 |
-| `doc-d27fc848afce0db98807` | section-0006 | Krankenversicherung: Prämienvergleich > Prämiengenehmigungsprozess > Phase 2 | 27-28 | 398 |
-| `doc-d27fc848afce0db98807` | section-0007 | Krankenversicherung: Prämienvergleich > Prämiengenehmigungsprozess > Phase 3 | 29-30 | 438 |
-| `doc-d27fc848afce0db98807` | section-0008 | Krankenversicherung: Prämienvergleich > Prämiengenehmigungsprozess > Phase 3 > Einbezug der Kantone | 31-32 | 382 |
-| `doc-d27fc848afce0db98807` | section-0009 | Krankenversicherung: Prämienvergleich > Prämiengenehmigungsprozess > Phase4 | 33-36 | 517 |
-| `doc-d27fc848afce0db98807` | section-0032 | Krankenversicherung: Prämienvergleich > Bundesamt für Gesundheit BAG | 80-84 | 190 |
-| `doc-fcdb3a04d407cd5a1875` | section-0002 | Krankenversicherung: Versicherte, die im Ausland wohnen | 17-18 | 139 |
-| `doc-fcdb3a04d407cd5a1875` | section-0003 | Krankenversicherung: Versicherte, die im Ausland wohnen > Krankenversicherung: Versicherungspflicht | 19-21 | 307 |
-| `doc-fcdb3a04d407cd5a1875` | section-0004 | Krankenversicherung: Versicherte, die im Ausland wohnen > Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK | 22-24 | 420 |
-| `doc-fcdb3a04d407cd5a1875` | section-0005 | Krankenversicherung: Versicherte, die im Ausland wohnen > Krankenversicherung: Kostenbeteiligung für im Ausland wohnhafte Versicherte | 25-27 | 334 |
-| `doc-28f3362905346a6a6da4` | section-0002 | Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer | 17-24 | 2043 |
-| `doc-28f3362905346a6a6da4` | section-0003 | Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer > Die Kategorie PRAXIS | 25-26 | 299 |
-| `doc-28f3362905346a6a6da4` | section-0004 | Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer > Die Kategorie TEL_DIG | 27-28 | 151 |
-| `doc-28f3362905346a6a6da4` | section-0005 | Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer > Die Kategorie PHARM | 29-30 | 130 |
-| `doc-28f3362905346a6a6da4` | section-0006 | Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer > Die Kategorie FLEX | 31-32 | 319 |
-| `doc-28f3362905346a6a6da4` | section-0007 | Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer > Hinweis: | 33-34 | 246 |
-| `doc-e494fce7ee1b673e639f` | section-0004 | Krankenversicherung: Versicherungspflicht für in der Schweiz wohnhafte Versicherte > Ende der Versicherungspflicht | 22-25 | 355 |
-| `doc-e494fce7ee1b673e639f` | section-0005 | Krankenversicherung: Versicherungspflicht für in der Schweiz wohnhafte Versicherte > Sans-Papiers | 26-27 | 502 |
-| `doc-1631ee5aec5b0914091c` | section-0008 | Krankenversicherung: Zur Sistierung der Unfalldeckung berechtigte Versicherte > Weiterführende Themen > Wer ist obligatorisch versichert? | 31-33 | 123 |
-| `doc-1631ee5aec5b0914091c` | section-0009 | Krankenversicherung: Zur Sistierung der Unfalldeckung berechtigte Versicherte > Bundesamt für Gesundheit BAG | 34-36 | 153 |
-| `doc-6e45b9e28dd55e61b3a3` | section-0003 | Unfallversicherung: Wer ist obligatorisch versichert? > Wer ist nicht obligatorisch versichert? | 28-34 | 220 |
-| `doc-6e45b9e28dd55e61b3a3` | section-0006 | Unfallversicherung: Wer ist obligatorisch versichert? > Bundesamt für Gesundheit BAG | 38-42 | 217 |
-| `doc-f373f87980ac42c88f80` | section-0003 | Accident insurance: Who is subject to compulsory insurance? > Who is not covered by compulsory insurance? | 27-33 | 214 |
-| `doc-f373f87980ac42c88f80` | section-0006 | Accident insurance: Who is subject to compulsory insurance? > Federal Office of Public Health FOPH | 37-41 | 216 |
-| `doc-10dfed4288411da300f1` | section-0008 | Health insurance: Insured persons eligible to suspend accident cover > Further topics > Who is subject to compulsory insurance? | 30-32 | 138 |
-| `doc-10dfed4288411da300f1` | section-0009 | Health insurance: Insured persons eligible to suspend accident cover > Federal Office of Public Health FOPH | 33-35 | 141 |
-| `doc-380255d8847870b7c0f3` | section-0001 | (no heading) | 1-16 | 28 |
-| `doc-380255d8847870b7c0f3` | section-0005 | Health insurance: Premium subsidies > Financing by the Federal Government and Cantons | 29-31 | 1217 |
-| `doc-380255d8847870b7c0f3` | section-0006 | Health insurance: Premium subsidies > Monitoring of Premium Reductions | 32-33 | 435 |
-| `doc-380255d8847870b7c0f3` | section-0013 | Health insurance: Premium subsidies > Federal Office of Public Health FOPH | 45-47 | 141 |
 | `doc-3f3d4751491356fbdf8a` | section-0001 | (no heading) | 1-6 | 2465 |
 | `doc-08accda64b5e8e778ea6` | section-0002 | Alters- und Hinterlassenenversicherung (AHV) - Übersicht | 18-19 | 444 |
 | `doc-08accda64b5e8e778ea6` | section-0003 | Alters- und Hinterlassenenversicherung (AHV) - Übersicht > Leistungen der AHV | 20-22 | 161 |
@@ -1026,139 +951,6 @@ Release `mvp-zurich-2026-09-22-v7` (content `48418016d8bc`), policy `report`, no
 | `doc-4f9c56f3313549edc7e8` | section-0018 | Schweizerische Quellensteuer QST > Häufige Anliegen > Übersicht über die Grundlagen für die Berechnung der Quellensteuertarife des Bundes im Steuerjahr 2026 | 48-49 | 25 |
 | `doc-4f9c56f3313549edc7e8` | section-0031 | Schweizerische Quellensteuer QST > Häufige Anliegen > Archiv > Auskunftsstellen/Bezugprovisionen/Kirchensteuer 2026 | 73-74 | 29 |
 | `doc-4f9c56f3313549edc7e8` | section-0043 | Schweizerische Quellensteuer QST > Häufige Anliegen > Archiv > Quellensteuertarife für Vorsorgeleistungen ab 2026 | 96-97 | 29 |
-| `doc-107094215a49831a8c83` | section-0004 | FAQ | 92-94 | 79 |
-| `doc-107094215a49831a8c83` | section-0007 | FAQ > Prämienrechner > Was sind die Eigenschaften des Prämienrechners? | 97-101 | 635 |
-| `doc-107094215a49831a8c83` | section-0008 | FAQ > Prämienrechner > Was sind die Eigenschaften des Prämienrechners? > Bestellen von Infomaterial | 102-103 | 25 |
-| `doc-107094215a49831a8c83` | section-0010 | FAQ > Versicherungspflicht > Wo finde ich Informationen zur Krankenversicherung? | 105-107 | 500 |
-| `doc-107094215a49831a8c83` | section-0011 | FAQ > Versicherungspflicht > Ist die Krankenversicherung obligatorisch in der Schweiz? | 108-118 | 2170 |
-| `doc-107094215a49831a8c83` | section-0012 | FAQ > Versicherungspflicht > Was geschieht, wenn ich mich nicht versichere? | 119-120 | 232 |
-| `doc-107094215a49831a8c83` | section-0013 | FAQ > Versicherungspflicht > Wann endet die obligatorische Krankenversicherung? | 121-124 | 407 |
-| `doc-107094215a49831a8c83` | section-0014 | FAQ > Versicherungspflicht > Wer ist von der Versicherungspflicht in der Schweiz ausgenommen? | 125-141 | 3459 |
-| `doc-107094215a49831a8c83` | section-0015 | FAQ > Versicherungspflicht > Mein Kind ist Ende Monat geboren. Muss/kann der Versicherer die Prämie für den ganzen Monat in Rechnung stellen? | 142-143 | 132 |
-| `doc-107094215a49831a8c83` | section-0016 | FAQ > Versicherungspflicht > Ich habe mich Mitte Monat in der Schweiz angemeldet. Muss/kann der Versicherer die Prämie für den ganzen Monat in Rechnung stellen? | 144-145 | 168 |
-| `doc-107094215a49831a8c83` | section-0017 | FAQ > Versicherungspflicht > Mein Mann ist anfangs Monat gestorben. Muss/kann der Versicherer die Prämie für den ganzen Monat in Rechnung stellen? | 146-147 | 135 |
-| `doc-107094215a49831a8c83` | section-0018 | FAQ > Versicherungspflicht > Innerhalb welcher Frist muss ich mich versichern? | 148-149 | 442 |
-| `doc-107094215a49831a8c83` | section-0019 | FAQ > Versicherungspflicht > Was hat eine verspätete Anmeldung zur Folge? | 150-151 | 153 |
-| `doc-107094215a49831a8c83` | section-0020 | FAQ > Versicherungspflicht > Bin ich frei in der Wahl eines Krankenversicherers? | 152-154 | 309 |
-| `doc-107094215a49831a8c83` | section-0021 | FAQ > Versicherungspflicht > Kann ein Krankenversicherer meine Aufnahme ablehnen oder Vorbehalte anbringen? | 155-156 | 229 |
-| `doc-107094215a49831a8c83` | section-0022 | FAQ > Versicherungspflicht > Darf ein Krankenversicherer mich bei der Anmeldung für die Grundversicherung auffordern, einen Gesundheitsfragebogen auszufüllen? | 157-159 | 517 |
-| `doc-107094215a49831a8c83` | section-0023 | FAQ > Versicherungspflicht > Was kann ich tun, wenn der Krankenversicherer auf mein Aufnahmegesuch nicht reagiert? | 160-161 | 484 |
-| `doc-107094215a49831a8c83` | section-0024 | FAQ > Versicherungspflicht > Kann ich die Unfalldeckung sistieren, wenn ich bereits durch die Unfallversicherung versichert bin? | 162-163 | 238 |
-| `doc-107094215a49831a8c83` | section-0025 | FAQ > Versicherungspflicht > Kann ich meine Krankenversicherung während dem Militärdienst sistieren? | 164-165 | 342 |
-| `doc-107094215a49831a8c83` | section-0026 | FAQ > Versicherungspflicht > Bleibe ich bei einem vorübergehenden Auslandaufenthalt (Reise, Studium) in der Schweiz versicherungspflichtig? | 166-167 | 254 |
-| `doc-107094215a49831a8c83` | section-0027 | FAQ > Versicherungspflicht > Kann ich bei der obligatorischen Krankenpflegeversicherung in der Schweiz versichert bleiben, wenn ich meinen Wohnsitz ins Ausland verlege? | 168-170 | 803 |
-| `doc-107094215a49831a8c83` | section-0029 | FAQ > Kostenbeteiligung > Was versteht man unter Kostenbeteiligung? | 172-174 | 488 |
-| `doc-107094215a49831a8c83` | section-0030 | FAQ > Kostenbeteiligung > Wie hoch ist die minimale Kostenbeteiligung? | 175-176 | 455 |
-| `doc-107094215a49831a8c83` | section-0031 | FAQ > Kostenbeteiligung > Was bringt mir eine erhöhte Jahresfranchise? | 177-179 | 892 |
-| `doc-107094215a49831a8c83` | section-0032 | FAQ > Kostenbeteiligung > Bezahle ich auch im Spital eine Kostenbeteiligung? | 180-181 | 232 |
-| `doc-107094215a49831a8c83` | section-0033 | FAQ > Kostenbeteiligung > Wie ist es bei einer Schwangerschaft und Geburt. Entfällt hier die Kostenbeteiligung in jedem Fall? | 182-184 | 768 |
-| `doc-107094215a49831a8c83` | section-0034 | FAQ > Kostenbeteiligung > Kommen bei Beiträgen der Versicherung an Badekuren oder an die Kosten für Hilfsmittel und Apparate, die auf der Mittel- und Gegenständeliste stehen, die Franchise und der Selbstbehalt auch zum Zug? | 185-186 | 173 |
-| `doc-107094215a49831a8c83` | section-0035 | FAQ > Kostenbeteiligung > Wenn ich die Krankenkasse per Mitte Jahr wechsle, bezahle ich dann zweimal die Jahresfranchise und den Selbstbehalt? | 187-188 | 238 |
-| `doc-107094215a49831a8c83` | section-0036 | FAQ > Kostenbeteiligung > Um was handelt es sich beim Spitalbeitrag von Fr. 15.--? | 189-190 | 545 |
-| `doc-107094215a49831a8c83` | section-0037 | FAQ > Kostenbeteiligung > Muss ich bei Unfallfolgen (z.B. Zahnunfall), dessen Kosten über meine Krankenkasse laufen, auch Franchise und Selbstbehalt bezahlen? | 191-192 | 289 |
-| `doc-107094215a49831a8c83` | section-0038 | FAQ > Kostenbeteiligung > Wenn ich übers Jahresende in Behandlung bin, wie sieht es dann aus mit der Kostenbeteiligung? | 193-194 | 530 |
-| `doc-107094215a49831a8c83` | section-0039 | FAQ > Kostenbeteiligung > Kann ich ohne Probleme jedes Jahr die Jahresfranchise anpassen? | 195-196 | 510 |
-| `doc-107094215a49831a8c83` | section-0040 | FAQ > Kostenbeteiligung > Ist es möglich, bei einem Wechsel des Versicherers Mitte Jahr die Franchise von der ordentlichen zur wählbaren Franchise zu ändern? | 197-198 | 214 |
-| `doc-107094215a49831a8c83` | section-0041 | FAQ > Kostenbeteiligung > Wenn ich ein Modell mit eingeschränkter Wahl der Leistungserbringer wähle (z.B. HMO, Hausarztmodell), kann ich dann zusätzlich eine erhöhte Jahresfranchise wählen? | 199-200 | 226 |
-| `doc-107094215a49831a8c83` | section-0042 | FAQ > Kostenbeteiligung > Kann ich bei Abschluss der Bonusversicherung auch eine erhöhte Jahresfranchise wählen? | 201-202 | 100 |
-| `doc-107094215a49831a8c83` | section-0043 | FAQ > Kostenbeteiligung > Wann bezahle ich auf ärztlich verordneten Medikamenten 40 % statt 10 % Selbstbehalt? | 203-205 | 524 |
-| `doc-107094215a49831a8c83` | section-0046 | FAQ > Wechsel der Krankenkasse > Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen? > Versicherungswechsel per 1. Juli | 208-209 | 772 |
-| `doc-107094215a49831a8c83` | section-0047 | FAQ > Wechsel der Krankenkasse > Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen? > Versicherungswechsel per 1. Januar | 210-212 | 740 |
-| `doc-107094215a49831a8c83` | section-0048 | FAQ > Wechsel der Krankenkasse > Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen? > Vorsicht bei nicht genehmigten Prämien! | 213-214 | 306 |
-| `doc-107094215a49831a8c83` | section-0049 | FAQ > Wechsel der Krankenkasse > Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen? > Versicherungswechsel bei unterjährigen Prämienerhöhungen (selten) | 215-217 | 352 |
-| `doc-107094215a49831a8c83` | section-0050 | FAQ > Wechsel der Krankenkasse > Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen? > Kein ausserordentliches Kündigungsrecht | 218-219 | 255 |
-| `doc-107094215a49831a8c83` | section-0051 | FAQ > Wechsel der Krankenkasse > Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen? > Achtung mit der Kündigungsfrist! | 220-222 | 926 |
-| `doc-107094215a49831a8c83` | section-0052 | FAQ > Wechsel der Krankenkasse > Gelten die gleichen Kündigungsfristen für die Zusatzversicherungen? | 223-224 | 298 |
-| `doc-107094215a49831a8c83` | section-0053 | FAQ > Wechsel der Krankenkasse > Darf die Krankenkasse die Zusatzversicherungen unter dem Vorwand, dass die Grundversicherung gewechselt wird, kündigen? | 225-226 | 243 |
-| `doc-107094215a49831a8c83` | section-0054 | FAQ > Wechsel der Krankenkasse > Können säumige versicherte Personen den Versicherer wechseln? | 227-229 | 703 |
-| `doc-107094215a49831a8c83` | section-0055 | FAQ > Wechsel der Krankenkasse > Was sind die Konsequenzen, wenn die versicherte Person zu spät einem neuen Versicherer beitritt? | 230-231 | 492 |
-| `doc-107094215a49831a8c83` | section-0056 | FAQ > Wechsel der Krankenkasse > Was geschieht, wenn der neue Versicherer Ihren Beitritt dem bisherigen Versicherer nicht oder verspätet meldet? | 232-234 | 917 |
-| `doc-107094215a49831a8c83` | section-0058 | FAQ > Zusatzversicherung > Ist eine Zusatzversicherung, die die freie Spitalwahl in der ganzen Schweiz ermöglicht, noch nötig? | 236-238 | 1044 |
-| `doc-107094215a49831a8c83` | section-0060 | FAQ > Behandlungen/Leistungen im Ausland > Werden die Kosten von Behandlungen im Ausland von der obligatorischen Krankenpflegeversicherung übernommen? | 240-245 | 2052 |
-| `doc-107094215a49831a8c83` | section-0061 | FAQ > Behandlungen/Leistungen im Ausland > Bezahlt die obligatorische Krankenpflegeversicherung die Kosten von Arzneimitteln oder Hilfsmitteln, die ich im Ausland gekauft habe? | 246-247 | 154 |
-| `doc-107094215a49831a8c83` | section-0063 | FAQ > Vergütungssysteme > Was bedeutet das Kostenvergütungs- oder Rückerstattungsprinzip? | 249-253 | 1063 |
-| `doc-107094215a49831a8c83` | section-0064 | FAQ > Vergütungssysteme > Was bedeutet das System des Tiers garant? | 254-255 | 845 |
-| `doc-107094215a49831a8c83` | section-0065 | FAQ > Vergütungssysteme > Was bedeutet das System des Tiers payant? | 256-257 | 844 |
-| `doc-107094215a49831a8c83` | section-0066 | FAQ > Vergütungssysteme > Was bedeutet das System des «Tiers soldant»? | 258-259 | 684 |
-| `doc-107094215a49831a8c83` | section-0067 | FAQ > Vergütungssysteme > Was bedeutet das in der Praxis? | 260-263 | 1791 |
-| `doc-107094215a49831a8c83` | section-0068 | FAQ > Haben Sie Fragen zur Krankenkasse? | 264-265 | 89 |
-| `doc-107094215a49831a8c83` | section-0069 | FAQ > Haben Sie Fragen zum Prämien-Rechner? Oder möchten Sie eine Übersicht über die Prämien in gedruckter Form erhalten? | 266-275 | 207 |
-| `doc-e735f7a09d6dd3ae6741` | section-0005 | Sparen in der Grund-Versicherung | 98-101 | 414 |
-| `doc-e735f7a09d6dd3ae6741` | section-0006 | Sparen in der Grund-Versicherung > Mehr Kosten selber bezahlen | 102-105 | 315 |
-| `doc-e735f7a09d6dd3ae6741` | section-0007 | Sparen in der Grund-Versicherung > Eine andere Art von Versicherung wählen | 106-112 | 378 |
-| `doc-e735f7a09d6dd3ae6741` | section-0008 | Sparen in der Grund-Versicherung > So können Sie auch noch sparen | 113-118 | 386 |
-| `doc-e735f7a09d6dd3ae6741` | section-0009 | Sparen in der Grundversicherung | 119-120 | 181 |
-| `doc-e735f7a09d6dd3ae6741` | section-0010 | Sparen in der Grundversicherung > Sparen mit der Wahl der Franchise | 121-122 | 307 |
-| `doc-e735f7a09d6dd3ae6741` | section-0011 | Sparen in der Grundversicherung > Sparen mit der Wahl der Franchise > Was ist die Franchise? | 123-126 | 700 |
-| `doc-e735f7a09d6dd3ae6741` | section-0012 | Sparen in der Grundversicherung > Sparen mit der Wahl der Franchise > Was ist der Selbstbehalt? | 127-128 | 287 |
-| `doc-e735f7a09d6dd3ae6741` | section-0013 | Sparen in der Grundversicherung > Sparen mit der Wahl der Franchise > Beispiel | 129-131 | 376 |
-| `doc-e735f7a09d6dd3ae6741` | section-0014 | Sparen in der Grundversicherung > Sparen mit speziellen Versicherungsmodellen | 132-133 | 141 |
-| `doc-e735f7a09d6dd3ae6741` | section-0015 | Sparen in der Grundversicherung > Sparen mit speziellen Versicherungsmodellen > Sparen mit dem Modell HMO | 134-137 | 724 |
-| `doc-e735f7a09d6dd3ae6741` | section-0016 | Sparen in der Grundversicherung > Sparen mit speziellen Versicherungsmodellen > Sparen mit dem Hausarzt-Modell | 138-139 | 134 |
-| `doc-e735f7a09d6dd3ae6741` | section-0017 | Sparen in der Grundversicherung > Sparen mit speziellen Versicherungsmodellen > Sparen mit telefonischer Beratung | 140-141 | 147 |
-| `doc-e735f7a09d6dd3ae6741` | section-0018 | Sparen in der Grundversicherung > Sparen mit Ausschluss der Unfallversicherung bei Berufstätigkeit | 142-143 | 496 |
-| `doc-e735f7a09d6dd3ae6741` | section-0019 | Sparen in der Grundversicherung > Sparen bei Dienstpflicht | 144-145 | 282 |
-| `doc-e735f7a09d6dd3ae6741` | section-0020 | Sparen in der Grundversicherung > Sparen durch Wechseln der Versicherung | 146-147 | 131 |
-| `doc-e735f7a09d6dd3ae6741` | section-0021 | Sparen in der Grundversicherung > Sparen durch Prämienverbilligung durch die Kantone | 148-149 | 157 |
-| `doc-38f8f9f8e3a5024b8196` | section-0005 | Alle Menschen können bei den Kosten für die Gesundheit sparen | 98-100 | 198 |
-| `doc-38f8f9f8e3a5024b8196` | section-0006 | Alle Menschen können bei den Kosten für die Gesundheit sparen > Schauen Sie zu Ihrer Gesundheit | 101-105 | 151 |
-| `doc-38f8f9f8e3a5024b8196` | section-0007 | Alle Menschen können bei den Kosten für die Gesundheit sparen > Müssen Sie zu einer Ärztin oder einem Arzt? | 106-110 | 403 |
-| `doc-38f8f9f8e3a5024b8196` | section-0008 | Alle Menschen können bei den Kosten für die Gesundheit sparen > Ist eine Operation nötig? | 111-113 | 284 |
-| `doc-2e4546e6622f10a0de97` | section-0005 | Krankenkasse für Personen im Ausland | 99-101 | 180 |
-| `doc-2e4546e6622f10a0de97` | section-0006 | Krankenkasse für Personen im Ausland > Wann brauchen Sie eine Krankenkasse in der Schweiz? | 102-107 | 120 |
-| `doc-2e4546e6622f10a0de97` | section-0007 | Krankenkasse für Personen im Ausland > Wann brauchen Personen aus Ihrer Familie eine Krankenkasse in der Schweiz? | 108-112 | 159 |
-| `doc-2e4546e6622f10a0de97` | section-0008 | Krankenkasse für Personen im Ausland > Prämien-Verbilligung | 113-114 | 140 |
-| `doc-2e4546e6622f10a0de97` | section-0009 | Prämien EU / EFTA / UK | 115-124 | 1217 |
-| `doc-2e4546e6622f10a0de97` | section-0010 | Prämien EU / EFTA / UK > Angebote der Krankenkassen | 125-126 | 301 |
-| `doc-2e4546e6622f10a0de97` | section-0011 | Prämien EU / EFTA / UK > Prämienverbilligung | 127-128 | 301 |
-| `doc-2e4546e6622f10a0de97` | section-0012 | Prämien EU / EFTA / UK > Prämienverbilligung > Zuständige Stellen für die Prämienverbilligung | 129-132 | 563 |
-| `doc-2e4546e6622f10a0de97` | section-0013 | Prämien EU / EFTA / UK > Prämienverbilligung > Übersicht über die Prämien | 133-134 | 74 |
-| `doc-2e4546e6622f10a0de97` | section-0014 | Prämien EU / EFTA / UK > Prämienverbilligung > Weitere Informationen | 135-138 | 139 |
-| `doc-5e5954d1f6e0e96050f7` | section-0005 | Die Grund-Versicherung der Krankenkasse | 99-100 | 48 |
-| `doc-5e5954d1f6e0e96050f7` | section-0006 | Die Grund-Versicherung der Krankenkasse > Was ist die Grund-Versicherung? | 101-102 | 317 |
-| `doc-5e5954d1f6e0e96050f7` | section-0007 | Die Grund-Versicherung der Krankenkasse > Was bezahlt die Grund-Versicherung? | 103-111 | 534 |
-| `doc-5e5954d1f6e0e96050f7` | section-0008 | Die Grund-Versicherung der Krankenkasse > Was bezahlen Sie selber? | 112-113 | 96 |
-| `doc-5e5954d1f6e0e96050f7` | section-0009 | Die Grund-Versicherung der Krankenkasse > Was bezahlen Sie selber? > Was ist eine Franchise? | 114-115 | 219 |
-| `doc-5e5954d1f6e0e96050f7` | section-0010 | Die Grund-Versicherung der Krankenkasse > Was bezahlen Sie selber? > Beispiel Franchise | 116-122 | 849 |
-| `doc-5e5954d1f6e0e96050f7` | section-0011 | Die Grund-Versicherung der Krankenkasse > Was bezahlen Sie selber? > Was ist ein Selbstbehalt? | 123-124 | 128 |
-| `doc-5e5954d1f6e0e96050f7` | section-0012 | Die Grund-Versicherung der Krankenkasse > Was bezahlen Sie selber? > Beispiel Selbstbehalt | 125-127 | 366 |
-| `doc-5e5954d1f6e0e96050f7` | section-0013 | Die Grund-Versicherung der Krankenkasse > Welche Arten von Grund-Versicherungen gibt es? | 128-129 | 102 |
-| `doc-5e5954d1f6e0e96050f7` | section-0014 | Die Grund-Versicherung der Krankenkasse > Welche Arten von Grund-Versicherungen gibt es? > HMO | 130-134 | 518 |
-| `doc-5e5954d1f6e0e96050f7` | section-0015 | Die Grund-Versicherung der Krankenkasse > Welche Arten von Grund-Versicherungen gibt es? > Hausarzt | 135-137 | 242 |
-| `doc-5e5954d1f6e0e96050f7` | section-0016 | Die Grund-Versicherung der Krankenkasse > Welche Arten von Grund-Versicherungen gibt es? > Telefonische Beratung | 138-141 | 325 |
-| `doc-5e5954d1f6e0e96050f7` | section-0017 | Die Grund-Versicherung der Krankenkasse > Welche Art von Versicherung sollen Sie wählen? | 142-143 | 137 |
-| `doc-5e5954d1f6e0e96050f7` | section-0018 | Die Grund-Versicherung der Krankenkasse > Möchten Sie die Krankenkasse wechseln? | 144-146 | 200 |
-| `doc-0c3c607cd47664b50658` | section-0005 | Prämien-Verbilligung | 99-100 | 109 |
-| `doc-0c3c607cd47664b50658` | section-0006 | Prämien-Verbilligung > Was ist eine Prämien-Verbilligung? | 101-104 | 303 |
-| `doc-0c3c607cd47664b50658` | section-0007 | Prämien-Verbilligung > Wer bekommt eine Prämien-Verbilligung? | 105-106 | 59 |
-| `doc-0c3c607cd47664b50658` | section-0008 | Prämien-Verbilligung > Wie bekommen Sie eine Prämien-Verbilligung? | 107-108 | 207 |
-| `doc-0c3c607cd47664b50658` | section-0009 | Prämien-Verbilligung > Wo melden Sie sich für eine Prämien-Verbilligung? | 109-113 | 3269 |
-| `doc-0c3c607cd47664b50658` | section-0010 | Prämienverbilligung | 114-116 | 289 |
-| `doc-0c3c607cd47664b50658` | section-0012 | Prämienverbilligung > Zuständige Stellen für die Prämienverbilligung > Kantonale Stellen | 118-121 | 451 |
-| `doc-0c3c607cd47664b50658` | section-0013 | Prämienverbilligung > Zuständige Stellen für die Prämienverbilligung > Gemeinsame Einrichtung | 122-127 | 384 |
-| `doc-0c3c607cd47664b50658` | section-0014 | Prämienverbilligung > Grundsätze der Prämienverbilligung | 128-131 | 855 |
-| `doc-0c3c607cd47664b50658` | section-0015 | Prämienverbilligung > Leistungen von Bund und Kantonen | 132-133 | 538 |
-| `doc-0c3c607cd47664b50658` | section-0016 | Prämienverbilligung > Weitere Informationen | 134-135 | 108 |
-| `doc-faac7633f8f4608f6d70` | section-0005 | Zusatz-Versicherung | 99-100 | 110 |
-| `doc-faac7633f8f4608f6d70` | section-0006 | Zusatz-Versicherung > Was ist eine Zusatz-Versicherung? | 101-107 | 507 |
-| `doc-faac7633f8f4608f6d70` | section-0007 | Leistungen der Zusatzversicherung | 108-122 | 891 |
-| `doc-faac7633f8f4608f6d70` | section-0008 | Leistungen der Zusatzversicherung > Kündigung einer Zusatzversicherung | 123-126 | 527 |
-| `doc-bad28b3d0044b0143434` | section-0005 | Mittlere Prämie: Kennzahl für die Entwicklung der Prämien der obligatorischen Krankenpflegeversicherung | 102-112 | 1074 |
-| `doc-bad28b3d0044b0143434` | section-0006 | Mittlere Prämie: Kennzahl für die Entwicklung der Prämien der obligatorischen Krankenpflegeversicherung > Mittlere Prämie | 113-117 | 2232 |
-| `doc-bad28b3d0044b0143434` | section-0007 | Mittlere Prämie: Kennzahl für die Entwicklung der Prämien der obligatorischen Krankenpflegeversicherung > Standardprämie | 118-120 | 757 |
-| `doc-bad28b3d0044b0143434` | section-0008 | Mittlere Prämie: Kennzahl für die Entwicklung der Prämien der obligatorischen Krankenpflegeversicherung > Vergleich mittlere Prämie – Standardprämie | 121-125 | 559 |
-| `doc-e3a0c411d388f9d8af8f` | section-0005 | Die Krankenkasse wechseln | 102-104 | 210 |
-| `doc-e3a0c411d388f9d8af8f` | section-0006 | Die Krankenkasse wechseln > Was können Sie wechseln? | 105-109 | 137 |
-| `doc-e3a0c411d388f9d8af8f` | section-0007 | Die Krankenkasse wechseln > Wie können Sie wechseln? | 110-112 | 366 |
-| `doc-e3a0c411d388f9d8af8f` | section-0008 | Die Krankenkasse wechseln > Wann können Sie wechseln? | 113-116 | 196 |
-| `doc-e3a0c411d388f9d8af8f` | section-0010 | Wechsel der Krankenkasse > Allgemeine Informationen | 118-120 | 304 |
-| `doc-e3a0c411d388f9d8af8f` | section-0011 | Wechsel der Krankenkasse > Wechsel der Grundversicherung | 121-123 | 438 |
-| `doc-e3a0c411d388f9d8af8f` | section-0012 | Wechsel der Krankenkasse > Wechsel der Grundversicherung > So funktionierts: | 124-128 | 528 |
-| `doc-e3a0c411d388f9d8af8f` | section-0013 | Wechsel der Krankenkasse > Wechsel der Franchise | 129-130 | 52 |
-| `doc-e3a0c411d388f9d8af8f` | section-0014 | Wechsel der Krankenkasse > Wechsel der Franchise > So funktionierts: | 131-134 | 268 |
-| `doc-e3a0c411d388f9d8af8f` | section-0015 | Wechsel der Krankenkasse > Wechsel Versicherungsmodelle | 135-136 | 63 |
-| `doc-e3a0c411d388f9d8af8f` | section-0016 | Wechsel der Krankenkasse > Wechsel Versicherungsmodelle > So funktionierts: | 137-143 | 640 |
-| `doc-e3a0c411d388f9d8af8f` | section-0017 | Wechsel der Krankenkasse > Wichtige Informationen | 144-148 | 684 |
 | `doc-a51c61294f44050bec82` | section-0011 | Wie werde ich Schweizerin oder Schweizer | 81-85 | 494 |
 | `doc-a51c61294f44050bec82` | section-0012 | Wie werde ich Schweizerin oder Schweizer > Bürgerrecht durch Abstammung | 86-87 | 488 |
 | `doc-a51c61294f44050bec82` | section-0013 | Wie werde ich Schweizerin oder Schweizer > Bürgerrecht durch Einbürgerung oder Wiedereinbürgerung | 88-92 | 950 |
@@ -2079,7 +1871,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 
 | Status | Source | Documents | Units | Cited | Dispositioned | Boilerplate | Unclassified |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| partly_covered | `(discovered)`  | 103 | 719 | 233 | 2 | 35 | 484 |
+| partly_covered | `(discovered)`  | 103 | 719 | 233 | 12 | 35 | 474 |
 | boilerplate_only | `ch-ahv-iv-13-ahv-rente` The thirteenth AHV pension payment | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-ahv-21` AHV 21: reference age 65 and the transitional rules | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-ahv-allgemeines` AHV: general information and who is insured | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -2095,20 +1887,20 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | boilerplate_only | `ch-ahv-iv-international-eu-efta` Social insurance between Switzerland and the EU/EFTA | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-kv` Health insurance (KV) in the social insurance system | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-uv` Accident insurance (UV) in the social insurance system | 1 | 0 | 0 | 0 | 0 | 0 |
-| partly_covered | `ch-bag-accident-insurance` Accident insurance: who is compulsorily insured | 1 | 3 | 1 | 0 | 0 | 2 |
-| nothing | `ch-bag-grenzgaenger` Health insurance for cross-border commuters and the right of option | 1 | 12 | 0 | 0 | 0 | 12 |
-| partly_covered | `ch-bag-health-insurance` Health insurance for persons resident in Switzerland | 1 | 5 | 3 | 0 | 1 | 2 |
-| nothing | `ch-bag-kostenbeteiligung` Cost sharing for insured persons resident in Switzerland | 1 | 4 | 0 | 0 | 1 | 4 |
-| nothing | `ch-bag-leistungen-im-ausland` Cover abroad and the European health insurance card | 1 | 4 | 0 | 0 | 0 | 4 |
-| nothing | `ch-bag-leistungen-tarife` What basic insurance pays for, and the tariffs | 1 | 8 | 0 | 0 | 0 | 8 |
-| nothing | `ch-bag-praemien-eu-efta-uk` Premiums and premium reduction for insured persons in the EU/EFTA and the UK | 1 | 4 | 0 | 0 | 1 | 4 |
-| nothing | `ch-bag-praemien-kostenbeteiligung` Health insurance: premiums and cost sharing | 1 | 3 | 0 | 0 | 1 | 3 |
-| nothing | `ch-bag-praemienausstaende` Unpaid premiums, debt enforcement and the cantonal list | 1 | 4 | 0 | 0 | 1 | 4 |
-| nothing | `ch-bag-praemienregionen` Premium regions | 1 | 2 | 0 | 0 | 0 | 2 |
-| nothing | `ch-bag-praemienvergleich` Comparing premiums between insurers | 1 | 9 | 0 | 0 | 0 | 9 |
-| partly_covered | `ch-bag-premium-reduction` Health insurance: premium reduction | 1 | 6 | 3 | 0 | 0 | 3 |
-| nothing | `ch-bag-versicherte-im-ausland` Insured persons who live abroad | 1 | 4 | 0 | 0 | 1 | 4 |
-| nothing | `ch-bag-versicherungsmodelle` Insurance models with a restricted choice of provider | 1 | 6 | 0 | 0 | 1 | 6 |
+| cited | `ch-bag-accident-insurance` Accident insurance: who is compulsorily insured | 1 | 3 | 1 | 2 | 0 | 0 |
+| cited | `ch-bag-grenzgaenger` Health insurance for cross-border commuters and the right of option | 1 | 12 | 4 | 8 | 0 | 0 |
+| cited | `ch-bag-health-insurance` Health insurance for persons resident in Switzerland | 1 | 5 | 3 | 2 | 1 | 0 |
+| cited | `ch-bag-kostenbeteiligung` Cost sharing for insured persons resident in Switzerland | 1 | 4 | 3 | 1 | 1 | 0 |
+| cited | `ch-bag-leistungen-im-ausland` Cover abroad and the European health insurance card | 1 | 4 | 2 | 2 | 0 | 0 |
+| cited | `ch-bag-leistungen-tarife` What basic insurance pays for, and the tariffs | 1 | 8 | 1 | 7 | 0 | 0 |
+| cited | `ch-bag-praemien-eu-efta-uk` Premiums and premium reduction for insured persons in the EU/EFTA and the UK | 1 | 4 | 3 | 1 | 1 | 0 |
+| cited | `ch-bag-praemien-kostenbeteiligung` Health insurance: premiums and cost sharing | 1 | 3 | 1 | 2 | 1 | 0 |
+| cited | `ch-bag-praemienausstaende` Unpaid premiums, debt enforcement and the cantonal list | 1 | 4 | 3 | 1 | 1 | 0 |
+| cited | `ch-bag-praemienregionen` Premium regions | 1 | 2 | 1 | 1 | 0 | 0 |
+| cited | `ch-bag-praemienvergleich` Comparing premiums between insurers | 1 | 9 | 4 | 5 | 0 | 0 |
+| cited | `ch-bag-premium-reduction` Health insurance: premium reduction | 1 | 6 | 3 | 3 | 0 | 0 |
+| cited | `ch-bag-versicherte-im-ausland` Insured persons who live abroad | 1 | 4 | 1 | 3 | 1 | 0 |
+| cited | `ch-bag-versicherungsmodelle` Insurance models with a restricted choice of provider | 1 | 6 | 6 | 0 | 1 | 0 |
 | cited | `ch-bazg-ausreise-privatwaren` Leaving Switzerland with private goods | 1 | 5 | 2 | 3 | 1 | 0 |
 | cited | `ch-bazg-briefe-pakete` Receiving letters and parcels from abroad | 1 | 12 | 8 | 4 | 1 | 0 |
 | cited | `ch-bazg-einfuhrsteuer` Import tax: VAT on imported goods | 1 | 1 | 1 | 0 | 1 | 0 |
@@ -2161,22 +1953,24 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | cited | `ch-fedlex-dbg` Federal Direct Tax Act (DBG/LIFD), SR 642.11 | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `ch-fedlex-fza` Agreement on the Free Movement of Persons, SR 0.142.112.681 | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `ch-fedlex-fzg` Vested Benefits Act (FZG/LFLP), SR 831.42 | 1 | 1 | 1 | 0 | 0 | 0 |
+| cited | `ch-fedlex-klv` Ordinance on Benefits in Compulsory Health Insurance (KLV), SR 832.112.31 | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `ch-fedlex-kvg` Health Insurance Act (KVG/LAMal), SR 832.10 | 1 | 1 | 1 | 0 | 0 | 0 |
+| cited | `ch-fedlex-kvv` Ordinance on Health Insurance (KVV), SR 832.102 | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `ch-fedlex-or` Code of Obligations (OR/CO), SR 220 | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `ch-fedlex-qstv` Tax at Source Ordinance of the FDF (QStV/OIS), SR 642.118.2 | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `ch-fedlex-rv-ahv` Ordinance on the refund of AHV contributions paid by foreign nationals (RV-AHV), SR 831.131.12 | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `ch-fedlex-vev` Ordinance on Entry and the Granting of Visas (VEV/OEV), SR 142.204 | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `ch-fedlex-vzae` Admission, Residence and Employment Ordinance (VZAE/OASA), SR 142.201 | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `ch-fedlex-vzv` Ordinance on the Admission of Persons and Vehicles to Road Traffic (VZV/OAC), SR 741.51 | 1 | 1 | 1 | 0 | 0 | 0 |
-| nothing | `ch-priminfo-eu-efta` priminfo: insurance for people from the EU/EFTA, in plain language | 1 | 10 | 0 | 0 | 3 | 10 |
-| nothing | `ch-priminfo-faq` priminfo: frequently asked questions | 1 | 57 | 0 | 0 | 1 | 57 |
-| nothing | `ch-priminfo-grundversicherung` priminfo: basic insurance, in plain language | 1 | 14 | 0 | 0 | 3 | 14 |
-| nothing | `ch-priminfo-mittlere-praemie` priminfo: the average premium | 1 | 4 | 0 | 0 | 3 | 4 |
-| nothing | `ch-priminfo-sparen-grundversicherung` priminfo: saving on basic insurance | 1 | 17 | 0 | 0 | 3 | 17 |
-| nothing | `ch-priminfo-sparen-selbstverantwortung` priminfo: the franchise and taking responsibility | 1 | 4 | 0 | 0 | 3 | 4 |
-| nothing | `ch-priminfo-verbilligung` priminfo: premium reduction, in plain language | 1 | 11 | 0 | 0 | 3 | 11 |
-| nothing | `ch-priminfo-wechsel` priminfo: changing insurer | 1 | 12 | 0 | 0 | 3 | 12 |
-| nothing | `ch-priminfo-zusatzversicherungen` priminfo: supplementary insurance, in plain language | 1 | 4 | 0 | 0 | 3 | 4 |
+| dispositioned | `ch-priminfo-eu-efta` priminfo: insurance for people from the EU/EFTA, in plain language | 1 | 10 | 0 | 10 | 3 | 0 |
+| dispositioned | `ch-priminfo-faq` priminfo: frequently asked questions | 1 | 57 | 0 | 57 | 1 | 0 |
+| dispositioned | `ch-priminfo-grundversicherung` priminfo: basic insurance, in plain language | 1 | 14 | 0 | 14 | 3 | 0 |
+| dispositioned | `ch-priminfo-mittlere-praemie` priminfo: the average premium | 1 | 4 | 0 | 4 | 3 | 0 |
+| dispositioned | `ch-priminfo-sparen-grundversicherung` priminfo: saving on basic insurance | 1 | 17 | 0 | 17 | 3 | 0 |
+| dispositioned | `ch-priminfo-sparen-selbstverantwortung` priminfo: the franchise and taking responsibility | 1 | 4 | 0 | 4 | 3 | 0 |
+| dispositioned | `ch-priminfo-verbilligung` priminfo: premium reduction, in plain language | 1 | 11 | 0 | 11 | 3 | 0 |
+| dispositioned | `ch-priminfo-wechsel` priminfo: changing insurer | 1 | 12 | 0 | 12 | 3 | 0 |
+| dispositioned | `ch-priminfo-zusatzversicherungen` priminfo: supplementary insurance, in plain language | 1 | 4 | 0 | 4 | 3 | 0 |
 | nothing | `ch-seco-anmeldung-registrierung` Signing on with the municipality and the RAV | 1 | 4 | 0 | 0 | 1 | 4 |
 | nothing | `ch-seco-arbeitsmarktliche-massnahmen` Labour market measures: courses, employment programmes and allowances | 1 | 7 | 0 | 0 | 1 | 7 |
 | nothing | `ch-seco-aussteuerung` Running out of unemployment benefit | 1 | 3 | 0 | 0 | 1 | 3 |

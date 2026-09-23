@@ -20,9 +20,11 @@ tax-at-source tariff (UAT-51 to UAT-53); eleven expat-life cases (UAT-54 to
 UAT-64); two settlement-permit cases on the five-year routes by nationality
 (UAT-65 and UAT-66); five cases on the integration offers of the Canton of
 Zurich (UAT-67 to UAT-71); nine customs cases on travelling, ordering from
-abroad and moving goods (UAT-72 to UAT-80); and eighteen
+abroad and moving goods (UAT-72 to UAT-80); eight cases on basic health
+insurance, its cost sharing, models, change of insurer and cover abroad
+(UAT-81 to UAT-88); and nineteen
 server-only decline cases (DECLINE-1 to
-DECLINE-11 and SEARCH-DECLINE-1 to SEARCH-DECLINE-7) that check the server
+DECLINE-12 and SEARCH-DECLINE-1 to SEARCH-DECLINE-7) that check the server
 rejects a request the release does not cover, at the resolve step and at
 the search step.<br>
 **System under test:** the Swiss TIP MCP server (`apps/mcp-server`) on the
@@ -2274,6 +2276,153 @@ trap is generalising the refund to anyone leaving the country: a person
 resident in Switzerland taking their own goods abroad is the other rule on
 the same page, and it does not refund the tax.
 
+## Basic health insurance cases
+
+UAT-81 to UAT-88 check the eight concepts added to the `health-insurance` topic on
+23 September 2026 from the pages of the Federal Office of Public Health and the
+premium-information service priminfo. Until then the release served the insurance
+duty, the Zurich exemption, premium reduction federally and in Zurich, and accident
+insurance: a newcomer learned that they must insure themselves within three months
+and nothing about what the insurance then costs them, what it pays for, or how to
+change it. Budgets and criteria A1 to A6 are those of the single-turn cases. The
+facts are `assistant-authored-unreviewed` until the reviewer confirms them, so every
+result's `limitations` says so.
+
+Two boundaries run through the group. Every condition rests on an excerpt of the
+authority's own page or of the law; where a priminfo page says the same thing in
+plain language it stands beside that excerpt and never alone, and the basis served
+with the citation says which is which. And the release publishes the rules, never the
+prices: premiums, premium reductions and the comparison calculator are out of scope,
+which DECLINE-12 checks.
+
+### UAT-81: A broken arm and the bill
+
+"My son fell off his bike and the bill is 1,200 francs. We have the lowest franchise.
+What do we actually have to pay ourselves?" The answer must separate the two parts of
+cost sharing - the franchise the insured pays first, then the retention as a
+percentage of what remains, up to its annual cap - and must say that children are
+treated differently from adults. Where the answer gives an amount it must be the
+amount the cited page states, with the year it applies to. The trap is treating the
+franchise as the whole of the cost sharing, or quoting an adult's cap for a child.
+
+### UAT-82: The cheaper family-doctor model
+
+"My insurer offers a family-doctor model that is 15 per cent cheaper. What am I giving
+up?" The answer must say what restricting the choice of provider means in practice:
+the insured undertakes to contact the named first point of contact before any other
+treatment, the insurer grants a discount for that, and the model binds the insured for
+the period the contract states. The release carries no discount percentage, so the
+answer must not confirm, correct or invent one; it may repeat the caller's own figure
+only as the caller's. The trap is presenting the discount without the obligation,
+claiming the choice of doctor is unaffected, or stating a percentage as if the release
+held it.
+
+### UAT-83: Changing insurer after a rise
+
+"My premium is going up again. Can I switch insurer, and by when?" The answer must
+give the two notice periods the act sets apart: the ordinary one of three months to the
+end of a calendar half-year, and the shorter one that the announcement of a new premium
+opens - one month's notice to the end of the month before the month from which the new
+premium applies. It may work that second period out for the usual case, where premiums
+apply from 1 January and notice therefore has to be given by the end of November, but it
+must not present that date as the only rule. It must add that the new insurer may not
+refuse an applicant for basic insurance, that the old cover runs until the new insurer
+has confirmed cover without interruption, and that the old insurer may not make the
+change conditional on giving up a supplementary insurance. The trap is saying the
+insured can leave at any time, or that a poor claims history can be refused.
+
+### UAT-84: Why my premium differs from my colleague's
+
+"My colleague lives two towns away and pays less than I do for the same insurer. How is
+that possible?" The answer must name the three things that make premiums differ - the
+canton, the premium region within it, and the age group - and say who sets the regions.
+It must not state a premium: the release publishes the rules and points at the official
+comparison for the prices, which it does not carry. The trap is inventing a figure, or
+explaining the difference by the insurer alone.
+
+### UAT-85: Glasses, and whether supplementary insurance is needed
+
+"Does basic insurance pay for my glasses, and do I need supplementary insurance?" The
+answer must say that basic insurance covers the same defined benefits everywhere, that
+the list is set federally and not by the insurer, and that supplementary insurance is a
+different contract which an insurer may refuse. Where the cited pages do not say
+whether one particular item is covered, the answer must say so rather than guess. The
+trap is answering the glasses question from general knowledge.
+
+### UAT-86: Months of unpaid premiums
+
+"I lost my job and have not paid my premiums for four months. Can they cancel my
+insurance?" The answer must give the sequence the page states - reminder, then debt
+enforcement - and say what the canton does with a list of defaulters and what remains
+covered while the arrears stand. It must add that the arrears block a change of insurer
+until they are paid in full, which is what a caller reaches for next, and that arrears
+for the children alone do not block the parent's own change. The trap is saying that
+cover simply ends, which is what a general answer assumes, or sending the caller off to
+a cheaper insurer they cannot join.
+
+### UAT-87: Living in Germany, working in Zurich
+
+"I live in Konstanz and start work in Zurich next month. Which country's health
+insurance do I take?" The answer must start from the place-of-work principle, which
+makes Swiss insurance the rule, then name the right of option that the agreements with
+the neighbouring states open, and the three months from the start of the employment
+relationship within which an application for exemption has to be filed with the
+authority of the canton of work. It must say that a merely tacit exercise of the option
+is not legally valid, so a commuter who never filed can still be insured in Switzerland,
+and it must say that the family members are covered by the same duty. The release does
+not say whether an option once validly exercised can be reversed or used again, so the
+answer must not claim either. The trap is answering "Switzerland, because you work
+there" without the option, or asserting that the choice is made once and for all.
+
+### UAT-88: Three weeks in Italy
+
+"We are going to Italy for three weeks. Are we covered if something happens?" The
+answer must say that basic insurance pays for treatment given abroad in an emergency,
+and must give the test the ordinance sets for one: the person needs treatment during a
+temporary stay abroad and a return journey to Switzerland is not reasonable. It must say
+that there is no emergency where someone travels abroad in order to be treated, and it
+must give the ceiling - at most twice what the same treatment would be reimbursed at in
+Switzerland. The release does not carry the European health insurance card or the
+coordination rules of the agreement with the EU, so an answer that leans on the card
+rather than on the emergency rule is wrong even where it sounds right. The trap is
+promising that everything is covered anywhere, or presenting the card as the instrument
+the release describes.
+
+### UAT-89: A pensioner in Portugal
+
+"I have retired to Portugal and kept my Swiss health insurance. Why is my premium not
+the one I paid in Zurich, and can I still get a premium reduction?" The answer must say
+that a person living in an EU or EFTA state or the United Kingdom pays the premium that
+applies to their state of residence, that the insurer calculates a separate premium per
+state from the costs there, and that for pensioners the premium reduction is the
+Confederation's business, carried out by the joint institution under the health
+insurance act, rather than the canton's. It must not name an amount for any country:
+the release carries the rule and not the price. The trap is applying the Zurich premium
+or the cantonal premium reduction to someone who no longer lives in Switzerland.
+
+### UAT-90: A bill from the doctor, not from the insurer
+
+"My doctor sent the bill to me and not to my health insurer. Is that allowed?" The
+answer must say that this is the ordinary case: unless the insurer and the provider have
+agreed otherwise, the insured person owes the provider and then has a claim for
+reimbursement against the insurer, and the other arrangement, under which the insurer is
+billed directly, exists by agreement and covers the insurer's share for inpatient care.
+It must add that the bill has to be detailed and comprehensible and to carry what is
+needed to check how the payment was calculated. The release does not carry how long an
+insurer may take to reimburse, what to do when the bill cannot be paid, or any ombudsman,
+and the answer must not invent them. The trap is telling the caller the doctor made a
+mistake.
+
+### UAT-91: Four months of service
+
+"I am starting four months of civilian service. Do I keep paying my health insurance?"
+The answer must give the threshold - the duty to insure is suspended for people subject
+to the military insurance for more than 60 consecutive days - and the step the caller has
+to take themselves: telling their insurer at least eight weeks before it begins, failing
+which the insurer stops charging only from the next date it can manage, at the latest
+eight weeks after being told. The trap is answering that premiums simply continue, or
+that the suspension happens by itself without the caller doing anything.
+
 ## Decline cases
 
 These cases check that the server rejects a request the release does not
@@ -2314,6 +2463,7 @@ mode.
 | DECLINE-9 | "Which rubbish bags do I have to use in Basel, and what do they cost?" (City of Zurich waste rules asked for another canton) | `city-zurich-household-waste` for `CH-BS-2701` | `OUT_OF_COVERAGE`, `jurisdiction_not_covered`; nothing is served |
 | DECLINE-10 | "Which accredited IAZH offer types can I assign a refugee to, and how is the cost shared with the canton?" (the canton's integration funding and its refugee support system, named in `out_of_scope`) | `zh-iazh-accredited-offers` for `CH-ZH` | `OUT_OF_COVERAGE`, `concept_not_published` |
 | DECLINE-11 | "How much duty do I pay per kilo on a leather handbag from Italy, and what is its tariff number?" (tariff numbers and duty rates per product, named in `out_of_scope`) | `customs-tariff-rate`, a guessed concept ID, for `CH` | `OUT_OF_COVERAGE`, `concept_not_published` listing the published concept IDs; the customs concepts stay available for the rules they do publish |
+| DECLINE-12 | "Which insurer is cheapest for me at 8006 Zurich with a 2,500-franc franchise?" (premium amounts and the comparison calculator, named in `out_of_scope`) | `health-insurance-premium` and `premium-calculator`, guessed concept IDs, for `CH-ZH-261` | `OUT_OF_COVERAGE`, `concept_not_published` for both; the health-insurance concepts stay available for the rules they do publish |
 
 DECLINE-3, DECLINE-4 and DECLINE-6 to DECLINE-9 check the rejection of a
 Zurich concept for another place at the server alone. The cross-jurisdiction

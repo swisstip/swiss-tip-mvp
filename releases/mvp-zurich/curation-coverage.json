@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-curation-coverage-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-22-v7",
-  "content_sha256": "48418016d8bc90f81db4dc8b417d6c33fcfd0f099d832d551fd3df750dc35730",
-  "text_index_sha256": "c15bfd177ffde4ceb69acb0dedccf1e6a5ac1f1df425130f637f29d80f735f6f",
-  "dispositions_sha256": "cf10f0e19b01b97db8da349fa3b57e973da31534324af2fc0ac4fc792cbece3c",
-  "dispositions": 76,
+  "release_id": "mvp-zurich-2026-09-23-v13",
+  "content_sha256": "835fa93b4aa5b6638daf3ed30d973e34b477be0e427e00a92c4b6f750668bc50",
+  "text_index_sha256": "fdb96912c955563710f4a6a8d5e65df82193f9c2ab4383f467df73a696518e24",
+  "dispositions_sha256": "905ea61e914be7c06cdf2403d0ba941e9ff1b47bcc05489c2253403fc8c28967",
+  "dispositions": 149,
   "policy": "report",
   "today": "2026-09-23",
-  "generated_at": "2026-09-23T06:44:08.095964+00:00",
+  "generated_at": "2026-09-23T08:47:28.496801+00:00",
   "rules": {
     "reference_kinds": [
       "plugin-document"
@@ -18,16 +18,16 @@
     "repeated_match_share": 0.5
   },
   "counts": {
-    "candidates": 442,
+    "candidates": 444,
     "units": {
       "section": 425,
-      "document": 15,
+      "document": 17,
       "rolled_up": 2
     },
-    "content_sections": 2827,
-    "cited_sections": 618,
-    "dispositioned_sections": 613,
-    "unclassified_sections": 1596,
+    "content_sections": 2829,
+    "cited_sections": 649,
+    "dispositioned_sections": 794,
+    "unclassified_sections": 1386,
     "boilerplate_sections": 160,
     "repeated_texts": 16,
     "repeated_by_citation": {
@@ -36,12 +36,12 @@
       "cited_once": 3
     },
     "documents": {
-      "unclassified": 93,
-      "partly_cited": 119,
-      "cited": 58,
+      "unclassified": 73,
+      "partly_cited": 112,
+      "cited": 61,
       "empty": 23,
-      "cited_and_dispositioned": 26,
-      "dispositioned": 123
+      "cited_and_dispositioned": 43,
+      "dispositioned": 132
     },
     "findings": {
       "stale": 0,
@@ -6723,172 +6723,17 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 12,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 4,
+      "dispositioned": 8,
       "boilerplate": 0,
-      "unclassified": 12,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz"
-          ],
-          "first_block": 17,
-          "last_block": 19,
-          "characters": 454,
-          "section_ids": [
-            "section-0002"
-          ]
-        },
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz",
-            "Zuständige kantonale Stellen für Gesuche um Befreiung von der obligatorischen Krankenversicherung"
-          ],
-          "first_block": 20,
-          "last_block": 21,
-          "characters": 30,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz",
-            "Grenzgänger aus einem EU-/EFTA-Staat oder UK – Versicherung am Erwerbsort"
-          ],
-          "first_block": 22,
-          "last_block": 23,
-          "characters": 359,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz",
-            "Beginn und Ende der Versicherung"
-          ],
-          "first_block": 24,
-          "last_block": 25,
-          "characters": 634,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz",
-            "Optionsrecht"
-          ],
-          "first_block": 26,
-          "last_block": 28,
-          "characters": 1444,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz",
-            "Modalitäten zur Ausübung des Optionsrechts mit Frankreich"
-          ],
-          "first_block": 29,
-          "last_block": 31,
-          "characters": 922,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz",
-            "Grenzgängerinnen und Grenzgänger aus einem Land ausserhalb EU/EFTA/UK"
-          ],
-          "first_block": 32,
-          "last_block": 34,
-          "characters": 724,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz",
-            "Familienangehörige von Grenzgängerinnen und Grenzgängern aus Italien"
-          ],
-          "first_block": 35,
-          "last_block": 36,
-          "characters": 253,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0024",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz",
-            "Weiterführende Themen",
-            "Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK"
-          ],
-          "first_block": 68,
-          "last_block": 70,
-          "characters": 420,
-          "section_ids": [
-            "section-0024"
-          ]
-        },
-        {
-          "section_id": "section-0025",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz",
-            "Weiterführende Themen",
-            "Kostenbeteiligung der in der Schweiz versicherten Personen"
-          ],
-          "first_block": 71,
-          "last_block": 73,
-          "characters": 225,
-          "section_ids": [
-            "section-0025"
-          ]
-        },
-        {
-          "section_id": "section-0026",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz",
-            "Weiterführende Themen",
-            "Leistungen im Ausland für Versicherte mit Wohnsitz im Ausland"
-          ],
-          "first_block": 74,
-          "last_block": 76,
-          "characters": 328,
-          "section_ids": [
-            "section-0026"
-          ]
-        },
-        {
-          "section_id": "section-0027",
-          "heading_path": [
-            "Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz",
-            "Bundesamt für Gesundheit BAG"
-          ],
-          "first_block": 77,
-          "last_block": 79,
-          "characters": 153,
-          "section_ids": [
-            "section-0027"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 5,
+        "navigation": 2,
+        "deferred": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-7e46ce8537f76f1736a8",
@@ -6900,65 +6745,15 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 5,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 3,
+      "dispositioned": 1,
       "boilerplate": 1,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte"
-          ],
-          "first_block": 17,
-          "last_block": 18,
-          "characters": 194,
-          "section_ids": [
-            "section-0002"
-          ]
-        },
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte",
-            "Kostenbeteiligung"
-          ],
-          "first_block": 19,
-          "last_block": 23,
-          "characters": 751,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte",
-            "Von der Kostenbeteiligung ausgenommene Leistungen"
-          ],
-          "first_block": 24,
-          "last_block": 28,
-          "characters": 716,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte",
-            "Höherer Selbstbehalt für bestimmte Arzneimittel"
-          ],
-          "first_block": 29,
-          "last_block": 30,
-          "characters": 222,
-          "section_ids": [
-            "section-0005"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-a2ba95d86bd9041085b6",
@@ -6970,65 +6765,16 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 4,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 2,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Krankenversicherung: Leistungen im Ausland"
-          ],
-          "first_block": 17,
-          "last_block": 18,
-          "characters": 68,
-          "section_ids": [
-            "section-0002"
-          ]
-        },
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Krankenversicherung: Leistungen im Ausland",
-            "Leistungen im Ausland für Versicherte mit Wohnsitz in der Schweiz"
-          ],
-          "first_block": 19,
-          "last_block": 21,
-          "characters": 325,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Krankenversicherung: Leistungen im Ausland",
-            "Leistungen im Ausland für Versicherte mit Wohnsitz im Ausland"
-          ],
-          "first_block": 22,
-          "last_block": 24,
-          "characters": 328,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Krankenversicherung: Leistungen im Ausland",
-            "Bundesamt für Gesundheit BAG"
-          ],
-          "first_block": 25,
-          "last_block": 29,
-          "characters": 190,
-          "section_ids": [
-            "section-0005"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1,
+        "navigation": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-b78c155affebebdb3ac3",
@@ -7040,122 +6786,17 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 8,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 7,
       "boilerplate": 0,
-      "unclassified": 8,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Krankenversicherung: Leistungen und Tarife"
-          ],
-          "first_block": 17,
-          "last_block": 18,
-          "characters": 249,
-          "section_ids": [
-            "section-0002"
-          ]
-        },
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Krankenversicherung: Leistungen und Tarife",
-            "Leistungen"
-          ],
-          "first_block": 19,
-          "last_block": 24,
-          "characters": 1594,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Krankenversicherung: Leistungen und Tarife",
-            "Tarife"
-          ],
-          "first_block": 25,
-          "last_block": 31,
-          "characters": 1196,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Krankenversicherung: Leistungen und Tarife",
-            "Häufig gestellte Fragen zu Leistungen (FAQ)",
-            "Arzneimittel"
-          ],
-          "first_block": 51,
-          "last_block": 52,
-          "characters": 92,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Krankenversicherung: Leistungen und Tarife",
-            "Häufig gestellte Fragen zu Leistungen (FAQ)",
-            "Impfungen"
-          ],
-          "first_block": 62,
-          "last_block": 63,
-          "characters": 138,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Krankenversicherung: Leistungen und Tarife",
-            "Häufig gestellte Fragen zu Leistungen (FAQ)",
-            "Leistungen bei Mutterschaft"
-          ],
-          "first_block": 64,
-          "last_block": 65,
-          "characters": 143,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0022",
-          "heading_path": [
-            "Krankenversicherung: Leistungen und Tarife",
-            "Häufig gestellte Fragen zu Leistungen (FAQ)",
-            "Übernimmt die obligatorische Krankenpflegeversicherung zahnärztliche Behandlungen?",
-            "Newsletter Leistungen Krankenversicherungen"
-          ],
-          "first_block": 74,
-          "last_block": 75,
-          "characters": 64,
-          "section_ids": [
-            "section-0022"
-          ]
-        },
-        {
-          "section_id": "section-0031",
-          "heading_path": [
-            "Krankenversicherung: Leistungen und Tarife",
-            "Bundesamt für Gesundheit BAG"
-          ],
-          "first_block": 92,
-          "last_block": 96,
-          "characters": 221,
-          "section_ids": [
-            "section-0031"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 4,
+        "deferred": 1,
+        "navigation": 2
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-c91304c05bdefe12e21b",
@@ -7167,52 +6808,15 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 4,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 2,
       "boilerplate": 1,
-      "unclassified": 3,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Krankenversicherung: Prämien und Kostenbeteiligung"
-          ],
-          "first_block": 17,
-          "last_block": 18,
-          "characters": 253,
-          "section_ids": [
-            "section-0002"
-          ]
-        },
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Krankenversicherung: Prämien und Kostenbeteiligung",
-            "Prämien"
-          ],
-          "first_block": 19,
-          "last_block": 23,
-          "characters": 478,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Krankenversicherung: Prämien und Kostenbeteiligung",
-            "Kostenbeteiligung"
-          ],
-          "first_block": 24,
-          "last_block": 28,
-          "characters": 550,
-          "section_ids": [
-            "section-0004"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 2
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-d6ba6d241671ed943a29",
@@ -7224,66 +6828,15 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 5,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 3,
+      "dispositioned": 1,
       "boilerplate": 1,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK"
-          ],
-          "first_block": 17,
-          "last_block": 18,
-          "characters": 345,
-          "section_ids": [
-            "section-0002"
-          ]
-        },
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK",
-            "Prämien EU/EFTA/UK"
-          ],
-          "first_block": 19,
-          "last_block": 20,
-          "characters": 505,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK",
-            "Verbilligung der EU-/EFTA-/UK-Prämien"
-          ],
-          "first_block": 21,
-          "last_block": 22,
-          "characters": 909,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK",
-            "Weiterführende Themen",
-            "Krankenversicherung: Versicherungspflicht"
-          ],
-          "first_block": 44,
-          "last_block": 46,
-          "characters": 307,
-          "section_ids": [
-            "section-0014"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-0b415d97d57dc63b4f38",
@@ -7295,65 +6848,15 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 5,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 3,
+      "dispositioned": 1,
       "boilerplate": 1,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Krankenversicherung: Prämienausstände"
-          ],
-          "first_block": 17,
-          "last_block": 18,
-          "characters": 210,
-          "section_ids": [
-            "section-0002"
-          ]
-        },
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Krankenversicherung: Prämienausstände",
-            "Nichtbezahlung der Prämien"
-          ],
-          "first_block": 19,
-          "last_block": 23,
-          "characters": 280,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Krankenversicherung: Prämienausstände",
-            "Übernahme der ausstehenden Prämien und Kostenbeteiligungen durch die Kantone bei Ausstellung eines Verlustscheins"
-          ],
-          "first_block": 24,
-          "last_block": 25,
-          "characters": 137,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Krankenversicherung: Prämienausstände",
-            "Kantonale Liste der Versicherten, die ihre Prämien nicht zahlen, und Aussetzung der Kostenübernahme"
-          ],
-          "first_block": 26,
-          "last_block": 28,
-          "characters": 459,
-          "section_ids": [
-            "section-0005"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-53179c28edeeaf2a28d0",
@@ -7365,39 +6868,15 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 2,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 1,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Krankenversicherung: Prämienregionen"
-          ],
-          "first_block": 17,
-          "last_block": 22,
-          "characters": 1594,
-          "section_ids": [
-            "section-0002"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Krankenversicherung: Prämienregionen",
-            "Bundesamt für Gesundheit BAG"
-          ],
-          "first_block": 40,
-          "last_block": 44,
-          "characters": 190,
-          "section_ids": [
-            "section-0011"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "navigation": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-d43ca41415a4f2f2c9c3",
@@ -7410,52 +6889,15 @@
       "unit": "section",
       "units": 6,
       "cited": 3,
-      "dispositioned": 0,
+      "dispositioned": 3,
       "boilerplate": 0,
-      "unclassified": 3,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Krankenversicherung: Prämienverbilligung",
-            "Finanzierung durch Bund und Kantone"
-          ],
-          "first_block": 29,
-          "last_block": 31,
-          "characters": 1154,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Krankenversicherung: Prämienverbilligung",
-            "Monitoring der Prämienverbilligung"
-          ],
-          "first_block": 32,
-          "last_block": 33,
-          "characters": 381,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Krankenversicherung: Prämienverbilligung",
-            "Bundesamt für Gesundheit BAG"
-          ],
-          "first_block": 52,
-          "last_block": 54,
-          "characters": 153,
-          "section_ids": [
-            "section-0015"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 2,
+        "navigation": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-d27fc848afce0db98807",
@@ -7467,136 +6909,16 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 9,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 4,
+      "dispositioned": 5,
       "boilerplate": 0,
-      "unclassified": 9,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Krankenversicherung: Prämienvergleich"
-          ],
-          "first_block": 17,
-          "last_block": 19,
-          "characters": 253,
-          "section_ids": [
-            "section-0002"
-          ]
-        },
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Krankenversicherung: Prämienvergleich",
-            "Prämiengenehmigung"
-          ],
-          "first_block": 20,
-          "last_block": 22,
-          "characters": 595,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Krankenversicherung: Prämienvergleich",
-            "Prämiengenehmigungsprozess"
-          ],
-          "first_block": 23,
-          "last_block": 24,
-          "characters": 115,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Krankenversicherung: Prämienvergleich",
-            "Prämiengenehmigungsprozess",
-            "Phase 1"
-          ],
-          "first_block": 25,
-          "last_block": 26,
-          "characters": 209,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Krankenversicherung: Prämienvergleich",
-            "Prämiengenehmigungsprozess",
-            "Phase 2"
-          ],
-          "first_block": 27,
-          "last_block": 28,
-          "characters": 398,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Krankenversicherung: Prämienvergleich",
-            "Prämiengenehmigungsprozess",
-            "Phase 3"
-          ],
-          "first_block": 29,
-          "last_block": 30,
-          "characters": 438,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Krankenversicherung: Prämienvergleich",
-            "Prämiengenehmigungsprozess",
-            "Phase 3",
-            "Einbezug der Kantone"
-          ],
-          "first_block": 31,
-          "last_block": 32,
-          "characters": 382,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Krankenversicherung: Prämienvergleich",
-            "Prämiengenehmigungsprozess",
-            "Phase4"
-          ],
-          "first_block": 33,
-          "last_block": 36,
-          "characters": 517,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0032",
-          "heading_path": [
-            "Krankenversicherung: Prämienvergleich",
-            "Bundesamt für Gesundheit BAG"
-          ],
-          "first_block": 80,
-          "last_block": 84,
-          "characters": 190,
-          "section_ids": [
-            "section-0032"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 4,
+        "navigation": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-fcdb3a04d407cd5a1875",
@@ -7608,65 +6930,15 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 5,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 3,
       "boilerplate": 1,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Krankenversicherung: Versicherte, die im Ausland wohnen"
-          ],
-          "first_block": 17,
-          "last_block": 18,
-          "characters": 139,
-          "section_ids": [
-            "section-0002"
-          ]
-        },
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Krankenversicherung: Versicherte, die im Ausland wohnen",
-            "Krankenversicherung: Versicherungspflicht"
-          ],
-          "first_block": 19,
-          "last_block": 21,
-          "characters": 307,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Krankenversicherung: Versicherte, die im Ausland wohnen",
-            "Krankenversicherung: Prämien und Prämienverbilligung EU/EFTA/UK"
-          ],
-          "first_block": 22,
-          "last_block": 24,
-          "characters": 420,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Krankenversicherung: Versicherte, die im Ausland wohnen",
-            "Krankenversicherung: Kostenbeteiligung für im Ausland wohnhafte Versicherte"
-          ],
-          "first_block": 25,
-          "last_block": 27,
-          "characters": 334,
-          "section_ids": [
-            "section-0005"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 3
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-28f3362905346a6a6da4",
@@ -7678,91 +6950,13 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 7,
-      "cited": 0,
+      "cited": 6,
       "dispositioned": 0,
       "boilerplate": 1,
-      "unclassified": 6,
+      "unclassified": 0,
       "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer"
-          ],
-          "first_block": 17,
-          "last_block": 24,
-          "characters": 2043,
-          "section_ids": [
-            "section-0002"
-          ]
-        },
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer",
-            "Die Kategorie PRAXIS"
-          ],
-          "first_block": 25,
-          "last_block": 26,
-          "characters": 299,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer",
-            "Die Kategorie TEL_DIG"
-          ],
-          "first_block": 27,
-          "last_block": 28,
-          "characters": 151,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer",
-            "Die Kategorie PHARM"
-          ],
-          "first_block": 29,
-          "last_block": 30,
-          "characters": 130,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer",
-            "Die Kategorie FLEX"
-          ],
-          "first_block": 31,
-          "last_block": 32,
-          "characters": 319,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer",
-            "Hinweis:"
-          ],
-          "first_block": 33,
-          "last_block": 34,
-          "characters": 246,
-          "section_ids": [
-            "section-0007"
-          ]
-        }
-      ]
+      "status": "cited",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-e494fce7ee1b673e639f",
@@ -7775,39 +6969,15 @@
       "unit": "section",
       "units": 6,
       "cited": 3,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 1,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Krankenversicherung: Versicherungspflicht für in der Schweiz wohnhafte Versicherte",
-            "Ende der Versicherungspflicht"
-          ],
-          "first_block": 22,
-          "last_block": 25,
-          "characters": 355,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Krankenversicherung: Versicherungspflicht für in der Schweiz wohnhafte Versicherte",
-            "Sans-Papiers"
-          ],
-          "first_block": 26,
-          "last_block": 27,
-          "characters": 502,
-          "section_ids": [
-            "section-0005"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1,
+        "out_of_scope": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-1631ee5aec5b0914091c",
@@ -7818,40 +6988,15 @@
       "unit": "section",
       "units": 5,
       "cited": 3,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Krankenversicherung: Zur Sistierung der Unfalldeckung berechtigte Versicherte",
-            "Weiterführende Themen",
-            "Wer ist obligatorisch versichert?"
-          ],
-          "first_block": 31,
-          "last_block": 33,
-          "characters": 123,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Krankenversicherung: Zur Sistierung der Unfalldeckung berechtigte Versicherte",
-            "Bundesamt für Gesundheit BAG"
-          ],
-          "first_block": 34,
-          "last_block": 36,
-          "characters": 153,
-          "section_ids": [
-            "section-0009"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1,
+        "navigation": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-6e45b9e28dd55e61b3a3",
@@ -7864,39 +7009,15 @@
       "unit": "section",
       "units": 3,
       "cited": 1,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Unfallversicherung: Wer ist obligatorisch versichert?",
-            "Wer ist nicht obligatorisch versichert?"
-          ],
-          "first_block": 28,
-          "last_block": 34,
-          "characters": 220,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Unfallversicherung: Wer ist obligatorisch versichert?",
-            "Bundesamt für Gesundheit BAG"
-          ],
-          "first_block": 38,
-          "last_block": 42,
-          "characters": 217,
-          "section_ids": [
-            "section-0006"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1,
+        "navigation": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-f373f87980ac42c88f80",
@@ -7907,39 +7028,15 @@
       "unit": "section",
       "units": 3,
       "cited": 1,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0003",
-          "heading_path": [
-            "Accident insurance: Who is subject to compulsory insurance?",
-            "Who is not covered by compulsory insurance?"
-          ],
-          "first_block": 27,
-          "last_block": 33,
-          "characters": 214,
-          "section_ids": [
-            "section-0003"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Accident insurance: Who is subject to compulsory insurance?",
-            "Federal Office of Public Health FOPH"
-          ],
-          "first_block": 37,
-          "last_block": 41,
-          "characters": 216,
-          "section_ids": [
-            "section-0006"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1,
+        "navigation": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-10dfed4288411da300f1",
@@ -7950,40 +7047,15 @@
       "unit": "section",
       "units": 5,
       "cited": 3,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Health insurance: Insured persons eligible to suspend accident cover",
-            "Further topics",
-            "Who is subject to compulsory insurance?"
-          ],
-          "first_block": 30,
-          "last_block": 32,
-          "characters": 138,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Health insurance: Insured persons eligible to suspend accident cover",
-            "Federal Office of Public Health FOPH"
-          ],
-          "first_block": 33,
-          "last_block": 35,
-          "characters": 141,
-          "section_ids": [
-            "section-0009"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1,
+        "navigation": 1
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-380255d8847870b7c0f3",
@@ -7994,62 +7066,15 @@
       "unit": "section",
       "units": 7,
       "cited": 3,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 0,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0001",
-          "heading_path": [],
-          "first_block": 1,
-          "last_block": 16,
-          "characters": 28,
-          "section_ids": [
-            "section-0001"
-          ]
-        },
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Health insurance: Premium subsidies",
-            "Financing by the Federal Government and Cantons"
-          ],
-          "first_block": 29,
-          "last_block": 31,
-          "characters": 1217,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Health insurance: Premium subsidies",
-            "Monitoring of Premium Reductions"
-          ],
-          "first_block": 32,
-          "last_block": 33,
-          "characters": 435,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Health insurance: Premium subsidies",
-            "Federal Office of Public Health FOPH"
-          ],
-          "first_block": 45,
-          "last_block": 47,
-          "characters": 141,
-          "section_ids": [
-            "section-0013"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "navigation": 2,
+        "deferred": 2
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-2be14eb81766abd0a5f6",
@@ -10292,6 +9317,42 @@
       "unclassified_sections": []
     },
     {
+      "document_id": "doc-dd924487a604f77a494b",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/de",
+      "title": "Fedlex: Ordinance on Health Insurance, KVV, SR 832.102",
+      "source_ids": [
+        "ch-fedlex-kvv"
+      ],
+      "attribution_kind": "plugin-document",
+      "unit": "document",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-e4821453f6936b7c292f",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/1995/4964_4964_4964/de",
+      "title": "Fedlex: Ordinance on Benefits in Compulsory Health Insurance, KLV, SR 832.112.31",
+      "source_ids": [
+        "ch-fedlex-klv"
+      ],
+      "attribution_kind": "plugin-document",
+      "unit": "document",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
       "document_id": "doc-2beff3b94d248dc44aad",
       "source_url": "https://www.fedlex.admin.ch/eli/cc/1996/688_688_688/de",
       "title": "Fedlex: ordinance on the refund of AHV contributions paid by foreign nationals, SR 831.131.12",
@@ -10500,814 +9561,17 @@
       "unit": "section",
       "units": 58,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 57,
       "boilerplate": 1,
-      "unclassified": 57,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "FAQ"
-          ],
-          "first_block": 92,
-          "last_block": 94,
-          "characters": 79,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "FAQ",
-            "Prämienrechner",
-            "Was sind die Eigenschaften des Prämienrechners?"
-          ],
-          "first_block": 97,
-          "last_block": 101,
-          "characters": 635,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "FAQ",
-            "Prämienrechner",
-            "Was sind die Eigenschaften des Prämienrechners?",
-            "Bestellen von Infomaterial"
-          ],
-          "first_block": 102,
-          "last_block": 103,
-          "characters": 25,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Wo finde ich Informationen zur Krankenversicherung?"
-          ],
-          "first_block": 105,
-          "last_block": 107,
-          "characters": 500,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Ist die Krankenversicherung obligatorisch in der Schweiz?"
-          ],
-          "first_block": 108,
-          "last_block": 118,
-          "characters": 2170,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Was geschieht, wenn ich mich nicht versichere?"
-          ],
-          "first_block": 119,
-          "last_block": 120,
-          "characters": 232,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Wann endet die obligatorische Krankenversicherung?"
-          ],
-          "first_block": 121,
-          "last_block": 124,
-          "characters": 407,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Wer ist von der Versicherungspflicht in der Schweiz ausgenommen?"
-          ],
-          "first_block": 125,
-          "last_block": 141,
-          "characters": 3459,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Mein Kind ist Ende Monat geboren. Muss/kann der Versicherer die Prämie für den ganzen Monat in Rechnung stellen?"
-          ],
-          "first_block": 142,
-          "last_block": 143,
-          "characters": 132,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Ich habe mich Mitte Monat in der Schweiz angemeldet. Muss/kann der Versicherer die Prämie für den ganzen Monat in Rechnung stellen?"
-          ],
-          "first_block": 144,
-          "last_block": 145,
-          "characters": 168,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Mein Mann ist anfangs Monat gestorben. Muss/kann der Versicherer die Prämie für den ganzen Monat in Rechnung stellen?"
-          ],
-          "first_block": 146,
-          "last_block": 147,
-          "characters": 135,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0018",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Innerhalb welcher Frist muss ich mich versichern?"
-          ],
-          "first_block": 148,
-          "last_block": 149,
-          "characters": 442,
-          "section_ids": [
-            "section-0018"
-          ]
-        },
-        {
-          "section_id": "section-0019",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Was hat eine verspätete Anmeldung zur Folge?"
-          ],
-          "first_block": 150,
-          "last_block": 151,
-          "characters": 153,
-          "section_ids": [
-            "section-0019"
-          ]
-        },
-        {
-          "section_id": "section-0020",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Bin ich frei in der Wahl eines Krankenversicherers?"
-          ],
-          "first_block": 152,
-          "last_block": 154,
-          "characters": 309,
-          "section_ids": [
-            "section-0020"
-          ]
-        },
-        {
-          "section_id": "section-0021",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Kann ein Krankenversicherer meine Aufnahme ablehnen oder Vorbehalte anbringen?"
-          ],
-          "first_block": 155,
-          "last_block": 156,
-          "characters": 229,
-          "section_ids": [
-            "section-0021"
-          ]
-        },
-        {
-          "section_id": "section-0022",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Darf ein Krankenversicherer mich bei der Anmeldung für die Grundversicherung auffordern, einen Gesundheitsfragebogen auszufüllen?"
-          ],
-          "first_block": 157,
-          "last_block": 159,
-          "characters": 517,
-          "section_ids": [
-            "section-0022"
-          ]
-        },
-        {
-          "section_id": "section-0023",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Was kann ich tun, wenn der Krankenversicherer auf mein Aufnahmegesuch nicht reagiert?"
-          ],
-          "first_block": 160,
-          "last_block": 161,
-          "characters": 484,
-          "section_ids": [
-            "section-0023"
-          ]
-        },
-        {
-          "section_id": "section-0024",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Kann ich die Unfalldeckung sistieren, wenn ich bereits durch die Unfallversicherung versichert bin?"
-          ],
-          "first_block": 162,
-          "last_block": 163,
-          "characters": 238,
-          "section_ids": [
-            "section-0024"
-          ]
-        },
-        {
-          "section_id": "section-0025",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Kann ich meine Krankenversicherung während dem Militärdienst sistieren?"
-          ],
-          "first_block": 164,
-          "last_block": 165,
-          "characters": 342,
-          "section_ids": [
-            "section-0025"
-          ]
-        },
-        {
-          "section_id": "section-0026",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Bleibe ich bei einem vorübergehenden Auslandaufenthalt (Reise, Studium) in der Schweiz versicherungspflichtig?"
-          ],
-          "first_block": 166,
-          "last_block": 167,
-          "characters": 254,
-          "section_ids": [
-            "section-0026"
-          ]
-        },
-        {
-          "section_id": "section-0027",
-          "heading_path": [
-            "FAQ",
-            "Versicherungspflicht",
-            "Kann ich bei der obligatorischen Krankenpflegeversicherung in der Schweiz versichert bleiben, wenn ich meinen Wohnsitz ins Ausland verlege?"
-          ],
-          "first_block": 168,
-          "last_block": 170,
-          "characters": 803,
-          "section_ids": [
-            "section-0027"
-          ]
-        },
-        {
-          "section_id": "section-0029",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Was versteht man unter Kostenbeteiligung?"
-          ],
-          "first_block": 172,
-          "last_block": 174,
-          "characters": 488,
-          "section_ids": [
-            "section-0029"
-          ]
-        },
-        {
-          "section_id": "section-0030",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Wie hoch ist die minimale Kostenbeteiligung?"
-          ],
-          "first_block": 175,
-          "last_block": 176,
-          "characters": 455,
-          "section_ids": [
-            "section-0030"
-          ]
-        },
-        {
-          "section_id": "section-0031",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Was bringt mir eine erhöhte Jahresfranchise?"
-          ],
-          "first_block": 177,
-          "last_block": 179,
-          "characters": 892,
-          "section_ids": [
-            "section-0031"
-          ]
-        },
-        {
-          "section_id": "section-0032",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Bezahle ich auch im Spital eine Kostenbeteiligung?"
-          ],
-          "first_block": 180,
-          "last_block": 181,
-          "characters": 232,
-          "section_ids": [
-            "section-0032"
-          ]
-        },
-        {
-          "section_id": "section-0033",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Wie ist es bei einer Schwangerschaft und Geburt. Entfällt hier die Kostenbeteiligung in jedem Fall?"
-          ],
-          "first_block": 182,
-          "last_block": 184,
-          "characters": 768,
-          "section_ids": [
-            "section-0033"
-          ]
-        },
-        {
-          "section_id": "section-0034",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Kommen bei Beiträgen der Versicherung an Badekuren oder an die Kosten für Hilfsmittel und Apparate, die auf der Mittel- und Gegenständeliste stehen, die Franchise und der Selbstbehalt auch zum Zug?"
-          ],
-          "first_block": 185,
-          "last_block": 186,
-          "characters": 173,
-          "section_ids": [
-            "section-0034"
-          ]
-        },
-        {
-          "section_id": "section-0035",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Wenn ich die Krankenkasse per Mitte Jahr wechsle, bezahle ich dann zweimal die Jahresfranchise und den Selbstbehalt?"
-          ],
-          "first_block": 187,
-          "last_block": 188,
-          "characters": 238,
-          "section_ids": [
-            "section-0035"
-          ]
-        },
-        {
-          "section_id": "section-0036",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Um was handelt es sich beim Spitalbeitrag von Fr. 15.--?"
-          ],
-          "first_block": 189,
-          "last_block": 190,
-          "characters": 545,
-          "section_ids": [
-            "section-0036"
-          ]
-        },
-        {
-          "section_id": "section-0037",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Muss ich bei Unfallfolgen (z.B. Zahnunfall), dessen Kosten über meine Krankenkasse laufen, auch Franchise und Selbstbehalt bezahlen?"
-          ],
-          "first_block": 191,
-          "last_block": 192,
-          "characters": 289,
-          "section_ids": [
-            "section-0037"
-          ]
-        },
-        {
-          "section_id": "section-0038",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Wenn ich übers Jahresende in Behandlung bin, wie sieht es dann aus mit der Kostenbeteiligung?"
-          ],
-          "first_block": 193,
-          "last_block": 194,
-          "characters": 530,
-          "section_ids": [
-            "section-0038"
-          ]
-        },
-        {
-          "section_id": "section-0039",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Kann ich ohne Probleme jedes Jahr die Jahresfranchise anpassen?"
-          ],
-          "first_block": 195,
-          "last_block": 196,
-          "characters": 510,
-          "section_ids": [
-            "section-0039"
-          ]
-        },
-        {
-          "section_id": "section-0040",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Ist es möglich, bei einem Wechsel des Versicherers Mitte Jahr die Franchise von der ordentlichen zur wählbaren Franchise zu ändern?"
-          ],
-          "first_block": 197,
-          "last_block": 198,
-          "characters": 214,
-          "section_ids": [
-            "section-0040"
-          ]
-        },
-        {
-          "section_id": "section-0041",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Wenn ich ein Modell mit eingeschränkter Wahl der Leistungserbringer wähle (z.B. HMO, Hausarztmodell), kann ich dann zusätzlich eine erhöhte Jahresfranchise wählen?"
-          ],
-          "first_block": 199,
-          "last_block": 200,
-          "characters": 226,
-          "section_ids": [
-            "section-0041"
-          ]
-        },
-        {
-          "section_id": "section-0042",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Kann ich bei Abschluss der Bonusversicherung auch eine erhöhte Jahresfranchise wählen?"
-          ],
-          "first_block": 201,
-          "last_block": 202,
-          "characters": 100,
-          "section_ids": [
-            "section-0042"
-          ]
-        },
-        {
-          "section_id": "section-0043",
-          "heading_path": [
-            "FAQ",
-            "Kostenbeteiligung",
-            "Wann bezahle ich auf ärztlich verordneten Medikamenten 40 % statt 10 % Selbstbehalt?"
-          ],
-          "first_block": 203,
-          "last_block": 205,
-          "characters": 524,
-          "section_ids": [
-            "section-0043"
-          ]
-        },
-        {
-          "section_id": "section-0046",
-          "heading_path": [
-            "FAQ",
-            "Wechsel der Krankenkasse",
-            "Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen?",
-            "Versicherungswechsel per 1. Juli"
-          ],
-          "first_block": 208,
-          "last_block": 209,
-          "characters": 772,
-          "section_ids": [
-            "section-0046"
-          ]
-        },
-        {
-          "section_id": "section-0047",
-          "heading_path": [
-            "FAQ",
-            "Wechsel der Krankenkasse",
-            "Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen?",
-            "Versicherungswechsel per 1. Januar"
-          ],
-          "first_block": 210,
-          "last_block": 212,
-          "characters": 740,
-          "section_ids": [
-            "section-0047"
-          ]
-        },
-        {
-          "section_id": "section-0048",
-          "heading_path": [
-            "FAQ",
-            "Wechsel der Krankenkasse",
-            "Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen?",
-            "Vorsicht bei nicht genehmigten Prämien!"
-          ],
-          "first_block": 213,
-          "last_block": 214,
-          "characters": 306,
-          "section_ids": [
-            "section-0048"
-          ]
-        },
-        {
-          "section_id": "section-0049",
-          "heading_path": [
-            "FAQ",
-            "Wechsel der Krankenkasse",
-            "Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen?",
-            "Versicherungswechsel bei unterjährigen Prämienerhöhungen (selten)"
-          ],
-          "first_block": 215,
-          "last_block": 217,
-          "characters": 352,
-          "section_ids": [
-            "section-0049"
-          ]
-        },
-        {
-          "section_id": "section-0050",
-          "heading_path": [
-            "FAQ",
-            "Wechsel der Krankenkasse",
-            "Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen?",
-            "Kein ausserordentliches Kündigungsrecht"
-          ],
-          "first_block": 218,
-          "last_block": 219,
-          "characters": 255,
-          "section_ids": [
-            "section-0050"
-          ]
-        },
-        {
-          "section_id": "section-0051",
-          "heading_path": [
-            "FAQ",
-            "Wechsel der Krankenkasse",
-            "Wie sind die Kündigungsfristen der Grundversicherung und wie muss ich vorgehen?",
-            "Achtung mit der Kündigungsfrist!"
-          ],
-          "first_block": 220,
-          "last_block": 222,
-          "characters": 926,
-          "section_ids": [
-            "section-0051"
-          ]
-        },
-        {
-          "section_id": "section-0052",
-          "heading_path": [
-            "FAQ",
-            "Wechsel der Krankenkasse",
-            "Gelten die gleichen Kündigungsfristen für die Zusatzversicherungen?"
-          ],
-          "first_block": 223,
-          "last_block": 224,
-          "characters": 298,
-          "section_ids": [
-            "section-0052"
-          ]
-        },
-        {
-          "section_id": "section-0053",
-          "heading_path": [
-            "FAQ",
-            "Wechsel der Krankenkasse",
-            "Darf die Krankenkasse die Zusatzversicherungen unter dem Vorwand, dass die Grundversicherung gewechselt wird, kündigen?"
-          ],
-          "first_block": 225,
-          "last_block": 226,
-          "characters": 243,
-          "section_ids": [
-            "section-0053"
-          ]
-        },
-        {
-          "section_id": "section-0054",
-          "heading_path": [
-            "FAQ",
-            "Wechsel der Krankenkasse",
-            "Können säumige versicherte Personen den Versicherer wechseln?"
-          ],
-          "first_block": 227,
-          "last_block": 229,
-          "characters": 703,
-          "section_ids": [
-            "section-0054"
-          ]
-        },
-        {
-          "section_id": "section-0055",
-          "heading_path": [
-            "FAQ",
-            "Wechsel der Krankenkasse",
-            "Was sind die Konsequenzen, wenn die versicherte Person zu spät einem neuen Versicherer beitritt?"
-          ],
-          "first_block": 230,
-          "last_block": 231,
-          "characters": 492,
-          "section_ids": [
-            "section-0055"
-          ]
-        },
-        {
-          "section_id": "section-0056",
-          "heading_path": [
-            "FAQ",
-            "Wechsel der Krankenkasse",
-            "Was geschieht, wenn der neue Versicherer Ihren Beitritt dem bisherigen Versicherer nicht oder verspätet meldet?"
-          ],
-          "first_block": 232,
-          "last_block": 234,
-          "characters": 917,
-          "section_ids": [
-            "section-0056"
-          ]
-        },
-        {
-          "section_id": "section-0058",
-          "heading_path": [
-            "FAQ",
-            "Zusatzversicherung",
-            "Ist eine Zusatzversicherung, die die freie Spitalwahl in der ganzen Schweiz ermöglicht, noch nötig?"
-          ],
-          "first_block": 236,
-          "last_block": 238,
-          "characters": 1044,
-          "section_ids": [
-            "section-0058"
-          ]
-        },
-        {
-          "section_id": "section-0060",
-          "heading_path": [
-            "FAQ",
-            "Behandlungen/Leistungen im Ausland",
-            "Werden die Kosten von Behandlungen im Ausland von der obligatorischen Krankenpflegeversicherung übernommen?"
-          ],
-          "first_block": 240,
-          "last_block": 245,
-          "characters": 2052,
-          "section_ids": [
-            "section-0060"
-          ]
-        },
-        {
-          "section_id": "section-0061",
-          "heading_path": [
-            "FAQ",
-            "Behandlungen/Leistungen im Ausland",
-            "Bezahlt die obligatorische Krankenpflegeversicherung die Kosten von Arzneimitteln oder Hilfsmitteln, die ich im Ausland gekauft habe?"
-          ],
-          "first_block": 246,
-          "last_block": 247,
-          "characters": 154,
-          "section_ids": [
-            "section-0061"
-          ]
-        },
-        {
-          "section_id": "section-0063",
-          "heading_path": [
-            "FAQ",
-            "Vergütungssysteme",
-            "Was bedeutet das Kostenvergütungs- oder Rückerstattungsprinzip?"
-          ],
-          "first_block": 249,
-          "last_block": 253,
-          "characters": 1063,
-          "section_ids": [
-            "section-0063"
-          ]
-        },
-        {
-          "section_id": "section-0064",
-          "heading_path": [
-            "FAQ",
-            "Vergütungssysteme",
-            "Was bedeutet das System des Tiers garant?"
-          ],
-          "first_block": 254,
-          "last_block": 255,
-          "characters": 845,
-          "section_ids": [
-            "section-0064"
-          ]
-        },
-        {
-          "section_id": "section-0065",
-          "heading_path": [
-            "FAQ",
-            "Vergütungssysteme",
-            "Was bedeutet das System des Tiers payant?"
-          ],
-          "first_block": 256,
-          "last_block": 257,
-          "characters": 844,
-          "section_ids": [
-            "section-0065"
-          ]
-        },
-        {
-          "section_id": "section-0066",
-          "heading_path": [
-            "FAQ",
-            "Vergütungssysteme",
-            "Was bedeutet das System des «Tiers soldant»?"
-          ],
-          "first_block": 258,
-          "last_block": 259,
-          "characters": 684,
-          "section_ids": [
-            "section-0066"
-          ]
-        },
-        {
-          "section_id": "section-0067",
-          "heading_path": [
-            "FAQ",
-            "Vergütungssysteme",
-            "Was bedeutet das in der Praxis?"
-          ],
-          "first_block": 260,
-          "last_block": 263,
-          "characters": 1791,
-          "section_ids": [
-            "section-0067"
-          ]
-        },
-        {
-          "section_id": "section-0068",
-          "heading_path": [
-            "FAQ",
-            "Haben Sie Fragen zur Krankenkasse?"
-          ],
-          "first_block": 264,
-          "last_block": 265,
-          "characters": 89,
-          "section_ids": [
-            "section-0068"
-          ]
-        },
-        {
-          "section_id": "section-0069",
-          "heading_path": [
-            "FAQ",
-            "Haben Sie Fragen zum Prämien-Rechner? Oder möchten Sie eine Übersicht über die Prämien in gedruckter Form erhalten?"
-          ],
-          "first_block": 266,
-          "last_block": 275,
-          "characters": 207,
-          "section_ids": [
-            "section-0069"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 42,
+        "out_of_scope": 1,
+        "navigation": 4,
+        "deferred": 10
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-e735f7a09d6dd3ae6741",
@@ -11320,238 +9584,14 @@
       "unit": "section",
       "units": 20,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 17,
       "boilerplate": 3,
-      "unclassified": 17,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Sparen in der Grund-Versicherung"
-          ],
-          "first_block": 98,
-          "last_block": 101,
-          "characters": 414,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Sparen in der Grund-Versicherung",
-            "Mehr Kosten selber bezahlen"
-          ],
-          "first_block": 102,
-          "last_block": 105,
-          "characters": 315,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Sparen in der Grund-Versicherung",
-            "Eine andere Art von Versicherung wählen"
-          ],
-          "first_block": 106,
-          "last_block": 112,
-          "characters": 378,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Sparen in der Grund-Versicherung",
-            "So können Sie auch noch sparen"
-          ],
-          "first_block": 113,
-          "last_block": 118,
-          "characters": 386,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Sparen in der Grundversicherung"
-          ],
-          "first_block": 119,
-          "last_block": 120,
-          "characters": 181,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen mit der Wahl der Franchise"
-          ],
-          "first_block": 121,
-          "last_block": 122,
-          "characters": 307,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen mit der Wahl der Franchise",
-            "Was ist die Franchise?"
-          ],
-          "first_block": 123,
-          "last_block": 126,
-          "characters": 700,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen mit der Wahl der Franchise",
-            "Was ist der Selbstbehalt?"
-          ],
-          "first_block": 127,
-          "last_block": 128,
-          "characters": 287,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen mit der Wahl der Franchise",
-            "Beispiel"
-          ],
-          "first_block": 129,
-          "last_block": 131,
-          "characters": 376,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen mit speziellen Versicherungsmodellen"
-          ],
-          "first_block": 132,
-          "last_block": 133,
-          "characters": 141,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen mit speziellen Versicherungsmodellen",
-            "Sparen mit dem Modell HMO"
-          ],
-          "first_block": 134,
-          "last_block": 137,
-          "characters": 724,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen mit speziellen Versicherungsmodellen",
-            "Sparen mit dem Hausarzt-Modell"
-          ],
-          "first_block": 138,
-          "last_block": 139,
-          "characters": 134,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen mit speziellen Versicherungsmodellen",
-            "Sparen mit telefonischer Beratung"
-          ],
-          "first_block": 140,
-          "last_block": 141,
-          "characters": 147,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0018",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen mit Ausschluss der Unfallversicherung bei Berufstätigkeit"
-          ],
-          "first_block": 142,
-          "last_block": 143,
-          "characters": 496,
-          "section_ids": [
-            "section-0018"
-          ]
-        },
-        {
-          "section_id": "section-0019",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen bei Dienstpflicht"
-          ],
-          "first_block": 144,
-          "last_block": 145,
-          "characters": 282,
-          "section_ids": [
-            "section-0019"
-          ]
-        },
-        {
-          "section_id": "section-0020",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen durch Wechseln der Versicherung"
-          ],
-          "first_block": 146,
-          "last_block": 147,
-          "characters": 131,
-          "section_ids": [
-            "section-0020"
-          ]
-        },
-        {
-          "section_id": "section-0021",
-          "heading_path": [
-            "Sparen in der Grundversicherung",
-            "Sparen durch Prämienverbilligung durch die Kantone"
-          ],
-          "first_block": 148,
-          "last_block": 149,
-          "characters": 157,
-          "section_ids": [
-            "section-0021"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 17
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-38f8f9f8e3a5024b8196",
@@ -11564,64 +9604,15 @@
       "unit": "section",
       "units": 7,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 3,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Alle Menschen können bei den Kosten für die Gesundheit sparen"
-          ],
-          "first_block": 98,
-          "last_block": 100,
-          "characters": 198,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Alle Menschen können bei den Kosten für die Gesundheit sparen",
-            "Schauen Sie zu Ihrer Gesundheit"
-          ],
-          "first_block": 101,
-          "last_block": 105,
-          "characters": 151,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Alle Menschen können bei den Kosten für die Gesundheit sparen",
-            "Müssen Sie zu einer Ärztin oder einem Arzt?"
-          ],
-          "first_block": 106,
-          "last_block": 110,
-          "characters": 403,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Alle Menschen können bei den Kosten für die Gesundheit sparen",
-            "Ist eine Operation nötig?"
-          ],
-          "first_block": 111,
-          "last_block": 113,
-          "characters": 284,
-          "section_ids": [
-            "section-0008"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 1,
+        "deferred": 3
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-2e4546e6622f10a0de97",
@@ -11634,144 +9625,16 @@
       "unit": "section",
       "units": 13,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 10,
       "boilerplate": 3,
-      "unclassified": 10,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Krankenkasse für Personen im Ausland"
-          ],
-          "first_block": 99,
-          "last_block": 101,
-          "characters": 180,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Krankenkasse für Personen im Ausland",
-            "Wann brauchen Sie eine Krankenkasse in der Schweiz?"
-          ],
-          "first_block": 102,
-          "last_block": 107,
-          "characters": 120,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Krankenkasse für Personen im Ausland",
-            "Wann brauchen Personen aus Ihrer Familie eine Krankenkasse in der Schweiz?"
-          ],
-          "first_block": 108,
-          "last_block": 112,
-          "characters": 159,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Krankenkasse für Personen im Ausland",
-            "Prämien-Verbilligung"
-          ],
-          "first_block": 113,
-          "last_block": 114,
-          "characters": 140,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Prämien EU / EFTA / UK"
-          ],
-          "first_block": 115,
-          "last_block": 124,
-          "characters": 1217,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Prämien EU / EFTA / UK",
-            "Angebote der Krankenkassen"
-          ],
-          "first_block": 125,
-          "last_block": 126,
-          "characters": 301,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Prämien EU / EFTA / UK",
-            "Prämienverbilligung"
-          ],
-          "first_block": 127,
-          "last_block": 128,
-          "characters": 301,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Prämien EU / EFTA / UK",
-            "Prämienverbilligung",
-            "Zuständige Stellen für die Prämienverbilligung"
-          ],
-          "first_block": 129,
-          "last_block": 132,
-          "characters": 563,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Prämien EU / EFTA / UK",
-            "Prämienverbilligung",
-            "Übersicht über die Prämien"
-          ],
-          "first_block": 133,
-          "last_block": 134,
-          "characters": 74,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Prämien EU / EFTA / UK",
-            "Prämienverbilligung",
-            "Weitere Informationen"
-          ],
-          "first_block": 135,
-          "last_block": 138,
-          "characters": 139,
-          "section_ids": [
-            "section-0014"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 8,
+        "out_of_scope": 1,
+        "navigation": 1
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-5e5954d1f6e0e96050f7",
@@ -11784,201 +9647,14 @@
       "unit": "section",
       "units": 17,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 14,
       "boilerplate": 3,
-      "unclassified": 14,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse"
-          ],
-          "first_block": 99,
-          "last_block": 100,
-          "characters": 48,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Was ist die Grund-Versicherung?"
-          ],
-          "first_block": 101,
-          "last_block": 102,
-          "characters": 317,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Was bezahlt die Grund-Versicherung?"
-          ],
-          "first_block": 103,
-          "last_block": 111,
-          "characters": 534,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Was bezahlen Sie selber?"
-          ],
-          "first_block": 112,
-          "last_block": 113,
-          "characters": 96,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Was bezahlen Sie selber?",
-            "Was ist eine Franchise?"
-          ],
-          "first_block": 114,
-          "last_block": 115,
-          "characters": 219,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Was bezahlen Sie selber?",
-            "Beispiel Franchise"
-          ],
-          "first_block": 116,
-          "last_block": 122,
-          "characters": 849,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Was bezahlen Sie selber?",
-            "Was ist ein Selbstbehalt?"
-          ],
-          "first_block": 123,
-          "last_block": 124,
-          "characters": 128,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Was bezahlen Sie selber?",
-            "Beispiel Selbstbehalt"
-          ],
-          "first_block": 125,
-          "last_block": 127,
-          "characters": 366,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Welche Arten von Grund-Versicherungen gibt es?"
-          ],
-          "first_block": 128,
-          "last_block": 129,
-          "characters": 102,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Welche Arten von Grund-Versicherungen gibt es?",
-            "HMO"
-          ],
-          "first_block": 130,
-          "last_block": 134,
-          "characters": 518,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Welche Arten von Grund-Versicherungen gibt es?",
-            "Hausarzt"
-          ],
-          "first_block": 135,
-          "last_block": 137,
-          "characters": 242,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Welche Arten von Grund-Versicherungen gibt es?",
-            "Telefonische Beratung"
-          ],
-          "first_block": 138,
-          "last_block": 141,
-          "characters": 325,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Welche Art von Versicherung sollen Sie wählen?"
-          ],
-          "first_block": 142,
-          "last_block": 143,
-          "characters": 137,
-          "section_ids": [
-            "section-0017"
-          ]
-        },
-        {
-          "section_id": "section-0018",
-          "heading_path": [
-            "Die Grund-Versicherung der Krankenkasse",
-            "Möchten Sie die Krankenkasse wechseln?"
-          ],
-          "first_block": 144,
-          "last_block": 146,
-          "characters": 200,
-          "section_ids": [
-            "section-0018"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 14
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-0c3c607cd47664b50658",
@@ -11991,156 +9667,16 @@
       "unit": "section",
       "units": 14,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 11,
       "boilerplate": 3,
-      "unclassified": 11,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Prämien-Verbilligung"
-          ],
-          "first_block": 99,
-          "last_block": 100,
-          "characters": 109,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Prämien-Verbilligung",
-            "Was ist eine Prämien-Verbilligung?"
-          ],
-          "first_block": 101,
-          "last_block": 104,
-          "characters": 303,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Prämien-Verbilligung",
-            "Wer bekommt eine Prämien-Verbilligung?"
-          ],
-          "first_block": 105,
-          "last_block": 106,
-          "characters": 59,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Prämien-Verbilligung",
-            "Wie bekommen Sie eine Prämien-Verbilligung?"
-          ],
-          "first_block": 107,
-          "last_block": 108,
-          "characters": 207,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0009",
-          "heading_path": [
-            "Prämien-Verbilligung",
-            "Wo melden Sie sich für eine Prämien-Verbilligung?"
-          ],
-          "first_block": 109,
-          "last_block": 113,
-          "characters": 3269,
-          "section_ids": [
-            "section-0009"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Prämienverbilligung"
-          ],
-          "first_block": 114,
-          "last_block": 116,
-          "characters": 289,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Prämienverbilligung",
-            "Zuständige Stellen für die Prämienverbilligung",
-            "Kantonale Stellen"
-          ],
-          "first_block": 118,
-          "last_block": 121,
-          "characters": 451,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Prämienverbilligung",
-            "Zuständige Stellen für die Prämienverbilligung",
-            "Gemeinsame Einrichtung"
-          ],
-          "first_block": 122,
-          "last_block": 127,
-          "characters": 384,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Prämienverbilligung",
-            "Grundsätze der Prämienverbilligung"
-          ],
-          "first_block": 128,
-          "last_block": 131,
-          "characters": 855,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Prämienverbilligung",
-            "Leistungen von Bund und Kantonen"
-          ],
-          "first_block": 132,
-          "last_block": 133,
-          "characters": 538,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Prämienverbilligung",
-            "Weitere Informationen"
-          ],
-          "first_block": 134,
-          "last_block": 135,
-          "characters": 108,
-          "section_ids": [
-            "section-0016"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 8,
+        "deferred": 2,
+        "navigation": 1
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-faac7633f8f4608f6d70",
@@ -12153,63 +9689,15 @@
       "unit": "section",
       "units": 7,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 3,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Zusatz-Versicherung"
-          ],
-          "first_block": 99,
-          "last_block": 100,
-          "characters": 110,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Zusatz-Versicherung",
-            "Was ist eine Zusatz-Versicherung?"
-          ],
-          "first_block": 101,
-          "last_block": 107,
-          "characters": 507,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Leistungen der Zusatzversicherung"
-          ],
-          "first_block": 108,
-          "last_block": 122,
-          "characters": 891,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Leistungen der Zusatzversicherung",
-            "Kündigung einer Zusatzversicherung"
-          ],
-          "first_block": 123,
-          "last_block": 126,
-          "characters": 527,
-          "section_ids": [
-            "section-0008"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 2,
+        "deferred": 2
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-bad28b3d0044b0143434",
@@ -12222,64 +9710,14 @@
       "unit": "section",
       "units": 7,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 3,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Mittlere Prämie: Kennzahl für die Entwicklung der Prämien der obligatorischen Krankenpflegeversicherung"
-          ],
-          "first_block": 102,
-          "last_block": 112,
-          "characters": 1074,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Mittlere Prämie: Kennzahl für die Entwicklung der Prämien der obligatorischen Krankenpflegeversicherung",
-            "Mittlere Prämie"
-          ],
-          "first_block": 113,
-          "last_block": 117,
-          "characters": 2232,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Mittlere Prämie: Kennzahl für die Entwicklung der Prämien der obligatorischen Krankenpflegeversicherung",
-            "Standardprämie"
-          ],
-          "first_block": 118,
-          "last_block": 120,
-          "characters": 757,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Mittlere Prämie: Kennzahl für die Entwicklung der Prämien der obligatorischen Krankenpflegeversicherung",
-            "Vergleich mittlere Prämie – Standardprämie"
-          ],
-          "first_block": 121,
-          "last_block": 125,
-          "characters": 559,
-          "section_ids": [
-            "section-0008"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "out_of_scope": 4
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-e3a0c411d388f9d8af8f",
@@ -12292,171 +9730,14 @@
       "unit": "section",
       "units": 15,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 12,
       "boilerplate": 3,
-      "unclassified": 12,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0005",
-          "heading_path": [
-            "Die Krankenkasse wechseln"
-          ],
-          "first_block": 102,
-          "last_block": 104,
-          "characters": 210,
-          "section_ids": [
-            "section-0005"
-          ]
-        },
-        {
-          "section_id": "section-0006",
-          "heading_path": [
-            "Die Krankenkasse wechseln",
-            "Was können Sie wechseln?"
-          ],
-          "first_block": 105,
-          "last_block": 109,
-          "characters": 137,
-          "section_ids": [
-            "section-0006"
-          ]
-        },
-        {
-          "section_id": "section-0007",
-          "heading_path": [
-            "Die Krankenkasse wechseln",
-            "Wie können Sie wechseln?"
-          ],
-          "first_block": 110,
-          "last_block": 112,
-          "characters": 366,
-          "section_ids": [
-            "section-0007"
-          ]
-        },
-        {
-          "section_id": "section-0008",
-          "heading_path": [
-            "Die Krankenkasse wechseln",
-            "Wann können Sie wechseln?"
-          ],
-          "first_block": 113,
-          "last_block": 116,
-          "characters": 196,
-          "section_ids": [
-            "section-0008"
-          ]
-        },
-        {
-          "section_id": "section-0010",
-          "heading_path": [
-            "Wechsel der Krankenkasse",
-            "Allgemeine Informationen"
-          ],
-          "first_block": 118,
-          "last_block": 120,
-          "characters": 304,
-          "section_ids": [
-            "section-0010"
-          ]
-        },
-        {
-          "section_id": "section-0011",
-          "heading_path": [
-            "Wechsel der Krankenkasse",
-            "Wechsel der Grundversicherung"
-          ],
-          "first_block": 121,
-          "last_block": 123,
-          "characters": 438,
-          "section_ids": [
-            "section-0011"
-          ]
-        },
-        {
-          "section_id": "section-0012",
-          "heading_path": [
-            "Wechsel der Krankenkasse",
-            "Wechsel der Grundversicherung",
-            "So funktionierts:"
-          ],
-          "first_block": 124,
-          "last_block": 128,
-          "characters": 528,
-          "section_ids": [
-            "section-0012"
-          ]
-        },
-        {
-          "section_id": "section-0013",
-          "heading_path": [
-            "Wechsel der Krankenkasse",
-            "Wechsel der Franchise"
-          ],
-          "first_block": 129,
-          "last_block": 130,
-          "characters": 52,
-          "section_ids": [
-            "section-0013"
-          ]
-        },
-        {
-          "section_id": "section-0014",
-          "heading_path": [
-            "Wechsel der Krankenkasse",
-            "Wechsel der Franchise",
-            "So funktionierts:"
-          ],
-          "first_block": 131,
-          "last_block": 134,
-          "characters": 268,
-          "section_ids": [
-            "section-0014"
-          ]
-        },
-        {
-          "section_id": "section-0015",
-          "heading_path": [
-            "Wechsel der Krankenkasse",
-            "Wechsel Versicherungsmodelle"
-          ],
-          "first_block": 135,
-          "last_block": 136,
-          "characters": 63,
-          "section_ids": [
-            "section-0015"
-          ]
-        },
-        {
-          "section_id": "section-0016",
-          "heading_path": [
-            "Wechsel der Krankenkasse",
-            "Wechsel Versicherungsmodelle",
-            "So funktionierts:"
-          ],
-          "first_block": 137,
-          "last_block": 143,
-          "characters": 640,
-          "section_ids": [
-            "section-0016"
-          ]
-        },
-        {
-          "section_id": "section-0017",
-          "heading_path": [
-            "Wechsel der Krankenkasse",
-            "Wichtige Informationen"
-          ],
-          "first_block": 144,
-          "last_block": 148,
-          "characters": 684,
-          "section_ids": [
-            "section-0017"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 12
+      },
+      "status": "dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-a51c61294f44050bec82",
@@ -30656,9 +27937,9 @@
       "documents": 103,
       "units": 719,
       "cited": 233,
-      "dispositioned": 2,
+      "dispositioned": 12,
       "boilerplate": 35,
-      "unclassified": 484,
+      "unclassified": 474,
       "status": "partly_covered"
     },
     {
@@ -30832,21 +28113,21 @@
       "documents": 1,
       "units": 3,
       "cited": 1,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 2,
-      "status": "partly_covered"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-grenzgaenger",
       "title": "Health insurance for cross-border commuters and the right of option",
       "documents": 1,
       "units": 12,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 4,
+      "dispositioned": 8,
       "boilerplate": 0,
-      "unclassified": 12,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-health-insurance",
@@ -30854,98 +28135,98 @@
       "documents": 1,
       "units": 5,
       "cited": 3,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 1,
-      "unclassified": 2,
-      "status": "partly_covered"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-kostenbeteiligung",
       "title": "Cost sharing for insured persons resident in Switzerland",
       "documents": 1,
       "units": 4,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 3,
+      "dispositioned": 1,
       "boilerplate": 1,
-      "unclassified": 4,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-leistungen-im-ausland",
       "title": "Cover abroad and the European health insurance card",
       "documents": 1,
       "units": 4,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 2,
+      "dispositioned": 2,
       "boilerplate": 0,
-      "unclassified": 4,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-leistungen-tarife",
       "title": "What basic insurance pays for, and the tariffs",
       "documents": 1,
       "units": 8,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 7,
       "boilerplate": 0,
-      "unclassified": 8,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-praemien-eu-efta-uk",
       "title": "Premiums and premium reduction for insured persons in the EU/EFTA and the UK",
       "documents": 1,
       "units": 4,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 3,
+      "dispositioned": 1,
       "boilerplate": 1,
-      "unclassified": 4,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-praemien-kostenbeteiligung",
       "title": "Health insurance: premiums and cost sharing",
       "documents": 1,
       "units": 3,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 2,
       "boilerplate": 1,
-      "unclassified": 3,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-praemienausstaende",
       "title": "Unpaid premiums, debt enforcement and the cantonal list",
       "documents": 1,
       "units": 4,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 3,
+      "dispositioned": 1,
       "boilerplate": 1,
-      "unclassified": 4,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-praemienregionen",
       "title": "Premium regions",
       "documents": 1,
       "units": 2,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 1,
       "boilerplate": 0,
-      "unclassified": 2,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-praemienvergleich",
       "title": "Comparing premiums between insurers",
       "documents": 1,
       "units": 9,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 4,
+      "dispositioned": 5,
       "boilerplate": 0,
-      "unclassified": 9,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-premium-reduction",
@@ -30953,32 +28234,32 @@
       "documents": 1,
       "units": 6,
       "cited": 3,
-      "dispositioned": 0,
+      "dispositioned": 3,
       "boilerplate": 0,
-      "unclassified": 3,
-      "status": "partly_covered"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-versicherte-im-ausland",
       "title": "Insured persons who live abroad",
       "documents": 1,
       "units": 4,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 3,
       "boilerplate": 1,
-      "unclassified": 4,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bag-versicherungsmodelle",
       "title": "Insurance models with a restricted choice of provider",
       "documents": 1,
       "units": 6,
-      "cited": 0,
+      "cited": 6,
       "dispositioned": 0,
       "boilerplate": 1,
-      "unclassified": 6,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "ch-bazg-ausreise-privatwaren",
@@ -31553,8 +28834,30 @@
       "status": "cited"
     },
     {
+      "source_id": "ch-fedlex-klv",
+      "title": "Ordinance on Benefits in Compulsory Health Insurance (KLV), SR 832.112.31",
+      "documents": 1,
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "cited"
+    },
+    {
       "source_id": "ch-fedlex-kvg",
       "title": "Health Insurance Act (KVG/LAMal), SR 832.10",
+      "documents": 1,
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "cited"
+    },
+    {
+      "source_id": "ch-fedlex-kvv",
+      "title": "Ordinance on Health Insurance (KVV), SR 832.102",
       "documents": 1,
       "units": 1,
       "cited": 1,
@@ -31635,10 +28938,10 @@
       "documents": 1,
       "units": 10,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 10,
       "boilerplate": 3,
-      "unclassified": 10,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "dispositioned"
     },
     {
       "source_id": "ch-priminfo-faq",
@@ -31646,10 +28949,10 @@
       "documents": 1,
       "units": 57,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 57,
       "boilerplate": 1,
-      "unclassified": 57,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "dispositioned"
     },
     {
       "source_id": "ch-priminfo-grundversicherung",
@@ -31657,10 +28960,10 @@
       "documents": 1,
       "units": 14,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 14,
       "boilerplate": 3,
-      "unclassified": 14,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "dispositioned"
     },
     {
       "source_id": "ch-priminfo-mittlere-praemie",
@@ -31668,10 +28971,10 @@
       "documents": 1,
       "units": 4,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 3,
-      "unclassified": 4,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "dispositioned"
     },
     {
       "source_id": "ch-priminfo-sparen-grundversicherung",
@@ -31679,10 +28982,10 @@
       "documents": 1,
       "units": 17,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 17,
       "boilerplate": 3,
-      "unclassified": 17,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "dispositioned"
     },
     {
       "source_id": "ch-priminfo-sparen-selbstverantwortung",
@@ -31690,10 +28993,10 @@
       "documents": 1,
       "units": 4,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 3,
-      "unclassified": 4,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "dispositioned"
     },
     {
       "source_id": "ch-priminfo-verbilligung",
@@ -31701,10 +29004,10 @@
       "documents": 1,
       "units": 11,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 11,
       "boilerplate": 3,
-      "unclassified": 11,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "dispositioned"
     },
     {
       "source_id": "ch-priminfo-wechsel",
@@ -31712,10 +29015,10 @@
       "documents": 1,
       "units": 12,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 12,
       "boilerplate": 3,
-      "unclassified": 12,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "dispositioned"
     },
     {
       "source_id": "ch-priminfo-zusatzversicherungen",
@@ -31723,10 +29026,10 @@
       "documents": 1,
       "units": 4,
       "cited": 0,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 3,
-      "unclassified": 4,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "dispositioned"
     },
     {
       "source_id": "ch-seco-anmeldung-registrierung",

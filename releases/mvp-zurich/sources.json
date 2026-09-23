@@ -1,7 +1,7 @@
 {
   "schema_version": "source-catalog/v1",
   "artifact_id": "residence-sources-mvp-zurich",
-  "version": "draft-10",
+  "version": "draft-11",
   "knowledge_space_id": "hackathon",
   "title": "Residence permits, moving to Switzerland and naturalisation - MVP sources (federal and Canton Zurich)",
   "status": "SOURCES_ONLY",
@@ -279,7 +279,9 @@
       "ch-fedlex-dbg",
       "ch-fedlex-fza",
       "ch-fedlex-fzg",
+      "ch-fedlex-klv",
       "ch-fedlex-kvg",
+      "ch-fedlex-kvv",
       "ch-fedlex-or",
       "ch-fedlex-qstv",
       "ch-fedlex-rv-ahv",
@@ -560,6 +562,11 @@
       "ch-priminfo-verbilligung",
       "ch-priminfo-wechsel",
       "ch-priminfo-zusatzversicherungen"
+    ],
+    "health-insurance-law": [
+      "ch-fedlex-klv",
+      "ch-fedlex-kvg",
+      "ch-fedlex-kvv"
     ]
   },
   "build_notes": [
@@ -5875,6 +5882,66 @@
       },
       "scan_status": "ready",
       "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. Every priminfo page states that it is written in plain language (Leichte Sprache); D4 cites it as a summary beside the FOPH page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-kvv",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/1995/3867_3867_3867"
+        ],
+        "canonical_authority": "Fedlex, the Swiss federal law collection (Federal Chancellery)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Ordinance on Health Insurance (KVV), SR 832.102",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "health-insurance",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/de",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "The ordinance that carries the cost-sharing amounts of compulsory health insurance, so that the franchise, the retention, their caps and the hospital contribution can be served with the date from which they apply; the FOPH pages state the same figures undated. ELI resolved from the Fedlex SPARQL metadata service by SR number and requested on 23 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-fedlex-klv",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/1995/4964_4964_4964/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/1995/4964_4964_4964"
+        ],
+        "canonical_authority": "Fedlex, the Swiss federal law collection (Federal Chancellery)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Ordinance on Benefits in Compulsory Health Insurance (KLV), SR 832.112.31",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "health-insurance",
+        "legal-bases"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/1995/4964_4964_4964/de",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "The ordinance whose articles carry the exhaustive list of illnesses for which dental treatment is paid by compulsory health insurance, which the FOPH page names without reproducing. ELI resolved from the Fedlex SPARQL metadata service by SR number and requested on 23 September 2026 with a browser user agent, which answered 200."
     }
   ],
   "parallel_page_groups": [

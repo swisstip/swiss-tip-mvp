@@ -1,13 +1,13 @@
 {
-  "release_id": "mvp-zurich-2026-09-22-v7",
-  "built_at": "2026-09-23T06:35:15.089175+00:00",
+  "release_id": "mvp-zurich-2026-09-23-v13",
+  "built_at": "2026-09-23T08:31:20.924366+00:00",
   "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich\\text",
-  "concepts": 171,
-  "facts": 825,
-  "evidence": 1039,
-  "documents": 225,
+  "concepts": 183,
+  "facts": 923,
+  "evidence": 1148,
+  "documents": 238,
   "citation_outcomes": {
-    "same-snapshot": 1039
+    "same-snapshot": 1148
   },
   "dropped": [],
   "facts_resolved": [
@@ -7095,6 +7095,66 @@
       "basis": "Federal authority guidance"
     },
     {
+      "fact_id": "health-insurance-deadline-9",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 7461,
+          "end": 7562,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00080"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 5",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 5"
+    },
+    {
+      "fact_id": "health-insurance-deadline-10",
+      "citations": [
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 21271,
+          "end": 21550,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b00143"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 7",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 7"
+    },
+    {
+      "fact_id": "health-insurance-deadline-11",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 7273,
+          "end": 7459,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00079"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 5",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 5"
+    },
+    {
       "fact_id": "zh-health-insurance-exemption-1",
       "citations": [
         {
@@ -7321,9 +7381,23 @@
           "basis": "Federal authority guidance",
           "basis_rule": "default",
           "basis_warnings": []
+        },
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 148110,
+          "end": 148302,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b01126"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 65",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
         }
       ],
-      "basis": "Federal authority guidance"
+      "basis": "Federal act: KVG, SR 832.10, Art. 65"
     },
     {
       "fact_id": "premium-reduction-3",
@@ -22097,17 +22171,2083 @@
         }
       ],
       "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-1",
+      "citations": [
+        {
+          "document_id": "doc-7e46ce8537f76f1736a8",
+          "outcome": "same-snapshot",
+          "start": 379,
+          "end": 573,
+          "block_ids": [
+            "doc-7e46ce8537f76f1736a8:b00018"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-2",
+      "citations": [
+        {
+          "document_id": "doc-7e46ce8537f76f1736a8",
+          "outcome": "same-snapshot",
+          "start": 705,
+          "end": 915,
+          "block_ids": [
+            "doc-7e46ce8537f76f1736a8:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 240328,
+          "end": 240424,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b02447"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 103",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 103"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-3",
+      "citations": [
+        {
+          "document_id": "doc-7e46ce8537f76f1736a8",
+          "outcome": "same-snapshot",
+          "start": 917,
+          "end": 1099,
+          "block_ids": [
+            "doc-7e46ce8537f76f1736a8:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 240426,
+          "end": 240589,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b02448"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 103",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 103"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-4",
+      "citations": [
+        {
+          "document_id": "doc-7e46ce8537f76f1736a8",
+          "outcome": "same-snapshot",
+          "start": 1101,
+          "end": 1351,
+          "block_ids": [
+            "doc-7e46ce8537f76f1736a8:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 243032,
+          "end": 243143,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b02460"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 104",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 104"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-5",
+      "citations": [
+        {
+          "document_id": "doc-7e46ce8537f76f1736a8",
+          "outcome": "same-snapshot",
+          "start": 1404,
+          "end": 1676,
+          "block_ids": [
+            "doc-7e46ce8537f76f1736a8:b00025",
+            "doc-7e46ce8537f76f1736a8:b00026"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-6",
+      "citations": [
+        {
+          "document_id": "doc-7e46ce8537f76f1736a8",
+          "outcome": "same-snapshot",
+          "start": 1678,
+          "end": 2031,
+          "block_ids": [
+            "doc-7e46ce8537f76f1736a8:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-7",
+      "citations": [
+        {
+          "document_id": "doc-7e46ce8537f76f1736a8",
+          "outcome": "same-snapshot",
+          "start": 2033,
+          "end": 2126,
+          "block_ids": [
+            "doc-7e46ce8537f76f1736a8:b00028"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-8",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 1970,
+          "end": 2240,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00032"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-9",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 2288,
+          "end": 2748,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00034"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-10",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 2796,
+          "end": 3238,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00036"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 229870,
+          "end": 230412,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b02381"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 93",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 93"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-11",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 3747,
+          "end": 3979,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00039"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-12",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 4843,
+          "end": 5215,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00043",
+            "doc-c91304c05bdefe12e21b:b00044"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-13",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 5217,
+          "end": 5573,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00045",
+            "doc-c91304c05bdefe12e21b:b00046"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-14",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 6607,
+          "end": 7232,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00051",
+            "doc-c91304c05bdefe12e21b:b00052"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-15",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 7234,
+          "end": 7809,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00053",
+            "doc-c91304c05bdefe12e21b:b00054"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 231160,
+          "end": 231398,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b02387"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 94",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 94"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-16",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 7811,
+          "end": 8158,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00055",
+            "doc-c91304c05bdefe12e21b:b00056"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 230990,
+          "end": 231158,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b02386"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 94",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 231400,
+          "end": 231707,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b02388"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 94",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 94"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-17",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 8160,
+          "end": 8558,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00057",
+            "doc-c91304c05bdefe12e21b:b00058"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-18",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 8560,
+          "end": 8748,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00059",
+            "doc-c91304c05bdefe12e21b:b00060"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cost-sharing-19",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 8750,
+          "end": 9424,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00061",
+            "doc-c91304c05bdefe12e21b:b00062",
+            "doc-c91304c05bdefe12e21b:b00063"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-1",
+      "citations": [
+        {
+          "document_id": "doc-53179c28edeeaf2a28d0",
+          "outcome": "same-snapshot",
+          "start": 336,
+          "end": 573,
+          "block_ids": [
+            "doc-53179c28edeeaf2a28d0:b00018"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-2",
+      "citations": [
+        {
+          "document_id": "doc-53179c28edeeaf2a28d0",
+          "outcome": "same-snapshot",
+          "start": 575,
+          "end": 808,
+          "block_ids": [
+            "doc-53179c28edeeaf2a28d0:b00019"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-3",
+      "citations": [
+        {
+          "document_id": "doc-53179c28edeeaf2a28d0",
+          "outcome": "same-snapshot",
+          "start": 810,
+          "end": 1198,
+          "block_ids": [
+            "doc-53179c28edeeaf2a28d0:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-4",
+      "citations": [
+        {
+          "document_id": "doc-53179c28edeeaf2a28d0",
+          "outcome": "same-snapshot",
+          "start": 1200,
+          "end": 1345,
+          "block_ids": [
+            "doc-53179c28edeeaf2a28d0:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-5",
+      "citations": [
+        {
+          "document_id": "doc-53179c28edeeaf2a28d0",
+          "outcome": "same-snapshot",
+          "start": 1347,
+          "end": 1938,
+          "block_ids": [
+            "doc-53179c28edeeaf2a28d0:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-6",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 614,
+          "end": 782,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-7",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 784,
+          "end": 916,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-8",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 918,
+          "end": 1021,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-9",
+      "citations": [
+        {
+          "document_id": "doc-c91304c05bdefe12e21b",
+          "outcome": "same-snapshot",
+          "start": 1023,
+          "end": 1098,
+          "block_ids": [
+            "doc-c91304c05bdefe12e21b:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-10",
+      "citations": [
+        {
+          "document_id": "doc-d27fc848afce0db98807",
+          "outcome": "same-snapshot",
+          "start": 337,
+          "end": 457,
+          "block_ids": [
+            "doc-d27fc848afce0db98807:b00018"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-11",
+      "citations": [
+        {
+          "document_id": "doc-d27fc848afce0db98807",
+          "outcome": "same-snapshot",
+          "start": 614,
+          "end": 883,
+          "block_ids": [
+            "doc-d27fc848afce0db98807:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-12",
+      "citations": [
+        {
+          "document_id": "doc-d27fc848afce0db98807",
+          "outcome": "same-snapshot",
+          "start": 885,
+          "end": 1211,
+          "block_ids": [
+            "doc-d27fc848afce0db98807:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-13",
+      "citations": [
+        {
+          "document_id": "doc-d27fc848afce0db98807",
+          "outcome": "same-snapshot",
+          "start": 1996,
+          "end": 2434,
+          "block_ids": [
+            "doc-d27fc848afce0db98807:b00030"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-premium-regions-14",
+      "citations": [
+        {
+          "document_id": "doc-d27fc848afce0db98807",
+          "outcome": "same-snapshot",
+          "start": 2458,
+          "end": 2840,
+          "block_ids": [
+            "doc-d27fc848afce0db98807:b00032"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-models-1",
+      "citations": [
+        {
+          "document_id": "doc-28f3362905346a6a6da4",
+          "outcome": "same-snapshot",
+          "start": 389,
+          "end": 923,
+          "block_ids": [
+            "doc-28f3362905346a6a6da4:b00018",
+            "doc-28f3362905346a6a6da4:b00019"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-models-2",
+      "citations": [
+        {
+          "document_id": "doc-28f3362905346a6a6da4",
+          "outcome": "same-snapshot",
+          "start": 925,
+          "end": 1183,
+          "block_ids": [
+            "doc-28f3362905346a6a6da4:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-models-3",
+      "citations": [
+        {
+          "document_id": "doc-28f3362905346a6a6da4",
+          "outcome": "same-snapshot",
+          "start": 1185,
+          "end": 1605,
+          "block_ids": [
+            "doc-28f3362905346a6a6da4:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-models-4",
+      "citations": [
+        {
+          "document_id": "doc-28f3362905346a6a6da4",
+          "outcome": "same-snapshot",
+          "start": 1607,
+          "end": 1751,
+          "block_ids": [
+            "doc-28f3362905346a6a6da4:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-models-5",
+      "citations": [
+        {
+          "document_id": "doc-28f3362905346a6a6da4",
+          "outcome": "same-snapshot",
+          "start": 1753,
+          "end": 2444,
+          "block_ids": [
+            "doc-28f3362905346a6a6da4:b00023",
+            "doc-28f3362905346a6a6da4:b00024"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-models-6",
+      "citations": [
+        {
+          "document_id": "doc-28f3362905346a6a6da4",
+          "outcome": "same-snapshot",
+          "start": 2446,
+          "end": 2767,
+          "block_ids": [
+            "doc-28f3362905346a6a6da4:b00025",
+            "doc-28f3362905346a6a6da4:b00026"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-models-7",
+      "citations": [
+        {
+          "document_id": "doc-28f3362905346a6a6da4",
+          "outcome": "same-snapshot",
+          "start": 2769,
+          "end": 2943,
+          "block_ids": [
+            "doc-28f3362905346a6a6da4:b00027",
+            "doc-28f3362905346a6a6da4:b00028"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-models-8",
+      "citations": [
+        {
+          "document_id": "doc-28f3362905346a6a6da4",
+          "outcome": "same-snapshot",
+          "start": 2945,
+          "end": 3096,
+          "block_ids": [
+            "doc-28f3362905346a6a6da4:b00029",
+            "doc-28f3362905346a6a6da4:b00030"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-models-9",
+      "citations": [
+        {
+          "document_id": "doc-28f3362905346a6a6da4",
+          "outcome": "same-snapshot",
+          "start": 3098,
+          "end": 3437,
+          "block_ids": [
+            "doc-28f3362905346a6a6da4:b00031",
+            "doc-28f3362905346a6a6da4:b00032"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-models-10",
+      "citations": [
+        {
+          "document_id": "doc-28f3362905346a6a6da4",
+          "outcome": "same-snapshot",
+          "start": 3439,
+          "end": 3695,
+          "block_ids": [
+            "doc-28f3362905346a6a6da4:b00033",
+            "doc-28f3362905346a6a6da4:b00034"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-models-11",
+      "citations": [
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 237122,
+          "end": 237341,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b02427"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 100",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 100"
+    },
+    {
+      "fact_id": "health-insurance-models-12",
+      "citations": [
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 237343,
+          "end": 237561,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b02428"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 100",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 237563,
+          "end": 237690,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b02429"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 100",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 100"
+    },
+    {
+      "fact_id": "health-insurance-unpaid-premiums-1",
+      "citations": [
+        {
+          "document_id": "doc-0b415d97d57dc63b4f38",
+          "outcome": "same-snapshot",
+          "start": 577,
+          "end": 863,
+          "block_ids": [
+            "doc-0b415d97d57dc63b4f38:b00020",
+            "doc-0b415d97d57dc63b4f38:b00021",
+            "doc-0b415d97d57dc63b4f38:b00022",
+            "doc-0b415d97d57dc63b4f38:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-unpaid-premiums-2",
+      "citations": [
+        {
+          "document_id": "doc-0b415d97d57dc63b4f38",
+          "outcome": "same-snapshot",
+          "start": 980,
+          "end": 1117,
+          "block_ids": [
+            "doc-0b415d97d57dc63b4f38:b00025"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-unpaid-premiums-3",
+      "citations": [
+        {
+          "document_id": "doc-0b415d97d57dc63b4f38",
+          "outcome": "same-snapshot",
+          "start": 1220,
+          "end": 1505,
+          "block_ids": [
+            "doc-0b415d97d57dc63b4f38:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-unpaid-premiums-4",
+      "citations": [
+        {
+          "document_id": "doc-0b415d97d57dc63b4f38",
+          "outcome": "same-snapshot",
+          "start": 1507,
+          "end": 1681,
+          "block_ids": [
+            "doc-0b415d97d57dc63b4f38:b00028"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-unpaid-premiums-5",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 142165,
+          "end": 142615,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b01104"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10"
+    },
+    {
+      "fact_id": "health-insurance-benefits-1",
+      "citations": [
+        {
+          "document_id": "doc-b78c155affebebdb3ac3",
+          "outcome": "same-snapshot",
+          "start": 605,
+          "end": 1178,
+          "block_ids": [
+            "doc-b78c155affebebdb3ac3:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-benefits-2",
+      "citations": [
+        {
+          "document_id": "doc-b78c155affebebdb3ac3",
+          "outcome": "same-snapshot",
+          "start": 1180,
+          "end": 1518,
+          "block_ids": [
+            "doc-b78c155affebebdb3ac3:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-benefits-3",
+      "citations": [
+        {
+          "document_id": "doc-b78c155affebebdb3ac3",
+          "outcome": "same-snapshot",
+          "start": 1520,
+          "end": 1830,
+          "block_ids": [
+            "doc-b78c155affebebdb3ac3:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-benefits-4",
+      "citations": [
+        {
+          "document_id": "doc-b78c155affebebdb3ac3",
+          "outcome": "same-snapshot",
+          "start": 1832,
+          "end": 2059,
+          "block_ids": [
+            "doc-b78c155affebebdb3ac3:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-benefits-5",
+      "citations": [
+        {
+          "document_id": "doc-b78c155affebebdb3ac3",
+          "outcome": "same-snapshot",
+          "start": 12825,
+          "end": 13588,
+          "block_ids": [
+            "doc-b78c155affebebdb3ac3:b00071",
+            "doc-b78c155affebebdb3ac3:b00072",
+            "doc-b78c155affebebdb3ac3:b00073"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-e4821453f6936b7c292f",
+          "outcome": "same-snapshot",
+          "start": 85120,
+          "end": 85503,
+          "block_ids": [
+            "doc-e4821453f6936b7c292f:b00739"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KLV, SR 832.112.31, Art. 17",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/4964_4964_4964/",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-e4821453f6936b7c292f",
+          "outcome": "same-snapshot",
+          "start": 86664,
+          "end": 86899,
+          "block_ids": [
+            "doc-e4821453f6936b7c292f:b00790"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KLV, SR 832.112.31, Art. 18",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/4964_4964_4964/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KLV, SR 832.112.31, Art. 17"
+    },
+    {
+      "fact_id": "health-insurance-supplementary-1",
+      "citations": [
+        {
+          "document_id": "doc-b78c155affebebdb3ac3",
+          "outcome": "same-snapshot",
+          "start": 11650,
+          "end": 12496,
+          "block_ids": [
+            "doc-b78c155affebebdb3ac3:b00067",
+            "doc-b78c155affebebdb3ac3:b00068"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-supplementary-2",
+      "citations": [
+        {
+          "document_id": "doc-b78c155affebebdb3ac3",
+          "outcome": "same-snapshot",
+          "start": 12498,
+          "end": 12797,
+          "block_ids": [
+            "doc-b78c155affebebdb3ac3:b00069"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-change-1",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 10644,
+          "end": 10789,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00102"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 7",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 7"
+    },
+    {
+      "fact_id": "health-insurance-change-2",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 10791,
+          "end": 11236,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00103"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 7",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 7"
+    },
+    {
+      "fact_id": "health-insurance-change-3",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 11238,
+          "end": 11480,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00104"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 7",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 7"
+    },
+    {
+      "fact_id": "health-insurance-change-4",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 11707,
+          "end": 12242,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00106"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 7",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 7"
+    },
+    {
+      "fact_id": "health-insurance-change-5",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 12244,
+          "end": 12433,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00107"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 7",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 7"
+    },
+    {
+      "fact_id": "health-insurance-change-6",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 12435,
+          "end": 12652,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00108"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 7",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 7"
+    },
+    {
+      "fact_id": "health-insurance-cross-border-commuter-1",
+      "citations": [
+        {
+          "document_id": "doc-73316a716c25d7263406",
+          "outcome": "same-snapshot",
+          "start": 1032,
+          "end": 1391,
+          "block_ids": [
+            "doc-73316a716c25d7263406:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cross-border-commuter-2",
+      "citations": [
+        {
+          "document_id": "doc-73316a716c25d7263406",
+          "outcome": "same-snapshot",
+          "start": 2077,
+          "end": 2754,
+          "block_ids": [
+            "doc-73316a716c25d7263406:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cross-border-commuter-3",
+      "citations": [
+        {
+          "document_id": "doc-73316a716c25d7263406",
+          "outcome": "same-snapshot",
+          "start": 2077,
+          "end": 2754,
+          "block_ids": [
+            "doc-73316a716c25d7263406:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cross-border-commuter-4",
+      "citations": [
+        {
+          "document_id": "doc-73316a716c25d7263406",
+          "outcome": "same-snapshot",
+          "start": 2756,
+          "end": 3523,
+          "block_ids": [
+            "doc-73316a716c25d7263406:b00028"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cross-border-commuter-5",
+      "citations": [
+        {
+          "document_id": "doc-73316a716c25d7263406",
+          "outcome": "same-snapshot",
+          "start": 3584,
+          "end": 4255,
+          "block_ids": [
+            "doc-73316a716c25d7263406:b00030"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cross-border-commuter-6",
+      "citations": [
+        {
+          "document_id": "doc-73316a716c25d7263406",
+          "outcome": "same-snapshot",
+          "start": 3584,
+          "end": 4255,
+          "block_ids": [
+            "doc-73316a716c25d7263406:b00030"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-cross-border-commuter-7",
+      "citations": [
+        {
+          "document_id": "doc-73316a716c25d7263406",
+          "outcome": "same-snapshot",
+          "start": 5379,
+          "end": 5632,
+          "block_ids": [
+            "doc-73316a716c25d7263406:b00036"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-abroad-1",
+      "citations": [
+        {
+          "document_id": "doc-a2ba95d86bd9041085b6",
+          "outcome": "same-snapshot",
+          "start": 342,
+          "end": 727,
+          "block_ids": [
+            "doc-a2ba95d86bd9041085b6:b00018",
+            "doc-a2ba95d86bd9041085b6:b00019",
+            "doc-a2ba95d86bd9041085b6:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-abroad-2",
+      "citations": [
+        {
+          "document_id": "doc-a2ba95d86bd9041085b6",
+          "outcome": "same-snapshot",
+          "start": 479,
+          "end": 727,
+          "block_ids": [
+            "doc-a2ba95d86bd9041085b6:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-abroad-3",
+      "citations": [
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 66749,
+          "end": 67154,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b00581"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 36",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 36"
+    },
+    {
+      "fact_id": "health-insurance-abroad-4",
+      "citations": [
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 66483,
+          "end": 66747,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b00580"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 36",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 36"
+    },
+    {
+      "fact_id": "health-insurance-abroad-5",
+      "citations": [
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 67156,
+          "end": 67453,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b00582"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 36",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 36"
+    },
+    {
+      "fact_id": "health-insurance-abroad-6",
+      "citations": [
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 67455,
+          "end": 68425,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b00583"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102, Art. 36",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102, Art. 36"
+    },
+    {
+      "fact_id": "health-insurance-insured-abroad-1",
+      "citations": [
+        {
+          "document_id": "doc-d6ba6d241671ed943a29",
+          "outcome": "same-snapshot",
+          "start": 363,
+          "end": 708,
+          "block_ids": [
+            "doc-d6ba6d241671ed943a29:b00018"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-insured-abroad-2",
+      "citations": [
+        {
+          "document_id": "doc-d6ba6d241671ed943a29",
+          "outcome": "same-snapshot",
+          "start": 730,
+          "end": 1235,
+          "block_ids": [
+            "doc-d6ba6d241671ed943a29:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-insured-abroad-3",
+      "citations": [
+        {
+          "document_id": "doc-d6ba6d241671ed943a29",
+          "outcome": "same-snapshot",
+          "start": 730,
+          "end": 1235,
+          "block_ids": [
+            "doc-d6ba6d241671ed943a29:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-insured-abroad-4",
+      "citations": [
+        {
+          "document_id": "doc-d6ba6d241671ed943a29",
+          "outcome": "same-snapshot",
+          "start": 1276,
+          "end": 2185,
+          "block_ids": [
+            "doc-d6ba6d241671ed943a29:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-insured-abroad-5",
+      "citations": [
+        {
+          "document_id": "doc-d6ba6d241671ed943a29",
+          "outcome": "same-snapshot",
+          "start": 1276,
+          "end": 2185,
+          "block_ids": [
+            "doc-d6ba6d241671ed943a29:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-insured-abroad-6",
+      "citations": [
+        {
+          "document_id": "doc-d6ba6d241671ed943a29",
+          "outcome": "same-snapshot",
+          "start": 1276,
+          "end": 2185,
+          "block_ids": [
+            "doc-d6ba6d241671ed943a29:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-insured-abroad-7",
+      "citations": [
+        {
+          "document_id": "doc-fcdb3a04d407cd5a1875",
+          "outcome": "same-snapshot",
+          "start": 1339,
+          "end": 1663,
+          "block_ids": [
+            "doc-fcdb3a04d407cd5a1875:b00025",
+            "doc-fcdb3a04d407cd5a1875:b00026"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-insured-abroad-8",
+      "citations": [
+        {
+          "document_id": "doc-fcdb3a04d407cd5a1875",
+          "outcome": "same-snapshot",
+          "start": 1416,
+          "end": 1663,
+          "block_ids": [
+            "doc-fcdb3a04d407cd5a1875:b00026"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bag",
+          "basis": "Federal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "health-insurance-billing-1",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 62544,
+          "end": 62931,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00529"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 42",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 42"
+    },
+    {
+      "fact_id": "health-insurance-billing-2",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 62933,
+          "end": 63203,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00530"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 42",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 42"
+    },
+    {
+      "fact_id": "health-insurance-billing-3",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 63205,
+          "end": 63964,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00531"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 42",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 42"
+    },
+    {
+      "fact_id": "health-insurance-billing-4",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 64346,
+          "end": 64792,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00533"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 42",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 42"
+    },
+    {
+      "fact_id": "health-insurance-billing-5",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 64874,
+          "end": 65126,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00535"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 42",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 42"
+    },
+    {
+      "fact_id": "health-insurance-billing-6",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 65128,
+          "end": 65242,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00536"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 42",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 42"
+    },
+    {
+      "fact_id": "health-insurance-service-suspension-1",
+      "citations": [
+        {
+          "document_id": "doc-8486b6ce38b9f3f0c014",
+          "outcome": "same-snapshot",
+          "start": 3663,
+          "end": 3897,
+          "block_ids": [
+            "doc-8486b6ce38b9f3f0c014:b00055"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal act: KVG, SR 832.10, Art. 3",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal act: KVG, SR 832.10, Art. 3"
+    },
+    {
+      "fact_id": "health-insurance-service-suspension-2",
+      "citations": [
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 31614,
+          "end": 31757,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b00195"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102"
+    },
+    {
+      "fact_id": "health-insurance-service-suspension-3",
+      "citations": [
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 31759,
+          "end": 32130,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b00196"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102"
+    },
+    {
+      "fact_id": "health-insurance-service-suspension-4",
+      "citations": [
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 32532,
+          "end": 32668,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b00199"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102"
+    },
+    {
+      "fact_id": "health-insurance-service-suspension-5",
+      "citations": [
+        {
+          "document_id": "doc-dd924487a604f77a494b",
+          "outcome": "same-snapshot",
+          "start": 32776,
+          "end": 33002,
+          "block_ids": [
+            "doc-dd924487a604f77a494b:b00201"
+          ],
+          "warnings": [],
+          "institution_id": "ch-fedlex",
+          "basis": "Federal ordinance: KVV, SR 832.102",
+          "basis_rule": "page rule www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal ordinance: KVV, SR 832.102"
     }
   ],
-  "source_terms": 1372,
-  "questions": 398,
+  "source_terms": 1486,
+  "questions": 422,
   "institutions": [
     {
       "institution_id": "ch-bag",
       "name": "Federal Office of Public Health FOPH",
       "level": "federal",
       "jurisdiction": "CH",
-      "documents": 8,
+      "documents": 19,
       "from_catalogue": false
     },
     {
@@ -22163,7 +24303,7 @@
       "name": "Fedlex, the Swiss federal law collection (Federal Chancellery)",
       "level": "federal",
       "jurisdiction": "CH",
-      "documents": 15,
+      "documents": 17,
       "from_catalogue": false
     },
     {
@@ -22394,6 +24534,12 @@
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/integration/"
     },
     {
+      "document_id": "doc-0b415d97d57dc63b4f38",
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienausstaende",
+      "institution_id": "ch-bag",
+      "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
       "document_id": "doc-0f8403619c62603b1a4e",
       "source_url": "https://www.fedlex.admin.ch/eli/cc/2018/274/de",
       "institution_id": "ch-fedlex",
@@ -22548,6 +24694,12 @@
       "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-l-bewilligung-beantragen.html",
       "institution_id": "zh-migrationsamt",
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
+      "document_id": "doc-28f3362905346a6a6da4",
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherungsmodelle-mit-eingeschraenkter-wahl-der-leistungserbringer",
+      "institution_id": "ch-bag",
+      "institution_rule": "registry rule www.bag.admin.ch"
     },
     {
       "document_id": "doc-2b57b2ce38c2a01c369a",
@@ -22784,6 +24936,12 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-53179c28edeeaf2a28d0",
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienregionen",
+      "institution_id": "ch-bag",
+      "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
       "document_id": "doc-5386be4702ee65f46a87",
       "source_url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html",
       "institution_id": "zh-fachstelle-integration",
@@ -22976,6 +25134,12 @@
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/einbuergerung"
     },
     {
+      "document_id": "doc-73316a716c25d7263406",
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-grenzgaengerinnen-und-grenzgaenger-in-der-schweiz",
+      "institution_id": "ch-bag",
+      "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
       "document_id": "doc-737c6bb8c76b847b0b77",
       "source_url": "https://www.fedlex.admin.ch/eli/cc/2018/493/de",
       "institution_id": "ch-fedlex",
@@ -23022,6 +25186,12 @@
       "source_url": "https://www.stadt-zuerich.ch/de/bildung/volksschule/schulferien.html",
       "institution_id": "zh-261-schulamt",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/bildung/volksschule"
+    },
+    {
+      "document_id": "doc-7e46ce8537f76f1736a8",
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-kostenbeteiligung-fuer-in-der-schweiz-wohnhafte-versicherte",
+      "institution_id": "ch-bag",
+      "institution_rule": "registry rule www.bag.admin.ch"
     },
     {
       "document_id": "doc-7fb93c70047754936bc4",
@@ -23198,6 +25368,12 @@
       "institution_rule": "registry rule www.bsv.admin.ch"
     },
     {
+      "document_id": "doc-a2ba95d86bd9041085b6",
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-leistungen-im-ausland",
+      "institution_id": "ch-bag",
+      "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
       "document_id": "doc-a379c01c8039df677bd9",
       "source_url": "https://www.zh.ch/de/direktion-der-justiz-und-des-innern/generalsekretariat/formulare-mietwesen.html",
       "institution_id": "zh-justiz-mietwesen",
@@ -23294,6 +25470,12 @@
       "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
+      "document_id": "doc-b78c155affebebdb3ac3",
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-leistungen-und-tarife",
+      "institution_id": "ch-bag",
+      "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
       "document_id": "doc-b84c4109386ec6f24386",
       "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-b-oder-c-bewilligung-beantragen.html",
       "institution_id": "zh-migrationsamt",
@@ -23366,6 +25548,12 @@
       "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
+      "document_id": "doc-c91304c05bdefe12e21b",
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-praemien-und-kostenbeteiligung",
+      "institution_id": "ch-bag",
+      "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
       "document_id": "doc-cb064208c75c37b62929",
       "source_url": "https://faq.bsv.admin.ch/de/3-saeule/welche-beitraege-kann-ich-die-saeule-3a-einzahlen",
       "institution_id": "ch-bsv",
@@ -23426,6 +25614,12 @@
       "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
+      "document_id": "doc-d27fc848afce0db98807",
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienvergleich",
+      "institution_id": "ch-bag",
+      "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
       "document_id": "doc-d2fe6ec4fe43d9f60b68",
       "source_url": "https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/wo-und-wann-entsorgen/abfuhr-hauskehricht.html",
       "institution_id": "zh-261-erz",
@@ -23440,6 +25634,12 @@
     {
       "document_id": "doc-d43ca41415a4f2f2c9c3",
       "source_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienverbilligung",
+      "institution_id": "ch-bag",
+      "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
+      "document_id": "doc-d6ba6d241671ed943a29",
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-praemien-und-praemienverbilligung-eueftauk",
       "institution_id": "ch-bag",
       "institution_rule": "registry rule www.bag.admin.ch"
     },
@@ -23498,6 +25698,12 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/mobilitaet/parkieren"
     },
     {
+      "document_id": "doc-dd924487a604f77a494b",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/de",
+      "institution_id": "ch-fedlex",
+      "institution_rule": "registry rule www.fedlex.admin.ch"
+    },
+    {
       "document_id": "doc-de41e12088fe6ff89f49",
       "source_url": "https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/wo-und-wann-entsorgen/kunststoffsammlung.html",
       "institution_id": "zh-261-erz",
@@ -23538,6 +25744,12 @@
       "source_url": "https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/telefon.html",
       "institution_id": "zh-sva",
       "institution_rule": "registry rule svazurich.ch"
+    },
+    {
+      "document_id": "doc-e4821453f6936b7c292f",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/1995/4964_4964_4964/de",
+      "institution_id": "ch-fedlex",
+      "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
       "document_id": "doc-e494fce7ee1b673e639f",
@@ -23702,6 +25914,12 @@
       "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
+      "document_id": "doc-fcdb3a04d407cd5a1875",
+      "source_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherte-die-im-ausland-wohnen",
+      "institution_id": "ch-bag",
+      "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
       "document_id": "doc-fce27b72dc3a3a90a70f",
       "source_url": "https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/quellensteuer-tarife.html",
       "institution_id": "zh-steueramt",
@@ -23715,9 +25933,9 @@
     }
   ],
   "basis_kinds": {
-    "guidance": 588,
-    "act": 49,
-    "ordinance": 17,
+    "guidance": 651,
+    "act": 66,
+    "ordinance": 35,
     "summary": 50,
     "treaty": 37,
     "directory": 77,
