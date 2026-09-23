@@ -2718,7 +2718,7 @@ freshness window (`STALE`) by the round-trip check.
 | X5 | A fact ID passed to `get_evidence` | The fact's evidence is returned; an unknown ID is an `INVALID_ARGUMENT` error |
 | X6 | Malformed request (unknown field, empty list, six evidence IDs) | `INVALID_ARGUMENT` with the field path; nothing is served |
 | X7 | Unknown release ID | `RELEASE_UNAVAILABLE` naming the active release |
-| X8 | Coverage root size | Under 6 KB, so one call suffices to refuse an outside question |
+| X8 | Coverage root size | Under 8.5 KB, so one call suffices to refuse an outside question. Raised from 6 KB to 8 KB on 23 September 2026, when the two committed bounds were found drifted apart at 6,144 and 8,000 and the four waves of 22-23 September had taken the root to 7,640 bytes; raised again to 8.5 KB the same day, when disclosing registration coverage for all 26 cantons in the manifest took the root to 8,317 |
 
 ## Execution records
 

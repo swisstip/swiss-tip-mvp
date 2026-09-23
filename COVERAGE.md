@@ -10,14 +10,14 @@ submission is `mvp-zurich`; `mvp-wallisellen` was a proof of concept that a
 second, municipal pack can be built with the same tooling, is frozen at its
 attested release and is not extended, tested or documented further.
 
-**Release:** `mvp-zurich-2026-09-23-v19` (pack `mvp-zurich`, KB1)<br>
-**Content digest:** `08032dfd1977ca90009f3cd622535ce878fe8d272e36a4a835746a746893ce80`<br>
+**Release:** `mvp-zurich-2026-09-23-v27` (pack `mvp-zurich`, KB1)<br>
+**Content digest:** `d3e5c31a0715bd41647378f829b93fb297eccef16f98bbf1fd59161e6566c94c`<br>
 **Snapshot date:** 23 September 2026, the latest access date of a cited page
-(2 of the 272 were saved on 23 September, 67 on 22 September, 10 on 19
+(64 of the 334 were saved on 23 September, 67 on 22 September, 10 on 19
 September, 25 on 18 September, 47 on 17 September, 49 on 15 September, 66 on
 11 September and 6 on 10 or 14 September); maximum age 60 days, stale from
 22 November 2026<br>
-**Contents:** 20 topics, 206 concepts, 1,144 facts, 1,375 evidence excerpts
+**Contents:** 20 topics, 211 concepts, 1,268 facts, 1,526 evidence excerpts
 (1,261 German, 114 English), 272 cited documents<br>
 **Review:** all 1,144 facts are `human-reviewed` by one named reviewer, confirmed
 in the console: the 104 of the residence and contacts topics on 14 September
@@ -61,11 +61,13 @@ municipalities of the Federal Statistical Office's register of
 municipalities (snapshot of 18 September 2026), with 115 other-language
 names on 50 of them (see "Jurisdictions and languages")<br>
 **Readiness:** the release is **attested**. `readiness.json` names
-`mvp-zurich-2026-09-23-v19`, attested on 23 September 2026 by the reviewer who
-confirmed its 1,144 facts, recording the content digest above and the digest of
-the acceptance suite. It supersedes `mvp-zurich-2026-09-22-v7`, so the server
-with `--require-ready` and the pack image now serve the customs, health
-insurance, work and unemployment, and AHV waves; stale from 22 November 2026. No
+`mvp-zurich-2026-09-23-v27`, attested on 23 September 2026 by the reviewer who
+confirmed its 1,268 facts, recording the content digest above and the digest of
+the acceptance suite; all six readiness gates passed. It supersedes
+`mvp-zurich-2026-09-23-v19`, so the server with `--require-ready` and the pack
+image now serve registration on arrival in all 26 cantons as well as the
+customs, health insurance, work and unemployment, and AHV waves; stale from
+22 November 2026. No
 graded
 live-caller session covers the `fza-*` concepts, the office contacts, the
 daily-life topics, the cross-jurisdiction cases, entry and visas, voting
@@ -119,17 +121,26 @@ told to say so and not to answer from general knowledge.
 | Level | Published values |
 | --- | --- |
 | Federal | `CH` |
-| Cantonal | all 26 cantons (`CH-AG` to `CH-ZH`), of which only `CH-ZH` carries procedures beyond the migration-office contact |
+| Cantonal | all 26 cantons (`CH-AG` to `CH-ZH`), each carrying the migration-office contact and registration on arrival; only `CH-ZH` carries procedures beyond those |
 | Federal, for daily life | `CH` also carries the radio and television fee (SERAFE) |
 | Municipal | `CH-ZH-261` (City of Zurich) |
 
-The residence topic's cantonal and municipal procedures, and every cantonal
-fact of social insurance, unemployment, family allowances, tax at source,
-driving licence, health insurance, naturalisation, voting rights and the
-rental form, every office contact and the cantonal facts of dogs and
-vehicles, are those of Zurich. For another canton `resolve` serves the
-federal facts of these topics and answers the Zurich concepts
-`OUT_OF_COVERAGE`. The Canton of Zurich concepts serve every municipality of
+Every canton carries two things of its own: its migration-office contact,
+and how a person registers on arrival - the period, the office that receives
+the report, how the permit is applied for, what a change of canton requires
+and any online channel (the five `cantonal-*` registration concepts below).
+Everything else cantonal is Zurich's: every cantonal fact of social
+insurance, unemployment, family allowances, tax at source, driving licence,
+health insurance, naturalisation, voting rights and the rental form, every
+office contact and the cantonal facts of dogs and vehicles, and the
+residence topic's remaining cantonal and municipal procedures. For another
+canton `resolve` serves the federal facts of these topics and answers the
+Zurich concepts `OUT_OF_COVERAGE`.
+
+Zurich itself is **not** served by the five `cantonal-*` registration
+concepts: its rule lives in its own, fuller concepts, so resolving a
+`cantonal-*` concept for Zurich returns `OUT_OF_COVERAGE` with
+`jurisdiction_not_covered` rather than another canton's period. The Canton of Zurich concepts serve every municipality of
 the canton; the City of Zurich concepts (naturalisation, marriage, departure, office
 contacts and 16 of the 18 daily-life concepts) serve only `CH-ZH-261`. Facts served for a
 place whose own cantonal or municipal level the topic publishes for Zurich
@@ -284,6 +295,36 @@ the EU member states, and the EFTA Convention is not in the release.
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
 | `cantonal-migration-contact` | Cantonal migration-office contact | all 26 cantons | 26 |
+
+### Registering on arrival in any canton (`residence`) - 5 concepts
+
+One fact per canton per concept, from the canton's own pages and law, for
+the 25 cantons outside Zurich. Cover is uneven because the cantons publish
+unevenly: every one states a period, all but Appenzell Innerrhoden name the
+office, and fewer describe the permit application, the change of canton or
+an online channel. A concept with no fact for a canton means that canton was
+not found to publish it, not that no rule exists.
+
+| Concept | Subject | Jurisdiction | Facts |
+| --- | --- | --- | ---: |
+| `cantonal-registration-deadline` | The period for reporting arrival, and the duty it attaches to | 25 cantons | 39 |
+| `cantonal-registration-route` | Which office receives the report, and in what order | 24 cantons | 35 |
+| `cantonal-permit-application` | How and where the permit is applied for | 15 cantons | 19 |
+| `cantonal-change-of-canton` | What a move from another canton requires | 17 cantons | 18 |
+| `cantonal-online-services` | A named online channel for these duties | 10 cantons | 13 |
+
+Most cantons give **fourteen days**. Two do not: **Ticino and Vaud give
+eight**, and Ticino additionally requires a foreign national settling there
+to notify both the commune's residents' office and the regional foreigners'
+service within them. Schwyz gives an EU or EFTA national fourteen days if
+they came to settle or to work and three months otherwise, and gives
+third-country nationals no day count at all - an event, not a period. Where
+a canton's sources disagree, both are served, each scoped to what its source
+covers.
+
+Most cantons state the period only in their law, so those facts cite a
+cantonal statute rather than a service page; the basis is recorded on every
+excerpt. See LIMITATIONS.md for what that costs.
 
 ### Zurich office contacts (`offices`) - 9 concepts
 

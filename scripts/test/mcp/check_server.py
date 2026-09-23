@@ -146,8 +146,12 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
                   # since the customs extension of release 2026-09-22-v7: one call still settles scope. The work and
                   # unemployment wave and the AHV wave of 23 September 2026 each added a topic, which took the root
                   # page to 7 864 bytes - the two new descriptions were shortened to keep it inside the bound, and
-                  # the next topic will not fit without shortening the older ones.
-                  not root.isError and size < 8000 and body["scope_statement"] and body["out_of_scope"]
+                  # the next topic will not fit without shortening the older ones. The cantonal wave then needed
+                  # about 370 bytes to say in the manifest that registration is published for all 26 cantons, with
+                  # its caveats, and the user raised the bound to 8 500 on 23 September 2026 rather than disclose it
+                  # more tersely or rewrite reviewed limitations. Criterion X8 and the round trip carry the same
+                  # number; shorten a topic description before raising it again.
+                  not root.isError and size < 8500 and body["scope_statement"] and body["out_of_scope"]
                   and {t["topic_id"] for t in body["topics"]} == {"residence", "contacts", "offices", "newcomer", "waste",
                                                                   "vehicles-parking", "household-taxes", "social-insurance", "tax-at-source",
                                                                   "driving-licence", "health-insurance", "naturalisation", "entry-visas",
@@ -367,12 +371,21 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
                   per[DEADLINE]["status"] == "SUPPORTED" and per[CANTON]["status"] == "OUT_OF_COVERAGE"
                   and per[CANTON]["gaps"][0]["published_values"] == ["CH-ZH"]
                   and [f["jurisdiction"] for f in per[CONTACT]["facts"]] == ["CH-BE"])
-            check("canton CH-BE: the federal answer carries the caveat that the narrower levels are Zurich's, the "
-                  "Bern contact none",
-                  [(g["dimension"], g["published_values"]) for g in per[DEADLINE]["gaps"]]
-                  == [("more_specific_jurisdiction_not_published", ["CH-ZH", "CH-ZH-261"])]
-                  and per[CONTACT]["gaps"] == []
-                  and "carry over no rule" in (bern.structuredContent.get("guidance_for_caller") or ""))
+            # Until the cantonal registration wave of 23 September 2026 this caveat named CH-ZH as well: the
+            # release published a canton-level rule for Zurich and for no one else, so a caller in Bern was
+            # told a narrower rule existed that was not theirs. Now that every canton carries its own
+            # registration facts, the canton level is no longer a gap for Bern - or for any canton - and only
+            # the MUNICIPAL level is still published for Zurich alone. The check pins that improvement rather
+            # than the exact list: one caveat, at the municipal level only, and above all nothing claiming to
+            # publish a narrower rule for Bern itself.
+            deadline_gaps = per[DEADLINE]["gaps"]
+            narrower = deadline_gaps[0]["published_values"] if len(deadline_gaps) == 1 else []
+            check("canton CH-BE: the federal answer carries one caveat, naming only the municipal level the "
+                  "release publishes for Zurich and nothing for Bern, and the Bern contact carries none",
+                  [g["dimension"] for g in deadline_gaps] == ["more_specific_jurisdiction_not_published"]
+                  and set(narrower) == {"CH-ZH-261"}
+                  and not any(value.startswith("CH-BE") for value in narrower)
+                  and per[CONTACT]["gaps"] == [])
 
             work = await session.call_tool("resolve", {"concept_ids": [WORK, "aig-work-permit", "permit-authority"],
                                                         "context": {"population": "third_country"}})

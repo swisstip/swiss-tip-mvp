@@ -1,6 +1,6 @@
 # MVP Zurich source inventory: moving to Switzerland and naturalisation
 
-**Last update:** 22 September 2026
+**Last update:** 23 September 2026
 
 The 35 residence sources of the rehearsal are registry seeds in `sources.json`
 only; their in-scope pages came from the imported crawl of 11 September 2026.
@@ -20,8 +20,10 @@ on purpose. The English versions of 19 September are listed in their own
 section. The extension of 22 September 2026 adds work and unemployment,
 customs, the AHV and the pillars, and basic health insurance (`work`,
 `customs`, `ahv` and `health-insurance-extension` scan sets), and repoints
-the two SECO pages that arbeit.swiss moved. Every page is German unless the
-link says otherwise.
+the two SECO pages that arbeit.swiss moved. The extension of 23 September 2026 adds the registration route of all 26 cantons
+(`cantons` scan set), in German, French and Italian, with consolidated cantonal
+statutes where a canton publishes the deadline nowhere else. Every page is German
+unless the link says otherwise.
 
 ## Naturalisation
 
@@ -534,3 +536,177 @@ Informationsstelle AHV/IV, the AHV and the pillars:
 - [AHV/IV information service (en): Health insurance (KV) in the social insurance system](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Health-insurance-KV)
 - [AHV/IV information service (en): Occupational pensions (BV), the second pillar](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Occupational-benefit-plan-BV)
 - [AHV/IV information service (en): Unemployment insurance (ALV) in the social insurance system](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Unemployment-insurance-ALV)
+
+## Registration in all 26 cantons
+
+Added on 23 September 2026 (`cantons` scan set). These sources carry one subject at national
+breadth - how a person arriving from abroad registers, and by when - for the twenty-five cantons
+other than Zurich, whose own pages already serve it. Every other topic of the pack stays federal
+plus Canton and City of Zurich.
+
+Three things about this section are unlike the rest of the inventory.
+
+**Twenty statutes are catalogued beside the service pages**, because nine cantons - Neuchatel,
+Ticino, Glarus, St. Gallen, Aargau, Appenzell Ausserrhoden, Lucerne, Obwalden and Uri - publish the
+registration deadline only in cantonal law and on no page a newcomer would open. Each statute is
+the consolidated PDF that the collection's own interface names for the current version, so a
+catalogued URL cannot be the superseded text that search engines rank; several of these collections
+also serve repealed versions of the same number, and in one canton the repealed text gives a
+different period.
+
+**Two cantons are served from service pages alone.** Vaud's consolidated statute is not reachable -
+the BLV portal replaced RSV, the old host no longer resolves, and no machine-readable path was
+found. Jura's collection addresses documents with a query string, which a source URL may not carry;
+its own Controle des habitants page states the period, so only the corroboration is lost.
+
+**These are PDFs and cantonal content-management systems**, not the federal sites the rest of the
+pack reads. Every link below was fetched with the crawler's user agent on 23 September 2026 and
+checked for the period it claims, because on these sites a 200 is not evidence that anything was
+served: several cantonal pages answer 200 with a body that carries no public text, and the law
+portals answer 200 with an empty two-kilobyte shell.
+
+Aargau (AG):
+
+- [Aargau - Register- und Meldegesetz (SAR 122.200), para 14](https://gesetzessammlungen.ag.ch/api/de/versions/3439/pdf_file_with_annexes)
+- [Aargau - Residence hub](https://www.ag.ch/de/themen/migration-integration/aufenthalt)
+- [Aargau - Reporting a move, change of canton](https://www.ag.ch/de/themen/migration-integration/aufenthalt/aenderungen-melden/umzug)
+
+Appenzell Ausserrhoden (AR):
+
+- [Appenzell Ausserrhoden - Registergesetz (bGS 122.1), art. 5](https://ar.clex.ch/api/de/versions/1275/pdf_file_with_annexes)
+- [Appenzell Ausserrhoden - Third-country nationals: forms and documents](https://ar.ch/verwaltung/departement-inneres-und-sicherheit/amt-fuer-inneres/abteilung-migration/einreise-und-aufenthalt/drittstaatsangehoerige/)
+
+Appenzell Innerrhoden (AI):
+
+- [Appenzell Innerrhoden - Verordnung zum Registerharmonisierungsgesetz (GS 172.910), art. 7](https://ai.clex.ch/api/de/versions/1133/pdf_file_with_annexes)
+- [Appenzell Innerrhoden - Standeskommissionsbeschluss ueber Niederlassung und Aufenthalt (GS 142.001), art. 2](https://ai.clex.ch/api/de/versions/1513/pdf_file_with_annexes)
+- [Appenzell Innerrhoden - Registering and deregistering (fourteen days)](https://www.ai.ch/themen/persoenliches/wohnen-und-umziehen/an-und-abmelden)
+- [Appenzell Innerrhoden - Working as a foreign national (eight days)](https://www.ai.ch/themen/auslaender/arbeiten)
+
+Basel-Landschaft (BL):
+
+- [Basel-Landschaft - Anmeldungs- und Registergesetz (SGS 111), para 5](https://bl.clex.ch/api/de/versions/4008/pdf_file_with_annexes)
+
+Basel-Stadt (BS):
+
+- [Basel-Stadt - Moving to the canton, registration and deadline](https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/zuzug-den-kanton-basel-stadt)
+- [Basel-Stadt - Entry and residence, EU/EFTA and third country](https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/einreise-und-aufenthalt)
+- [Basel-Stadt - Gesetz ueber Niederlassung und Aufenthalt (SG 122.200), para 4](https://www.gesetzessammlung.bs.ch/api/de/versions/6200/pdf_file_with_annexes)
+
+Bern (BE):
+
+- [Bern - Entry for EU/EFTA nationals, 14 days to the commune](https://www.migration.sid.be.ch/de/start/einreise/buerger-eu-efta.html)
+- [Bern - Entry for third-country nationals](https://www.migration.sid.be.ch/de/start/einreise/buerger-drittstaaten.html)
+- [Bern - Entree pour les ressortissants UE/AELE (fr)](https://www.migration.sid.be.ch/fr/start/einreise/buerger-eu-efta.html)
+- [Bern - Residence permit B, with the change-of-canton rule](https://www.migration.sid.be.ch/de/start/aufenthalt/ausweis-b.html)
+- [Bern - Gesetz ueber Niederlassung und Aufenthalt (BSG 122.11), art. 1](https://www.belex.sites.be.ch/api/de/versions/3416/pdf_file_with_annexes)
+
+Fribourg (FR):
+
+- [Fribourg - Arriving for more than three months, EU/EFTA (fr)](https://www.fr.ch/vie-quotidienne/demarches-et-documents/etrangers/ressortissante-etrangerere-a-qui-dois-je-madresser/si-jarrive-dans-le-canton-de-fribourg-pour-un-sejour-de-plus-de-3-mois-depuis-letranger-ou-un-autre-canton-et-si-je-suis-ressortissant)
+- [Fribourg - Change of canton, EU-27/EFTA (fr)](https://www.fr.ch/vie-quotidienne/demarches-et-documents/changement-de-canton-ressortissant-ue-27aele)
+- [Fribourg - Loi sur le controle des habitants (RSF 114.21.1), art. 5 (fr)](https://bdlf.fr.ch/api/fr/versions/8129/pdf_file_with_annexes)
+
+Geneva (GE):
+
+- [Geneva - Announcing your arrival to the OCPM, 14 days (fr)](https://www.ge.ch/annoncer-mon-arrivee-ocpm)
+- [Geneva - Announcing your departure to the OCPM (fr)](https://www.ge.ch/annoncer-mon-depart-ocpm)
+- [Geneva - Loi d'application de la LHR (rsGE F 2 25), art. 5 (fr)](https://silgeneve.ch/legis/data/rsg_f2_25.htm)
+- [Geneva - Loi sur le sejour et l'etablissement des Confederes (rsGE F 2 05), art. 1 (fr)](https://silgeneve.ch/legis/data/rsg_f2_05.htm)
+
+Glarus (GL):
+
+- [Glarus - Einfuehrungsgesetz zum Registerharmonisierungsgesetz (GS I C/21/2), art. 4](https://gesetze.gl.ch/api/de/versions/2346/pdf_file_with_annexes)
+- [Glarus - Residence: permit duty and the order of steps](https://www.gl.ch/verwaltung/sicherheit-und-justiz/justiz/migration/aufenthalt.html/1212)
+
+Graubuenden (GR):
+
+- [Graubuenden - Registration for third-country nationals, 14 days](https://www.gr.ch/DE/institutionen/verwaltung/djsg/afm/dienstleistungen/Einreise_Aufenthalt/Einreise-Anmeldung/Seiten/Drittstaaten.aspx)
+- [Graubuenden - Einwohnerregistergesetz (BR 171.200), art. 13](https://www.gr-lex.gr.ch/api/de/versions/3576/pdf_file_with_annexes)
+- [Graubuenden - Legge sui registri degli abitanti (BR 171.200), art. 13 (it)](https://www.gr-lex.gr.ch/api/it/versions/3576/pdf_file_with_annexes)
+
+Jura (JU):
+
+- [Jura - Controle des habitants: duty, deadline and documents (fr)](https://www.jura.ch/fr/Autorites/Administration/DSJP/SPOP/Controle-des-habitants/Controle-des-habitants.html)
+
+Lucerne (LU):
+
+- [Lucerne - Gesetz ueber die Niederlassung und den Aufenthalt (SRL 5), paras 3, 5 and 7](https://srl.lu.ch/api/de/versions/4184/pdf_file_with_annexes)
+- [Lucerne - Merkblatt: residence permit for EU/EFTA nationals](https://migration.lu.ch/-/media/Migration/Dokumente/Einreise_Aufenthalt/merkblatt_einholung_einer_aufenthaltsbewilligung_eu_efta.pdf)
+- [Lucerne - Change of canton](https://migration.lu.ch/Weitere_Aufenthaltsgruende/Kantonswechsel)
+
+Neuchatel (NE):
+
+- [Neuchatel - Managing and renewing your permit, with the change-of-canton rule (fr)](https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/permis-de-sejour/gerer-et-renouveler-votre-permis-actuel)
+- [Neuchatel - Studying in Neuchatel: announcing arrival and what to bring (fr)](https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/etudier-neuchatel)
+
+Nidwalden (NW):
+
+- [Nidwalden - Gesetz ueber Niederlassung und Aufenthalt (NG 122.1), arts. 4 and 5](https://gesetze.nw.ch/api/de/versions/1351/pdf_file_with_annexes)
+- [Nidwalden - Residence, registration and change of canton](https://integration.nw.ch/aufenthalt/)
+
+Obwalden (OW):
+
+- [Obwalden - Einwohnerregisterverordnung (GDB 113.11), arts. 10 and 11](https://gdb.ow.ch/api/de/versions/1824/pdf_file_with_annexes)
+- [Obwalden - Residence permit and family reunification](https://integration.ow.ch/aufenthaltsbewilligung-familiennachzug/)
+- [Obwalden - Abteilung Migration](https://www.ow.ch/fachbereiche/1822)
+
+Schaffhausen (SH):
+
+- [Schaffhausen - Employed EU/EFTA nationals, the two steps and the deadline](https://migrationsamt.sh.ch/erwerbstatige-eu-efta)
+- [Schaffhausen - Change of canton for third-country nationals](https://migrationsamt.sh.ch/kantonswechsel-fuer-drittstaatsangehoerige)
+- [Schaffhausen - Gemeindegesetz (SHR 120.100), art. 89](https://rechtsbuch.sh.ch/api/de/versions/2055/pdf_file_with_annexes)
+
+Schwyz (SZ):
+
+- [Schwyz - EU/EFTA nationals: the two-tier deadline](https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/euefta-staatsangehoerige.html/8756-8758-8802-10373-10961-10965-10969)
+- [Schwyz - Third-country nationals](https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/drittstaatsangehoerige.html/8756-8758-8802-10373-10961-10965-10970)
+- [Schwyz - Gesetz ueber das Einwohnermeldewesen (SRSZ 111.110), para 10](https://www.sz.ch/public/upload/assets/33326/111_110.pdf)
+
+Solothurn (SO):
+
+- [Solothurn - Entry, with the An-/Abmeldung duty and the deadline](https://so.ch/verwaltung/departement-des-innern/migrationsamt/einreise/)
+- [Solothurn - Change of canton](https://so.ch/verwaltung/departement-des-innern/migrationsamt/aufenthalt-und-integration/kantonswechsel/)
+- [Solothurn - Gemeindegesetz (BGS 131.1), para 3](https://bgs.so.ch/api/de/versions/5519/pdf_file_with_annexes)
+
+St. Gallen (SG):
+
+- [St. Gallen - Gesetz ueber Niederlassung und Aufenthalt (sGS 453.1), arts. 3 and 6](https://www.gesetzessammlung.sg.ch/api/de/versions/2506/pdf_file_with_annexes)
+- [St. Gallen - Residence permit, newcomer platform](https://www.hallo.sg.ch/de/zusammenleben/leben-in-st-gallen/aufenthaltsbewilligung.html)
+- [St. Gallen - Permits for EU/EFTA nationals, change of canton](https://www.sg.ch/sicherheit/einreise-aufenthalt-ausreise/bewilligugnen-eu-efta.html)
+
+Thurgau (TG):
+
+- [Thurgau - Entry with employment: registration and permit application in one act](https://migrationsamt.tg.ch/einreise-und-aufenthalt/einreise-mit-erwerbstaetigkeit.html/11464)
+- [Thurgau - Change of canton](https://migrationsamt.tg.ch/einreise-und-aufenthalt/kantonswechsel.html/17031)
+- [Thurgau - Einwohnerregistergesetz (RB 142.15), para 7](https://www.rechtsbuch.tg.ch/api/de/versions/2440/pdf_file_with_annexes)
+
+Ticino (TI):
+
+- [Ticino - Ufficio della migrazione (it)](https://www4.ti.ch/di/spop/chi-siamo/ufficio-della-migrazione)
+- [Ticino - Regolamento sul controllo degli abitanti (RL 144.110), arts. 12, 13 and 20 (it)](https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/18)
+
+Uri (UR):
+
+- [Uri - Kantonales Registerharmonisierungsgesetz (RB 1.4201), arts. 19 and 21](https://rechtsbuch.ur.ch/api/de/versions/1048/pdf_file_with_annexes)
+- [Uri - Migration: permits for EU/EFTA and third-country nationals](https://www.ur.ch/arbeit/6424)
+
+Valais (VS):
+
+- [Valais - Residence permit, 14 days from arrival (fr)](https://www.vs.ch/web/spm/permis-de-s%C3%A9jour)
+- [Valais - Contact the commune, not the canton (fr)](https://www.vs.ch/web/spm/contr%C3%B4le-de-l-habitant)
+- [Valais - Change of canton (fr)](https://www.vs.ch/web/spm/changement-de-canton1)
+- [Valais - Loi sur le controle de l'habitant (RS/VS 176.1), art. 7 (fr)](https://lex.vs.ch/api/fr/versions/3227/pdf_file_with_annexes)
+
+Vaud (VD):
+
+- [Vaud - Announcing arrival to the commune within 8 days (fr)](https://www.vd.ch/population/controle-des-habitants/changement-dadresse)
+- [Vaud - The registration transaction and its documents (fr)](https://www.vd.ch/prestation/annoncer-son-changement-dadresse-au-controle-des-habitants)
+- [Vaud - Arriving from another canton, EU/EFTA (fr)](https://www.vd.ch/population/population-etrangere/entree-et-sejour/union-europeenne/arrivee-dun-autre-canton)
+- [Vaud - Service de la population (SPOP) (fr)](https://www.vd.ch/deiep/spop)
+
+Zug (ZG):
+
+- [Zug - Merkblatt Umzug/Zuzug](https://cdn.zg.ch/dam/jcr:ceef462f-5c3b-4a56-952e-78268e405057/Merkblatt%20Umzug.pdf)
+- [Zug - Entry for EU/EFTA nationals, registration forms](https://zg.ch/de/migration-integration/einreise-und-aufenthalt/einreise-eu-efta-staatsangehoerige)
+- [Zug - Gemeindegesetz (BGS 171.1), para 57a](https://bgs.zg.ch/api/de/versions/2741/pdf_file_with_annexes)

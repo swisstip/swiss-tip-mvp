@@ -1,16 +1,41 @@
 {
   "schema_version": "source-catalog/v1",
   "artifact_id": "residence-sources-mvp-zurich",
-  "version": "draft-11",
+  "version": "draft-12",
   "knowledge_space_id": "hackathon",
   "title": "Residence permits, moving to Switzerland and naturalisation - MVP sources (federal and Canton Zurich)",
   "status": "SOURCES_ONLY",
   "scope": {
     "country_code": "CH",
     "canton_codes": [
+      "CH-AG",
+      "CH-AI",
+      "CH-AR",
+      "CH-BE",
+      "CH-BL",
+      "CH-BS",
+      "CH-FR",
+      "CH-GE",
+      "CH-GL",
+      "CH-GR",
+      "CH-JU",
+      "CH-LU",
+      "CH-NE",
+      "CH-NW",
+      "CH-OW",
+      "CH-SG",
+      "CH-SH",
+      "CH-SO",
+      "CH-SZ",
+      "CH-TG",
+      "CH-TI",
+      "CH-UR",
+      "CH-VD",
+      "CH-VS",
+      "CH-ZG",
       "CH-ZH"
     ],
-    "description": "MVP scope: Swiss federal foundations for residence permits plus Canton of Zurich and City of Zurich entry points, extended on 15 September 2026 with the topics a newly arrived resident meets next (social insurance on arrival and departure, tax at source, the foreign driving licence, health insurance and premium reduction) and with naturalisation, at the same three levels. Other cantons are in the swiss-residence pack. Extended on 17 September 2026 with the contact pages of the Zurich offices these topics name: addresses, opening and telephone hours and directions where published. Extended again on 17 September 2026 with the daily-life duties of a newcomer in the City of Zurich: waste, parking and vehicles, dogs, school, taxes, the radio and television fee and emergencies. Extended on 18 September 2026 with voting rights and the Zurich tax-at-source tariff pages, and with the questions of expats settling in: family allowances and parental leave, housing and rent, customs on moving, marriage, pillar 3a, unemployment, accident insurance and leaving the City of Zurich.",
+    "description": "MVP scope: Swiss federal foundations for residence permits plus Canton of Zurich and City of Zurich entry points, extended on 15 September 2026 with the topics a newly arrived resident meets next (social insurance on arrival and departure, tax at source, the foreign driving licence, health insurance and premium reduction) and with naturalisation, at the same three levels. Other cantons are in the swiss-residence pack. Extended on 17 September 2026 with the contact pages of the Zurich offices these topics name: addresses, opening and telephone hours and directions where published. Extended again on 17 September 2026 with the daily-life duties of a newcomer in the City of Zurich: waste, parking and vehicles, dogs, school, taxes, the radio and television fee and emergencies. Extended on 18 September 2026 with voting rights and the Zurich tax-at-source tariff pages, and with the questions of expats settling in: family allowances and parental leave, housing and rent, customs on moving, marriage, pillar 3a, unemployment, accident insurance and leaving the City of Zurich. Extended on 23 September 2026 with the registration route of all 26 cantons: who takes the registration of an arriving resident and in what order, the deadline each canton states for it, how the canton takes a permit application, its online services and what it publishes about moving in from another canton. Only those subjects are cantonal at that breadth; every other topic of the pack remains federal plus Canton and City of Zurich. Nine cantons publish the deadline only in cantonal law, so consolidated statutes are catalogued beside the service pages.",
     "exclusions": [
       "Tourism unrelated to residence",
       "Full asylum/protection casework",
@@ -198,186 +223,257 @@
       "ch-sem-notification-procedure"
     ],
     "all": [
-      "ch-ahv-iv-13-ahv-rente",
-      "ch-ahv-iv-ahv-21",
-      "ch-ahv-iv-ahv-allgemeines",
-      "ch-ahv-iv-ahv-beitraege",
-      "ch-ahv-iv-ahv-leistungen",
-      "ch-ahv-iv-altersrenten",
-      "ch-ahv-iv-alv",
-      "ch-ahv-iv-ausgleichskassen",
-      "ch-ahv-iv-bvg",
-      "ch-ahv-iv-glossar",
-      "ch-ahv-iv-hinterlassenenrenten",
-      "ch-ahv-iv-international-drittstaaten",
-      "ch-ahv-iv-international-eu-efta",
-      "ch-ahv-iv-kv",
-      "ch-ahv-iv-uv",
-      "ch-bag-accident-insurance",
-      "ch-bag-grenzgaenger",
       "ch-bag-health-insurance",
-      "ch-bag-kostenbeteiligung",
-      "ch-bag-leistungen-im-ausland",
-      "ch-bag-leistungen-tarife",
-      "ch-bag-praemien-eu-efta-uk",
-      "ch-bag-praemien-kostenbeteiligung",
-      "ch-bag-praemienausstaende",
-      "ch-bag-praemienregionen",
-      "ch-bag-praemienvergleich",
-      "ch-bag-premium-reduction",
-      "ch-bag-versicherte-im-ausland",
-      "ch-bag-versicherungsmodelle",
-      "ch-bazg-ausreise-privatwaren",
-      "ch-bazg-briefe-pakete",
-      "ch-bazg-einfuhrsteuer",
-      "ch-bazg-faq-umzugsgut",
-      "ch-bazg-flugreisen",
-      "ch-bazg-freimengen-allgemein",
-      "ch-bazg-freimengen-lebensmittel",
-      "ch-bazg-hundekauf-einfuhr",
-      "ch-bazg-interneteinkauf",
-      "ch-bazg-interneteinkauf-post",
       "ch-bazg-moving",
-      "ch-bazg-mwst-rueckerstattung",
-      "ch-bazg-private-einfuhr",
-      "ch-bazg-quickzoll",
-      "ch-bazg-ruecksendung-reparatur",
-      "ch-bazg-tiere-pflanzen-souvenirs",
-      "ch-bazg-uebersiedlungsgut",
-      "ch-bazg-umzug-fahrzeuge",
-      "ch-bazg-umzug-tiere",
-      "ch-bazg-umzugsgut-erbschaftsgut",
-      "ch-bazg-versandhandel-mwst",
-      "ch-bazg-verzollungskosten",
-      "ch-bazg-waren-anmelden",
-      "ch-bazg-wertfreigrenze-150",
-      "ch-bazg-wertfreigrenze-beispiele",
-      "ch-bazg-zollanmeldung-reisende",
       "ch-bsv-ahv",
-      "ch-bsv-bvg-departure",
-      "ch-bsv-family-allowances",
-      "ch-bsv-parental-leave",
-      "ch-bsv-pillar-3a",
       "ch-bwo-housing",
-      "ch-bwo-reference-rate",
-      "ch-chch-driving-licence-exchange",
       "ch-chch-family",
-      "ch-chch-housing",
-      "ch-chch-marriage",
-      "ch-chch-moving",
-      "ch-chch-naturalisation",
       "ch-chch-permits",
-      "ch-chch-pillar-3a",
-      "ch-chch-voting",
       "ch-chch-work",
-      "ch-eda-visa",
       "ch-estv-tax-at-source",
       "ch-fedlex-aig",
-      "ch-fedlex-bueg",
-      "ch-fedlex-buev",
-      "ch-fedlex-bv",
-      "ch-fedlex-dbg",
       "ch-fedlex-fza",
-      "ch-fedlex-fzg",
-      "ch-fedlex-klv",
-      "ch-fedlex-kvg",
-      "ch-fedlex-kvv",
-      "ch-fedlex-or",
-      "ch-fedlex-qstv",
-      "ch-fedlex-rv-ahv",
-      "ch-fedlex-vev",
       "ch-fedlex-vzae",
-      "ch-fedlex-vzv",
-      "ch-priminfo-eu-efta",
-      "ch-priminfo-faq",
-      "ch-priminfo-grundversicherung",
-      "ch-priminfo-mittlere-praemie",
-      "ch-priminfo-sparen-grundversicherung",
-      "ch-priminfo-sparen-selbstverantwortung",
-      "ch-priminfo-verbilligung",
-      "ch-priminfo-wechsel",
-      "ch-priminfo-zusatzversicherungen",
-      "ch-seco-anmeldung-registrierung",
-      "ch-seco-arbeitsmarktliche-massnahmen",
-      "ch-seco-aussteuerung",
-      "ch-seco-erste-schritte",
-      "ch-seco-eservices-formulare",
-      "ch-seco-kurzarbeit",
-      "ch-seco-mobilitaet-eu-efta",
-      "ch-seco-rav-beratung",
-      "ch-seco-registrierung-stellensuchende",
-      "ch-seco-rueckkehr-schweiz",
-      "ch-seco-stellenmeldepflicht",
-      "ch-seco-stellensuche-ausland",
-      "ch-seco-unemployment",
-      "ch-seco-versicherungsleistungen",
       "ch-sem-authorities",
       "ch-sem-biometric-documents",
-      "ch-sem-citizenship",
       "ch-sem-directives",
       "ch-sem-entry",
       "ch-sem-entry-faq",
       "ch-sem-eu-efta",
       "ch-sem-free-movement-faq",
-      "ch-sem-notification-procedure",
       "ch-sem-residence-de",
       "ch-sem-residence-en",
       "ch-sem-residence-fr",
       "ch-sem-residence-it",
       "ch-sem-third-country",
       "ch-sem-work-third-country",
-      "ch-serafe-household-fee",
-      "ch-zas-contribution-refund",
-      "zh-awa-anmeldung-rav",
-      "zh-awa-beratung-vermittlung",
-      "zh-awa-insolvenzentschaedigung",
-      "zh-awa-office",
-      "zh-awa-qualifizierung",
-      "zh-awa-zustaendiges-rav",
       "zh-biometric-documents",
-      "zh-dogs",
       "zh-eu-efta",
       "zh-family",
-      "zh-fedlex-kv",
-      "zh-foreign-driving-licence",
-      "zh-gemeindeamt-naturalisation-office",
       "zh-integration",
-      "zh-migrationsamt-office",
-      "zh-naturalisation",
       "zh-no-employment",
       "zh-overview",
-      "zh-premium-reduction",
-      "zh-rental-forms",
       "zh-settlement",
-      "zh-steueramt-office",
-      "zh-strassenverkehrsamt-office",
-      "zh-sva-ahv-internationales",
-      "zh-sva-ahv-konto",
-      "zh-sva-altersrente",
-      "zh-sva-beitragspflicht",
-      "zh-sva-contact",
-      "zh-sva-family-allowances",
-      "zh-sva-health-insurance",
-      "zh-tax-at-source",
-      "zh-tax-at-source-directive",
-      "zh-unemployment",
-      "zh-vehicles",
-      "zh-voting",
       "zh-welcome-residence",
-      "zh-work-permits-contact",
       "zh-work-third-country",
       "zurich-city-arrival",
-      "zurich-city-departure",
-      "zurich-city-dog-control",
-      "zurich-city-emergency",
-      "zurich-city-first-steps",
-      "zurich-city-marriage",
+      "ch-sem-notification-procedure",
+      "ch-sem-citizenship",
+      "ch-fedlex-bueg",
+      "ch-fedlex-buev",
+      "ch-chch-naturalisation",
+      "zh-naturalisation",
       "zurich-city-naturalisation",
-      "zurich-city-parking-permits",
+      "ch-zas-contribution-refund",
+      "ch-fedlex-rv-ahv",
+      "ch-bsv-bvg-departure",
+      "ch-fedlex-fzg",
+      "ch-bsv-family-allowances",
+      "ch-bsv-parental-leave",
+      "zh-sva-family-allowances",
+      "ch-fedlex-dbg",
+      "ch-fedlex-qstv",
+      "zh-tax-at-source",
+      "zh-tax-at-source-directive",
+      "ch-fedlex-vzv",
+      "ch-chch-driving-licence-exchange",
+      "zh-foreign-driving-licence",
+      "ch-bag-premium-reduction",
+      "ch-fedlex-kvg",
+      "zh-premium-reduction",
+      "zh-sva-health-insurance",
+      "ch-chch-moving",
+      "zh-migrationsamt-office",
+      "zh-gemeindeamt-naturalisation-office",
+      "zh-strassenverkehrsamt-office",
+      "zh-steueramt-office",
+      "zh-awa-office",
+      "zh-work-permits-contact",
+      "zh-sva-contact",
       "zurich-city-registration-office",
+      "zurich-city-first-steps",
+      "zurich-city-waste",
+      "zurich-city-parking-permits",
+      "zurich-city-dog-control",
+      "zh-dogs",
       "zurich-city-school",
       "zurich-city-taxes",
-      "zurich-city-waste"
+      "zh-vehicles",
+      "ch-serafe-household-fee",
+      "zurich-city-emergency",
+      "ch-eda-visa",
+      "ch-fedlex-vev",
+      "ch-fedlex-bv",
+      "zh-fedlex-kv",
+      "zh-voting",
+      "ch-chch-voting",
+      "ch-fedlex-or",
+      "ch-chch-housing",
+      "ch-bwo-reference-rate",
+      "zh-rental-forms",
+      "ch-chch-marriage",
+      "zurich-city-marriage",
+      "ch-bsv-pillar-3a",
+      "ch-chch-pillar-3a",
+      "ch-seco-unemployment",
+      "zh-unemployment",
+      "ch-bag-accident-insurance",
+      "zurich-city-departure",
+      "ch-seco-erste-schritte",
+      "ch-seco-anmeldung-registrierung",
+      "ch-seco-registrierung-stellensuchende",
+      "ch-seco-rav-beratung",
+      "ch-seco-versicherungsleistungen",
+      "ch-seco-arbeitsmarktliche-massnahmen",
+      "ch-seco-aussteuerung",
+      "ch-seco-mobilitaet-eu-efta",
+      "ch-seco-rueckkehr-schweiz",
+      "ch-seco-stellensuche-ausland",
+      "ch-seco-eservices-formulare",
+      "ch-seco-kurzarbeit",
+      "ch-seco-stellenmeldepflicht",
+      "zh-awa-anmeldung-rav",
+      "zh-awa-zustaendiges-rav",
+      "zh-awa-insolvenzentschaedigung",
+      "zh-awa-beratung-vermittlung",
+      "zh-awa-qualifizierung",
+      "ch-bazg-private-einfuhr",
+      "ch-bazg-freimengen-allgemein",
+      "ch-bazg-wertfreigrenze-150",
+      "ch-bazg-wertfreigrenze-beispiele",
+      "ch-bazg-freimengen-lebensmittel",
+      "ch-bazg-zollanmeldung-reisende",
+      "ch-bazg-quickzoll",
+      "ch-bazg-waren-anmelden",
+      "ch-bazg-interneteinkauf",
+      "ch-bazg-interneteinkauf-post",
+      "ch-bazg-verzollungskosten",
+      "ch-bazg-briefe-pakete",
+      "ch-bazg-versandhandel-mwst",
+      "ch-bazg-ruecksendung-reparatur",
+      "ch-bazg-uebersiedlungsgut",
+      "ch-bazg-umzugsgut-erbschaftsgut",
+      "ch-bazg-faq-umzugsgut",
+      "ch-bazg-umzug-fahrzeuge",
+      "ch-bazg-umzug-tiere",
+      "ch-bazg-tiere-pflanzen-souvenirs",
+      "ch-bazg-hundekauf-einfuhr",
+      "ch-bazg-ausreise-privatwaren",
+      "ch-bazg-mwst-rueckerstattung",
+      "ch-bazg-einfuhrsteuer",
+      "ch-bazg-flugreisen",
+      "ch-ahv-iv-ahv-allgemeines",
+      "ch-ahv-iv-ahv-beitraege",
+      "ch-ahv-iv-ahv-leistungen",
+      "ch-ahv-iv-altersrenten",
+      "ch-ahv-iv-hinterlassenenrenten",
+      "ch-ahv-iv-ahv-21",
+      "ch-ahv-iv-13-ahv-rente",
+      "ch-ahv-iv-international-eu-efta",
+      "ch-ahv-iv-international-drittstaaten",
+      "ch-ahv-iv-alv",
+      "ch-ahv-iv-bvg",
+      "ch-ahv-iv-kv",
+      "ch-ahv-iv-uv",
+      "ch-ahv-iv-glossar",
+      "ch-ahv-iv-ausgleichskassen",
+      "zh-sva-beitragspflicht",
+      "zh-sva-ahv-konto",
+      "zh-sva-ahv-internationales",
+      "zh-sva-altersrente",
+      "ch-bag-praemien-kostenbeteiligung",
+      "ch-bag-kostenbeteiligung",
+      "ch-bag-versicherungsmodelle",
+      "ch-bag-praemienregionen",
+      "ch-bag-praemienvergleich",
+      "ch-bag-praemienausstaende",
+      "ch-bag-grenzgaenger",
+      "ch-bag-versicherte-im-ausland",
+      "ch-bag-leistungen-im-ausland",
+      "ch-bag-leistungen-tarife",
+      "ch-bag-praemien-eu-efta-uk",
+      "ch-priminfo-grundversicherung",
+      "ch-priminfo-zusatzversicherungen",
+      "ch-priminfo-verbilligung",
+      "ch-priminfo-eu-efta",
+      "ch-priminfo-sparen-grundversicherung",
+      "ch-priminfo-sparen-selbstverantwortung",
+      "ch-priminfo-wechsel",
+      "ch-priminfo-mittlere-praemie",
+      "ch-priminfo-faq",
+      "ch-fedlex-kvv",
+      "ch-fedlex-klv",
+      "bs-registration-arrival",
+      "bs-entry-residence",
+      "bs-register-law",
+      "sh-registration-eu-efta",
+      "sh-change-of-canton",
+      "sh-register-law",
+      "tg-registration-employment",
+      "tg-change-of-canton",
+      "tg-register-law",
+      "so-entry-registration",
+      "so-change-of-canton",
+      "so-commune-law",
+      "zg-moving-leaflet",
+      "zg-entry-eu-efta",
+      "zg-commune-law",
+      "sz-eu-efta",
+      "sz-third-country",
+      "sz-reporting-law",
+      "gr-third-country-registration",
+      "gr-register-law",
+      "gr-register-law-it",
+      "bl-registration-law",
+      "gl-register-law",
+      "gl-residence",
+      "sg-residence-law",
+      "sg-newcomer-permit",
+      "sg-permits-eu-efta",
+      "ag-register-law",
+      "ag-residence",
+      "ag-change-of-canton",
+      "ar-register-law",
+      "ar-third-country",
+      "ai-register-ordinance",
+      "ai-settlement-decree",
+      "ai-registration",
+      "ai-foreign-workers",
+      "lu-settlement-law",
+      "lu-eu-efta-leaflet",
+      "lu-change-of-canton",
+      "nw-settlement-law",
+      "nw-residence",
+      "ow-register-ordinance",
+      "ow-residence-permit",
+      "ow-migration-office",
+      "ur-register-law",
+      "ur-migration",
+      "be-entry-eu-efta",
+      "be-entry-third-country",
+      "be-entry-eu-efta-fr",
+      "be-permit-b",
+      "be-settlement-law",
+      "fr-arrival-eu-efta",
+      "fr-change-of-canton",
+      "fr-residents-law",
+      "vs-residence-permit",
+      "vs-residents-office",
+      "vs-change-of-canton",
+      "vs-residents-law",
+      "ge-arrival",
+      "ge-departure",
+      "ge-register-law",
+      "ge-confederates-law",
+      "ju-residents-office",
+      "ti-migration-office",
+      "ti-registration-regulation",
+      "vd-change-of-address",
+      "vd-registration-service",
+      "vd-arrival-other-canton",
+      "vd-population-office",
+      "ne-permit-management",
+      "ne-studying"
     ],
     "multilingual": [
       "ch-sem-residence-de",
@@ -567,6 +663,79 @@
       "ch-fedlex-klv",
       "ch-fedlex-kvg",
       "ch-fedlex-kvv"
+    ],
+    "cantons": [
+      "bs-registration-arrival",
+      "bs-entry-residence",
+      "bs-register-law",
+      "sh-registration-eu-efta",
+      "sh-change-of-canton",
+      "sh-register-law",
+      "tg-registration-employment",
+      "tg-change-of-canton",
+      "tg-register-law",
+      "so-entry-registration",
+      "so-change-of-canton",
+      "so-commune-law",
+      "zg-moving-leaflet",
+      "zg-entry-eu-efta",
+      "zg-commune-law",
+      "sz-eu-efta",
+      "sz-third-country",
+      "sz-reporting-law",
+      "gr-third-country-registration",
+      "gr-register-law",
+      "gr-register-law-it",
+      "bl-registration-law",
+      "gl-register-law",
+      "gl-residence",
+      "sg-residence-law",
+      "sg-newcomer-permit",
+      "sg-permits-eu-efta",
+      "ag-register-law",
+      "ag-residence",
+      "ag-change-of-canton",
+      "ar-register-law",
+      "ar-third-country",
+      "ai-register-ordinance",
+      "ai-settlement-decree",
+      "ai-registration",
+      "ai-foreign-workers",
+      "lu-settlement-law",
+      "lu-eu-efta-leaflet",
+      "lu-change-of-canton",
+      "nw-settlement-law",
+      "nw-residence",
+      "ow-register-ordinance",
+      "ow-residence-permit",
+      "ow-migration-office",
+      "ur-register-law",
+      "ur-migration",
+      "be-entry-eu-efta",
+      "be-entry-third-country",
+      "be-entry-eu-efta-fr",
+      "be-permit-b",
+      "be-settlement-law",
+      "fr-arrival-eu-efta",
+      "fr-change-of-canton",
+      "fr-residents-law",
+      "vs-residence-permit",
+      "vs-residents-office",
+      "vs-change-of-canton",
+      "vs-residents-law",
+      "ge-arrival",
+      "ge-departure",
+      "ge-register-law",
+      "ge-confederates-law",
+      "ju-residents-office",
+      "ti-migration-office",
+      "ti-registration-regulation",
+      "vd-change-of-address",
+      "vd-registration-service",
+      "vd-arrival-other-canton",
+      "vd-population-office",
+      "ne-permit-management",
+      "ne-studying"
     ]
   },
   "build_notes": [
@@ -5942,6 +6111,2111 @@
       },
       "scan_status": "manual_adapter_required",
       "notes": "The ordinance whose articles carry the exhaustive list of illnesses for which dental treatment is paid by compulsory health insurance, which the FOPH page names without reproducing. ELI resolved from the Fedlex SPARQL metadata service by SR number and requested on 23 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "bs-registration-arrival",
+        "start_url": "https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/zuzug-den-kanton-basel-stadt",
+        "allowed_hosts": [
+          "www.bs.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/zuzug-den-kanton-basel-stadt"
+        ],
+        "canonical_authority": "Canton Basel-Stadt - Einwohneramt and Migrationsamt",
+        "jurisdiction": "CH-BS",
+        "language": "de"
+      },
+      "title": "Basel-Stadt - Moving to the canton, registration and deadline",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "States the 14-day duty to the Einwohneramt and the eUmzug limits. One eUmzug mention on this page is hyperlinked to a google.com URL, a CMS slip on a live cantonal page: the prose is correct, that href is not, and no link may be lifted from it mechanically."
+    },
+    {
+      "definition": {
+        "source_id": "bs-entry-residence",
+        "start_url": "https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/einreise-und-aufenthalt",
+        "allowed_hosts": [
+          "www.bs.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/einreise-und-aufenthalt"
+        ],
+        "canonical_authority": "Canton Basel-Stadt - Einwohneramt and Migrationsamt",
+        "jurisdiction": "CH-BS",
+        "language": "de"
+      },
+      "title": "Basel-Stadt - Entry and residence, EU/EFTA and third country",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Separates the EU/EFTA route from the third-country route, where the employer files first."
+    },
+    {
+      "definition": {
+        "source_id": "bs-register-law",
+        "start_url": "https://www.gesetzessammlung.bs.ch/api/de/versions/6200/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "www.gesetzessammlung.bs.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/6200/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Basel-Stadt - Systematische Gesetzessammlung",
+        "jurisdiction": "CH-BS",
+        "language": "de"
+      },
+      "title": "Basel-Stadt - Gesetz ueber Niederlassung und Aufenthalt (SG 122.200), para 4",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.07.2020; the collection serves six older versions of the same number."
+    },
+    {
+      "definition": {
+        "source_id": "sh-registration-eu-efta",
+        "start_url": "https://migrationsamt.sh.ch/erwerbstatige-eu-efta",
+        "allowed_hosts": [
+          "migrationsamt.sh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/erwerbstatige-eu-efta"
+        ],
+        "canonical_authority": "Canton Schaffhausen - Migrationsamt und Passbuero",
+        "jurisdiction": "CH-SH",
+        "language": "de"
+      },
+      "title": "Schaffhausen - Employed EU/EFTA nationals, the two steps and the deadline",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Names the two steps explicitly: first the Einwohnerkontrolle of the commune, then the Migrationsamt. The canton's main CMS is not usable for this subject - two well-ranked pages there return HTTP 500 - so the migrationsamt.sh.ch portal is the source."
+    },
+    {
+      "definition": {
+        "source_id": "sh-change-of-canton",
+        "start_url": "https://migrationsamt.sh.ch/kantonswechsel-fuer-drittstaatsangehoerige",
+        "allowed_hosts": [
+          "migrationsamt.sh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/kantonswechsel-fuer-drittstaatsangehoerige"
+        ],
+        "canonical_authority": "Canton Schaffhausen - Migrationsamt und Passbuero",
+        "jurisdiction": "CH-SH",
+        "language": "de"
+      },
+      "title": "Schaffhausen - Change of canton for third-country nationals",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "States no deadline of its own; the period comes from the Gemeindegesetz."
+    },
+    {
+      "definition": {
+        "source_id": "sh-register-law",
+        "start_url": "https://rechtsbuch.sh.ch/api/de/versions/2055/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "rechtsbuch.sh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/2055/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Schaffhausen - Rechtsbuch",
+        "jurisdiction": "CH-SH",
+        "language": "de"
+      },
+      "title": "Schaffhausen - Gemeindegesetz (SHR 120.100), art. 89",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.01.2026. A scout was served the older version 2028 from a search result; art. 89 is identical there, but the ranked link was not the current text."
+    },
+    {
+      "definition": {
+        "source_id": "tg-registration-employment",
+        "start_url": "https://migrationsamt.tg.ch/einreise-und-aufenthalt/einreise-mit-erwerbstaetigkeit.html/11464",
+        "allowed_hosts": [
+          "migrationsamt.tg.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/einreise-und-aufenthalt/einreise-mit-erwerbstaetigkeit.html/11464"
+        ],
+        "canonical_authority": "Canton Thurgau - Migrationsamt",
+        "jurisdiction": "CH-TG",
+        "language": "de"
+      },
+      "title": "Thurgau - Entry with employment: registration and permit application in one act",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The clearest combined-step statement of the wave: registration at the Einwohnerdienste and the permit application are one act, within 14 days. The canton uses three names for the same counter (Einwohneramt, Einwohnerdienste, Wohngemeinde)."
+    },
+    {
+      "definition": {
+        "source_id": "tg-change-of-canton",
+        "start_url": "https://migrationsamt.tg.ch/einreise-und-aufenthalt/kantonswechsel.html/17031",
+        "allowed_hosts": [
+          "migrationsamt.tg.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/einreise-und-aufenthalt/kantonswechsel.html/17031"
+        ],
+        "canonical_authority": "Canton Thurgau - Migrationsamt",
+        "jurisdiction": "CH-TG",
+        "language": "de"
+      },
+      "title": "Thurgau - Change of canton",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "For EU/EFTA permit holders a change of canton is treated as a simple change of address, reported within 14 days."
+    },
+    {
+      "definition": {
+        "source_id": "tg-register-law",
+        "start_url": "https://www.rechtsbuch.tg.ch/api/de/versions/2440/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "www.rechtsbuch.tg.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/2440/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Thurgau - Rechtsbuch",
+        "jurisdiction": "CH-TG",
+        "language": "de"
+      },
+      "title": "Thurgau - Einwohnerregistergesetz (RB 142.15), para 7",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.08.2013."
+    },
+    {
+      "definition": {
+        "source_id": "so-entry-registration",
+        "start_url": "https://so.ch/verwaltung/departement-des-innern/migrationsamt/einreise/",
+        "allowed_hosts": [
+          "so.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/verwaltung/departement-des-innern/migrationsamt/einreise/"
+        ],
+        "canonical_authority": "Canton Solothurn - Migrationsamt",
+        "jurisdiction": "CH-SO",
+        "language": "de"
+      },
+      "title": "Solothurn - Entry, with the An-/Abmeldung duty and the deadline",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Solothurn publishes no arrival landing page: the 14-day duty is a paragraph headed An-/Abmeldung at the foot of this page, which is otherwise about visas and family reunification."
+    },
+    {
+      "definition": {
+        "source_id": "so-change-of-canton",
+        "start_url": "https://so.ch/verwaltung/departement-des-innern/migrationsamt/aufenthalt-und-integration/kantonswechsel/",
+        "allowed_hosts": [
+          "so.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/verwaltung/departement-des-innern/migrationsamt/aufenthalt-und-integration/kantonswechsel/"
+        ],
+        "canonical_authority": "Canton Solothurn - Migrationsamt",
+        "jurisdiction": "CH-SO",
+        "language": "de"
+      },
+      "title": "Solothurn - Change of canton",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Third-country nationals need prior authorisation and must await the decision in the current canton; EU/EFTA is not addressed here."
+    },
+    {
+      "definition": {
+        "source_id": "so-commune-law",
+        "start_url": "https://bgs.so.ch/api/de/versions/5519/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "bgs.so.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/5519/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Solothurn - Bereinigte Gesetzessammlung",
+        "jurisdiction": "CH-SO",
+        "language": "de"
+      },
+      "title": "Solothurn - Gemeindegesetz (BGS 131.1), para 3",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.01.2026. This collection serves seventeen older versions of the same number, the most of any canton in the wave."
+    },
+    {
+      "definition": {
+        "source_id": "zg-moving-leaflet",
+        "start_url": "https://cdn.zg.ch/dam/jcr:ceef462f-5c3b-4a56-952e-78268e405057/Merkblatt%20Umzug.pdf",
+        "allowed_hosts": [
+          "cdn.zg.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/dam/jcr:ceef462f-5c3b-4a56-952e-78268e405057/Merkblatt Umzug.pdf"
+        ],
+        "canonical_authority": "Canton Zug - Amt fuer Migration",
+        "jurisdiction": "CH-ZG",
+        "language": "de"
+      },
+      "title": "Zug - Merkblatt Umzug/Zuzug",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Carries the route that makes Zug unusual: the Amt fuer Migration performs the municipal registration for foreign nationals rather than the person doing it. Dated 07/20 and still printing a superseded telephone number."
+    },
+    {
+      "definition": {
+        "source_id": "zg-entry-eu-efta",
+        "start_url": "https://zg.ch/de/migration-integration/einreise-und-aufenthalt/einreise-eu-efta-staatsangehoerige",
+        "allowed_hosts": [
+          "zg.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/migration-integration/einreise-und-aufenthalt/einreise-eu-efta-staatsangehoerige"
+        ],
+        "canonical_authority": "Canton Zug - Amt fuer Migration",
+        "jurisdiction": "CH-ZG",
+        "language": "de"
+      },
+      "title": "Zug - Entry for EU/EFTA nationals, registration forms",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Section headed Anmeldung nach Neueinreise / Kantonswechsel; names forms A1, K1, SE1 and G1."
+    },
+    {
+      "definition": {
+        "source_id": "zg-commune-law",
+        "start_url": "https://bgs.zg.ch/api/de/versions/2741/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "bgs.zg.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/2741/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Zug - Bereinigte Gesetzessammlung",
+        "jurisdiction": "CH-ZG",
+        "language": "de"
+      },
+      "title": "Zug - Gemeindegesetz (BGS 171.1), para 57a",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 17.10.2025. Note the unresolved conflict recorded for curation: the statute says report to the Einwohnerkontrolle, the migration office's own material says foreign nationals report to it instead."
+    },
+    {
+      "definition": {
+        "source_id": "sz-eu-efta",
+        "start_url": "https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/euefta-staatsangehoerige.html/8756-8758-8802-10373-10961-10965-10969",
+        "allowed_hosts": [
+          "www.sz.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/euefta-staatsangehoerige.html/8756-8758-8802-10373-10961-10965-10969"
+        ],
+        "canonical_authority": "Canton Schwyz - Amt fuer Migration",
+        "jurisdiction": "CH-SZ",
+        "language": "de"
+      },
+      "title": "Schwyz - EU/EFTA nationals: the two-tier deadline",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The only two-tier deadline in the wave: three months in general, but fourteen days for anyone arriving to settle or to take up work, and in any case before starting work."
+    },
+    {
+      "definition": {
+        "source_id": "sz-third-country",
+        "start_url": "https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/drittstaatsangehoerige.html/8756-8758-8802-10373-10961-10965-10970",
+        "allowed_hosts": [
+          "www.sz.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/drittstaatsangehoerige.html/8756-8758-8802-10373-10961-10965-10970"
+        ],
+        "canonical_authority": "Canton Schwyz - Amt fuer Migration",
+        "jurisdiction": "CH-SZ",
+        "language": "de"
+      },
+      "title": "Schwyz - Third-country nationals",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Gives third-country nationals NO day count at all, only 'before the permit-free stay ends or before taking up work'. The absence is the fact."
+    },
+    {
+      "definition": {
+        "source_id": "sz-reporting-law",
+        "start_url": "https://www.sz.ch/public/upload/assets/33326/111_110.pdf",
+        "allowed_hosts": [
+          "www.sz.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/public/upload/assets/33326/111_110.pdf"
+        ],
+        "canonical_authority": "Canton Schwyz - Systematische Gesetzsammlung",
+        "jurisdiction": "CH-SZ",
+        "language": "de"
+      },
+      "title": "Schwyz - Gesetz ueber das Einwohnermeldewesen (SRSZ 111.110), para 10",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated PDF served directly by the canton rather than through a collection application. Its para 10 Abs. 4 expressly excludes foreigners and defers to federal law, so the cantonal 14 days does not govern them."
+    },
+    {
+      "definition": {
+        "source_id": "gr-third-country-registration",
+        "start_url": "https://www.gr.ch/DE/institutionen/verwaltung/djsg/afm/dienstleistungen/Einreise_Aufenthalt/Einreise-Anmeldung/Seiten/Drittstaaten.aspx",
+        "allowed_hosts": [
+          "www.gr.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/DE/institutionen/verwaltung/djsg/afm/dienstleistungen/Einreise_Aufenthalt/Einreise-Anmeldung/Seiten/Drittstaaten.aspx"
+        ],
+        "canonical_authority": "Canton Graubuenden - Amt fuer Migration und Zivilrecht",
+        "jurisdiction": "CH-GR",
+        "language": "de"
+      },
+      "title": "Graubuenden - Registration for third-country nationals, 14 days",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The Italian twin of this page is NOT translated: it serves the German text under an Italian notice, while the general and EU/EFTA pages are properly translated."
+    },
+    {
+      "definition": {
+        "source_id": "gr-register-law",
+        "start_url": "https://www.gr-lex.gr.ch/api/de/versions/3576/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "www.gr-lex.gr.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/3576/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Graubuenden - Buendner Rechtsbuch",
+        "jurisdiction": "CH-GR",
+        "language": "de"
+      },
+      "title": "Graubuenden - Einwohnerregistergesetz (BR 171.200), art. 13",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.01.2026."
+    },
+    {
+      "definition": {
+        "source_id": "gr-register-law-it",
+        "start_url": "https://www.gr-lex.gr.ch/api/it/versions/3576/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "www.gr-lex.gr.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/it/versions/3576/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Graubuenden - Buendner Rechtsbuch",
+        "jurisdiction": "CH-GR",
+        "language": "it"
+      },
+      "title": "Graubuenden - Legge sui registri degli abitanti (BR 171.200), art. 13",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The Italian consolidated text, same version id and same date as the German. It is a genuine article-for-article translation and is the cleanest Italian-language source in the wave."
+    },
+    {
+      "definition": {
+        "source_id": "bl-registration-law",
+        "start_url": "https://bl.clex.ch/api/de/versions/4008/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "bl.clex.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/4008/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Basel-Landschaft - Systematische Gesetzessammlung",
+        "jurisdiction": "CH-BL",
+        "language": "de"
+      },
+      "title": "Basel-Landschaft - Anmeldungs- und Registergesetz (SGS 111), para 5",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. This host is reachable, unlike www.baselland.ch, which answers 403 to every user agent under bot management: the canton's statutory rule is therefore citable without defeating that protection. The version runs to 30.06.2032."
+    },
+    {
+      "definition": {
+        "source_id": "gl-register-law",
+        "start_url": "https://gesetze.gl.ch/api/de/versions/2346/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "gesetze.gl.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/2346/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Glarus - Gesetzessammlung",
+        "jurisdiction": "CH-GL",
+        "language": "de"
+      },
+      "title": "Glarus - Einfuehrungsgesetz zum Registerharmonisierungsgesetz (GS I C/21/2), art. 4",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.01.2023. Glarus publishes the deadline nowhere else on its own site; the figure that ranks in search comes from its three municipalities."
+    },
+    {
+      "definition": {
+        "source_id": "gl-residence",
+        "start_url": "https://www.gl.ch/verwaltung/sicherheit-und-justiz/justiz/migration/aufenthalt.html/1212",
+        "allowed_hosts": [
+          "www.gl.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/verwaltung/sicherheit-und-justiz/justiz/migration/aufenthalt.html/1212"
+        ],
+        "canonical_authority": "Canton Glarus - Abteilung Migration",
+        "jurisdiction": "CH-GL",
+        "language": "de"
+      },
+      "title": "Glarus - Residence: permit duty and the order of steps",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "States that work may begin only after registration at the Einwohnerkontrolle, and that starting before is prosecuted. Carries no deadline."
+    },
+    {
+      "definition": {
+        "source_id": "sg-residence-law",
+        "start_url": "https://www.gesetzessammlung.sg.ch/api/de/versions/2506/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "www.gesetzessammlung.sg.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/2506/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton St. Gallen - Gesetzessammlung",
+        "jurisdiction": "CH-SG",
+        "language": "de"
+      },
+      "title": "St. Gallen - Gesetz ueber Niederlassung und Aufenthalt (sGS 453.1), arts. 3 and 6",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.01.2019. The general arrival deadline appears on no sg.ch page; art. 26 puts a fine of up to CHF 200 on missing it."
+    },
+    {
+      "definition": {
+        "source_id": "sg-newcomer-permit",
+        "start_url": "https://www.hallo.sg.ch/de/zusammenleben/leben-in-st-gallen/aufenthaltsbewilligung.html",
+        "allowed_hosts": [
+          "www.hallo.sg.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/zusammenleben/leben-in-st-gallen/aufenthaltsbewilligung.html"
+        ],
+        "canonical_authority": "Canton St. Gallen - Migrationsamt",
+        "jurisdiction": "CH-SG",
+        "language": "de"
+      },
+      "title": "St. Gallen - Residence permit, newcomer platform",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Second cantonal domain: the imprint names the Abteilung Integration und Gleichstellung, Amt fuer Soziales. The only HTML page on a cantonal domain that states the order of steps plainly, though it gives no day count."
+    },
+    {
+      "definition": {
+        "source_id": "sg-permits-eu-efta",
+        "start_url": "https://www.sg.ch/sicherheit/einreise-aufenthalt-ausreise/bewilligugnen-eu-efta.html",
+        "allowed_hosts": [
+          "www.sg.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sicherheit/einreise-aufenthalt-ausreise/bewilligugnen-eu-efta.html"
+        ],
+        "canonical_authority": "Canton St. Gallen - Migrationsamt",
+        "jurisdiction": "CH-SG",
+        "language": "de"
+      },
+      "title": "St. Gallen - Permits for EU/EFTA nationals, change of canton",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The misspelling 'bewilligugnen' is the canton's own live URL, not a transcription error."
+    },
+    {
+      "definition": {
+        "source_id": "ag-register-law",
+        "start_url": "https://gesetzessammlungen.ag.ch/api/de/versions/3439/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "gesetzessammlungen.ag.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/3439/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Aargau - Systematische Sammlung des Aargauischen Rechts",
+        "jurisdiction": "CH-AG",
+        "language": "de"
+      },
+      "title": "Aargau - Register- und Meldegesetz (SAR 122.200), para 14",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.07.2024. Aargau states the period once, here, and never repeats it with a day count on a prose page."
+    },
+    {
+      "definition": {
+        "source_id": "ag-residence",
+        "start_url": "https://www.ag.ch/de/themen/migration-integration/aufenthalt",
+        "allowed_hosts": [
+          "www.ag.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/themen/migration-integration/aufenthalt"
+        ],
+        "canonical_authority": "Canton Aargau - Amt fuer Migration und Integration",
+        "jurisdiction": "CH-AG",
+        "language": "de"
+      },
+      "title": "Aargau - Residence hub",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Aargau has no arrival-first landing page; its navigation is organised by permit type."
+    },
+    {
+      "definition": {
+        "source_id": "ag-change-of-canton",
+        "start_url": "https://www.ag.ch/de/themen/migration-integration/aufenthalt/aenderungen-melden/umzug",
+        "allowed_hosts": [
+          "www.ag.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/themen/migration-integration/aufenthalt/aenderungen-melden/umzug"
+        ],
+        "canonical_authority": "Canton Aargau - Amt fuer Migration und Integration",
+        "jurisdiction": "CH-AG",
+        "language": "de"
+      },
+      "title": "Aargau - Reporting a move, change of canton",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Carries the carve-out for British nationals resident before 1 January 2021, who are treated as EU nationals and need no change-of-canton application."
+    },
+    {
+      "definition": {
+        "source_id": "ar-register-law",
+        "start_url": "https://ar.clex.ch/api/de/versions/1275/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "ar.clex.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/1275/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Appenzell Ausserrhoden - Bereinigte Gesetzessammlung",
+        "jurisdiction": "CH-AR",
+        "language": "de"
+      },
+      "title": "Appenzell Ausserrhoden - Registergesetz (bGS 122.1), art. 5",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.11.2019. AR publishes the period in no prose page: its own guidance for the communal registries sits behind a login."
+    },
+    {
+      "definition": {
+        "source_id": "ar-third-country",
+        "start_url": "https://ar.ch/verwaltung/departement-inneres-und-sicherheit/amt-fuer-inneres/abteilung-migration/einreise-und-aufenthalt/drittstaatsangehoerige/",
+        "allowed_hosts": [
+          "ar.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/verwaltung/departement-inneres-und-sicherheit/amt-fuer-inneres/abteilung-migration/einreise-und-aufenthalt/drittstaatsangehoerige/"
+        ],
+        "canonical_authority": "Canton Appenzell Ausserrhoden - Amt fuer Inneres, Abteilung Migration",
+        "jurisdiction": "CH-AR",
+        "language": "de"
+      },
+      "title": "Appenzell Ausserrhoden - Third-country nationals: forms and documents",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Covers the documents required; states no deadline."
+    },
+    {
+      "definition": {
+        "source_id": "ai-register-ordinance",
+        "start_url": "https://ai.clex.ch/api/de/versions/1133/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "ai.clex.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/1133/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Appenzell Innerrhoden - Gesetzessammlung",
+        "jurisdiction": "CH-AI",
+        "language": "de"
+      },
+      "title": "Appenzell Innerrhoden - Verordnung zum Registerharmonisierungsgesetz (GS 172.910), art. 7",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. The FOURTEEN-day rule, and the one that covers everyone. Read together with GS 142.001, which gives eight days for the same event."
+    },
+    {
+      "definition": {
+        "source_id": "ai-settlement-decree",
+        "start_url": "https://ai.clex.ch/api/de/versions/1513/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "ai.clex.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/1513/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Appenzell Innerrhoden - Gesetzessammlung",
+        "jurisdiction": "CH-AI",
+        "language": "de"
+      },
+      "title": "Appenzell Innerrhoden - Standeskommissionsbeschluss ueber Niederlassung und Aufenthalt (GS 142.001), art. 2",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. The EIGHT-day rule. Its title restricts it to Swiss citizens, yet the canton's own page for foreign workers cites this period. Neither text is repealed; the conflict is the canton's, and the wave serves both rather than choosing."
+    },
+    {
+      "definition": {
+        "source_id": "ai-registration",
+        "start_url": "https://www.ai.ch/themen/persoenliches/wohnen-und-umziehen/an-und-abmelden",
+        "allowed_hosts": [
+          "www.ai.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/themen/persoenliches/wohnen-und-umziehen/an-und-abmelden"
+        ],
+        "canonical_authority": "Canton Appenzell Innerrhoden - Einwohnerkontrolle and Auslaenderamt",
+        "jurisdiction": "CH-AI",
+        "language": "de"
+      },
+      "title": "Appenzell Innerrhoden - Registering and deregistering (fourteen days)",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The general population page, which states fourteen days."
+    },
+    {
+      "definition": {
+        "source_id": "ai-foreign-workers",
+        "start_url": "https://www.ai.ch/themen/auslaender/arbeiten",
+        "allowed_hosts": [
+          "www.ai.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/themen/auslaender/arbeiten"
+        ],
+        "canonical_authority": "Canton Appenzell Innerrhoden - Einwohnerkontrolle and Auslaenderamt",
+        "jurisdiction": "CH-AI",
+        "language": "de"
+      },
+      "title": "Appenzell Innerrhoden - Working as a foreign national (eight days)",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The foreign workers page, which states eight days. Curation must serve both this and the fourteen-day page and say which carries which."
+    },
+    {
+      "definition": {
+        "source_id": "lu-settlement-law",
+        "start_url": "https://srl.lu.ch/api/de/versions/4184/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "srl.lu.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/4184/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Lucerne - Systematische Rechtssammlung",
+        "jurisdiction": "CH-LU",
+        "language": "de"
+      },
+      "title": "Lucerne - Gesetz ueber die Niederlassung und den Aufenthalt (SRL 5), paras 3, 5 and 7",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.09.2021. The URL search engines rank is the repealed 2010-2021 version, and the predecessor host srl2007.lu.ch no longer resolves. Para 7 Abs. 3 sets a different period, ten days, for foreigners staying with private hosts or in holiday homes."
+    },
+    {
+      "definition": {
+        "source_id": "lu-eu-efta-leaflet",
+        "start_url": "https://migration.lu.ch/-/media/Migration/Dokumente/Einreise_Aufenthalt/merkblatt_einholung_einer_aufenthaltsbewilligung_eu_efta.pdf",
+        "allowed_hosts": [
+          "migration.lu.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/-/media/Migration/Dokumente/Einreise_Aufenthalt/merkblatt_einholung_einer_aufenthaltsbewilligung_eu_efta.pdf"
+        ],
+        "canonical_authority": "Canton Lucerne - Amt fuer Migration",
+        "jurisdiction": "CH-LU",
+        "language": "de"
+      },
+      "title": "Lucerne - Merkblatt: residence permit for EU/EFTA nationals",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Lucerne's clearest route statement: it is primarily for the arriving person to report to the Einwohnerkontrolle of their residence. Contains a dead link to a retired wira.lu.ch page."
+    },
+    {
+      "definition": {
+        "source_id": "lu-change-of-canton",
+        "start_url": "https://migration.lu.ch/Weitere_Aufenthaltsgruende/Kantonswechsel",
+        "allowed_hosts": [
+          "migration.lu.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/Weitere_Aufenthaltsgruende/Kantonswechsel"
+        ],
+        "canonical_authority": "Canton Lucerne - Amt fuer Migration",
+        "jurisdiction": "CH-LU",
+        "language": "de"
+      },
+      "title": "Lucerne - Change of canton",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Thin: no deadline, no EU/EFTA versus third-country split."
+    },
+    {
+      "definition": {
+        "source_id": "nw-settlement-law",
+        "start_url": "https://gesetze.nw.ch/api/de/versions/1351/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "gesetze.nw.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/1351/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Nidwalden - Gesetzessammlung",
+        "jurisdiction": "CH-NW",
+        "language": "de"
+      },
+      "title": "Nidwalden - Gesetz ueber Niederlassung und Aufenthalt (NG 122.1), arts. 4 and 5",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.04.2025."
+    },
+    {
+      "definition": {
+        "source_id": "nw-residence",
+        "start_url": "https://integration.nw.ch/aufenthalt/",
+        "allowed_hosts": [
+          "integration.nw.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/aufenthalt/"
+        ],
+        "canonical_authority": "Canton Nidwalden - Amt fuer Justiz, Abteilung Migration",
+        "jurisdiction": "CH-NW",
+        "language": "de"
+      },
+      "title": "Nidwalden - Residence, registration and change of canton",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Second cantonal domain: the contact block names Gesundheitsfoerderung und Integration, a cantonal office. Carries the clearest prose in the canton. A 2021 cantonal page contradicts it about whether permit holders may use eUmzug; both are live and both are recorded."
+    },
+    {
+      "definition": {
+        "source_id": "ow-register-ordinance",
+        "start_url": "https://gdb.ow.ch/api/de/versions/1824/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "gdb.ow.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/1824/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Obwalden - Gesetzesdatenbank",
+        "jurisdiction": "CH-OW",
+        "language": "de"
+      },
+      "title": "Obwalden - Einwohnerregisterverordnung (GDB 113.11), arts. 10 and 11",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.09.2023. It also carries the route: the Abteilung Migration issues the permit only once the reporting procedure at the commune is complete. The collection returns this link as http, not https."
+    },
+    {
+      "definition": {
+        "source_id": "ow-residence-permit",
+        "start_url": "https://integration.ow.ch/aufenthaltsbewilligung-familiennachzug/",
+        "allowed_hosts": [
+          "integration.ow.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/aufenthaltsbewilligung-familiennachzug/"
+        ],
+        "canonical_authority": "Canton Obwalden - Amt fuer Arbeit, Abteilung Migration",
+        "jurisdiction": "CH-OW",
+        "language": "de"
+      },
+      "title": "Obwalden - Residence permit and family reunification",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Second cantonal domain: the contact page names the Fachstelle Gesellschaftsfragen and the imprint names the Staatskanzlei. States the route and the documents; no deadline. Misnames its own office 'Ableitung Migration' twice."
+    },
+    {
+      "definition": {
+        "source_id": "ow-migration-office",
+        "start_url": "https://www.ow.ch/fachbereiche/1822",
+        "allowed_hosts": [
+          "www.ow.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/fachbereiche/1822"
+        ],
+        "canonical_authority": "Canton Obwalden - Amt fuer Arbeit, Abteilung Migration",
+        "jurisdiction": "CH-OW",
+        "language": "de"
+      },
+      "title": "Obwalden - Abteilung Migration",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "States that foreign nationals report in person to the commune. Several of its outbound links are long-dead federal pages. Do not confuse the canton's 'Adressaenderung / Meldepflicht' page with this subject: that one is about military reporting and says 'umgehend'."
+    },
+    {
+      "definition": {
+        "source_id": "ur-register-law",
+        "start_url": "https://rechtsbuch.ur.ch/api/de/versions/1048/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "rechtsbuch.ur.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/1048/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Uri - Rechtsbuch",
+        "jurisdiction": "CH-UR",
+        "language": "de"
+      },
+      "title": "Uri - Kantonales Registerharmonisierungsgesetz (RB 1.4201), arts. 19 and 21",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 11.11.2023. This is the only Uri source that puts the duty at the Einwohnerkontrolle: the canton's own leaflet sends applications straight to the Abteilung Migration."
+    },
+    {
+      "definition": {
+        "source_id": "ur-migration",
+        "start_url": "https://www.ur.ch/arbeit/6424",
+        "allowed_hosts": [
+          "www.ur.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/arbeit/6424"
+        ],
+        "canonical_authority": "Canton Uri - Amt fuer Arbeit und Migration, Abteilung Migration",
+        "jurisdiction": "CH-UR",
+        "language": "de"
+      },
+      "title": "Uri - Migration: permits for EU/EFTA and third-country nationals",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Uri's one substantive migration page. Its Publikationen tables are rendered by JavaScript and serve nothing to a fetch, so the leaflets and form A1 are unreachable from it; two well-ranked Uri documents, including the newcomer welcome PDF, return 404."
+    },
+    {
+      "definition": {
+        "source_id": "be-entry-eu-efta",
+        "start_url": "https://www.migration.sid.be.ch/de/start/einreise/buerger-eu-efta.html",
+        "allowed_hosts": [
+          "www.migration.sid.be.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/start/einreise/buerger-eu-efta.html"
+        ],
+        "canonical_authority": "Canton Bern - Amt fuer Bevoelkerungsdienste, Migrationsdienst",
+        "jurisdiction": "CH-BE",
+        "language": "de"
+      },
+      "title": "Bern - Entry for EU/EFTA nationals, 14 days to the commune",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Commune first, canton behind it, and before taking up work. The French mirror keeps the German slugs."
+    },
+    {
+      "definition": {
+        "source_id": "be-entry-third-country",
+        "start_url": "https://www.migration.sid.be.ch/de/start/einreise/buerger-drittstaaten.html",
+        "allowed_hosts": [
+          "www.migration.sid.be.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/start/einreise/buerger-drittstaaten.html"
+        ],
+        "canonical_authority": "Canton Bern - Amt fuer Bevoelkerungsdienste, Migrationsdienst",
+        "jurisdiction": "CH-BE",
+        "language": "de"
+      },
+      "title": "Bern - Entry for third-country nationals",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "States the 14 days for any stay over 90 days; the labour-market side is handled by the Amt fuer Wirtschaft, not the Migrationsdienst."
+    },
+    {
+      "definition": {
+        "source_id": "be-entry-eu-efta-fr",
+        "start_url": "https://www.migration.sid.be.ch/fr/start/einreise/buerger-eu-efta.html",
+        "allowed_hosts": [
+          "www.migration.sid.be.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/fr/start/einreise/buerger-eu-efta.html"
+        ],
+        "canonical_authority": "Canton Bern - Amt fuer Bevoelkerungsdienste, Migrationsdienst",
+        "jurisdiction": "CH-BE",
+        "language": "fr"
+      },
+      "title": "Bern - Entree pour les ressortissants UE/AELE",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The French text of the same rule, for French source terms."
+    },
+    {
+      "definition": {
+        "source_id": "be-permit-b",
+        "start_url": "https://www.migration.sid.be.ch/de/start/aufenthalt/ausweis-b.html",
+        "allowed_hosts": [
+          "www.migration.sid.be.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/start/aufenthalt/ausweis-b.html"
+        ],
+        "canonical_authority": "Canton Bern - Amt fuer Bevoelkerungsdienste, Migrationsdienst",
+        "jurisdiction": "CH-BE",
+        "language": "de"
+      },
+      "title": "Bern - Residence permit B, with the change-of-canton rule",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Bern has no change-of-canton page: the rule sits inside an FAQ here, and it carves out Bern, Biel and Thun, whose own city offices handle it."
+    },
+    {
+      "definition": {
+        "source_id": "be-settlement-law",
+        "start_url": "https://www.belex.sites.be.ch/api/de/versions/3416/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "www.belex.sites.be.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/de/versions/3416/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Bern - Bernische systematische Gesetzessammlung (BELEX)",
+        "jurisdiction": "CH-BE",
+        "language": "de"
+      },
+      "title": "Bern - Gesetz ueber Niederlassung und Aufenthalt (BSG 122.11), art. 1",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. Note the limit: this statute covers Swiss nationals only, so the 14 days for foreigners rests on the service pages above. The host must carry the www. prefix; belex.sites.be.ch without it does not resolve."
+    },
+    {
+      "definition": {
+        "source_id": "fr-arrival-eu-efta",
+        "start_url": "https://www.fr.ch/vie-quotidienne/demarches-et-documents/etrangers/ressortissante-etrangerere-a-qui-dois-je-madresser/si-jarrive-dans-le-canton-de-fribourg-pour-un-sejour-de-plus-de-3-mois-depuis-letranger-ou-un-autre-canton-et-si-je-suis-ressortissant",
+        "allowed_hosts": [
+          "www.fr.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/vie-quotidienne/demarches-et-documents/etrangers/ressortissante-etrangerere-a-qui-dois-je-madresser/si-jarrive-dans-le-canton-de-fribourg-pour-un-sejour-de-plus-de-3-mois-depuis-letranger-ou-un-autre-canton-et-si-je-suis-ressortissant"
+        ],
+        "canonical_authority": "Canton Fribourg - Service de la population et des migrants (SPoMi)",
+        "jurisdiction": "CH-FR",
+        "language": "fr"
+      },
+      "title": "Fribourg - Arriving for more than three months, EU/EFTA",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Fribourg reverses the usual order: the declaration goes to SPoMi first and the commune 'par la suite ... au plus tard dans les 14 jours'. The period attaches to the SECOND step, which is the finding most likely to be mis-transcribed."
+    },
+    {
+      "definition": {
+        "source_id": "fr-change-of-canton",
+        "start_url": "https://www.fr.ch/vie-quotidienne/demarches-et-documents/changement-de-canton-ressortissant-ue-27aele",
+        "allowed_hosts": [
+          "www.fr.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/vie-quotidienne/demarches-et-documents/changement-de-canton-ressortissant-ue-27aele"
+        ],
+        "canonical_authority": "Canton Fribourg - Service de la population et des migrants (SPoMi)",
+        "jurisdiction": "CH-FR",
+        "language": "fr"
+      },
+      "title": "Fribourg - Change of canton, EU-27/EFTA",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Says the 14-day announcement goes 'aupres de notre service', that is to SPoMi, where the canton's general moving page says it goes to the commune. The canton reconciles the two nowhere; both are served."
+    },
+    {
+      "definition": {
+        "source_id": "fr-residents-law",
+        "start_url": "https://bdlf.fr.ch/api/fr/versions/8129/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "bdlf.fr.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/fr/versions/8129/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Fribourg - Banque de donnees legislatives fribourgeoise (BDLF)",
+        "jurisdiction": "CH-FR",
+        "language": "fr"
+      },
+      "title": "Fribourg - Loi sur le controle des habitants (RSF 114.21.1), art. 5",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 01.01.2022. Fribourg's own search surfaces a historical version of the same number alongside the canonical one."
+    },
+    {
+      "definition": {
+        "source_id": "vs-residence-permit",
+        "start_url": "https://www.vs.ch/web/spm/permis-de-s%C3%A9jour",
+        "allowed_hosts": [
+          "www.vs.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/web/spm/permis-de-séjour"
+        ],
+        "canonical_authority": "Canton Valais - Service de la population et des migrations (SPM)",
+        "jurisdiction": "CH-VS",
+        "language": "fr"
+      },
+      "title": "Valais - Residence permit, 14 days from arrival",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The canonical slug carries an accent; the unaccented form returns 404."
+    },
+    {
+      "definition": {
+        "source_id": "vs-residents-office",
+        "start_url": "https://www.vs.ch/web/spm/contr%C3%B4le-de-l-habitant",
+        "allowed_hosts": [
+          "www.vs.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/web/spm/contrôle-de-l-habitant"
+        ],
+        "canonical_authority": "Canton Valais - Service de la population et des migrations (SPM)",
+        "jurisdiction": "CH-VS",
+        "language": "fr"
+      },
+      "title": "Valais - Contact the commune, not the canton",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The clearest route statement of the wave: the canton tells people explicitly to go to the commune's contro le de l'habitant and not to the cantonal administration."
+    },
+    {
+      "definition": {
+        "source_id": "vs-change-of-canton",
+        "start_url": "https://www.vs.ch/web/spm/changement-de-canton1",
+        "allowed_hosts": [
+          "www.vs.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/web/spm/changement-de-canton1"
+        ],
+        "canonical_authority": "Canton Valais - Service de la population et des migrations (SPM)",
+        "jurisdiction": "CH-VS",
+        "language": "fr"
+      },
+      "title": "Valais - Change of canton",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The real page carries a trailing 1; the un-suffixed slug returns 200 but only redirects to an anchor on the parent page."
+    },
+    {
+      "definition": {
+        "source_id": "vs-residents-law",
+        "start_url": "https://lex.vs.ch/api/fr/versions/3227/pdf_file_with_annexes",
+        "allowed_hosts": [
+          "lex.vs.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/api/fr/versions/3227/pdf_file_with_annexes"
+        ],
+        "canonical_authority": "Canton Valais - Recueil systematique",
+        "jurisdiction": "CH-VS",
+        "language": "fr"
+      },
+      "title": "Valais - Loi sur le controle de l'habitant (RS/VS 176.1), art. 7",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Consolidated cantonal law, fetched as the PDF the collection's own API names for the CURRENT version, so this URL cannot be the superseded text that search engines rank. The version id in the path pins that version: a later consolidation will not be seen by re-fetching. In force since 21.07.2023. The German rendering of this law serves art. 7 in French, so there is no German verbatim of the statutory period for Valais."
+    },
+    {
+      "definition": {
+        "source_id": "ge-arrival",
+        "start_url": "https://www.ge.ch/annoncer-mon-arrivee-ocpm",
+        "allowed_hosts": [
+          "www.ge.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/annoncer-mon-arrivee-ocpm"
+        ],
+        "canonical_authority": "Canton Geneva - Office cantonal de la population et des migrations (OCPM)",
+        "jurisdiction": "CH-GE",
+        "language": "fr"
+      },
+      "title": "Geneva - Announcing your arrival to the OCPM, 14 days",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Geneva is centralised on the OCPM. Did not state the required documents in the fetched content."
+    },
+    {
+      "definition": {
+        "source_id": "ge-departure",
+        "start_url": "https://www.ge.ch/annoncer-mon-depart-ocpm",
+        "allowed_hosts": [
+          "www.ge.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/annoncer-mon-depart-ocpm"
+        ],
+        "canonical_authority": "Canton Geneva - Office cantonal de la population et des migrations (OCPM)",
+        "jurisdiction": "CH-GE",
+        "language": "fr"
+      },
+      "title": "Geneva - Announcing your departure to the OCPM",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Departure runs the other way: two weeks BEFORE leaving, where the arrival duty runs 14 days after the event. The two must not be merged because the numbers look alike."
+    },
+    {
+      "definition": {
+        "source_id": "ge-register-law",
+        "start_url": "https://silgeneve.ch/legis/data/rsg_f2_25.htm",
+        "allowed_hosts": [
+          "silgeneve.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/legis/data/rsg_f2_25.htm"
+        ],
+        "canonical_authority": "Canton Geneva - Systeme d'information legislative (SIL), Chancellerie d'Etat",
+        "jurisdiction": "CH-GE",
+        "language": "fr"
+      },
+      "title": "Geneva - Loi d'application de la LHR (rsGE F 2 25), art. 5",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Published by the Service de la legislation of the Chancellerie d'Etat. One 14-day duty covers arrival, change and intent to leave. Served as plain HTML; the period is written '14&nbsp;jours', so any check for it must unescape HTML entities first."
+    },
+    {
+      "definition": {
+        "source_id": "ge-confederates-law",
+        "start_url": "https://silgeneve.ch/legis/data/rsg_f2_05.htm",
+        "allowed_hosts": [
+          "silgeneve.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/legis/data/rsg_f2_05.htm"
+        ],
+        "canonical_authority": "Canton Geneva - Systeme d'information legislative (SIL), Chancellerie d'Etat",
+        "jurisdiction": "CH-GE",
+        "language": "fr"
+      },
+      "title": "Geneva - Loi sur le sejour et l'etablissement des Confederes (rsGE F 2 05), art. 1",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "States that a Swiss citizen may report EITHER to the commune of residence OR to the OCPM. The choice is individual and is not conditioned on the household, so the 'only when the whole family is Swiss' framing is a practical consequence, not the rule."
+    },
+    {
+      "definition": {
+        "source_id": "ju-residents-office",
+        "start_url": "https://www.jura.ch/fr/Autorites/Administration/DSJP/SPOP/Controle-des-habitants/Controle-des-habitants.html",
+        "allowed_hosts": [
+          "www.jura.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/fr/Autorites/Administration/DSJP/SPOP/Controle-des-habitants/Controle-des-habitants.html"
+        ],
+        "canonical_authority": "Canton Jura - Service de la population (SPOP)",
+        "jurisdiction": "CH-JU",
+        "language": "fr"
+      },
+      "title": "Jura - Controle des habitants: duty, deadline and documents",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "States the 14 days in the canton's own words, so Jura is not a statute-only canton."
+    },
+    {
+      "definition": {
+        "source_id": "ti-migration-office",
+        "start_url": "https://www4.ti.ch/di/spop/chi-siamo/ufficio-della-migrazione",
+        "allowed_hosts": [
+          "www4.ti.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/di/spop/chi-siamo/ufficio-della-migrazione"
+        ],
+        "canonical_authority": "Canton Ticino - Ufficio della migrazione and Ufficio del controllo degli abitanti",
+        "jurisdiction": "CH-TI",
+        "language": "it"
+      },
+      "title": "Ticino - Ufficio della migrazione",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The office page. It carries no period at all, which is why Ticino counts as a canton that publishes its deadline only in law."
+    },
+    {
+      "definition": {
+        "source_id": "ti-registration-regulation",
+        "start_url": "https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/18",
+        "allowed_hosts": [
+          "m3.ti.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/18"
+        ],
+        "canonical_authority": "Canton Ticino - Raccolta delle leggi",
+        "jurisdiction": "CH-TI",
+        "language": "it"
+      },
+      "title": "Ticino - Regolamento sul controllo degli abitanti (RL 144.110), arts. 12, 13 and 20",
+      "authority_level": "cantonal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "EIGHT days, not fourteen: 'entro 8 giorni' in arts. 12 and 13, and '14 giorni' does not appear in the text at all. Foreigners owe a DOUBLE notification, to the regional foreigners' service and to the commune's UCA, not a redirected one. Documents have their own separate 10-day sub-deadline in art. 20. The period is in the Regolamento, not in the parent Legge, so a reader of the Legge alone would record a gap."
+    },
+    {
+      "definition": {
+        "source_id": "vd-change-of-address",
+        "start_url": "https://www.vd.ch/population/controle-des-habitants/changement-dadresse",
+        "allowed_hosts": [
+          "www.vd.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/population/controle-des-habitants/changement-dadresse"
+        ],
+        "canonical_authority": "Canton Vaud - Service de la population (SPOP)",
+        "jurisdiction": "CH-VD",
+        "language": "fr"
+      },
+      "title": "Vaud - Announcing arrival to the commune within 8 days",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "One of only two cantons with eight rather than fourteen days. A notification by the landlord or property manager does not discharge the resident's own duty. The landlord's own duty runs to fifteen days for the same event and must not be conflated with the resident's eight."
+    },
+    {
+      "definition": {
+        "source_id": "vd-registration-service",
+        "start_url": "https://www.vd.ch/prestation/annoncer-son-changement-dadresse-au-controle-des-habitants",
+        "allowed_hosts": [
+          "www.vd.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/prestation/annoncer-son-changement-dadresse-au-controle-des-habitants"
+        ],
+        "canonical_authority": "Canton Vaud - Service de la population (SPOP)",
+        "jurisdiction": "CH-VD",
+        "language": "fr"
+      },
+      "title": "Vaud - The registration transaction and its documents",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Names the documents and cites the cantonal law by number. Vaud is the one canton served from service pages alone: its consolidated statute could not be reached, because the BLV portal replaced RSV, the old host no longer resolves, and no API path was found."
+    },
+    {
+      "definition": {
+        "source_id": "vd-arrival-other-canton",
+        "start_url": "https://www.vd.ch/population/population-etrangere/entree-et-sejour/union-europeenne/arrivee-dun-autre-canton",
+        "allowed_hosts": [
+          "www.vd.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/population/population-etrangere/entree-et-sejour/union-europeenne/arrivee-dun-autre-canton"
+        ],
+        "canonical_authority": "Canton Vaud - Service de la population (SPOP)",
+        "jurisdiction": "CH-VD",
+        "language": "fr"
+      },
+      "title": "Vaud - Arriving from another canton, EU/EFTA",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "EU/EFTA only; it is not the general change-of-canton rule."
+    },
+    {
+      "definition": {
+        "source_id": "vd-population-office",
+        "start_url": "https://www.vd.ch/deiep/spop",
+        "allowed_hosts": [
+          "www.vd.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/deiep/spop"
+        ],
+        "canonical_authority": "Canton Vaud - Service de la population (SPOP)",
+        "jurisdiction": "CH-VD",
+        "language": "fr"
+      },
+      "title": "Vaud - Service de la population (SPOP)",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/ueberuns/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The office page. The older vd.ch/spop path is dead."
+    },
+    {
+      "definition": {
+        "source_id": "ne-permit-management",
+        "start_url": "https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/permis-de-sejour/gerer-et-renouveler-votre-permis-actuel",
+        "allowed_hosts": [
+          "www.ne.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/themes/migration-et-integration/sejour-et-etablissement/permis-de-sejour/gerer-et-renouveler-votre-permis-actuel"
+        ],
+        "canonical_authority": "Canton Neuchatel - Service des migrations",
+        "jurisdiction": "CH-NE",
+        "language": "fr"
+      },
+      "title": "Neuchatel - Managing and renewing your permit, with the change-of-canton rule",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ne.ch/themes/migration-et-integration",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Carries the fourteen days and the route, and the route differs by nationality: an EU/EFTA national announces the move to the Controle des habitants of the new commune within 14 days, while a third-country national must apply in writing to the Service des migrations BEFORE moving. Neuchatel publishes no working general arrival page - the old 'Arrivee dans le canton' URL now redirects to an unrelated department - so the period is only ever stated in a situation-specific place like this one. Neuchatel's consolidated law (RSN 132.0, art. 40 for arrival and art. 50 for departure, Etat au 1er janvier 2026) states the same period and is NOT catalogued: the site allows it through `Allow: /DATA/`, but our robots parser reads the preceding `Disallow: /` first and refuses it. The departure period therefore has no citable source in this pack."
+    },
+    {
+      "definition": {
+        "source_id": "ne-studying",
+        "start_url": "https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/etudier-neuchatel",
+        "allowed_hosts": [
+          "www.ne.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/themes/migration-et-integration/sejour-et-etablissement/etudier-neuchatel"
+        ],
+        "canonical_authority": "Canton Neuchatel - Service des migrations",
+        "jurisdiction": "CH-NE",
+        "language": "fr"
+      },
+      "title": "Neuchatel - Studying in Neuchatel: announcing arrival and what to bring",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "registration-moving",
+        "residence-permits"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ne.ch/themes/migration-et-integration",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "The plainest statement of the arrival duty the canton makes: 'apres votre arrivee, annoncez-vous dans les 14 jours aupres du controle des habitants de votre commune', with the documents to present. Scoped to students, so a fact resting on it must say so rather than generalising. Neuchatel's consolidated law (RSN 132.0, art. 40 for arrival and art. 50 for departure, Etat au 1er janvier 2026) states the same period and is NOT catalogued: the site allows it through `Allow: /DATA/`, but our robots parser reads the preceding `Disallow: /` first and refuses it. The departure period therefore has no citable source in this pack."
     }
   ],
   "parallel_page_groups": [

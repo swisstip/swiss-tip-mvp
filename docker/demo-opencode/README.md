@@ -1,6 +1,6 @@
 # Swiss TIP demo image: OpenCode with the Zurich knowledge base
 
-**Last update:** 21 September 2026
+**Last update:** 23 September 2026
 
 A test image, not a release image. It is the `mvp-zurich` pack image with
 the [OpenCode](https://opencode.ai) agent and its web interface on top, so
@@ -108,7 +108,12 @@ ones, so the configuration travels inside that script. The script:
 - types a clicked question into the prompt and sends it, after opening a
   new session when the click was on the home screen. It waits for the model
   selector first: a prompt sent before that selector is shown goes to
-  another free model than the configured one.
+  another free model than the configured one;
+- opens the interface with a question already in the prompt when the address
+  carries `?ask=<n>`: a new session is opened and sample question `<n>`,
+  counting from one, is typed and left unsent, so that a demonstration starts
+  armed and one key sends it. `?ask=<text>` takes a question of its own and
+  `&send=1` sends it on load ([the OpenCode image](https://github.com/swisstip/swiss-tip/blob/main/docker/opencode/README.md#opening-the-interface-with-a-question-ready)).
 
 The sample questions are the questions of acceptance cases of the release,
 some slightly shortened (UAT-34, UAT-24, UAT-25, UAT-1, UAT-3, UAT-14 and

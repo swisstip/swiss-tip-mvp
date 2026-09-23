@@ -29,10 +29,18 @@ class CommittedCatalogueTests(unittest.TestCase):
 
     def test_the_zurich_catalogue_carries_its_extensions(self) -> None:
         mvp = load_source_catalog(MVP)
-        self.assertEqual(len(mvp["sources"]), 96)
+        self.assertEqual(len(mvp["sources"]), 251)
         scan_sets = mvp["scan_sets"]
         self.assertLessEqual({"smoke", "federal", "zurich", "multilingual", "moving", "naturalisation", "contacts",
-                              "daily-life", "entry", "voting-tax", "expat-life", "all"}, set(scan_sets))
+                              "daily-life", "entry", "voting-tax", "expat-life", "cantons", "all"}, set(scan_sets))
+        # The cantonal registration wave of 23 September 2026: 71 sources over the 25 cantons other than
+        # Zurich, which is served by its own zh-* sources. Twenty-one of them are consolidated statutes,
+        # because nine cantons publish the registration deadline in law and nowhere else.
+        self.assertEqual(len(set(scan_sets["cantons"])), 71)
+        cantonal = {s["definition"]["jurisdiction"] for s in mvp["sources"]
+                    if s["definition"]["source_id"] in set(scan_sets["cantons"])}
+        self.assertEqual(len(cantonal), 25)
+        self.assertNotIn("CH-ZH", cantonal)
         # The extensions of 15 September (topics), 17 September (office contacts, daily life) and 18 September
         # (voting rights and the tax-at-source tariff) name these sources.
         extension = set(scan_sets["moving"]) | set(scan_sets["naturalisation"])
@@ -53,12 +61,13 @@ class CommittedCatalogueTests(unittest.TestCase):
                 self.assertEqual(download_cli.main(["--catalogue", str(MVP), "--output", str(output)]), 0)
                 fetch.assert_not_called()
             plan = json.loads((output / "plan.json").read_text(encoding="utf-8"))
-            self.assertEqual(len(plan["targets"]), 96)
+            self.assertEqual(len(plan["targets"]), 251)
             self.assertEqual(plan["catalog_ref"]["artifact_id"], "residence-sources-mvp-zurich")
             fedlex = [s["url"] for s in json.loads((output / "plugin-plan.json").read_text(encoding="utf-8"))["sources"]]
             # the VEV joined the eleven Fedlex documents on 17 September 2026, the two constitutions and the Code of
-            # Obligations on 18 September
-            self.assertEqual(len(fedlex), 15)
+            # Obligations on 18 September, and the KVV and KLV on 23 September, when the health-insurance wave needed
+            # an ordinance beside the guidance for the cost-sharing amounts
+            self.assertEqual(len(fedlex), 17)
             self.assertTrue(all(url.startswith("https://www.fedlex.admin.ch/eli/cc/") for url in fedlex))
 
 

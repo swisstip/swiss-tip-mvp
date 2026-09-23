@@ -1,13 +1,13 @@
 {
-  "release_id": "mvp-zurich-2026-09-23-v19",
-  "built_at": "2026-09-23T10:39:20.954058+00:00",
+  "release_id": "mvp-zurich-2026-09-23-v27",
+  "built_at": "2026-09-23T18:07:49.552115+00:00",
   "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich\\text",
-  "concepts": 206,
-  "facts": 1144,
-  "evidence": 1375,
-  "documents": 272,
+  "concepts": 211,
+  "facts": 1268,
+  "evidence": 1526,
+  "documents": 334,
   "citation_outcomes": {
-    "same-snapshot": 1375
+    "same-snapshot": 1526
   },
   "dropped": [],
   "facts_resolved": [
@@ -418,8 +418,8 @@
         {
           "document_id": "doc-9e5c713ee55918d2e7a1",
           "outcome": "same-snapshot",
-          "start": 1433,
-          "end": 2813,
+          "start": 1431,
+          "end": 2811,
           "block_ids": [
             "doc-9e5c713ee55918d2e7a1:b00036",
             "doc-9e5c713ee55918d2e7a1:b00037",
@@ -725,8 +725,8 @@
         {
           "document_id": "doc-9e5c713ee55918d2e7a1",
           "outcome": "same-snapshot",
-          "start": 3367,
-          "end": 3570,
+          "start": 3365,
+          "end": 3568,
           "block_ids": [
             "doc-9e5c713ee55918d2e7a1:b00045"
           ],
@@ -739,8 +739,8 @@
         {
           "document_id": "doc-9e5c713ee55918d2e7a1",
           "outcome": "same-snapshot",
-          "start": 3957,
-          "end": 4084,
+          "start": 3955,
+          "end": 4082,
           "block_ids": [
             "doc-9e5c713ee55918d2e7a1:b00057"
           ],
@@ -759,8 +759,8 @@
         {
           "document_id": "doc-9e5c713ee55918d2e7a1",
           "outcome": "same-snapshot",
-          "start": 4086,
-          "end": 4478,
+          "start": 4084,
+          "end": 4476,
           "block_ids": [
             "doc-9e5c713ee55918d2e7a1:b00058",
             "doc-9e5c713ee55918d2e7a1:b00059",
@@ -782,8 +782,8 @@
         {
           "document_id": "doc-9e5c713ee55918d2e7a1",
           "outcome": "same-snapshot",
-          "start": 4480,
-          "end": 4620,
+          "start": 4478,
+          "end": 4618,
           "block_ids": [
             "doc-9e5c713ee55918d2e7a1:b00062"
           ],
@@ -802,8 +802,8 @@
         {
           "document_id": "doc-9e5c713ee55918d2e7a1",
           "outcome": "same-snapshot",
-          "start": 4661,
-          "end": 5300,
+          "start": 4659,
+          "end": 5298,
           "block_ids": [
             "doc-9e5c713ee55918d2e7a1:b00064",
             "doc-9e5c713ee55918d2e7a1:b00065",
@@ -945,8 +945,8 @@
         {
           "document_id": "doc-f0c89a15b20f7d14b9db",
           "outcome": "same-snapshot",
-          "start": 1944,
-          "end": 2443,
+          "start": 1942,
+          "end": 2441,
           "block_ids": [
             "doc-f0c89a15b20f7d14b9db:b00041",
             "doc-f0c89a15b20f7d14b9db:b00042",
@@ -1073,8 +1073,8 @@
         {
           "document_id": "doc-f0c89a15b20f7d14b9db",
           "outcome": "same-snapshot",
-          "start": 2445,
-          "end": 2812,
+          "start": 2443,
+          "end": 2810,
           "block_ids": [
             "doc-f0c89a15b20f7d14b9db:b00046",
             "doc-f0c89a15b20f7d14b9db:b00047",
@@ -1163,8 +1163,8 @@
         {
           "document_id": "doc-f0c89a15b20f7d14b9db",
           "outcome": "same-snapshot",
-          "start": 3069,
-          "end": 3448,
+          "start": 3067,
+          "end": 3446,
           "block_ids": [
             "doc-f0c89a15b20f7d14b9db:b00056"
           ],
@@ -1183,8 +1183,8 @@
         {
           "document_id": "doc-f0c89a15b20f7d14b9db",
           "outcome": "same-snapshot",
-          "start": 3450,
-          "end": 3903,
+          "start": 3448,
+          "end": 3901,
           "block_ids": [
             "doc-f0c89a15b20f7d14b9db:b00057",
             "doc-f0c89a15b20f7d14b9db:b00058"
@@ -1204,8 +1204,8 @@
         {
           "document_id": "doc-f0c89a15b20f7d14b9db",
           "outcome": "same-snapshot",
-          "start": 3905,
-          "end": 4570,
+          "start": 3903,
+          "end": 4568,
           "block_ids": [
             "doc-f0c89a15b20f7d14b9db:b00059",
             "doc-f0c89a15b20f7d14b9db:b00060",
@@ -1229,8 +1229,8 @@
         {
           "document_id": "doc-f0c89a15b20f7d14b9db",
           "outcome": "same-snapshot",
-          "start": 5193,
-          "end": 5708,
+          "start": 5191,
+          "end": 5706,
           "block_ids": [
             "doc-f0c89a15b20f7d14b9db:b00071",
             "doc-f0c89a15b20f7d14b9db:b00072",
@@ -1276,8 +1276,8 @@
         {
           "document_id": "doc-9e5c713ee55918d2e7a1",
           "outcome": "same-snapshot",
-          "start": 5389,
-          "end": 5680,
+          "start": 5387,
+          "end": 5678,
           "block_ids": [
             "doc-9e5c713ee55918d2e7a1:b00069"
           ],
@@ -1296,8 +1296,8 @@
         {
           "document_id": "doc-9e5c713ee55918d2e7a1",
           "outcome": "same-snapshot",
-          "start": 5682,
-          "end": 5989,
+          "start": 5680,
+          "end": 5987,
           "block_ids": [
             "doc-9e5c713ee55918d2e7a1:b00070",
             "doc-9e5c713ee55918d2e7a1:b00071",
@@ -1454,8 +1454,8 @@
         {
           "document_id": "doc-974fc3d4a8def0e25330",
           "outcome": "same-snapshot",
-          "start": 5312,
-          "end": 5606,
+          "start": 5310,
+          "end": 5603,
           "block_ids": [
             "doc-974fc3d4a8def0e25330:b00064",
             "doc-974fc3d4a8def0e25330:b00065"
@@ -1475,8 +1475,8 @@
         {
           "document_id": "doc-974fc3d4a8def0e25330",
           "outcome": "same-snapshot",
-          "start": 5727,
-          "end": 5871,
+          "start": 5724,
+          "end": 5868,
           "block_ids": [
             "doc-974fc3d4a8def0e25330:b00067"
           ],
@@ -1495,8 +1495,8 @@
         {
           "document_id": "doc-974fc3d4a8def0e25330",
           "outcome": "same-snapshot",
-          "start": 5996,
-          "end": 6196,
+          "start": 5993,
+          "end": 6193,
           "block_ids": [
             "doc-974fc3d4a8def0e25330:b00069"
           ],
@@ -6385,7 +6385,7 @@
           "document_id": "doc-ee4f5e8e19cada70835c",
           "outcome": "same-snapshot",
           "start": 1344,
-          "end": 1724,
+          "end": 1723,
           "block_ids": [
             "doc-ee4f5e8e19cada70835c:b00052",
             "doc-ee4f5e8e19cada70835c:b00053"
@@ -6405,8 +6405,8 @@
         {
           "document_id": "doc-ee4f5e8e19cada70835c",
           "outcome": "same-snapshot",
-          "start": 2013,
-          "end": 2529,
+          "start": 2012,
+          "end": 2528,
           "block_ids": [
             "doc-ee4f5e8e19cada70835c:b00059",
             "doc-ee4f5e8e19cada70835c:b00060"
@@ -6426,8 +6426,8 @@
         {
           "document_id": "doc-ee4f5e8e19cada70835c",
           "outcome": "same-snapshot",
-          "start": 2531,
-          "end": 2921,
+          "start": 2530,
+          "end": 2920,
           "block_ids": [
             "doc-ee4f5e8e19cada70835c:b00061",
             "doc-ee4f5e8e19cada70835c:b00062"
@@ -6447,8 +6447,8 @@
         {
           "document_id": "doc-ee4f5e8e19cada70835c",
           "outcome": "same-snapshot",
-          "start": 2923,
-          "end": 3160,
+          "start": 2922,
+          "end": 3159,
           "block_ids": [
             "doc-ee4f5e8e19cada70835c:b00063"
           ],
@@ -6467,8 +6467,8 @@
         {
           "document_id": "doc-ee4f5e8e19cada70835c",
           "outcome": "same-snapshot",
-          "start": 3162,
-          "end": 3412,
+          "start": 3161,
+          "end": 3411,
           "block_ids": [
             "doc-ee4f5e8e19cada70835c:b00064",
             "doc-ee4f5e8e19cada70835c:b00065",
@@ -6489,8 +6489,8 @@
         {
           "document_id": "doc-7cda9f16eb96f164c7ce",
           "outcome": "same-snapshot",
-          "start": 4716,
-          "end": 5579,
+          "start": 4715,
+          "end": 5578,
           "block_ids": [
             "doc-7cda9f16eb96f164c7ce:b00090",
             "doc-7cda9f16eb96f164c7ce:b00091",
@@ -6519,8 +6519,8 @@
         {
           "document_id": "doc-7cda9f16eb96f164c7ce",
           "outcome": "same-snapshot",
-          "start": 2057,
-          "end": 2228,
+          "start": 2056,
+          "end": 2227,
           "block_ids": [
             "doc-7cda9f16eb96f164c7ce:b00061",
             "doc-7cda9f16eb96f164c7ce:b00062"
@@ -6540,8 +6540,8 @@
         {
           "document_id": "doc-7cda9f16eb96f164c7ce",
           "outcome": "same-snapshot",
-          "start": 2315,
-          "end": 2642,
+          "start": 2314,
+          "end": 2641,
           "block_ids": [
             "doc-7cda9f16eb96f164c7ce:b00065",
             "doc-7cda9f16eb96f164c7ce:b00066"
@@ -6561,8 +6561,8 @@
         {
           "document_id": "doc-ee4f5e8e19cada70835c",
           "outcome": "same-snapshot",
-          "start": 5378,
-          "end": 5781,
+          "start": 5377,
+          "end": 5780,
           "block_ids": [
             "doc-ee4f5e8e19cada70835c:b00102",
             "doc-ee4f5e8e19cada70835c:b00103",
@@ -6586,8 +6586,8 @@
         {
           "document_id": "doc-ee4f5e8e19cada70835c",
           "outcome": "same-snapshot",
-          "start": 4041,
-          "end": 4331,
+          "start": 4040,
+          "end": 4330,
           "block_ids": [
             "doc-ee4f5e8e19cada70835c:b00077",
             "doc-ee4f5e8e19cada70835c:b00078"
@@ -6607,8 +6607,8 @@
         {
           "document_id": "doc-ee4f5e8e19cada70835c",
           "outcome": "same-snapshot",
-          "start": 4041,
-          "end": 4085,
+          "start": 4040,
+          "end": 4084,
           "block_ids": [
             "doc-ee4f5e8e19cada70835c:b00077"
           ],
@@ -6621,8 +6621,8 @@
         {
           "document_id": "doc-ee4f5e8e19cada70835c",
           "outcome": "same-snapshot",
-          "start": 4567,
-          "end": 4699,
+          "start": 4566,
+          "end": 4698,
           "block_ids": [
             "doc-ee4f5e8e19cada70835c:b00080"
           ],
@@ -6641,8 +6641,8 @@
         {
           "document_id": "doc-7cda9f16eb96f164c7ce",
           "outcome": "same-snapshot",
-          "start": 11553,
-          "end": 11895,
+          "start": 11552,
+          "end": 11894,
           "block_ids": [
             "doc-7cda9f16eb96f164c7ce:b00266",
             "doc-7cda9f16eb96f164c7ce:b00267"
@@ -6662,8 +6662,8 @@
         {
           "document_id": "doc-7cda9f16eb96f164c7ce",
           "outcome": "same-snapshot",
-          "start": 11897,
-          "end": 12222,
+          "start": 11896,
+          "end": 12221,
           "block_ids": [
             "doc-7cda9f16eb96f164c7ce:b00268"
           ],
@@ -6682,8 +6682,8 @@
         {
           "document_id": "doc-7cda9f16eb96f164c7ce",
           "outcome": "same-snapshot",
-          "start": 12224,
-          "end": 12367,
+          "start": 12223,
+          "end": 12366,
           "block_ids": [
             "doc-7cda9f16eb96f164c7ce:b00269"
           ],
@@ -7160,8 +7160,8 @@
         {
           "document_id": "doc-e78639e34eda3a059e76",
           "outcome": "same-snapshot",
-          "start": 2016,
-          "end": 2285,
+          "start": 2014,
+          "end": 2283,
           "block_ids": [
             "doc-e78639e34eda3a059e76:b00063",
             "doc-e78639e34eda3a059e76:b00064"
@@ -7181,8 +7181,8 @@
         {
           "document_id": "doc-6ea083d5d353d3a54bc0",
           "outcome": "same-snapshot",
-          "start": 11149,
-          "end": 11587,
+          "start": 11146,
+          "end": 11582,
           "block_ids": [
             "doc-6ea083d5d353d3a54bc0:b00443",
             "doc-6ea083d5d353d3a54bc0:b00444"
@@ -7202,8 +7202,8 @@
         {
           "document_id": "doc-6ea083d5d353d3a54bc0",
           "outcome": "same-snapshot",
-          "start": 11589,
-          "end": 12132,
+          "start": 11584,
+          "end": 12122,
           "block_ids": [
             "doc-6ea083d5d353d3a54bc0:b00445",
             "doc-6ea083d5d353d3a54bc0:b00446",
@@ -7227,8 +7227,8 @@
         {
           "document_id": "doc-6ea083d5d353d3a54bc0",
           "outcome": "same-snapshot",
-          "start": 12134,
-          "end": 12409,
+          "start": 12124,
+          "end": 12397,
           "block_ids": [
             "doc-6ea083d5d353d3a54bc0:b00451",
             "doc-6ea083d5d353d3a54bc0:b00452"
@@ -7248,8 +7248,8 @@
         {
           "document_id": "doc-6ea083d5d353d3a54bc0",
           "outcome": "same-snapshot",
-          "start": 12411,
-          "end": 13076,
+          "start": 12399,
+          "end": 13055,
           "block_ids": [
             "doc-6ea083d5d353d3a54bc0:b00453",
             "doc-6ea083d5d353d3a54bc0:b00454",
@@ -7273,7 +7273,7 @@
           "document_id": "doc-42e6fd401649e8cf7deb",
           "outcome": "same-snapshot",
           "start": 10807,
-          "end": 11303,
+          "end": 11298,
           "block_ids": [
             "doc-42e6fd401649e8cf7deb:b00437",
             "doc-42e6fd401649e8cf7deb:b00438",
@@ -7299,8 +7299,8 @@
         {
           "document_id": "doc-42e6fd401649e8cf7deb",
           "outcome": "same-snapshot",
-          "start": 11305,
-          "end": 11959,
+          "start": 11300,
+          "end": 11950,
           "block_ids": [
             "doc-42e6fd401649e8cf7deb:b00445",
             "doc-42e6fd401649e8cf7deb:b00446",
@@ -7509,8 +7509,8 @@
         {
           "document_id": "doc-e78639e34eda3a059e76",
           "outcome": "same-snapshot",
-          "start": 2867,
-          "end": 3468,
+          "start": 2865,
+          "end": 3466,
           "block_ids": [
             "doc-e78639e34eda3a059e76:b00073",
             "doc-e78639e34eda3a059e76:b00074",
@@ -7531,8 +7531,8 @@
         {
           "document_id": "doc-e78639e34eda3a059e76",
           "outcome": "same-snapshot",
-          "start": 3470,
-          "end": 3827,
+          "start": 3468,
+          "end": 3825,
           "block_ids": [
             "doc-e78639e34eda3a059e76:b00076",
             "doc-e78639e34eda3a059e76:b00077"
@@ -7552,8 +7552,8 @@
         {
           "document_id": "doc-e78639e34eda3a059e76",
           "outcome": "same-snapshot",
-          "start": 3829,
-          "end": 3851,
+          "start": 3827,
+          "end": 3849,
           "block_ids": [
             "doc-e78639e34eda3a059e76:b00078"
           ],
@@ -7572,8 +7572,8 @@
         {
           "document_id": "doc-ee6f2bede39a79b1f3af",
           "outcome": "same-snapshot",
-          "start": 11233,
-          "end": 11522,
+          "start": 11230,
+          "end": 11516,
           "block_ids": [
             "doc-ee6f2bede39a79b1f3af:b00450",
             "doc-ee6f2bede39a79b1f3af:b00451",
@@ -7598,8 +7598,8 @@
         {
           "document_id": "doc-ee6f2bede39a79b1f3af",
           "outcome": "same-snapshot",
-          "start": 14468,
-          "end": 14616,
+          "start": 14446,
+          "end": 14594,
           "block_ids": [
             "doc-ee6f2bede39a79b1f3af:b00485"
           ],
@@ -7618,8 +7618,8 @@
         {
           "document_id": "doc-ee6f2bede39a79b1f3af",
           "outcome": "same-snapshot",
-          "start": 14336,
-          "end": 14466,
+          "start": 14314,
+          "end": 14444,
           "block_ids": [
             "doc-ee6f2bede39a79b1f3af:b00484"
           ],
@@ -7638,8 +7638,8 @@
         {
           "document_id": "doc-ee6f2bede39a79b1f3af",
           "outcome": "same-snapshot",
-          "start": 12696,
-          "end": 12922,
+          "start": 12685,
+          "end": 12910,
           "block_ids": [
             "doc-ee6f2bede39a79b1f3af:b00468",
             "doc-ee6f2bede39a79b1f3af:b00469",
@@ -7661,8 +7661,8 @@
         {
           "document_id": "doc-ee6f2bede39a79b1f3af",
           "outcome": "same-snapshot",
-          "start": 11524,
-          "end": 12164,
+          "start": 11518,
+          "end": 12156,
           "block_ids": [
             "doc-ee6f2bede39a79b1f3af:b00457",
             "doc-ee6f2bede39a79b1f3af:b00458"
@@ -9869,8 +9869,8 @@
         {
           "document_id": "doc-a8114f7c75c808af1403",
           "outcome": "same-snapshot",
-          "start": 3822,
-          "end": 4037,
+          "start": 3819,
+          "end": 4034,
           "block_ids": [
             "doc-a8114f7c75c808af1403:b00066",
             "doc-a8114f7c75c808af1403:b00067",
@@ -9897,8 +9897,8 @@
         {
           "document_id": "doc-a8114f7c75c808af1403",
           "outcome": "same-snapshot",
-          "start": 4039,
-          "end": 4168,
+          "start": 4036,
+          "end": 4165,
           "block_ids": [
             "doc-a8114f7c75c808af1403:b00075",
             "doc-a8114f7c75c808af1403:b00076",
@@ -9922,8 +9922,8 @@
         {
           "document_id": "doc-a8114f7c75c808af1403",
           "outcome": "same-snapshot",
-          "start": 4170,
-          "end": 4206,
+          "start": 4167,
+          "end": 4203,
           "block_ids": [
             "doc-a8114f7c75c808af1403:b00081",
             "doc-a8114f7c75c808af1403:b00082"
@@ -9944,7 +9944,7 @@
           "document_id": "doc-a8114f7c75c808af1403",
           "outcome": "same-snapshot",
           "start": 1217,
-          "end": 1641,
+          "end": 1638,
           "block_ids": [
             "doc-a8114f7c75c808af1403:b00054",
             "doc-a8114f7c75c808af1403:b00055"
@@ -9964,8 +9964,8 @@
         {
           "document_id": "doc-40854d7d26db9f3bba00",
           "outcome": "same-snapshot",
-          "start": 6178,
-          "end": 6442,
+          "start": 6174,
+          "end": 6438,
           "block_ids": [
             "doc-40854d7d26db9f3bba00:b00158",
             "doc-40854d7d26db9f3bba00:b00159",
@@ -9993,8 +9993,8 @@
         {
           "document_id": "doc-40854d7d26db9f3bba00",
           "outcome": "same-snapshot",
-          "start": 6444,
-          "end": 6630,
+          "start": 6440,
+          "end": 6626,
           "block_ids": [
             "doc-40854d7d26db9f3bba00:b00168",
             "doc-40854d7d26db9f3bba00:b00169",
@@ -10566,7 +10566,7 @@
           "document_id": "doc-e0dd90106b3c8eff3235",
           "outcome": "same-snapshot",
           "start": 10884,
-          "end": 11365,
+          "end": 11360,
           "block_ids": [
             "doc-e0dd90106b3c8eff3235:b00441",
             "doc-e0dd90106b3c8eff3235:b00442",
@@ -10582,8 +10582,8 @@
         {
           "document_id": "doc-e0dd90106b3c8eff3235",
           "outcome": "same-snapshot",
-          "start": 12468,
-          "end": 12520,
+          "start": 12462,
+          "end": 12514,
           "block_ids": [
             "doc-e0dd90106b3c8eff3235:b00451",
             "doc-e0dd90106b3c8eff3235:b00452"
@@ -10603,8 +10603,8 @@
         {
           "document_id": "doc-e0dd90106b3c8eff3235",
           "outcome": "same-snapshot",
-          "start": 11367,
-          "end": 12466,
+          "start": 11362,
+          "end": 12460,
           "block_ids": [
             "doc-e0dd90106b3c8eff3235:b00445",
             "doc-e0dd90106b3c8eff3235:b00446",
@@ -10629,7 +10629,7 @@
           "document_id": "doc-e47f41de157a031ee350",
           "outcome": "same-snapshot",
           "start": 10892,
-          "end": 11790,
+          "end": 11784,
           "block_ids": [
             "doc-e47f41de157a031ee350:b00438",
             "doc-e47f41de157a031ee350:b00439",
@@ -10675,7 +10675,7 @@
           "document_id": "doc-71f912c1a94b986fba26",
           "outcome": "same-snapshot",
           "start": 11788,
-          "end": 11959,
+          "end": 11958,
           "block_ids": [
             "doc-71f912c1a94b986fba26:b00446",
             "doc-71f912c1a94b986fba26:b00447",
@@ -10719,8 +10719,8 @@
         {
           "document_id": "doc-e47f41de157a031ee350",
           "outcome": "same-snapshot",
-          "start": 12115,
-          "end": 12192,
+          "start": 12106,
+          "end": 12183,
           "block_ids": [
             "doc-e47f41de157a031ee350:b00449",
             "doc-e47f41de157a031ee350:b00450"
@@ -10734,8 +10734,8 @@
         {
           "document_id": "doc-e47f41de157a031ee350",
           "outcome": "same-snapshot",
-          "start": 14696,
-          "end": 14782,
+          "start": 14686,
+          "end": 14772,
           "block_ids": [
             "doc-e47f41de157a031ee350:b00519",
             "doc-e47f41de157a031ee350:b00520"
@@ -10755,8 +10755,8 @@
         {
           "document_id": "doc-e47f41de157a031ee350",
           "outcome": "same-snapshot",
-          "start": 12465,
-          "end": 12941,
+          "start": 12456,
+          "end": 12931,
           "block_ids": [
             "doc-e47f41de157a031ee350:b00462",
             "doc-e47f41de157a031ee350:b00463",
@@ -11446,8 +11446,8 @@
         {
           "document_id": "doc-cfa52df67bc1a2de79f0",
           "outcome": "same-snapshot",
-          "start": 5223,
-          "end": 5787,
+          "start": 5221,
+          "end": 5785,
           "block_ids": [
             "doc-cfa52df67bc1a2de79f0:b00104",
             "doc-cfa52df67bc1a2de79f0:b00105",
@@ -11468,8 +11468,8 @@
         {
           "document_id": "doc-cfa52df67bc1a2de79f0",
           "outcome": "same-snapshot",
-          "start": 5789,
-          "end": 6215,
+          "start": 5787,
+          "end": 6213,
           "block_ids": [
             "doc-cfa52df67bc1a2de79f0:b00107",
             "doc-cfa52df67bc1a2de79f0:b00108",
@@ -11485,8 +11485,8 @@
         {
           "document_id": "doc-cfa52df67bc1a2de79f0",
           "outcome": "same-snapshot",
-          "start": 8228,
-          "end": 8509,
+          "start": 8226,
+          "end": 8507,
           "block_ids": [
             "doc-cfa52df67bc1a2de79f0:b00129",
             "doc-cfa52df67bc1a2de79f0:b00130"
@@ -11520,8 +11520,8 @@
         {
           "document_id": "doc-cfa52df67bc1a2de79f0",
           "outcome": "same-snapshot",
-          "start": 6217,
-          "end": 6484,
+          "start": 6215,
+          "end": 6482,
           "block_ids": [
             "doc-cfa52df67bc1a2de79f0:b00111",
             "doc-cfa52df67bc1a2de79f0:b00112",
@@ -16131,7 +16131,7 @@
           "document_id": "doc-fce27b72dc3a3a90a70f",
           "outcome": "same-snapshot",
           "start": 2356,
-          "end": 3066,
+          "end": 3064,
           "block_ids": [
             "doc-fce27b72dc3a3a90a70f:b00069",
             "doc-fce27b72dc3a3a90a70f:b00070",
@@ -16163,8 +16163,8 @@
         {
           "document_id": "doc-fce27b72dc3a3a90a70f",
           "outcome": "same-snapshot",
-          "start": 4074,
-          "end": 4639,
+          "start": 4072,
+          "end": 4637,
           "block_ids": [
             "doc-fce27b72dc3a3a90a70f:b00096",
             "doc-fce27b72dc3a3a90a70f:b00097",
@@ -16191,8 +16191,8 @@
         {
           "document_id": "doc-fce27b72dc3a3a90a70f",
           "outcome": "same-snapshot",
-          "start": 4816,
-          "end": 6018,
+          "start": 4814,
+          "end": 6016,
           "block_ids": [
             "doc-fce27b72dc3a3a90a70f:b00107",
             "doc-fce27b72dc3a3a90a70f:b00108",
@@ -16218,8 +16218,8 @@
         {
           "document_id": "doc-fce27b72dc3a3a90a70f",
           "outcome": "same-snapshot",
-          "start": 6154,
-          "end": 6295,
+          "start": 6152,
+          "end": 6292,
           "block_ids": [
             "doc-fce27b72dc3a3a90a70f:b00117"
           ],
@@ -16232,8 +16232,8 @@
         {
           "document_id": "doc-fce27b72dc3a3a90a70f",
           "outcome": "same-snapshot",
-          "start": 6597,
-          "end": 6854,
+          "start": 6594,
+          "end": 6851,
           "block_ids": [
             "doc-fce27b72dc3a3a90a70f:b00121",
             "doc-fce27b72dc3a3a90a70f:b00122"
@@ -16253,8 +16253,8 @@
         {
           "document_id": "doc-fce27b72dc3a3a90a70f",
           "outcome": "same-snapshot",
-          "start": 7139,
-          "end": 7390,
+          "start": 7136,
+          "end": 7387,
           "block_ids": [
             "doc-fce27b72dc3a3a90a70f:b00127",
             "doc-fce27b72dc3a3a90a70f:b00128",
@@ -16277,8 +16277,8 @@
         {
           "document_id": "doc-fce27b72dc3a3a90a70f",
           "outcome": "same-snapshot",
-          "start": 7863,
-          "end": 8159,
+          "start": 7860,
+          "end": 8156,
           "block_ids": [
             "doc-fce27b72dc3a3a90a70f:b00137",
             "doc-fce27b72dc3a3a90a70f:b00138",
@@ -16338,8 +16338,8 @@
         {
           "document_id": "doc-fce27b72dc3a3a90a70f",
           "outcome": "same-snapshot",
-          "start": 3068,
-          "end": 4043,
+          "start": 3066,
+          "end": 4041,
           "block_ids": [
             "doc-fce27b72dc3a3a90a70f:b00083",
             "doc-fce27b72dc3a3a90a70f:b00084",
@@ -16429,8 +16429,8 @@
         {
           "document_id": "doc-fce27b72dc3a3a90a70f",
           "outcome": "same-snapshot",
-          "start": 7473,
-          "end": 7822,
+          "start": 7470,
+          "end": 7819,
           "block_ids": [
             "doc-fce27b72dc3a3a90a70f:b00134",
             "doc-fce27b72dc3a3a90a70f:b00135"
@@ -17019,8 +17019,8 @@
         {
           "document_id": "doc-ea8ce303e3ee8fb3a83a",
           "outcome": "same-snapshot",
-          "start": 2272,
-          "end": 2375,
+          "start": 2271,
+          "end": 2374,
           "block_ids": [
             "doc-ea8ce303e3ee8fb3a83a:b00068"
           ],
@@ -17039,8 +17039,8 @@
         {
           "document_id": "doc-ea8ce303e3ee8fb3a83a",
           "outcome": "same-snapshot",
-          "start": 2681,
-          "end": 2747,
+          "start": 2680,
+          "end": 2746,
           "block_ids": [
             "doc-ea8ce303e3ee8fb3a83a:b00077"
           ],
@@ -17053,8 +17053,8 @@
         {
           "document_id": "doc-ea8ce303e3ee8fb3a83a",
           "outcome": "same-snapshot",
-          "start": 2839,
-          "end": 3032,
+          "start": 2838,
+          "end": 3031,
           "block_ids": [
             "doc-ea8ce303e3ee8fb3a83a:b00079",
             "doc-ea8ce303e3ee8fb3a83a:b00080"
@@ -17074,8 +17074,8 @@
         {
           "document_id": "doc-ea8ce303e3ee8fb3a83a",
           "outcome": "same-snapshot",
-          "start": 3785,
-          "end": 4168,
+          "start": 3784,
+          "end": 4167,
           "block_ids": [
             "doc-ea8ce303e3ee8fb3a83a:b00093",
             "doc-ea8ce303e3ee8fb3a83a:b00094"
@@ -17095,8 +17095,8 @@
         {
           "document_id": "doc-ea8ce303e3ee8fb3a83a",
           "outcome": "same-snapshot",
-          "start": 18939,
-          "end": 19110,
+          "start": 18934,
+          "end": 19105,
           "block_ids": [
             "doc-ea8ce303e3ee8fb3a83a:b00241",
             "doc-ea8ce303e3ee8fb3a83a:b00242",
@@ -17981,8 +17981,8 @@
         {
           "document_id": "doc-9dcc42de170c42587893",
           "outcome": "same-snapshot",
-          "start": 11089,
-          "end": 11636,
+          "start": 11087,
+          "end": 11626,
           "block_ids": [
             "doc-9dcc42de170c42587893:b00447",
             "doc-9dcc42de170c42587893:b00448",
@@ -18003,8 +18003,8 @@
         {
           "document_id": "doc-711c3b23431a89847e6a",
           "outcome": "same-snapshot",
-          "start": 12314,
-          "end": 12589,
+          "start": 12296,
+          "end": 12563,
           "block_ids": [
             "doc-711c3b23431a89847e6a:b00462"
           ],
@@ -18023,8 +18023,8 @@
         {
           "document_id": "doc-95f7b9e0abaf0fee231e",
           "outcome": "same-snapshot",
-          "start": 11957,
-          "end": 12181,
+          "start": 11942,
+          "end": 12160,
           "block_ids": [
             "doc-95f7b9e0abaf0fee231e:b00461"
           ],
@@ -18043,8 +18043,8 @@
         {
           "document_id": "doc-95f7b9e0abaf0fee231e",
           "outcome": "same-snapshot",
-          "start": 11110,
-          "end": 11389,
+          "start": 11108,
+          "end": 11380,
           "block_ids": [
             "doc-95f7b9e0abaf0fee231e:b00447",
             "doc-95f7b9e0abaf0fee231e:b00448",
@@ -18066,8 +18066,8 @@
         {
           "document_id": "doc-95f7b9e0abaf0fee231e",
           "outcome": "same-snapshot",
-          "start": 11391,
-          "end": 11823,
+          "start": 11382,
+          "end": 11809,
           "block_ids": [
             "doc-95f7b9e0abaf0fee231e:b00451",
             "doc-95f7b9e0abaf0fee231e:b00452",
@@ -18091,8 +18091,8 @@
         {
           "document_id": "doc-711c3b23431a89847e6a",
           "outcome": "same-snapshot",
-          "start": 11082,
-          "end": 11400,
+          "start": 11080,
+          "end": 11394,
           "block_ids": [
             "doc-711c3b23431a89847e6a:b00447"
           ],
@@ -18111,8 +18111,8 @@
         {
           "document_id": "doc-711c3b23431a89847e6a",
           "outcome": "same-snapshot",
-          "start": 12875,
-          "end": 13034,
+          "start": 12843,
+          "end": 13001,
           "block_ids": [
             "doc-711c3b23431a89847e6a:b00465"
           ],
@@ -24609,8 +24609,8 @@
         {
           "document_id": "doc-a7b0f3605efd15fe02e9",
           "outcome": "same-snapshot",
-          "start": 6560,
-          "end": 6820,
+          "start": 6558,
+          "end": 6818,
           "block_ids": [
             "doc-a7b0f3605efd15fe02e9:b00104"
           ],
@@ -24629,8 +24629,8 @@
         {
           "document_id": "doc-a7b0f3605efd15fe02e9",
           "outcome": "same-snapshot",
-          "start": 6145,
-          "end": 6317,
+          "start": 6143,
+          "end": 6315,
           "block_ids": [
             "doc-a7b0f3605efd15fe02e9:b00101"
           ],
@@ -24649,8 +24649,8 @@
         {
           "document_id": "doc-a7b0f3605efd15fe02e9",
           "outcome": "same-snapshot",
-          "start": 6319,
-          "end": 6489,
+          "start": 6317,
+          "end": 6487,
           "block_ids": [
             "doc-a7b0f3605efd15fe02e9:b00102"
           ],
@@ -24669,8 +24669,8 @@
         {
           "document_id": "doc-a7b0f3605efd15fe02e9",
           "outcome": "same-snapshot",
-          "start": 8258,
-          "end": 8630,
+          "start": 8256,
+          "end": 8628,
           "block_ids": [
             "doc-a7b0f3605efd15fe02e9:b00124",
             "doc-a7b0f3605efd15fe02e9:b00125",
@@ -24694,8 +24694,8 @@
         {
           "document_id": "doc-a7b0f3605efd15fe02e9",
           "outcome": "same-snapshot",
-          "start": 11226,
-          "end": 11523,
+          "start": 11224,
+          "end": 11521,
           "block_ids": [
             "doc-a7b0f3605efd15fe02e9:b00148"
           ],
@@ -24714,8 +24714,8 @@
         {
           "document_id": "doc-a7b0f3605efd15fe02e9",
           "outcome": "same-snapshot",
-          "start": 4411,
-          "end": 4651,
+          "start": 4409,
+          "end": 4649,
           "block_ids": [
             "doc-a7b0f3605efd15fe02e9:b00078"
           ],
@@ -27975,8 +27975,8 @@
         {
           "document_id": "doc-31ee33d8007b771265da",
           "outcome": "same-snapshot",
-          "start": 44458,
-          "end": 44809,
+          "start": 44456,
+          "end": 44807,
           "block_ids": [
             "doc-31ee33d8007b771265da:b00455",
             "doc-31ee33d8007b771265da:b00456"
@@ -28092,8 +28092,8 @@
         {
           "document_id": "doc-fc1639f7f1a1a8970db4",
           "outcome": "same-snapshot",
-          "start": 10856,
-          "end": 11254,
+          "start": 10852,
+          "end": 11239,
           "block_ids": [
             "doc-fc1639f7f1a1a8970db4:b00443"
           ],
@@ -28113,7 +28113,7 @@
           "document_id": "doc-fc1639f7f1a1a8970db4",
           "outcome": "same-snapshot",
           "start": 10546,
-          "end": 10704,
+          "end": 10700,
           "block_ids": [
             "doc-fc1639f7f1a1a8970db4:b00434",
             "doc-fc1639f7f1a1a8970db4:b00435"
@@ -28133,8 +28133,8 @@
         {
           "document_id": "doc-fc1639f7f1a1a8970db4",
           "outcome": "same-snapshot",
-          "start": 12017,
-          "end": 12115,
+          "start": 11994,
+          "end": 12092,
           "block_ids": [
             "doc-fc1639f7f1a1a8970db4:b00454",
             "doc-fc1639f7f1a1a8970db4:b00455"
@@ -28154,8 +28154,8 @@
         {
           "document_id": "doc-fc1639f7f1a1a8970db4",
           "outcome": "same-snapshot",
-          "start": 11326,
-          "end": 11919,
+          "start": 11311,
+          "end": 11897,
           "block_ids": [
             "doc-fc1639f7f1a1a8970db4:b00445",
             "doc-fc1639f7f1a1a8970db4:b00446",
@@ -28179,8 +28179,8 @@
         {
           "document_id": "doc-83832fea8301efd1719c",
           "outcome": "same-snapshot",
-          "start": 19182,
-          "end": 19731,
+          "start": 19031,
+          "end": 19569,
           "block_ids": [
             "doc-83832fea8301efd1719c:b00485",
             "doc-83832fea8301efd1719c:b00486"
@@ -28200,8 +28200,8 @@
         {
           "document_id": "doc-fc1639f7f1a1a8970db4",
           "outcome": "same-snapshot",
-          "start": 11349,
-          "end": 11738,
+          "start": 11334,
+          "end": 11720,
           "block_ids": [
             "doc-fc1639f7f1a1a8970db4:b00446",
             "doc-fc1639f7f1a1a8970db4:b00447",
@@ -28222,8 +28222,8 @@
         {
           "document_id": "doc-fc1639f7f1a1a8970db4",
           "outcome": "same-snapshot",
-          "start": 11349,
-          "end": 11738,
+          "start": 11334,
+          "end": 11720,
           "block_ids": [
             "doc-fc1639f7f1a1a8970db4:b00446",
             "doc-fc1639f7f1a1a8970db4:b00447",
@@ -28244,8 +28244,8 @@
         {
           "document_id": "doc-fc1639f7f1a1a8970db4",
           "outcome": "same-snapshot",
-          "start": 11326,
-          "end": 11919,
+          "start": 11311,
+          "end": 11897,
           "block_ids": [
             "doc-fc1639f7f1a1a8970db4:b00445",
             "doc-fc1639f7f1a1a8970db4:b00446",
@@ -28269,8 +28269,8 @@
         {
           "document_id": "doc-fc1639f7f1a1a8970db4",
           "outcome": "same-snapshot",
-          "start": 12117,
-          "end": 12862,
+          "start": 12094,
+          "end": 12817,
           "block_ids": [
             "doc-fc1639f7f1a1a8970db4:b00456",
             "doc-fc1639f7f1a1a8970db4:b00457",
@@ -28291,8 +28291,8 @@
         {
           "document_id": "doc-fc1639f7f1a1a8970db4",
           "outcome": "same-snapshot",
-          "start": 12117,
-          "end": 12862,
+          "start": 12094,
+          "end": 12817,
           "block_ids": [
             "doc-fc1639f7f1a1a8970db4:b00456",
             "doc-fc1639f7f1a1a8970db4:b00457",
@@ -28355,8 +28355,8 @@
         {
           "document_id": "doc-6d655671e0529ee14212",
           "outcome": "same-snapshot",
-          "start": 12875,
-          "end": 13066,
+          "start": 12851,
+          "end": 13039,
           "block_ids": [
             "doc-6d655671e0529ee14212:b00467",
             "doc-6d655671e0529ee14212:b00468",
@@ -28961,8 +28961,8 @@
         {
           "document_id": "doc-e175c611718f9609a0b9",
           "outcome": "same-snapshot",
-          "start": 13098,
-          "end": 13388,
+          "start": 13044,
+          "end": 13322,
           "block_ids": [
             "doc-e175c611718f9609a0b9:b00466",
             "doc-e175c611718f9609a0b9:b00467",
@@ -28986,8 +28986,8 @@
         {
           "document_id": "doc-e175c611718f9609a0b9",
           "outcome": "same-snapshot",
-          "start": 13390,
-          "end": 13496,
+          "start": 13324,
+          "end": 13426,
           "block_ids": [
             "doc-e175c611718f9609a0b9:b00472"
           ],
@@ -29006,8 +29006,8 @@
         {
           "document_id": "doc-e175c611718f9609a0b9",
           "outcome": "same-snapshot",
-          "start": 13542,
-          "end": 14032,
+          "start": 13472,
+          "end": 13945,
           "block_ids": [
             "doc-e175c611718f9609a0b9:b00475",
             "doc-e175c611718f9609a0b9:b00476",
@@ -29029,8 +29029,8 @@
         {
           "document_id": "doc-e175c611718f9609a0b9",
           "outcome": "same-snapshot",
-          "start": 14237,
-          "end": 14671,
+          "start": 14150,
+          "end": 14571,
           "block_ids": [
             "doc-e175c611718f9609a0b9:b00480"
           ],
@@ -29042,11 +29042,3001 @@
         }
       ],
       "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-bs",
+      "citations": [
+        {
+          "document_id": "doc-cff5ab3ec851efa60538",
+          "outcome": "same-snapshot",
+          "start": 380,
+          "end": 614,
+          "block_ids": [
+            "doc-cff5ab3ec851efa60538:b00014"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-cff5ab3ec851efa60538",
+          "outcome": "same-snapshot",
+          "start": 4290,
+          "end": 4408,
+          "block_ids": [
+            "doc-cff5ab3ec851efa60538:b00049"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-bs-by-nationality",
+      "citations": [
+        {
+          "document_id": "doc-b8e80712d932400cd49a",
+          "outcome": "same-snapshot",
+          "start": 2548,
+          "end": 3377,
+          "block_ids": [
+            "doc-b8e80712d932400cd49a:b00045",
+            "doc-b8e80712d932400cd49a:b00046"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-bs-law",
+      "citations": [
+        {
+          "document_id": "doc-1de266bfefd7cb3ab142",
+          "outcome": "same-snapshot",
+          "start": 2092,
+          "end": 4849,
+          "block_ids": [
+            "doc-1de266bfefd7cb3ab142:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "bs-law",
+          "basis": "Cantonal act: SG 122.200",
+          "basis_rule": "page rule www.gesetzessammlung.bs.ch/api/de/versions/6200/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SG 122.200"
+    },
+    {
+      "fact_id": "cantonal-registration-route-sh",
+      "citations": [
+        {
+          "document_id": "doc-f6debadae0d5f281d74a",
+          "outcome": "same-snapshot",
+          "start": 63,
+          "end": 476,
+          "block_ids": [
+            "doc-f6debadae0d5f281d74a:b00006",
+            "doc-f6debadae0d5f281d74a:b00007"
+          ],
+          "warnings": [],
+          "institution_id": "sh-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-sh-law",
+      "citations": [
+        {
+          "document_id": "doc-a0271537b3b11fa7e458",
+          "outcome": "same-snapshot",
+          "start": 38844,
+          "end": 42762,
+          "block_ids": [
+            "doc-a0271537b3b11fa7e458:b00026",
+            "doc-a0271537b3b11fa7e458:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "sh-law",
+          "basis": "Cantonal act: SHR 120.100",
+          "basis_rule": "page rule rechtsbuch.sh.ch/api/de/versions/2055/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SHR 120.100"
+    },
+    {
+      "fact_id": "cantonal-registration-route-tg-law",
+      "citations": [
+        {
+          "document_id": "doc-233657084673f1db58c3",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 3406,
+          "block_ids": [
+            "doc-233657084673f1db58c3:b00001",
+            "doc-233657084673f1db58c3:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "tg-law",
+          "basis": "Cantonal act: RB 142.15",
+          "basis_rule": "page rule www.rechtsbuch.tg.ch/api/de/versions/2440/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: RB 142.15"
+    },
+    {
+      "fact_id": "cantonal-registration-route-so",
+      "citations": [
+        {
+          "document_id": "doc-a06a78b6403bde7dbc64",
+          "outcome": "same-snapshot",
+          "start": 2733,
+          "end": 2746,
+          "block_ids": [
+            "doc-a06a78b6403bde7dbc64:b00091"
+          ],
+          "warnings": [],
+          "institution_id": "so-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-a06a78b6403bde7dbc64",
+          "outcome": "same-snapshot",
+          "start": 2880,
+          "end": 3062,
+          "block_ids": [
+            "doc-a06a78b6403bde7dbc64:b00093"
+          ],
+          "warnings": [],
+          "institution_id": "so-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-zg-office-registers",
+      "citations": [
+        {
+          "document_id": "doc-bef10a9532d3e65ed421",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1841,
+          "block_ids": [
+            "doc-bef10a9532d3e65ed421:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "zg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-zg-law",
+      "citations": [
+        {
+          "document_id": "doc-54dc28822feaaa90ba5a",
+          "outcome": "same-snapshot",
+          "start": 24838,
+          "end": 28256,
+          "block_ids": [
+            "doc-54dc28822feaaa90ba5a:b00017",
+            "doc-54dc28822feaaa90ba5a:b00018"
+          ],
+          "warnings": [],
+          "institution_id": "zg-law",
+          "basis": "Cantonal act: BGS 171.1",
+          "basis_rule": "page rule bgs.zg.ch/api/de/versions/2741/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: BGS 171.1"
+    },
+    {
+      "fact_id": "cantonal-registration-route-bl-law",
+      "citations": [
+        {
+          "document_id": "doc-4245741446f67432de2a",
+          "outcome": "same-snapshot",
+          "start": 3407,
+          "end": 5627,
+          "block_ids": [
+            "doc-4245741446f67432de2a:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "bl-law",
+          "basis": "Cantonal act: SGS 111",
+          "basis_rule": "page rule bl.clex.ch/api/de/versions/4008/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SGS 111"
+    },
+    {
+      "fact_id": "cantonal-registration-route-ag-law",
+      "citations": [
+        {
+          "document_id": "doc-68427fca2ccf68f45fe2",
+          "outcome": "same-snapshot",
+          "start": 3213,
+          "end": 5053,
+          "block_ids": [
+            "doc-68427fca2ccf68f45fe2:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "ag-law",
+          "basis": "Cantonal act: SAR 122.200",
+          "basis_rule": "page rule gesetzessammlungen.ag.ch/api/de/versions/3439/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SAR 122.200"
+    },
+    {
+      "fact_id": "cantonal-registration-route-ar-law",
+      "citations": [
+        {
+          "document_id": "doc-c32553ea05e1587a60d4",
+          "outcome": "same-snapshot",
+          "start": 984,
+          "end": 2464,
+          "block_ids": [
+            "doc-c32553ea05e1587a60d4:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "ar-law",
+          "basis": "Cantonal act: bGS 122.1",
+          "basis_rule": "page rule ar.clex.ch/api/de/versions/1275/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: bGS 122.1"
+    },
+    {
+      "fact_id": "cantonal-registration-route-be-eu-efta",
+      "citations": [
+        {
+          "document_id": "doc-ef8e74af38d086f3a1af",
+          "outcome": "same-snapshot",
+          "start": 1354,
+          "end": 1902,
+          "block_ids": [
+            "doc-ef8e74af38d086f3a1af:b00031"
+          ],
+          "warnings": [],
+          "institution_id": "be-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-gl-law",
+      "citations": [
+        {
+          "document_id": "doc-87739a2bc2f8480d2c1e",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 3649,
+          "block_ids": [
+            "doc-87739a2bc2f8480d2c1e:b00001",
+            "doc-87739a2bc2f8480d2c1e:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "gl-law",
+          "basis": "Cantonal act: GS I C/21/2",
+          "basis_rule": "page rule gesetze.gl.ch/api/de/versions/2346/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: GS I C/21/2"
+    },
+    {
+      "fact_id": "cantonal-registration-route-ju",
+      "citations": [
+        {
+          "document_id": "doc-3ca5baea976a4719565c",
+          "outcome": "same-snapshot",
+          "start": 2470,
+          "end": 2798,
+          "block_ids": [
+            "doc-3ca5baea976a4719565c:b00115",
+            "doc-3ca5baea976a4719565c:b00116"
+          ],
+          "warnings": [],
+          "institution_id": "ju-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-fr-law",
+      "citations": [
+        {
+          "document_id": "doc-d8abd396531de40dcbd2",
+          "outcome": "same-snapshot",
+          "start": 1170,
+          "end": 5571,
+          "block_ids": [
+            "doc-d8abd396531de40dcbd2:b00002",
+            "doc-d8abd396531de40dcbd2:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "fr-law",
+          "basis": "Cantonal act: RSF 114.21.1",
+          "basis_rule": "page rule bdlf.fr.ch/api/fr/versions/8129/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: RSF 114.21.1"
+    },
+    {
+      "fact_id": "cantonal-registration-route-fr-eu-efta",
+      "citations": [
+        {
+          "document_id": "doc-2a813d10788c0f4c00ba",
+          "outcome": "same-snapshot",
+          "start": 2366,
+          "end": 3679,
+          "block_ids": [
+            "doc-2a813d10788c0f4c00ba:b00092",
+            "doc-2a813d10788c0f4c00ba:b00093",
+            "doc-2a813d10788c0f4c00ba:b00094"
+          ],
+          "warnings": [],
+          "institution_id": "fr-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-ge-law",
+      "citations": [
+        {
+          "document_id": "doc-9bfb342bd18631c49022",
+          "outcome": "same-snapshot",
+          "start": 3453,
+          "end": 3613,
+          "block_ids": [
+            "doc-9bfb342bd18631c49022:b00038"
+          ],
+          "warnings": [],
+          "institution_id": "ge-law",
+          "basis": "Cantonal act: rsGE F 2 25",
+          "basis_rule": "page rule silgeneve.ch/legis/data/rsg_f2_25.htm",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: rsGE F 2 25"
+    },
+    {
+      "fact_id": "cantonal-registration-route-ge-confederates",
+      "citations": [
+        {
+          "document_id": "doc-cfc606f7de89a194cee4",
+          "outcome": "same-snapshot",
+          "start": 391,
+          "end": 745,
+          "block_ids": [
+            "doc-cfc606f7de89a194cee4:b00011"
+          ],
+          "warnings": [],
+          "institution_id": "ge-law",
+          "basis": "Cantonal act: rsGE F 2 05",
+          "basis_rule": "page rule silgeneve.ch/legis/data/rsg_f2_05.htm",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: rsGE F 2 05"
+    },
+    {
+      "fact_id": "cantonal-registration-route-gr-law",
+      "citations": [
+        {
+          "document_id": "doc-cb07b45b2872d40435a6",
+          "outcome": "same-snapshot",
+          "start": 5112,
+          "end": 7071,
+          "block_ids": [
+            "doc-cb07b45b2872d40435a6:b00004"
+          ],
+          "warnings": [],
+          "institution_id": "gr-law",
+          "basis": "Cantonal act: BR 171.200",
+          "basis_rule": "page rule www.gr-lex.gr.ch/api/de/versions/3576/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: BR 171.200"
+    },
+    {
+      "fact_id": "cantonal-registration-route-lu-law",
+      "citations": [
+        {
+          "document_id": "doc-c14d4fcf6d9df22c9586",
+          "outcome": "same-snapshot",
+          "start": 3510,
+          "end": 5848,
+          "block_ids": [
+            "doc-c14d4fcf6d9df22c9586:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "lu-law",
+          "basis": "Cantonal act: SRL 5",
+          "basis_rule": "page rule srl.lu.ch/api/de/versions/4184/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SRL 5"
+    },
+    {
+      "fact_id": "cantonal-registration-route-lu-leaflet",
+      "citations": [
+        {
+          "document_id": "doc-353f6cf9d61da86ca82c",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1924,
+          "block_ids": [
+            "doc-353f6cf9d61da86ca82c:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "lu-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-ne",
+      "citations": [
+        {
+          "document_id": "doc-2518b46b4d52603fce96",
+          "outcome": "same-snapshot",
+          "start": 14711,
+          "end": 15032,
+          "block_ids": [
+            "doc-2518b46b4d52603fce96:b00568"
+          ],
+          "warnings": [],
+          "institution_id": "ne-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-2518b46b4d52603fce96",
+          "outcome": "same-snapshot",
+          "start": 15090,
+          "end": 15265,
+          "block_ids": [
+            "doc-2518b46b4d52603fce96:b00570"
+          ],
+          "warnings": [],
+          "institution_id": "ne-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-nw-law",
+      "citations": [
+        {
+          "document_id": "doc-13a07bd6d3e02a05a0f5",
+          "outcome": "same-snapshot",
+          "start": 1245,
+          "end": 2354,
+          "block_ids": [
+            "doc-13a07bd6d3e02a05a0f5:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "nw-law",
+          "basis": "Cantonal act: NG 122.1",
+          "basis_rule": "page rule gesetze.nw.ch/api/de/versions/1351/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: NG 122.1"
+    },
+    {
+      "fact_id": "cantonal-registration-route-sg-law",
+      "citations": [
+        {
+          "document_id": "doc-30d29fac2c81ff92aaf0",
+          "outcome": "same-snapshot",
+          "start": 1302,
+          "end": 3154,
+          "block_ids": [
+            "doc-30d29fac2c81ff92aaf0:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "sg-law",
+          "basis": "Cantonal act: sGS 453.1",
+          "basis_rule": "page rule www.gesetzessammlung.sg.ch/api/de/versions/2506/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: sGS 453.1"
+    },
+    {
+      "fact_id": "cantonal-registration-route-ow-law",
+      "citations": [
+        {
+          "document_id": "doc-77c2c422cf2c1e926181",
+          "outcome": "same-snapshot",
+          "start": 5865,
+          "end": 7279,
+          "block_ids": [
+            "doc-77c2c422cf2c1e926181:b00005"
+          ],
+          "warnings": [],
+          "institution_id": "ow-law",
+          "basis": "Cantonal ordinance: GDB 113.11",
+          "basis_rule": "page rule gdb.ow.ch/api/de/versions/1824/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal ordinance: GDB 113.11"
+    },
+    {
+      "fact_id": "cantonal-registration-route-ow",
+      "citations": [
+        {
+          "document_id": "doc-95bb19b74e800e719113",
+          "outcome": "same-snapshot",
+          "start": 9017,
+          "end": 9484,
+          "block_ids": [
+            "doc-95bb19b74e800e719113:b00391"
+          ],
+          "warnings": [],
+          "institution_id": "ow-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-sz-law",
+      "citations": [
+        {
+          "document_id": "doc-61348efdcfb8b7cd0f29",
+          "outcome": "same-snapshot",
+          "start": 3959,
+          "end": 6161,
+          "block_ids": [
+            "doc-61348efdcfb8b7cd0f29:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "sz-office",
+          "basis": "Cantonal act: SRSZ 111.110",
+          "basis_rule": "page rule www.sz.ch/public/upload/assets/33326/111_110.pdf",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SRSZ 111.110"
+    },
+    {
+      "fact_id": "cantonal-registration-route-ti-law",
+      "citations": [
+        {
+          "document_id": "doc-f4e369cc5ff44fa4be1d",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 2803,
+          "block_ids": [
+            "doc-f4e369cc5ff44fa4be1d:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "ti-law",
+          "basis": "Cantonal ordinance: RL 144.110",
+          "basis_rule": "page rule m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/18",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-f4e369cc5ff44fa4be1d",
+          "outcome": "same-snapshot",
+          "start": 6253,
+          "end": 9553,
+          "block_ids": [
+            "doc-f4e369cc5ff44fa4be1d:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "ti-law",
+          "basis": "Cantonal ordinance: RL 144.110",
+          "basis_rule": "page rule m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/18",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal ordinance: RL 144.110"
+    },
+    {
+      "fact_id": "cantonal-registration-route-ur-law",
+      "citations": [
+        {
+          "document_id": "doc-eb17cee7f400a35afcc8",
+          "outcome": "same-snapshot",
+          "start": 7403,
+          "end": 8932,
+          "block_ids": [
+            "doc-eb17cee7f400a35afcc8:b00006"
+          ],
+          "warnings": [],
+          "institution_id": "ur-law",
+          "basis": "Cantonal act: RB 1.4201",
+          "basis_rule": "page rule rechtsbuch.ur.ch/api/de/versions/1048/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: RB 1.4201"
+    },
+    {
+      "fact_id": "cantonal-registration-route-vs-law",
+      "citations": [
+        {
+          "document_id": "doc-65c87384f0b1a34d6d51",
+          "outcome": "same-snapshot",
+          "start": 1063,
+          "end": 4952,
+          "block_ids": [
+            "doc-65c87384f0b1a34d6d51:b00002",
+            "doc-65c87384f0b1a34d6d51:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "vs-law",
+          "basis": "Cantonal act: RS/VS 176.1",
+          "basis_rule": "page rule lex.vs.ch/api/fr/versions/3227/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: RS/VS 176.1"
+    },
+    {
+      "fact_id": "cantonal-registration-route-vs",
+      "citations": [
+        {
+          "document_id": "doc-94c45c58dc090ae784f9",
+          "outcome": "same-snapshot",
+          "start": 1714,
+          "end": 2041,
+          "block_ids": [
+            "doc-94c45c58dc090ae784f9:b00072",
+            "doc-94c45c58dc090ae784f9:b00073",
+            "doc-94c45c58dc090ae784f9:b00074"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-vd",
+      "citations": [
+        {
+          "document_id": "doc-8d3859d1014df2992f75",
+          "outcome": "same-snapshot",
+          "start": 3479,
+          "end": 3858,
+          "block_ids": [
+            "doc-8d3859d1014df2992f75:b00066"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-8d3859d1014df2992f75",
+          "outcome": "same-snapshot",
+          "start": 4016,
+          "end": 4203,
+          "block_ids": [
+            "doc-8d3859d1014df2992f75:b00069"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-vd-arrival",
+      "citations": [
+        {
+          "document_id": "doc-3844053afd11f3382d02",
+          "outcome": "same-snapshot",
+          "start": 4013,
+          "end": 4127,
+          "block_ids": [
+            "doc-3844053afd11f3382d02:b00072"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-3844053afd11f3382d02",
+          "outcome": "same-snapshot",
+          "start": 5099,
+          "end": 5175,
+          "block_ids": [
+            "doc-3844053afd11f3382d02:b00082"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-3844053afd11f3382d02",
+          "outcome": "same-snapshot",
+          "start": 5629,
+          "end": 5671,
+          "block_ids": [
+            "doc-3844053afd11f3382d02:b00087"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-route-vd-spop",
+      "citations": [
+        {
+          "document_id": "doc-c8b9a1ea9ffc2b4e0c88",
+          "outcome": "same-snapshot",
+          "start": 3494,
+          "end": 4014,
+          "block_ids": [
+            "doc-c8b9a1ea9ffc2b4e0c88:b00065"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-c8b9a1ea9ffc2b4e0c88",
+          "outcome": "same-snapshot",
+          "start": 8472,
+          "end": 9743,
+          "block_ids": [
+            "doc-c8b9a1ea9ffc2b4e0c88:b00101"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-bs",
+      "citations": [
+        {
+          "document_id": "doc-cff5ab3ec851efa60538",
+          "outcome": "same-snapshot",
+          "start": 380,
+          "end": 614,
+          "block_ids": [
+            "doc-cff5ab3ec851efa60538:b00014"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-cff5ab3ec851efa60538",
+          "outcome": "same-snapshot",
+          "start": 1115,
+          "end": 1376,
+          "block_ids": [
+            "doc-cff5ab3ec851efa60538:b00024"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-bs-law",
+      "citations": [
+        {
+          "document_id": "doc-1de266bfefd7cb3ab142",
+          "outcome": "same-snapshot",
+          "start": 2092,
+          "end": 4849,
+          "block_ids": [
+            "doc-1de266bfefd7cb3ab142:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "bs-law",
+          "basis": "Cantonal act: SG 122.200",
+          "basis_rule": "page rule www.gesetzessammlung.bs.ch/api/de/versions/6200/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SG 122.200"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-sh",
+      "citations": [
+        {
+          "document_id": "doc-f6debadae0d5f281d74a",
+          "outcome": "same-snapshot",
+          "start": 255,
+          "end": 476,
+          "block_ids": [
+            "doc-f6debadae0d5f281d74a:b00007"
+          ],
+          "warnings": [],
+          "institution_id": "sh-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-sh-law",
+      "citations": [
+        {
+          "document_id": "doc-a0271537b3b11fa7e458",
+          "outcome": "same-snapshot",
+          "start": 38844,
+          "end": 40755,
+          "block_ids": [
+            "doc-a0271537b3b11fa7e458:b00026"
+          ],
+          "warnings": [],
+          "institution_id": "sh-law",
+          "basis": "Cantonal act: SHR 120.100",
+          "basis_rule": "page rule rechtsbuch.sh.ch/api/de/versions/2055/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SHR 120.100"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-tg-law",
+      "citations": [
+        {
+          "document_id": "doc-233657084673f1db58c3",
+          "outcome": "same-snapshot",
+          "start": 1485,
+          "end": 3406,
+          "block_ids": [
+            "doc-233657084673f1db58c3:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "tg-law",
+          "basis": "Cantonal act: RB 142.15",
+          "basis_rule": "page rule www.rechtsbuch.tg.ch/api/de/versions/2440/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: RB 142.15"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-so",
+      "citations": [
+        {
+          "document_id": "doc-a06a78b6403bde7dbc64",
+          "outcome": "same-snapshot",
+          "start": 2880,
+          "end": 3062,
+          "block_ids": [
+            "doc-a06a78b6403bde7dbc64:b00093"
+          ],
+          "warnings": [],
+          "institution_id": "so-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-so-law",
+      "citations": [
+        {
+          "document_id": "doc-b39ccb27108c19341863",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 2443,
+          "block_ids": [
+            "doc-b39ccb27108c19341863:b00001",
+            "doc-b39ccb27108c19341863:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "so-law",
+          "basis": "Cantonal act: BGS 131.1",
+          "basis_rule": "page rule bgs.so.ch/api/de/versions/5519/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: BGS 131.1"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-zg-law",
+      "citations": [
+        {
+          "document_id": "doc-54dc28822feaaa90ba5a",
+          "outcome": "same-snapshot",
+          "start": 24838,
+          "end": 26799,
+          "block_ids": [
+            "doc-54dc28822feaaa90ba5a:b00017"
+          ],
+          "warnings": [],
+          "institution_id": "zg-law",
+          "basis": "Cantonal act: BGS 171.1",
+          "basis_rule": "page rule bgs.zg.ch/api/de/versions/2741/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: BGS 171.1"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-bl-law",
+      "citations": [
+        {
+          "document_id": "doc-4245741446f67432de2a",
+          "outcome": "same-snapshot",
+          "start": 3407,
+          "end": 5627,
+          "block_ids": [
+            "doc-4245741446f67432de2a:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "bl-law",
+          "basis": "Cantonal act: SGS 111",
+          "basis_rule": "page rule bl.clex.ch/api/de/versions/4008/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SGS 111"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ag-law",
+      "citations": [
+        {
+          "document_id": "doc-68427fca2ccf68f45fe2",
+          "outcome": "same-snapshot",
+          "start": 3213,
+          "end": 6985,
+          "block_ids": [
+            "doc-68427fca2ccf68f45fe2:b00003",
+            "doc-68427fca2ccf68f45fe2:b00004"
+          ],
+          "warnings": [],
+          "institution_id": "ag-law",
+          "basis": "Cantonal act: SAR 122.200",
+          "basis_rule": "page rule gesetzessammlungen.ag.ch/api/de/versions/3439/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SAR 122.200"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ai-ordinance",
+      "citations": [
+        {
+          "document_id": "doc-34b1360ccad23a5bcac2",
+          "outcome": "same-snapshot",
+          "start": 1207,
+          "end": 2902,
+          "block_ids": [
+            "doc-34b1360ccad23a5bcac2:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "ai-law",
+          "basis": "Cantonal ordinance: GS 172.910",
+          "basis_rule": "page rule ai.clex.ch/api/de/versions/1133/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal ordinance: GS 172.910"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ai-decree",
+      "citations": [
+        {
+          "document_id": "doc-109429437bfcbc983275",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1582,
+          "block_ids": [
+            "doc-109429437bfcbc983275:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "ai-law",
+          "basis": "Cantonal ordinance: GS 142.001",
+          "basis_rule": "page rule ai.clex.ch/api/de/versions/1513/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal ordinance: GS 142.001"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ai-page",
+      "citations": [
+        {
+          "document_id": "doc-549a0c80ca63f55e8541",
+          "outcome": "same-snapshot",
+          "start": 811,
+          "end": 1074,
+          "block_ids": [
+            "doc-549a0c80ca63f55e8541:b00036"
+          ],
+          "warnings": [],
+          "institution_id": "ai-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-549a0c80ca63f55e8541",
+          "outcome": "same-snapshot",
+          "start": 1923,
+          "end": 2224,
+          "block_ids": [
+            "doc-549a0c80ca63f55e8541:b00052"
+          ],
+          "warnings": [],
+          "institution_id": "ai-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-549a0c80ca63f55e8541",
+          "outcome": "same-snapshot",
+          "start": 2520,
+          "end": 2753,
+          "block_ids": [
+            "doc-549a0c80ca63f55e8541:b00059"
+          ],
+          "warnings": [],
+          "institution_id": "ai-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ai-foreign-workers",
+      "citations": [
+        {
+          "document_id": "doc-be1e21dbb97154b03ae1",
+          "outcome": "same-snapshot",
+          "start": 1150,
+          "end": 1461,
+          "block_ids": [
+            "doc-be1e21dbb97154b03ae1:b00035"
+          ],
+          "warnings": [],
+          "institution_id": "ai-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ar-law",
+      "citations": [
+        {
+          "document_id": "doc-c32553ea05e1587a60d4",
+          "outcome": "same-snapshot",
+          "start": 984,
+          "end": 2464,
+          "block_ids": [
+            "doc-c32553ea05e1587a60d4:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "ar-law",
+          "basis": "Cantonal act: bGS 122.1",
+          "basis_rule": "page rule ar.clex.ch/api/de/versions/1275/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: bGS 122.1"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-be-law",
+      "citations": [
+        {
+          "document_id": "doc-7dedc0fecf81e97bb48f",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1326,
+          "block_ids": [
+            "doc-7dedc0fecf81e97bb48f:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "be-law",
+          "basis": "Cantonal act: BSG 122.11",
+          "basis_rule": "page rule www.belex.sites.be.ch/api/de/versions/3416/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: BSG 122.11"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-be-eu-efta",
+      "citations": [
+        {
+          "document_id": "doc-ef8e74af38d086f3a1af",
+          "outcome": "same-snapshot",
+          "start": 1354,
+          "end": 1902,
+          "block_ids": [
+            "doc-ef8e74af38d086f3a1af:b00031"
+          ],
+          "warnings": [],
+          "institution_id": "be-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-be-third-country",
+      "citations": [
+        {
+          "document_id": "doc-6038442651e07dc6a567",
+          "outcome": "same-snapshot",
+          "start": 1421,
+          "end": 1651,
+          "block_ids": [
+            "doc-6038442651e07dc6a567:b00031"
+          ],
+          "warnings": [],
+          "institution_id": "be-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-gl-law",
+      "citations": [
+        {
+          "document_id": "doc-87739a2bc2f8480d2c1e",
+          "outcome": "same-snapshot",
+          "start": 1657,
+          "end": 3649,
+          "block_ids": [
+            "doc-87739a2bc2f8480d2c1e:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "gl-law",
+          "basis": "Cantonal act: GS I C/21/2",
+          "basis_rule": "page rule gesetze.gl.ch/api/de/versions/2346/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: GS I C/21/2"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ju",
+      "citations": [
+        {
+          "document_id": "doc-3ca5baea976a4719565c",
+          "outcome": "same-snapshot",
+          "start": 2470,
+          "end": 2644,
+          "block_ids": [
+            "doc-3ca5baea976a4719565c:b00115"
+          ],
+          "warnings": [],
+          "institution_id": "ju-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-fr-law",
+      "citations": [
+        {
+          "document_id": "doc-d8abd396531de40dcbd2",
+          "outcome": "same-snapshot",
+          "start": 1170,
+          "end": 3243,
+          "block_ids": [
+            "doc-d8abd396531de40dcbd2:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "fr-law",
+          "basis": "Cantonal act: RSF 114.21.1",
+          "basis_rule": "page rule bdlf.fr.ch/api/fr/versions/8129/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: RSF 114.21.1"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-fr-eu-efta",
+      "citations": [
+        {
+          "document_id": "doc-2a813d10788c0f4c00ba",
+          "outcome": "same-snapshot",
+          "start": 3154,
+          "end": 3544,
+          "block_ids": [
+            "doc-2a813d10788c0f4c00ba:b00093"
+          ],
+          "warnings": [],
+          "institution_id": "fr-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ge-law",
+      "citations": [
+        {
+          "document_id": "doc-9bfb342bd18631c49022",
+          "outcome": "same-snapshot",
+          "start": 3615,
+          "end": 3712,
+          "block_ids": [
+            "doc-9bfb342bd18631c49022:b00039"
+          ],
+          "warnings": [],
+          "institution_id": "ge-law",
+          "basis": "Cantonal act: rsGE F 2 25",
+          "basis_rule": "page rule silgeneve.ch/legis/data/rsg_f2_25.htm",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: rsGE F 2 25"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ge-page",
+      "citations": [
+        {
+          "document_id": "doc-47f3b81937bf5d0dbe98",
+          "outcome": "same-snapshot",
+          "start": 1674,
+          "end": 1943,
+          "block_ids": [
+            "doc-47f3b81937bf5d0dbe98:b00065"
+          ],
+          "warnings": [],
+          "institution_id": "ge-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-gr-law",
+      "citations": [
+        {
+          "document_id": "doc-cb07b45b2872d40435a6",
+          "outcome": "same-snapshot",
+          "start": 5112,
+          "end": 7071,
+          "block_ids": [
+            "doc-cb07b45b2872d40435a6:b00004"
+          ],
+          "warnings": [],
+          "institution_id": "gr-law",
+          "basis": "Cantonal act: BR 171.200",
+          "basis_rule": "page rule www.gr-lex.gr.ch/api/de/versions/3576/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: BR 171.200"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-lu-law",
+      "citations": [
+        {
+          "document_id": "doc-c14d4fcf6d9df22c9586",
+          "outcome": "same-snapshot",
+          "start": 1407,
+          "end": 5848,
+          "block_ids": [
+            "doc-c14d4fcf6d9df22c9586:b00002",
+            "doc-c14d4fcf6d9df22c9586:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "lu-law",
+          "basis": "Cantonal act: SRL 5",
+          "basis_rule": "page rule srl.lu.ch/api/de/versions/4184/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SRL 5"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ne-students",
+      "citations": [
+        {
+          "document_id": "doc-05ca6b1f1d0609c5358f",
+          "outcome": "same-snapshot",
+          "start": 16791,
+          "end": 16928,
+          "block_ids": [
+            "doc-05ca6b1f1d0609c5358f:b00591"
+          ],
+          "warnings": [],
+          "institution_id": "ne-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-nw-law",
+      "citations": [
+        {
+          "document_id": "doc-13a07bd6d3e02a05a0f5",
+          "outcome": "same-snapshot",
+          "start": 1245,
+          "end": 2354,
+          "block_ids": [
+            "doc-13a07bd6d3e02a05a0f5:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "nw-law",
+          "basis": "Cantonal act: NG 122.1",
+          "basis_rule": "page rule gesetze.nw.ch/api/de/versions/1351/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: NG 122.1"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-nw-page",
+      "citations": [
+        {
+          "document_id": "doc-c3e47bf7b62d608296ed",
+          "outcome": "same-snapshot",
+          "start": 361,
+          "end": 628,
+          "block_ids": [
+            "doc-c3e47bf7b62d608296ed:b00017"
+          ],
+          "warnings": [],
+          "institution_id": "nw-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-sg-law",
+      "citations": [
+        {
+          "document_id": "doc-30d29fac2c81ff92aaf0",
+          "outcome": "same-snapshot",
+          "start": 3156,
+          "end": 4823,
+          "block_ids": [
+            "doc-30d29fac2c81ff92aaf0:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "sg-law",
+          "basis": "Cantonal act: sGS 453.1",
+          "basis_rule": "page rule www.gesetzessammlung.sg.ch/api/de/versions/2506/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: sGS 453.1"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ow-law",
+      "citations": [
+        {
+          "document_id": "doc-77c2c422cf2c1e926181",
+          "outcome": "same-snapshot",
+          "start": 5865,
+          "end": 7279,
+          "block_ids": [
+            "doc-77c2c422cf2c1e926181:b00005"
+          ],
+          "warnings": [],
+          "institution_id": "ow-law",
+          "basis": "Cantonal ordinance: GDB 113.11",
+          "basis_rule": "page rule gdb.ow.ch/api/de/versions/1824/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal ordinance: GDB 113.11"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-sz-law",
+      "citations": [
+        {
+          "document_id": "doc-61348efdcfb8b7cd0f29",
+          "outcome": "same-snapshot",
+          "start": 3959,
+          "end": 6161,
+          "block_ids": [
+            "doc-61348efdcfb8b7cd0f29:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "sz-office",
+          "basis": "Cantonal act: SRSZ 111.110",
+          "basis_rule": "page rule www.sz.ch/public/upload/assets/33326/111_110.pdf",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SRSZ 111.110"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-sz",
+      "citations": [
+        {
+          "document_id": "doc-777e3094d0c258479141",
+          "outcome": "same-snapshot",
+          "start": 4061,
+          "end": 4474,
+          "block_ids": [
+            "doc-777e3094d0c258479141:b00188"
+          ],
+          "warnings": [],
+          "institution_id": "sz-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-sz-third-country",
+      "citations": [
+        {
+          "document_id": "doc-8782b52e7e4ded9957f5",
+          "outcome": "same-snapshot",
+          "start": 3657,
+          "end": 4176,
+          "block_ids": [
+            "doc-8782b52e7e4ded9957f5:b00189"
+          ],
+          "warnings": [],
+          "institution_id": "sz-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ti-law",
+      "citations": [
+        {
+          "document_id": "doc-f4e369cc5ff44fa4be1d",
+          "outcome": "same-snapshot",
+          "start": 6253,
+          "end": 9553,
+          "block_ids": [
+            "doc-f4e369cc5ff44fa4be1d:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "ti-law",
+          "basis": "Cantonal ordinance: RL 144.110",
+          "basis_rule": "page rule m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/18",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal ordinance: RL 144.110"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-ur-law",
+      "citations": [
+        {
+          "document_id": "doc-eb17cee7f400a35afcc8",
+          "outcome": "same-snapshot",
+          "start": 7403,
+          "end": 8932,
+          "block_ids": [
+            "doc-eb17cee7f400a35afcc8:b00006"
+          ],
+          "warnings": [],
+          "institution_id": "ur-law",
+          "basis": "Cantonal act: RB 1.4201",
+          "basis_rule": "page rule rechtsbuch.ur.ch/api/de/versions/1048/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: RB 1.4201"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-vs-law",
+      "citations": [
+        {
+          "document_id": "doc-65c87384f0b1a34d6d51",
+          "outcome": "same-snapshot",
+          "start": 2883,
+          "end": 4952,
+          "block_ids": [
+            "doc-65c87384f0b1a34d6d51:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "vs-law",
+          "basis": "Cantonal act: RS/VS 176.1",
+          "basis_rule": "page rule lex.vs.ch/api/fr/versions/3227/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: RS/VS 176.1"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-vs-change",
+      "citations": [
+        {
+          "document_id": "doc-ce9cb3adfb5045bb45fc",
+          "outcome": "same-snapshot",
+          "start": 2130,
+          "end": 2273,
+          "block_ids": [
+            "doc-ce9cb3adfb5045bb45fc:b00074"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-registration-deadline-vd",
+      "citations": [
+        {
+          "document_id": "doc-8d3859d1014df2992f75",
+          "outcome": "same-snapshot",
+          "start": 3479,
+          "end": 3980,
+          "block_ids": [
+            "doc-8d3859d1014df2992f75:b00066",
+            "doc-8d3859d1014df2992f75:b00067"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-bs-biometrics",
+      "citations": [
+        {
+          "document_id": "doc-cff5ab3ec851efa60538",
+          "outcome": "same-snapshot",
+          "start": 3148,
+          "end": 3656,
+          "block_ids": [
+            "doc-cff5ab3ec851efa60538:b00039"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-cff5ab3ec851efa60538",
+          "outcome": "same-snapshot",
+          "start": 4483,
+          "end": 4582,
+          "block_ids": [
+            "doc-cff5ab3ec851efa60538:b00052"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-cff5ab3ec851efa60538",
+          "outcome": "same-snapshot",
+          "start": 7196,
+          "end": 7380,
+          "block_ids": [
+            "doc-cff5ab3ec851efa60538:b00080"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-bs",
+      "citations": [
+        {
+          "document_id": "doc-b8e80712d932400cd49a",
+          "outcome": "same-snapshot",
+          "start": 2207,
+          "end": 2517,
+          "block_ids": [
+            "doc-b8e80712d932400cd49a:b00043"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-b8e80712d932400cd49a",
+          "outcome": "same-snapshot",
+          "start": 2548,
+          "end": 3377,
+          "block_ids": [
+            "doc-b8e80712d932400cd49a:b00045",
+            "doc-b8e80712d932400cd49a:b00046"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-sh",
+      "citations": [
+        {
+          "document_id": "doc-f6debadae0d5f281d74a",
+          "outcome": "same-snapshot",
+          "start": 38,
+          "end": 253,
+          "block_ids": [
+            "doc-f6debadae0d5f281d74a:b00005",
+            "doc-f6debadae0d5f281d74a:b00006"
+          ],
+          "warnings": [],
+          "institution_id": "sh-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-zg-kw2",
+      "citations": [
+        {
+          "document_id": "doc-bef10a9532d3e65ed421",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1841,
+          "block_ids": [
+            "doc-bef10a9532d3e65ed421:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "zg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-ai",
+      "citations": [
+        {
+          "document_id": "doc-be1e21dbb97154b03ae1",
+          "outcome": "same-snapshot",
+          "start": 2049,
+          "end": 2182,
+          "block_ids": [
+            "doc-be1e21dbb97154b03ae1:b00038"
+          ],
+          "warnings": [],
+          "institution_id": "ai-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-ar-forms",
+      "citations": [
+        {
+          "document_id": "doc-1c6f5fde53430f3e283a",
+          "outcome": "same-snapshot",
+          "start": 6193,
+          "end": 6567,
+          "block_ids": [
+            "doc-1c6f5fde53430f3e283a:b00306",
+            "doc-1c6f5fde53430f3e283a:b00307",
+            "doc-1c6f5fde53430f3e283a:b00308",
+            "doc-1c6f5fde53430f3e283a:b00309",
+            "doc-1c6f5fde53430f3e283a:b00310",
+            "doc-1c6f5fde53430f3e283a:b00311",
+            "doc-1c6f5fde53430f3e283a:b00312"
+          ],
+          "warnings": [],
+          "institution_id": "ar-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-be-third-country",
+      "citations": [
+        {
+          "document_id": "doc-6038442651e07dc6a567",
+          "outcome": "same-snapshot",
+          "start": 1828,
+          "end": 2194,
+          "block_ids": [
+            "doc-6038442651e07dc6a567:b00034"
+          ],
+          "warnings": [],
+          "institution_id": "be-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-6038442651e07dc6a567",
+          "outcome": "same-snapshot",
+          "start": 2353,
+          "end": 2442,
+          "block_ids": [
+            "doc-6038442651e07dc6a567:b00037"
+          ],
+          "warnings": [],
+          "institution_id": "be-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-lu-leaflet",
+      "citations": [
+        {
+          "document_id": "doc-353f6cf9d61da86ca82c",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 2787,
+          "block_ids": [
+            "doc-353f6cf9d61da86ca82c:b00001",
+            "doc-353f6cf9d61da86ca82c:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "lu-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-ne",
+      "citations": [
+        {
+          "document_id": "doc-2518b46b4d52603fce96",
+          "outcome": "same-snapshot",
+          "start": 13839,
+          "end": 14434,
+          "block_ids": [
+            "doc-2518b46b4d52603fce96:b00564"
+          ],
+          "warnings": [],
+          "institution_id": "ne-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-ow",
+      "citations": [
+        {
+          "document_id": "doc-95bb19b74e800e719113",
+          "outcome": "same-snapshot",
+          "start": 9017,
+          "end": 9484,
+          "block_ids": [
+            "doc-95bb19b74e800e719113:b00391"
+          ],
+          "warnings": [],
+          "institution_id": "ow-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-sg",
+      "citations": [
+        {
+          "document_id": "doc-87bd1ae131b394947426",
+          "outcome": "same-snapshot",
+          "start": 6007,
+          "end": 6172,
+          "block_ids": [
+            "doc-87bd1ae131b394947426:b00307"
+          ],
+          "warnings": [],
+          "institution_id": "sg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-87bd1ae131b394947426",
+          "outcome": "same-snapshot",
+          "start": 7854,
+          "end": 7896,
+          "block_ids": [
+            "doc-87bd1ae131b394947426:b00335"
+          ],
+          "warnings": [],
+          "institution_id": "sg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-87bd1ae131b394947426",
+          "outcome": "same-snapshot",
+          "start": 7931,
+          "end": 8008,
+          "block_ids": [
+            "doc-87bd1ae131b394947426:b00337"
+          ],
+          "warnings": [],
+          "institution_id": "sg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-sg-renewal",
+      "citations": [
+        {
+          "document_id": "doc-c33d3808823882dbd8a6",
+          "outcome": "same-snapshot",
+          "start": 8447,
+          "end": 8685,
+          "block_ids": [
+            "doc-c33d3808823882dbd8a6:b00124"
+          ],
+          "warnings": [],
+          "institution_id": "sg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-sz",
+      "citations": [
+        {
+          "document_id": "doc-8782b52e7e4ded9957f5",
+          "outcome": "same-snapshot",
+          "start": 4211,
+          "end": 4761,
+          "block_ids": [
+            "doc-8782b52e7e4ded9957f5:b00191"
+          ],
+          "warnings": [],
+          "institution_id": "sz-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-ti",
+      "citations": [
+        {
+          "document_id": "doc-6672da80799a61b7cd84",
+          "outcome": "same-snapshot",
+          "start": 46,
+          "end": 222,
+          "block_ids": [
+            "doc-6672da80799a61b7cd84:b00002",
+            "doc-6672da80799a61b7cd84:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "ti-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-ur",
+      "citations": [
+        {
+          "document_id": "doc-e48acba56a5956163cca",
+          "outcome": "same-snapshot",
+          "start": 9237,
+          "end": 9665,
+          "block_ids": [
+            "doc-e48acba56a5956163cca:b00365"
+          ],
+          "warnings": [],
+          "institution_id": "ur-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-e48acba56a5956163cca",
+          "outcome": "same-snapshot",
+          "start": 11072,
+          "end": 11277,
+          "block_ids": [
+            "doc-e48acba56a5956163cca:b00376",
+            "doc-e48acba56a5956163cca:b00377"
+          ],
+          "warnings": [],
+          "institution_id": "ur-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-vs",
+      "citations": [
+        {
+          "document_id": "doc-94c45c58dc090ae784f9",
+          "outcome": "same-snapshot",
+          "start": 2090,
+          "end": 2242,
+          "block_ids": [
+            "doc-94c45c58dc090ae784f9:b00076",
+            "doc-94c45c58dc090ae784f9:b00077"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-94c45c58dc090ae784f9",
+          "outcome": "same-snapshot",
+          "start": 2309,
+          "end": 2527,
+          "block_ids": [
+            "doc-94c45c58dc090ae784f9:b00079"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-vs-form",
+      "citations": [
+        {
+          "document_id": "doc-1295d214764a7279a7a5",
+          "outcome": "same-snapshot",
+          "start": 3032,
+          "end": 3316,
+          "block_ids": [
+            "doc-1295d214764a7279a7a5:b00084"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-vs-change",
+      "citations": [
+        {
+          "document_id": "doc-ce9cb3adfb5045bb45fc",
+          "outcome": "same-snapshot",
+          "start": 2541,
+          "end": 2763,
+          "block_ids": [
+            "doc-ce9cb3adfb5045bb45fc:b00077"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-permit-application-vd",
+      "citations": [
+        {
+          "document_id": "doc-3844053afd11f3382d02",
+          "outcome": "same-snapshot",
+          "start": 4129,
+          "end": 4377,
+          "block_ids": [
+            "doc-3844053afd11f3382d02:b00073",
+            "doc-3844053afd11f3382d02:b00074",
+            "doc-3844053afd11f3382d02:b00075"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-online-services-bs",
+      "citations": [
+        {
+          "document_id": "doc-cff5ab3ec851efa60538",
+          "outcome": "same-snapshot",
+          "start": 803,
+          "end": 1113,
+          "block_ids": [
+            "doc-cff5ab3ec851efa60538:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-cff5ab3ec851efa60538",
+          "outcome": "same-snapshot",
+          "start": 7017,
+          "end": 7194,
+          "block_ids": [
+            "doc-cff5ab3ec851efa60538:b00079"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-online-services-bs-law",
+      "citations": [
+        {
+          "document_id": "doc-1de266bfefd7cb3ab142",
+          "outcome": "same-snapshot",
+          "start": 2092,
+          "end": 4849,
+          "block_ids": [
+            "doc-1de266bfefd7cb3ab142:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "bs-law",
+          "basis": "Cantonal act: SG 122.200",
+          "basis_rule": "page rule www.gesetzessammlung.bs.ch/api/de/versions/6200/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SG 122.200"
+    },
+    {
+      "fact_id": "cantonal-online-services-sh",
+      "citations": [
+        {
+          "document_id": "doc-f6debadae0d5f281d74a",
+          "outcome": "same-snapshot",
+          "start": 63,
+          "end": 253,
+          "block_ids": [
+            "doc-f6debadae0d5f281d74a:b00006"
+          ],
+          "warnings": [],
+          "institution_id": "sh-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-online-services-ag-law",
+      "citations": [
+        {
+          "document_id": "doc-68427fca2ccf68f45fe2",
+          "outcome": "same-snapshot",
+          "start": 3213,
+          "end": 5053,
+          "block_ids": [
+            "doc-68427fca2ccf68f45fe2:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "ag-law",
+          "basis": "Cantonal act: SAR 122.200",
+          "basis_rule": "page rule gesetzessammlungen.ag.ch/api/de/versions/3439/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: SAR 122.200"
+    },
+    {
+      "fact_id": "cantonal-online-services-ai",
+      "citations": [
+        {
+          "document_id": "doc-549a0c80ca63f55e8541",
+          "outcome": "same-snapshot",
+          "start": 2520,
+          "end": 2753,
+          "block_ids": [
+            "doc-549a0c80ca63f55e8541:b00059"
+          ],
+          "warnings": [],
+          "institution_id": "ai-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-549a0c80ca63f55e8541",
+          "outcome": "same-snapshot",
+          "start": 2860,
+          "end": 3022,
+          "block_ids": [
+            "doc-549a0c80ca63f55e8541:b00061"
+          ],
+          "warnings": [],
+          "institution_id": "ai-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-online-services-be",
+      "citations": [
+        {
+          "document_id": "doc-b43396324f38f0112c65",
+          "outcome": "same-snapshot",
+          "start": 4367,
+          "end": 4442,
+          "block_ids": [
+            "doc-b43396324f38f0112c65:b00058"
+          ],
+          "warnings": [],
+          "institution_id": "be-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-online-services-fr-law",
+      "citations": [
+        {
+          "document_id": "doc-d8abd396531de40dcbd2",
+          "outcome": "same-snapshot",
+          "start": 1170,
+          "end": 5571,
+          "block_ids": [
+            "doc-d8abd396531de40dcbd2:b00002",
+            "doc-d8abd396531de40dcbd2:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "fr-law",
+          "basis": "Cantonal act: RSF 114.21.1",
+          "basis_rule": "page rule bdlf.fr.ch/api/fr/versions/8129/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: RSF 114.21.1"
+    },
+    {
+      "fact_id": "cantonal-online-services-nw",
+      "citations": [
+        {
+          "document_id": "doc-c3e47bf7b62d608296ed",
+          "outcome": "same-snapshot",
+          "start": 646,
+          "end": 973,
+          "block_ids": [
+            "doc-c3e47bf7b62d608296ed:b00019"
+          ],
+          "warnings": [],
+          "institution_id": "nw-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-online-services-sg-law",
+      "citations": [
+        {
+          "document_id": "doc-30d29fac2c81ff92aaf0",
+          "outcome": "same-snapshot",
+          "start": 3156,
+          "end": 4823,
+          "block_ids": [
+            "doc-30d29fac2c81ff92aaf0:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "sg-law",
+          "basis": "Cantonal act: sGS 453.1",
+          "basis_rule": "page rule www.gesetzessammlung.sg.ch/api/de/versions/2506/pdf_file_with_annexes",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal act: sGS 453.1"
+    },
+    {
+      "fact_id": "cantonal-online-services-sg-page",
+      "citations": [
+        {
+          "document_id": "doc-87bd1ae131b394947426",
+          "outcome": "same-snapshot",
+          "start": 9527,
+          "end": 9593,
+          "block_ids": [
+            "doc-87bd1ae131b394947426:b00367"
+          ],
+          "warnings": [],
+          "institution_id": "sg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-online-services-ti-law",
+      "citations": [
+        {
+          "document_id": "doc-f4e369cc5ff44fa4be1d",
+          "outcome": "same-snapshot",
+          "start": 6253,
+          "end": 9553,
+          "block_ids": [
+            "doc-f4e369cc5ff44fa4be1d:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "ti-law",
+          "basis": "Cantonal ordinance: RL 144.110",
+          "basis_rule": "page rule m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/18",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal ordinance: RL 144.110"
+    },
+    {
+      "fact_id": "cantonal-online-services-vd",
+      "citations": [
+        {
+          "document_id": "doc-8d3859d1014df2992f75",
+          "outcome": "same-snapshot",
+          "start": 5588,
+          "end": 5806,
+          "block_ids": [
+            "doc-8d3859d1014df2992f75:b00075"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-8d3859d1014df2992f75",
+          "outcome": "same-snapshot",
+          "start": 5821,
+          "end": 6073,
+          "block_ids": [
+            "doc-8d3859d1014df2992f75:b00077"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-online-services-vd-service",
+      "citations": [
+        {
+          "document_id": "doc-2c3e1bfd065668a5ca8d",
+          "outcome": "same-snapshot",
+          "start": 3571,
+          "end": 4240,
+          "block_ids": [
+            "doc-2c3e1bfd065668a5ca8d:b00067"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-2c3e1bfd065668a5ca8d",
+          "outcome": "same-snapshot",
+          "start": 5665,
+          "end": 5872,
+          "block_ids": [
+            "doc-2c3e1bfd065668a5ca8d:b00153",
+            "doc-2c3e1bfd065668a5ca8d:b00154"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-bs-arrival",
+      "citations": [
+        {
+          "document_id": "doc-cff5ab3ec851efa60538",
+          "outcome": "same-snapshot",
+          "start": 380,
+          "end": 614,
+          "block_ids": [
+            "doc-cff5ab3ec851efa60538:b00014"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-cff5ab3ec851efa60538",
+          "outcome": "same-snapshot",
+          "start": 7017,
+          "end": 7194,
+          "block_ids": [
+            "doc-cff5ab3ec851efa60538:b00079"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-bs-third-country",
+      "citations": [
+        {
+          "document_id": "doc-b8e80712d932400cd49a",
+          "outcome": "same-snapshot",
+          "start": 16641,
+          "end": 17131,
+          "block_ids": [
+            "doc-b8e80712d932400cd49a:b00194",
+            "doc-b8e80712d932400cd49a:b00195",
+            "doc-b8e80712d932400cd49a:b00196",
+            "doc-b8e80712d932400cd49a:b00197",
+            "doc-b8e80712d932400cd49a:b00198",
+            "doc-b8e80712d932400cd49a:b00199",
+            "doc-b8e80712d932400cd49a:b00200",
+            "doc-b8e80712d932400cd49a:b00201"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-sh-third-country",
+      "citations": [
+        {
+          "document_id": "doc-72ec61f7171b5d31d318",
+          "outcome": "same-snapshot",
+          "start": 310,
+          "end": 395,
+          "block_ids": [
+            "doc-72ec61f7171b5d31d318:b00009"
+          ],
+          "warnings": [],
+          "institution_id": "sh-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-so",
+      "citations": [
+        {
+          "document_id": "doc-10f9280753a0262e0d1d",
+          "outcome": "same-snapshot",
+          "start": 1701,
+          "end": 2702,
+          "block_ids": [
+            "doc-10f9280753a0262e0d1d:b00087",
+            "doc-10f9280753a0262e0d1d:b00088",
+            "doc-10f9280753a0262e0d1d:b00089"
+          ],
+          "warnings": [],
+          "institution_id": "so-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-zg",
+      "citations": [
+        {
+          "document_id": "doc-bef10a9532d3e65ed421",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1841,
+          "block_ids": [
+            "doc-bef10a9532d3e65ed421:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "zg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-ag-british",
+      "citations": [
+        {
+          "document_id": "doc-982717e0d014321c6da6",
+          "outcome": "same-snapshot",
+          "start": 607,
+          "end": 997,
+          "block_ids": [
+            "doc-982717e0d014321c6da6:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ag-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-be",
+      "citations": [
+        {
+          "document_id": "doc-b43396324f38f0112c65",
+          "outcome": "same-snapshot",
+          "start": 3133,
+          "end": 3334,
+          "block_ids": [
+            "doc-b43396324f38f0112c65:b00049"
+          ],
+          "warnings": [],
+          "institution_id": "be-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-b43396324f38f0112c65",
+          "outcome": "same-snapshot",
+          "start": 4148,
+          "end": 4344,
+          "block_ids": [
+            "doc-b43396324f38f0112c65:b00056"
+          ],
+          "warnings": [],
+          "institution_id": "be-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-fr",
+      "citations": [
+        {
+          "document_id": "doc-674225ac43786b5d211d",
+          "outcome": "same-snapshot",
+          "start": 2195,
+          "end": 2482,
+          "block_ids": [
+            "doc-674225ac43786b5d211d:b00089",
+            "doc-674225ac43786b5d211d:b00090"
+          ],
+          "warnings": [],
+          "institution_id": "fr-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-ge-departure",
+      "citations": [
+        {
+          "document_id": "doc-a7aa9034e802ad023fb2",
+          "outcome": "same-snapshot",
+          "start": 1349,
+          "end": 1556,
+          "block_ids": [
+            "doc-a7aa9034e802ad023fb2:b00061"
+          ],
+          "warnings": [],
+          "institution_id": "ge-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-lu",
+      "citations": [
+        {
+          "document_id": "doc-752e202b64913e2a772e",
+          "outcome": "same-snapshot",
+          "start": 499,
+          "end": 1211,
+          "block_ids": [
+            "doc-752e202b64913e2a772e:b00024"
+          ],
+          "warnings": [],
+          "institution_id": "lu-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-ne",
+      "citations": [
+        {
+          "document_id": "doc-2518b46b4d52603fce96",
+          "outcome": "same-snapshot",
+          "start": 14711,
+          "end": 15032,
+          "block_ids": [
+            "doc-2518b46b4d52603fce96:b00568"
+          ],
+          "warnings": [],
+          "institution_id": "ne-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-2518b46b4d52603fce96",
+          "outcome": "same-snapshot",
+          "start": 15090,
+          "end": 15265,
+          "block_ids": [
+            "doc-2518b46b4d52603fce96:b00570"
+          ],
+          "warnings": [],
+          "institution_id": "ne-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-nw",
+      "citations": [
+        {
+          "document_id": "doc-c3e47bf7b62d608296ed",
+          "outcome": "same-snapshot",
+          "start": 646,
+          "end": 973,
+          "block_ids": [
+            "doc-c3e47bf7b62d608296ed:b00019"
+          ],
+          "warnings": [],
+          "institution_id": "nw-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-sg",
+      "citations": [
+        {
+          "document_id": "doc-c33d3808823882dbd8a6",
+          "outcome": "same-snapshot",
+          "start": 9811,
+          "end": 9974,
+          "block_ids": [
+            "doc-c33d3808823882dbd8a6:b00139"
+          ],
+          "warnings": [],
+          "institution_id": "sg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-sz",
+      "citations": [
+        {
+          "document_id": "doc-777e3094d0c258479141",
+          "outcome": "same-snapshot",
+          "start": 8490,
+          "end": 9064,
+          "block_ids": [
+            "doc-777e3094d0c258479141:b00209"
+          ],
+          "warnings": [],
+          "institution_id": "sz-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-ti-law",
+      "citations": [
+        {
+          "document_id": "doc-f4e369cc5ff44fa4be1d",
+          "outcome": "same-snapshot",
+          "start": 13037,
+          "end": 16065,
+          "block_ids": [
+            "doc-f4e369cc5ff44fa4be1d:b00005"
+          ],
+          "warnings": [],
+          "institution_id": "ti-law",
+          "basis": "Cantonal ordinance: RL 144.110",
+          "basis_rule": "page rule m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/18",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal ordinance: RL 144.110"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-ur",
+      "citations": [
+        {
+          "document_id": "doc-e48acba56a5956163cca",
+          "outcome": "same-snapshot",
+          "start": 13822,
+          "end": 14144,
+          "block_ids": [
+            "doc-e48acba56a5956163cca:b00405"
+          ],
+          "warnings": [],
+          "institution_id": "ur-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-vs",
+      "citations": [
+        {
+          "document_id": "doc-ce9cb3adfb5045bb45fc",
+          "outcome": "same-snapshot",
+          "start": 1744,
+          "end": 2128,
+          "block_ids": [
+            "doc-ce9cb3adfb5045bb45fc:b00073"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-ce9cb3adfb5045bb45fc",
+          "outcome": "same-snapshot",
+          "start": 2325,
+          "end": 2539,
+          "block_ids": [
+            "doc-ce9cb3adfb5045bb45fc:b00076"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "cantonal-change-of-canton-vd",
+      "citations": [
+        {
+          "document_id": "doc-3844053afd11f3382d02",
+          "outcome": "same-snapshot",
+          "start": 3652,
+          "end": 3969,
+          "block_ids": [
+            "doc-3844053afd11f3382d02:b00068",
+            "doc-3844053afd11f3382d02:b00069"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
     }
   ],
-  "source_terms": 1650,
-  "questions": 468,
+  "source_terms": 1720,
+  "questions": 478,
   "institutions": [
+    {
+      "institution_id": "ag-law",
+      "name": "Canton of Aargau, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-AG",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ag-office",
+      "name": "Canton of Aargau, Amt fuer Migration und Integration",
+      "level": "cantonal",
+      "jurisdiction": "CH-AG",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ai-law",
+      "name": "Canton of Appenzell Innerrhoden, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-AI",
+      "documents": 2,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ai-office",
+      "name": "Canton of Appenzell Innerrhoden, Einwohnerkontrolle and Auslaenderamt",
+      "level": "cantonal",
+      "jurisdiction": "CH-AI",
+      "documents": 2,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ar-law",
+      "name": "Canton of Appenzell Ausserrhoden, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-AR",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ar-office",
+      "name": "Canton of Appenzell Ausserrhoden, Amt fuer Inneres, Abteilung Migration",
+      "level": "cantonal",
+      "jurisdiction": "CH-AR",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "be-law",
+      "name": "Canton of Bern, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-BE",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "be-office",
+      "name": "Canton of Bern, Amt fuer Bevoelkerungsdienste, Migrationsdienst",
+      "level": "cantonal",
+      "jurisdiction": "CH-BE",
+      "documents": 3,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "bl-law",
+      "name": "Canton of Basel-Landschaft, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-BL",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "bs-law",
+      "name": "Canton of Basel-Stadt, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-BS",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "bs-office",
+      "name": "Canton of Basel-Stadt, Einwohneramt and Migrationsamt",
+      "level": "cantonal",
+      "jurisdiction": "CH-BS",
+      "documents": 2,
+      "from_catalogue": false
+    },
     {
       "institution_id": "ch-ahv-iv",
       "name": "AHV/IV information service",
@@ -29149,6 +32139,254 @@
       "level": "federal",
       "jurisdiction": "CH",
       "documents": 4,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "fr-law",
+      "name": "Canton of Fribourg, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-FR",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "fr-office",
+      "name": "Canton of Fribourg, Service de la population et des migrants (SPoMi)",
+      "level": "cantonal",
+      "jurisdiction": "CH-FR",
+      "documents": 2,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ge-law",
+      "name": "Canton of Geneva, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-GE",
+      "documents": 2,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ge-office",
+      "name": "Canton of Geneva, Office cantonal de la population et des migrations (OCPM)",
+      "level": "cantonal",
+      "jurisdiction": "CH-GE",
+      "documents": 2,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "gl-law",
+      "name": "Canton of Glarus, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-GL",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "gr-law",
+      "name": "Canton of Graubuenden, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-GR",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ju-office",
+      "name": "Canton of Jura, Service de la population (SPOP)",
+      "level": "cantonal",
+      "jurisdiction": "CH-JU",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "lu-law",
+      "name": "Canton of Lucerne, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-LU",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "lu-office",
+      "name": "Canton of Lucerne, Amt fuer Migration",
+      "level": "cantonal",
+      "jurisdiction": "CH-LU",
+      "documents": 2,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ne-office",
+      "name": "Canton of Neuchatel, Service des migrations",
+      "level": "cantonal",
+      "jurisdiction": "CH-NE",
+      "documents": 2,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "nw-law",
+      "name": "Canton of Nidwalden, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-NW",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "nw-office",
+      "name": "Canton of Nidwalden, Amt fuer Justiz, Abteilung Migration",
+      "level": "cantonal",
+      "jurisdiction": "CH-NW",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ow-law",
+      "name": "Canton of Obwalden, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-OW",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ow-office",
+      "name": "Canton of Obwalden, Amt fuer Arbeit, Abteilung Migration",
+      "level": "cantonal",
+      "jurisdiction": "CH-OW",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "sg-law",
+      "name": "Canton of St. Gallen, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-SG",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "sg-office",
+      "name": "Canton of St. Gallen, Migrationsamt",
+      "level": "cantonal",
+      "jurisdiction": "CH-SG",
+      "documents": 2,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "sh-law",
+      "name": "Canton of Schaffhausen, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-SH",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "sh-office",
+      "name": "Canton of Schaffhausen, Migrationsamt und Passbuero",
+      "level": "cantonal",
+      "jurisdiction": "CH-SH",
+      "documents": 2,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "so-law",
+      "name": "Canton of Solothurn, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-SO",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "so-office",
+      "name": "Canton of Solothurn, Migrationsamt",
+      "level": "cantonal",
+      "jurisdiction": "CH-SO",
+      "documents": 2,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "sz-office",
+      "name": "Canton of Schwyz, Amt fuer Migration",
+      "level": "cantonal",
+      "jurisdiction": "CH-SZ",
+      "documents": 3,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "tg-law",
+      "name": "Canton of Thurgau, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-TG",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ti-law",
+      "name": "Canton of Ticino, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-TI",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ti-office",
+      "name": "Canton of Ticino, Ufficio della migrazione and Ufficio del controllo degli abitanti",
+      "level": "cantonal",
+      "jurisdiction": "CH-TI",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ur-law",
+      "name": "Canton of Uri, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-UR",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ur-office",
+      "name": "Canton of Uri, Amt fuer Arbeit und Migration, Abteilung Migration",
+      "level": "cantonal",
+      "jurisdiction": "CH-UR",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "vd-office",
+      "name": "Canton of Vaud, Service de la population (SPOP)",
+      "level": "cantonal",
+      "jurisdiction": "CH-VD",
+      "documents": 4,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "vs-law",
+      "name": "Canton of Valais, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-VS",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "vs-office",
+      "name": "Canton of Valais, Service de la population et des migrations (SPM)",
+      "level": "cantonal",
+      "jurisdiction": "CH-VS",
+      "documents": 3,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "zg-law",
+      "name": "Canton of Zug, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-ZG",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "zg-office",
+      "name": "Canton of Zug, Amt fuer Migration",
+      "level": "cantonal",
+      "jurisdiction": "CH-ZG",
+      "documents": 1,
       "from_catalogue": false
     },
     {
@@ -29312,7 +32550,12 @@
       "from_catalogue": false
     }
   ],
-  "institutions_unused": [],
+  "institutions_unused": [
+    "gl-office",
+    "gr-office",
+    "sz-law",
+    "tg-office"
+  ],
   "documents_attributed": [
     {
       "document_id": "doc-015229bef7e56c4f0933",
@@ -29331,6 +32574,12 @@
       "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Krankenversicherung-KV",
       "institution_id": "ch-ahv-iv",
       "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
+      "document_id": "doc-05ca6b1f1d0609c5358f",
+      "source_url": "https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/etudier-neuchatel",
+      "institution_id": "ne-office",
+      "institution_rule": "registry rule www.ne.ch"
     },
     {
       "document_id": "doc-0683c2c38c53009db6b6",
@@ -29375,6 +32624,12 @@
       "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
+      "document_id": "doc-109429437bfcbc983275",
+      "source_url": "https://ai.clex.ch/api/de/versions/1513/pdf_file_with_annexes",
+      "institution_id": "ai-law",
+      "institution_rule": "registry rule ai.clex.ch"
+    },
+    {
       "document_id": "doc-10bb67123311f6518f86",
       "source_url": "https://www.ch.ch/de/wohnen/miete/larm--mangel--mietzins/",
       "institution_id": "ch-chch",
@@ -29385,6 +32640,12 @@
       "source_url": "https://www.bag.admin.ch/en/health-insurance-insured-persons-eligible-to-suspend-accident-cover",
       "institution_id": "ch-bag",
       "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
+      "document_id": "doc-10f9280753a0262e0d1d",
+      "source_url": "https://so.ch/verwaltung/departement-des-innern/migrationsamt/aufenthalt-und-integration/kantonswechsel/",
+      "institution_id": "so-office",
+      "institution_rule": "registry rule so.ch"
     },
     {
       "document_id": "doc-1260458d8089b1040551",
@@ -29399,10 +32660,22 @@
       "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
+      "document_id": "doc-1295d214764a7279a7a5",
+      "source_url": "https://www.vs.ch/web/spm/permis-de-s%C3%A9jour",
+      "institution_id": "vs-office",
+      "institution_rule": "registry rule www.vs.ch"
+    },
+    {
       "document_id": "doc-134972557881796cf73c",
       "source_url": "https://www.bazg.admin.ch/de/freimengen-lebensmittel-alkohol-tabak",
       "institution_id": "ch-bazg",
       "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
+      "document_id": "doc-13a07bd6d3e02a05a0f5",
+      "source_url": "https://gesetze.nw.ch/api/de/versions/1351/pdf_file_with_annexes",
+      "institution_id": "nw-law",
+      "institution_rule": "registry rule gesetze.nw.ch"
     },
     {
       "document_id": "doc-15b24dfd1b4e56b1520e",
@@ -29459,6 +32732,12 @@
       "institution_rule": "registry rule www.ahv-iv.ch"
     },
     {
+      "document_id": "doc-1c6f5fde53430f3e283a",
+      "source_url": "https://ar.ch/verwaltung/departement-inneres-und-sicherheit/amt-fuer-inneres/abteilung-migration/einreise-und-aufenthalt/drittstaatsangehoerige/",
+      "institution_id": "ar-office",
+      "institution_rule": "registry rule ar.ch"
+    },
+    {
       "document_id": "doc-1c84e95cb180bec1d402",
       "source_url": "https://www.ahv-iv.ch/de/Kontakte/Kantonale-Ausgleichskassen",
       "institution_id": "ch-ahv-iv",
@@ -29475,6 +32754,12 @@
       "source_url": "https://www.arbeit.swiss/de/stellensuchende/erste-schritte-nach-kuendigung",
       "institution_id": "ch-seco",
       "institution_rule": "registry rule www.arbeit.swiss"
+    },
+    {
+      "document_id": "doc-1de266bfefd7cb3ab142",
+      "source_url": "https://www.gesetzessammlung.bs.ch/api/de/versions/6200/pdf_file_with_annexes",
+      "institution_id": "bs-law",
+      "institution_rule": "registry rule www.gesetzessammlung.bs.ch"
     },
     {
       "document_id": "doc-1f8ba8d4751763edd1b3",
@@ -29517,6 +32802,18 @@
       "source_url": "https://www.zh.ch/de/sicherheitsdirektion/migrationsamt/organisation.html",
       "institution_id": "zh-migrationsamt",
       "institution_rule": "registry rule www.zh.ch/de/sicherheitsdirektion/migrationsamt"
+    },
+    {
+      "document_id": "doc-233657084673f1db58c3",
+      "source_url": "https://www.rechtsbuch.tg.ch/api/de/versions/2440/pdf_file_with_annexes",
+      "institution_id": "tg-law",
+      "institution_rule": "registry rule www.rechtsbuch.tg.ch"
+    },
+    {
+      "document_id": "doc-2518b46b4d52603fce96",
+      "source_url": "https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/permis-de-sejour/gerer-et-renouveler-votre-permis-actuel",
+      "institution_id": "ne-office",
+      "institution_rule": "registry rule www.ne.ch"
     },
     {
       "document_id": "doc-2567bb1fdca389d00812",
@@ -29567,6 +32864,12 @@
       "institution_rule": "registry rule www.bag.admin.ch"
     },
     {
+      "document_id": "doc-2a813d10788c0f4c00ba",
+      "source_url": "https://www.fr.ch/vie-quotidienne/demarches-et-documents/etrangers/ressortissante-etrangerere-a-qui-dois-je-madresser/si-jarrive-dans-le-canton-de-fribourg-pour-un-sejour-de-plus-de-3-mois-depuis-letranger-ou-un-autre-canton-et-si-je-suis-ressortissant",
+      "institution_id": "fr-office",
+      "institution_rule": "registry rule www.fr.ch"
+    },
+    {
       "document_id": "doc-2b57b2ce38c2a01c369a",
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/biometr_auslaenderausweis.html",
       "institution_id": "ch-sem",
@@ -29595,6 +32898,12 @@
       "source_url": "https://www.fedlex.admin.ch/eli/cc/1996/688_688_688/de",
       "institution_id": "ch-fedlex",
       "institution_rule": "registry rule www.fedlex.admin.ch"
+    },
+    {
+      "document_id": "doc-2c3e1bfd065668a5ca8d",
+      "source_url": "https://www.vd.ch/prestation/annoncer-son-changement-dadresse-au-controle-des-habitants",
+      "institution_id": "vd-office",
+      "institution_rule": "registry rule www.vd.ch"
     },
     {
       "document_id": "doc-2c57e097c04d46b45c52",
@@ -29627,6 +32936,12 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung"
     },
     {
+      "document_id": "doc-30d29fac2c81ff92aaf0",
+      "source_url": "https://www.gesetzessammlung.sg.ch/api/de/versions/2506/pdf_file_with_annexes",
+      "institution_id": "sg-law",
+      "institution_rule": "registry rule www.gesetzessammlung.sg.ch"
+    },
+    {
       "document_id": "doc-31ee33d8007b771265da",
       "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Glossar",
       "institution_id": "ch-ahv-iv",
@@ -29643,6 +32958,18 @@
       "source_url": "https://www.serafe.ch/de/abgabebefreiung/grundsatz/",
       "institution_id": "ch-serafe",
       "institution_rule": "registry rule www.serafe.ch"
+    },
+    {
+      "document_id": "doc-34b1360ccad23a5bcac2",
+      "source_url": "https://ai.clex.ch/api/de/versions/1133/pdf_file_with_annexes",
+      "institution_id": "ai-law",
+      "institution_rule": "registry rule ai.clex.ch"
+    },
+    {
+      "document_id": "doc-353f6cf9d61da86ca82c",
+      "source_url": "https://migration.lu.ch/-/media/Migration/Dokumente/Einreise_Aufenthalt/merkblatt_einholung_einer_aufenthaltsbewilligung_eu_efta.pdf",
+      "institution_id": "lu-office",
+      "institution_rule": "registry rule migration.lu.ch"
     },
     {
       "document_id": "doc-3582d03d795fd5c90cf8",
@@ -29669,6 +32996,12 @@
       "institution_rule": "registry rule www.bag.admin.ch"
     },
     {
+      "document_id": "doc-3844053afd11f3382d02",
+      "source_url": "https://www.vd.ch/population/population-etrangere/entree-et-sejour/union-europeenne/arrivee-dun-autre-canton",
+      "institution_id": "vd-office",
+      "institution_rule": "registry rule www.vd.ch"
+    },
+    {
       "document_id": "doc-393fca1a6614a9916712",
       "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Leistungen",
       "institution_id": "ch-ahv-iv",
@@ -29685,6 +33018,12 @@
       "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-mit-erwerbstaetigkeit-fuer-drittstaatsangehoerige.html",
       "institution_id": "zh-migrationsamt",
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
+      "document_id": "doc-3ca5baea976a4719565c",
+      "source_url": "https://www.jura.ch/fr/Autorites/Administration/DSJP/SPOP/Controle-des-habitants/Controle-des-habitants.html",
+      "institution_id": "ju-office",
+      "institution_rule": "registry rule www.jura.ch"
     },
     {
       "document_id": "doc-3d3f66c4e8551600ba18",
@@ -29717,6 +33056,12 @@
       "institution_rule": "registry rule www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt"
     },
     {
+      "document_id": "doc-4245741446f67432de2a",
+      "source_url": "https://bl.clex.ch/api/de/versions/4008/pdf_file_with_annexes",
+      "institution_id": "bl-law",
+      "institution_rule": "registry rule bl.clex.ch"
+    },
+    {
       "document_id": "doc-42e6fd401649e8cf7deb",
       "source_url": "https://svazurich.ch/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/krankenversicherungspflicht0/krankenversicherungspflicht-anmeldung.html",
       "institution_id": "zh-sva",
@@ -29739,6 +33084,12 @@
       "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige/einreisebewilligung-fuer-rentnerinnen-und-rentner-beantragen.html",
       "institution_id": "zh-migrationsamt",
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
+      "document_id": "doc-47f3b81937bf5d0dbe98",
+      "source_url": "https://www.ge.ch/annoncer-mon-arrivee-ocpm",
+      "institution_id": "ge-office",
+      "institution_rule": "registry rule www.ge.ch"
     },
     {
       "document_id": "doc-486750863d61559b066b",
@@ -29843,6 +33194,18 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/steuern"
     },
     {
+      "document_id": "doc-549a0c80ca63f55e8541",
+      "source_url": "https://www.ai.ch/themen/persoenliches/wohnen-und-umziehen/an-und-abmelden",
+      "institution_id": "ai-office",
+      "institution_rule": "registry rule www.ai.ch"
+    },
+    {
+      "document_id": "doc-54dc28822feaaa90ba5a",
+      "source_url": "https://bgs.zg.ch/api/de/versions/2741/pdf_file_with_annexes",
+      "institution_id": "zg-law",
+      "institution_rule": "registry rule bgs.zg.ch"
+    },
+    {
       "document_id": "doc-561b0e2fb8c75967f0cd",
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/zuzug.html",
       "institution_id": "zh-261-personenmeldeamt",
@@ -29915,10 +33278,22 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/mobilitaet/parkieren"
     },
     {
+      "document_id": "doc-6038442651e07dc6a567",
+      "source_url": "https://www.migration.sid.be.ch/de/start/einreise/buerger-drittstaaten.html",
+      "institution_id": "be-office",
+      "institution_rule": "registry rule www.migration.sid.be.ch"
+    },
+    {
       "document_id": "doc-603af2c75387379addec",
       "source_url": "https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-projekte-mit-gesamtkosten-ueber-5000-franken.html",
       "institution_id": "zh-fachstelle-integration",
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/integration/"
+    },
+    {
+      "document_id": "doc-61348efdcfb8b7cd0f29",
+      "source_url": "https://www.sz.ch/public/upload/assets/33326/111_110.pdf",
+      "institution_id": "sz-office",
+      "institution_rule": "registry rule www.sz.ch"
     },
     {
       "document_id": "doc-614da06bc3d0c76de81f",
@@ -29945,6 +33320,12 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-65c87384f0b1a34d6d51",
+      "source_url": "https://lex.vs.ch/api/fr/versions/3227/pdf_file_with_annexes",
+      "institution_id": "vs-law",
+      "institution_rule": "registry rule lex.vs.ch"
+    },
+    {
       "document_id": "doc-65e986edfa25a003b565",
       "source_url": "https://www.fedlex.admin.ch/eli/cc/2016/405/de",
       "institution_id": "ch-fedlex",
@@ -29955,6 +33336,24 @@
       "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-fuer-euefta-staatsangehoerige.html",
       "institution_id": "zh-migrationsamt",
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
+      "document_id": "doc-6672da80799a61b7cd84",
+      "source_url": "https://www4.ti.ch/di/spop/chi-siamo/ufficio-della-migrazione",
+      "institution_id": "ti-office",
+      "institution_rule": "registry rule www4.ti.ch"
+    },
+    {
+      "document_id": "doc-674225ac43786b5d211d",
+      "source_url": "https://www.fr.ch/vie-quotidienne/demarches-et-documents/changement-de-canton-ressortissant-ue-27aele",
+      "institution_id": "fr-office",
+      "institution_rule": "registry rule www.fr.ch"
+    },
+    {
+      "document_id": "doc-68427fca2ccf68f45fe2",
+      "source_url": "https://gesetzessammlungen.ag.ch/api/de/versions/3439/pdf_file_with_annexes",
+      "institution_id": "ag-law",
+      "institution_rule": "registry rule gesetzessammlungen.ag.ch"
     },
     {
       "document_id": "doc-69fcd94e262dfe24f7da",
@@ -30047,6 +33446,12 @@
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/einbuergerung"
     },
     {
+      "document_id": "doc-72ec61f7171b5d31d318",
+      "source_url": "https://migrationsamt.sh.ch/kantonswechsel-fuer-drittstaatsangehoerige",
+      "institution_id": "sh-office",
+      "institution_rule": "registry rule migrationsamt.sh.ch"
+    },
+    {
       "document_id": "doc-73316a716c25d7263406",
       "source_url": "https://www.bag.admin.ch/de/krankenversicherung-grenzgaengerinnen-und-grenzgaenger-in-der-schweiz",
       "institution_id": "ch-bag",
@@ -30077,10 +33482,28 @@
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
     },
     {
+      "document_id": "doc-752e202b64913e2a772e",
+      "source_url": "https://migration.lu.ch/Weitere_Aufenthaltsgruende/Kantonswechsel",
+      "institution_id": "lu-office",
+      "institution_rule": "registry rule migration.lu.ch"
+    },
+    {
       "document_id": "doc-77294958483b9993cf03",
       "source_url": "https://www.serafe.ch/de/abgabe/abgabeuebersicht/",
       "institution_id": "ch-serafe",
       "institution_rule": "registry rule www.serafe.ch"
+    },
+    {
+      "document_id": "doc-777e3094d0c258479141",
+      "source_url": "https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/euefta-staatsangehoerige.html/8756-8758-8802-10373-10961-10965-10969",
+      "institution_id": "sz-office",
+      "institution_rule": "registry rule www.sz.ch"
+    },
+    {
+      "document_id": "doc-77c2c422cf2c1e926181",
+      "source_url": "https://gdb.ow.ch/api/de/versions/1824/pdf_file_with_annexes",
+      "institution_id": "ow-law",
+      "institution_rule": "registry rule gdb.ow.ch"
     },
     {
       "document_id": "doc-7a32f11d4eabd2a4e1f6",
@@ -30105,6 +33528,12 @@
       "source_url": "https://www.stadt-zuerich.ch/de/bildung/volksschule/schulferien.html",
       "institution_id": "zh-261-schulamt",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/bildung/volksschule"
+    },
+    {
+      "document_id": "doc-7dedc0fecf81e97bb48f",
+      "source_url": "https://www.belex.sites.be.ch/api/de/versions/3416/pdf_file_with_annexes",
+      "institution_id": "be-law",
+      "institution_rule": "registry rule www.belex.sites.be.ch"
     },
     {
       "document_id": "doc-7e46ce8537f76f1736a8",
@@ -30167,6 +33596,30 @@
       "institution_rule": "registry rule www.bsv.admin.ch"
     },
     {
+      "document_id": "doc-87739a2bc2f8480d2c1e",
+      "source_url": "https://gesetze.gl.ch/api/de/versions/2346/pdf_file_with_annexes",
+      "institution_id": "gl-law",
+      "institution_rule": "registry rule gesetze.gl.ch"
+    },
+    {
+      "document_id": "doc-8782b52e7e4ded9957f5",
+      "source_url": "https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/drittstaatsangehoerige.html/8756-8758-8802-10373-10961-10965-10970",
+      "institution_id": "sz-office",
+      "institution_rule": "registry rule www.sz.ch"
+    },
+    {
+      "document_id": "doc-87bd1ae131b394947426",
+      "source_url": "https://www.hallo.sg.ch/de/zusammenleben/leben-in-st-gallen/aufenthaltsbewilligung.html",
+      "institution_id": "sg-office",
+      "institution_rule": "registry rule www.hallo.sg.ch"
+    },
+    {
+      "document_id": "doc-8d3859d1014df2992f75",
+      "source_url": "https://www.vd.ch/population/controle-des-habitants/changement-dadresse",
+      "institution_id": "vd-office",
+      "institution_rule": "registry rule www.vd.ch"
+    },
+    {
       "document_id": "doc-8da950d67c9fda5a71d0",
       "source_url": "https://www.fedlex.admin.ch/eli/cc/1999/404/de",
       "institution_id": "ch-fedlex",
@@ -30215,10 +33668,22 @@
       "institution_rule": "registry rule www.bwo.admin.ch"
     },
     {
+      "document_id": "doc-94c45c58dc090ae784f9",
+      "source_url": "https://www.vs.ch/web/spm/contr%C3%B4le-de-l-habitant",
+      "institution_id": "vs-office",
+      "institution_rule": "registry rule www.vs.ch"
+    },
+    {
       "document_id": "doc-958cfbd396639e26e288",
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-95bb19b74e800e719113",
+      "source_url": "https://www.ow.ch/fachbereiche/1822",
+      "institution_id": "ow-office",
+      "institution_rule": "registry rule www.ow.ch"
     },
     {
       "document_id": "doc-95bd5f94a6483fb62d81",
@@ -30239,6 +33704,12 @@
       "institution_rule": "registry rule www.ch.ch"
     },
     {
+      "document_id": "doc-982717e0d014321c6da6",
+      "source_url": "https://www.ag.ch/de/themen/migration-integration/aufenthalt/aenderungen-melden/umzug",
+      "institution_id": "ag-office",
+      "institution_rule": "registry rule www.ag.ch"
+    },
+    {
       "document_id": "doc-99e9316d987fb8536932",
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/steuern/kontakt.html",
       "institution_id": "zh-261-steueramt",
@@ -30249,6 +33720,12 @@
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-9bfb342bd18631c49022",
+      "source_url": "https://silgeneve.ch/legis/data/rsg_f2_25.htm",
+      "institution_id": "ge-law",
+      "institution_rule": "registry rule silgeneve.ch"
     },
     {
       "document_id": "doc-9d6687def756fa5c5fc0",
@@ -30269,10 +33746,22 @@
       "institution_rule": "registry rule www.ch.ch"
     },
     {
+      "document_id": "doc-a0271537b3b11fa7e458",
+      "source_url": "https://rechtsbuch.sh.ch/api/de/versions/2055/pdf_file_with_annexes",
+      "institution_id": "sh-law",
+      "institution_rule": "registry rule rechtsbuch.sh.ch"
+    },
+    {
       "document_id": "doc-a0307125a8f264f4f84d",
       "source_url": "https://www.bazg.admin.ch/de/vorschriften-umzugsgut-erbschaftsgut",
       "institution_id": "ch-bazg",
       "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
+      "document_id": "doc-a06a78b6403bde7dbc64",
+      "source_url": "https://so.ch/verwaltung/departement-des-innern/migrationsamt/einreise/",
+      "institution_id": "so-office",
+      "institution_rule": "registry rule so.ch"
     },
     {
       "document_id": "doc-a06b5335d38dfbf344bd",
@@ -30315,6 +33804,12 @@
       "source_url": "https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/wo-und-wann-entsorgen/sonderabfall-sammelstelle.html",
       "institution_id": "zh-261-erz",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung"
+    },
+    {
+      "document_id": "doc-a7aa9034e802ad023fb2",
+      "source_url": "https://www.ge.ch/annoncer-mon-depart-ocpm",
+      "institution_id": "ge-office",
+      "institution_rule": "registry rule www.ge.ch"
     },
     {
       "document_id": "doc-a7b0f3605efd15fe02e9",
@@ -30407,6 +33902,18 @@
       "institution_rule": "registry rule www.zh.ch/de/finanzdirektion/steueramt"
     },
     {
+      "document_id": "doc-b39ccb27108c19341863",
+      "source_url": "https://bgs.so.ch/api/de/versions/5519/pdf_file_with_annexes",
+      "institution_id": "so-law",
+      "institution_rule": "registry rule bgs.so.ch"
+    },
+    {
+      "document_id": "doc-b43396324f38f0112c65",
+      "source_url": "https://www.migration.sid.be.ch/de/start/aufenthalt/ausweis-b.html",
+      "institution_id": "be-office",
+      "institution_rule": "registry rule www.migration.sid.be.ch"
+    },
+    {
       "document_id": "doc-b453b5c4f8f48f94400a",
       "source_url": "https://www.fedlex.admin.ch/eli/cc/2016/404/de",
       "institution_id": "ch-fedlex",
@@ -30423,6 +33930,12 @@
       "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-b-oder-c-bewilligung-beantragen.html",
       "institution_id": "zh-migrationsamt",
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
+      "document_id": "doc-b8e80712d932400cd49a",
+      "source_url": "https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/einreise-und-aufenthalt",
+      "institution_id": "bs-office",
+      "institution_rule": "registry rule www.bs.ch"
     },
     {
       "document_id": "doc-b9f0f7f478a3e7753470",
@@ -30449,6 +33962,12 @@
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
     },
     {
+      "document_id": "doc-be1e21dbb97154b03ae1",
+      "source_url": "https://www.ai.ch/themen/auslaender/arbeiten",
+      "institution_id": "ai-office",
+      "institution_rule": "registry rule www.ai.ch"
+    },
+    {
       "document_id": "doc-be90aa2fdbcbaef2a63b",
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum/aufenthaltsrechner.html",
       "institution_id": "ch-sem",
@@ -30461,6 +33980,12 @@
       "institution_rule": "registry rule www.zh.ch/de/mobilitaet/"
     },
     {
+      "document_id": "doc-bef10a9532d3e65ed421",
+      "source_url": "https://cdn.zg.ch/dam/jcr:ceef462f-5c3b-4a56-952e-78268e405057/Merkblatt%20Umzug.pdf",
+      "institution_id": "zg-office",
+      "institution_rule": "registry rule cdn.zg.ch"
+    },
+    {
       "document_id": "doc-bf76b12418fcaa73e02b",
       "source_url": "https://www.sem.admin.ch/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/etias.html",
       "institution_id": "ch-sem",
@@ -30471,6 +33996,12 @@
       "source_url": "https://www.arbeit.swiss/de/stellensuchende/rueckkehr-in-die-schweiz",
       "institution_id": "ch-seco",
       "institution_rule": "registry rule www.arbeit.swiss"
+    },
+    {
+      "document_id": "doc-c14d4fcf6d9df22c9586",
+      "source_url": "https://srl.lu.ch/api/de/versions/4184/pdf_file_with_annexes",
+      "institution_id": "lu-law",
+      "institution_rule": "registry rule srl.lu.ch"
     },
     {
       "document_id": "doc-c1b1be0f5c7479ddb67a",
@@ -30491,6 +34022,24 @@
       "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
+      "document_id": "doc-c32553ea05e1587a60d4",
+      "source_url": "https://ar.clex.ch/api/de/versions/1275/pdf_file_with_annexes",
+      "institution_id": "ar-law",
+      "institution_rule": "registry rule ar.clex.ch"
+    },
+    {
+      "document_id": "doc-c33d3808823882dbd8a6",
+      "source_url": "https://www.sg.ch/sicherheit/einreise-aufenthalt-ausreise/bewilligugnen-eu-efta.html",
+      "institution_id": "sg-office",
+      "institution_rule": "registry rule www.sg.ch"
+    },
+    {
+      "document_id": "doc-c3e47bf7b62d608296ed",
+      "source_url": "https://integration.nw.ch/aufenthalt/",
+      "institution_id": "nw-office",
+      "institution_rule": "registry rule integration.nw.ch"
+    },
+    {
       "document_id": "doc-c428011a0852377f3ef6",
       "source_url": "https://www.bazg.admin.ch/de/reisen-einkaufen-private-einfuhr-in-die-schweiz",
       "institution_id": "ch-bazg",
@@ -30503,6 +34052,12 @@
       "institution_rule": "registry rule www.arbeit.swiss"
     },
     {
+      "document_id": "doc-c8b9a1ea9ffc2b4e0c88",
+      "source_url": "https://www.vd.ch/deiep/spop",
+      "institution_id": "vd-office",
+      "institution_rule": "registry rule www.vd.ch"
+    },
+    {
       "document_id": "doc-c91304c05bdefe12e21b",
       "source_url": "https://www.bag.admin.ch/de/krankenversicherung-praemien-und-kostenbeteiligung",
       "institution_id": "ch-bag",
@@ -30513,6 +34068,12 @@
       "source_url": "https://faq.bsv.admin.ch/de/3-saeule/welche-beitraege-kann-ich-die-saeule-3a-einzahlen",
       "institution_id": "ch-bsv",
       "institution_rule": "registry rule faq.bsv.admin.ch"
+    },
+    {
+      "document_id": "doc-cb07b45b2872d40435a6",
+      "source_url": "https://www.gr-lex.gr.ch/api/de/versions/3576/pdf_file_with_annexes",
+      "institution_id": "gr-law",
+      "institution_rule": "registry rule www.gr-lex.gr.ch"
     },
     {
       "document_id": "doc-cc8927202fa93a8a8d83",
@@ -30539,6 +34100,12 @@
       "institution_rule": "registry rule www.ahv-iv.ch"
     },
     {
+      "document_id": "doc-ce9cb3adfb5045bb45fc",
+      "source_url": "https://www.vs.ch/web/spm/changement-de-canton1",
+      "institution_id": "vs-office",
+      "institution_rule": "registry rule www.vs.ch"
+    },
+    {
       "document_id": "doc-ced6938984e613987aad",
       "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Beitr%C3%A4ge",
       "institution_id": "ch-ahv-iv",
@@ -30549,6 +34116,18 @@
       "source_url": "https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html",
       "institution_id": "zh-veterinaeramt",
       "institution_rule": "registry rule www.zh.ch/de/umwelt-tiere/tiere"
+    },
+    {
+      "document_id": "doc-cfc606f7de89a194cee4",
+      "source_url": "https://silgeneve.ch/legis/data/rsg_f2_05.htm",
+      "institution_id": "ge-law",
+      "institution_rule": "registry rule silgeneve.ch"
+    },
+    {
+      "document_id": "doc-cff5ab3ec851efa60538",
+      "source_url": "https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/zuzug-den-kanton-basel-stadt",
+      "institution_id": "bs-office",
+      "institution_rule": "registry rule www.bs.ch"
     },
     {
       "document_id": "doc-d014e967e94edec3b92f",
@@ -30639,6 +34218,12 @@
       "source_url": "https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/korrekt-entsorgen.html",
       "institution_id": "zh-261-erz",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung"
+    },
+    {
+      "document_id": "doc-d8abd396531de40dcbd2",
+      "source_url": "https://bdlf.fr.ch/api/fr/versions/8129/pdf_file_with_annexes",
+      "institution_id": "fr-law",
+      "institution_rule": "registry rule bdlf.fr.ch"
     },
     {
       "document_id": "doc-d9800378b0f5ad0049df",
@@ -30737,6 +34322,12 @@
       "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
+      "document_id": "doc-e48acba56a5956163cca",
+      "source_url": "https://www.ur.ch/arbeit/6424",
+      "institution_id": "ur-office",
+      "institution_rule": "registry rule www.ur.ch"
+    },
+    {
       "document_id": "doc-e494fce7ee1b673e639f",
       "source_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherungspflicht-fuer-in-der-schweiz-wohnhafte-versicherte",
       "institution_id": "ch-bag",
@@ -30797,6 +34388,12 @@
       "institution_rule": "registry rule www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit"
     },
     {
+      "document_id": "doc-eb17cee7f400a35afcc8",
+      "source_url": "https://rechtsbuch.ur.ch/api/de/versions/1048/pdf_file_with_annexes",
+      "institution_id": "ur-law",
+      "institution_rule": "registry rule rechtsbuch.ur.ch"
+    },
+    {
       "document_id": "doc-eb9ac50fa8014bdcea2c",
       "source_url": "https://www.stadt-zuerich.ch/de/bildung/volksschule/schulorganisation/verschiedene-sprachen.html",
       "institution_id": "zh-261-schulamt",
@@ -30837,6 +34434,12 @@
       "source_url": "https://svazurich.ch/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/praemienverbilligung/wer-hat-anspruch-.html",
       "institution_id": "zh-sva",
       "institution_rule": "registry rule svazurich.ch"
+    },
+    {
+      "document_id": "doc-ef8e74af38d086f3a1af",
+      "source_url": "https://www.migration.sid.be.ch/de/start/einreise/buerger-eu-efta.html",
+      "institution_id": "be-office",
+      "institution_rule": "registry rule www.migration.sid.be.ch"
     },
     {
       "document_id": "doc-f0c89a15b20f7d14b9db",
@@ -30881,10 +34484,22 @@
       "institution_rule": "registry rule www.ahv-iv.ch"
     },
     {
+      "document_id": "doc-f4e369cc5ff44fa4be1d",
+      "source_url": "https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/18",
+      "institution_id": "ti-law",
+      "institution_rule": "registry rule m3.ti.ch"
+    },
+    {
       "document_id": "doc-f518332d10e4a45bf74d",
       "source_url": "https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden/faq.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-f6debadae0d5f281d74a",
+      "source_url": "https://migrationsamt.sh.ch/erwerbstatige-eu-efta",
+      "institution_id": "sh-office",
+      "institution_rule": "registry rule migrationsamt.sh.ch"
     },
     {
       "document_id": "doc-f90a4619e9f1d8370d4b",
@@ -30948,9 +34563,9 @@
     }
   ],
   "basis_kinds": {
-    "guidance": 872,
-    "act": 66,
-    "ordinance": 35,
+    "guidance": 947,
+    "act": 107,
+    "ordinance": 43,
     "summary": 50,
     "treaty": 37,
     "directory": 77,
@@ -30963,5 +34578,10 @@
     "places": 2137,
     "aliases": 115
   },
-  "validation_issues": []
+  "validation_issues": [],
+  "content_sha256": "d3e5c31a0715bd41647378f829b93fb297eccef16f98bbf1fd59161e6566c94c",
+  "release_sha256": "c66d7c4faa23deda651ac569728e890d2503467170e2803dcb29c5a5864c17f0",
+  "curation_sha256": "0807c8b32c879b8a837a42dc6b12636be63c0d5db577abb750ff4041fab06c4a",
+  "text_index_sha256": "fbb71ddf95776f578e682fb8754dc6c900ecc9571831bb19424d700ca12992d3",
+  "acceptance_suite_sha256": "13ed4d5998a844474964b60f3c1165013a47d0be2b8a53b41e44b5a60647b3a0"
 }

@@ -72,11 +72,16 @@ class ZurichReleaseTests(unittest.TestCase):
         self.assertRegex(search.inputSchema["properties"]["query"]["description"], note)
         self.assertEqual([q["code"] for q in root.structuredContent["query_languages"]], ["de", "en"])
         self.assertFalse(root.isError)
-        # The pack README promises the coverage root in one call under 6 KB; the bound is the binary kilobyte.
-        # On mvp-zurich-2026-09-22-v1 the root is 6,033 bytes while 83 facts wait for review and 5,999 once they
-        # are confirmed, because the served review-status line then names one status instead of two. Trim a
-        # manifest limitation before raising this bound again.
-        self.assertLess(len(root.content[0].text.encode("utf-8")), 6144)
+        # Criterion X8 keeps the coverage root small enough to refuse an outside question in one call. Two bounds
+        # had drifted apart: this one at 6,144 bytes and check_server.py at 8,000, with the root at 7,640 - so the
+        # round trip had been failing while the server check passed. The user settled it on 23 September 2026:
+        # 8,000 is the real bound, in both places and in X8. The four waves of 22-23 September took the root from
+        # 6,033 to 7,640 bytes. The cantonal wave then did not fit: stating in the manifest that registration is
+        # published for all 26 cantons, with the caveats that go with it, costs about 370 bytes and took the root to
+        # 8,317. The alternatives were a terser and less precise disclosure or rewriting reviewed limitations, and
+        # the user chose on 23 September 2026 to raise the bound to 8,500 instead, because the pack grew from one
+        # canton to twenty-six and the root grew with it. Shorten a topic description before raising this again.
+        self.assertLess(len(root.content[0].text.encode("utf-8")), 8500)
         self.assertEqual(resolved.structuredContent["status"], "SUPPORTED")
         self.assertTrue(resolved.structuredContent["results"][0]["citations"][0]["url"].startswith("https://www.sem.admin.ch/"))
 

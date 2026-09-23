@@ -1,8 +1,8 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, not clean, 216 disposition(s), generated 2026-09-23T10:50:03.
+Release `mvp-zurich-2026-09-23-v27` (content `d3e5c31a0715`), policy `report`, not clean, 216 disposition(s), generated 2026-09-23T18:07:55.
 
-444 candidate records ({'section': 425, 'document': 17, 'rolled_up': 2}) with 2829 units a curator answers for: 723 cited, 1251 dispositioned, **855 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 35, 'partly_cited': 98, 'cited_and_dispositioned': 73, 'cited': 64, 'empty': 23, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
+526 candidate records ({'section': 507, 'document': 17, 'rolled_up': 2}) with 3344 units a curator answers for: 856 cited, 1251 dispositioned, **1237 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 39, 'empty': 44, 'partly_cited': 135, 'cited': 84, 'cited_and_dispositioned': 73, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 
 ## Documents
 
@@ -16,6 +16,8 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | unclassified | [Heiraten in der Schweiz](https://www.ch.ch/de/familie-und-partnerschaft/heirat--konkubinat--partenariat/heiraten/) `doc-1763e58f746ce7c2100a` | section | 2 | 0 | 0 | 0 | 2 | ch-chch-marriage |
 | unclassified | [Miete](https://www.ch.ch/de/wohnen/miete/) `doc-fabe4f3082ee4b4931b7` | section | 2 | 0 | 0 | 0 | 2 | ch-chch-housing |
 | unclassified | [Wohnen: Ruhezeiten, Mietzins und Mängel in der Schweiz](https://www.ch.ch/de/wohnen/miete/larm--mangel--mietzins/) `doc-10bb67123311f6518f86` | section | 2 | 0 | 0 | 0 | 2 |  |
+| unclassified | [Aufenthaltsbewilligung (Ausweis B)](https://www.migration.sid.be.ch/de/start/aufenthalt/ausweis-b.html) `doc-b43396324f38f0112c65` | section | 3 | 0 | 0 | 0 | 3 | be-permit-b |
+| unclassified | [Personnes issues d'un État de l'UE/AELE](https://www.migration.sid.be.ch/fr/start/einreise/buerger-eu-efta.html) `doc-a24d379984bea6e97df4` | section | 3 | 0 | 0 | 0 | 3 | be-entry-eu-efta-fr |
 | unclassified | [Wie werde ich Schweizerin oder Schweizer](https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden.html) `doc-a51c61294f44050bec82` | section | 7 | 0 | 0 | 0 | 7 | ch-sem-citizenship |
 | unclassified | [Verfahren](https://www.sem.admin.ch/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige/verfahrensablauf.html) `doc-d730abb70b2cd9d7b687` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-work-third-country |
 | unclassified | [Fachinformationen zur Einreise in die Schweiz oder den Schengen-Raum](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise.html) `doc-df95692fe72c9af232f2` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
@@ -35,7 +37,8 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | unclassified | [Permit N (permit for asylum-seekers)](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/nicht_eu_efta/ausweis_n__asylsuchende.html) `doc-76db95e4d182d6ee825f` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-residence-en |
 | unclassified | [Permit S (people in need of protection)](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/nicht_eu_efta/ausweis_s__schutzbeduerftige.html) `doc-d5d2d1e57acb1b6f54c1` | section | 1 | 0 | 0 | 0 | 1 | ch-sem-residence-en |
 | unclassified | ["Sans-Papiers" in Switzerland](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/sans-papiers.html) `doc-2979c6530d0fc2938338` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-residence-en |
-| unclassified | [Notfall / Stadt Zürich](https://www.stadt-zuerich.ch/de/stadtleben/notfall.html) `doc-745148c5fe3663cb880f` | section | 1 | 0 | 0 | 0 | 1 | zurich-city-emergency |
+| unclassified | [Visa Application Form](https://www.sem.admin.ch/sem/en/home/themen/einreise/visumantragsformular.html) `doc-daf8dfc81039a2f8289c` | section | 1 | 0 | 0 | 0 | 1 |  |
+| unclassified | [Notfall / Stadt Zürich](https://www.stadt-zuerich.ch/de/stadtleben/notfall.html) `doc-745148c5fe3663cb880f` | section | 1 | 0 | 0 | 0 | 1 |  |
 | unclassified | [Verlassen der Schweiz](https://www.zas.admin.ch/de/verlassen-der-schweiz) `doc-2762a65962b06c05dc9e` | section | 6 | 0 | 0 | 0 | 6 |  |
 | unclassified | [Steueramt / Kanton Zürich](https://www.zh.ch/de/finanzdirektion/steueramt.html) `doc-b30d930e5eb4e146f3c0` | section | 10 | 0 | 0 | 0 | 10 | zh-steueramt-office |
 | unclassified | [Familiennachzug von Drittstaatsangehörigen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen.html) `doc-0f4f03404f99ee66351b` | section | 12 | 0 | 0 | 1 | 11 | zh-family |
@@ -43,9 +46,21 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | unclassified | [Strassenverkehrsamt / Kanton Zürich](https://www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt.html) `doc-40854d7d26db9f3bba00` | section | 12 | 0 | 0 | 1 | 11 | zh-strassenverkehrsamt-office |
 | unclassified | [Quellensteuer / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer.html) `doc-aaca2a8359cc911aa50f` | rolled_up | 6 | 0 | 0 | 0 | 6 | zh-tax-at-source |
 | unclassified | [Amt für Wirtschaft / Kanton Zürich](https://www.zh.ch/de/volkswirtschaftsdirektion/amt-fuer-wirtschaft.html) `doc-6ac4fb95eb9bd1acf968` | section | 6 | 0 | 0 | 0 | 6 | zh-awa-office |
+| unclassified | [Einreise EU/EFTA-Staatsangehörige](https://zg.ch/de/migration-integration/einreise-und-aufenthalt/einreise-eu-efta-staatsangehoerige) `doc-d93f4248701c364d8108` | section | 5 | 0 | 0 | 0 | 5 | zg-entry-eu-efta |
+| partly_cited | [Drittstaatsangehörige - Appenzell Ausserrhoden](https://ar.ch/verwaltung/departement-inneres-und-sicherheit/amt-fuer-inneres/abteilung-migration/einreise-und-aufenthalt/drittstaatsangehoerige/) `doc-1c6f5fde53430f3e283a` | section | 5 | 1 | 0 | 0 | 4 | ar-third-country |
 | partly_cited | [Welche Beiträge kann ich in die Säule 3a einzahlen? / BSV](https://faq.bsv.admin.ch/de/3-saeule/welche-beitraege-kann-ich-die-saeule-3a-einzahlen) `doc-cb064208c75c37b62929` | section | 3 | 1 | 0 | 0 | 2 |  |
 | partly_cited | [Wer kann eine Säule 3a (gebundene Selbstvorsorge) einrichten? / BSV](https://faq.bsv.admin.ch/de/3-saeule/wer-kann-eine-saeule-3a-gebundene-selbstvorsorge-einrichten) `doc-ed67ab05b41d46594ed8` | section | 3 | 1 | 0 | 0 | 2 | ch-bsv-pillar-3a |
 | partly_cited | [Kann ich mein BVG-Altersguthaben bar beziehen, wenn ich die Schweiz endgültig verlasse? / BSV](https://faq.bsv.admin.ch/de/berufliche-vorsorge-und-3-saeule/kann-ich-mein-bvg-altersguthaben-bar-beziehen-wenn-ich-die-schweiz) `doc-07709682168602d2fb3f` | section | 3 | 1 | 0 | 0 | 2 | ch-bsv-bvg-departure |
+| partly_cited | [Migrationsamt: Gesuch einreichen](https://migrationsamt.sh.ch/erwerbstatige-eu-efta) `doc-f6debadae0d5f281d74a` | section | 4 | 1 | 0 | 0 | 3 | sh-registration-eu-efta |
+| partly_cited | [Migrationsamt: Gesuch einreichen](https://migrationsamt.sh.ch/kantonswechsel-fuer-drittstaatsangehoerige) `doc-72ec61f7171b5d31d318` | section | 4 | 1 | 0 | 0 | 3 | sh-change-of-canton |
+| partly_cited | [Kantonswechsel - Kanton Solothurn](https://so.ch/verwaltung/departement-des-innern/migrationsamt/aufenthalt-und-integration/kantonswechsel/) `doc-10f9280753a0262e0d1d` | section | 3 | 1 | 0 | 0 | 2 | so-change-of-canton |
+| partly_cited | [Einreise - Kanton Solothurn](https://so.ch/verwaltung/departement-des-innern/migrationsamt/einreise/) `doc-a06a78b6403bde7dbc64` | section | 7 | 1 | 0 | 0 | 6 | so-entry-registration |
+| partly_cited | [Arbeiten — Appenzell Innerrhoden](https://www.ai.ch/themen/auslaender/arbeiten) `doc-be1e21dbb97154b03ae1` | section | 9 | 2 | 0 | 0 | 7 | ai-foreign-workers |
+| partly_cited | [An-, Ab- und Ummelden — Appenzell Innerrhoden](https://www.ai.ch/themen/persoenliches/wohnen-und-umziehen/an-und-abmelden) `doc-549a0c80ca63f55e8541` | section | 4 | 3 | 0 | 0 | 1 | ai-registration |
+| partly_cited | [Health insurance: Requirement to obtain insurance for persons resident in Switzerland](https://www.bag.admin.ch/en/health-insurance-requirement-to-obtain-insurance-for-persons-resident-in-switzerland) `doc-a824ca812a50553956ef` | section | 6 | 3 | 0 | 0 | 3 |  |
+| partly_cited | [Moving to Switzerland: Procedure](https://www.bazg.admin.ch/en/relocation-import-switzerland-procedure) `doc-c232814a873fa3014a6e` | section | 6 | 4 | 0 | 0 | 2 |  |
+| partly_cited | [Einreise und Aufenthalt / Kanton Basel-Stadt](https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/einreise-und-aufenthalt) `doc-b8e80712d932400cd49a` | section | 48 | 4 | 0 | 0 | 44 | bs-entry-residence |
+| partly_cited | [Zuzug in den Kanton Basel-Stadt / Kanton Basel-Stadt](https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/zuzug-den-kanton-basel-stadt) `doc-cff5ab3ec851efa60538` | section | 21 | 5 | 0 | 0 | 16 | bs-registration-arrival |
 | partly_cited | [EO bei Adoption](https://www.bsv.admin.ch/de/eo-bei-adoption) `doc-3ea9b1655f1a9db36e5e` | section | 7 | 2 | 0 | 0 | 5 |  |
 | partly_cited | [EO bei Mutterschaft](https://www.bsv.admin.ch/de/eo-bei-mutterschaft) `doc-bc31bd2012fbdd654c09` | section | 9 | 4 | 0 | 0 | 5 |  |
 | partly_cited | [EO bei Vaterschaft](https://www.bsv.admin.ch/de/eo-bei-vaterschaft) `doc-859ecc73c600eb5a82a2` | section | 8 | 3 | 0 | 0 | 5 |  |
@@ -62,6 +77,14 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | partly_cited | [Mietvertrag, Untermietvertrag, Pachtvertrag in der Schweiz.](https://www.ch.ch/de/wohnen/miete/mietvertrag-und-pachtvertrag/) `doc-5ba510af38c7a4246318` | section | 6 | 2 | 0 | 0 | 4 |  |
 | partly_cited | [Visabestimmungen für die Einreise in die Schweiz](https://www.eda.admin.ch/de/visabestimmungen-fuer-die-einreise-in-die-schweiz) `doc-1bc7c301f281e3894bc3` | section | 7 | 3 | 0 | 0 | 4 | ch-eda-visa |
 | partly_cited | [Schweizerische Quellensteuer QST](https://www.estv.admin.ch/de/quellensteuer) `doc-4f9c56f3313549edc7e8` | section | 15 | 2 | 0 | 0 | 13 | ch-estv-tax-at-source |
+| partly_cited | [Annoncer mon arrivée à l'OCPM / ge.ch](https://www.ge.ch/annoncer-mon-arrivee-ocpm) `doc-47f3b81937bf5d0dbe98` | section | 3 | 1 | 0 | 0 | 2 | ge-arrival |
+| partly_cited | [Annoncer mon départ à l'OCPM / ge.ch](https://www.ge.ch/annoncer-mon-depart-ocpm) `doc-a7aa9034e802ad023fb2` | section | 3 | 1 | 0 | 0 | 2 | ge-departure |
+| partly_cited | [Aufenthaltsbewilligung / hallo.sg.ch](https://www.hallo.sg.ch/de/zusammenleben/leben-in-st-gallen/aufenthaltsbewilligung.html) `doc-87bd1ae131b394947426` | section | 22 | 3 | 0 | 0 | 19 | sg-newcomer-permit |
+| partly_cited | [Contrôle des habitants - République et Canton du Jura](https://www.jura.ch/fr/Autorites/Administration/DSJP/SPOP/Controle-des-habitants/Controle-des-habitants.html) `doc-3ca5baea976a4719565c` | section | 4 | 1 | 0 | 0 | 3 | ju-residents-office |
+| partly_cited | [Einreise für Bürger/innen von EU-/EFTA-Staaten](https://www.migration.sid.be.ch/de/start/einreise/buerger-eu-efta.html) `doc-ef8e74af38d086f3a1af` | section | 3 | 1 | 0 | 0 | 2 | be-entry-eu-efta |
+| partly_cited | [Étudier à Neuchâtel / ne.ch](https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/etudier-neuchatel) `doc-05ca6b1f1d0609c5358f` | section | 13 | 1 | 0 | 0 | 12 | ne-studying |
+| partly_cited | [Gérer et renouveler votre permis actuel / ne.ch](https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/permis-de-sejour/gerer-et-renouveler-votre-permis-actuel) `doc-2518b46b4d52603fce96` | section | 12 | 3 | 0 | 0 | 9 | ne-permit-management |
+| partly_cited | [Obwalden - Abteilung Migration](https://www.ow.ch/fachbereiche/1822) `doc-95bb19b74e800e719113` | section | 7 | 1 | 0 | 0 | 6 | ow-migration-office |
 | partly_cited | [Ausländerinnen und Ausländer der dritten Generation](https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden/3-generation.html) `doc-d7418165689182dcd557` | section | 5 | 4 | 0 | 0 | 1 |  |
 | partly_cited | [FAQ – Schweizer Bürgerrecht](https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden/faq.html) `doc-f518332d10e4a45bf74d` | section | 5 | 2 | 0 | 0 | 3 |  |
 | partly_cited | [Die Ordentliche Einbürgerung](https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden/ordentlich.html) `doc-3a2ab21bc9b8328039ad` | section | 7 | 5 | 0 | 0 | 2 |  |
@@ -80,16 +103,26 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | partly_cited | [Ausweis G (Grenzgängerbewilligung)](https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta/ausweis_g__grenzgaengerbewilligung.html) `doc-15b24dfd1b4e56b1520e` | section | 2 | 1 | 0 | 0 | 1 | ch-sem-residence-de, ch-sem-third-country |
 | partly_cited | [Reisedokumente für ausländische Personen](https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/reisedokumente.html) `doc-922e276a8a0082617d5d` | section | 9 | 5 | 0 | 0 | 4 | ch-sem-residence-de |
 | partly_cited | [FAQ – Einreise](https://www.sem.admin.ch/sem/de/home/themen/einreise/faq.html) `doc-95bd5f94a6483fb62d81` | section | 74 | 12 | 0 | 0 | 62 | ch-sem-entry-faq |
-| partly_cited | [Brauche ich ein ETIAS?](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/etias.html) `doc-c1b1be0f5c7479ddb67a` | section | 12 | 6 | 0 | 0 | 6 | ch-sem-entry |
-| partly_cited | [Regeln zur Berechnung der Aufenthaltsdauer](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum/aufenthaltsrechner.html) `doc-be90aa2fdbcbaef2a63b` | section | 5 | 2 | 0 | 0 | 3 | ch-sem-entry |
+| partly_cited | [Brauche ich ein ETIAS?](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/etias.html) `doc-c1b1be0f5c7479ddb67a` | section | 12 | 6 | 0 | 0 | 6 |  |
+| partly_cited | [Regeln zur Berechnung der Aufenthaltsdauer](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum/aufenthaltsrechner.html) `doc-be90aa2fdbcbaef2a63b` | section | 5 | 2 | 0 | 0 | 3 |  |
 | partly_cited | [FAQ – Fragen zur Personenfreizügigkeit](https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html) `doc-958cfbd396639e26e288` | section | 26 | 1 | 0 | 0 | 25 | ch-sem-free-movement-faq |
 | partly_cited | [Meldeverfahren für kurzfristige Erwerbstätigkeit](https://www.sem.admin.ch/sem/de/home/themen/fza_schweiz-eu-efta/meldeverfahren.html) `doc-fa449b84a9ef0219d6ca` | section | 20 | 4 | 0 | 0 | 16 | ch-sem-notification-procedure |
 | partly_cited | [Ordinary naturalisation](https://www.sem.admin.ch/sem/en/home/integration-einbuergerung/schweizer-werden/ordentlich.html) `doc-affa0e3c4611f0bc0c49` | section | 7 | 5 | 0 | 0 | 2 |  |
 | partly_cited | [Married with a Swiss citizen](https://www.sem.admin.ch/sem/en/home/integration-einbuergerung/schweizer-werden/verheiratet.html) `doc-80035af2969524751879` | section | 10 | 6 | 0 | 0 | 4 |  |
+| partly_cited | [Cantonal immigration and employment market authorities](https://www.sem.admin.ch/sem/en/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html) `doc-44d8e11b55a80a28ff81` | section | 58 | 26 | 0 | 0 | 32 |  |
+| partly_cited | [Non-EU/EFTA nationals](https://www.sem.admin.ch/sem/en/home/themen/arbeit/nicht-eu_efta-angehoerige.html) `doc-a96967bdcfe853a2125f` | section | 8 | 1 | 0 | 0 | 7 |  |
 | partly_cited | [Residence](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt.html) `doc-dccf33fdeb5e8071c812` | section | 2 | 1 | 0 | 0 | 1 | ch-sem-residence-en |
-| partly_cited | [Biometric residence permits for foreign nationals](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/biometr_auslaenderausweis.html) `doc-3e746d83b3058c7ef473` | section | 6 | 1 | 0 | 0 | 5 | ch-sem-residence-en |
+| partly_cited | [Biometric residence permits for foreign nationals](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/biometr_auslaenderausweis.html) `doc-3e746d83b3058c7ef473` | section | 6 | 1 | 0 | 0 | 5 |  |
+| partly_cited | [Entry/Exit System (EES)](https://www.sem.admin.ch/sem/en/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/ees.html) `doc-1fdb37fe11d4c2f78092` | section | 5 | 1 | 0 | 0 | 4 |  |
+| partly_cited | [Schengen Area](https://www.sem.admin.ch/sem/en/home/themen/einreise/fachinfo-einreise/schengen.html) `doc-73a7249d20f7f69b6575` | section | 3 | 1 | 0 | 0 | 2 |  |
+| partly_cited | [FAQ – Entry](https://www.sem.admin.ch/sem/en/home/themen/einreise/faq.html) `doc-51784d2aafc3d54b47f6` | section | 74 | 10 | 0 | 0 | 64 |  |
+| partly_cited | [Do I require an ETIAS?](https://www.sem.admin.ch/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/etias.html) `doc-bf76b12418fcaa73e02b` | section | 11 | 5 | 0 | 0 | 6 |  |
+| partly_cited | [Entry with visa](https://www.sem.admin.ch/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum.html) `doc-d14d6007e17102ecc58a` | section | 4 | 1 | 0 | 0 | 3 |  |
+| partly_cited | [Rules for calculating the length of stay](https://www.sem.admin.ch/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum/aufenthaltsrechner.html) `doc-51113400be3c429d2c91` | section | 5 | 2 | 0 | 0 | 3 |  |
+| partly_cited | [FAQ – Free Movement of Persons](https://www.sem.admin.ch/sem/en/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html) `doc-9108317b2ccbef351701` | section | 26 | 1 | 0 | 0 | 25 |  |
 | partly_cited | [Notification procedure for short-term work in Switzerland](https://www.sem.admin.ch/sem/en/home/themen/fza_schweiz-eu-efta/meldeverfahren.html) `doc-d9800378b0f5ad0049df` | section | 20 | 3 | 0 | 0 | 17 |  |
 | partly_cited | [Fee overview](https://www.serafe.ch/en/the-fee/fee-overview/) `doc-ec719a25b2c525bfa22e` | section | 2 | 1 | 0 | 0 | 1 |  |
+| partly_cited | [Bewilligungen EU-/EFTA-Staaten / sg.ch](https://www.sg.ch/sicherheit/einreise-aufenthalt-ausreise/bewilligugnen-eu-efta.html) `doc-c33d3808823882dbd8a6` | section | 17 | 2 | 0 | 0 | 15 | sg-permits-eu-efta |
 | partly_cited | [Schulferien und schulfreie Tage / Stadt Zürich](https://www.stadt-zuerich.ch/de/bildung/volksschule/schulferien.html) `doc-7da0b6b1bae122f7b6bc` | section | 5 | 3 | 0 | 0 | 2 |  |
 | partly_cited | [Schulbotschafter*innen – Volksschule in verschiedenen Sprachen erklärt / Stadt Zürich](https://www.stadt-zuerich.ch/de/bildung/volksschule/schulorganisation/verschiedene-sprachen.html) `doc-eb9ac50fa8014bdcea2c` | section | 3 | 2 | 0 | 0 | 1 |  |
 | partly_cited | [Deutschkenntnisse / Stadt Zürich](https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung/deutschkenntnisse.html) `doc-e531378f6761d7894a5f` | section | 3 | 1 | 0 | 1 | 1 |  |
@@ -104,6 +137,13 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | partly_cited | [Parkbewilligungen / Stadt Zürich](https://www.stadt-zuerich.ch/de/mobilitaet/parkieren/parkbewilligungen.html) `doc-6ab71ca3fb50a015de81` | section | 6 | 5 | 0 | 0 | 1 | zurich-city-parking-permits |
 | partly_cited | [Tagesbewilligungen / Stadt Zürich](https://www.stadt-zuerich.ch/de/mobilitaet/parkieren/parkbewilligungen/tagesbewilligungen.html) `doc-7502be9969bff24a2962` | section | 3 | 2 | 0 | 0 | 1 |  |
 | partly_cited | [Recyclinghof / Stadt Zürich](https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/wo-und-wann-entsorgen/recyclinghof.html) `doc-1c102c7c0dd9484cfbb9` | section | 5 | 4 | 0 | 0 | 1 |  |
+| partly_cited | [Drittstaatsangehörige – Kanton Schwyz](https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/drittstaatsangehoerige.html/8756-8758-8802-10373-10961-10965-10970) `doc-8782b52e7e4ded9957f5` | section | 7 | 2 | 0 | 0 | 5 | sz-third-country |
+| partly_cited | [EU/EFTA-Staatsangehörige – Kanton Schwyz](https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/euefta-staatsangehoerige.html/8756-8758-8802-10373-10961-10965-10969) `doc-777e3094d0c258479141` | section | 8 | 2 | 0 | 0 | 6 | sz-eu-efta |
+| partly_cited | [Kanton Uri - Migration](https://www.ur.ch/arbeit/6424) `doc-e48acba56a5956163cca` | section | 19 | 3 | 0 | 0 | 16 | ur-migration |
+| partly_cited | [Service de la population (SPOP) / État de Vaud](https://www.vd.ch/deiep/spop) `doc-c8b9a1ea9ffc2b4e0c88` | section | 13 | 2 | 0 | 0 | 11 | vd-population-office |
+| partly_cited | [Arrivée d'un autre canton / État de Vaud](https://www.vd.ch/population/population-etrangere/entree-et-sejour/union-europeenne/arrivee-dun-autre-canton) `doc-3844053afd11f3382d02` | section | 8 | 4 | 0 | 0 | 4 | vd-arrival-other-canton |
+| partly_cited | [Annoncer son changement d'adresse au contrôle des habitants / État de Vaud](https://www.vd.ch/prestation/annoncer-son-changement-dadresse-au-controle-des-habitants) `doc-2c3e1bfd065668a5ca8d` | section | 7 | 2 | 0 | 0 | 5 | vd-registration-service |
+| partly_cited | [Permis de séjour - SPM - vs.ch](https://www.vs.ch/web/spm/permis-de-s%C3%A9jour) `doc-1295d214764a7279a7a5` | section | 4 | 1 | 0 | 0 | 3 | vs-residence-permit |
 | partly_cited | [Anspruch auf AHV-Rentenzahlungen ausserhalb der Schweiz](https://www.zas.admin.ch/de/anspruch-auf-ahv-rentenzahlungen-ausserhalb-der-schweiz) `doc-226de14b7b9927c904b6` | section | 6 | 3 | 0 | 0 | 3 |  |
 | partly_cited | [Bilaterale Abkommen](https://www.zas.admin.ch/de/bilaterale-abkommen) `doc-ab60e3608ad2acda5817` | section | 2 | 1 | 0 | 0 | 1 |  |
 | partly_cited | [Rückvergütungen](https://www.zas.admin.ch/de/rueckverguetungen) `doc-8e0f49bbd6375b07eb5b` | section | 10 | 3 | 0 | 0 | 7 | ch-zas-contribution-refund |
@@ -119,8 +159,8 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | partly_cited | [Einreisebewilligung für Rentnerinnen und Rentner beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige/einreisebewilligung-fuer-rentnerinnen-und-rentner-beantragen.html) `doc-451d08b440cd87bb5ec4` | section | 7 | 4 | 0 | 2 | 1 | zh-no-employment, zh-overview |
 | partly_cited | [Ausländerausweise im Kreditkartenformat / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/biometrische-auslaenderausweise.html) `doc-16aa932b35f8b7f9ff91` | section | 10 | 6 | 0 | 1 | 3 | zh-biometric-documents |
 | partly_cited | [Biometrietermin verschieben / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/biometrische-auslaenderausweise/biometrie.html) `doc-3fe8c1612d3a52906267` | section | 11 | 1 | 0 | 2 | 8 | zh-biometric-documents, zh-overview |
-| partly_cited | [Familiennachzug durch Flüchtlinge mit Asyl beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-fluechtlinge-mit-asyl-beantragen.html) `doc-bcd3ef6086ebcc64147b` | section | 12 | 4 | 0 | 6 | 2 | zh-family, zh-overview |
-| partly_cited | [Familiennachzug durch Personen mit einer L-Bewilligung beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-l-bewilligung-beantragen.html) `doc-28471454d291716bb922` | section | 11 | 5 | 0 | 5 | 1 | zh-family, zh-overview |
+| partly_cited | [Familiennachzug durch Flüchtlinge mit Asyl beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-fluechtlinge-mit-asyl-beantragen.html) `doc-bcd3ef6086ebcc64147b` | section | 12 | 4 | 0 | 6 | 2 |  |
+| partly_cited | [Familiennachzug durch Personen mit einer L-Bewilligung beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-l-bewilligung-beantragen.html) `doc-28471454d291716bb922` | section | 11 | 5 | 0 | 5 | 1 |  |
 | partly_cited | [Familiennachzug durch Schweizer Staatsangehörige beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-schweizer-staatsangehoerige-beantragen.html) `doc-5126e3273ddd44c85c8c` | section | 12 | 6 | 0 | 5 | 1 | zh-family, zh-overview |
 | partly_cited | [Familiennachzug nach dem Freizügigkeitsabkommen beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-nach-dem-freizuegigkeitsabkommen-beantragen.html) `doc-7522016c9c5677a1d873` | section | 11 | 5 | 0 | 5 | 1 | zh-family, zh-overview |
 | partly_cited | [Erleichterte Einbürgerung / Kanton Zürich](https://www.zh.ch/de/migration-integration/einbuergerung/erleichterte-einbuergerung.html) `doc-72a8d382514812e6303f` | section | 10 | 4 | 0 | 1 | 5 |  |
@@ -141,6 +181,23 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | partly_cited | [Quellensteuer-Tarife / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/quellensteuer-tarife.html) `doc-fce27b72dc3a3a90a70f` | section | 16 | 14 | 0 | 1 | 1 |  |
 | partly_cited | [Merkblatt des kantonalen Steueramtes über die Quellenbesteuerung von Arbeitnehmerinnen und Arbeitnehmern / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-87-3.html) `doc-afaa2c9780fc736c5705` | section | 17 | 3 | 0 | 0 | 14 | zh-tax-at-source-directive |
 | partly_cited | [Hunde / Kanton Zürich](https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html) `doc-cfa52df67bc1a2de79f0` | section | 33 | 9 | 0 | 1 | 23 | zh-dogs |
+| partly_cited | [Ufficio della migrazione - SPOP (DI) - Repubblica e Cantone Ticino](https://www4.ti.ch/di/spop/chi-siamo/ufficio-della-migrazione) `doc-6672da80799a61b7cd84` | section | 14 | 1 | 0 | 0 | 13 | ti-migration-office |
+| empty | [Appenzell Innerrhoden - Verordnung zum Registerharmonisierungsgesetz (GS 172.910), art. 7](https://ai.clex.ch/api/de/versions/1133/pdf_file_with_annexes) `doc-34b1360ccad23a5bcac2` | section | 0 | 0 | 0 | 0 | 0 | ai-register-ordinance |
+| empty | [Appenzell Innerrhoden - Standeskommissionsbeschluss ueber Niederlassung und Aufenthalt (GS 142.001), art. 2](https://ai.clex.ch/api/de/versions/1513/pdf_file_with_annexes) `doc-109429437bfcbc983275` | section | 0 | 0 | 0 | 0 | 0 | ai-settlement-decree |
+| empty | [Fribourg - Loi sur le controle des habitants (RSF 114.21.1), art. 5](https://bdlf.fr.ch/api/fr/versions/8129/pdf_file_with_annexes) `doc-d8abd396531de40dcbd2` | section | 0 | 0 | 0 | 0 | 0 | fr-residents-law |
+| empty | [Solothurn - Gemeindegesetz (BGS 131.1), para 3](https://bgs.so.ch/api/de/versions/5519/pdf_file_with_annexes) `doc-b39ccb27108c19341863` | section | 0 | 0 | 0 | 0 | 0 | so-commune-law |
+| empty | [Obwalden - Einwohnerregisterverordnung (GDB 113.11), arts. 10 and 11](https://gdb.ow.ch/api/de/versions/1824/pdf_file_with_annexes) `doc-77c2c422cf2c1e926181` | section | 0 | 0 | 0 | 0 | 0 | ow-register-ordinance |
+| empty | [Glarus - Einfuehrungsgesetz zum Registerharmonisierungsgesetz (GS I C/21/2), art. 4](https://gesetze.gl.ch/api/de/versions/2346/pdf_file_with_annexes) `doc-87739a2bc2f8480d2c1e` | section | 0 | 0 | 0 | 0 | 0 | gl-register-law |
+| empty | [Nidwalden - Gesetz ueber Niederlassung und Aufenthalt (NG 122.1), arts. 4 and 5](https://gesetze.nw.ch/api/de/versions/1351/pdf_file_with_annexes) `doc-13a07bd6d3e02a05a0f5` | section | 0 | 0 | 0 | 0 | 0 | nw-settlement-law |
+| empty | [Aargau - Register- und Meldegesetz (SAR 122.200), para 14](https://gesetzessammlungen.ag.ch/api/de/versions/3439/pdf_file_with_annexes) `doc-68427fca2ccf68f45fe2` | section | 0 | 0 | 0 | 0 | 0 | ag-register-law |
+| empty | [Aufenthalt – Integration Nidwalden](https://integration.nw.ch/aufenthalt/) `doc-c3e47bf7b62d608296ed` | section | 0 | 0 | 0 | 0 | 0 | nw-residence |
+| empty | [Aufenthaltsbewilligung – Integration Obwalden](https://integration.ow.ch/aufenthaltsbewilligung-familiennachzug/) `doc-3100b5597e0bd3f3057f` | section | 0 | 0 | 0 | 0 | 0 | ow-residence-permit |
+| empty | [Valais - Loi sur le controle de l'habitant (RS/VS 176.1), art. 7](https://lex.vs.ch/api/fr/versions/3227/pdf_file_with_annexes) `doc-65c87384f0b1a34d6d51` | section | 0 | 0 | 0 | 0 | 0 | vs-residents-law |
+| empty | [Ticino - Regolamento sul controllo degli abitanti (RL 144.110), arts. 12, 13 and 20](https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/18) `doc-f4e369cc5ff44fa4be1d` | section | 0 | 0 | 0 | 0 | 0 | ti-registration-regulation |
+| empty | [Kantonswechsel - Kanton Luzern](https://migration.lu.ch/Weitere_Aufenthaltsgruende/Kantonswechsel) `doc-752e202b64913e2a772e` | section | 0 | 0 | 0 | 0 | 0 | lu-change-of-canton |
+| empty | [Schaffhausen - Gemeindegesetz (SHR 120.100), art. 89](https://rechtsbuch.sh.ch/api/de/versions/2055/pdf_file_with_annexes) `doc-a0271537b3b11fa7e458` | section | 0 | 0 | 0 | 0 | 0 | sh-register-law |
+| empty | [Uri - Kantonales Registerharmonisierungsgesetz (RB 1.4201), arts. 19 and 21](https://rechtsbuch.ur.ch/api/de/versions/1048/pdf_file_with_annexes) `doc-eb17cee7f400a35afcc8` | section | 0 | 0 | 0 | 0 | 0 | ur-register-law |
+| empty | [Aufenthalt - Kanton Aargau](https://www.ag.ch/de/themen/migration-integration/aufenthalt) `doc-5e26ce255621c25bed94` | section | 0 | 0 | 0 | 0 | 0 | ag-residence |
 | empty | [Kantonale Ausgleichskassen / Kontakte / Informationsstelle AHV/IV](https://www.ahv-iv.ch/de/Kontakte/Kantonale-Ausgleichskassen) `doc-1c84e95cb180bec1d402` | section | 0 | 0 | 0 | 0 | 0 | ch-ahv-iv-ausgleichskassen |
 | empty | [13. AHV Rente](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/13-AHV-Rente) `doc-7adfbb6dd2e5e60a711d` | section | 0 | 0 | 0 | 0 | 0 | ch-ahv-iv-13-ahv-rente |
 | empty | [Allgemeines / Alters- und Hinterlassenenversicherung (AHV) / Sozialversicherungen / Informationsstelle AHV/IV](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Allgemeines) `doc-f414bf368c712032285a` | section | 0 | 0 | 0 | 0 | 0 | ch-ahv-iv-ahv-allgemeines |
@@ -164,6 +221,11 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | empty | [Health insurance (KV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Health-insurance-KV) `doc-74b7e2a1f977c532fab5` | section | 0 | 0 | 0 | 0 | 0 |  |
 | empty | [Occupational benefit plan (BV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Occupational-benefit-plan-BV) `doc-d9b7566e9cd37efb9554` | section | 0 | 0 | 0 | 0 | 0 |  |
 | empty | [Unemployment insurance (ALV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Unemployment-insurance-ALV) `doc-3b48de1a3bb4b9655717` | section | 0 | 0 | 0 | 0 | 0 |  |
+| empty | [Basel-Stadt - Gesetz ueber Niederlassung und Aufenthalt (SG 122.200), para 4](https://www.gesetzessammlung.bs.ch/api/de/versions/6200/pdf_file_with_annexes) `doc-1de266bfefd7cb3ab142` | section | 0 | 0 | 0 | 0 | 0 | bs-register-law |
+| empty | [Graubuenden - Einwohnerregistergesetz (BR 171.200), art. 13](https://www.gr-lex.gr.ch/api/de/versions/3576/pdf_file_with_annexes) `doc-cb07b45b2872d40435a6` | section | 0 | 0 | 0 | 0 | 0 | gr-register-law |
+| empty | [Graubuenden - Legge sui registri degli abitanti (BR 171.200), art. 13](https://www.gr-lex.gr.ch/api/it/versions/3576/pdf_file_with_annexes) `doc-2e637daee2e1b719ca8f` | section | 0 | 0 | 0 | 0 | 0 | gr-register-law-it |
+| empty | [Für Drittstaatsangehörige](https://www.gr.ch/DE/institutionen/verwaltung/djsg/afm/dienstleistungen/Einreise_Aufenthalt/Einreise-Anmeldung/Seiten/Drittstaaten.aspx) `doc-2fabd322f34a2803e36e` | section | 0 | 0 | 0 | 0 | 0 | gr-third-country-registration |
+| empty | [Thurgau - Einwohnerregistergesetz (RB 142.15), para 7](https://www.rechtsbuch.tg.ch/api/de/versions/2440/pdf_file_with_annexes) `doc-233657084673f1db58c3` | section | 0 | 0 | 0 | 0 | 0 | tg-register-law |
 | cited_and_dispositioned | [Kontakt](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt.html) `doc-ec81df68e0c715a60928` | section | 7 | 3 | 3 | 1 | 0 | zh-sva-contact |
 | cited_and_dispositioned | [Beratung vor Ort](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/beratung-vor-ort.html) `doc-e0dd90106b3c8eff3235` | section | 7 | 3 | 3 | 1 | 0 |  |
 | cited_and_dispositioned | [Telefon](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/telefon.html) `doc-e47f41de157a031ee350` | section | 5 | 2 | 2 | 1 | 0 |  |
@@ -180,7 +242,7 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | cited_and_dispositioned | [Anmeldung und Registrierung / arbeit.swiss](https://www.arbeit.swiss/de/anmeldung-und-registrierung) `doc-8de36911a6bb5dda59d4` | section | 5 | 2 | 2 | 1 | 0 |  |
 | cited_and_dispositioned | [Kurzarbeitsentschädigung (KAE) / arbeit.swiss](https://www.arbeit.swiss/de/arbeitgebende/kurzarbeitsentschaedigung-kae) `doc-2b61f79eb218ff041f86` | section | 8 | 5 | 2 | 1 | 0 | ch-seco-kurzarbeit |
 | cited_and_dispositioned | [Stellenmeldepflicht / arbeit.swiss](https://www.arbeit.swiss/de/arbeitgebende/stellenmeldepflichten) `doc-7154ef3247e430ac8763` | section | 24 | 4 | 19 | 1 | 0 | ch-seco-stellenmeldepflicht |
-| cited_and_dispositioned | [FAQ zur Arbeitslosenentschädigung / arbeit.swiss](https://www.arbeit.swiss/de/faq-zur-arbeitslosenentschaedigung) `doc-3582d03d795fd5c90cf8` | section | 20 | 9 | 10 | 1 | 0 | ch-seco-unemployment |
+| cited_and_dispositioned | [FAQ zur Arbeitslosenentschädigung / arbeit.swiss](https://www.arbeit.swiss/de/faq-zur-arbeitslosenentschaedigung) `doc-3582d03d795fd5c90cf8` | section | 20 | 9 | 10 | 1 | 0 |  |
 | cited_and_dispositioned | [EURES – Berufliche Mobilität in der EU/EFTA / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/berufliche-mobilitaet-in-der-euefta) `doc-d679ed2cf42c3e618024` | section | 15 | 1 | 13 | 1 | 0 | ch-seco-mobilitaet-eu-efta |
 | cited_and_dispositioned | [Erste Schritte nach Kündigung oder bei drohender Arbeitslosigkeit / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/erste-schritte-nach-kuendigung) `doc-1dc7548e6096cef67224` | section | 9 | 7 | 1 | 1 | 0 | ch-seco-erste-schritte |
 | cited_and_dispositioned | [Registrierung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/registrierung-stellensuchende) `doc-026d5accf4c3cd0d8c95` | section | 5 | 1 | 3 | 1 | 0 | ch-seco-registrierung-stellensuchende |
@@ -223,8 +285,8 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | cited_and_dispositioned | [Waren anmelden - Einfuhr in die Schweiz - Overview](https://www.bazg.admin.ch/de/waren-anmelden-einfuhr-private) `doc-59089a1125b8a26db80f` | section | 11 | 4 | 7 | 0 | 0 | ch-bazg-waren-anmelden |
 | cited_and_dispositioned | [Flugreisen](https://www.bazg.admin.ch/de/waren-einfuehren-flugreisen) `doc-0780a5be8f74ec787b10` | section | 5 | 3 | 1 | 1 | 0 | ch-bazg-flugreisen |
 | cited_and_dispositioned | [Mehrwertsteuer: Wertfreigrenze 150 Franken](https://www.bazg.admin.ch/de/wertfreigrenze-mehrwertsteuer-einreise-150-franken) `doc-12771c5fcbdee5f520a5` | section | 9 | 5 | 3 | 1 | 0 | ch-bazg-wertfreigrenze-150 |
-| cited_and_dispositioned | [Entry/Exit System (EES)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/ees.html) `doc-6beed430d9345d0f3ef2` | section | 5 | 1 | 4 | 0 | 0 | ch-sem-entry |
-| cited_and_dispositioned | [Schengen-Raum](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/schengen.html) `doc-276831391d6e09f9fcd3` | section | 3 | 1 | 2 | 0 | 0 | ch-sem-entry |
+| cited_and_dispositioned | [Entry/Exit System (EES)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/ees.html) `doc-6beed430d9345d0f3ef2` | section | 5 | 1 | 4 | 0 | 0 |  |
+| cited_and_dispositioned | [Schengen-Raum](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/schengen.html) `doc-276831391d6e09f9fcd3` | section | 3 | 1 | 2 | 0 | 0 |  |
 | cited_and_dispositioned | [Förderbereiche / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/foerderbereiche.html) `doc-b26607e2d663c7ebc8cc` | section | 15 | 5 | 9 | 1 | 0 | zh-integration |
 | cited_and_dispositioned | [Förderung von Integrationsprojekten / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte.html) `doc-5386be4702ee65f46a87` | section | 15 | 9 | 4 | 2 | 0 | zh-integration |
 | cited_and_dispositioned | [Kleinprojekte von maximal 5'000 Franken / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/foerderung-integrationsprojekte/gesuch-einreichen-fuer-kleinprojekte-von-gesamtkosten-von-maximal-5000-franken.html) `doc-0ab169e59cf112d166c6` | section | 6 | 1 | 5 | 0 | 0 | zh-integration |
@@ -307,7 +369,7 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | dispositioned | [h) Kontrollen innerhalb des Schengen-Raums (inkl. Binnengrenzkontrollen)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-h.html) `doc-ddad0900e64e4bf8e1ba` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
 | dispositioned | [i) Rückkehr](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-i.html) `doc-2a254be149555047da6d` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
 | dispositioned | [j) Einsatz moderner Technologien](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-j.html) `doc-86f9c9c69f2819c495c2` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
-| dispositioned | [k) Qualitätssicherungs­mechanismen](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-k.html) `doc-e2f540317e24e9ee1b0b` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
+| dispositioned | [k) Qualitätssicherungsmechanismen](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-k.html) `doc-e2f540317e24e9ee1b0b` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
 | dispositioned | [l) Solidaritätsmechanismen](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-l.html) `doc-ab41f4dfe1d7269c7d0e` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
 | dispositioned | [m) Grundrechte](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-m.html) `doc-856a2faaea9433f79b38` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
 | dispositioned | [n) Aus- und Weiterbildung](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/ibm/aktionsplan/massnahme-n.html) `doc-b393cb8cde53026f81a7` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
@@ -316,7 +378,7 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | dispositioned | [Datenschutz](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/datenschutz.html) `doc-e6efd5668e2b9beea894` | section | 1 | 0 | 1 | 0 | 0 | ch-sem-entry |
 | dispositioned | [Interoperabilität (IOP)](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/iop.html) `doc-e1044c27c2b427132169` | section | 4 | 0 | 4 | 0 | 0 | ch-sem-entry |
 | dispositioned | [VII. Visa](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/rechtsgrundlagen-einreise.html) `doc-e8203871a08aa9a49a13` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
-| dispositioned | [Informationen zur Einreise in die Schweiz](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise.html) `doc-e7c08d4b66a97a31a498` | section | 1 | 0 | 1 | 0 | 0 | ch-sem-entry |
+| dispositioned | [Informationen zur Einreise in die Schweiz](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise.html) `doc-e7c08d4b66a97a31a498` | section | 1 | 0 | 1 | 0 | 0 |  |
 | dispositioned | [Advance Passenger Information (API)](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/api.html) `doc-37d30d2a65fea6396233` | section | 4 | 0 | 4 | 0 | 0 | ch-sem-entry |
 | dispositioned | [Übersicht API-Meldepflicht für Luftverkehrsunternehmen](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/api/meldepflicht.html) `doc-44916bb7a0bec9a4e64c` | section | 5 | 0 | 5 | 0 | 0 | ch-sem-entry |
 | dispositioned | [Carrier Sanctions (CASA)](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/casa.html) `doc-56a56dfa11c3d8ae0db0` | section | 2 | 0 | 2 | 0 | 0 | ch-sem-entry |
@@ -388,7 +450,16 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | dispositioned | [Kantonaler Angebotskatalog IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/kantonaler-angebotskatalog-iazh.html) `doc-3c72847ef089a81809ef` | section | 18 | 0 | 18 | 0 | 0 | zh-integration |
 | dispositioned | [Kantonale Integrationsprogramme / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/kantonale-integrationsprogramme.html) `doc-6be9702fb1331355a86f` | section | 12 | 0 | 12 | 0 | 0 | zh-integration |
 | dispositioned | [Erwerbstätigkeit von Ausländerinnen und Ausländern / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/erwerbstaetigkeit-auslaender.html) `doc-6a4c4aa06458f9782f9a` | section | 3 | 0 | 2 | 1 | 0 | zh-work-permits-contact |
+| cited | [Appenzell Ausserrhoden - Registergesetz (bGS 122.1), art. 5](https://ar.clex.ch/api/de/versions/1275/pdf_file_with_annexes) `doc-c32553ea05e1587a60d4` | section | 1 | 1 | 0 | 0 | 0 | ar-register-law |
+| cited | [Zug - Gemeindegesetz (BGS 171.1), para 57a](https://bgs.zg.ch/api/de/versions/2741/pdf_file_with_annexes) `doc-54dc28822feaaa90ba5a` | section | 1 | 1 | 0 | 0 | 0 | zg-commune-law |
+| cited | [Basel-Landschaft - Anmeldungs- und Registergesetz (SGS 111), para 5](https://bl.clex.ch/api/de/versions/4008/pdf_file_with_annexes) `doc-4245741446f67432de2a` | section | 1 | 1 | 0 | 0 | 0 | bl-registration-law |
+| cited | [Zug - Merkblatt Umzug/Zuzug](https://cdn.zg.ch/dam/jcr:ceef462f-5c3b-4a56-952e-78268e405057/Merkblatt%20Umzug.pdf) `doc-bef10a9532d3e65ed421` | section | 1 | 1 | 0 | 0 | 0 | zg-moving-leaflet |
+| cited | [Lucerne - Merkblatt: residence permit for EU/EFTA nationals](https://migration.lu.ch/-/media/Migration/Dokumente/Einreise_Aufenthalt/merkblatt_einholung_einer_aufenthaltsbewilligung_eu_efta.pdf) `doc-353f6cf9d61da86ca82c` | section | 1 | 1 | 0 | 0 | 0 | lu-eu-efta-leaflet |
+| cited | [rsGE F 2 05: Loi sur le séjour et l'établissement des Confédérés (LSEC)](https://silgeneve.ch/legis/data/rsg_f2_05.htm) `doc-cfc606f7de89a194cee4` | section | 1 | 1 | 0 | 0 | 0 | ge-confederates-law |
+| cited | [rsGE F 2 25: Loi d'application de la loi fédérale sur l'harmonisation des registres des habitants et d'autres registres officiels de personnes (LaLHR)](https://silgeneve.ch/legis/data/rsg_f2_25.htm) `doc-9bfb342bd18631c49022` | section | 1 | 1 | 0 | 0 | 0 | ge-register-law |
+| cited | [Lucerne - Gesetz ueber die Niederlassung und den Aufenthalt (SRL 5), paras 3, 5 and 7](https://srl.lu.ch/api/de/versions/4184/pdf_file_with_annexes) `doc-c14d4fcf6d9df22c9586` | section | 1 | 1 | 0 | 0 | 0 | lu-settlement-law |
 | cited | [Spezielle Öffnungszeiten](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/oeffnungszeiten-ueber-die-feiertage.html) `doc-71f912c1a94b986fba26` | section | 3 | 2 | 0 | 1 | 0 |  |
+| cited | [Umzug - Kanton Aargau](https://www.ag.ch/de/themen/migration-integration/aufenthalt/aenderungen-melden/umzug) `doc-982717e0d014321c6da6` | section | 1 | 1 | 0 | 0 | 0 | ag-change-of-canton |
 | cited | [Arbeitsmarktliche Massnahmen / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/arbeitsmarktliche-massnahmen) `doc-c7a12895306cc102368c` | section | 8 | 7 | 0 | 1 | 0 | ch-seco-arbeitsmarktliche-massnahmen |
 | cited | [Aussteuerung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/aussteuerung) `doc-22bc49b84a2599a63d5b` | section | 4 | 3 | 0 | 1 | 0 | ch-seco-aussteuerung |
 | cited | [Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer](https://www.bag.admin.ch/de/krankenversicherung-versicherungsmodelle-mit-eingeschraenkter-wahl-der-leistungserbringer) `doc-28f3362905346a6a6da4` | section | 7 | 6 | 0 | 1 | 0 | ch-bag-versicherungsmodelle |
@@ -397,6 +468,7 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | cited | [Versandhandel und Plattformbesteuerung](https://www.bazg.admin.ch/de/regelung-mwst-versandhandel-und-plattformbesteuerung) `doc-583848329b9eb858ddcd` | section | 1 | 1 | 0 | 0 | 0 | ch-bazg-versandhandel-mwst |
 | cited | [Reisen und Einkaufen, Freimengen und Wertfreigrenze](https://www.bazg.admin.ch/de/reisen-einkaufen-freimengen-zollanmeldung-schweiz) `doc-4dac67e3a2cf2e177bfb` | section | 1 | 1 | 0 | 0 | 0 | ch-bazg-zollanmeldung-reisende |
 | cited | [Verzollungskosten und Paketverfolgung - Ansprechpartner](https://www.bazg.admin.ch/de/verzollungskosten-und-paketverfolgung) `doc-a16beff4a089c5a239dd` | section | 1 | 1 | 0 | 0 | 0 | ch-bazg-verzollungskosten |
+| cited | [Bern - Gesetz ueber Niederlassung und Aufenthalt (BSG 122.11), art. 1](https://www.belex.sites.be.ch/api/de/versions/3416/pdf_file_with_annexes) `doc-7dedc0fecf81e97bb48f` | section | 1 | 1 | 0 | 0 | 0 | be-settlement-law |
 | cited | [Fedlex: Ordinance on the Admission of Persons and Vehicles to Road Traffic, SR 741.51](https://www.fedlex.admin.ch/eli/cc/1976/2423_2423_2423/de) `doc-dfca7405da5498665eac` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-vzv |
 | cited | [Fedlex: Federal Direct Tax Act, SR 642.11](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) `doc-5f038736fe92a346d1a5` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-dbg |
 | cited | [Fedlex: Vested Benefits Act, SR 831.42](https://www.fedlex.admin.ch/eli/cc/1994/2386_2386_2386/de) `doc-f0e81df15090dfa0442c` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-fzg |
@@ -414,12 +486,18 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | cited | [Fedlex: Tax at Source Ordinance of the FDF, SR 642.118.2](https://www.fedlex.admin.ch/eli/cc/2018/274/de) `doc-0f8403619c62603b1a4e` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-qstv |
 | cited | [Fedlex: Ordinance on Entry and the Granting of Visas, SR 142.204](https://www.fedlex.admin.ch/eli/cc/2018/493/de) `doc-737c6bb8c76b847b0b77` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-vev |
 | cited | [Fedlex: Code of Obligations, SR 220](https://www.fedlex.admin.ch/eli/cc/27/317_321_377/de) `doc-d9fdd292791646619acd` | document | 1 | 1 | 0 | 0 | 0 | ch-fedlex-or |
+| cited | [Changement de canton ressortissant UE-27/AELE / Etat de Fribourg](https://www.fr.ch/vie-quotidienne/demarches-et-documents/changement-de-canton-ressortissant-ue-27aele) `doc-674225ac43786b5d211d` | section | 1 | 1 | 0 | 0 | 0 | fr-change-of-canton |
+| cited | [Si j'arrive dans le canton de Fribourg pour un séjour de plus de 3 mois (depuis l'étranger ou un autre canton) et si je suis ressortissant UE/AELE / Etat de Fribourg](https://www.fr.ch/vie-quotidienne/demarches-et-documents/etrangers/ressortissante-etrangerere-a-qui-dois-je-madresser/si-jarrive-dans-le-canton-de-fribourg-pour-un-sejour-de-plus-de-3-mois-depuis-letranger-ou-un-autre-canton-et-si-je-suis-ressortissant) `doc-2a813d10788c0f4c00ba` | section | 1 | 1 | 0 | 0 | 0 | fr-arrival-eu-efta |
+| cited | [St. Gallen - Gesetz ueber Niederlassung und Aufenthalt (sGS 453.1), arts. 3 and 6](https://www.gesetzessammlung.sg.ch/api/de/versions/2506/pdf_file_with_annexes) `doc-30d29fac2c81ff92aaf0` | section | 1 | 1 | 0 | 0 | 0 | sg-residence-law |
+| cited | [Einreise für Bürger/innen von Drittstaaten](https://www.migration.sid.be.ch/de/start/einreise/buerger-drittstaaten.html) `doc-6038442651e07dc6a567` | section | 2 | 2 | 0 | 0 | 0 | be-entry-third-country |
 | cited | [Ausweis Ci EU/EFTA (Aufenthaltsbewilligung mit Erwerbstätigkeit)](https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_ci_eu_efta.html) `doc-a08db9ee519e5d5386e4` | section | 1 | 1 | 0 | 0 | 0 | ch-sem-eu-efta, ch-sem-residence-de |
 | cited | [Aufenthaltsbewilligungen für Nicht-EU/EFTA-Angehörige](https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta.html) `doc-f2a82e55188699dfb2c9` | section | 1 | 1 | 0 | 0 | 0 | ch-sem-third-country |
-| cited | [Einreisevoraussetzungen nach Staatsangehörigkeit](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat.html) `doc-b0ef88194507d1fe1877` | section | 2 | 2 | 0 | 0 | 0 | ch-sem-entry |
-| cited | [Einreise mit Visum](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum.html) `doc-9a9f6252d1e98a944452` | section | 1 | 1 | 0 | 0 | 0 | ch-sem-entry |
-| cited | [Einreise ohne Visum](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/ohne-visum.html) `doc-196675f4753ee3aa4278` | section | 3 | 3 | 0 | 0 | 0 | ch-sem-entry |
-| cited | [Visumantragsformular](https://www.sem.admin.ch/sem/de/home/themen/einreise/visumantragsformular.html) `doc-b12bf0089b2c91d0c2b0` | section | 1 | 1 | 0 | 0 | 0 | ch-sem-entry |
+| cited | [Einreisevoraussetzungen nach Staatsangehörigkeit](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat.html) `doc-b0ef88194507d1fe1877` | section | 2 | 2 | 0 | 0 | 0 |  |
+| cited | [Einreise mit Visum](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum.html) `doc-9a9f6252d1e98a944452` | section | 1 | 1 | 0 | 0 | 0 |  |
+| cited | [Einreise ohne Visum](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/ohne-visum.html) `doc-196675f4753ee3aa4278` | section | 3 | 3 | 0 | 0 | 0 |  |
+| cited | [Visumantragsformular](https://www.sem.admin.ch/sem/de/home/themen/einreise/visumantragsformular.html) `doc-b12bf0089b2c91d0c2b0` | section | 1 | 1 | 0 | 0 | 0 |  |
+| cited | [Entry requirements by nationality](https://www.sem.admin.ch/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat.html) `doc-e14d49c1788b31969c0f` | section | 2 | 2 | 0 | 0 | 0 |  |
+| cited | [Entry without visa](https://www.sem.admin.ch/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/ohne-visum.html) `doc-64ce4d24871f7047d407` | section | 3 | 3 | 0 | 0 | 0 |  |
 | cited | [Abgabeübersicht](https://www.serafe.ch/de/abgabe/abgabeuebersicht/) `doc-77294958483b9993cf03` | section | 2 | 2 | 0 | 0 | 0 | ch-serafe-household-fee |
 | cited | [Grundsatz](https://www.serafe.ch/de/abgabebefreiung/grundsatz/) `doc-32c70552c6a254a13ff7` | section | 1 | 1 | 0 | 0 | 0 |  |
 | cited | [Basic principle](https://www.serafe.ch/en/exemption-from-the-fee/basic-principle/) `doc-486750863d61559b066b` | section | 1 | 1 | 0 | 0 | 0 |  |
@@ -434,7 +512,7 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | cited | [Erste Schritte / Stadt Zürich](https://www.stadt-zuerich.ch/de/lebenslagen/neu-in-zuerich/erste-schritte.html) `doc-2567bb1fdca389d00812` | section | 1 | 1 | 0 | 0 | 0 | zurich-city-first-steps |
 | cited | [Anwohnerparkkarte für Privatpersonen und Firmen / Stadt Zürich](https://www.stadt-zuerich.ch/de/mobilitaet/parkieren/parkbewilligungen/anwohnerparkkarte.html) `doc-dd843f889d123f1e3c9f` | section | 1 | 1 | 0 | 0 | 0 |  |
 | cited | [Parkscheibe für die Blaue Zone / Stadt Zürich](https://www.stadt-zuerich.ch/de/mobilitaet/parkieren/parkbewilligungen/parkscheibe.html) `doc-5f9c03deab1696cbe981` | section | 1 | 1 | 0 | 0 | 0 |  |
-| cited | [Medizinischer Notfall – richtig handeln / Stadt Zürich](https://www.stadt-zuerich.ch/de/stadtleben/notfall/notfaelle/medizinischer-notfall.html) `doc-e4da66bbcba8f30ed8f7` | section | 1 | 1 | 0 | 0 | 0 |  |
+| cited | [Medizinischer Notfall – richtig handeln / Stadt Zürich](https://www.stadt-zuerich.ch/de/stadtleben/notfall/notfaelle/medizinischer-notfall.html) `doc-e4da66bbcba8f30ed8f7` | section | 1 | 1 | 0 | 0 | 0 | zurich-city-emergency |
 | cited | [Hundekontrolle / Stadt Zürich](https://www.stadt-zuerich.ch/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle.html) `doc-d7209d912cce37d4bddd` | section | 3 | 3 | 0 | 0 | 0 | zurich-city-dog-control |
 | cited | [Anmeldung eines Hundes bei der Wohngemeinde / Stadt Zürich](https://www.stadt-zuerich.ch/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle/anmeldung.html) `doc-c1f0316f233dfe70967c` | section | 1 | 1 | 0 | 0 | 0 |  |
 | cited | [Entsorgungskalender / Stadt Zürich](https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/entsorgungskalender.html) `doc-ba688d36b51f3415942d` | section | 1 | 1 | 0 | 0 | 0 |  |
@@ -449,6 +527,10 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | cited | [Sonderabfall-Sammelstelle / Stadt Zürich](https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/wo-und-wann-entsorgen/sonderabfall-sammelstelle.html) `doc-a5a5e15f2e22d80252ee` | section | 3 | 3 | 0 | 0 | 0 |  |
 | cited | [Wertstoff-Sammelstellen / Stadt Zürich](https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/wo-und-wann-entsorgen/wertstoff-sammelstellen.html) `doc-2232cee16e0fe716cda6` | section | 2 | 2 | 0 | 0 | 0 |  |
 | cited | [Züri-Sack / Stadt Zürich](https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/zueri-sack.html) `doc-fae6f7f3a76e1bc84804` | section | 1 | 1 | 0 | 0 | 0 |  |
+| cited | [Schwyz - Gesetz ueber das Einwohnermeldewesen (SRSZ 111.110), para 10](https://www.sz.ch/public/upload/assets/33326/111_110.pdf) `doc-61348efdcfb8b7cd0f29` | section | 1 | 1 | 0 | 0 | 0 | sz-reporting-law |
+| cited | [Changement d'adresse / État de Vaud](https://www.vd.ch/population/controle-des-habitants/changement-dadresse) `doc-8d3859d1014df2992f75` | section | 4 | 4 | 0 | 0 | 0 | vd-change-of-address |
+| cited | [Changement de canton - SPM - vs.ch](https://www.vs.ch/web/spm/changement-de-canton1) `doc-ce9cb3adfb5045bb45fc` | section | 2 | 2 | 0 | 0 | 0 | vs-change-of-canton |
+| cited | [Contrôle de l'habitant - SPM - vs.ch](https://www.vs.ch/web/spm/contr%C3%B4le-de-l-habitant) `doc-94c45c58dc090ae784f9` | section | 1 | 1 | 0 | 0 | 0 | vs-residents-office |
 | cited | [Zurich: tax-at-source tariffs from 2026, basis and calculation parameters (PDF)](https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/quellensteuer/quellensteuertarif/2026/grundlagen_und_berechnungsparameter_2026.pdf) `doc-d302fc15f2741ef0caf4` | section | 1 | 1 | 0 | 0 | 0 |  |
 | cited | [Familiennachzug durch Personen mit einer B- oder C-Bewilligung beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-b-oder-c-bewilligung-beantragen.html) `doc-b84c4109386ec6f24386` | section | 12 | 8 | 0 | 4 | 0 | zh-family, zh-overview |
 | cited | [Zuständiges RAV finden / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse/zustaendiges-rav-finden.html) `doc-58d821965e91e66d6fc5` | rolled_up | 1 | 1 | 0 | 0 | 0 | zh-awa-zustaendiges-rav |
@@ -461,13 +543,104 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-bdd6d7641abbeb965bc6` | section-0012 | Einreise > Informationen zur Einreise | 82-96 | 421 |
 | `doc-bdd6d7641abbeb965bc6` | section-0013 | Einreise > Auskünfte | 97-101 | 872 |
 | `doc-bdd6d7641abbeb965bc6` | section-0016 | Einreise > Medienmitteilungen | 113-119 | 312 |
+| `doc-1c6f5fde53430f3e283a` | section-0009 | Inhalt > Pfadnavigation | 285-292 | 15 |
+| `doc-1c6f5fde53430f3e283a` | section-0013 | Drittstaatsangehörige > Merkblätter | 313-326 | 698 |
+| `doc-1c6f5fde53430f3e283a` | section-0014 | Drittstaatsangehörige > Weiterführende Links zur Einreise in die Schweiz | 327-328 | 29 |
+| `doc-1c6f5fde53430f3e283a` | section-0016 | Drittstaatsangehörige > Zusätzliche Informationen > Abteilung Migration | 330-337 | 129 |
 | `doc-cb064208c75c37b62929` | section-0001 | (no heading) | 1-1 | 17 |
 | `doc-cb064208c75c37b62929` | section-0004 | Welche Beiträge kann ich in die Säule 3a einzahlen? > Weiterführende Fragen | 8-12 | 212 |
 | `doc-ed67ab05b41d46594ed8` | section-0001 | (no heading) | 1-1 | 17 |
 | `doc-ed67ab05b41d46594ed8` | section-0004 | Wer kann eine Säule 3a (gebundene Selbstvorsorge) einrichten? > Weiterführende Fragen | 9-13 | 202 |
 | `doc-07709682168602d2fb3f` | section-0001 | (no heading) | 1-1 | 17 |
 | `doc-07709682168602d2fb3f` | section-0004 | Kann ich mein BVG-Altersguthaben bar beziehen, wenn ich die Schweiz endgültig verlasse? > Weiterführende Fragen | 9-15 | 342 |
-| `doc-3f3d4751491356fbdf8a` | section-0001 | (no heading) | 1-6 | 2465 |
+| `doc-f6debadae0d5f281d74a` | section-0003 | Erwerbstätige (EU/EFTA) > Gesuch online einreichen | 9-10 | 24 |
+| `doc-f6debadae0d5f281d74a` | section-0004 | Erwerbstätige (EU/EFTA) > Gesuch per Post einreichen | 11-15 | 73 |
+| `doc-f6debadae0d5f281d74a` | section-0005 | Erwerbstätige (EU/EFTA) > Gesuch am Schalter einreichen | 16-29 | 175 |
+| `doc-72ec61f7171b5d31d318` | section-0002 | Kantonswechsel für Drittstaatsangehörige | 5-7 | 200 |
+| `doc-72ec61f7171b5d31d318` | section-0004 | Kantonswechsel für Drittstaatsangehörige > Gesuch per Post einreichen | 15-19 | 73 |
+| `doc-72ec61f7171b5d31d318` | section-0005 | Kantonswechsel für Drittstaatsangehörige > Gesuch am Schalter einreichen | 20-34 | 175 |
+| `doc-10f9280753a0262e0d1d` | section-0006 | Kantonswechsel > Kantonswechsel für Drittstaatsangehörige beantragen | 90-92 | 26 |
+| `doc-10f9280753a0262e0d1d` | section-0007 | Kantonswechsel > Migrationsamt | 93-100 | 157 |
+| `doc-a06a78b6403bde7dbc64` | section-0004 | Einreise | 82-83 | 400 |
+| `doc-a06a78b6403bde7dbc64` | section-0005 | Einreise > Visa | 84-85 | 242 |
+| `doc-a06a78b6403bde7dbc64` | section-0006 | Einreise > Familiennachzug | 86-87 | 209 |
+| `doc-a06a78b6403bde7dbc64` | section-0007 | Einreise > Aufenthalt mit oder ohne Arbeit | 88-90 | 226 |
+| `doc-a06a78b6403bde7dbc64` | section-0009 | Einreise > Direkter Kontakt | 94-95 | 73 |
+| `doc-a06a78b6403bde7dbc64` | section-0011 | Einreise > Migrationsamt | 98-105 | 157 |
+| `doc-be1e21dbb97154b03ae1` | section-0006 | Arbeiten > Erwerbstätigkeit mit Schutzstatus S | 39-40 | 263 |
+| `doc-be1e21dbb97154b03ae1` | section-0007 | Arbeiten > Bewilligungstypen | 41-43 | 1222 |
+| `doc-be1e21dbb97154b03ae1` | section-0008 | Arbeiten > Merkblätter Arbeitsbewilligung | 44-45 | 348 |
+| `doc-be1e21dbb97154b03ae1` | section-0009 | Arbeiten > Integration von Flüchtlingen in den Arbeitsmarkt | 46-48 | 102 |
+| `doc-be1e21dbb97154b03ae1` | section-0010 | Arbeiten > Zuständige Stelle | 49-54 | 89 |
+| `doc-be1e21dbb97154b03ae1` | section-0011 | Arbeiten > Zuständige Stelle > Ansprechperson | 55-57 | 103 |
+| `doc-be1e21dbb97154b03ae1` | section-0015 | Arbeiten | 65-75 | 285 |
+| `doc-549a0c80ca63f55e8541` | section-0009 | An-, Ab- und Ummelden | 64-74 | 285 |
+| `doc-a824ca812a50553956ef` | section-0004 | Health insurance: Requirement to obtain insurance for persons resident in Switzerland > End of compulsory insurance | 22-25 | 335 |
+| `doc-a824ca812a50553956ef` | section-0005 | Health insurance: Requirement to obtain insurance for persons resident in Switzerland > Undocumented migrants | 26-27 | 586 |
+| `doc-a824ca812a50553956ef` | section-0030 | Health insurance: Requirement to obtain insurance for persons resident in Switzerland > Federal Office of Public Health FOPH | 74-78 | 187 |
+| `doc-c232814a873fa3014a6e` | section-0006 | Moving to Switzerland: Procedure > Preliminary examination of relocation file | 28-33 | 682 |
+| `doc-c232814a873fa3014a6e` | section-0012 | Moving to Switzerland: Procedure > Further information > Opening hours | 44-48 | 70 |
+| `doc-b8e80712d932400cd49a` | section-0001 | (no heading) | 1-2 | 44 |
+| `doc-b8e80712d932400cd49a` | section-0004 | Einreise und Aufenthalt | 13-30 | 523 |
+| `doc-b8e80712d932400cd49a` | section-0005 | Einreise und Aufenthalt > Einreise und Aufenthalt: Das Wichtigste in Kürze | 31-32 | 461 |
+| `doc-b8e80712d932400cd49a` | section-0006 | Einreise und Aufenthalt > Einreise und Aufenthalt: Das Wichtigste in Kürze > Hier erhalten Sie weitere Auskünfte | 33-41 | 376 |
+| `doc-b8e80712d932400cd49a` | section-0009 | Einreise und Aufenthalt > Aufenthaltsbewilligung (B-Bewilligung) > Gesuche um Verlängerung der B-Bewilligung | 47-50 | 446 |
+| `doc-b8e80712d932400cd49a` | section-0010 | Einreise und Aufenthalt > Aufenthaltsbewilligung (B-Bewilligung) > Benötigte Unterlagen für die Verlängerung | 51-55 | 216 |
+| `doc-b8e80712d932400cd49a` | section-0011 | Einreise und Aufenthalt > Aufenthaltsbewilligung (B-Bewilligung) > Zustellung der neuen B-Bewilligung | 56-57 | 444 |
+| `doc-b8e80712d932400cd49a` | section-0012 | Einreise und Aufenthalt > Aufenthaltsbewilligung (B-Bewilligung) > Wie kann ich die B-Bewilligung bei einem längeren Auslandaufenthalt sistieren? | 58-62 | 600 |
+| `doc-b8e80712d932400cd49a` | section-0013 | Einreise und Aufenthalt > Aufenthaltsbewilligung (B-Bewilligung) > Weitere Informationen gewünscht? | 63-70 | 438 |
+| `doc-b8e80712d932400cd49a` | section-0014 | Einreise und Aufenthalt > Aufenthaltsbewilligung (B-Bewilligung) > Ausweis verloren? | 71-73 | 161 |
+| `doc-b8e80712d932400cd49a` | section-0015 | Einreise und Aufenthalt > Im Ausland erwerbstätige Personen mit EU/EFTA-Staatsangehörigkeit | 74-84 | 638 |
+| `doc-b8e80712d932400cd49a` | section-0016 | Einreise und Aufenthalt > Im Ausland erwerbstätige Personen mit EU/EFTA-Staatsangehörigkeit > Gesuchseinreichung | 85-90 | 427 |
+| `doc-b8e80712d932400cd49a` | section-0017 | Einreise und Aufenthalt > Im Ausland erwerbstätige Personen mit EU/EFTA-Staatsangehörigkeit > Weitere Informationen gewünscht? | 91-98 | 392 |
+| `doc-b8e80712d932400cd49a` | section-0018 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende | 99-100 | 50 |
+| `doc-b8e80712d932400cd49a` | section-0019 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende > Voraussetzungen | 101-103 | 376 |
+| `doc-b8e80712d932400cd49a` | section-0020 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende > Anmeldung | 104-109 | 473 |
+| `doc-b8e80712d932400cd49a` | section-0021 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende > Nebenerwerbstätigkeit | 110-111 | 224 |
+| `doc-b8e80712d932400cd49a` | section-0022 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende > Wichtig zu wissen | 112-114 | 262 |
+| `doc-b8e80712d932400cd49a` | section-0023 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende > Voraussetzungen | 115-121 | 515 |
+| `doc-b8e80712d932400cd49a` | section-0024 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende > Einreichung eines Gesuchs | 122-132 | 1542 |
+| `doc-b8e80712d932400cd49a` | section-0025 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende > Nebenerwerbstätigkeit | 133-135 | 437 |
+| `doc-b8e80712d932400cd49a` | section-0026 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende > Wichtig zu wissen | 136-137 | 70 |
+| `doc-b8e80712d932400cd49a` | section-0027 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende > Stellensuche nach erfolgreichem Hochschulabschluss | 138-144 | 720 |
+| `doc-b8e80712d932400cd49a` | section-0028 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende > Weitere Informationen gewünscht? | 145-152 | 419 |
+| `doc-b8e80712d932400cd49a` | section-0029 | Einreise und Aufenthalt > Schülerinnen, Schüler und Studierende > Ausweis verloren? | 153-155 | 159 |
+| `doc-b8e80712d932400cd49a` | section-0030 | Einreise und Aufenthalt > Rentnerinnen und Rentner | 156-157 | 60 |
+| `doc-b8e80712d932400cd49a` | section-0031 | Einreise und Aufenthalt > Rentnerinnen und Rentner > Voraussetzungen | 158-159 | 356 |
+| `doc-b8e80712d932400cd49a` | section-0032 | Einreise und Aufenthalt > Rentnerinnen und Rentner > Wichtig zu wissen | 160-161 | 115 |
+| `doc-b8e80712d932400cd49a` | section-0033 | Einreise und Aufenthalt > Rentnerinnen und Rentner > Gesuchsstellung | 162-166 | 332 |
+| `doc-b8e80712d932400cd49a` | section-0034 | Einreise und Aufenthalt > Rentnerinnen und Rentner > Gesuchseinreichung | 167-173 | 484 |
+| `doc-b8e80712d932400cd49a` | section-0035 | Einreise und Aufenthalt > Rentnerinnen und Rentner > Voraussetzungen | 174-180 | 856 |
+| `doc-b8e80712d932400cd49a` | section-0036 | Einreise und Aufenthalt > Rentnerinnen und Rentner > Einreichung eines Gesuchs | 181-182 | 379 |
+| `doc-b8e80712d932400cd49a` | section-0037 | Einreise und Aufenthalt > Rentnerinnen und Rentner > Weitere Informationen gewünscht? | 183-190 | 406 |
+| `doc-b8e80712d932400cd49a` | section-0038 | Einreise und Aufenthalt > Rentnerinnen und Rentner > Ausweis verloren? | 191-193 | 159 |
+| `doc-b8e80712d932400cd49a` | section-0041 | Einreise und Aufenthalt > Kantonswechsel für Drittstaatsangehörige > Wichtig zu wissen | 202-204 | 363 |
+| `doc-b8e80712d932400cd49a` | section-0042 | Einreise und Aufenthalt > Kantonswechsel für Drittstaatsangehörige > Weitere Informationen gewünscht? | 205-210 | 321 |
+| `doc-b8e80712d932400cd49a` | section-0043 | Einreise und Aufenthalt > Gebühren im Ausländerbereich | 211-221 | 1836 |
+| `doc-b8e80712d932400cd49a` | section-0044 | Einreise und Aufenthalt > Asyl | 222-226 | 711 |
+| `doc-b8e80712d932400cd49a` | section-0045 | Einreise und Aufenthalt > Asyl > Gesuch um Härtefallregelung (F-Ausweis) | 227-231 | 499 |
+| `doc-b8e80712d932400cd49a` | section-0046 | Einreise und Aufenthalt > Asyl > Weitere Informationen gewünscht? | 232-239 | 498 |
+| `doc-b8e80712d932400cd49a` | section-0047 | Einreise und Aufenthalt > Asyl > Ausweis verloren? | 240-242 | 171 |
+| `doc-b8e80712d932400cd49a` | section-0048 | Einreise und Aufenthalt > Gesuch um Härtefallregelung («Sans Papiers») | 243-245 | 594 |
+| `doc-b8e80712d932400cd49a` | section-0049 | Einreise und Aufenthalt > Für dieses Thema zuständig | 246-247 | 13 |
+| `doc-b8e80712d932400cd49a` | section-0050 | Einreise und Aufenthalt > Inhalt aktualisiert | 248-249 | 10 |
+| `doc-cff5ab3ec851efa60538` | section-0001 | (no heading) | 1-2 | 44 |
+| `doc-cff5ab3ec851efa60538` | section-0006 | Zuzug in den Kanton Basel-Stadt > Online-Anmeldeformular: Die Anmeldung im Kanton Basel-Stadt auf einen Blick | 26-27 | 177 |
+| `doc-cff5ab3ec851efa60538` | section-0007 | Zuzug in den Kanton Basel-Stadt > Online-Anmeldeformular: Die Anmeldung im Kanton Basel-Stadt auf einen Blick > Schritt 1: Einstieg | 28-31 | 681 |
+| `doc-cff5ab3ec851efa60538` | section-0008 | Zuzug in den Kanton Basel-Stadt > Online-Anmeldeformular: Die Anmeldung im Kanton Basel-Stadt auf einen Blick > Schritt 2: Personalien erfassen | 32-33 | 114 |
+| `doc-cff5ab3ec851efa60538` | section-0009 | Zuzug in den Kanton Basel-Stadt > Online-Anmeldeformular: Die Anmeldung im Kanton Basel-Stadt auf einen Blick > Schritt 3: Adresse erfassen | 34-35 | 240 |
+| `doc-cff5ab3ec851efa60538` | section-0010 | Zuzug in den Kanton Basel-Stadt > Online-Anmeldeformular: Die Anmeldung im Kanton Basel-Stadt auf einen Blick > Schritt 4: Beilagen / Notwendige Unterlagen | 36-37 | 265 |
+| `doc-cff5ab3ec851efa60538` | section-0012 | Zuzug in den Kanton Basel-Stadt > Benötigte Unterlagen | 40-44 | 248 |
+| `doc-cff5ab3ec851efa60538` | section-0013 | Zuzug in den Kanton Basel-Stadt > Begrüssungsgespräche | 45-46 | 248 |
+| `doc-cff5ab3ec851efa60538` | section-0015 | Zuzug in den Kanton Basel-Stadt > Wochenaufenthalt | 64-66 | 218 |
+| `doc-cff5ab3ec851efa60538` | section-0016 | Zuzug in den Kanton Basel-Stadt > Adresssperre beantragen | 67-70 | 258 |
+| `doc-cff5ab3ec851efa60538` | section-0019 | Zuzug in den Kanton Basel-Stadt > Download Anmeldeformulare > Formulare für die Anmeldung in Basel-Stadt | 82-100 | 782 |
+| `doc-cff5ab3ec851efa60538` | section-0020 | Zuzug in den Kanton Basel-Stadt > Parkverbotsschilder | 101-104 | 392 |
+| `doc-cff5ab3ec851efa60538` | section-0022 | Zuzug in den Kanton Basel-Stadt > Öffnungszeiten Einwohneramt > Einwohneramt | 106-108 | 24 |
+| `doc-cff5ab3ec851efa60538` | section-0023 | Zuzug in den Kanton Basel-Stadt > Öffnungszeiten Einwohneramt > Öffnungszeiten | 109-116 | 324 |
+| `doc-cff5ab3ec851efa60538` | section-0024 | Zuzug in den Kanton Basel-Stadt > Für dieses Thema zuständig | 117-118 | 12 |
+| `doc-cff5ab3ec851efa60538` | section-0025 | Zuzug in den Kanton Basel-Stadt > Inhalt aktualisiert | 119-120 | 10 |
+| `doc-3f3d4751491356fbdf8a` | section-0001 | (no heading) | 1-6 | 2461 |
 | `doc-08accda64b5e8e778ea6` | section-0002 | Alters- und Hinterlassenenversicherung (AHV) - Übersicht | 18-19 | 444 |
 | `doc-08accda64b5e8e778ea6` | section-0003 | Alters- und Hinterlassenenversicherung (AHV) - Übersicht > Leistungen der AHV | 20-22 | 161 |
 | `doc-08accda64b5e8e778ea6` | section-0004 | Alters- und Hinterlassenenversicherung (AHV) - Übersicht > Organisation und Finanzierung der AHV | 23-25 | 326 |
@@ -521,10 +694,10 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-5115531c627ecfe1109e` | section-0010 | Einbürgerung > Gut zu wissen > Wie lange dauert ein Verfahren der ordentlichen Einbürgerung? | 62-64 | 25 |
 | `doc-5115531c627ecfe1109e` | section-0016 | Einbürgerung > Gut zu wissen > Wie lange dauert ein Verfahren der erleichterten Einbürgerung? | 87-97 | 21 |
 | `doc-9e5c713ee55918d2e7a1` | section-0002 | Was wollen Sie wissen? | 2-22 | 222 |
-| `doc-9e5c713ee55918d2e7a1` | section-0003 | Schweizerische Aufenthaltsbewilligungen | 23-24 | 192 |
+| `doc-9e5c713ee55918d2e7a1` | section-0003 | Schweizerische Aufenthaltsbewilligungen | 23-24 | 190 |
 | `doc-f0c89a15b20f7d14b9db` | section-0002 | Was wollen Sie wissen? | 2-22 | 208 |
 | `doc-f0c89a15b20f7d14b9db` | section-0003 | Familiennachzug | 23-24 | 185 |
-| `doc-f0c89a15b20f7d14b9db` | section-0004 | Familiennachzug > Gut zu wissen | 25-33 | 115 |
+| `doc-f0c89a15b20f7d14b9db` | section-0004 | Familiennachzug > Gut zu wissen | 25-33 | 114 |
 | `doc-f0c89a15b20f7d14b9db` | section-0005 | Familiennachzug > Gut zu wissen > Video: Aufenthalt in der Schweiz | 34-40 | 68 |
 | `doc-974fc3d4a8def0e25330` | section-0002 | Was wollen Sie wissen? | 2-20 | 178 |
 | `doc-974fc3d4a8def0e25330` | section-0003 | Als Ausländer/in in der Schweiz arbeiten | 21-32 | 262 |
@@ -562,6 +735,67 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-4f9c56f3313549edc7e8` | section-0018 | Schweizerische Quellensteuer QST > Häufige Anliegen > Übersicht über die Grundlagen für die Berechnung der Quellensteuertarife des Bundes im Steuerjahr 2026 | 48-49 | 25 |
 | `doc-4f9c56f3313549edc7e8` | section-0031 | Schweizerische Quellensteuer QST > Häufige Anliegen > Archiv > Auskunftsstellen/Bezugprovisionen/Kirchensteuer 2026 | 73-74 | 29 |
 | `doc-4f9c56f3313549edc7e8` | section-0043 | Schweizerische Quellensteuer QST > Häufige Anliegen > Archiv > Quellensteuertarife für Vorsorgeleistungen ab 2026 | 96-97 | 29 |
+| `doc-47f3b81937bf5d0dbe98` | section-0001 | (no heading) | 1-51 | 26 |
+| `doc-47f3b81937bf5d0dbe98` | section-0004 | Annoncer mon arrivée à l'OCPM > L'essentiel en bref > Voir aussi | 97-100 | 140 |
+| `doc-a7aa9034e802ad023fb2` | section-0001 | (no heading) | 1-51 | 26 |
+| `doc-a7aa9034e802ad023fb2` | section-0004 | Annoncer mon départ à l'OCPM > L'essentiel en bref > Voir aussi | 87-90 | 119 |
+| `doc-87bd1ae131b394947426` | section-0001 | (no heading) | 1-101 | 35 |
+| `doc-87bd1ae131b394947426` | section-0007 | Aufenthaltsbewilligung | 289-297 | 474 |
+| `doc-87bd1ae131b394947426` | section-0008 | Aufenthaltsbewilligung > Staatsangehörige der EU/EFTA | 298-305 | 480 |
+| `doc-87bd1ae131b394947426` | section-0011 | Aufenthaltsbewilligung > Gesuchsformulare und Merkblätter | 316-330 | 730 |
+| `doc-87bd1ae131b394947426` | section-0014 | Aufenthaltsbewilligung > Gesuchsformulare und Merkblätter | 343-360 | 699 |
+| `doc-87bd1ae131b394947426` | section-0016 | Aufenthaltsbewilligung > Termin bei der Ausweisstelle | 362-365 | 434 |
+| `doc-87bd1ae131b394947426` | section-0018 | Aufenthaltsbewilligung > Personen aus der EU/EFTA - so erhalten Sie Ihren Ausländerausweis | 369-371 | 142 |
+| `doc-87bd1ae131b394947426` | section-0020 | Aufenthaltsbewilligung > Textalternative zum Video: Personen aus der EU/EFTA - so erhalten Sie Ihren Ausländerausweis > Personen aus Drittstaaten - so erhalten Sie Ihren Ausländerausweis | 373-375 | 143 |
+| `doc-87bd1ae131b394947426` | section-0023 | Aufenthaltsbewilligung > Textalternative zum Video: Personen aus Drittstaaten - so erhalten Sie Ihren Ausländerausweis > Aufenthaltsbewilligung verlängern | 388-394 | 487 |
+| `doc-87bd1ae131b394947426` | section-0025 | Aufenthaltsbewilligung > Textalternative zum Video: Personen aus Drittstaaten - so erhalten Sie Ihren Ausländerausweis > Scheidung oder Tod der Partnerin oder des Partners | 402-405 | 441 |
+| `doc-87bd1ae131b394947426` | section-0026 | Aufenthaltsbewilligung > Textalternative zum Video: Personen aus Drittstaaten - so erhalten Sie Ihren Ausländerausweis > Staatsangehörige der EU/EFTA | 406-407 | 171 |
+| `doc-87bd1ae131b394947426` | section-0027 | Aufenthaltsbewilligung > Textalternative zum Video: Personen aus Drittstaaten - so erhalten Sie Ihren Ausländerausweis > Drittstaatsangehörige | 408-412 | 460 |
+| `doc-87bd1ae131b394947426` | section-0028 | Aufenthaltsbewilligung > Textalternative zum Video: Personen aus Drittstaaten - so erhalten Sie Ihren Ausländerausweis > Aufenthalt in der Schweiz | 413-415 | 73 |
+| `doc-87bd1ae131b394947426` | section-0030 | Aufenthaltsbewilligung > Textalternative zum Video: Aufenthalt in der Schweiz > Erklärfilm in weiteren Sprachen | 417-421 | 199 |
+| `doc-87bd1ae131b394947426` | section-0031 | Aufenthaltsbewilligung > Textalternative zum Video: Aufenthalt in der Schweiz > Erklärfilm in weiteren Sprachen > Sprachanforderungen | 422-424 | 191 |
+| `doc-87bd1ae131b394947426` | section-0033 | Aufenthaltsbewilligung > Asylwesen in der Schweiz > Asyl beantragen in der Schweiz | 426-428 | 119 |
+| `doc-87bd1ae131b394947426` | section-0035 | Aufenthaltsbewilligung > Textalternative zum Video > Erklärfilme Asylverfahren Schweiz - diverse Sprachen | 430-434 | 182 |
+| `doc-87bd1ae131b394947426` | section-0036 | Aufenthaltsbewilligung > Textalternative zum Video > Personen aus der Ukraine | 435-443 | 584 |
+| `doc-87bd1ae131b394947426` | section-0038 | Aufenthaltsbewilligung > Kontaktstellen | 447-448 | 92 |
+| `doc-3ca5baea976a4719565c` | section-0001 | Canton du Jura | 1-113 | 852 |
+| `doc-3ca5baea976a4719565c` | section-0003 | Canton du Jura > Contrôle des habitants > Rôle du Service de la population | 120-133 | 262 |
+| `doc-3ca5baea976a4719565c` | section-0004 | Canton du Jura > Liens rapides | 134-155 | 89 |
+| `doc-b43396324f38f0112c65` | section-0003 | Aufenthaltsbewilligung (Ausweis B) > Inhalt | 20-29 | 562 |
+| `doc-b43396324f38f0112c65` | section-0004 | Aufenthaltsbewilligung (Ausweis B) > Eine Aufenthaltsbewilligung erhalten | 30-32 | 458 |
+| `doc-b43396324f38f0112c65` | section-0005 | Aufenthaltsbewilligung (Ausweis B) > Ihre Aufenthaltsbewilligung verlängern | 33-34 | 475 |
+| `doc-ef8e74af38d086f3a1af` | section-0003 | Einreise für Bürger/innen von EU-/EFTA-Staaten > Inhalt | 20-25 | 627 |
+| `doc-ef8e74af38d086f3a1af` | section-0005 | Einreise für Bürger/innen von EU-/EFTA-Staaten > Mit Erwerbstätigkeit > Erwerbstätigkeit bis 90 Tage | 27-29 | 255 |
+| `doc-a24d379984bea6e97df4` | section-0003 | Personnes issues d'un État de l'UE/AELE > Contenu | 20-25 | 710 |
+| `doc-a24d379984bea6e97df4` | section-0005 | Personnes issues d'un État de l'UE/AELE > Avec une activité lucrative > Jusqu'à 90 jours | 27-29 | 270 |
+| `doc-a24d379984bea6e97df4` | section-0006 | Personnes issues d'un État de l'UE/AELE > Avec une activité lucrative > Plus de 90 jours | 30-32 | 625 |
+| `doc-05ca6b1f1d0609c5358f` | section-0001 | (no heading) | 1-558 | 57 |
+| `doc-05ca6b1f1d0609c5358f` | section-0002 | Étudier à Neuchâtel | 559-563 | 566 |
+| `doc-05ca6b1f1d0609c5358f` | section-0003 | Étudier à Neuchâtel > Conditions de base et règles de la formation | 564-569 | 603 |
+| `doc-05ca6b1f1d0609c5358f` | section-0004 | Étudier à Neuchâtel > Justification de vos moyens financiers | 570-572 | 693 |
+| `doc-05ca6b1f1d0609c5358f` | section-0006 | Étudier à Neuchâtel > Travailler pendant ses études | 595-599 | 439 |
+| `doc-05ca6b1f1d0609c5358f` | section-0007 | Étudier à Neuchâtel > Stages | 600-602 | 551 |
+| `doc-05ca6b1f1d0609c5358f` | section-0008 | Étudier à Neuchâtel > Documents et ressources Utiles | 603-607 | 194 |
+| `doc-05ca6b1f1d0609c5358f` | section-0009 | Étudier à Neuchâtel > Services associés à cette thématique | 608-612 | 422 |
+| `doc-05ca6b1f1d0609c5358f` | section-0010 | Étudier à Neuchâtel > Formulaire | 613-614 | 72 |
+| `doc-05ca6b1f1d0609c5358f` | section-0012 | Étudier à Neuchâtel > Contact et horaires > Service des migrations | 616-619 | 83 |
+| `doc-05ca6b1f1d0609c5358f` | section-0013 | Étudier à Neuchâtel > Contact et horaires > Téléphone | 620-623 | 36 |
+| `doc-05ca6b1f1d0609c5358f` | section-0014 | Étudier à Neuchâtel > Contact et horaires > Horaires d'ouverture des guichets | 624-646 | 65 |
+| `doc-2518b46b4d52603fce96` | section-0001 | (no heading) | 1-559 | 57 |
+| `doc-2518b46b4d52603fce96` | section-0002 | Gérer et renouveler votre permis actuel | 560-562 | 8 |
+| `doc-2518b46b4d52603fce96` | section-0004 | Gérer et renouveler votre permis actuel > Changement de canton | 565-566 | 211 |
+| `doc-2518b46b4d52603fce96` | section-0007 | Gérer et renouveler votre permis actuel > Séjour à l'étranger | 575-578 | 936 |
+| `doc-2518b46b4d52603fce96` | section-0008 | Gérer et renouveler votre permis actuel > Documents de voyage | 579-584 | 1079 |
+| `doc-2518b46b4d52603fce96` | section-0009 | Gérer et renouveler votre permis actuel > Cas de révocation du permis | 585-604 | 1742 |
+| `doc-2518b46b4d52603fce96` | section-0011 | Gérer et renouveler votre permis actuel > Contact et horaires > Service des migrations | 606-609 | 83 |
+| `doc-2518b46b4d52603fce96` | section-0012 | Gérer et renouveler votre permis actuel > Contact et horaires > Téléphone | 610-613 | 36 |
+| `doc-2518b46b4d52603fce96` | section-0013 | Gérer et renouveler votre permis actuel > Contact et horaires > Horaires d'ouverture des guichets | 614-636 | 65 |
+| `doc-95bb19b74e800e719113` | section-0005 | Kopfzeile > LOGIN mit Benutzerkonto > Haben Sie noch kein Benutzerkonto? | 361-362 | 223 |
+| `doc-95bb19b74e800e719113` | section-0007 | Kopfzeile > LOGIN mit Benutzerkonto > Öffnungszeiten | 367-368 | 115 |
+| `doc-95bb19b74e800e719113` | section-0011 | Abteilung Migration > Öffnungszeiten | 400-402 | 166 |
+| `doc-95bb19b74e800e719113` | section-0012 | Abteilung Migration > Personen | 403-404 | 584 |
+| `doc-95bb19b74e800e719113` | section-0014 | Abteilung Migration > Zugehörige Objekte > Dienstleistungen | 406-407 | 200 |
+| `doc-95bb19b74e800e719113` | section-0015 | Abteilung Migration > Zugehörige Objekte > Publikationen | 408-409 | 1679 |
 | `doc-a51c61294f44050bec82` | section-0011 | Wie werde ich Schweizerin oder Schweizer | 81-85 | 494 |
 | `doc-a51c61294f44050bec82` | section-0012 | Wie werde ich Schweizerin oder Schweizer > Bürgerrecht durch Abstammung | 86-87 | 488 |
 | `doc-a51c61294f44050bec82` | section-0013 | Wie werde ich Schweizerin oder Schweizer > Bürgerrecht durch Einbürgerung oder Wiedereinbürgerung | 88-92 | 950 |
@@ -782,7 +1016,7 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-958cfbd396639e26e288` | section-0021 | FAQ – Fragen zur Personenfreizügigkeit > Grenzgängerinnen und Grenzgänger | 122-126 | 832 |
 | `doc-958cfbd396639e26e288` | section-0022 | FAQ – Fragen zur Personenfreizügigkeit > Meldeverfahren | 127-142 | 2977 |
 | `doc-958cfbd396639e26e288` | section-0023 | FAQ – Fragen zur Personenfreizügigkeit > Online-Meldung | 143-146 | 688 |
-| `doc-958cfbd396639e26e288` | section-0024 | FAQ – Fragen zur Personenfreizügigkeit > Schriftliche Meldung | 147-183 | 4063 |
+| `doc-958cfbd396639e26e288` | section-0024 | FAQ – Fragen zur Personenfreizügigkeit > Schriftliche Meldung | 147-183 | 4062 |
 | `doc-958cfbd396639e26e288` | section-0025 | FAQ – Fragen zur Personenfreizügigkeit > Dienstleistungserbringende | 184-214 | 4320 |
 | `doc-958cfbd396639e26e288` | section-0026 | FAQ – Fragen zur Personenfreizügigkeit > Stellen- oder Wohnortwechsel | 215-216 | 46 |
 | `doc-958cfbd396639e26e288` | section-0027 | FAQ – Fragen zur Personenfreizügigkeit > Geografische Mobilität | 217-218 | 530 |
@@ -819,6 +1053,45 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-80035af2969524751879` | section-0018 | Married with a Swiss citizen > If you live abroad: What does ‘having close ties with Switzerland’ mean? | 115-130 | 1284 |
 | `doc-80035af2969524751879` | section-0019 | Married with a Swiss citizen > If you live abroad: What does ‘having close ties with Switzerland’ mean? > Where can I get the application form? | 131-132 | 185 |
 | `doc-80035af2969524751879` | section-0021 | Married with a Swiss citizen > Further information | 144-151 | 681 |
+| `doc-44d8e11b55a80a28ff81` | section-0014 | Cantonal immigration and employment market authorities | 80-81 | 82 |
+| `doc-44d8e11b55a80a28ff81` | section-0016 | Cantonal immigration and employment market authorities | 85-86 | 91 |
+| `doc-44d8e11b55a80a28ff81` | section-0018 | Cantonal immigration and employment market authorities | 90-91 | 113 |
+| `doc-44d8e11b55a80a28ff81` | section-0020 | Cantonal immigration and employment market authorities > Stadt Bern | 95-97 | 108 |
+| `doc-44d8e11b55a80a28ff81` | section-0021 | Cantonal immigration and employment market authorities > Stadt Thun | 98-100 | 93 |
+| `doc-44d8e11b55a80a28ff81` | section-0022 | Cantonal immigration and employment market authorities | 101-102 | 98 |
+| `doc-44d8e11b55a80a28ff81` | section-0023 | Cantonal immigration and employment market authorities > Stadt Biel / Ville de Bienne | 103-105 | 199 |
+| `doc-44d8e11b55a80a28ff81` | section-0025 | Cantonal immigration and employment market authorities | 109-110 | 100 |
+| `doc-44d8e11b55a80a28ff81` | section-0027 | Cantonal immigration and employment market authorities | 114-115 | 99 |
+| `doc-44d8e11b55a80a28ff81` | section-0028 | Cantonal immigration and employment market authorities > FL - Fürstentum Liechtenstein | 116-118 | 115 |
+| `doc-44d8e11b55a80a28ff81` | section-0029 | Cantonal immigration and employment market authorities | 119-120 | 121 |
+| `doc-44d8e11b55a80a28ff81` | section-0031 | Cantonal immigration and employment market authorities | 124-125 | 264 |
+| `doc-44d8e11b55a80a28ff81` | section-0033 | Cantonal immigration and employment market authorities | 129-130 | 201 |
+| `doc-44d8e11b55a80a28ff81` | section-0035 | Cantonal immigration and employment market authorities | 134-135 | 84 |
+| `doc-44d8e11b55a80a28ff81` | section-0037 | Cantonal immigration and employment market authorities | 139-140 | 115 |
+| `doc-44d8e11b55a80a28ff81` | section-0039 | Cantonal immigration and employment market authorities | 144-145 | 149 |
+| `doc-44d8e11b55a80a28ff81` | section-0041 | Cantonal immigration and employment market authorities | 149-150 | 116 |
+| `doc-44d8e11b55a80a28ff81` | section-0043 | Cantonal immigration and employment market authorities | 154-155 | 127 |
+| `doc-44d8e11b55a80a28ff81` | section-0045 | Cantonal immigration and employment market authorities | 159-160 | 110 |
+| `doc-44d8e11b55a80a28ff81` | section-0047 | Cantonal immigration and employment market authorities | 164-165 | 96 |
+| `doc-44d8e11b55a80a28ff81` | section-0049 | Cantonal immigration and employment market authorities | 171-172 | 113 |
+| `doc-44d8e11b55a80a28ff81` | section-0051 | Cantonal immigration and employment market authorities | 176-177 | 88 |
+| `doc-44d8e11b55a80a28ff81` | section-0053 | Cantonal immigration and employment market authorities | 181-182 | 97 |
+| `doc-44d8e11b55a80a28ff81` | section-0055 | Cantonal immigration and employment market authorities | 186-187 | 87 |
+| `doc-44d8e11b55a80a28ff81` | section-0057 | Cantonal immigration and employment market authorities | 191-192 | 226 |
+| `doc-44d8e11b55a80a28ff81` | section-0059 | Cantonal immigration and employment market authorities | 196-197 | 124 |
+| `doc-44d8e11b55a80a28ff81` | section-0061 | Cantonal immigration and employment market authorities | 201-202 | 111 |
+| `doc-44d8e11b55a80a28ff81` | section-0063 | Cantonal immigration and employment market authorities > Ville de Lausanne | 206-208 | 118 |
+| `doc-44d8e11b55a80a28ff81` | section-0064 | Cantonal immigration and employment market authorities | 209-210 | 146 |
+| `doc-44d8e11b55a80a28ff81` | section-0066 | Cantonal immigration and employment market authorities | 214-215 | 196 |
+| `doc-44d8e11b55a80a28ff81` | section-0068 | Cantonal immigration and employment market authorities | 219-220 | 142 |
+| `doc-44d8e11b55a80a28ff81` | section-0070 | Cantonal immigration and employment market authorities | 223-227 | 258 |
+| `doc-a96967bdcfe853a2125f` | section-0014 | Non-EU/EFTA nationals > Further information > Brochure : Working in Switzerland | 86-102 | 801 |
+| `doc-a96967bdcfe853a2125f` | section-0015 | Non-EU/EFTA nationals > Legal bases | 103-104 | 81 |
+| `doc-a96967bdcfe853a2125f` | section-0016 | Non-EU/EFTA nationals > Circulars | 105-106 | 81 |
+| `doc-a96967bdcfe853a2125f` | section-0018 | Non-EU/EFTA nationals > Press releases > 2025 | 108-110 | 72 |
+| `doc-a96967bdcfe853a2125f` | section-0019 | Non-EU/EFTA nationals > Press releases > 2023 | 111-113 | 77 |
+| `doc-a96967bdcfe853a2125f` | section-0020 | Non-EU/EFTA nationals > Press releases > 2020 | 114-128 | 643 |
+| `doc-a96967bdcfe853a2125f` | section-0021 | Non-EU/EFTA nationals > Press releases > 2019 | 129-142 | 624 |
 | `doc-dccf33fdeb5e8071c812` | section-0013 | Residence > Favorites | 79-86 | 184 |
 | `doc-c25065d814741dbe255a` | section-0012 | Further information | 77-80 | 93 |
 | `doc-c25065d814741dbe255a` | section-0013 | Further information > Shopping cart | 81-82 | 76 |
@@ -851,6 +1124,114 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-d5d2d1e57acb1b6f54c1` | section-0013 | Permit S (people in need of protection) > AA19 Permit S (people in need of protection) | 81-87 | 806 |
 | `doc-2979c6530d0fc2938338` | section-0012 | "Sans-Papiers" in Switzerland | 77-80 | 407 |
 | `doc-2979c6530d0fc2938338` | section-0013 | "Sans-Papiers" in Switzerland > Documentation | 81-89 | 459 |
+| `doc-1fdb37fe11d4c2f78092` | section-0013 | Entry/Exit System (EES) > State of work at EU level | 85-86 | 385 |
+| `doc-1fdb37fe11d4c2f78092` | section-0014 | Entry/Exit System (EES) > State of work in Switzerland | 87-92 | 1144 |
+| `doc-1fdb37fe11d4c2f78092` | section-0016 | Entry/Exit System (EES) > Documentation | 96-104 | 502 |
+| `doc-1fdb37fe11d4c2f78092` | section-0017 | Entry/Exit System (EES) > Links | 105-110 | 188 |
+| `doc-73a7249d20f7f69b6575` | section-0013 | Schengen Area > Map | 85-87 | 18 |
+| `doc-73a7249d20f7f69b6575` | section-0014 | Schengen Area > Map: Schengen area | 88-93 | 131 |
+| `doc-51784d2aafc3d54b47f6` | section-0012 | FAQ – Entry | 78-96 | 1794 |
+| `doc-51784d2aafc3d54b47f6` | section-0013 | FAQ – Entry > 1. Travel documents | 97-98 | 73 |
+| `doc-51784d2aafc3d54b47f6` | section-0014 | FAQ – Entry > 1. Travel documents > What travel documents do Swiss citizens require to enter Switzerland? | 99-105 | 499 |
+| `doc-51784d2aafc3d54b47f6` | section-0015 | FAQ – Entry > 1. Travel documents > What travel documents do nationals of EU/EFTA member states require to enter Switzerland? | 106-110 | 504 |
+| `doc-51784d2aafc3d54b47f6` | section-0016 | FAQ – Entry > 1. Travel documents > What travel documents do third country nationals require to enter Switzerland? | 111-113 | 200 |
+| `doc-51784d2aafc3d54b47f6` | section-0017 | FAQ – Entry > 1. Travel documents > For a short-term stay without gainful employment (e.g. as a tourist or visitor) | 114-120 | 527 |
+| `doc-51784d2aafc3d54b47f6` | section-0018 | FAQ – Entry > 1. Travel documents > Holders of a residence permit or category D visa from a Schengen state | 121-124 | 264 |
+| `doc-51784d2aafc3d54b47f6` | section-0019 | FAQ – Entry > 1. Travel documents > Is my travel document recognised? | 125-132 | 497 |
+| `doc-51784d2aafc3d54b47f6` | section-0020 | FAQ – Entry > 1. Travel documents > What documents do stateless persons require to enter Switzerland? | 133-138 | 461 |
+| `doc-51784d2aafc3d54b47f6` | section-0021 | FAQ – Entry > 1. Travel documents > Swiss nationals who do not have a valid travel document | 139-145 | 566 |
+| `doc-51784d2aafc3d54b47f6` | section-0022 | FAQ – Entry > 1. Travel documents > EU/EFTA citizens who do not have a valid travel document | 146-155 | 991 |
+| `doc-51784d2aafc3d54b47f6` | section-0023 | FAQ – Entry > 1. Travel documents > Third country nationals who do not have a valid travel document | 156-162 | 657 |
+| `doc-51784d2aafc3d54b47f6` | section-0024 | FAQ – Entry > 1. Travel documents > Infants who do not have a valid travel document (EU/EFTA) | 163-175 | 980 |
+| `doc-51784d2aafc3d54b47f6` | section-0025 | FAQ – Entry > 1. Travel documents > I have a Swiss F or N residence permit. Can I travel on it? | 176-179 | 392 |
+| `doc-51784d2aafc3d54b47f6` | section-0026 | FAQ – Entry > 1. Travel documents > What should I do if I lose my travel document in Switzerland? | 180-182 | 156 |
+| `doc-51784d2aafc3d54b47f6` | section-0027 | FAQ – Entry > 2. Visa | 183-184 | 24 |
+| `doc-51784d2aafc3d54b47f6` | section-0032 | FAQ – Entry > 2. Visa > Where and how do I apply for a category C visa for Switzerland? | 218-226 | 697 |
+| `doc-51784d2aafc3d54b47f6` | section-0035 | FAQ – Entry > 2. Visa > I have questions about the appointment with the Swiss representation abroad / about submitting and completing the documents | 241-246 | 500 |
+| `doc-51784d2aafc3d54b47f6` | section-0038 | FAQ – Entry > 2. Visa > I have a Schengen residence permit – do I require a visa for Switzerland? | 263-267 | 429 |
+| `doc-51784d2aafc3d54b47f6` | section-0039 | FAQ – Entry > 2. Visa > For which countries is my category C visa valid? | 268-272 | 432 |
+| `doc-51784d2aafc3d54b47f6` | section-0040 | FAQ – Entry > 2. Visa > Do I require a visa for airport transit? | 273-277 | 562 |
+| `doc-51784d2aafc3d54b47f6` | section-0041 | FAQ – Entry > 2. Visa > How can I appeal against a visa refusal? | 278-284 | 856 |
+| `doc-51784d2aafc3d54b47f6` | section-0042 | FAQ – Entry > 2. Visa > How can I appeal against a visa refusal? > Costs | 285-289 | 958 |
+| `doc-51784d2aafc3d54b47f6` | section-0043 | FAQ – Entry > 2. Visa > Can I travel with a valid visa in an expired or cancelled passport? | 290-295 | 295 |
+| `doc-51784d2aafc3d54b47f6` | section-0044 | FAQ – Entry > 2. Visa > How can I extend my visa? | 296-298 | 258 |
+| `doc-51784d2aafc3d54b47f6` | section-0045 | FAQ – Entry > 3. ETIAS | 299-300 | 18 |
+| `doc-51784d2aafc3d54b47f6` | section-0046 | FAQ – Entry > 3. ETIAS > What is ETIAS? | 301-304 | 418 |
+| `doc-51784d2aafc3d54b47f6` | section-0047 | FAQ – Entry > 3. ETIAS > How long is the ETIAS travel authorisation valid? | 305-308 | 595 |
+| `doc-51784d2aafc3d54b47f6` | section-0048 | FAQ – Entry > 3. ETIAS > How do I apply for an ETIAS travel authorisation? | 309-312 | 479 |
+| `doc-51784d2aafc3d54b47f6` | section-0049 | FAQ – Entry > 3. ETIAS > Applying for ETIAS via a third party | 313-316 | 796 |
+| `doc-51784d2aafc3d54b47f6` | section-0050 | FAQ – Entry > 3. ETIAS > How long will it take to process my application? | 317-320 | 505 |
+| `doc-51784d2aafc3d54b47f6` | section-0051 | FAQ – Entry > 3. ETIAS > What happens after I submit my application? | 321-325 | 793 |
+| `doc-51784d2aafc3d54b47f6` | section-0052 | FAQ – Entry > 3. ETIAS > What do I need to bear in mind when entering the country? | 326-329 | 671 |
+| `doc-51784d2aafc3d54b47f6` | section-0053 | FAQ – Entry > 4. Entry requirements | 330-331 | 86 |
+| `doc-51784d2aafc3d54b47f6` | section-0054 | FAQ – Entry > 4. Entry requirements > What requirements must third-country nationals meet in order to enter Switzerland? | 332-335 | 305 |
+| `doc-51784d2aafc3d54b47f6` | section-0055 | FAQ – Entry > 4. Entry requirements > Requirements for third-country nationals who do not require a visa | 336-348 | 1496 |
+| `doc-51784d2aafc3d54b47f6` | section-0056 | FAQ – Entry > 4. Entry requirements > Requirements for third-country nationals who require a visa | 349-360 | 1306 |
+| `doc-51784d2aafc3d54b47f6` | section-0057 | FAQ – Entry > 4. Entry requirements > What is meant by «sufficient financial means for a stay in the Schengen area»? | 361-365 | 770 |
+| `doc-51784d2aafc3d54b47f6` | section-0058 | FAQ – Entry > 4. Entry requirements > My residence permit has expired - can I still travel? | 366-370 | 488 |
+| `doc-51784d2aafc3d54b47f6` | section-0059 | FAQ – Entry > 4. Entry requirements > Swiss residence permit | 371-374 | 406 |
+| `doc-51784d2aafc3d54b47f6` | section-0060 | FAQ – Entry > 4. Entry requirements > Residence permit from a Schengen state | 375-380 | 1001 |
+| `doc-51784d2aafc3d54b47f6` | section-0061 | FAQ – Entry > 4. Entry requirements > What requirements must family members of EU or EFTA citizens meet in order to enter Switzerland? | 381-400 | 3654 |
+| `doc-51784d2aafc3d54b47f6` | section-0062 | FAQ – Entry > 5. Duration of stay | 401-402 | 72 |
+| `doc-51784d2aafc3d54b47f6` | section-0064 | FAQ – Entry > 5. Duration of stay > How is the length of stay calculated? | 410-414 | 363 |
+| `doc-51784d2aafc3d54b47f6` | section-0066 | FAQ – Entry > 5. Duration of stay > How do I apply for a residence permit for Switzerland for more than 90 days? | 419-421 | 326 |
+| `doc-51784d2aafc3d54b47f6` | section-0067 | FAQ – Entry > 6. Entry ban / Expulsion | 422-423 | 55 |
+| `doc-51784d2aafc3d54b47f6` | section-0068 | FAQ – Entry > 6. Entry ban / Expulsion > How can I find out if I am subject to an entry ban? | 424-429 | 293 |
+| `doc-51784d2aafc3d54b47f6` | section-0069 | FAQ – Entry > 6. Entry ban / Expulsion > Can I enter the country if I have been expelled? | 430-432 | 210 |
+| `doc-51784d2aafc3d54b47f6` | section-0070 | FAQ – Entry > 7. Family reunification / Working in Switzerland | 433-435 | 104 |
+| `doc-51784d2aafc3d54b47f6` | section-0071 | FAQ – Entry > 7. Family reunification / Working in Switzerland > Persons who are not in an asylum procedure | 436-439 | 344 |
+| `doc-51784d2aafc3d54b47f6` | section-0072 | FAQ – Entry > 7. Family reunification / Working in Switzerland > Asylum seekers | 440-443 | 202 |
+| `doc-51784d2aafc3d54b47f6` | section-0073 | FAQ – Entry > 7. Family reunification / Working in Switzerland > Can I work in Switzerland? | 444-445 | 78 |
+| `doc-51784d2aafc3d54b47f6` | section-0074 | FAQ – Entry > 8. Minors / School children | 446-448 | 98 |
+| `doc-51784d2aafc3d54b47f6` | section-0075 | FAQ – Entry > 8. Minors / School children > School children residing in Switzerland | 449-457 | 981 |
+| `doc-51784d2aafc3d54b47f6` | section-0076 | FAQ – Entry > 8. Minors / School children > School children resident in the EU/EFTA area | 458-462 | 607 |
+| `doc-51784d2aafc3d54b47f6` | section-0077 | FAQ – Entry > 8. Minors / School children > Are minors allowed to enter Switzerland unaccompanied, or accompanied by persons other than their parents? | 463-468 | 847 |
+| `doc-51784d2aafc3d54b47f6` | section-0078 | FAQ – Entry > 9. For hosts in Switzerland | 469-470 | 106 |
+| `doc-51784d2aafc3d54b47f6` | section-0079 | FAQ – Entry > 9. For hosts in Switzerland > What are the requirements for inviting someone (either on a private or business visit) to Switzerland? | 471-475 | 419 |
+| `doc-51784d2aafc3d54b47f6` | section-0080 | FAQ – Entry > 9. For hosts in Switzerland > What is a declaration of sponsorship? | 476-480 | 937 |
+| `doc-51784d2aafc3d54b47f6` | section-0081 | FAQ – Entry > 10. Visa for transporting passengers or goods to Switzerland | 481-482 | 60 |
+| `doc-51784d2aafc3d54b47f6` | section-0082 | FAQ – Entry > 10. Visa for transporting passengers or goods to Switzerland > Visa for transporting passengers or goods to Switzerland | 483-484 | 102 |
+| `doc-51784d2aafc3d54b47f6` | section-0083 | FAQ – Entry > 10. Visa for transporting passengers or goods to Switzerland > Visa for transporting passengers or goods to Switzerland > Notification or work permit requirement: | 485-491 | 2573 |
+| `doc-51784d2aafc3d54b47f6` | section-0084 | FAQ – Entry > 10. Visa for transporting passengers or goods to Switzerland > Visa for transporting passengers or goods to Switzerland > Visa requirement: | 492-494 | 753 |
+| `doc-51784d2aafc3d54b47f6` | section-0085 | FAQ – Entry > 10. Visa for transporting passengers or goods to Switzerland > Visa for transporting passengers or goods to Switzerland > Transit journeys | 495-501 | 496 |
+| `doc-bf76b12418fcaa73e02b` | section-0015 | Do I require an ETIAS? > How do I apply for an ETIAS travel authorisation? | 90-93 | 479 |
+| `doc-bf76b12418fcaa73e02b` | section-0018 | Do I require an ETIAS? > What happens after I submit my application? | 102-106 | 793 |
+| `doc-bf76b12418fcaa73e02b` | section-0019 | Do I require an ETIAS? > What do I need to bear in mind when entering the country? | 107-111 | 788 |
+| `doc-bf76b12418fcaa73e02b` | section-0021 | Do I require an ETIAS? > ETIAS: beware of scammers! | 114-115 | 230 |
+| `doc-bf76b12418fcaa73e02b` | section-0022 | Do I require an ETIAS? > Information for carriers | 116-120 | 662 |
+| `doc-bf76b12418fcaa73e02b` | section-0028 | Do I require an ETIAS? > Links > National legislative projects | 133-139 | 379 |
+| `doc-d14d6007e17102ecc58a` | section-0013 | Entry with visa > Relevant regulations for entering Switzerland | 86-88 | 149 |
+| `doc-d14d6007e17102ecc58a` | section-0014 | Entry with visa > Relevant regulations for entering Switzerland > Annexes to the Visahandbook I | 89-95 | 958 |
+| `doc-d14d6007e17102ecc58a` | section-0015 | Entry with visa > Relevant regulations for entering Switzerland > Annexes to the Visa Provisions FOM | 96-105 | 426 |
+| `doc-51113400be3c429d2c91` | section-0015 | Rules for calculating the length of stay > Examples for calculating the length of stay: | 85-86 | 31 |
+| `doc-51113400be3c429d2c91` | section-0017 | Rules for calculating the length of stay > Example 2 – Entry too early: | 96-104 | 505 |
+| `doc-51113400be3c429d2c91` | section-0018 | Rules for calculating the length of stay > Example 3 – Multiple entries: | 105-123 | 617 |
+| `doc-daf8dfc81039a2f8289c` | section-0012 | Visa Application Form | 78-114 | 1880 |
+| `doc-9108317b2ccbef351701` | section-0013 | FAQ – Free Movement of Persons > Who benefits from the Agreement on the Free Movement of Persons? | 89-91 | 145 |
+| `doc-9108317b2ccbef351701` | section-0014 | FAQ – Free Movement of Persons > Taking up residence and gainful employment | 92-95 | 459 |
+| `doc-9108317b2ccbef351701` | section-0015 | FAQ – Free Movement of Persons > Gainful employment of up to three months (employed for a period of up to three months): | 96-98 | 261 |
+| `doc-9108317b2ccbef351701` | section-0017 | FAQ – Free Movement of Persons > Residence permits | 109-110 | 61 |
+| `doc-9108317b2ccbef351701` | section-0018 | FAQ – Free Movement of Persons > Type L EU/EFTA short-term residence permit: | 111-112 | 380 |
+| `doc-9108317b2ccbef351701` | section-0019 | FAQ – Free Movement of Persons > Type B EU/EFTA residence permit: | 113-115 | 620 |
+| `doc-9108317b2ccbef351701` | section-0020 | FAQ – Free Movement of Persons > Type G EU/EFTA cross-border commuter permit: | 116-119 | 515 |
+| `doc-9108317b2ccbef351701` | section-0021 | FAQ – Free Movement of Persons > Type C EU/EFTA settlement permit: | 120-121 | 644 |
+| `doc-9108317b2ccbef351701` | section-0022 | FAQ – Free Movement of Persons > Cross border commuters | 122-126 | 902 |
+| `doc-9108317b2ccbef351701` | section-0023 | FAQ – Free Movement of Persons > Notification procedure | 127-142 | 3057 |
+| `doc-9108317b2ccbef351701` | section-0024 | FAQ – Free Movement of Persons > Online notification | 143-146 | 738 |
+| `doc-9108317b2ccbef351701` | section-0025 | FAQ – Free Movement of Persons > Written notification (paper form) | 147-183 | 4254 |
+| `doc-9108317b2ccbef351701` | section-0026 | FAQ – Free Movement of Persons > Service providers | 184-214 | 4724 |
+| `doc-9108317b2ccbef351701` | section-0027 | FAQ – Free Movement of Persons > Changing jobs or place of residence | 215-216 | 50 |
+| `doc-9108317b2ccbef351701` | section-0028 | FAQ – Free Movement of Persons > Geographic mobility | 217-218 | 610 |
+| `doc-9108317b2ccbef351701` | section-0029 | FAQ – Free Movement of Persons > Professional mobility | 219-222 | 1206 |
+| `doc-9108317b2ccbef351701` | section-0030 | FAQ – Free Movement of Persons > Job loss | 223-226 | 329 |
+| `doc-9108317b2ccbef351701` | section-0031 | FAQ – Free Movement of Persons > Residing in Switzerland without gainful activity | 227-233 | 1742 |
+| `doc-9108317b2ccbef351701` | section-0032 | FAQ – Free Movement of Persons > Family reunification | 234-245 | 994 |
+| `doc-9108317b2ccbef351701` | section-0033 | FAQ – Free Movement of Persons > Visa | 246-248 | 573 |
+| `doc-9108317b2ccbef351701` | section-0034 | FAQ – Free Movement of Persons > Further information | 249-250 | 39 |
+| `doc-9108317b2ccbef351701` | section-0035 | FAQ – Free Movement of Persons > The purchase of real estate/land by foreign nationals | 251-252 | 25 |
+| `doc-9108317b2ccbef351701` | section-0036 | FAQ – Free Movement of Persons > Taxation matters | 253-255 | 170 |
+| `doc-9108317b2ccbef351701` | section-0037 | FAQ – Free Movement of Persons > Recognition of foreign diplomas | 256-257 | 56 |
+| `doc-9108317b2ccbef351701` | section-0038 | FAQ – Free Movement of Persons > Social insurances | 258-263 | 174 |
 | `doc-d9800378b0f5ad0049df` | section-0013 | Notification procedure for short-term work in Switzerland > Online notification | 82-87 | 421 |
 | `doc-d9800378b0f5ad0049df` | section-0015 | Notification procedure for short-term work in Switzerland > Notification rules > Eight-day notification-free period | 106-114 | 563 |
 | `doc-d9800378b0f5ad0049df` | section-0016 | Notification procedure for short-term work in Switzerland > Notification rules > Calculating the number of days (eight-day notification-free period and 90 working days) | 115-116 | 293 |
@@ -869,6 +1250,21 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-d9800378b0f5ad0049df` | section-0030 | Notification procedure for short-term work in Switzerland > Further information > VAT obligations | 186-188 | 311 |
 | `doc-d9800378b0f5ad0049df` | section-0032 | Notification procedure for short-term work in Switzerland > United Kingdom > Service provision from the UK | 192-194 | 543 |
 | `doc-ec719a25b2c525bfa22e` | section-0003 | Fee overview > The amount of the fee is determined by the Federal Council. From 1 January 2021, the fee will be: | 23-25 | 271 |
+| `doc-c33d3808823882dbd8a6` | section-0004 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen | 74-86 | 872 |
+| `doc-c33d3808823882dbd8a6` | section-0007 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Einreise mit Erwerbstätigkeit | 93-100 | 1417 |
+| `doc-c33d3808823882dbd8a6` | section-0008 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video | 101-109 | 851 |
+| `doc-c33d3808823882dbd8a6` | section-0009 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video > Grenzgängerbewilligung | 110-113 | 1107 |
+| `doc-c33d3808823882dbd8a6` | section-0010 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video > Einreise ohne Erwerbstätigkeit | 114-116 | 377 |
+| `doc-c33d3808823882dbd8a6` | section-0011 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video > Schüler/innen & Studenten | 117-119 | 291 |
+| `doc-c33d3808823882dbd8a6` | section-0013 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video > Familiennachzug | 125-131 | 663 |
+| `doc-c33d3808823882dbd8a6` | section-0014 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video | 132-137 | 318 |
+| `doc-c33d3808823882dbd8a6` | section-0016 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video > Pflege- und Adoptivkinder | 141-143 | 368 |
+| `doc-c33d3808823882dbd8a6` | section-0018 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video > Ausländerausweis | 145-147 | 25 |
+| `doc-c33d3808823882dbd8a6` | section-0019 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video | 148-149 | 444 |
+| `doc-c33d3808823882dbd8a6` | section-0020 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video > Termin verschieben | 150-154 | 154 |
+| `doc-c33d3808823882dbd8a6` | section-0021 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video > Ausländerausweis verloren oder gestohlen? | 155-157 | 436 |
+| `doc-c33d3808823882dbd8a6` | section-0024 | Bewilligungen EU-/EFTA-Staaten > Noch offene Fragen? > Wir sind für Sie da. | 170-176 | 133 |
+| `doc-c33d3808823882dbd8a6` | section-0025 | Bewilligungen EU-/EFTA-Staaten > Noch offene Fragen? > Wir sind für Sie da. > Öffnungszeiten | 177-178 | 135 |
 | `doc-7da0b6b1bae122f7b6bc` | section-0005 | Navigation > Schuljahr 2028/29 | 19-22 | 535 |
 | `doc-7da0b6b1bae122f7b6bc` | section-0006 | Navigation > Schuljahr 2029/30 | 23-26 | 532 |
 | `doc-eb9ac50fa8014bdcea2c` | section-0006 | Navigation > Sprunglink > Fachstelle Migration & Schule > Informationen zur Hindernisfreiheit | 21-25 | 150 |
@@ -913,6 +1309,56 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-7502be9969bff24a2962` | section-0004 | Navigation > Sprunglink > Hinweis: | 18-38 | 2216 |
 | `doc-745148c5fe3663cb880f` | section-0002 | Navigation > Sprunglink | 2-6 | 591 |
 | `doc-1c102c7c0dd9484cfbb9` | section-0002 | Navigation > Sprunglink | 2-6 | 706 |
+| `doc-8782b52e7e4ded9957f5` | section-0010 | Drittstaatsangehörige > Einreise | 185-187 | 479 |
+| `doc-8782b52e7e4ded9957f5` | section-0013 | Drittstaatsangehörige > Aufenthalt ohne Erwerbstätigkeit | 192-193 | 138 |
+| `doc-8782b52e7e4ded9957f5` | section-0014 | Drittstaatsangehörige > Familiennachzug | 194-202 | 984 |
+| `doc-8782b52e7e4ded9957f5` | section-0017 | Drittstaatsangehörige > Sidebar > Adresse > Amt für Migration | 205-207 | 122 |
+| `doc-8782b52e7e4ded9957f5` | section-0018 | Drittstaatsangehörige > Sidebar > Öffnungszeiten | 208-211 | 119 |
+| `doc-777e3094d0c258479141` | section-0010 | EU/EFTA-Staatsangehörige > Einreise | 185-186 | 879 |
+| `doc-777e3094d0c258479141` | section-0012 | EU/EFTA-Staatsangehörige > Aufenthalt mit Erwerbstätigkeit | 189-198 | 2051 |
+| `doc-777e3094d0c258479141` | section-0013 | EU/EFTA-Staatsangehörige > Aufenthalt ohne Erwerbstätigkeit | 199-200 | 785 |
+| `doc-777e3094d0c258479141` | section-0014 | EU/EFTA-Staatsangehörige > Familiennachzug | 201-207 | 1038 |
+| `doc-777e3094d0c258479141` | section-0018 | EU/EFTA-Staatsangehörige > Sidebar > Adresse > Amt für Migration | 213-215 | 122 |
+| `doc-777e3094d0c258479141` | section-0019 | EU/EFTA-Staatsangehörige > Sidebar > Öffnungszeiten | 216-219 | 119 |
+| `doc-e48acba56a5956163cca` | section-0010 | Modal-Suche > Hauptinhalt | 342-348 | 8 |
+| `doc-e48acba56a5956163cca` | section-0011 | Migration | 349-350 | 366 |
+| `doc-e48acba56a5956163cca` | section-0012 | Migration > 1. Besuchsaufenthalt | 351-362 | 1236 |
+| `doc-e48acba56a5956163cca` | section-0015 | Migration > 3. Meldeverfahren für kurzfristige Erwerbstätigkeit | 383-392 | 860 |
+| `doc-e48acba56a5956163cca` | section-0016 | Migration > 4. Familiennachzug | 393-402 | 845 |
+| `doc-e48acba56a5956163cca` | section-0018 | Migration > 6a. Asyl | 411-418 | 858 |
+| `doc-e48acba56a5956163cca` | section-0019 | Migration > 6b. Meldung Erwerbstätigkeit vorläufige Aufnahme (Ausweis F), anerkannte Flüchtlinge (Ausweis B) und Schutzstatus S | 419-428 | 1145 |
+| `doc-e48acba56a5956163cca` | section-0020 | Migration > 6c. Reisedokumente für ausländische Personen | 429-441 | 1296 |
+| `doc-e48acba56a5956163cca` | section-0021 | Migration > 6d. Härtefallregelung | 442-450 | 891 |
+| `doc-e48acba56a5956163cca` | section-0022 | Migration > 6e. Schutzstatus S | 451-462 | 1373 |
+| `doc-e48acba56a5956163cca` | section-0023 | Migration > 7. Behördliche Anordnungen / Massnahmen / Vollzug | 463-468 | 778 |
+| `doc-e48acba56a5956163cca` | section-0024 | Migration > 8. Schengen / Dublin (Abkommen) | 469-478 | 852 |
+| `doc-e48acba56a5956163cca` | section-0025 | Migration > Themen | 479-480 | 16 |
+| `doc-e48acba56a5956163cca` | section-0026 | Migration > Wichtige Links | 481-482 | 1179 |
+| `doc-e48acba56a5956163cca` | section-0027 | Migration > Personen | 483-484 | 550 |
+| `doc-e48acba56a5956163cca` | section-0028 | Migration > Abteilungen | 485-486 | 72 |
+| `doc-c8b9a1ea9ffc2b4e0c88` | section-0012 | Service de la population (SPOP) > Actualités > Avant-projet de loi sur le service des habitants en consultation | 75-78 | 678 |
+| `doc-c8b9a1ea9ffc2b4e0c88` | section-0013 | Service de la population (SPOP) > Actualités > Inauguration des nouvelles installations du Centre de biométrie et des documents d’identité | 79-82 | 790 |
+| `doc-c8b9a1ea9ffc2b4e0c88` | section-0014 | Service de la population (SPOP) > Actualités > Inauguration de l'état civil cantonal | 83-86 | 578 |
+| `doc-c8b9a1ea9ffc2b4e0c88` | section-0015 | Service de la population (SPOP) > Actualités > L'état civil et le BCI s'installement Avenue Sévelin, à Lausanne | 87-91 | 493 |
+| `doc-c8b9a1ea9ffc2b4e0c88` | section-0016 | Service de la population (SPOP) > Actualités > Nouvelle édition de la brochure « Bienvenue dans le canton de Vaud » | 92-96 | 666 |
+| `doc-c8b9a1ea9ffc2b4e0c88` | section-0017 | Service de la population (SPOP) > Organisation | 97-99 | 601 |
+| `doc-c8b9a1ea9ffc2b4e0c88` | section-0019 | Service de la population (SPOP) > Les entités du service > Le Service de la population participe à divers instances | 102-104 | 158 |
+| `doc-c8b9a1ea9ffc2b4e0c88` | section-0021 | Service de la population (SPOP) > Chiffres clés | 106-120 | 894 |
+| `doc-c8b9a1ea9ffc2b4e0c88` | section-0022 | Service de la population (SPOP) > Prestations | 121-127 | 240 |
+| `doc-c8b9a1ea9ffc2b4e0c88` | section-0023 | Service de la population (SPOP) > Bases Légales | 128-142 | 901 |
+| `doc-c8b9a1ea9ffc2b4e0c88` | section-0024 | Service de la population (SPOP) > Publications | 143-147 | 230 |
+| `doc-3844053afd11f3382d02` | section-0013 | Arrivée d'un autre canton > Documents à fournir > S'agissant des titulaires d'autorisations de courte durée (permis L UE/AELE) ou de séjour (permis B UE/AELE) : | 76-77 | 110 |
+| `doc-3844053afd11f3382d02` | section-0014 | Arrivée d'un autre canton > Documents à fournir > Si prise d'emploi simultanée à la demande alors que le but du séjour initial n'était pas lié à la prise d'une activité lucrative : | 78-79 | 225 |
+| `doc-3844053afd11f3382d02` | section-0018 | Arrivée d'un autre canton > Législation | 91-95 | 382 |
+| `doc-3844053afd11f3382d02` | section-0019 | Arrivée d'un autre canton > Navigation secondaire | 96-117 | 128 |
+| `doc-2c3e1bfd065668a5ca8d` | section-0013 | Annoncer son changement d'adresse au contrôle des habitants > En ligne | 166-168 | 100 |
+| `doc-2c3e1bfd065668a5ca8d` | section-0014 | Annoncer son changement d'adresse au contrôle des habitants > En ligne > Quels documents sont requis ? | 169-174 | 336 |
+| `doc-2c3e1bfd065668a5ca8d` | section-0015 | Annoncer son changement d'adresse au contrôle des habitants > En ligne > Quel est le délai ? | 175-177 | 63 |
+| `doc-2c3e1bfd065668a5ca8d` | section-0017 | Annoncer son changement d'adresse au contrôle des habitants > Combien ça coûte ?Combien ça coûte ? | 179-182 | 132 |
+| `doc-2c3e1bfd065668a5ca8d` | section-0018 | Annoncer son changement d'adresse au contrôle des habitants > Qui peut m'aider ? | 183-185 | 56 |
+| `doc-1295d214764a7279a7a5` | section-0003 | Permis de séjour | 71-82 | 1273 |
+| `doc-1295d214764a7279a7a5` | section-0005 | Permis de séjour > Changement dans votre situation | 85-86 | 202 |
+| `doc-1295d214764a7279a7a5` | section-0006 | Permis de séjour > Attestations | 87-88 | 265 |
 | `doc-226de14b7b9927c904b6` | section-0001 | (no heading) | 1-13 | 33 |
 | `doc-226de14b7b9927c904b6` | section-0002 | Anspruch auf AHV-Rentenzahlungen ausserhalb der Schweiz | 14-16 | 201 |
 | `doc-226de14b7b9927c904b6` | section-0005 | Anspruch auf AHV-Rentenzahlungen ausserhalb der Schweiz > Ich erhalte eine Zusatzrente | 30-34 | 1246 |
@@ -947,7 +1393,7 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-b30d930e5eb4e146f3c0` | section-0018 | Steueramt > Über uns > Marina Züger | 102-104 | 40 |
 | `doc-b30d930e5eb4e146f3c0` | section-0020 | Steueramt > Über uns > Offene Stellen | 107-109 | 214 |
 | `doc-e78639e34eda3a059e76` | section-0008 | Prämienverbilligung > Diese Seite ist verfügbar in: | 49-53 | 230 |
-| `doc-e78639e34eda3a059e76` | section-0010 | Prämienverbilligung > Krankenversicherungspflicht | 61-62 | 424 |
+| `doc-e78639e34eda3a059e76` | section-0010 | Prämienverbilligung > Krankenversicherungspflicht | 61-62 | 422 |
 | `doc-e78639e34eda3a059e76` | section-0012 | Prämienverbilligung > Prämienübersicht | 66-70 | 396 |
 | `doc-e78639e34eda3a059e76` | section-0013 | Prämienverbilligung > Prämienübersicht > Abrechnung der Krankenversicherung für Gemeinden | 71-72 | 64 |
 | `doc-e78639e34eda3a059e76` | section-0017 | Prämienverbilligung > Anspruch auf Prämienverbilligung > Neues System für die Unterstützung bei den Krankenkassen-Prämien ab 2021 | 80-81 | 247 |
@@ -1087,7 +1533,7 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-ee4f5e8e19cada70835c` | section-0047 | Umtausch eines ausländischen Führerausweises > Weiterführende Informationen > Adresse > Öffnungszeiten Schalter | 185-187 | 71 |
 | `doc-ee4f5e8e19cada70835c` | section-0048 | Umtausch eines ausländischen Führerausweises > Weiterführende Informationen > Telefon | 188-189 | 16 |
 | `doc-ee4f5e8e19cada70835c` | section-0049 | Umtausch eines ausländischen Führerausweises > Weiterführende Informationen > Telefon > Telefonische Erreichbarkeit | 190-192 | 103 |
-| `doc-7cda9f16eb96f164c7ce` | section-0008 | Ausländischen Führerausweis umtauschen > Wer dieses Gesuch braucht | 49-50 | 355 |
+| `doc-7cda9f16eb96f164c7ce` | section-0008 | Ausländischen Führerausweis umtauschen > Wer dieses Gesuch braucht | 49-50 | 354 |
 | `doc-7cda9f16eb96f164c7ce` | section-0010 | Ausländischen Führerausweis umtauschen > Schritt für Schritt Ihr Gesuch einreichen > Gesuch herunterladen, ausfüllen und ausdrucken | 52-56 | 202 |
 | `doc-7cda9f16eb96f164c7ce` | section-0012 | Ausländischen Führerausweis umtauschen > Schritt für Schritt Ihr Gesuch einreichen > Gesuch herunterladen, ausfüllen und ausdrucken > Sind Sie sich bei einer Gesundheitsfrage nicht sicher? | 59-60 | 64 |
 | `doc-7cda9f16eb96f164c7ce` | section-0014 | Ausländischen Führerausweis umtauschen > Schritt für Schritt Ihr Gesuch einreichen > Aktuelles Passfoto aufkleben | 63-64 | 53 |
@@ -1288,7 +1734,7 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-cfa52df67bc1a2de79f0` | section-0012 | Hunde > Haltung & Pflichten > 1 – Verbotene Hunderassen | 75-77 | 78 |
 | `doc-cfa52df67bc1a2de79f0` | section-0015 | Hunde > Haltung & Pflichten > Verkürzte Rute melden | 89-92 | 123 |
 | `doc-cfa52df67bc1a2de79f0` | section-0016 | Hunde > Haltung & Pflichten > Schutzhund melden | 93-96 | 165 |
-| `doc-cfa52df67bc1a2de79f0` | section-0019 | Hunde > Haltung & Pflichten > 6 – Hund halten, führen und beaufsichtigen | 101-102 | 245 |
+| `doc-cfa52df67bc1a2de79f0` | section-0019 | Hunde > Haltung & Pflichten > 6 – Hund halten, führen und beaufsichtigen | 101-102 | 243 |
 | `doc-cfa52df67bc1a2de79f0` | section-0024 | Hunde > Hundeausbildung > Ausbildungsbestätigung Theoriekurs | 135-136 | 443 |
 | `doc-cfa52df67bc1a2de79f0` | section-0025 | Hunde > Hundeausbildung > Praktischer Ausbildungskurs | 137-146 | 945 |
 | `doc-cfa52df67bc1a2de79f0` | section-0026 | Hunde > Hundeausbildung > Ausbildungsbestätigung Praxiskurs | 147-149 | 687 |
@@ -1312,6 +1758,24 @@ Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, n
 | `doc-6ac4fb95eb9bd1acf968` | section-0015 | Amt für Wirtschaft > Über uns > Tripartite Kommission | 87-89 | 136 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0016 | Amt für Wirtschaft > Über uns > Einigungsamt | 90-92 | 158 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0017 | Amt für Wirtschaft > Über uns > Offene Stellen im AWI | 93-95 | 43 |
+| `doc-6672da80799a61b7cd84` | section-0001 | (no heading) | 1-1 | 44 |
+| `doc-6672da80799a61b7cd84` | section-0005 | Ufficio della migrazione | 16-17 | 166 |
+| `doc-6672da80799a61b7cd84` | section-0006 | Ufficio della migrazione > Organizzazione | 18-33 | 434 |
+| `doc-6672da80799a61b7cd84` | section-0008 | Ufficio della migrazione > Contatti | 35-53 | 623 |
+| `doc-6672da80799a61b7cd84` | section-0009 | Ufficio della migrazione > Sezione della popolazione | 54-56 | 55 |
+| `doc-6672da80799a61b7cd84` | section-0010 | Ufficio della migrazione > Sezione della popolazione > Passaporto e carta d'identità | 57-58 | 51 |
+| `doc-6672da80799a61b7cd84` | section-0011 | Ufficio della migrazione > Sezione della popolazione > Naturalizzazioni | 59-60 | 51 |
+| `doc-6672da80799a61b7cd84` | section-0012 | Ufficio della migrazione > Sezione della popolazione > Stato civile | 61-62 | 51 |
+| `doc-6672da80799a61b7cd84` | section-0013 | Ufficio della migrazione > Sezione della popolazione > Permessi per stranieri | 63-64 | 51 |
+| `doc-6672da80799a61b7cd84` | section-0015 | Ufficio della migrazione > Sezione della popolazione > Aiutaci a migliorare | 66-68 | 45 |
+| `doc-6672da80799a61b7cd84` | section-0016 | Ufficio della migrazione > Applicazione mobile | 69-70 | 200 |
+| `doc-6672da80799a61b7cd84` | section-0021 | Ufficio della migrazione > Social media | 83-84 | 197 |
+| `doc-6672da80799a61b7cd84` | section-0022 | Ufficio della migrazione > Condividi | 85-92 | 80 |
+| `doc-d93f4248701c364d8108` | section-0002 | Einreise EU/EFTA-Staatsangehörige | 324-334 | 251 |
+| `doc-d93f4248701c364d8108` | section-0003 | Einreise EU/EFTA-Staatsangehörige > Unselbstständige Erwerbstätigkeit | 335-336 | 137 |
+| `doc-d93f4248701c364d8108` | section-0010 | Einreise EU/EFTA-Staatsangehörige > Erwerbsloser Aufenthalt | 360-366 | 429 |
+| `doc-d93f4248701c364d8108` | section-0015 | Einreise EU/EFTA-Staatsangehörige > Selbstständige Erwerbstätigkeit | 386-390 | 496 |
+| `doc-d93f4248701c364d8108` | section-0019 | Einreise EU/EFTA-Staatsangehörige > Dossiers | 398-404 | 430 |
 
 ## Repeated sections
 
@@ -1340,7 +1804,25 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 
 | Status | Source | Documents | Units | Cited | Dispositioned | Boilerplate | Unclassified |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| partly_covered | `(discovered)`  | 103 | 719 | 233 | 194 | 35 | 292 |
+| partly_covered | `(discovered)`  | 130 | 1001 | 328 | 211 | 47 | 462 |
+| cited | `ag-change-of-canton` Aargau - Reporting a move, change of canton | 1 | 1 | 1 | 0 | 0 | 0 |
+| boilerplate_only | `ag-register-law` Aargau - Register- und Meldegesetz (SAR 122.200), para 14 | 1 | 0 | 0 | 0 | 0 | 0 |
+| boilerplate_only | `ag-residence` Aargau - Residence hub | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `ai-foreign-workers` Appenzell Innerrhoden - Working as a foreign national (eight days) | 1 | 9 | 2 | 0 | 0 | 7 |
+| boilerplate_only | `ai-register-ordinance` Appenzell Innerrhoden - Verordnung zum Registerharmonisierungsgesetz (GS 172.910), art. 7 | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `ai-registration` Appenzell Innerrhoden - Registering and deregistering (fourteen days) | 1 | 4 | 3 | 0 | 0 | 1 |
+| boilerplate_only | `ai-settlement-decree` Appenzell Innerrhoden - Standeskommissionsbeschluss ueber Niederlassung und Aufenthalt (GS 142.001), art. 2 | 1 | 0 | 0 | 0 | 0 | 0 |
+| cited | `ar-register-law` Appenzell Ausserrhoden - Registergesetz (bGS 122.1), art. 5 | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `ar-third-country` Appenzell Ausserrhoden - Third-country nationals: forms and documents | 1 | 5 | 1 | 0 | 0 | 4 |
+| partly_covered | `be-entry-eu-efta` Bern - Entry for EU/EFTA nationals, 14 days to the commune | 1 | 3 | 1 | 0 | 0 | 2 |
+| nothing | `be-entry-eu-efta-fr` Bern - Entree pour les ressortissants UE/AELE | 1 | 3 | 0 | 0 | 0 | 3 |
+| cited | `be-entry-third-country` Bern - Entry for third-country nationals | 1 | 2 | 2 | 0 | 0 | 0 |
+| nothing | `be-permit-b` Bern - Residence permit B, with the change-of-canton rule | 1 | 3 | 0 | 0 | 0 | 3 |
+| cited | `be-settlement-law` Bern - Gesetz ueber Niederlassung und Aufenthalt (BSG 122.11), art. 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| cited | `bl-registration-law` Basel-Landschaft - Anmeldungs- und Registergesetz (SGS 111), para 5 | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `bs-entry-residence` Basel-Stadt - Entry and residence, EU/EFTA and third country | 1 | 48 | 4 | 0 | 0 | 44 |
+| boilerplate_only | `bs-register-law` Basel-Stadt - Gesetz ueber Niederlassung und Aufenthalt (SG 122.200), para 4 | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `bs-registration-arrival` Basel-Stadt - Moving to the canton, registration and deadline | 1 | 21 | 5 | 0 | 0 | 16 |
 | boilerplate_only | `ch-ahv-iv-13-ahv-rente` The thirteenth AHV pension payment | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-ahv-21` AHV 21: reference age 65 and the transitional rules | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-ahv-allgemeines` AHV: general information and who is insured | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -1452,25 +1934,78 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | cited | `ch-seco-rueckkehr-schweiz` Returning to Switzerland and unemployment insurance | 1 | 13 | 5 | 8 | 1 | 0 |
 | cited | `ch-seco-stellenmeldepflicht` The job-registration duty and the head start for registered jobseekers | 1 | 23 | 4 | 19 | 1 | 0 |
 | cited | `ch-seco-stellensuche-ausland` Looking for work abroad while insured in Switzerland | 1 | 7 | 1 | 6 | 1 | 0 |
-| cited | `ch-seco-unemployment` Unemployment benefit: waiting days, daily allowances and calculation | 2 | 38 | 9 | 29 | 2 | 0 |
+| dispositioned | `ch-seco-unemployment` Unemployment benefit: waiting days, daily allowances and calculation | 1 | 19 | 0 | 19 | 1 | 0 |
 | cited | `ch-seco-versicherungsleistungen` The four benefits of unemployment insurance | 1 | 7 | 3 | 4 | 1 | 0 |
 | partly_covered | `ch-sem-authorities` Cantonal immigration and employment authorities | 1 | 58 | 26 | 0 | 0 | 32 |
 | partly_covered | `ch-sem-biometric-documents` Biometric residence permits | 1 | 6 | 2 | 0 | 0 | 4 |
 | nothing | `ch-sem-citizenship` Acquiring Swiss citizenship (ordinary and facilitated naturalisation) | 1 | 7 | 0 | 0 | 0 | 7 |
 | dispositioned | `ch-sem-directives` SEM directives - foreign nationals | 14 | 37 | 0 | 37 | 0 | 0 |
-| partly_covered | `ch-sem-entry` Entry and visa information | 44 | 117 | 17 | 84 | 0 | 16 |
+| partly_covered | `ch-sem-entry` Entry and visa information | 35 | 84 | 0 | 77 | 0 | 7 |
 | partly_covered | `ch-sem-entry-faq` Entry FAQ | 1 | 74 | 12 | 0 | 0 | 62 |
 | partly_covered | `ch-sem-eu-efta` Residence permits for EU/EFTA nationals | 6 | 11 | 5 | 2 | 0 | 4 |
 | partly_covered | `ch-sem-free-movement-faq` Free movement of persons FAQ | 1 | 26 | 1 | 0 | 0 | 25 |
 | partly_covered | `ch-sem-notification-procedure` Notification procedure for short-term employment (Meldeverfahren) | 1 | 20 | 4 | 0 | 0 | 16 |
 | partly_covered | `ch-sem-residence-de` SEM residence overview (de) | 16 | 78 | 17 | 12 | 0 | 49 |
-| partly_covered | `ch-sem-residence-en` SEM residence overview (en) | 16 | 34 | 2 | 0 | 0 | 32 |
+| partly_covered | `ch-sem-residence-en` SEM residence overview (en) | 15 | 28 | 1 | 0 | 0 | 27 |
 | dispositioned | `ch-sem-residence-fr` SEM residence overview (fr) | 19 | 88 | 0 | 88 | 0 | 0 |
 | dispositioned | `ch-sem-residence-it` SEM residence overview (it) | 19 | 88 | 0 | 88 | 0 | 0 |
 | partly_covered | `ch-sem-third-country` Residence permits for non-EU/EFTA nationals | 6 | 10 | 3 | 5 | 0 | 2 |
 | partly_covered | `ch-sem-work-third-country` Admission to work for non-EU/EFTA nationals | 3 | 42 | 9 | 0 | 0 | 33 |
 | cited | `ch-serafe-household-fee` Radio and television fee for households | 1 | 2 | 2 | 0 | 0 | 0 |
 | partly_covered | `ch-zas-contribution-refund` Refund of AHV contributions on leaving Switzerland | 1 | 10 | 3 | 0 | 0 | 7 |
+| cited | `fr-arrival-eu-efta` Fribourg - Arriving for more than three months, EU/EFTA | 1 | 1 | 1 | 0 | 0 | 0 |
+| cited | `fr-change-of-canton` Fribourg - Change of canton, EU-27/EFTA | 1 | 1 | 1 | 0 | 0 | 0 |
+| boilerplate_only | `fr-residents-law` Fribourg - Loi sur le controle des habitants (RSF 114.21.1), art. 5 | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `ge-arrival` Geneva - Announcing your arrival to the OCPM, 14 days | 1 | 3 | 1 | 0 | 0 | 2 |
+| cited | `ge-confederates-law` Geneva - Loi sur le sejour et l'etablissement des Confederes (rsGE F 2 05), art. 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `ge-departure` Geneva - Announcing your departure to the OCPM | 1 | 3 | 1 | 0 | 0 | 2 |
+| cited | `ge-register-law` Geneva - Loi d'application de la LHR (rsGE F 2 25), art. 5 | 1 | 1 | 1 | 0 | 0 | 0 |
+| boilerplate_only | `gl-register-law` Glarus - Einfuehrungsgesetz zum Registerharmonisierungsgesetz (GS I C/21/2), art. 4 | 1 | 0 | 0 | 0 | 0 | 0 |
+| no_documents | `gl-residence` Glarus - Residence: permit duty and the order of steps | 0 | 0 | 0 | 0 | 0 | 0 |
+| boilerplate_only | `gr-register-law` Graubuenden - Einwohnerregistergesetz (BR 171.200), art. 13 | 1 | 0 | 0 | 0 | 0 | 0 |
+| boilerplate_only | `gr-register-law-it` Graubuenden - Legge sui registri degli abitanti (BR 171.200), art. 13 | 1 | 0 | 0 | 0 | 0 | 0 |
+| boilerplate_only | `gr-third-country-registration` Graubuenden - Registration for third-country nationals, 14 days | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `ju-residents-office` Jura - Controle des habitants: duty, deadline and documents | 1 | 4 | 1 | 0 | 0 | 3 |
+| boilerplate_only | `lu-change-of-canton` Lucerne - Change of canton | 1 | 0 | 0 | 0 | 0 | 0 |
+| cited | `lu-eu-efta-leaflet` Lucerne - Merkblatt: residence permit for EU/EFTA nationals | 1 | 1 | 1 | 0 | 0 | 0 |
+| cited | `lu-settlement-law` Lucerne - Gesetz ueber die Niederlassung und den Aufenthalt (SRL 5), paras 3, 5 and 7 | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `ne-permit-management` Neuchatel - Managing and renewing your permit, with the change-of-canton rule | 1 | 12 | 3 | 0 | 0 | 9 |
+| partly_covered | `ne-studying` Neuchatel - Studying in Neuchatel: announcing arrival and what to bring | 1 | 13 | 1 | 0 | 0 | 12 |
+| boilerplate_only | `nw-residence` Nidwalden - Residence, registration and change of canton | 1 | 0 | 0 | 0 | 0 | 0 |
+| boilerplate_only | `nw-settlement-law` Nidwalden - Gesetz ueber Niederlassung und Aufenthalt (NG 122.1), arts. 4 and 5 | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `ow-migration-office` Obwalden - Abteilung Migration | 1 | 7 | 1 | 0 | 0 | 6 |
+| boilerplate_only | `ow-register-ordinance` Obwalden - Einwohnerregisterverordnung (GDB 113.11), arts. 10 and 11 | 1 | 0 | 0 | 0 | 0 | 0 |
+| boilerplate_only | `ow-residence-permit` Obwalden - Residence permit and family reunification | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `sg-newcomer-permit` St. Gallen - Residence permit, newcomer platform | 1 | 22 | 3 | 0 | 0 | 19 |
+| partly_covered | `sg-permits-eu-efta` St. Gallen - Permits for EU/EFTA nationals, change of canton | 1 | 17 | 2 | 0 | 0 | 15 |
+| cited | `sg-residence-law` St. Gallen - Gesetz ueber Niederlassung und Aufenthalt (sGS 453.1), arts. 3 and 6 | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `sh-change-of-canton` Schaffhausen - Change of canton for third-country nationals | 1 | 4 | 1 | 0 | 0 | 3 |
+| boilerplate_only | `sh-register-law` Schaffhausen - Gemeindegesetz (SHR 120.100), art. 89 | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `sh-registration-eu-efta` Schaffhausen - Employed EU/EFTA nationals, the two steps and the deadline | 1 | 4 | 1 | 0 | 0 | 3 |
+| partly_covered | `so-change-of-canton` Solothurn - Change of canton | 1 | 3 | 1 | 0 | 0 | 2 |
+| boilerplate_only | `so-commune-law` Solothurn - Gemeindegesetz (BGS 131.1), para 3 | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `so-entry-registration` Solothurn - Entry, with the An-/Abmeldung duty and the deadline | 1 | 7 | 1 | 0 | 0 | 6 |
+| partly_covered | `sz-eu-efta` Schwyz - EU/EFTA nationals: the two-tier deadline | 1 | 8 | 2 | 0 | 0 | 6 |
+| cited | `sz-reporting-law` Schwyz - Gesetz ueber das Einwohnermeldewesen (SRSZ 111.110), para 10 | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `sz-third-country` Schwyz - Third-country nationals | 1 | 7 | 2 | 0 | 0 | 5 |
+| no_documents | `tg-change-of-canton` Thurgau - Change of canton | 0 | 0 | 0 | 0 | 0 | 0 |
+| boilerplate_only | `tg-register-law` Thurgau - Einwohnerregistergesetz (RB 142.15), para 7 | 1 | 0 | 0 | 0 | 0 | 0 |
+| no_documents | `tg-registration-employment` Thurgau - Entry with employment: registration and permit application in one act | 0 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `ti-migration-office` Ticino - Ufficio della migrazione | 1 | 14 | 1 | 0 | 0 | 13 |
+| boilerplate_only | `ti-registration-regulation` Ticino - Regolamento sul controllo degli abitanti (RL 144.110), arts. 12, 13 and 20 | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `ur-migration` Uri - Migration: permits for EU/EFTA and third-country nationals | 1 | 19 | 3 | 0 | 0 | 16 |
+| boilerplate_only | `ur-register-law` Uri - Kantonales Registerharmonisierungsgesetz (RB 1.4201), arts. 19 and 21 | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `vd-arrival-other-canton` Vaud - Arriving from another canton, EU/EFTA | 1 | 8 | 4 | 0 | 0 | 4 |
+| cited | `vd-change-of-address` Vaud - Announcing arrival to the commune within 8 days | 1 | 4 | 4 | 0 | 0 | 0 |
+| partly_covered | `vd-population-office` Vaud - Service de la population (SPOP) | 1 | 13 | 2 | 0 | 0 | 11 |
+| partly_covered | `vd-registration-service` Vaud - The registration transaction and its documents | 1 | 7 | 2 | 0 | 0 | 5 |
+| cited | `vs-change-of-canton` Valais - Change of canton | 1 | 2 | 2 | 0 | 0 | 0 |
+| partly_covered | `vs-residence-permit` Valais - Residence permit, 14 days from arrival | 1 | 4 | 1 | 0 | 0 | 3 |
+| boilerplate_only | `vs-residents-law` Valais - Loi sur le controle de l'habitant (RS/VS 176.1), art. 7 | 1 | 0 | 0 | 0 | 0 | 0 |
+| cited | `vs-residents-office` Valais - Contact the commune, not the canton | 1 | 1 | 1 | 0 | 0 | 0 |
+| cited | `zg-commune-law` Zug - Gemeindegesetz (BGS 171.1), para 57a | 1 | 1 | 1 | 0 | 0 | 0 |
+| nothing | `zg-entry-eu-efta` Zug - Entry for EU/EFTA nationals, registration forms | 1 | 5 | 0 | 0 | 0 | 5 |
+| cited | `zg-moving-leaflet` Zug - Merkblatt Umzug/Zuzug | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `zh-awa-anmeldung-rav` Zurich: signing on with the RAV and choosing an unemployment fund | 1 | 64 | 5 | 59 | 1 | 0 |
 | cited | `zh-awa-beratung-vermittlung` Zurich: counselling and placement for jobseekers | 1 | 22 | 5 | 17 | 2 | 0 |
 | cited | `zh-awa-insolvenzentschaedigung` Zurich: insolvency compensation when the employer fails | 1 | 13 | 9 | 4 | 1 | 0 |
@@ -1480,7 +2015,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | partly_covered | `zh-biometric-documents` Zurich - Biometric residence documents | 2 | 18 | 7 | 0 | 3 | 11 |
 | partly_covered | `zh-dogs` Zurich - keeping a dog (cantonal rules) | 1 | 32 | 9 | 0 | 1 | 23 |
 | partly_covered | `zh-eu-efta` Zurich - Residence for EU/EFTA nationals | 2 | 18 | 11 | 0 | 3 | 7 |
-| partly_covered | `zh-family` Zurich - Family reunification for third-country nationals | 6 | 44 | 28 | 0 | 26 | 16 |
+| partly_covered | `zh-family` Zurich - Family reunification for third-country nationals | 4 | 32 | 19 | 0 | 15 | 13 |
 | cited | `zh-fedlex-kv` Constitution of the Canton of Zurich (KV), SR 131.211 (federally guaranteed cantonal constitution) | 1 | 1 | 1 | 0 | 0 | 0 |
 | partly_covered | `zh-foreign-driving-licence` Zurich - exchanging a foreign driving licence | 1 | 33 | 6 | 0 | 2 | 27 |
 | partly_covered | `zh-gemeindeamt-naturalisation-office` Zurich - Naturalisation Division of the Gemeindeamt: contact and telephone hours | 1 | 4 | 1 | 0 | 0 | 3 |
@@ -1488,7 +2023,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | partly_covered | `zh-migrationsamt-office` Zurich - Migration Office: contact, counter and telephone hours | 1 | 9 | 1 | 0 | 0 | 8 |
 | dispositioned | `zh-naturalisation` Zurich - naturalisation | 1 | 6 | 0 | 6 | 0 | 0 |
 | partly_covered | `zh-no-employment` Zurich - Residence without employment for third-country nationals | 3 | 23 | 8 | 0 | 6 | 15 |
-| partly_covered | `zh-overview` Zurich - Residence overview | 10 | 59 | 40 | 3 | 34 | 16 |
+| partly_covered | `zh-overview` Zurich - Residence overview | 8 | 47 | 31 | 3 | 23 | 13 |
 | partly_covered | `zh-premium-reduction` Zurich - premium reduction for health insurance | 1 | 12 | 3 | 0 | 1 | 9 |
 | partly_covered | `zh-rental-forms` Zurich - forms in tenancy matters (initial rent form) | 1 | 4 | 3 | 0 | 0 | 1 |
 | partly_covered | `zh-settlement` Zurich - settlement permit | 1 | 15 | 6 | 0 | 1 | 9 |
@@ -1512,7 +2047,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | cited | `zurich-city-arrival` City of Zurich - registering an arrival | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `zurich-city-departure` City of Zurich - leaving the city and moving abroad | 1 | 4 | 4 | 0 | 0 | 0 |
 | cited | `zurich-city-dog-control` City of Zurich - dog registration and dog tax | 1 | 3 | 3 | 0 | 0 | 0 |
-| nothing | `zurich-city-emergency` City of Zurich - what to do in a medical emergency | 1 | 1 | 0 | 0 | 0 | 1 |
+| cited | `zurich-city-emergency` City of Zurich - what to do in a medical emergency | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `zurich-city-first-steps` City of Zurich - first steps after moving in | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `zurich-city-marriage` City of Zurich - marriage preparation and documents | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `zurich-city-naturalisation` City of Zurich - naturalisation and city citizenship | 1 | 3 | 3 | 0 | 0 | 0 |

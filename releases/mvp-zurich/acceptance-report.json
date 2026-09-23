@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-acceptance-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-23-v19",
-  "content_sha256": "08032dfd1977ca90009f3cd622535ce878fe8d272e36a4a835746a746893ce80",
-  "suite_sha256": "496adeeaba6c06033ce1eed2b2c847e2792d4f44b7d3bf5f484e958771450ccc",
-  "checked_at": "2026-09-23T10:57:25.670564+00:00",
+  "release_id": "mvp-zurich-2026-09-23-v27",
+  "content_sha256": "d3e5c31a0715bd41647378f829b93fb297eccef16f98bbf1fd59161e6566c94c",
+  "suite_sha256": "13ed4d5998a844474964b60f3c1165013a47d0be2b8a53b41e44b5a60647b3a0",
+  "checked_at": "2026-09-23T18:23:40.746323+00:00",
   "as_of": "2026-09-23",
   "passed": true,
-  "cases": 133,
-  "blocking": 133,
+  "cases": 138,
+  "blocking": 138,
   "failed": [],
   "quarantined": [],
   "quarantined_failed": [],
@@ -142,8 +142,8 @@
           "expect_concept": "third-country-work",
           "hits": [
             "third-country-work",
-            "eu-short-employment",
-            "zh-eu-registration"
+            "cantonal-permit-application",
+            "eu-short-employment"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -2352,8 +2352,8 @@
           "expect_concept": "naturalisation-facilitated-spouse",
           "hits": [
             "naturalisation-facilitated-spouse",
-            "city-zurich-naturalisation",
-            "zh-naturalisation-ordinary"
+            "naturalisation-third-generation",
+            "city-zurich-naturalisation"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -2996,8 +2996,8 @@
           "expect_concept": "city-zurich-dog-registration",
           "hits": [
             "city-zurich-dog-registration",
-            "customs-moving-animals",
-            "zh-dog-keeping"
+            "zh-dog-keeping",
+            "customs-moving-animals"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -3378,8 +3378,7 @@
           "expect_concept": "city-zurich-parking-permits",
           "hits": [
             "city-zurich-parking-permits",
-            "permit-card-third-country",
-            "health-insurance-deadline"
+            "permit-card-third-country"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -4904,8 +4903,8 @@
           "expect_concept": "zh-dog-keeping",
           "hits": [
             "city-zurich-dog-registration",
-            "customs-moving-animals",
-            "zh-dog-keeping"
+            "zh-dog-keeping",
+            "customs-moving-animals"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -5547,9 +5546,9 @@
           "query": "annual quotas for work permits",
           "expect_concept": null,
           "hits": [
+            "cantonal-permit-application",
             "aig-short-stay",
-            "health-insurance-cross-border-commuter",
-            "third-country-work"
+            "health-insurance-cross-border-commuter"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -6219,7 +6218,7 @@
           "hits": [
             "zh-tax-at-source-tariffs",
             "zh-tax-at-source-ordinary-assessment",
-            "zh-tax-at-source-liability"
+            "city-zurich-tax-office-contact"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -6320,7 +6319,7 @@
           "hits": [
             "political-rights-federal",
             "zh-political-rights",
-            "zh-naturalisation-ordinary"
+            "cantonal-change-of-canton"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -6579,8 +6578,8 @@
             "zh-initial-rent-form"
           ],
           "retrieval_mode": "lexical",
-          "match_strength": "strong",
-          "expect_strength": "strong",
+          "match_strength": "weak",
+          "expect_strength": null,
           "passed": true
         },
         {
@@ -7238,8 +7237,8 @@
           "expect_concept": "moving-goods-customs",
           "hits": [
             "moving-goods-customs",
-            "customs-declaring-goods",
-            "customs-goods-counted-toward-allowance"
+            "customs-goods-counted-toward-allowance",
+            "customs-moving-vehicle"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -8409,7 +8408,7 @@
           "hits": [
             "moving-goods-customs",
             "customs-moving-vehicle",
-            "customs-declaring-goods"
+            "zh-vehicle-registration-move"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -8509,7 +8508,7 @@
           "hits": [
             "customs-importing-pets",
             "city-zurich-dog-registration",
-            "health-insurance-deadline"
+            "zh-dog-keeping"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -9003,9 +9002,9 @@
           "query": "Leistungsumfang Grundversicherung bei allen Versicherern gleich",
           "expect_concept": "health-insurance-benefits",
           "hits": [
-            "zh-health-insurance-exemption",
             "health-insurance-benefits",
-            "health-insurance-enrolment"
+            "health-insurance-enrolment",
+            "health-insurance-deadline"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -10031,7 +10030,7 @@
           "hits": [
             "unemployment-end-of-entitlement",
             "biometric-permit",
-            "marriage-switzerland"
+            "cantonal-permit-application"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -10249,8 +10248,8 @@
           "expect_concept": "job-registration-duty",
           "hits": [
             "job-registration-duty",
-            "unemployment-eu-efta-mobility",
-            "zh-unemployment-registration"
+            "cantonal-registration-route",
+            "cantonal-permit-application"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -10926,8 +10925,8 @@
           "query": "AHV EU EFTA Koordination Versicherungsunterstellung",
           "expect_concept": "ahv-international-coordination",
           "hits": [
-            "fza-social-security",
             "ahv-international-coordination",
+            "fza-social-security",
             "ahv-insured-persons"
           ],
           "retrieval_mode": "lexical",
@@ -11153,6 +11152,323 @@
           "bases": {
             "ahv-pension-amount": [],
             "ahv-pension-calculator": []
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "UAT-113",
+      "label": "Vaud: eight days, not fourteen",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "how many days to announce arrival commune Vaud",
+          "expect_concept": "cantonal-registration-deadline",
+          "hits": [
+            "cantonal-registration-deadline",
+            "cantonal-registration-route",
+            "entry-short-stay-rule"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "cantonal-registration-deadline",
+            "cantonal-registration-route"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-VD",
+          "not_recognised": {},
+          "statuses": {
+            "cantonal-registration-deadline": "SUPPORTED",
+            "cantonal-registration-route": "SUPPORTED"
+          },
+          "gaps": {
+            "cantonal-registration-deadline": [
+              "more_specific_jurisdiction_not_published"
+            ],
+            "cantonal-registration-route": [
+              "more_specific_jurisdiction_not_published"
+            ]
+          },
+          "facts": {
+            "cantonal-registration-deadline": [
+              "cantonal-registration-deadline-vd"
+            ],
+            "cantonal-registration-route": [
+              "cantonal-registration-route-vd",
+              "cantonal-registration-route-vd-arrival",
+              "cantonal-registration-route-vd-spop"
+            ]
+          },
+          "bases": {
+            "cantonal-registration-deadline": [
+              "Cantonal authority guidance"
+            ],
+            "cantonal-registration-route": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Vaud gives eight days from arrival, against the fourteen of most cantons",
+          "concept": "cantonal-registration-deadline",
+          "fact_ids": [
+            "cantonal-registration-deadline-vd"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-114",
+      "label": "Ticino: eight days and a double notification",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "arrivo nel Comune entro 8 giorni controllo degli abitanti",
+          "expect_concept": "cantonal-registration-deadline",
+          "hits": [
+            "cantonal-registration-deadline",
+            "cantonal-registration-route"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "cantonal-registration-deadline",
+            "cantonal-registration-route"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-TI",
+          "not_recognised": {},
+          "statuses": {
+            "cantonal-registration-deadline": "SUPPORTED",
+            "cantonal-registration-route": "SUPPORTED"
+          },
+          "gaps": {
+            "cantonal-registration-deadline": [
+              "more_specific_jurisdiction_not_published"
+            ],
+            "cantonal-registration-route": [
+              "more_specific_jurisdiction_not_published"
+            ]
+          },
+          "facts": {
+            "cantonal-registration-deadline": [
+              "cantonal-registration-deadline-ti-law"
+            ],
+            "cantonal-registration-route": [
+              "cantonal-registration-route-ti-law"
+            ]
+          },
+          "bases": {
+            "cantonal-registration-deadline": [
+              "Cantonal ordinance: RL 144.110"
+            ],
+            "cantonal-registration-route": [
+              "Cantonal ordinance: RL 144.110"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Ticino gives eight days and requires a double notification",
+          "concept": "cantonal-registration-deadline",
+          "fact_ids": [
+            "cantonal-registration-deadline-ti-law"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-115",
+      "label": "Schwyz: which of two periods applies to an EU national",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Schwyz Einwohneramt vierzehn Tagen Uebersiedelung Erwerbstaetigkeit",
+          "expect_concept": "cantonal-registration-deadline",
+          "hits": [
+            "eu-employment-registration-deadline",
+            "cantonal-registration-deadline",
+            "zh-eu-registration"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "cantonal-registration-deadline"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-SZ",
+          "not_recognised": {},
+          "statuses": {
+            "cantonal-registration-deadline": "SUPPORTED"
+          },
+          "gaps": {
+            "cantonal-registration-deadline": [
+              "more_specific_jurisdiction_not_published"
+            ]
+          },
+          "facts": {
+            "cantonal-registration-deadline": [
+              "cantonal-registration-deadline-sz-law",
+              "cantonal-registration-deadline-sz",
+              "cantonal-registration-deadline-sz-third-country"
+            ]
+          },
+          "bases": {
+            "cantonal-registration-deadline": [
+              "Cantonal act: SRSZ 111.110",
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Schwyz gives fourteen days to someone entering to settle or to work",
+          "concept": "cantonal-registration-deadline",
+          "fact_ids": [
+            "cantonal-registration-deadline-sz"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-116",
+      "label": "Valais: a third-country national must ask before moving canton",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "changement de canton Etat tiers autorisation prealable Valais",
+          "expect_concept": "cantonal-permit-application",
+          "hits": [
+            "cantonal-permit-application",
+            "cantonal-change-of-canton",
+            "health-insurance-billing"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "cantonal-permit-application",
+            "cantonal-change-of-canton"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-VS",
+          "not_recognised": {},
+          "statuses": {
+            "cantonal-permit-application": "SUPPORTED",
+            "cantonal-change-of-canton": "SUPPORTED"
+          },
+          "gaps": {
+            "cantonal-permit-application": [
+              "more_specific_jurisdiction_not_published"
+            ],
+            "cantonal-change-of-canton": [
+              "more_specific_jurisdiction_not_published"
+            ]
+          },
+          "facts": {
+            "cantonal-permit-application": [
+              "cantonal-permit-application-vs",
+              "cantonal-permit-application-vs-form",
+              "cantonal-permit-application-vs-change"
+            ],
+            "cantonal-change-of-canton": [
+              "cantonal-change-of-canton-vs"
+            ]
+          },
+          "bases": {
+            "cantonal-permit-application": [
+              "Cantonal authority guidance"
+            ],
+            "cantonal-change-of-canton": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The authorisation must be sought before the move",
+          "concept": "cantonal-permit-application",
+          "fact_ids": [
+            "cantonal-permit-application-vs-change"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "DECLINE-15",
+      "label": "No online registration channel published for Uri",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "cantonal-online-services"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-UR",
+          "not_recognised": {},
+          "statuses": {
+            "cantonal-online-services": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "cantonal-online-services": [
+              "jurisdiction_not_covered"
+            ]
+          },
+          "facts": {
+            "cantonal-online-services": []
+          },
+          "bases": {
+            "cantonal-online-services": []
           },
           "passed": true
         }
