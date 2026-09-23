@@ -3,8 +3,8 @@
   "pack": "mvp-zurich",
   "root": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\swiss-tip-mvp",
   "run": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich",
-  "started_at": "2026-09-23T10:49:43.648034+00:00",
-  "finished_at": "2026-09-23T10:50:14.897030+00:00",
+  "started_at": "2026-09-23T10:57:23.378523+00:00",
+  "finished_at": "2026-09-23T10:57:30.514170+00:00",
   "options": {
     "download": false,
     "retry_failed": false,
@@ -12,9 +12,9 @@
     "scope": "attributed",
     "thorough": false,
     "update_curation": false,
-    "release_id": "mvp-zurich-2026-09-23-v19",
-    "attested_by": null,
-    "stages": "build..accept"
+    "release_id": null,
+    "attested_by": "Alexander Bobrovsky",
+    "stages": "accept..ready"
   },
   "stages": [
     {
@@ -205,7 +205,7 @@
     },
     {
       "stage": "accept",
-      "started_at": "2026-09-23T10:50:07.537109+00:00",
+      "started_at": "2026-09-23T10:57:23.378534+00:00",
       "status": "ran",
       "release_id": "mvp-zurich-2026-09-23-v19",
       "suite_sha256": "496adeeaba6c06033ce1eed2b2c847e2792d4f44b7d3bf5f484e958771450ccc",
@@ -215,16 +215,16 @@
       "failed": [],
       "quarantined": [],
       "quarantined_failed": [],
-      "seconds": 7.4
+      "seconds": 2.3
     },
     {
       "stage": "ready",
-      "started_at": "2026-09-23T06:56:28.345756+00:00",
+      "started_at": "2026-09-23T10:57:25.680726+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-22-v7",
-      "release_sha256": "d51dbd66a6c1983bb457fe3077a331e8618656ee11d426f6d28549c363aa18a5",
+      "release_id": "mvp-zurich-2026-09-23-v19",
+      "release_sha256": "c667b5ad0ae5ca487426eca700d116f37f541e77725dacac816eae6614d039b4",
       "attested_by": "Alexander Bobrovsky",
-      "attested_at": "2026-09-23T06:56:28.345886+00:00",
+      "attested_at": "2026-09-23T10:57:25.680800+00:00",
       "gates": {
         "G1": "passed",
         "G2": "passed",
@@ -234,12 +234,12 @@
         "G6": "passed"
       },
       "cases": {
-        "total": 98,
-        "blocking": 98,
+        "total": 133,
+        "blocking": 133,
         "quarantined": []
       },
-      "stale_from": "2026-11-21",
-      "seconds": 49.6
+      "stale_from": "2026-11-22",
+      "seconds": 4.8
     }
   ],
   "exit_code": 0,
