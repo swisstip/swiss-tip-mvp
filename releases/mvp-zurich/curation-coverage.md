@@ -1,18 +1,14 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-23-v16` (content `0b376f6a5973`), policy `report`, not clean, 198 disposition(s), generated 2026-09-23T09:58:20.
+Release `mvp-zurich-2026-09-23-v19` (content `08032dfd1977`), policy `report`, not clean, 216 disposition(s), generated 2026-09-23T10:50:03.
 
-444 candidate records ({'section': 425, 'document': 17, 'rolled_up': 2}) with 2829 units a curator answers for: 714 cited, 1190 dispositioned, **925 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 39, 'partly_cited': 107, 'cited': 64, 'empty': 23, 'cited_and_dispositioned': 60, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
+444 candidate records ({'section': 425, 'document': 17, 'rolled_up': 2}) with 2829 units a curator answers for: 723 cited, 1251 dispositioned, **855 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 35, 'partly_cited': 98, 'cited_and_dispositioned': 73, 'cited': 64, 'empty': 23, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 
 ## Documents
 
 | Status | Document | Unit | Units | Cited | Dispositioned | Boilerplate | Unclassified | Sources |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
 | unclassified | [Einreise](http://www.sem.admin.ch/sem/de/home/themen/einreise.html) `doc-bdd6d7641abbeb965bc6` | section | 4 | 0 | 0 | 0 | 4 | ch-sem-entry |
-| unclassified | [AHV-Konto: Individuelles Konto](https://svazurich.ch/unsere-produkte/ahv/beitraege/ahv-konto.html) `doc-fc1639f7f1a1a8970db4` | section | 8 | 0 | 0 | 1 | 7 | zh-sva-ahv-konto |
-| unclassified | [AHV-Beitragspflicht: Arbeitgeber](https://svazurich.ch/unsere-produkte/ahv/beitraege/beitragspflicht.html) `doc-83832fea8301efd1719c` | section | 16 | 0 | 0 | 1 | 15 | zh-sva-beitragspflicht |
-| unclassified | [Internationales: Arbeitnehmende im Ausland](https://svazurich.ch/unsere-produkte/ahv/beitraege/internationales.html) `doc-e175c611718f9609a0b9` | section | 8 | 0 | 0 | 1 | 7 | zh-sva-ahv-internationales |
-| unclassified | [Altersrente: Sinn und Zweck](https://svazurich.ch/unsere-produkte/ahv/leistungen/altersrente.html) `doc-6d655671e0529ee14212` | section | 7 | 0 | 0 | 1 | 6 | zh-sva-altersrente |
 | unclassified | [BSV: types and rates of family allowances per canton, 2026 (PDF)](https://www.bsv.admin.ch/dam/de/sd-web/acU7RgJgeisY/Arten%20und%20Ans%C3%A4tze%20der%20Familienzulagen_2026.pdf) `doc-3f3d4751491356fbdf8a` | section | 1 | 0 | 0 | 0 | 1 |  |
 | unclassified | [Alters- und Hinterlassenenversicherung (AHV) - Übersicht](https://www.bsv.admin.ch/de/ahv-uebersicht) `doc-08accda64b5e8e778ea6` | section | 7 | 0 | 0 | 0 | 7 | ch-bsv-ahv |
 | unclassified | [Gesuch um ordentliche oder erleichterte Einbürgerung in der Schweiz](https://www.ch.ch/de/auslander-in-der-schweiz/einburgerung/) `doc-5115531c627ecfe1109e` | section | 5 | 0 | 0 | 0 | 5 | ch-chch-naturalisation |
@@ -50,15 +46,6 @@ Release `mvp-zurich-2026-09-23-v16` (content `0b376f6a5973`), policy `report`, n
 | partly_cited | [Welche Beiträge kann ich in die Säule 3a einzahlen? / BSV](https://faq.bsv.admin.ch/de/3-saeule/welche-beitraege-kann-ich-die-saeule-3a-einzahlen) `doc-cb064208c75c37b62929` | section | 3 | 1 | 0 | 0 | 2 |  |
 | partly_cited | [Wer kann eine Säule 3a (gebundene Selbstvorsorge) einrichten? / BSV](https://faq.bsv.admin.ch/de/3-saeule/wer-kann-eine-saeule-3a-gebundene-selbstvorsorge-einrichten) `doc-ed67ab05b41d46594ed8` | section | 3 | 1 | 0 | 0 | 2 | ch-bsv-pillar-3a |
 | partly_cited | [Kann ich mein BVG-Altersguthaben bar beziehen, wenn ich die Schweiz endgültig verlasse? / BSV](https://faq.bsv.admin.ch/de/berufliche-vorsorge-und-3-saeule/kann-ich-mein-bvg-altersguthaben-bar-beziehen-wenn-ich-die-schweiz) `doc-07709682168602d2fb3f` | section | 3 | 1 | 0 | 0 | 2 | ch-bsv-bvg-departure |
-| partly_cited | [Kontakt](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt.html) `doc-ec81df68e0c715a60928` | section | 7 | 3 | 0 | 1 | 3 | zh-sva-contact |
-| partly_cited | [Beratung vor Ort](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/beratung-vor-ort.html) `doc-e0dd90106b3c8eff3235` | section | 7 | 3 | 0 | 1 | 3 |  |
-| partly_cited | [Telefon](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/telefon.html) `doc-e47f41de157a031ee350` | section | 5 | 2 | 0 | 1 | 2 |  |
-| partly_cited | [Krankenversicherungspflicht: Anmeldung](https://svazurich.ch/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/krankenversicherungspflicht0/krankenversicherungspflicht-anmeldung.html) `doc-42e6fd401649e8cf7deb` | section | 5 | 2 | 0 | 1 | 2 |  |
-| partly_cited | [Krankenversicherungspflicht: Wer kann sich befreien lassen?](https://svazurich.ch/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/krankenversicherungspflicht0/krankenversicherungspflicht-wer-hat-anspruch.html) `doc-6ea083d5d353d3a54bc0` | section | 9 | 4 | 0 | 1 | 4 | zh-sva-health-insurance |
-| partly_cited | [Prämienverbilligung: Wer hat Anspruch?](https://svazurich.ch/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/praemienverbilligung/wer-hat-anspruch-.html) `doc-ee6f2bede39a79b1f3af` | section | 6 | 1 | 0 | 1 | 4 |  |
-| partly_cited | [Familienzulagen: Angestellte](https://svazurich.ch/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/angestellte.html) `doc-711c3b23431a89847e6a` | section | 8 | 2 | 0 | 1 | 5 |  |
-| partly_cited | [Familienzulagen: Nichterwerbstätige](https://svazurich.ch/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/nichterwerbstaetige.html) `doc-95f7b9e0abaf0fee231e` | section | 7 | 2 | 0 | 1 | 4 |  |
-| partly_cited | [Familienzulagen: Sinn und Zweck](https://svazurich.ch/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/sinn-und-zweck.html) `doc-9dcc42de170c42587893` | section | 10 | 1 | 0 | 1 | 8 | zh-sva-family-allowances |
 | partly_cited | [EO bei Adoption](https://www.bsv.admin.ch/de/eo-bei-adoption) `doc-3ea9b1655f1a9db36e5e` | section | 7 | 2 | 0 | 0 | 5 |  |
 | partly_cited | [EO bei Mutterschaft](https://www.bsv.admin.ch/de/eo-bei-mutterschaft) `doc-bc31bd2012fbdd654c09` | section | 9 | 4 | 0 | 0 | 5 |  |
 | partly_cited | [EO bei Vaterschaft](https://www.bsv.admin.ch/de/eo-bei-vaterschaft) `doc-859ecc73c600eb5a82a2` | section | 8 | 3 | 0 | 0 | 5 |  |
@@ -177,6 +164,19 @@ Release `mvp-zurich-2026-09-23-v16` (content `0b376f6a5973`), policy `report`, n
 | empty | [Health insurance (KV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Health-insurance-KV) `doc-74b7e2a1f977c532fab5` | section | 0 | 0 | 0 | 0 | 0 |  |
 | empty | [Occupational benefit plan (BV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Occupational-benefit-plan-BV) `doc-d9b7566e9cd37efb9554` | section | 0 | 0 | 0 | 0 | 0 |  |
 | empty | [Unemployment insurance (ALV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Unemployment-insurance-ALV) `doc-3b48de1a3bb4b9655717` | section | 0 | 0 | 0 | 0 | 0 |  |
+| cited_and_dispositioned | [Kontakt](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt.html) `doc-ec81df68e0c715a60928` | section | 7 | 3 | 3 | 1 | 0 | zh-sva-contact |
+| cited_and_dispositioned | [Beratung vor Ort](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/beratung-vor-ort.html) `doc-e0dd90106b3c8eff3235` | section | 7 | 3 | 3 | 1 | 0 |  |
+| cited_and_dispositioned | [Telefon](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/telefon.html) `doc-e47f41de157a031ee350` | section | 5 | 2 | 2 | 1 | 0 |  |
+| cited_and_dispositioned | [AHV-Konto: Individuelles Konto](https://svazurich.ch/unsere-produkte/ahv/beitraege/ahv-konto.html) `doc-fc1639f7f1a1a8970db4` | section | 8 | 5 | 2 | 1 | 0 | zh-sva-ahv-konto |
+| cited_and_dispositioned | [AHV-Beitragspflicht: Arbeitgeber](https://svazurich.ch/unsere-produkte/ahv/beitraege/beitragspflicht.html) `doc-83832fea8301efd1719c` | section | 16 | 1 | 14 | 1 | 0 | zh-sva-beitragspflicht |
+| cited_and_dispositioned | [Internationales: Arbeitnehmende im Ausland](https://svazurich.ch/unsere-produkte/ahv/beitraege/internationales.html) `doc-e175c611718f9609a0b9` | section | 8 | 2 | 5 | 1 | 0 | zh-sva-ahv-internationales |
+| cited_and_dispositioned | [Altersrente: Sinn und Zweck](https://svazurich.ch/unsere-produkte/ahv/leistungen/altersrente.html) `doc-6d655671e0529ee14212` | section | 7 | 1 | 5 | 1 | 0 | zh-sva-altersrente |
+| cited_and_dispositioned | [Krankenversicherungspflicht: Anmeldung](https://svazurich.ch/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/krankenversicherungspflicht0/krankenversicherungspflicht-anmeldung.html) `doc-42e6fd401649e8cf7deb` | section | 5 | 2 | 2 | 1 | 0 |  |
+| cited_and_dispositioned | [Krankenversicherungspflicht: Wer kann sich befreien lassen?](https://svazurich.ch/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/krankenversicherungspflicht0/krankenversicherungspflicht-wer-hat-anspruch.html) `doc-6ea083d5d353d3a54bc0` | section | 9 | 4 | 4 | 1 | 0 | zh-sva-health-insurance |
+| cited_and_dispositioned | [Prämienverbilligung: Wer hat Anspruch?](https://svazurich.ch/unsere-produkte/weitere-produkte/krankenversicherung--kvg-/praemienverbilligung/wer-hat-anspruch-.html) `doc-ee6f2bede39a79b1f3af` | section | 6 | 1 | 4 | 1 | 0 |  |
+| cited_and_dispositioned | [Familienzulagen: Angestellte](https://svazurich.ch/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/angestellte.html) `doc-711c3b23431a89847e6a` | section | 8 | 2 | 5 | 1 | 0 |  |
+| cited_and_dispositioned | [Familienzulagen: Nichterwerbstätige](https://svazurich.ch/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/nichterwerbstaetige.html) `doc-95f7b9e0abaf0fee231e` | section | 7 | 2 | 4 | 1 | 0 |  |
+| cited_and_dispositioned | [Familienzulagen: Sinn und Zweck](https://svazurich.ch/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/sinn-und-zweck.html) `doc-9dcc42de170c42587893` | section | 10 | 1 | 8 | 1 | 0 | zh-sva-family-allowances |
 | cited_and_dispositioned | [Anmeldung und Registrierung / arbeit.swiss](https://www.arbeit.swiss/de/anmeldung-und-registrierung) `doc-8de36911a6bb5dda59d4` | section | 5 | 2 | 2 | 1 | 0 |  |
 | cited_and_dispositioned | [Kurzarbeitsentschädigung (KAE) / arbeit.swiss](https://www.arbeit.swiss/de/arbeitgebende/kurzarbeitsentschaedigung-kae) `doc-2b61f79eb218ff041f86` | section | 8 | 5 | 2 | 1 | 0 | ch-seco-kurzarbeit |
 | cited_and_dispositioned | [Stellenmeldepflicht / arbeit.swiss](https://www.arbeit.swiss/de/arbeitgebende/stellenmeldepflichten) `doc-7154ef3247e430ac8763` | section | 24 | 4 | 19 | 1 | 0 | ch-seco-stellenmeldepflicht |
@@ -467,76 +467,6 @@ Release `mvp-zurich-2026-09-23-v16` (content `0b376f6a5973`), policy `report`, n
 | `doc-ed67ab05b41d46594ed8` | section-0004 | Wer kann eine Säule 3a (gebundene Selbstvorsorge) einrichten? > Weiterführende Fragen | 9-13 | 202 |
 | `doc-07709682168602d2fb3f` | section-0001 | (no heading) | 1-1 | 17 |
 | `doc-07709682168602d2fb3f` | section-0004 | Kann ich mein BVG-Altersguthaben bar beziehen, wenn ich die Schweiz endgültig verlasse? > Weiterführende Fragen | 9-15 | 342 |
-| `doc-ec81df68e0c715a60928` | section-0103 | Kontakt > Medienstelle | 443-444 | 70 |
-| `doc-ec81df68e0c715a60928` | section-0104 | Kontakt > AHV-Zweigstellen | 445-446 | 55 |
-| `doc-ec81df68e0c715a60928` | section-0105 | Kontakt > Spezielle Öffnungszeiten | 447-449 | 74 |
-| `doc-e0dd90106b3c8eff3235` | section-0099 | Beratung vor Ort | 429-440 | 89 |
-| `doc-e0dd90106b3c8eff3235` | section-0106 | Beratung vor Ort > Weitere Informationen > Unser Unternehmen | 459-462 | 159 |
-| `doc-e0dd90106b3c8eff3235` | section-0107 | Beratung vor Ort > Weitere Informationen > Spezielle Öffnungszeiten | 463-466 | 84 |
-| `doc-e47f41de157a031ee350` | section-0099 | Telefon | 429-437 | 178 |
-| `doc-e47f41de157a031ee350` | section-0102 | Telefon > Schnell zur passenden Antwort | 444-445 | 244 |
-| `doc-fc1639f7f1a1a8970db4` | section-0100 | AHV-Konto | 434-440 | 147 |
-| `doc-fc1639f7f1a1a8970db4` | section-0102 | AHV-Konto > Sinn und Zweck > Grundlage für die Rentenberechnung | 442-444 | 466 |
-| `doc-fc1639f7f1a1a8970db4` | section-0103 | AHV-Konto > Kontoauszug bestellen | 445-453 | 621 |
-| `doc-fc1639f7f1a1a8970db4` | section-0104 | AHV-Konto > Bestellung Kontoauszug | 454-455 | 74 |
-| `doc-fc1639f7f1a1a8970db4` | section-0106 | AHV-Konto > Beitragslücken vermeiden > Bei längerem Ausland­aufenthalt oder Einkommens­weg­fall Ausgleichs­kasse kontaktieren | 457-461 | 829 |
-| `doc-fc1639f7f1a1a8970db4` | section-0108 | AHV-Konto > Weitere Informationen > Beiträge | 464-467 | 160 |
-| `doc-fc1639f7f1a1a8970db4` | section-0109 | AHV-Konto > Weitere Informationen > Beitragslücken verhindern | 468-471 | 156 |
-| `doc-83832fea8301efd1719c` | section-0101 | AHV-Beitragspflicht | 434-447 | 137 |
-| `doc-83832fea8301efd1719c` | section-0103 | AHV-Beitragspflicht > Beiträge bezahlen > Arbeitgebende rechnen beitragspflichtige Löhne ab | 449-450 | 389 |
-| `doc-83832fea8301efd1719c` | section-0104 | AHV-Beitragspflicht > Beiträge bezahlen > Besondere Bestimmungen | 451-461 | 963 |
-| `doc-83832fea8301efd1719c` | section-0105 | AHV-Beitragspflicht > Wer bezahlt welche Beiträge? | 462-468 | 127 |
-| `doc-83832fea8301efd1719c` | section-0106 | AHV-Beitragspflicht > Arbeitgeberbeiträge | 469-470 | 99 |
-| `doc-83832fea8301efd1719c` | section-0107 | AHV-Beitragspflicht > Freibetrag ab Referenzalter | 471-476 | 483 |
-| `doc-83832fea8301efd1719c` | section-0108 | AHV-Beitragspflicht > Massgebender Lohn | 477-478 | 374 |
-| `doc-83832fea8301efd1719c` | section-0109 | AHV-Beitragspflicht > Was gehört zum massgebenden Lohn? | 479-484 | 151 |
-| `doc-83832fea8301efd1719c` | section-0110 | AHV-Beitragspflicht > Lohndeklaration und Abrechnung der Löhne | 485-486 | 507 |
-| `doc-83832fea8301efd1719c` | section-0111 | AHV-Beitragspflicht > Lohndeklaration und Abrechnung der Löhne > Akontozahlungen | 487-488 | 354 |
-| `doc-83832fea8301efd1719c` | section-0112 | AHV-Beitragspflicht > Arbeitgeberkontrolle | 489-490 | 168 |
-| `doc-83832fea8301efd1719c` | section-0113 | AHV-Beitragspflicht > CO2-Abgabe | 491-497 | 587 |
-| `doc-83832fea8301efd1719c` | section-0115 | AHV-Beitragspflicht > Weitere Informationen > AHV-Beiträge abrechnen | 500-503 | 146 |
-| `doc-83832fea8301efd1719c` | section-0116 | AHV-Beitragspflicht > Weitere Informationen > eBill: Beitragsrechnungen online bezahlen | 504-507 | 186 |
-| `doc-83832fea8301efd1719c` | section-0117 | AHV-Beitragspflicht > Weitere Informationen > Familienzulagen beantragen | 508-511 | 158 |
-| `doc-e175c611718f9609a0b9` | section-0100 | Internationales | 434-442 | 155 |
-| `doc-e175c611718f9609a0b9` | section-0101 | Internationales > Entsendung | 443-454 | 745 |
-| `doc-e175c611718f9609a0b9` | section-0103 | Internationales > Weiterführung > Freiwillige Weiterführung der Versicherung | 456-463 | 1205 |
-| `doc-e175c611718f9609a0b9` | section-0105 | Internationales > Mehrfachtätigkeit > Erwerbstätigkeit in mehreren Staaten | 465-472 | 386 |
-| `doc-e175c611718f9609a0b9` | section-0107 | Internationales > Angehörige > Nicht erwerbstätige Angehörige | 474-484 | 1453 |
-| `doc-e175c611718f9609a0b9` | section-0109 | Internationales > Weitere Informationen > Beiträge | 487-490 | 160 |
-| `doc-e175c611718f9609a0b9` | section-0110 | Internationales > Weitere Informationen > AHV-Beiträge abrechnen | 491-494 | 146 |
-| `doc-6d655671e0529ee14212` | section-0100 | Altersrente | 434-441 | 124 |
-| `doc-6d655671e0529ee14212` | section-0101 | Altersrente > AHV-Reform: Ausgleich für höheres Referenzalter | 442-444 | 175 |
-| `doc-6d655671e0529ee14212` | section-0103 | Altersrente > Sinn und Zweck > Kurz erklärt | 446-456 | 1338 |
-| `doc-6d655671e0529ee14212` | section-0105 | Altersrente > Weitere Informationen > AHV-Leistungen | 459-462 | 167 |
-| `doc-6d655671e0529ee14212` | section-0106 | Altersrente > Weitere Informationen > Individuelles Konto | 463-466 | 161 |
-| `doc-6d655671e0529ee14212` | section-0107 | Altersrente > Weitere Informationen > Auszahlungstermine AHV- und IV-Renten | 467-470 | 150 |
-| `doc-42e6fd401649e8cf7deb` | section-0105 | Krankenversicherungspflicht > Weiterführende Informationen > Krankenversicherung (KVG) | 450-453 | 166 |
-| `doc-42e6fd401649e8cf7deb` | section-0106 | Krankenversicherungspflicht > Weiterführende Informationen > Prämienverbilligung | 454-457 | 151 |
-| `doc-6ea083d5d353d3a54bc0` | section-0100 | Krankenversicherungspflicht | 438-441 | 133 |
-| `doc-6ea083d5d353d3a54bc0` | section-0106 | Krankenversicherungspflicht > Wer kann sich von der Versicherungspflicht befreien lassen? | 458-462 | 350 |
-| `doc-6ea083d5d353d3a54bc0` | section-0109 | Krankenversicherungspflicht > Weiterführende Informationen > Krankenversicherung (KVG) | 467-470 | 166 |
-| `doc-6ea083d5d353d3a54bc0` | section-0110 | Krankenversicherungspflicht > Weiterführende Informationen > Prämienverbilligung | 471-474 | 151 |
-| `doc-ee6f2bede39a79b1f3af` | section-0100 | Prämienverbilligung | 438-445 | 93 |
-| `doc-ee6f2bede39a79b1f3af` | section-0101 | Prämienverbilligung > Habe ich Anspruch auf Prämienverbilligung? | 446-448 | 131 |
-| `doc-ee6f2bede39a79b1f3af` | section-0114 | Prämienverbilligung > Weitere Informationen > Weitere Leistungen | 488-491 | 158 |
-| `doc-ee6f2bede39a79b1f3af` | section-0115 | Prämienverbilligung > Weitere Informationen > Häufige Fragen zur Prämienverbilligung | 492-495 | 103 |
-| `doc-711c3b23431a89847e6a` | section-0100 | Familienzulagen | 438-444 | 144 |
-| `doc-711c3b23431a89847e6a` | section-0103 | Familienzulagen > Angestellte > Dauer des Anspruchs | 449-458 | 597 |
-| `doc-711c3b23431a89847e6a` | section-0104 | Familienzulagen > Familienzulagen im Kanton Zürich | 459-460 | 69 |
-| `doc-711c3b23431a89847e6a` | section-0107 | Familienzulagen > Weitere Informationen > Weitere Leistungen | 475-478 | 158 |
-| `doc-711c3b23431a89847e6a` | section-0108 | Familienzulagen > Weitere Informationen > Familienzulagen beantragen | 479-482 | 163 |
-| `doc-95f7b9e0abaf0fee231e` | section-0100 | Familienzulagen | 438-444 | 144 |
-| `doc-95f7b9e0abaf0fee231e` | section-0103 | Familienzulagen > Familienzulagen im Kanton Zürich | 458-459 | 69 |
-| `doc-95f7b9e0abaf0fee231e` | section-0105 | Familienzulagen > Familienzulagen im Kanton Zürich > Meldepflicht | 464-469 | 475 |
-| `doc-95f7b9e0abaf0fee231e` | section-0107 | Familienzulagen > Weitere Informationen > Weitere Leistungen | 472-475 | 158 |
-| `doc-9dcc42de170c42587893` | section-0100 | Familienzulagen | 438-444 | 144 |
-| `doc-9dcc42de170c42587893` | section-0103 | Familienzulagen > Familienzulagen im Kanton Zürich | 459-460 | 69 |
-| `doc-9dcc42de170c42587893` | section-0105 | Familienzulagen > Familienzulagen im Kanton Zürich > Eine Zulage pro Kind | 466-478 | 1167 |
-| `doc-9dcc42de170c42587893` | section-0106 | Familienzulagen > In diesen Fällen sind Familienzulagen auch für Kinder im Ausland möglich | 479-486 | 462 |
-| `doc-9dcc42de170c42587893` | section-0107 | Familienzulagen > In diesen Fällen sind Familienzulagen auch für Kinder im Ausland möglich > Familienzulagenregister | 487-488 | 218 |
-| `doc-9dcc42de170c42587893` | section-0108 | Familienzulagen > In diesen Fällen sind Familienzulagen auch für Kinder im Ausland möglich > Öffentliche Abfrage | 489-491 | 286 |
-| `doc-9dcc42de170c42587893` | section-0110 | Familienzulagen > Weitere Informationen > Weitere Leistungen | 494-497 | 158 |
-| `doc-9dcc42de170c42587893` | section-0111 | Familienzulagen > Weitere Informationen > Familienzulagen beantragen | 498-505 | 321 |
 | `doc-3f3d4751491356fbdf8a` | section-0001 | (no heading) | 1-6 | 2465 |
 | `doc-08accda64b5e8e778ea6` | section-0002 | Alters- und Hinterlassenenversicherung (AHV) - Übersicht | 18-19 | 444 |
 | `doc-08accda64b5e8e778ea6` | section-0003 | Alters- und Hinterlassenenversicherung (AHV) - Übersicht > Leistungen der AHV | 20-22 | 161 |
@@ -1410,7 +1340,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 
 | Status | Source | Documents | Units | Cited | Dispositioned | Boilerplate | Unclassified |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| partly_covered | `(discovered)`  | 103 | 719 | 233 | 174 | 35 | 312 |
+| partly_covered | `(discovered)`  | 103 | 719 | 233 | 194 | 35 | 292 |
 | boilerplate_only | `ch-ahv-iv-13-ahv-rente` The thirteenth AHV pension payment | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-ahv-21` AHV 21: reference age 65 and the transitional rules | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-ahv-allgemeines` AHV: general information and who is insured | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -1564,13 +1494,13 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | partly_covered | `zh-settlement` Zurich - settlement permit | 1 | 15 | 6 | 0 | 1 | 9 |
 | nothing | `zh-steueramt-office` Zurich - Cantonal Tax Office: contact and office hours | 1 | 10 | 0 | 0 | 0 | 10 |
 | nothing | `zh-strassenverkehrsamt-office` Zurich - Road Traffic Office: contact, locations and opening hours | 1 | 11 | 0 | 0 | 1 | 11 |
-| nothing | `zh-sva-ahv-internationales` SVA Zurich: contributions in international situations | 1 | 7 | 0 | 0 | 1 | 7 |
-| nothing | `zh-sva-ahv-konto` SVA Zurich: the individual account and the account statement | 1 | 7 | 0 | 0 | 1 | 7 |
-| nothing | `zh-sva-altersrente` SVA Zurich: claiming the old-age pension | 1 | 6 | 0 | 0 | 1 | 6 |
-| nothing | `zh-sva-beitragspflicht` SVA Zurich: who owes AHV contributions | 1 | 15 | 0 | 0 | 1 | 15 |
-| partly_covered | `zh-sva-contact` SVA Zurich: contact, customer service on site, telephone numbers and holiday opening hours | 1 | 6 | 3 | 0 | 1 | 3 |
-| partly_covered | `zh-sva-family-allowances` Zurich - family allowances (cantonal amounts) | 1 | 9 | 1 | 0 | 1 | 8 |
-| partly_covered | `zh-sva-health-insurance` Zurich - exemption from the health insurance duty and premium reduction (SVA Zurich) | 1 | 8 | 4 | 0 | 1 | 4 |
+| cited | `zh-sva-ahv-internationales` SVA Zurich: contributions in international situations | 1 | 7 | 2 | 5 | 1 | 0 |
+| cited | `zh-sva-ahv-konto` SVA Zurich: the individual account and the account statement | 1 | 7 | 5 | 2 | 1 | 0 |
+| cited | `zh-sva-altersrente` SVA Zurich: claiming the old-age pension | 1 | 6 | 1 | 5 | 1 | 0 |
+| cited | `zh-sva-beitragspflicht` SVA Zurich: who owes AHV contributions | 1 | 15 | 1 | 14 | 1 | 0 |
+| cited | `zh-sva-contact` SVA Zurich: contact, customer service on site, telephone numbers and holiday opening hours | 1 | 6 | 3 | 3 | 1 | 0 |
+| cited | `zh-sva-family-allowances` Zurich - family allowances (cantonal amounts) | 1 | 9 | 1 | 8 | 1 | 0 |
+| cited | `zh-sva-health-insurance` Zurich - exemption from the health insurance duty and premium reduction (SVA Zurich) | 1 | 8 | 4 | 4 | 1 | 0 |
 | nothing | `zh-tax-at-source` Zurich - tax at source | 1 | 6 | 0 | 0 | 0 | 6 |
 | partly_covered | `zh-tax-at-source-directive` Zurich - directive on the taxation at source of employees (ZStB 87.3) | 1 | 17 | 3 | 0 | 0 | 14 |
 | cited | `zh-unemployment` Zurich - unemployment benefit | 1 | 35 | 3 | 32 | 2 | 0 |

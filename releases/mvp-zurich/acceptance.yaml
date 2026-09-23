@@ -6867,3 +6867,380 @@ cases:
       jurisdiction: {canton_code: CH-ZH}
       expect_status: {unemployment-daily-allowance-amount: OUT_OF_COVERAGE, unemployment-calculator: OUT_OF_COVERAGE}
       expect_gap: {unemployment-daily-allowance-amount: concept_not_published, unemployment-calculator: concept_not_published}
+- case_id: UAT-103
+  label: Not working, and asked to pay AHV
+  spec: docs/product/user-acceptance-tests.md#uat-103-not-working-and-asked-to-pay-ahv
+  question: I moved to Zurich with my husband and I don't work. Someone told me I still have to pay
+    AHV. Is that right?
+  expected_answer: Yes in principle. Insurance follows residence and not employment, so a person
+    living in Switzerland is insured even without earnings, and a non-employed person is liable to
+    pay contributions in their own right from 1 January after their 20th birthday until the
+    reference age. The exception is the one that applies here - a married person without earned
+    income owes nothing further once their gainfully employed spouse pays at least twice the minimum
+    contribution. Non-employed persons have to register with the compensation office themselves.
+  trap: Answering that only employees pay, or missing the spouse exception and telling the caller to
+    pay.
+  language: en
+  steps:
+  - search:
+      query: AHV Beitraege Nichterwerbstaetige verheiratet
+      expect_concept: ahv-contribution-duty
+  - resolve:
+      concept_ids: [ahv-contribution-duty, ahv-insured-persons]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {ahv-contribution-duty: SUPPORTED, ahv-insured-persons: SUPPORTED}
+  claims:
+  - claim: A married person without earned income is covered by the spouse's double minimum
+      contribution
+    concept: ahv-contribution-duty
+    fact_id: ahv-contribution-duty-2
+    statement_contains: ['twice the minimum contribution']
+    excerpt_contains: ['Mindestbeitrag']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      spouse_rule: 'spouse|Ehegat|Ehepartner'
+    must_not:
+      only_employees: 'nur Erwerbstaetige zahlen|only employees pay'
+    cites:
+      ahv: 'ahv-iv\.ch|svazurich\.ch'
+    resolved: [ahv-contribution-duty, ahv-insured-persons]
+- case_id: UAT-104
+  label: Going self-employed
+  spec: docs/product/user-acceptance-tests.md#uat-104-going-self-employed
+  question: I am leaving my job to work for myself. What changes for my AHV?
+  expected_answer: A self-employed person settles the contributions directly with the compensation
+    office instead of having them deducted from a wage alongside an employer's share, and has to
+    register with the office themselves. The contributions are based on the income shown in the
+    assessment for direct federal tax. Crucially it is the compensation office, not the person, that
+    decides whether someone counts as self-employed for the AHV, and the test is that they are not
+    employed for the activity and bear the economic risk alone.
+  trap: Treating the change as automatic, or stating a contribution rate the pages do not print.
+  language: en
+  steps:
+  - search:
+      query: AHV Beitraege Selbststaendigerwerbende Ausgleichskasse anmelden
+      expect_concept: ahv-contribution-duty
+  - resolve:
+      concept_ids: [ahv-contribution-duty]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {ahv-contribution-duty: SUPPORTED}
+  claims:
+  - claim: The compensation office decides whether someone counts as self-employed
+    concept: ahv-contribution-duty
+    fact_id: ahv-contribution-duty-5
+    statement_contains: ['compensation office decides']
+    excerpt_contains: ['Ausgleichskasse']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      office_decides: 'Ausgleichskasse|compensation office'
+    must_not:
+      invented_rate: '[0-9]{1,2}[,.][0-9] ?(%|Prozent) AHV'
+    cites:
+      ahv: 'ahv-iv\.ch|svazurich\.ch'
+    resolved: [ahv-contribution-duty]
+- case_id: UAT-105
+  label: Checking the record
+  spec: docs/product/user-acceptance-tests.md#uat-105-checking-the-record
+  question: How do I find out how much I have paid into the AHV over the years?
+  expected_answer: Through the individual AHV account, which the compensation office keeps for every
+    insured person and in which the annual incomes reported by employers are entered; those entries
+    determine the amount of the later pension. An extract is free of charge, and the incomes on it
+    must match the gross salary on the salary certificates. Income from the previous year may appear
+    only from October, so a recent year missing is not necessarily a gap.
+  trap: Confusing the account statement with a forecast of the pension, which the release does not
+    serve.
+  language: en
+  steps:
+  - search:
+      query: AHV-Kontoauszug bestellen individuelles Konto
+      expect_concept: ahv-individual-account
+  - resolve:
+      concept_ids: [ahv-individual-account]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {ahv-individual-account: SUPPORTED}
+  claims:
+  - claim: An extract from the account is free of charge
+    concept: ahv-individual-account
+    fact_id: ahv-individual-account-3
+    statement_contains: ['free of charge']
+    excerpt_contains: ['Kontoauszug']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      account: 'Konto|account'
+    must_not:
+      forecast: 'Rentenvorausberechnung|forecast of your pension'
+    cites:
+      sva: 'svazurich\.ch'
+    resolved: [ahv-individual-account]
+- case_id: UAT-106
+  label: Eight years abroad
+  spec: docs/product/user-acceptance-tests.md#uat-106-eight-years-abroad
+  question: I lived abroad for eight years before moving here. Will that reduce my pension?
+  expected_answer: A full pension requires 44 years of contributions and every missing year can
+    reduce it, and a longer stay abroad is one of the usual causes of a gap. In many cases a gap can
+    still be closed within five years, though the page states no procedure and no entitlement. The
+    answer must point the person at ordering their account statement early - SVA Zurich suggests
+    every three to five years - rather than waiting until retirement, and at contacting the
+    compensation office, which checks whether a registration as a non-employed person is needed.
+  trap: Promising that years abroad count, or computing the reduction.
+  language: en
+  steps:
+  - search:
+      query: Beitragsluecken AHV Ausland fehlende Beitragsjahre
+      expect_concept: ahv-contribution-gaps
+  - resolve:
+      concept_ids: [ahv-contribution-gaps]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {ahv-contribution-gaps: SUPPORTED}
+  claims:
+  - claim: A full pension needs 44 contribution years and a missing year can reduce it
+    concept: ahv-contribution-gaps
+    fact_id: ahv-contribution-gaps-1
+    statement_contains: ['44 years']
+    excerpt_contains: ['44']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      years: '44'
+    must_not:
+      computed_cut: 'Ihre Rente wird um [0-9]+ (Prozent|%) gek(ue|ü)rzt'
+    cites:
+      sva: 'svazurich\.ch'
+    resolved: [ahv-contribution-gaps]
+- case_id: UAT-107
+  label: When can I stop
+  spec: docs/product/user-acceptance-tests.md#uat-107-when-can-i-stop
+  question: I am 63. Can I retire now, and what does it cost me?
+  expected_answer: The pension can be drawn early from the first day of the month after the 63rd
+    year of age is completed, whole or in part, and women born between 1961 and 1969 can still draw
+    at 62 under transitional rules the page does not spell out. Drawing early costs the children's
+    pensions for that period, and how large the reduction is follows actuarial principles - the page
+    prints no rate and the answer must not supply one. Deferral of between one and five years raises
+    the pension instead, and the two can be combined.
+  trap: Giving a reduction percentage, or a single retirement age with no transitional rule.
+  language: en
+  steps:
+  - search:
+      query: AHV Rente vorbeziehen Referenzalter Aufschub
+      expect_concept: ahv-reference-age
+  - resolve:
+      concept_ids: [ahv-reference-age]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {ahv-reference-age: SUPPORTED}
+  claims:
+  - claim: The pension can be drawn early from the month after the 63rd year is completed
+    concept: ahv-reference-age
+    fact_id: ahv-reference-age-4
+    statement_contains: ['63rd year']
+    excerpt_contains: ['vorbeziehen']
+  - claim: The reduction or supplement follows actuarial principles
+    concept: ahv-reference-age
+    fact_id: ahv-reference-age-7
+    statement_contains: ['actuarial']
+    excerpt_contains: ['Grundsätzen']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      early: '63'
+    must_not:
+      invented_rate: 'um [0-9]+([,.][0-9])? ?(Prozent|%) gek(ue|ü)rzt'
+    cites:
+      ahv: 'ahv-iv\.ch'
+    resolved: [ahv-reference-age]
+- case_id: UAT-108
+  label: Turning sixty-five next spring
+  spec: docs/product/user-acceptance-tests.md#uat-108-turning-sixty-five-next-spring
+  question: I reach the reference age next March. Does the pension come automatically?
+  expected_answer: No - the registration is submitted about three to four months before the
+    reference age, because the compensation office first has to obtain the documents and calculate
+    the amount. If the decision then takes longer than two months after the entitlement begins, the
+    person can ask for provisional payments. Separate deadlines apply to early drawing, where a late
+    registration costs a whole year, and to a deferral, which has to be declared within one year
+    after the reference age.
+  trap: Telling the caller to wait for a letter.
+  language: en
+  steps:
+  - search:
+      query: Anmeldung Altersrente wann Ausgleichskasse
+      expect_concept: ahv-claiming-a-pension
+  - resolve:
+      concept_ids: [ahv-claiming-a-pension]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {ahv-claiming-a-pension: SUPPORTED}
+  claims:
+  - claim: The registration goes in three to four months before the reference age
+    concept: ahv-claiming-a-pension
+    fact_id: ahv-claiming-a-pension-1
+    statement_contains: ['three to four months']
+    excerpt_contains: ['Anmeldung']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      register: 'Anmeldung|register|registration'
+    must_not:
+      automatic: 'kommt automatisch|comes automatically'
+    cites:
+      ahv: 'ahv-iv\.ch'
+    resolved: [ahv-claiming-a-pension]
+- case_id: UAT-109
+  label: After a death in the family
+  spec: docs/product/user-acceptance-tests.md#uat-109-after-a-death-in-the-family
+  question: My husband died last month. Is there anything from the AHV for me and our two children?
+  expected_answer: A widow's pension where at the time of widowhood she has children, or has
+    completed her 45th year and was married at least five years, and an orphan's pension for each
+    child, which ends at 18 or on completion of education and at the latest at 25. The answer must
+    not assume a widower has the same conditions - for a widower only the existence of children
+    counts. Where it touches the invalidity insurance or the supplementary benefits it must say the
+    release does not cover them.
+  trap: Explaining supplementary benefits, or giving a widower the widow's conditions.
+  language: en
+  steps:
+  - search:
+      query: Witwenrente Waisenrente Anspruch AHV
+      expect_concept: ahv-survivors-pensions
+  - resolve:
+      concept_ids: [ahv-survivors-pensions]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {ahv-survivors-pensions: SUPPORTED}
+  claims:
+  - claim: A married widow qualifies through children, or age 45 and five years of marriage
+    concept: ahv-survivors-pensions
+    fact_id: ahv-survivors-pensions-2
+    statement_contains: ['45th year']
+    excerpt_contains: ['Witwenrente']
+  - claim: The orphan's pension ends at 18, or on completion of education at the latest at 25
+    concept: ahv-survivors-pensions
+    fact_id: ahv-survivors-pensions-11
+    statement_contains: ['25th birthday']
+    excerpt_contains: ['Waisenrente']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      orphan: 'Waisenrente|orphan'
+    must_not:
+      explains_el: 'Ergaenzungsleistungen beantragen|to claim supplementary benefits'
+    cites:
+      ahv: 'ahv-iv\.ch'
+    resolved: [ahv-survivors-pensions]
+- case_id: UAT-110
+  label: A career in two countries
+  spec: docs/product/user-acceptance-tests.md#uat-110-a-career-in-two-countries
+  question: I worked in Italy for fifteen years and in Switzerland for twenty. Who pays my pension?
+  expected_answer: The release carries the coordination instruments - the agreement on the free
+    movement of persons and the EU regulations, which state apply to which relationship, and what
+    happens on a posting - but it does not state that each state pays its own pension for the periods
+    completed there, because the cited pages do not say so. The honest answer gives what is served
+    and says the apportionment of pensions between the two states is not covered, rather than
+    inventing it.
+  trap: Promising one combined Swiss pension, or asserting the pro-rata rule the release does not
+    carry.
+  language: en
+  steps:
+  - search:
+      query: AHV EU EFTA Koordination Versicherungsunterstellung
+      expect_concept: ahv-international-coordination
+  - resolve:
+      concept_ids: [ahv-international-coordination]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {ahv-international-coordination: SUPPORTED}
+  claims:
+  - claim: The coordination rests on the free movement agreement and the EU regulations
+    concept: ahv-international-coordination
+    fact_id: ahv-international-coordination-1
+    statement_contains: ['883/2004']
+    excerpt_contains: ['Freizügigkeitsabkommen']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      coordination: 'EU|EFTA'
+    must_not:
+      invented_prorata: 'jeder Staat zahlt seine eigene Rente|each state pays its own pension'
+    cites:
+      ahv: 'ahv-iv\.ch|svazurich\.ch'
+    resolved: [ahv-international-coordination]
+- case_id: UAT-111
+  label: How does any of this work
+  spec: docs/product/user-acceptance-tests.md#uat-111-how-does-any-of-this-work
+  question: I have just moved to Switzerland. Can you explain how the pension system works here?
+  expected_answer: The three pillars as the glossary states them - the first, state provision, meant
+    to secure existence; the second, occupational provision, meant to carry on the previous standard
+    of living; the third, private provision, as an individual supplement. The first pillar runs
+    pay-as-you-go and the second is funded. The answer should name the other branches -
+    unemployment, accident, health and the loss-of-earnings scheme - as parts of the same system and
+    stay at the level of the map.
+  trap: Answering only about the AHV, or inventing a pillar structure the pages do not state.
+  language: en
+  steps:
+  - search:
+      query: Drei-Saeulen-System Schweiz Vorsorge Ueberblick
+      expect_concept: swiss-social-insurance-map
+  - resolve:
+      concept_ids: [swiss-social-insurance-map]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {swiss-social-insurance-map: SUPPORTED}
+  claims:
+  - claim: The three pillars and what each is meant to do
+    concept: swiss-social-insurance-map
+    fact_id: swiss-social-insurance-map-1
+    statement_contains: ['three-pillar']
+    excerpt_contains: ['Säule']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      pillars: 'pillar|Säule|Saeule'
+    must_not:
+      invented_pillar: 'vierte Saeule|fourth pillar'
+    cites:
+      ahv: 'ahv-iv\.ch'
+    resolved: [swiss-social-insurance-map]
+- case_id: UAT-112
+  label: Which office in Zurich
+  spec: docs/product/user-acceptance-tests.md#uat-112-which-office-in-zurich
+  question: Who do I contact about my AHV in Zurich, and how do I get my account statement?
+  expected_answer: SVA Zurich is the cantonal compensation office for the Canton of Zurich, and the
+    cantonal office is the contact point for people resident in the canton who belong neither to an
+    association compensation office nor to the federal one. The account statement is ordered from a
+    compensation office free of charge. The release does not publish the office's address or opening
+    hours in this topic, and must not invent them.
+  trap: Inventing an address or a form number, or naming an office for a place outside the canton.
+  language: en
+  steps:
+  - search:
+      query: kantonale Ausgleichskasse Zuerich AHV zustaendig
+      expect_concept: zh-ahv-compensation-office
+  - resolve:
+      concept_ids: [zh-ahv-compensation-office]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {zh-ahv-compensation-office: SUPPORTED}
+  claims:
+  - claim: The cantonal office is the contact point for residents not otherwise affiliated
+    concept: zh-ahv-compensation-office
+    fact_id: zh-ahv-compensation-office-2
+    statement_contains: ['association compensation office']
+    excerpt_contains: ['Verbandsausgleichskasse']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      office: 'Ausgleichskasse|compensation office'
+    must_not:
+      invented_address: 'strasse [0-9]+, 80[0-9]{2}'
+    cites:
+      sources: 'ahv-iv\.ch|svazurich\.ch'
+    resolved: [zh-ahv-compensation-office]
+- case_id: DECLINE-14
+  label: How much AHV pension
+  spec: docs/product/user-acceptance-tests.md#decline-cases
+  question: Wie hoch wird meine AHV-Rente sein, wenn ich mit 65 aufhöre?
+  expected_answer: The release publishes the rules of the AHV and never a pension amount, and
+    benefit amounts and every calculator are named in out_of_scope, so a resolve of a guessed concept
+    ID returns OUT_OF_COVERAGE with concept_not_published.
+  language: de
+  steps:
+  - resolve:
+      concept_ids: [ahv-pension-amount, ahv-pension-calculator]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {ahv-pension-amount: OUT_OF_COVERAGE, ahv-pension-calculator: OUT_OF_COVERAGE}
+      expect_gap: {ahv-pension-amount: concept_not_published, ahv-pension-calculator: concept_not_published}

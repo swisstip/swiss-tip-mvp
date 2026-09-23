@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-curation-coverage-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-23-v16",
-  "content_sha256": "0b376f6a597361185bd2f1f2b5b8d3984db6d0bf922d743031d30b26460d6619",
+  "release_id": "mvp-zurich-2026-09-23-v19",
+  "content_sha256": "08032dfd1977ca90009f3cd622535ce878fe8d272e36a4a835746a746893ce80",
   "text_index_sha256": "fdb96912c955563710f4a6a8d5e65df82193f9c2ab4383f467df73a696518e24",
-  "dispositions_sha256": "04772a0c9c9cd63a9973ec621f8774d21be6b093a2bd27d5f59630db2f08a8ad",
-  "dispositions": 198,
+  "dispositions_sha256": "4a4939b3e0fd4a6bcb57e36d496e8adf31b35b33fc698cf9e56db28a68158ae8",
+  "dispositions": 216,
   "policy": "report",
   "today": "2026-09-23",
-  "generated_at": "2026-09-23T09:58:20.156279+00:00",
+  "generated_at": "2026-09-23T10:50:03.570948+00:00",
   "rules": {
     "reference_kinds": [
       "plugin-document"
@@ -25,9 +25,9 @@
       "rolled_up": 2
     },
     "content_sections": 2829,
-    "cited_sections": 714,
-    "dispositioned_sections": 1190,
-    "unclassified_sections": 925,
+    "cited_sections": 723,
+    "dispositioned_sections": 1251,
+    "unclassified_sections": 855,
     "boilerplate_sections": 160,
     "repeated_texts": 16,
     "repeated_by_citation": {
@@ -36,11 +36,11 @@
       "cited_once": 3
     },
     "documents": {
-      "unclassified": 39,
-      "partly_cited": 107,
+      "unclassified": 35,
+      "partly_cited": 98,
+      "cited_and_dispositioned": 73,
       "cited": 64,
       "empty": 23,
-      "cited_and_dispositioned": 60,
       "dispositioned": 151
     },
     "findings": {
@@ -259,52 +259,14 @@
       "unit": "section",
       "units": 7,
       "cited": 3,
-      "dispositioned": 0,
+      "dispositioned": 3,
       "boilerplate": 1,
-      "unclassified": 3,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0103",
-          "heading_path": [
-            "Kontakt",
-            "Medienstelle"
-          ],
-          "first_block": 443,
-          "last_block": 444,
-          "characters": 70,
-          "section_ids": [
-            "section-0103"
-          ]
-        },
-        {
-          "section_id": "section-0104",
-          "heading_path": [
-            "Kontakt",
-            "AHV-Zweigstellen"
-          ],
-          "first_block": 445,
-          "last_block": 446,
-          "characters": 55,
-          "section_ids": [
-            "section-0104"
-          ]
-        },
-        {
-          "section_id": "section-0105",
-          "heading_path": [
-            "Kontakt",
-            "Spezielle Öffnungszeiten"
-          ],
-          "first_block": 447,
-          "last_block": 449,
-          "characters": 74,
-          "section_ids": [
-            "section-0105"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "navigation": 3
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-e0dd90106b3c8eff3235",
@@ -315,53 +277,14 @@
       "unit": "section",
       "units": 7,
       "cited": 3,
-      "dispositioned": 0,
+      "dispositioned": 3,
       "boilerplate": 1,
-      "unclassified": 3,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0099",
-          "heading_path": [
-            "Beratung vor Ort"
-          ],
-          "first_block": 429,
-          "last_block": 440,
-          "characters": 89,
-          "section_ids": [
-            "section-0099"
-          ]
-        },
-        {
-          "section_id": "section-0106",
-          "heading_path": [
-            "Beratung vor Ort",
-            "Weitere Informationen",
-            "Unser Unternehmen"
-          ],
-          "first_block": 459,
-          "last_block": 462,
-          "characters": 159,
-          "section_ids": [
-            "section-0106"
-          ]
-        },
-        {
-          "section_id": "section-0107",
-          "heading_path": [
-            "Beratung vor Ort",
-            "Weitere Informationen",
-            "Spezielle Öffnungszeiten"
-          ],
-          "first_block": 463,
-          "last_block": 466,
-          "characters": 84,
-          "section_ids": [
-            "section-0107"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "navigation": 3
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-71f912c1a94b986fba26",
@@ -388,38 +311,14 @@
       "unit": "section",
       "units": 5,
       "cited": 2,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 1,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0099",
-          "heading_path": [
-            "Telefon"
-          ],
-          "first_block": 429,
-          "last_block": 437,
-          "characters": 178,
-          "section_ids": [
-            "section-0099"
-          ]
-        },
-        {
-          "section_id": "section-0102",
-          "heading_path": [
-            "Telefon",
-            "Schnell zur passenden Antwort"
-          ],
-          "first_block": 444,
-          "last_block": 445,
-          "characters": 244,
-          "section_ids": [
-            "section-0102"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "navigation": 2
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-fc1639f7f1a1a8970db4",
@@ -431,108 +330,15 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 8,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 5,
+      "dispositioned": 2,
       "boilerplate": 1,
-      "unclassified": 7,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0100",
-          "heading_path": [
-            "AHV-Konto"
-          ],
-          "first_block": 434,
-          "last_block": 440,
-          "characters": 147,
-          "section_ids": [
-            "section-0100"
-          ]
-        },
-        {
-          "section_id": "section-0102",
-          "heading_path": [
-            "AHV-Konto",
-            "Sinn und Zweck",
-            "Grundlage für die Rentenberechnung"
-          ],
-          "first_block": 442,
-          "last_block": 444,
-          "characters": 466,
-          "section_ids": [
-            "section-0102"
-          ]
-        },
-        {
-          "section_id": "section-0103",
-          "heading_path": [
-            "AHV-Konto",
-            "Kontoauszug bestellen"
-          ],
-          "first_block": 445,
-          "last_block": 453,
-          "characters": 621,
-          "section_ids": [
-            "section-0103"
-          ]
-        },
-        {
-          "section_id": "section-0104",
-          "heading_path": [
-            "AHV-Konto",
-            "Bestellung Kontoauszug"
-          ],
-          "first_block": 454,
-          "last_block": 455,
-          "characters": 74,
-          "section_ids": [
-            "section-0104"
-          ]
-        },
-        {
-          "section_id": "section-0106",
-          "heading_path": [
-            "AHV-Konto",
-            "Beitragslücken vermeiden",
-            "Bei längerem Ausland­aufenthalt oder Einkommens­weg­fall Ausgleichs­kasse kontaktieren"
-          ],
-          "first_block": 457,
-          "last_block": 461,
-          "characters": 829,
-          "section_ids": [
-            "section-0106"
-          ]
-        },
-        {
-          "section_id": "section-0108",
-          "heading_path": [
-            "AHV-Konto",
-            "Weitere Informationen",
-            "Beiträge"
-          ],
-          "first_block": 464,
-          "last_block": 467,
-          "characters": 160,
-          "section_ids": [
-            "section-0108"
-          ]
-        },
-        {
-          "section_id": "section-0109",
-          "heading_path": [
-            "AHV-Konto",
-            "Weitere Informationen",
-            "Beitragslücken verhindern"
-          ],
-          "first_block": 468,
-          "last_block": 471,
-          "characters": 156,
-          "section_ids": [
-            "section-0109"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 2
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-83832fea8301efd1719c",
@@ -544,214 +350,17 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 16,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 14,
       "boilerplate": 1,
-      "unclassified": 15,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0101",
-          "heading_path": [
-            "AHV-Beitragspflicht"
-          ],
-          "first_block": 434,
-          "last_block": 447,
-          "characters": 137,
-          "section_ids": [
-            "section-0101"
-          ]
-        },
-        {
-          "section_id": "section-0103",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Beiträge bezahlen",
-            "Arbeitgebende rechnen beitragspflichtige Löhne ab"
-          ],
-          "first_block": 449,
-          "last_block": 450,
-          "characters": 389,
-          "section_ids": [
-            "section-0103"
-          ]
-        },
-        {
-          "section_id": "section-0104",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Beiträge bezahlen",
-            "Besondere Bestimmungen"
-          ],
-          "first_block": 451,
-          "last_block": 461,
-          "characters": 963,
-          "section_ids": [
-            "section-0104"
-          ]
-        },
-        {
-          "section_id": "section-0105",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Wer bezahlt welche Beiträge?"
-          ],
-          "first_block": 462,
-          "last_block": 468,
-          "characters": 127,
-          "section_ids": [
-            "section-0105"
-          ]
-        },
-        {
-          "section_id": "section-0106",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Arbeitgeberbeiträge"
-          ],
-          "first_block": 469,
-          "last_block": 470,
-          "characters": 99,
-          "section_ids": [
-            "section-0106"
-          ]
-        },
-        {
-          "section_id": "section-0107",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Freibetrag ab Referenzalter"
-          ],
-          "first_block": 471,
-          "last_block": 476,
-          "characters": 483,
-          "section_ids": [
-            "section-0107"
-          ]
-        },
-        {
-          "section_id": "section-0108",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Massgebender Lohn"
-          ],
-          "first_block": 477,
-          "last_block": 478,
-          "characters": 374,
-          "section_ids": [
-            "section-0108"
-          ]
-        },
-        {
-          "section_id": "section-0109",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Was gehört zum massgebenden Lohn?"
-          ],
-          "first_block": 479,
-          "last_block": 484,
-          "characters": 151,
-          "section_ids": [
-            "section-0109"
-          ]
-        },
-        {
-          "section_id": "section-0110",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Lohndeklaration und Abrechnung der Löhne"
-          ],
-          "first_block": 485,
-          "last_block": 486,
-          "characters": 507,
-          "section_ids": [
-            "section-0110"
-          ]
-        },
-        {
-          "section_id": "section-0111",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Lohndeklaration und Abrechnung der Löhne",
-            "Akontozahlungen"
-          ],
-          "first_block": 487,
-          "last_block": 488,
-          "characters": 354,
-          "section_ids": [
-            "section-0111"
-          ]
-        },
-        {
-          "section_id": "section-0112",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Arbeitgeberkontrolle"
-          ],
-          "first_block": 489,
-          "last_block": 490,
-          "characters": 168,
-          "section_ids": [
-            "section-0112"
-          ]
-        },
-        {
-          "section_id": "section-0113",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "CO2-Abgabe"
-          ],
-          "first_block": 491,
-          "last_block": 497,
-          "characters": 587,
-          "section_ids": [
-            "section-0113"
-          ]
-        },
-        {
-          "section_id": "section-0115",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Weitere Informationen",
-            "AHV-Beiträge abrechnen"
-          ],
-          "first_block": 500,
-          "last_block": 503,
-          "characters": 146,
-          "section_ids": [
-            "section-0115"
-          ]
-        },
-        {
-          "section_id": "section-0116",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Weitere Informationen",
-            "eBill: Beitragsrechnungen online bezahlen"
-          ],
-          "first_block": 504,
-          "last_block": 507,
-          "characters": 186,
-          "section_ids": [
-            "section-0116"
-          ]
-        },
-        {
-          "section_id": "section-0117",
-          "heading_path": [
-            "AHV-Beitragspflicht",
-            "Weitere Informationen",
-            "Familienzulagen beantragen"
-          ],
-          "first_block": 508,
-          "last_block": 511,
-          "characters": 158,
-          "section_ids": [
-            "section-0117"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "deferred": 10,
+        "duplicate": 1,
+        "navigation": 3
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-e175c611718f9609a0b9",
@@ -763,109 +372,16 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 8,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 2,
+      "dispositioned": 5,
       "boilerplate": 1,
-      "unclassified": 7,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0100",
-          "heading_path": [
-            "Internationales"
-          ],
-          "first_block": 434,
-          "last_block": 442,
-          "characters": 155,
-          "section_ids": [
-            "section-0100"
-          ]
-        },
-        {
-          "section_id": "section-0101",
-          "heading_path": [
-            "Internationales",
-            "Entsendung"
-          ],
-          "first_block": 443,
-          "last_block": 454,
-          "characters": 745,
-          "section_ids": [
-            "section-0101"
-          ]
-        },
-        {
-          "section_id": "section-0103",
-          "heading_path": [
-            "Internationales",
-            "Weiterführung",
-            "Freiwillige Weiterführung der Versicherung"
-          ],
-          "first_block": 456,
-          "last_block": 463,
-          "characters": 1205,
-          "section_ids": [
-            "section-0103"
-          ]
-        },
-        {
-          "section_id": "section-0105",
-          "heading_path": [
-            "Internationales",
-            "Mehrfachtätigkeit",
-            "Erwerbstätigkeit in mehreren Staaten"
-          ],
-          "first_block": 465,
-          "last_block": 472,
-          "characters": 386,
-          "section_ids": [
-            "section-0105"
-          ]
-        },
-        {
-          "section_id": "section-0107",
-          "heading_path": [
-            "Internationales",
-            "Angehörige",
-            "Nicht erwerbstätige Angehörige"
-          ],
-          "first_block": 474,
-          "last_block": 484,
-          "characters": 1453,
-          "section_ids": [
-            "section-0107"
-          ]
-        },
-        {
-          "section_id": "section-0109",
-          "heading_path": [
-            "Internationales",
-            "Weitere Informationen",
-            "Beiträge"
-          ],
-          "first_block": 487,
-          "last_block": 490,
-          "characters": 160,
-          "section_ids": [
-            "section-0109"
-          ]
-        },
-        {
-          "section_id": "section-0110",
-          "heading_path": [
-            "Internationales",
-            "Weitere Informationen",
-            "AHV-Beiträge abrechnen"
-          ],
-          "first_block": 491,
-          "last_block": 494,
-          "characters": 146,
-          "section_ids": [
-            "section-0110"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 3,
+        "navigation": 2
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-6d655671e0529ee14212",
@@ -877,95 +393,17 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 7,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 5,
       "boilerplate": 1,
-      "unclassified": 6,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0100",
-          "heading_path": [
-            "Altersrente"
-          ],
-          "first_block": 434,
-          "last_block": 441,
-          "characters": 124,
-          "section_ids": [
-            "section-0100"
-          ]
-        },
-        {
-          "section_id": "section-0101",
-          "heading_path": [
-            "Altersrente",
-            "AHV-Reform: Ausgleich für höheres Referenzalter"
-          ],
-          "first_block": 442,
-          "last_block": 444,
-          "characters": 175,
-          "section_ids": [
-            "section-0101"
-          ]
-        },
-        {
-          "section_id": "section-0103",
-          "heading_path": [
-            "Altersrente",
-            "Sinn und Zweck",
-            "Kurz erklärt"
-          ],
-          "first_block": 446,
-          "last_block": 456,
-          "characters": 1338,
-          "section_ids": [
-            "section-0103"
-          ]
-        },
-        {
-          "section_id": "section-0105",
-          "heading_path": [
-            "Altersrente",
-            "Weitere Informationen",
-            "AHV-Leistungen"
-          ],
-          "first_block": 459,
-          "last_block": 462,
-          "characters": 167,
-          "section_ids": [
-            "section-0105"
-          ]
-        },
-        {
-          "section_id": "section-0106",
-          "heading_path": [
-            "Altersrente",
-            "Weitere Informationen",
-            "Individuelles Konto"
-          ],
-          "first_block": 463,
-          "last_block": 466,
-          "characters": 161,
-          "section_ids": [
-            "section-0106"
-          ]
-        },
-        {
-          "section_id": "section-0107",
-          "heading_path": [
-            "Altersrente",
-            "Weitere Informationen",
-            "Auszahlungstermine AHV- und IV-Renten"
-          ],
-          "first_block": 467,
-          "last_block": 470,
-          "characters": 150,
-          "section_ids": [
-            "section-0107"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 2,
+        "deferred": 1,
+        "navigation": 2
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-42e6fd401649e8cf7deb",
@@ -976,41 +414,14 @@
       "unit": "section",
       "units": 5,
       "cited": 2,
-      "dispositioned": 0,
+      "dispositioned": 2,
       "boilerplate": 1,
-      "unclassified": 2,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0105",
-          "heading_path": [
-            "Krankenversicherungspflicht",
-            "Weiterführende Informationen",
-            "Krankenversicherung (KVG)"
-          ],
-          "first_block": 450,
-          "last_block": 453,
-          "characters": 166,
-          "section_ids": [
-            "section-0105"
-          ]
-        },
-        {
-          "section_id": "section-0106",
-          "heading_path": [
-            "Krankenversicherungspflicht",
-            "Weiterführende Informationen",
-            "Prämienverbilligung"
-          ],
-          "first_block": 454,
-          "last_block": 457,
-          "characters": 151,
-          "section_ids": [
-            "section-0106"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 2
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-6ea083d5d353d3a54bc0",
@@ -1023,66 +434,14 @@
       "unit": "section",
       "units": 9,
       "cited": 4,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 1,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0100",
-          "heading_path": [
-            "Krankenversicherungspflicht"
-          ],
-          "first_block": 438,
-          "last_block": 441,
-          "characters": 133,
-          "section_ids": [
-            "section-0100"
-          ]
-        },
-        {
-          "section_id": "section-0106",
-          "heading_path": [
-            "Krankenversicherungspflicht",
-            "Wer kann sich von der Versicherungspflicht befreien lassen?"
-          ],
-          "first_block": 458,
-          "last_block": 462,
-          "characters": 350,
-          "section_ids": [
-            "section-0106"
-          ]
-        },
-        {
-          "section_id": "section-0109",
-          "heading_path": [
-            "Krankenversicherungspflicht",
-            "Weiterführende Informationen",
-            "Krankenversicherung (KVG)"
-          ],
-          "first_block": 467,
-          "last_block": 470,
-          "characters": 166,
-          "section_ids": [
-            "section-0109"
-          ]
-        },
-        {
-          "section_id": "section-0110",
-          "heading_path": [
-            "Krankenversicherungspflicht",
-            "Weiterführende Informationen",
-            "Prämienverbilligung"
-          ],
-          "first_block": 471,
-          "last_block": 474,
-          "characters": 151,
-          "section_ids": [
-            "section-0110"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 4
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-ee6f2bede39a79b1f3af",
@@ -1093,66 +452,14 @@
       "unit": "section",
       "units": 6,
       "cited": 1,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 1,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0100",
-          "heading_path": [
-            "Prämienverbilligung"
-          ],
-          "first_block": 438,
-          "last_block": 445,
-          "characters": 93,
-          "section_ids": [
-            "section-0100"
-          ]
-        },
-        {
-          "section_id": "section-0101",
-          "heading_path": [
-            "Prämienverbilligung",
-            "Habe ich Anspruch auf Prämienverbilligung?"
-          ],
-          "first_block": 446,
-          "last_block": 448,
-          "characters": 131,
-          "section_ids": [
-            "section-0101"
-          ]
-        },
-        {
-          "section_id": "section-0114",
-          "heading_path": [
-            "Prämienverbilligung",
-            "Weitere Informationen",
-            "Weitere Leistungen"
-          ],
-          "first_block": 488,
-          "last_block": 491,
-          "characters": 158,
-          "section_ids": [
-            "section-0114"
-          ]
-        },
-        {
-          "section_id": "section-0115",
-          "heading_path": [
-            "Prämienverbilligung",
-            "Weitere Informationen",
-            "Häufige Fragen zur Prämienverbilligung"
-          ],
-          "first_block": 492,
-          "last_block": 495,
-          "characters": 103,
-          "section_ids": [
-            "section-0115"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 4
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-711c3b23431a89847e6a",
@@ -1163,80 +470,14 @@
       "unit": "section",
       "units": 8,
       "cited": 2,
-      "dispositioned": 0,
+      "dispositioned": 5,
       "boilerplate": 1,
-      "unclassified": 5,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0100",
-          "heading_path": [
-            "Familienzulagen"
-          ],
-          "first_block": 438,
-          "last_block": 444,
-          "characters": 144,
-          "section_ids": [
-            "section-0100"
-          ]
-        },
-        {
-          "section_id": "section-0103",
-          "heading_path": [
-            "Familienzulagen",
-            "Angestellte",
-            "Dauer des Anspruchs"
-          ],
-          "first_block": 449,
-          "last_block": 458,
-          "characters": 597,
-          "section_ids": [
-            "section-0103"
-          ]
-        },
-        {
-          "section_id": "section-0104",
-          "heading_path": [
-            "Familienzulagen",
-            "Familienzulagen im Kanton Zürich"
-          ],
-          "first_block": 459,
-          "last_block": 460,
-          "characters": 69,
-          "section_ids": [
-            "section-0104"
-          ]
-        },
-        {
-          "section_id": "section-0107",
-          "heading_path": [
-            "Familienzulagen",
-            "Weitere Informationen",
-            "Weitere Leistungen"
-          ],
-          "first_block": 475,
-          "last_block": 478,
-          "characters": 158,
-          "section_ids": [
-            "section-0107"
-          ]
-        },
-        {
-          "section_id": "section-0108",
-          "heading_path": [
-            "Familienzulagen",
-            "Weitere Informationen",
-            "Familienzulagen beantragen"
-          ],
-          "first_block": 479,
-          "last_block": 482,
-          "characters": 163,
-          "section_ids": [
-            "section-0108"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 5
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-95f7b9e0abaf0fee231e",
@@ -1247,66 +488,14 @@
       "unit": "section",
       "units": 7,
       "cited": 2,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 1,
-      "unclassified": 4,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0100",
-          "heading_path": [
-            "Familienzulagen"
-          ],
-          "first_block": 438,
-          "last_block": 444,
-          "characters": 144,
-          "section_ids": [
-            "section-0100"
-          ]
-        },
-        {
-          "section_id": "section-0103",
-          "heading_path": [
-            "Familienzulagen",
-            "Familienzulagen im Kanton Zürich"
-          ],
-          "first_block": 458,
-          "last_block": 459,
-          "characters": 69,
-          "section_ids": [
-            "section-0103"
-          ]
-        },
-        {
-          "section_id": "section-0105",
-          "heading_path": [
-            "Familienzulagen",
-            "Familienzulagen im Kanton Zürich",
-            "Meldepflicht"
-          ],
-          "first_block": 464,
-          "last_block": 469,
-          "characters": 475,
-          "section_ids": [
-            "section-0105"
-          ]
-        },
-        {
-          "section_id": "section-0107",
-          "heading_path": [
-            "Familienzulagen",
-            "Weitere Informationen",
-            "Weitere Leistungen"
-          ],
-          "first_block": 472,
-          "last_block": 475,
-          "characters": 158,
-          "section_ids": [
-            "section-0107"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 4
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-9dcc42de170c42587893",
@@ -1319,121 +508,14 @@
       "unit": "section",
       "units": 10,
       "cited": 1,
-      "dispositioned": 0,
+      "dispositioned": 8,
       "boilerplate": 1,
-      "unclassified": 8,
-      "dispositions": {},
-      "status": "partly_cited",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0100",
-          "heading_path": [
-            "Familienzulagen"
-          ],
-          "first_block": 438,
-          "last_block": 444,
-          "characters": 144,
-          "section_ids": [
-            "section-0100"
-          ]
-        },
-        {
-          "section_id": "section-0103",
-          "heading_path": [
-            "Familienzulagen",
-            "Familienzulagen im Kanton Zürich"
-          ],
-          "first_block": 459,
-          "last_block": 460,
-          "characters": 69,
-          "section_ids": [
-            "section-0103"
-          ]
-        },
-        {
-          "section_id": "section-0105",
-          "heading_path": [
-            "Familienzulagen",
-            "Familienzulagen im Kanton Zürich",
-            "Eine Zulage pro Kind"
-          ],
-          "first_block": 466,
-          "last_block": 478,
-          "characters": 1167,
-          "section_ids": [
-            "section-0105"
-          ]
-        },
-        {
-          "section_id": "section-0106",
-          "heading_path": [
-            "Familienzulagen",
-            "In diesen Fällen sind Familienzulagen auch für Kinder im Ausland möglich"
-          ],
-          "first_block": 479,
-          "last_block": 486,
-          "characters": 462,
-          "section_ids": [
-            "section-0106"
-          ]
-        },
-        {
-          "section_id": "section-0107",
-          "heading_path": [
-            "Familienzulagen",
-            "In diesen Fällen sind Familienzulagen auch für Kinder im Ausland möglich",
-            "Familienzulagenregister"
-          ],
-          "first_block": 487,
-          "last_block": 488,
-          "characters": 218,
-          "section_ids": [
-            "section-0107"
-          ]
-        },
-        {
-          "section_id": "section-0108",
-          "heading_path": [
-            "Familienzulagen",
-            "In diesen Fällen sind Familienzulagen auch für Kinder im Ausland möglich",
-            "Öffentliche Abfrage"
-          ],
-          "first_block": 489,
-          "last_block": 491,
-          "characters": 286,
-          "section_ids": [
-            "section-0108"
-          ]
-        },
-        {
-          "section_id": "section-0110",
-          "heading_path": [
-            "Familienzulagen",
-            "Weitere Informationen",
-            "Weitere Leistungen"
-          ],
-          "first_block": 494,
-          "last_block": 497,
-          "characters": 158,
-          "section_ids": [
-            "section-0110"
-          ]
-        },
-        {
-          "section_id": "section-0111",
-          "heading_path": [
-            "Familienzulagen",
-            "Weitere Informationen",
-            "Familienzulagen beantragen"
-          ],
-          "first_block": 498,
-          "last_block": 505,
-          "characters": 321,
-          "section_ids": [
-            "section-0111"
-          ]
-        }
-      ]
+      "unclassified": 0,
+      "dispositions": {
+        "duplicate": 8
+      },
+      "status": "cited_and_dispositioned",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-1c84e95cb180bec1d402",
@@ -21556,9 +20638,9 @@
       "documents": 103,
       "units": 719,
       "cited": 233,
-      "dispositioned": 174,
+      "dispositioned": 194,
       "boilerplate": 35,
-      "unclassified": 312,
+      "unclassified": 292,
       "status": "partly_covered"
     },
     {
@@ -23249,44 +22331,44 @@
       "title": "SVA Zurich: contributions in international situations",
       "documents": 1,
       "units": 7,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 2,
+      "dispositioned": 5,
       "boilerplate": 1,
-      "unclassified": 7,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "zh-sva-ahv-konto",
       "title": "SVA Zurich: the individual account and the account statement",
       "documents": 1,
       "units": 7,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 5,
+      "dispositioned": 2,
       "boilerplate": 1,
-      "unclassified": 7,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "zh-sva-altersrente",
       "title": "SVA Zurich: claiming the old-age pension",
       "documents": 1,
       "units": 6,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 5,
       "boilerplate": 1,
-      "unclassified": 6,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "zh-sva-beitragspflicht",
       "title": "SVA Zurich: who owes AHV contributions",
       "documents": 1,
       "units": 15,
-      "cited": 0,
-      "dispositioned": 0,
+      "cited": 1,
+      "dispositioned": 14,
       "boilerplate": 1,
-      "unclassified": 15,
-      "status": "nothing"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "zh-sva-contact",
@@ -23294,10 +22376,10 @@
       "documents": 1,
       "units": 6,
       "cited": 3,
-      "dispositioned": 0,
+      "dispositioned": 3,
       "boilerplate": 1,
-      "unclassified": 3,
-      "status": "partly_covered"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "zh-sva-family-allowances",
@@ -23305,10 +22387,10 @@
       "documents": 1,
       "units": 9,
       "cited": 1,
-      "dispositioned": 0,
+      "dispositioned": 8,
       "boilerplate": 1,
-      "unclassified": 8,
-      "status": "partly_covered"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "zh-sva-health-insurance",
@@ -23316,10 +22398,10 @@
       "documents": 1,
       "units": 8,
       "cited": 4,
-      "dispositioned": 0,
+      "dispositioned": 4,
       "boilerplate": 1,
-      "unclassified": 4,
-      "status": "partly_covered"
+      "unclassified": 0,
+      "status": "cited"
     },
     {
       "source_id": "zh-tax-at-source",

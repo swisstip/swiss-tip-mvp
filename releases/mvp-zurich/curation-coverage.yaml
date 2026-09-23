@@ -2045,3 +2045,174 @@ dispositions:
   section_ids:
   - section-0015
   reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'A pointer to another page of the same site, with no rule of its own.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-83832fea8301efd1719c
+  section_ids:
+  - section-0115
+  - section-0116
+  - section-0117
+- kind: duplicate
+  reason: 'The exempt amount for people working past the reference age, which ahv-contribution-duty carries as a rule without the figure.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-83832fea8301efd1719c
+  section_ids:
+  - section-0107
+- kind: deferred
+  reason: 'The employer''s side of the AHV contributions - how an employer settles the contributory wages, what counts as the relevant wage, the advance payments, the employer audit and the redistribution of the carbon levy. The release serves what a resident owes and how they register, not how a business accounts for its staff.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-83832fea8301efd1719c
+  section_ids:
+  - section-0101
+  - section-0103
+  - section-0104
+  - section-0105
+  - section-0106
+  - section-0108
+  - section-0109
+  - section-0111
+  - section-0112
+  - section-0113
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'A pointer to another page of the same site, with no rule of its own.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-e175c611718f9609a0b9
+  section_ids:
+  - section-0109
+  - section-0110
+- kind: duplicate
+  reason: 'The cantonal page on contributions in international situations, whose rules ahv-international-coordination carries - the posting and the A1 certificate from the federal pages, and the multi-state worker and the accompanying spouse from this page.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-e175c611718f9609a0b9
+  section_ids:
+  - section-0100
+  - section-0101
+  - section-0103
+- kind: navigation
+  reason: 'A pointer to another page of the same site, with no rule of its own.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-6d655671e0529ee14212
+  section_ids:
+  - section-0105
+  - section-0106
+- kind: deferred
+  reason: 'The compensation for the higher reference age under the AHV reform - the transitional supplement for the affected cohorts of women. ahv-reference-age declares it as not served, because the federal pages of this wave do not state its conditions.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-6d655671e0529ee14212
+  section_ids:
+  - section-0101
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The cantonal page on the old-age pension, whose rules ahv-claiming-a-pension and zh-ahv-compensation-office carry.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-6d655671e0529ee14212
+  section_ids:
+  - section-0100
+  - section-0103
+- kind: duplicate
+  reason: 'The cantonal page on the individual account, whose rules ahv-individual-account and ahv-contribution-gaps carry.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-fc1639f7f1a1a8970db4
+  section_ids:
+  - section-0108
+  - section-0109
+- kind: duplicate
+  reason: 'The cantonal office''s pages on family allowances. The pack serves family allowances in its family-benefits topic from the sources that wave read; citing these as well would put the same rules in the release twice under a second publisher.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-9dcc42de170c42587893
+  section_ids:
+  - section-0100
+  - section-0103
+  - section-0105
+  - section-0106
+  - section-0107
+  - section-0108
+  - section-0110
+  - section-0111
+- kind: duplicate
+  reason: 'The cantonal office''s pages on family allowances. The pack serves family allowances in its family-benefits topic from the sources that wave read; citing these as well would put the same rules in the release twice under a second publisher.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-711c3b23431a89847e6a
+  section_ids:
+  - section-0100
+  - section-0103
+  - section-0104
+  - section-0107
+  - section-0108
+- kind: duplicate
+  reason: 'The cantonal office''s pages on family allowances. The pack serves family allowances in its family-benefits topic from the sources that wave read; citing these as well would put the same rules in the release twice under a second publisher.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-95f7b9e0abaf0fee231e
+  section_ids:
+  - section-0100
+  - section-0103
+  - section-0105
+  - section-0107
+- kind: duplicate
+  reason: 'The cantonal office''s page on who may be exempted from the health insurance duty, which zh-health-insurance-exemption serves from the canton''s own decision pages, and which the health-insurance topic covers federally.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-6ea083d5d353d3a54bc0
+  section_ids:
+  - section-0100
+  - section-0106
+  - section-0109
+  - section-0110
+- kind: duplicate
+  reason: 'The cantonal office''s page on registering for health insurance and on the premium reduction, both served by the health-insurance topic and by zh-premium-reduction.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-42e6fd401649e8cf7deb
+  section_ids:
+  - section-0105
+  - section-0106
+- kind: duplicate
+  reason: 'The cantonal office''s page on who is entitled to a premium reduction, which zh-premium-reduction and premium-reduction serve.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-ee6f2bede39a79b1f3af
+  section_ids:
+  - section-0100
+  - section-0101
+  - section-0114
+  - section-0115
+- kind: navigation
+  reason: 'The office''s contact, telephone and walk-in advice pages. The pack serves Zurich office contacts in a topic of its own, and this wave deliberately curated no address, telephone number or opening hours from the AHV pages.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-ec81df68e0c715a60928
+  section_ids:
+  - section-0103
+  - section-0104
+  - section-0105
+- kind: navigation
+  reason: 'The office''s contact, telephone and walk-in advice pages. The pack serves Zurich office contacts in a topic of its own, and this wave deliberately curated no address, telephone number or opening hours from the AHV pages.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-e0dd90106b3c8eff3235
+  section_ids:
+  - section-0099
+  - section-0106
+  - section-0107
+- kind: navigation
+  reason: 'The office''s contact, telephone and walk-in advice pages. The pack serves Zurich office contacts in a topic of its own, and this wave deliberately curated no address, telephone number or opening hours from the AHV pages.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-e47f41de157a031ee350
+  section_ids:
+  - section-0099
+  - section-0102

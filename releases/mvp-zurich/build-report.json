@@ -1,13 +1,13 @@
 {
-  "release_id": "mvp-zurich-2026-09-23-v16",
-  "built_at": "2026-09-23T09:48:42.425758+00:00",
+  "release_id": "mvp-zurich-2026-09-23-v19",
+  "built_at": "2026-09-23T10:39:20.954058+00:00",
   "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich\\text",
-  "concepts": 195,
-  "facts": 1054,
-  "evidence": 1283,
-  "documents": 253,
+  "concepts": 206,
+  "facts": 1144,
+  "evidence": 1375,
+  "documents": 272,
   "citation_outcomes": {
-    "same-snapshot": 1283
+    "same-snapshot": 1375
   },
   "dropped": [],
   "facts_resolved": [
@@ -27064,11 +27064,1997 @@
         }
       ],
       "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-insured-persons-1",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 3192,
+          "end": 3434,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00139",
+            "doc-ced6938984e613987aad:b00140",
+            "doc-ced6938984e613987aad:b00141"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-insured-persons-2",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 3249,
+          "end": 3532,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00141",
+            "doc-ced6938984e613987aad:b00142"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-insured-persons-3",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 3249,
+          "end": 3697,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00141",
+            "doc-ced6938984e613987aad:b00142",
+            "doc-ced6938984e613987aad:b00143"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-insured-persons-4",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 3699,
+          "end": 4664,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00144"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-insured-persons-5",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 3699,
+          "end": 4664,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00144"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-insured-persons-6",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 3699,
+          "end": 4664,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00144"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-insured-persons-7",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 3699,
+          "end": 4664,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00144"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-1",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 4666,
+          "end": 5978,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00145",
+            "doc-ced6938984e613987aad:b00146",
+            "doc-ced6938984e613987aad:b00147"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-2",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 4740,
+          "end": 5978,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00147"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-3",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 4740,
+          "end": 5978,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00147"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-4",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 4740,
+          "end": 5978,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00147"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-5",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 4740,
+          "end": 5978,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00147"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-6",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 4740,
+          "end": 5978,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00147"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-7",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 5980,
+          "end": 6361,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00148",
+            "doc-ced6938984e613987aad:b00149",
+            "doc-ced6938984e613987aad:b00150"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-8",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 6363,
+          "end": 6520,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00151",
+            "doc-ced6938984e613987aad:b00152"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-9",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 7027,
+          "end": 7448,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00165",
+            "doc-ced6938984e613987aad:b00166",
+            "doc-ced6938984e613987aad:b00167"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-10",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 7450,
+          "end": 7668,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00168"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-11",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 7670,
+          "end": 7965,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00169"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-12",
+      "citations": [
+        {
+          "document_id": "doc-ced6938984e613987aad",
+          "outcome": "same-snapshot",
+          "start": 8480,
+          "end": 8818,
+          "block_ids": [
+            "doc-ced6938984e613987aad:b00182",
+            "doc-ced6938984e613987aad:b00183",
+            "doc-ced6938984e613987aad:b00184"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-duty-13",
+      "citations": [
+        {
+          "document_id": "doc-f414bf368c712032285a",
+          "outcome": "same-snapshot",
+          "start": 8273,
+          "end": 8979,
+          "block_ids": [
+            "doc-f414bf368c712032285a:b00157",
+            "doc-f414bf368c712032285a:b00158",
+            "doc-f414bf368c712032285a:b00159",
+            "doc-f414bf368c712032285a:b00160",
+            "doc-f414bf368c712032285a:b00161",
+            "doc-f414bf368c712032285a:b00162",
+            "doc-f414bf368c712032285a:b00163",
+            "doc-f414bf368c712032285a:b00164",
+            "doc-f414bf368c712032285a:b00165",
+            "doc-f414bf368c712032285a:b00166"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-reference-age-1",
+      "citations": [
+        {
+          "document_id": "doc-ce9a6c91579e3c8497d9",
+          "outcome": "same-snapshot",
+          "start": 3200,
+          "end": 3554,
+          "block_ids": [
+            "doc-ce9a6c91579e3c8497d9:b00139",
+            "doc-ce9a6c91579e3c8497d9:b00140",
+            "doc-ce9a6c91579e3c8497d9:b00141"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-reference-age-2",
+      "citations": [
+        {
+          "document_id": "doc-ce9a6c91579e3c8497d9",
+          "outcome": "same-snapshot",
+          "start": 3250,
+          "end": 3730,
+          "block_ids": [
+            "doc-ce9a6c91579e3c8497d9:b00140",
+            "doc-ce9a6c91579e3c8497d9:b00141",
+            "doc-ce9a6c91579e3c8497d9:b00142"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-reference-age-3",
+      "citations": [
+        {
+          "document_id": "doc-ce9a6c91579e3c8497d9",
+          "outcome": "same-snapshot",
+          "start": 3732,
+          "end": 3813,
+          "block_ids": [
+            "doc-ce9a6c91579e3c8497d9:b00143"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-reference-age-4",
+      "citations": [
+        {
+          "document_id": "doc-ce9a6c91579e3c8497d9",
+          "outcome": "same-snapshot",
+          "start": 4236,
+          "end": 4694,
+          "block_ids": [
+            "doc-ce9a6c91579e3c8497d9:b00152",
+            "doc-ce9a6c91579e3c8497d9:b00153",
+            "doc-ce9a6c91579e3c8497d9:b00154"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-reference-age-5",
+      "citations": [
+        {
+          "document_id": "doc-ce9a6c91579e3c8497d9",
+          "outcome": "same-snapshot",
+          "start": 4696,
+          "end": 4912,
+          "block_ids": [
+            "doc-ce9a6c91579e3c8497d9:b00155"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-reference-age-6",
+      "citations": [
+        {
+          "document_id": "doc-ce9a6c91579e3c8497d9",
+          "outcome": "same-snapshot",
+          "start": 4914,
+          "end": 5322,
+          "block_ids": [
+            "doc-ce9a6c91579e3c8497d9:b00156",
+            "doc-ce9a6c91579e3c8497d9:b00157"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-reference-age-7",
+      "citations": [
+        {
+          "document_id": "doc-ce9a6c91579e3c8497d9",
+          "outcome": "same-snapshot",
+          "start": 5108,
+          "end": 5322,
+          "block_ids": [
+            "doc-ce9a6c91579e3c8497d9:b00157"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-reference-age-8",
+      "citations": [
+        {
+          "document_id": "doc-f3a43b8804e75e2f5f32",
+          "outcome": "same-snapshot",
+          "start": 3238,
+          "end": 3509,
+          "block_ids": [
+            "doc-f3a43b8804e75e2f5f32:b00139",
+            "doc-f3a43b8804e75e2f5f32:b00140",
+            "doc-f3a43b8804e75e2f5f32:b00141"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-claiming-a-pension-1",
+      "citations": [
+        {
+          "document_id": "doc-ce9a6c91579e3c8497d9",
+          "outcome": "same-snapshot",
+          "start": 5417,
+          "end": 6538,
+          "block_ids": [
+            "doc-ce9a6c91579e3c8497d9:b00161",
+            "doc-ce9a6c91579e3c8497d9:b00162",
+            "doc-ce9a6c91579e3c8497d9:b00163"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-claiming-a-pension-2",
+      "citations": [
+        {
+          "document_id": "doc-ce9a6c91579e3c8497d9",
+          "outcome": "same-snapshot",
+          "start": 5533,
+          "end": 6538,
+          "block_ids": [
+            "doc-ce9a6c91579e3c8497d9:b00163"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-claiming-a-pension-3",
+      "citations": [
+        {
+          "document_id": "doc-ce9a6c91579e3c8497d9",
+          "outcome": "same-snapshot",
+          "start": 5533,
+          "end": 6538,
+          "block_ids": [
+            "doc-ce9a6c91579e3c8497d9:b00163"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-claiming-a-pension-4",
+      "citations": [
+        {
+          "document_id": "doc-ce9a6c91579e3c8497d9",
+          "outcome": "same-snapshot",
+          "start": 5533,
+          "end": 6538,
+          "block_ids": [
+            "doc-ce9a6c91579e3c8497d9:b00163"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-thirteenth-pension-1",
+      "citations": [
+        {
+          "document_id": "doc-7adfbb6dd2e5e60a711d",
+          "outcome": "same-snapshot",
+          "start": 3187,
+          "end": 3490,
+          "block_ids": [
+            "doc-7adfbb6dd2e5e60a711d:b00138",
+            "doc-7adfbb6dd2e5e60a711d:b00139",
+            "doc-7adfbb6dd2e5e60a711d:b00140"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-thirteenth-pension-2",
+      "citations": [
+        {
+          "document_id": "doc-7adfbb6dd2e5e60a711d",
+          "outcome": "same-snapshot",
+          "start": 3492,
+          "end": 3730,
+          "block_ids": [
+            "doc-7adfbb6dd2e5e60a711d:b00141",
+            "doc-7adfbb6dd2e5e60a711d:b00142"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-thirteenth-pension-3",
+      "citations": [
+        {
+          "document_id": "doc-7adfbb6dd2e5e60a711d",
+          "outcome": "same-snapshot",
+          "start": 3732,
+          "end": 3863,
+          "block_ids": [
+            "doc-7adfbb6dd2e5e60a711d:b00143",
+            "doc-7adfbb6dd2e5e60a711d:b00144"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-thirteenth-pension-4",
+      "citations": [
+        {
+          "document_id": "doc-7adfbb6dd2e5e60a711d",
+          "outcome": "same-snapshot",
+          "start": 3865,
+          "end": 4078,
+          "block_ids": [
+            "doc-7adfbb6dd2e5e60a711d:b00145"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-thirteenth-pension-5",
+      "citations": [
+        {
+          "document_id": "doc-7adfbb6dd2e5e60a711d",
+          "outcome": "same-snapshot",
+          "start": 4080,
+          "end": 4225,
+          "block_ids": [
+            "doc-7adfbb6dd2e5e60a711d:b00146"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-thirteenth-pension-6",
+      "citations": [
+        {
+          "document_id": "doc-7adfbb6dd2e5e60a711d",
+          "outcome": "same-snapshot",
+          "start": 4227,
+          "end": 4379,
+          "block_ids": [
+            "doc-7adfbb6dd2e5e60a711d:b00147"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-thirteenth-pension-7",
+      "citations": [
+        {
+          "document_id": "doc-7adfbb6dd2e5e60a711d",
+          "outcome": "same-snapshot",
+          "start": 4597,
+          "end": 4777,
+          "block_ids": [
+            "doc-7adfbb6dd2e5e60a711d:b00150",
+            "doc-7adfbb6dd2e5e60a711d:b00151",
+            "doc-7adfbb6dd2e5e60a711d:b00152"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "swiss-social-insurance-map-1",
+      "citations": [
+        {
+          "document_id": "doc-31ee33d8007b771265da",
+          "outcome": "same-snapshot",
+          "start": 15018,
+          "end": 15385,
+          "block_ids": [
+            "doc-31ee33d8007b771265da:b00236",
+            "doc-31ee33d8007b771265da:b00237"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "swiss-social-insurance-map-2",
+      "citations": [
+        {
+          "document_id": "doc-393fca1a6614a9916712",
+          "outcome": "same-snapshot",
+          "start": 3233,
+          "end": 3657,
+          "block_ids": [
+            "doc-393fca1a6614a9916712:b00140",
+            "doc-393fca1a6614a9916712:b00141",
+            "doc-393fca1a6614a9916712:b00142",
+            "doc-393fca1a6614a9916712:b00143"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "swiss-social-insurance-map-3",
+      "citations": [
+        {
+          "document_id": "doc-defd5c14c0b7b1a5cf3c",
+          "outcome": "same-snapshot",
+          "start": 3208,
+          "end": 3596,
+          "block_ids": [
+            "doc-defd5c14c0b7b1a5cf3c:b00139"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "swiss-social-insurance-map-4",
+      "citations": [
+        {
+          "document_id": "doc-defd5c14c0b7b1a5cf3c",
+          "outcome": "same-snapshot",
+          "start": 3598,
+          "end": 3972,
+          "block_ids": [
+            "doc-defd5c14c0b7b1a5cf3c:b00140"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "swiss-social-insurance-map-5",
+      "citations": [
+        {
+          "document_id": "doc-31ee33d8007b771265da",
+          "outcome": "same-snapshot",
+          "start": 44458,
+          "end": 44809,
+          "block_ids": [
+            "doc-31ee33d8007b771265da:b00455",
+            "doc-31ee33d8007b771265da:b00456"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-31ee33d8007b771265da",
+          "outcome": "same-snapshot",
+          "start": 33997,
+          "end": 34628,
+          "block_ids": [
+            "doc-31ee33d8007b771265da:b00357",
+            "doc-31ee33d8007b771265da:b00358"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "swiss-social-insurance-map-6",
+      "citations": [
+        {
+          "document_id": "doc-31ee33d8007b771265da",
+          "outcome": "same-snapshot",
+          "start": 19573,
+          "end": 20089,
+          "block_ids": [
+            "doc-31ee33d8007b771265da:b00267",
+            "doc-31ee33d8007b771265da:b00268"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "swiss-social-insurance-map-7",
+      "citations": [
+        {
+          "document_id": "doc-2d5d0458d32c865df92b",
+          "outcome": "same-snapshot",
+          "start": 3220,
+          "end": 3708,
+          "block_ids": [
+            "doc-2d5d0458d32c865df92b:b00139"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "swiss-social-insurance-map-8",
+      "citations": [
+        {
+          "document_id": "doc-fa7cde6b5f6017e5c7fe",
+          "outcome": "same-snapshot",
+          "start": 3206,
+          "end": 3986,
+          "block_ids": [
+            "doc-fa7cde6b5f6017e5c7fe:b00139"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "swiss-social-insurance-map-9",
+      "citations": [
+        {
+          "document_id": "doc-0586681c531b3efb3582",
+          "outcome": "same-snapshot",
+          "start": 3208,
+          "end": 3534,
+          "block_ids": [
+            "doc-0586681c531b3efb3582:b00139"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-individual-account-1",
+      "citations": [
+        {
+          "document_id": "doc-fc1639f7f1a1a8970db4",
+          "outcome": "same-snapshot",
+          "start": 10856,
+          "end": 11254,
+          "block_ids": [
+            "doc-fc1639f7f1a1a8970db4:b00443"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-individual-account-2",
+      "citations": [
+        {
+          "document_id": "doc-fc1639f7f1a1a8970db4",
+          "outcome": "same-snapshot",
+          "start": 10546,
+          "end": 10704,
+          "block_ids": [
+            "doc-fc1639f7f1a1a8970db4:b00434",
+            "doc-fc1639f7f1a1a8970db4:b00435"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-individual-account-3",
+      "citations": [
+        {
+          "document_id": "doc-fc1639f7f1a1a8970db4",
+          "outcome": "same-snapshot",
+          "start": 12017,
+          "end": 12115,
+          "block_ids": [
+            "doc-fc1639f7f1a1a8970db4:b00454",
+            "doc-fc1639f7f1a1a8970db4:b00455"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-individual-account-4",
+      "citations": [
+        {
+          "document_id": "doc-fc1639f7f1a1a8970db4",
+          "outcome": "same-snapshot",
+          "start": 11326,
+          "end": 11919,
+          "block_ids": [
+            "doc-fc1639f7f1a1a8970db4:b00445",
+            "doc-fc1639f7f1a1a8970db4:b00446",
+            "doc-fc1639f7f1a1a8970db4:b00447",
+            "doc-fc1639f7f1a1a8970db4:b00448",
+            "doc-fc1639f7f1a1a8970db4:b00449",
+            "doc-fc1639f7f1a1a8970db4:b00450"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-individual-account-5",
+      "citations": [
+        {
+          "document_id": "doc-83832fea8301efd1719c",
+          "outcome": "same-snapshot",
+          "start": 19182,
+          "end": 19731,
+          "block_ids": [
+            "doc-83832fea8301efd1719c:b00485",
+            "doc-83832fea8301efd1719c:b00486"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-gaps-1",
+      "citations": [
+        {
+          "document_id": "doc-fc1639f7f1a1a8970db4",
+          "outcome": "same-snapshot",
+          "start": 11349,
+          "end": 11738,
+          "block_ids": [
+            "doc-fc1639f7f1a1a8970db4:b00446",
+            "doc-fc1639f7f1a1a8970db4:b00447",
+            "doc-fc1639f7f1a1a8970db4:b00448"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-gaps-2",
+      "citations": [
+        {
+          "document_id": "doc-fc1639f7f1a1a8970db4",
+          "outcome": "same-snapshot",
+          "start": 11349,
+          "end": 11738,
+          "block_ids": [
+            "doc-fc1639f7f1a1a8970db4:b00446",
+            "doc-fc1639f7f1a1a8970db4:b00447",
+            "doc-fc1639f7f1a1a8970db4:b00448"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-gaps-3",
+      "citations": [
+        {
+          "document_id": "doc-fc1639f7f1a1a8970db4",
+          "outcome": "same-snapshot",
+          "start": 11326,
+          "end": 11919,
+          "block_ids": [
+            "doc-fc1639f7f1a1a8970db4:b00445",
+            "doc-fc1639f7f1a1a8970db4:b00446",
+            "doc-fc1639f7f1a1a8970db4:b00447",
+            "doc-fc1639f7f1a1a8970db4:b00448",
+            "doc-fc1639f7f1a1a8970db4:b00449",
+            "doc-fc1639f7f1a1a8970db4:b00450"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-gaps-4",
+      "citations": [
+        {
+          "document_id": "doc-fc1639f7f1a1a8970db4",
+          "outcome": "same-snapshot",
+          "start": 12117,
+          "end": 12862,
+          "block_ids": [
+            "doc-fc1639f7f1a1a8970db4:b00456",
+            "doc-fc1639f7f1a1a8970db4:b00457",
+            "doc-fc1639f7f1a1a8970db4:b00458"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-contribution-gaps-5",
+      "citations": [
+        {
+          "document_id": "doc-fc1639f7f1a1a8970db4",
+          "outcome": "same-snapshot",
+          "start": 12117,
+          "end": 12862,
+          "block_ids": [
+            "doc-fc1639f7f1a1a8970db4:b00456",
+            "doc-fc1639f7f1a1a8970db4:b00457",
+            "doc-fc1639f7f1a1a8970db4:b00458"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-ahv-compensation-office-1",
+      "citations": [
+        {
+          "document_id": "doc-1c84e95cb180bec1d402",
+          "outcome": "same-snapshot",
+          "start": 8045,
+          "end": 8142,
+          "block_ids": [
+            "doc-1c84e95cb180bec1d402:b00215",
+            "doc-1c84e95cb180bec1d402:b00216"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "zh-ahv-compensation-office-2",
+      "citations": [
+        {
+          "document_id": "doc-1c84e95cb180bec1d402",
+          "outcome": "same-snapshot",
+          "start": 3141,
+          "end": 3354,
+          "block_ids": [
+            "doc-1c84e95cb180bec1d402:b00138",
+            "doc-1c84e95cb180bec1d402:b00139"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "zh-ahv-compensation-office-3",
+      "citations": [
+        {
+          "document_id": "doc-6d655671e0529ee14212",
+          "outcome": "same-snapshot",
+          "start": 12875,
+          "end": 13066,
+          "block_ids": [
+            "doc-6d655671e0529ee14212:b00467",
+            "doc-6d655671e0529ee14212:b00468",
+            "doc-6d655671e0529ee14212:b00469"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-1",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 3216,
+          "end": 3546,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00139",
+            "doc-1c2614b0a3452457704a:b00140",
+            "doc-1c2614b0a3452457704a:b00141"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-2",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 3588,
+          "end": 4042,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00143",
+            "doc-1c2614b0a3452457704a:b00144",
+            "doc-1c2614b0a3452457704a:b00145",
+            "doc-1c2614b0a3452457704a:b00146"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-3",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 3690,
+          "end": 4042,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00144",
+            "doc-1c2614b0a3452457704a:b00145",
+            "doc-1c2614b0a3452457704a:b00146"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-4",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 4044,
+          "end": 4439,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00147",
+            "doc-1c2614b0a3452457704a:b00148",
+            "doc-1c2614b0a3452457704a:b00149",
+            "doc-1c2614b0a3452457704a:b00150"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-5",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 4044,
+          "end": 4583,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00147",
+            "doc-1c2614b0a3452457704a:b00148",
+            "doc-1c2614b0a3452457704a:b00149",
+            "doc-1c2614b0a3452457704a:b00150",
+            "doc-1c2614b0a3452457704a:b00151"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-6",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 4585,
+          "end": 5220,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00152",
+            "doc-1c2614b0a3452457704a:b00153",
+            "doc-1c2614b0a3452457704a:b00154"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-7",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 4585,
+          "end": 5220,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00152",
+            "doc-1c2614b0a3452457704a:b00153",
+            "doc-1c2614b0a3452457704a:b00154"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-8",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 5222,
+          "end": 5374,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00155"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-9",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 5376,
+          "end": 5511,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00156"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-10",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 5513,
+          "end": 5884,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00157",
+            "doc-1c2614b0a3452457704a:b00158",
+            "doc-1c2614b0a3452457704a:b00159"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-11",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 5513,
+          "end": 5884,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00157",
+            "doc-1c2614b0a3452457704a:b00158",
+            "doc-1c2614b0a3452457704a:b00159"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-12",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 5886,
+          "end": 6672,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00160",
+            "doc-1c2614b0a3452457704a:b00161",
+            "doc-1c2614b0a3452457704a:b00162"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-survivors-pensions-13",
+      "citations": [
+        {
+          "document_id": "doc-1c2614b0a3452457704a",
+          "outcome": "same-snapshot",
+          "start": 5886,
+          "end": 6672,
+          "block_ids": [
+            "doc-1c2614b0a3452457704a:b00160",
+            "doc-1c2614b0a3452457704a:b00161",
+            "doc-1c2614b0a3452457704a:b00162"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-1",
+      "citations": [
+        {
+          "document_id": "doc-a99f308721a36e692704",
+          "outcome": "same-snapshot",
+          "start": 3161,
+          "end": 3627,
+          "block_ids": [
+            "doc-a99f308721a36e692704:b00139",
+            "doc-a99f308721a36e692704:b00140"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-2",
+      "citations": [
+        {
+          "document_id": "doc-a99f308721a36e692704",
+          "outcome": "same-snapshot",
+          "start": 3629,
+          "end": 5065,
+          "block_ids": [
+            "doc-a99f308721a36e692704:b00141",
+            "doc-a99f308721a36e692704:b00142",
+            "doc-a99f308721a36e692704:b00143",
+            "doc-a99f308721a36e692704:b00144",
+            "doc-a99f308721a36e692704:b00145"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-3",
+      "citations": [
+        {
+          "document_id": "doc-a99f308721a36e692704",
+          "outcome": "same-snapshot",
+          "start": 4225,
+          "end": 4739,
+          "block_ids": [
+            "doc-a99f308721a36e692704:b00143",
+            "doc-a99f308721a36e692704:b00144"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-4",
+      "citations": [
+        {
+          "document_id": "doc-a99f308721a36e692704",
+          "outcome": "same-snapshot",
+          "start": 6396,
+          "end": 7223,
+          "block_ids": [
+            "doc-a99f308721a36e692704:b00165",
+            "doc-a99f308721a36e692704:b00166",
+            "doc-a99f308721a36e692704:b00167",
+            "doc-a99f308721a36e692704:b00168",
+            "doc-a99f308721a36e692704:b00169",
+            "doc-a99f308721a36e692704:b00170"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-5",
+      "citations": [
+        {
+          "document_id": "doc-a99f308721a36e692704",
+          "outcome": "same-snapshot",
+          "start": 7340,
+          "end": 8284,
+          "block_ids": [
+            "doc-a99f308721a36e692704:b00174",
+            "doc-a99f308721a36e692704:b00175",
+            "doc-a99f308721a36e692704:b00176",
+            "doc-a99f308721a36e692704:b00177",
+            "doc-a99f308721a36e692704:b00178",
+            "doc-a99f308721a36e692704:b00179"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-6",
+      "citations": [
+        {
+          "document_id": "doc-a99f308721a36e692704",
+          "outcome": "same-snapshot",
+          "start": 12483,
+          "end": 13009,
+          "block_ids": [
+            "doc-a99f308721a36e692704:b00220",
+            "doc-a99f308721a36e692704:b00221"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-7",
+      "citations": [
+        {
+          "document_id": "doc-a99f308721a36e692704",
+          "outcome": "same-snapshot",
+          "start": 9395,
+          "end": 9815,
+          "block_ids": [
+            "doc-a99f308721a36e692704:b00196"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-a99f308721a36e692704",
+          "outcome": "same-snapshot",
+          "start": 10736,
+          "end": 11641,
+          "block_ids": [
+            "doc-a99f308721a36e692704:b00210",
+            "doc-a99f308721a36e692704:b00211",
+            "doc-a99f308721a36e692704:b00212"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-8",
+      "citations": [
+        {
+          "document_id": "doc-a99f308721a36e692704",
+          "outcome": "same-snapshot",
+          "start": 11643,
+          "end": 12196,
+          "block_ids": [
+            "doc-a99f308721a36e692704:b00213"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-9",
+      "citations": [
+        {
+          "document_id": "doc-a99f308721a36e692704",
+          "outcome": "same-snapshot",
+          "start": 8673,
+          "end": 10338,
+          "block_ids": [
+            "doc-a99f308721a36e692704:b00189",
+            "doc-a99f308721a36e692704:b00190",
+            "doc-a99f308721a36e692704:b00191",
+            "doc-a99f308721a36e692704:b00192",
+            "doc-a99f308721a36e692704:b00193",
+            "doc-a99f308721a36e692704:b00194",
+            "doc-a99f308721a36e692704:b00195",
+            "doc-a99f308721a36e692704:b00196",
+            "doc-a99f308721a36e692704:b00197",
+            "doc-a99f308721a36e692704:b00198",
+            "doc-a99f308721a36e692704:b00199",
+            "doc-a99f308721a36e692704:b00200"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-10",
+      "citations": [
+        {
+          "document_id": "doc-22dfc6af0a6a1341907d",
+          "outcome": "same-snapshot",
+          "start": 3567,
+          "end": 4096,
+          "block_ids": [
+            "doc-22dfc6af0a6a1341907d:b00144",
+            "doc-22dfc6af0a6a1341907d:b00145",
+            "doc-22dfc6af0a6a1341907d:b00146",
+            "doc-22dfc6af0a6a1341907d:b00147",
+            "doc-22dfc6af0a6a1341907d:b00148"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-11",
+      "citations": [
+        {
+          "document_id": "doc-22dfc6af0a6a1341907d",
+          "outcome": "same-snapshot",
+          "start": 3567,
+          "end": 5050,
+          "block_ids": [
+            "doc-22dfc6af0a6a1341907d:b00144",
+            "doc-22dfc6af0a6a1341907d:b00145",
+            "doc-22dfc6af0a6a1341907d:b00146",
+            "doc-22dfc6af0a6a1341907d:b00147",
+            "doc-22dfc6af0a6a1341907d:b00148",
+            "doc-22dfc6af0a6a1341907d:b00149"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-12",
+      "citations": [
+        {
+          "document_id": "doc-22dfc6af0a6a1341907d",
+          "outcome": "same-snapshot",
+          "start": 3567,
+          "end": 5050,
+          "block_ids": [
+            "doc-22dfc6af0a6a1341907d:b00144",
+            "doc-22dfc6af0a6a1341907d:b00145",
+            "doc-22dfc6af0a6a1341907d:b00146",
+            "doc-22dfc6af0a6a1341907d:b00147",
+            "doc-22dfc6af0a6a1341907d:b00148",
+            "doc-22dfc6af0a6a1341907d:b00149"
+          ],
+          "warnings": [],
+          "institution_id": "ch-ahv-iv",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.ahv-iv.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-90",
+      "citations": [
+        {
+          "document_id": "doc-e175c611718f9609a0b9",
+          "outcome": "same-snapshot",
+          "start": 13098,
+          "end": 13388,
+          "block_ids": [
+            "doc-e175c611718f9609a0b9:b00466",
+            "doc-e175c611718f9609a0b9:b00467",
+            "doc-e175c611718f9609a0b9:b00468",
+            "doc-e175c611718f9609a0b9:b00469",
+            "doc-e175c611718f9609a0b9:b00470",
+            "doc-e175c611718f9609a0b9:b00471"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-91",
+      "citations": [
+        {
+          "document_id": "doc-e175c611718f9609a0b9",
+          "outcome": "same-snapshot",
+          "start": 13390,
+          "end": 13496,
+          "block_ids": [
+            "doc-e175c611718f9609a0b9:b00472"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-92",
+      "citations": [
+        {
+          "document_id": "doc-e175c611718f9609a0b9",
+          "outcome": "same-snapshot",
+          "start": 13542,
+          "end": 14032,
+          "block_ids": [
+            "doc-e175c611718f9609a0b9:b00475",
+            "doc-e175c611718f9609a0b9:b00476",
+            "doc-e175c611718f9609a0b9:b00477",
+            "doc-e175c611718f9609a0b9:b00478"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ahv-international-coordination-93",
+      "citations": [
+        {
+          "document_id": "doc-e175c611718f9609a0b9",
+          "outcome": "same-snapshot",
+          "start": 14237,
+          "end": 14671,
+          "block_ids": [
+            "doc-e175c611718f9609a0b9:b00480"
+          ],
+          "warnings": [],
+          "institution_id": "zh-sva",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
     }
   ],
-  "source_terms": 1587,
-  "questions": 446,
+  "source_terms": 1650,
+  "questions": 468,
   "institutions": [
+    {
+      "institution_id": "ch-ahv-iv",
+      "name": "AHV/IV information service",
+      "level": "federal",
+      "jurisdiction": "CH",
+      "documents": 15,
+      "from_catalogue": false
+    },
     {
       "institution_id": "ch-bag",
       "name": "Federal Office of Public Health FOPH",
@@ -27314,7 +29300,7 @@
       "name": "SVA Zürich, the cantonal social insurance office",
       "level": "cantonal",
       "jurisdiction": "CH-ZH",
-      "documents": 10,
+      "documents": 14,
       "from_catalogue": false
     },
     {
@@ -27326,9 +29312,7 @@
       "from_catalogue": false
     }
   ],
-  "institutions_unused": [
-    "ch-ahv-iv"
-  ],
+  "institutions_unused": [],
   "documents_attributed": [
     {
       "document_id": "doc-015229bef7e56c4f0933",
@@ -27341,6 +29325,12 @@
       "source_url": "https://www.arbeit.swiss/de/stellensuchende/registrierung-stellensuchende",
       "institution_id": "ch-seco",
       "institution_rule": "registry rule www.arbeit.swiss"
+    },
+    {
+      "document_id": "doc-0586681c531b3efb3582",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Krankenversicherung-KV",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
     },
     {
       "document_id": "doc-0683c2c38c53009db6b6",
@@ -27463,6 +29453,18 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung"
     },
     {
+      "document_id": "doc-1c2614b0a3452457704a",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Hinterlassenenrenten",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
+      "document_id": "doc-1c84e95cb180bec1d402",
+      "source_url": "https://www.ahv-iv.ch/de/Kontakte/Kantonale-Ausgleichskassen",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
       "document_id": "doc-1cdc22126488f970c3cf",
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/faq.html",
       "institution_id": "ch-sem",
@@ -27503,6 +29505,12 @@
       "source_url": "https://www.arbeit.swiss/de/stellensuchende/aussteuerung",
       "institution_id": "ch-seco",
       "institution_rule": "registry rule www.arbeit.swiss"
+    },
+    {
+      "document_id": "doc-22dfc6af0a6a1341907d",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Internationales/Drittstaaten",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
     },
     {
       "document_id": "doc-232cacbd2e06ec2b2bce",
@@ -27601,6 +29609,12 @@
       "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
+      "document_id": "doc-2d5d0458d32c865df92b",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Arbeitslosenversicherung-ALV",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
       "document_id": "doc-2e14016a13cfb0b80314",
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/heiraten/hochzeitstermin-ohne-schweizer-pass/wohnort-zurich.html",
       "institution_id": "zh-261-zivilstandsamt",
@@ -27611,6 +29625,12 @@
       "source_url": "https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/wo-und-wann-entsorgen/abfuhr-bioabfall.html",
       "institution_id": "zh-261-erz",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung"
+    },
+    {
+      "document_id": "doc-31ee33d8007b771265da",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Glossar",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
     },
     {
       "document_id": "doc-329771e7486249544942",
@@ -27647,6 +29667,12 @@
       "source_url": "https://www.bag.admin.ch/en/health-insurance-premium-subsidies",
       "institution_id": "ch-bag",
       "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
+      "document_id": "doc-393fca1a6614a9916712",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Leistungen",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
     },
     {
       "document_id": "doc-3a2ab21bc9b8328039ad",
@@ -27967,6 +29993,12 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-6d655671e0529ee14212",
+      "source_url": "https://svazurich.ch/unsere-produkte/ahv/leistungen/altersrente.html",
+      "institution_id": "zh-sva",
+      "institution_rule": "registry rule svazurich.ch"
+    },
+    {
       "document_id": "doc-6d9bfbdddd95142b31bb",
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/heiraten/dokumente.html",
       "institution_id": "zh-261-zivilstandsamt",
@@ -28057,6 +30089,12 @@
       "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
+      "document_id": "doc-7adfbb6dd2e5e60a711d",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/13-AHV-Rente",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
       "document_id": "doc-7cda9f16eb96f164c7ce",
       "source_url": "https://www.zh.ch/de/mobilitaet/fuehrerausweis-fahren-lernen/auslaendischer-fuehrerausweis/auslaendischen-fuehrerausweis-umtauschen.html",
       "institution_id": "zh-strassenverkehrsamt",
@@ -28097,6 +30135,12 @@
       "source_url": "https://www.arbeit.swiss/en/jobseekers/signing-on-and-registration",
       "institution_id": "ch-seco",
       "institution_rule": "registry rule www.arbeit.swiss"
+    },
+    {
+      "document_id": "doc-83832fea8301efd1719c",
+      "source_url": "https://svazurich.ch/unsere-produkte/ahv/beitraege/beitragspflicht.html",
+      "institution_id": "zh-sva",
+      "institution_rule": "registry rule svazurich.ch"
     },
     {
       "document_id": "doc-83c102f8041c8d7cb98d",
@@ -28297,6 +30341,12 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-a99f308721a36e692704",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Internationales/EU-EFTA",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
       "document_id": "doc-aac76776dd74c7f8441c",
       "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/759/de",
       "institution_id": "ch-fedlex",
@@ -28483,6 +30533,18 @@
       "institution_rule": "registry rule www.arbeit.swiss"
     },
     {
+      "document_id": "doc-ce9a6c91579e3c8497d9",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Altersrenten",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
+      "document_id": "doc-ced6938984e613987aad",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Beitr%C3%A4ge",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
       "document_id": "doc-cfa52df67bc1a2de79f0",
       "source_url": "https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html",
       "institution_id": "zh-veterinaeramt",
@@ -28621,6 +30683,12 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung"
     },
     {
+      "document_id": "doc-defd5c14c0b7b1a5cf3c",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Berufliche-Vorsorge-BV",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
       "document_id": "doc-dfba14e4bb79adfa6f12",
       "source_url": "https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden/verheiratet.html",
       "institution_id": "ch-sem",
@@ -28643,6 +30711,12 @@
       "source_url": "https://www.sem.admin.ch/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-e175c611718f9609a0b9",
+      "source_url": "https://svazurich.ch/unsere-produkte/ahv/beitraege/internationales.html",
+      "institution_id": "zh-sva",
+      "institution_rule": "registry rule svazurich.ch"
     },
     {
       "document_id": "doc-e30a59b82e3b4a5c109d",
@@ -28795,6 +30869,18 @@
       "institution_rule": "registry rule www.zh.ch/de/sicherheitsdirektion/migrationsamt"
     },
     {
+      "document_id": "doc-f3a43b8804e75e2f5f32",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Stabilisierung-der-AHV-AHV-21",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
+      "document_id": "doc-f414bf368c712032285a",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Allgemeines",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
       "document_id": "doc-f518332d10e4a45bf74d",
       "source_url": "https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden/faq.html",
       "institution_id": "ch-sem",
@@ -28813,6 +30899,12 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-fa7cde6b5f6017e5c7fe",
+      "source_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Unfallversicherung-UV",
+      "institution_id": "ch-ahv-iv",
+      "institution_rule": "registry rule www.ahv-iv.ch"
+    },
+    {
       "document_id": "doc-fae6f7f3a76e1bc84804",
       "source_url": "https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/zueri-sack.html",
       "institution_id": "zh-261-erz",
@@ -28829,6 +30921,12 @@
       "source_url": "https://www.fedlex.admin.ch/eli/cc/2007/758/de",
       "institution_id": "ch-fedlex",
       "institution_rule": "registry rule www.fedlex.admin.ch"
+    },
+    {
+      "document_id": "doc-fc1639f7f1a1a8970db4",
+      "source_url": "https://svazurich.ch/unsere-produkte/ahv/beitraege/ahv-konto.html",
+      "institution_id": "zh-sva",
+      "institution_rule": "registry rule svazurich.ch"
     },
     {
       "document_id": "doc-fcdb3a04d407cd5a1875",
@@ -28850,7 +30948,7 @@
     }
   ],
   "basis_kinds": {
-    "guidance": 782,
+    "guidance": 872,
     "act": 66,
     "ordinance": 35,
     "summary": 50,

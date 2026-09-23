@@ -142,14 +142,17 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             body = root.structuredContent
             size = len(root.content[0].text.encode("utf-8"))
             check(f"root coverage is compact ({size} bytes) and names scope, topics, freshness, review status",
-                  # 18 topics, and a scope statement, an out-of-scope list and limitations of about 1.5 KB each
-                  # since the customs extension of release 2026-09-22-v7: one call still settles scope.
+                  # 20 topics, and a scope statement, an out-of-scope list and limitations of about 1.5 KB each
+                  # since the customs extension of release 2026-09-22-v7: one call still settles scope. The work and
+                  # unemployment wave and the AHV wave of 23 September 2026 each added a topic, which took the root
+                  # page to 7 864 bytes - the two new descriptions were shortened to keep it inside the bound, and
+                  # the next topic will not fit without shortening the older ones.
                   not root.isError and size < 8000 and body["scope_statement"] and body["out_of_scope"]
                   and {t["topic_id"] for t in body["topics"]} == {"residence", "contacts", "offices", "newcomer", "waste",
                                                                   "vehicles-parking", "household-taxes", "social-insurance", "tax-at-source",
                                                                   "driving-licence", "health-insurance", "naturalisation", "entry-visas",
                                                                   "political-rights", "family-benefits", "housing",
-                                                                  "integration", "customs"}
+                                                                  "integration", "customs", "work-unemployment", "ahv-pension"}
                   # The counts line, whichever statuses the release carries (all human-reviewed since 2026-09-14-v1).
                   and any(item.startswith("Review status of the") for item in body["limitations"]))
             check("root lists federal, Zurich and City of Zurich jurisdictions and 26 cantons",

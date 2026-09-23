@@ -3,7 +3,7 @@
 **Last update:** 23 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
-claim. It applies to the committed release `mvp-zurich-2026-09-23-v16` and is
+claim. It applies to the committed release `mvp-zurich-2026-09-23-v19` and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
 [COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
@@ -26,7 +26,7 @@ below is measured on it.
 
 ## Review status: reviewed by one person, not by a lawyer
 
-**All 1,054 facts are `human-reviewed`**, by one named reviewer: the 104 facts
+**All 1,144 facts are `human-reviewed`**, by one named reviewer: the 104 facts
 of the residence topic (78) and of the cantonal migration-office contacts
 (26) on 14 September 2026, the 149 facts of the five topics added on
 15 September 2026, social insurance (25), tax at source (26), driving
@@ -230,6 +230,7 @@ review, which the coverage root no longer carries since release
 | 23 September 2026 | 113 (customs) | hardest first: the 23 that carry a number, then the five single-page concepts, then the rest |
 | 23 September 2026 | 98 (basic health insurance) | hardest first, against a written brief: the 13 that carry a number, a date or a threshold, then nine recorded judgement calls, then six German legal terms rendered into English, then the rest |
 | 23 September 2026 | 131 (work and unemployment) | hardest first, against a written brief: one decision settling thirteen facts on whether a threshold is a rule or an amount, then the 39 facts carrying a number, then nine recorded judgement calls |
+| 23 September 2026 | 90 (AHV, the pillars and retirement) | hardest first, against a written brief: the two rules the pages turned out not to state, a preserved defect in a publisher's page, then the 22 facts carrying a number and six recorded judgement calls |
 
 ## Gaps in the English versions of 19 September 2026
 
@@ -727,6 +728,23 @@ implemented.
   is a short phrase of common German words of the kind that hijacked four cases
   in the morning.
 
+- **What the AHV wave cost the regression pack (23 September 2026).** Eleven new
+  concepts and a new topic cost four cases, of which one was repaired at the root
+  and three are held. The repair is the instructive one: the English sample
+  question of `swiss-social-insurance-map` began "I have just moved to Switzerland
+  - can you explain how the pension system works here?", and its everyday tokens
+  took a question about school information in Tamil away from
+  `city-zurich-school-languages`. The question was reworded to name the three
+  pillars and a generic alias dropped, which restored the case - the rule learned
+  for aliases in the health insurance wave applies to sample questions too. A
+  second repair followed after the review, when two generic entries on
+  `health-insurance-billing` were dropped and recovered XM-17. Of the three held,
+  two are share-based strength drops where the concept is still found, and the
+  third, Q-EN-100, is held for a reason worth reading: the concepts that now
+  outrank the expected one are the ones a reader would reach for, but the release
+  answers that question nowhere, so the case waits for a source rather than for a
+  ranking fix.
+
 - **A fact served to a group its statement excludes.**
   `zh-foreign-licence-exchange-11` ("professional drivers other than those
   with a licence from an EU or EFTA state must exchange the licence before
@@ -881,10 +899,53 @@ allowances for older insured persons and the maximum of 180 after a disability
 pension ends, but not the base counts - the core of "how many daily allowances do
 I get". Re-extracting that page would be needed to serve them.
 
+## AHV, the pillars and retirement: what the release does not publish
+
+The wave of 23 September 2026 created the topic `ahv-pension` with eleven
+concepts. Two of the things the wave set out to serve turned out not to be on the
+pages at all, and saying so is more useful than approximating them.
+
+- **No apportionment of a pension between countries.** The plan expected the
+  international concept to state that each state pays its own pension for the
+  periods completed there, and that insurance periods are taken into account for
+  the entitlement. Neither rule appears on either of the two international pages
+  of the AHV/IV information service, which cover only which country's system a
+  person is subject to, postings and the A1 certificate. Nothing was written for
+  them, and `ahv-international-coordination` declares the gap. A caller asking
+  whether their French years count towards a Swiss pension gets no answer from
+  this release, and a regression case is held open over exactly that question.
+- **No reduction or supplement rate for drawing a pension early or late.** The
+  page states only that both are calculated on actuarial principles. The familiar
+  percentages are not served.
+- **No pension or contribution amount, and no calculator.** Where a page printed a
+  franc figure it is quoted in the fact's provenance note rather than in the
+  statement, so a reviewer can see it without the release publishing it.
+- **No invalidity insurance, supplementary benefits or bridging benefit.** All
+  three are named in `out_of_scope` and appear in this topic only as things
+  explicitly not covered - including the rule that the thirteenth pension reaches
+  old-age pensions only, so survivors' and invalidity pensions stay at twelve a
+  year.
+- **Only one of the 26 cantonal compensation offices.** The directory page lists
+  them all with addresses; only the Zurich entry is served, and the office's
+  address and opening hours are left to the Zurich office-contacts topic.
+
+**A defect in a source that the release shows rather than hides.** The page on
+old-age pensions still states the pre-reform reference ages, 64 for women and 65
+for men, in the present tense beside the paragraph giving the rule in force since
+1 January 2025. `ahv-reference-age-2` leads with the rule in force, keeps 64 as
+the base the three-month steps rise from, and reports that the page still carries
+the stale sentence. Both blocks are cited.
+
+**Nine facts are cantonal that read as federal.** The individual AHV account and
+most of the contribution-gap material rest on SVA Zurich pages alone, and the
+build refuses a federal statement resting only on a cantonal source. They are
+served as `CH-ZH`, so a caller outside the Canton of Zurich is told the release
+does not speak for their canton on those points.
+
 ## Retrieval limitations
 
 - **Authored search words are the assistant's, and they move rarity
-  weights.** All 195 concepts carry authored aliases and at least one
+  weights.** All 206 concepts carry authored aliases and at least one
   English and one German sample question; the build refuses a concept
   without one in each language (`question_languages` of the curation, told
   by the questions' function words). On 19 September 2026 the last 13

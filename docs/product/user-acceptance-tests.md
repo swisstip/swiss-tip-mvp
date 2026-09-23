@@ -2544,6 +2544,114 @@ counselling and qualification. It must not name an office for a place outside
 the Canton of Zurich as if the release covered it. The trap is inventing a
 street address for the Winterthur RAV.
 
+## AHV, the pillars and retirement cases
+
+Written on 23 September 2026 before the pages were curated. The topic
+`ahv-pension` is new. The release already serves what happens when a person
+*leaves* Switzerland - the refund of contributions, the agreement states, the
+pension abroad, the pension-fund cash payment - so these cases ask about being
+here: who is insured, what is owed, what the record shows, and what happens at
+the reference age.
+
+The release publishes the rules and never a pension amount, and it does not
+cover the invalidity insurance, the supplementary benefits or the bridging
+benefit. Where a case says the answer must not give a figure or must decline a
+neighbouring benefit, that is the point of the case.
+
+### UAT-103: Not working, and asked to pay AHV
+
+"I moved to Zurich with my husband and I don't work. Someone told me I still
+have to pay AHV. Is that right?" The answer must say that insurance follows
+residence and not employment, so a person living in Switzerland is insured even
+without earnings, and that a non-employed person owes contributions in their own
+right - while naming the exception for a spouse whose partner's contributions
+count for both. It must say which office the person deals with. The trap is
+answering that only employees pay, which is what most newcomers assume.
+
+### UAT-104: Going self-employed
+
+"I am leaving my job to work for myself. What changes for my AHV?" The answer
+must say that a self-employed person registers with a compensation office and
+owes the contributions themselves, where an employee splits them with the
+employer, and must say what decides whether the authority accepts someone as
+self-employed. It must not state a contribution rate or a franc amount unless
+the cited page prints it. The trap is treating the change as automatic, or
+giving a rate the pages do not carry.
+
+### UAT-105: Checking the record
+
+"How do I find out how much I have paid into the AHV over the years?" The answer
+must name the individual account and the account statement, say that it is
+ordered free of charge from a compensation office, and say what the AHV number
+is for. It must say which office holds the account. The trap is confusing the
+account statement with a forecast of the pension, which is a different thing and
+which this release does not serve.
+
+### UAT-106: Eight years abroad
+
+"I lived abroad for eight years before moving here. Will that reduce my
+pension?" The answer must say that a full pension requires a complete
+contribution record, that a missing year reduces the pension, and how a gap can
+be closed where the rules allow it. It must point the person at checking their
+individual account early rather than at the moment of retirement. It must not
+compute the reduction. The trap is promising that years abroad count, or
+quantifying the cut.
+
+### UAT-107: When can I stop
+
+"I am 63. Can I retire now, and what does it cost me?" The answer must give the
+reference age and the transitional rules that apply to women of the affected
+cohorts, say that the pension can be drawn early or deferred, and say what each
+does to it in the terms the page uses. It must not produce a percentage or an
+amount unless the cited page prints it, and must not confuse the AHV reference
+age with the rules of an occupational pension fund. The trap is a single
+retirement age with no transitional rule.
+
+### UAT-108: Turning sixty-five next spring
+
+"I reach the reference age next March. Does the pension come automatically?"
+The answer must say that it does not - the pension is claimed, some months
+before the reference age, from the compensation office that holds the record -
+and say what the person needs for the claim. The trap is telling the caller to
+wait for a letter.
+
+### UAT-109: After a death in the family
+
+"My husband died last month. Is there anything from the AHV for me and our two
+children?" The answer must name the widow's, widower's and orphan's pensions,
+give the conditions the page states and say what ends them. Where the answer
+touches the invalidity insurance or the supplementary benefits it must say the
+release does not cover them rather than explain them. The trap is explaining
+supplementary benefits, or promising a widower the same conditions as a widow
+without checking what the page says.
+
+### UAT-110: A career in two countries
+
+"I worked in Italy for fifteen years and in Switzerland for twenty. Who pays my
+pension?" The answer must say that under the coordination with the EU and EFTA
+each state pays its own pension for the periods completed there, that periods
+can be taken into account for the entitlement, and that contributions are not
+refunded to nationals of Switzerland or an EU or EFTA state. It must distinguish
+that from a third state with an agreement and from one without. The trap is
+promising one combined pension from Switzerland.
+
+### UAT-111: How does any of this work
+
+"I have just moved to Switzerland. Can you explain how the pension system works
+here?" The answer must lay out the three pillars and say which risk each covers,
+and name the other branches - unemployment, accident, health and loss of
+earnings - as parts of the same system. It must stay at the level of the map and
+not drift into the rules of one branch. The trap is answering only about the
+AHV, or inventing a pillar structure the pages do not state.
+
+### UAT-112: Which office in Zurich
+
+"Who do I contact about my AHV in Zurich, and how do I get my account
+statement?" The answer must name the cantonal compensation office for the Canton
+of Zurich, say who registers there, and say how the account statement is
+requested. It must not name a compensation office for a place outside the canton
+as if the release covered it. The trap is inventing an address or a form number.
+
 
 ## Decline cases
 
@@ -2587,6 +2695,7 @@ mode.
 | DECLINE-11 | "How much duty do I pay per kilo on a leather handbag from Italy, and what is its tariff number?" (tariff numbers and duty rates per product, named in `out_of_scope`) | `customs-tariff-rate`, a guessed concept ID, for `CH` | `OUT_OF_COVERAGE`, `concept_not_published` listing the published concept IDs; the customs concepts stay available for the rules they do publish |
 | DECLINE-12 | "Which insurer is cheapest for me at 8006 Zurich with a 2,500-franc franchise?" (premium amounts and the comparison calculator, named in `out_of_scope`) | `health-insurance-premium` and `premium-calculator`, guessed concept IDs, for `CH-ZH-261` | `OUT_OF_COVERAGE`, `concept_not_published` for both; the health-insurance concepts stay available for the rules they do publish |
 | DECLINE-13 | "Wie viel Arbeitslosengeld bekomme ich pro Monat bei einem Lohn von 7'000 Franken?" (the amount of a daily allowance, named in `out_of_scope`) | `unemployment-daily-allowance-amount` and `unemployment-calculator`, guessed concept IDs, for `CH-ZH` | `OUT_OF_COVERAGE`, `concept_not_published` for both; the unemployment concepts stay available for the rules they do publish |
+| DECLINE-14 | "Wie hoch wird meine AHV-Rente sein, wenn ich mit 65 aufhöre?" (a pension amount and an individual calculation, named in `out_of_scope`) | `ahv-pension-amount` and `ahv-pension-calculator`, guessed concept IDs, for `CH-ZH` | `OUT_OF_COVERAGE`, `concept_not_published` for both; the AHV concepts stay available for the rules they do publish |
 
 DECLINE-3, DECLINE-4 and DECLINE-6 to DECLINE-9 check the rejection of a
 Zurich concept for another place at the server alone. The cross-jurisdiction

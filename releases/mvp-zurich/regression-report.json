@@ -1,22 +1,23 @@
 {
   "schema_version": "swiss-tip-regression-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-23-v16",
-  "content_sha256": "0b376f6a597361185bd2f1f2b5b8d3984db6d0bf922d743031d30b26460d6619",
-  "acceptance_sha256": "72d425a00f3bff0e3014cc8d85a7cb3f82f8ba4acce3dc08666e60fa1fe499c8",
-  "regression_sha256": "d4f55f6d3b242429f92d2734e3f46647ab5e5effb6a06c055a99d0fa2509d0f0",
-  "checked_at": "2026-09-23T09:55:17.020208+00:00",
+  "release_id": "mvp-zurich-2026-09-23-v19",
+  "content_sha256": "08032dfd1977ca90009f3cd622535ce878fe8d272e36a4a835746a746893ce80",
+  "acceptance_sha256": "496adeeaba6c06033ce1eed2b2c847e2792d4f44b7d3bf5f484e958771450ccc",
+  "regression_sha256": "95271bbb31524d27215690f85551cf6d1dd212c884db7948532ff1757cac755d",
+  "checked_at": "2026-09-23T10:47:25.439002+00:00",
   "as_of": "2026-09-23",
   "passed": true,
   "runs": {
     "lexical": {
       "retrieval_mode": "lexical",
-      "cases": 679,
-      "passed": 640,
+      "cases": 690,
+      "passed": 649,
       "failed": [],
       "quarantined": [
         "Q-EN-8",
         "Q-EN-9",
+        "Q-EN-14",
         "Q-EN-17",
         "Q-DE-1",
         "Q-DE-4",
@@ -29,6 +30,7 @@
         "OOS-4",
         "OOS-9",
         "N-EN-T1",
+        "Q-DE-36",
         "N-DE-T7",
         "OOS-23",
         "Q-DE-37",
@@ -37,6 +39,7 @@
         "XC-13",
         "XM-1",
         "Q-DE-55",
+        "Q-EN-54",
         "Q-DE-60",
         "Q-DE-63",
         "XM-8",
@@ -47,6 +50,7 @@
         "Q-EN-84",
         "Q-EN-91",
         "Q-EN-99",
+        "Q-EN-100",
         "Q-DE-72",
         "Q-DE-79",
         "Q-DE-90",
@@ -74,6 +78,7 @@
       ],
       "quarantined_failed": [
         "Q-EN-8",
+        "Q-EN-14",
         "Q-EN-17",
         "Q-DE-1",
         "Q-DE-4",
@@ -89,6 +94,7 @@
         "XC-1",
         "XC-12",
         "XM-1",
+        "Q-EN-54",
         "Q-DE-60",
         "XM-8",
         "Q-EN-76",
@@ -117,12 +123,14 @@
         "Q-EN-9",
         "OOS-9",
         "N-EN-T1",
+        "Q-DE-36",
         "OOS-23",
         "XC-13",
         "Q-DE-55",
         "Q-DE-63",
         "Q-EN-78",
         "Q-EN-83",
+        "Q-EN-100",
         "Q-DE-72",
         "Q-DE-79",
         "Q-TR-1",
@@ -401,8 +409,8 @@
               "translated": false,
               "hits": [
                 "naturalisation-facilitated-spouse",
-                "naturalisation-third-generation",
-                "city-zurich-naturalisation"
+                "city-zurich-naturalisation",
+                "zh-naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -2240,6 +2248,202 @@
           "searches": []
         },
         {
+          "case_id": "UAT-103",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "AHV Beitraege Nichterwerbstaetige verheiratet",
+              "translated": false,
+              "hits": [
+                "ahv-contribution-duty",
+                "zh-sva-telephone-numbers",
+                "ahv-contribution-refund"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-104",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "AHV Beitraege Selbststaendigerwerbende Ausgleichskasse anmelden",
+              "translated": false,
+              "hits": [
+                "ahv-contribution-duty",
+                "zh-sva-telephone-numbers",
+                "ahv-pension-abroad"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-105",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "AHV-Kontoauszug bestellen individuelles Konto",
+              "translated": false,
+              "hits": [
+                "ahv-individual-account",
+                "customs-internet-orders"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-106",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Beitragsluecken AHV Ausland fehlende Beitragsjahre",
+              "translated": false,
+              "hits": [
+                "ahv-contribution-gaps",
+                "ahv-contribution-refund",
+                "ahv-contribution-duty"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-107",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "AHV Rente vorbeziehen Referenzalter Aufschub",
+              "translated": false,
+              "hits": [
+                "ahv-reference-age",
+                "ahv-claiming-a-pension",
+                "ahv-contribution-gaps"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-108",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Anmeldung Altersrente wann Ausgleichskasse",
+              "translated": false,
+              "hits": [
+                "ahv-claiming-a-pension",
+                "ahv-pension-abroad",
+                "zh-ahv-compensation-office"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-109",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Witwenrente Waisenrente Anspruch AHV",
+              "translated": false,
+              "hits": [
+                "ahv-survivors-pensions",
+                "ahv-claiming-a-pension",
+                "family-allowances"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-110",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "AHV EU EFTA Koordination Versicherungsunterstellung",
+              "translated": false,
+              "hits": [
+                "fza-social-security",
+                "ahv-international-coordination",
+                "ahv-insured-persons"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-111",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Drei-Saeulen-System Schweiz Vorsorge Ueberblick",
+              "translated": false,
+              "hits": [
+                "swiss-social-insurance-map",
+                "health-insurance-deadline",
+                "bvg-cash-out-departure"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-112",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "kantonale Ausgleichskasse Zuerich AHV zustaendig",
+              "translated": false,
+              "hits": [
+                "zh-ahv-compensation-office",
+                "zh-family-allowances",
+                "ahv-pension-abroad"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "DECLINE-14",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": []
+        },
+        {
           "case_id": "Q-EN-1",
           "blocking": true,
           "passed": true,
@@ -2373,7 +2577,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-7 (English: Evidence of language skills): search 'Which language certificates are accepted as proof of language skills for a permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4679, 'anchored_weight': 1.1586})"
+                "Q-EN-7 (English: Evidence of language skills): search 'Which language certificates are accepted as proof of language skills for a permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.474, 'anchored_weight': 1.1726})"
               ]
             }
           ]
@@ -2384,7 +2588,7 @@
           "passed": false,
           "issues": [
             "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['naturalisation-ordinary', 'permit-c-five-years', 'permit-c']",
-            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3233, 'anchored_weight': 1.4309})"
+            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3313, 'anchored_weight': 1.423})"
           ],
           "searches": [
             {
@@ -2418,7 +2622,7 @@
               "judged": false,
               "unjudged_issues": [
                 "Q-EN-9 (English: Third-country workers: exemptions, application, visa and registration): search \"I'm an American with a job offer in Zurich. Who applies for the work permit, me or my employer?\" no longer finds third-country-work-procedure within the first 3 hits: ['aig-work-permit', 'uk-new-employment', 'zh-third-country-work']",
-                "Q-EN-9 (English: Third-country workers: exemptions, application, visa and registration): search \"I'm an American with a job offer in Zurich. Who applies for the work permit, me or my employer?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3878, 'anchored_weight': 1.4643})"
+                "Q-EN-9 (English: Third-country workers: exemptions, application, visa and registration): search \"I'm an American with a job offer in Zurich. Who applies for the work permit, me or my employer?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3857, 'anchored_weight': 1.4556})"
               ]
             }
           ]
@@ -2440,7 +2644,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-10 (English: Zurich EU/EFTA self-employment documentation): search \"I'm a French citizen and want to work as a self-employed graphic designer in the canton of Zurich. What evidence do I need to provide?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2178, 'anchored_weight': 1.3629})"
+                "Q-EN-10 (English: Zurich EU/EFTA self-employment documentation): search \"I'm a French citizen and want to work as a self-employed graphic designer in the canton of Zurich. What evidence do I need to provide?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2151, 'anchored_weight': 1.345})"
               ]
             }
           ]
@@ -2504,19 +2708,21 @@
         },
         {
           "case_id": "Q-EN-14",
-          "blocking": true,
-          "passed": true,
-          "issues": [],
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "Q-EN-14 (English: AHV pensions and benefits after moving abroad): search 'I receive an AHV pension and plan to retire to Thailand. Will it still be paid there?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3284, 'anchored_weight': 1.4405})"
+          ],
           "searches": [
             {
               "query": "I receive an AHV pension and plan to retire to Thailand. Will it still be paid there?",
               "translated": false,
               "hits": [
+                "ahv-reference-age",
                 "ahv-pension-abroad",
-                "fza-non-working",
-                "pillar-3a"
+                "ahv-claiming-a-pension"
               ],
-              "match_strength": "strong",
+              "match_strength": "weak",
               "judged": true
             }
           ]
@@ -2564,7 +2770,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-17 (English: Exemption from the health insurance duty in the Canton of Zurich): search \"I'm an American student at ETH Zurich with my own US health insurance. Can I be exempted from Swiss compulsory health insurance?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2184, 'anchored_weight': 1.3494})"
+            "Q-EN-17 (English: Exemption from the health insurance duty in the Canton of Zurich): search \"I'm an American student at ETH Zurich with my own US health insurance. Can I be exempted from Swiss compulsory health insurance?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2185, 'anchored_weight': 1.3375})"
           ],
           "searches": [
             {
@@ -2642,7 +2848,8 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-DE-1 (German: Authority issuing residence permits): search 'Welche Behörde stellt in der Schweiz die Aufenthaltsbewilligungen aus?' no longer finds permit-authority within the first 3 hits: ['uk-new-employment', 'health-insurance-cross-border-commuter', 'entry-visa-need']"
+            "Q-DE-1 (German: Authority issuing residence permits): search 'Welche Behörde stellt in der Schweiz die Aufenthaltsbewilligungen aus?' no longer finds permit-authority within the first 3 hits: ['uk-new-employment', 'health-insurance-cross-border-commuter', 'entry-visa-need']",
+            "Q-DE-1 (German: Authority issuing residence permits): search 'Welche Behörde stellt in der Schweiz die Aufenthaltsbewilligungen aus?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4995, 'anchored_weight': 1.1344})"
           ],
           "searches": [
             {
@@ -2653,7 +2860,7 @@
                 "health-insurance-cross-border-commuter",
                 "entry-visa-need"
               ],
-              "match_strength": "strong",
+              "match_strength": "weak",
               "judged": true
             }
           ]
@@ -2812,7 +3019,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-9 (German: Change of canton under AIG Article 37): search 'Ich habe eine B-Bewilligung und ziehe von Zürich in den Kanton Bern. Brauche ich eine neue Bewilligung?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3563, 'anchored_weight': 1.3615})"
+                "Q-DE-9 (German: Change of canton under AIG Article 37): search 'Ich habe eine B-Bewilligung und ziehe von Zürich in den Kanton Bern. Brauche ich eine neue Bewilligung?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3554, 'anchored_weight': 1.3633})"
               ]
             }
           ]
@@ -2842,7 +3049,7 @@
           "passed": false,
           "issues": [
             "Q-DE-11 (German: Family reunification with a residence-permit sponsor): search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' no longer finds family-b within the first 3 hits: ['family-swiss', 'family-eu-efta', 'family-requirements']",
-            "Q-DE-11 (German: Family reunification with a residence-permit sponsor): search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4369, 'anchored_weight': 1.2649})"
+            "Q-DE-11 (German: Family reunification with a residence-permit sponsor): search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4349, 'anchored_weight': 1.2634})"
           ],
           "searches": [
             {
@@ -3101,8 +3308,8 @@
               "translated": false,
               "hits": [
                 "fza-right-to-remain",
-                "fza-non-working",
-                "entry-requirements-eu-efta"
+                "entry-requirements-eu-efta",
+                "third-country-work"
               ],
               "match_strength": "strong",
               "judged": true
@@ -3439,7 +3646,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-1 (Rejected, German: schooling is not published): search 'Wie melde ich mein Kind für den Kindergarten in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4994, 'anchored_weight': 1.5315})"
+            "OOS-1 (Rejected, German: schooling is not published): search 'Wie melde ich mein Kind für den Kindergarten in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4968, 'anchored_weight': 1.5199})"
           ],
           "searches": [
             {
@@ -3496,7 +3703,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-4 (Rejected, Italian: family allowances is not published): search 'Familienzulagen für Kinder beantragen' reports match_strength strong, expected weak (signals {'lexical_share': 1.0, 'anchored_weight': 1.7085})",
+            "OOS-4 (Rejected, Italian: family allowances is not published): search 'Familienzulagen für Kinder beantragen' reports match_strength strong, expected weak (signals {'lexical_share': 1.0, 'anchored_weight': 1.7032})",
             "OOS-4 (Rejected, Italian: family allowances is not published): family-allowances expected OUT_OF_COVERAGE, got SUPPORTED",
             "OOS-4 (Rejected, Italian: family allowances is not published): family-allowances expected a concept_not_published gap, got none"
           ],
@@ -3710,14 +3917,14 @@
                 "permit-b",
                 "health-insurance-deadline",
                 "fza-employee-permit",
-                "eu-permit-mobility",
-                "eu-employment-registration-deadline"
+                "eu-employment-registration-deadline",
+                "permit-card-eu-efta"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' no longer finds permit-renewal within the first 5 hits: ['permit-b', 'health-insurance-deadline', 'fza-employee-permit', 'eu-permit-mobility', 'eu-employment-registration-deadline']",
-                "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4085, 'anchored_weight': 1.3812})"
+                "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' no longer finds permit-renewal within the first 5 hits: ['permit-b', 'health-insurance-deadline', 'fza-employee-permit', 'eu-employment-registration-deadline', 'permit-card-eu-efta']",
+                "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4088, 'anchored_weight': 1.383})"
               ]
             }
           ]
@@ -3815,7 +4022,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-EN-J2 (English with visa for permit: third-country-work): search 'Do I need a work visa to take a job in Zurich as an Indian national?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4852, 'anchored_weight': 1.3721})"
+                "N-EN-J2 (English with visa for permit: third-country-work): search 'Do I need a work visa to take a job in Zurich as an Indian national?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4831, 'anchored_weight': 1.3693})"
               ]
             }
           ]
@@ -3889,7 +4096,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "ahv-pension-abroad",
-                "health-insurance-cost-sharing"
+                "zh-control-drive"
               ],
               "match_strength": "strong",
               "judged": true
@@ -4068,7 +4275,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-DE-J3 (German with the Germany-German Aufenthaltserlaubnis, Einwohnermeldeamt: aig-registration): search 'Ich habe eine Aufenthaltserlaubnis und ziehe nach Bern um. Muss ich mich beim Einwohnermeldeamt anmelden?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4509, 'anchored_weight': 1.3949})"
+                "N-DE-J3 (German with the Germany-German Aufenthaltserlaubnis, Einwohnermeldeamt: aig-registration): search 'Ich habe eine Aufenthaltserlaubnis und ziehe nach Bern um. Muss ich mich beim Einwohnermeldeamt anmelden?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4512, 'anchored_weight': 1.3992})"
               ]
             }
           ]
@@ -4237,7 +4444,7 @@
               "hits": [
                 "zh-sva-contact",
                 "city-zurich-school-holidays",
-                "zh-eu-self-employment"
+                "zh-ahv-compensation-office"
               ],
               "match_strength": "strong",
               "judged": true
@@ -4313,12 +4520,12 @@
               "hits": [
                 "zh-sva-contact",
                 "city-zurich-population-office",
-                "zh-eu-self-employment"
+                "zh-ahv-compensation-office"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-27 (English: SVA Zurich on Good Friday): search 'Is the SVA Zurich closed on Good Friday?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3407, 'anchored_weight': 0.8693})"
+                "Q-EN-27 (English: SVA Zurich on Good Friday): search 'Is the SVA Zurich closed on Good Friday?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3379, 'anchored_weight': 0.8259})"
               ]
             }
           ]
@@ -4391,8 +4598,8 @@
               "translated": false,
               "hits": [
                 "zh-sva-telephone-numbers",
-                "zh-premium-reduction",
-                "zh-sva-contact"
+                "health-insurance-models",
+                "zh-premium-reduction"
               ],
               "match_strength": "strong",
               "judged": true
@@ -4420,7 +4627,7 @@
         },
         {
           "case_id": "Q-DE-36",
-          "blocking": true,
+          "blocking": false,
           "passed": true,
           "issues": [],
           "searches": [
@@ -4428,14 +4635,14 @@
               "query": "Ist das Strassenverkehrsamt am 24. Dezember offen?",
               "translated": false,
               "hits": [
+                "ahv-thirteenth-pension",
                 "uk-new-employment",
-                "zh-road-traffic-office-locations",
-                "zh-sva-contact"
+                "zh-road-traffic-office-locations"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-36 (German, negative: the Road Traffic Office on 24 December): search 'Ist das Strassenverkehrsamt am 24. Dezember offen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4562, 'anchored_weight': 1.0})"
+                "Q-DE-36 (German, negative: the Road Traffic Office on 24 December): search 'Ist das Strassenverkehrsamt am 24. Dezember offen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4238, 'anchored_weight': 0.8709})"
               ]
             }
           ]
@@ -4610,7 +4817,7 @@
               "judged": false,
               "unjudged_issues": [
                 "N-DE-T6 (German with typos: Migration Office address): search 'migrationsamt zuerich adrese' no longer finds zh-migrationsamt-contact within the first 3 hits: ['cantonal-migration-contact', 'city-zurich-naturalisation-facilitated', 'city-zurich-school-languages']",
-                "N-DE-T6 (German with typos: Migration Office address): search 'migrationsamt zuerich adrese' reports match_strength weak, expected strong (signals {'lexical_share': 0.3804, 'anchored_weight': 0.614})"
+                "N-DE-T6 (German with typos: Migration Office address): search 'migrationsamt zuerich adrese' reports match_strength weak, expected strong (signals {'lexical_share': 0.3818, 'anchored_weight': 0.6176})"
               ]
             }
           ]
@@ -4621,7 +4828,7 @@
           "passed": false,
           "issues": [
             "N-DE-T7 (German with a typo: Population Office opening hours): search 'personenmeldeamt öfnungszeiten' no longer finds city-zurich-population-office within the first 3 hits: ['family-b', 'family-c', 'family-separation']",
-            "N-DE-T7 (German with a typo: Population Office opening hours): search 'personenmeldeamt öfnungszeiten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1499, 'anchored_weight': 0.1763})"
+            "N-DE-T7 (German with a typo: Population Office opening hours): search 'personenmeldeamt öfnungszeiten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1474, 'anchored_weight': 0.1729})"
           ],
           "searches": [
             {
@@ -4815,7 +5022,7 @@
               "hits": [
                 "city-zurich-school-holidays",
                 "city-zurich-kindergarten",
-                "city-zurich-tax-office-contact"
+                "city-zurich-school-languages"
               ],
               "match_strength": "strong",
               "judged": true
@@ -4960,7 +5167,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-DE-37 (German: fee share of a 35-litre Züri-Sack): search 'Wie viel kostet ein 35-Liter-Züri-Sack?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3029, 'anchored_weight': 1.4805})"
+            "Q-DE-37 (German: fee share of a 35-litre Züri-Sack): search 'Wie viel kostet ein 35-Liter-Züri-Sack?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3033, 'anchored_weight': 1.4855})"
           ],
           "searches": [
             {
@@ -5278,7 +5485,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-EN-T5 (English with typos: recycling centre opening hours): search 'recyling center zurich openign hours' reports match_strength weak, expected strong (signals {'lexical_share': 0.3098, 'anchored_weight': 0.8976})"
+                "N-EN-T5 (English with typos: recycling centre opening hours): search 'recyling center zurich openign hours' reports match_strength weak, expected strong (signals {'lexical_share': 0.3102, 'anchored_weight': 0.8993})"
               ]
             }
           ]
@@ -5377,7 +5584,7 @@
           "passed": false,
           "issues": [
             "XC-1 (Another canton, English: permit for a six-month contract in Bern): search \"I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?\" no longer finds fza-employee-permit within the first 3 hits: ['eu-short-employment', 'fza-job-search', 'uk-new-employment']",
-            "XC-1 (Another canton, English: permit for a six-month contract in Bern): search \"I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3267, 'anchored_weight': 1.3345})"
+            "XC-1 (Another canton, English: permit for a six-month contract in Bern): search \"I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3278, 'anchored_weight': 1.3357})"
           ],
           "searches": [
             {
@@ -5410,7 +5617,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "XC-2 (Another canton, German: registration deadline for a German citizen in Basel): search 'Ich bin Deutsche und ziehe für eine unbefristete Stelle nach Basel. Bis wann muss ich mich bei der Gemeinde anmelden?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2881, 'anchored_weight': 1.3942})"
+                "XC-2 (Another canton, German: registration deadline for a German citizen in Basel): search 'Ich bin Deutsche und ziehe für eine unbefristete Stelle nach Basel. Bis wann muss ich mich bei der Gemeinde anmelden?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2886, 'anchored_weight': 1.3989})"
               ]
             }
           ]
@@ -5594,7 +5801,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XC-12 (Another canton, German: the health insurance deadline in Bern): search 'Ich bin vor sechs Wochen nach Bern gezogen. Bis wann muss ich eine Krankenkasse abschliessen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2979, 'anchored_weight': 1.4416})"
+            "XC-12 (Another canton, German: the health insurance deadline in Bern): search 'Ich bin vor sechs Wochen nach Bern gezogen. Bis wann muss ich eine Krankenkasse abschliessen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2982, 'anchored_weight': 1.4464})"
           ],
           "searches": [
             {
@@ -5644,7 +5851,7 @@
               "hits": [
                 "premium-reduction",
                 "zh-premium-reduction",
-                "cantonal-migration-contact"
+                "health-insurance-insured-abroad"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5701,7 +5908,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "ahv-pension-abroad",
-                "pillar-3a"
+                "customs-leaving-with-goods"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5719,8 +5926,8 @@
               "translated": false,
               "hits": [
                 "bvg-cash-out-departure",
-                "city-zurich-naturalisation",
-                "health-insurance-deadline"
+                "zh-ahv-compensation-office",
+                "city-zurich-naturalisation"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5819,7 +6026,7 @@
               "judged": false,
               "unjudged_issues": [
                 "XC-23 (Another canton, English: address and opening hours of the migration office in Basel): search 'What are the address and the opening hours of the migration office in Basel?' no longer finds cantonal-migration-contact within the first 3 hits: ['zh-migrationsamt-contact', 'city-zurich-population-office', 'city-zurich-tax-office-contact']",
-                "XC-23 (Another canton, English: address and opening hours of the migration office in Basel): search 'What are the address and the opening hours of the migration office in Basel?' reports match_strength weak, expected strong (signals {'lexical_share': 0.429, 'anchored_weight': 0.6535})"
+                "XC-23 (Another canton, English: address and opening hours of the migration office in Basel): search 'What are the address and the opening hours of the migration office in Basel?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4267, 'anchored_weight': 0.6481})"
               ]
             }
           ]
@@ -6210,7 +6417,7 @@
               "hits": [
                 "unemployment-eu-efta-mobility",
                 "entry-requirements-eu-efta",
-                "zh-eu-self-employment"
+                "ahv-international-coordination"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6412,19 +6619,21 @@
         },
         {
           "case_id": "Q-EN-54",
-          "blocking": true,
-          "passed": true,
-          "issues": [],
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "Q-EN-54 (English: registering to vote after naturalisation): search 'Do newly naturalised Swiss citizens need to register to vote?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4968, 'anchored_weight': 1.4867})"
+          ],
           "searches": [
             {
               "query": "Do newly naturalised Swiss citizens need to register to vote?",
               "translated": false,
               "hits": [
                 "political-rights-federal",
-                "zh-political-rights",
-                "naturalisation-facilitated-spouse"
+                "naturalisation-facilitated-spouse",
+                "city-zurich-naturalisation-language"
               ],
-              "match_strength": "strong",
+              "match_strength": "weak",
               "judged": true
             }
           ]
@@ -6678,7 +6887,7 @@
               "hits": [
                 "family-allowances",
                 "parental-leave",
-                "zh-family-allowances"
+                "ahv-survivors-pensions"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6851,7 +7060,7 @@
               "hits": [
                 "rent-changes",
                 "third-country-work-conditions",
-                "naturalisation-facilitated-spouse"
+                "ahv-reference-age"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6927,7 +7136,7 @@
               "hits": [
                 "zh-initial-rent-form",
                 "rent-changes",
-                "city-zurich-naturalisation-language"
+                "ahv-international-coordination"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7250,7 +7459,7 @@
               "hits": [
                 "family-allowances",
                 "zh-family-allowances",
-                "unemployment-labour-market-measures"
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7281,7 +7490,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XM-8 (Another Zurich municipality, English: marrying in Uster): search 'We live in Uster. How do we prepare our marriage?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3557, 'anchored_weight': 1.3773})"
+            "XM-8 (Another Zurich municipality, English: marrying in Uster): search 'We live in Uster. How do we prepare our marriage?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3511, 'anchored_weight': 1.3422})"
           ],
           "searches": [
             {
@@ -7322,7 +7531,7 @@
           "passed": false,
           "issues": [
             "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' no longer finds permit-types within the first 3 hits: ['health-insurance-premium-regions', 'family-b', 'naturalisation-ordinary']",
-            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2655, 'anchored_weight': 1.0})"
+            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2651, 'anchored_weight': 1.0})"
           ],
           "searches": [
             {
@@ -7409,7 +7618,7 @@
               "hits": [
                 "family-c",
                 "language-evidence",
-                "fza-family-members"
+                "zh-family-b-c-permit"
               ],
               "match_strength": "strong",
               "judged": false
@@ -7452,7 +7661,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-82 (English: Evidence of language skills): search 'I have dyslexia and struggle with written German. Can that excuse me from the language certificate requirement for my permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2317, 'anchored_weight': 1.1915})"
+                "Q-EN-82 (English: Evidence of language skills): search 'I have dyslexia and struggle with written German. Can that excuse me from the language certificate requirement for my permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2322, 'anchored_weight': 1.1946})"
               ]
             }
           ]
@@ -7475,7 +7684,7 @@
               "judged": false,
               "unjudged_issues": [
                 "Q-EN-83 (English: Integration criteria and personal circumstances): search 'I have a health condition that makes it hard for me to learn German quickly or hold down a job. Will that be taken into account when my permit is assessed?' no longer finds integration-criteria within the first 3 hits: ['health-insurance-premium-regions', 'health-insurance-cross-border-commuter', 'health-insurance-deadline']",
-                "Q-EN-83 (English: Integration criteria and personal circumstances): search 'I have a health condition that makes it hard for me to learn German quickly or hold down a job. Will that be taken into account when my permit is assessed?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1334, 'anchored_weight': 0.9969})"
+                "Q-EN-83 (English: Integration criteria and personal circumstances): search 'I have a health condition that makes it hard for me to learn German quickly or hold down a job. Will that be taken into account when my permit is assessed?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1331, 'anchored_weight': 0.9905})"
               ]
             }
           ]
@@ -7512,8 +7721,8 @@
               "translated": false,
               "hits": [
                 "notification-responsibility",
-                "eu-short-employment",
-                "zh-tax-at-source-ordinary-assessment"
+                "zh-tax-at-source-ordinary-assessment",
+                "eu-short-employment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7570,10 +7779,13 @@
               "hits": [
                 "fza-non-working",
                 "zh-foreign-licence-exchange",
-                "fza-family-members"
+                "fza-employee-permit"
               ],
               "match_strength": "strong",
-              "judged": false
+              "judged": false,
+              "unjudged_issues": [
+                "Q-EN-88 (English: FZA: work right of an EU worker's family members): search 'My wife is an EU citizen with a Swiss residence permit, and our 19-year-old son who lives with us and depends on us financially wants to take a part-time job. Is he allowed to work here regardless of his own passport?' no longer finds fza-family-members within the first 3 hits: ['fza-non-working', 'zh-foreign-licence-exchange', 'fza-employee-permit']"
+              ]
             }
           ]
         },
@@ -7613,7 +7825,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-90 (English: Schengen visa type C coverage): search \"I'm coming to Zurich for a two-week business trip - does an ordinary Schengen visa cover that, or do I need something else?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1689, 'anchored_weight': 1.1863})"
+                "Q-EN-90 (English: Schengen visa type C coverage): search \"I'm coming to Zurich for a two-week business trip - does an ordinary Schengen visa cover that, or do I need something else?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1692, 'anchored_weight': 1.1884})"
               ]
             }
           ]
@@ -7623,7 +7835,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-91 (English: Free visas for EU/EFTA family members): search \"My spouse is a non-EU national and I'm an EU/EFTA citizen moving to Zurich. Do we have to pay a visa fee for her to join me?\" no longer finds entry-visa-fee-insurance within the first 3 hits: ['entry-requirements-eu-efta', 'fza-entry', 'fza-family-members']"
+            "Q-EN-91 (English: Free visas for EU/EFTA family members): search \"My spouse is a non-EU national and I'm an EU/EFTA citizen moving to Zurich. Do we have to pay a visa fee for her to join me?\" no longer finds entry-visa-fee-insurance within the first 3 hits: ['entry-requirements-eu-efta', 'fza-entry', 'ahv-contribution-refund']"
           ],
           "searches": [
             {
@@ -7632,7 +7844,7 @@
               "hits": [
                 "entry-requirements-eu-efta",
                 "fza-entry",
-                "fza-family-members"
+                "ahv-contribution-refund"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7776,7 +7988,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-99 (English: garden waste beyond the organic bin): search \"I've just pruned a lot of trees in my garden in Zurich and have far more waste than fits in the organic bin. What can I do with it?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1521, 'anchored_weight': 1.4606})"
+            "Q-EN-99 (English: garden waste beyond the organic bin): search \"I've just pruned a lot of trees in my garden in Zurich and have far more waste than fits in the organic bin. What can I do with it?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.153, 'anchored_weight': 1.4474})"
           ],
           "searches": [
             {
@@ -7784,8 +7996,8 @@
               "translated": false,
               "hits": [
                 "city-zurich-organic-paper-cardboard",
-                "city-zurich-bulky-waste-pickup",
-                "city-zurich-household-waste"
+                "swiss-social-insurance-map",
+                "city-zurich-bulky-waste-pickup"
               ],
               "match_strength": "weak",
               "judged": true
@@ -7794,7 +8006,7 @@
         },
         {
           "case_id": "Q-EN-100",
-          "blocking": true,
+          "blocking": false,
           "passed": true,
           "issues": [],
           "searches": [
@@ -7802,14 +8014,14 @@
               "query": "I worked in Lyon for eight years before moving to Zurich. Will those French insurance years count toward my Swiss AHV pension?",
               "translated": false,
               "hits": [
-                "customs-goods-counted-toward-allowance",
-                "ahv-pension-abroad",
-                "unemployment-eu-efta-mobility"
+                "ahv-contribution-gaps",
+                "ahv-international-coordination",
+                "customs-goods-counted-toward-allowance"
               ],
               "match_strength": "strong",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-100 (English: EU insurance periods count toward the Swiss AHV pension): search 'I worked in Lyon for eight years before moving to Zurich. Will those French insurance years count toward my Swiss AHV pension?' no longer finds fza-social-security within the first 3 hits: ['customs-goods-counted-toward-allowance', 'ahv-pension-abroad', 'unemployment-eu-efta-mobility']"
+                "Q-EN-100 (English: EU insurance periods count toward the Swiss AHV pension): search 'I worked in Lyon for eight years before moving to Zurich. Will those French insurance years count toward my Swiss AHV pension?' no longer finds fza-social-security within the first 3 hits: ['ahv-contribution-gaps', 'ahv-international-coordination', 'customs-goods-counted-toward-allowance']"
               ]
             }
           ]
@@ -7965,7 +8177,7 @@
               "judged": false,
               "unjudged_issues": [
                 "Q-DE-70 (German: Permit and work rights of reunited family members): search 'Ich habe meine Eltern in die Schweiz nachgezogen. Dürfen sie hier arbeiten?' no longer finds family-member-rights within the first 3 hits: ['family-deadlines', 'family-eu-efta', 'fza-family-members']",
-                "Q-DE-70 (German: Permit and work rights of reunited family members): search 'Ich habe meine Eltern in die Schweiz nachgezogen. Dürfen sie hier arbeiten?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3867, 'anchored_weight': 1.2981})"
+                "Q-DE-70 (German: Permit and work rights of reunited family members): search 'Ich habe meine Eltern in die Schweiz nachgezogen. Dürfen sie hier arbeiten?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3871, 'anchored_weight': 1.3004})"
               ]
             }
           ]
@@ -8007,7 +8219,7 @@
               "judged": false,
               "unjudged_issues": [
                 "Q-DE-72 (German: Getting married in Switzerland): search 'Können gleichgeschlechtliche Paare in der Schweiz standesamtlich heiraten?' no longer finds marriage-switzerland within the first 3 hits: ['naturalisation-facilitated-spouse', 'zh-tax-at-source-liability', 'city-zurich-marriage']",
-                "Q-DE-72 (German: Getting married in Switzerland): search 'Können gleichgeschlechtliche Paare in der Schweiz standesamtlich heiraten?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2656, 'anchored_weight': 0.9638})"
+                "Q-DE-72 (German: Getting married in Switzerland): search 'Können gleichgeschlechtliche Paare in der Schweiz standesamtlich heiraten?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2656, 'anchored_weight': 0.9652})"
               ]
             }
           ]
@@ -8159,13 +8371,13 @@
               "translated": false,
               "hits": [
                 "zh-third-country-retirement",
-                "health-insurance-insured-abroad",
-                "marriage-switzerland"
+                "marriage-switzerland",
+                "zh-eu-self-employment"
               ],
               "match_strength": "strong",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-80 (German: FZA: residence of a non-working EU retiree): search 'Ich bin EU-Bürgerin, habe keine schweizerische Rente und möchte im Ruhestand in die Schweiz ziehen. Wie viel Geld muss ich nachweisen, und wie lange gilt meine Bewilligung?' no longer finds fza-non-working within the first 3 hits: ['zh-third-country-retirement', 'health-insurance-insured-abroad', 'marriage-switzerland']"
+                "Q-DE-80 (German: FZA: residence of a non-working EU retiree): search 'Ich bin EU-Bürgerin, habe keine schweizerische Rente und möchte im Ruhestand in die Schweiz ziehen. Wie viel Geld muss ich nachweisen, und wie lange gilt meine Bewilligung?' no longer finds fza-non-working within the first 3 hits: ['zh-third-country-retirement', 'marriage-switzerland', 'zh-eu-self-employment']"
               ]
             }
           ]
@@ -8334,7 +8546,7 @@
               "hits": [
                 "city-zurich-population-office",
                 "city-zurich-arrival",
-                "customs-import-vat-rate"
+                "swiss-social-insurance-map"
               ],
               "match_strength": "strong",
               "judged": true
@@ -8379,7 +8591,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-91 (German: tax return duty after a late move-in): search 'Ich bin erst im November nach Zürich gezogen und aktuell nicht erwerbstätig. Muss ich trotzdem eine Steuererklärung 2025 einreichen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2008, 'anchored_weight': 1.4134})"
+                "Q-DE-91 (German: tax return duty after a late move-in): search 'Ich bin erst im November nach Zürich gezogen und aktuell nicht erwerbstätig. Muss ich trotzdem eine Steuererklärung 2025 einreichen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2019, 'anchored_weight': 1.4189})"
               ]
             }
           ]
@@ -8434,7 +8646,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "ahv-pension-abroad",
-                "zh-sva-telephone-numbers"
+                "ahv-contribution-gaps"
               ],
               "match_strength": "strong",
               "judged": true
@@ -8537,7 +8749,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-99 (German: Unfallversicherung fuer eine Lernende): search 'Ich bin Lernende in einem Zürcher Betrieb. Bin ich über die Firma gegen Unfälle versichert wie eine normale Angestellte?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1942, 'anchored_weight': 1.2719})"
+                "Q-DE-99 (German: Unfallversicherung fuer eine Lernende): search 'Ich bin Lernende in einem Zürcher Betrieb. Bin ich über die Firma gegen Unfälle versichert wie eine normale Angestellte?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1931, 'anchored_weight': 1.2593})"
               ]
             }
           ]
@@ -8600,7 +8812,7 @@
               "judged": false,
               "unjudged_issues": [
                 "Q-FR-10 (French: Zurich: family reunification by holders of a short-stay L permit): search 'zusätzliche Dokumente Kind nachziehen Kurzaufenthaltsbewilligung L Kanton Zürich geschieden' no longer finds zh-family-l-permit within the first 3 hits: ['family-b', 'family-deadlines', 'zh-eu-l']",
-                "Q-FR-10 (French: Zurich: family reunification by holders of a short-stay L permit): search 'zusätzliche Dokumente Kind nachziehen Kurzaufenthaltsbewilligung L Kanton Zürich geschieden' reports match_strength weak, expected strong (signals {'lexical_share': 0.2544, 'anchored_weight': 1.3702})"
+                "Q-FR-10 (French: Zurich: family reunification by holders of a short-stay L permit): search 'zusätzliche Dokumente Kind nachziehen Kurzaufenthaltsbewilligung L Kanton Zürich geschieden' reports match_strength weak, expected strong (signals {'lexical_share': 0.2566, 'anchored_weight': 1.3767})"
               ]
             }
           ]
@@ -8629,7 +8841,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-FR-12 (French: Cantonal migration-office contact, Jura): search 'Adresse Migrationsamt Kanton Jura' reports match_strength weak, expected strong (signals {'lexical_share': 0.4747, 'anchored_weight': 0.7172})"
+            "Q-FR-12 (French: Cantonal migration-office contact, Jura): search 'Adresse Migrationsamt Kanton Jura' reports match_strength weak, expected strong (signals {'lexical_share': 0.4762, 'anchored_weight': 0.7235})"
           ],
           "searches": [
             {
@@ -8691,7 +8903,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-IT-7 (Italian: Swiss citizens re-entering with an expired ID): search 'Schweizer Bürgerin Einreise Schweiz abgelaufene Identitätskarte ohne gültigen Pass' reports match_strength weak, expected strong (signals {'lexical_share': 0.3785, 'anchored_weight': 1.4656})"
+            "Q-IT-7 (Italian: Swiss citizens re-entering with an expired ID): search 'Schweizer Bürgerin Einreise Schweiz abgelaufene Identitätskarte ohne gültigen Pass' reports match_strength weak, expected strong (signals {'lexical_share': 0.3801, 'anchored_weight': 1.4791})"
           ],
           "searches": [
             {
@@ -8724,7 +8936,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-IT-8 (Italian: Cantonal migration-office contact, Schaffhausen): search 'Adresse Migrationsamt Kanton Schaffhausen' reports match_strength weak, expected strong (signals {'lexical_share': 0.4747, 'anchored_weight': 0.7172})"
+                "Q-IT-8 (Italian: Cantonal migration-office contact, Schaffhausen): search 'Adresse Migrationsamt Kanton Schaffhausen' reports match_strength weak, expected strong (signals {'lexical_share': 0.4762, 'anchored_weight': 0.7235})"
               ]
             }
           ]
@@ -8907,7 +9119,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-HU-1 (Hungarian: applying for and the cost of ETIAS): search 'ETIAS Antrag visumbefreites Land Vorbereitung Kosten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1868, 'anchored_weight': 1.0})"
+                "Q-HU-1 (Hungarian: applying for and the cost of ETIAS): search 'ETIAS Antrag visumbefreites Land Vorbereitung Kosten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1866, 'anchored_weight': 1.0})"
               ]
             }
           ]
@@ -8930,7 +9142,7 @@
               "judged": false,
               "unjudged_issues": [
                 "Q-TR-1 (Turkish: Third-country workers: exemptions, application, visa and registration): search 'Arbeitsbewilligung genehmigt trotzdem Visum noetig fuer Einreise' no longer finds third-country-work-procedure within the first 3 hits: ['fza-entry', 'entry-visa-need', 'health-insurance-premium-regions']",
-                "Q-TR-1 (Turkish: Third-country workers: exemptions, application, visa and registration): search 'Arbeitsbewilligung genehmigt trotzdem Visum noetig fuer Einreise' reports match_strength weak, expected strong (signals {'lexical_share': 0.3045, 'anchored_weight': 1.3225})"
+                "Q-TR-1 (Turkish: Third-country workers: exemptions, application, visa and registration): search 'Arbeitsbewilligung genehmigt trotzdem Visum noetig fuer Einreise' reports match_strength weak, expected strong (signals {'lexical_share': 0.3063, 'anchored_weight': 1.3332})"
               ]
             }
           ]
@@ -9009,7 +9221,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-AR-1 (Arabic: reporting a move within Switzerland online): search 'Umzug innerhalb Schweiz online melden Personenmeldeamt' reports match_strength weak, expected strong (signals {'lexical_share': 0.3931, 'anchored_weight': 1.1814})"
+                "Q-AR-1 (Arabic: reporting a move within Switzerland online): search 'Umzug innerhalb Schweiz online melden Personenmeldeamt' reports match_strength weak, expected strong (signals {'lexical_share': 0.3913, 'anchored_weight': 1.1791})"
               ]
             }
           ]
@@ -9097,7 +9309,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-EN-T7 (English with typos: fza-employee-permit): search 'wat documnets does the athority need for my eu employmant residence permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2372, 'anchored_weight': 0.9328})"
+            "N-EN-T7 (English with typos: fza-employee-permit): search 'wat documnets does the athority need for my eu employmant residence permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2372, 'anchored_weight': 0.9326})"
           ],
           "searches": [
             {
@@ -9144,12 +9356,12 @@
               "hits": [
                 "pillar-3a",
                 "tax-at-source-liability",
-                "health-insurance-service-suspension"
+                "zh-tax-at-source-ordinary-assessment"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-EN-T9 (English with typos: continuing pillar 3a during unemployment): search 'Can I keep paying into my pilar 3a if Im unemploid for a few monthes?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2099, 'anchored_weight': 1.0976})"
+                "N-EN-T9 (English with typos: continuing pillar 3a during unemployment): search 'Can I keep paying into my pilar 3a if Im unemploid for a few monthes?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2107, 'anchored_weight': 1.0888})"
               ]
             }
           ]
@@ -9166,7 +9378,7 @@
               "hits": [
                 "aig-registration",
                 "city-zurich-arrival",
-                "zh-naturalisation-ordinary"
+                "canton-change"
               ],
               "match_strength": "strong",
               "judged": true
@@ -9190,7 +9402,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-EN-J11 (English with expat slang: entry-visa-application): search 'I keep getting bounced between SEM and some embassy about my visa - who actually signs off on it?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1889, 'anchored_weight': 1.3583})"
+                "N-EN-J11 (English with expat slang: entry-visa-application): search 'I keep getting bounced between SEM and some embassy about my visa - who actually signs off on it?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1916, 'anchored_weight': 1.3641})"
               ]
             }
           ]
@@ -9219,7 +9431,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1305, 'anchored_weight': 1.0509})"
+            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.131, 'anchored_weight': 1.0493})"
           ],
           "searches": [
             {
@@ -9290,7 +9502,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-DE-T9 (German with typos, no capitals: city-zurich-marriage): search 'bis wan muss die ehevorbereitug in zürich spätestens abgeschlosen sein' reports match_strength weak, expected strong (signals {'lexical_share': 0.2686, 'anchored_weight': 1.1019})"
+                "N-DE-T9 (German with typos, no capitals: city-zurich-marriage): search 'bis wan muss die ehevorbereitug in zürich spätestens abgeschlosen sein' reports match_strength weak, expected strong (signals {'lexical_share': 0.2686, 'anchored_weight': 1.1017})"
               ]
             }
           ]
@@ -9332,7 +9544,7 @@
               "judged": false,
               "unjudged_issues": [
                 "N-DE-T11 (German with typos: parking in the blue zone): search 'wielang darf ich in der blauenzone in zürich parkieren bevor ich ne busse riskier' no longer finds city-zurich-parking-permits within the first 3 hits: ['foreign-licence-exchange', 'city-zurich-naturalisation', 'customs-travel-allowance']",
-                "N-DE-T11 (German with typos: parking in the blue zone): search 'wielang darf ich in der blauenzone in zürich parkieren bevor ich ne busse riskier' reports match_strength weak, expected strong (signals {'lexical_share': 0.146, 'anchored_weight': 1.026})"
+                "N-DE-T11 (German with typos: parking in the blue zone): search 'wielang darf ich in der blauenzone in zürich parkieren bevor ich ne busse riskier' reports match_strength weak, expected strong (signals {'lexical_share': 0.1461, 'anchored_weight': 1.0266})"
               ]
             }
           ]
@@ -9374,7 +9586,7 @@
               "judged": false,
               "unjudged_issues": [
                 "N-DE-J11 (Zurich German: aig-short-stay): search 'Wie lang darf ich ohni Bewilligung i de Schweiz blibe, wenn ich nid schaffe?' no longer finds aig-short-stay within the first 3 hits: ['employment-notice-and-reference', 'aig-study', 'naturalisation-facilitated-spouse']",
-                "N-DE-J11 (Zurich German: aig-short-stay): search 'Wie lang darf ich ohni Bewilligung i de Schweiz blibe, wenn ich nid schaffe?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1845, 'anchored_weight': 1.0})"
+                "N-DE-J11 (Zurich German: aig-short-stay): search 'Wie lang darf ich ohni Bewilligung i de Schweiz blibe, wenn ich nid schaffe?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1843, 'anchored_weight': 1.0})"
               ]
             }
           ]
@@ -9492,7 +9704,7 @@
               "judged": false,
               "unjudged_issues": [
                 "CTX-1 (No context given, English: aig-work-permit): search \"I have a new job starting in Zurich next week. Since it's only a temporary role, do I still need a work permit for it?\" no longer finds aig-work-permit within the first 3 hits: ['unemployment-obligations', 'uk-new-employment', 'city-zurich-population-office']",
-                "CTX-1 (No context given, English: aig-work-permit): search \"I have a new job starting in Zurich next week. Since it's only a temporary role, do I still need a work permit for it?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.321, 'anchored_weight': 1.4875})"
+                "CTX-1 (No context given, English: aig-work-permit): search \"I have a new job starting in Zurich next week. Since it's only a temporary role, do I still need a work permit for it?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3255, 'anchored_weight': 1.4979})"
               ]
             }
           ]
@@ -9514,8 +9726,8 @@
               "query": "I'm posted to Zurich for a year by my French employer and stay covered by French social security under an A1 certificate. Do I still have to enrol in Swiss health insurance within three months?",
               "translated": false,
               "hits": [
+                "ahv-international-coordination",
                 "zh-health-insurance-exemption",
-                "accident-insurance",
                 "health-insurance-enrolment"
               ],
               "match_strength": "strong",
@@ -9648,7 +9860,7 @@
               "judged": false,
               "unjudged_issues": [
                 "CTX-12 (Context routing, English: short EU/EFTA job versus the UK rule): search \"I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?\" no longer finds eu-short-employment within the first 3 hits: ['naturalisation-ordinary', 'eu-employment-registration-deadline', 'notification-responsibility']",
-                "CTX-12 (Context routing, English: short EU/EFTA job versus the UK rule): search \"I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1892, 'anchored_weight': 1.3586})"
+                "CTX-12 (Context routing, English: short EU/EFTA job versus the UK rule): search \"I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1897, 'anchored_weight': 1.3643})"
               ]
             }
           ]
@@ -9684,7 +9896,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "CTX-15 (No canton given, English: cantonal migration office): search \"I need to reach the migration office responsible for my canton, but I don't know its address. Can you find it for me?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.19, 'anchored_weight': 0.949})"
+                "CTX-15 (No canton given, English: cantonal migration office): search \"I need to reach the migration office responsible for my canton, but I don't know its address. Can you find it for me?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1883, 'anchored_weight': 0.9141})"
               ]
             }
           ]
@@ -9978,7 +10190,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "XC-29 (Another canton, German: voting at 18 in a federal vote, asked in Lucerne): search 'Meine Tochter ist Schweizerin, wir wohnen in Luzern, und sie wird im Februar 18. Darf sie bei der eidgenössischen Abstimmung im März schon abstimmen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1601, 'anchored_weight': 1.1345})"
+                "XC-29 (Another canton, German: voting at 18 in a federal vote, asked in Lucerne): search 'Meine Tochter ist Schweizerin, wir wohnen in Luzern, und sie wird im Februar 18. Darf sie bei der eidgenössischen Abstimmung im März schon abstimmen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.16, 'anchored_weight': 1.1344})"
               ]
             }
           ]
@@ -10162,7 +10374,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XC-39 (Another canton, German: a birth allowance in Lucerne): search 'Mein Kind wurde letzten Monat in Luzern geboren. Gibt es dort eine Geburtszulage?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2004, 'anchored_weight': 1.4055})"
+            "XC-39 (Another canton, German: a birth allowance in Lucerne): search 'Mein Kind wurde letzten Monat in Luzern geboren. Gibt es dort eine Geburtszulage?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2009, 'anchored_weight': 1.4112})"
           ],
           "searches": [
             {
@@ -10189,8 +10401,8 @@
               "translated": false,
               "hits": [
                 "parental-leave",
-                "health-insurance-benefits",
-                "health-insurance-cost-sharing"
+                "ahv-survivors-pensions",
+                "health-insurance-benefits"
               ],
               "match_strength": "strong",
               "judged": true
@@ -10236,7 +10448,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "XC-42 (Another canton, German: a four-month stay without work in Basel): search 'Ich bin Amerikanerin und möchte vier Monate bei meinem Freund in Basel wohnen, ohne zu arbeiten. Geht das ohne Bewilligung?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1979, 'anchored_weight': 1.3614})"
+                "XC-42 (Another canton, German: a four-month stay without work in Basel): search 'Ich bin Amerikanerin und möchte vier Monate bei meinem Freund in Basel wohnen, ohne zu arbeiten. Geht das ohne Bewilligung?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1982, 'anchored_weight': 1.3665})"
               ]
             }
           ]
@@ -10284,7 +10496,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XC-45 (Another canton, English: an EU/EFTA sponsor bringing dependent parents to Graubünden): search \"I'm an EU citizen with a residence permit in Graubünden. Can I bring my dependent parents to live with me?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3547, 'anchored_weight': 1.419})"
+            "XC-45 (Another canton, English: an EU/EFTA sponsor bringing dependent parents to Graubünden): search \"I'm an EU citizen with a residence permit in Graubünden. Can I bring my dependent parents to live with me?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3526, 'anchored_weight': 1.4092})"
           ],
           "searches": [
             {
@@ -10384,7 +10596,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XM-14 (Another Zurich municipality, English: registering a car moved from Aargau to Wetzikon): search \"I'm moving from Aargau to Wetzikon with my car. What do I need to register it at the Road Traffic Office?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2802, 'anchored_weight': 1.4922})"
+            "XM-14 (Another Zurich municipality, English: registering a car moved from Aargau to Wetzikon): search \"I'm moving from Aargau to Wetzikon with my car. What do I need to register it at the Road Traffic Office?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2802, 'anchored_weight': 1.489})"
           ],
           "searches": [
             {
@@ -10405,7 +10617,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XM-15 (Another Zurich municipality, German: when voting documents arrive in Illnau-Effretikon): search 'Ich bin Schweizer Bürger und wohne in Illnau-Effretikon. Wann erhalte ich die Abstimmungsunterlagen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2194, 'anchored_weight': 1.1345})"
+            "XM-15 (Another Zurich municipality, German: when voting documents arrive in Illnau-Effretikon): search 'Ich bin Schweizer Bürger und wohne in Illnau-Effretikon. Wann erhalte ich die Abstimmungsunterlagen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.219, 'anchored_weight': 1.1344})"
           ],
           "searches": [
             {
@@ -10453,8 +10665,8 @@
               "query": "Ich wohne in Horgen und schicke meine Unterlagen an die Arbeitslosenkasse. Darf ich die Formulare elektronisch unterschreiben?",
               "translated": false,
               "hits": [
-                "health-insurance-billing",
                 "health-insurance-insured-abroad",
+                "ahv-international-coordination",
                 "zh-unemployment-benefit"
               ],
               "match_strength": "strong",
@@ -10524,7 +10736,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.5652, 'anchored_weight': 1.4248})"
+            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.5627, 'anchored_weight': 1.4301})"
           ],
           "searches": [
             {
@@ -10647,7 +10859,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-49 (Rejected, English: a downloadable work-permit application form is not published): search 'Where can I download the application form for a work permit in Zurich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6385, 'anchored_weight': 1.3655})"
+            "OOS-49 (Rejected, English: a downloadable work-permit application form is not published): search 'Where can I download the application form for a work permit in Zurich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6379, 'anchored_weight': 1.3633})"
           ],
           "searches": [
             {
@@ -10846,8 +11058,8 @@
               "translated": false,
               "hits": [
                 "ahv-agreement-states",
-                "fza-social-security",
-                "fza-overview"
+                "ahv-international-coordination",
+                "fza-social-security"
               ],
               "match_strength": "strong",
               "judged": true
@@ -10865,8 +11077,8 @@
               "translated": false,
               "hits": [
                 "ahv-agreement-states",
-                "naturalisation-facilitated-spouse",
-                "third-country-work"
+                "ahv-contribution-duty",
+                "naturalisation-facilitated-spouse"
               ],
               "match_strength": "strong",
               "judged": true
@@ -11272,7 +11484,7 @@
               "hits": [
                 "zh-newcomer-first-information",
                 "city-zurich-first-steps",
-                "zh-family-allowances"
+                "zh-ahv-compensation-office"
               ],
               "match_strength": "strong",
               "judged": true
@@ -11516,8 +11728,8 @@
               "translated": false,
               "hits": [
                 "customs-duty-free-quantities",
-                "customs-personal-effects",
-                "unemployment-eu-efta-mobility"
+                "ahv-international-coordination",
+                "customs-personal-effects"
               ],
               "match_strength": "strong",
               "judged": true
@@ -11553,8 +11765,7 @@
               "translated": false,
               "hits": [
                 "customs-personal-effects",
-                "entry-requirements-third-country",
-                "customs-declaring-goods"
+                "entry-requirements-third-country"
               ],
               "match_strength": "strong",
               "judged": true
@@ -11648,8 +11859,8 @@
               "translated": false,
               "hits": [
                 "customs-declaring-goods",
-                "unemployment-interim-earnings",
-                "permit-b"
+                "ahv-contribution-duty",
+                "unemployment-interim-earnings"
               ],
               "match_strength": "strong",
               "judged": true
@@ -11687,7 +11898,7 @@
               "hits": [
                 "customs-internet-orders",
                 "customs-returns-and-repairs",
-                "customs-preferential-origin"
+                "ahv-individual-account"
               ],
               "match_strength": "strong",
               "judged": true
@@ -12155,7 +12366,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-63 (Out of scope: The duty on one particular consignment): search 'How much duty exactly will customs charge on my consignment?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4981, 'anchored_weight': 1.6527})"
+            "OOS-63 (Out of scope: The duty on one particular consignment): search 'How much duty exactly will customs charge on my consignment?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4968, 'anchored_weight': 1.6471})"
           ],
           "searches": [
             {
@@ -12194,12 +12405,13 @@
     },
     "hybrid": {
       "retrieval_mode": "hybrid",
-      "cases": 679,
-      "passed": 638,
+      "cases": 690,
+      "passed": 647,
       "failed": [],
       "quarantined": [
         "Q-EN-8",
         "Q-EN-9",
+        "Q-EN-14",
         "Q-EN-17",
         "Q-DE-1",
         "Q-DE-4",
@@ -12212,6 +12424,7 @@
         "OOS-4",
         "OOS-9",
         "N-EN-T1",
+        "Q-DE-36",
         "N-DE-T7",
         "OOS-23",
         "Q-DE-37",
@@ -12220,6 +12433,7 @@
         "XC-13",
         "XM-1",
         "Q-DE-55",
+        "Q-EN-54",
         "Q-DE-60",
         "Q-DE-63",
         "XM-8",
@@ -12230,6 +12444,7 @@
         "Q-EN-84",
         "Q-EN-91",
         "Q-EN-99",
+        "Q-EN-100",
         "Q-DE-72",
         "Q-DE-79",
         "Q-DE-90",
@@ -12267,6 +12482,7 @@
         "OOS-4",
         "OOS-9",
         "N-EN-T1",
+        "Q-DE-36",
         "N-DE-T7",
         "OOS-23",
         "XC-1",
@@ -12278,6 +12494,7 @@
         "Q-EN-79",
         "Q-EN-83",
         "Q-EN-91",
+        "Q-EN-100",
         "Q-DE-72",
         "Q-DE-79",
         "Q-DE-90",
@@ -12299,11 +12516,13 @@
         "OOS-63"
       ],
       "quarantined_passing": [
+        "Q-EN-14",
         "Q-EN-17",
         "Q-DE-4",
         "Q-DE-13",
         "Q-DE-37",
         "XC-12",
+        "Q-EN-54",
         "Q-DE-60",
         "XM-8",
         "Q-EN-76",
@@ -12414,7 +12633,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "ahv-pension-abroad",
-                "pillar-3a"
+                "ahv-contribution-duty"
               ],
               "match_strength": "strong",
               "judged": true
@@ -12680,7 +12899,7 @@
               "hits": [
                 "zh-sva-contact",
                 "city-zurich-population-office",
-                "zh-sva-telephone-numbers"
+                "zh-ahv-compensation-office"
               ],
               "match_strength": "strong",
               "judged": true
@@ -13176,8 +13395,8 @@
               "query": "Wie hoch ist die Erbschaftssteuer?",
               "translated": false,
               "hits": [
-                "customs-import-vat-rate",
                 "zh-tax-at-source-tariffs",
+                "customs-import-vat-rate",
                 "tax-at-source-liability"
               ],
               "match_strength": "weak",
@@ -14122,7 +14341,7 @@
               "hits": [
                 "health-insurance-cross-border-commuter",
                 "zh-health-insurance-exemption",
-                "accident-insurance"
+                "ahv-insured-persons"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14160,7 +14379,7 @@
               "hits": [
                 "health-insurance-insured-abroad",
                 "zh-premium-reduction",
-                "health-insurance-cross-border-commuter"
+                "ahv-insured-persons"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14427,6 +14646,202 @@
           "searches": []
         },
         {
+          "case_id": "UAT-103",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "AHV Beitraege Nichterwerbstaetige verheiratet",
+              "translated": false,
+              "hits": [
+                "ahv-contribution-duty",
+                "ahv-contribution-refund",
+                "ahv-insured-persons"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-104",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "AHV Beitraege Selbststaendigerwerbende Ausgleichskasse anmelden",
+              "translated": false,
+              "hits": [
+                "ahv-contribution-duty",
+                "zh-ahv-compensation-office",
+                "ahv-individual-account"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-105",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "AHV-Kontoauszug bestellen individuelles Konto",
+              "translated": false,
+              "hits": [
+                "ahv-individual-account",
+                "customs-internet-orders"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-106",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Beitragsluecken AHV Ausland fehlende Beitragsjahre",
+              "translated": false,
+              "hits": [
+                "ahv-contribution-gaps",
+                "ahv-contribution-refund",
+                "ahv-contribution-duty"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-107",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "AHV Rente vorbeziehen Referenzalter Aufschub",
+              "translated": false,
+              "hits": [
+                "ahv-reference-age",
+                "ahv-claiming-a-pension",
+                "ahv-contribution-gaps"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-108",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Anmeldung Altersrente wann Ausgleichskasse",
+              "translated": false,
+              "hits": [
+                "ahv-claiming-a-pension",
+                "ahv-thirteenth-pension",
+                "ahv-reference-age"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-109",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Witwenrente Waisenrente Anspruch AHV",
+              "translated": false,
+              "hits": [
+                "ahv-survivors-pensions",
+                "ahv-claiming-a-pension",
+                "ahv-insured-persons"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-110",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "AHV EU EFTA Koordination Versicherungsunterstellung",
+              "translated": false,
+              "hits": [
+                "ahv-international-coordination",
+                "fza-social-security",
+                "ahv-insured-persons"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-111",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Drei-Saeulen-System Schweiz Vorsorge Ueberblick",
+              "translated": false,
+              "hits": [
+                "swiss-social-insurance-map",
+                "health-insurance-deadline",
+                "bvg-cash-out-departure"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-112",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "kantonale Ausgleichskasse Zuerich AHV zustaendig",
+              "translated": false,
+              "hits": [
+                "zh-ahv-compensation-office",
+                "zh-unemployment-benefit",
+                "ahv-contribution-refund"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "DECLINE-14",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": []
+        },
+        {
           "case_id": "Q-EN-1",
           "blocking": true,
           "passed": true,
@@ -14564,7 +14979,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['naturalisation-ordinary', 'zh-permit-c-five-years', 'zh-family-b-c-permit']"
+            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['naturalisation-ordinary', 'zh-family-b-c-permit', 'zh-permit-c-five-years']"
           ],
           "searches": [
             {
@@ -14572,8 +14987,8 @@
               "translated": false,
               "hits": [
                 "naturalisation-ordinary",
-                "zh-permit-c-five-years",
-                "zh-family-b-c-permit"
+                "zh-family-b-c-permit",
+                "zh-permit-c-five-years"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14632,7 +15047,7 @@
               "hits": [
                 "zh-entry-permit-non-working",
                 "zh-third-country-retirement",
-                "fza-non-working"
+                "zh-naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14679,7 +15094,7 @@
         },
         {
           "case_id": "Q-EN-14",
-          "blocking": true,
+          "blocking": false,
           "passed": true,
           "issues": [],
           "searches": [
@@ -14688,8 +15103,8 @@
               "translated": false,
               "hits": [
                 "ahv-pension-abroad",
-                "ahv-contribution-refund",
-                "fza-non-working"
+                "ahv-contribution-gaps",
+                "ahv-claiming-a-pension"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14784,7 +15199,7 @@
               "hits": [
                 "fza-equal-treatment",
                 "fza-right-to-remain",
-                "zh-third-country-work"
+                "third-country-work"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14815,7 +15230,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-DE-1 (German: Authority issuing residence permits): search 'Welche Behörde stellt in der Schweiz die Aufenthaltsbewilligungen aus?' no longer finds permit-authority within the first 3 hits: ['entry-visa-need', 'travel-documents-foreign-nationals', 'family-swiss']"
+            "Q-DE-1 (German: Authority issuing residence permits): search 'Welche Behörde stellt in der Schweiz die Aufenthaltsbewilligungen aus?' no longer finds permit-authority within the first 3 hits: ['entry-visa-need', 'aig-short-stay', 'family-swiss']"
           ],
           "searches": [
             {
@@ -14823,7 +15238,7 @@
               "translated": false,
               "hits": [
                 "entry-visa-need",
-                "travel-documents-foreign-nationals",
+                "aig-short-stay",
                 "family-swiss"
               ],
               "match_strength": "strong",
@@ -14861,8 +15276,8 @@
               "translated": false,
               "hits": [
                 "zh-eu-registration",
-                "zh-naturalisation-division-contact",
-                "zh-newcomer-first-information"
+                "cantonal-migration-contact",
+                "zh-naturalisation-division-contact"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14978,7 +15393,7 @@
               "hits": [
                 "canton-change",
                 "zh-family-b-c-permit",
-                "zh-naturalisation-ordinary"
+                "zh-vehicle-registration-move"
               ],
               "match_strength": "strong",
               "judged": true
@@ -15604,7 +16019,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-1 (Rejected, German: schooling is not published): search 'Wie melde ich mein Kind für den Kindergarten in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4994, 'anchored_weight': 1.5315, 'best_semantic_score': 0.746})"
+            "OOS-1 (Rejected, German: schooling is not published): search 'Wie melde ich mein Kind für den Kindergarten in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4968, 'anchored_weight': 1.5199, 'best_semantic_score': 0.746})"
           ],
           "searches": [
             {
@@ -15662,7 +16077,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-4 (Rejected, Italian: family allowances is not published): search 'Familienzulagen für Kinder beantragen' reports match_strength strong, expected weak (signals {'lexical_share': 1.0, 'anchored_weight': 1.7085, 'best_semantic_score': 0.6766})",
+            "OOS-4 (Rejected, Italian: family allowances is not published): search 'Familienzulagen für Kinder beantragen' reports match_strength strong, expected weak (signals {'lexical_share': 1.0, 'anchored_weight': 1.7032, 'best_semantic_score': 0.6766})",
             "OOS-4 (Rejected, Italian: family allowances is not published): family-allowances expected OUT_OF_COVERAGE, got SUPPORTED",
             "OOS-4 (Rejected, Italian: family allowances is not published): family-allowances expected a concept_not_published gap, got none"
           ],
@@ -15761,7 +16176,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-9 (Rejected, German: taxes other than tax at source is not published): search 'Wie wird der Eigenmietwert meines Hauses im Kanton Zürich berechnet?' reports match_strength strong, expected weak (signals {'lexical_share': 0.2589, 'anchored_weight': 1.1293, 'best_semantic_score': 0.6389})"
+            "OOS-9 (Rejected, German: taxes other than tax at source is not published): search 'Wie wird der Eigenmietwert meines Hauses im Kanton Zürich berechnet?' reports match_strength strong, expected weak (signals {'lexical_share': 0.2596, 'anchored_weight': 1.1325, 'best_semantic_score': 0.6389})"
           ],
           "searches": [
             {
@@ -15871,7 +16286,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' no longer finds permit-renewal within the first 5 hits: ['permit-b', 'permit-card-eu-efta', 'aig-short-stay', 'eu-permit-mobility', 'naturalisation-ordinary']"
+            "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' no longer finds permit-renewal within the first 5 hits: ['permit-b', 'permit-card-eu-efta', 'naturalisation-ordinary', 'aig-short-stay', 'eu-permit-mobility']"
           ],
           "searches": [
             {
@@ -15880,9 +16295,9 @@
               "hits": [
                 "permit-b",
                 "permit-card-eu-efta",
+                "naturalisation-ordinary",
                 "aig-short-stay",
-                "eu-permit-mobility",
-                "naturalisation-ordinary"
+                "eu-permit-mobility"
               ],
               "match_strength": "strong",
               "judged": true
@@ -16053,7 +16468,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "ahv-pension-abroad",
-                "health-insurance-cost-sharing"
+                "zh-control-drive"
               ],
               "match_strength": "strong",
               "judged": true
@@ -16395,7 +16810,7 @@
               "hits": [
                 "zh-sva-contact",
                 "city-zurich-school-holidays",
-                "zh-eu-self-employment"
+                "zh-ahv-compensation-office"
               ],
               "match_strength": "strong",
               "judged": true
@@ -16470,8 +16885,8 @@
               "translated": false,
               "hits": [
                 "zh-sva-contact",
-                "city-zurich-population-office",
-                "zh-health-insurance-exemption"
+                "zh-ahv-compensation-office",
+                "city-zurich-population-office"
               ],
               "match_strength": "strong",
               "judged": true
@@ -16547,7 +16962,7 @@
               "hits": [
                 "zh-sva-telephone-numbers",
                 "zh-sva-contact",
-                "zh-premium-reduction"
+                "zh-ahv-compensation-office"
               ],
               "match_strength": "strong",
               "judged": true
@@ -16575,9 +16990,11 @@
         },
         {
           "case_id": "Q-DE-36",
-          "blocking": true,
-          "passed": true,
-          "issues": [],
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "Q-DE-36 (German, negative: the Road Traffic Office on 24 December): search 'Ist das Strassenverkehrsamt am 24. Dezember offen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4238, 'anchored_weight': 0.8709, 'best_semantic_score': 0.6599})"
+          ],
           "searches": [
             {
               "query": "Ist das Strassenverkehrsamt am 24. Dezember offen?",
@@ -16587,7 +17004,7 @@
                 "zh-sva-contact",
                 "city-zurich-population-office"
               ],
-              "match_strength": "strong",
+              "match_strength": "weak",
               "judged": true
             }
           ]
@@ -16768,7 +17185,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-DE-T7 (German with a typo: Population Office opening hours): search 'personenmeldeamt öfnungszeiten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1499, 'anchored_weight': 0.1763, 'best_semantic_score': 0.6623})"
+            "N-DE-T7 (German with a typo: Population Office opening hours): search 'personenmeldeamt öfnungszeiten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1474, 'anchored_weight': 0.1729, 'best_semantic_score': 0.6623})"
           ],
           "searches": [
             {
@@ -16827,7 +17244,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-23 (Rejected, German: opening hours of the customs office at the airport): search 'Öffnungszeiten Zolldienst Zürich Flughafen' reports match_strength strong, expected weak (signals {'lexical_share': 0.448, 'anchored_weight': 1.0, 'best_semantic_score': 0.6193})"
+            "OOS-23 (Rejected, German: opening hours of the customs office at the airport): search 'Öffnungszeiten Zolldienst Zürich Flughafen' reports match_strength strong, expected weak (signals {'lexical_share': 0.4483, 'anchored_weight': 1.0, 'best_semantic_score': 0.6193})"
           ],
           "searches": [
             {
@@ -17837,7 +18254,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "ahv-pension-abroad",
-                "bvg-cash-out-departure"
+                "ahv-contribution-gaps"
               ],
               "match_strength": "strong",
               "judged": true
@@ -17856,7 +18273,7 @@
               "hits": [
                 "bvg-cash-out-departure",
                 "ahv-pension-abroad",
-                "city-zurich-naturalisation"
+                "zh-ahv-compensation-office"
               ],
               "match_strength": "strong",
               "judged": true
@@ -17911,7 +18328,7 @@
               "hits": [
                 "permit-renewal",
                 "zh-family-b-c-permit",
-                "entry-visa-application"
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -18544,7 +18961,7 @@
         },
         {
           "case_id": "Q-EN-54",
-          "blocking": true,
+          "blocking": false,
           "passed": true,
           "issues": [],
           "searches": [
@@ -18553,8 +18970,8 @@
               "translated": false,
               "hits": [
                 "political-rights-federal",
-                "zh-political-rights",
-                "naturalisation-facilitated-spouse"
+                "naturalisation-facilitated-spouse",
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -18809,8 +19226,8 @@
               "translated": false,
               "hits": [
                 "family-allowances",
-                "zh-family-allowances",
-                "parental-leave"
+                "parental-leave",
+                "zh-family-allowances"
               ],
               "match_strength": "strong",
               "judged": true
@@ -19012,7 +19429,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-DE-63 (German: defects in the flat): search 'In meiner Wohnung ist der Kühlschrank kaputt. Was kann ich tun?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4493, 'anchored_weight': 1.5253, 'best_semantic_score': 0.394})"
+            "Q-DE-63 (German: defects in the flat): search 'In meiner Wohnung ist der Kühlschrank kaputt. Was kann ich tun?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4498, 'anchored_weight': 1.5296, 'best_semantic_score': 0.394})"
           ],
           "searches": [
             {
@@ -19191,8 +19608,8 @@
               "translated": false,
               "hits": [
                 "pillar-3a",
-                "zh-tax-at-source-ordinary-assessment",
-                "tax-at-source-liability"
+                "swiss-social-insurance-map",
+                "zh-tax-at-source-ordinary-assessment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -19588,7 +20005,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-83 (English: Integration criteria and personal circumstances): search 'I have a health condition that makes it hard for me to learn German quickly or hold down a job. Will that be taken into account when my permit is assessed?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1334, 'anchored_weight': 0.9969, 'best_semantic_score': 0.6622})"
+            "Q-EN-83 (English: Integration criteria and personal circumstances): search 'I have a health condition that makes it hard for me to learn German quickly or hold down a job. Will that be taken into account when my permit is assessed?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1331, 'anchored_weight': 0.9905, 'best_semantic_score': 0.6622})"
           ],
           "searches": [
             {
@@ -19911,17 +20328,19 @@
         },
         {
           "case_id": "Q-EN-100",
-          "blocking": true,
-          "passed": true,
-          "issues": [],
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "Q-EN-100 (English: EU insurance periods count toward the Swiss AHV pension): search 'I worked in Lyon for eight years before moving to Zurich. Will those French insurance years count toward my Swiss AHV pension?' no longer finds fza-social-security within the first 3 hits: ['ahv-contribution-gaps', 'ahv-international-coordination', 'ahv-pension-abroad']"
+          ],
           "searches": [
             {
               "query": "I worked in Lyon for eight years before moving to Zurich. Will those French insurance years count toward my Swiss AHV pension?",
               "translated": false,
               "hits": [
-                "ahv-pension-abroad",
-                "ahv-contribution-refund",
-                "fza-social-security"
+                "ahv-contribution-gaps",
+                "ahv-international-coordination",
+                "ahv-pension-abroad"
               ],
               "match_strength": "strong",
               "judged": true
@@ -19940,7 +20359,7 @@
               "hits": [
                 "ahv-pension-abroad",
                 "ahv-contribution-refund",
-                "bvg-cash-out-departure"
+                "fza-right-to-remain"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20104,7 +20523,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-DE-72 (German: Getting married in Switzerland): search 'Können gleichgeschlechtliche Paare in der Schweiz standesamtlich heiraten?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2656, 'anchored_weight': 0.9638, 'best_semantic_score': 0.6945})"
+            "Q-DE-72 (German: Getting married in Switzerland): search 'Können gleichgeschlechtliche Paare in der Schweiz standesamtlich heiraten?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2656, 'anchored_weight': 0.9652, 'best_semantic_score': 0.6945})"
           ],
           "searches": [
             {
@@ -20535,7 +20954,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "ahv-pension-abroad",
-                "unemployment-benefit"
+                "ahv-contribution-gaps"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20629,8 +21048,8 @@
               "translated": false,
               "hits": [
                 "accident-insurance",
-                "zh-health-insurance-exemption",
-                "bvg-cash-out-departure"
+                "ahv-insured-persons",
+                "zh-health-insurance-exemption"
               ],
               "match_strength": "strong",
               "judged": true
@@ -21187,7 +21606,7 @@
               "hits": [
                 "city-zurich-waste-sorting",
                 "city-zurich-hazardous-waste",
-                "city-zurich-bulky-waste-pickup"
+                "city-zurich-recycling-centres"
               ],
               "match_strength": "strong",
               "judged": true
@@ -21205,8 +21624,8 @@
               "translated": false,
               "hits": [
                 "pillar-3a",
-                "tax-at-source-liability",
-                "health-insurance-service-suspension"
+                "swiss-social-insurance-map",
+                "tax-at-source-liability"
               ],
               "match_strength": "strong",
               "judged": true
@@ -21275,7 +21694,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1305, 'anchored_weight': 1.0509, 'best_semantic_score': 0.4862})"
+            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.131, 'anchored_weight': 1.0493, 'best_semantic_score': 0.4862})"
           ],
           "searches": [
             {
@@ -21303,7 +21722,7 @@
               "hits": [
                 "fza-equal-treatment",
                 "fza-right-to-remain",
-                "fza-entry"
+                "fza-non-working"
               ],
               "match_strength": "strong",
               "judged": true
@@ -21435,8 +21854,8 @@
               "translated": false,
               "hits": [
                 "zh-unemployment-benefit",
-                "zh-unemployment-registration",
-                "cantonal-migration-contact"
+                "cantonal-migration-contact",
+                "zh-unemployment-registration"
               ],
               "match_strength": "strong",
               "judged": true
@@ -21555,9 +21974,9 @@
               "query": "I'm posted to Zurich for a year by my French employer and stay covered by French social security under an A1 certificate. Do I still have to enrol in Swiss health insurance within three months?",
               "translated": false,
               "hits": [
-                "health-insurance-deadline",
-                "zh-health-insurance-exemption",
-                "health-insurance-enrolment"
+                "ahv-international-coordination",
+                "health-insurance-enrolment",
+                "health-insurance-deadline"
               ],
               "match_strength": "strong",
               "judged": true
@@ -22023,7 +22442,7 @@
               "hits": [
                 "pillar-3a",
                 "tax-at-source-liability",
-                "zh-tax-at-source-ordinary-assessment"
+                "swiss-social-insurance-map"
               ],
               "match_strength": "strong",
               "judged": true
@@ -22137,7 +22556,7 @@
               "hits": [
                 "radio-tv-household-fee",
                 "ahv-pension-abroad",
-                "ahv-contribution-refund"
+                "ahv-thirteenth-pension"
               ],
               "match_strength": "strong",
               "judged": true
@@ -22187,7 +22606,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XC-39 (Another canton, German: a birth allowance in Lucerne): search 'Mein Kind wurde letzten Monat in Luzern geboren. Gibt es dort eine Geburtszulage?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2004, 'anchored_weight': 1.4055, 'best_semantic_score': 0.5818})"
+            "XC-39 (Another canton, German: a birth allowance in Lucerne): search 'Mein Kind wurde letzten Monat in Luzern geboren. Gibt es dort eine Geburtszulage?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2009, 'anchored_weight': 1.4112, 'best_semantic_score': 0.5818})"
           ],
           "searches": [
             {
@@ -22214,8 +22633,8 @@
               "translated": false,
               "hits": [
                 "parental-leave",
-                "health-insurance-benefits",
-                "health-insurance-cost-sharing"
+                "ahv-survivors-pensions",
+                "health-insurance-benefits"
               ],
               "match_strength": "strong",
               "judged": true
@@ -22417,7 +22836,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XM-15 (Another Zurich municipality, German: when voting documents arrive in Illnau-Effretikon): search 'Ich bin Schweizer Bürger und wohne in Illnau-Effretikon. Wann erhalte ich die Abstimmungsunterlagen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2194, 'anchored_weight': 1.1345, 'best_semantic_score': 0.5518})"
+            "XM-15 (Another Zurich municipality, German: when voting documents arrive in Illnau-Effretikon): search 'Ich bin Schweizer Bürger und wohne in Illnau-Effretikon. Wann erhalte ich die Abstimmungsunterlagen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.219, 'anchored_weight': 1.1344, 'best_semantic_score': 0.5518})"
           ],
           "searches": [
             {
@@ -22465,7 +22884,7 @@
               "translated": false,
               "hits": [
                 "zh-unemployment-benefit",
-                "health-insurance-billing",
+                "health-insurance-insured-abroad",
                 "notification-responsibility"
               ],
               "match_strength": "strong",
@@ -22537,7 +22956,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.5652, 'anchored_weight': 1.4248, 'best_semantic_score': 0.6022})"
+            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.5627, 'anchored_weight': 1.4301, 'best_semantic_score': 0.6022})"
           ],
           "searches": [
             {
@@ -22558,7 +22977,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-43 (Rejected, French: the amount of ordinary income tax is not published): search 'Einkommenssteuer Kanton Zürich Lohn 100000 Franken berechnen' reports match_strength strong, expected weak (signals {'lexical_share': 0.2712, 'anchored_weight': 1.2667, 'best_semantic_score': 0.6743})"
+            "OOS-43 (Rejected, French: the amount of ordinary income tax is not published): search 'Einkommenssteuer Kanton Zürich Lohn 100000 Franken berechnen' reports match_strength strong, expected weak (signals {'lexical_share': 0.2713, 'anchored_weight': 1.2693, 'best_semantic_score': 0.6743})"
           ],
           "searches": [
             {
@@ -22605,7 +23024,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-46 (Rejected, German: primary school enrolment beyond kindergarten is not published): search 'Wie melde ich mein Kind für die erste Klasse der Primarschule in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.2145, 'anchored_weight': 1.1019, 'best_semantic_score': 0.672})"
+            "OOS-46 (Rejected, German: primary school enrolment beyond kindergarten is not published): search 'Wie melde ich mein Kind für die erste Klasse der Primarschule in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.2159, 'anchored_weight': 1.1017, 'best_semantic_score': 0.672})"
           ],
           "searches": [
             {
@@ -22664,7 +23083,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-49 (Rejected, English: a downloadable work-permit application form is not published): search 'Where can I download the application form for a work permit in Zurich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6385, 'anchored_weight': 1.3655, 'best_semantic_score': 0.7122})"
+            "OOS-49 (Rejected, English: a downloadable work-permit application form is not published): search 'Where can I download the application form for a work permit in Zurich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6379, 'anchored_weight': 1.3633, 'best_semantic_score': 0.7122})"
           ],
           "searches": [
             {
@@ -22685,7 +23104,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-50 (Rejected, German: a free appointment slot is not published): search 'Gibt es diese Woche noch einen freien Termin beim Personenmeldeamt Zürich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.2873, 'anchored_weight': 1.0738, 'best_semantic_score': 0.708})"
+            "OOS-50 (Rejected, German: a free appointment slot is not published): search 'Gibt es diese Woche noch einen freien Termin beim Personenmeldeamt Zürich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.2868, 'anchored_weight': 1.0722, 'best_semantic_score': 0.708})"
           ],
           "searches": [
             {
@@ -22865,8 +23284,8 @@
               "translated": false,
               "hits": [
                 "ahv-agreement-states",
-                "fza-social-security",
-                "fza-overview"
+                "ahv-international-coordination",
+                "fza-social-security"
               ],
               "match_strength": "strong",
               "judged": true
@@ -22884,8 +23303,8 @@
               "translated": false,
               "hits": [
                 "ahv-agreement-states",
-                "fza-social-security",
-                "fza-equal-treatment"
+                "swiss-social-insurance-map",
+                "ahv-international-coordination"
               ],
               "match_strength": "strong",
               "judged": true
@@ -23132,7 +23551,7 @@
               "hits": [
                 "zh-entry-permit-non-working",
                 "zh-third-country-retirement",
-                "zh-eu-nonworking"
+                "fza-non-working"
               ],
               "match_strength": "strong",
               "judged": true
@@ -23291,7 +23710,7 @@
               "hits": [
                 "zh-newcomer-first-information",
                 "zh-migrant-associations",
-                "city-zurich-school-languages"
+                "zh-integration-offers"
               ],
               "match_strength": "strong",
               "judged": true
@@ -23575,8 +23994,8 @@
               "translated": false,
               "hits": [
                 "customs-personal-effects",
-                "customs-declaring-goods",
-                "customs-goods-counted-toward-allowance"
+                "customs-goods-counted-toward-allowance",
+                "entry-requirements-third-country"
               ],
               "match_strength": "strong",
               "judged": true
@@ -23670,8 +24089,8 @@
               "translated": false,
               "hits": [
                 "customs-declaring-goods",
-                "unemployment-interim-earnings",
-                "permit-b"
+                "ahv-contribution-duty",
+                "unemployment-interim-earnings"
               ],
               "match_strength": "strong",
               "judged": true
@@ -23709,7 +24128,7 @@
               "hits": [
                 "customs-internet-orders",
                 "customs-returns-and-repairs",
-                "customs-preferential-origin"
+                "ahv-individual-account"
               ],
               "match_strength": "strong",
               "judged": true
@@ -23841,8 +24260,8 @@
               "translated": false,
               "hits": [
                 "customs-moving-animals",
-                "aig-registration",
-                "customs-moving-vehicle"
+                "ahv-international-coordination",
+                "aig-registration"
               ],
               "match_strength": "strong",
               "judged": true
@@ -24179,7 +24598,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-63 (Out of scope: The duty on one particular consignment): search 'How much duty exactly will customs charge on my consignment?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4981, 'anchored_weight': 1.6527, 'best_semantic_score': 0.7302})"
+            "OOS-63 (Out of scope: The duty on one particular consignment): search 'How much duty exactly will customs charge on my consignment?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4968, 'anchored_weight': 1.6471, 'best_semantic_score': 0.7302})"
           ],
           "searches": [
             {

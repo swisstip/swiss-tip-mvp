@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-acceptance-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-23-v16",
-  "content_sha256": "0b376f6a597361185bd2f1f2b5b8d3984db6d0bf922d743031d30b26460d6619",
-  "suite_sha256": "72d425a00f3bff0e3014cc8d85a7cb3f82f8ba4acce3dc08666e60fa1fe499c8",
-  "checked_at": "2026-09-23T09:58:31.444439+00:00",
+  "release_id": "mvp-zurich-2026-09-23-v19",
+  "content_sha256": "08032dfd1977ca90009f3cd622535ce878fe8d272e36a4a835746a746893ce80",
+  "suite_sha256": "496adeeaba6c06033ce1eed2b2c847e2792d4f44b7d3bf5f484e958771450ccc",
+  "checked_at": "2026-09-23T10:50:14.867811+00:00",
   "as_of": "2026-09-23",
   "passed": true,
-  "cases": 122,
-  "blocking": 122,
+  "cases": 133,
+  "blocking": 133,
   "failed": [],
   "quarantined": [],
   "quarantined_failed": [],
@@ -2352,8 +2352,8 @@
           "expect_concept": "naturalisation-facilitated-spouse",
           "hits": [
             "naturalisation-facilitated-spouse",
-            "naturalisation-third-generation",
-            "city-zurich-naturalisation"
+            "city-zurich-naturalisation",
+            "zh-naturalisation-ordinary"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -10411,6 +10411,748 @@
           "bases": {
             "unemployment-daily-allowance-amount": [],
             "unemployment-calculator": []
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "UAT-103",
+      "label": "Not working, and asked to pay AHV",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "AHV Beitraege Nichterwerbstaetige verheiratet",
+          "expect_concept": "ahv-contribution-duty",
+          "hits": [
+            "ahv-contribution-duty",
+            "zh-sva-telephone-numbers",
+            "ahv-contribution-refund"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "ahv-contribution-duty",
+            "ahv-insured-persons"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "ahv-contribution-duty": "SUPPORTED",
+            "ahv-insured-persons": "SUPPORTED"
+          },
+          "gaps": {
+            "ahv-contribution-duty": [],
+            "ahv-insured-persons": []
+          },
+          "facts": {
+            "ahv-contribution-duty": [
+              "ahv-contribution-duty-1",
+              "ahv-contribution-duty-2",
+              "ahv-contribution-duty-3",
+              "ahv-contribution-duty-4",
+              "ahv-contribution-duty-5",
+              "ahv-contribution-duty-6",
+              "ahv-contribution-duty-7",
+              "ahv-contribution-duty-8",
+              "ahv-contribution-duty-9",
+              "ahv-contribution-duty-10",
+              "ahv-contribution-duty-11",
+              "ahv-contribution-duty-12",
+              "ahv-contribution-duty-13"
+            ],
+            "ahv-insured-persons": [
+              "ahv-insured-persons-1",
+              "ahv-insured-persons-2",
+              "ahv-insured-persons-3",
+              "ahv-insured-persons-4",
+              "ahv-insured-persons-5",
+              "ahv-insured-persons-6",
+              "ahv-insured-persons-7"
+            ]
+          },
+          "bases": {
+            "ahv-contribution-duty": [
+              "Federal authority guidance"
+            ],
+            "ahv-insured-persons": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "A married person without earned income is covered by the spouse's double minimum contribution",
+          "concept": "ahv-contribution-duty",
+          "fact_ids": [
+            "ahv-contribution-duty-2"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-104",
+      "label": "Going self-employed",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "AHV Beitraege Selbststaendigerwerbende Ausgleichskasse anmelden",
+          "expect_concept": "ahv-contribution-duty",
+          "hits": [
+            "ahv-contribution-duty",
+            "zh-sva-telephone-numbers",
+            "ahv-pension-abroad"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "ahv-contribution-duty"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "ahv-contribution-duty": "SUPPORTED"
+          },
+          "gaps": {
+            "ahv-contribution-duty": []
+          },
+          "facts": {
+            "ahv-contribution-duty": [
+              "ahv-contribution-duty-1",
+              "ahv-contribution-duty-2",
+              "ahv-contribution-duty-3",
+              "ahv-contribution-duty-4",
+              "ahv-contribution-duty-5",
+              "ahv-contribution-duty-6",
+              "ahv-contribution-duty-7",
+              "ahv-contribution-duty-8",
+              "ahv-contribution-duty-9",
+              "ahv-contribution-duty-10",
+              "ahv-contribution-duty-11",
+              "ahv-contribution-duty-12",
+              "ahv-contribution-duty-13"
+            ]
+          },
+          "bases": {
+            "ahv-contribution-duty": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The compensation office decides whether someone counts as self-employed",
+          "concept": "ahv-contribution-duty",
+          "fact_ids": [
+            "ahv-contribution-duty-5"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-105",
+      "label": "Checking the record",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "AHV-Kontoauszug bestellen individuelles Konto",
+          "expect_concept": "ahv-individual-account",
+          "hits": [
+            "ahv-individual-account",
+            "customs-internet-orders"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "ahv-individual-account"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "ahv-individual-account": "SUPPORTED"
+          },
+          "gaps": {
+            "ahv-individual-account": []
+          },
+          "facts": {
+            "ahv-individual-account": [
+              "ahv-individual-account-1",
+              "ahv-individual-account-2",
+              "ahv-individual-account-3",
+              "ahv-individual-account-4",
+              "ahv-individual-account-5"
+            ]
+          },
+          "bases": {
+            "ahv-individual-account": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "An extract from the account is free of charge",
+          "concept": "ahv-individual-account",
+          "fact_ids": [
+            "ahv-individual-account-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-106",
+      "label": "Eight years abroad",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Beitragsluecken AHV Ausland fehlende Beitragsjahre",
+          "expect_concept": "ahv-contribution-gaps",
+          "hits": [
+            "ahv-contribution-gaps",
+            "ahv-contribution-refund",
+            "ahv-contribution-duty"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "ahv-contribution-gaps"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "ahv-contribution-gaps": "SUPPORTED"
+          },
+          "gaps": {
+            "ahv-contribution-gaps": []
+          },
+          "facts": {
+            "ahv-contribution-gaps": [
+              "ahv-contribution-gaps-1",
+              "ahv-contribution-gaps-2",
+              "ahv-contribution-gaps-3",
+              "ahv-contribution-gaps-4",
+              "ahv-contribution-gaps-5"
+            ]
+          },
+          "bases": {
+            "ahv-contribution-gaps": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "A full pension needs 44 contribution years and a missing year can reduce it",
+          "concept": "ahv-contribution-gaps",
+          "fact_ids": [
+            "ahv-contribution-gaps-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-107",
+      "label": "When can I stop",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "AHV Rente vorbeziehen Referenzalter Aufschub",
+          "expect_concept": "ahv-reference-age",
+          "hits": [
+            "ahv-reference-age",
+            "ahv-claiming-a-pension",
+            "ahv-contribution-gaps"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "ahv-reference-age"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "ahv-reference-age": "SUPPORTED"
+          },
+          "gaps": {
+            "ahv-reference-age": []
+          },
+          "facts": {
+            "ahv-reference-age": [
+              "ahv-reference-age-1",
+              "ahv-reference-age-2",
+              "ahv-reference-age-3",
+              "ahv-reference-age-4",
+              "ahv-reference-age-5",
+              "ahv-reference-age-6",
+              "ahv-reference-age-7",
+              "ahv-reference-age-8"
+            ]
+          },
+          "bases": {
+            "ahv-reference-age": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The pension can be drawn early from the month after the 63rd year is completed",
+          "concept": "ahv-reference-age",
+          "fact_ids": [
+            "ahv-reference-age-4"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The reduction or supplement follows actuarial principles",
+          "concept": "ahv-reference-age",
+          "fact_ids": [
+            "ahv-reference-age-7"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-108",
+      "label": "Turning sixty-five next spring",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Anmeldung Altersrente wann Ausgleichskasse",
+          "expect_concept": "ahv-claiming-a-pension",
+          "hits": [
+            "ahv-claiming-a-pension",
+            "ahv-pension-abroad",
+            "zh-ahv-compensation-office"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "ahv-claiming-a-pension"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "ahv-claiming-a-pension": "SUPPORTED"
+          },
+          "gaps": {
+            "ahv-claiming-a-pension": []
+          },
+          "facts": {
+            "ahv-claiming-a-pension": [
+              "ahv-claiming-a-pension-1",
+              "ahv-claiming-a-pension-2",
+              "ahv-claiming-a-pension-3",
+              "ahv-claiming-a-pension-4"
+            ]
+          },
+          "bases": {
+            "ahv-claiming-a-pension": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The registration goes in three to four months before the reference age",
+          "concept": "ahv-claiming-a-pension",
+          "fact_ids": [
+            "ahv-claiming-a-pension-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-109",
+      "label": "After a death in the family",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Witwenrente Waisenrente Anspruch AHV",
+          "expect_concept": "ahv-survivors-pensions",
+          "hits": [
+            "ahv-survivors-pensions",
+            "ahv-claiming-a-pension",
+            "family-allowances"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "ahv-survivors-pensions"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "ahv-survivors-pensions": "SUPPORTED"
+          },
+          "gaps": {
+            "ahv-survivors-pensions": []
+          },
+          "facts": {
+            "ahv-survivors-pensions": [
+              "ahv-survivors-pensions-1",
+              "ahv-survivors-pensions-2",
+              "ahv-survivors-pensions-3",
+              "ahv-survivors-pensions-4",
+              "ahv-survivors-pensions-5",
+              "ahv-survivors-pensions-6",
+              "ahv-survivors-pensions-7",
+              "ahv-survivors-pensions-8",
+              "ahv-survivors-pensions-9",
+              "ahv-survivors-pensions-10",
+              "ahv-survivors-pensions-11",
+              "ahv-survivors-pensions-12",
+              "ahv-survivors-pensions-13"
+            ]
+          },
+          "bases": {
+            "ahv-survivors-pensions": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "A married widow qualifies through children, or age 45 and five years of marriage",
+          "concept": "ahv-survivors-pensions",
+          "fact_ids": [
+            "ahv-survivors-pensions-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The orphan's pension ends at 18, or on completion of education at the latest at 25",
+          "concept": "ahv-survivors-pensions",
+          "fact_ids": [
+            "ahv-survivors-pensions-11"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-110",
+      "label": "A career in two countries",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "AHV EU EFTA Koordination Versicherungsunterstellung",
+          "expect_concept": "ahv-international-coordination",
+          "hits": [
+            "fza-social-security",
+            "ahv-international-coordination",
+            "ahv-insured-persons"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "ahv-international-coordination"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "ahv-international-coordination": "SUPPORTED"
+          },
+          "gaps": {
+            "ahv-international-coordination": []
+          },
+          "facts": {
+            "ahv-international-coordination": [
+              "ahv-international-coordination-1",
+              "ahv-international-coordination-2",
+              "ahv-international-coordination-3",
+              "ahv-international-coordination-4",
+              "ahv-international-coordination-5",
+              "ahv-international-coordination-6",
+              "ahv-international-coordination-7",
+              "ahv-international-coordination-8",
+              "ahv-international-coordination-9",
+              "ahv-international-coordination-10",
+              "ahv-international-coordination-11",
+              "ahv-international-coordination-12",
+              "ahv-international-coordination-90",
+              "ahv-international-coordination-91",
+              "ahv-international-coordination-92",
+              "ahv-international-coordination-93"
+            ]
+          },
+          "bases": {
+            "ahv-international-coordination": [
+              "Cantonal authority guidance",
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The coordination rests on the free movement agreement and the EU regulations",
+          "concept": "ahv-international-coordination",
+          "fact_ids": [
+            "ahv-international-coordination-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-111",
+      "label": "How does any of this work",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Drei-Saeulen-System Schweiz Vorsorge Ueberblick",
+          "expect_concept": "swiss-social-insurance-map",
+          "hits": [
+            "swiss-social-insurance-map",
+            "health-insurance-deadline",
+            "bvg-cash-out-departure"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "swiss-social-insurance-map"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "swiss-social-insurance-map": "SUPPORTED"
+          },
+          "gaps": {
+            "swiss-social-insurance-map": []
+          },
+          "facts": {
+            "swiss-social-insurance-map": [
+              "swiss-social-insurance-map-1",
+              "swiss-social-insurance-map-2",
+              "swiss-social-insurance-map-3",
+              "swiss-social-insurance-map-4",
+              "swiss-social-insurance-map-5",
+              "swiss-social-insurance-map-6",
+              "swiss-social-insurance-map-7",
+              "swiss-social-insurance-map-8",
+              "swiss-social-insurance-map-9"
+            ]
+          },
+          "bases": {
+            "swiss-social-insurance-map": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The three pillars and what each is meant to do",
+          "concept": "swiss-social-insurance-map",
+          "fact_ids": [
+            "swiss-social-insurance-map-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-112",
+      "label": "Which office in Zurich",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "kantonale Ausgleichskasse Zuerich AHV zustaendig",
+          "expect_concept": "zh-ahv-compensation-office",
+          "hits": [
+            "zh-ahv-compensation-office",
+            "zh-family-allowances",
+            "ahv-pension-abroad"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "zh-ahv-compensation-office"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "zh-ahv-compensation-office": "SUPPORTED"
+          },
+          "gaps": {
+            "zh-ahv-compensation-office": []
+          },
+          "facts": {
+            "zh-ahv-compensation-office": [
+              "zh-ahv-compensation-office-1",
+              "zh-ahv-compensation-office-2",
+              "zh-ahv-compensation-office-3"
+            ]
+          },
+          "bases": {
+            "zh-ahv-compensation-office": [
+              "Cantonal authority guidance",
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The cantonal office is the contact point for residents not otherwise affiliated",
+          "concept": "zh-ahv-compensation-office",
+          "fact_ids": [
+            "zh-ahv-compensation-office-2"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "DECLINE-14",
+      "label": "How much AHV pension",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "ahv-pension-amount",
+            "ahv-pension-calculator"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "ahv-pension-amount": "OUT_OF_COVERAGE",
+            "ahv-pension-calculator": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "ahv-pension-amount": [
+              "concept_not_published"
+            ],
+            "ahv-pension-calculator": [
+              "concept_not_published"
+            ]
+          },
+          "facts": {
+            "ahv-pension-amount": [],
+            "ahv-pension-calculator": []
+          },
+          "bases": {
+            "ahv-pension-amount": [],
+            "ahv-pension-calculator": []
           },
           "passed": true
         }
