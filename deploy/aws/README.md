@@ -191,6 +191,24 @@ sudo systemctl restart swiss-tip                 # pull the moving tags and recr
   parameter does not reach a running host. Edit `/opt/swiss-tip/.env` and
   restart the service, or delete the stack and create it again, which also
   changes the Elastic IP.
+- **A fresh host with the same address.** Update the stack with a change
+  set that replaces the instance: the address and its attachment are
+  resources of their own, so a replaced instance gets the same Elastic IP
+  and runs the current host script at its first boot, with the stack's
+  parameters. CloudFormation replaces the instance only when its image
+  changes; when no newer Amazon Linux 2023 image has appeared since the
+  last one, set `LatestAmi` to the other kernel flavour of the same
+  distribution, `/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.12-x86_64`,
+  and check in the change set that `Instance` changes `ImageId` before
+  executing. A change set whose `Instance` row changes `UserData` alone
+  would stop and start the same instance without running the script.
+  Every hand edit of `.env` goes with the old instance, sslip.io names and
+  the web interface included, and is made again afterwards.
+- **The registry parameter.** `Registry` reaches the host once too. A stack
+  created with an earlier image owner keeps pulling from it after a
+  replacement, and an image that exists only under the current owner is
+  `denied`; `SWISSTIP_REGISTRY` in `.env` is the line to correct, then
+  `sudo systemctl restart swiss-tip`.
 - **The web interface on and off.** `COMPOSE_PROFILES=demo` in `.env` starts
   it with the service; `sudo docker compose stop demo` stops it and leaves
   the server alone. Hosted, it refuses to start without a password.
@@ -345,12 +363,21 @@ findings in `eu-central-1`, `eu-central-2` and `us-east-1`) and by
 
 The `Calendar` parameter, the `calendar` service of `compose.yaml`, the
 `SWISSTIP_CONNECTORS` line of `.env` and the watchdog's recreation of the
-connector (23 September 2026) are checked by `test_template.py` and `bash
--n` and have not been run in an AWS account; the same three containers,
-server, sidecar and connector, ran together on a laptop through the code
-repository's `compose.yaml` with the profiles `calendar` and `demo`, and the
-web interface answered the next organic-waste collection day for 8001 from
-the connector.
+connector were run on 23 September 2026 on the stack of 20 September: a
+change set with the new template and `LatestAmi` set to the kernel 6.12
+flavour replaced the instance and kept the Elastic IP, the first change set
+without it had shown `UserData` as the only change of `Instance` and was
+deleted. The new host pulled from the stack's old image owner and was
+denied the calendar image, which exists under `swisstip` only;
+`SWISSTIP_REGISTRY` corrected in `.env` and the service restarted, the
+four containers came up healthy, `/health` named release
+`mvp-zurich-2026-09-22-v7` with the connector `ok` and the five Zurich
+datasets registered, the sslip.io names and the web interface were set by
+hand again, Let's Encrypt issued both certificates, the interface answered
+401 without credentials, and it answered the next organic-waste collection
+day for 8001 from the connector. The same three containers, server,
+sidecar and connector, had run together on a laptop before through the
+code repository's `compose.yaml` with the profiles `calendar` and `demo`.
 
 Not tested: `SslipNames` and a stack created with it, the certificate from
 Let's Encrypt for a domain of one's own, the Route 53 records,
