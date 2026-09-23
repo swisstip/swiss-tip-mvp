@@ -11,7 +11,7 @@ Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
       - Label: {default: What is served}
-        Parameters: [Pack, Calendar, SslipNames, McpDomain, DemoDomain, HostedZoneId, Registry]
+        Parameters: [Pack, Calendar, WelcomeUrl, SslipNames, McpDomain, DemoDomain, HostedZoneId, Registry]
       - Label: {default: Names and passwords (optional)}
         Parameters: [McpUsername, McpPassword, DemoUsername, DemoPassword]
       - Label: {default: The instance}
@@ -35,6 +35,14 @@ Parameters:
       yes: the pack's calendar connector runs beside the server (the image <Registry>/swiss-tip-calendar:<Pack>,
       which mvp-zurich has: the waste-collection calendars of the City of Zurich), the server registers it and
       offers the lookup tool. no: the server alone. A pack without a calendar image needs no.
+  WelcomeUrl:
+    Type: String
+    Default: https://raw.githubusercontent.com/swisstip/swiss-tip-mvp/main/docker/demo-opencode/welcome.json
+    AllowedPattern: "^$|^https://[^ ]+$"
+    Description: >-
+      The web interface's welcome panel, the pack's coverage text and sample questions, downloaded at the
+      first start (the demo image of the packs repository carries the same file). Empty, or a download that
+      fails: the generic panel without questions. Only with a hosted web interface.
   SslipNames:
     Type: String
     Default: none
@@ -265,6 +273,7 @@ Resources:
                   DEMO_SITE='${DemoSite}'
                   PROFILES='${Profiles}'
                   CALENDAR='${Calendar}'
+                  WELCOME_URL='${WelcomeUrl}'
                   MCP_USERNAME='${McpUsername}'
                   MCP_SECRET='${McpSecretArn}'
                   DEMO_USERNAME='${DemoUsername}'
@@ -337,6 +346,10 @@ Resources:
                 #   SWISSTIP_MCP_USERNAME, SWISSTIP_MCP_PASSWORD
                 #                        both set: the MCP site asks for them (basic
                 #                        credentials); both empty (default): it is open
+                #   welcome.json         beside this file: the web interface's welcome panel
+                #                        (the pack's coverage text and sample questions); the
+                #                        template downloads the pack's one, or writes the
+                #                        generic panel when the download fails
                 #   SWISSTIP_PACK, SWISSTIP_REGISTRY   as in the repository's compose.yaml
                 name: swiss-tip
 
@@ -369,6 +382,8 @@ Resources:
                       - OPENCODE_SERVER_USERNAME
                       - OPENCODE_SERVER_PASSWORD
                       - OPENCODE_API_KEY
+                    volumes:
+                      - ./welcome.json:/etc/swiss-tip/welcome.json:ro
                     depends_on:
                       swiss-tip:
                         condition: service_healthy
@@ -459,6 +474,13 @@ Resources:
 
                 exec caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
                 SWISSTIP_CADDY_START
+
+                # The welcome panel of the web interface: the pack's, or the generic one. A panel written for
+                # another pack is replaced by the generic one inside the container, so a wrong file costs nothing.
+                if [ -z "$WELCOME_URL" ] || ! curl -fsSL --retry 3 -o welcome.json "$WELCOME_URL"; then
+                  echo '{"title": "Swiss TIP knowledge base", "note": "Answers come from reviewed facts of official sources and cite them.", "questions": []}' > welcome.json
+                fi
+                chmod 644 welcome.json
 
                 # Compose reads .env beside compose.yaml, COMPOSE_PROFILES included.
                 umask 077

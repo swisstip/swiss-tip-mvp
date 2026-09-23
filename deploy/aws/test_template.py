@@ -129,6 +129,14 @@ class TemplateTests(unittest.TestCase):
         self.assertIn("CALENDAR='${Calendar}'", self.head)
         self.assertEqual(self.template["Parameters"]["Calendar"]["AllowedValues"], ["yes", "no"])
 
+    def test_the_welcome_panel_is_downloaded_or_generic_and_mounted_read_only(self):
+        compose = yaml.safe_load(text(HERE / "compose.yaml"))
+        self.assertEqual(compose["services"]["demo"]["volumes"], ["./welcome.json:/etc/swiss-tip/welcome.json:ro"])
+        self.assertIn("WELCOME_URL='${WelcomeUrl}'", self.head)
+        self.assertIn('curl -fsSL --retry 3 -o welcome.json "$WELCOME_URL"', self.rest)
+        self.assertIn('"questions": []', self.rest)
+        self.assertTrue(self.template["Parameters"]["WelcomeUrl"]["Default"].startswith("https://raw.githubusercontent.com/"))
+
     def test_passwords_reach_the_host_through_their_secrets_only(self):
         parameters = self.template["Parameters"]
         passwords = [name for name in parameters if name.endswith("Password")]

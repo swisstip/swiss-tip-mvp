@@ -36,6 +36,7 @@ read the instance's credentials.
 | Parameter | Default | Meaning |
 | --- | --- | --- |
 | `Pack` | `mvp-zurich` | the knowledge pack; the image is `<Registry>/swiss-tip:<Pack>-slim` |
+| `WelcomeUrl` | the pack's `welcome.json` on the `main` branch of this repository | the web interface's welcome panel, the coverage text and sample questions of `docker/demo-opencode/welcome.json`, downloaded at the first start; empty, or a failed download, gives the generic panel without questions. Until the branch that carries the file is merged, give its raw URL on that branch |
 | `Calendar` | `yes` | the pack's calendar connector beside the server, the image `<Registry>/swiss-tip-calendar:<Pack>` ([dataset connectors](https://github.com/swisstip/swiss-tip/blob/main/docs/architecture/dataset-connectors.md); `mvp-zurich` has one, the waste-collection calendars of the City of Zurich). The server registers it on the loopback of its own network namespace and offers the fifth tool `lookup`. `no` for a pack without a calendar image |
 | `SslipNames` | `none` | HTTPS without a domain of your own: `mcp` serves the MCP endpoint on `https://<ip>.sslip.io/mcp`, `mcp-and-demo` runs the web interface too, on `demo.<ip>.sslip.io`. `<ip>` is the Elastic IP with hyphens, for example `51-96-83-1`; [sslip.io](https://sslip.io) resolves it to the address and Caddy obtains the certificate. Needs `McpDomain` and `DemoDomain` empty |
 | `McpDomain` | empty | for example `mcp.example.ai`; then `https://<domain>/mcp`. Empty (and `SslipNames` `none`): plain HTTP on port 80 of the Elastic IP |
@@ -212,6 +213,11 @@ sudo systemctl restart swiss-tip                 # pull the moving tags and recr
 - **The web interface on and off.** `COMPOSE_PROFILES=demo` in `.env` starts
   it with the service; `sudo docker compose stop demo` stops it and leaves
   the server alone. Hosted, it refuses to start without a password.
+- **The welcome panel.** `/opt/swiss-tip/welcome.json`, mounted into the
+  web interface read-only; the container reads it at its start. New
+  questions: replace the file (`sudo curl -fsSL -o welcome.json <raw URL>`,
+  or edit it) and `sudo docker compose up -d --force-recreate --no-deps
+  demo`, which leaves the server alone.
 - **The calendar connector on and off.** `calendar` in `COMPOSE_PROFILES`
   (`demo,calendar` with the web interface) and
   `SWISSTIP_CONNECTORS=http://127.0.0.1:8100` in `.env`, then `sudo
@@ -255,7 +261,8 @@ Set a budget with an alert in the Billing console either way.
 The instance's user data is one script, run once by cloud-init. It makes the
 swap file, installs Docker from the distribution and Docker Compose from its
 GitHub release by digest, writes `/opt/swiss-tip/compose.yaml`, `Caddyfile`,
-`caddy-start.sh` and `.env`, reads each password from its secret into `.env`,
+`caddy-start.sh` and `.env`, downloads `welcome.json` from `WelcomeUrl` (or
+writes the generic panel), reads each password from its secret into `.env`,
 and enables three systemd units: `swiss-tip.service` (pull, then
 `docker compose up -d`, at every boot, retried on failure),
 and `swiss-tip-watchdog.service` with its timer.

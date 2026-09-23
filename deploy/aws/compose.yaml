@@ -23,6 +23,10 @@
 #   SWISSTIP_MCP_USERNAME, SWISSTIP_MCP_PASSWORD
 #                        both set: the MCP site asks for them (basic
 #                        credentials); both empty (default): it is open
+#   welcome.json         beside this file: the web interface's welcome panel
+#                        (the pack's coverage text and sample questions); the
+#                        template downloads the pack's one, or writes the
+#                        generic panel when the download fails
 #   SWISSTIP_PACK, SWISSTIP_REGISTRY   as in the repository's compose.yaml
 name: swiss-tip
 
@@ -55,6 +59,8 @@ services:
       - OPENCODE_SERVER_USERNAME
       - OPENCODE_SERVER_PASSWORD
       - OPENCODE_API_KEY
+    volumes:
+      - ./welcome.json:/etc/swiss-tip/welcome.json:ro
     depends_on:
       swiss-tip:
         condition: service_healthy
