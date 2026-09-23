@@ -11,7 +11,7 @@ a postal code. Design, contract and status are in the code repository's
 
 | Pack | Datasets | Source | Status |
 | --- | --- | --- | --- |
-| `mvp-zurich/` | The five waste-collection calendars of the City of Zurich for 2026: organic waste, paper and cardboard (behind `city-zurich-organic-paper-cardboard`), household waste (`city-zurich-household-waste`) and the stops of the hazardous-waste van (`city-zurich-hazardous-waste`), by postal code | [Open Data Zürich](https://data.stadt-zuerich.ch/), datasets `entsorgungskalender_*`, published by Entsorgung + Recycling Zürich under CC0, one CSV per year | Built on 23 September 2026 from the files as published that day; not yet in an image, not yet registered with a published server, no acceptance case yet (see below) |
+| `mvp-zurich/` | The five waste-collection calendars of the City of Zurich for 2026: organic waste, paper and cardboard (behind `city-zurich-organic-paper-cardboard`), household waste (`city-zurich-household-waste`) and the stops of the hazardous-waste van (`city-zurich-hazardous-waste`), by postal code | [Open Data Zürich](https://data.stadt-zuerich.ch/), datasets `entsorgungskalender_*`, published by Entsorgung + Recycling Zürich under CC0, one CSV per year | Built on 23 September 2026 from the files as published that day; the calendar image `swiss-tip-calendar:mvp-zurich` was built, tested and pushed the same day on the 0.3.0rc4 rehearsal and registered its five datasets beside the slim image; the acceptance cases below are not in the suite yet |
 
 ## Files in a dataset folder
 
