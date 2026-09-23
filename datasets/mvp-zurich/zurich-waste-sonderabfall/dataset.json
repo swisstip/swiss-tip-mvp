@@ -1,0 +1,215 @@
+{
+  "manifest": {
+    "schema_version": "swiss-tip-dataset/v1",
+    "dataset_id": "zurich-waste-sonderabfall",
+    "dataset_version": "2026-09-23-v1",
+    "type": "calendar",
+    "title": "Hazardous waste collection van stops, City of Zurich",
+    "label": "Hazardous waste van (Sonderabfallmobil)",
+    "pack": "mvp-zurich",
+    "concept_id": "city-zurich-hazardous-waste",
+    "jurisdiction": "CH-ZH-261",
+    "publisher": "Entsorgung + Recycling Zürich (ERZ)",
+    "publisher_url": "https://data.stadt-zuerich.ch/dataset/entsorgungskalender_sonderabfall",
+    "licence": "CC0-1.0",
+    "refresh": "bundled",
+    "sources": [
+      {
+        "url": "https://data.stadt-zuerich.ch/dataset/entsorgungskalender_sonderabfall/download/entsorgungskalender_sonderabfall_2026.csv",
+        "sha256": "ec069f8f6a81271397b7ba693c80c62d0061b286060039f38e98d27dc3d14c16",
+        "bytes": 2197,
+        "downloaded_on": "2026-09-23"
+      }
+    ],
+    "period": {
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    },
+    "postal_codes": [
+      "8001",
+      "8002",
+      "8003",
+      "8004",
+      "8005",
+      "8006",
+      "8008",
+      "8032",
+      "8037",
+      "8038",
+      "8041",
+      "8044",
+      "8045",
+      "8046",
+      "8047",
+      "8048",
+      "8049",
+      "8050",
+      "8051",
+      "8052",
+      "8053",
+      "8055",
+      "8057",
+      "8064"
+    ],
+    "row_count": 30,
+    "created_at": "2026-09-23T07:42:39Z",
+    "limitations": [
+      "Calendar rows are taken from the publisher's file unchanged and are not human-reviewed; the hashes of the downloaded files and the build's checks are the whole gate.",
+      "Postal codes are the publisher's; no register ties them to CH-ZH-261.",
+      "Licence of the rows: CC0-1.0, published by Entsorgung + Recycling Zürich (ERZ) at https://data.stadt-zuerich.ch/dataset/entsorgungskalender_sonderabfall."
+    ],
+    "content_sha256": "c3344e0445bc697bae37fff2426417bbdf73ee8943e489b866a788b37cf55f13"
+  },
+  "rows": [
+    {
+      "postal_code": "8001",
+      "date": "2026-03-23",
+      "location": "8001, Neumarkt: Parkplatz am Hirschengraben 13 (vor kantonalem Obergericht)"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-09-08",
+      "location": "8002, Enge: Tessinerplatz"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-03-27",
+      "location": "8047, Albisrieden: Albisriederstrasse 385 (Alte evangelische Kirche)"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-04-15",
+      "location": "8045, Friesenberg: Bachtobelstrasse (Wertstoff-Sammelstelle)"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-09-07",
+      "location": "8004, Langstrasse: Helvetiaplatz"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-09-08",
+      "location": "8002, Enge: Tessinerplatz"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-09-10",
+      "location": "8055, Triemli: Wasserschöpfi/Küngenmatt (Bad Heuried)"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-09-07",
+      "location": "8004, Langstrasse: Helvetiaplatz"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-04-18",
+      "location": "8005, Industriequartier: Röntgenplatz"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-09-09",
+      "location": "8006, Oberstrass: Rigiplatz"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-04-14",
+      "location": "8008, Seefeld: Seefeldstrasse 152 (Wertstoff-Sammelstelle)"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-08-29",
+      "location": "8032, Hottingen: Minervastrasse/Merkurstrasse (Merkurplatz)"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-08-26",
+      "location": "8037, Wipkingen: Röschibachplatz"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-03-26",
+      "location": "8038, Wollishofen: Etzelstrasse/Mutschellenstrasse (Wertstoff-Sammelstelle)"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-08-24",
+      "location": "8041, Leimbach: Leimbachstrasse 160/Klebestrasse (Wertstoff-Sammelstelle)"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-03-25",
+      "location": "8044, Fluntern: Kirche Fluntern / Kreuzung Zürichbergstrasse (Wertstoff-Sammelstelle)"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-04-15",
+      "location": "8045, Friesenberg: Bachtobelstrasse (Wertstoff-Sammelstelle)"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-09-12",
+      "location": "8046, Affoltern: Wehntalerstrasse 539 (Zehntenhausplatz )"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-03-27",
+      "location": "8047, Albisrieden: Albisriederstrasse 385 (Alte evangelische Kirche)"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-03-24",
+      "location": "8048, Altstetten: Lindenplatz"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-08-25",
+      "location": "8048, Altstetten: Lindenplatz"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-04-17",
+      "location": "8049, Höngg: Limmattalstrasse 227-229"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-08-27",
+      "location": "8049, Höngg: Limmattalstrasse 227-229"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-09-11",
+      "location": "8050, Oerlikon: Marktplatz Oerlikon"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-04-13",
+      "location": "8051, Schwamendingen: Schwamendingerplatz"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-03-28",
+      "location": "8052, Seebach: Schaffhauserstrasse 801 (Parkplatz hinter Tramhaltestelle Seebach)"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-08-28",
+      "location": "8053, Witikon: Witikonerstrasse 390 (Parkplatz Waag)"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-09-10",
+      "location": "8055, Triemli: Wasserschöpfi/Küngenmatt (Bad Heuried)"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-04-16",
+      "location": "8057, Milchbuck: Milchbuckstrasse 2 (Tramhaltestelle Guggachstrasse)"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-08-18",
+      "location": "8064, Werdhölzli: Recyclinghof"
+    }
+  ]
+}

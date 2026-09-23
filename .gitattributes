@@ -3,6 +3,8 @@
 # release file. Never convert their line endings: a CRLF checkout on Windows
 # would break every hash.
 releases/** -text
+# The dataset bundles are hashed the same way.
+datasets/** -text
 # The place register is embedded in every release the same way.
 config/** -text
 # Written to a Linux host and mounted into containers: a CRLF checkout on

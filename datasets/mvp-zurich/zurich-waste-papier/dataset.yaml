@@ -1,0 +1,27 @@
+schema_version: swiss-tip-dataset-curation/v1
+dataset_id: zurich-waste-papier
+type: calendar
+title: Paper collection days, City of Zurich
+label: Paper (Papier)
+pack: mvp-zurich
+concept_id: city-zurich-organic-paper-cardboard
+jurisdiction: CH-ZH-261
+publisher: Entsorgung + Recycling Zürich (ERZ)
+publisher_url: https://data.stadt-zuerich.ch/dataset/entsorgungskalender_papier
+licence: CC0-1.0
+refresh: bundled
+sources:
+- url: https://data.stadt-zuerich.ch/dataset/entsorgungskalender_papier/download/entsorgungskalender_papier_2026.csv
+  sha256: 8018825366002432c2c75518ff6ecbf9e97521e8fd62b101078e9e32761fb21c
+  bytes: 11841
+  downloaded_on: '2026-09-23'
+importer:
+  name: csv-columns
+  columns:
+    postal_code: PLZ
+    date: Abholdatum
+period:
+  start: '2026-01-01'
+  end: '2026-12-31'
+notes:
+- 'Open Data Zürich, dataset "Entsorgungsdaten Papier": one CSV per year, PLZ and Abholdatum, updated yearly.'

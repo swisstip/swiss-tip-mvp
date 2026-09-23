@@ -1,0 +1,27 @@
+schema_version: swiss-tip-dataset-curation/v1
+dataset_id: zurich-waste-karton
+type: calendar
+title: Cardboard collection days, City of Zurich
+label: Cardboard (Karton)
+pack: mvp-zurich
+concept_id: city-zurich-organic-paper-cardboard
+jurisdiction: CH-ZH-261
+publisher: Entsorgung + Recycling Zürich (ERZ)
+publisher_url: https://data.stadt-zuerich.ch/dataset/entsorgungskalender_karton
+licence: CC0-1.0
+refresh: bundled
+sources:
+- url: https://data.stadt-zuerich.ch/dataset/entsorgungskalender_karton/download/entsorgungskalender_karton_2026.csv
+  sha256: 7b8f60e4da772d65d5de2bc645783e0c19e7cea620765a54c442480f6830d546
+  bytes: 23640
+  downloaded_on: '2026-09-23'
+importer:
+  name: csv-columns
+  columns:
+    postal_code: PLZ
+    date: Abholdatum
+period:
+  start: '2026-01-01'
+  end: '2026-12-31'
+notes:
+- 'Open Data Zürich, dataset "Entsorgungsdaten Karton": one CSV per year, PLZ and Abholdatum, updated yearly.'

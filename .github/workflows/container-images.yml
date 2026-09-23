@@ -6,6 +6,7 @@
 #   mvp-zurich       one pack
 #   mvp-wallisellen  one pack
 #   demo             the OpenCode demo image, on the Zurich pack image in ghcr.io
+#   calendar         the Zurich calendar image: the pack's dataset bundles on the calendar connector image in ghcr.io
 #
 # The images that hold no release (both MCP images, the embedding sidecar,
 # OpenCode) are built, tested and pushed by the workflow of the same name in
@@ -60,7 +61,7 @@ on:
       images:
         description: Images to build
         type: choice
-        options: [all, packs, mvp-zurich, mvp-wallisellen, demo]
+        options: [all, packs, mvp-zurich, mvp-wallisellen, demo, calendar]
         default: all
       swisstip_mcp_version:
         description: swisstip-mcp version (the tag of both MCP images in ghcr.io)
@@ -110,6 +111,7 @@ jobs:
             /releases/mvp-wallisellen/release.json
             /releases/mvp-wallisellen/readiness.json
             /releases/mvp-wallisellen/semantic-index.json
+            /datasets/mvp-zurich/*/dataset.json
             /scripts/test/mcp/check_server.py
 
       # The code repository: the slim Dockerfile, compose.yaml, the check search, and the files the demo
@@ -125,6 +127,7 @@ jobs:
             /docker/slim/
             /docker/mcp/check_semantic.py
             /docker/opencode/
+            /scripts/test/connector/check_connector.py
 
       - uses: actions/setup-python@v7
         with:
@@ -132,12 +135,13 @@ jobs:
 
       - name: Select images
         run: |
-          demo=0
+          demo=0; calendar=0
           case "$IMAGES" in
-            all)             packs="mvp-zurich mvp-wallisellen"; demo=1 ;;
+            all)             packs="mvp-zurich mvp-wallisellen"; demo=1; calendar=1 ;;
             packs)           packs="mvp-zurich mvp-wallisellen" ;;
             mvp-zurich|mvp-wallisellen) packs="$IMAGES" ;;
             demo)            packs=""; demo=1 ;;
+            calendar)        packs=""; calendar=1 ;;
             *) echo "unknown selection $IMAGES"; exit 1 ;;
           esac
           # The images come from ghcr.io under the version's tag whatever the index; only the check client
@@ -163,11 +167,14 @@ jobs:
             echo "PUSH_LATEST=$latest"
             echo "BUILD_PACKS=$packs"
             echo "BUILD_DEMO=$demo"
+            echo "BUILD_CALENDAR=$calendar"
             echo "REGISTRY=$registry"
             echo "CODE_SHA=$code_sha"
             echo "MCP_IMAGE=$registry/swiss-tip-mcp"
             echo "PACK_IMAGE=$registry/swiss-tip"
             echo "DEMO_IMAGE=$registry/swiss-tip-demo"
+            echo "CONNECTOR_IMAGE=$registry/swiss-tip-calendar-connector"
+            echo "CALENDAR_IMAGE=$registry/swiss-tip-calendar"
           } >> "$GITHUB_ENV"
           echo "packs=${packs:-none} demo=$demo version=$VERSION registry=$registry code=$code_sha"
           echo "index=$PACKAGE_INDEX ${index:-https://pypi.org/simple/}, branch $REF_NAME of $DEFAULT_BRANCH, demo latest pushed: $latest"
@@ -290,6 +297,36 @@ jobs:
           python code/docker/opencode/check_interface.py --url http://127.0.0.1:4200 --password workflow-check
           docker rm -f demo
           echo "$demo_tags" >> "$RUNNER_TEMP/push.txt"
+          echo "::endgroup::"
+
+      - name: Build and test the calendar image
+        if: env.BUILD_CALENDAR == '1'
+        run: |
+          # The pack's dataset bundles on the calendar connector image of ghcr.io, tagged with the pack's moving
+          # tag, which compose.yaml names behind the profile "calendar", and with the dataset versions. Tested
+          # with the conformance test of the connector contract, then registered with the pack's slim image as
+          # compose.yaml runs both: every bundle must be bound to its concept.
+          versions=$(python -c "import json, glob; print('-'.join(sorted({json.load(open(p, encoding='utf-8'))['manifest']['dataset_version'] for p in glob.glob('datasets/mvp-zurich/*/dataset.json')})))")
+          [ -n "$versions" ] || { echo "no dataset bundle under datasets/mvp-zurich"; exit 1; }
+          echo "::group::calendar $versions"
+          tags="$CALENDAR_IMAGE:mvp-zurich $CALENDAR_IMAGE:mvp-zurich-$versions"
+          tag_args=""; for tag in $tags; do tag_args="$tag_args -t $tag"; done
+          docker build -f docker/mvp-zurich-calendar/Dockerfile \
+            --build-arg BASE_IMAGE="$CONNECTOR_IMAGE:$VERSION" \
+            --build-arg DATASET_VERSIONS="$versions" --build-arg REVISION="$GITHUB_SHA" \
+            $tag_args datasets/mvp-zurich
+          docker run -d --name calendar -p 8130:8100 "$CALENDAR_IMAGE:mvp-zurich"
+          for attempt in $(seq 1 60); do curl -fs -o /dev/null http://127.0.0.1:8130/health && break; sleep 1; done
+          python code/scripts/test/connector/check_connector.py --url http://127.0.0.1:8130 || { docker logs calendar | tail -40; exit 1; }
+          docker rm -f calendar
+          # Beside the server: the slim image of the pack, the sidecar and the connector, as compose.yaml runs them.
+          export SWISSTIP_REGISTRY="$REGISTRY" SWISSTIP_PACK=mvp-zurich SWISSTIP_PORT=8180 SWISSTIP_CONNECTORS=http://127.0.0.1:8100
+          docker compose -f code/compose.yaml --profile calendar up -d --wait || { docker compose -f code/compose.yaml --profile calendar logs | tail -60; exit 1; }
+          registered=$(curl -fs "http://127.0.0.1:$SWISSTIP_PORT/health" | python -c "import json, sys; c = json.load(sys.stdin)['connectors']; print(c[0]['status'], len(c[0]['registered']), len(c[0]['rejected']))")
+          echo "server connectors: $registered"
+          [ "$registered" = "ok 5 0" ] || { docker compose -f code/compose.yaml --profile calendar logs | tail -60; exit 1; }
+          docker compose -f code/compose.yaml --profile calendar down
+          echo "$tags" >> "$RUNNER_TEMP/push.txt"
           echo "::endgroup::"
 
       - name: Push the tested images

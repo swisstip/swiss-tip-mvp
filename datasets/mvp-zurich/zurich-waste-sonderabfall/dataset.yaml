@@ -1,0 +1,29 @@
+schema_version: swiss-tip-dataset-curation/v1
+dataset_id: zurich-waste-sonderabfall
+type: calendar
+title: Hazardous waste collection van stops, City of Zurich
+label: Hazardous waste van (Sonderabfallmobil)
+pack: mvp-zurich
+concept_id: city-zurich-hazardous-waste
+jurisdiction: CH-ZH-261
+publisher: Entsorgung + Recycling Zürich (ERZ)
+publisher_url: https://data.stadt-zuerich.ch/dataset/entsorgungskalender_sonderabfall
+licence: CC0-1.0
+refresh: bundled
+sources:
+- url: https://data.stadt-zuerich.ch/dataset/entsorgungskalender_sonderabfall/download/entsorgungskalender_sonderabfall_2026.csv
+  sha256: ec069f8f6a81271397b7ba693c80c62d0061b286060039f38e98d27dc3d14c16
+  bytes: 2197
+  downloaded_on: '2026-09-23'
+importer:
+  name: csv-columns
+  columns:
+    postal_code: PLZ
+    date: Abholdatum
+    location: Station
+period:
+  start: '2026-01-01'
+  end: '2026-12-31'
+notes:
+- 'Open Data Zürich, dataset "Entsorgungsdaten Sonderabfallmobil": one CSV per year, PLZ, Station and Abholdatum;
+  one or a few stops per postal code and year.'

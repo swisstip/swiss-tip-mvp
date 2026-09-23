@@ -1,0 +1,27 @@
+schema_version: swiss-tip-dataset-curation/v1
+dataset_id: zurich-waste-bioabfall
+type: calendar
+title: Organic waste collection days, City of Zurich
+label: Organic waste (Bioabfall)
+pack: mvp-zurich
+concept_id: city-zurich-organic-paper-cardboard
+jurisdiction: CH-ZH-261
+publisher: Entsorgung + Recycling Zürich (ERZ)
+publisher_url: https://data.stadt-zuerich.ch/dataset/entsorgungskalender_bioabfall
+licence: CC0-1.0
+refresh: bundled
+sources:
+- url: https://data.stadt-zuerich.ch/dataset/entsorgungskalender_bioabfall/download/entsorgungskalender_bioabfall_2026.csv
+  sha256: 6040ce9917e5c8e0b6af5416a404d0df0bb0ee62ef4b965845dbeb6731802c0d
+  bytes: 23830
+  downloaded_on: '2026-09-23'
+importer:
+  name: csv-columns
+  columns:
+    postal_code: PLZ
+    date: Abholdatum
+period:
+  start: '2026-01-01'
+  end: '2026-12-31'
+notes:
+- 'Open Data Zürich, dataset "Entsorgungsdaten Bioabfall": one CSV per year, PLZ and Abholdatum, updated yearly.'
