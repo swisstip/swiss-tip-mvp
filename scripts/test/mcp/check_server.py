@@ -66,7 +66,7 @@ SWISS_GERMAN_FAMILY_QUESTION = ("Ich han de Schwiizer Pass und han en Brasiliane
 GERMAN_SEPARATION_QUESTION = "Wir trennen uns nach zwei Jahren Ehe. Verliere ich meine Aufenthaltsbewilligung?"
 # Questions outside the release that still share a word with a concept ("Schweiz", "Anmeldung", "permit"): search
 # keeps the incidental hits but must report a weak or empty match, so the caller declines instead of resolving them.
-OFF_TOPIC_QUESTIONS = (("the VAT rate, in German", "Wie hoch ist die Mehrwertsteuer in der Schweiz?"),
+OFF_TOPIC_QUESTIONS = (("tomorrow's weather, in German", "Wie wird das Wetter morgen in Zürich?"),
                        ("the motorway speed limit", "What is the speed limit on Swiss motorways?"),
                        ("a Halbtax travelcard", "How do I get a Halbtax?"),
                        ("annual work-permit quotas", "annual quotas for work permits"),

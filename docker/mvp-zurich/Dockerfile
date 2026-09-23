@@ -42,7 +42,7 @@ RUN swisstip-mcp --release /srv/swiss-tip/release.json --require-ready --health 
       "Ich bin tschechischer Staatsbürger und beginne nächste Woche in Zürich zu arbeiten. Bis wann muss ich mich anmelden?" \
       "Je suis citoyen tchèque et je commence à travailler à Zurich. Quand dois-je m'annoncer?" \
       "Can my wife join me in Switzerland if I have a B permit?" \
-      "weak:Wie hoch ist die Mehrwertsteuer in der Schweiz?"
+      "weak:Wie wird das Wetter morgen in Zürich?"
 
 ENTRYPOINT ["tini", "--", "with-ollama", "swisstip-mcp", "--release", "/srv/swiss-tip/release.json", "--require-ready", "--semantic-index", "/srv/swiss-tip/semantic-index.json", "--transport", "streamable-http", "--host", "0.0.0.0"]
 CMD []

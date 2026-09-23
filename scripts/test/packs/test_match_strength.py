@@ -35,7 +35,8 @@ WEAK_AFTER_GROWTH = {"I am a third-country national with a job offer in Zurich f
 # Questions outside the release. Each shares at least one indexed word with a concept, so lexical search returns
 # hits for it; the verdict must still be weak or none.
 OFF_TOPIC = [
-    "Wie hoch ist die Mehrwertsteuer in der Schweiz?",
+    # The VAT question of the first releases became covered on 22 September 2026 with the customs concepts.
+    "Wie wird das Wetter morgen in Zürich?",
     "What is the speed limit on Swiss motorways?",
     "How do I get a Halbtax?",
     "annual quotas for work permits",
