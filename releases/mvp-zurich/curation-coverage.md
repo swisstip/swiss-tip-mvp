@@ -1,8 +1,8 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, not clean, 149 disposition(s), generated 2026-09-23T08:47:28.
+Release `mvp-zurich-2026-09-23-v16` (content `0b376f6a5973`), policy `report`, not clean, 198 disposition(s), generated 2026-09-23T09:58:20.
 
-444 candidate records ({'section': 425, 'document': 17, 'rolled_up': 2}) with 2829 units a curator answers for: 649 cited, 794 dispositioned, **1386 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 73, 'partly_cited': 112, 'cited': 61, 'empty': 23, 'cited_and_dispositioned': 43, 'dispositioned': 132}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
+444 candidate records ({'section': 425, 'document': 17, 'rolled_up': 2}) with 2829 units a curator answers for: 714 cited, 1190 dispositioned, **925 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 39, 'partly_cited': 107, 'cited': 64, 'empty': 23, 'cited_and_dispositioned': 60, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 
 ## Documents
 
@@ -13,34 +13,6 @@ Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, n
 | unclassified | [AHV-Beitragspflicht: Arbeitgeber](https://svazurich.ch/unsere-produkte/ahv/beitraege/beitragspflicht.html) `doc-83832fea8301efd1719c` | section | 16 | 0 | 0 | 1 | 15 | zh-sva-beitragspflicht |
 | unclassified | [Internationales: Arbeitnehmende im Ausland](https://svazurich.ch/unsere-produkte/ahv/beitraege/internationales.html) `doc-e175c611718f9609a0b9` | section | 8 | 0 | 0 | 1 | 7 | zh-sva-ahv-internationales |
 | unclassified | [Altersrente: Sinn und Zweck](https://svazurich.ch/unsere-produkte/ahv/leistungen/altersrente.html) `doc-6d655671e0529ee14212` | section | 7 | 0 | 0 | 1 | 6 | zh-sva-altersrente |
-| unclassified | [Kurzarbeitsentschädigung (KAE) / arbeit.swiss](https://www.arbeit.swiss/de/arbeitgebende/kurzarbeitsentschaedigung-kae) `doc-2b61f79eb218ff041f86` | section | 8 | 0 | 0 | 1 | 7 | ch-seco-kurzarbeit |
-| unclassified | [Stellenmeldepflicht / arbeit.swiss](https://www.arbeit.swiss/de/arbeitgebende/stellenmeldepflichten) `doc-7154ef3247e430ac8763` | section | 24 | 0 | 0 | 1 | 23 | ch-seco-stellenmeldepflicht |
-| unclassified | [Anmeldung und Registrierung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/anmeldung-und-registrierung) `doc-a562c9bc875f8a37ca25` | section | 5 | 0 | 0 | 1 | 4 | ch-seco-anmeldung-registrierung |
-| unclassified | [Arbeitsmarktliche Massnahmen / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/arbeitsmarktliche-massnahmen) `doc-c7a12895306cc102368c` | section | 8 | 0 | 0 | 1 | 7 | ch-seco-arbeitsmarktliche-massnahmen |
-| unclassified | [Aussteuerung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/aussteuerung) `doc-22bc49b84a2599a63d5b` | section | 4 | 0 | 0 | 1 | 3 | ch-seco-aussteuerung |
-| unclassified | [Beratung und Vermittlung durch das RAV / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/beratung-und-vermittlung-durch-das-rav) `doc-39345c8ba13993912a74` | section | 8 | 0 | 0 | 1 | 7 | ch-seco-rav-beratung |
-| unclassified | [EURES – Berufliche Mobilität in der EU/EFTA / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/berufliche-mobilitaet-in-der-euefta) `doc-d679ed2cf42c3e618024` | section | 15 | 0 | 0 | 1 | 14 | ch-seco-mobilitaet-eu-efta |
-| unclassified | [Erste Schritte nach Kündigung oder bei drohender Arbeitslosigkeit / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/erste-schritte-nach-kuendigung) `doc-1dc7548e6096cef67224` | section | 9 | 0 | 0 | 1 | 8 | ch-seco-erste-schritte |
-| unclassified | [eServices und Formulare für die Arbeitslosenentschädigung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/eservices-und-formulare-fuer-die-arbeitslosenentschaedigung) `doc-692db70e280fde89bae7` | section | 24 | 0 | 0 | 1 | 23 | ch-seco-eservices-formulare |
-| unclassified | [FAQ zur Arbeitslosenentschädigung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/faq-zur-arbeitslosenentschaedigung) `doc-7b05677a02154e1aae90` | section | 20 | 0 | 0 | 1 | 19 | ch-seco-unemployment |
-| unclassified | [Registrierung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/registrierung-stellensuchende) `doc-026d5accf4c3cd0d8c95` | section | 5 | 0 | 0 | 1 | 4 | ch-seco-registrierung-stellensuchende |
-| unclassified | [Rückkehr / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/rueckkehr-in-die-schweiz) `doc-c0870773e4981e460538` | section | 14 | 0 | 0 | 1 | 13 | ch-seco-rueckkehr-schweiz |
-| unclassified | [Stellensuche im Ausland / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/stellensuche-im-ausland) `doc-80a38229617ee48b2792` | section | 8 | 0 | 0 | 1 | 7 | ch-seco-stellensuche-ausland |
-| unclassified | [Versicherungsleistungen / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/versicherungsleistungen) `doc-1ab3b64956708c04d398` | section | 8 | 0 | 0 | 1 | 7 | ch-seco-versicherungsleistungen |
-| unclassified | [Career counselling and job placement by the RAV / arbeit.swiss](https://www.arbeit.swiss/en/career-counselling-and-job-placement) `doc-730eeba6699b03eb852e` | section | 8 | 0 | 0 | 1 | 7 |  |
-| unclassified | [eServices and forms for unemployment benefit / arbeit.swiss](https://www.arbeit.swiss/en/eservices-and-forms-for-unemployment-benefit) `doc-f09b8685193e7b48365e` | section | 24 | 0 | 0 | 1 | 23 |  |
-| unclassified | [EURES – Professional mobility in the EU/EFTA / arbeit.swiss](https://www.arbeit.swiss/en/eures-professional-mobility-in-the-euefta) `doc-b925ff104dcd837ffd4c` | section | 15 | 0 | 0 | 1 | 14 |  |
-| unclassified | [Expiry of unemployment benefit / arbeit.swiss](https://www.arbeit.swiss/en/expiry-of-unemployment-benefit) `doc-7d0664abd7ab474e510d` | section | 4 | 0 | 0 | 1 | 3 |  |
-| unclassified | [FAQs on unemployment benefit / arbeit.swiss](https://www.arbeit.swiss/en/faqs-on-unemployment-benefit) `doc-75ee6bba762275baf94b` | section | 20 | 0 | 0 | 1 | 19 |  |
-| unclassified | [First steps after dismissal or if you risk losing your job / arbeit.swiss](https://www.arbeit.swiss/en/first-steps-after-dismissal) `doc-736b05711af66d1d9cc5` | section | 9 | 0 | 0 | 1 | 8 |  |
-| unclassified | [Insurance benefits / arbeit.swiss](https://www.arbeit.swiss/en/insurance-benefits) `doc-5c6344ffc116c19c01ef` | section | 8 | 0 | 0 | 1 | 7 |  |
-| unclassified | [Job registration requirement / arbeit.swiss](https://www.arbeit.swiss/en/job-registration-requirement) `doc-69d73af6c8ae2501ff76` | section | 24 | 0 | 0 | 1 | 23 |  |
-| unclassified | [Labor market measures / arbeit.swiss](https://www.arbeit.swiss/en/labor-market-measures) `doc-0e3d386866774ee970c5` | section | 8 | 0 | 0 | 1 | 7 |  |
-| unclassified | [Looking for work abroad / arbeit.swiss](https://www.arbeit.swiss/en/looking-for-work-abroad) `doc-785e76133e7f71f8767e` | section | 8 | 0 | 0 | 1 | 7 |  |
-| unclassified | [Registration / arbeit.swiss](https://www.arbeit.swiss/en/registration-job-seekers) `doc-953725399cc1315ca3d5` | section | 5 | 0 | 0 | 1 | 4 |  |
-| unclassified | [Returning to Switzerland, EU/EFTA or third countries / arbeit.swiss](https://www.arbeit.swiss/en/returning-to-switzerland) `doc-6f212eeca0d54d0940e8` | section | 14 | 0 | 0 | 1 | 13 |  |
-| unclassified | [Short-time working compensation / arbeit.swiss](https://www.arbeit.swiss/en/short-time-working-compensation) `doc-92859f76d868578d25ad` | section | 8 | 0 | 0 | 1 | 7 |  |
-| unclassified | [Signing on and registration / arbeit.swiss](https://www.arbeit.swiss/en/signing-on-and-registration) `doc-66bfe101b39f2d0ea6a9` | section | 5 | 0 | 0 | 1 | 4 |  |
 | unclassified | [BSV: types and rates of family allowances per canton, 2026 (PDF)](https://www.bsv.admin.ch/dam/de/sd-web/acU7RgJgeisY/Arten%20und%20Ans%C3%A4tze%20der%20Familienzulagen_2026.pdf) `doc-3f3d4751491356fbdf8a` | section | 1 | 0 | 0 | 0 | 1 |  |
 | unclassified | [Alters- und Hinterlassenenversicherung (AHV) - Übersicht](https://www.bsv.admin.ch/de/ahv-uebersicht) `doc-08accda64b5e8e778ea6` | section | 7 | 0 | 0 | 0 | 7 | ch-bsv-ahv |
 | unclassified | [Gesuch um ordentliche oder erleichterte Einbürgerung in der Schweiz](https://www.ch.ch/de/auslander-in-der-schweiz/einburgerung/) `doc-5115531c627ecfe1109e` | section | 5 | 0 | 0 | 0 | 5 | ch-chch-naturalisation |
@@ -75,12 +47,6 @@ Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, n
 | unclassified | [Strassenverkehrsamt / Kanton Zürich](https://www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt.html) `doc-40854d7d26db9f3bba00` | section | 12 | 0 | 0 | 1 | 11 | zh-strassenverkehrsamt-office |
 | unclassified | [Quellensteuer / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer.html) `doc-aaca2a8359cc911aa50f` | rolled_up | 6 | 0 | 0 | 0 | 6 | zh-tax-at-source |
 | unclassified | [Amt für Wirtschaft / Kanton Zürich](https://www.zh.ch/de/volkswirtschaftsdirektion/amt-fuer-wirtschaft.html) `doc-6ac4fb95eb9bd1acf968` | section | 6 | 0 | 0 | 0 | 6 | zh-awa-office |
-| unclassified | [Erwerbstätigkeit von Ausländerinnen und Ausländern / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/erwerbstaetigkeit-auslaender.html) `doc-6a4c4aa06458f9782f9a` | section | 3 | 0 | 0 | 1 | 2 | zh-work-permits-contact |
-| unclassified | [Anmeldung RAV & Arbeitslosenkasse / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse.html) `doc-e992d7aaf1b359dc413c` | section | 65 | 0 | 0 | 1 | 64 | zh-awa-anmeldung-rav |
-| unclassified | [Zuständiges RAV finden / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse/zustaendiges-rav-finden.html) `doc-58d821965e91e66d6fc5` | rolled_up | 1 | 0 | 0 | 0 | 1 | zh-awa-zustaendiges-rav |
-| unclassified | [Entschädigung bei Insolvenz des Arbeitgebers / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung/entschaedigung-insolvenz-arbeitgeber.html) `doc-0683c2c38c53009db6b6` | section | 14 | 0 | 0 | 1 | 13 | zh-awa-insolvenzentschaedigung |
-| unclassified | [Beratung & Vermittlung von Stellensuchenden / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/beratung-vermittlung.html) `doc-a7b0f3605efd15fe02e9` | section | 24 | 0 | 0 | 2 | 22 | zh-awa-beratung-vermittlung |
-| unclassified | [Qualifizierung von Stellensuchenden / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/qualifizierung-stellensuchende.html) `doc-62225ba0cbeb8a9399bb` | section | 8 | 0 | 0 | 0 | 8 | zh-awa-qualifizierung |
 | partly_cited | [Welche Beiträge kann ich in die Säule 3a einzahlen? / BSV](https://faq.bsv.admin.ch/de/3-saeule/welche-beitraege-kann-ich-die-saeule-3a-einzahlen) `doc-cb064208c75c37b62929` | section | 3 | 1 | 0 | 0 | 2 |  |
 | partly_cited | [Wer kann eine Säule 3a (gebundene Selbstvorsorge) einrichten? / BSV](https://faq.bsv.admin.ch/de/3-saeule/wer-kann-eine-saeule-3a-gebundene-selbstvorsorge-einrichten) `doc-ed67ab05b41d46594ed8` | section | 3 | 1 | 0 | 0 | 2 | ch-bsv-pillar-3a |
 | partly_cited | [Kann ich mein BVG-Altersguthaben bar beziehen, wenn ich die Schweiz endgültig verlasse? / BSV](https://faq.bsv.admin.ch/de/berufliche-vorsorge-und-3-saeule/kann-ich-mein-bvg-altersguthaben-bar-beziehen-wenn-ich-die-schweiz) `doc-07709682168602d2fb3f` | section | 3 | 1 | 0 | 0 | 2 | ch-bsv-bvg-departure |
@@ -93,10 +59,6 @@ Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, n
 | partly_cited | [Familienzulagen: Angestellte](https://svazurich.ch/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/angestellte.html) `doc-711c3b23431a89847e6a` | section | 8 | 2 | 0 | 1 | 5 |  |
 | partly_cited | [Familienzulagen: Nichterwerbstätige](https://svazurich.ch/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/nichterwerbstaetige.html) `doc-95f7b9e0abaf0fee231e` | section | 7 | 2 | 0 | 1 | 4 |  |
 | partly_cited | [Familienzulagen: Sinn und Zweck](https://svazurich.ch/unsere-produkte/weitere-produkte/weitere-leistungen/familienzulagen/sinn-und-zweck.html) `doc-9dcc42de170c42587893` | section | 10 | 1 | 0 | 1 | 8 | zh-sva-family-allowances |
-| partly_cited | [Anmeldung und Registrierung / arbeit.swiss](https://www.arbeit.swiss/de/anmeldung-und-registrierung) `doc-8de36911a6bb5dda59d4` | section | 5 | 2 | 0 | 1 | 2 |  |
-| partly_cited | [FAQ zur Arbeitslosenentschädigung / arbeit.swiss](https://www.arbeit.swiss/de/faq-zur-arbeitslosenentschaedigung) `doc-3582d03d795fd5c90cf8` | section | 20 | 8 | 0 | 1 | 11 | ch-seco-unemployment |
-| partly_cited | [FAQs on unemployment benefit / arbeit.swiss](https://www.arbeit.swiss/en/jobseekers/faqs-on-unemployment-benefit) `doc-ce6137f089827679b46b` | section | 20 | 7 | 0 | 1 | 12 |  |
-| partly_cited | [Signing on and registration / arbeit.swiss](https://www.arbeit.swiss/en/jobseekers/signing-on-and-registration) `doc-8348f22bf583137fd376` | section | 5 | 2 | 0 | 1 | 2 |  |
 | partly_cited | [EO bei Adoption](https://www.bsv.admin.ch/de/eo-bei-adoption) `doc-3ea9b1655f1a9db36e5e` | section | 7 | 2 | 0 | 0 | 5 |  |
 | partly_cited | [EO bei Mutterschaft](https://www.bsv.admin.ch/de/eo-bei-mutterschaft) `doc-bc31bd2012fbdd654c09` | section | 9 | 4 | 0 | 0 | 5 |  |
 | partly_cited | [EO bei Vaterschaft](https://www.bsv.admin.ch/de/eo-bei-vaterschaft) `doc-859ecc73c600eb5a82a2` | section | 8 | 3 | 0 | 0 | 5 |  |
@@ -192,7 +154,6 @@ Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, n
 | partly_cited | [Quellensteuer-Tarife / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/quellensteuer-tarife.html) `doc-fce27b72dc3a3a90a70f` | section | 16 | 14 | 0 | 1 | 1 |  |
 | partly_cited | [Merkblatt des kantonalen Steueramtes über die Quellenbesteuerung von Arbeitnehmerinnen und Arbeitnehmern / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-87-3.html) `doc-afaa2c9780fc736c5705` | section | 17 | 3 | 0 | 0 | 14 | zh-tax-at-source-directive |
 | partly_cited | [Hunde / Kanton Zürich](https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html) `doc-cfa52df67bc1a2de79f0` | section | 33 | 9 | 0 | 1 | 23 | zh-dogs |
-| partly_cited | [Arbeitslosenentschädigung / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung.html) `doc-ea8ce303e3ee8fb3a83a` | section | 37 | 3 | 0 | 2 | 32 | zh-unemployment |
 | empty | [Kantonale Ausgleichskassen / Kontakte / Informationsstelle AHV/IV](https://www.ahv-iv.ch/de/Kontakte/Kantonale-Ausgleichskassen) `doc-1c84e95cb180bec1d402` | section | 0 | 0 | 0 | 0 | 0 | ch-ahv-iv-ausgleichskassen |
 | empty | [13. AHV Rente](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/13-AHV-Rente) `doc-7adfbb6dd2e5e60a711d` | section | 0 | 0 | 0 | 0 | 0 | ch-ahv-iv-13-ahv-rente |
 | empty | [Allgemeines / Alters- und Hinterlassenenversicherung (AHV) / Sozialversicherungen / Informationsstelle AHV/IV](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Allgemeines) `doc-f414bf368c712032285a` | section | 0 | 0 | 0 | 0 | 0 | ch-ahv-iv-ahv-allgemeines |
@@ -216,6 +177,18 @@ Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, n
 | empty | [Health insurance (KV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Health-insurance-KV) `doc-74b7e2a1f977c532fab5` | section | 0 | 0 | 0 | 0 | 0 |  |
 | empty | [Occupational benefit plan (BV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Occupational-benefit-plan-BV) `doc-d9b7566e9cd37efb9554` | section | 0 | 0 | 0 | 0 | 0 |  |
 | empty | [Unemployment insurance (ALV) / Other types of social insurances / Social insurances / Information Center OASI/DI](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Unemployment-insurance-ALV) `doc-3b48de1a3bb4b9655717` | section | 0 | 0 | 0 | 0 | 0 |  |
+| cited_and_dispositioned | [Anmeldung und Registrierung / arbeit.swiss](https://www.arbeit.swiss/de/anmeldung-und-registrierung) `doc-8de36911a6bb5dda59d4` | section | 5 | 2 | 2 | 1 | 0 |  |
+| cited_and_dispositioned | [Kurzarbeitsentschädigung (KAE) / arbeit.swiss](https://www.arbeit.swiss/de/arbeitgebende/kurzarbeitsentschaedigung-kae) `doc-2b61f79eb218ff041f86` | section | 8 | 5 | 2 | 1 | 0 | ch-seco-kurzarbeit |
+| cited_and_dispositioned | [Stellenmeldepflicht / arbeit.swiss](https://www.arbeit.swiss/de/arbeitgebende/stellenmeldepflichten) `doc-7154ef3247e430ac8763` | section | 24 | 4 | 19 | 1 | 0 | ch-seco-stellenmeldepflicht |
+| cited_and_dispositioned | [FAQ zur Arbeitslosenentschädigung / arbeit.swiss](https://www.arbeit.swiss/de/faq-zur-arbeitslosenentschaedigung) `doc-3582d03d795fd5c90cf8` | section | 20 | 9 | 10 | 1 | 0 | ch-seco-unemployment |
+| cited_and_dispositioned | [EURES – Berufliche Mobilität in der EU/EFTA / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/berufliche-mobilitaet-in-der-euefta) `doc-d679ed2cf42c3e618024` | section | 15 | 1 | 13 | 1 | 0 | ch-seco-mobilitaet-eu-efta |
+| cited_and_dispositioned | [Erste Schritte nach Kündigung oder bei drohender Arbeitslosigkeit / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/erste-schritte-nach-kuendigung) `doc-1dc7548e6096cef67224` | section | 9 | 7 | 1 | 1 | 0 | ch-seco-erste-schritte |
+| cited_and_dispositioned | [Registrierung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/registrierung-stellensuchende) `doc-026d5accf4c3cd0d8c95` | section | 5 | 1 | 3 | 1 | 0 | ch-seco-registrierung-stellensuchende |
+| cited_and_dispositioned | [Rückkehr / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/rueckkehr-in-die-schweiz) `doc-c0870773e4981e460538` | section | 14 | 5 | 8 | 1 | 0 | ch-seco-rueckkehr-schweiz |
+| cited_and_dispositioned | [Stellensuche im Ausland / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/stellensuche-im-ausland) `doc-80a38229617ee48b2792` | section | 8 | 1 | 6 | 1 | 0 | ch-seco-stellensuche-ausland |
+| cited_and_dispositioned | [Versicherungsleistungen / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/versicherungsleistungen) `doc-1ab3b64956708c04d398` | section | 8 | 3 | 4 | 1 | 0 | ch-seco-versicherungsleistungen |
+| cited_and_dispositioned | [FAQs on unemployment benefit / arbeit.swiss](https://www.arbeit.swiss/en/jobseekers/faqs-on-unemployment-benefit) `doc-ce6137f089827679b46b` | section | 20 | 7 | 12 | 1 | 0 |  |
+| cited_and_dispositioned | [Signing on and registration / arbeit.swiss](https://www.arbeit.swiss/en/jobseekers/signing-on-and-registration) `doc-8348f22bf583137fd376` | section | 5 | 2 | 2 | 1 | 0 |  |
 | cited_and_dispositioned | [Krankenversicherung: Grenzgängerinnen und Grenzgänger in der Schweiz](https://www.bag.admin.ch/de/krankenversicherung-grenzgaengerinnen-und-grenzgaenger-in-der-schweiz) `doc-73316a716c25d7263406` | section | 12 | 4 | 8 | 0 | 0 | ch-bag-grenzgaenger |
 | cited_and_dispositioned | [Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte](https://www.bag.admin.ch/de/krankenversicherung-kostenbeteiligung-fuer-in-der-schweiz-wohnhafte-versicherte) `doc-7e46ce8537f76f1736a8` | section | 5 | 3 | 1 | 1 | 0 | ch-bag-kostenbeteiligung |
 | cited_and_dispositioned | [Krankenversicherung: Leistungen im Ausland](https://www.bag.admin.ch/de/krankenversicherung-leistungen-im-ausland) `doc-a2ba95d86bd9041085b6` | section | 4 | 2 | 2 | 0 | 0 | ch-bag-leistungen-im-ausland |
@@ -259,6 +232,29 @@ Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, n
 | cited_and_dispositioned | [Integrationsangebote / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsangebote.html) `doc-6b7ab84cf9fe70b4dbb5` | section | 8 | 3 | 5 | 0 | 0 | zh-integration |
 | cited_and_dispositioned | [Migrantische Vereine / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/migrantische-organisationen.html) `doc-097ba90229a71bb8bdba` | section | 9 | 4 | 4 | 1 | 0 | zh-integration |
 | cited_and_dispositioned | [Schutz vor rassistischer Diskriminierung / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/schutz-vor-rassistischer-diskriminierung.html) `doc-5028cb30ffd4a8de19e1` | section | 17 | 10 | 7 | 0 | 0 | zh-integration |
+| cited_and_dispositioned | [Anmeldung RAV & Arbeitslosenkasse / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse.html) `doc-e992d7aaf1b359dc413c` | section | 65 | 5 | 59 | 1 | 0 | zh-awa-anmeldung-rav |
+| cited_and_dispositioned | [Arbeitslosenentschädigung / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung.html) `doc-ea8ce303e3ee8fb3a83a` | section | 37 | 3 | 32 | 2 | 0 | zh-unemployment |
+| cited_and_dispositioned | [Entschädigung bei Insolvenz des Arbeitgebers / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung/entschaedigung-insolvenz-arbeitgeber.html) `doc-0683c2c38c53009db6b6` | section | 14 | 9 | 4 | 1 | 0 | zh-awa-insolvenzentschaedigung |
+| cited_and_dispositioned | [Beratung & Vermittlung von Stellensuchenden / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/beratung-vermittlung.html) `doc-a7b0f3605efd15fe02e9` | section | 24 | 5 | 17 | 2 | 0 | zh-awa-beratung-vermittlung |
+| cited_and_dispositioned | [Qualifizierung von Stellensuchenden / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/qualifizierung-stellensuchende.html) `doc-62225ba0cbeb8a9399bb` | section | 8 | 7 | 1 | 0 | 0 | zh-awa-qualifizierung |
+| dispositioned | [Anmeldung und Registrierung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/anmeldung-und-registrierung) `doc-a562c9bc875f8a37ca25` | section | 5 | 0 | 4 | 1 | 0 | ch-seco-anmeldung-registrierung |
+| dispositioned | [Beratung und Vermittlung durch das RAV / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/beratung-und-vermittlung-durch-das-rav) `doc-39345c8ba13993912a74` | section | 8 | 0 | 7 | 1 | 0 | ch-seco-rav-beratung |
+| dispositioned | [eServices und Formulare für die Arbeitslosenentschädigung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/eservices-und-formulare-fuer-die-arbeitslosenentschaedigung) `doc-692db70e280fde89bae7` | section | 24 | 0 | 23 | 1 | 0 | ch-seco-eservices-formulare |
+| dispositioned | [FAQ zur Arbeitslosenentschädigung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/faq-zur-arbeitslosenentschaedigung) `doc-7b05677a02154e1aae90` | section | 20 | 0 | 19 | 1 | 0 | ch-seco-unemployment |
+| dispositioned | [Career counselling and job placement by the RAV / arbeit.swiss](https://www.arbeit.swiss/en/career-counselling-and-job-placement) `doc-730eeba6699b03eb852e` | section | 8 | 0 | 7 | 1 | 0 |  |
+| dispositioned | [eServices and forms for unemployment benefit / arbeit.swiss](https://www.arbeit.swiss/en/eservices-and-forms-for-unemployment-benefit) `doc-f09b8685193e7b48365e` | section | 24 | 0 | 23 | 1 | 0 |  |
+| dispositioned | [EURES – Professional mobility in the EU/EFTA / arbeit.swiss](https://www.arbeit.swiss/en/eures-professional-mobility-in-the-euefta) `doc-b925ff104dcd837ffd4c` | section | 15 | 0 | 14 | 1 | 0 |  |
+| dispositioned | [Expiry of unemployment benefit / arbeit.swiss](https://www.arbeit.swiss/en/expiry-of-unemployment-benefit) `doc-7d0664abd7ab474e510d` | section | 4 | 0 | 3 | 1 | 0 |  |
+| dispositioned | [FAQs on unemployment benefit / arbeit.swiss](https://www.arbeit.swiss/en/faqs-on-unemployment-benefit) `doc-75ee6bba762275baf94b` | section | 20 | 0 | 19 | 1 | 0 |  |
+| dispositioned | [First steps after dismissal or if you risk losing your job / arbeit.swiss](https://www.arbeit.swiss/en/first-steps-after-dismissal) `doc-736b05711af66d1d9cc5` | section | 9 | 0 | 8 | 1 | 0 |  |
+| dispositioned | [Insurance benefits / arbeit.swiss](https://www.arbeit.swiss/en/insurance-benefits) `doc-5c6344ffc116c19c01ef` | section | 8 | 0 | 7 | 1 | 0 |  |
+| dispositioned | [Job registration requirement / arbeit.swiss](https://www.arbeit.swiss/en/job-registration-requirement) `doc-69d73af6c8ae2501ff76` | section | 24 | 0 | 23 | 1 | 0 |  |
+| dispositioned | [Labor market measures / arbeit.swiss](https://www.arbeit.swiss/en/labor-market-measures) `doc-0e3d386866774ee970c5` | section | 8 | 0 | 7 | 1 | 0 |  |
+| dispositioned | [Looking for work abroad / arbeit.swiss](https://www.arbeit.swiss/en/looking-for-work-abroad) `doc-785e76133e7f71f8767e` | section | 8 | 0 | 7 | 1 | 0 |  |
+| dispositioned | [Registration / arbeit.swiss](https://www.arbeit.swiss/en/registration-job-seekers) `doc-953725399cc1315ca3d5` | section | 5 | 0 | 4 | 1 | 0 |  |
+| dispositioned | [Returning to Switzerland, EU/EFTA or third countries / arbeit.swiss](https://www.arbeit.swiss/en/returning-to-switzerland) `doc-6f212eeca0d54d0940e8` | section | 14 | 0 | 13 | 1 | 0 |  |
+| dispositioned | [Short-time working compensation / arbeit.swiss](https://www.arbeit.swiss/en/short-time-working-compensation) `doc-92859f76d868578d25ad` | section | 8 | 0 | 7 | 1 | 0 |  |
+| dispositioned | [Signing on and registration / arbeit.swiss](https://www.arbeit.swiss/en/signing-on-and-registration) `doc-66bfe101b39f2d0ea6a9` | section | 5 | 0 | 4 | 1 | 0 |  |
 | dispositioned | [Anwendungsbeispiele der Wertfreigrenze bei mehreren Personen](https://www.bazg.admin.ch/de/anwendungsbeispiele-wertfreigrenze-mehrere-personen) `doc-7979e833d7757cf4f8ab` | section | 4 | 0 | 3 | 1 | 0 | ch-bazg-wertfreigrenze-beispiele |
 | dispositioned | [FAQ Umzugsgut](https://www.bazg.admin.ch/de/faq-umzugsgut) `doc-49e93adbb7a39f819323` | section | 2 | 0 | 1 | 1 | 0 | ch-bazg-faq-umzugsgut |
 | dispositioned | [Interneteinkauf, Post- und Kuriersendungen](https://www.bazg.admin.ch/de/interneteinkauf-post-und-kuriersendungen) `doc-ae795262d1d362f6fd9e` | section | 5 | 0 | 5 | 0 | 0 | ch-bazg-interneteinkauf |
@@ -391,7 +387,10 @@ Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, n
 | dispositioned | [Grundsätze / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/grundsaetze-des-foerdersystems.html) `doc-a14eb88f2da881e9c8fe` | section | 1 | 0 | 1 | 0 | 0 | zh-integration |
 | dispositioned | [Kantonaler Angebotskatalog IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/kantonaler-angebotskatalog-iazh.html) `doc-3c72847ef089a81809ef` | section | 18 | 0 | 18 | 0 | 0 | zh-integration |
 | dispositioned | [Kantonale Integrationsprogramme / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/kantonale-integrationsprogramme.html) `doc-6be9702fb1331355a86f` | section | 12 | 0 | 12 | 0 | 0 | zh-integration |
+| dispositioned | [Erwerbstätigkeit von Ausländerinnen und Ausländern / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/erwerbstaetigkeit-auslaender.html) `doc-6a4c4aa06458f9782f9a` | section | 3 | 0 | 2 | 1 | 0 | zh-work-permits-contact |
 | cited | [Spezielle Öffnungszeiten](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/oeffnungszeiten-ueber-die-feiertage.html) `doc-71f912c1a94b986fba26` | section | 3 | 2 | 0 | 1 | 0 |  |
+| cited | [Arbeitsmarktliche Massnahmen / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/arbeitsmarktliche-massnahmen) `doc-c7a12895306cc102368c` | section | 8 | 7 | 0 | 1 | 0 | ch-seco-arbeitsmarktliche-massnahmen |
+| cited | [Aussteuerung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/aussteuerung) `doc-22bc49b84a2599a63d5b` | section | 4 | 3 | 0 | 1 | 0 | ch-seco-aussteuerung |
 | cited | [Krankenversicherung: Versicherungsmodelle mit eingeschränkter Wahl der Leistungserbringer](https://www.bag.admin.ch/de/krankenversicherung-versicherungsmodelle-mit-eingeschraenkter-wahl-der-leistungserbringer) `doc-28f3362905346a6a6da4` | section | 7 | 6 | 0 | 1 | 0 | ch-bag-versicherungsmodelle |
 | cited | [Einfuhrsteuer: Steuerobjekt und Steuersätze](https://www.bazg.admin.ch/de/einfuhrsteuer-mehrwertsteuer-auf-warenimporte) `doc-4fb0420bc83d13e5d3ab` | section | 2 | 1 | 0 | 1 | 0 | ch-bazg-einfuhrsteuer |
 | cited | [Rücksendung, Reparatur, Veredelung](https://www.bazg.admin.ch/de/interneteinkauf-ruecksendung-reparatur-veredelung) `doc-2c7277cf602672dbbb30` | section | 4 | 4 | 0 | 0 | 0 | ch-bazg-ruecksendung-reparatur |
@@ -452,6 +451,7 @@ Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, n
 | cited | [Züri-Sack / Stadt Zürich](https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/zueri-sack.html) `doc-fae6f7f3a76e1bc84804` | section | 1 | 1 | 0 | 0 | 0 |  |
 | cited | [Zurich: tax-at-source tariffs from 2026, basis and calculation parameters (PDF)](https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/quellensteuer/quellensteuertarif/2026/grundlagen_und_berechnungsparameter_2026.pdf) `doc-d302fc15f2741ef0caf4` | section | 1 | 1 | 0 | 0 | 0 |  |
 | cited | [Familiennachzug durch Personen mit einer B- oder C-Bewilligung beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-b-oder-c-bewilligung-beantragen.html) `doc-b84c4109386ec6f24386` | section | 12 | 8 | 0 | 4 | 0 | zh-family, zh-overview |
+| cited | [Zuständiges RAV finden / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse/zustaendiges-rav-finden.html) `doc-58d821965e91e66d6fc5` | rolled_up | 1 | 1 | 0 | 0 | 0 | zh-awa-zustaendiges-rav |
 
 ## Unclassified sections
 
@@ -537,325 +537,6 @@ Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, n
 | `doc-9dcc42de170c42587893` | section-0108 | Familienzulagen > In diesen Fällen sind Familienzulagen auch für Kinder im Ausland möglich > Öffentliche Abfrage | 489-491 | 286 |
 | `doc-9dcc42de170c42587893` | section-0110 | Familienzulagen > Weitere Informationen > Weitere Leistungen | 494-497 | 158 |
 | `doc-9dcc42de170c42587893` | section-0111 | Familienzulagen > Weitere Informationen > Familienzulagen beantragen | 498-505 | 321 |
-| `doc-8de36911a6bb5dda59d4` | section-0002 | Anmeldung und Registrierung | 32-33 | 363 |
-| `doc-8de36911a6bb5dda59d4` | section-0004 | Anmeldung und Registrierung > Registrierung für Job-Room | 41-49 | 1134 |
-| `doc-2b61f79eb218ff041f86` | section-0002 | Kurzarbeitsentschädigung (KAE) | 32-33 | 289 |
-| `doc-2b61f79eb218ff041f86` | section-0003 | Kurzarbeitsentschädigung (KAE) > Was ist die KAE? | 34-37 | 635 |
-| `doc-2b61f79eb218ff041f86` | section-0004 | Kurzarbeitsentschädigung (KAE) > Was ist die KAE? > Broschüre: Kurzarbeitsentschädigung | 38-39 | 14 |
-| `doc-2b61f79eb218ff041f86` | section-0005 | Kurzarbeitsentschädigung (KAE) > eServices und Formulare für KAE | 40-42 | 261 |
-| `doc-2b61f79eb218ff041f86` | section-0007 | Kurzarbeitsentschädigung (KAE) > Darauf müssen Sie bei der KAE achten > Voranmeldung von Kurzarbeit | 44-48 | 522 |
-| `doc-2b61f79eb218ff041f86` | section-0008 | Kurzarbeitsentschädigung (KAE) > Darauf müssen Sie bei der KAE achten > Antrag und Abrechnung für KAE | 49-56 | 1306 |
-| `doc-2b61f79eb218ff041f86` | section-0009 | Kurzarbeitsentschädigung (KAE) > Weitere Informationen und Auskünfte | 57-60 | 340 |
-| `doc-7154ef3247e430ac8763` | section-0002 | Stellenmeldepflicht | 32-33 | 227 |
-| `doc-7154ef3247e430ac8763` | section-0003 | Stellenmeldepflicht > Deshalb ist die Stellenmeldepflicht eingeführt worden | 34-37 | 484 |
-| `doc-7154ef3247e430ac8763` | section-0004 | Stellenmeldepflicht > Das Ziel der Stellenmeldepflicht | 38-39 | 447 |
-| `doc-7154ef3247e430ac8763` | section-0005 | Stellenmeldepflicht > Ist Ihre offene Stelle meldepflichtig und wie können Sie sie melden? | 40-42 | 277 |
-| `doc-7154ef3247e430ac8763` | section-0007 | Stellenmeldepflicht > Weitere Informationen zur Stellenmeldepflicht | 44-48 | 214 |
-| `doc-7154ef3247e430ac8763` | section-0008 | Stellenmeldepflicht > Weitere Informationen zur Stellenmeldepflicht > Stellenmeldepflicht: Das Wichtigste auf einen Blick! | 49-50 | 3 |
-| `doc-7154ef3247e430ac8763` | section-0009 | Stellenmeldepflicht > Weitere Informationen zur Stellenmeldepflicht > Stellenmeldepflicht: Informationsvorsprung für Stellensuchende | 51-52 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0010 | Stellenmeldepflicht > Weitere Informationen zur Stellenmeldepflicht > AVG-Praxis öAV | 53-55 | 130 |
-| `doc-7154ef3247e430ac8763` | section-0011 | Stellenmeldepflicht > Weitere Informationen zur Stellenmeldepflicht > Liste der meldepflichtigen Berufsarten 2026 | 56-57 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0012 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? | 58-60 | 268 |
-| `doc-7154ef3247e430ac8763` | section-0013 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Siebter Monitoringbericht 2025, Juli 2026 | 61-62 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0014 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Sechster Monitoringbericht 2024, Mai 2025 | 63-64 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0015 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Fünfter Monitoringbericht 2023, Mai 2024 | 65-66 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0016 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Vierter Monitoringbericht 2022, Mai 2023 | 67-68 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0017 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Dritter Monitoringbericht 2021, Mai 2022 | 69-70 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0018 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Zweiter Monitoringbericht 2020, Juni 2021 | 71-72 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0019 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Erster Monitoringbericht, November 2019 | 73-75 | 235 |
-| `doc-7154ef3247e430ac8763` | section-0020 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Monitoringevaluation der Stellenmeldepflicht I (Arbeitsmarktstudie / Juni 2021) | 76-77 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0021 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Monitoringevaluation der Stellenmeldepflicht II (Arbeitsmarktstudie / Juni 2021) | 78-79 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0022 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Wirkungsevaluation der Stellenmeldepflicht I (Arbeitsmarktstudie / Juni 2021) | 80-81 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0023 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Wirkungsevaluation der Stellenmeldepflicht II (Arbeitsmarktstudie / Juni 2021) | 82-83 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0025 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Weitere Studien, Berichte und Beiträge: > Die Praxis der Personalsuche Veränderungen durch die Einführung der Stellenmeldepflicht 2022 | 85-86 | 14 |
-| `doc-7154ef3247e430ac8763` | section-0026 | Stellenmeldepflicht > Wie wird der Vollzug der Stellenmeldepflicht überprüft? > Weitere Studien, Berichte und Beiträge: > Zugang der Invalidenversicherung zum Informationsvorsprung im Rahmen der Stellenmeldepflicht – Bericht des Bundesrates in Erfüllung der Motion 19.3239 Bruderer Wyss vom 21.03.2019 | 87-89 | 107 |
-| `doc-3582d03d795fd5c90cf8` | section-0002 | FAQ zur Arbeitslosenentschädigung | 31-32 | 224 |
-| `doc-3582d03d795fd5c90cf8` | section-0003 | FAQ zur Arbeitslosenentschädigung > Arbeitslosigkeit – Ein Leitfaden für Versicherte | 33-35 | 239 |
-| `doc-3582d03d795fd5c90cf8` | section-0008 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Erwerbsalter | 51-52 | 140 |
-| `doc-3582d03d795fd5c90cf8` | section-0011 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Vermittlungsfähig | 76-77 | 276 |
-| `doc-3582d03d795fd5c90cf8` | section-0012 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Vermittlungsfähig > Arbeitsmarktliche Massnahmen – Ein erster Schritt zur Wiedereingliederung | 78-80 | 241 |
-| `doc-3582d03d795fd5c90cf8` | section-0014 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Taggeld für Beitragsbefreite | 122-124 | 1200 |
-| `doc-3582d03d795fd5c90cf8` | section-0016 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Taggeld für Beitragsbefreite > Leistungen bei Arbeitssuche im Ausland, Nr. 716.204 | 174-179 | 619 |
-| `doc-3582d03d795fd5c90cf8` | section-0017 | FAQ zur Arbeitslosenentschädigung > Weitere rechtliche Fragen und zuständige Stellen | 180-205 | 6054 |
-| `doc-3582d03d795fd5c90cf8` | section-0018 | FAQ zur Arbeitslosenentschädigung > Auswirkungen der AHV-Reform | 206-208 | 298 |
-| `doc-3582d03d795fd5c90cf8` | section-0019 | FAQ zur Arbeitslosenentschädigung > Auswirkungen der AHV-Reform > Merkblatt für Versicherte | 209-213 | 343 |
-| `doc-3582d03d795fd5c90cf8` | section-0020 | FAQ zur Arbeitslosenentschädigung > Auswirkungen der AHV-Reform > Arbeitslosigkeit rund 4 Jahre vor AHV-Referenzalter | 214-215 | 14 |
-| `doc-a562c9bc875f8a37ca25` | section-0002 | Anmeldung und Registrierung | 32-33 | 363 |
-| `doc-a562c9bc875f8a37ca25` | section-0003 | Anmeldung und Registrierung > Anmeldung beim RAV | 34-40 | 832 |
-| `doc-a562c9bc875f8a37ca25` | section-0004 | Anmeldung und Registrierung > Registrierung für Job-Room | 41-49 | 1134 |
-| `doc-a562c9bc875f8a37ca25` | section-0005 | Anmeldung und Registrierung > Die Leistungen von RAV und Arbeitslosenkassen | 50-77 | 2561 |
-| `doc-c7a12895306cc102368c` | section-0002 | Arbeitsmarktliche Massnahmen | 32-33 | 266 |
-| `doc-c7a12895306cc102368c` | section-0003 | Arbeitsmarktliche Massnahmen > Was ist das Ziel von arbeitsmarktlichen Massnahmen? | 34-39 | 513 |
-| `doc-c7a12895306cc102368c` | section-0004 | Arbeitsmarktliche Massnahmen > Breites Angebot an arbeitsmarktlichen Massnahmen | 40-41 | 210 |
-| `doc-c7a12895306cc102368c` | section-0005 | Arbeitsmarktliche Massnahmen > Voraussetzung für die Teilnahme | 42-44 | 413 |
-| `doc-c7a12895306cc102368c` | section-0006 | Arbeitsmarktliche Massnahmen > Beratung, Zuweisung und Anmeldung | 45-52 | 882 |
-| `doc-c7a12895306cc102368c` | section-0007 | Arbeitsmarktliche Massnahmen > Informationen und Auskünfte | 53-54 | 78 |
-| `doc-c7a12895306cc102368c` | section-0008 | Arbeitsmarktliche Massnahmen > Informationen und Auskünfte > Arbeitsmarktliche Massnahmen – Ein erster Schritt zur Wiedereingliederung | 55-58 | 319 |
-| `doc-22bc49b84a2599a63d5b` | section-0002 | Aussteuerung | 32-33 | 322 |
-| `doc-22bc49b84a2599a63d5b` | section-0003 | Aussteuerung > Aussteuerung – wie geht es weiter? | 34-75 | 6501 |
-| `doc-22bc49b84a2599a63d5b` | section-0004 | Aussteuerung > Weitere Informationen und Auskünfte | 76-77 | 145 |
-| `doc-39345c8ba13993912a74` | section-0002 | Beratung und Vermittlung durch das RAV | 32-33 | 259 |
-| `doc-39345c8ba13993912a74` | section-0003 | Beratung und Vermittlung durch das RAV > Sind Sie bald oder bereits arbeitslos? | 34-35 | 377 |
-| `doc-39345c8ba13993912a74` | section-0004 | Beratung und Vermittlung durch das RAV > Persönliche Beratung | 36-43 | 752 |
-| `doc-39345c8ba13993912a74` | section-0005 | Beratung und Vermittlung durch das RAV > Berufliche Perspektiven prüfen | 44-53 | 1205 |
-| `doc-39345c8ba13993912a74` | section-0006 | Beratung und Vermittlung durch das RAV > Stellenvermittlung | 54-59 | 976 |
-| `doc-39345c8ba13993912a74` | section-0007 | Beratung und Vermittlung durch das RAV > Nach einer Aussteuerung | 60-65 | 468 |
-| `doc-39345c8ba13993912a74` | section-0008 | Beratung und Vermittlung durch das RAV > Weitere Informationen und Auskünfte | 66-67 | 141 |
-| `doc-d679ed2cf42c3e618024` | section-0002 | EURES – Berufliche Mobilität in der EU/EFTA | 32-35 | 654 |
-| `doc-d679ed2cf42c3e618024` | section-0003 | EURES – Berufliche Mobilität in der EU/EFTA > Stellensuche in der EU/EFTA | 36-41 | 297 |
-| `doc-d679ed2cf42c3e618024` | section-0004 | EURES – Berufliche Mobilität in der EU/EFTA > Stellensuche in der EU/EFTA > Wichtiger Hinweis: | 42-52 | 1563 |
-| `doc-d679ed2cf42c3e618024` | section-0005 | EURES – Berufliche Mobilität in der EU/EFTA > Leben und arbeiten in der EU/EFTA | 53-62 | 967 |
-| `doc-d679ed2cf42c3e618024` | section-0007 | EURES – Berufliche Mobilität in der EU/EFTA > Stellensuche in der Schweiz > Suchen Sie eine Stelle in der Schweiz? | 64-66 | 450 |
-| `doc-d679ed2cf42c3e618024` | section-0008 | EURES – Berufliche Mobilität in der EU/EFTA > Leben und arbeiten in der Schweiz | 67-76 | 866 |
-| `doc-d679ed2cf42c3e618024` | section-0010 | EURES – Berufliche Mobilität in der EU/EFTA > Anerkennung von Berufsqualifikationen > In der Schweiz | 78-81 | 181 |
-| `doc-d679ed2cf42c3e618024` | section-0011 | EURES – Berufliche Mobilität in der EU/EFTA > Anerkennung von Berufsqualifikationen > Im Ausland | 82-83 | 78 |
-| `doc-d679ed2cf42c3e618024` | section-0013 | EURES – Berufliche Mobilität in der EU/EFTA > Entsendung > Entsendung in die Schweiz | 85-88 | 206 |
-| `doc-d679ed2cf42c3e618024` | section-0014 | EURES – Berufliche Mobilität in der EU/EFTA > Entsendung > Entsendung in die EU/EFTA | 89-95 | 1271 |
-| `doc-d679ed2cf42c3e618024` | section-0015 | EURES – Berufliche Mobilität in der EU/EFTA > Grenzgängerinnen und Grenzgänger | 96-103 | 1199 |
-| `doc-d679ed2cf42c3e618024` | section-0016 | EURES – Berufliche Mobilität in der EU/EFTA > Grenzgängerinnen und Grenzgänger > Was gilt bezüglich Sozialversicherungen? | 104-111 | 780 |
-| `doc-d679ed2cf42c3e618024` | section-0017 | EURES – Berufliche Mobilität in der EU/EFTA > Grenzgängerinnen und Grenzgänger > Was gilt bezüglich Krankenversicherung? | 112-116 | 755 |
-| `doc-d679ed2cf42c3e618024` | section-0018 | EURES – Berufliche Mobilität in der EU/EFTA > Grenzgängerinnen und Grenzgänger > Was gilt bezüglich Homeoffice? | 117-120 | 521 |
-| `doc-1dc7548e6096cef67224` | section-0002 | Erste Schritte nach Kündigung oder bei drohender Arbeitslosigkeit | 32-33 | 223 |
-| `doc-1dc7548e6096cef67224` | section-0003 | Erste Schritte nach Kündigung oder bei drohender Arbeitslosigkeit > Sofort mit der Stellensuche beginnen – warten Sie nicht! | 34-35 | 269 |
-| `doc-1dc7548e6096cef67224` | section-0004 | Erste Schritte nach Kündigung oder bei drohender Arbeitslosigkeit > Sofort mit der Stellensuche beginnen – warten Sie nicht! > Achtung – mögliche Sanktionen (Einstellung in der Anspruchsberechtigung) | 36-39 | 767 |
-| `doc-1dc7548e6096cef67224` | section-0005 | Erste Schritte nach Kündigung oder bei drohender Arbeitslosigkeit > Wann müssen Sie mit der Stellensuche beginnen? | 40-47 | 1043 |
-| `doc-1dc7548e6096cef67224` | section-0006 | Erste Schritte nach Kündigung oder bei drohender Arbeitslosigkeit > Auf die Qualität Ihrer Bewerbungen achten | 48-52 | 930 |
-| `doc-1dc7548e6096cef67224` | section-0007 | Erste Schritte nach Kündigung oder bei drohender Arbeitslosigkeit > Frühzeitig beim RAV anmelden und für Job-Room registrieren | 53-59 | 982 |
-| `doc-1dc7548e6096cef67224` | section-0008 | Erste Schritte nach Kündigung oder bei drohender Arbeitslosigkeit > Nachweise Ihrer Bemühungen sammeln und aufbewahren | 60-65 | 677 |
-| `doc-1dc7548e6096cef67224` | section-0009 | Erste Schritte nach Kündigung oder bei drohender Arbeitslosigkeit > Weitere wichtige Schritte | 66-79 | 1167 |
-| `doc-692db70e280fde89bae7` | section-0002 | eServices und Formulare für die Arbeitslosenentschädigung | 31-33 | 455 |
-| `doc-692db70e280fde89bae7` | section-0003 | eServices und Formulare für die Arbeitslosenentschädigung > eServices für Stellensuchende | 34-38 | 560 |
-| `doc-692db70e280fde89bae7` | section-0004 | eServices und Formulare für die Arbeitslosenentschädigung > eServices für Stellensuchende > eServices RAV | 39-42 | 65 |
-| `doc-692db70e280fde89bae7` | section-0005 | eServices und Formulare für die Arbeitslosenentschädigung > eServices für Stellensuchende > eServices Arbeitslosenkasse (ALK) | 43-45 | 67 |
-| `doc-692db70e280fde89bae7` | section-0006 | eServices und Formulare für die Arbeitslosenentschädigung > eServices für Stellensuchende > Vermittlung | 46-48 | 80 |
-| `doc-692db70e280fde89bae7` | section-0007 | eServices und Formulare für die Arbeitslosenentschädigung > Formulare für Stellensuchende | 49-55 | 638 |
-| `doc-692db70e280fde89bae7` | section-0008 | eServices und Formulare für die Arbeitslosenentschädigung > Formulare für Stellensuchende > Information für Arbeitgebende | 56-57 | 34 |
-| `doc-692db70e280fde89bae7` | section-0009 | eServices und Formulare für die Arbeitslosenentschädigung > Wichtige Hinweise: | 58-64 | 1394 |
-| `doc-692db70e280fde89bae7` | section-0011 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Antrag auf Arbeitslosenentschädigung 10000 d | 66-67 | 14 |
-| `doc-692db70e280fde89bae7` | section-0012 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Antrag auf Ausstellen eines PD U1 716.053 d | 68-70 | 65 |
-| `doc-692db70e280fde89bae7` | section-0013 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Antrag auf Insolvenzentschädigung 10023 d | 71-72 | 14 |
-| `doc-692db70e280fde89bae7` | section-0014 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Antrag auf Leistungen bei Arbeitssuche im Ausland 716.056 d | 73-75 | 65 |
-| `doc-692db70e280fde89bae7` | section-0015 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Arbeitgeberbescheinigung 10006 d | 76-77 | 14 |
-| `doc-692db70e280fde89bae7` | section-0016 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Arbeitgeberbescheinigung international 716.052 d | 78-80 | 91 |
-| `doc-692db70e280fde89bae7` | section-0017 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Arztzeugnis 10015 d | 81-82 | 14 |
-| `doc-692db70e280fde89bae7` | section-0018 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Bescheinigung Kinderbetreuung (Obhutsnachweis) 716.113 d | 83-84 | 14 |
-| `doc-692db70e280fde89bae7` | section-0019 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Bescheinigung über Zwischenverdienst 10018 d | 85-86 | 14 |
-| `doc-692db70e280fde89bae7` | section-0020 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Erhebungsbogen zum Erlassgesuch und Wegleitung zum Ausfüllen des Erhebungsbogens | 87-88 | 14 |
-| `doc-692db70e280fde89bae7` | section-0021 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Erhebungsbogen zur Berechnung des Existenzminimums 10356d | 89-90 | 14 |
-| `doc-692db70e280fde89bae7` | section-0022 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Meldung Unfall während Arbeitslosigkeit 10538 d | 91-92 | 14 |
-| `doc-692db70e280fde89bae7` | section-0023 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Nachweis der persönlichen Arbeitsbemühungen 716.007 d | 93-94 | 14 |
-| `doc-692db70e280fde89bae7` | section-0024 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Unterhaltspflicht gegenüber Kindern 10009 d | 95-96 | 14 |
-| `doc-692db70e280fde89bae7` | section-0025 | eServices und Formulare für die Arbeitslosenentschädigung > Die Formulare für Stellensuchende: > Unterhaltspflicht gegenüber Kindern im Ausland 10010 d | 97-98 | 14 |
-| `doc-7b05677a02154e1aae90` | section-0002 | FAQ zur Arbeitslosenentschädigung | 31-32 | 224 |
-| `doc-7b05677a02154e1aae90` | section-0003 | FAQ zur Arbeitslosenentschädigung > Arbeitslosigkeit – Ein Leitfaden für Versicherte | 33-35 | 239 |
-| `doc-7b05677a02154e1aae90` | section-0004 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen | 36-44 | 1495 |
-| `doc-7b05677a02154e1aae90` | section-0005 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Arbeitslos | 45-46 | 413 |
-| `doc-7b05677a02154e1aae90` | section-0006 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Arbeitsausfall/Verdienstausfall | 47-48 | 103 |
-| `doc-7b05677a02154e1aae90` | section-0007 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Wohnen in der Schweiz | 49-50 | 346 |
-| `doc-7b05677a02154e1aae90` | section-0008 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Erwerbsalter | 51-52 | 140 |
-| `doc-7b05677a02154e1aae90` | section-0009 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Beitragszeit | 53-60 | 1062 |
-| `doc-7b05677a02154e1aae90` | section-0010 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Fehlende Beitragszeit | 61-75 | 1471 |
-| `doc-7b05677a02154e1aae90` | section-0011 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Vermittlungsfähig | 76-77 | 276 |
-| `doc-7b05677a02154e1aae90` | section-0012 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Vermittlungsfähig > Arbeitsmarktliche Massnahmen – Ein erster Schritt zur Wiedereingliederung | 78-80 | 241 |
-| `doc-7b05677a02154e1aae90` | section-0013 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Kontrollvorschriften | 81-121 | 5937 |
-| `doc-7b05677a02154e1aae90` | section-0014 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Taggeld für Beitragsbefreite | 122-124 | 1200 |
-| `doc-7b05677a02154e1aae90` | section-0015 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Taggeld für Beitragsbefreite > Berufliche Vorsorge für arbeitslose Personen gemäss AVIG und BVG | 125-173 | 7663 |
-| `doc-7b05677a02154e1aae90` | section-0016 | FAQ zur Arbeitslosenentschädigung > Arbeitslos – was Sie zur Arbeitslosenentschädigung wissen müssen > Taggeld für Beitragsbefreite > Leistungen bei Arbeitssuche im Ausland, Nr. 716.204 | 174-179 | 619 |
-| `doc-7b05677a02154e1aae90` | section-0017 | FAQ zur Arbeitslosenentschädigung > Weitere rechtliche Fragen und zuständige Stellen | 180-205 | 6054 |
-| `doc-7b05677a02154e1aae90` | section-0018 | FAQ zur Arbeitslosenentschädigung > Auswirkungen der AHV-Reform | 206-208 | 298 |
-| `doc-7b05677a02154e1aae90` | section-0019 | FAQ zur Arbeitslosenentschädigung > Auswirkungen der AHV-Reform > Merkblatt für Versicherte | 209-213 | 343 |
-| `doc-7b05677a02154e1aae90` | section-0020 | FAQ zur Arbeitslosenentschädigung > Auswirkungen der AHV-Reform > Arbeitslosigkeit rund 4 Jahre vor AHV-Referenzalter | 214-215 | 14 |
-| `doc-026d5accf4c3cd0d8c95` | section-0002 | Registrierung | 31-32 | 98 |
-| `doc-026d5accf4c3cd0d8c95` | section-0003 | Registrierung > Benutzerregistrierung | 33-38 | 1054 |
-| `doc-026d5accf4c3cd0d8c95` | section-0004 | Registrierung > Voraussetzungen und Vorteile der Registrierung | 39-41 | 415 |
-| `doc-026d5accf4c3cd0d8c95` | section-0005 | Registrierung > Voraussetzungen und Vorteile der Registrierung > Weitere Vorteile der Registrierung: | 42-47 | 332 |
-| `doc-c0870773e4981e460538` | section-0002 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten | 32-33 | 253 |
-| `doc-c0870773e4981e460538` | section-0003 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in die Schweiz | 34-35 | 171 |
-| `doc-c0870773e4981e460538` | section-0004 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in die Schweiz > Anmeldung beim RAV | 36-37 | 283 |
-| `doc-c0870773e4981e460538` | section-0005 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in die Schweiz > Beratung vor der Rückkehr | 38-50 | 1188 |
-| `doc-c0870773e4981e460538` | section-0006 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in die Schweiz > Bei der Rückkehr aus einem EU/EFT A-Staat zu beachten | 51-57 | 1113 |
-| `doc-c0870773e4981e460538` | section-0007 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in die Schweiz > Bei der Rückkehr aus einem EU/EFT A-Staat zu beachten > PD U2 Informationen zum Vordruck U2 und seiner Verwendung | 58-64 | 526 |
-| `doc-c0870773e4981e460538` | section-0008 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in die Schweiz > Bei der Rückkehr aus einem EU/EFT A-Staat zu beachten > PD U1 Informationen zum Vordruck U1 und zu seiner Verwendung | 65-66 | 3 |
-| `doc-c0870773e4981e460538` | section-0009 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in die EU/EFTA | 67-69 | 246 |
-| `doc-c0870773e4981e460538` | section-0010 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in die EU/EFTA > Bei der Rückkehr in einen EU/EFTA-Staat zu beachten | 70-80 | 748 |
-| `doc-c0870773e4981e460538` | section-0011 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in die EU/EFTA > Bei der Rückkehr in einen EU/EFTA-Staat zu beachten > PD U2 Informationen zum Vordruck U2 und seiner Verwendung | 81-89 | 530 |
-| `doc-c0870773e4981e460538` | section-0012 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in die EU/EFTA > Bei der Rückkehr in einen EU/EFTA-Staat zu beachten > Antrag auf Ausstellung eines PD U1 | 90-96 | 474 |
-| `doc-c0870773e4981e460538` | section-0013 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in die EU/EFTA > Bei der Rückkehr in einen EU/EFTA-Staat zu beachten > PD U1 Informationen zum Vordruck U1 und zu seiner Verwendung | 97-98 | 3 |
-| `doc-c0870773e4981e460538` | section-0014 | Rückkehr in die Schweiz, EU/EFTA oder Drittstaaten > Rückkehr in Drittstaaten | 99-102 | 346 |
-| `doc-80a38229617ee48b2792` | section-0002 | Stellensuche im Ausland | 32-33 | 340 |
-| `doc-80a38229617ee48b2792` | section-0003 | Stellensuche im Ausland > Stellensuche in der EU/EFTA | 34-40 | 628 |
-| `doc-80a38229617ee48b2792` | section-0004 | Stellensuche im Ausland > Stellensuche in der EU/EFTA > Wichtiger Hinweis: | 41-52 | 1718 |
-| `doc-80a38229617ee48b2792` | section-0005 | Stellensuche im Ausland > Stellensuche in Drittstaaten | 53-56 | 838 |
-| `doc-80a38229617ee48b2792` | section-0006 | Stellensuche im Ausland > Ein Berufspraktikum im Ausland | 57-59 | 365 |
-| `doc-80a38229617ee48b2792` | section-0007 | Stellensuche im Ausland > Anerkennung von Schweizer Diplomen im Ausland | 60-62 | 392 |
-| `doc-80a38229617ee48b2792` | section-0008 | Stellensuche im Ausland > Entsendung in die EU/EFTA oder in Drittstaaten | 63-68 | 812 |
-| `doc-1ab3b64956708c04d398` | section-0002 | Versicherungsleistungen | 32-35 | 524 |
-| `doc-1ab3b64956708c04d398` | section-0003 | Versicherungsleistungen > Arbeitslosenentschädigung | 36-62 | 2393 |
-| `doc-1ab3b64956708c04d398` | section-0004 | Versicherungsleistungen > Zwischenverdienst | 63-72 | 893 |
-| `doc-1ab3b64956708c04d398` | section-0005 | Versicherungsleistungen > Insolvenzentschädigung | 73-83 | 709 |
-| `doc-1ab3b64956708c04d398` | section-0006 | Versicherungsleistungen > Länderwechsel: Bescheinigung von Versicherungszeiten | 84-85 | 252 |
-| `doc-1ab3b64956708c04d398` | section-0007 | Versicherungsleistungen > Länderwechsel: Bescheinigung von Versicherungszeiten > Antrag auf Ausstellung eines PD U1 | 86-89 | 478 |
-| `doc-1ab3b64956708c04d398` | section-0008 | Versicherungsleistungen > Weitere Informationen und Auskünfte | 90-91 | 148 |
-| `doc-730eeba6699b03eb852e` | section-0002 | Career counselling and job placement by the RAV | 32-33 | 219 |
-| `doc-730eeba6699b03eb852e` | section-0003 | Career counselling and job placement by the RAV > Are you already or soon to become unemployed? | 34-35 | 294 |
-| `doc-730eeba6699b03eb852e` | section-0004 | Career counselling and job placement by the RAV > Individual career counselling | 36-43 | 678 |
-| `doc-730eeba6699b03eb852e` | section-0005 | Career counselling and job placement by the RAV > Exploring career options | 44-53 | 963 |
-| `doc-730eeba6699b03eb852e` | section-0006 | Career counselling and job placement by the RAV > Job placement service | 54-59 | 848 |
-| `doc-730eeba6699b03eb852e` | section-0007 | Career counselling and job placement by the RAV > After your entitlement to unemployment benefit expires | 60-65 | 467 |
-| `doc-730eeba6699b03eb852e` | section-0008 | Career counselling and job placement by the RAV > Further information and enquiries | 66-67 | 97 |
-| `doc-f09b8685193e7b48365e` | section-0002 | eServices and forms for unemployment benefit | 31-33 | 432 |
-| `doc-f09b8685193e7b48365e` | section-0003 | eServices and forms for unemployment benefit > eServices for jobseekers | 34-38 | 553 |
-| `doc-f09b8685193e7b48365e` | section-0004 | eServices and forms for unemployment benefit > eServices for jobseekers > RAV eServices | 39-42 | 62 |
-| `doc-f09b8685193e7b48365e` | section-0005 | eServices and forms for unemployment benefit > eServices for jobseekers > Unemployment insurance fund (ALK) eServices | 43-45 | 65 |
-| `doc-f09b8685193e7b48365e` | section-0006 | eServices and forms for unemployment benefit > eServices for jobseekers > Employment services | 46-48 | 68 |
-| `doc-f09b8685193e7b48365e` | section-0007 | eServices and forms for unemployment benefit > Forms for jobseekers | 49-55 | 558 |
-| `doc-f09b8685193e7b48365e` | section-0008 | eServices and forms for unemployment benefit > Forms for jobseekers > Information for employers | 56-57 | 52 |
-| `doc-f09b8685193e7b48365e` | section-0009 | eServices and forms for unemployment benefit > Important note: | 58-64 | 1287 |
-| `doc-f09b8685193e7b48365e` | section-0011 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Antrag auf Arbeitslosenentschädigung 10000 d (German) | 66-67 | 14 |
-| `doc-f09b8685193e7b48365e` | section-0012 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Antrag auf Ausstellen eines PD U1 716.053 d (German) | 68-70 | 65 |
-| `doc-f09b8685193e7b48365e` | section-0013 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Antrag auf Insolvenzentschädigung 10023 d (in German) | 71-72 | 14 |
-| `doc-f09b8685193e7b48365e` | section-0014 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Antrag auf Leistungen bei Arbeitssuche im Ausland 716.056 d (German) | 73-75 | 65 |
-| `doc-f09b8685193e7b48365e` | section-0015 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Arbeitgeberbescheinigung 10006 d (German) | 76-77 | 14 |
-| `doc-f09b8685193e7b48365e` | section-0016 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Arbeitgeberbescheinigung international 716.052 d (German) | 78-80 | 91 |
-| `doc-f09b8685193e7b48365e` | section-0017 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Arztzeugnis 10015 d (German) | 81-82 | 14 |
-| `doc-f09b8685193e7b48365e` | section-0018 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Bescheinigung Kinderbetreuung (Obhutsnachweis) 716.113 d (German) | 83-84 | 14 |
-| `doc-f09b8685193e7b48365e` | section-0019 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Bescheinigung über Zwischenverdienst 10018 d (German) | 85-86 | 14 |
-| `doc-f09b8685193e7b48365e` | section-0020 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Erhebungsbogen zum Erlassgesuch und Wegleitung zum Ausfüllen des Erhebungsbogens (German) | 87-88 | 14 |
-| `doc-f09b8685193e7b48365e` | section-0021 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Erhebungsbogen zur Berechnung des Existenzminimums 10356d (German) | 89-90 | 14 |
-| `doc-f09b8685193e7b48365e` | section-0022 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Meldung Unfall während Arbeitslosigkeit 10538 d (German) | 91-92 | 14 |
-| `doc-f09b8685193e7b48365e` | section-0023 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Nachweis der persönlichen Arbeitsbemühungen 716.007 d (German) | 93-94 | 14 |
-| `doc-f09b8685193e7b48365e` | section-0024 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Unterhaltspflicht gegenüber Kindern 10009 d (German) | 95-96 | 14 |
-| `doc-f09b8685193e7b48365e` | section-0025 | eServices and forms for unemployment benefit > Forms for jobseekers (in German): > Unterhaltspflicht gegenüber Kindern im Ausland 10010 d (German) | 97-98 | 14 |
-| `doc-b925ff104dcd837ffd4c` | section-0002 | EURES – Professional mobility in the EU/EFTA | 32-35 | 606 |
-| `doc-b925ff104dcd837ffd4c` | section-0003 | EURES – Professional mobility in the EU/EFTA > Looking for work in the EU/EFTA | 36-41 | 266 |
-| `doc-b925ff104dcd837ffd4c` | section-0004 | EURES – Professional mobility in the EU/EFTA > Looking for work in the EU/EFTA > Important notice: | 42-52 | 1538 |
-| `doc-b925ff104dcd837ffd4c` | section-0005 | EURES – Professional mobility in the EU/EFTA > Living and working in the EU/EFTA | 53-61 | 855 |
-| `doc-b925ff104dcd837ffd4c` | section-0007 | EURES – Professional mobility in the EU/EFTA > Looking for work in Switzerland > Are you looking for a job in Switzerland? | 63-65 | 419 |
-| `doc-b925ff104dcd837ffd4c` | section-0008 | EURES – Professional mobility in the EU/EFTA > Living and working in Switzerland | 66-75 | 762 |
-| `doc-b925ff104dcd837ffd4c` | section-0010 | EURES – Professional mobility in the EU/EFTA > Recognition of professional qualifications > In Switzerland | 77-80 | 197 |
-| `doc-b925ff104dcd837ffd4c` | section-0011 | EURES – Professional mobility in the EU/EFTA > Recognition of professional qualifications > Abroad | 81-82 | 85 |
-| `doc-b925ff104dcd837ffd4c` | section-0013 | EURES – Professional mobility in the EU/EFTA > Posting of workers > Posting of workers to Switzerland | 84-87 | 186 |
-| `doc-b925ff104dcd837ffd4c` | section-0014 | EURES – Professional mobility in the EU/EFTA > Posting of workers > posting to the EU/EFTA | 88-94 | 1091 |
-| `doc-b925ff104dcd837ffd4c` | section-0015 | EURES – Professional mobility in the EU/EFTA > Cross-border commuters | 95-102 | 970 |
-| `doc-b925ff104dcd837ffd4c` | section-0016 | EURES – Professional mobility in the EU/EFTA > Cross-border commuters > What are the rules on social insurance? | 103-110 | 717 |
-| `doc-b925ff104dcd837ffd4c` | section-0017 | EURES – Professional mobility in the EU/EFTA > Cross-border commuters > What are the rules regarding health insurance? | 111-115 | 764 |
-| `doc-b925ff104dcd837ffd4c` | section-0018 | EURES – Professional mobility in the EU/EFTA > Cross-border commuters > What are the rules on working from home? | 116-119 | 493 |
-| `doc-7d0664abd7ab474e510d` | section-0002 | Expiry of unemployment benefit | 32-33 | 312 |
-| `doc-7d0664abd7ab474e510d` | section-0003 | Expiry of unemployment benefit > Expiry of unemployment benefit – what next? | 34-75 | 6530 |
-| `doc-7d0664abd7ab474e510d` | section-0004 | Expiry of unemployment benefit > Further information and enquiries | 76-77 | 129 |
-| `doc-75ee6bba762275baf94b` | section-0002 | FAQs on unemployment benefit | 31-32 | 205 |
-| `doc-75ee6bba762275baf94b` | section-0003 | FAQs on unemployment benefit > Arbeitslosigkeit – Ein Leitfaden für Versicherte (German) | 33-35 | 239 |
-| `doc-75ee6bba762275baf94b` | section-0004 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit | 36-44 | 1346 |
-| `doc-75ee6bba762275baf94b` | section-0005 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Unemployment status | 45-46 | 444 |
-| `doc-75ee6bba762275baf94b` | section-0006 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Work stoppages/loss of earnings | 47-48 | 88 |
-| `doc-75ee6bba762275baf94b` | section-0007 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Residence in Switzerland | 49-50 | 338 |
-| `doc-75ee6bba762275baf94b` | section-0008 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Working age | 51-52 | 177 |
-| `doc-75ee6bba762275baf94b` | section-0009 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Qualifying period for contributions | 53-60 | 913 |
-| `doc-75ee6bba762275baf94b` | section-0010 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Insufficient qualifying period | 61-75 | 1390 |
-| `doc-75ee6bba762275baf94b` | section-0011 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Fit for placement | 76-77 | 254 |
-| `doc-75ee6bba762275baf94b` | section-0012 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Fit for placement > Arbeitsmarktliche Massnahmen – Ein erster Schritt zur Wiedereingliederung (German) | 78-80 | 241 |
-| `doc-75ee6bba762275baf94b` | section-0013 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Monitoring rules | 81-120 | 5540 |
-| `doc-75ee6bba762275baf94b` | section-0014 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Daily allowance for those who are exempt from contributions | 121-123 | 1339 |
-| `doc-75ee6bba762275baf94b` | section-0015 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Daily allowance for those who are exempt from contributions > Berufliche Vorsorge für arbeitslose Personen gemäss AVIG und BVG (German) | 124-172 | 7734 |
-| `doc-75ee6bba762275baf94b` | section-0016 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Daily allowance for those who are exempt from contributions > Services for job searches abroad, No. 716.204 (German) | 173-178 | 591 |
-| `doc-75ee6bba762275baf94b` | section-0017 | FAQs on unemployment benefit > Other legal questions and competent instances | 179-204 | 5806 |
-| `doc-75ee6bba762275baf94b` | section-0018 | FAQs on unemployment benefit > Effects of the AHV reform | 205-207 | 206 |
-| `doc-75ee6bba762275baf94b` | section-0019 | FAQs on unemployment benefit > Effects of the AHV reform > Fact sheet for insured persons (German) | 208-212 | 357 |
-| `doc-75ee6bba762275baf94b` | section-0020 | FAQs on unemployment benefit > Effects of the AHV reform > Unemployment approximately four years before the AHV reference age (German) | 213-214 | 14 |
-| `doc-736b05711af66d1d9cc5` | section-0002 | First steps after dismissal or if you risk losing your job | 32-33 | 205 |
-| `doc-736b05711af66d1d9cc5` | section-0003 | First steps after dismissal or if you risk losing your job > Start looking for a job straight away – don’t wait! | 34-35 | 257 |
-| `doc-736b05711af66d1d9cc5` | section-0004 | First steps after dismissal or if you risk losing your job > Start looking for a job straight away – don’t wait! > Please note – potential sanctions (suspension of benefit entitlement) | 36-39 | 741 |
-| `doc-736b05711af66d1d9cc5` | section-0005 | First steps after dismissal or if you risk losing your job > When do you need to start looking for a job? | 40-47 | 1032 |
-| `doc-736b05711af66d1d9cc5` | section-0006 | First steps after dismissal or if you risk losing your job > Bear in mind the quality of your efforts | 48-52 | 795 |
-| `doc-736b05711af66d1d9cc5` | section-0007 | First steps after dismissal or if you risk losing your job > Sign on with the RAV and register for Job-Room early | 53-59 | 840 |
-| `doc-736b05711af66d1d9cc5` | section-0008 | First steps after dismissal or if you risk losing your job > Collect and retain proof of your efforts to find work | 60-65 | 539 |
-| `doc-736b05711af66d1d9cc5` | section-0009 | First steps after dismissal or if you risk losing your job > Other key steps | 66-79 | 1144 |
-| `doc-5c6344ffc116c19c01ef` | section-0002 | Insurance benefits | 32-34 | 459 |
-| `doc-5c6344ffc116c19c01ef` | section-0003 | Insurance benefits > Unemployment benefit | 35-61 | 2207 |
-| `doc-5c6344ffc116c19c01ef` | section-0004 | Insurance benefits > Temporary earnings | 62-71 | 799 |
-| `doc-5c6344ffc116c19c01ef` | section-0005 | Insurance benefits > Insolvency compensation | 72-82 | 650 |
-| `doc-5c6344ffc116c19c01ef` | section-0006 | Insurance benefits > Moving country: certification of insurance periods | 83-84 | 308 |
-| `doc-5c6344ffc116c19c01ef` | section-0007 | Insurance benefits > Moving country: certification of insurance periods > Antrag auf Ausstellung eines PD U1 | 85-88 | 479 |
-| `doc-5c6344ffc116c19c01ef` | section-0008 | Insurance benefits > Further information and enquiries | 89-90 | 136 |
-| `doc-69d73af6c8ae2501ff76` | section-0002 | Job registration requirement | 32-33 | 231 |
-| `doc-69d73af6c8ae2501ff76` | section-0003 | Job registration requirement > Why was the job registration requirement introduced? | 34-37 | 536 |
-| `doc-69d73af6c8ae2501ff76` | section-0004 | Job registration requirement > The aim of the job registration requirement | 38-39 | 440 |
-| `doc-69d73af6c8ae2501ff76` | section-0005 | Job registration requirement > Is your vacancy subject to the registration requirement and how can you register it? | 40-42 | 276 |
-| `doc-69d73af6c8ae2501ff76` | section-0007 | Job registration requirement > More information on the job registration requirement | 44-48 | 239 |
-| `doc-69d73af6c8ae2501ff76` | section-0008 | Job registration requirement > More information on the job registration requirement > Stellenmeldepflicht: Das Wichtigste auf einen Blick! | 49-50 | 3 |
-| `doc-69d73af6c8ae2501ff76` | section-0009 | Job registration requirement > More information on the job registration requirement > Stellenmeldepflicht: Informationsvorsprung für Stellensuchende (in German) | 51-52 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0010 | Job registration requirement > More information on the job registration requirement > AVG-Praxis öAV (in German, French and Italian only) | 53-55 | 183 |
-| `doc-69d73af6c8ae2501ff76` | section-0011 | Job registration requirement > More information on the job registration requirement > The list of occupation types that have to be registered in 2026 (in German) | 56-57 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0012 | Job registration requirement > How is implementation of the job registration requirement monitored? | 58-60 | 280 |
-| `doc-69d73af6c8ae2501ff76` | section-0013 | Job registration requirement > How is implementation of the job registration requirement monitored? > Seventh report on the execution of the job registration requirement 2025, July 2026 (in German) | 61-62 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0014 | Job registration requirement > How is implementation of the job registration requirement monitored? > Sixth report on the execution of the job registration requirement 2024, May 2025 (in German) | 63-64 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0015 | Job registration requirement > How is implementation of the job registration requirement monitored? > Fifth report on the execution of the job registration requirement 2023, May 2024 (in German) | 65-66 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0016 | Job registration requirement > How is implementation of the job registration requirement monitored? > Fourth report on the execution of the job registration requirement 2022, May 2023 (in German) | 67-68 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0017 | Job registration requirement > How is implementation of the job registration requirement monitored? > Third report on the execution of the job registration requirement 2021, May 2022 (in German) | 69-70 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0018 | Job registration requirement > How is implementation of the job registration requirement monitored? > Second report on the execution of the job registration requirement 2020, June 2021 (in German) | 71-72 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0019 | Job registration requirement > How is implementation of the job registration requirement monitored? > First report on the execution of the job registration requirement, November 2019 (in German) | 73-75 | 235 |
-| `doc-69d73af6c8ae2501ff76` | section-0020 | Job registration requirement > How is implementation of the job registration requirement monitored? > Impact evaluation of the job vacancy notice obligation I (Labour market study/June 2021) | 76-77 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0021 | Job registration requirement > How is implementation of the job registration requirement monitored? > Impact evaluation of the job vacancy notice obligation II (Labour market study/June 2021) | 78-79 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0022 | Job registration requirement > How is implementation of the job registration requirement monitored? > Monitoring evaluation of the job vacancy notice obligation I (Labour market study/June 2021) | 80-81 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0023 | Job registration requirement > How is implementation of the job registration requirement monitored? > Monitoring evaluation of the job vacancy notice obligation II (Labour market study/June 2021) | 82-83 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0025 | Job registration requirement > How is implementation of the job registration requirement monitored? > Other studies, reports and articles: > Die Praxis der Personalsuche Veränderungen durch die Einführung der Stellenmeldepflicht 2022 (German) | 85-86 | 14 |
-| `doc-69d73af6c8ae2501ff76` | section-0026 | Job registration requirement > How is implementation of the job registration requirement monitored? > Other studies, reports and articles: > Zugang der Invalidenversicherung zum Informationsvorsprung im Rahmen der Stellenmeldepflicht - Bericht des Bundesrates in Erfüllung der Motion 19.3239 Bruderer Wyss vom 21.03.2019 (German) | 87-89 | 107 |
-| `doc-ce6137f089827679b46b` | section-0002 | FAQs on unemployment benefit | 31-32 | 205 |
-| `doc-ce6137f089827679b46b` | section-0003 | FAQs on unemployment benefit > Arbeitslosigkeit – Ein Leitfaden für Versicherte (German) | 33-35 | 239 |
-| `doc-ce6137f089827679b46b` | section-0008 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Working age | 51-52 | 177 |
-| `doc-ce6137f089827679b46b` | section-0010 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Insufficient qualifying period | 61-75 | 1390 |
-| `doc-ce6137f089827679b46b` | section-0011 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Fit for placement | 76-77 | 254 |
-| `doc-ce6137f089827679b46b` | section-0012 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Fit for placement > Arbeitsmarktliche Massnahmen – Ein erster Schritt zur Wiedereingliederung (German) | 78-80 | 241 |
-| `doc-ce6137f089827679b46b` | section-0014 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Daily allowance for those who are exempt from contributions | 121-123 | 1339 |
-| `doc-ce6137f089827679b46b` | section-0016 | FAQs on unemployment benefit > Unemployed – what you need to know about unemployment benefit > Daily allowance for those who are exempt from contributions > Services for job searches abroad, No. 716.204 (German) | 173-178 | 591 |
-| `doc-ce6137f089827679b46b` | section-0017 | FAQs on unemployment benefit > Other legal questions and competent instances | 179-204 | 5806 |
-| `doc-ce6137f089827679b46b` | section-0018 | FAQs on unemployment benefit > Effects of the AHV reform | 205-207 | 206 |
-| `doc-ce6137f089827679b46b` | section-0019 | FAQs on unemployment benefit > Effects of the AHV reform > Fact sheet for insured persons (German) | 208-212 | 357 |
-| `doc-ce6137f089827679b46b` | section-0020 | FAQs on unemployment benefit > Effects of the AHV reform > Unemployment approximately four years before the AHV reference age (German) | 213-214 | 14 |
-| `doc-8348f22bf583137fd376` | section-0002 | Signing on and registration | 32-33 | 306 |
-| `doc-8348f22bf583137fd376` | section-0004 | Signing on and registration > Registering for Job-Room | 41-49 | 989 |
-| `doc-0e3d386866774ee970c5` | section-0002 | Labor market measures | 32-33 | 230 |
-| `doc-0e3d386866774ee970c5` | section-0003 | Labor market measures > What is the goal of labour market measures? | 34-39 | 390 |
-| `doc-0e3d386866774ee970c5` | section-0004 | Labor market measures > Broad range of labour market measures | 40-41 | 207 |
-| `doc-0e3d386866774ee970c5` | section-0005 | Labor market measures > Requirements for participation | 42-44 | 366 |
-| `doc-0e3d386866774ee970c5` | section-0006 | Labor market measures > Advice, referral and registration | 45-52 | 796 |
-| `doc-0e3d386866774ee970c5` | section-0007 | Labor market measures > Information and enquiries | 53-54 | 68 |
-| `doc-0e3d386866774ee970c5` | section-0008 | Labor market measures > Information and enquiries > Arbeitsmarktliche Massnahmen – Ein erster Schritt zur Wiedereingliederung (German) | 55-58 | 328 |
-| `doc-785e76133e7f71f8767e` | section-0002 | Looking for work abroad | 32-33 | 331 |
-| `doc-785e76133e7f71f8767e` | section-0003 | Looking for work abroad > Looking for work in the EU/EFTA | 34-40 | 542 |
-| `doc-785e76133e7f71f8767e` | section-0004 | Looking for work abroad > Looking for work in the EU/EFTA > Important notice: | 41-52 | 1638 |
-| `doc-785e76133e7f71f8767e` | section-0005 | Looking for work abroad > Looking for work in third countries | 53-56 | 690 |
-| `doc-785e76133e7f71f8767e` | section-0006 | Looking for work abroad > Work placements abroad | 57-59 | 340 |
-| `doc-785e76133e7f71f8767e` | section-0007 | Looking for work abroad > Recognition of Swiss qualifications abroad | 60-62 | 362 |
-| `doc-785e76133e7f71f8767e` | section-0008 | Looking for work abroad > Postings to the EU/EFTA or third countries | 63-68 | 753 |
-| `doc-953725399cc1315ca3d5` | section-0002 | Registration | 31-32 | 73 |
-| `doc-953725399cc1315ca3d5` | section-0003 | Registration > User registration | 33-38 | 955 |
-| `doc-953725399cc1315ca3d5` | section-0004 | Registration > Requirements and benefits of registration: | 39-41 | 378 |
-| `doc-953725399cc1315ca3d5` | section-0005 | Registration > Requirements and benefits of registration: > Further advantages of registering: | 42-47 | 303 |
-| `doc-6f212eeca0d54d0940e8` | section-0002 | Returning to Switzerland, EU/EFTA or third countries | 32-33 | 230 |
-| `doc-6f212eeca0d54d0940e8` | section-0003 | Returning to Switzerland, EU/EFTA or third countries > Returning to Switzerland | 34-35 | 123 |
-| `doc-6f212eeca0d54d0940e8` | section-0004 | Returning to Switzerland, EU/EFTA or third countries > Returning to Switzerland > Signing on with the RAV | 36-37 | 226 |
-| `doc-6f212eeca0d54d0940e8` | section-0005 | Returning to Switzerland, EU/EFTA or third countries > Returning to Switzerland > Advice before you return | 38-50 | 1132 |
-| `doc-6f212eeca0d54d0940e8` | section-0006 | Returning to Switzerland, EU/EFTA or third countries > Returning to Switzerland > What to consider when returning from an EU/EFTA state | 51-57 | 1031 |
-| `doc-6f212eeca0d54d0940e8` | section-0007 | Returning to Switzerland, EU/EFTA or third countries > Returning to Switzerland > What to consider when returning from an EU/EFTA state > PD U2 Informationen zum Vordruck U2 und seiner Verwendung | 58-64 | 431 |
-| `doc-6f212eeca0d54d0940e8` | section-0008 | Returning to Switzerland, EU/EFTA or third countries > Returning to Switzerland > What to consider when returning from an EU/EFTA state > PD U1 Informationen zum Vordruck U1 und seiner Verwendung | 65-66 | 3 |
-| `doc-6f212eeca0d54d0940e8` | section-0009 | Returning to Switzerland, EU/EFTA or third countries > Returning to the EU/EFTA | 67-69 | 246 |
-| `doc-6f212eeca0d54d0940e8` | section-0010 | Returning to Switzerland, EU/EFTA or third countries > Returning to the EU/EFTA > What to consider when returning to an EU/EFTA state | 70-80 | 691 |
-| `doc-6f212eeca0d54d0940e8` | section-0011 | Returning to Switzerland, EU/EFTA or third countries > Returning to the EU/EFTA > What to consider when returning to an EU/EFTA state > PD U2 Informationen zum Vordruck U2 und seiner Verwendung | 81-89 | 485 |
-| `doc-6f212eeca0d54d0940e8` | section-0012 | Returning to Switzerland, EU/EFTA or third countries > Returning to the EU/EFTA > What to consider when returning to an EU/EFTA state > Antrag auf Ausstellung eines PD U1 | 90-96 | 467 |
-| `doc-6f212eeca0d54d0940e8` | section-0013 | Returning to Switzerland, EU/EFTA or third countries > Returning to the EU/EFTA > What to consider when returning to an EU/EFTA state > PD U2 Informationen zum Vordruck U2 und seiner Verwendung | 97-98 | 3 |
-| `doc-6f212eeca0d54d0940e8` | section-0014 | Returning to Switzerland, EU/EFTA or third countries > Returning to third countries | 99-102 | 339 |
-| `doc-92859f76d868578d25ad` | section-0002 | Short-time working compensation | 32-33 | 258 |
-| `doc-92859f76d868578d25ad` | section-0003 | Short-time working compensation > What is short-time working compensation? | 34-37 | 564 |
-| `doc-92859f76d868578d25ad` | section-0004 | Short-time working compensation > What is short-time working compensation? > Broschüre: Kurzarbeitsentschädigung (German) | 38-39 | 14 |
-| `doc-92859f76d868578d25ad` | section-0005 | Short-time working compensation > eServices and forms for short-time working compensation | 40-42 | 262 |
-| `doc-92859f76d868578d25ad` | section-0007 | Short-time working compensation > What to bear in mind with short-time working compensation > Advance notification short-time working | 44-48 | 537 |
-| `doc-92859f76d868578d25ad` | section-0008 | Short-time working compensation > What to bear in mind with short-time working compensation > Applying for and settlement of short-time working compensation | 49-56 | 1585 |
-| `doc-92859f76d868578d25ad` | section-0009 | Short-time working compensation > Further information and enquiries | 57-60 | 376 |
-| `doc-66bfe101b39f2d0ea6a9` | section-0002 | Signing on and registration | 32-33 | 306 |
-| `doc-66bfe101b39f2d0ea6a9` | section-0003 | Signing on and registration > Signing on with the RAV | 34-40 | 737 |
-| `doc-66bfe101b39f2d0ea6a9` | section-0004 | Signing on and registration > Registering for Job-Room | 41-49 | 989 |
-| `doc-66bfe101b39f2d0ea6a9` | section-0005 | Signing on and registration > The services offered by RAVs and unemployment insurance funds | 50-77 | 2506 |
 | `doc-3f3d4751491356fbdf8a` | section-0001 | (no heading) | 1-6 | 2465 |
 | `doc-08accda64b5e8e778ea6` | section-0002 | Alters- und Hinterlassenenversicherung (AHV) - Übersicht | 18-19 | 444 |
 | `doc-08accda64b5e8e778ea6` | section-0003 | Alters- und Hinterlassenenversicherung (AHV) - Übersicht > Leistungen der AHV | 20-22 | 161 |
@@ -1701,148 +1382,6 @@ Release `mvp-zurich-2026-09-23-v13` (content `835fa93b4aa5`), policy `report`, n
 | `doc-6ac4fb95eb9bd1acf968` | section-0015 | Amt für Wirtschaft > Über uns > Tripartite Kommission | 87-89 | 136 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0016 | Amt für Wirtschaft > Über uns > Einigungsamt | 90-92 | 158 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0017 | Amt für Wirtschaft > Über uns > Offene Stellen im AWI | 93-95 | 43 |
-| `doc-6a4c4aa06458f9782f9a` | section-0009 | Erwerbstätigkeit von Ausländerinnen und Ausländern > Diese Seite ist verfügbar in: | 57-60 | 261 |
-| `doc-6a4c4aa06458f9782f9a` | section-0010 | Erwerbstätigkeit von Ausländerinnen und Ausländern > Diese Seite ist verfügbar in: > Schutzstatus «S» | 61-63 | 223 |
-| `doc-e992d7aaf1b359dc413c` | section-0007 | Anmeldung RAV & Arbeitslosenkasse | 48-49 | 176 |
-| `doc-e992d7aaf1b359dc413c` | section-0010 | Anmeldung RAV & Arbeitslosenkasse > Anmeldung RAV > Wann anmelden? | 57-68 | 706 |
-| `doc-e992d7aaf1b359dc413c` | section-0011 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV | 69-107 | 224 |
-| `doc-e992d7aaf1b359dc413c` | section-0013 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 109-115 | 180 |
-| `doc-e992d7aaf1b359dc413c` | section-0014 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 116-117 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0015 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 118-119 | 27 |
-| `doc-e992d7aaf1b359dc413c` | section-0017 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 121-122 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0019 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 124-130 | 184 |
-| `doc-e992d7aaf1b359dc413c` | section-0020 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 131-132 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0021 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 133-134 | 27 |
-| `doc-e992d7aaf1b359dc413c` | section-0023 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 136-137 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0025 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 139-145 | 180 |
-| `doc-e992d7aaf1b359dc413c` | section-0026 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 146-147 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0027 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 148-149 | 25 |
-| `doc-e992d7aaf1b359dc413c` | section-0029 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 151-152 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0031 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 154-160 | 182 |
-| `doc-e992d7aaf1b359dc413c` | section-0032 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 161-162 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0033 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 163-164 | 26 |
-| `doc-e992d7aaf1b359dc413c` | section-0035 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 166-167 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0037 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 169-175 | 187 |
-| `doc-e992d7aaf1b359dc413c` | section-0038 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 176-177 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0039 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 178-179 | 30 |
-| `doc-e992d7aaf1b359dc413c` | section-0041 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 181-182 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0043 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 184-190 | 181 |
-| `doc-e992d7aaf1b359dc413c` | section-0044 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 191-192 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0045 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 193-194 | 25 |
-| `doc-e992d7aaf1b359dc413c` | section-0047 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 196-197 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0049 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 199-205 | 189 |
-| `doc-e992d7aaf1b359dc413c` | section-0050 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 206-207 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0051 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 208-209 | 30 |
-| `doc-e992d7aaf1b359dc413c` | section-0053 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 211-212 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0055 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 214-220 | 182 |
-| `doc-e992d7aaf1b359dc413c` | section-0056 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 221-222 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0057 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 223-224 | 32 |
-| `doc-e992d7aaf1b359dc413c` | section-0059 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 226-227 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0060 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Bitte beachten Sie: Stellensuchende aus 8044 Gockhausen melden sich bitte im RAV Zürich Nansenstrasse | 228-229 | 96 |
-| `doc-e992d7aaf1b359dc413c` | section-0061 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Stellensuchende aus 8135 Sihlbrugg Station und Sihlwald melden sich bitte im RAV Thalwil | 230-231 | 91 |
-| `doc-e992d7aaf1b359dc413c` | section-0063 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 233-239 | 183 |
-| `doc-e992d7aaf1b359dc413c` | section-0064 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 240-241 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0065 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 242-243 | 30 |
-| `doc-e992d7aaf1b359dc413c` | section-0067 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 245-246 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0069 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 248-254 | 184 |
-| `doc-e992d7aaf1b359dc413c` | section-0070 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 255-256 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0071 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 257-258 | 39 |
-| `doc-e992d7aaf1b359dc413c` | section-0073 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 260-261 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0075 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 263-269 | 181 |
-| `doc-e992d7aaf1b359dc413c` | section-0076 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 270-271 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0077 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 272-273 | 28 |
-| `doc-e992d7aaf1b359dc413c` | section-0079 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 275-276 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0081 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 278-284 | 189 |
-| `doc-e992d7aaf1b359dc413c` | section-0082 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 285-286 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0083 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 287-288 | 33 |
-| `doc-e992d7aaf1b359dc413c` | section-0085 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 290-291 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0087 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 293-299 | 193 |
-| `doc-e992d7aaf1b359dc413c` | section-0088 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 300-301 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0089 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 302-303 | 33 |
-| `doc-e992d7aaf1b359dc413c` | section-0091 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 305-306 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0093 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Adresse | 308-314 | 191 |
-| `doc-e992d7aaf1b359dc413c` | section-0094 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > Telefon | 315-316 | 16 |
-| `doc-e992d7aaf1b359dc413c` | section-0095 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail | 317-319 | 105 |
-| `doc-e992d7aaf1b359dc413c` | section-0097 | Anmeldung RAV & Arbeitslosenkasse > Zuständiges RAV > E-Mail > Link zur Terminreservation für Anmeldegespräch im RAV | 321-322 | 89 |
-| `doc-e992d7aaf1b359dc413c` | section-0098 | Anmeldung RAV & Arbeitslosenkasse > Wahl Arbeitslosenkasse | 323-331 | 569 |
-| `doc-e992d7aaf1b359dc413c` | section-0100 | Anmeldung RAV & Arbeitslosenkasse > Informationen für Stellensuchende | 334-338 | 552 |
-| `doc-e992d7aaf1b359dc413c` | section-0101 | Anmeldung RAV & Arbeitslosenkasse > arbeit.swiss Login | 339-344 | 886 |
-| `doc-58d821965e91e66d6fc5` | section-0009 | Zuständiges RAV finden > Zuständiges RAV finden | 50-557 | 9949 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0007 | Arbeitslosen­entschädigung | 48-49 | 288 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0010 | Arbeitslosen­entschädigung > Vorgehen bei Arbeitslosigkeit > Schritt für Schritt | 55-56 | 64 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0011 | Arbeitslosen­entschädigung > Vorgehen bei Arbeitslosigkeit > Erklärvideos | 57-59 | 103 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0014 | Arbeitslosen­entschädigung > Anleitung > RAV-Anmeldung > Voraussetzungen | 62-66 | 453 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0017 | Arbeitslosen­entschädigung > Anleitung > Antrag auf Arbeitslosenentschädigung | 81-82 | 194 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0018 | Arbeitslosen­entschädigung > Anleitung > Antrag auf Arbeitslosenentschädigung > Notwendige Formulare und Unterlagen | 83-88 | 324 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0022 | Arbeitslosen­entschädigung > Anleitung > Anspruchsvoraussetzungen und Taggeldberechnung > 3.1. Sobald der Arbeitslosenkasse die vollständigen Informationen und Unterlagen vorliegen, kann der Anspruch auf Arbeitslosen­entschädigung geprüft werden. | 96-106 | 598 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0023 | Arbeitslosen­entschädigung > Anleitung > Anspruchsvoraussetzungen und Taggeldberechnung > 3.2. Sobald die Arbeitslosenkasse den Anspruch bestätigt hat, kann auch die Anzahl sowie die Höhe der Taggelder festgelegt werden. | 107-111 | 161 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0024 | Arbeitslosen­entschädigung > Anleitung > Anspruchsvoraussetzungen und Taggeldberechnung > Anspruch Taggelder | 112-113 | 676 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0025 | Arbeitslosen­entschädigung > Anleitung > Anspruchsvoraussetzungen und Taggeldberechnung > 3.3. Die Höhe der Taggelder ist abhängig vom AHV-pflichtigen Lohn und wird aufgrund des Einkommens der letzten 6 Monate bzw. 12 Monate berechnet. | 114-119 | 559 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0026 | Arbeitslosen­entschädigung > Anleitung > Anspruchsvoraussetzungen und Taggeldberechnung > 3.4. Taggelder für Beitragsbefreite | 120-126 | 1010 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0027 | Arbeitslosen­entschädigung > Anleitung > Anspruchsvoraussetzungen und Taggeldberechnung > 3.5. Kein Anspruch auf Arbeitslosenentschädigung | 127-128 | 137 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0028 | Arbeitslosen­entschädigung > Anleitung > Anspruchsvoraussetzungen und Taggeldberechnung > 3.6. Wartetage | 129-130 | 313 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0029 | Arbeitslosen­entschädigung > Anleitung > Anspruchsvoraussetzungen und Taggeldberechnung > Allgemeine Wartetage | 131-132 | 357 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0030 | Arbeitslosen­entschädigung > Anleitung > Anspruchsvoraussetzungen und Taggeldberechnung > 3.7. Sanktionen bzw. Einstelltage | 133-135 | 721 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0032 | Arbeitslosen­entschädigung > Anleitung > Monatlicher Bezug > Formular «Angaben der versicherten Person» | 137-142 | 703 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0033 | Arbeitslosen­entschädigung > Anleitung > Monatlicher Bezug > Formular online ausfüllen | 143-149 | 513 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0034 | Arbeitslosen­entschädigung > Anleitung > Monatlicher Bezug > Bescheinigung über Zwischenverdienst | 150-154 | 391 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0035 | Arbeitslosen­entschädigung > Anleitung > Monatlicher Bezug > Weitere Unterlagen | 155-158 | 312 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0036 | Arbeitslosen­entschädigung > Anleitung > Monatlicher Bezug > Bitte beachten Sie: | 159-161 | 311 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0037 | Arbeitslosen­entschädigung > Anleitung > Abrechnung der Arbeitslosenentschädigung | 162-165 | 272 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0039 | Arbeitslosen­entschädigung > Spezielle Situationen > Überbrückungsleistungen | 168-172 | 402 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0040 | Arbeitslosen­entschädigung > Spezielle Situationen > Zwischenverdienst | 173-178 | 759 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0041 | Arbeitslosen­entschädigung > Spezielle Situationen > Ferien | 179-180 | 341 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0042 | Arbeitslosen­entschädigung > Spezielle Situationen > Krankheit | 181-182 | 400 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0043 | Arbeitslosen­entschädigung > Spezielle Situationen > Unfall | 183-184 | 304 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0044 | Arbeitslosen­entschädigung > Spezielle Situationen > Militär oder Zivilschutz | 185-186 | 427 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0045 | Arbeitslosen­entschädigung > Spezielle Situationen > Mutterschaft & Vaterschaft | 187-194 | 781 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0046 | Arbeitslosen­entschädigung > Spezielle Situationen > Betreuungsurlaub von Eltern schwer beeinträchtigter Kinder | 195-199 | 740 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0047 | Arbeitslosen­entschädigung > Spezielle Situationen > Lohnzahlungsverzug des Arbeitgebers | 200-207 | 681 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0048 | Arbeitslosen­entschädigung > Spezielle Situationen > Entschädigung bei Insolvenz des Arbeitgebers | 208-210 | 217 |
-| `doc-ea8ce303e3ee8fb3a83a` | section-0049 | Arbeitslosen­entschädigung > Spezielle Situationen > Erklärvideos | 211-213 | 103 |
-| `doc-0683c2c38c53009db6b6` | section-0007 | Entschädigung bei Insolvenz des Arbeitgebers | 48-49 | 183 |
-| `doc-0683c2c38c53009db6b6` | section-0009 | Entschädigung bei Insolvenz des Arbeitgebers > Worum geht es? | 57-59 | 362 |
-| `doc-0683c2c38c53009db6b6` | section-0010 | Entschädigung bei Insolvenz des Arbeitgebers > Wer hat Anspruch? | 60-66 | 568 |
-| `doc-0683c2c38c53009db6b6` | section-0011 | Entschädigung bei Insolvenz des Arbeitgebers > Wer hat Anspruch? > Wann haben Sie keinen Anspruch? | 67-72 | 1094 |
-| `doc-0683c2c38c53009db6b6` | section-0012 | Entschädigung bei Insolvenz des Arbeitgebers > Wie hoch ist die Insolvenzentschädigung? | 73-78 | 782 |
-| `doc-0683c2c38c53009db6b6` | section-0013 | Entschädigung bei Insolvenz des Arbeitgebers > Wer ist zuständig für die Auszahlung? | 79-81 | 208 |
-| `doc-0683c2c38c53009db6b6` | section-0014 | Entschädigung bei Insolvenz des Arbeitgebers > Antragsfrist | 82-88 | 617 |
-| `doc-0683c2c38c53009db6b6` | section-0016 | Entschädigung bei Insolvenz des Arbeitgebers > Befindet sich der Sitz des Arbeitsgebers im Kanton Zürich? > Arbeitslosenkasse Kanton Zürich | 90-91 | 132 |
-| `doc-0683c2c38c53009db6b6` | section-0017 | Entschädigung bei Insolvenz des Arbeitgebers > Befindet sich der Sitz des Arbeitsgebers im Kanton Zürich? > Auskünfte im Konkursfall | 92-93 | 155 |
-| `doc-0683c2c38c53009db6b6` | section-0018 | Entschädigung bei Insolvenz des Arbeitgebers > Antrag auf Insolvenzentschädigung | 94-97 | 249 |
-| `doc-0683c2c38c53009db6b6` | section-0021 | Entschädigung bei Insolvenz des Arbeitgebers > Für Arbeitnehmende > Anspruch bei Konkurs | 100-104 | 466 |
-| `doc-0683c2c38c53009db6b6` | section-0023 | Entschädigung bei Insolvenz des Arbeitgebers > Für Unternehmen > Informationsveranstaltung bei bevorstehendem Konkurs oder bei Konkurseröffnung | 106-111 | 336 |
-| `doc-0683c2c38c53009db6b6` | section-0024 | Entschädigung bei Insolvenz des Arbeitgebers > Für Unternehmen > Informationsveranstaltung bei bevorstehendem Konkurs oder bei Konkurseröffnung > Bei Interesse an Informationsveranstaltungen: | 112-113 | 59 |
-| `doc-a7b0f3605efd15fe02e9` | section-0008 | Beratung & Vermittlung von Stellensuchenden > Themen | 49-54 | 208 |
-| `doc-a7b0f3605efd15fe02e9` | section-0010 | Beratung & Vermittlung von Stellensuchenden > Unterstützung im Bewerbungsprozess | 59-62 | 549 |
-| `doc-a7b0f3605efd15fe02e9` | section-0012 | Beratung & Vermittlung von Stellensuchenden > Unterstützung im Bewerbungsprozess > Fünf Aspekte der Bewerbungskompetenz > 1. Standortbestimmung | 64-65 | 320 |
-| `doc-a7b0f3605efd15fe02e9` | section-0013 | Beratung & Vermittlung von Stellensuchenden > Unterstützung im Bewerbungsprozess > Fünf Aspekte der Bewerbungskompetenz > 2. Suchbereich | 66-67 | 362 |
-| `doc-a7b0f3605efd15fe02e9` | section-0014 | Beratung & Vermittlung von Stellensuchenden > Unterstützung im Bewerbungsprozess > Fünf Aspekte der Bewerbungskompetenz > 3. Suchstrategie | 68-69 | 295 |
-| `doc-a7b0f3605efd15fe02e9` | section-0015 | Beratung & Vermittlung von Stellensuchenden > Unterstützung im Bewerbungsprozess > Fünf Aspekte der Bewerbungskompetenz > 4. Bewerbungsunterlagen | 70-75 | 248 |
-| `doc-a7b0f3605efd15fe02e9` | section-0016 | Beratung & Vermittlung von Stellensuchenden > Unterstützung im Bewerbungsprozess > Fünf Aspekte der Bewerbungskompetenz > 5. Selbstpräsentation | 76-80 | 795 |
-| `doc-a7b0f3605efd15fe02e9` | section-0018 | Beratung & Vermittlung von Stellensuchenden > Unterstützung im Bewerbungsprozess > Arbeitsplätze für die Stellensuche und Bewerbungen | 84-89 | 346 |
-| `doc-a7b0f3605efd15fe02e9` | section-0019 | Beratung & Vermittlung von Stellensuchenden > Unterstützung im Bewerbungsprozess > Jobsuche im Internet | 90-99 | 778 |
-| `doc-a7b0f3605efd15fe02e9` | section-0020 | Beratung & Vermittlung von Stellensuchenden > Persönliche Arbeitsbemühungen | 100-102 | 342 |
-| `doc-a7b0f3605efd15fe02e9` | section-0021 | Beratung & Vermittlung von Stellensuchenden > Persönliche Arbeitsbemühungen > Die Pflicht zur Stellensuche beginnt schon vor der Arbeitslosigkeit | 103-104 | 260 |
-| `doc-a7b0f3605efd15fe02e9` | section-0023 | Beratung & Vermittlung von Stellensuchenden > Persönliche Arbeitsbemühungen > So bewerben Sie sich richtig > Vorgaben über die Menge und Verteilung | 107-110 | 187 |
-| `doc-a7b0f3605efd15fe02e9` | section-0024 | Beratung & Vermittlung von Stellensuchenden > Persönliche Arbeitsbemühungen > So bewerben Sie sich richtig > Die Qualität muss stimmen | 111-122 | 948 |
-| `doc-a7b0f3605efd15fe02e9` | section-0025 | Beratung & Vermittlung von Stellensuchenden > Persönliche Arbeitsbemühungen > So bewerben Sie sich richtig > Konsequenzen bei ungenügender Stellensuche | 123-131 | 535 |
-| `doc-a7b0f3605efd15fe02e9` | section-0026 | Beratung & Vermittlung von Stellensuchenden > Persönliche Arbeitsbemühungen > Arbeitsbemühungen ausfüllen und einreichen | 132-134 | 162 |
-| `doc-a7b0f3605efd15fe02e9` | section-0027 | Beratung & Vermittlung von Stellensuchenden > Stellenvermittlung | 135-137 | 233 |
-| `doc-a7b0f3605efd15fe02e9` | section-0028 | Beratung & Vermittlung von Stellensuchenden > Stellenvermittlung > Vermittlung durch Ihre RAV-Beratungsperson | 138-140 | 421 |
-| `doc-a7b0f3605efd15fe02e9` | section-0029 | Beratung & Vermittlung von Stellensuchenden > Stellenvermittlung > Unterstützung durch die RAV-Kundenberatung | 141-143 | 372 |
-| `doc-a7b0f3605efd15fe02e9` | section-0030 | Beratung & Vermittlung von Stellensuchenden > Stellenvermittlung > Vermittlungen über das Stellenmeldezentrum | 144-146 | 969 |
-| `doc-a7b0f3605efd15fe02e9` | section-0031 | Beratung & Vermittlung von Stellensuchenden > Stellenvermittlung > Konsequenzen, wenn Sie sich nicht bewerben | 147-157 | 794 |
-| `doc-a7b0f3605efd15fe02e9` | section-0032 | Beratung & Vermittlung von Stellensuchenden > Stellenvermittlung > Selbständige Stellensuche auf Job-Room | 158-163 | 859 |
-| `doc-a7b0f3605efd15fe02e9` | section-0033 | Beratung & Vermittlung von Stellensuchenden > Stellenvermittlung > Stellenbörsen beim RAV | 164-165 | 460 |
-| `doc-62225ba0cbeb8a9399bb` | section-0008 | Qualifizierung von Stellensuchenden > Themen | 49-55 | 228 |
-| `doc-62225ba0cbeb8a9399bb` | section-0009 | Qualifizierung von Stellensuchenden > Arbeitsmarktliche Massnahmen (AMM) | 56-58 | 708 |
-| `doc-62225ba0cbeb8a9399bb` | section-0010 | Qualifizierung von Stellensuchenden > Teilnahmekriterien für AMM | 59-64 | 251 |
-| `doc-62225ba0cbeb8a9399bb` | section-0011 | Qualifizierung von Stellensuchenden > Verschiedene Arten von AMM | 65-74 | 449 |
-| `doc-62225ba0cbeb8a9399bb` | section-0012 | Qualifizierung von Stellensuchenden > Kollektive Kurse und Programme | 75-78 | 216 |
-| `doc-62225ba0cbeb8a9399bb` | section-0013 | Qualifizierung von Stellensuchenden > Individuelle Kurse | 79-81 | 448 |
-| `doc-62225ba0cbeb8a9399bb` | section-0014 | Qualifizierung von Stellensuchenden > Onlinekurse für Stellensuchende | 82-84 | 208 |
-| `doc-62225ba0cbeb8a9399bb` | section-0015 | Qualifizierung von Stellensuchenden > Infos zu Submissionen des AFA | 85-87 | 299 |
 
 ## Repeated sections
 
@@ -1871,7 +1410,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 
 | Status | Source | Documents | Units | Cited | Dispositioned | Boilerplate | Unclassified |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| partly_covered | `(discovered)`  | 103 | 719 | 233 | 12 | 35 | 474 |
+| partly_covered | `(discovered)`  | 103 | 719 | 233 | 174 | 35 | 312 |
 | boilerplate_only | `ch-ahv-iv-13-ahv-rente` The thirteenth AHV pension payment | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-ahv-21` AHV 21: reference age 65 and the transitional rules | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-ahv-allgemeines` AHV: general information and who is insured | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -1971,20 +1510,20 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | dispositioned | `ch-priminfo-verbilligung` priminfo: premium reduction, in plain language | 1 | 11 | 0 | 11 | 3 | 0 |
 | dispositioned | `ch-priminfo-wechsel` priminfo: changing insurer | 1 | 12 | 0 | 12 | 3 | 0 |
 | dispositioned | `ch-priminfo-zusatzversicherungen` priminfo: supplementary insurance, in plain language | 1 | 4 | 0 | 4 | 3 | 0 |
-| nothing | `ch-seco-anmeldung-registrierung` Signing on with the municipality and the RAV | 1 | 4 | 0 | 0 | 1 | 4 |
-| nothing | `ch-seco-arbeitsmarktliche-massnahmen` Labour market measures: courses, employment programmes and allowances | 1 | 7 | 0 | 0 | 1 | 7 |
-| nothing | `ch-seco-aussteuerung` Running out of unemployment benefit | 1 | 3 | 0 | 0 | 1 | 3 |
-| nothing | `ch-seco-erste-schritte` First steps after notice of termination | 1 | 8 | 0 | 0 | 1 | 8 |
-| nothing | `ch-seco-eservices-formulare` eServices and forms for unemployment benefit | 1 | 23 | 0 | 0 | 1 | 23 |
-| nothing | `ch-seco-kurzarbeit` Short-time work compensation (KAE) | 1 | 7 | 0 | 0 | 1 | 7 |
-| nothing | `ch-seco-mobilitaet-eu-efta` Professional mobility in the EU/EFTA, EURES and the portable documents | 1 | 14 | 0 | 0 | 1 | 14 |
-| nothing | `ch-seco-rav-beratung` Counselling and placement by the RAV, and the duties of the insured | 1 | 7 | 0 | 0 | 1 | 7 |
-| nothing | `ch-seco-registrierung-stellensuchende` Jobseeker registration and the Job-Room account | 1 | 4 | 0 | 0 | 1 | 4 |
-| nothing | `ch-seco-rueckkehr-schweiz` Returning to Switzerland and unemployment insurance | 1 | 13 | 0 | 0 | 1 | 13 |
-| nothing | `ch-seco-stellenmeldepflicht` The job-registration duty and the head start for registered jobseekers | 1 | 23 | 0 | 0 | 1 | 23 |
-| nothing | `ch-seco-stellensuche-ausland` Looking for work abroad while insured in Switzerland | 1 | 7 | 0 | 0 | 1 | 7 |
-| partly_covered | `ch-seco-unemployment` Unemployment benefit: waiting days, daily allowances and calculation | 2 | 38 | 8 | 0 | 2 | 30 |
-| nothing | `ch-seco-versicherungsleistungen` The four benefits of unemployment insurance | 1 | 7 | 0 | 0 | 1 | 7 |
+| dispositioned | `ch-seco-anmeldung-registrierung` Signing on with the municipality and the RAV | 1 | 4 | 0 | 4 | 1 | 0 |
+| cited | `ch-seco-arbeitsmarktliche-massnahmen` Labour market measures: courses, employment programmes and allowances | 1 | 7 | 7 | 0 | 1 | 0 |
+| cited | `ch-seco-aussteuerung` Running out of unemployment benefit | 1 | 3 | 3 | 0 | 1 | 0 |
+| cited | `ch-seco-erste-schritte` First steps after notice of termination | 1 | 8 | 7 | 1 | 1 | 0 |
+| dispositioned | `ch-seco-eservices-formulare` eServices and forms for unemployment benefit | 1 | 23 | 0 | 23 | 1 | 0 |
+| cited | `ch-seco-kurzarbeit` Short-time work compensation (KAE) | 1 | 7 | 5 | 2 | 1 | 0 |
+| cited | `ch-seco-mobilitaet-eu-efta` Professional mobility in the EU/EFTA, EURES and the portable documents | 1 | 14 | 1 | 13 | 1 | 0 |
+| dispositioned | `ch-seco-rav-beratung` Counselling and placement by the RAV, and the duties of the insured | 1 | 7 | 0 | 7 | 1 | 0 |
+| cited | `ch-seco-registrierung-stellensuchende` Jobseeker registration and the Job-Room account | 1 | 4 | 1 | 3 | 1 | 0 |
+| cited | `ch-seco-rueckkehr-schweiz` Returning to Switzerland and unemployment insurance | 1 | 13 | 5 | 8 | 1 | 0 |
+| cited | `ch-seco-stellenmeldepflicht` The job-registration duty and the head start for registered jobseekers | 1 | 23 | 4 | 19 | 1 | 0 |
+| cited | `ch-seco-stellensuche-ausland` Looking for work abroad while insured in Switzerland | 1 | 7 | 1 | 6 | 1 | 0 |
+| cited | `ch-seco-unemployment` Unemployment benefit: waiting days, daily allowances and calculation | 2 | 38 | 9 | 29 | 2 | 0 |
+| cited | `ch-seco-versicherungsleistungen` The four benefits of unemployment insurance | 1 | 7 | 3 | 4 | 1 | 0 |
 | partly_covered | `ch-sem-authorities` Cantonal immigration and employment authorities | 1 | 58 | 26 | 0 | 0 | 32 |
 | partly_covered | `ch-sem-biometric-documents` Biometric residence permits | 1 | 6 | 2 | 0 | 0 | 4 |
 | nothing | `ch-sem-citizenship` Acquiring Swiss citizenship (ordinary and facilitated naturalisation) | 1 | 7 | 0 | 0 | 0 | 7 |
@@ -2002,12 +1541,12 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | partly_covered | `ch-sem-work-third-country` Admission to work for non-EU/EFTA nationals | 3 | 42 | 9 | 0 | 0 | 33 |
 | cited | `ch-serafe-household-fee` Radio and television fee for households | 1 | 2 | 2 | 0 | 0 | 0 |
 | partly_covered | `ch-zas-contribution-refund` Refund of AHV contributions on leaving Switzerland | 1 | 10 | 3 | 0 | 0 | 7 |
-| nothing | `zh-awa-anmeldung-rav` Zurich: signing on with the RAV and choosing an unemployment fund | 1 | 64 | 0 | 0 | 1 | 64 |
-| nothing | `zh-awa-beratung-vermittlung` Zurich: counselling and placement for jobseekers | 1 | 22 | 0 | 0 | 2 | 22 |
-| nothing | `zh-awa-insolvenzentschaedigung` Zurich: insolvency compensation when the employer fails | 1 | 13 | 0 | 0 | 1 | 13 |
+| cited | `zh-awa-anmeldung-rav` Zurich: signing on with the RAV and choosing an unemployment fund | 1 | 64 | 5 | 59 | 1 | 0 |
+| cited | `zh-awa-beratung-vermittlung` Zurich: counselling and placement for jobseekers | 1 | 22 | 5 | 17 | 2 | 0 |
+| cited | `zh-awa-insolvenzentschaedigung` Zurich: insolvency compensation when the employer fails | 1 | 13 | 9 | 4 | 1 | 0 |
 | nothing | `zh-awa-office` Zurich - Office for the Economy (Amt für Wirtschaft): contact | 1 | 6 | 0 | 0 | 0 | 6 |
-| nothing | `zh-awa-qualifizierung` Zurich: qualification offers for jobseekers | 1 | 8 | 0 | 0 | 0 | 8 |
-| nothing | `zh-awa-zustaendiges-rav` Zurich: finding the responsible RAV | 1 | 1 | 0 | 0 | 0 | 1 |
+| cited | `zh-awa-qualifizierung` Zurich: qualification offers for jobseekers | 1 | 8 | 7 | 1 | 0 | 0 |
+| cited | `zh-awa-zustaendiges-rav` Zurich: finding the responsible RAV | 1 | 1 | 1 | 0 | 0 | 0 |
 | partly_covered | `zh-biometric-documents` Zurich - Biometric residence documents | 2 | 18 | 7 | 0 | 3 | 11 |
 | partly_covered | `zh-dogs` Zurich - keeping a dog (cantonal rules) | 1 | 32 | 9 | 0 | 1 | 23 |
 | partly_covered | `zh-eu-efta` Zurich - Residence for EU/EFTA nationals | 2 | 18 | 11 | 0 | 3 | 7 |
@@ -2034,11 +1573,11 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | partly_covered | `zh-sva-health-insurance` Zurich - exemption from the health insurance duty and premium reduction (SVA Zurich) | 1 | 8 | 4 | 0 | 1 | 4 |
 | nothing | `zh-tax-at-source` Zurich - tax at source | 1 | 6 | 0 | 0 | 0 | 6 |
 | partly_covered | `zh-tax-at-source-directive` Zurich - directive on the taxation at source of employees (ZStB 87.3) | 1 | 17 | 3 | 0 | 0 | 14 |
-| partly_covered | `zh-unemployment` Zurich - unemployment benefit | 1 | 35 | 3 | 0 | 2 | 32 |
+| cited | `zh-unemployment` Zurich - unemployment benefit | 1 | 35 | 3 | 32 | 2 | 0 |
 | partly_covered | `zh-vehicles` Zurich - vehicles after a move and vehicle import | 1 | 9 | 7 | 0 | 0 | 2 |
 | partly_covered | `zh-voting` Zurich - how to vote (who is entitled to vote) | 1 | 23 | 3 | 0 | 1 | 20 |
 | nothing | `zh-welcome-residence` Zurich - residence and family reunification for newcomers | 1 | 4 | 0 | 0 | 1 | 4 |
-| nothing | `zh-work-permits-contact` Zurich - employment of foreign nationals: work-permit and notification-procedure contacts | 1 | 2 | 0 | 0 | 1 | 2 |
+| dispositioned | `zh-work-permits-contact` Zurich - employment of foreign nationals: work-permit and notification-procedure contacts | 1 | 2 | 0 | 2 | 1 | 0 |
 | partly_covered | `zh-work-third-country` Zurich - Residence with employment for third-country nationals | 1 | 13 | 10 | 0 | 1 | 3 |
 | cited | `zurich-city-arrival` City of Zurich - registering an arrival | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `zurich-city-departure` City of Zurich - leaving the city and moving abroad | 1 | 4 | 4 | 0 | 0 | 0 |

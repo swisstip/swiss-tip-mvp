@@ -3,8 +3,8 @@
   "pack": "mvp-zurich",
   "root": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\swiss-tip-mvp",
   "run": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich",
-  "started_at": "2026-09-23T08:47:18.605413+00:00",
-  "finished_at": "2026-09-23T08:47:32.736328+00:00",
+  "started_at": "2026-09-23T09:57:56.890004+00:00",
+  "finished_at": "2026-09-23T09:58:31.474604+00:00",
   "options": {
     "download": false,
     "retry_failed": false,
@@ -12,7 +12,7 @@
     "scope": "attributed",
     "thorough": false,
     "update_curation": false,
-    "release_id": "mvp-zurich-2026-09-23-v13",
+    "release_id": "mvp-zurich-2026-09-23-v16",
     "attested_by": null,
     "stages": "build..accept"
   },
@@ -112,27 +112,27 @@
     },
     {
       "stage": "build",
-      "started_at": "2026-09-23T08:47:18.605422+00:00",
+      "started_at": "2026-09-23T09:57:56.890142+00:00",
       "status": "skipped",
       "reason": "curation, text index and release ID unchanged since the last build",
-      "release_id": "mvp-zurich-2026-09-23-v13",
-      "inputs_sha256": "3e49b91308dd86387d01633c73be0b48be87fe1a515fef8db327488dd5dcada4",
-      "seconds": 4.1
+      "release_id": "mvp-zurich-2026-09-23-v16",
+      "inputs_sha256": "7469846db753c7b41ce47ed23698976f58c148d050d68d128ff6e36223414c37",
+      "seconds": 10.6
     },
     {
       "stage": "validate-release",
-      "started_at": "2026-09-23T08:47:22.732876+00:00",
+      "started_at": "2026-09-23T09:58:07.453889+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-23-v13",
+      "release_id": "mvp-zurich-2026-09-23-v16",
       "checked_against_text": true,
       "saved_responses_rehashed": false,
-      "seconds": 1.7
+      "seconds": 3.8
     },
     {
       "stage": "coverage",
-      "started_at": "2026-09-23T08:47:24.439534+00:00",
+      "started_at": "2026-09-23T09:58:11.262904+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-23-v13",
+      "release_id": "mvp-zurich-2026-09-23-v16",
       "policy": "report",
       "clean": false,
       "candidates": 444,
@@ -142,9 +142,9 @@
         "rolled_up": 2
       },
       "content_sections": 2829,
-      "cited_sections": 649,
-      "dispositioned_sections": 794,
-      "unclassified_sections": 1386,
+      "cited_sections": 714,
+      "dispositioned_sections": 1190,
+      "unclassified_sections": 925,
       "boilerplate_sections": 160,
       "repeated_texts": 16,
       "repeated_by_citation": {
@@ -153,12 +153,12 @@
         "cited_once": 3
       },
       "documents": {
-        "unclassified": 73,
-        "partly_cited": 112,
-        "cited": 61,
+        "unclassified": 39,
+        "partly_cited": 107,
+        "cited": 64,
         "empty": 23,
-        "cited_and_dispositioned": 43,
-        "dispositioned": 132
+        "cited_and_dispositioned": 60,
+        "dispositioned": 151
       },
       "findings": {
         "stale": 0,
@@ -167,17 +167,17 @@
         "new_under_rule": 0,
         "unused_rule": 0
       },
-      "seconds": 4.1
+      "seconds": 9.0
     },
     {
       "stage": "health",
-      "started_at": "2026-09-23T08:47:28.523263+00:00",
+      "started_at": "2026-09-23T09:58:20.222179+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-23-v13",
-      "topics": 18,
-      "concepts": 183,
-      "facts": 923,
-      "evidence": 1148,
+      "release_id": "mvp-zurich-2026-09-23-v16",
+      "topics": 19,
+      "concepts": 195,
+      "facts": 1054,
+      "evidence": 1283,
       "jurisdictions": 28,
       "languages": [
         "de",
@@ -185,15 +185,15 @@
       ],
       "stale_from": "2026-11-22",
       "review_statuses": {
-        "human-reviewed": 923
+        "human-reviewed": 1054
       },
       "institution_levels": {
-        "federal": 140,
-        "cantonal": 58,
+        "federal": 150,
+        "cantonal": 63,
         "municipal": 40
       },
       "basis_kinds": {
-        "guidance": 651,
+        "guidance": 782,
         "act": 66,
         "ordinance": 35,
         "summary": 50,
@@ -201,21 +201,21 @@
         "directory": 77,
         "directive": 7
       },
-      "seconds": 1.6
+      "seconds": 4.8
     },
     {
       "stage": "accept",
-      "started_at": "2026-09-23T08:47:30.143238+00:00",
+      "started_at": "2026-09-23T09:58:25.000373+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-23-v13",
-      "suite_sha256": "40fa88463d968ec49a8e0712c6ceee66f48de1cffe2ba879a6a3ca3c9dade053",
+      "release_id": "mvp-zurich-2026-09-23-v16",
+      "suite_sha256": "72d425a00f3bff0e3014cc8d85a7cb3f82f8ba4acce3dc08666e60fa1fe499c8",
       "as_of": "2026-09-23",
-      "cases": 110,
-      "blocking": 110,
+      "cases": 122,
+      "blocking": 122,
       "failed": [],
       "quarantined": [],
       "quarantined_failed": [],
-      "seconds": 2.6
+      "seconds": 6.5
     },
     {
       "stage": "ready",

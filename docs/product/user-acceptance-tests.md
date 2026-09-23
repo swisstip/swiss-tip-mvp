@@ -2422,6 +2422,128 @@ to take themselves: telling their insurer at least eight weeks before it begins,
 which the insurer stops charging only from the next date it can manage, at the latest
 eight weeks after being told. The trap is answering that premiums simply continue, or
 that the suspension happens by itself without the caller doing anything.
+## Work and unemployment cases
+
+Written on 23 September 2026 before the pages were curated, so that the cases
+ask what a person out of work actually asks and not what the release happens to
+carry. The topic `work-unemployment` is new; `unemployment-benefit` and
+`zh-unemployment-benefit` move into it unchanged, and UAT-62 already covers the
+contribution period, so these cases do not repeat it.
+
+The release publishes the rules of unemployment insurance and never an amount
+of daily allowance: `out_of_scope` names benefit amounts and every calculator.
+Where a case says the answer must not give a figure, that is the point of the
+case.
+
+### UAT-92: The day the notice arrives
+
+"I got my notice this morning. My last working day is at the end of November.
+What do I have to do, and when?" The answer must put the registration first and
+tie it to a date: a person threatened with unemployment registers with the RAV
+as early as possible, and at the latest on the first day for which they claim
+benefit, so registration belongs in the notice period and not after the last
+working day. It must say that registration and the claim are two steps, and that
+an unemployment fund is chosen. The trap is telling the caller to wait until the
+employment ends, which costs them benefit days.
+
+### UAT-93: How many applications, and can I say no
+
+"How many job applications do I have to write each month, and can I refuse a job
+that pays less than my old one?" The answer must give the duty to look for work
+before and during unemployment and say that the RAV agrees the number of
+applications rather than the law fixing one, that appointments at the RAV are
+part of the duty, and that work is suitable within limits the rules set - a job
+is not unsuitable merely because it pays less. It must name suspension days as
+the consequence of a breach. The trap is inventing a fixed number of
+applications a month.
+
+### UAT-94: How long the benefit runs
+
+"How long can I draw unemployment benefit, and how much will I get?" The answer
+must give the structure and not a figure: waiting days before the first payment,
+a number of daily allowances that depends on age and on months of contribution,
+the two-year frame, and that the benefit is a percentage of insured earnings
+with a higher percentage for a person with a maintenance obligation towards
+children. It must not compute an amount in francs for the caller. The trap is
+producing a monthly figure, or a single duration that ignores age and
+contribution months.
+
+### UAT-95: A job that pays less
+
+"I have been offered a job that pays about half my old salary. If I take it, do
+I lose my unemployment benefit?" The answer must explain interim earnings: the
+insurance makes up part of the difference rather than the benefit simply
+stopping, so taking the lower-paid job is not the loss the caller fears. It must
+say that the interim earnings have to be declared. The trap is answering that
+any work ends the entitlement.
+
+### UAT-96: The employer goes bankrupt owing wages
+
+"My employer went bankrupt and still owes me two months' wages. Is that lost?"
+The answer must name insolvency compensation as the benefit for exactly this,
+say which body it is claimed from and that it is claimed within a deadline, and
+point to the Canton of Zurich's own route for a person living there. The trap is
+treating it as ordinary unemployment benefit, or as a matter for the courts
+alone.
+
+### UAT-97: A course while unemployed
+
+"Can I do a course while I am unemployed, and who pays for it?" The answer must
+name the labour-market measures - courses, employment programmes and the
+allowances - say that the RAV decides on them rather than the jobseeker
+enrolling freely, and mention that allowances exist for a trial period or for
+commuting. The trap is promising that any course the caller chooses will be
+paid.
+
+### UAT-98: The benefit runs out
+
+"My daily allowances run out in two months and I still have no job. What
+happens then?" The answer must say what ending the entitlement means, what the
+RAV still offers afterwards, and that support beyond unemployment insurance is a
+matter for the canton or municipality. Social assistance is named in
+`out_of_scope`, so the answer must say the release does not cover it rather than
+explain how to claim it. The trap is explaining social assistance.
+
+### UAT-99: Three years working in Germany
+
+"I worked in Germany for three years and moved to Zurich two months ago. Does
+that time count if I lose my job here?" The answer must name the coordination
+with the EU and EFTA: contribution periods completed in a member state can be
+taken into account, the portable document U1 is how they are evidenced, and a
+person who wants to look for work in another state while drawing Swiss benefit
+needs the portable document U2. It must not promise that the German period
+counts unconditionally. The trap is answering only from the Swiss contribution
+period and ignoring the coordination entirely.
+
+### UAT-100: Hours cut to sixty per cent
+
+"My employer has cut everyone to 60 per cent and says we are on short-time work.
+What does that mean for me?" The answer must say that short-time work
+compensation is applied for by the employer and not by the employee, that it
+covers a share of the earnings lost, and that the employee has to consent to it.
+The trap is telling the employee to apply themselves, or treating it as
+unemployment benefit.
+
+### UAT-101: Seeing vacancies before everyone else
+
+"A friend said jobseekers registered with the RAV see some vacancies before they
+are public. Is that true?" The answer must give the job-registration duty:
+occupations with unemployment above a threshold must be reported to the RAV
+before being advertised elsewhere, and jobseekers registered with the public
+placement service get access first for a period. It must not state the threshold
+percentage or the head-start period unless the cited page states them. The trap
+is dismissing it as a rumour.
+
+### UAT-102: Which RAV, in Winterthur
+
+"I live in Winterthur and have to sign on. Which RAV do I go to, and which
+unemployment fund?" The answer must say how the responsible RAV is found for a
+place of residence in the Canton of Zurich, that the jobseeker chooses an
+unemployment fund at registration, and that the cantonal office offers
+counselling and qualification. It must not name an office for a place outside
+the Canton of Zurich as if the release covered it. The trap is inventing a
+street address for the Winterthur RAV.
+
 
 ## Decline cases
 
@@ -2464,6 +2586,7 @@ mode.
 | DECLINE-10 | "Which accredited IAZH offer types can I assign a refugee to, and how is the cost shared with the canton?" (the canton's integration funding and its refugee support system, named in `out_of_scope`) | `zh-iazh-accredited-offers` for `CH-ZH` | `OUT_OF_COVERAGE`, `concept_not_published` |
 | DECLINE-11 | "How much duty do I pay per kilo on a leather handbag from Italy, and what is its tariff number?" (tariff numbers and duty rates per product, named in `out_of_scope`) | `customs-tariff-rate`, a guessed concept ID, for `CH` | `OUT_OF_COVERAGE`, `concept_not_published` listing the published concept IDs; the customs concepts stay available for the rules they do publish |
 | DECLINE-12 | "Which insurer is cheapest for me at 8006 Zurich with a 2,500-franc franchise?" (premium amounts and the comparison calculator, named in `out_of_scope`) | `health-insurance-premium` and `premium-calculator`, guessed concept IDs, for `CH-ZH-261` | `OUT_OF_COVERAGE`, `concept_not_published` for both; the health-insurance concepts stay available for the rules they do publish |
+| DECLINE-13 | "Wie viel Arbeitslosengeld bekomme ich pro Monat bei einem Lohn von 7'000 Franken?" (the amount of a daily allowance, named in `out_of_scope`) | `unemployment-daily-allowance-amount` and `unemployment-calculator`, guessed concept IDs, for `CH-ZH` | `OUT_OF_COVERAGE`, `concept_not_published` for both; the unemployment concepts stay available for the rules they do publish |
 
 DECLINE-3, DECLINE-4 and DECLINE-6 to DECLINE-9 check the rejection of a
 Zurich concept for another place at the server alone. The cross-jurisdiction

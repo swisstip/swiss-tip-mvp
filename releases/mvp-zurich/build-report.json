@@ -1,13 +1,13 @@
 {
-  "release_id": "mvp-zurich-2026-09-23-v13",
-  "built_at": "2026-09-23T08:31:20.924366+00:00",
+  "release_id": "mvp-zurich-2026-09-23-v16",
+  "built_at": "2026-09-23T09:48:42.425758+00:00",
   "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich\\text",
-  "concepts": 183,
-  "facts": 923,
-  "evidence": 1148,
-  "documents": 238,
+  "concepts": 195,
+  "facts": 1054,
+  "evidence": 1283,
+  "documents": 253,
   "citation_outcomes": {
-    "same-snapshot": 1148
+    "same-snapshot": 1283
   },
   "dropped": [],
   "facts_resolved": [
@@ -24237,10 +24237,2837 @@
         }
       ],
       "basis": "Federal ordinance: KVV, SR 832.102"
+    },
+    {
+      "fact_id": "unemployment-registration-1",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 4117,
+          "end": 4371,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00054"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-registration-2",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 4373,
+          "end": 4527,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00055"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-registration-3",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 4529,
+          "end": 5032,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00056",
+            "doc-1dc7548e6096cef67224:b00057",
+            "doc-1dc7548e6096cef67224:b00058"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-1",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 853,
+          "end": 1122,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00035"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-2",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 1198,
+          "end": 1596,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00037"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-3",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 1598,
+          "end": 1821,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00038"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-4",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 2019,
+          "end": 2394,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00041",
+            "doc-1dc7548e6096cef67224:b00042"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-5",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 2396,
+          "end": 2561,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00043"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-6",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 2563,
+          "end": 2669,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00044"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-7",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 2671,
+          "end": 2730,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00045"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-8",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 2732,
+          "end": 2949,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00046"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-9",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 2951,
+          "end": 3074,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00047"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-10",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 3119,
+          "end": 3426,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00049"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-11",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 3428,
+          "end": 3745,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00050"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-12",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 3747,
+          "end": 3961,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00051"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-13",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 5163,
+          "end": 5286,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00061"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-14",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 5288,
+          "end": 5676,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00062",
+            "doc-1dc7548e6096cef67224:b00063",
+            "doc-1dc7548e6096cef67224:b00064"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-15",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 5678,
+          "end": 5848,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00065"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-16",
+      "citations": [
+        {
+          "document_id": "doc-a7b0f3605efd15fe02e9",
+          "outcome": "same-snapshot",
+          "start": 6560,
+          "end": 6820,
+          "block_ids": [
+            "doc-a7b0f3605efd15fe02e9:b00104"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-17",
+      "citations": [
+        {
+          "document_id": "doc-a7b0f3605efd15fe02e9",
+          "outcome": "same-snapshot",
+          "start": 6145,
+          "end": 6317,
+          "block_ids": [
+            "doc-a7b0f3605efd15fe02e9:b00101"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-18",
+      "citations": [
+        {
+          "document_id": "doc-a7b0f3605efd15fe02e9",
+          "outcome": "same-snapshot",
+          "start": 6319,
+          "end": 6489,
+          "block_ids": [
+            "doc-a7b0f3605efd15fe02e9:b00102"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-19",
+      "citations": [
+        {
+          "document_id": "doc-a7b0f3605efd15fe02e9",
+          "outcome": "same-snapshot",
+          "start": 8258,
+          "end": 8630,
+          "block_ids": [
+            "doc-a7b0f3605efd15fe02e9:b00124",
+            "doc-a7b0f3605efd15fe02e9:b00125",
+            "doc-a7b0f3605efd15fe02e9:b00126",
+            "doc-a7b0f3605efd15fe02e9:b00127",
+            "doc-a7b0f3605efd15fe02e9:b00128",
+            "doc-a7b0f3605efd15fe02e9:b00129"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-20",
+      "citations": [
+        {
+          "document_id": "doc-a7b0f3605efd15fe02e9",
+          "outcome": "same-snapshot",
+          "start": 11226,
+          "end": 11523,
+          "block_ids": [
+            "doc-a7b0f3605efd15fe02e9:b00148"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-obligations-21",
+      "citations": [
+        {
+          "document_id": "doc-a7b0f3605efd15fe02e9",
+          "outcome": "same-snapshot",
+          "start": 4411,
+          "end": 4651,
+          "block_ids": [
+            "doc-a7b0f3605efd15fe02e9:b00078"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-daily-allowance-1",
+      "citations": [
+        {
+          "document_id": "doc-3582d03d795fd5c90cf8",
+          "outcome": "same-snapshot",
+          "start": 17993,
+          "end": 18337,
+          "block_ids": [
+            "doc-3582d03d795fd5c90cf8:b00150",
+            "doc-3582d03d795fd5c90cf8:b00151"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-daily-allowance-2",
+      "citations": [
+        {
+          "document_id": "doc-3582d03d795fd5c90cf8",
+          "outcome": "same-snapshot",
+          "start": 18339,
+          "end": 18702,
+          "block_ids": [
+            "doc-3582d03d795fd5c90cf8:b00152"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-daily-allowance-3",
+      "citations": [
+        {
+          "document_id": "doc-3582d03d795fd5c90cf8",
+          "outcome": "same-snapshot",
+          "start": 18704,
+          "end": 19471,
+          "block_ids": [
+            "doc-3582d03d795fd5c90cf8:b00153",
+            "doc-3582d03d795fd5c90cf8:b00154",
+            "doc-3582d03d795fd5c90cf8:b00155",
+            "doc-3582d03d795fd5c90cf8:b00156"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-daily-allowance-4",
+      "citations": [
+        {
+          "document_id": "doc-3582d03d795fd5c90cf8",
+          "outcome": "same-snapshot",
+          "start": 11916,
+          "end": 12373,
+          "block_ids": [
+            "doc-3582d03d795fd5c90cf8:b00114"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-daily-allowance-5",
+      "citations": [
+        {
+          "document_id": "doc-3582d03d795fd5c90cf8",
+          "outcome": "same-snapshot",
+          "start": 12375,
+          "end": 12799,
+          "block_ids": [
+            "doc-3582d03d795fd5c90cf8:b00115",
+            "doc-3582d03d795fd5c90cf8:b00116",
+            "doc-3582d03d795fd5c90cf8:b00117",
+            "doc-3582d03d795fd5c90cf8:b00118",
+            "doc-3582d03d795fd5c90cf8:b00119"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-daily-allowance-6",
+      "citations": [
+        {
+          "document_id": "doc-3582d03d795fd5c90cf8",
+          "outcome": "same-snapshot",
+          "start": 13029,
+          "end": 13217,
+          "block_ids": [
+            "doc-3582d03d795fd5c90cf8:b00121"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-daily-allowance-7",
+      "citations": [
+        {
+          "document_id": "doc-3582d03d795fd5c90cf8",
+          "outcome": "same-snapshot",
+          "start": 13249,
+          "end": 13746,
+          "block_ids": [
+            "doc-3582d03d795fd5c90cf8:b00123"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-daily-allowance-8",
+      "citations": [
+        {
+          "document_id": "doc-3582d03d795fd5c90cf8",
+          "outcome": "same-snapshot",
+          "start": 14792,
+          "end": 15014,
+          "block_ids": [
+            "doc-3582d03d795fd5c90cf8:b00129"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-daily-allowance-9",
+      "citations": [
+        {
+          "document_id": "doc-3582d03d795fd5c90cf8",
+          "outcome": "same-snapshot",
+          "start": 15016,
+          "end": 15414,
+          "block_ids": [
+            "doc-3582d03d795fd5c90cf8:b00130",
+            "doc-3582d03d795fd5c90cf8:b00131"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-daily-allowance-10",
+      "citations": [
+        {
+          "document_id": "doc-3582d03d795fd5c90cf8",
+          "outcome": "same-snapshot",
+          "start": 21038,
+          "end": 21451,
+          "block_ids": [
+            "doc-3582d03d795fd5c90cf8:b00164",
+            "doc-3582d03d795fd5c90cf8:b00165"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-interim-earnings-1",
+      "citations": [
+        {
+          "document_id": "doc-1ab3b64956708c04d398",
+          "outcome": "same-snapshot",
+          "start": 3648,
+          "end": 3984,
+          "block_ids": [
+            "doc-1ab3b64956708c04d398:b00064"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-interim-earnings-2",
+      "citations": [
+        {
+          "document_id": "doc-1ab3b64956708c04d398",
+          "outcome": "same-snapshot",
+          "start": 3648,
+          "end": 3984,
+          "block_ids": [
+            "doc-1ab3b64956708c04d398:b00064"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-interim-earnings-3",
+      "citations": [
+        {
+          "document_id": "doc-1ab3b64956708c04d398",
+          "outcome": "same-snapshot",
+          "start": 3986,
+          "end": 4057,
+          "block_ids": [
+            "doc-1ab3b64956708c04d398:b00065"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-interim-earnings-4",
+      "citations": [
+        {
+          "document_id": "doc-1ab3b64956708c04d398",
+          "outcome": "same-snapshot",
+          "start": 4059,
+          "end": 4557,
+          "block_ids": [
+            "doc-1ab3b64956708c04d398:b00066",
+            "doc-1ab3b64956708c04d398:b00067",
+            "doc-1ab3b64956708c04d398:b00068",
+            "doc-1ab3b64956708c04d398:b00069",
+            "doc-1ab3b64956708c04d398:b00070",
+            "doc-1ab3b64956708c04d398:b00071",
+            "doc-1ab3b64956708c04d398:b00072"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-interim-earnings-5",
+      "citations": [
+        {
+          "document_id": "doc-1ab3b64956708c04d398",
+          "outcome": "same-snapshot",
+          "start": 766,
+          "end": 1065,
+          "block_ids": [
+            "doc-1ab3b64956708c04d398:b00034",
+            "doc-1ab3b64956708c04d398:b00035"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "job-registration-duty-1",
+      "citations": [
+        {
+          "document_id": "doc-7154ef3247e430ac8763",
+          "outcome": "same-snapshot",
+          "start": 540,
+          "end": 767,
+          "block_ids": [
+            "doc-7154ef3247e430ac8763:b00033"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "job-registration-duty-2",
+      "citations": [
+        {
+          "document_id": "doc-7154ef3247e430ac8763",
+          "outcome": "same-snapshot",
+          "start": 1348,
+          "end": 1795,
+          "block_ids": [
+            "doc-7154ef3247e430ac8763:b00039"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "job-registration-duty-3",
+      "citations": [
+        {
+          "document_id": "doc-7154ef3247e430ac8763",
+          "outcome": "same-snapshot",
+          "start": 1348,
+          "end": 1795,
+          "block_ids": [
+            "doc-7154ef3247e430ac8763:b00039"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "job-registration-duty-4",
+      "citations": [
+        {
+          "document_id": "doc-7154ef3247e430ac8763",
+          "outcome": "same-snapshot",
+          "start": 1261,
+          "end": 1312,
+          "block_ids": [
+            "doc-7154ef3247e430ac8763:b00037"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "job-registration-duty-5",
+      "citations": [
+        {
+          "document_id": "doc-7154ef3247e430ac8763",
+          "outcome": "same-snapshot",
+          "start": 1867,
+          "end": 1964,
+          "block_ids": [
+            "doc-7154ef3247e430ac8763:b00041"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "job-registration-duty-6",
+      "citations": [
+        {
+          "document_id": "doc-7154ef3247e430ac8763",
+          "outcome": "same-snapshot",
+          "start": 1966,
+          "end": 2146,
+          "block_ids": [
+            "doc-7154ef3247e430ac8763:b00042"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "job-registration-duty-7",
+      "citations": [
+        {
+          "document_id": "doc-026d5accf4c3cd0d8c95",
+          "outcome": "same-snapshot",
+          "start": 1734,
+          "end": 2151,
+          "block_ids": [
+            "doc-026d5accf4c3cd0d8c95:b00040",
+            "doc-026d5accf4c3cd0d8c95:b00041"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "job-registration-duty-8",
+      "citations": [
+        {
+          "document_id": "doc-7154ef3247e430ac8763",
+          "outcome": "same-snapshot",
+          "start": 824,
+          "end": 1259,
+          "block_ids": [
+            "doc-7154ef3247e430ac8763:b00035",
+            "doc-7154ef3247e430ac8763:b00036"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "zh-unemployment-registration-1",
+      "citations": [
+        {
+          "document_id": "doc-e992d7aaf1b359dc413c",
+          "outcome": "same-snapshot",
+          "start": 1121,
+          "end": 1297,
+          "block_ids": [
+            "doc-e992d7aaf1b359dc413c:b00049"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-e992d7aaf1b359dc413c",
+          "outcome": "same-snapshot",
+          "start": 1438,
+          "end": 1745,
+          "block_ids": [
+            "doc-e992d7aaf1b359dc413c:b00058",
+            "doc-e992d7aaf1b359dc413c:b00059"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-unemployment-registration-2",
+      "citations": [
+        {
+          "document_id": "doc-e992d7aaf1b359dc413c",
+          "outcome": "same-snapshot",
+          "start": 1747,
+          "end": 2041,
+          "block_ids": [
+            "doc-e992d7aaf1b359dc413c:b00060",
+            "doc-e992d7aaf1b359dc413c:b00061",
+            "doc-e992d7aaf1b359dc413c:b00062",
+            "doc-e992d7aaf1b359dc413c:b00063",
+            "doc-e992d7aaf1b359dc413c:b00064",
+            "doc-e992d7aaf1b359dc413c:b00065"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-unemployment-registration-3",
+      "citations": [
+        {
+          "document_id": "doc-e992d7aaf1b359dc413c",
+          "outcome": "same-snapshot",
+          "start": 11146,
+          "end": 11344,
+          "block_ids": [
+            "doc-e992d7aaf1b359dc413c:b00329",
+            "doc-e992d7aaf1b359dc413c:b00330"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-unemployment-registration-4",
+      "citations": [
+        {
+          "document_id": "doc-e992d7aaf1b359dc413c",
+          "outcome": "same-snapshot",
+          "start": 11346,
+          "end": 11568,
+          "block_ids": [
+            "doc-e992d7aaf1b359dc413c:b00331"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-unemployment-registration-5",
+      "citations": [
+        {
+          "document_id": "doc-e992d7aaf1b359dc413c",
+          "outcome": "same-snapshot",
+          "start": 11742,
+          "end": 11977,
+          "block_ids": [
+            "doc-e992d7aaf1b359dc413c:b00335"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-unemployment-registration-6",
+      "citations": [
+        {
+          "document_id": "doc-e992d7aaf1b359dc413c",
+          "outcome": "same-snapshot",
+          "start": 12020,
+          "end": 12300,
+          "block_ids": [
+            "doc-e992d7aaf1b359dc413c:b00338"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-unemployment-registration-7",
+      "citations": [
+        {
+          "document_id": "doc-e992d7aaf1b359dc413c",
+          "outcome": "same-snapshot",
+          "start": 12322,
+          "end": 12577,
+          "block_ids": [
+            "doc-e992d7aaf1b359dc413c:b00340",
+            "doc-e992d7aaf1b359dc413c:b00341"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-e992d7aaf1b359dc413c",
+          "outcome": "same-snapshot",
+          "start": 12917,
+          "end": 13187,
+          "block_ids": [
+            "doc-e992d7aaf1b359dc413c:b00343"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-unemployment-registration-8",
+      "citations": [
+        {
+          "document_id": "doc-58d821965e91e66d6fc5",
+          "outcome": "same-snapshot",
+          "start": 9924,
+          "end": 10074,
+          "block_ids": [
+            "doc-58d821965e91e66d6fc5:b00305"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "short-time-work-1",
+      "citations": [
+        {
+          "document_id": "doc-2b61f79eb218ff041f86",
+          "outcome": "same-snapshot",
+          "start": 556,
+          "end": 1180,
+          "block_ids": [
+            "doc-2b61f79eb218ff041f86:b00033",
+            "doc-2b61f79eb218ff041f86:b00034",
+            "doc-2b61f79eb218ff041f86:b00035",
+            "doc-2b61f79eb218ff041f86:b00036"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "short-time-work-2",
+      "citations": [
+        {
+          "document_id": "doc-2b61f79eb218ff041f86",
+          "outcome": "same-snapshot",
+          "start": 1182,
+          "end": 1504,
+          "block_ids": [
+            "doc-2b61f79eb218ff041f86:b00037"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "short-time-work-3",
+      "citations": [
+        {
+          "document_id": "doc-2b61f79eb218ff041f86",
+          "outcome": "same-snapshot",
+          "start": 556,
+          "end": 845,
+          "block_ids": [
+            "doc-2b61f79eb218ff041f86:b00033"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-2b61f79eb218ff041f86",
+          "outcome": "same-snapshot",
+          "start": 1924,
+          "end": 2367,
+          "block_ids": [
+            "doc-2b61f79eb218ff041f86:b00045",
+            "doc-2b61f79eb218ff041f86:b00046",
+            "doc-2b61f79eb218ff041f86:b00047"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "short-time-work-4",
+      "citations": [
+        {
+          "document_id": "doc-2b61f79eb218ff041f86",
+          "outcome": "same-snapshot",
+          "start": 2369,
+          "end": 2452,
+          "block_ids": [
+            "doc-2b61f79eb218ff041f86:b00048"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "short-time-work-5",
+      "citations": [
+        {
+          "document_id": "doc-2b61f79eb218ff041f86",
+          "outcome": "same-snapshot",
+          "start": 2841,
+          "end": 3179,
+          "block_ids": [
+            "doc-2b61f79eb218ff041f86:b00053"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "short-time-work-6",
+      "citations": [
+        {
+          "document_id": "doc-2b61f79eb218ff041f86",
+          "outcome": "same-snapshot",
+          "start": 2756,
+          "end": 2839,
+          "block_ids": [
+            "doc-2b61f79eb218ff041f86:b00052"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "short-time-work-7",
+      "citations": [
+        {
+          "document_id": "doc-2b61f79eb218ff041f86",
+          "outcome": "same-snapshot",
+          "start": 3181,
+          "end": 3306,
+          "block_ids": [
+            "doc-2b61f79eb218ff041f86:b00054"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "short-time-work-8",
+      "citations": [
+        {
+          "document_id": "doc-2b61f79eb218ff041f86",
+          "outcome": "same-snapshot",
+          "start": 3308,
+          "end": 3410,
+          "block_ids": [
+            "doc-2b61f79eb218ff041f86:b00055"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "short-time-work-9",
+      "citations": [
+        {
+          "document_id": "doc-2b61f79eb218ff041f86",
+          "outcome": "same-snapshot",
+          "start": 3412,
+          "end": 3803,
+          "block_ids": [
+            "doc-2b61f79eb218ff041f86:b00056"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "short-time-work-10",
+      "citations": [
+        {
+          "document_id": "doc-2b61f79eb218ff041f86",
+          "outcome": "same-snapshot",
+          "start": 3937,
+          "end": 4186,
+          "block_ids": [
+            "doc-2b61f79eb218ff041f86:b00059",
+            "doc-2b61f79eb218ff041f86:b00060"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-1",
+      "citations": [
+        {
+          "document_id": "doc-c7a12895306cc102368c",
+          "outcome": "same-snapshot",
+          "start": 517,
+          "end": 1196,
+          "block_ids": [
+            "doc-c7a12895306cc102368c:b00032",
+            "doc-c7a12895306cc102368c:b00033",
+            "doc-c7a12895306cc102368c:b00034",
+            "doc-c7a12895306cc102368c:b00035"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-2",
+      "citations": [
+        {
+          "document_id": "doc-c7a12895306cc102368c",
+          "outcome": "same-snapshot",
+          "start": 1198,
+          "end": 1389,
+          "block_ids": [
+            "doc-c7a12895306cc102368c:b00036",
+            "doc-c7a12895306cc102368c:b00037",
+            "doc-c7a12895306cc102368c:b00038",
+            "doc-c7a12895306cc102368c:b00039"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-3",
+      "citations": [
+        {
+          "document_id": "doc-c7a12895306cc102368c",
+          "outcome": "same-snapshot",
+          "start": 1391,
+          "end": 1651,
+          "block_ids": [
+            "doc-c7a12895306cc102368c:b00040",
+            "doc-c7a12895306cc102368c:b00041"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-4",
+      "citations": [
+        {
+          "document_id": "doc-c7a12895306cc102368c",
+          "outcome": "same-snapshot",
+          "start": 1653,
+          "end": 1836,
+          "block_ids": [
+            "doc-c7a12895306cc102368c:b00042",
+            "doc-c7a12895306cc102368c:b00043"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-5",
+      "citations": [
+        {
+          "document_id": "doc-c7a12895306cc102368c",
+          "outcome": "same-snapshot",
+          "start": 1838,
+          "end": 2101,
+          "block_ids": [
+            "doc-c7a12895306cc102368c:b00044"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-6",
+      "citations": [
+        {
+          "document_id": "doc-c7a12895306cc102368c",
+          "outcome": "same-snapshot",
+          "start": 2103,
+          "end": 2362,
+          "block_ids": [
+            "doc-c7a12895306cc102368c:b00045",
+            "doc-c7a12895306cc102368c:b00046"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-7",
+      "citations": [
+        {
+          "document_id": "doc-c7a12895306cc102368c",
+          "outcome": "same-snapshot",
+          "start": 2364,
+          "end": 2518,
+          "block_ids": [
+            "doc-c7a12895306cc102368c:b00047",
+            "doc-c7a12895306cc102368c:b00048",
+            "doc-c7a12895306cc102368c:b00049",
+            "doc-c7a12895306cc102368c:b00050"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-8",
+      "citations": [
+        {
+          "document_id": "doc-c7a12895306cc102368c",
+          "outcome": "same-snapshot",
+          "start": 2520,
+          "end": 2795,
+          "block_ids": [
+            "doc-c7a12895306cc102368c:b00051"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-9",
+      "citations": [
+        {
+          "document_id": "doc-c7a12895306cc102368c",
+          "outcome": "same-snapshot",
+          "start": 2797,
+          "end": 3032,
+          "block_ids": [
+            "doc-c7a12895306cc102368c:b00052"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-10",
+      "citations": [
+        {
+          "document_id": "doc-c7a12895306cc102368c",
+          "outcome": "same-snapshot",
+          "start": 3034,
+          "end": 3541,
+          "block_ids": [
+            "doc-c7a12895306cc102368c:b00053",
+            "doc-c7a12895306cc102368c:b00054",
+            "doc-c7a12895306cc102368c:b00055",
+            "doc-c7a12895306cc102368c:b00056",
+            "doc-c7a12895306cc102368c:b00057",
+            "doc-c7a12895306cc102368c:b00058"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-11",
+      "citations": [
+        {
+          "document_id": "doc-62225ba0cbeb8a9399bb",
+          "outcome": "same-snapshot",
+          "start": 1086,
+          "end": 1816,
+          "block_ids": [
+            "doc-62225ba0cbeb8a9399bb:b00048",
+            "doc-62225ba0cbeb8a9399bb:b00049",
+            "doc-62225ba0cbeb8a9399bb:b00050",
+            "doc-62225ba0cbeb8a9399bb:b00051",
+            "doc-62225ba0cbeb8a9399bb:b00052",
+            "doc-62225ba0cbeb8a9399bb:b00053",
+            "doc-62225ba0cbeb8a9399bb:b00054",
+            "doc-62225ba0cbeb8a9399bb:b00055"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-12",
+      "citations": [
+        {
+          "document_id": "doc-62225ba0cbeb8a9399bb",
+          "outcome": "same-snapshot",
+          "start": 1818,
+          "end": 2178,
+          "block_ids": [
+            "doc-62225ba0cbeb8a9399bb:b00056",
+            "doc-62225ba0cbeb8a9399bb:b00057"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-13",
+      "citations": [
+        {
+          "document_id": "doc-62225ba0cbeb8a9399bb",
+          "outcome": "same-snapshot",
+          "start": 2180,
+          "end": 2564,
+          "block_ids": [
+            "doc-62225ba0cbeb8a9399bb:b00058"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-14",
+      "citations": [
+        {
+          "document_id": "doc-62225ba0cbeb8a9399bb",
+          "outcome": "same-snapshot",
+          "start": 2566,
+          "end": 2853,
+          "block_ids": [
+            "doc-62225ba0cbeb8a9399bb:b00059",
+            "doc-62225ba0cbeb8a9399bb:b00060",
+            "doc-62225ba0cbeb8a9399bb:b00061",
+            "doc-62225ba0cbeb8a9399bb:b00062",
+            "doc-62225ba0cbeb8a9399bb:b00063",
+            "doc-62225ba0cbeb8a9399bb:b00064"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-15",
+      "citations": [
+        {
+          "document_id": "doc-62225ba0cbeb8a9399bb",
+          "outcome": "same-snapshot",
+          "start": 2855,
+          "end": 3348,
+          "block_ids": [
+            "doc-62225ba0cbeb8a9399bb:b00065",
+            "doc-62225ba0cbeb8a9399bb:b00066",
+            "doc-62225ba0cbeb8a9399bb:b00067",
+            "doc-62225ba0cbeb8a9399bb:b00068",
+            "doc-62225ba0cbeb8a9399bb:b00069",
+            "doc-62225ba0cbeb8a9399bb:b00070",
+            "doc-62225ba0cbeb8a9399bb:b00071",
+            "doc-62225ba0cbeb8a9399bb:b00072",
+            "doc-62225ba0cbeb8a9399bb:b00073",
+            "doc-62225ba0cbeb8a9399bb:b00074"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-16",
+      "citations": [
+        {
+          "document_id": "doc-62225ba0cbeb8a9399bb",
+          "outcome": "same-snapshot",
+          "start": 3350,
+          "end": 3580,
+          "block_ids": [
+            "doc-62225ba0cbeb8a9399bb:b00075",
+            "doc-62225ba0cbeb8a9399bb:b00076",
+            "doc-62225ba0cbeb8a9399bb:b00077"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-17",
+      "citations": [
+        {
+          "document_id": "doc-62225ba0cbeb8a9399bb",
+          "outcome": "same-snapshot",
+          "start": 3604,
+          "end": 4039,
+          "block_ids": [
+            "doc-62225ba0cbeb8a9399bb:b00079",
+            "doc-62225ba0cbeb8a9399bb:b00080"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-labour-market-measures-18",
+      "citations": [
+        {
+          "document_id": "doc-62225ba0cbeb8a9399bb",
+          "outcome": "same-snapshot",
+          "start": 4076,
+          "end": 4287,
+          "block_ids": [
+            "doc-62225ba0cbeb8a9399bb:b00082",
+            "doc-62225ba0cbeb8a9399bb:b00083"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-1",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 515,
+          "end": 837,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00033"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-2",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 875,
+          "end": 1138,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00035"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-3",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 1168,
+          "end": 1364,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00037"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-4",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 1366,
+          "end": 1604,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00038",
+            "doc-22bc49b84a2599a63d5b:b00039"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-5",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 2329,
+          "end": 2635,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00043",
+            "doc-22bc49b84a2599a63d5b:b00044"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-6",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 2708,
+          "end": 2917,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00046"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-7",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 3574,
+          "end": 3767,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00052"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-8",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 3769,
+          "end": 4159,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00053"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-9",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 4458,
+          "end": 4815,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00056"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-10",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 4844,
+          "end": 5247,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00058"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-11",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 5419,
+          "end": 5864,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00061"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-12",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 5879,
+          "end": 6154,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00063"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-end-of-entitlement-13",
+      "citations": [
+        {
+          "document_id": "doc-22bc49b84a2599a63d5b",
+          "outcome": "same-snapshot",
+          "start": 7793,
+          "end": 7938,
+          "block_ids": [
+            "doc-22bc49b84a2599a63d5b:b00077"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-1",
+      "citations": [
+        {
+          "document_id": "doc-1ab3b64956708c04d398",
+          "outcome": "same-snapshot",
+          "start": 4583,
+          "end": 4711,
+          "block_ids": [
+            "doc-1ab3b64956708c04d398:b00074"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-2",
+      "citations": [
+        {
+          "document_id": "doc-1ab3b64956708c04d398",
+          "outcome": "same-snapshot",
+          "start": 4713,
+          "end": 4817,
+          "block_ids": [
+            "doc-1ab3b64956708c04d398:b00075",
+            "doc-1ab3b64956708c04d398:b00076"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-3",
+      "citations": [
+        {
+          "document_id": "doc-1ab3b64956708c04d398",
+          "outcome": "same-snapshot",
+          "start": 4819,
+          "end": 4935,
+          "block_ids": [
+            "doc-1ab3b64956708c04d398:b00077",
+            "doc-1ab3b64956708c04d398:b00078"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-4",
+      "citations": [
+        {
+          "document_id": "doc-1ab3b64956708c04d398",
+          "outcome": "same-snapshot",
+          "start": 4937,
+          "end": 5167,
+          "block_ids": [
+            "doc-1ab3b64956708c04d398:b00079",
+            "doc-1ab3b64956708c04d398:b00080",
+            "doc-1ab3b64956708c04d398:b00081",
+            "doc-1ab3b64956708c04d398:b00082"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-5",
+      "citations": [
+        {
+          "document_id": "doc-1ab3b64956708c04d398",
+          "outcome": "same-snapshot",
+          "start": 537,
+          "end": 965,
+          "block_ids": [
+            "doc-1ab3b64956708c04d398:b00033",
+            "doc-1ab3b64956708c04d398:b00034"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-6",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 4624,
+          "end": 5113,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00083",
+            "doc-0683c2c38c53009db6b6:b00084",
+            "doc-0683c2c38c53009db6b6:b00085",
+            "doc-0683c2c38c53009db6b6:b00086",
+            "doc-0683c2c38c53009db6b6:b00087"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-7",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 5115,
+          "end": 5251,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00088"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-8",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 2764,
+          "end": 2963,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00069"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-9",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 1808,
+          "end": 2386,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00061",
+            "doc-0683c2c38c53009db6b6:b00062",
+            "doc-0683c2c38c53009db6b6:b00063",
+            "doc-0683c2c38c53009db6b6:b00064",
+            "doc-0683c2c38c53009db6b6:b00065",
+            "doc-0683c2c38c53009db6b6:b00066"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-10",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 2965,
+          "end": 3450,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00070",
+            "doc-0683c2c38c53009db6b6:b00071"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-11",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 3843,
+          "end": 4042,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00075"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-12",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 3567,
+          "end": 3841,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00074"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-13",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 4398,
+          "end": 4573,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00080"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 5346,
+          "end": 5661,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00091",
+            "doc-0683c2c38c53009db6b6:b00092",
+            "doc-0683c2c38c53009db6b6:b00093"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-14",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 5698,
+          "end": 5907,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00095"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-15",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 4044,
+          "end": 4310,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00076",
+            "doc-0683c2c38c53009db6b6:b00077"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-16",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 2421,
+          "end": 2762,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00068"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-insolvency-17",
+      "citations": [
+        {
+          "document_id": "doc-0683c2c38c53009db6b6",
+          "outcome": "same-snapshot",
+          "start": 6025,
+          "end": 6454,
+          "block_ids": [
+            "doc-0683c2c38c53009db6b6:b00101",
+            "doc-0683c2c38c53009db6b6:b00102"
+          ],
+          "warnings": [],
+          "institution_id": "zh-awa",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-eu-efta-mobility-1",
+      "citations": [
+        {
+          "document_id": "doc-d679ed2cf42c3e618024",
+          "outcome": "same-snapshot",
+          "start": 727,
+          "end": 1209,
+          "block_ids": [
+            "doc-d679ed2cf42c3e618024:b00034",
+            "doc-d679ed2cf42c3e618024:b00035"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-eu-efta-mobility-2",
+      "citations": [
+        {
+          "document_id": "doc-80a38229617ee48b2792",
+          "outcome": "same-snapshot",
+          "start": 2325,
+          "end": 3161,
+          "block_ids": [
+            "doc-80a38229617ee48b2792:b00047",
+            "doc-80a38229617ee48b2792:b00048",
+            "doc-80a38229617ee48b2792:b00049"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-eu-efta-mobility-3",
+      "citations": [
+        {
+          "document_id": "doc-c0870773e4981e460538",
+          "outcome": "same-snapshot",
+          "start": 2535,
+          "end": 2888,
+          "block_ids": [
+            "doc-c0870773e4981e460538:b00051",
+            "doc-c0870773e4981e460538:b00052"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-eu-efta-mobility-4",
+      "citations": [
+        {
+          "document_id": "doc-c0870773e4981e460538",
+          "outcome": "same-snapshot",
+          "start": 2890,
+          "end": 3272,
+          "block_ids": [
+            "doc-c0870773e4981e460538:b00053"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-eu-efta-mobility-5",
+      "citations": [
+        {
+          "document_id": "doc-c0870773e4981e460538",
+          "outcome": "same-snapshot",
+          "start": 3274,
+          "end": 3613,
+          "block_ids": [
+            "doc-c0870773e4981e460538:b00054",
+            "doc-c0870773e4981e460538:b00055",
+            "doc-c0870773e4981e460538:b00056"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-eu-efta-mobility-6",
+      "citations": [
+        {
+          "document_id": "doc-c0870773e4981e460538",
+          "outcome": "same-snapshot",
+          "start": 3779,
+          "end": 4210,
+          "block_ids": [
+            "doc-c0870773e4981e460538:b00060",
+            "doc-c0870773e4981e460538:b00061",
+            "doc-c0870773e4981e460538:b00062",
+            "doc-c0870773e4981e460538:b00063"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-eu-efta-mobility-7",
+      "citations": [
+        {
+          "document_id": "doc-c0870773e4981e460538",
+          "outcome": "same-snapshot",
+          "start": 4707,
+          "end": 5373,
+          "block_ids": [
+            "doc-c0870773e4981e460538:b00071",
+            "doc-c0870773e4981e460538:b00072",
+            "doc-c0870773e4981e460538:b00073",
+            "doc-c0870773e4981e460538:b00074",
+            "doc-c0870773e4981e460538:b00075",
+            "doc-c0870773e4981e460538:b00076",
+            "doc-c0870773e4981e460538:b00077",
+            "doc-c0870773e4981e460538:b00078",
+            "doc-c0870773e4981e460538:b00079"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "unemployment-eu-efta-mobility-8",
+      "citations": [
+        {
+          "document_id": "doc-c0870773e4981e460538",
+          "outcome": "same-snapshot",
+          "start": 5539,
+          "end": 6500,
+          "block_ids": [
+            "doc-c0870773e4981e460538:b00083",
+            "doc-c0870773e4981e460538:b00084",
+            "doc-c0870773e4981e460538:b00085",
+            "doc-c0870773e4981e460538:b00086",
+            "doc-c0870773e4981e460538:b00087",
+            "doc-c0870773e4981e460538:b00088",
+            "doc-c0870773e4981e460538:b00089",
+            "doc-c0870773e4981e460538:b00090",
+            "doc-c0870773e4981e460538:b00091",
+            "doc-c0870773e4981e460538:b00092",
+            "doc-c0870773e4981e460538:b00093",
+            "doc-c0870773e4981e460538:b00094",
+            "doc-c0870773e4981e460538:b00095"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "employment-notice-and-reference-1",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 5901,
+          "end": 6086,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00068"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "employment-notice-and-reference-2",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 5901,
+          "end": 6151,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00068",
+            "doc-1dc7548e6096cef67224:b00069"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "employment-notice-and-reference-3",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 5901,
+          "end": 6206,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00068",
+            "doc-1dc7548e6096cef67224:b00069",
+            "doc-1dc7548e6096cef67224:b00070"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "employment-notice-and-reference-4",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 5901,
+          "end": 6270,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00068",
+            "doc-1dc7548e6096cef67224:b00069",
+            "doc-1dc7548e6096cef67224:b00070",
+            "doc-1dc7548e6096cef67224:b00071"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "employment-notice-and-reference-5",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 5901,
+          "end": 6327,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00068",
+            "doc-1dc7548e6096cef67224:b00069",
+            "doc-1dc7548e6096cef67224:b00070",
+            "doc-1dc7548e6096cef67224:b00071",
+            "doc-1dc7548e6096cef67224:b00072"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "employment-notice-and-reference-6",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 6329,
+          "end": 6539,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00073",
+            "doc-1dc7548e6096cef67224:b00074",
+            "doc-1dc7548e6096cef67224:b00075",
+            "doc-1dc7548e6096cef67224:b00076"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "employment-notice-and-reference-7",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 6541,
+          "end": 6782,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00077"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "employment-notice-and-reference-8",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 6541,
+          "end": 6782,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00077"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "employment-notice-and-reference-9",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 6784,
+          "end": 7115,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00078",
+            "doc-1dc7548e6096cef67224:b00079"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "employment-notice-and-reference-10",
+      "citations": [
+        {
+          "document_id": "doc-1dc7548e6096cef67224",
+          "outcome": "same-snapshot",
+          "start": 6811,
+          "end": 7115,
+          "block_ids": [
+            "doc-1dc7548e6096cef67224:b00079"
+          ],
+          "warnings": [],
+          "institution_id": "ch-seco",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.arbeit.swiss",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
     }
   ],
-  "source_terms": 1486,
-  "questions": 422,
+  "source_terms": 1587,
+  "questions": 446,
   "institutions": [
     {
       "institution_id": "ch-bag",
@@ -24311,7 +27138,7 @@
       "name": "State Secretariat for Economic Affairs SECO, public employment service",
       "level": "federal",
       "jurisdiction": "CH",
-      "documents": 4,
+      "documents": 14,
       "from_catalogue": false
     },
     {
@@ -24415,7 +27242,7 @@
       "name": "Canton of Zurich, Office for the Economy",
       "level": "cantonal",
       "jurisdiction": "CH-ZH",
-      "documents": 3,
+      "documents": 8,
       "from_catalogue": false
     },
     {
@@ -24508,6 +27335,18 @@
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-026d5accf4c3cd0d8c95",
+      "source_url": "https://www.arbeit.swiss/de/stellensuchende/registrierung-stellensuchende",
+      "institution_id": "ch-seco",
+      "institution_rule": "registry rule www.arbeit.swiss"
+    },
+    {
+      "document_id": "doc-0683c2c38c53009db6b6",
+      "source_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung/entschaedigung-insolvenz-arbeitgeber.html",
+      "institution_id": "zh-awa",
+      "institution_rule": "registry rule www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit"
     },
     {
       "document_id": "doc-07709682168602d2fb3f",
@@ -24606,6 +27445,12 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-1ab3b64956708c04d398",
+      "source_url": "https://www.arbeit.swiss/de/stellensuchende/versicherungsleistungen",
+      "institution_id": "ch-seco",
+      "institution_rule": "registry rule www.arbeit.swiss"
+    },
+    {
       "document_id": "doc-1bc7c301f281e3894bc3",
       "source_url": "https://www.eda.admin.ch/de/visabestimmungen-fuer-die-einreise-in-die-schweiz",
       "institution_id": "ch-eda",
@@ -24622,6 +27467,12 @@
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/faq.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-1dc7548e6096cef67224",
+      "source_url": "https://www.arbeit.swiss/de/stellensuchende/erste-schritte-nach-kuendigung",
+      "institution_id": "ch-seco",
+      "institution_rule": "registry rule www.arbeit.swiss"
     },
     {
       "document_id": "doc-1f8ba8d4751763edd1b3",
@@ -24646,6 +27497,12 @@
       "source_url": "https://www.zas.admin.ch/de/anspruch-auf-ahv-rentenzahlungen-ausserhalb-der-schweiz",
       "institution_id": "ch-zas",
       "institution_rule": "registry rule www.zas.admin.ch"
+    },
+    {
+      "document_id": "doc-22bc49b84a2599a63d5b",
+      "source_url": "https://www.arbeit.swiss/de/stellensuchende/aussteuerung",
+      "institution_id": "ch-seco",
+      "institution_rule": "registry rule www.arbeit.swiss"
     },
     {
       "document_id": "doc-232cacbd2e06ec2b2bce",
@@ -24706,6 +27563,12 @@
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/biometr_auslaenderausweis.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-2b61f79eb218ff041f86",
+      "source_url": "https://www.arbeit.swiss/de/arbeitgebende/kurzarbeitsentschaedigung-kae",
+      "institution_id": "ch-seco",
+      "institution_rule": "registry rule www.arbeit.swiss"
     },
     {
       "document_id": "doc-2b7c48a8833cdb51af5b",
@@ -24966,6 +27829,12 @@
       "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
+      "document_id": "doc-58d821965e91e66d6fc5",
+      "source_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse/zustaendiges-rav-finden.html",
+      "institution_id": "zh-awa",
+      "institution_rule": "registry rule www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit"
+    },
+    {
       "document_id": "doc-59089a1125b8a26db80f",
       "source_url": "https://www.bazg.admin.ch/de/waren-anmelden-einfuhr-private",
       "institution_id": "ch-bazg",
@@ -25030,6 +27899,12 @@
       "source_url": "https://www.zh.ch/de/migration-integration/niederlassungsbewilligung.html",
       "institution_id": "zh-migrationsamt",
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
+      "document_id": "doc-62225ba0cbeb8a9399bb",
+      "source_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/qualifizierung-stellensuchende.html",
+      "institution_id": "zh-awa",
+      "institution_rule": "registry rule www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit"
     },
     {
       "document_id": "doc-62f7e84f493f02430c66",
@@ -25122,6 +27997,12 @@
       "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
+      "document_id": "doc-7154ef3247e430ac8763",
+      "source_url": "https://www.arbeit.swiss/de/arbeitgebende/stellenmeldepflichten",
+      "institution_id": "ch-seco",
+      "institution_rule": "registry rule www.arbeit.swiss"
+    },
+    {
       "document_id": "doc-71f912c1a94b986fba26",
       "source_url": "https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/oeffnungszeiten-ueber-die-feiertage.html",
       "institution_id": "zh-sva",
@@ -25204,6 +28085,12 @@
       "source_url": "https://www.sem.admin.ch/sem/en/home/integration-einbuergerung/schweizer-werden/verheiratet.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-80a38229617ee48b2792",
+      "source_url": "https://www.arbeit.swiss/de/stellensuchende/stellensuche-im-ausland",
+      "institution_id": "ch-seco",
+      "institution_rule": "registry rule www.arbeit.swiss"
     },
     {
       "document_id": "doc-8348f22bf583137fd376",
@@ -25386,6 +28273,12 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung"
     },
     {
+      "document_id": "doc-a7b0f3605efd15fe02e9",
+      "source_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/beratung-vermittlung.html",
+      "institution_id": "zh-awa",
+      "institution_rule": "registry rule www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit"
+    },
+    {
       "document_id": "doc-a8114f7c75c808af1403",
       "source_url": "https://www.zh.ch/de/direktion-der-justiz-und-des-innern/gemeindeamt/abteilung-einbuergerungen.html",
       "institution_id": "zh-gemeindeamt",
@@ -25524,6 +28417,12 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-c0870773e4981e460538",
+      "source_url": "https://www.arbeit.swiss/de/stellensuchende/rueckkehr-in-die-schweiz",
+      "institution_id": "ch-seco",
+      "institution_rule": "registry rule www.arbeit.swiss"
+    },
+    {
       "document_id": "doc-c1b1be0f5c7479ddb67a",
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/etias.html",
       "institution_id": "ch-sem",
@@ -25546,6 +28445,12 @@
       "source_url": "https://www.bazg.admin.ch/de/reisen-einkaufen-private-einfuhr-in-die-schweiz",
       "institution_id": "ch-bazg",
       "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
+      "document_id": "doc-c7a12895306cc102368c",
+      "source_url": "https://www.arbeit.swiss/de/stellensuchende/arbeitsmarktliche-massnahmen",
+      "institution_id": "ch-seco",
+      "institution_rule": "registry rule www.arbeit.swiss"
     },
     {
       "document_id": "doc-c91304c05bdefe12e21b",
@@ -25636,6 +28541,12 @@
       "source_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienverbilligung",
       "institution_id": "ch-bag",
       "institution_rule": "registry rule www.bag.admin.ch"
+    },
+    {
+      "document_id": "doc-d679ed2cf42c3e618024",
+      "source_url": "https://www.arbeit.swiss/de/stellensuchende/berufliche-mobilitaet-in-der-euefta",
+      "institution_id": "ch-seco",
+      "institution_rule": "registry rule www.arbeit.swiss"
     },
     {
       "document_id": "doc-d6ba6d241671ed943a29",
@@ -25800,6 +28711,12 @@
       "institution_rule": "registry rule www.zh.ch/de/politik-staat/wahlen-abstimmungen"
     },
     {
+      "document_id": "doc-e992d7aaf1b359dc413c",
+      "source_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse.html",
+      "institution_id": "zh-awa",
+      "institution_rule": "registry rule www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit"
+    },
+    {
       "document_id": "doc-ea8ce303e3ee8fb3a83a",
       "source_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung.html",
       "institution_id": "zh-awa",
@@ -25933,7 +28850,7 @@
     }
   ],
   "basis_kinds": {
-    "guidance": 651,
+    "guidance": 782,
     "act": 66,
     "ordinance": 35,
     "summary": 50,

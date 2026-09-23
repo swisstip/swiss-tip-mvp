@@ -6427,3 +6427,443 @@ cases:
       jurisdiction: {canton_code: CH-ZH}
       expect_status: {health-insurance-premium: OUT_OF_COVERAGE, premium-calculator: OUT_OF_COVERAGE}
       expect_gap: {health-insurance-premium: concept_not_published, premium-calculator: concept_not_published}
+- case_id: UAT-92
+  label: The day the notice arrives
+  spec: docs/product/user-acceptance-tests.md#uat-92-the-day-the-notice-arrives
+  question: I got my notice this morning. My last working day is at the end of November. What do I
+    have to do, and when?
+  expected_answer: Register with the RAV as early as possible and not after the last working day -
+    the registration serves both the job search and the claim to benefit, and a person threatened
+    with unemployment registers during the notice period. Job-Room is a further, separate
+    registration. The duty to look for work starts at once, before unemployment begins.
+  trap: Telling the caller to wait until the employment ends, which costs them benefit days.
+  language: en
+  steps:
+  - search:
+      query: Kuendigung erhalten wann beim RAV anmelden
+      expect_concept: unemployment-registration
+  - resolve:
+      concept_ids: [unemployment-registration, unemployment-obligations]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {unemployment-registration: SUPPORTED, unemployment-obligations: SUPPORTED}
+  claims:
+  - claim: Registration is as early as possible and not left until the last working day
+    concept: unemployment-registration
+    fact_id: unemployment-registration-1
+    statement_contains: ['last working day']
+    excerpt_contains: ['letzten Arbeitstag']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      rav: 'RAV'
+    must_not:
+      wait_until_end: 'warten Sie bis|wait until your employment ends'
+    cites:
+      seco: 'arbeit\.swiss'
+    resolved: [unemployment-registration, unemployment-obligations]
+- case_id: UAT-93
+  label: How many applications, and can I say no
+  spec: docs/product/user-acceptance-tests.md#uat-93-how-many-applications-and-can-i-say-no
+  question: How many job applications do I have to write each month, and can I refuse a job that
+    pays less than my old one?
+  expected_answer: The federal source sets no fixed number - how many efforts are required depends
+    on the person's situation and on the rules of their canton, and the RAV agrees it with them.
+    For the Canton of Zurich the rule is 10 to 12 efforts a month, the proof form is due by the 5th
+    of the following month, and refusing a suitable job that is assigned can cost up to 60
+    suspension days, meaning up to three months without daily allowances.
+  trap: Inventing a fixed federal number of applications a month, or saying a lower-paid job may
+    simply be refused.
+  language: en
+  steps:
+  - search:
+      query: wie viele Arbeitsbemuehungen pro Monat nachweisen
+      expect_concept: unemployment-obligations
+  - resolve:
+      concept_ids: [unemployment-obligations]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {unemployment-obligations: SUPPORTED}
+  claims:
+  - claim: The federal source sets no fixed number of applications
+    concept: unemployment-obligations
+    fact_id: unemployment-obligations-11
+    statement_contains: ['no fixed number']
+    excerpt_contains: ['Arbeitsbemühungen']
+  - claim: In the Canton of Zurich 10 to 12 efforts a month are expected as a rule
+    concept: unemployment-obligations
+    fact_id: unemployment-obligations-17
+    statement_contains: ['10 to 12']
+    excerpt_contains: ['Arbeitsbemühungen']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      zurich_rule: '10'
+    must_not:
+      invented_federal_number: 'bundesweit [0-9]+ Bewerbungen'
+    cites:
+      sources: 'arbeit\.swiss|zh\.ch'
+    resolved: [unemployment-obligations]
+- case_id: UAT-94
+  label: How long the benefit runs
+  spec: docs/product/user-acceptance-tests.md#uat-94-how-long-the-benefit-runs
+  question: How long can I draw unemployment benefit, and how much will I get?
+  expected_answer: The structure and not a figure in francs. Waiting days come first - a general
+    waiting period of between 0 and 20 days depending on income and maintenance obligations, plus
+    special waiting days in certain cases. Five daily allowances are paid a week. The benefit is 70
+    per cent of the insured earnings, or 80 per cent with maintenance obligations towards children
+    under 25 or a disability pension of at least 40 per cent. The frame period for benefits is two
+    years.
+  trap: Producing a monthly amount in francs, or a single duration that ignores age and
+    contribution months.
+  language: en
+  steps:
+  - search:
+      query: Wartetage und Anzahl Taggelder Arbeitslosenversicherung
+      expect_concept: unemployment-daily-allowance
+  - resolve:
+      concept_ids: [unemployment-daily-allowance]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {unemployment-daily-allowance: SUPPORTED}
+  claims:
+  - claim: Waiting days are served before the first payment
+    concept: unemployment-daily-allowance
+    fact_id: unemployment-daily-allowance-1
+    statement_contains: ['waiting days']
+    excerpt_contains: ['Wartetage']
+  - claim: The frame period for benefits is two years
+    concept: unemployment-daily-allowance
+    fact_id: unemployment-daily-allowance-8
+    statement_contains: ['2 years']
+    excerpt_contains: ['Rahmenfrist']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      waiting: 'Wartetage|waiting'
+    must_not:
+      invented_amount: '[0-9]{3,4} (Franken|francs) (im Monat|a month|per month)'
+    cites:
+      seco: 'arbeit\.swiss'
+    resolved: [unemployment-daily-allowance]
+- case_id: UAT-95
+  label: A job that pays less
+  spec: docs/product/user-acceptance-tests.md#uat-95-a-job-that-pays-less
+  question: I have been offered a job that pays about half my old salary. If I take it, do I lose
+    my unemployment benefit?
+  expected_answer: No. Work paid less than the unemployment benefit counts as interim earnings, and
+    the insurance pays a compensation payment on top, for at least twelve months, so that interim
+    earnings and compensation together are always higher than the benefit alone. The interim
+    earnings also extend the period over which benefits can be drawn and build new contribution
+    periods, except where they come from self-employed work, and they have to be paid at the rate
+    customary for the locality and the industry.
+  trap: Answering that any work ends the entitlement.
+  language: en
+  steps:
+  - search:
+      query: Zwischenverdienst Kompensationszahlung
+      expect_concept: unemployment-interim-earnings
+  - resolve:
+      concept_ids: [unemployment-interim-earnings]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {unemployment-interim-earnings: SUPPORTED}
+  claims:
+  - claim: Work paid less than the benefit is interim earnings and a compensation payment follows
+    concept: unemployment-interim-earnings
+    fact_id: unemployment-interim-earnings-1
+    statement_contains: ['compensation payment']
+    excerpt_contains: ['Zwischenverdienst']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      interim: 'Zwischenverdienst|interim earnings'
+    must_not:
+      entitlement_ends: 'Anspruch erlischt|you lose your entitlement'
+    cites:
+      seco: 'arbeit\.swiss'
+    resolved: [unemployment-interim-earnings]
+- case_id: UAT-96
+  label: The employer goes bankrupt owing wages
+  spec: docs/product/user-acceptance-tests.md#uat-96-the-employer-goes-bankrupt-owing-wages
+  question: My employer went bankrupt and still owes me two months' wages. Is that lost?
+  expected_answer: Insolvency compensation covers outstanding wage claims for work already done, at
+    100 per cent and for at most four months, and is paid by the public unemployment fund of the
+    canton where the employer had its seat, which then reclaims it from the employer. Each employee
+    applies individually, and in the Canton of Zurich the application is due at the latest 60 days
+    after the publication of the bankruptcy, the composition moratorium or the judicial deferral,
+    a deadline that cannot be extended and whose expiry extinguishes the claim.
+  trap: Treating it as ordinary unemployment benefit, or leaving the caller without the deadline.
+  language: en
+  steps:
+  - search:
+      query: Insolvenzentschaedigung Arbeitgeber Konkurs Lohn
+      expect_concept: unemployment-insolvency
+  - resolve:
+      concept_ids: [unemployment-insolvency]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {unemployment-insolvency: SUPPORTED}
+  claims:
+  - claim: Insolvency compensation is 100 per cent for at most four months
+    concept: unemployment-insolvency
+    fact_id: unemployment-insolvency-2
+    statement_contains: ['four months']
+    excerpt_contains: ['maximal vier Monate']
+  - claim: The Zurich application deadline is 60 days
+    concept: unemployment-insolvency
+    fact_id: unemployment-insolvency-6
+    statement_contains: ['60 days']
+    excerpt_contains: ['Nachlassstundung']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      deadline: '60'
+    must_not:
+      ordinary_benefit: 'gewoehnliche Arbeitslosenentschaedigung'
+    cites:
+      sources: 'arbeit\.swiss|zh\.ch'
+    resolved: [unemployment-insolvency]
+- case_id: UAT-97
+  label: A course while unemployed
+  spec: docs/product/user-acceptance-tests.md#uat-97-a-course-while-unemployed
+  question: Can I do a course while I am unemployed, and who pays for it?
+  expected_answer: The labour-market measures are the courses, employment programmes and
+    allowances, and the RAV decides - it assesses whether a measure is suitable, checks the
+    conditions and assigns people to offers. A jobseeker may submit an application on their own
+    initiative at any time, and for courses the application is due at least 10 days before the
+    start. In the Canton of Zurich participation must be approved by the RAV and the measures are
+    financed by the unemployment insurance.
+  trap: Promising that any course the caller chooses will be paid.
+  language: en
+  steps:
+  - search:
+      query: arbeitsmarktliche Massnahmen Kurs RAV
+      expect_concept: unemployment-labour-market-measures
+  - resolve:
+      concept_ids: [unemployment-labour-market-measures]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {unemployment-labour-market-measures: SUPPORTED}
+  claims:
+  - claim: The jobseeker may apply but the RAV decides
+    concept: unemployment-labour-market-measures
+    fact_id: unemployment-labour-market-measures-8
+    statement_contains: ['own initiative']
+    excerpt_contains: ['Massnahme']
+  - claim: A course application is due at least 10 days before the start
+    concept: unemployment-labour-market-measures
+    fact_id: unemployment-labour-market-measures-9
+    statement_contains: ['10 days']
+    excerpt_contains: ['Kurse']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      rav_decides: 'RAV'
+    must_not:
+      any_course_paid: 'jeder Kurs wird bezahlt|any course you choose'
+    cites:
+      sources: 'arbeit\.swiss|zh\.ch'
+    resolved: [unemployment-labour-market-measures]
+- case_id: UAT-98
+  label: The benefit runs out
+  spec: docs/product/user-acceptance-tests.md#uat-98-the-benefit-runs-out
+  question: My daily allowances run out in two months and I still have no job. What happens then?
+  expected_answer: The entitlement ends and no further daily allowances are paid, but the
+    counselling and placement of the RAV remain available, labour-market measures can still be used
+    to the end of the running frame period, and the entitlement can revive in certain cases. The
+    accident cover ends 31 days later unless an agreement insurance is taken out, the old-age
+    contributions have to be settled with the cantonal compensation office, and the page points to
+    the social assistance of the municipality, which this release does not cover.
+  trap: Explaining social assistance, which is named in out_of_scope.
+  language: en
+  steps:
+  - search:
+      query: Aussteuerung was passiert danach
+      expect_concept: unemployment-end-of-entitlement
+  - resolve:
+      concept_ids: [unemployment-end-of-entitlement]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {unemployment-end-of-entitlement: SUPPORTED}
+  claims:
+  - claim: The entitlement ends and no further daily allowances are paid
+    concept: unemployment-end-of-entitlement
+    fact_id: unemployment-end-of-entitlement-1
+    statement_contains: ['no further daily allowances']
+    excerpt_contains: ['Aussteuerung']
+  - claim: The accident cover ends 31 days after the entitlement
+    concept: unemployment-end-of-entitlement
+    fact_id: unemployment-end-of-entitlement-7
+    statement_contains: ['31 days']
+    excerpt_contains: ['Unfall']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      rav_remains: 'RAV'
+    must_not:
+      explains_social_assistance: 'Sozialhilfe beantragen Sie|to claim social assistance you'
+    cites:
+      seco: 'arbeit\.swiss'
+    resolved: [unemployment-end-of-entitlement]
+- case_id: UAT-99
+  label: Three years working in Germany
+  spec: docs/product/user-acceptance-tests.md#uat-99-three-years-working-in-germany
+  question: I worked in Germany for three years and moved to Zurich two months ago. Does that time
+    count if I lose my job here?
+  expected_answer: Not by itself. A person who lived and worked in an EU or EFTA state may register
+    with a Swiss RAV, but a claim to Swiss unemployment benefit exists only with sufficient
+    contribution time in Switzerland. The portable document U1 certifies the insurance periods
+    completed abroad and is issued by the authority of the state where the person worked. Someone
+    without sufficient Swiss contribution time applies before returning for an export of benefits
+    with the portable document U2, and the state they come from then pays for at most 3 to 6
+    months.
+  trap: Promising that the German period counts towards the Swiss entitlement, or ignoring the
+    coordination entirely.
+  language: en
+  steps:
+  - search:
+      query: PD U1 Beitragszeiten EU EFTA Rueckkehr
+      expect_concept: unemployment-eu-efta-mobility
+  - resolve:
+      concept_ids: [unemployment-eu-efta-mobility]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {unemployment-eu-efta-mobility: SUPPORTED}
+  claims:
+  - claim: A Swiss claim needs sufficient contribution time in Switzerland
+    concept: unemployment-eu-efta-mobility
+    fact_id: unemployment-eu-efta-mobility-3
+    statement_contains: ['sufficient contribution time']
+    excerpt_contains: ['Beitragszeit']
+  - claim: The portable document U1 certifies insurance periods completed abroad
+    concept: unemployment-eu-efta-mobility
+    fact_id: unemployment-eu-efta-mobility-6
+    statement_contains: ['PD U1']
+    excerpt_contains: ['Versicherungszeiten']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      u1: 'U1'
+    must_not:
+      counts_unconditionally: 'zaehlt automatisch|counts towards your Swiss entitlement'
+    cites:
+      seco: 'arbeit\.swiss'
+    resolved: [unemployment-eu-efta-mobility]
+- case_id: UAT-100
+  label: Hours cut to sixty per cent
+  spec: docs/product/user-acceptance-tests.md#uat-100-hours-cut-to-sixty-per-cent
+  question: My employer has cut everyone to 60 per cent and says we are on short-time work. What
+    does that mean for me?
+  expected_answer: Short-time work compensation covers part of the wage costs so that the business
+    can keep its staff instead of dismissing them. The business registers it in advance with the
+    cantonal authority, normally ten days ahead, and it is authorised for up to three months at a
+    time. A working time control has to record the hours worked and lost day by day. The release
+    does not carry the share of lost earnings that is compensated, nor whether the employee has to
+    consent, and the answer must not invent either.
+  trap: Telling the employee to apply themselves, or stating a compensation percentage.
+  language: en
+  steps:
+  - search:
+      query: Kurzarbeitsentschaedigung Voranmeldung Arbeitsausfall
+      expect_concept: short-time-work
+  - resolve:
+      concept_ids: [short-time-work]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {short-time-work: SUPPORTED}
+  claims:
+  - claim: The business registers the short-time work with the cantonal authority in advance
+    concept: short-time-work
+    fact_id: short-time-work-3
+    statement_contains: ['cantonal authority']
+    excerpt_contains: ['Voranmeldefrist']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      employer_applies: 'Arbeitgeb|employer'
+    must_not:
+      invented_share: '80 ?(%|per cent|Prozent) (des|of the) (Verdienst|lost)'
+    cites:
+      seco: 'arbeit\.swiss'
+    resolved: [short-time-work]
+- case_id: UAT-101
+  label: Seeing vacancies before everyone else
+  spec: docs/product/user-acceptance-tests.md#uat-101-seeing-vacancies-before-everyone-else
+  question: A friend said jobseekers registered with the RAV see some vacancies before they are
+    public. Is that true?
+  expected_answer: Yes. Occupation types with high unemployment are subject to the job-registration
+    duty - employers must report a vacancy to the responsible RAV before advertising it publicly,
+    on the basis of a list published every year. A jobseeker registered with an RAV and with the
+    portal has an information head start of five working days and can see those vacancies at once.
+    The release does not carry the unemployment rate threshold that puts an occupation on the list.
+  trap: Dismissing it as a rumour, or stating a threshold percentage the pages do not give.
+  language: en
+  steps:
+  - search:
+      query: Stellenmeldepflicht Informationsvorsprung
+      expect_concept: job-registration-duty
+  - resolve:
+      concept_ids: [job-registration-duty]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {job-registration-duty: SUPPORTED}
+  claims:
+  - claim: Employers must report the vacancy before advertising it publicly
+    concept: job-registration-duty
+    fact_id: job-registration-duty-2
+    statement_contains: ['before they are advertised publicly']
+    excerpt_contains: ['Stellenmeldepflicht']
+  - claim: The head start is five working days
+    concept: job-registration-duty
+    fact_id: job-registration-duty-7
+    statement_contains: ['five working days']
+    excerpt_contains: ['Informationsvorsprung']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      head_start: 'five|fünf|fuenf'
+    must_not:
+      invented_threshold: '[0-9]+ ?(%|Prozent|per cent) Arbeitslosigkeit'
+    cites:
+      seco: 'arbeit\.swiss'
+    resolved: [job-registration-duty]
+- case_id: UAT-102
+  label: Which RAV, in Winterthur
+  spec: docs/product/user-acceptance-tests.md#uat-102-which-rav-in-winterthur
+  question: I live in Winterthur and have to sign on. Which RAV do I go to, and which unemployment
+    fund?
+  expected_answer: The responsible RAV is found by entering the postal code of the place of
+    residence in the canton's RAV finder; the release does not publish the address of an individual
+    office. There are four unemployment funds in the Canton of Zurich, all providing the same
+    services, and one is chosen as part of registering. Registration is possible online or in
+    person, already during the notice period and at the latest on the first day of unemployment.
+  trap: Inventing a street address for the Winterthur RAV.
+  language: en
+  steps:
+  - search:
+      query: Arbeitslosenkasse waehlen Kanton Zuerich RAV Anmeldung
+      expect_concept: zh-unemployment-registration
+  - resolve:
+      concept_ids: [zh-unemployment-registration]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {zh-unemployment-registration: SUPPORTED}
+  claims:
+  - claim: There are four unemployment funds in the canton, all with the same services
+    concept: zh-unemployment-registration
+    fact_id: zh-unemployment-registration-3
+    statement_contains: ['four unemployment funds']
+    excerpt_contains: ['Arbeitslosenkassen']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      finder: 'Postleitzahl|postal code|RAV'
+    must_not:
+      invented_address: 'Winterthur.{0,30}strasse [0-9]+'
+    cites:
+      zurich: 'zh\.ch'
+    resolved: [zh-unemployment-registration]
+- case_id: DECLINE-13
+  label: How much unemployment benefit a month
+  spec: docs/product/user-acceptance-tests.md#decline-cases
+  question: Wie viel Arbeitslosengeld bekomme ich pro Monat bei einem Lohn von 7'000 Franken?
+  expected_answer: The release publishes the rules of unemployment insurance and never an amount of
+    benefit, and benefit amounts and every calculator are named in out_of_scope, so a resolve of a
+    guessed concept ID returns OUT_OF_COVERAGE with concept_not_published.
+  language: de
+  steps:
+  - resolve:
+      concept_ids: [unemployment-daily-allowance-amount, unemployment-calculator]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {unemployment-daily-allowance-amount: OUT_OF_COVERAGE, unemployment-calculator: OUT_OF_COVERAGE}
+      expect_gap: {unemployment-daily-allowance-amount: concept_not_published, unemployment-calculator: concept_not_published}

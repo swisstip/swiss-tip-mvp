@@ -3,7 +3,7 @@
 **Last update:** 23 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
-claim. It applies to the committed release `mvp-zurich-2026-09-23-v13` and is
+claim. It applies to the committed release `mvp-zurich-2026-09-23-v16` and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
 [COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
@@ -26,7 +26,7 @@ below is measured on it.
 
 ## Review status: reviewed by one person, not by a lawyer
 
-**All 923 facts are `human-reviewed`**, by one named reviewer: the 104 facts
+**All 1,054 facts are `human-reviewed`**, by one named reviewer: the 104 facts
 of the residence topic (78) and of the cantonal migration-office contacts
 (26) on 14 September 2026, the 149 facts of the five topics added on
 15 September 2026, social insurance (25), tax at source (26), driving
@@ -229,6 +229,7 @@ review, which the coverage root no longer carries since release
 | 22 September 2026 | 117 (settlement permit 57, integration 25, naturalisation 19, and 16 across four other topics) | in bulk groups |
 | 23 September 2026 | 113 (customs) | hardest first: the 23 that carry a number, then the five single-page concepts, then the rest |
 | 23 September 2026 | 98 (basic health insurance) | hardest first, against a written brief: the 13 that carry a number, a date or a threshold, then nine recorded judgement calls, then six German legal terms rendered into English, then the rest |
+| 23 September 2026 | 131 (work and unemployment) | hardest first, against a written brief: one decision settling thirteen facts on whether a threshold is a rule or an amount, then the 39 facts carrying a number, then nine recorded judgement calls |
 
 ## Gaps in the English versions of 19 September 2026
 
@@ -714,6 +715,18 @@ implemented.
   `Mutterschaftsleistungen` cannot be separated at all, because six characters
   make them the same token.
 
+- **What the work and unemployment wave cost the regression pack
+  (23 September 2026).** Almost nothing, in contrast with the health insurance
+  wave the same day. Twelve new concepts and a new topic left the lexical replay
+  of `mvp-zurich-2026-09-23-v16` with no blocking failure at all, and cost the
+  hybrid replay one case: Q-EN-83, where the concept the case asks for is still
+  found and only its `match_strength` fell to weak as the release grew from 183
+  concepts to 195. It is quarantined with that measurement. The difference from
+  the earlier wave is most likely the alias discipline adopted after it - every
+  alias written here is a distinctive compound noun or a full question, and none
+  is a short phrase of common German words of the kind that hijacked four cases
+  in the morning.
+
 - **A fact served to a group its statement excludes.**
   `zh-foreign-licence-exchange-11` ("professional drivers other than those
   with a licence from an EU or EFTA state must exchange the licence before
@@ -824,10 +837,54 @@ Confederation and the cantons share the cost of premium reductions, is
 dispositioned as deferred rather than served, because it is not a question a
 resident asks about their own premium.
 
+## Work and unemployment: what the release does not publish
+
+The wave of 23 September 2026 created the topic `work-unemployment` with twelve
+new concepts and moved the two existing unemployment concepts into it unchanged.
+Five things are deliberately absent.
+
+- **No amount of benefit, and no calculator.** The release carries the rules -
+  the waiting days, the percentages of insured earnings, the frame periods, the
+  numbers of daily allowances - and never what a person will receive. Where a
+  page printed a franc figure the curation quoted it in a reviewer's note rather
+  than in the statement.
+- **No bridging benefit.** A reader curated it in full from the page on the end
+  of the entitlement, with its conditions and its maximum amounts. It is named in
+  `out_of_scope` together with the invalidity insurance and the supplementary
+  benefits, so those facts were removed before the merge and the page section is
+  dispositioned as out of scope.
+- **No social assistance.** The page on the end of the entitlement points people
+  to the social assistance of their municipality, and the release serves that
+  pointer and nothing else - no conditions, no amounts, no procedure. The German
+  word was deliberately kept out of the concept's search terms so that a
+  social-assistance question reaches the gap instead of the concept.
+- **No forms.** The unemployment insurance publishes a page of numbered forms,
+  and forms are named in `out_of_scope`; that page is dispositioned in full.
+- **No employee's share of short-time work, and no consent rule.** The SECO page
+  on short-time work is written for employers and states neither the share of
+  the lost earnings that is compensated nor whether the employee has to agree.
+  Both are declared as not served rather than supplied from the act.
+
+Two boundaries are worth naming. `employment-notice-and-reference` is a bounded
+extract of employment law, not a treatment of it: it carries the four statutory
+notice periods, the three protected periods and the right to a work reference as
+one SECO page prints them, and its `not_served` list names seventeen things it
+does not settle, from abusive dismissal to the contents of a reference. And the
+release states the coordination with the EU and EFTA the way the pages state it -
+work in a member state does **not** by itself create a Swiss claim, which is the
+opposite of what a caller usually assumes.
+
+**A gap left by the extraction.** The table of daily allowance counts by age and
+contribution months was not captured when the SECO page was extracted; only its
+two footnotes survive. The release therefore carries the additional 120 daily
+allowances for older insured persons and the maximum of 180 after a disability
+pension ends, but not the base counts - the core of "how many daily allowances do
+I get". Re-extracting that page would be needed to serve them.
+
 ## Retrieval limitations
 
 - **Authored search words are the assistant's, and they move rarity
-  weights.** All 183 concepts carry authored aliases and at least one
+  weights.** All 195 concepts carry authored aliases and at least one
   English and one German sample question; the build refuses a concept
   without one in each language (`question_languages` of the curation, told
   by the questions' function words). On 19 September 2026 the last 13
