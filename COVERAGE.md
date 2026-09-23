@@ -60,11 +60,12 @@ user's place instead of a code: Switzerland, the 26 cantons and the 2,110
 municipalities of the Federal Statistical Office's register of
 municipalities (snapshot of 18 September 2026), with 115 other-language
 names on 50 of them (see "Jurisdictions and languages")<br>
-**Readiness:** the release is **not yet attested**; `readiness.json` still
-names `mvp-zurich-2026-09-22-v7`, which was attested on 22 September 2026. Four
-reviewed releases now wait on an attestation - health insurance, work and
-unemployment, AHV, and this one, which supersedes them. Until the reviewer attests, the server with `--require-ready` and the pack
-image keep serving v7. No
+**Readiness:** the release is **attested**. `readiness.json` names
+`mvp-zurich-2026-09-23-v19`, attested on 23 September 2026 by the reviewer who
+confirmed its 1,144 facts, recording the content digest above and the digest of
+the acceptance suite. It supersedes `mvp-zurich-2026-09-22-v7`, so the server
+with `--require-ready` and the pack image now serve the customs, health
+insurance, work and unemployment, and AHV waves; stale from 22 November 2026. No
 graded
 live-caller session covers the `fza-*` concepts, the office contacts, the
 daily-life topics, the cross-jurisdiction cases, entry and visas, voting
