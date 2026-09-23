@@ -1,6 +1,6 @@
 # Swiss TIP on AWS
 
-**Last update:** 21 September 2026
+**Last update:** 23 September 2026
 
 One CloudFormation template, [swiss-tip.yaml](swiss-tip.yaml), creates one
 EC2 instance that serves the Swiss TIP MCP server to the internet: the slim
@@ -19,7 +19,7 @@ installed on your machine and no repository access is needed on the host.
 
 | Resource | What for |
 | --- | --- |
-| EC2 instance, Amazon Linux 2023, x86_64, `t3.small` by default | Docker with four containers at most: the server, the sidecar, Caddy and, with a demo domain, the web interface |
+| EC2 instance, Amazon Linux 2023, x86_64, `t3.small` by default | Docker with five containers at most: the server, the sidecar, Caddy, the pack's calendar connector (`Calendar` `yes`) and, with a demo domain, the web interface |
 | Elastic IP | a public address that survives a stop and start; the A records point at it |
 | Security group | ports 80 and 443 in (443 also over UDP, for HTTP/3); no SSH port |
 | IAM role and instance profile | Session Manager for a shell without SSH, and reading the secrets below |
@@ -36,6 +36,7 @@ read the instance's credentials.
 | Parameter | Default | Meaning |
 | --- | --- | --- |
 | `Pack` | `mvp-zurich` | the knowledge pack; the image is `<Registry>/swiss-tip:<Pack>-slim` |
+| `Calendar` | `yes` | the pack's calendar connector beside the server, the image `<Registry>/swiss-tip-calendar:<Pack>` ([dataset connectors](https://github.com/swisstip/swiss-tip/blob/main/docs/architecture/dataset-connectors.md); `mvp-zurich` has one, the waste-collection calendars of the City of Zurich). The server registers it on the loopback of its own network namespace and offers the fifth tool `lookup`. `no` for a pack without a calendar image |
 | `SslipNames` | `none` | HTTPS without a domain of your own: `mcp` serves the MCP endpoint on `https://<ip>.sslip.io/mcp`, `mcp-and-demo` runs the web interface too, on `demo.<ip>.sslip.io`. `<ip>` is the Elastic IP with hyphens, for example `51-96-83-1`; [sslip.io](https://sslip.io) resolves it to the address and Caddy obtains the certificate. Needs `McpDomain` and `DemoDomain` empty |
 | `McpDomain` | empty | for example `mcp.example.ai`; then `https://<domain>/mcp`. Empty (and `SslipNames` `none`): plain HTTP on port 80 of the Elastic IP |
 | `DemoDomain` | empty | for example `demo.example.ai`; then the web interface runs on the instance too, over HTTPS and behind the password. Empty (and `SslipNames` other than `mcp-and-demo`): no web interface on this host |
@@ -51,7 +52,9 @@ read the instance's credentials.
 The embedding model takes 1.2 GiB of memory
 ([measured](https://github.com/swisstip/swiss-tip/blob/main/docker/README.md#measured)), so 2 GiB is the least that
 serves hybrid search, and the web interface wants `t3.medium` or more beside
-it. On `t3.small` all four containers did run together
+it. The calendar connector is one small Python process on a few hundred
+kilobytes of rows, a few dozen MB; the model it needs runs at the provider,
+not here. On `t3.small` all four containers did run together
 ([tested](#tested-and-not-tested)), with little memory to spare. The
 Free plan refuses to change an instance's type, so a stack that started small
 stays small; a bigger host is a new stack. The web interface does not have to
@@ -141,7 +144,9 @@ Behind a name and a password the first two take them as `curl -u
 <name>:<password>` and `--username <name> --password <password>`, and the
 third takes `--username` when the name is not `opencode`.
 
-`/health` names the release and `search.configured_mode: hybrid`. The round
+`/health` names the release and `search.configured_mode: hybrid`; with
+`Calendar` `yes` its `connectors` list names the connector with `status:
+ok` and the five Zurich datasets under `registered`. The round
 trip is the one the image workflow runs, and `--require-hybrid` fails on any
 search that fell back to lexical; it is written for the `mvp-zurich` release
 of the same commit. The interface check expects 401 without credentials, then
@@ -189,6 +194,14 @@ sudo systemctl restart swiss-tip                 # pull the moving tags and recr
 - **The web interface on and off.** `COMPOSE_PROFILES=demo` in `.env` starts
   it with the service; `sudo docker compose stop demo` stops it and leaves
   the server alone. Hosted, it refuses to start without a password.
+- **The calendar connector on and off.** `calendar` in `COMPOSE_PROFILES`
+  (`demo,calendar` with the web interface) and
+  `SWISSTIP_CONNECTORS=http://127.0.0.1:8100` in `.env`, then `sudo
+  systemctl restart swiss-tip`: the server reads its connectors at startup,
+  so this one restarts it. Without the variable the server lists four tools
+  and `connectors: []`; with it and no connector running it lists the
+  connector as unreachable and serves as before. A new calendar image moves
+  `swiss-tip-calendar:<pack>`, and the same restart takes it.
 - **Names and passwords.** They are `SWISSTIP_MCP_USERNAME`,
   `SWISSTIP_MCP_PASSWORD`, `OPENCODE_SERVER_USERNAME` and
   `OPENCODE_SERVER_PASSWORD` in `.env`. Change them there and run `sudo
@@ -200,7 +213,8 @@ sudo systemctl restart swiss-tip                 # pull the moving tags and recr
   stays behind in the old namespace and every search falls back to lexical,
   saying so. A timer runs `/opt/swiss-tip/watchdog.sh` every two minutes: it
   asks for the model from inside the server's container and recreates the
-  sidecar alone when there is no answer.
+  sidecar alone when there is no answer, and the calendar connector with it
+  when its profile is active, because it shares the same namespace.
 - **Stop and start.** A stopped instance costs its volume and its address
   only; started again, the service brings everything up.
 - **Delete.** Deleting the stack removes every resource it created.
@@ -328,6 +342,15 @@ The `SslipNames` parameter, the split of the Elastic IP into an address and its
 attachment, and the outputs that follow are checked by `cfn-lint` 1.57.0 (no
 findings in `eu-central-1`, `eu-central-2` and `us-east-1`) and by
 `test_template.py`, and have not been run in an AWS account.
+
+The `Calendar` parameter, the `calendar` service of `compose.yaml`, the
+`SWISSTIP_CONNECTORS` line of `.env` and the watchdog's recreation of the
+connector (23 September 2026) are checked by `test_template.py` and `bash
+-n` and have not been run in an AWS account; the same three containers,
+server, sidecar and connector, ran together on a laptop through the code
+repository's `compose.yaml` with the profiles `calendar` and `demo`, and the
+web interface answered the next organic-waste collection day for 8001 from
+the connector.
 
 Not tested: `SslipNames` and a stack created with it, the certificate from
 Let's Encrypt for a domain of one's own, the Route 53 records,

@@ -11,7 +11,7 @@ Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
       - Label: {default: What is served}
-        Parameters: [Pack, SslipNames, McpDomain, DemoDomain, HostedZoneId, Registry]
+        Parameters: [Pack, Calendar, SslipNames, McpDomain, DemoDomain, HostedZoneId, Registry]
       - Label: {default: Names and passwords (optional)}
         Parameters: [McpUsername, McpPassword, DemoUsername, DemoPassword]
       - Label: {default: The instance}
@@ -27,6 +27,14 @@ Parameters:
     Default: mvp-zurich
     AllowedValues: [mvp-zurich, mvp-wallisellen]
     Description: The knowledge pack; the image is <Registry>/swiss-tip:<Pack>-slim.
+  Calendar:
+    Type: String
+    Default: "yes"
+    AllowedValues: ["yes", "no"]
+    Description: >-
+      yes: the pack's calendar connector runs beside the server (the image <Registry>/swiss-tip-calendar:<Pack>,
+      which mvp-zurich has: the waste-collection calendars of the City of Zurich), the server registers it and
+      offers the lookup tool. no: the server alone. A pack without a calendar image needs no.
   SslipNames:
     Type: String
     Default: none
@@ -147,6 +155,7 @@ Rules:
 Conditions:
   HasMcpDomain: !Not [!Equals [!Ref McpDomain, ""]]
   HasDemoDomain: !Not [!Equals [!Ref DemoDomain, ""]]
+  HostCalendar: !Equals [!Ref Calendar, "yes"]
   SslipMcp: !Not [!Equals [!Ref SslipNames, none]]
   SslipDemo: !Equals [!Ref SslipNames, mcp-and-demo]
   HostDemo: !Or [!Condition HasDemoDomain, !Condition SslipDemo]
@@ -255,6 +264,7 @@ Resources:
                   MCP_SITE='${McpSite}'
                   DEMO_SITE='${DemoSite}'
                   PROFILES='${Profiles}'
+                  CALENDAR='${Calendar}'
                   MCP_USERNAME='${McpUsername}'
                   MCP_SECRET='${McpSecretArn}'
                   DEMO_USERNAME='${DemoUsername}'
@@ -268,7 +278,10 @@ Resources:
                     - HasDemoDomain
                     - !Ref DemoDomain
                     - !If [SslipDemo, !Join ["", ["demo.", !Join ["-", !Split [".", !Ref ElasticIp]], ".sslip.io"]], ":4096"]
-                  Profiles: !If [HostDemo, demo, ""]
+                  Profiles: !If
+                    - HostDemo
+                    - !If [HostCalendar, "demo,calendar", demo]
+                    - !If [HostCalendar, calendar, ""]
                   McpSecretArn: !If [ProtectMcp, !Ref McpSecret, ""]
                   DemoSecretArn: !If [HostDemo, !Ref DemoSecret, ""]
               - |
@@ -301,7 +314,8 @@ Resources:
                 cat > compose.yaml <<'SWISSTIP_COMPOSE'
                 # Swiss TIP on one public host: the MCP server and the embedding sidecar of
                 # the repository's compose.yaml, with Caddy in front as the only published
-                # service, and the OpenCode web interface behind the profile "demo". The
+                # service, the OpenCode web interface behind the profile "demo" and the
+                # pack's calendar connector behind the profile "calendar". The
                 # CloudFormation template beside this file writes it to /opt/swiss-tip with
                 # the Caddyfile and an .env; it also runs anywhere else Docker does.
                 #
@@ -312,7 +326,14 @@ Resources:
                 #                        port that is not published, so it is not served
                 #   COMPOSE_PROFILES     demo to start the web interface, which then refuses
                 #                        to start without OPENCODE_SERVER_PASSWORD; its user
-                #                        name is opencode, or OPENCODE_SERVER_USERNAME
+                #                        name is opencode, or OPENCODE_SERVER_USERNAME;
+                #                        calendar to start the pack's calendar connector
+                #                        (swiss-tip-calendar:<pack>), which the server
+                #                        registers through SWISSTIP_CONNECTORS
+                #   SWISSTIP_CONNECTORS  http://127.0.0.1:8100 with the profile calendar: the
+                #                        connector shares the server's network namespace and
+                #                        is reachable from nowhere else; empty (default): no
+                #                        connector, no lookup tool
                 #   SWISSTIP_MCP_USERNAME, SWISSTIP_MCP_PASSWORD
                 #                        both set: the MCP site asks for them (basic
                 #                        credentials); both empty (default): it is open
@@ -323,10 +344,18 @@ Resources:
                   swiss-tip:
                     image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip:${SWISSTIP_PACK:-mvp-zurich}-slim
                     command: ["--semantic-index", "/srv/swiss-tip/semantic-index.json"]
+                    environment:
+                      - SWISSTIP_CONNECTORS=${SWISSTIP_CONNECTORS:-}
                     restart: unless-stopped
 
                   embeddings:
                     image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip-ollama:qwen3-embedding-0.6b
+                    network_mode: "service:swiss-tip"
+                    restart: unless-stopped
+
+                  calendar:
+                    profiles: ["calendar"]
+                    image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip-calendar:${SWISSTIP_PACK:-mvp-zurich}
                     network_mode: "service:swiss-tip"
                     restart: unless-stopped
 
@@ -440,6 +469,10 @@ Resources:
                 SWISSTIP_DEMO_SITE=$DEMO_SITE
                 COMPOSE_PROFILES=$PROFILES
                 ENV
+                # The connector shares the server's network namespace, so the server reaches it on loopback.
+                if [ "$CALENDAR" = yes ]; then
+                  echo "SWISSTIP_CONNECTORS=http://127.0.0.1:8100" >> .env
+                fi
                 read_secret() {
                   aws secretsmanager get-secret-value --region "$REGION" --secret-id "$1" --query SecretString --output text
                 }
@@ -455,17 +488,18 @@ Resources:
                 fi
                 umask 022
 
-                # The sidecar lives in the server's network namespace. When Docker restarts a crashed server,
-                # the sidecar stays behind in the old namespace and every search falls back to lexical; the
-                # watchdog notices that from inside the server's container and recreates the sidecar alone.
+                # The sidecar lives in the server's network namespace, and so does the calendar connector. When
+                # Docker restarts a crashed server, both stay behind in the old namespace: every search falls back
+                # to lexical and the connector reads unreachable; the watchdog notices the first from inside the
+                # server's container and recreates the two alone.
                 cat > watchdog.sh <<'SWISSTIP_WATCHDOG'
                 #!/bin/bash
                 cd /opt/swiss-tip || exit 1
                 check='import urllib.request; urllib.request.urlopen("http://127.0.0.1:11434/api/version", timeout=5)'
                 docker compose exec -T swiss-tip python -c "$check" 2>/dev/null && exit 0
-                echo "the embedding sidecar does not answer in the server's namespace; bringing the services up and recreating it"
+                echo "the embedding sidecar does not answer in the server's namespace; bringing the services up and recreating the namespace sharers"
                 docker compose up -d
-                docker compose up -d --force-recreate --no-deps embeddings
+                docker compose up -d --force-recreate --no-deps embeddings $(docker compose config --services | grep -x calendar || true)
                 SWISSTIP_WATCHDOG
                 chmod 755 watchdog.sh
 
