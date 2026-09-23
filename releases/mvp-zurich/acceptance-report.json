@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-acceptance-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-22-v6",
-  "content_sha256": "9518b36a60a99ae5cdd1bf34be3ca5af79112382fd8a59419ce9cf7bf9eb8f41",
-  "suite_sha256": "46c62d7c48b4953f502ed203e2d6ced98f6f8ff54cd77f84e1864fdd2d5f84d8",
-  "checked_at": "2026-09-22T12:53:58.630005+00:00",
-  "as_of": "2026-09-19",
+  "release_id": "mvp-zurich-2026-09-22-v7",
+  "content_sha256": "48418016d8bc90f81db4dc8b417d6c33fcfd0f099d832d551fd3df750dc35730",
+  "suite_sha256": "ffe4472c2163e0cd26d94bb329ffc1df5bf974da240170f1a5c551509ba27c0e",
+  "checked_at": "2026-09-23T06:44:10.767888+00:00",
+  "as_of": "2026-09-22",
   "passed": true,
-  "cases": 88,
-  "blocking": 88,
+  "cases": 98,
+  "blocking": 98,
   "failed": [],
   "quarantined": [],
   "quarantined_failed": [],
@@ -40,7 +40,7 @@
             "eu-employment-registration-deadline",
             "zh-eu-registration"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -80,7 +80,7 @@
           "concept_ids": [
             "city-zurich-arrival"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -159,7 +159,7 @@
             "permit-b",
             "permit-l"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -284,7 +284,7 @@
             "family-b",
             "family-deadlines"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -355,7 +355,7 @@
           "concept_ids": [
             "family-separation"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -420,7 +420,7 @@
             "permit-c",
             "permit-c-five-years"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -506,7 +506,7 @@
             "social-assistance-review",
             "permit-b"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -588,7 +588,7 @@
             "family-swiss",
             "family-deadlines"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -678,7 +678,7 @@
             "ahv-contribution-refund",
             "ahv-pension-abroad"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -720,7 +720,7 @@
           "concept_ids": [
             "ahv-contribution-refund"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -751,7 +751,7 @@
           "concept_ids": [
             "ahv-contribution-refund"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -856,7 +856,7 @@
           "concept_ids": [
             "bvg-cash-out-departure"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -892,7 +892,7 @@
           "concept_ids": [
             "bvg-cash-out-departure"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH",
           "not_recognised": {},
           "statuses": {
@@ -1002,7 +1002,7 @@
             "zh-tax-at-source-liability",
             "tax-at-source-liability"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1078,7 +1078,7 @@
             "zh-tax-at-source-liability",
             "tax-at-source-liability"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-BE",
           "not_recognised": {},
           "statuses": {
@@ -1213,7 +1213,7 @@
             "zh-tax-at-source-liability",
             "tax-at-source-liability"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1330,7 +1330,7 @@
             "zh-foreign-licence-exchange",
             "foreign-licence-exchange"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1377,7 +1377,7 @@
           "concept_ids": [
             "zh-foreign-licence-exchange"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1410,7 +1410,7 @@
           "concept_ids": [
             "zh-foreign-licence-exchange"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1432,7 +1432,7 @@
           "concept_ids": [
             "zh-foreign-licence-exchange"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -1575,7 +1575,7 @@
             "zh-foreign-licence-exchange",
             "zh-control-drive"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1621,7 +1621,7 @@
           "concept_ids": [
             "zh-foreign-licence-exchange"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1729,7 +1729,7 @@
             "health-insurance-deadline",
             "zh-health-insurance-exemption"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1855,7 +1855,7 @@
           "hits": [
             "zh-premium-reduction",
             "premium-reduction",
-            "accident-insurance"
+            "zh-sva-telephone-numbers"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -1868,7 +1868,7 @@
             "zh-premium-reduction",
             "premium-reduction"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1912,7 +1912,7 @@
           "concept_ids": [
             "zh-premium-reduction"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1944,7 +1944,7 @@
           "concept_ids": [
             "zh-premium-reduction"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -1966,7 +1966,7 @@
           "concept_ids": [
             "zh-premium-reduction"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-69",
           "not_recognised": {},
           "statuses": {
@@ -2088,7 +2088,7 @@
             "zh-naturalisation-ordinary",
             "city-zurich-naturalisation"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -2162,7 +2162,7 @@
             "zh-naturalisation-ordinary",
             "city-zurich-naturalisation"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-69",
           "not_recognised": {},
           "statuses": {
@@ -2361,7 +2361,7 @@
             "zh-naturalisation-facilitated",
             "city-zurich-naturalisation-facilitated"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -2512,7 +2512,7 @@
           "concept_ids": [
             "zh-migrationsamt-contact"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -2592,7 +2592,7 @@
           "concept_ids": [
             "zh-migrationsamt-contact"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -2664,7 +2664,7 @@
           "concept_ids": [
             "zh-road-traffic-office-locations"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -2752,7 +2752,7 @@
           "concept_ids": [
             "city-zurich-population-office"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -2833,7 +2833,7 @@
             "zh-sva-contact",
             "zh-sva-telephone-numbers"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -2933,7 +2933,7 @@
           "concept_ids": [
             "zh-tax-office-contact"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -2990,8 +2990,8 @@
           "expect_concept": "city-zurich-dog-registration",
           "hits": [
             "city-zurich-dog-registration",
-            "zh-dog-keeping",
-            "city-zurich-first-steps"
+            "customs-moving-animals",
+            "zh-dog-keeping"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -3004,7 +3004,7 @@
             "city-zurich-dog-registration",
             "zh-dog-keeping"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3104,7 +3104,7 @@
           "concept_ids": [
             "city-zurich-household-waste"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3196,7 +3196,7 @@
             "city-zurich-recycling-centres",
             "city-zurich-hazardous-waste"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3305,7 +3305,7 @@
           "concept_ids": [
             "city-zurich-recycling-centres"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3385,7 +3385,7 @@
           "concept_ids": [
             "city-zurich-parking-permits"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3445,8 +3445,8 @@
           "expect_concept": "zh-vehicle-registration-move",
           "hits": [
             "zh-vehicle-registration-move",
-            "moving-goods-customs",
-            "city-zurich-first-steps"
+            "customs-moving-vehicle",
+            "moving-goods-customs"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -3459,7 +3459,7 @@
             "zh-vehicle-registration-move",
             "city-zurich-first-steps"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3560,7 +3560,7 @@
           "concept_ids": [
             "city-zurich-kindergarten"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3641,7 +3641,7 @@
           "concept_ids": [
             "city-zurich-tax-return"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3710,7 +3710,7 @@
           "concept_ids": [
             "radio-tv-household-fee"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3787,7 +3787,7 @@
           "concept_ids": [
             "city-zurich-medical-emergency"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3856,7 +3856,7 @@
           "concept_ids": [
             "zh-road-traffic-office-locations"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -3940,7 +3940,7 @@
             "cantonal-migration-contact",
             "zh-eu-l"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-BE",
           "not_recognised": {},
           "statuses": {
@@ -4080,7 +4080,7 @@
             "cantonal-migration-contact",
             "zh-eu-registration"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-AG",
           "not_recognised": {},
           "statuses": {
@@ -4146,7 +4146,7 @@
             "city-zurich-arrival",
             "zh-migrationsamt-contact"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-AG",
           "not_recognised": {},
           "statuses": {
@@ -4244,7 +4244,7 @@
             "zh-control-drive",
             "zh-road-traffic-office-locations"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-SG",
           "not_recognised": {},
           "statuses": {
@@ -4356,7 +4356,7 @@
             "city-zurich-naturalisation",
             "zh-naturalisation-division-contact"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-BE-351",
           "not_recognised": {},
           "statuses": {
@@ -4480,7 +4480,7 @@
             "zh-premium-reduction",
             "zh-sva-contact"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-LU",
           "not_recognised": {},
           "statuses": {
@@ -4584,7 +4584,7 @@
             "zh-tax-at-source-liability",
             "zh-tax-office-contact"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZG",
           "not_recognised": {},
           "statuses": {
@@ -4698,7 +4698,7 @@
             "cantonal-migration-contact",
             "zh-migrationsamt-contact"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-BE",
           "not_recognised": {},
           "statuses": {
@@ -4765,7 +4765,7 @@
             "zh-eu-registration",
             "zh-eu-b"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -4817,7 +4817,7 @@
             "city-zurich-arrival-documents",
             "city-zurich-population-office"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -4897,8 +4897,8 @@
           "expect_concept": "zh-dog-keeping",
           "hits": [
             "city-zurich-dog-registration",
-            "zh-dog-keeping",
-            "aig-registration"
+            "customs-moving-animals",
+            "zh-dog-keeping"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -4911,7 +4911,7 @@
             "zh-dog-keeping",
             "city-zurich-dog-registration"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-198",
           "not_recognised": {},
           "statuses": {
@@ -5000,9 +5000,9 @@
           "query": "Umzug von Luzern nach Kloten mit Auto Strassenverkehrsamt Anwohnerparkkarte",
           "expect_concept": "zh-vehicle-registration-move",
           "hits": [
+            "customs-moving-vehicle",
             "zh-vehicle-registration-move",
-            "moving-goods-customs",
-            "city-zurich-parking-permits"
+            "moving-goods-customs"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -5016,7 +5016,7 @@
             "city-zurich-parking-permits",
             "city-zurich-first-steps"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-62",
           "not_recognised": {},
           "statuses": {
@@ -5095,7 +5095,7 @@
           "concept_ids": [
             "gymnasium-admission"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -5129,7 +5129,7 @@
           "concept_ids": [
             "eu-employment-registration-deadline"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "DE",
           "not_recognised": {},
           "statuses": {
@@ -5165,7 +5165,7 @@
             "zh-eu-registration",
             "cantonal-migration-contact"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-GE",
           "not_recognised": {},
           "statuses": {
@@ -5228,7 +5228,7 @@
             "zh-eu-registration",
             "city-zurich-arrival"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -5273,7 +5273,7 @@
           "concept_ids": [
             "third-country-work"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -5308,7 +5308,7 @@
             "zh-migrationsamt-contact",
             "cantonal-migration-contact"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-BE",
           "not_recognised": {},
           "statuses": {
@@ -5359,7 +5359,7 @@
           "concept_ids": [
             "city-zurich-population-office"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -5394,7 +5394,7 @@
             "city-zurich-school-holidays",
             "city-zurich-kindergarten"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-293",
           "not_recognised": {},
           "statuses": {
@@ -5434,7 +5434,7 @@
           "concept_ids": [
             "city-zurich-household-waste"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-BS-2701",
           "not_recognised": {},
           "statuses": {
@@ -5458,19 +5458,19 @@
     },
     {
       "case_id": "SEARCH-DECLINE-1",
-      "label": "Weak match: the VAT rate, in German (another tax)",
+      "label": "Weak match: inheritance tax, in German (another tax)",
       "blocking": true,
       "passed": true,
       "issues": [],
       "steps": [
         {
           "tool": "search",
-          "query": "Wie hoch ist die Mehrwertsteuer in der Schweiz?",
+          "query": "Wie hoch ist die Erbschaftssteuer?",
           "expect_concept": null,
           "hits": [
             "zh-family-allowances",
             "zh-tax-at-source-tariffs",
-            "zh-dog-keeping"
+            "customs-import-vat-rate"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -5492,9 +5492,9 @@
           "query": "What is the speed limit on Swiss motorways?",
           "expect_concept": null,
           "hits": [
-            "aig-study",
-            "city-zurich-naturalisation-language",
-            "family-swiss"
+            "customs-goods-counted-toward-allowance",
+            "customs-travel-allowance",
+            "customs-import-vat-rate"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -5518,7 +5518,7 @@
           "hits": [
             "ahv-contribution-refund",
             "city-zurich-marriage",
-            "permit-c-five-years"
+            "customs-leaving-with-goods"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -5650,7 +5650,7 @@
           "concept_ids": [
             "entry-short-stay-rule"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -5730,7 +5730,7 @@
             "entry-visa-types",
             "entry-visa-application"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -5822,7 +5822,7 @@
           "concept_ids": [
             "entry-visa-fee-insurance"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -5886,9 +5886,9 @@
           "query": "do I need ETIAS and is my passport stamped",
           "expect_concept": "entry-etias",
           "hits": [
-            "entry-exit-system",
             "entry-etias",
-            "fza-entry"
+            "entry-exit-system",
+            "customs-leaving-with-goods"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -5901,7 +5901,7 @@
             "entry-etias",
             "entry-exit-system"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -5990,7 +5990,7 @@
           "concept_ids": [
             "entry-visa-need"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -6054,7 +6054,7 @@
           "concept_ids": [
             "zh-family-l-permit"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -6127,7 +6127,7 @@
             "zh-political-rights",
             "political-rights-federal"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -6225,7 +6225,7 @@
             "zh-tax-at-source-tariffs",
             "tax-at-source-tariff-codes"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -6313,7 +6313,7 @@
           "hits": [
             "political-rights-federal",
             "zh-political-rights",
-            "social-assistance-review"
+            "zh-naturalisation-ordinary"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -6326,7 +6326,7 @@
             "political-rights-federal",
             "zh-political-rights"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-BE",
           "not_recognised": {},
           "statuses": {
@@ -6405,7 +6405,7 @@
           "hits": [
             "family-allowances",
             "zh-family-allowances",
-            "zh-eu-family-documents"
+            "customs-travel-allowance"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -6418,7 +6418,7 @@
             "zh-family-allowances",
             "family-allowances"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -6507,7 +6507,7 @@
           "concept_ids": [
             "parental-leave"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -6581,7 +6581,7 @@
           "concept_ids": [
             "tenancy-agreement"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -6661,7 +6661,7 @@
           "concept_ids": [
             "rent-changes"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -6738,7 +6738,7 @@
             "rent-changes",
             "zh-initial-rent-form"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-230",
           "not_recognised": {},
           "statuses": {
@@ -6827,7 +6827,7 @@
             "city-zurich-marriage",
             "marriage-switzerland"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -6925,7 +6925,7 @@
           "concept_ids": [
             "city-zurich-departure"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -7000,7 +7000,7 @@
           "concept_ids": [
             "pillar-3a"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7076,7 +7076,7 @@
             "unemployment-benefit",
             "zh-unemployment-benefit"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7170,7 +7170,7 @@
           "concept_ids": [
             "accident-insurance"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7230,8 +7230,8 @@
           "expect_concept": "moving-goods-customs",
           "hits": [
             "moving-goods-customs",
-            "city-zurich-bulky-waste-pickup",
-            "zh-initial-rent-form"
+            "customs-declaring-goods",
+            "customs-goods-counted-toward-allowance"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -7243,7 +7243,7 @@
           "concept_ids": [
             "moving-goods-customs"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH-261",
           "not_recognised": {},
           "statuses": {
@@ -7260,7 +7260,17 @@
               "moving-goods-customs-4",
               "moving-goods-customs-5",
               "moving-goods-customs-6",
-              "moving-goods-customs-7"
+              "moving-goods-customs-7",
+              "moving-goods-customs-8",
+              "moving-goods-customs-9",
+              "moving-goods-customs-10",
+              "moving-goods-customs-11",
+              "moving-goods-customs-12",
+              "moving-goods-customs-13",
+              "moving-goods-customs-14",
+              "moving-goods-customs-15",
+              "moving-goods-customs-16",
+              "moving-goods-customs-17"
             ]
           },
           "bases": {
@@ -7326,7 +7336,7 @@
             "permit-c-five-years",
             "zh-permit-c-five-years"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7415,8 +7425,8 @@
           "expect_concept": "zh-permit-c-five-years",
           "hits": [
             "zh-permit-c-five-years",
-            "zh-foreign-licence-exchange",
-            "permit-c-five-years"
+            "permit-c-five-years",
+            "fza-self-employment"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -7428,7 +7438,7 @@
           "concept_ids": [
             "zh-permit-c-five-years"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7510,7 +7520,7 @@
           "concept_ids": [
             "zh-integration-offers"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7587,7 +7597,7 @@
           "concept_ids": [
             "zh-newcomer-first-information"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7666,7 +7676,7 @@
           "concept_ids": [
             "zh-racism-protection"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7746,7 +7756,7 @@
           "concept_ids": [
             "zh-integration-project-funding"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7828,7 +7838,7 @@
           "concept_ids": [
             "zh-migrant-associations"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7875,7 +7885,7 @@
           "concept_ids": [
             "zh-iazh-accredited-offers"
           ],
-          "as_of": "2026-09-19",
+          "as_of": "2026-09-22",
           "scope": "CH-ZH",
           "not_recognised": {},
           "statuses": {
@@ -7891,6 +7901,780 @@
           },
           "bases": {
             "zh-iazh-accredited-offers": []
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "UAT-72",
+      "label": "Two people, one coffee machine",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Wertfreigrenze mehrere Personen ein Gegenstand",
+          "expect_concept": "customs-travel-allowance",
+          "hits": [
+            "customs-travel-allowance",
+            "customs-goods-counted-toward-allowance"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "customs-travel-allowance"
+          ],
+          "as_of": "2026-09-22",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "customs-travel-allowance": "SUPPORTED"
+          },
+          "gaps": {
+            "customs-travel-allowance": []
+          },
+          "facts": {
+            "customs-travel-allowance": [
+              "customs-travel-allowance-1",
+              "customs-travel-allowance-2",
+              "customs-travel-allowance-3",
+              "customs-travel-allowance-4",
+              "customs-travel-allowance-5",
+              "customs-travel-allowance-6",
+              "customs-travel-allowance-7",
+              "customs-travel-allowance-8",
+              "customs-travel-allowance-9"
+            ]
+          },
+          "bases": {
+            "customs-travel-allowance": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The value-free limit counts once per person and per day",
+          "concept": "customs-travel-allowance",
+          "fact_ids": [
+            "customs-travel-allowance-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "A single item over the limit is always taxed, whatever the number of travellers",
+          "concept": "customs-travel-allowance",
+          "fact_ids": [
+            "customs-travel-allowance-6"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-73",
+      "label": "Meat and wine on the way back from Italy",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Freimengen Fleisch Alkohol Einfuhr Schweiz",
+          "expect_concept": "customs-duty-free-quantities",
+          "hits": [
+            "customs-duty-free-quantities",
+            "customs-goods-counted-toward-allowance",
+            "customs-import-vat-rate"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "customs-duty-free-quantities"
+          ],
+          "as_of": "2026-09-22",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "customs-duty-free-quantities": "SUPPORTED"
+          },
+          "gaps": {
+            "customs-duty-free-quantities": []
+          },
+          "facts": {
+            "customs-duty-free-quantities": [
+              "customs-duty-free-quantities-1",
+              "customs-duty-free-quantities-2",
+              "customs-duty-free-quantities-3",
+              "customs-duty-free-quantities-4",
+              "customs-duty-free-quantities-5",
+              "customs-duty-free-quantities-6",
+              "customs-duty-free-quantities-7",
+              "customs-duty-free-quantities-8"
+            ]
+          },
+          "bases": {
+            "customs-duty-free-quantities": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Goods for private use are free of duty except sensitive goods above a quantity",
+          "concept": "customs-duty-free-quantities",
+          "fact_ids": [
+            "customs-duty-free-quantities-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Animal products may come only from the countries the page lists",
+          "concept": "customs-duty-free-quantities",
+          "fact_ids": [
+            "customs-duty-free-quantities-4"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-74",
+      "label": "Declaring a bicycle before the border",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Zollanmeldung vor dem Grenzuebertritt App roter Durchgang",
+          "expect_concept": "customs-declaring-goods",
+          "hits": [
+            "customs-declaring-goods",
+            "customs-importing-pets",
+            "naturalisation-ordinary"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "customs-declaring-goods"
+          ],
+          "as_of": "2026-09-22",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "customs-declaring-goods": "SUPPORTED"
+          },
+          "gaps": {
+            "customs-declaring-goods": []
+          },
+          "facts": {
+            "customs-declaring-goods": [
+              "customs-declaring-goods-1",
+              "customs-declaring-goods-2",
+              "customs-declaring-goods-3",
+              "customs-declaring-goods-4",
+              "customs-declaring-goods-5",
+              "customs-declaring-goods-6",
+              "customs-declaring-goods-7",
+              "customs-declaring-goods-8",
+              "customs-declaring-goods-9",
+              "customs-declaring-goods-10",
+              "customs-declaring-goods-11",
+              "customs-declaring-goods-12",
+              "customs-declaring-goods-13",
+              "customs-declaring-goods-14",
+              "customs-declaring-goods-15",
+              "customs-declaring-goods-16",
+              "customs-declaring-goods-17",
+              "customs-declaring-goods-18"
+            ]
+          },
+          "bases": {
+            "customs-declaring-goods": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Most goods can be declared with the app before crossing",
+          "concept": "customs-declaring-goods",
+          "fact_ids": [
+            "customs-declaring-goods-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Entering the green channel is a binding declaration and can be punishable",
+          "concept": "customs-declaring-goods",
+          "fact_ids": [
+            "customs-declaring-goods-9"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-75",
+      "label": "A laptop ordered from a German shop",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Paket aus dem Ausland bestellt Kosten bei der Einfuhr",
+          "expect_concept": "customs-internet-orders",
+          "hits": [
+            "customs-internet-orders",
+            "customs-returns-and-repairs",
+            "city-zurich-departure"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "customs-internet-orders"
+          ],
+          "as_of": "2026-09-22",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "customs-internet-orders": "SUPPORTED"
+          },
+          "gaps": {
+            "customs-internet-orders": []
+          },
+          "facts": {
+            "customs-internet-orders": [
+              "customs-internet-orders-1",
+              "customs-internet-orders-2",
+              "customs-internet-orders-3",
+              "customs-internet-orders-4",
+              "customs-internet-orders-5",
+              "customs-internet-orders-6",
+              "customs-internet-orders-7",
+              "customs-internet-orders-8",
+              "customs-internet-orders-9",
+              "customs-internet-orders-10",
+              "customs-internet-orders-11",
+              "customs-internet-orders-12",
+              "customs-internet-orders-13",
+              "customs-internet-orders-14"
+            ]
+          },
+          "bases": {
+            "customs-internet-orders": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "A consignment from abroad is in principle liable to duty and tax, cleared by the carrier",
+          "concept": "customs-internet-orders",
+          "fact_ids": [
+            "customs-internet-orders-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The carrier charges its own clearance costs",
+          "concept": "customs-internet-orders",
+          "fact_ids": [
+            "customs-internet-orders-2"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-76",
+      "label": "Sometimes a charge, sometimes not",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "kleine Sendung keine Abgaben Versandhandel Plattform",
+          "expect_concept": "customs-internet-orders",
+          "hits": [
+            "customs-mail-order-vat",
+            "customs-internet-orders",
+            "customs-returns-and-repairs"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "customs-internet-orders",
+            "customs-mail-order-vat"
+          ],
+          "as_of": "2026-09-22",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "customs-internet-orders": "SUPPORTED",
+            "customs-mail-order-vat": "SUPPORTED"
+          },
+          "gaps": {
+            "customs-internet-orders": [],
+            "customs-mail-order-vat": []
+          },
+          "facts": {
+            "customs-internet-orders": [
+              "customs-internet-orders-1",
+              "customs-internet-orders-2",
+              "customs-internet-orders-3",
+              "customs-internet-orders-4",
+              "customs-internet-orders-5",
+              "customs-internet-orders-6",
+              "customs-internet-orders-7",
+              "customs-internet-orders-8",
+              "customs-internet-orders-9",
+              "customs-internet-orders-10",
+              "customs-internet-orders-11",
+              "customs-internet-orders-12",
+              "customs-internet-orders-13",
+              "customs-internet-orders-14"
+            ],
+            "customs-mail-order-vat": [
+              "customs-mail-order-vat-1",
+              "customs-mail-order-vat-2",
+              "customs-mail-order-vat-3"
+            ]
+          },
+          "bases": {
+            "customs-internet-orders": [
+              "Federal authority guidance"
+            ],
+            "customs-mail-order-vat": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Tax amounts up to five francs are not levied",
+          "concept": "customs-internet-orders",
+          "fact_ids": [
+            "customs-internet-orders-10"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "A registered mail-order company or platform owes the domestic tax on deliveries from abroad",
+          "concept": "customs-mail-order-vat",
+          "fact_ids": [
+            "customs-mail-order-vat-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-77",
+      "label": "Sending a jacket back",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Ruecksendung Einfuhrabgaben zurueck Gesuch Frist",
+          "expect_concept": "customs-returns-and-repairs",
+          "hits": [
+            "customs-returns-and-repairs",
+            "ahv-contribution-refund",
+            "customs-leaving-with-goods"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "customs-returns-and-repairs"
+          ],
+          "as_of": "2026-09-22",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "customs-returns-and-repairs": "SUPPORTED"
+          },
+          "gaps": {
+            "customs-returns-and-repairs": []
+          },
+          "facts": {
+            "customs-returns-and-repairs": [
+              "customs-returns-and-repairs-1",
+              "customs-returns-and-repairs-2",
+              "customs-returns-and-repairs-3",
+              "customs-returns-and-repairs-4",
+              "customs-returns-and-repairs-5",
+              "customs-returns-and-repairs-6",
+              "customs-returns-and-repairs-7",
+              "customs-returns-and-repairs-8",
+              "customs-returns-and-repairs-9",
+              "customs-returns-and-repairs-10",
+              "customs-returns-and-repairs-11"
+            ]
+          },
+          "bases": {
+            "customs-returns-and-repairs": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "A refund request keeps a 60-day limit and goes to the district directorate",
+          "concept": "customs-returns-and-repairs",
+          "fact_ids": [
+            "customs-returns-and-repairs-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Re-export alone gives no entitlement to a refund",
+          "concept": "customs-returns-and-repairs",
+          "fact_ids": [
+            "customs-returns-and-repairs-5"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-78",
+      "label": "Furniture and a car from Boston",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Umzug in die Schweiz Hausrat und Auto Zoll",
+          "expect_concept": "moving-goods-customs",
+          "hits": [
+            "moving-goods-customs",
+            "customs-moving-vehicle",
+            "customs-declaring-goods"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-goods-customs",
+            "customs-moving-vehicle"
+          ],
+          "as_of": "2026-09-22",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "moving-goods-customs": "SUPPORTED",
+            "customs-moving-vehicle": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-goods-customs": [],
+            "customs-moving-vehicle": []
+          },
+          "facts": {
+            "moving-goods-customs": [
+              "moving-goods-customs-1",
+              "moving-goods-customs-2",
+              "moving-goods-customs-3",
+              "moving-goods-customs-4",
+              "moving-goods-customs-5",
+              "moving-goods-customs-6",
+              "moving-goods-customs-7",
+              "moving-goods-customs-8",
+              "moving-goods-customs-9",
+              "moving-goods-customs-10",
+              "moving-goods-customs-11",
+              "moving-goods-customs-12",
+              "moving-goods-customs-13",
+              "moving-goods-customs-14",
+              "moving-goods-customs-15",
+              "moving-goods-customs-16",
+              "moving-goods-customs-17"
+            ],
+            "customs-moving-vehicle": [
+              "customs-moving-vehicle-1",
+              "customs-moving-vehicle-2",
+              "customs-moving-vehicle-3",
+              "customs-moving-vehicle-4",
+              "customs-moving-vehicle-5",
+              "customs-moving-vehicle-6",
+              "customs-moving-vehicle-7",
+              "customs-moving-vehicle-8"
+            ]
+          },
+          "bases": {
+            "moving-goods-customs": [
+              "Federal authority guidance",
+              "Portal summary of federal rules"
+            ],
+            "customs-moving-vehicle": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The belongings must be imported within two years of the move",
+          "concept": "moving-goods-customs",
+          "fact_ids": [
+            "moving-goods-customs-6"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "A missed vehicle clearance is made up at a staffed office with the vehicle present",
+          "concept": "customs-moving-vehicle",
+          "fact_ids": [
+            "customs-moving-vehicle-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-79",
+      "label": "Arriving with two dogs",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "mit Hund in die Schweiz einreisen und anmelden",
+          "expect_concept": "customs-importing-pets",
+          "hits": [
+            "customs-importing-pets",
+            "city-zurich-dog-registration",
+            "customs-declaring-goods"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "customs-importing-pets",
+            "zh-dog-keeping"
+          ],
+          "as_of": "2026-09-22",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "customs-importing-pets": "SUPPORTED",
+            "zh-dog-keeping": "SUPPORTED"
+          },
+          "gaps": {
+            "customs-importing-pets": [],
+            "zh-dog-keeping": [
+              "more_specific_jurisdiction_available"
+            ]
+          },
+          "facts": {
+            "customs-importing-pets": [
+              "customs-importing-pets-1",
+              "customs-importing-pets-2",
+              "customs-importing-pets-3",
+              "customs-importing-pets-4",
+              "customs-importing-pets-5",
+              "customs-importing-pets-6",
+              "customs-importing-pets-7",
+              "customs-importing-pets-8"
+            ],
+            "zh-dog-keeping": [
+              "zh-dog-keeping-1",
+              "zh-dog-keeping-2",
+              "zh-dog-keeping-3",
+              "zh-dog-keeping-4",
+              "zh-dog-keeping-5"
+            ]
+          },
+          "bases": {
+            "customs-importing-pets": [
+              "Federal authority guidance"
+            ],
+            "zh-dog-keeping": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Pets are imported over a staffed crossing during travel-traffic hours",
+          "concept": "customs-importing-pets",
+          "fact_ids": [
+            "customs-importing-pets-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The dog is registered in AMICUS within ten days",
+          "concept": "zh-dog-keeping",
+          "fact_ids": [
+            "zh-dog-keeping-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-80",
+      "label": "A visitor taking a watch home",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "steuerfrei einkaufen Ausfuhrdokument bestaetigen",
+          "expect_concept": "customs-leaving-with-goods",
+          "hits": [
+            "customs-leaving-with-goods",
+            "zh-premium-reduction",
+            "zh-tax-at-source-ordinary-assessment"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "customs-leaving-with-goods"
+          ],
+          "as_of": "2026-09-22",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "customs-leaving-with-goods": "SUPPORTED"
+          },
+          "gaps": {
+            "customs-leaving-with-goods": []
+          },
+          "facts": {
+            "customs-leaving-with-goods": [
+              "customs-leaving-with-goods-1",
+              "customs-leaving-with-goods-2",
+              "customs-leaving-with-goods-3",
+              "customs-leaving-with-goods-4",
+              "customs-leaving-with-goods-5"
+            ]
+          },
+          "bases": {
+            "customs-leaving-with-goods": [
+              "Federal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The minimum purchase value per sales transaction is 300 francs including tax",
+          "concept": "customs-leaving-with-goods",
+          "fact_ids": [
+            "customs-leaving-with-goods-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The export is confirmed at a staffed border customs office on the export document",
+          "concept": "customs-leaving-with-goods",
+          "fact_ids": [
+            "customs-leaving-with-goods-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "DECLINE-11",
+      "label": "Tariff number and duty rate for a product",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "customs-tariff-rate"
+          ],
+          "as_of": "2026-09-22",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "customs-tariff-rate": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "customs-tariff-rate": [
+              "concept_not_published"
+            ]
+          },
+          "facts": {
+            "customs-tariff-rate": []
+          },
+          "bases": {
+            "customs-tariff-rate": []
           },
           "passed": true
         }

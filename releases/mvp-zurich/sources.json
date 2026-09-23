@@ -1,7 +1,7 @@
 {
   "schema_version": "source-catalog/v1",
   "artifact_id": "residence-sources-mvp-zurich",
-  "version": "draft-8",
+  "version": "draft-10",
   "knowledge_space_id": "hackathon",
   "title": "Residence permits, moving to Switzerland and naturalisation - MVP sources (federal and Canton Zurich)",
   "status": "SOURCES_ONLY",
@@ -93,6 +93,18 @@
     {
       "topic_id": "political-rights",
       "label": "Political rights of foreign residents"
+    },
+    {
+      "topic_id": "work-unemployment",
+      "label": "Losing a job, the RAV and unemployment insurance"
+    },
+    {
+      "topic_id": "customs",
+      "label": "Customs: travelling, ordering from abroad and moving goods"
+    },
+    {
+      "topic_id": "ahv-pension",
+      "label": "AHV, the pillar system and retirement"
     }
   ],
   "language_discovery": {
@@ -186,10 +198,61 @@
       "ch-sem-notification-procedure"
     ],
     "all": [
+      "ch-ahv-iv-13-ahv-rente",
+      "ch-ahv-iv-ahv-21",
+      "ch-ahv-iv-ahv-allgemeines",
+      "ch-ahv-iv-ahv-beitraege",
+      "ch-ahv-iv-ahv-leistungen",
+      "ch-ahv-iv-altersrenten",
+      "ch-ahv-iv-alv",
+      "ch-ahv-iv-ausgleichskassen",
+      "ch-ahv-iv-bvg",
+      "ch-ahv-iv-glossar",
+      "ch-ahv-iv-hinterlassenenrenten",
+      "ch-ahv-iv-international-drittstaaten",
+      "ch-ahv-iv-international-eu-efta",
+      "ch-ahv-iv-kv",
+      "ch-ahv-iv-uv",
       "ch-bag-accident-insurance",
+      "ch-bag-grenzgaenger",
       "ch-bag-health-insurance",
+      "ch-bag-kostenbeteiligung",
+      "ch-bag-leistungen-im-ausland",
+      "ch-bag-leistungen-tarife",
+      "ch-bag-praemien-eu-efta-uk",
+      "ch-bag-praemien-kostenbeteiligung",
+      "ch-bag-praemienausstaende",
+      "ch-bag-praemienregionen",
+      "ch-bag-praemienvergleich",
       "ch-bag-premium-reduction",
+      "ch-bag-versicherte-im-ausland",
+      "ch-bag-versicherungsmodelle",
+      "ch-bazg-ausreise-privatwaren",
+      "ch-bazg-briefe-pakete",
+      "ch-bazg-einfuhrsteuer",
+      "ch-bazg-faq-umzugsgut",
+      "ch-bazg-flugreisen",
+      "ch-bazg-freimengen-allgemein",
+      "ch-bazg-freimengen-lebensmittel",
+      "ch-bazg-hundekauf-einfuhr",
+      "ch-bazg-interneteinkauf",
+      "ch-bazg-interneteinkauf-post",
       "ch-bazg-moving",
+      "ch-bazg-mwst-rueckerstattung",
+      "ch-bazg-private-einfuhr",
+      "ch-bazg-quickzoll",
+      "ch-bazg-ruecksendung-reparatur",
+      "ch-bazg-tiere-pflanzen-souvenirs",
+      "ch-bazg-uebersiedlungsgut",
+      "ch-bazg-umzug-fahrzeuge",
+      "ch-bazg-umzug-tiere",
+      "ch-bazg-umzugsgut-erbschaftsgut",
+      "ch-bazg-versandhandel-mwst",
+      "ch-bazg-verzollungskosten",
+      "ch-bazg-waren-anmelden",
+      "ch-bazg-wertfreigrenze-150",
+      "ch-bazg-wertfreigrenze-beispiele",
+      "ch-bazg-zollanmeldung-reisende",
       "ch-bsv-ahv",
       "ch-bsv-bvg-departure",
       "ch-bsv-family-allowances",
@@ -223,7 +286,29 @@
       "ch-fedlex-vev",
       "ch-fedlex-vzae",
       "ch-fedlex-vzv",
+      "ch-priminfo-eu-efta",
+      "ch-priminfo-faq",
+      "ch-priminfo-grundversicherung",
+      "ch-priminfo-mittlere-praemie",
+      "ch-priminfo-sparen-grundversicherung",
+      "ch-priminfo-sparen-selbstverantwortung",
+      "ch-priminfo-verbilligung",
+      "ch-priminfo-wechsel",
+      "ch-priminfo-zusatzversicherungen",
+      "ch-seco-anmeldung-registrierung",
+      "ch-seco-arbeitsmarktliche-massnahmen",
+      "ch-seco-aussteuerung",
+      "ch-seco-erste-schritte",
+      "ch-seco-eservices-formulare",
+      "ch-seco-kurzarbeit",
+      "ch-seco-mobilitaet-eu-efta",
+      "ch-seco-rav-beratung",
+      "ch-seco-registrierung-stellensuchende",
+      "ch-seco-rueckkehr-schweiz",
+      "ch-seco-stellenmeldepflicht",
+      "ch-seco-stellensuche-ausland",
       "ch-seco-unemployment",
+      "ch-seco-versicherungsleistungen",
       "ch-sem-authorities",
       "ch-sem-biometric-documents",
       "ch-sem-citizenship",
@@ -241,7 +326,12 @@
       "ch-sem-work-third-country",
       "ch-serafe-household-fee",
       "ch-zas-contribution-refund",
+      "zh-awa-anmeldung-rav",
+      "zh-awa-beratung-vermittlung",
+      "zh-awa-insolvenzentschaedigung",
       "zh-awa-office",
+      "zh-awa-qualifizierung",
+      "zh-awa-zustaendiges-rav",
       "zh-biometric-documents",
       "zh-dogs",
       "zh-eu-efta",
@@ -259,6 +349,10 @@
       "zh-settlement",
       "zh-steueramt-office",
       "zh-strassenverkehrsamt-office",
+      "zh-sva-ahv-internationales",
+      "zh-sva-ahv-konto",
+      "zh-sva-altersrente",
+      "zh-sva-beitragspflicht",
       "zh-sva-contact",
       "zh-sva-family-allowances",
       "zh-sva-health-insurance",
@@ -371,6 +465,101 @@
       "ch-bsv-parental-leave",
       "zh-sva-family-allowances",
       "ch-bazg-moving"
+    ],
+    "work": [
+      "ch-seco-anmeldung-registrierung",
+      "ch-seco-arbeitsmarktliche-massnahmen",
+      "ch-seco-aussteuerung",
+      "ch-seco-erste-schritte",
+      "ch-seco-eservices-formulare",
+      "ch-seco-kurzarbeit",
+      "ch-seco-mobilitaet-eu-efta",
+      "ch-seco-rav-beratung",
+      "ch-seco-registrierung-stellensuchende",
+      "ch-seco-rueckkehr-schweiz",
+      "ch-seco-stellenmeldepflicht",
+      "ch-seco-stellensuche-ausland",
+      "ch-seco-unemployment",
+      "ch-seco-versicherungsleistungen",
+      "zh-awa-anmeldung-rav",
+      "zh-awa-beratung-vermittlung",
+      "zh-awa-insolvenzentschaedigung",
+      "zh-awa-qualifizierung",
+      "zh-awa-zustaendiges-rav",
+      "zh-unemployment"
+    ],
+    "customs": [
+      "ch-bazg-ausreise-privatwaren",
+      "ch-bazg-briefe-pakete",
+      "ch-bazg-einfuhrsteuer",
+      "ch-bazg-faq-umzugsgut",
+      "ch-bazg-flugreisen",
+      "ch-bazg-freimengen-allgemein",
+      "ch-bazg-freimengen-lebensmittel",
+      "ch-bazg-hundekauf-einfuhr",
+      "ch-bazg-interneteinkauf",
+      "ch-bazg-interneteinkauf-post",
+      "ch-bazg-moving",
+      "ch-bazg-mwst-rueckerstattung",
+      "ch-bazg-private-einfuhr",
+      "ch-bazg-quickzoll",
+      "ch-bazg-ruecksendung-reparatur",
+      "ch-bazg-tiere-pflanzen-souvenirs",
+      "ch-bazg-uebersiedlungsgut",
+      "ch-bazg-umzug-fahrzeuge",
+      "ch-bazg-umzug-tiere",
+      "ch-bazg-umzugsgut-erbschaftsgut",
+      "ch-bazg-versandhandel-mwst",
+      "ch-bazg-verzollungskosten",
+      "ch-bazg-waren-anmelden",
+      "ch-bazg-wertfreigrenze-150",
+      "ch-bazg-wertfreigrenze-beispiele",
+      "ch-bazg-zollanmeldung-reisende"
+    ],
+    "ahv": [
+      "ch-ahv-iv-13-ahv-rente",
+      "ch-ahv-iv-ahv-21",
+      "ch-ahv-iv-ahv-allgemeines",
+      "ch-ahv-iv-ahv-beitraege",
+      "ch-ahv-iv-ahv-leistungen",
+      "ch-ahv-iv-altersrenten",
+      "ch-ahv-iv-alv",
+      "ch-ahv-iv-ausgleichskassen",
+      "ch-ahv-iv-bvg",
+      "ch-ahv-iv-glossar",
+      "ch-ahv-iv-hinterlassenenrenten",
+      "ch-ahv-iv-international-drittstaaten",
+      "ch-ahv-iv-international-eu-efta",
+      "ch-ahv-iv-kv",
+      "ch-ahv-iv-uv",
+      "ch-bsv-ahv",
+      "zh-sva-ahv-internationales",
+      "zh-sva-ahv-konto",
+      "zh-sva-altersrente",
+      "zh-sva-beitragspflicht"
+    ],
+    "health-insurance-extension": [
+      "ch-bag-grenzgaenger",
+      "ch-bag-health-insurance",
+      "ch-bag-kostenbeteiligung",
+      "ch-bag-leistungen-im-ausland",
+      "ch-bag-leistungen-tarife",
+      "ch-bag-praemien-eu-efta-uk",
+      "ch-bag-praemien-kostenbeteiligung",
+      "ch-bag-praemienausstaende",
+      "ch-bag-praemienregionen",
+      "ch-bag-praemienvergleich",
+      "ch-bag-versicherte-im-ausland",
+      "ch-bag-versicherungsmodelle",
+      "ch-priminfo-eu-efta",
+      "ch-priminfo-faq",
+      "ch-priminfo-grundversicherung",
+      "ch-priminfo-mittlere-praemie",
+      "ch-priminfo-sparen-grundversicherung",
+      "ch-priminfo-sparen-selbstverantwortung",
+      "ch-priminfo-verbilligung",
+      "ch-priminfo-wechsel",
+      "ch-priminfo-zusatzversicherungen"
     ]
   },
   "build_notes": [
@@ -3189,32 +3378,31 @@
     {
       "definition": {
         "source_id": "ch-seco-unemployment",
-        "start_url": "https://www.arbeit.swiss/de/faq-zur-arbeitslosenentschaedigung",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/faq-zur-arbeitslosenentschaedigung",
         "allowed_hosts": [
           "www.arbeit.swiss"
         ],
         "allowed_path_prefixes": [
-          "/de/faq-zur-arbeitslosenentschaedigung",
-          "/de/anmeldung-und-registrierung"
+          "/de/stellensuchende/faq-zur-arbeitslosenentschaedigung"
         ],
         "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
         "jurisdiction": "CH",
         "language": "de"
       },
-      "title": "Unemployment benefit: FAQ and signing on with the RAV",
+      "title": "Unemployment benefit: waiting days, daily allowances and calculation",
       "authority_level": "federal",
       "source_kind": "official_guidance",
-      "priority": "P1",
+      "priority": "P0",
       "topic_hints": [
-        "tax-social-insurance"
+        "work-unemployment"
       ],
       "discovery": {
-        "method": "official_search_result",
-        "reference_url": "https://www.arbeit.swiss/de/faq-zur-arbeitslosenentschaedigung",
-        "located_on": "2026-09-18"
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/faq-zur-arbeitslosenentschaedigung",
+        "located_on": "2026-09-22"
       },
       "scan_status": "ready",
-      "notes": "The signing-on page is listed in sources.md. Seed located on an official site; crawler accessibility and content language must be checked at build time."
+      "notes": "D2 of the work order: arbeit.swiss moved this page under /de/stellensuchende/; the catalogue now points at the new path, so the citations of the facts resting on it change URL and hash and their review reopens. Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
     },
     {
       "definition": {
@@ -3308,6 +3496,2385 @@
         "name": "Zurich",
         "bfs_code": "0261"
       }
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-erste-schritte",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/erste-schritte-nach-kuendigung",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stellensuchende/erste-schritte-nach-kuendigung"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "First steps after notice of termination",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/erste-schritte-nach-kuendigung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-anmeldung-registrierung",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/anmeldung-und-registrierung",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stellensuchende/anmeldung-und-registrierung"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Signing on with the municipality and the RAV",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/anmeldung-und-registrierung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-registrierung-stellensuchende",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/registrierung-stellensuchende",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stellensuchende/registrierung-stellensuchende"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Jobseeker registration and the Job-Room account",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/registrierung-stellensuchende",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-rav-beratung",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/beratung-und-vermittlung-durch-das-rav",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stellensuchende/beratung-und-vermittlung-durch-das-rav"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Counselling and placement by the RAV, and the duties of the insured",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/beratung-und-vermittlung-durch-das-rav",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-versicherungsleistungen",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/versicherungsleistungen",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stellensuchende/versicherungsleistungen"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "The four benefits of unemployment insurance",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/versicherungsleistungen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-arbeitsmarktliche-massnahmen",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/arbeitsmarktliche-massnahmen",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stellensuchende/arbeitsmarktliche-massnahmen"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Labour market measures: courses, employment programmes and allowances",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/arbeitsmarktliche-massnahmen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-aussteuerung",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/aussteuerung",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stellensuchende/aussteuerung"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Running out of unemployment benefit",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/aussteuerung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-mobilitaet-eu-efta",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/berufliche-mobilitaet-in-der-euefta",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stellensuchende/berufliche-mobilitaet-in-der-euefta"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Professional mobility in the EU/EFTA, EURES and the portable documents",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/berufliche-mobilitaet-in-der-euefta",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-rueckkehr-schweiz",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/rueckkehr-in-die-schweiz",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stellensuchende/rueckkehr-in-die-schweiz"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Returning to Switzerland and unemployment insurance",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/rueckkehr-in-die-schweiz",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-stellensuche-ausland",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/stellensuche-im-ausland",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stellensuchende/stellensuche-im-ausland"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Looking for work abroad while insured in Switzerland",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/stellensuche-im-ausland",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-eservices-formulare",
+        "start_url": "https://www.arbeit.swiss/de/stellensuchende/eservices-und-formulare-fuer-die-arbeitslosenentschaedigung",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/stellensuchende/eservices-und-formulare-fuer-die-arbeitslosenentschaedigung"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "eServices and forms for unemployment benefit",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P2",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/eservices-und-formulare-fuer-die-arbeitslosenentschaedigung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-kurzarbeit",
+        "start_url": "https://www.arbeit.swiss/de/arbeitgebende/kurzarbeitsentschaedigung-kae",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/arbeitgebende/kurzarbeitsentschaedigung-kae"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Short-time work compensation (KAE)",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/arbeitgebende/kurzarbeitsentschaedigung-kae",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-stellenmeldepflicht",
+        "start_url": "https://www.arbeit.swiss/de/arbeitgebende/stellenmeldepflichten",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/de/arbeitgebende/stellenmeldepflichten"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "The job-registration duty and the head start for registered jobseekers",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/arbeitgebende/stellenmeldepflichten",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. arbeit.swiss was restructured; the page lives under /de/stellensuchende/ or /de/arbeitgebende/."
+    },
+    {
+      "definition": {
+        "source_id": "zh-awa-anmeldung-rav",
+        "start_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse.html"
+        ],
+        "canonical_authority": "Canton of Zurich, Amt fuer Wirtschaft (AWA)",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich: signing on with the RAV and choosing an unemployment fund",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse.html",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "zh-awa-zustaendiges-rav",
+        "start_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse/zustaendiges-rav-finden.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse/zustaendiges-rav-finden.html"
+        ],
+        "canonical_authority": "Canton of Zurich, Amt fuer Wirtschaft (AWA)",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich: finding the responsible RAV",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse/zustaendiges-rav-finden.html",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "zh-awa-insolvenzentschaedigung",
+        "start_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung/entschaedigung-insolvenz-arbeitgeber.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung/entschaedigung-insolvenz-arbeitgeber.html"
+        ],
+        "canonical_authority": "Canton of Zurich, Amt fuer Wirtschaft (AWA)",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich: insolvency compensation when the employer fails",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung/entschaedigung-insolvenz-arbeitgeber.html",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "zh-awa-beratung-vermittlung",
+        "start_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/beratung-vermittlung.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/beratung-vermittlung.html"
+        ],
+        "canonical_authority": "Canton of Zurich, Amt fuer Wirtschaft (AWA)",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich: counselling and placement for jobseekers",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/beratung-vermittlung.html",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "zh-awa-qualifizierung",
+        "start_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/qualifizierung-stellensuchende.html",
+        "allowed_hosts": [
+          "www.zh.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/qualifizierung-stellensuchende.html"
+        ],
+        "canonical_authority": "Canton of Zurich, Amt fuer Wirtschaft (AWA)",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "Zurich: qualification offers for jobseekers",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/qualifizierung-stellensuchende.html",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-private-einfuhr",
+        "start_url": "https://www.bazg.admin.ch/de/reisen-einkaufen-private-einfuhr-in-die-schweiz",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/reisen-einkaufen-private-einfuhr-in-die-schweiz"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Travelling and shopping: private imports into Switzerland",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/reisen-einkaufen-private-einfuhr-in-die-schweiz",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-freimengen-allgemein",
+        "start_url": "https://www.bazg.admin.ch/de/allgemeine-informationen-zu-freimengen-und-wertfreigrenzen",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/allgemeine-informationen-zu-freimengen-und-wertfreigrenzen"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Duty-free quantities and value limits: general information",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/allgemeine-informationen-zu-freimengen-und-wertfreigrenzen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-wertfreigrenze-150",
+        "start_url": "https://www.bazg.admin.ch/de/wertfreigrenze-mehrwertsteuer-einreise-150-franken",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/wertfreigrenze-mehrwertsteuer-einreise-150-franken"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "The CHF 150 value limit for VAT on entry",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/wertfreigrenze-mehrwertsteuer-einreise-150-franken",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-wertfreigrenze-beispiele",
+        "start_url": "https://www.bazg.admin.ch/de/anwendungsbeispiele-wertfreigrenze-mehrere-personen",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/anwendungsbeispiele-wertfreigrenze-mehrere-personen"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Worked examples: the value limit for several people",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/anwendungsbeispiele-wertfreigrenze-mehrere-personen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-freimengen-lebensmittel",
+        "start_url": "https://www.bazg.admin.ch/de/freimengen-lebensmittel-alkohol-tabak",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/freimengen-lebensmittel-alkohol-tabak"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Duty-free quantities: food, alcohol and tobacco",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/freimengen-lebensmittel-alkohol-tabak",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-zollanmeldung-reisende",
+        "start_url": "https://www.bazg.admin.ch/de/reisen-einkaufen-freimengen-zollanmeldung-schweiz",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/reisen-einkaufen-freimengen-zollanmeldung-schweiz"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Declaring goods as a traveller",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/reisen-einkaufen-freimengen-zollanmeldung-schweiz",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-quickzoll",
+        "start_url": "https://www.bazg.admin.ch/de/quickzoll-app-waren-anmelden-private",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/quickzoll-app-waren-anmelden-private"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "QuickZoll: declaring goods with the app",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/quickzoll-app-waren-anmelden-private",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-waren-anmelden",
+        "start_url": "https://www.bazg.admin.ch/de/waren-anmelden-einfuhr-private",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/waren-anmelden-einfuhr-private"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "How a private person declares imported goods",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/waren-anmelden-einfuhr-private",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-interneteinkauf",
+        "start_url": "https://www.bazg.admin.ch/de/interneteinkauf-post-und-kuriersendungen",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/interneteinkauf-post-und-kuriersendungen"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Online shopping: postal and courier consignments",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/interneteinkauf-post-und-kuriersendungen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-interneteinkauf-post",
+        "start_url": "https://www.bazg.admin.ch/de/interneteinkauf-postsendungen-informationen-einfuhr",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/interneteinkauf-postsendungen-informationen-einfuhr"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Online shopping: import information for postal consignments",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/interneteinkauf-postsendungen-informationen-einfuhr",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-verzollungskosten",
+        "start_url": "https://www.bazg.admin.ch/de/verzollungskosten-und-paketverfolgung",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/verzollungskosten-und-paketverfolgung"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Clearance costs and parcel tracking",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/verzollungskosten-und-paketverfolgung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-briefe-pakete",
+        "start_url": "https://www.bazg.admin.ch/de/empfangen-von-briefen-und-paketen",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/empfangen-von-briefen-und-paketen"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Receiving letters and parcels from abroad",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/empfangen-von-briefen-und-paketen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-versandhandel-mwst",
+        "start_url": "https://www.bazg.admin.ch/de/regelung-mwst-versandhandel-und-plattformbesteuerung",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/regelung-mwst-versandhandel-und-plattformbesteuerung"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "VAT on mail order and platform taxation",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/regelung-mwst-versandhandel-und-plattformbesteuerung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-ruecksendung-reparatur",
+        "start_url": "https://www.bazg.admin.ch/de/interneteinkauf-ruecksendung-reparatur-veredelung",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/interneteinkauf-ruecksendung-reparatur-veredelung"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Returns, repairs and processing abroad",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/interneteinkauf-ruecksendung-reparatur-veredelung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-uebersiedlungsgut",
+        "start_url": "https://www.bazg.admin.ch/de/umzug-uebersiedlungsgut",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/umzug-uebersiedlungsgut"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Moving house: removal goods free of duty",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/umzug-uebersiedlungsgut",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-umzugsgut-erbschaftsgut",
+        "start_url": "https://www.bazg.admin.ch/de/vorschriften-umzugsgut-erbschaftsgut",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/vorschriften-umzugsgut-erbschaftsgut"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Rules for removal goods and inherited property",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/vorschriften-umzugsgut-erbschaftsgut",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-faq-umzugsgut",
+        "start_url": "https://www.bazg.admin.ch/de/faq-umzugsgut",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/faq-umzugsgut"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "FAQ on removal goods",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/faq-umzugsgut",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-umzug-fahrzeuge",
+        "start_url": "https://www.bazg.admin.ch/de/umzug-fahrzeuge",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/umzug-fahrzeuge"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Moving house: bringing a vehicle",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/umzug-fahrzeuge",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-umzug-tiere",
+        "start_url": "https://www.bazg.admin.ch/de/umzug-pferde-und-haustiere",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/umzug-pferde-und-haustiere"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Moving house: horses and pets",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/umzug-pferde-und-haustiere",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-tiere-pflanzen-souvenirs",
+        "start_url": "https://www.bazg.admin.ch/de/regelungen-tiere-pflanzen-souvenirs-fuer-privatpersonen",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/regelungen-tiere-pflanzen-souvenirs-fuer-privatpersonen"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Animals, plants and souvenirs for private persons",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/regelungen-tiere-pflanzen-souvenirs-fuer-privatpersonen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-hundekauf-einfuhr",
+        "start_url": "https://www.bazg.admin.ch/de/hundekauf-einfuhr-von-haustieren",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/hundekauf-einfuhr-von-haustieren"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Buying a dog abroad and importing pets",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/hundekauf-einfuhr-von-haustieren",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-ausreise-privatwaren",
+        "start_url": "https://www.bazg.admin.ch/de/ausreise-aus-der-schweiz-mit-privatwaren",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/ausreise-aus-der-schweiz-mit-privatwaren"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Leaving Switzerland with private goods",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/ausreise-aus-der-schweiz-mit-privatwaren",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-mwst-rueckerstattung",
+        "start_url": "https://www.bazg.admin.ch/de/rueckerstattung-schweizerische-mwst-private",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/rueckerstattung-schweizerische-mwst-private"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Refund of Swiss VAT for a buyer resident abroad",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/rueckerstattung-schweizerische-mwst-private",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-einfuhrsteuer",
+        "start_url": "https://www.bazg.admin.ch/de/einfuhrsteuer-mehrwertsteuer-auf-warenimporte",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/einfuhrsteuer-mehrwertsteuer-auf-warenimporte"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Import tax: VAT on imported goods",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/einfuhrsteuer-mehrwertsteuer-auf-warenimporte",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-flugreisen",
+        "start_url": "https://www.bazg.admin.ch/de/waren-einfuehren-flugreisen",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/waren-einfuehren-flugreisen"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Importing goods when travelling by air",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "customs"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/waren-einfuehren-flugreisen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Taken from the BAZG sitemap /sitemap/de.xml and requested on 22 September 2026 with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-ahv-allgemeines",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Allgemeines",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Allgemeines"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "AHV: general information and who is insured",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Allgemeines",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-ahv-beitraege",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Beitr%C3%A4ge",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Beiträge"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "AHV: contributions and who owes them",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Beitr%C3%A4ge",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-ahv-leistungen",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Leistungen",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Leistungen"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "AHV: the benefits it pays",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Leistungen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-altersrenten",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Altersrenten",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Altersrenten"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "AHV: old-age pensions, claiming, drawing early and deferring",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Altersrenten",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-hinterlassenenrenten",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Hinterlassenenrenten",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Hinterlassenenrenten"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "AHV: widow's, widower's and orphan's pensions",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Hinterlassenenrenten",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-ahv-21",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Stabilisierung-der-AHV-AHV-21",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Stabilisierung-der-AHV-AHV-21"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "AHV 21: reference age 65 and the transitional rules",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Stabilisierung-der-AHV-AHV-21",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-13-ahv-rente",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/13-AHV-Rente",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/13-AHV-Rente"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "The thirteenth AHV pension payment",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/13-AHV-Rente",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-international-eu-efta",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Internationales/EU-EFTA",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Internationales/EU-EFTA"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Social insurance between Switzerland and the EU/EFTA",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Internationales/EU-EFTA",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-international-drittstaaten",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Internationales/Drittstaaten",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Internationales/Drittstaaten"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Social insurance between Switzerland and third states",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Internationales/Drittstaaten",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-alv",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Arbeitslosenversicherung-ALV",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Weitere-Sozialversicherungen/Arbeitslosenversicherung-ALV"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Unemployment insurance (ALV) in the social insurance system",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Arbeitslosenversicherung-ALV",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-bvg",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Berufliche-Vorsorge-BV",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Weitere-Sozialversicherungen/Berufliche-Vorsorge-BV"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Occupational pensions (BV), the second pillar",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Berufliche-Vorsorge-BV",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-kv",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Krankenversicherung-KV",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Weitere-Sozialversicherungen/Krankenversicherung-KV"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Health insurance (KV) in the social insurance system",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Krankenversicherung-KV",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-uv",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Unfallversicherung-UV",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Weitere-Sozialversicherungen/Unfallversicherung-UV"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Accident insurance (UV) in the social insurance system",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Unfallversicherung-UV",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-glossar",
+        "start_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Glossar",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Sozialversicherungen/Glossar"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Glossary of the Swiss social insurance system",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Glossar",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-ausgleichskassen",
+        "start_url": "https://www.ahv-iv.ch/de/Kontakte/Kantonale-Ausgleichskassen",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/Kontakte/Kantonale-Ausgleichskassen"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Directory of the cantonal compensation offices",
+      "authority_level": "federal",
+      "source_kind": "authority_directory",
+      "priority": "P1",
+      "topic_hints": [
+        "ahv-pension",
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Kontakte/Kantonale-Ausgleichskassen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. The path carries percent-encoded umlauts; the allowlist holds the decoded form, as the catalogue validator requires."
+    },
+    {
+      "definition": {
+        "source_id": "zh-sva-beitragspflicht",
+        "start_url": "https://svazurich.ch/unsere-produkte/ahv/beitraege/beitragspflicht.html",
+        "allowed_hosts": [
+          "svazurich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/unsere-produkte/ahv/beitraege/beitragspflicht.html"
+        ],
+        "canonical_authority": "SVA Zuerich, cantonal compensation office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "SVA Zurich: who owes AHV contributions",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://svazurich.ch/unsere-produkte/ahv/beitraege/beitragspflicht.html",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "zh-sva-ahv-konto",
+        "start_url": "https://svazurich.ch/unsere-produkte/ahv/beitraege/ahv-konto.html",
+        "allowed_hosts": [
+          "svazurich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/unsere-produkte/ahv/beitraege/ahv-konto.html"
+        ],
+        "canonical_authority": "SVA Zuerich, cantonal compensation office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "SVA Zurich: the individual account and the account statement",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://svazurich.ch/unsere-produkte/ahv/beitraege/ahv-konto.html",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "zh-sva-ahv-internationales",
+        "start_url": "https://svazurich.ch/unsere-produkte/ahv/beitraege/internationales.html",
+        "allowed_hosts": [
+          "svazurich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/unsere-produkte/ahv/beitraege/internationales.html"
+        ],
+        "canonical_authority": "SVA Zuerich, cantonal compensation office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "SVA Zurich: contributions in international situations",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://svazurich.ch/unsere-produkte/ahv/beitraege/internationales.html",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "zh-sva-altersrente",
+        "start_url": "https://svazurich.ch/unsere-produkte/ahv/leistungen/altersrente.html",
+        "allowed_hosts": [
+          "svazurich.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/unsere-produkte/ahv/leistungen/altersrente.html"
+        ],
+        "canonical_authority": "SVA Zuerich, cantonal compensation office",
+        "jurisdiction": "CH-ZH",
+        "language": "de"
+      },
+      "title": "SVA Zurich: claiming the old-age pension",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://svazurich.ch/unsere-produkte/ahv/leistungen/altersrente.html",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-praemien-kostenbeteiligung",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-praemien-und-kostenbeteiligung",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-praemien-und-kostenbeteiligung"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Health insurance: premiums and cost sharing",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-praemien-und-kostenbeteiligung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-kostenbeteiligung",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-kostenbeteiligung-fuer-in-der-schweiz-wohnhafte-versicherte",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-kostenbeteiligung-fuer-in-der-schweiz-wohnhafte-versicherte"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Cost sharing for insured persons resident in Switzerland",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-kostenbeteiligung-fuer-in-der-schweiz-wohnhafte-versicherte",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-versicherungsmodelle",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherungsmodelle-mit-eingeschraenkter-wahl-der-leistungserbringer",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-versicherungsmodelle-mit-eingeschraenkter-wahl-der-leistungserbringer"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Insurance models with a restricted choice of provider",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherungsmodelle-mit-eingeschraenkter-wahl-der-leistungserbringer",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-praemienregionen",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienregionen",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-praemienregionen"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Premium regions",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienregionen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-praemienvergleich",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienvergleich",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-praemienvergleich"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Comparing premiums between insurers",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienvergleich",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-praemienausstaende",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienausstaende",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-praemienausstaende"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Unpaid premiums, debt enforcement and the cantonal list",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-praemienausstaende",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-grenzgaenger",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-grenzgaengerinnen-und-grenzgaenger-in-der-schweiz",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-grenzgaengerinnen-und-grenzgaenger-in-der-schweiz"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Health insurance for cross-border commuters and the right of option",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-grenzgaengerinnen-und-grenzgaenger-in-der-schweiz",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-versicherte-im-ausland",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherte-die-im-ausland-wohnen",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-versicherte-die-im-ausland-wohnen"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Insured persons who live abroad",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherte-die-im-ausland-wohnen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-leistungen-im-ausland",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-leistungen-im-ausland",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-leistungen-im-ausland"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Cover abroad and the European health insurance card",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-leistungen-im-ausland",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-leistungen-tarife",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-leistungen-und-tarife",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-leistungen-und-tarife"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "What basic insurance pays for, and the tariffs",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-leistungen-und-tarife",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-praemien-eu-efta-uk",
+        "start_url": "https://www.bag.admin.ch/de/krankenversicherung-praemien-und-praemienverbilligung-eueftauk",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/krankenversicherung-praemien-und-praemienverbilligung-eueftauk"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Premiums and premium reduction for insured persons in the EU/EFTA and the UK",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-praemien-und-praemienverbilligung-eueftauk",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200."
+    },
+    {
+      "definition": {
+        "source_id": "ch-priminfo-grundversicherung",
+        "start_url": "https://www.priminfo.admin.ch/de/versicherungen/grundversicherung",
+        "allowed_hosts": [
+          "www.priminfo.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/versicherungen/grundversicherung"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG) - priminfo premium information service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "priminfo: basic insurance, in plain language",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.priminfo.admin.ch/de/versicherungen/grundversicherung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. Every priminfo page states that it is written in plain language (Leichte Sprache); D4 cites it as a summary beside the FOPH page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-priminfo-zusatzversicherungen",
+        "start_url": "https://www.priminfo.admin.ch/de/versicherungen/zusatzversicherungen",
+        "allowed_hosts": [
+          "www.priminfo.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/versicherungen/zusatzversicherungen"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG) - priminfo premium information service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "priminfo: supplementary insurance, in plain language",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.priminfo.admin.ch/de/versicherungen/zusatzversicherungen",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. Every priminfo page states that it is written in plain language (Leichte Sprache); D4 cites it as a summary beside the FOPH page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-priminfo-verbilligung",
+        "start_url": "https://www.priminfo.admin.ch/de/versicherungen/verbilligung",
+        "allowed_hosts": [
+          "www.priminfo.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/versicherungen/verbilligung"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG) - priminfo premium information service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "priminfo: premium reduction, in plain language",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.priminfo.admin.ch/de/versicherungen/verbilligung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. Every priminfo page states that it is written in plain language (Leichte Sprache); D4 cites it as a summary beside the FOPH page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-priminfo-eu-efta",
+        "start_url": "https://www.priminfo.admin.ch/de/versicherungen/eu_efta",
+        "allowed_hosts": [
+          "www.priminfo.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/versicherungen/eu_efta"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG) - priminfo premium information service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "priminfo: insurance for people from the EU/EFTA, in plain language",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.priminfo.admin.ch/de/versicherungen/eu_efta",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. Every priminfo page states that it is written in plain language (Leichte Sprache); D4 cites it as a summary beside the FOPH page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-priminfo-sparen-grundversicherung",
+        "start_url": "https://www.priminfo.admin.ch/de/sparen/grundversicherung",
+        "allowed_hosts": [
+          "www.priminfo.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/sparen/grundversicherung"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG) - priminfo premium information service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "priminfo: saving on basic insurance",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.priminfo.admin.ch/de/sparen/grundversicherung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. Every priminfo page states that it is written in plain language (Leichte Sprache); D4 cites it as a summary beside the FOPH page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-priminfo-sparen-selbstverantwortung",
+        "start_url": "https://www.priminfo.admin.ch/de/sparen/selbstverantwortung",
+        "allowed_hosts": [
+          "www.priminfo.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/sparen/selbstverantwortung"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG) - priminfo premium information service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "priminfo: the franchise and taking responsibility",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.priminfo.admin.ch/de/sparen/selbstverantwortung",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. Every priminfo page states that it is written in plain language (Leichte Sprache); D4 cites it as a summary beside the FOPH page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-priminfo-wechsel",
+        "start_url": "https://www.priminfo.admin.ch/de/zahlen-und-fakten/wechsel",
+        "allowed_hosts": [
+          "www.priminfo.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/zahlen-und-fakten/wechsel"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG) - priminfo premium information service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "priminfo: changing insurer",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.priminfo.admin.ch/de/zahlen-und-fakten/wechsel",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. Every priminfo page states that it is written in plain language (Leichte Sprache); D4 cites it as a summary beside the FOPH page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-priminfo-mittlere-praemie",
+        "start_url": "https://www.priminfo.admin.ch/de/zahlen-und-fakten/mittlere_praemie",
+        "allowed_hosts": [
+          "www.priminfo.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/zahlen-und-fakten/mittlere_praemie"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG) - priminfo premium information service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "priminfo: the average premium",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P2",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.priminfo.admin.ch/de/zahlen-und-fakten/mittlere_praemie",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. Every priminfo page states that it is written in plain language (Leichte Sprache); D4 cites it as a summary beside the FOPH page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-priminfo-faq",
+        "start_url": "https://www.priminfo.admin.ch/de/faq",
+        "allowed_hosts": [
+          "www.priminfo.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/faq"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG) - priminfo premium information service",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "priminfo: frequently asked questions",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.priminfo.admin.ch/de/faq",
+        "located_on": "2026-09-22"
+      },
+      "scan_status": "ready",
+      "notes": "Listed in the work order appendix of 22 September 2026 and requested that day with a browser user agent, which answered 200. Every priminfo page states that it is written in plain language (Leichte Sprache); D4 cites it as a summary beside the FOPH page."
     }
   ],
   "parallel_page_groups": [

@@ -1,6 +1,6 @@
 # MVP Zurich source inventory: moving to Switzerland and naturalisation
 
-**Last update:** 19 September 2026
+**Last update:** 22 September 2026
 
 The 35 residence sources of the rehearsal are registry seeds in `sources.json`
 only; their in-scope pages came from the imported crawl of 11 September 2026.
@@ -16,8 +16,12 @@ September adds voting rights and the Zurich tax-at-source tariff pages
 (`voting-tax` scan set); a further extension that day adds housing and rent,
 marriage, pillar 3a, unemployment, accident insurance and leaving the City of
 Zurich (`expat-life` scan set). Tariff tables, calculators and forms are left out
-on purpose. The English versions of 19 September are listed in their own section. Every page is German unless
-the link says otherwise.
+on purpose. The English versions of 19 September are listed in their own
+section. The extension of 22 September 2026 adds work and unemployment,
+customs, the AHV and the pillars, and basic health insurance (`work`,
+`customs`, `ahv` and `health-insurance-extension` scan sets), and repoints
+the two SECO pages that arbeit.swiss moved. Every page is German unless the
+link says otherwise.
 
 ## Naturalisation
 
@@ -287,8 +291,8 @@ Pillar 3a:
 
 Unemployment:
 
-- [SECO: FAQ on unemployment benefit](https://www.arbeit.swiss/de/faq-zur-arbeitslosenentschaedigung)
-- [SECO: signing on and registration](https://www.arbeit.swiss/de/anmeldung-und-registrierung)
+- [SECO: FAQ on unemployment benefit](https://www.arbeit.swiss/de/faq-zur-arbeitslosenentschaedigung) (superseded path; the saved copy backs the facts that cite it until the work wave re-cites them)
+- [SECO: signing on and registration](https://www.arbeit.swiss/de/anmeldung-und-registrierung) (superseded path; the saved copy backs the facts that cite it until the work wave re-cites them)
 - [Zurich: unemployment benefit](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung.html)
 
 Accident insurance:
@@ -301,6 +305,136 @@ Leaving the City of Zurich:
 - [City of Zurich: moving away from the city](https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/wegzug.html)
 - [City of Zurich: taxes when moving abroad](https://www.stadt-zuerich.ch/de/lebenslagen/steuern/natuerliche-personen/lebenssituationen/wegzug-ins-ausland.html)
 
+## Work and unemployment
+
+The extension of 22 September 2026 (`work` scan set). The two SECO pages the
+release already cites are listed here under their new `/de/stellensuchende/`
+paths; the Zurich unemployment-benefit page listed under expat life belongs to
+the same set. Job vacancies, forms and appointment availability are left out.
+
+Federal (SECO, arbeit.swiss):
+
+- [SECO: Short-time work compensation (KAE)](https://www.arbeit.swiss/de/arbeitgebende/kurzarbeitsentschaedigung-kae)
+- [SECO: The job-registration duty and the head start for registered jobseekers](https://www.arbeit.swiss/de/arbeitgebende/stellenmeldepflichten)
+- [SECO: Signing on with the municipality and the RAV](https://www.arbeit.swiss/de/stellensuchende/anmeldung-und-registrierung)
+- [SECO: Labour market measures: courses, employment programmes and allowances](https://www.arbeit.swiss/de/stellensuchende/arbeitsmarktliche-massnahmen)
+- [SECO: Running out of unemployment benefit](https://www.arbeit.swiss/de/stellensuchende/aussteuerung)
+- [SECO: Counselling and placement by the RAV, and the duties of the insured](https://www.arbeit.swiss/de/stellensuchende/beratung-und-vermittlung-durch-das-rav)
+- [SECO: Professional mobility in the EU/EFTA, EURES and the portable documents](https://www.arbeit.swiss/de/stellensuchende/berufliche-mobilitaet-in-der-euefta)
+- [SECO: First steps after notice of termination](https://www.arbeit.swiss/de/stellensuchende/erste-schritte-nach-kuendigung)
+- [SECO: eServices and forms for unemployment benefit](https://www.arbeit.swiss/de/stellensuchende/eservices-und-formulare-fuer-die-arbeitslosenentschaedigung)
+- [SECO: Unemployment benefit: waiting days, daily allowances and calculation](https://www.arbeit.swiss/de/stellensuchende/faq-zur-arbeitslosenentschaedigung)
+- [SECO: Jobseeker registration and the Job-Room account](https://www.arbeit.swiss/de/stellensuchende/registrierung-stellensuchende)
+- [SECO: Returning to Switzerland and unemployment insurance](https://www.arbeit.swiss/de/stellensuchende/rueckkehr-in-die-schweiz)
+- [SECO: Looking for work abroad while insured in Switzerland](https://www.arbeit.swiss/de/stellensuchende/stellensuche-im-ausland)
+- [SECO: The four benefits of unemployment insurance](https://www.arbeit.swiss/de/stellensuchende/versicherungsleistungen)
+
+Canton of Zurich (Amt fuer Wirtschaft):
+
+- [Zurich: signing on with the RAV and choosing an unemployment fund](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse.html)
+- [Zurich: finding the responsible RAV](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/anmeldung-rav-arbeitslosenkasse/zustaendiges-rav-finden.html)
+- [Zurich: insolvency compensation when the employer fails](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung/entschaedigung-insolvenz-arbeitgeber.html)
+- [Zurich: counselling and placement for jobseekers](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/beratung-vermittlung.html)
+- [Zurich: qualification offers for jobseekers](https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/qualifizierung-stellensuchende.html)
+
+## Customs, travelling and ordering from abroad
+
+The extension of 22 September 2026 (`customs` scan set), taken from the FOCBS
+sitemap. The removal-goods page listed under moving to Switzerland belongs to the
+same set. Tariff numbers and duty rates per product are left out on purpose.
+
+Federal (FOCBS/BAZG):
+
+- [FOCBS: Duty-free quantities and value limits: general information](https://www.bazg.admin.ch/de/allgemeine-informationen-zu-freimengen-und-wertfreigrenzen)
+- [FOCBS: Worked examples: the value limit for several people](https://www.bazg.admin.ch/de/anwendungsbeispiele-wertfreigrenze-mehrere-personen)
+- [FOCBS: Leaving Switzerland with private goods](https://www.bazg.admin.ch/de/ausreise-aus-der-schweiz-mit-privatwaren)
+- [FOCBS: Import tax: VAT on imported goods](https://www.bazg.admin.ch/de/einfuhrsteuer-mehrwertsteuer-auf-warenimporte)
+- [FOCBS: Receiving letters and parcels from abroad](https://www.bazg.admin.ch/de/empfangen-von-briefen-und-paketen)
+- [FOCBS: FAQ on removal goods](https://www.bazg.admin.ch/de/faq-umzugsgut)
+- [FOCBS: Duty-free quantities: food, alcohol and tobacco](https://www.bazg.admin.ch/de/freimengen-lebensmittel-alkohol-tabak)
+- [FOCBS: Buying a dog abroad and importing pets](https://www.bazg.admin.ch/de/hundekauf-einfuhr-von-haustieren)
+- [FOCBS: Online shopping: postal and courier consignments](https://www.bazg.admin.ch/de/interneteinkauf-post-und-kuriersendungen)
+- [FOCBS: Online shopping: import information for postal consignments](https://www.bazg.admin.ch/de/interneteinkauf-postsendungen-informationen-einfuhr)
+- [FOCBS: Returns, repairs and processing abroad](https://www.bazg.admin.ch/de/interneteinkauf-ruecksendung-reparatur-veredelung)
+- [FOCBS: QuickZoll: declaring goods with the app](https://www.bazg.admin.ch/de/quickzoll-app-waren-anmelden-private)
+- [FOCBS: VAT on mail order and platform taxation](https://www.bazg.admin.ch/de/regelung-mwst-versandhandel-und-plattformbesteuerung)
+- [FOCBS: Animals, plants and souvenirs for private persons](https://www.bazg.admin.ch/de/regelungen-tiere-pflanzen-souvenirs-fuer-privatpersonen)
+- [FOCBS: Declaring goods as a traveller](https://www.bazg.admin.ch/de/reisen-einkaufen-freimengen-zollanmeldung-schweiz)
+- [FOCBS: Travelling and shopping: private imports into Switzerland](https://www.bazg.admin.ch/de/reisen-einkaufen-private-einfuhr-in-die-schweiz)
+- [FOCBS: Refund of Swiss VAT for a buyer resident abroad](https://www.bazg.admin.ch/de/rueckerstattung-schweizerische-mwst-private)
+- [FOCBS: Moving house: bringing a vehicle](https://www.bazg.admin.ch/de/umzug-fahrzeuge)
+- [FOCBS: Moving house: horses and pets](https://www.bazg.admin.ch/de/umzug-pferde-und-haustiere)
+- [FOCBS: Moving house: removal goods free of duty](https://www.bazg.admin.ch/de/umzug-uebersiedlungsgut)
+- [FOCBS: Clearance costs and parcel tracking](https://www.bazg.admin.ch/de/verzollungskosten-und-paketverfolgung)
+- [FOCBS: Rules for removal goods and inherited property](https://www.bazg.admin.ch/de/vorschriften-umzugsgut-erbschaftsgut)
+- [FOCBS: How a private person declares imported goods](https://www.bazg.admin.ch/de/waren-anmelden-einfuhr-private)
+- [FOCBS: Importing goods when travelling by air](https://www.bazg.admin.ch/de/waren-einfuehren-flugreisen)
+- [FOCBS: The CHF 150 value limit for VAT on entry](https://www.bazg.admin.ch/de/wertfreigrenze-mehrwertsteuer-einreise-150-franken)
+
+## AHV, the pillars and retirement
+
+The extension of 22 September 2026 (`ahv` scan set). Paths on ahv-iv.ch carry
+percent-encoded umlauts and are listed exactly as they are requested. The
+Merkblaetter, the IV and the supplementary benefits are not catalogued: D3 of the
+work order leaves them out of scope. Pension amounts and calculators are left out.
+
+Federal (Informationsstelle AHV/IV):
+
+- [AHV/IV information service: Directory of the cantonal compensation offices](https://www.ahv-iv.ch/de/Kontakte/Kantonale-Ausgleichskassen)
+- [AHV/IV information service: The thirteenth AHV pension payment](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/13-AHV-Rente)
+- [AHV/IV information service: general information and who is insured](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Allgemeines)
+- [AHV/IV information service: old-age pensions, claiming, drawing early and deferring](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Altersrenten)
+- [AHV/IV information service: contributions and who owes them](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Beitr%C3%A4ge)
+- [AHV/IV information service: widow's, widower's and orphan's pensions](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Hinterlassenenrenten)
+- [AHV/IV information service: the benefits it pays](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Leistungen)
+- [AHV/IV information service: AHV 21: reference age 65 and the transitional rules](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Stabilisierung-der-AHV-AHV-21)
+- [AHV/IV information service: Glossary of the Swiss social insurance system](https://www.ahv-iv.ch/de/Sozialversicherungen/Glossar)
+- [AHV/IV information service: Social insurance between Switzerland and third states](https://www.ahv-iv.ch/de/Sozialversicherungen/Internationales/Drittstaaten)
+- [AHV/IV information service: Social insurance between Switzerland and the EU/EFTA](https://www.ahv-iv.ch/de/Sozialversicherungen/Internationales/EU-EFTA)
+- [AHV/IV information service: Unemployment insurance (ALV) in the social insurance system](https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Arbeitslosenversicherung-ALV)
+- [AHV/IV information service: Occupational pensions (BV), the second pillar](https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Berufliche-Vorsorge-BV)
+- [AHV/IV information service: Health insurance (KV) in the social insurance system](https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Krankenversicherung-KV)
+- [AHV/IV information service: Accident insurance (UV) in the social insurance system](https://www.ahv-iv.ch/de/Sozialversicherungen/Weitere-Sozialversicherungen/Unfallversicherung-UV)
+
+Canton of Zurich (SVA Zurich):
+
+- [SVA Zurich: the individual account and the account statement](https://svazurich.ch/unsere-produkte/ahv/beitraege/ahv-konto.html)
+- [SVA Zurich: who owes AHV contributions](https://svazurich.ch/unsere-produkte/ahv/beitraege/beitragspflicht.html)
+- [SVA Zurich: contributions in international situations](https://svazurich.ch/unsere-produkte/ahv/beitraege/internationales.html)
+- [SVA Zurich: claiming the old-age pension](https://svazurich.ch/unsere-produkte/ahv/leistungen/altersrente.html)
+
+## Basic health insurance: cost sharing, models and changing insurer
+
+The extension of 22 September 2026 (`health-insurance-extension` scan set). Every
+priminfo page states that it is written in plain language (Leichte Sprache): D4 of
+the work order cites it as a summary beside the FOPH page and never alone.
+Premium amounts and the premium calculator are left out.
+
+Federal (FOPH):
+
+- [FOPH: Health insurance for cross-border commuters and the right of option](https://www.bag.admin.ch/de/krankenversicherung-grenzgaengerinnen-und-grenzgaenger-in-der-schweiz)
+- [FOPH: Cost sharing for insured persons resident in Switzerland](https://www.bag.admin.ch/de/krankenversicherung-kostenbeteiligung-fuer-in-der-schweiz-wohnhafte-versicherte)
+- [FOPH: Cover abroad and the European health insurance card](https://www.bag.admin.ch/de/krankenversicherung-leistungen-im-ausland)
+- [FOPH: What basic insurance pays for, and the tariffs](https://www.bag.admin.ch/de/krankenversicherung-leistungen-und-tarife)
+- [FOPH: Health insurance: premiums and cost sharing](https://www.bag.admin.ch/de/krankenversicherung-praemien-und-kostenbeteiligung)
+- [FOPH: Premiums and premium reduction for insured persons in the EU/EFTA and the UK](https://www.bag.admin.ch/de/krankenversicherung-praemien-und-praemienverbilligung-eueftauk)
+- [FOPH: Unpaid premiums, debt enforcement and the cantonal list](https://www.bag.admin.ch/de/krankenversicherung-praemienausstaende)
+- [FOPH: Premium regions](https://www.bag.admin.ch/de/krankenversicherung-praemienregionen)
+- [FOPH: Comparing premiums between insurers](https://www.bag.admin.ch/de/krankenversicherung-praemienvergleich)
+- [FOPH: Insured persons who live abroad](https://www.bag.admin.ch/de/krankenversicherung-versicherte-die-im-ausland-wohnen)
+- [FOPH: Insurance models with a restricted choice of provider](https://www.bag.admin.ch/de/krankenversicherung-versicherungsmodelle-mit-eingeschraenkter-wahl-der-leistungserbringer)
+
+Federal (priminfo, published by the FOPH):
+
+- [priminfo: frequently asked questions](https://www.priminfo.admin.ch/de/faq)
+- [priminfo: saving on basic insurance](https://www.priminfo.admin.ch/de/sparen/grundversicherung)
+- [priminfo: the franchise and taking responsibility](https://www.priminfo.admin.ch/de/sparen/selbstverantwortung)
+- [priminfo: insurance for people from the EU/EFTA, in plain language](https://www.priminfo.admin.ch/de/versicherungen/eu_efta)
+- [priminfo: basic insurance, in plain language](https://www.priminfo.admin.ch/de/versicherungen/grundversicherung)
+- [priminfo: premium reduction, in plain language](https://www.priminfo.admin.ch/de/versicherungen/verbilligung)
+- [priminfo: supplementary insurance, in plain language](https://www.priminfo.admin.ch/de/versicherungen/zusatzversicherungen)
+- [priminfo: the average premium](https://www.priminfo.admin.ch/de/zahlen-und-fakten/mittlere_praemie)
+- [priminfo: changing insurer](https://www.priminfo.admin.ch/de/zahlen-und-fakten/wechsel)
 ## English versions of federal pages
 
 The English versions of the SEM, FOPH, FOCBS, SECO (arbeit.swiss) and SERAFE
@@ -353,3 +487,40 @@ SERAFE:
 
 - [SERAFE (en): fee overview](https://www.serafe.ch/en/the-fee/fee-overview/): its mobile table shows CHF 365 where the desktop table and the German page show CHF 335, so the fee amounts are cited from the German page only
 - [SERAFE (en): exemption from the fee, basic principle](https://www.serafe.ch/en/exemption-from-the-fee/basic-principle/)
+
+The English versions of 22 September 2026 belong to the work, AHV and customs
+extension of that day. Only the pages whose saved German version declares its own
+English equivalent are listed: arbeit.swiss declares one on every page through
+`hreflang`, and the AHV/IV information service links one from eight of its fifteen
+pages. The FOPH and FOCBS pages of the same extension publish English under
+different slugs that no saved page declares, and priminfo publishes in German,
+French and Italian only; those pages stay German here. As above, a fact cites the
+English passage next to the German one only after the two were compared.
+
+State Secretariat for Economic Affairs SECO (arbeit.swiss), work and unemployment:
+
+- [SECO (en): Counselling and placement by the RAV, and the duties of the insured](https://www.arbeit.swiss/en/career-counselling-and-job-placement)
+- [SECO (en): eServices and forms for unemployment benefit](https://www.arbeit.swiss/en/eservices-and-forms-for-unemployment-benefit)
+- [SECO (en): Professional mobility in the EU/EFTA, EURES and the portable documents](https://www.arbeit.swiss/en/eures-professional-mobility-in-the-euefta)
+- [SECO (en): Running out of unemployment benefit](https://www.arbeit.swiss/en/expiry-of-unemployment-benefit)
+- [SECO (en): Unemployment benefit: waiting days, daily allowances and calculation](https://www.arbeit.swiss/en/faqs-on-unemployment-benefit)
+- [SECO (en): First steps after notice of termination](https://www.arbeit.swiss/en/first-steps-after-dismissal)
+- [SECO (en): The four benefits of unemployment insurance](https://www.arbeit.swiss/en/insurance-benefits)
+- [SECO (en): The job-registration duty and the head start for registered jobseekers](https://www.arbeit.swiss/en/job-registration-requirement)
+- [SECO (en): Labour market measures: courses, employment programmes and allowances](https://www.arbeit.swiss/en/labor-market-measures)
+- [SECO (en): Looking for work abroad while insured in Switzerland](https://www.arbeit.swiss/en/looking-for-work-abroad)
+- [SECO (en): Jobseeker registration and the Job-Room account](https://www.arbeit.swiss/en/registration-job-seekers)
+- [SECO (en): Returning to Switzerland and unemployment insurance](https://www.arbeit.swiss/en/returning-to-switzerland)
+- [SECO (en): Short-time work compensation (KAE)](https://www.arbeit.swiss/en/short-time-working-compensation)
+- [SECO (en): Signing on with the municipality and the RAV](https://www.arbeit.swiss/en/signing-on-and-registration)
+
+Informationsstelle AHV/IV, the AHV and the pillars:
+
+- [AHV/IV information service (en): Directory of the cantonal compensation offices](https://www.ahv-iv.ch/en/Contacts/Cantonal-compensation-offices)
+- [AHV/IV information service (en): Glossary of the Swiss social insurance system](https://www.ahv-iv.ch/en/Social-insurances/Glossary)
+- [AHV/IV information service (en): The thirteenth AHV pension payment](https://www.ahv-iv.ch/en/Social-insurances/Old-age-and-survivorss-insurance-OASI/13-AHV-Rente-en-US)
+- [AHV/IV information service (en): AHV 21: reference age 65 and the transitional rules](https://www.ahv-iv.ch/en/Social-insurances/Old-age-and-survivorss-insurance-OASI/Stabilisation-of-the-OASI-AHV-21)
+- [AHV/IV information service (en): Accident insurance (UV) in the social insurance system](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Accident-and-occupational-diseases-incurance-UV)
+- [AHV/IV information service (en): Health insurance (KV) in the social insurance system](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Health-insurance-KV)
+- [AHV/IV information service (en): Occupational pensions (BV), the second pillar](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Occupational-benefit-plan-BV)
+- [AHV/IV information service (en): Unemployment insurance (ALV) in the social insurance system](https://www.ahv-iv.ch/en/Social-insurances/Other-types-of-social-insurances/Unemployment-insurance-ALV)

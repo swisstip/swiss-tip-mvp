@@ -1,18 +1,18 @@
 {
   "schema_version": "swiss-tip-regression-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-22-v6",
-  "content_sha256": "9518b36a60a99ae5cdd1bf34be3ca5af79112382fd8a59419ce9cf7bf9eb8f41",
-  "acceptance_sha256": "46c62d7c48b4953f502ed203e2d6ced98f6f8ff54cd77f84e1864fdd2d5f84d8",
-  "regression_sha256": "2ee3362a044bc68d62aa80fb43bae4521e2f4c50e0b2ab4383397c9eac5f709c",
-  "checked_at": "2026-09-22T12:53:44.509183+00:00",
-  "as_of": "2026-09-19",
+  "release_id": "mvp-zurich-2026-09-22-v7",
+  "content_sha256": "48418016d8bc90f81db4dc8b417d6c33fcfd0f099d832d551fd3df750dc35730",
+  "acceptance_sha256": "ffe4472c2163e0cd26d94bb329ffc1df5bf974da240170f1a5c551509ba27c0e",
+  "regression_sha256": "e3dc4e8a04501b951af69e8a9d34fa5da098bf24edafcfa6d0841a4358f1a8f8",
+  "checked_at": "2026-09-23T06:39:30.147219+00:00",
+  "as_of": "2026-09-22",
   "passed": true,
   "runs": {
     "lexical": {
       "retrieval_mode": "lexical",
-      "cases": 603,
-      "passed": 573,
+      "cases": 655,
+      "passed": 620,
       "failed": [],
       "quarantined": [
         "Q-EN-2",
@@ -29,33 +29,42 @@
         "OOS-9",
         "N-EN-T1",
         "N-DE-T7",
+        "OOS-23",
         "Q-DE-37",
         "XC-1",
         "XM-1",
+        "Q-DE-55",
         "Q-DE-63",
+        "XM-8",
         "Q-EN-76",
         "Q-EN-78",
         "Q-EN-84",
         "Q-EN-91",
         "Q-EN-99",
+        "Q-DE-72",
         "Q-DE-79",
         "Q-DE-90",
         "Q-FR-12",
         "Q-IT-7",
+        "Q-TR-1",
         "Q-RU-1",
         "N-EN-T7",
         "N-EN-J13",
         "CTX-25",
         "XC-39",
         "XC-45",
+        "XM-14",
         "XM-15",
         "XM-17",
         "XM-18",
+        "XM-19",
         "OOS-42",
         "OOS-43",
         "OOS-46",
         "OOS-49",
-        "OOS-50"
+        "OOS-50",
+        "N-EN-15",
+        "OOS-63"
       ],
       "quarantined_failed": [
         "Q-EN-8",
@@ -71,6 +80,7 @@
         "Q-DE-37",
         "XC-1",
         "XM-1",
+        "XM-8",
         "Q-EN-76",
         "Q-EN-84",
         "Q-EN-91",
@@ -84,19 +94,27 @@
         "CTX-25",
         "XC-39",
         "XC-45",
+        "XM-14",
         "XM-15",
         "XM-17",
+        "XM-19",
         "OOS-42",
-        "OOS-49"
+        "OOS-49",
+        "N-EN-15",
+        "OOS-63"
       ],
       "quarantined_passing": [
         "Q-EN-2",
         "Q-EN-9",
         "OOS-9",
         "N-EN-T1",
+        "OOS-23",
+        "Q-DE-55",
         "Q-DE-63",
         "Q-EN-78",
+        "Q-DE-72",
         "Q-DE-79",
+        "Q-TR-1",
         "XM-18",
         "OOS-43",
         "OOS-46",
@@ -334,7 +352,7 @@
               "hits": [
                 "zh-premium-reduction",
                 "premium-reduction",
-                "accident-insurance"
+                "zh-sva-telephone-numbers"
               ],
               "match_strength": "strong",
               "judged": true
@@ -504,8 +522,8 @@
               "translated": false,
               "hits": [
                 "city-zurich-dog-registration",
-                "zh-dog-keeping",
-                "city-zurich-first-steps"
+                "customs-moving-animals",
+                "zh-dog-keeping"
               ],
               "match_strength": "strong",
               "judged": true
@@ -599,8 +617,8 @@
               "translated": false,
               "hits": [
                 "zh-vehicle-registration-move",
-                "moving-goods-customs",
-                "city-zurich-first-steps"
+                "customs-moving-vehicle",
+                "moving-goods-customs"
               ],
               "match_strength": "strong",
               "judged": true
@@ -863,8 +881,8 @@
               "translated": false,
               "hits": [
                 "city-zurich-dog-registration",
-                "zh-dog-keeping",
-                "aig-registration"
+                "customs-moving-animals",
+                "zh-dog-keeping"
               ],
               "match_strength": "strong",
               "judged": true
@@ -881,9 +899,9 @@
               "query": "Umzug von Luzern nach Kloten mit Auto Strassenverkehrsamt Anwohnerparkkarte",
               "translated": false,
               "hits": [
+                "customs-moving-vehicle",
                 "zh-vehicle-registration-move",
-                "moving-goods-customs",
-                "city-zurich-parking-permits"
+                "moving-goods-customs"
               ],
               "match_strength": "strong",
               "judged": true
@@ -960,12 +978,12 @@
           "issues": [],
           "searches": [
             {
-              "query": "Wie hoch ist die Mehrwertsteuer in der Schweiz?",
+              "query": "Wie hoch ist die Erbschaftssteuer?",
               "translated": false,
               "hits": [
                 "zh-family-allowances",
                 "zh-tax-at-source-tariffs",
-                "zh-dog-keeping"
+                "customs-import-vat-rate"
               ],
               "match_strength": "weak",
               "judged": true
@@ -982,9 +1000,9 @@
               "query": "What is the speed limit on Swiss motorways?",
               "translated": false,
               "hits": [
-                "aig-study",
-                "city-zurich-naturalisation-language",
-                "family-swiss"
+                "customs-goods-counted-toward-allowance",
+                "customs-travel-allowance",
+                "customs-import-vat-rate"
               ],
               "match_strength": "weak",
               "judged": true
@@ -1003,7 +1021,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "city-zurich-marriage",
-                "permit-c-five-years"
+                "customs-leaving-with-goods"
               ],
               "match_strength": "weak",
               "judged": true
@@ -1153,9 +1171,9 @@
               "query": "do I need ETIAS and is my passport stamped",
               "translated": false,
               "hits": [
-                "entry-exit-system",
                 "entry-etias",
-                "fza-entry"
+                "entry-exit-system",
+                "customs-leaving-with-goods"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1250,7 +1268,7 @@
               "hits": [
                 "political-rights-federal",
                 "zh-political-rights",
-                "social-assistance-review"
+                "zh-naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1269,7 +1287,7 @@
               "hits": [
                 "family-allowances",
                 "zh-family-allowances",
-                "zh-eu-family-documents"
+                "customs-travel-allowance"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1457,8 +1475,8 @@
               "translated": false,
               "hits": [
                 "moving-goods-customs",
-                "city-zurich-bulky-waste-pickup",
-                "zh-initial-rent-form"
+                "customs-declaring-goods",
+                "customs-goods-counted-toward-allowance"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1495,8 +1513,8 @@
               "translated": false,
               "hits": [
                 "zh-permit-c-five-years",
-                "zh-foreign-licence-exchange",
-                "permit-c-five-years"
+                "permit-c-five-years",
+                "fza-self-employment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -1600,6 +1618,183 @@
         },
         {
           "case_id": "DECLINE-10",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": []
+        },
+        {
+          "case_id": "UAT-72",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Wertfreigrenze mehrere Personen ein Gegenstand",
+              "translated": false,
+              "hits": [
+                "customs-travel-allowance",
+                "customs-goods-counted-toward-allowance"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-73",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Freimengen Fleisch Alkohol Einfuhr Schweiz",
+              "translated": false,
+              "hits": [
+                "customs-duty-free-quantities",
+                "customs-goods-counted-toward-allowance",
+                "customs-import-vat-rate"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-74",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Zollanmeldung vor dem Grenzuebertritt App roter Durchgang",
+              "translated": false,
+              "hits": [
+                "customs-declaring-goods",
+                "customs-importing-pets",
+                "naturalisation-ordinary"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-75",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Paket aus dem Ausland bestellt Kosten bei der Einfuhr",
+              "translated": false,
+              "hits": [
+                "customs-internet-orders",
+                "customs-returns-and-repairs",
+                "city-zurich-departure"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-76",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "kleine Sendung keine Abgaben Versandhandel Plattform",
+              "translated": false,
+              "hits": [
+                "customs-mail-order-vat",
+                "customs-internet-orders",
+                "customs-returns-and-repairs"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-77",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Ruecksendung Einfuhrabgaben zurueck Gesuch Frist",
+              "translated": false,
+              "hits": [
+                "customs-returns-and-repairs",
+                "ahv-contribution-refund",
+                "customs-leaving-with-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-78",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Umzug in die Schweiz Hausrat und Auto Zoll",
+              "translated": false,
+              "hits": [
+                "moving-goods-customs",
+                "customs-moving-vehicle",
+                "customs-declaring-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-79",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "mit Hund in die Schweiz einreisen und anmelden",
+              "translated": false,
+              "hits": [
+                "customs-importing-pets",
+                "city-zurich-dog-registration",
+                "customs-declaring-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-80",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "steuerfrei einkaufen Ausfuhrdokument bestaetigen",
+              "translated": false,
+              "hits": [
+                "customs-leaving-with-goods",
+                "zh-premium-reduction",
+                "zh-tax-at-source-ordinary-assessment"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "DECLINE-11",
           "blocking": true,
           "passed": true,
           "issues": [],
@@ -1739,7 +1934,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-7 (English: Evidence of language skills): search 'Which language certificates are accepted as proof of language skills for a permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4518, 'anchored_weight': 1.1371})"
+                "Q-EN-7 (English: Evidence of language skills): search 'Which language certificates are accepted as proof of language skills for a permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4643, 'anchored_weight': 1.1549})"
               ]
             }
           ]
@@ -1750,7 +1945,7 @@
           "passed": false,
           "issues": [
             "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['naturalisation-ordinary', 'permit-c-five-years', 'permit-c']",
-            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3152, 'anchored_weight': 1.3856})"
+            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3183, 'anchored_weight': 1.4093})"
           ],
           "searches": [
             {
@@ -1778,12 +1973,12 @@
               "hits": [
                 "aig-work-permit",
                 "uk-new-employment",
-                "zh-third-country-work"
+                "zh-eu-nonworking"
               ],
               "match_strength": "strong",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-9 (English: Third-country workers: exemptions, application, visa and registration): search \"I'm an American with a job offer in Zurich. Who applies for the work permit, me or my employer?\" no longer finds third-country-work-procedure within the first 3 hits: ['aig-work-permit', 'uk-new-employment', 'zh-third-country-work']"
+                "Q-EN-9 (English: Third-country workers: exemptions, application, visa and registration): search \"I'm an American with a job offer in Zurich. Who applies for the work permit, me or my employer?\" no longer finds third-country-work-procedure within the first 3 hits: ['aig-work-permit', 'uk-new-employment', 'zh-eu-nonworking']"
               ]
             }
           ]
@@ -1805,7 +2000,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-10 (English: Zurich EU/EFTA self-employment documentation): search \"I'm a French citizen and want to work as a self-employed graphic designer in the canton of Zurich. What evidence do I need to provide?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2067, 'anchored_weight': 1.3564})"
+                "Q-EN-10 (English: Zurich EU/EFTA self-employment documentation): search \"I'm a French citizen and want to work as a self-employed graphic designer in the canton of Zurich. What evidence do I need to provide?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2121, 'anchored_weight': 1.3872})"
               ]
             }
           ]
@@ -1897,8 +2092,8 @@
               "translated": false,
               "hits": [
                 "zh-tax-at-source-ordinary-assessment",
-                "tax-at-source-liability",
-                "zh-tax-at-source-liability"
+                "zh-tax-at-source-liability",
+                "tax-at-source-liability"
               ],
               "match_strength": "strong",
               "judged": true
@@ -2170,12 +2365,12 @@
               "hits": [
                 "zh-newcomer-first-information",
                 "canton-change",
-                "zh-vehicle-registration-move"
+                "zh-tax-at-source-liability"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-9 (German: Change of canton under AIG Article 37): search 'Ich habe eine B-Bewilligung und ziehe von Zürich in den Kanton Bern. Brauche ich eine neue Bewilligung?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3484, 'anchored_weight': 1.3416})"
+                "Q-DE-9 (German: Change of canton under AIG Article 37): search 'Ich habe eine B-Bewilligung und ziehe von Zürich in den Kanton Bern. Brauche ich eine neue Bewilligung?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3547, 'anchored_weight': 1.3576})"
               ]
             }
           ]
@@ -2205,7 +2400,7 @@
           "passed": false,
           "issues": [
             "Q-DE-11 (German: Family reunification with a residence-permit sponsor): search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' no longer finds family-b within the first 3 hits: ['family-swiss', 'family-eu-efta', 'family-requirements']",
-            "Q-DE-11 (German: Family reunification with a residence-permit sponsor): search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4494, 'anchored_weight': 1.296})"
+            "Q-DE-11 (German: Family reunification with a residence-permit sponsor): search 'Ich habe eine B-Bewilligung. Kann ich meinen Ehemann in die Schweiz holen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4405, 'anchored_weight': 1.2619})"
           ],
           "searches": [
             {
@@ -2326,8 +2521,8 @@
               "translated": false,
               "hits": [
                 "zh-eu-l",
-                "posted-service-notification",
-                "eu-short-employment"
+                "eu-short-employment",
+                "posted-service-notification"
               ],
               "match_strength": "strong",
               "judged": true
@@ -2500,7 +2695,7 @@
               "hits": [
                 "zh-tax-at-source-liability",
                 "tax-at-source-liability",
-                "health-insurance-deadline"
+                "tax-at-source-tariff-codes"
               ],
               "match_strength": "strong",
               "judged": true
@@ -2645,17 +2840,17 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-FR-4 (French: FZA: cross-border commuters): search 'Grenzgänger Wohnsitz Frankreich Arbeit in Zürich Aufenthaltsbewilligung nötig' no longer finds fza-cross-border-commuter within the first 3 hits: ['zh-foreign-licence-exchange', 'eu-short-employment', 'unemployment-benefit']",
-            "Q-FR-4 (French: FZA: cross-border commuters): search 'Grenzgänger Wohnsitz Frankreich Arbeit in Zürich Aufenthaltsbewilligung nötig' reports match_strength weak, expected strong (signals {'lexical_share': 0.3039, 'anchored_weight': 1.2207})"
+            "Q-FR-4 (French: FZA: cross-border commuters): search 'Grenzgänger Wohnsitz Frankreich Arbeit in Zürich Aufenthaltsbewilligung nötig' no longer finds fza-cross-border-commuter within the first 3 hits: ['eu-short-employment', 'unemployment-benefit', 'city-zurich-marriage']",
+            "Q-FR-4 (French: FZA: cross-border commuters): search 'Grenzgänger Wohnsitz Frankreich Arbeit in Zürich Aufenthaltsbewilligung nötig' reports match_strength weak, expected strong (signals {'lexical_share': 0.3174, 'anchored_weight': 1.2449})"
           ],
           "searches": [
             {
               "query": "Grenzgänger Wohnsitz Frankreich Arbeit in Zürich Aufenthaltsbewilligung nötig",
               "translated": true,
               "hits": [
-                "zh-foreign-licence-exchange",
                 "eu-short-employment",
-                "unemployment-benefit"
+                "unemployment-benefit",
+                "city-zurich-marriage"
               ],
               "match_strength": "weak",
               "judged": true
@@ -2800,7 +2995,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-1 (Rejected, German: schooling is not published): search 'Wie melde ich mein Kind für den Kindergarten in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4785, 'anchored_weight': 1.5409})"
+            "OOS-1 (Rejected, German: schooling is not published): search 'Wie melde ich mein Kind für den Kindergarten in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4979, 'anchored_weight': 1.5491})"
           ],
           "searches": [
             {
@@ -2857,7 +3052,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-4 (Rejected, Italian: family allowances is not published): search 'Familienzulagen für Kinder beantragen' reports match_strength strong, expected weak (signals {'lexical_share': 1.0, 'anchored_weight': 1.6841})",
+            "OOS-4 (Rejected, Italian: family allowances is not published): search 'Familienzulagen für Kinder beantragen' reports match_strength strong, expected weak (signals {'lexical_share': 1.0, 'anchored_weight': 1.7042})",
             "OOS-4 (Rejected, Italian: family allowances is not published): family-allowances expected OUT_OF_COVERAGE, got SUPPORTED",
             "OOS-4 (Rejected, Italian: family allowances is not published): family-allowances expected a concept_not_published gap, got none"
           ],
@@ -2961,7 +3156,7 @@
               "hits": [
                 "entry-short-stay-rule",
                 "city-zurich-naturalisation-language",
-                "cantonal-migration-contact"
+                "customs-import-vat-rate"
               ],
               "match_strength": "weak",
               "judged": true
@@ -3077,7 +3272,7 @@
               "judged": false,
               "unjudged_issues": [
                 "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' no longer finds permit-renewal within the first 5 hits: ['permit-b', 'fza-employee-permit', 'eu-permit-mobility', 'aig-short-stay', 'eu-employment-registration-deadline']",
-                "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' reports match_strength weak, expected strong (signals {'lexical_share': 0.405, 'anchored_weight': 1.3614})"
+                "N-EN-T1 (English with typos: permit-renewal): search 'How long is my residnce permit B valid and when do I have to renwe it?' reports match_strength weak, expected strong (signals {'lexical_share': 0.409, 'anchored_weight': 1.3842})"
               ]
             }
           ]
@@ -3175,7 +3370,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-EN-J2 (English with visa for permit: third-country-work): search 'Do I need a work visa to take a job in Zurich as an Indian national?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4719, 'anchored_weight': 1.3693})"
+                "N-EN-J2 (English with visa for permit: third-country-work): search 'Do I need a work visa to take a job in Zurich as an Indian national?' reports match_strength weak, expected strong (signals {'lexical_share': 0.471, 'anchored_weight': 1.3786})"
               ]
             }
           ]
@@ -3428,7 +3623,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-DE-J3 (German with the Germany-German Aufenthaltserlaubnis, Einwohnermeldeamt: aig-registration): search 'Ich habe eine Aufenthaltserlaubnis und ziehe nach Bern um. Muss ich mich beim Einwohnermeldeamt anmelden?' reports match_strength weak, expected strong (signals {'lexical_share': 0.439, 'anchored_weight': 1.3969})"
+                "N-DE-J3 (German with the Germany-German Aufenthaltserlaubnis, Einwohnermeldeamt: aig-registration): search 'Ich habe eine Aufenthaltserlaubnis und ziehe nach Bern um. Muss ich mich beim Einwohnermeldeamt anmelden?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4457, 'anchored_weight': 1.3942})"
               ]
             }
           ]
@@ -3445,7 +3640,7 @@
               "hits": [
                 "naturalisation-ordinary",
                 "family-swiss",
-                "zh-tax-at-source-liability"
+                "customs-declaring-goods"
               ],
               "match_strength": "strong",
               "judged": true
@@ -3482,8 +3677,8 @@
               "translated": false,
               "hits": [
                 "ahv-contribution-refund",
-                "bvg-cash-out-departure",
-                "pillar-3a"
+                "customs-leaving-with-goods",
+                "bvg-cash-out-departure"
               ],
               "match_strength": "strong",
               "judged": true
@@ -3678,7 +3873,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-27 (English: SVA Zurich on Good Friday): search 'Is the SVA Zurich closed on Good Friday?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3347, 'anchored_weight': 0.8433})"
+                "Q-EN-27 (English: SVA Zurich on Good Friday): search 'Is the SVA Zurich closed on Good Friday?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3373, 'anchored_weight': 0.8576})"
               ]
             }
           ]
@@ -3714,7 +3909,7 @@
               "hits": [
                 "zh-migrationsamt-contact",
                 "cantonal-migration-contact",
-                "zh-naturalisation-division-contact"
+                "city-zurich-population-office"
               ],
               "match_strength": "strong",
               "judged": true
@@ -3789,13 +3984,13 @@
               "translated": false,
               "hits": [
                 "uk-new-employment",
-                "zh-road-traffic-office-locations",
-                "zh-sva-contact"
+                "zh-sva-contact",
+                "zh-road-traffic-office-locations"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-36 (German, negative: the Road Traffic Office on 24 December): search 'Ist das Strassenverkehrsamt am 24. Dezember offen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.453, 'anchored_weight': 1.0})"
+                "Q-DE-36 (German, negative: the Road Traffic Office on 24 December): search 'Ist das Strassenverkehrsamt am 24. Dezember offen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4564, 'anchored_weight': 1.0})"
               ]
             }
           ]
@@ -3945,7 +4140,7 @@
               "hits": [
                 "zh-road-traffic-office-locations",
                 "zh-sva-contact",
-                "zh-foreign-licence-exchange"
+                "city-zurich-population-office"
               ],
               "match_strength": "strong",
               "judged": true
@@ -3970,7 +4165,7 @@
               "judged": false,
               "unjudged_issues": [
                 "N-DE-T6 (German with typos: Migration Office address): search 'migrationsamt zuerich adrese' no longer finds zh-migrationsamt-contact within the first 3 hits: ['cantonal-migration-contact', 'city-zurich-naturalisation-facilitated', 'city-zurich-school-languages']",
-                "N-DE-T6 (German with typos: Migration Office address): search 'migrationsamt zuerich adrese' reports match_strength weak, expected strong (signals {'lexical_share': 0.3677, 'anchored_weight': 0.5816})"
+                "N-DE-T6 (German with typos: Migration Office address): search 'migrationsamt zuerich adrese' reports match_strength weak, expected strong (signals {'lexical_share': 0.3744, 'anchored_weight': 0.5985})"
               ]
             }
           ]
@@ -3981,7 +4176,7 @@
           "passed": false,
           "issues": [
             "N-DE-T7 (German with a typo: Population Office opening hours): search 'personenmeldeamt öfnungszeiten' no longer finds city-zurich-population-office within the first 3 hits: ['family-b', 'family-c', 'family-separation']",
-            "N-DE-T7 (German with a typo: Population Office opening hours): search 'personenmeldeamt öfnungszeiten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1612, 'anchored_weight': 0.1922})"
+            "N-DE-T7 (German with a typo: Population Office opening hours): search 'personenmeldeamt öfnungszeiten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1573, 'anchored_weight': 0.1866})"
           ],
           "searches": [
             {
@@ -4037,7 +4232,7 @@
         },
         {
           "case_id": "OOS-23",
-          "blocking": true,
+          "blocking": false,
           "passed": true,
           "issues": [],
           "searches": [
@@ -4045,9 +4240,9 @@
               "query": "Öffnungszeiten Zolldienst Zürich Flughafen",
               "translated": false,
               "hits": [
+                "customs-declaring-goods",
                 "city-zurich-population-office",
-                "city-zurich-recycling-centres",
-                "city-zurich-tax-office-contact"
+                "city-zurich-recycling-centres"
               ],
               "match_strength": "weak",
               "judged": true
@@ -4212,8 +4407,8 @@
               "translated": false,
               "hits": [
                 "city-zurich-tax-office-contact",
-                "zh-tax-office-contact",
-                "city-zurich-departure"
+                "city-zurich-naturalisation-contact",
+                "city-zurich-population-office"
               ],
               "match_strength": "strong",
               "judged": true
@@ -4231,7 +4426,8 @@
               "translated": false,
               "hits": [
                 "city-zurich-dog-registration",
-                "zh-dog-keeping"
+                "zh-dog-keeping",
+                "customs-prohibited-restricted-goods"
               ],
               "match_strength": "strong",
               "judged": true
@@ -4319,7 +4515,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-DE-37 (German: fee share of a 35-litre Züri-Sack): search 'Wie viel kostet ein 35-Liter-Züri-Sack?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2934, 'anchored_weight': 1.4591})"
+            "Q-DE-37 (German: fee share of a 35-litre Züri-Sack): search 'Wie viel kostet ein 35-Liter-Züri-Sack?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3005, 'anchored_weight': 1.4681})"
           ],
           "searches": [
             {
@@ -4328,7 +4524,7 @@
               "hits": [
                 "city-zurich-household-waste",
                 "city-zurich-waste-sorting",
-                "unemployment-benefit"
+                "zh-migrationsamt-contact"
               ],
               "match_strength": "weak",
               "judged": true
@@ -4403,7 +4599,8 @@
               "translated": false,
               "hits": [
                 "zh-dog-keeping",
-                "city-zurich-dog-registration"
+                "city-zurich-dog-registration",
+                "customs-leaving-with-goods"
               ],
               "match_strength": "strong",
               "judged": true
@@ -4440,8 +4637,8 @@
               "translated": false,
               "hits": [
                 "radio-tv-household-fee",
-                "moving-goods-customs",
-                "unemployment-benefit"
+                "customs-import-vat-rate",
+                "customs-travel-allowance"
               ],
               "match_strength": "strong",
               "judged": true
@@ -4635,7 +4832,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-EN-T5 (English with typos: recycling centre opening hours): search 'recyling center zurich openign hours' reports match_strength weak, expected strong (signals {'lexical_share': 0.3038, 'anchored_weight': 0.8726})"
+                "N-EN-T5 (English with typos: recycling centre opening hours): search 'recyling center zurich openign hours' reports match_strength weak, expected strong (signals {'lexical_share': 0.3071, 'anchored_weight': 0.8865})"
               ]
             }
           ]
@@ -4734,7 +4931,7 @@
           "passed": false,
           "issues": [
             "XC-1 (Another canton, English: permit for a six-month contract in Bern): search \"I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?\" no longer finds fza-employee-permit within the first 3 hits: ['eu-short-employment', 'fza-job-search', 'uk-new-employment']",
-            "XC-1 (Another canton, English: permit for a six-month contract in Bern): search \"I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3199, 'anchored_weight': 1.3518})"
+            "XC-1 (Another canton, English: permit for a six-month contract in Bern): search \"I'm an Italian citizen with a six-month work contract in Bern. Which permit do I need?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3272, 'anchored_weight': 1.3631})"
           ],
           "searches": [
             {
@@ -4762,12 +4959,12 @@
               "hits": [
                 "zh-eu-registration",
                 "eu-employment-registration-deadline",
-                "unemployment-benefit"
+                "zh-eu-b"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "XC-2 (Another canton, German: registration deadline for a German citizen in Basel): search 'Ich bin Deutsche und ziehe für eine unbefristete Stelle nach Basel. Bis wann muss ich mich bei der Gemeinde anmelden?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2911, 'anchored_weight': 1.4599})"
+                "XC-2 (Another canton, German: registration deadline for a German citizen in Basel): search 'Ich bin Deutsche und ziehe für eine unbefristete Stelle nach Basel. Bis wann muss ich mich bei der Gemeinde anmelden?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2903, 'anchored_weight': 1.4575})"
               ]
             }
           ]
@@ -5144,8 +5341,8 @@
               "query": "I live in Freienbach in the canton of Schwyz and work in Zurich on a B permit. Which canton's tax-at-source rules apply to me?",
               "translated": false,
               "hits": [
-                "tax-at-source-liability",
                 "zh-tax-at-source-liability",
+                "tax-at-source-liability",
                 "zh-tax-at-source-ordinary-assessment"
               ],
               "match_strength": "strong",
@@ -5171,7 +5368,7 @@
               "judged": false,
               "unjudged_issues": [
                 "XC-23 (Another canton, English: address and opening hours of the migration office in Basel): search 'What are the address and the opening hours of the migration office in Basel?' no longer finds cantonal-migration-contact within the first 3 hits: ['zh-migrationsamt-contact', 'city-zurich-population-office', 'city-zurich-tax-office-contact']",
-                "XC-23 (Another canton, English: address and opening hours of the migration office in Basel): search 'What are the address and the opening hours of the migration office in Basel?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3928, 'anchored_weight': 0.647})"
+                "XC-23 (Another canton, English: address and opening hours of the migration office in Basel): search 'What are the address and the opening hours of the migration office in Basel?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3938, 'anchored_weight': 0.6495})"
               ]
             }
           ]
@@ -5265,7 +5462,8 @@
               "translated": false,
               "hits": [
                 "city-zurich-dog-registration",
-                "zh-dog-keeping"
+                "zh-dog-keeping",
+                "customs-importing-pets"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5429,8 +5627,8 @@
               "translated": false,
               "hits": [
                 "entry-requirements-third-country",
-                "fza-non-working",
-                "zh-integration-project-funding"
+                "customs-duty-free-quantities",
+                "customs-import-vat-rate"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5560,8 +5758,8 @@
               "translated": false,
               "hits": [
                 "entry-requirements-eu-efta",
-                "entry-requirements-third-country",
-                "permit-card-eu-efta"
+                "customs-leaving-with-goods",
+                "zh-eu-self-employment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5694,7 +5892,7 @@
               "hits": [
                 "zh-family-l-permit",
                 "zh-family-b-c-permit",
-                "zh-family-fza"
+                "zh-eu-family-documents"
               ],
               "match_strength": "strong",
               "judged": true
@@ -5703,7 +5901,7 @@
         },
         {
           "case_id": "Q-DE-55",
-          "blocking": true,
+          "blocking": false,
           "passed": true,
           "issues": [],
           "searches": [
@@ -5711,15 +5909,14 @@
               "query": "Wie viel Geld muss ich pro Tag bei der Einreise nachweisen?",
               "translated": false,
               "hits": [
+                "customs-travel-allowance",
                 "entry-short-stay-rule",
-                "family-allowances",
-                "eu-short-employment"
+                "family-allowances"
               ],
-              "match_strength": "weak",
+              "match_strength": "strong",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-55 (Entry and visas: Wie viel Geld muss ich pro Tag bei der Einreise nachweisen?): search 'Wie viel Geld muss ich pro Tag bei der Einreise nachweisen?' no longer finds entry-requirements-third-country within the first 3 hits: ['entry-short-stay-rule', 'family-allowances', 'eu-short-employment']",
-                "Q-DE-55 (Entry and visas: Wie viel Geld muss ich pro Tag bei der Einreise nachweisen?): search 'Wie viel Geld muss ich pro Tag bei der Einreise nachweisen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3213, 'anchored_weight': 1.4162})"
+                "Q-DE-55 (Entry and visas: Wie viel Geld muss ich pro Tag bei der Einreise nachweisen?): search 'Wie viel Geld muss ich pro Tag bei der Einreise nachweisen?' no longer finds entry-requirements-third-country within the first 3 hits: ['customs-travel-allowance', 'entry-short-stay-rule', 'family-allowances']"
               ]
             }
           ]
@@ -6011,7 +6208,7 @@
               "hits": [
                 "family-allowances",
                 "zh-family-allowances",
-                "naturalisation-ordinary"
+                "customs-travel-allowance"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6106,7 +6303,7 @@
               "hits": [
                 "parental-leave",
                 "city-zurich-kindergarten",
-                "family-allowances"
+                "customs-travel-allowance"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6162,7 +6359,7 @@
               "hits": [
                 "rent-changes",
                 "tenancy-agreement",
-                "zh-family-allowances"
+                "zh-initial-rent-form"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6200,7 +6397,7 @@
               "hits": [
                 "rent-changes",
                 "third-country-work-conditions",
-                "zh-tax-at-source-tariffs"
+                "naturalisation-facilitated-spouse"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6237,8 +6434,8 @@
               "translated": false,
               "hits": [
                 "rent-changes",
-                "permit-lost",
-                "family-b"
+                "customs-importing-pets",
+                "permit-lost"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6333,7 +6530,7 @@
               "hits": [
                 "city-zurich-marriage",
                 "marriage-switzerland",
-                "zh-eu-registration"
+                "zh-tax-at-source-tariffs"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6446,7 +6643,7 @@
               "translated": false,
               "hits": [
                 "unemployment-benefit",
-                "family-allowances",
+                "customs-travel-allowance",
                 "zh-unemployment-benefit"
               ],
               "match_strength": "strong",
@@ -6485,7 +6682,7 @@
               "hits": [
                 "zh-unemployment-benefit",
                 "bvg-cash-out-departure",
-                "zh-tax-at-source-tariffs"
+                "zh-family-allowances"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6541,8 +6738,8 @@
               "translated": false,
               "hits": [
                 "moving-goods-customs",
-                "entry-requirements-third-country",
-                "zh-vehicle-registration-move"
+                "customs-import-vat-rate",
+                "customs-leaving-with-goods"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6599,7 +6796,7 @@
               "hits": [
                 "family-allowances",
                 "zh-family-allowances",
-                "naturalisation-ordinary"
+                "customs-travel-allowance"
               ],
               "match_strength": "strong",
               "judged": true
@@ -6627,9 +6824,11 @@
         },
         {
           "case_id": "XM-8",
-          "blocking": true,
-          "passed": true,
-          "issues": [],
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "XM-8 (Another Zurich municipality, English: marrying in Uster): search 'We live in Uster. How do we prepare our marriage?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3521, 'anchored_weight': 1.3915})"
+          ],
           "searches": [
             {
               "query": "We live in Uster. How do we prepare our marriage?",
@@ -6639,7 +6838,7 @@
                 "marriage-switzerland",
                 "city-zurich-kindergarten"
               ],
-              "match_strength": "strong",
+              "match_strength": "weak",
               "judged": true
             }
           ]
@@ -6668,7 +6867,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2435, 'anchored_weight': 0.9372})"
+            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2455, 'anchored_weight': 0.9438})"
           ],
           "searches": [
             {
@@ -6796,7 +6995,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-82 (English: Evidence of language skills): search 'I have dyslexia and struggle with written German. Can that excuse me from the language certificate requirement for my permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2318, 'anchored_weight': 1.1889})"
+                "Q-EN-82 (English: Evidence of language skills): search 'I have dyslexia and struggle with written German. Can that excuse me from the language certificate requirement for my permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2326, 'anchored_weight': 1.1935})"
               ]
             }
           ]
@@ -6812,13 +7011,13 @@
               "translated": false,
               "hits": [
                 "health-insurance-deadline",
-                "integration-criteria",
-                "unemployment-benefit"
+                "unemployment-benefit",
+                "integration-criteria"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-83 (English: Integration criteria and personal circumstances): search 'I have a health condition that makes it hard for me to learn German quickly or hold down a job. Will that be taken into account when my permit is assessed?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1305, 'anchored_weight': 1.0723})"
+                "Q-EN-83 (English: Integration criteria and personal circumstances): search 'I have a health condition that makes it hard for me to learn German quickly or hold down a job. Will that be taken into account when my permit is assessed?' reports match_strength weak, expected strong (signals {'lexical_share': 0.132, 'anchored_weight': 1.064})"
               ]
             }
           ]
@@ -6959,7 +7158,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-90 (English: Schengen visa type C coverage): search \"I'm coming to Zurich for a two-week business trip - does an ordinary Schengen visa cover that, or do I need something else?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1593, 'anchored_weight': 1.1822})"
+                "Q-EN-90 (English: Schengen visa type C coverage): search \"I'm coming to Zurich for a two-week business trip - does an ordinary Schengen visa cover that, or do I need something else?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1683, 'anchored_weight': 1.2058})"
               ]
             }
           ]
@@ -7053,8 +7252,8 @@
               "translated": false,
               "hits": [
                 "zh-dog-keeping",
-                "city-zurich-dog-registration",
-                "naturalisation-ordinary"
+                "naturalisation-ordinary",
+                "city-zurich-dog-registration"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7071,9 +7270,9 @@
               "query": "I'm coming to Zurich as an exchange student for one semester and won't be relocating my main residence. Can I still bring my laptop, books and other belongings duty-free?",
               "translated": false,
               "hits": [
-                "moving-goods-customs",
+                "customs-personal-effects",
                 "zh-foreign-licence-exchange",
-                "zh-family-fza"
+                "moving-goods-customs"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7122,7 +7321,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-99 (English: garden waste beyond the organic bin): search \"I've just pruned a lot of trees in my garden in Zurich and have far more waste than fits in the organic bin. What can I do with it?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1458, 'anchored_weight': 1.4186})"
+            "Q-EN-99 (English: garden waste beyond the organic bin): search \"I've just pruned a lot of trees in my garden in Zurich and have far more waste than fits in the organic bin. What can I do with it?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1478, 'anchored_weight': 1.4396})"
           ],
           "searches": [
             {
@@ -7148,14 +7347,15 @@
               "query": "I worked in Lyon for eight years before moving to Zurich. Will those French insurance years count toward my Swiss AHV pension?",
               "translated": false,
               "hits": [
+                "customs-goods-counted-toward-allowance",
                 "ahv-pension-abroad",
-                "ahv-contribution-refund",
-                "fza-social-security"
+                "ahv-contribution-refund"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-EN-100 (English: EU insurance periods count toward the Swiss AHV pension): search 'I worked in Lyon for eight years before moving to Zurich. Will those French insurance years count toward my Swiss AHV pension?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1899, 'anchored_weight': 1.4278})"
+                "Q-EN-100 (English: EU insurance periods count toward the Swiss AHV pension): search 'I worked in Lyon for eight years before moving to Zurich. Will those French insurance years count toward my Swiss AHV pension?' no longer finds fza-social-security within the first 3 hits: ['customs-goods-counted-toward-allowance', 'ahv-pension-abroad', 'ahv-contribution-refund']",
+                "Q-EN-100 (English: EU insurance periods count toward the Swiss AHV pension): search 'I worked in Lyon for eight years before moving to Zurich. Will those French insurance years count toward my Swiss AHV pension?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1966, 'anchored_weight': 1.4325})"
               ]
             }
           ]
@@ -7210,7 +7410,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "ahv-pension-abroad",
-                "bvg-cash-out-departure"
+                "customs-leaving-with-goods"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7228,8 +7428,8 @@
               "translated": false,
               "hits": [
                 "health-insurance-deadline",
-                "zh-family-allowances",
-                "family-allowances"
+                "customs-travel-allowance",
+                "zh-family-allowances"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7303,15 +7503,15 @@
               "query": "Ich habe meine Eltern in die Schweiz nachgezogen. Dürfen sie hier arbeiten?",
               "translated": false,
               "hits": [
-                "family-eu-efta",
                 "family-deadlines",
+                "family-eu-efta",
                 "fza-family-members"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-70 (German: Permit and work rights of reunited family members): search 'Ich habe meine Eltern in die Schweiz nachgezogen. Dürfen sie hier arbeiten?' no longer finds family-member-rights within the first 3 hits: ['family-eu-efta', 'family-deadlines', 'fza-family-members']",
-                "Q-DE-70 (German: Permit and work rights of reunited family members): search 'Ich habe meine Eltern in die Schweiz nachgezogen. Dürfen sie hier arbeiten?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3901, 'anchored_weight': 1.3311})"
+                "Q-DE-70 (German: Permit and work rights of reunited family members): search 'Ich habe meine Eltern in die Schweiz nachgezogen. Dürfen sie hier arbeiten?' no longer finds family-member-rights within the first 3 hits: ['family-deadlines', 'family-eu-efta', 'fza-family-members']",
+                "Q-DE-70 (German: Permit and work rights of reunited family members): search 'Ich habe meine Eltern in die Schweiz nachgezogen. Dürfen sie hier arbeiten?' reports match_strength weak, expected strong (signals {'lexical_share': 0.3952, 'anchored_weight': 1.3398})"
               ]
             }
           ]
@@ -7337,7 +7537,7 @@
         },
         {
           "case_id": "Q-DE-72",
-          "blocking": true,
+          "blocking": false,
           "passed": true,
           "issues": [],
           "searches": [
@@ -7353,7 +7553,7 @@
               "judged": false,
               "unjudged_issues": [
                 "Q-DE-72 (German: Getting married in Switzerland): search 'Können gleichgeschlechtliche Paare in der Schweiz standesamtlich heiraten?' no longer finds marriage-switzerland within the first 3 hits: ['health-insurance-deadline', 'naturalisation-facilitated-spouse', 'zh-tax-at-source-liability']",
-                "Q-DE-72 (German: Getting married in Switzerland): search 'Können gleichgeschlechtliche Paare in der Schweiz standesamtlich heiraten?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2763, 'anchored_weight': 1.0256})"
+                "Q-DE-72 (German: Getting married in Switzerland): search 'Können gleichgeschlechtliche Paare in der Schweiz standesamtlich heiraten?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2701, 'anchored_weight': 0.9959})"
               ]
             }
           ]
@@ -7446,7 +7646,7 @@
               "hits": [
                 "permit-b",
                 "zh-permit-c-five-years",
-                "zh-entry-permit-non-working"
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": false
@@ -7680,7 +7880,7 @@
               "hits": [
                 "city-zurich-population-office",
                 "city-zurich-arrival",
-                "social-assistance-review"
+                "tenancy-agreement"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7725,7 +7925,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-91 (German: tax return duty after a late move-in): search 'Ich bin erst im November nach Zürich gezogen und aktuell nicht erwerbstätig. Muss ich trotzdem eine Steuererklärung 2025 einreichen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1967, 'anchored_weight': 1.4044})"
+                "Q-DE-91 (German: tax return duty after a late move-in): search 'Ich bin erst im November nach Zürich gezogen und aktuell nicht erwerbstätig. Muss ich trotzdem eine Steuererklärung 2025 einreichen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1971, 'anchored_weight': 1.3988})"
               ]
             }
           ]
@@ -7760,8 +7960,8 @@
               "translated": false,
               "hits": [
                 "zh-road-traffic-office-locations",
-                "zh-vehicle-registration-move",
-                "zh-control-drive"
+                "zh-control-drive",
+                "zh-dog-keeping"
               ],
               "match_strength": "strong",
               "judged": true
@@ -7883,7 +8083,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-DE-99 (German: Unfallversicherung fuer eine Lernende): search 'Ich bin Lernende in einem Zürcher Betrieb. Bin ich über die Firma gegen Unfälle versichert wie eine normale Angestellte?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2117, 'anchored_weight': 1.4371})"
+                "Q-DE-99 (German: Unfallversicherung fuer eine Lernende): search 'Ich bin Lernende in einem Zürcher Betrieb. Bin ich über die Firma gegen Unfälle versichert wie eine normale Angestellte?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2124, 'anchored_weight': 1.4463})"
               ]
             }
           ]
@@ -7944,7 +8144,7 @@
               "judged": false,
               "unjudged_issues": [
                 "Q-FR-10 (French: Zurich: family reunification by holders of a short-stay L permit): search 'zusätzliche Dokumente Kind nachziehen Kurzaufenthaltsbewilligung L Kanton Zürich geschieden' no longer finds zh-family-l-permit within the first 3 hits: ['family-b', 'family-deadlines', 'zh-eu-l']",
-                "Q-FR-10 (French: Zurich: family reunification by holders of a short-stay L permit): search 'zusätzliche Dokumente Kind nachziehen Kurzaufenthaltsbewilligung L Kanton Zürich geschieden' reports match_strength weak, expected strong (signals {'lexical_share': 0.2452, 'anchored_weight': 1.3814})"
+                "Q-FR-10 (French: Zurich: family reunification by holders of a short-stay L permit): search 'zusätzliche Dokumente Kind nachziehen Kurzaufenthaltsbewilligung L Kanton Zürich geschieden' reports match_strength weak, expected strong (signals {'lexical_share': 0.2485, 'anchored_weight': 1.3915})"
               ]
             }
           ]
@@ -7973,7 +8173,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-FR-12 (French: Cantonal migration-office contact, Jura): search 'Adresse Migrationsamt Kanton Jura' reports match_strength weak, expected strong (signals {'lexical_share': 0.47, 'anchored_weight': 0.6965})"
+            "Q-FR-12 (French: Cantonal migration-office contact, Jura): search 'Adresse Migrationsamt Kanton Jura' reports match_strength weak, expected strong (signals {'lexical_share': 0.4735, 'anchored_weight': 0.7093})"
           ],
           "searches": [
             {
@@ -8001,13 +8201,13 @@
               "hits": [
                 "fza-non-working",
                 "zh-family-allowances",
-                "pillar-3a"
+                "customs-travel-allowance"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-FR-13 (French: assurance-maladie pour un travailleur transfrontalier sortant): search 'Krankenversicherung Pflicht wohne in der Schweiz arbeite nur in Frankreich' no longer finds health-insurance-deadline within the first 3 hits: ['fza-non-working', 'zh-family-allowances', 'pillar-3a']",
-                "Q-FR-13 (French: assurance-maladie pour un travailleur transfrontalier sortant): search 'Krankenversicherung Pflicht wohne in der Schweiz arbeite nur in Frankreich' reports match_strength weak, expected strong (signals {'lexical_share': 0.3059, 'anchored_weight': 1.2023})"
+                "Q-FR-13 (French: assurance-maladie pour un travailleur transfrontalier sortant): search 'Krankenversicherung Pflicht wohne in der Schweiz arbeite nur in Frankreich' no longer finds health-insurance-deadline within the first 3 hits: ['fza-non-working', 'zh-family-allowances', 'customs-travel-allowance']",
+                "Q-FR-13 (French: assurance-maladie pour un travailleur transfrontalier sortant): search 'Krankenversicherung Pflicht wohne in der Schweiz arbeite nur in Frankreich' reports match_strength weak, expected strong (signals {'lexical_share': 0.3083, 'anchored_weight': 1.1837})"
               ]
             }
           ]
@@ -8036,7 +8236,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-IT-7 (Italian: Swiss citizens re-entering with an expired ID): search 'Schweizer Bürgerin Einreise Schweiz abgelaufene Identitätskarte ohne gültigen Pass' reports match_strength weak, expected strong (signals {'lexical_share': 0.3786, 'anchored_weight': 1.4668})"
+            "Q-IT-7 (Italian: Swiss citizens re-entering with an expired ID): search 'Schweizer Bürgerin Einreise Schweiz abgelaufene Identitätskarte ohne gültigen Pass' reports match_strength weak, expected strong (signals {'lexical_share': 0.3745, 'anchored_weight': 1.4323})"
           ],
           "searches": [
             {
@@ -8069,7 +8269,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-IT-8 (Italian: Cantonal migration-office contact, Schaffhausen): search 'Adresse Migrationsamt Kanton Schaffhausen' reports match_strength weak, expected strong (signals {'lexical_share': 0.4463, 'anchored_weight': 0.6965})"
+                "Q-IT-8 (Italian: Cantonal migration-office contact, Schaffhausen): search 'Adresse Migrationsamt Kanton Schaffhausen' reports match_strength weak, expected strong (signals {'lexical_share': 0.4501, 'anchored_weight': 0.7093})"
               ]
             }
           ]
@@ -8252,14 +8452,14 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-HU-1 (Hungarian: applying for and the cost of ETIAS): search 'ETIAS Antrag visumbefreites Land Vorbereitung Kosten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1814, 'anchored_weight': 1.0})"
+                "Q-HU-1 (Hungarian: applying for and the cost of ETIAS): search 'ETIAS Antrag visumbefreites Land Vorbereitung Kosten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1811, 'anchored_weight': 1.0})"
               ]
             }
           ]
         },
         {
           "case_id": "Q-TR-1",
-          "blocking": true,
+          "blocking": false,
           "passed": true,
           "issues": [],
           "searches": [
@@ -8267,15 +8467,15 @@
               "query": "Arbeitsbewilligung genehmigt trotzdem Visum noetig fuer Einreise",
               "translated": true,
               "hits": [
-                "zh-foreign-licence-exchange",
                 "fza-entry",
-                "entry-visa-need"
+                "entry-visa-need",
+                "zh-foreign-licence-exchange"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-TR-1 (Turkish: Third-country workers: exemptions, application, visa and registration): search 'Arbeitsbewilligung genehmigt trotzdem Visum noetig fuer Einreise' no longer finds third-country-work-procedure within the first 3 hits: ['zh-foreign-licence-exchange', 'fza-entry', 'entry-visa-need']",
-                "Q-TR-1 (Turkish: Third-country workers: exemptions, application, visa and registration): search 'Arbeitsbewilligung genehmigt trotzdem Visum noetig fuer Einreise' reports match_strength weak, expected strong (signals {'lexical_share': 0.3013, 'anchored_weight': 1.3985})"
+                "Q-TR-1 (Turkish: Third-country workers: exemptions, application, visa and registration): search 'Arbeitsbewilligung genehmigt trotzdem Visum noetig fuer Einreise' no longer finds third-country-work-procedure within the first 3 hits: ['fza-entry', 'entry-visa-need', 'zh-foreign-licence-exchange']",
+                "Q-TR-1 (Turkish: Third-country workers: exemptions, application, visa and registration): search 'Arbeitsbewilligung genehmigt trotzdem Visum noetig fuer Einreise' reports match_strength weak, expected strong (signals {'lexical_share': 0.2998, 'anchored_weight': 1.3494})"
               ]
             }
           ]
@@ -8346,14 +8546,14 @@
               "query": "Umzug innerhalb Schweiz online melden Personenmeldeamt",
               "translated": true,
               "hits": [
+                "city-zurich-departure",
                 "health-insurance-deadline",
-                "moving-goods-customs",
-                "city-zurich-departure"
+                "posted-service-notification"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "Q-AR-1 (Arabic: reporting a move within Switzerland online): search 'Umzug innerhalb Schweiz online melden Personenmeldeamt' reports match_strength weak, expected strong (signals {'lexical_share': 0.3845, 'anchored_weight': 1.2177})"
+                "Q-AR-1 (Arabic: reporting a move within Switzerland online): search 'Umzug innerhalb Schweiz online melden Personenmeldeamt' reports match_strength weak, expected strong (signals {'lexical_share': 0.3859, 'anchored_weight': 1.1825})"
               ]
             }
           ]
@@ -8441,7 +8641,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-EN-T7 (English with typos: fza-employee-permit): search 'wat documnets does the athority need for my eu employmant residence permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2358, 'anchored_weight': 0.9257})"
+            "N-EN-T7 (English with typos: fza-employee-permit): search 'wat documnets does the athority need for my eu employmant residence permit?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2391, 'anchored_weight': 0.9424})"
           ],
           "searches": [
             {
@@ -8493,7 +8693,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-EN-T9 (English with typos: continuing pillar 3a during unemployment): search 'Can I keep paying into my pilar 3a if Im unemploid for a few monthes?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1895, 'anchored_weight': 1.0538})"
+                "N-EN-T9 (English with typos: continuing pillar 3a during unemployment): search 'Can I keep paying into my pilar 3a if Im unemploid for a few monthes?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1915, 'anchored_weight': 1.0556})"
               ]
             }
           ]
@@ -8527,14 +8727,14 @@
               "query": "I keep getting bounced between SEM and some embassy about my visa - who actually signs off on it?",
               "translated": false,
               "hits": [
-                "marriage-switzerland",
                 "entry-visa-application",
-                "entry-visa-types"
+                "marriage-switzerland",
+                "customs-returns-and-repairs"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-EN-J11 (English with expat slang: entry-visa-application): search 'I keep getting bounced between SEM and some embassy about my visa - who actually signs off on it?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1923, 'anchored_weight': 1.4697})"
+                "N-EN-J11 (English with expat slang: entry-visa-application): search 'I keep getting bounced between SEM and some embassy about my visa - who actually signs off on it?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1802, 'anchored_weight': 1.3441})"
               ]
             }
           ]
@@ -8550,8 +8750,8 @@
               "translated": false,
               "hits": [
                 "radio-tv-household-fee",
-                "zh-foreign-licence-exchange",
-                "family-separation"
+                "customs-travel-allowance",
+                "zh-foreign-licence-exchange"
               ],
               "match_strength": "strong",
               "judged": true
@@ -8563,16 +8763,16 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.125, 'anchored_weight': 1.045})"
+            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.129, 'anchored_weight': 1.0583})"
           ],
           "searches": [
             {
               "query": "I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?",
               "translated": false,
               "hits": [
-                "city-zurich-kindergarten",
+                "customs-travel-allowance",
                 "unemployment-benefit",
-                "zh-control-drive"
+                "city-zurich-kindergarten"
               ],
               "match_strength": "weak",
               "judged": true
@@ -8609,8 +8809,8 @@
               "translated": false,
               "hits": [
                 "permit-card-eu-efta",
-                "fza-cross-border-commuter",
-                "tax-at-source-tariff-codes"
+                "tax-at-source-tariff-codes",
+                "fza-cross-border-commuter"
               ],
               "match_strength": "strong",
               "judged": true
@@ -8634,7 +8834,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-DE-T9 (German with typos, no capitals: city-zurich-marriage): search 'bis wan muss die ehevorbereitug in zürich spätestens abgeschlosen sein' reports match_strength weak, expected strong (signals {'lexical_share': 0.2656, 'anchored_weight': 1.0849})"
+                "N-DE-T9 (German with typos, no capitals: city-zurich-marriage): search 'bis wan muss die ehevorbereitug in zürich spätestens abgeschlosen sein' reports match_strength weak, expected strong (signals {'lexical_share': 0.2675, 'anchored_weight': 1.0954})"
               ]
             }
           ]
@@ -8670,13 +8870,13 @@
               "hits": [
                 "foreign-licence-exchange",
                 "city-zurich-naturalisation",
-                "city-zurich-naturalisation-language"
+                "customs-travel-allowance"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "N-DE-T11 (German with typos: parking in the blue zone): search 'wielang darf ich in der blauenzone in zürich parkieren bevor ich ne busse riskier' no longer finds city-zurich-parking-permits within the first 3 hits: ['foreign-licence-exchange', 'city-zurich-naturalisation', 'city-zurich-naturalisation-language']",
-                "N-DE-T11 (German with typos: parking in the blue zone): search 'wielang darf ich in der blauenzone in zürich parkieren bevor ich ne busse riskier' reports match_strength weak, expected strong (signals {'lexical_share': 0.1691, 'anchored_weight': 1.2207})"
+                "N-DE-T11 (German with typos: parking in the blue zone): search 'wielang darf ich in der blauenzone in zürich parkieren bevor ich ne busse riskier' no longer finds city-zurich-parking-permits within the first 3 hits: ['foreign-licence-exchange', 'city-zurich-naturalisation', 'customs-travel-allowance']",
+                "N-DE-T11 (German with typos: parking in the blue zone): search 'wielang darf ich in der blauenzone in zürich parkieren bevor ich ne busse riskier' reports match_strength weak, expected strong (signals {'lexical_share': 0.1544, 'anchored_weight': 1.0954})"
               ]
             }
           ]
@@ -8693,7 +8893,7 @@
               "hits": [
                 "family-separation",
                 "zh-tax-at-source-tariffs",
-                "health-insurance-deadline"
+                "permit-l"
               ],
               "match_strength": "strong",
               "judged": true
@@ -8718,7 +8918,7 @@
               "judged": false,
               "unjudged_issues": [
                 "N-DE-J11 (Zurich German: aig-short-stay): search 'Wie lang darf ich ohni Bewilligung i de Schweiz blibe, wenn ich nid schaffe?' no longer finds aig-short-stay within the first 3 hits: ['aig-study', 'naturalisation-facilitated-spouse', 'zh-tax-at-source-liability']",
-                "N-DE-J11 (Zurich German: aig-short-stay): search 'Wie lang darf ich ohni Bewilligung i de Schweiz blibe, wenn ich nid schaffe?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1165, 'anchored_weight': 0.6412})"
+                "N-DE-J11 (Zurich German: aig-short-stay): search 'Wie lang darf ich ohni Bewilligung i de Schweiz blibe, wenn ich nid schaffe?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1115, 'anchored_weight': 0.6109})"
               ]
             }
           ]
@@ -8753,8 +8953,8 @@
               "translated": false,
               "hits": [
                 "city-zurich-dog-registration",
-                "zh-dog-keeping",
-                "city-zurich-household-waste"
+                "customs-importing-pets",
+                "zh-dog-keeping"
               ],
               "match_strength": "strong",
               "judged": true
@@ -8836,7 +9036,7 @@
               "judged": false,
               "unjudged_issues": [
                 "CTX-1 (No context given, English: aig-work-permit): search \"I have a new job starting in Zurich next week. Since it's only a temporary role, do I still need a work permit for it?\" no longer finds aig-work-permit within the first 3 hits: ['uk-new-employment', 'city-zurich-population-office', 'zh-tax-at-source-liability']",
-                "CTX-1 (No context given, English: aig-work-permit): search \"I have a new job starting in Zurich next week. Since it's only a temporary role, do I still need a work permit for it?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3043, 'anchored_weight': 1.4671})"
+                "CTX-1 (No context given, English: aig-work-permit): search \"I have a new job starting in Zurich next week. Since it's only a temporary role, do I still need a work permit for it?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3053, 'anchored_weight': 1.4837})"
               ]
             }
           ]
@@ -8984,15 +9184,15 @@
               "query": "I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?",
               "translated": false,
               "hits": [
-                "naturalisation-ordinary",
                 "eu-employment-registration-deadline",
-                "notification-responsibility"
+                "notification-responsibility",
+                "naturalisation-ordinary"
               ],
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "CTX-12 (Context routing, English: short EU/EFTA job versus the UK rule): search \"I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?\" no longer finds eu-short-employment within the first 3 hits: ['naturalisation-ordinary', 'eu-employment-registration-deadline', 'notification-responsibility']",
-                "CTX-12 (Context routing, English: short EU/EFTA job versus the UK rule): search \"I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1871, 'anchored_weight': 1.3776})"
+                "CTX-12 (Context routing, English: short EU/EFTA job versus the UK rule): search \"I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?\" no longer finds eu-short-employment within the first 3 hits: ['eu-employment-registration-deadline', 'notification-responsibility', 'naturalisation-ordinary']",
+                "CTX-12 (Context routing, English: short EU/EFTA job versus the UK rule): search \"I'm Portuguese and just signed a seven-week contract with a firm in Zurich. Does my employer need to apply for a work permit, or can they just notify the authorities?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.1874, 'anchored_weight': 1.357})"
               ]
             }
           ]
@@ -9028,7 +9228,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "CTX-15 (No canton given, English: cantonal migration office): search \"I need to reach the migration office responsible for my canton, but I don't know its address. Can you find it for me?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2014, 'anchored_weight': 1.0718})"
+                "CTX-15 (No canton given, English: cantonal migration office): search \"I need to reach the migration office responsible for my canton, but I don't know its address. Can you find it for me?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2061, 'anchored_weight': 1.0807})"
               ]
             }
           ]
@@ -9063,8 +9263,8 @@
               "translated": false,
               "hits": [
                 "health-insurance-deadline",
-                "zh-vehicle-registration-move",
-                "city-zurich-kindergarten"
+                "customs-moving-vehicle",
+                "zh-vehicle-registration-move"
               ],
               "match_strength": "strong",
               "judged": true
@@ -9322,7 +9522,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "XC-29 (Another canton, German: voting at 18 in a federal vote, asked in Lucerne): search 'Meine Tochter ist Schweizerin, wir wohnen in Luzern, und sie wird im Februar 18. Darf sie bei der eidgenössischen Abstimmung im März schon abstimmen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1624, 'anchored_weight': 1.1602})"
+                "XC-29 (Another canton, German: voting at 18 in a federal vote, asked in Lucerne): search 'Meine Tochter ist Schweizerin, wir wohnen in Luzern, und sie wird im Februar 18. Darf sie bei der eidgenössischen Abstimmung im März schon abstimmen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1585, 'anchored_weight': 1.1284})"
               ]
             }
           ]
@@ -9473,9 +9673,9 @@
               "query": "Wir ziehen von Österreich in den Kanton Wallis um und bringen unsere Möbel und unseren Hund mit. Müssen wir Zoll bezahlen?",
               "translated": false,
               "hits": [
+                "customs-importing-pets",
                 "moving-goods-customs",
-                "cantonal-migration-contact",
-                "city-zurich-dog-registration"
+                "cantonal-migration-contact"
               ],
               "match_strength": "strong",
               "judged": true
@@ -9506,7 +9706,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XC-39 (Another canton, German: a birth allowance in Lucerne): search 'Mein Kind wurde letzten Monat in Luzern geboren. Gibt es dort eine Geburtszulage?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1992, 'anchored_weight': 1.4591})"
+            "XC-39 (Another canton, German: a birth allowance in Lucerne): search 'Mein Kind wurde letzten Monat in Luzern geboren. Gibt es dort eine Geburtszulage?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2002, 'anchored_weight': 1.4681})"
           ],
           "searches": [
             {
@@ -9533,8 +9733,8 @@
               "translated": false,
               "hits": [
                 "parental-leave",
-                "posted-service-notification",
-                "family-allowances"
+                "customs-leaving-with-goods",
+                "posted-service-notification"
               ],
               "match_strength": "strong",
               "judged": true
@@ -9580,7 +9780,7 @@
               "match_strength": "weak",
               "judged": false,
               "unjudged_issues": [
-                "XC-42 (Another canton, German: a four-month stay without work in Basel): search 'Ich bin Amerikanerin und möchte vier Monate bei meinem Freund in Basel wohnen, ohne zu arbeiten. Geht das ohne Bewilligung?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1917, 'anchored_weight': 1.3452})"
+                "XC-42 (Another canton, German: a four-month stay without work in Basel): search 'Ich bin Amerikanerin und möchte vier Monate bei meinem Freund in Basel wohnen, ohne zu arbeiten. Geht das ohne Bewilligung?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1916, 'anchored_weight': 1.349})"
               ]
             }
           ]
@@ -9628,7 +9828,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XC-45 (Another canton, English: an EU/EFTA sponsor bringing dependent parents to Graubünden): search \"I'm an EU citizen with a residence permit in Graubünden. Can I bring my dependent parents to live with me?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3463, 'anchored_weight': 1.4294})"
+            "XC-45 (Another canton, English: an EU/EFTA sponsor bringing dependent parents to Graubünden): search \"I'm an EU citizen with a residence permit in Graubünden. Can I bring my dependent parents to live with me?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.3401, 'anchored_weight': 1.3994})"
           ],
           "searches": [
             {
@@ -9716,7 +9916,7 @@
               "hits": [
                 "city-zurich-dog-registration",
                 "zh-dog-keeping",
-                "zh-road-traffic-office-locations"
+                "customs-importing-pets"
               ],
               "match_strength": "strong",
               "judged": true
@@ -9725,9 +9925,11 @@
         },
         {
           "case_id": "XM-14",
-          "blocking": true,
-          "passed": true,
-          "issues": [],
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "XM-14 (Another Zurich municipality, English: registering a car moved from Aargau to Wetzikon): search \"I'm moving from Aargau to Wetzikon with my car. What do I need to register it at the Road Traffic Office?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.2791, 'anchored_weight': 1.4826})"
+          ],
           "searches": [
             {
               "query": "I'm moving from Aargau to Wetzikon with my car. What do I need to register it at the Road Traffic Office?",
@@ -9735,9 +9937,9 @@
               "hits": [
                 "zh-vehicle-registration-move",
                 "zh-road-traffic-office-locations",
-                "moving-goods-customs"
+                "customs-moving-vehicle"
               ],
-              "match_strength": "strong",
+              "match_strength": "weak",
               "judged": true
             }
           ]
@@ -9747,7 +9949,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XM-15 (Another Zurich municipality, German: when voting documents arrive in Illnau-Effretikon): search 'Ich bin Schweizer Bürger und wohne in Illnau-Effretikon. Wann erhalte ich die Abstimmungsunterlagen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2191, 'anchored_weight': 1.1602})"
+            "XM-15 (Another Zurich municipality, German: when voting documents arrive in Illnau-Effretikon): search 'Ich bin Schweizer Bürger und wohne in Illnau-Effretikon. Wann erhalte ich die Abstimmungsunterlagen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2139, 'anchored_weight': 1.1284})"
           ],
           "searches": [
             {
@@ -9790,7 +9992,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XM-17 (Another Zurich municipality, German: electronic signatures at the unemployment fund, asked in Horgen): search 'Ich wohne in Horgen und schicke meine Unterlagen an die Arbeitslosenkasse. Darf ich die Formulare elektronisch unterschreiben?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1703, 'anchored_weight': 1.1163})"
+            "XM-17 (Another Zurich municipality, German: electronic signatures at the unemployment fund, asked in Horgen): search 'Ich wohne in Horgen und schicke meine Unterlagen an die Arbeitslosenkasse. Darf ich die Formulare elektronisch unterschreiben?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1716, 'anchored_weight': 1.1286})"
           ],
           "searches": [
             {
@@ -9827,9 +10029,11 @@
         },
         {
           "case_id": "XM-19",
-          "blocking": true,
-          "passed": true,
-          "issues": [],
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "XM-19 (Another Zurich municipality, German: the nearest Road Traffic Office for a resident of Hinwil): search 'Ich wohne in Hinwil. Wo ist mein nächstes Strassenverkehrsamt, und wann hat es offen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4448, 'anchored_weight': 1.4951})"
+          ],
           "searches": [
             {
               "query": "Ich wohne in Hinwil. Wo ist mein nächstes Strassenverkehrsamt, und wann hat es offen?",
@@ -9839,7 +10043,7 @@
                 "zh-foreign-licence-exchange",
                 "zh-tax-at-source-liability"
               ],
-              "match_strength": "strong",
+              "match_strength": "weak",
               "judged": true
             }
           ]
@@ -9868,7 +10072,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6028, 'anchored_weight': 1.5753})"
+            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.599, 'anchored_weight': 1.582})"
           ],
           "searches": [
             {
@@ -9991,7 +10195,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-49 (Rejected, English: a downloadable work-permit application form is not published): search 'Where can I download the application form for a work permit in Zurich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6364, 'anchored_weight': 1.3614})"
+            "OOS-49 (Rejected, English: a downloadable work-permit application form is not published): search 'Where can I download the application form for a work permit in Zurich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6353, 'anchored_weight': 1.3717})"
           ],
           "searches": [
             {
@@ -10227,7 +10431,8 @@
               "query": "My grandparents came to Switzerland and I was born here. Is naturalisation easier for me?",
               "translated": false,
               "hits": [
-                "naturalisation-third-generation"
+                "naturalisation-third-generation",
+                "customs-leaving-with-goods"
               ],
               "match_strength": "strong",
               "judged": true
@@ -10473,8 +10678,8 @@
               "translated": false,
               "hits": [
                 "travel-documents-foreign-nationals",
-                "entry-requirements-third-country",
-                "zh-family-refugee-asylum"
+                "zh-family-refugee-asylum",
+                "entry-requirements-third-country"
               ],
               "match_strength": "strong",
               "judged": true
@@ -10734,13 +10939,811 @@
               "judged": true
             }
           ]
+        },
+        {
+          "case_id": "Q-EN-131",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "How much shopping can I bring back from Germany before I owe tax at the border?",
+              "translated": false,
+              "hits": [
+                "customs-travel-allowance",
+                "customs-leaving-with-goods",
+                "customs-duty-free-quantities"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-111",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Ab welchem Betrag muss ich meine Einkaeufe bei der Rueckkehr in die Schweiz versteuern?",
+              "translated": false,
+              "hits": [
+                "customs-travel-allowance",
+                "customs-import-vat-rate",
+                "customs-leaving-with-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-132",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Does the petrol in my tank count when customs works out what I am carrying?",
+              "translated": false,
+              "hits": [
+                "customs-goods-counted-toward-allowance",
+                "customs-declaring-goods",
+                "moving-goods-customs"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-112",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Zaehlt eine im Ausland ausgefuehrte Reparatur an meinem Auto mit?",
+              "translated": false,
+              "hits": [
+                "customs-goods-counted-toward-allowance",
+                "customs-returns-and-repairs",
+                "customs-declaring-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-133",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What percentage is charged on goods I bring in, and is there a lower one for food?",
+              "translated": false,
+              "hits": [
+                "customs-duty-free-quantities",
+                "customs-import-vat-rate",
+                "customs-travel-allowance"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-113",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Welcher Steuersatz gilt bei der Einfuhr, und gibt es einen tieferen fuer Buecher?",
+              "translated": false,
+              "hits": [
+                "customs-import-vat-rate",
+                "zh-tax-at-source-liability",
+                "customs-duty-free-quantities"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-134",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Are there limits on the meat and alcohol I carry across the border?",
+              "translated": false,
+              "hits": [
+                "customs-duty-free-quantities",
+                "customs-personal-effects",
+                "customs-moving-vehicle"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-114",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Welche Regeln gelten fuer Fleisch und Wein, die ich ueber die Grenze bringe?",
+              "translated": false,
+              "hits": [
+                "customs-duty-free-quantities",
+                "customs-personal-effects"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-135",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Do I have to declare my own camera and laptop when I travel in?",
+              "translated": false,
+              "hits": [
+                "customs-personal-effects",
+                "entry-requirements-third-country"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-115",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Muss ich meine eigene Kamera und meinen Laptop bei der Einreise verzollen?",
+              "translated": false,
+              "hits": [
+                "customs-personal-effects",
+                "zh-third-country-retirement",
+                "customs-declaring-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-136",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Which things am I not allowed to bring in at all?",
+              "translated": false,
+              "hits": [
+                "customs-prohibited-restricted-goods",
+                "customs-leaving-with-goods",
+                "zh-foreign-licence-exchange"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-116",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Welche Waren darf ich gar nicht einfuehren oder nur mit Bewilligung?",
+              "translated": false,
+              "hits": [
+                "customs-prohibited-restricted-goods",
+                "customs-duty-free-quantities",
+                "customs-declaring-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-137",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Which way do I take at the airport when I have something with me?",
+              "translated": false,
+              "hits": [
+                "customs-declaring-goods",
+                "customs-leaving-with-goods",
+                "customs-internet-orders"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-117",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Welchen Weg nehme ich am Flughafen, wenn ich etwas dabei habe?",
+              "translated": false,
+              "hits": [
+                "customs-declaring-goods",
+                "permit-b",
+                "permit-authority"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-138",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What will I be charged when a parcel I ordered abroad reaches me?",
+              "translated": false,
+              "hits": [
+                "customs-internet-orders",
+                "customs-returns-and-repairs",
+                "customs-mail-order-vat"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-118",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Was kommt auf mich zu, wenn eine im Ausland bestellte Sendung ankommt?",
+              "translated": false,
+              "hits": [
+                "customs-internet-orders",
+                "customs-returns-and-repairs",
+                "customs-preferential-origin"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-139",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Why did a foreign shop already charge me Swiss tax at checkout?",
+              "translated": false,
+              "hits": [
+                "customs-mail-order-vat",
+                "customs-internet-orders"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-119",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Warum verrechnet mir ein auslaendischer Onlineshop schon beim Kauf die Schweizer Steuer?",
+              "translated": false,
+              "hits": [
+                "customs-mail-order-vat",
+                "customs-leaving-with-goods",
+                "customs-internet-orders"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-140",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Does my friend have to enclose a proof of origin for the reduced rate?",
+              "translated": false,
+              "hits": [
+                "customs-preferential-origin",
+                "customs-import-vat-rate",
+                "rent-changes"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-120",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Gilt die Zollpraeferenz auch ohne Ursprungsnachweis bei einer Sendung von privat an privat?",
+              "translated": false,
+              "hits": [
+                "customs-preferential-origin",
+                "customs-internet-orders"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-141",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What happens with my car at the border when I relocate here?",
+              "translated": false,
+              "hits": [
+                "customs-moving-vehicle",
+                "moving-goods-customs",
+                "customs-moving-animals"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-121",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Was passiert mit meinem Auto an der Grenze, wenn ich hierher zuegle?",
+              "translated": false,
+              "hits": [
+                "customs-declaring-goods",
+                "customs-goods-counted-toward-allowance",
+                "customs-moving-vehicle"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-142",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What papers does my horse need when we relocate from an EU country?",
+              "translated": false,
+              "hits": [
+                "customs-moving-animals",
+                "customs-moving-vehicle",
+                "canton-change"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-122",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Welche Papiere braucht mein Pferd, wenn wir aus einem EU-Land hierher zuegeln?",
+              "translated": false,
+              "hits": [
+                "customs-moving-animals",
+                "city-zurich-organic-paper-cardboard",
+                "customs-declaring-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-143",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Can I get back what I paid at the border after I return the item?",
+              "translated": false,
+              "hits": [
+                "customs-returns-and-repairs",
+                "customs-travel-allowance",
+                "ahv-contribution-refund"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-123",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Bekomme ich die an der Grenze bezahlten Abgaben zurueck, wenn ich die Ware zuruecksende?",
+              "translated": false,
+              "hits": [
+                "customs-returns-and-repairs",
+                "customs-personal-effects",
+                "customs-internet-orders"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-144",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "I am collecting a puppy from a breeder abroad; what happens at the border?",
+              "translated": false,
+              "hits": [
+                "customs-importing-pets",
+                "ahv-pension-abroad",
+                "customs-moving-vehicle"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-124",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Ich hole einen Welpen bei einem Zuechter im Ausland; was gilt an der Grenze?",
+              "translated": false,
+              "hits": [
+                "customs-importing-pets",
+                "customs-goods-counted-toward-allowance",
+                "customs-mail-order-vat"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-145",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "A visitor bought something here; can she claim the tax back on the way out?",
+              "translated": false,
+              "hits": [
+                "customs-leaving-with-goods",
+                "customs-travel-allowance",
+                "customs-importing-pets"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-125",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Eine Besucherin hat hier eingekauft; kann sie sich die Steuer bei der Ausreise erstatten lassen?",
+              "translated": false,
+              "hits": [
+                "customs-leaving-with-goods",
+                "zh-dog-keeping",
+                "naturalisation-facilitated-spouse"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-146",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What do I need at the border for the furniture I am bringing when I move here?",
+              "translated": false,
+              "hits": [
+                "moving-goods-customs",
+                "customs-moving-vehicle",
+                "customs-moving-animals"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-126",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Wir ziehen aus Deutschland in die Schweiz. Was gilt beim Zoll fuer unseren Hausrat?",
+              "translated": false,
+              "hits": [
+                "moving-goods-customs",
+                "customs-leaving-with-goods",
+                "city-zurich-marriage"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-EN-14",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "customs limit shopping trip",
+              "translated": false,
+              "hits": [
+                "customs-travel-allowance",
+                "customs-goods-counted-toward-allowance",
+                "customs-leaving-with-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-DE-15",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "waren anmelden grenze wie geht das",
+              "translated": false,
+              "hits": [
+                "customs-declaring-goods",
+                "customs-duty-free-quantities",
+                "customs-goods-counted-toward-allowance"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-EN-15",
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "N-EN-15 (English: Noise: situation first): search 'bought a jacket online from italy last week it is stuck somewhere what now' no longer finds customs-internet-orders within the first 3 hits: ['customs-returns-and-repairs', 'naturalisation-ordinary', 'customs-importing-pets']"
+          ],
+          "searches": [
+            {
+              "query": "bought a jacket online from italy last week it is stuck somewhere what now",
+              "translated": false,
+              "hits": [
+                "customs-returns-and-repairs",
+                "naturalisation-ordinary",
+                "customs-importing-pets"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-DE-16",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "wieviel fleich darf ich ueber die grenze nemen",
+              "translated": false,
+              "hits": [
+                "customs-duty-free-quantities",
+                "customs-personal-effects",
+                "customs-declaring-goods"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-EN-16",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "dog border switzerland cropped ears",
+              "translated": false,
+              "hits": [
+                "customs-importing-pets",
+                "customs-moving-animals",
+                "city-zurich-dog-registration"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-DE-17",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "zuegle in die schweiz was mach ich mit dem ganzen hausrat am zoll",
+              "translated": false,
+              "hits": [
+                "moving-goods-customs",
+                "eu-permit-mobility",
+                "customs-declaring-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "OOS-61",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Wie hoch ist der Zollansatz fuer Lederwaren?",
+              "translated": false,
+              "hits": [
+                "zh-family-allowances",
+                "customs-declaring-goods",
+                "zh-tax-at-source-tariffs"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "OOS-62",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Wie verzolle ich Handelswaren fuer meine Firma?",
+              "translated": false,
+              "hits": [
+                "moving-goods-customs",
+                "zh-eu-self-employment",
+                "posted-service-notification"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "OOS-63",
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "OOS-63 (Out of scope: The duty on one particular consignment): search 'How much duty exactly will customs charge on my consignment?' reports match_strength strong, expected weak (signals {'lexical_share': 0.5059, 'anchored_weight': 1.6971})"
+          ],
+          "searches": [
+            {
+              "query": "How much duty exactly will customs charge on my consignment?",
+              "translated": false,
+              "hits": [
+                "customs-duty-free-quantities",
+                "customs-preferential-origin",
+                "customs-mail-order-vat"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "OOS-64",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What is the customs tariff number for a leather handbag?",
+              "translated": false,
+              "hits": [
+                "customs-preferential-origin",
+                "zh-tax-at-source-tariffs",
+                "tax-at-source-tariff-codes"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
         }
       ]
     },
     "hybrid": {
       "retrieval_mode": "hybrid",
-      "cases": 603,
-      "passed": 569,
+      "cases": 655,
+      "passed": 616,
       "failed": [],
       "quarantined": [
         "Q-EN-2",
@@ -10757,33 +11760,42 @@
         "OOS-9",
         "N-EN-T1",
         "N-DE-T7",
+        "OOS-23",
         "Q-DE-37",
         "XC-1",
         "XM-1",
+        "Q-DE-55",
         "Q-DE-63",
+        "XM-8",
         "Q-EN-76",
         "Q-EN-78",
         "Q-EN-84",
         "Q-EN-91",
         "Q-EN-99",
+        "Q-DE-72",
         "Q-DE-79",
         "Q-DE-90",
         "Q-FR-12",
         "Q-IT-7",
+        "Q-TR-1",
         "Q-RU-1",
         "N-EN-T7",
         "N-EN-J13",
         "CTX-25",
         "XC-39",
         "XC-45",
+        "XM-14",
         "XM-15",
         "XM-17",
         "XM-18",
+        "XM-19",
         "OOS-42",
         "OOS-43",
         "OOS-46",
         "OOS-49",
-        "OOS-50"
+        "OOS-50",
+        "N-EN-15",
+        "OOS-63"
       ],
       "quarantined_failed": [
         "Q-EN-2",
@@ -10796,17 +11808,20 @@
         "Q-FR-4",
         "OOS-1",
         "OOS-4",
-        "OOS-9",
         "N-EN-T1",
         "N-DE-T7",
+        "OOS-23",
         "XC-1",
         "XM-1",
+        "Q-DE-55",
         "Q-DE-63",
         "Q-EN-76",
         "Q-EN-78",
         "Q-EN-91",
+        "Q-DE-72",
         "Q-DE-79",
         "Q-DE-90",
+        "Q-TR-1",
         "Q-RU-1",
         "N-EN-T7",
         "N-EN-J13",
@@ -10819,16 +11834,22 @@
         "OOS-43",
         "OOS-46",
         "OOS-49",
-        "OOS-50"
+        "OOS-50",
+        "N-EN-15",
+        "OOS-63"
       ],
       "quarantined_passing": [
         "Q-DE-4",
+        "OOS-9",
         "Q-DE-37",
+        "XM-8",
         "Q-EN-84",
         "Q-EN-99",
         "Q-FR-12",
         "Q-IT-7",
-        "XC-45"
+        "XC-45",
+        "XM-14",
+        "XM-19"
       ],
       "unjudged_steps": 0,
       "results": [
@@ -11062,7 +12083,7 @@
               "hits": [
                 "zh-premium-reduction",
                 "health-insurance-deadline",
-                "zh-health-insurance-exemption"
+                "zh-sva-telephone-numbers"
               ],
               "match_strength": "strong",
               "judged": true
@@ -11081,7 +12102,7 @@
               "hits": [
                 "naturalisation-ordinary",
                 "naturalisation-facilitated-spouse",
-                "city-zurich-citizenship-swiss"
+                "permit-card-eu-efta"
               ],
               "match_strength": "strong",
               "judged": true
@@ -11233,7 +12254,7 @@
               "hits": [
                 "city-zurich-dog-registration",
                 "zh-dog-keeping",
-                "city-zurich-first-steps"
+                "customs-moving-animals"
               ],
               "match_strength": "strong",
               "judged": true
@@ -11327,7 +12348,7 @@
               "translated": false,
               "hits": [
                 "zh-vehicle-registration-move",
-                "moving-goods-customs",
+                "customs-moving-vehicle",
                 "zh-foreign-licence-exchange"
               ],
               "match_strength": "strong",
@@ -11591,8 +12612,8 @@
               "translated": false,
               "hits": [
                 "city-zurich-dog-registration",
-                "zh-dog-keeping",
-                "aig-registration"
+                "customs-moving-animals",
+                "zh-dog-keeping"
               ],
               "match_strength": "strong",
               "judged": true
@@ -11609,9 +12630,9 @@
               "query": "Umzug von Luzern nach Kloten mit Auto Strassenverkehrsamt Anwohnerparkkarte",
               "translated": false,
               "hits": [
+                "customs-moving-vehicle",
                 "zh-vehicle-registration-move",
-                "moving-goods-customs",
-                "city-zurich-parking-permits"
+                "moving-goods-customs"
               ],
               "match_strength": "strong",
               "judged": true
@@ -11688,12 +12709,12 @@
           "issues": [],
           "searches": [
             {
-              "query": "Wie hoch ist die Mehrwertsteuer in der Schweiz?",
+              "query": "Wie hoch ist die Erbschaftssteuer?",
               "translated": false,
               "hits": [
+                "customs-import-vat-rate",
                 "zh-tax-at-source-tariffs",
-                "tax-at-source-liability",
-                "radio-tv-household-fee"
+                "tax-at-source-liability"
               ],
               "match_strength": "weak",
               "judged": true
@@ -11710,9 +12731,9 @@
               "query": "What is the speed limit on Swiss motorways?",
               "translated": false,
               "hits": [
-                "entry-visa-fee-insurance",
-                "zh-foreign-licence-exchange",
-                "aig-study"
+                "customs-import-vat-rate",
+                "customs-travel-allowance",
+                "customs-goods-counted-toward-allowance"
               ],
               "match_strength": "weak",
               "judged": true
@@ -12186,8 +13207,8 @@
               "translated": false,
               "hits": [
                 "moving-goods-customs",
-                "zh-vehicle-registration-move",
-                "city-zurich-bulky-waste-pickup"
+                "customs-moving-vehicle",
+                "customs-goods-counted-toward-allowance"
               ],
               "match_strength": "strong",
               "judged": true
@@ -12335,6 +13356,183 @@
           "searches": []
         },
         {
+          "case_id": "UAT-72",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Wertfreigrenze mehrere Personen ein Gegenstand",
+              "translated": false,
+              "hits": [
+                "customs-travel-allowance",
+                "customs-goods-counted-toward-allowance"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-73",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Freimengen Fleisch Alkohol Einfuhr Schweiz",
+              "translated": false,
+              "hits": [
+                "customs-duty-free-quantities",
+                "customs-import-vat-rate",
+                "customs-prohibited-restricted-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-74",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Zollanmeldung vor dem Grenzuebertritt App roter Durchgang",
+              "translated": false,
+              "hits": [
+                "customs-declaring-goods",
+                "customs-importing-pets",
+                "naturalisation-ordinary"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-75",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Paket aus dem Ausland bestellt Kosten bei der Einfuhr",
+              "translated": false,
+              "hits": [
+                "customs-internet-orders",
+                "customs-importing-pets",
+                "customs-travel-allowance"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-76",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "kleine Sendung keine Abgaben Versandhandel Plattform",
+              "translated": false,
+              "hits": [
+                "customs-mail-order-vat",
+                "customs-internet-orders",
+                "customs-returns-and-repairs"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-77",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Ruecksendung Einfuhrabgaben zurueck Gesuch Frist",
+              "translated": false,
+              "hits": [
+                "customs-returns-and-repairs",
+                "family-deadlines",
+                "customs-leaving-with-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-78",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Umzug in die Schweiz Hausrat und Auto Zoll",
+              "translated": false,
+              "hits": [
+                "moving-goods-customs",
+                "customs-moving-vehicle",
+                "customs-moving-animals"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-79",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "mit Hund in die Schweiz einreisen und anmelden",
+              "translated": false,
+              "hits": [
+                "customs-importing-pets",
+                "city-zurich-dog-registration",
+                "zh-dog-keeping"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "UAT-80",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "steuerfrei einkaufen Ausfuhrdokument bestaetigen",
+              "translated": false,
+              "hits": [
+                "customs-leaving-with-goods",
+                "customs-mail-order-vat",
+                "zh-premium-reduction"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "DECLINE-11",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": []
+        },
+        {
           "case_id": "Q-EN-1",
           "blocking": true,
           "passed": true,
@@ -12474,7 +13672,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['naturalisation-ordinary', 'zh-family-b-c-permit', 'zh-permit-c-five-years']"
+            "Q-EN-8 (English: Family reunification with a settlement-permit sponsor): search 'I have a C permit. Can my wife and my ten-year-old son join me in Switzerland?' no longer finds family-c within the first 3 hits: ['naturalisation-ordinary', 'zh-permit-c-five-years', 'zh-family-b-c-permit']"
           ],
           "searches": [
             {
@@ -12482,8 +13680,8 @@
               "translated": false,
               "hits": [
                 "naturalisation-ordinary",
-                "zh-family-b-c-permit",
-                "zh-permit-c-five-years"
+                "zh-permit-c-five-years",
+                "zh-family-b-c-permit"
               ],
               "match_strength": "strong",
               "judged": true
@@ -12725,7 +13923,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-DE-1 (German: Authority issuing residence permits): search 'Welche Behörde stellt in der Schweiz die Aufenthaltsbewilligungen aus?' no longer finds permit-authority within the first 3 hits: ['entry-visa-need', 'family-swiss', 'aig-short-stay']"
+            "Q-DE-1 (German: Authority issuing residence permits): search 'Welche Behörde stellt in der Schweiz die Aufenthaltsbewilligungen aus?' no longer finds permit-authority within the first 3 hits: ['entry-visa-need', 'zh-third-country-work', 'travel-documents-foreign-nationals']"
           ],
           "searches": [
             {
@@ -12733,8 +13931,8 @@
               "translated": false,
               "hits": [
                 "entry-visa-need",
-                "family-swiss",
-                "aig-short-stay"
+                "zh-third-country-work",
+                "travel-documents-foreign-nationals"
               ],
               "match_strength": "strong",
               "judged": true
@@ -12772,7 +13970,7 @@
               "hits": [
                 "zh-eu-registration",
                 "zh-naturalisation-division-contact",
-                "cantonal-migration-contact"
+                "zh-newcomer-first-information"
               ],
               "match_strength": "strong",
               "judged": true
@@ -12850,7 +14048,7 @@
               "hits": [
                 "permit-lost",
                 "zh-permit-card",
-                "travel-documents-foreign-nationals"
+                "city-zurich-departure"
               ],
               "match_strength": "strong",
               "judged": true
@@ -12887,8 +14085,8 @@
               "translated": false,
               "hits": [
                 "canton-change",
-                "zh-vehicle-registration-move",
-                "zh-family-b-c-permit"
+                "zh-family-b-c-permit",
+                "zh-naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -13501,8 +14699,8 @@
               "translated": true,
               "hits": [
                 "family-swiss",
-                "naturalisation-facilitated-spouse",
-                "fza-family-members"
+                "family-b",
+                "naturalisation-facilitated-spouse"
               ],
               "match_strength": "strong",
               "judged": true
@@ -13514,7 +14712,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-1 (Rejected, German: schooling is not published): search 'Wie melde ich mein Kind für den Kindergarten in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4785, 'anchored_weight': 1.5409, 'best_semantic_score': 0.746})"
+            "OOS-1 (Rejected, German: schooling is not published): search 'Wie melde ich mein Kind für den Kindergarten in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.4979, 'anchored_weight': 1.5491, 'best_semantic_score': 0.746})"
           ],
           "searches": [
             {
@@ -13572,7 +14770,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-4 (Rejected, Italian: family allowances is not published): search 'Familienzulagen für Kinder beantragen' reports match_strength strong, expected weak (signals {'lexical_share': 1.0, 'anchored_weight': 1.6841, 'best_semantic_score': 0.6766})",
+            "OOS-4 (Rejected, Italian: family allowances is not published): search 'Familienzulagen für Kinder beantragen' reports match_strength strong, expected weak (signals {'lexical_share': 1.0, 'anchored_weight': 1.7042, 'best_semantic_score': 0.6766})",
             "OOS-4 (Rejected, Italian: family allowances is not published): family-allowances expected OUT_OF_COVERAGE, got SUPPORTED",
             "OOS-4 (Rejected, Italian: family allowances is not published): family-allowances expected a concept_not_published gap, got none"
           ],
@@ -13669,10 +14867,8 @@
         {
           "case_id": "OOS-9",
           "blocking": false,
-          "passed": false,
-          "issues": [
-            "OOS-9 (Rejected, German: taxes other than tax at source is not published): search 'Wie wird der Eigenmietwert meines Hauses im Kanton Zürich berechnet?' reports match_strength strong, expected weak (signals {'lexical_share': 0.2195, 'anchored_weight': 1.0, 'best_semantic_score': 0.6389})"
-          ],
+          "passed": true,
+          "issues": [],
           "searches": [
             {
               "query": "Wie wird der Eigenmietwert meines Hauses im Kanton Zürich berechnet?",
@@ -13682,7 +14878,7 @@
                 "zh-initial-rent-form",
                 "zh-tax-at-source-tariffs"
               ],
-              "match_strength": "strong",
+              "match_strength": "weak",
               "judged": true
             }
           ]
@@ -13887,7 +15083,7 @@
               "hits": [
                 "third-country-work",
                 "zh-third-country-work",
-                "fza-job-search"
+                "zh-eu-nonworking"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14151,9 +15347,9 @@
               "query": "Wann bekomme ich den roten Pass?",
               "translated": false,
               "hits": [
+                "customs-declaring-goods",
                 "naturalisation-ordinary",
-                "family-swiss",
-                "zh-tax-at-source-liability"
+                "family-swiss"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14171,8 +15367,8 @@
               "translated": false,
               "hits": [
                 "tax-at-source-liability",
-                "zh-tax-at-source-tariffs",
-                "zh-tax-at-source-liability"
+                "zh-tax-at-source-liability",
+                "zh-tax-at-source-tariffs"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14189,9 +15385,9 @@
               "query": "Wie viel bekomme ich aus der ersten Säule zurück, wenn ich die Schweiz für immer verlasse?",
               "translated": false,
               "hits": [
+                "customs-leaving-with-goods",
                 "ahv-contribution-refund",
-                "bvg-cash-out-departure",
-                "tax-at-source-liability"
+                "bvg-cash-out-departure"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14418,8 +15614,8 @@
               "translated": false,
               "hits": [
                 "zh-migrationsamt-contact",
-                "zh-naturalisation-division-contact",
-                "cantonal-migration-contact"
+                "cantonal-migration-contact",
+                "zh-naturalisation-division-contact"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14533,7 +15729,7 @@
               "hits": [
                 "zh-road-traffic-office-locations",
                 "city-zurich-tax-office-contact",
-                "zh-tax-office-contact"
+                "zh-sva-contact"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14678,7 +15874,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-DE-T7 (German with a typo: Population Office opening hours): search 'personenmeldeamt öfnungszeiten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1612, 'anchored_weight': 0.1922, 'best_semantic_score': 0.6623})"
+            "N-DE-T7 (German with a typo: Population Office opening hours): search 'personenmeldeamt öfnungszeiten' reports match_strength weak, expected strong (signals {'lexical_share': 0.1573, 'anchored_weight': 0.1866, 'best_semantic_score': 0.6623})"
           ],
           "searches": [
             {
@@ -14734,9 +15930,11 @@
         },
         {
           "case_id": "OOS-23",
-          "blocking": true,
-          "passed": true,
-          "issues": [],
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "OOS-23 (Rejected, German: opening hours of the customs office at the airport): search 'Öffnungszeiten Zolldienst Zürich Flughafen' reports match_strength strong, expected weak (signals {'lexical_share': 0.4486, 'anchored_weight': 1.0, 'best_semantic_score': 0.6193})"
+          ],
           "searches": [
             {
               "query": "Öffnungszeiten Zolldienst Zürich Flughafen",
@@ -14746,7 +15944,7 @@
                 "city-zurich-tax-office-contact",
                 "zh-migrationsamt-contact"
               ],
-              "match_strength": "weak",
+              "match_strength": "strong",
               "judged": true
             }
           ]
@@ -14909,8 +16107,8 @@
               "translated": false,
               "hits": [
                 "city-zurich-tax-office-contact",
-                "zh-tax-office-contact",
-                "city-zurich-naturalisation-contact"
+                "city-zurich-naturalisation-contact",
+                "zh-tax-office-contact"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14929,7 +16127,7 @@
               "hits": [
                 "city-zurich-dog-registration",
                 "zh-dog-keeping",
-                "city-zurich-household-waste"
+                "customs-moving-animals"
               ],
               "match_strength": "strong",
               "judged": true
@@ -14967,7 +16165,7 @@
               "hits": [
                 "zh-vehicle-registration-move",
                 "moving-goods-customs",
-                "zh-foreign-licence-exchange"
+                "customs-moving-vehicle"
               ],
               "match_strength": "strong",
               "judged": true
@@ -15100,7 +16298,7 @@
               "hits": [
                 "zh-dog-keeping",
                 "city-zurich-dog-registration",
-                "zh-integration-offers"
+                "customs-importing-pets"
               ],
               "match_strength": "strong",
               "judged": true
@@ -15137,7 +16335,7 @@
               "translated": false,
               "hits": [
                 "radio-tv-household-fee",
-                "moving-goods-customs",
+                "customs-import-vat-rate",
                 "tax-at-source-liability"
               ],
               "match_strength": "strong",
@@ -15270,7 +16468,7 @@
               "hits": [
                 "city-zurich-bulky-waste-pickup",
                 "city-zurich-recycling-centres",
-                "city-zurich-waste-sorting"
+                "city-zurich-household-waste"
               ],
               "match_strength": "strong",
               "judged": true
@@ -15571,7 +16769,7 @@
               "hits": [
                 "permit-lost",
                 "zh-permit-card",
-                "travel-documents-foreign-nationals"
+                "city-zurich-departure"
               ],
               "match_strength": "strong",
               "judged": true
@@ -15949,8 +17147,9 @@
               "query": "Ich ziehe mit meinem Hund nach Dietikon. Brauche ich einen Hundekurs?",
               "translated": false,
               "hits": [
+                "zh-dog-keeping",
                 "city-zurich-dog-registration",
-                "zh-dog-keeping"
+                "customs-importing-pets"
               ],
               "match_strength": "strong",
               "judged": true
@@ -16114,8 +17313,8 @@
               "translated": false,
               "hits": [
                 "entry-requirements-third-country",
-                "entry-visa-fee-insurance",
-                "marriage-switzerland"
+                "customs-travel-allowance",
+                "customs-duty-free-quantities"
               ],
               "match_strength": "strong",
               "judged": true
@@ -16266,7 +17465,7 @@
               "hits": [
                 "entry-visa-fee-insurance",
                 "entry-requirements-third-country",
-                "entry-visa-need"
+                "entry-visa-types"
               ],
               "match_strength": "strong",
               "judged": true
@@ -16389,17 +17588,19 @@
         },
         {
           "case_id": "Q-DE-55",
-          "blocking": true,
-          "passed": true,
-          "issues": [],
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "Q-DE-55 (Entry and visas: Wie viel Geld muss ich pro Tag bei der Einreise nachweisen?): search 'Wie viel Geld muss ich pro Tag bei der Einreise nachweisen?' no longer finds entry-requirements-third-country within the first 3 hits: ['customs-travel-allowance', 'entry-short-stay-rule', 'customs-duty-free-quantities']"
+          ],
           "searches": [
             {
               "query": "Wie viel Geld muss ich pro Tag bei der Einreise nachweisen?",
               "translated": false,
               "hits": [
+                "customs-travel-allowance",
                 "entry-short-stay-rule",
-                "marriage-switzerland",
-                "entry-requirements-third-country"
+                "customs-duty-free-quantities"
               ],
               "match_strength": "strong",
               "judged": true
@@ -16914,7 +18115,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-DE-63 (German: defects in the flat): search 'In meiner Wohnung ist der Kühlschrank kaputt. Was kann ich tun?' reports match_strength weak, expected strong (signals {'lexical_share': 0.4298, 'anchored_weight': 1.5073, 'best_semantic_score': 0.3861})"
+            "Q-DE-63 (German: defects in the flat): search 'In meiner Wohnung ist der Kühlschrank kaputt. Was kann ich tun?' reports match_strength weak, expected strong (signals {'lexical_share': 0.448, 'anchored_weight': 1.5148, 'best_semantic_score': 0.394})"
           ],
           "searches": [
             {
@@ -16922,8 +18123,8 @@
               "translated": false,
               "hits": [
                 "rent-changes",
-                "permit-lost",
-                "family-b"
+                "customs-importing-pets",
+                "permit-lost"
               ],
               "match_strength": "weak",
               "judged": true
@@ -17226,8 +18427,8 @@
               "translated": false,
               "hits": [
                 "moving-goods-customs",
-                "entry-requirements-third-country",
-                "entry-requirements-eu-efta"
+                "customs-prohibited-restricted-goods",
+                "customs-declaring-goods"
               ],
               "match_strength": "strong",
               "judged": true
@@ -17312,7 +18513,7 @@
         },
         {
           "case_id": "XM-8",
-          "blocking": true,
+          "blocking": false,
           "passed": true,
           "issues": [],
           "searches": [
@@ -17341,7 +18542,7 @@
               "hits": [
                 "city-zurich-departure",
                 "ahv-pension-abroad",
-                "moving-goods-customs"
+                "customs-moving-vehicle"
               ],
               "match_strength": "strong",
               "judged": true
@@ -17353,7 +18554,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2435, 'anchored_weight': 0.9372, 'best_semantic_score': 0.6047})"
+            "Q-EN-76 (English: meaning of the F permit card): search 'A colleague of mine has an F permit. What kind of permit is that?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2455, 'anchored_weight': 0.9438, 'best_semantic_score': 0.6047})"
           ],
           "searches": [
             {
@@ -17553,8 +18754,8 @@
               "translated": false,
               "hits": [
                 "eu-employment-registration-deadline",
-                "eu-self-employment",
-                "zh-eu-registration"
+                "zh-eu-registration",
+                "eu-self-employment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -17744,9 +18945,9 @@
               "query": "I'm coming to Zurich as an exchange student for one semester and won't be relocating my main residence. Can I still bring my laptop, books and other belongings duty-free?",
               "translated": false,
               "hits": [
+                "customs-personal-effects",
                 "moving-goods-customs",
-                "zh-eu-nonworking",
-                "zh-family-fza"
+                "customs-duty-free-quantities"
               ],
               "match_strength": "strong",
               "judged": true
@@ -17878,7 +19079,7 @@
               "hits": [
                 "ahv-contribution-refund",
                 "ahv-pension-abroad",
-                "bvg-cash-out-departure"
+                "customs-leaving-with-goods"
               ],
               "match_strength": "strong",
               "judged": true
@@ -18001,9 +19202,11 @@
         },
         {
           "case_id": "Q-DE-72",
-          "blocking": true,
-          "passed": true,
-          "issues": [],
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "Q-DE-72 (German: Getting married in Switzerland): search 'Können gleichgeschlechtliche Paare in der Schweiz standesamtlich heiraten?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2701, 'anchored_weight': 0.9959, 'best_semantic_score': 0.6945})"
+          ],
           "searches": [
             {
               "query": "Können gleichgeschlechtliche Paare in der Schweiz standesamtlich heiraten?",
@@ -18013,7 +19216,7 @@
                 "marriage-switzerland",
                 "city-zurich-marriage"
               ],
-              "match_strength": "strong",
+              "match_strength": "weak",
               "judged": true
             }
           ]
@@ -18317,7 +19520,7 @@
               "hits": [
                 "zh-economy-office-contact",
                 "zh-third-country-work",
-                "posted-service-notification"
+                "eu-short-employment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -18413,8 +19616,8 @@
               "translated": false,
               "hits": [
                 "zh-road-traffic-office-locations",
-                "zh-vehicle-registration-move",
-                "zh-control-drive"
+                "zh-control-drive",
+                "zh-dog-keeping"
               ],
               "match_strength": "strong",
               "judged": true
@@ -18640,9 +19843,9 @@
               "query": "Krankenversicherung Pflicht wohne in der Schweiz arbeite nur in Frankreich",
               "translated": true,
               "hits": [
-                "health-insurance-deadline",
                 "fza-non-working",
-                "accident-insurance"
+                "health-insurance-deadline",
+                "health-insurance-enrolment"
               ],
               "match_strength": "strong",
               "judged": true
@@ -18879,17 +20082,19 @@
         },
         {
           "case_id": "Q-TR-1",
-          "blocking": true,
-          "passed": true,
-          "issues": [],
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "Q-TR-1 (Turkish: Third-country workers: exemptions, application, visa and registration): search 'Arbeitsbewilligung genehmigt trotzdem Visum noetig fuer Einreise' no longer finds third-country-work-procedure within the first 3 hits: ['entry-visa-need', 'fza-entry', 'aig-short-stay']"
+          ],
           "searches": [
             {
               "query": "Arbeitsbewilligung genehmigt trotzdem Visum noetig fuer Einreise",
               "translated": true,
               "hits": [
                 "entry-visa-need",
-                "aig-short-stay",
-                "third-country-work-procedure"
+                "fza-entry",
+                "aig-short-stay"
               ],
               "match_strength": "strong",
               "judged": true
@@ -19158,7 +20363,7 @@
               "hits": [
                 "radio-tv-household-fee",
                 "zh-tax-at-source-liability",
-                "zh-foreign-licence-exchange"
+                "customs-travel-allowance"
               ],
               "match_strength": "strong",
               "judged": true
@@ -19170,16 +20375,16 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.125, 'anchored_weight': 1.045, 'best_semantic_score': 0.4836})"
+            "N-EN-J13 (English with slang: a company owner asking to sign on for the dole): search \"I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?\" reports match_strength weak, expected strong (signals {'lexical_share': 0.129, 'anchored_weight': 1.0583, 'best_semantic_score': 0.4836})"
           ],
           "searches": [
             {
               "query": "I'm a part-owner and director of my own little GmbH in Zurich. If we go under, can I sign on for the dole?",
               "translated": false,
               "hits": [
-                "city-zurich-kindergarten",
+                "customs-travel-allowance",
                 "unemployment-benefit",
-                "zh-control-drive"
+                "city-zurich-kindergarten"
               ],
               "match_strength": "weak",
               "judged": true
@@ -19331,7 +20536,7 @@
               "hits": [
                 "zh-unemployment-benefit",
                 "cantonal-migration-contact",
-                "zh-third-country-work"
+                "zh-economy-office-contact"
               ],
               "match_strength": "strong",
               "judged": true
@@ -19350,7 +20555,7 @@
               "hits": [
                 "city-zurich-dog-registration",
                 "zh-dog-keeping",
-                "city-zurich-household-waste"
+                "customs-importing-pets"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20049,9 +21254,9 @@
               "query": "Wir ziehen von Österreich in den Kanton Wallis um und bringen unsere Möbel und unseren Hund mit. Müssen wir Zoll bezahlen?",
               "translated": false,
               "hits": [
+                "customs-importing-pets",
                 "moving-goods-customs",
-                "aig-registration",
-                "zh-vehicle-registration-move"
+                "customs-internet-orders"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20082,7 +21287,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XC-39 (Another canton, German: a birth allowance in Lucerne): search 'Mein Kind wurde letzten Monat in Luzern geboren. Gibt es dort eine Geburtszulage?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1992, 'anchored_weight': 1.4591, 'best_semantic_score': 0.5818})"
+            "XC-39 (Another canton, German: a birth allowance in Lucerne): search 'Mein Kind wurde letzten Monat in Luzern geboren. Gibt es dort eine Geburtszulage?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2002, 'anchored_weight': 1.4681, 'best_semantic_score': 0.5818})"
           ],
           "searches": [
             {
@@ -20109,8 +21314,8 @@
               "translated": false,
               "hits": [
                 "parental-leave",
-                "posted-service-notification",
-                "family-allowances"
+                "customs-leaving-with-goods",
+                "posted-service-notification"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20167,7 +21372,7 @@
               "hits": [
                 "naturalisation-facilitated-spouse",
                 "family-swiss",
-                "naturalisation-ordinary"
+                "family-b"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20281,7 +21486,7 @@
               "hits": [
                 "city-zurich-dog-registration",
                 "zh-dog-keeping",
-                "zh-road-traffic-office-locations"
+                "customs-importing-pets"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20290,7 +21495,7 @@
         },
         {
           "case_id": "XM-14",
-          "blocking": true,
+          "blocking": false,
           "passed": true,
           "issues": [],
           "searches": [
@@ -20300,7 +21505,7 @@
               "hits": [
                 "zh-vehicle-registration-move",
                 "zh-road-traffic-office-locations",
-                "aig-registration"
+                "customs-moving-vehicle"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20312,7 +21517,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XM-15 (Another Zurich municipality, German: when voting documents arrive in Illnau-Effretikon): search 'Ich bin Schweizer Bürger und wohne in Illnau-Effretikon. Wann erhalte ich die Abstimmungsunterlagen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2191, 'anchored_weight': 1.1602, 'best_semantic_score': 0.5518})"
+            "XM-15 (Another Zurich municipality, German: when voting documents arrive in Illnau-Effretikon): search 'Ich bin Schweizer Bürger und wohne in Illnau-Effretikon. Wann erhalte ich die Abstimmungsunterlagen?' reports match_strength weak, expected strong (signals {'lexical_share': 0.2139, 'anchored_weight': 1.1284, 'best_semantic_score': 0.5518})"
           ],
           "searches": [
             {
@@ -20352,7 +21557,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "XM-17 (Another Zurich municipality, German: electronic signatures at the unemployment fund, asked in Horgen): search 'Ich wohne in Horgen und schicke meine Unterlagen an die Arbeitslosenkasse. Darf ich die Formulare elektronisch unterschreiben?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1703, 'anchored_weight': 1.1163, 'best_semantic_score': 0.5583})"
+            "XM-17 (Another Zurich municipality, German: electronic signatures at the unemployment fund, asked in Horgen): search 'Ich wohne in Horgen und schicke meine Unterlagen an die Arbeitslosenkasse. Darf ich die Formulare elektronisch unterschreiben?' reports match_strength weak, expected strong (signals {'lexical_share': 0.1716, 'anchored_weight': 1.1286, 'best_semantic_score': 0.5583})"
           ],
           "searches": [
             {
@@ -20391,7 +21596,7 @@
         },
         {
           "case_id": "XM-19",
-          "blocking": true,
+          "blocking": false,
           "passed": true,
           "issues": [],
           "searches": [
@@ -20420,7 +21625,7 @@
               "hits": [
                 "permit-renewal",
                 "permit-card-eu-efta",
-                "entry-visa-fee-insurance"
+                "naturalisation-ordinary"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20432,7 +21637,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6028, 'anchored_weight': 1.5753, 'best_semantic_score': 0.6022})"
+            "OOS-42 (Rejected, German: the processing time of a permit is not published): search 'Wie lange dauert es, bis meine Aufenthaltsbewilligung B bewilligt wird?' reports match_strength strong, expected weak (signals {'lexical_share': 0.599, 'anchored_weight': 1.582, 'best_semantic_score': 0.6022})"
           ],
           "searches": [
             {
@@ -20453,7 +21658,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-43 (Rejected, French: the amount of ordinary income tax is not published): search 'Einkommenssteuer Kanton Zürich Lohn 100000 Franken berechnen' reports match_strength strong, expected weak (signals {'lexical_share': 0.2617, 'anchored_weight': 1.3416, 'best_semantic_score': 0.6743})"
+            "OOS-43 (Rejected, French: the amount of ordinary income tax is not published): search 'Einkommenssteuer Kanton Zürich Lohn 100000 Franken berechnen' reports match_strength strong, expected weak (signals {'lexical_share': 0.2782, 'anchored_weight': 1.3576, 'best_semantic_score': 0.6743})"
           ],
           "searches": [
             {
@@ -20462,7 +21667,7 @@
               "hits": [
                 "tax-at-source-liability",
                 "zh-family-allowances",
-                "zh-tax-office-contact"
+                "zh-tax-at-source-tariffs"
               ],
               "match_strength": "strong",
               "judged": true
@@ -20500,7 +21705,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-46 (Rejected, German: primary school enrolment beyond kindergarten is not published): search 'Wie melde ich mein Kind für die erste Klasse der Primarschule in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.2249, 'anchored_weight': 1.2207, 'best_semantic_score': 0.672})"
+            "OOS-46 (Rejected, German: primary school enrolment beyond kindergarten is not published): search 'Wie melde ich mein Kind für die erste Klasse der Primarschule in der Stadt Zürich an?' reports match_strength strong, expected weak (signals {'lexical_share': 0.2061, 'anchored_weight': 1.0954, 'best_semantic_score': 0.672})"
           ],
           "searches": [
             {
@@ -20559,7 +21764,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-49 (Rejected, English: a downloadable work-permit application form is not published): search 'Where can I download the application form for a work permit in Zurich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6364, 'anchored_weight': 1.3614, 'best_semantic_score': 0.7122})"
+            "OOS-49 (Rejected, English: a downloadable work-permit application form is not published): search 'Where can I download the application form for a work permit in Zurich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.6353, 'anchored_weight': 1.3717, 'best_semantic_score': 0.7122})"
           ],
           "searches": [
             {
@@ -20580,7 +21785,7 @@
           "blocking": false,
           "passed": false,
           "issues": [
-            "OOS-50 (Rejected, German: a free appointment slot is not published): search 'Gibt es diese Woche noch einen freien Termin beim Personenmeldeamt Zürich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.3013, 'anchored_weight': 1.1424, 'best_semantic_score': 0.708})"
+            "OOS-50 (Rejected, German: a free appointment slot is not published): search 'Gibt es diese Woche noch einen freien Termin beim Personenmeldeamt Zürich?' reports match_strength strong, expected weak (signals {'lexical_share': 0.3021, 'anchored_weight': 1.1496, 'best_semantic_score': 0.708})"
           ],
           "searches": [
             {
@@ -20798,8 +22003,8 @@
               "translated": false,
               "hits": [
                 "naturalisation-third-generation",
-                "naturalisation-facilitated-spouse",
-                "naturalisation-ordinary"
+                "customs-leaving-with-goods",
+                "naturalisation-facilitated-spouse"
               ],
               "match_strength": "strong",
               "judged": true
@@ -21045,8 +22250,8 @@
               "translated": false,
               "hits": [
                 "travel-documents-foreign-nationals",
-                "entry-requirements-third-country",
-                "zh-family-refugee-asylum"
+                "zh-family-refugee-asylum",
+                "entry-requirements-third-country"
               ],
               "match_strength": "strong",
               "judged": true
@@ -21065,7 +22270,7 @@
               "hits": [
                 "city-zurich-citizenship-swiss",
                 "zh-political-rights",
-                "city-zurich-naturalisation-language"
+                "city-zurich-naturalisation-civics"
               ],
               "match_strength": "strong",
               "judged": true
@@ -21303,6 +22508,808 @@
                 "zh-newcomer-first-information"
               ],
               "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-131",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "How much shopping can I bring back from Germany before I owe tax at the border?",
+              "translated": false,
+              "hits": [
+                "customs-travel-allowance",
+                "customs-leaving-with-goods",
+                "customs-duty-free-quantities"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-111",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Ab welchem Betrag muss ich meine Einkaeufe bei der Rueckkehr in die Schweiz versteuern?",
+              "translated": false,
+              "hits": [
+                "customs-travel-allowance",
+                "customs-leaving-with-goods",
+                "customs-import-vat-rate"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-132",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Does the petrol in my tank count when customs works out what I am carrying?",
+              "translated": false,
+              "hits": [
+                "customs-goods-counted-toward-allowance",
+                "customs-internet-orders",
+                "customs-moving-vehicle"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-112",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Zaehlt eine im Ausland ausgefuehrte Reparatur an meinem Auto mit?",
+              "translated": false,
+              "hits": [
+                "customs-goods-counted-toward-allowance",
+                "customs-moving-vehicle",
+                "zh-vehicle-registration-move"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-133",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What percentage is charged on goods I bring in, and is there a lower one for food?",
+              "translated": false,
+              "hits": [
+                "customs-import-vat-rate",
+                "customs-duty-free-quantities",
+                "customs-travel-allowance"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-113",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Welcher Steuersatz gilt bei der Einfuhr, und gibt es einen tieferen fuer Buecher?",
+              "translated": false,
+              "hits": [
+                "customs-import-vat-rate",
+                "customs-mail-order-vat",
+                "customs-travel-allowance"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-134",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Are there limits on the meat and alcohol I carry across the border?",
+              "translated": false,
+              "hits": [
+                "customs-duty-free-quantities",
+                "customs-personal-effects",
+                "customs-moving-vehicle"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-114",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Welche Regeln gelten fuer Fleisch und Wein, die ich ueber die Grenze bringe?",
+              "translated": false,
+              "hits": [
+                "customs-duty-free-quantities",
+                "customs-personal-effects",
+                "customs-prohibited-restricted-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-135",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Do I have to declare my own camera and laptop when I travel in?",
+              "translated": false,
+              "hits": [
+                "customs-personal-effects",
+                "customs-goods-counted-toward-allowance",
+                "entry-requirements-third-country"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-115",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Muss ich meine eigene Kamera und meinen Laptop bei der Einreise verzollen?",
+              "translated": false,
+              "hits": [
+                "customs-personal-effects",
+                "customs-declaring-goods",
+                "customs-moving-vehicle"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-136",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Which things am I not allowed to bring in at all?",
+              "translated": false,
+              "hits": [
+                "customs-prohibited-restricted-goods",
+                "customs-duty-free-quantities",
+                "customs-leaving-with-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-116",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Welche Waren darf ich gar nicht einfuehren oder nur mit Bewilligung?",
+              "translated": false,
+              "hits": [
+                "customs-prohibited-restricted-goods",
+                "customs-duty-free-quantities",
+                "customs-goods-counted-toward-allowance"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-137",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Which way do I take at the airport when I have something with me?",
+              "translated": false,
+              "hits": [
+                "customs-declaring-goods",
+                "customs-leaving-with-goods",
+                "customs-internet-orders"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-117",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Welchen Weg nehme ich am Flughafen, wenn ich etwas dabei habe?",
+              "translated": false,
+              "hits": [
+                "customs-declaring-goods",
+                "permit-b",
+                "permit-authority"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-138",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What will I be charged when a parcel I ordered abroad reaches me?",
+              "translated": false,
+              "hits": [
+                "customs-internet-orders",
+                "customs-mail-order-vat",
+                "customs-returns-and-repairs"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-118",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Was kommt auf mich zu, wenn eine im Ausland bestellte Sendung ankommt?",
+              "translated": false,
+              "hits": [
+                "customs-internet-orders",
+                "customs-returns-and-repairs",
+                "customs-preferential-origin"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-139",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Why did a foreign shop already charge me Swiss tax at checkout?",
+              "translated": false,
+              "hits": [
+                "customs-mail-order-vat",
+                "customs-internet-orders",
+                "customs-leaving-with-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-119",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Warum verrechnet mir ein auslaendischer Onlineshop schon beim Kauf die Schweizer Steuer?",
+              "translated": false,
+              "hits": [
+                "customs-mail-order-vat",
+                "customs-leaving-with-goods",
+                "customs-internet-orders"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-140",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Does my friend have to enclose a proof of origin for the reduced rate?",
+              "translated": false,
+              "hits": [
+                "customs-preferential-origin",
+                "customs-import-vat-rate",
+                "rent-changes"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-120",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Gilt die Zollpraeferenz auch ohne Ursprungsnachweis bei einer Sendung von privat an privat?",
+              "translated": false,
+              "hits": [
+                "customs-preferential-origin",
+                "customs-internet-orders",
+                "customs-leaving-with-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-141",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What happens with my car at the border when I relocate here?",
+              "translated": false,
+              "hits": [
+                "customs-moving-vehicle",
+                "moving-goods-customs",
+                "customs-moving-animals"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-121",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Was passiert mit meinem Auto an der Grenze, wenn ich hierher zuegle?",
+              "translated": false,
+              "hits": [
+                "customs-moving-vehicle",
+                "customs-goods-counted-toward-allowance",
+                "zh-vehicle-registration-move"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-142",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What papers does my horse need when we relocate from an EU country?",
+              "translated": false,
+              "hits": [
+                "customs-moving-animals",
+                "aig-registration",
+                "customs-moving-vehicle"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-122",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Welche Papiere braucht mein Pferd, wenn wir aus einem EU-Land hierher zuegeln?",
+              "translated": false,
+              "hits": [
+                "customs-moving-animals",
+                "city-zurich-organic-paper-cardboard",
+                "fza-entry"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-143",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Can I get back what I paid at the border after I return the item?",
+              "translated": false,
+              "hits": [
+                "customs-returns-and-repairs",
+                "customs-leaving-with-goods",
+                "customs-travel-allowance"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-123",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Bekomme ich die an der Grenze bezahlten Abgaben zurueck, wenn ich die Ware zuruecksende?",
+              "translated": false,
+              "hits": [
+                "customs-returns-and-repairs",
+                "customs-internet-orders",
+                "customs-leaving-with-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-144",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "I am collecting a puppy from a breeder abroad; what happens at the border?",
+              "translated": false,
+              "hits": [
+                "customs-importing-pets",
+                "customs-moving-animals",
+                "ahv-pension-abroad"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-124",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Ich hole einen Welpen bei einem Zuechter im Ausland; was gilt an der Grenze?",
+              "translated": false,
+              "hits": [
+                "customs-importing-pets",
+                "customs-moving-animals",
+                "family-swiss"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-145",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "A visitor bought something here; can she claim the tax back on the way out?",
+              "translated": false,
+              "hits": [
+                "customs-leaving-with-goods",
+                "customs-travel-allowance",
+                "customs-returns-and-repairs"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-125",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Eine Besucherin hat hier eingekauft; kann sie sich die Steuer bei der Ausreise erstatten lassen?",
+              "translated": false,
+              "hits": [
+                "customs-leaving-with-goods",
+                "customs-travel-allowance",
+                "zh-dog-keeping"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-EN-146",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What do I need at the border for the furniture I am bringing when I move here?",
+              "translated": false,
+              "hits": [
+                "moving-goods-customs",
+                "customs-moving-animals",
+                "customs-moving-vehicle"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "Q-DE-126",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Wir ziehen aus Deutschland in die Schweiz. Was gilt beim Zoll fuer unseren Hausrat?",
+              "translated": false,
+              "hits": [
+                "moving-goods-customs",
+                "customs-leaving-with-goods",
+                "customs-importing-pets"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-EN-14",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "customs limit shopping trip",
+              "translated": false,
+              "hits": [
+                "customs-travel-allowance",
+                "customs-goods-counted-toward-allowance",
+                "customs-leaving-with-goods"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-DE-15",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "waren anmelden grenze wie geht das",
+              "translated": false,
+              "hits": [
+                "customs-declaring-goods",
+                "aig-registration",
+                "city-zurich-arrival"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-EN-15",
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "N-EN-15 (English: Noise: situation first): search 'bought a jacket online from italy last week it is stuck somewhere what now' no longer finds customs-internet-orders within the first 3 hits: ['customs-returns-and-repairs', 'naturalisation-ordinary', 'customs-importing-pets']"
+          ],
+          "searches": [
+            {
+              "query": "bought a jacket online from italy last week it is stuck somewhere what now",
+              "translated": false,
+              "hits": [
+                "customs-returns-and-repairs",
+                "naturalisation-ordinary",
+                "customs-importing-pets"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-DE-16",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "wieviel fleich darf ich ueber die grenze nemen",
+              "translated": false,
+              "hits": [
+                "customs-duty-free-quantities",
+                "customs-goods-counted-toward-allowance",
+                "customs-personal-effects"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-EN-16",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "dog border switzerland cropped ears",
+              "translated": false,
+              "hits": [
+                "customs-importing-pets",
+                "customs-moving-animals",
+                "city-zurich-dog-registration"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "N-DE-17",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "zuegle in die schweiz was mach ich mit dem ganzen hausrat am zoll",
+              "translated": false,
+              "hits": [
+                "moving-goods-customs",
+                "customs-declaring-goods",
+                "customs-goods-counted-toward-allowance"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "OOS-61",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Wie hoch ist der Zollansatz fuer Lederwaren?",
+              "translated": false,
+              "hits": [
+                "customs-import-vat-rate",
+                "customs-leaving-with-goods",
+                "zh-family-allowances"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "OOS-62",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "Wie verzolle ich Handelswaren fuer meine Firma?",
+              "translated": false,
+              "hits": [
+                "moving-goods-customs",
+                "zh-eu-self-employment",
+                "posted-service-notification"
+              ],
+              "match_strength": "weak",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "OOS-63",
+          "blocking": false,
+          "passed": false,
+          "issues": [
+            "OOS-63 (Out of scope: The duty on one particular consignment): search 'How much duty exactly will customs charge on my consignment?' reports match_strength strong, expected weak (signals {'lexical_share': 0.5059, 'anchored_weight': 1.6971, 'best_semantic_score': 0.7302})"
+          ],
+          "searches": [
+            {
+              "query": "How much duty exactly will customs charge on my consignment?",
+              "translated": false,
+              "hits": [
+                "customs-mail-order-vat",
+                "customs-internet-orders",
+                "customs-import-vat-rate"
+              ],
+              "match_strength": "strong",
+              "judged": true
+            }
+          ]
+        },
+        {
+          "case_id": "OOS-64",
+          "blocking": true,
+          "passed": true,
+          "issues": [],
+          "searches": [
+            {
+              "query": "What is the customs tariff number for a leather handbag?",
+              "translated": false,
+              "hits": [
+                "customs-internet-orders",
+                "customs-goods-counted-toward-allowance",
+                "customs-preferential-origin"
+              ],
+              "match_strength": "weak",
               "judged": true
             }
           ]

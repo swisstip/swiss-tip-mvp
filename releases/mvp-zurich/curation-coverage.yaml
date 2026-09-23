@@ -411,3 +411,294 @@ dispositions:
   section_ids:
   - section-0023
   reaffirm_by: '2026-12-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-2be14eb81766abd0a5f6
+  section_ids:
+  - section-0002
+  - section-0003
+- kind: navigation
+  reason: 'The caption of an infographic; the figure it shows is cited as text elsewhere.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-2be14eb81766abd0a5f6
+  section_ids:
+  - section-0007
+- kind: duplicate
+  reason: 'Worked examples of the value limit. The rule they illustrate is cited from the section that states it; an example is not a separate rule.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-7979e833d7757cf4f8ab
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+- kind: deferred
+  reason: 'Temporary export of valuable personal items, which the pack does not serve today.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-714a0981c5b41126870d
+  section_ids:
+  - section-0003
+  reaffirm_by: '2027-03-31'
+- kind: out_of_scope
+  reason: 'The import rules of the destination country, which the pack does not publish for any country but Switzerland.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-714a0981c5b41126870d
+  section_ids:
+  - section-0004
+  out_of_scope_entry: 'any country other than Switzerland'
+- kind: navigation
+  reason: 'The office''s opening hours and addresses; the pack publishes office contacts only for the Zurich offices its topics name.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-714a0981c5b41126870d
+  section_ids:
+  - section-0006
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. The general paragraph and the re-export pointer restate what the facts of this concept and of customs-returns-and-repairs already carry from the pages that state them.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-d25c75b6384595c370a9
+  section_ids:
+  - section-0002
+  - section-0004
+  - section-0010
+- kind: deferred
+  reason: 'Import rules that come from legislation outside customs law, such as permits for particular goods; a subject of its own that this wave does not open.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-d25c75b6384595c370a9
+  section_ids:
+  - section-0008
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-49e93adbb7a39f819323
+  section_ids:
+  - section-0002
+- kind: duplicate
+  reason: 'Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-134972557881796cf73c
+  section_ids:
+  - section-0003
+  - section-0006
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. The transport rule is cited from the page on moving with horses and pets.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-851308b9946b3d2ce68b
+  section_ids:
+  - section-0002
+  - section-0010
+- kind: deferred
+  reason: 'A consumer warning about buying a dog abroad and a pointer to the veterinary office''s brochure, rather than an administrative rule; to be looked at again if the pack ever serves animal-welfare guidance.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-851308b9946b3d2ce68b
+  section_ids:
+  - section-0003
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'The title of a downloadable notification form.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-851308b9946b3d2ce68b
+  section_ids:
+  - section-0018
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-ae795262d1d362f6fd9e
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0006
+- kind: deferred
+  reason: 'Sending postal and courier consignments out of Switzerland, which the pack does not serve today.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-ae795262d1d362f6fd9e
+  section_ids:
+  - section-0005
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'Restates the prohibitions and restrictions that customs-prohibited-restricted-goods carries from the page that states them.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-36681bc4d8a8776e8ac7
+  section_ids:
+  - section-0003
+- kind: deferred
+  reason: 'Temporary import as a special case, which the pack does not serve today.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-36681bc4d8a8776e8ac7
+  section_ids:
+  - section-0004
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-62f7e84f493f02430c66
+  section_ids:
+  - section-0002
+- kind: navigation
+  reason: 'The postal address of the customs directorate.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-62f7e84f493f02430c66
+  section_ids:
+  - section-0010
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. The food paragraph restates what customs-duty-free-quantities carries from the page that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-cc8927202fa93a8a8d83
+  section_ids:
+  - section-0002
+  - section-0006
+- kind: deferred
+  reason: 'A consumer warning about buying a dog abroad, and travelling with a pet outside a house move; neither is served today and the pages they point at are not catalogued.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-cc8927202fa93a8a8d83
+  section_ids:
+  - section-0003
+  - section-0005
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-c428011a0852377f3ef6
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0007
+- kind: deferred
+  reason: 'Teasers of FOCBS pages this catalogue does not hold: fuel and vehicle repairs, portable musical instruments, watches, jewellery and precious metals, and food supplies for holiday camps. Each is a subject of its own and a later wave can take it; citing the teaser would state the rule at second hand.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-c428011a0852377f3ef6
+  section_ids:
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-e591b902722f45df8802
+  section_ids:
+  - section-0002
+- kind: deferred
+  reason: 'Import and re-export handled by a courier firm, and goods returned to a sender inside Switzerland; neither is served today.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-e591b902722f45df8802
+  section_ids:
+  - section-0007
+  - section-0009
+  - section-0010
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'Form titles; the forms themselves are named in the facts that cite the sections above them.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-7a32f11d4eabd2a4e1f6
+  section_ids:
+  - section-0005
+  - section-0007
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-fd3729f23cb003146146
+  section_ids:
+  - section-0002
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-c53e2f40414767a5ee38
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+- kind: deferred
+  reason: 'The pre-check of removal goods, a service the pack does not describe today.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-fb507812b97f72bfba2c
+  section_ids:
+  - section-0006
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-a0307125a8f264f4f84d
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+- kind: deferred
+  reason: 'Taking removal goods out of Switzerland; the pack serves moving to Switzerland and the departure side only for the topics it already names.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-a0307125a8f264f4f84d
+  section_ids:
+  - section-0005
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-59089a1125b8a26db80f
+  section_ids:
+  - section-0002
+  - section-0004
+  - section-0007
+- kind: deferred
+  reason: 'Cross-border private flights, entering by private boat, temporary admission under ZAVV or a Carnet ATA, and the complaints procedure; each is a subject of its own that this wave does not open, and the pages behind the teasers are not catalogued.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-59089a1125b8a26db80f
+  section_ids:
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-0780a5be8f74ec787b10
+  section_ids:
+  - section-0002
+- kind: duplicate
+  reason: 'Worked examples of the value limit. The rule they illustrate is cited from the section that states it; an example is not a separate rule. The online-shopping paragraph points at the pages on ordering from abroad, which the facts cite directly.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-12771c5fcbdee5f520a5
+  section_ids:
+  - section-0006
+  - section-0007
+  - section-0009

@@ -1,6 +1,6 @@
 # Coverage
 
-**Last update:** 22 September 2026
+**Last update:** 23 September 2026
 
 What the Swiss TIP MCP server serves today, and what it does not. This file
 describes the committed release that the server loads by default; it is
@@ -10,15 +10,15 @@ submission is `mvp-zurich`; `mvp-wallisellen` was a proof of concept that a
 second, municipal pack can be built with the same tooling, is frozen at its
 attested release and is not extended, tested or documented further.
 
-**Release:** `mvp-zurich-2026-09-22-v6` (pack `mvp-zurich`, KB1)<br>
-**Content digest:** `9518b36a60a99ae5cdd1bf34be3ca5af79112382fd8a59419ce9cf7bf9eb8f41`<br>
-**Snapshot date:** 19 September 2026, the latest access date of a cited page
-(10 of the 196 were saved on 19 September, 25 on 18 September, 47 on 17
-September, 49 on 15 September, 59 on 11 September and 6 on 10 or 14
-September); maximum age 60 days, stale from 18 November 2026<br>
-**Contents:** 17 topics, 156 concepts, 712 facts, 926 evidence excerpts
-(812 German, 114 English), 203 cited documents<br>
-**Review:** all 712 facts are `human-reviewed` by one named reviewer, confirmed
+**Release:** `mvp-zurich-2026-09-22-v7` (pack `mvp-zurich`, KB1)<br>
+**Content digest:** `48418016d8bc90f81db4dc8b417d6c33fcfd0f099d832d551fd3df750dc35730`<br>
+**Snapshot date:** 22 September 2026, the latest access date of a cited page
+(22 of the 225 were saved on 22 September, 10 on 19 September, 25 on 18
+September, 47 on 17 September, 49 on 15 September, 66 on 11 September and 6 on
+10 or 14 September); maximum age 60 days, stale from 21 November 2026<br>
+**Contents:** 18 topics, 171 concepts, 825 facts, 1,039 evidence excerpts
+(925 German, 114 English), 225 cited documents<br>
+**Review:** all 825 facts are `human-reviewed` by one named reviewer, confirmed
 in the console: the 104 of the residence and contacts topics on 14 September
 2026, the 149 of the five topics added on 15 September 2026 that day, the
 37 of the 13 `fza-*` concepts, drafted from the Agreement on the Free Movement
@@ -38,16 +38,20 @@ and languages") are not reviewed by a person. The 92 facts of
 concepts curated from pages the catalogue already held, and the 6 whose
 review was reopened when a second citation of the law was added to them. The
 25 facts of the integration topic were confirmed in one bulk group on
-22 September 2026. Not
+22 September 2026. The 113 facts of the customs topic were confirmed on
+23 September 2026, hardest first: the 23 that carry a number, then the five
+concepts that rest on a single page, then the rest; no statement was corrected
+in that review. Not
 a legal review (see [LIMITATIONS.md](LIMITATIONS.md))<br>
 **Places:** the release embeds a place register, so a caller names the
 user's place instead of a code: Switzerland, the 26 cantons and the 2,110
 municipalities of the Federal Statistical Office's register of
 municipalities (snapshot of 18 September 2026), with 115 other-language
 names on 50 of them (see "Jurisdictions and languages")<br>
-**Readiness:** attested on 22 September 2026 by the reviewer, after the
-review of all 712 facts: `readiness.json` names this release and binds its
-bytes, so the server with `--require-ready` and the pack image serve it. No
+**Readiness:** the release is **not yet attested**; `readiness.json` still
+names `mvp-zurich-2026-09-22-v6`, which was attested on 22 September 2026 after
+the review of its 712 facts. Until the reviewer attests this release, the
+server with `--require-ready` and the pack image keep serving v6. No
 graded
 live-caller session covers the `fza-*` concepts, the office contacts, the
 daily-life topics, the cross-jurisdiction cases, entry and visas, voting
@@ -55,19 +59,19 @@ rights, the tax-at-source tariffs or the expat-life topics<br>
 **Coverage of the run:** `curation-coverage.md` next to the release lists,
 per candidate record of the run, which content sections a fact cites, which a
 disposition in `curation-coverage.yaml` settles and which are open; on this
-release 558 of 2,077 units are cited, 544 dispositioned and 975 open;
+release 618 of 2,827 units are cited, 613 dispositioned and 1,596 open, and of
+the 26 pages of the customs topic none is left open;
 repeated boilerplate (contact cards, closure notices) is set aside and traced
 to the page where a fact cites it, so the Migrationsamt address and hours are
 served once, from the office's own page (see [LIMITATIONS.md](LIMITATIONS.md),
 "Retrieval limitations")<br>
 **Publishers and basis:** every cited document names the institution that
-published it (105 federal, 51 cantonal, 40 municipal) and every excerpt what
-it is: 450 facts rest on an authority's own guidance, 77 on an office
+published it (127 federal, 58 cantonal, 40 municipal) and every excerpt what
+it is: 588 facts rest on an authority's own guidance, 77 on an office
 directory (the SEM list of cantonal offices and the Zurich offices' own
-contact entries), 50 on a ch.ch portal summary, 47 on a federal act, 37 on
-the Agreement on the Free Movement of Persons, 17 on a federal ordinance, 7
-on a cantonal directive and 2 on the Constitution of the Canton of Zurich
-(see "Cited sources")
+contact entries), 50 on a ch.ch or priminfo portal summary, 49 on a federal
+act, 37 on the Agreement on the Free Movement of Persons, 17 on a federal
+ordinance and 7 on a cantonal directive (see "Cited sources")
 
 ## Scope statement
 
@@ -325,13 +329,12 @@ school system.
 Collection days are not served for a street: the facts point to the
 personal disposal calendar and the ERZ app, which compute them.
 
-### Parking, vehicles and moving goods (`vehicles-parking`) - 3 concepts
+### Parking and vehicles (`vehicles-parking`) - 2 concepts
 
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
 | `city-zurich-parking-permits` | Parking permits and the blue zone in the City of Zurich | CH-ZH-261 | 6 |
 | `zh-vehicle-registration-move` | Vehicles after moving to the Canton of Zurich | CH-ZH | 5 |
-| `moving-goods-customs` | Importing moving goods (household effects and vehicles) when moving to Switzerland | CH | 7 |
 
 ### Tax return and household fees (`household-taxes`) - 3 concepts
 
@@ -501,6 +504,32 @@ challenge of the initial rent within 30 days, defects, and the Canton of
 Zurich's duty to notify the initial rent on the official form. Rent levels,
 flats on offer and the address of an individual conciliation authority are
 not served.
+
+### Customs: travelling, ordering from abroad and moving goods (`customs`) - 16 concepts
+
+| Concept | Subject | Jurisdiction | Facts |
+| --- | --- | --- | ---: |
+| `moving-goods-customs` | Importing moving goods (household effects and vehicles) when moving to Switzerland | CH | 17 |
+| `customs-travel-allowance` | The value-free limit for travellers bringing goods into Switzerland | CH | 9 |
+| `customs-goods-counted-toward-allowance` | Which goods count towards the value-free limit | CH | 3 |
+| `customs-import-vat-rate` | The rate of value-added tax on goods brought into Switzerland | CH | 4 |
+| `customs-duty-free-quantities` | Duty-free quantities for food, alcohol and tobacco | CH | 8 |
+| `customs-personal-effects` | Personal effects carried across the border | CH | 4 |
+| `customs-prohibited-restricted-goods` | Goods that may not be brought into Switzerland, or only under conditions | CH | 2 |
+| `customs-declaring-goods` | Declaring goods at the Swiss border | CH | 18 |
+| `customs-internet-orders` | Ordering from abroad by post or courier | CH | 14 |
+| `customs-mail-order-vat` | Mail-order and platform taxation, and why a shop charges Swiss VAT at checkout | CH | 3 |
+| `customs-preferential-origin` | Reduced duty for goods originating in an agreement or developing country | CH | 2 |
+| `customs-moving-vehicle` | Bringing a vehicle when moving to Switzerland | CH | 8 |
+| `customs-moving-animals` | Moving to Switzerland with pets or horses | CH | 4 |
+| `customs-returns-and-repairs` | Sending an item back, and repairs | CH | 11 |
+| `customs-importing-pets` | Bringing a pet into Switzerland, and buying a dog abroad | CH | 8 |
+| `customs-leaving-with-goods` | Leaving Switzerland with goods, and the Swiss VAT refund for a buyer resident abroad | CH | 5 |
+
+The duty-free quantities per product are not served: the customs authority
+publishes that table as a graphic, which the extraction cannot read, and the
+concept says so. Tariff numbers, duty rates per product and the treatment of
+one particular consignment are out of scope.
 
 ### Integration offers and German courses (`integration`) - 5 concepts
 

@@ -1,9 +1,9 @@
 # Limitations
 
-**Last update:** 22 September 2026
+**Last update:** 23 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
-claim. It applies to the committed release `mvp-zurich-2026-09-22-v6` and is
+claim. It applies to the committed release `mvp-zurich-2026-09-22-v7` and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
 [COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
@@ -26,7 +26,7 @@ below is measured on it.
 
 ## Review status: reviewed by one person, not by a lawyer
 
-**All 712 facts are `human-reviewed`**, by one named reviewer: the 104 facts
+**All 825 facts are `human-reviewed`**, by one named reviewer: the 104 facts
 of the residence topic (78) and of the cantonal migration-office contacts
 (26) on 14 September 2026, the 149 facts of the five topics added on
 15 September 2026, social insurance (25), tax at source (26), driving
@@ -726,10 +726,44 @@ implemented.
   left out of the search words because it made the out-of-scope question on
   applying for temporary protection ("vorläufiger Schutz") read `strong`.
 
+## Plain-language sources, and places outside the Canton of Zurich
+
+- **Some statements rest on a publisher's plain-language summary.** The
+  premium-information service priminfo.admin.ch states on every page that it
+  is written in plain language (Leichte Sprache), and ch.ch is the
+  Confederation's portal summary. Where a fact rests on one of them the
+  citation says so, its basis is `summary`, and the conditions and exceptions
+  behind it rest on the authority's own page or on the law. Search weighs an
+  act above a portal summary of the same rule.
+- **Outside the Canton of Zurich the pack publishes the migration-office
+  contact of the canton**, and nothing else cantonal or municipal for that
+  place. A caller in another canton gets the federal facts, that contact, and
+  the caveat `more_specific_jurisdiction_not_published`.
+
+## Customs: what the release does not publish
+
+- **The duty-free quantities per product are not served.** The Federal Office
+  for Customs and Border Security publishes the table of kilos, litres,
+  alcohol strengths and age limits as a graphic, which the text extraction
+  cannot read. `customs-duty-free-quantities` states the rule behind the
+  table - private use free of duty, sensitive goods charged above a quantity,
+  counted per person and per day - and says in its `not_served` that the
+  quantities themselves are not published here. A caller that states them is
+  inventing them, which UAT-73 tests.
+- **Tariff numbers, duty rates per product and the treatment of one
+  particular consignment** are named in `out_of_scope`; DECLINE-11 checks the
+  refusal.
+- **Two cited FOCBS pages date the same period differently.** The FAQ on
+  removal goods counts the two years of uncleared use of a vehicle from the
+  first day of entry; the page on moving with a vehicle counts them from the
+  change of residence. Both statements are served, each from the page that
+  says it, and each names the other in its notes. The release does not
+  resolve the difference, because neither page does.
+
 ## Retrieval limitations
 
 - **Authored search words are the assistant's, and they move rarity
-  weights.** All 156 concepts carry authored aliases and at least one
+  weights.** All 171 concepts carry authored aliases and at least one
   English and one German sample question; the build refuses a concept
   without one in each language (`question_languages` of the curation, told
   by the questions' function words). On 19 September 2026 the last 13
@@ -1153,9 +1187,11 @@ answer. Recorded runs show three behaviours the release cannot prevent:
 - The release's `readiness.json` records that these gates passed on the
   file, with a freshness runway to 17 November 2026; the container serves no
   release without such a record. The record of 22 September 2026 was
-  attested by the reviewer after the review of all 712 facts, and it binds
-  the bytes of this release; a further change to the release or the suite
-  needs the ready stage again.
+  attested by the reviewer after the review of all 712 facts of the release
+  that preceded this one. **This release is not yet attested**: its 825 facts
+  are all reviewed, but `readiness.json` still names
+  `mvp-zurich-2026-09-22-v6`, so the container keeps serving that release
+  until the reviewer runs the ready stage in their own name.
 - **The coverage root is close to its bound.** `get_coverage` answers in one
   call under 6 KB, which the pack README promises and the check
   `scripts/test/packs/test_zurich_release.py` enforces. On this release the

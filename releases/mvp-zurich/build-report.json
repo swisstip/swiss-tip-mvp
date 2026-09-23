@@ -1,13 +1,13 @@
 {
-  "release_id": "mvp-zurich-2026-09-22-v6",
-  "built_at": "2026-09-22T12:50:22.350977+00:00",
+  "release_id": "mvp-zurich-2026-09-22-v7",
+  "built_at": "2026-09-23T06:35:15.089175+00:00",
   "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich\\text",
-  "concepts": 156,
-  "facts": 712,
-  "evidence": 926,
-  "documents": 203,
+  "concepts": 171,
+  "facts": 825,
+  "evidence": 1039,
+  "documents": 225,
   "citation_outcomes": {
-    "same-snapshot": 926
+    "same-snapshot": 1039
   },
   "dropped": [],
   "facts_resolved": [
@@ -16597,7 +16597,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         },
         {
@@ -16612,7 +16612,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         }
       ],
@@ -16632,7 +16632,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         },
         {
@@ -16646,7 +16646,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         }
       ],
@@ -16668,7 +16668,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         },
         {
@@ -16684,7 +16684,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         }
       ],
@@ -16704,7 +16704,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         },
         {
@@ -16718,7 +16718,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         }
       ],
@@ -16739,7 +16739,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         },
         {
@@ -16754,7 +16754,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         }
       ],
@@ -16777,7 +16777,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         }
       ],
@@ -16800,7 +16800,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         },
         {
@@ -16817,7 +16817,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         }
       ],
@@ -16843,7 +16843,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         },
         {
@@ -16863,7 +16863,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         }
       ],
@@ -16887,7 +16887,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         },
         {
@@ -16901,7 +16901,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         },
         {
@@ -16919,7 +16919,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         },
         {
@@ -16933,7 +16933,7 @@
           "warnings": [],
           "institution_id": "ch-seco",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.arbeit.swiss",
           "basis_warnings": []
         }
       ],
@@ -17307,7 +17307,7 @@
           "warnings": [],
           "institution_id": "ch-bazg",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.bazg.admin.ch",
           "basis_warnings": []
         },
         {
@@ -17321,7 +17321,7 @@
           "warnings": [],
           "institution_id": "ch-bazg",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.bazg.admin.ch",
           "basis_warnings": []
         }
       ],
@@ -17341,7 +17341,7 @@
           "warnings": [],
           "institution_id": "ch-bazg",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.bazg.admin.ch",
           "basis_warnings": []
         },
         {
@@ -17355,7 +17355,7 @@
           "warnings": [],
           "institution_id": "ch-bazg",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.bazg.admin.ch",
           "basis_warnings": []
         }
       ],
@@ -17396,7 +17396,7 @@
           "warnings": [],
           "institution_id": "ch-bazg",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.bazg.admin.ch",
           "basis_warnings": []
         },
         {
@@ -17410,7 +17410,7 @@
           "warnings": [],
           "institution_id": "ch-bazg",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.bazg.admin.ch",
           "basis_warnings": []
         },
         {
@@ -17424,7 +17424,7 @@
           "warnings": [],
           "institution_id": "ch-bazg",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.bazg.admin.ch",
           "basis_warnings": []
         }
       ],
@@ -17444,7 +17444,7 @@
           "warnings": [],
           "institution_id": "ch-bazg",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.bazg.admin.ch",
           "basis_warnings": []
         },
         {
@@ -17458,7 +17458,7 @@
           "warnings": [],
           "institution_id": "ch-bazg",
           "basis": "Federal authority guidance",
-          "basis_rule": "default",
+          "basis_rule": "page rule www.bazg.admin.ch",
           "basis_warnings": []
         }
       ],
@@ -17510,6 +17510,209 @@
         }
       ],
       "basis": "Portal summary of federal rules"
+    },
+    {
+      "fact_id": "moving-goods-customs-8",
+      "citations": [
+        {
+          "document_id": "doc-a0307125a8f264f4f84d",
+          "outcome": "same-snapshot",
+          "start": 1444,
+          "end": 1626,
+          "block_ids": [
+            "doc-a0307125a8f264f4f84d:b00029"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "moving-goods-customs-9",
+      "citations": [
+        {
+          "document_id": "doc-49e93adbb7a39f819323",
+          "outcome": "same-snapshot",
+          "start": 482,
+          "end": 625,
+          "block_ids": [
+            "doc-49e93adbb7a39f819323:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "moving-goods-customs-10",
+      "citations": [
+        {
+          "document_id": "doc-49e93adbb7a39f819323",
+          "outcome": "same-snapshot",
+          "start": 1567,
+          "end": 1792,
+          "block_ids": [
+            "doc-49e93adbb7a39f819323:b00035"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "moving-goods-customs-11",
+      "citations": [
+        {
+          "document_id": "doc-49e93adbb7a39f819323",
+          "outcome": "same-snapshot",
+          "start": 2519,
+          "end": 2871,
+          "block_ids": [
+            "doc-49e93adbb7a39f819323:b00041"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "moving-goods-customs-12",
+      "citations": [
+        {
+          "document_id": "doc-49e93adbb7a39f819323",
+          "outcome": "same-snapshot",
+          "start": 3278,
+          "end": 3629,
+          "block_ids": [
+            "doc-49e93adbb7a39f819323:b00045"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "moving-goods-customs-13",
+      "citations": [
+        {
+          "document_id": "doc-49e93adbb7a39f819323",
+          "outcome": "same-snapshot",
+          "start": 3738,
+          "end": 4178,
+          "block_ids": [
+            "doc-49e93adbb7a39f819323:b00047"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "moving-goods-customs-14",
+      "citations": [
+        {
+          "document_id": "doc-49e93adbb7a39f819323",
+          "outcome": "same-snapshot",
+          "start": 4265,
+          "end": 4552,
+          "block_ids": [
+            "doc-49e93adbb7a39f819323:b00049"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "moving-goods-customs-15",
+      "citations": [
+        {
+          "document_id": "doc-49e93adbb7a39f819323",
+          "outcome": "same-snapshot",
+          "start": 8336,
+          "end": 8659,
+          "block_ids": [
+            "doc-49e93adbb7a39f819323:b00076",
+            "doc-49e93adbb7a39f819323:b00077"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "moving-goods-customs-16",
+      "citations": [
+        {
+          "document_id": "doc-49e93adbb7a39f819323",
+          "outcome": "same-snapshot",
+          "start": 8728,
+          "end": 9049,
+          "block_ids": [
+            "doc-49e93adbb7a39f819323:b00079",
+            "doc-49e93adbb7a39f819323:b00080"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "moving-goods-customs-17",
+      "citations": [
+        {
+          "document_id": "doc-49e93adbb7a39f819323",
+          "outcome": "same-snapshot",
+          "start": 9051,
+          "end": 9242,
+          "block_ids": [
+            "doc-49e93adbb7a39f819323:b00081",
+            "doc-49e93adbb7a39f819323:b00082"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
     },
     {
       "fact_id": "family-allowances-1",
@@ -19811,10 +20014,2093 @@
         }
       ],
       "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "customs-travel-allowance-1",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 784,
+          "end": 1039,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-travel-allowance-2",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 1073,
+          "end": 1185,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-travel-allowance-3",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 1187,
+          "end": 1333,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00024"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-travel-allowance-4",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 1335,
+          "end": 1459,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00025"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-travel-allowance-5",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 1585,
+          "end": 1708,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-travel-allowance-6",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 1710,
+          "end": 1831,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00028"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-travel-allowance-7",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 2000,
+          "end": 2185,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00030"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-travel-allowance-8",
+      "citations": [
+        {
+          "document_id": "doc-c428011a0852377f3ef6",
+          "outcome": "same-snapshot",
+          "start": 1574,
+          "end": 1881,
+          "block_ids": [
+            "doc-c428011a0852377f3ef6:b00028"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-travel-allowance-9",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 4571,
+          "end": 4779,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00048"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-goods-counted-toward-allowance-1",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 2456,
+          "end": 2715,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00033"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-goods-counted-toward-allowance-2",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 2717,
+          "end": 2848,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00034"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-goods-counted-toward-allowance-3",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 2850,
+          "end": 3056,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00035"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-import-vat-rate-1",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 3090,
+          "end": 3272,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00037"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-import-vat-rate-2",
+      "citations": [
+        {
+          "document_id": "doc-12771c5fcbdee5f520a5",
+          "outcome": "same-snapshot",
+          "start": 3274,
+          "end": 3650,
+          "block_ids": [
+            "doc-12771c5fcbdee5f520a5:b00038"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-import-vat-rate-3",
+      "citations": [
+        {
+          "document_id": "doc-4fb0420bc83d13e5d3ab",
+          "outcome": "same-snapshot",
+          "start": 346,
+          "end": 603,
+          "block_ids": [
+            "doc-4fb0420bc83d13e5d3ab:b00018"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-import-vat-rate-4",
+      "citations": [
+        {
+          "document_id": "doc-4fb0420bc83d13e5d3ab",
+          "outcome": "same-snapshot",
+          "start": 605,
+          "end": 1237,
+          "block_ids": [
+            "doc-4fb0420bc83d13e5d3ab:b00019",
+            "doc-4fb0420bc83d13e5d3ab:b00020",
+            "doc-4fb0420bc83d13e5d3ab:b00021",
+            "doc-4fb0420bc83d13e5d3ab:b00022",
+            "doc-4fb0420bc83d13e5d3ab:b00023",
+            "doc-4fb0420bc83d13e5d3ab:b00024",
+            "doc-4fb0420bc83d13e5d3ab:b00025",
+            "doc-4fb0420bc83d13e5d3ab:b00026",
+            "doc-4fb0420bc83d13e5d3ab:b00027",
+            "doc-4fb0420bc83d13e5d3ab:b00028"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-duty-free-quantities-1",
+      "citations": [
+        {
+          "document_id": "doc-134972557881796cf73c",
+          "outcome": "same-snapshot",
+          "start": 346,
+          "end": 662,
+          "block_ids": [
+            "doc-134972557881796cf73c:b00018"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-duty-free-quantities-2",
+      "citations": [
+        {
+          "document_id": "doc-134972557881796cf73c",
+          "outcome": "same-snapshot",
+          "start": 346,
+          "end": 662,
+          "block_ids": [
+            "doc-134972557881796cf73c:b00018"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-duty-free-quantities-3",
+      "citations": [
+        {
+          "document_id": "doc-134972557881796cf73c",
+          "outcome": "same-snapshot",
+          "start": 948,
+          "end": 999,
+          "block_ids": [
+            "doc-134972557881796cf73c:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-duty-free-quantities-4",
+      "citations": [
+        {
+          "document_id": "doc-134972557881796cf73c",
+          "outcome": "same-snapshot",
+          "start": 1001,
+          "end": 1195,
+          "block_ids": [
+            "doc-134972557881796cf73c:b00024"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-duty-free-quantities-5",
+      "citations": [
+        {
+          "document_id": "doc-134972557881796cf73c",
+          "outcome": "same-snapshot",
+          "start": 1574,
+          "end": 1768,
+          "block_ids": [
+            "doc-134972557881796cf73c:b00028"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-duty-free-quantities-6",
+      "citations": [
+        {
+          "document_id": "doc-134972557881796cf73c",
+          "outcome": "same-snapshot",
+          "start": 1770,
+          "end": 1906,
+          "block_ids": [
+            "doc-134972557881796cf73c:b00029"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-duty-free-quantities-7",
+      "citations": [
+        {
+          "document_id": "doc-2be14eb81766abd0a5f6",
+          "outcome": "same-snapshot",
+          "start": 1247,
+          "end": 1381,
+          "block_ids": [
+            "doc-2be14eb81766abd0a5f6:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-duty-free-quantities-8",
+      "citations": [
+        {
+          "document_id": "doc-2be14eb81766abd0a5f6",
+          "outcome": "same-snapshot",
+          "start": 1383,
+          "end": 1677,
+          "block_ids": [
+            "doc-2be14eb81766abd0a5f6:b00028"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-personal-effects-1",
+      "citations": [
+        {
+          "document_id": "doc-2be14eb81766abd0a5f6",
+          "outcome": "same-snapshot",
+          "start": 788,
+          "end": 891,
+          "block_ids": [
+            "doc-2be14eb81766abd0a5f6:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-personal-effects-2",
+      "citations": [
+        {
+          "document_id": "doc-2be14eb81766abd0a5f6",
+          "outcome": "same-snapshot",
+          "start": 893,
+          "end": 962,
+          "block_ids": [
+            "doc-2be14eb81766abd0a5f6:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-personal-effects-3",
+      "citations": [
+        {
+          "document_id": "doc-2be14eb81766abd0a5f6",
+          "outcome": "same-snapshot",
+          "start": 964,
+          "end": 1064,
+          "block_ids": [
+            "doc-2be14eb81766abd0a5f6:b00024"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-personal-effects-4",
+      "citations": [
+        {
+          "document_id": "doc-2be14eb81766abd0a5f6",
+          "outcome": "same-snapshot",
+          "start": 1066,
+          "end": 1217,
+          "block_ids": [
+            "doc-2be14eb81766abd0a5f6:b00025"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-prohibited-restricted-goods-1",
+      "citations": [
+        {
+          "document_id": "doc-2be14eb81766abd0a5f6",
+          "outcome": "same-snapshot",
+          "start": 2062,
+          "end": 2320,
+          "block_ids": [
+            "doc-2be14eb81766abd0a5f6:b00033"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-prohibited-restricted-goods-2",
+      "citations": [
+        {
+          "document_id": "doc-cc8927202fa93a8a8d83",
+          "outcome": "same-snapshot",
+          "start": 1354,
+          "end": 1840,
+          "block_ids": [
+            "doc-cc8927202fa93a8a8d83:b00026",
+            "doc-cc8927202fa93a8a8d83:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-1",
+      "citations": [
+        {
+          "document_id": "doc-4dac67e3a2cf2e177bfb",
+          "outcome": "same-snapshot",
+          "start": 605,
+          "end": 1148,
+          "block_ids": [
+            "doc-4dac67e3a2cf2e177bfb:b00019",
+            "doc-4dac67e3a2cf2e177bfb:b00020",
+            "doc-4dac67e3a2cf2e177bfb:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-2",
+      "citations": [
+        {
+          "document_id": "doc-4dac67e3a2cf2e177bfb",
+          "outcome": "same-snapshot",
+          "start": 848,
+          "end": 1148,
+          "block_ids": [
+            "doc-4dac67e3a2cf2e177bfb:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-3",
+      "citations": [
+        {
+          "document_id": "doc-4dac67e3a2cf2e177bfb",
+          "outcome": "same-snapshot",
+          "start": 1150,
+          "end": 1327,
+          "block_ids": [
+            "doc-4dac67e3a2cf2e177bfb:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-4",
+      "citations": [
+        {
+          "document_id": "doc-4dac67e3a2cf2e177bfb",
+          "outcome": "same-snapshot",
+          "start": 1329,
+          "end": 1434,
+          "block_ids": [
+            "doc-4dac67e3a2cf2e177bfb:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-5",
+      "citations": [
+        {
+          "document_id": "doc-4dac67e3a2cf2e177bfb",
+          "outcome": "same-snapshot",
+          "start": 1510,
+          "end": 1889,
+          "block_ids": [
+            "doc-4dac67e3a2cf2e177bfb:b00025"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-6",
+      "citations": [
+        {
+          "document_id": "doc-0780a5be8f74ec787b10",
+          "outcome": "same-snapshot",
+          "start": 658,
+          "end": 755,
+          "block_ids": [
+            "doc-0780a5be8f74ec787b10:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-7",
+      "citations": [
+        {
+          "document_id": "doc-0780a5be8f74ec787b10",
+          "outcome": "same-snapshot",
+          "start": 775,
+          "end": 986,
+          "block_ids": [
+            "doc-0780a5be8f74ec787b10:b00023",
+            "doc-0780a5be8f74ec787b10:b00024",
+            "doc-0780a5be8f74ec787b10:b00025"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-8",
+      "citations": [
+        {
+          "document_id": "doc-0780a5be8f74ec787b10",
+          "outcome": "same-snapshot",
+          "start": 988,
+          "end": 1120,
+          "block_ids": [
+            "doc-0780a5be8f74ec787b10:b00026"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-9",
+      "citations": [
+        {
+          "document_id": "doc-0780a5be8f74ec787b10",
+          "outcome": "same-snapshot",
+          "start": 1122,
+          "end": 1443,
+          "block_ids": [
+            "doc-0780a5be8f74ec787b10:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-10",
+      "citations": [
+        {
+          "document_id": "doc-0780a5be8f74ec787b10",
+          "outcome": "same-snapshot",
+          "start": 1462,
+          "end": 1742,
+          "block_ids": [
+            "doc-0780a5be8f74ec787b10:b00029"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-11",
+      "citations": [
+        {
+          "document_id": "doc-62f7e84f493f02430c66",
+          "outcome": "same-snapshot",
+          "start": 686,
+          "end": 1146,
+          "block_ids": [
+            "doc-62f7e84f493f02430c66:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-12",
+      "citations": [
+        {
+          "document_id": "doc-62f7e84f493f02430c66",
+          "outcome": "same-snapshot",
+          "start": 686,
+          "end": 1146,
+          "block_ids": [
+            "doc-62f7e84f493f02430c66:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-13",
+      "citations": [
+        {
+          "document_id": "doc-62f7e84f493f02430c66",
+          "outcome": "same-snapshot",
+          "start": 1454,
+          "end": 1677,
+          "block_ids": [
+            "doc-62f7e84f493f02430c66:b00024"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-14",
+      "citations": [
+        {
+          "document_id": "doc-62f7e84f493f02430c66",
+          "outcome": "same-snapshot",
+          "start": 1912,
+          "end": 2271,
+          "block_ids": [
+            "doc-62f7e84f493f02430c66:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-15",
+      "citations": [
+        {
+          "document_id": "doc-59089a1125b8a26db80f",
+          "outcome": "same-snapshot",
+          "start": 664,
+          "end": 829,
+          "block_ids": [
+            "doc-59089a1125b8a26db80f:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-16",
+      "citations": [
+        {
+          "document_id": "doc-59089a1125b8a26db80f",
+          "outcome": "same-snapshot",
+          "start": 3253,
+          "end": 3484,
+          "block_ids": [
+            "doc-59089a1125b8a26db80f:b00047"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-17",
+      "citations": [
+        {
+          "document_id": "doc-59089a1125b8a26db80f",
+          "outcome": "same-snapshot",
+          "start": 1187,
+          "end": 1302,
+          "block_ids": [
+            "doc-59089a1125b8a26db80f:b00026"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-declaring-goods-18",
+      "citations": [
+        {
+          "document_id": "doc-59089a1125b8a26db80f",
+          "outcome": "same-snapshot",
+          "start": 1358,
+          "end": 1671,
+          "block_ids": [
+            "doc-59089a1125b8a26db80f:b00029"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-1",
+      "citations": [
+        {
+          "document_id": "doc-a16beff4a089c5a239dd",
+          "outcome": "same-snapshot",
+          "start": 358,
+          "end": 535,
+          "block_ids": [
+            "doc-a16beff4a089c5a239dd:b00018"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-2",
+      "citations": [
+        {
+          "document_id": "doc-a16beff4a089c5a239dd",
+          "outcome": "same-snapshot",
+          "start": 781,
+          "end": 920,
+          "block_ids": [
+            "doc-a16beff4a089c5a239dd:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-3",
+      "citations": [
+        {
+          "document_id": "doc-a16beff4a089c5a239dd",
+          "outcome": "same-snapshot",
+          "start": 537,
+          "end": 779,
+          "block_ids": [
+            "doc-a16beff4a089c5a239dd:b00019"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-4",
+      "citations": [
+        {
+          "document_id": "doc-36681bc4d8a8776e8ac7",
+          "outcome": "same-snapshot",
+          "start": 608,
+          "end": 953,
+          "block_ids": [
+            "doc-36681bc4d8a8776e8ac7:b00019"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-5",
+      "citations": [
+        {
+          "document_id": "doc-36681bc4d8a8776e8ac7",
+          "outcome": "same-snapshot",
+          "start": 955,
+          "end": 1255,
+          "block_ids": [
+            "doc-36681bc4d8a8776e8ac7:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-6",
+      "citations": [
+        {
+          "document_id": "doc-36681bc4d8a8776e8ac7",
+          "outcome": "same-snapshot",
+          "start": 955,
+          "end": 1255,
+          "block_ids": [
+            "doc-36681bc4d8a8776e8ac7:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-7",
+      "citations": [
+        {
+          "document_id": "doc-d25c75b6384595c370a9",
+          "outcome": "same-snapshot",
+          "start": 793,
+          "end": 1446,
+          "block_ids": [
+            "doc-d25c75b6384595c370a9:b00020",
+            "doc-d25c75b6384595c370a9:b00021",
+            "doc-d25c75b6384595c370a9:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-8",
+      "citations": [
+        {
+          "document_id": "doc-d25c75b6384595c370a9",
+          "outcome": "same-snapshot",
+          "start": 1924,
+          "end": 2328,
+          "block_ids": [
+            "doc-d25c75b6384595c370a9:b00028"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-9",
+      "citations": [
+        {
+          "document_id": "doc-d25c75b6384595c370a9",
+          "outcome": "same-snapshot",
+          "start": 2330,
+          "end": 2422,
+          "block_ids": [
+            "doc-d25c75b6384595c370a9:b00029"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-10",
+      "citations": [
+        {
+          "document_id": "doc-d25c75b6384595c370a9",
+          "outcome": "same-snapshot",
+          "start": 2712,
+          "end": 2964,
+          "block_ids": [
+            "doc-d25c75b6384595c370a9:b00032"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-11",
+      "citations": [
+        {
+          "document_id": "doc-d25c75b6384595c370a9",
+          "outcome": "same-snapshot",
+          "start": 4058,
+          "end": 4361,
+          "block_ids": [
+            "doc-d25c75b6384595c370a9:b00038"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-12",
+      "citations": [
+        {
+          "document_id": "doc-d25c75b6384595c370a9",
+          "outcome": "same-snapshot",
+          "start": 5248,
+          "end": 5483,
+          "block_ids": [
+            "doc-d25c75b6384595c370a9:b00049"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-13",
+      "citations": [
+        {
+          "document_id": "doc-d25c75b6384595c370a9",
+          "outcome": "same-snapshot",
+          "start": 6492,
+          "end": 6865,
+          "block_ids": [
+            "doc-d25c75b6384595c370a9:b00057"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-internet-orders-14",
+      "citations": [
+        {
+          "document_id": "doc-d25c75b6384595c370a9",
+          "outcome": "same-snapshot",
+          "start": 6877,
+          "end": 7591,
+          "block_ids": [
+            "doc-d25c75b6384595c370a9:b00059",
+            "doc-d25c75b6384595c370a9:b00060"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-mail-order-vat-1",
+      "citations": [
+        {
+          "document_id": "doc-583848329b9eb858ddcd",
+          "outcome": "same-snapshot",
+          "start": 565,
+          "end": 980,
+          "block_ids": [
+            "doc-583848329b9eb858ddcd:b00019"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-mail-order-vat-2",
+      "citations": [
+        {
+          "document_id": "doc-583848329b9eb858ddcd",
+          "outcome": "same-snapshot",
+          "start": 982,
+          "end": 1285,
+          "block_ids": [
+            "doc-583848329b9eb858ddcd:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-mail-order-vat-3",
+      "citations": [
+        {
+          "document_id": "doc-583848329b9eb858ddcd",
+          "outcome": "same-snapshot",
+          "start": 1287,
+          "end": 1590,
+          "block_ids": [
+            "doc-583848329b9eb858ddcd:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-preferential-origin-1",
+      "citations": [
+        {
+          "document_id": "doc-d25c75b6384595c370a9",
+          "outcome": "same-snapshot",
+          "start": 5634,
+          "end": 6110,
+          "block_ids": [
+            "doc-d25c75b6384595c370a9:b00053"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-preferential-origin-2",
+      "citations": [
+        {
+          "document_id": "doc-d25c75b6384595c370a9",
+          "outcome": "same-snapshot",
+          "start": 6112,
+          "end": 6387,
+          "block_ids": [
+            "doc-d25c75b6384595c370a9:b00054"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-vehicle-1",
+      "citations": [
+        {
+          "document_id": "doc-7a32f11d4eabd2a4e1f6",
+          "outcome": "same-snapshot",
+          "start": 319,
+          "end": 417,
+          "block_ids": [
+            "doc-7a32f11d4eabd2a4e1f6:b00018"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-vehicle-2",
+      "citations": [
+        {
+          "document_id": "doc-7a32f11d4eabd2a4e1f6",
+          "outcome": "same-snapshot",
+          "start": 718,
+          "end": 1284,
+          "block_ids": [
+            "doc-7a32f11d4eabd2a4e1f6:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-vehicle-3",
+      "citations": [
+        {
+          "document_id": "doc-7a32f11d4eabd2a4e1f6",
+          "outcome": "same-snapshot",
+          "start": 1286,
+          "end": 1650,
+          "block_ids": [
+            "doc-7a32f11d4eabd2a4e1f6:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-vehicle-4",
+      "citations": [
+        {
+          "document_id": "doc-7a32f11d4eabd2a4e1f6",
+          "outcome": "same-snapshot",
+          "start": 1652,
+          "end": 2048,
+          "block_ids": [
+            "doc-7a32f11d4eabd2a4e1f6:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-vehicle-5",
+      "citations": [
+        {
+          "document_id": "doc-7a32f11d4eabd2a4e1f6",
+          "outcome": "same-snapshot",
+          "start": 438,
+          "end": 716,
+          "block_ids": [
+            "doc-7a32f11d4eabd2a4e1f6:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-vehicle-6",
+      "citations": [
+        {
+          "document_id": "doc-7a32f11d4eabd2a4e1f6",
+          "outcome": "same-snapshot",
+          "start": 2067,
+          "end": 2310,
+          "block_ids": [
+            "doc-7a32f11d4eabd2a4e1f6:b00025"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-vehicle-7",
+      "citations": [
+        {
+          "document_id": "doc-7a32f11d4eabd2a4e1f6",
+          "outcome": "same-snapshot",
+          "start": 2432,
+          "end": 2546,
+          "block_ids": [
+            "doc-7a32f11d4eabd2a4e1f6:b00029"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-vehicle-8",
+      "citations": [
+        {
+          "document_id": "doc-49e93adbb7a39f819323",
+          "outcome": "same-snapshot",
+          "start": 5989,
+          "end": 6376,
+          "block_ids": [
+            "doc-49e93adbb7a39f819323:b00060",
+            "doc-49e93adbb7a39f819323:b00061"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-animals-1",
+      "citations": [
+        {
+          "document_id": "doc-fd3729f23cb003146146",
+          "outcome": "same-snapshot",
+          "start": 432,
+          "end": 618,
+          "block_ids": [
+            "doc-fd3729f23cb003146146:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-animals-2",
+      "citations": [
+        {
+          "document_id": "doc-fd3729f23cb003146146",
+          "outcome": "same-snapshot",
+          "start": 620,
+          "end": 765,
+          "block_ids": [
+            "doc-fd3729f23cb003146146:b00021",
+            "doc-fd3729f23cb003146146:b00022",
+            "doc-fd3729f23cb003146146:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-animals-3",
+      "citations": [
+        {
+          "document_id": "doc-fd3729f23cb003146146",
+          "outcome": "same-snapshot",
+          "start": 855,
+          "end": 1009,
+          "block_ids": [
+            "doc-fd3729f23cb003146146:b00026"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-moving-animals-4",
+      "citations": [
+        {
+          "document_id": "doc-49e93adbb7a39f819323",
+          "outcome": "same-snapshot",
+          "start": 7832,
+          "end": 8276,
+          "block_ids": [
+            "doc-49e93adbb7a39f819323:b00074"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-returns-and-repairs-1",
+      "citations": [
+        {
+          "document_id": "doc-2c7277cf602672dbbb30",
+          "outcome": "same-snapshot",
+          "start": 780,
+          "end": 1150,
+          "block_ids": [
+            "doc-2c7277cf602672dbbb30:b00020"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-returns-and-repairs-2",
+      "citations": [
+        {
+          "document_id": "doc-2c7277cf602672dbbb30",
+          "outcome": "same-snapshot",
+          "start": 1307,
+          "end": 1507,
+          "block_ids": [
+            "doc-2c7277cf602672dbbb30:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-returns-and-repairs-3",
+      "citations": [
+        {
+          "document_id": "doc-2c7277cf602672dbbb30",
+          "outcome": "same-snapshot",
+          "start": 1563,
+          "end": 1867,
+          "block_ids": [
+            "doc-2c7277cf602672dbbb30:b00025"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-returns-and-repairs-4",
+      "citations": [
+        {
+          "document_id": "doc-2c7277cf602672dbbb30",
+          "outcome": "same-snapshot",
+          "start": 1881,
+          "end": 2194,
+          "block_ids": [
+            "doc-2c7277cf602672dbbb30:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-returns-and-repairs-5",
+      "citations": [
+        {
+          "document_id": "doc-e591b902722f45df8802",
+          "outcome": "same-snapshot",
+          "start": 1224,
+          "end": 1466,
+          "block_ids": [
+            "doc-e591b902722f45df8802:b00023"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-returns-and-repairs-6",
+      "citations": [
+        {
+          "document_id": "doc-e591b902722f45df8802",
+          "outcome": "same-snapshot",
+          "start": 1514,
+          "end": 1841,
+          "block_ids": [
+            "doc-e591b902722f45df8802:b00025"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-returns-and-repairs-7",
+      "citations": [
+        {
+          "document_id": "doc-e591b902722f45df8802",
+          "outcome": "same-snapshot",
+          "start": 1879,
+          "end": 2137,
+          "block_ids": [
+            "doc-e591b902722f45df8802:b00027"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-returns-and-repairs-8",
+      "citations": [
+        {
+          "document_id": "doc-e591b902722f45df8802",
+          "outcome": "same-snapshot",
+          "start": 2139,
+          "end": 2459,
+          "block_ids": [
+            "doc-e591b902722f45df8802:b00028",
+            "doc-e591b902722f45df8802:b00029",
+            "doc-e591b902722f45df8802:b00030"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-returns-and-repairs-9",
+      "citations": [
+        {
+          "document_id": "doc-e591b902722f45df8802",
+          "outcome": "same-snapshot",
+          "start": 2524,
+          "end": 2849,
+          "block_ids": [
+            "doc-e591b902722f45df8802:b00032"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-returns-and-repairs-10",
+      "citations": [
+        {
+          "document_id": "doc-e591b902722f45df8802",
+          "outcome": "same-snapshot",
+          "start": 3103,
+          "end": 3326,
+          "block_ids": [
+            "doc-e591b902722f45df8802:b00037"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-returns-and-repairs-11",
+      "citations": [
+        {
+          "document_id": "doc-e591b902722f45df8802",
+          "outcome": "same-snapshot",
+          "start": 3328,
+          "end": 4093,
+          "block_ids": [
+            "doc-e591b902722f45df8802:b00038"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-importing-pets-1",
+      "citations": [
+        {
+          "document_id": "doc-851308b9946b3d2ce68b",
+          "outcome": "same-snapshot",
+          "start": 1688,
+          "end": 1945,
+          "block_ids": [
+            "doc-851308b9946b3d2ce68b:b00029"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-importing-pets-2",
+      "citations": [
+        {
+          "document_id": "doc-851308b9946b3d2ce68b",
+          "outcome": "same-snapshot",
+          "start": 2506,
+          "end": 2723,
+          "block_ids": [
+            "doc-851308b9946b3d2ce68b:b00035"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-importing-pets-3",
+      "citations": [
+        {
+          "document_id": "doc-851308b9946b3d2ce68b",
+          "outcome": "same-snapshot",
+          "start": 1987,
+          "end": 2345,
+          "block_ids": [
+            "doc-851308b9946b3d2ce68b:b00031",
+            "doc-851308b9946b3d2ce68b:b00032"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-importing-pets-4",
+      "citations": [
+        {
+          "document_id": "doc-851308b9946b3d2ce68b",
+          "outcome": "same-snapshot",
+          "start": 2347,
+          "end": 2495,
+          "block_ids": [
+            "doc-851308b9946b3d2ce68b:b00033"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-importing-pets-5",
+      "citations": [
+        {
+          "document_id": "doc-851308b9946b3d2ce68b",
+          "outcome": "same-snapshot",
+          "start": 2756,
+          "end": 2860,
+          "block_ids": [
+            "doc-851308b9946b3d2ce68b:b00037"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-importing-pets-6",
+      "citations": [
+        {
+          "document_id": "doc-851308b9946b3d2ce68b",
+          "outcome": "same-snapshot",
+          "start": 2873,
+          "end": 3215,
+          "block_ids": [
+            "doc-851308b9946b3d2ce68b:b00039"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-importing-pets-7",
+      "citations": [
+        {
+          "document_id": "doc-851308b9946b3d2ce68b",
+          "outcome": "same-snapshot",
+          "start": 3217,
+          "end": 3409,
+          "block_ids": [
+            "doc-851308b9946b3d2ce68b:b00040"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-importing-pets-8",
+      "citations": [
+        {
+          "document_id": "doc-851308b9946b3d2ce68b",
+          "outcome": "same-snapshot",
+          "start": 1376,
+          "end": 1496,
+          "block_ids": [
+            "doc-851308b9946b3d2ce68b:b00026"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-leaving-with-goods-1",
+      "citations": [
+        {
+          "document_id": "doc-714a0981c5b41126870d",
+          "outcome": "same-snapshot",
+          "start": 343,
+          "end": 724,
+          "block_ids": [
+            "doc-714a0981c5b41126870d:b00018"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-leaving-with-goods-2",
+      "citations": [
+        {
+          "document_id": "doc-714a0981c5b41126870d",
+          "outcome": "same-snapshot",
+          "start": 1585,
+          "end": 1853,
+          "block_ids": [
+            "doc-714a0981c5b41126870d:b00024"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-leaving-with-goods-3",
+      "citations": [
+        {
+          "document_id": "doc-714a0981c5b41126870d",
+          "outcome": "same-snapshot",
+          "start": 1855,
+          "end": 2154,
+          "block_ids": [
+            "doc-714a0981c5b41126870d:b00025"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-leaving-with-goods-4",
+      "citations": [
+        {
+          "document_id": "doc-e591b902722f45df8802",
+          "outcome": "same-snapshot",
+          "start": 800,
+          "end": 1186,
+          "block_ids": [
+            "doc-e591b902722f45df8802:b00021"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
+    },
+    {
+      "fact_id": "customs-leaving-with-goods-5",
+      "citations": [
+        {
+          "document_id": "doc-714a0981c5b41126870d",
+          "outcome": "same-snapshot",
+          "start": 2156,
+          "end": 2423,
+          "block_ids": [
+            "doc-714a0981c5b41126870d:b00026"
+          ],
+          "warnings": [],
+          "institution_id": "ch-bazg",
+          "basis": "Federal authority guidance",
+          "basis_rule": "page rule www.bazg.admin.ch",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Federal authority guidance"
     }
   ],
-  "source_terms": 1271,
-  "questions": 368,
+  "source_terms": 1372,
+  "questions": 398,
   "institutions": [
     {
       "institution_id": "ch-bag",
@@ -19829,7 +22115,7 @@
       "name": "Federal Office for Customs and Border Security FOCBS",
       "level": "federal",
       "jurisdiction": "CH",
-      "documents": 2,
+      "documents": 24,
       "from_catalogue": false
     },
     {
@@ -20073,7 +22359,9 @@
       "from_catalogue": false
     }
   ],
-  "institutions_unused": [],
+  "institutions_unused": [
+    "ch-ahv-iv"
+  ],
   "documents_attributed": [
     {
       "document_id": "doc-015229bef7e56c4f0933",
@@ -20086,6 +22374,12 @@
       "source_url": "https://faq.bsv.admin.ch/de/berufliche-vorsorge-und-3-saeule/kann-ich-mein-bvg-altersguthaben-bar-beziehen-wenn-ich-die-schweiz",
       "institution_id": "ch-bsv",
       "institution_rule": "registry rule faq.bsv.admin.ch"
+    },
+    {
+      "document_id": "doc-0780a5be8f74ec787b10",
+      "source_url": "https://www.bazg.admin.ch/de/waren-einfuehren-flugreisen",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-097ba90229a71bb8bdba",
@@ -20122,6 +22416,18 @@
       "source_url": "https://www.ch.ch/de/ausweise-und-dokumente/fuhrerausweis/fuhrerausweis-umtauschen/",
       "institution_id": "ch-chch",
       "institution_rule": "registry rule www.ch.ch"
+    },
+    {
+      "document_id": "doc-12771c5fcbdee5f520a5",
+      "source_url": "https://www.bazg.admin.ch/de/wertfreigrenze-mehrwertsteuer-einreise-150-franken",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
+      "document_id": "doc-134972557881796cf73c",
+      "source_url": "https://www.bazg.admin.ch/de/freimengen-lebensmittel-alkohol-tabak",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-15b24dfd1b4e56b1520e",
@@ -20256,6 +22562,12 @@
       "institution_rule": "registry rule www.ch.ch"
     },
     {
+      "document_id": "doc-2be14eb81766abd0a5f6",
+      "source_url": "https://www.bazg.admin.ch/de/allgemeine-informationen-zu-freimengen-und-wertfreigrenzen",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
       "document_id": "doc-2beff3b94d248dc44aad",
       "source_url": "https://www.fedlex.admin.ch/eli/cc/1996/688_688_688/de",
       "institution_id": "ch-fedlex",
@@ -20266,6 +22578,12 @@
       "source_url": "https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/nachtraegliche-ordentliche-veranlagung-oder-quellensteuerkorrekt.html",
       "institution_id": "zh-steueramt",
       "institution_rule": "registry rule www.zh.ch/de/steuern-finanzen/"
+    },
+    {
+      "document_id": "doc-2c7277cf602672dbbb30",
+      "source_url": "https://www.bazg.admin.ch/de/interneteinkauf-ruecksendung-reparatur-veredelung",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-2e14016a13cfb0b80314",
@@ -20302,6 +22620,12 @@
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/wegzug.html",
       "institution_id": "zh-261-personenmeldeamt",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/"
+    },
+    {
+      "document_id": "doc-36681bc4d8a8776e8ac7",
+      "source_url": "https://www.bazg.admin.ch/de/interneteinkauf-postsendungen-informationen-einfuhr",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-380255d8847870b7c0f3",
@@ -20388,6 +22712,12 @@
       "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
+      "document_id": "doc-49e93adbb7a39f819323",
+      "source_url": "https://www.bazg.admin.ch/de/faq-umzugsgut",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
       "document_id": "doc-49f266bcd26a6137ae23",
       "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige/einreisebewilligung-fuer-nahe-verwandte-beantragen.html",
       "institution_id": "zh-migrationsamt",
@@ -20406,10 +22736,22 @@
       "institution_rule": "registry rule www.sem.admin.ch"
     },
     {
+      "document_id": "doc-4dac67e3a2cf2e177bfb",
+      "source_url": "https://www.bazg.admin.ch/de/reisen-einkaufen-freimengen-zollanmeldung-schweiz",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
       "document_id": "doc-4f9c56f3313549edc7e8",
       "source_url": "https://www.estv.admin.ch/de/quellensteuer",
       "institution_id": "ch-estv",
       "institution_rule": "registry rule www.estv.admin.ch"
+    },
+    {
+      "document_id": "doc-4fb0420bc83d13e5d3ab",
+      "source_url": "https://www.bazg.admin.ch/de/einfuhrsteuer-mehrwertsteuer-auf-warenimporte",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-5028cb30ffd4a8de19e1",
@@ -20458,6 +22800,18 @@
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/zuzug.html",
       "institution_id": "zh-261-personenmeldeamt",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/umziehen-melden/"
+    },
+    {
+      "document_id": "doc-583848329b9eb858ddcd",
+      "source_url": "https://www.bazg.admin.ch/de/regelung-mwst-versandhandel-und-plattformbesteuerung",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
+      "document_id": "doc-59089a1125b8a26db80f",
+      "source_url": "https://www.bazg.admin.ch/de/waren-anmelden-einfuhr-private",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-596619ad0b7f782f4bb0",
@@ -20518,6 +22872,12 @@
       "source_url": "https://www.zh.ch/de/migration-integration/niederlassungsbewilligung.html",
       "institution_id": "zh-migrationsamt",
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
+      "document_id": "doc-62f7e84f493f02430c66",
+      "source_url": "https://www.bazg.admin.ch/de/quickzoll-app-waren-anmelden-private",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-64ce4d24871f7047d407",
@@ -20598,6 +22958,12 @@
       "institution_rule": "registry rule svazurich.ch"
     },
     {
+      "document_id": "doc-714a0981c5b41126870d",
+      "source_url": "https://www.bazg.admin.ch/de/ausreise-aus-der-schweiz-mit-privatwaren",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
       "document_id": "doc-71f912c1a94b986fba26",
       "source_url": "https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/oeffnungszeiten-ueber-die-feiertage.html",
       "institution_id": "zh-sva",
@@ -20640,6 +23006,12 @@
       "institution_rule": "registry rule www.serafe.ch"
     },
     {
+      "document_id": "doc-7a32f11d4eabd2a4e1f6",
+      "source_url": "https://www.bazg.admin.ch/de/umzug-fahrzeuge",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
       "document_id": "doc-7cda9f16eb96f164c7ce",
       "source_url": "https://www.zh.ch/de/mobilitaet/fuehrerausweis-fahren-lernen/auslaendischer-fuehrerausweis/auslaendischen-fuehrerausweis-umtauschen.html",
       "institution_id": "zh-strassenverkehrsamt",
@@ -20680,6 +23052,12 @@
       "source_url": "https://www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/de",
       "institution_id": "ch-fedlex",
       "institution_rule": "registry rule www.fedlex.admin.ch"
+    },
+    {
+      "document_id": "doc-851308b9946b3d2ce68b",
+      "source_url": "https://www.bazg.admin.ch/de/hundekauf-einfuhr-von-haustieren",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-859ecc73c600eb5a82a2",
@@ -20790,6 +23168,12 @@
       "institution_rule": "registry rule www.ch.ch"
     },
     {
+      "document_id": "doc-a0307125a8f264f4f84d",
+      "source_url": "https://www.bazg.admin.ch/de/vorschriften-umzugsgut-erbschaftsgut",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
       "document_id": "doc-a06b5335d38dfbf344bd",
       "source_url": "https://www.zh.ch/de/migration-integration/einbuergerung/ordentliche-einbuergerung.html",
       "institution_id": "zh-gemeindeamt",
@@ -20800,6 +23184,12 @@
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_ci_eu_efta.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-a16beff4a089c5a239dd",
+      "source_url": "https://www.bazg.admin.ch/de/verzollungskosten-und-paketverfolgung",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-a16cede1d5d2e9ae9fc4",
@@ -20970,10 +23360,22 @@
       "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
+      "document_id": "doc-c428011a0852377f3ef6",
+      "source_url": "https://www.bazg.admin.ch/de/reisen-einkaufen-private-einfuhr-in-die-schweiz",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
+    },
+    {
       "document_id": "doc-cb064208c75c37b62929",
       "source_url": "https://faq.bsv.admin.ch/de/3-saeule/welche-beitraege-kann-ich-die-saeule-3a-einzahlen",
       "institution_id": "ch-bsv",
       "institution_rule": "registry rule faq.bsv.admin.ch"
+    },
+    {
+      "document_id": "doc-cc8927202fa93a8a8d83",
+      "source_url": "https://www.bazg.admin.ch/de/regelungen-tiere-pflanzen-souvenirs-fuer-privatpersonen",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-ccd7f581a07bdc983906",
@@ -21016,6 +23418,12 @@
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung.html",
       "institution_id": "zh-261-einbuergerungen",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung"
+    },
+    {
+      "document_id": "doc-d25c75b6384595c370a9",
+      "source_url": "https://www.bazg.admin.ch/de/empfangen-von-briefen-und-paketen",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-d2fe6ec4fe43d9f60b68",
@@ -21148,6 +23556,12 @@
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung/deutschkenntnisse.html",
       "institution_id": "zh-261-einbuergerungen",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung"
+    },
+    {
+      "document_id": "doc-e591b902722f45df8802",
+      "source_url": "https://www.bazg.admin.ch/de/rueckerstattung-schweizerische-mwst-private",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     },
     {
       "document_id": "doc-e5e7b97428984c9f26c5",
@@ -21292,10 +23706,16 @@
       "source_url": "https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/quellensteuer-tarife.html",
       "institution_id": "zh-steueramt",
       "institution_rule": "registry rule www.zh.ch/de/steuern-finanzen/"
+    },
+    {
+      "document_id": "doc-fd3729f23cb003146146",
+      "source_url": "https://www.bazg.admin.ch/de/umzug-pferde-und-haustiere",
+      "institution_id": "ch-bazg",
+      "institution_rule": "registry rule www.bazg.admin.ch"
     }
   ],
   "basis_kinds": {
-    "guidance": 475,
+    "guidance": 588,
     "act": 49,
     "ordinance": 17,
     "summary": 50,

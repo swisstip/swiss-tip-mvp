@@ -3939,14 +3939,14 @@ cases:
   - city-zurich-household-waste-1
   - city-zurich-household-waste-2
 - case_id: SEARCH-DECLINE-1
-  label: 'Weak match: the VAT rate, in German (another tax)'
+  label: 'Weak match: inheritance tax, in German (another tax)'
   spec: docs/product/user-acceptance-tests.md#decline-cases
-  question: Wie hoch ist die Mehrwertsteuer in der Schweiz?
+  question: Wie hoch ist die Erbschaftssteuer?
   expected_answer: No concept covers VAT; search returns incidental hits with match_strength weak and the scope
     statement, and the caller declines without resolving.
   steps:
   - search:
-      query: Wie hoch ist die Mehrwertsteuer in der Schweiz?
+      query: Wie hoch ist die Erbschaftssteuer?
       expect_strength: weak
 - case_id: SEARCH-DECLINE-2
   label: 'Weak match: the motorway speed limit (road traffic beyond the driving licence)'
@@ -5597,3 +5597,393 @@ cases:
         zh-iazh-accredited-offers: OUT_OF_COVERAGE
       expect_gap:
         zh-iazh-accredited-offers: concept_not_published
+- case_id: UAT-72
+  label: Two people, one coffee machine
+  spec: docs/product/user-acceptance-tests.md#uat-72-two-people-one-coffee-machine
+  question: My partner and I are driving to Konstanz on Saturday. If we buy a coffee machine
+    together for 280 euros, are we under the limit because there are two of us?
+  expected_answer: No. The value-free limit can be claimed only once per person and per day, and
+    a single item worth more than CHF 150 is always subject to value-added tax whatever the number
+    of people travelling, so the machine is declared and the tax falls due on it. The answer
+    states the limit and says which of the two rules decides the case.
+  trap: Adding two allowances together and concluding that a 280-euro item stays free.
+  language: en
+  steps:
+  - search:
+      query: Wertfreigrenze mehrere Personen ein Gegenstand
+      expect_concept: customs-travel-allowance
+  - resolve:
+      concept_ids: [customs-travel-allowance]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {customs-travel-allowance: SUPPORTED}
+  claims:
+  - claim: The value-free limit counts once per person and per day
+    concept: customs-travel-allowance
+    fact_id: customs-travel-allowance-2
+    statement_contains: ['once per person and per day']
+    excerpt_contains: ['pro Person und pro Tag']
+  - claim: A single item over the limit is always taxed, whatever the number of travellers
+    concept: customs-travel-allowance
+    fact_id: customs-travel-allowance-6
+    statement_contains: ['irrespective of how many people']
+    excerpt_contains: ['unabhängig von der Anzahl Personen']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      single_item: 'single item|einzelne|Einzelne'
+    must_not:
+      pooled: 'two allowances|300 (francs|Franken)|pool'
+    cites:
+      focbs: 'bazg\.admin\.ch'
+    resolved: [customs-travel-allowance]
+- case_id: UAT-73
+  label: Meat and wine on the way back from Italy
+  spec: docs/product/user-acceptance-tests.md#uat-73-meat-and-wine-on-the-way-back-from-italy
+  question: We are driving back from Italy with about four kilos of meat, six litres of wine and a
+    bottle of grappa. What do we have to declare?
+  expected_answer: The release publishes the rule and not the table. Goods brought in for private
+    use or as a gift are free of duty except for sensitive goods, on which duty falls due above a
+    quantity, and the quantities count per person and per day; animal products may be brought in
+    only from EU member states, Iceland, Northern Ireland and Norway. The quantities themselves
+    are published by the customs authority as a graphic and no fact carries them, which the
+    concept says in its not_served, so a correct answer gives the rules and does not state
+    kilos, litres or piece counts.
+  trap: Inventing the duty-free quantities - a kilo of meat, five litres of wine, two hundred
+    cigarettes - which no cited page carries as text.
+  language: en
+  steps:
+  - search:
+      query: Freimengen Fleisch Alkohol Einfuhr Schweiz
+      expect_concept: customs-duty-free-quantities
+  - resolve:
+      concept_ids: [customs-duty-free-quantities]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {customs-duty-free-quantities: SUPPORTED}
+  claims:
+  - claim: Goods for private use are free of duty except sensitive goods above a quantity
+    concept: customs-duty-free-quantities
+    fact_id: customs-duty-free-quantities-1
+    statement_contains: ['sensitive goods']
+    excerpt_contains: ['sensible Waren']
+  - claim: Animal products may come only from the countries the page lists
+    concept: customs-duty-free-quantities
+    fact_id: customs-duty-free-quantities-4
+    statement_contains: ['Iceland, Northern Ireland and Norway']
+    excerpt_contains: ['Island, aus Nordirland und aus Norwegen']
+  not_served:
+    customs-duty-free-quantities: ['the duty-free quantity per product']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      per_person: 'per person|pro Person'
+    must_not:
+      invented_quantity: '\b(1|one|5|five|200|two hundred)\s*(kg|kilo|litre|liter|Liter|cigarettes|Zigaretten)'
+    cites:
+      focbs: 'bazg\.admin\.ch'
+    resolved: [customs-duty-free-quantities]
+- case_id: UAT-74
+  label: Declaring a bicycle before the border
+  spec: docs/product/user-acceptance-tests.md#uat-74-declaring-a-bicycle-before-the-border
+  question: I am bringing a bicycle worth 900 francs back from Germany tomorrow. Can I declare it
+    online before I get there, or do I have to stop at the border?
+  expected_answer: Both work. For most goods the declaration can be made with the QuickZoll app
+    before the crossing, and at a staffed crossing the red channel does it in person, where staff
+    also answer questions. The green channel is not a choice above the limits - entering it counts
+    as a binding declaration that cannot be made up during a check, and taking it with dutiable
+    goods is punishable.
+  trap: Treating the green channel or an unstaffed crossing as permission not to declare.
+  language: en
+  steps:
+  - search:
+      query: Zollanmeldung vor dem Grenzuebertritt App roter Durchgang
+      expect_concept: customs-declaring-goods
+  - resolve:
+      concept_ids: [customs-declaring-goods]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {customs-declaring-goods: SUPPORTED}
+  claims:
+  - claim: Most goods can be declared with the app before crossing
+    concept: customs-declaring-goods
+    fact_id: customs-declaring-goods-2
+    statement_contains: ['QuickZoll']
+    excerpt_contains: ['App QuickZoll']
+  - claim: Entering the green channel is a binding declaration and can be punishable
+    concept: customs-declaring-goods
+    fact_id: customs-declaring-goods-9
+    statement_contains: ['binding customs declaration']
+    excerpt_contains: ['verbindliche Zollanmeldung']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      declare: 'declare|anmelden|QuickZoll'
+    must_not:
+      no_need: 'no need to declare|nicht anmelden müssen'
+    cites:
+      focbs: 'bazg\.admin\.ch'
+    resolved: [customs-declaring-goods]
+- case_id: UAT-75
+  label: A laptop ordered from a German shop
+  spec: docs/product/user-acceptance-tests.md#uat-75-a-laptop-ordered-from-a-german-shop
+  question: I ordered a laptop for 900 euros from a German shop. What will I pay on top of the
+    price when it arrives?
+  expected_answer: Every consignment from abroad is in principle liable to customs duty and
+    value-added tax, and in postal and courier traffic the carrier does the clearance and charges
+    its own clearance costs on top, which are not a tax and are a matter for the carrier. The
+    traveller's value-free limit is a different rule and does not apply to a consignment.
+  trap: Applying the CHF 150 traveller allowance to a parcel, and presenting the carrier's
+    clearance charge as a customs fee.
+  language: en
+  steps:
+  - search:
+      query: Paket aus dem Ausland bestellt Kosten bei der Einfuhr
+      expect_concept: customs-internet-orders
+  - resolve:
+      concept_ids: [customs-internet-orders]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {customs-internet-orders: SUPPORTED}
+  claims:
+  - claim: A consignment from abroad is in principle liable to duty and tax, cleared by the carrier
+    concept: customs-internet-orders
+    fact_id: customs-internet-orders-1
+    statement_contains: ['in principle subject to customs duty']
+    excerpt_contains: ['grundsätzlich zoll- und mehrwertsteuerpflichtig']
+  - claim: The carrier charges its own clearance costs
+    concept: customs-internet-orders
+    fact_id: customs-internet-orders-2
+    statement_contains: ['clearance costs']
+    excerpt_contains: ['Verzollungskosten']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      carrier: 'carrier|Transporteur|Post|courier'
+    must_not:
+      travel_limit: '150.{0,30}(parcel|consignment|Paket|Sendung)'
+    cites:
+      focbs: 'bazg\.admin\.ch'
+    resolved: [customs-internet-orders]
+- case_id: UAT-76
+  label: Sometimes a charge, sometimes not
+  spec: docs/product/user-acceptance-tests.md#uat-76-sometimes-a-charge-sometimes-not
+  question: I order small things from a platform abroad. Sometimes there is a charge and sometimes
+    there is not. Why?
+  expected_answer: Two different reasons, which the answer must keep apart. Tax amounts of up to
+    five francs are not levied for reasons of administrative economy, which corresponds to a
+    taxable base of 62 francs at the 8.1 per cent rate or 193 francs at the 2.6 per cent rate; and
+    a mail-order company or platform operator entered in the Swiss value-added tax register owes
+    the domestic tax on its deliveries from abroad, so the tax is charged at the sale.
+  trap: Stating a single price limit under which everything arrives free of charge, or presenting
+    the five-franc threshold as a limit on the value of the goods.
+  language: en
+  steps:
+  - search:
+      query: kleine Sendung keine Abgaben Versandhandel Plattform
+      expect_concept: customs-internet-orders
+  - resolve:
+      concept_ids: [customs-internet-orders, customs-mail-order-vat]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status:
+        customs-internet-orders: SUPPORTED
+        customs-mail-order-vat: SUPPORTED
+  claims:
+  - claim: Tax amounts up to five francs are not levied
+    concept: customs-internet-orders
+    fact_id: customs-internet-orders-10
+    statement_contains: ['five Swiss francs are not levied']
+    excerpt_contains: ['Steuerbeträge bis 5 Schweizerfranken nicht erhoben']
+  - claim: A registered mail-order company or platform owes the domestic tax on deliveries from abroad
+    concept: customs-mail-order-vat
+    fact_id: customs-mail-order-vat-3
+    statement_contains: ['subject to the domestic tax']
+    excerpt_contains: ['unterliegen nicht nur die Lieferungen innerhalb des Inlandes']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      threshold: '5 (francs|Franken)|five francs'
+    must_not:
+      value_limit: 'goods worth (less|under).{0,20}5'
+    cites:
+      focbs: 'bazg\.admin\.ch'
+    resolved: [customs-internet-orders, customs-mail-order-vat]
+- case_id: UAT-77
+  label: Sending a jacket back
+  spec: docs/product/user-acceptance-tests.md#uat-77-sending-a-jacket-back
+  question: I am sending a jacket back to Germany that I paid tax and duty on when it arrived. Do
+    I get that money back?
+  expected_answer: Not automatically. The mere fact that an imported item is exported again gives
+    no entitlement to a refund; further conditions have to be met. A request for the refund of
+    import charges goes to the district directorate named on the assessment decision and must keep
+    the time limit of 60 days from the issue of that decision, because late requests are rejected.
+  trap: Promising the refund as automatic on any return, or leaving out the deadline.
+  language: en
+  steps:
+  - search:
+      query: Ruecksendung Einfuhrabgaben zurueck Gesuch Frist
+      expect_concept: customs-returns-and-repairs
+  - resolve:
+      concept_ids: [customs-returns-and-repairs]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {customs-returns-and-repairs: SUPPORTED}
+  claims:
+  - claim: A refund request keeps a 60-day limit and goes to the district directorate
+    concept: customs-returns-and-repairs
+    fact_id: customs-returns-and-repairs-1
+    statement_contains: ['60 days']
+    excerpt_contains: ['Frist von 60 Tagen']
+  - claim: Re-export alone gives no entitlement to a refund
+    concept: customs-returns-and-repairs
+    fact_id: customs-returns-and-repairs-5
+    statement_contains: ['no entitlement']
+    excerpt_contains: ['noch kein Anspruch auf Erstattung']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      deadline: '60'
+    must_not:
+      automatic: 'automatically refunded|wird automatisch'
+    cites:
+      focbs: 'bazg\.admin\.ch'
+    resolved: [customs-returns-and-repairs]
+- case_id: UAT-78
+  label: Furniture and a car from Boston
+  spec: docs/product/user-acceptance-tests.md#uat-78-furniture-and-a-car-from-boston
+  question: We are moving from Boston to Zurich in November with our furniture and our car. What
+    does customs want?
+  expected_answer: Removal goods come in free of charge when the residence is relocated, the items
+    were used personally for at least six months before the move and are kept afterwards, declared
+    on form 18.44 at the entry customs office during the clearance hours for commercial goods, and
+    the belongings must be imported within two years of the move. The car is removal goods too,
+    but its clearance must happen at the vehicle's first crossing, and a traveller who missed it
+    must make it up at once at a staffed office with the vehicle present.
+  trap: Promising that the car is simply free, or naming the relief without the used-before and
+    kept-after condition and the two-year window.
+  language: en
+  steps:
+  - search:
+      query: Umzug in die Schweiz Hausrat und Auto Zoll
+      expect_concept: moving-goods-customs
+  - resolve:
+      concept_ids: [moving-goods-customs, customs-moving-vehicle]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status:
+        moving-goods-customs: SUPPORTED
+        customs-moving-vehicle: SUPPORTED
+  claims:
+  - claim: The belongings must be imported within two years of the move
+    concept: moving-goods-customs
+    fact_id: moving-goods-customs-6
+    statement_contains: ['two years']
+    excerpt_contains: ['innert zwei Jahren']
+  - claim: A missed vehicle clearance is made up at a staffed office with the vehicle present
+    concept: customs-moving-vehicle
+    fact_id: customs-moving-vehicle-3
+    statement_contains: ['vehicle has to be there']
+    excerpt_contains: ['Das Fahrzeug muss bei der Abfertigung vor Ort sein']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      months: 'six months|6 Monate|sechs Monate'
+    must_not:
+      free_car: 'car.{0,40}(always|simply) free'
+    cites:
+      focbs: 'bazg\.admin\.ch'
+    resolved: [moving-goods-customs, customs-moving-vehicle]
+- case_id: UAT-79
+  label: Arriving with two dogs
+  spec: docs/product/user-acceptance-tests.md#uat-79-arriving-with-two-dogs
+  question: We are moving to Zurich with our two dogs. What do we need at the border, and what do
+    we have to do once we are here?
+  expected_answer: Two sets of rules, and the answer must give both. At the border the import of
+    pets must go over a staffed crossing during the assessment hours for travel traffic and the
+    animal is presented in person with the forms; the veterinary conditions are the Federal Food
+    Safety and Veterinary Office's, which the customs page points at. In Zurich the dog is
+    reported to the municipality and registered in AMICUS within ten days, needs liability
+    insurance and the dog tax, and the cantonal training rules apply.
+  trap: Answering only one of the two, or treating the city registration as a customs formality.
+  language: en
+  steps:
+  - search:
+      query: mit Hund in die Schweiz einreisen und anmelden
+      expect_concept: customs-importing-pets
+  - resolve:
+      concept_ids: [customs-importing-pets, zh-dog-keeping]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status:
+        customs-importing-pets: SUPPORTED
+        zh-dog-keeping: SUPPORTED
+  claims:
+  - claim: Pets are imported over a staffed crossing during travel-traffic hours
+    concept: customs-importing-pets
+    fact_id: customs-importing-pets-1
+    statement_contains: ['staffed border crossing']
+    excerpt_contains: ['besetzten Grenzübergang']
+  - claim: The dog is registered in AMICUS within ten days
+    concept: zh-dog-keeping
+    fact_id: zh-dog-keeping-1
+    statement_contains: ['AMICUS']
+    excerpt_contains: ['AMICUS']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6, A7]
+    must_mention:
+      border: 'border|Grenze'
+      registration: 'AMICUS|register|anmelden'
+    must_not:
+      customs_only: 'nothing (further|else) to do (in|once)'
+    cites:
+      focbs: 'bazg\.admin\.ch'
+    resolved: [customs-importing-pets, zh-dog-keeping]
+- case_id: UAT-80
+  label: A visitor taking a watch home
+  spec: docs/product/user-acceptance-tests.md#uat-80-a-visitor-taking-a-watch-home
+  question: A friend visiting from London bought a watch here. Can she get the Swiss VAT back when
+    she flies home?
+  expected_answer: Under the conditions the page states. The minimum purchase value per sales
+    transaction is 300 francs including value-added tax and there is no exemption for smaller
+    purchases; the seller explains how tax-free shopping works. To have the export confirmed she
+    must leave Switzerland over a staffed border customs office, declare the goods orally at the
+    crossing and present the export document for travel traffic, within the clearance hours.
+  trap: Generalising the refund to anyone leaving the country; a person resident in Switzerland
+    taking their own goods out is the other rule on the same page and gets no refund.
+  language: en
+  steps:
+  - search:
+      query: steuerfrei einkaufen Ausfuhrdokument bestaetigen
+      expect_concept: customs-leaving-with-goods
+  - resolve:
+      concept_ids: [customs-leaving-with-goods]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {customs-leaving-with-goods: SUPPORTED}
+  claims:
+  - claim: The minimum purchase value per sales transaction is 300 francs including tax
+    concept: customs-leaving-with-goods
+    fact_id: customs-leaving-with-goods-2
+    statement_contains: ['300 Swiss francs']
+    excerpt_contains: ['Mindesteinkaufwert je Verkaufsgeschäft']
+  - claim: The export is confirmed at a staffed border customs office on the export document
+    concept: customs-leaving-with-goods
+    fact_id: customs-leaving-with-goods-3
+    statement_contains: ['export document']
+    excerpt_contains: ['besetzte Grenz-Zollstelle']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      minimum: '300'
+    must_not:
+      resident_refund: 'anyone leaving|alle, die ausreisen'
+    cites:
+      focbs: 'bazg\.admin\.ch'
+    resolved: [customs-leaving-with-goods]
+- case_id: DECLINE-11
+  label: Tariff number and duty rate for a product
+  spec: docs/product/user-acceptance-tests.md#decline-cases
+  question: How much duty do I pay per kilo on a leather handbag from Italy, and what is its
+    tariff number?
+  expected_answer: The release publishes the customs rules and not the tariff, so a resolve of a
+    guessed concept ID returns OUT_OF_COVERAGE with concept_not_published. Tariff numbers and duty
+    rates per product, and the treatment of an individual consignment, are named in out_of_scope.
+  language: en
+  steps:
+  - resolve:
+      concept_ids: [customs-tariff-rate]
+      jurisdiction: {canton_code: CH-ZH}
+      expect_status: {customs-tariff-rate: OUT_OF_COVERAGE}
+      expect_gap: {customs-tariff-rate: concept_not_published}

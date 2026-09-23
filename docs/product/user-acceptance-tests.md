@@ -19,9 +19,10 @@ entry-and-visa cases (UAT-45 to UAT-50); three cases on voting rights and the
 tax-at-source tariff (UAT-51 to UAT-53); eleven expat-life cases (UAT-54 to
 UAT-64); two settlement-permit cases on the five-year routes by nationality
 (UAT-65 and UAT-66); five cases on the integration offers of the Canton of
-Zurich (UAT-67 to UAT-71); and seventeen
+Zurich (UAT-67 to UAT-71); nine customs cases on travelling, ordering from
+abroad and moving goods (UAT-72 to UAT-80); and eighteen
 server-only decline cases (DECLINE-1 to
-DECLINE-10 and SEARCH-DECLINE-1 to SEARCH-DECLINE-7) that check the server
+DECLINE-11 and SEARCH-DECLINE-1 to SEARCH-DECLINE-7) that check the server
 rejects a request the release does not cover, at the resolve step and at
 the search step.<br>
 **System under test:** the Swiss TIP MCP server (`apps/mcp-server`) on the
@@ -2150,6 +2151,129 @@ the platform for migrant associations, searchable by criteria such as
 municipality or region, on which associations register themselves. The answer
 points at the platform instead of naming associations.
 
+## Customs cases
+
+UAT-72 to UAT-80 check the eight concepts of the `customs` topic added on
+22 September 2026 from the pages of the Federal Office for Customs and Border
+Security. Until then the release served one customs statement, inside the
+moving topics: what happens to household goods on a move. The recorded UAT-64
+session showed the gap - a caller asked about furniture and a car and got the
+removal-goods rule with nothing about the value limit, the quantities or what
+a parcel costs. Budgets and criteria A1 to A6 are those of the single-turn
+cases. The facts are `assistant-authored-unreviewed` until the reviewer
+confirms them, so every result's `limitations` says so. The questions,
+expected answers, traps and claims are in
+`releases/mvp-zurich/acceptance.yaml`.
+
+Two boundaries run through the whole group. The value limit and the duty-free
+quantities are separate limits that both apply, and a traveller's allowance
+says nothing about a consignment that arrives by post. And the release
+publishes the rules, never the outcome for one item: tariff numbers, duty
+rates per product and the treatment of an individual consignment are out of
+scope, which DECLINE-11 checks.
+
+### UAT-72: Two people, one coffee machine
+
+"My partner and I are driving to Konstanz on Saturday. If we buy a coffee
+machine together for 280 euros, are we under the limit because there are two
+of us?" No. The value-free limit applies per person and per day to goods in
+private use or given as gifts, and the allowances of several travellers
+cannot be added together for one item, so the machine is declared and import
+tax falls due on its whole value. The trap is the arithmetic the question
+invites: two allowances, therefore nothing to declare. The answer states the
+limit the page gives and says which of the two rules - per person, not per
+item - decides the case.
+
+### UAT-73: Meat and wine on the way back from Italy
+
+"We are driving back from Italy with about four kilos of meat, six litres of
+wine and a bottle of grappa. What do we have to declare?" The release
+publishes the rule and not the table. Goods brought in for private use or as a
+gift are free of duty except for sensitive goods, on which duty falls due
+above a quantity; the quantities count per person and per day; animal products
+may be brought in only from the countries the page lists; and once the total
+value carried passes the value limit, value-added tax is due on everything
+carried, food included. The FOCBS publishes the quantities themselves as a
+graphic, so no fact carries them and the concept says so in its `not_served`.
+The trap is the one a general model walks into every time: confident numbers -
+a kilo of meat, five litres of wine, two hundred cigarettes - that the release
+cannot support. A correct answer gives the rules it has, says that the
+quantities per product are not published here, and invents none.
+
+### UAT-74: Declaring a bicycle before the border
+
+"I am bringing a bicycle worth 900 francs back from Germany tomorrow. Can I
+declare it online before I get there, or do I have to stop at the border?"
+Both work: the QuickZoll app declares the goods and takes the payment before
+or at the crossing, and at a staffed crossing the red channel does the same
+in person. The green channel is not a choice for goods above the limits. The
+trap is treating the green channel or an unstaffed crossing as permission not
+to declare; the answer names what the page says not declaring means.
+
+### UAT-75: A laptop ordered from a German shop
+
+"I ordered a laptop for 900 euros from a German shop. What will I pay on top
+of the price when it arrives?" Import tax on the value of the consignment,
+the carrier's own clearance charge, which is not a tax, and customs duty
+where the goods carry one. The recipient is the importer, which is why the
+bill arrives here. The trap is the traveller's value limit: it applies to
+goods a person carries across, not to a consignment, so a caller who answers
+"under 150 francs, so nothing to pay" is wrong twice over - wrong rule, and
+the limit is not a threshold for the tax either.
+
+### UAT-76: Sometimes a charge, sometimes not
+
+"I order small things from a platform abroad. Sometimes there is a charge and
+sometimes there is not. Why?" Two different reasons, and the answer must
+separate them. A consignment is not taxed when the tax that would be due
+stays under the amount the page names - a threshold on the tax, not on the
+price. And a seller or platform that is registered for Swiss VAT charges the
+tax at the sale and imports in its own name, so nothing more is collected at
+the border. The trap is stating a single price limit under which everything
+arrives free.
+
+### UAT-77: Sending a jacket back
+
+"I am sending a jacket back to Germany that I paid tax and duty on when it
+arrived. Do I get that money back?" Under the conditions the page states, and
+only against the declaration and the evidence it names - it is not automatic
+and not a refund the carrier makes. The same section covers goods sent abroad
+for repair. The trap is the assumption that a return cancels the import by
+itself.
+
+### UAT-78: Furniture and a car from Boston
+
+"We are moving from Boston to Zurich in November with our furniture and our
+car. What does customs want?" Removal goods come in free of duty when they
+were used before the move and are kept afterwards, declared with the
+inventory and the form the page names, within the window it states; a vehicle
+is removal goods too but carries its own conditions; goods inherited abroad
+follow a separate rule. The trap is the single sentence the release served
+before this wave, which named the relief and none of its conditions: the
+answer must state the used-before-and-kept-after condition and the window,
+and must not promise that the car is simply free.
+
+### UAT-79: Arriving with two dogs
+
+"We are moving to Zurich with our two dogs. What do we need at the border,
+and what do we have to do once we are here?" Two different sets of rules, and
+the answer must give both without mixing them: at the border the
+identification and the rabies vaccination the page requires, with the number
+of animals that still counts as a private import; in the city, the
+registration and the dog rules the release already publishes. The trap is
+answering only one of the two, or treating the city's registration as a
+customs formality.
+
+### UAT-80: A visitor taking a watch home
+
+"A friend visiting from London bought a watch here. Can she get the Swiss VAT
+back when she flies home?" Yes, under the export conditions the page states:
+a buyer resident abroad, the goods leaving within the period it names, the
+minimum amount and the export document confirmed as the page describes. The
+trap is generalising the refund to anyone leaving the country: a person
+resident in Switzerland taking their own goods abroad is the other rule on
+the same page, and it does not refund the tax.
+
 ## Decline cases
 
 These cases check that the server rejects a request the release does not
@@ -2177,7 +2301,7 @@ mode.
 | DECLINE-3 | "I'm an Italian citizen and moved to Geneva last week for a new job. Which office do I register with, and what is the procedure there?" (another canton) | `eu-employment-registration-deadline`, `zh-eu-registration`, `cantonal-migration-contact` for `CH-GE`, `population: eu_efta` | `zh-eu-registration` `OUT_OF_COVERAGE`, `jurisdiction_not_covered`; the federal deadline `SUPPORTED` with the caveat `more_specific_jurisdiction_not_published` naming `CH-ZH` and `CH-ZH-261`, and SEM's Geneva migration-office contact `SUPPORTED` |
 | DECLINE-4 | "I'm moving from Milan to Winterthur for a job. Do I need an appointment at the Kreisbüro before I register?" (a municipality other than the City of Zurich) | `zh-eu-registration`, `city-zurich-arrival` for `CH-ZH-230`, `population: eu_efta`, `arrival_origin: abroad` | `city-zurich-arrival` `OUT_OF_COVERAGE`, `jurisdiction_not_covered` naming `CH-ZH-261`; the cantonal concept `SUPPORTED` with the caveat `more_specific_jurisdiction_not_published` naming `CH-ZH-261` |
 | DECLINE-5 | "I'm a German citizen with a job offer in Zurich. Does my employer have to prove that nobody in Switzerland is available for the job?" (a rule for another population group) | `third-country-work` for `CH-ZH`, `population: eu_efta` | `OUT_OF_COVERAGE`, `context_not_covered` naming `population=third_country` |
-| SEARCH-DECLINE-1 | "Wie hoch ist die Mehrwertsteuer in der Schweiz?" (another tax) | `search` with the question | `match_strength` `weak`, the scope statement in the result |
+| SEARCH-DECLINE-1 | "Wie hoch ist die Erbschaftssteuer?" (another tax) | `search` with the question | `match_strength` `weak`, the scope statement in the result. Until the customs cases of 22 September 2026 this case asked "Wie hoch ist die Mehrwertsteuer in der Schweiz?"; the release now publishes the rate of the tax on imports, so that question is covered and was replaced, as X1 prescribes |
 | SEARCH-DECLINE-2 | "What is the speed limit on Swiss motorways?" (road traffic beyond the driving licence) | `search` | `weak` |
 | SEARCH-DECLINE-3 | "How do I get a Halbtax?" (public transport) | `search` | `weak` |
 | SEARCH-DECLINE-4 | "annual quotas for work permits" (named in `out_of_scope`) | `search` | `weak`; the work-permit concepts stay listed as incidental hits |
@@ -2189,6 +2313,7 @@ mode.
 | DECLINE-8 | "Wir wohnen in Wädenswil. Wann sind die Herbstferien 2026, und ab wann geht meine Tochter, die im Juni vier wird, in den Kindergarten?" (City of Zurich school dates asked for another Zurich municipality) | `city-zurich-school-holidays`, `city-zurich-kindergarten` for `CH-ZH-293` | both `OUT_OF_COVERAGE`, `jurisdiction_not_covered` naming `CH-ZH-261`; no cantonal or federal concept covers school dates, so nothing is served |
 | DECLINE-9 | "Which rubbish bags do I have to use in Basel, and what do they cost?" (City of Zurich waste rules asked for another canton) | `city-zurich-household-waste` for `CH-BS-2701` | `OUT_OF_COVERAGE`, `jurisdiction_not_covered`; nothing is served |
 | DECLINE-10 | "Which accredited IAZH offer types can I assign a refugee to, and how is the cost shared with the canton?" (the canton's integration funding and its refugee support system, named in `out_of_scope`) | `zh-iazh-accredited-offers` for `CH-ZH` | `OUT_OF_COVERAGE`, `concept_not_published` |
+| DECLINE-11 | "How much duty do I pay per kilo on a leather handbag from Italy, and what is its tariff number?" (tariff numbers and duty rates per product, named in `out_of_scope`) | `customs-tariff-rate`, a guessed concept ID, for `CH` | `OUT_OF_COVERAGE`, `concept_not_published` listing the published concept IDs; the customs concepts stay available for the rules they do publish |
 
 DECLINE-3, DECLINE-4 and DECLINE-6 to DECLINE-9 check the rejection of a
 Zurich concept for another place at the server alone. The cross-jurisdiction
