@@ -142,11 +142,14 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             body = root.structuredContent
             size = len(root.content[0].text.encode("utf-8"))
             check(f"root coverage is compact ({size} bytes) and names scope, topics, freshness, review status",
-                  not root.isError and size < 6000 and body["scope_statement"] and body["out_of_scope"]
+                  # 18 topics, and a scope statement, an out-of-scope list and limitations of about 1.5 KB each
+                  # since the customs extension of release 2026-09-22-v7: one call still settles scope.
+                  not root.isError and size < 8000 and body["scope_statement"] and body["out_of_scope"]
                   and {t["topic_id"] for t in body["topics"]} == {"residence", "contacts", "offices", "newcomer", "waste",
                                                                   "vehicles-parking", "household-taxes", "social-insurance", "tax-at-source",
                                                                   "driving-licence", "health-insurance", "naturalisation", "entry-visas",
-                                                                  "political-rights", "family-benefits", "housing"}
+                                                                  "political-rights", "family-benefits", "housing",
+                                                                  "integration", "customs"}
                   # The counts line, whichever statuses the release carries (all human-reviewed since 2026-09-14-v1).
                   and any(item.startswith("Review status of the") for item in body["limitations"]))
             check("root lists federal, Zurich and City of Zurich jurisdictions and 26 cantons",
@@ -244,8 +247,10 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             # No word of this query may reach a published term: "occupation" left it in release v15, whose source term
             # "occupational accidents" shares the six-letter stem, and "priority" in release 2026-09-22-v1, which
             # publishes the priority of the domestic workforce as an admission condition
-            # (third-country-work-conditions). The quotas themselves stay out of scope, so the query keeps its subject.
-            quota = await session.call_tool("search", {"query": "annual quota limit shortage check order"})
+            # (third-country-work-conditions); "limit" and "order" in release 2026-09-22-v7, whose customs concepts
+            # publish the value-free limit and mail orders. The quotas themselves stay out of scope, so the query
+            # keeps its subject.
+            quota = await session.call_tool("search", {"query": "annual quota shortage check"})
             check("search for quotas returns no lexical hits without asserting domain noncoverage",
                   quota.structuredContent["results"] == []
                   and "does not establish" in (quota.structuredContent.get("guidance_for_caller") or ""))
