@@ -1,0 +1,99 @@
+schema_version: swiss-tip-graph-checks/v1
+graph: ch
+cases:
+  # UAT-1: EU/EFTA registration in the city of Zurich.
+  - case_id: czech-registration-zurich
+    question: I'm a Czech citizen and starting my work in Zurich next week. By when latest should I register my stay on the municipal authority?
+    jurisdiction: {city: Zurich}
+    expect_nodes: [domain.registration, role.residents-office, institution.zh-261-personenmeldeamt]
+    expect_place_dependence: municipality
+  # The same question with no place: no commune's office may be served, and the place must be asked for.
+  - case_id: registration-without-place
+    question: I'm a Czech citizen and starting my work next week. By when latest should I register my stay on the municipal authority?
+    expect_nodes: [domain.registration, role.residents-office]
+    expect_absent: [institution.zh-261-personenmeldeamt, institution.wallisellen-bevoelkerungsdienste]
+    expect_place_dependence: municipality
+  # UAT-2e: third-country work permit, canton only. Municipality, because the residents' office is a first contact
+  # of work permits and residence.
+  - case_id: third-country-work-permit-zurich
+    question: Ich habe die indische Staatsbürgerschaft. Darf ich in der Schweiz arbeiten? Welche Voraussetzungen gelten für eine Arbeitsbewilligung und eine Aufenthaltsbewilligung?
+    jurisdiction: {canton: ZH}
+    expect_nodes: [domain.work-permits, role.cantonal-migration-office, institution.zh-migrationsamt]
+    expect_place_dependence: municipality
+  # W-UAT-6: naturalisation in Wallisellen.
+  - case_id: naturalisation-wallisellen
+    question: I have lived in Wallisellen for exactly ten years and speak German at B1 level. Does that guarantee naturalisation, and what will the city charge me?
+    jurisdiction: {city: Wallisellen}
+    expect_nodes: [domain.naturalisation, role.communal-naturalisation-office, institution.wallisellen-stadtratskanzlei]
+    expect_absent: [institution.zh-261-einbuergerungen]
+    expect_place_dependence: municipality
+  # UAT-117: waste hand-over in Lugano.
+  - case_id: waste-lugano
+    question: I have just moved to Lugano. On which day is the rubbish collected and where do I put the official bags?
+    jurisdiction: {city: Lugano}
+    expect_nodes: [domain.waste, role.waste-service, institution.ti-5192-dsu]
+    expect_absent: [institution.zh-261-erz]
+    expect_place_dependence: municipality
+  # UAT-78 / UAT-64: a domain the same everywhere in Switzerland (federal customs).
+  - case_id: customs-household-goods
+    question: We are moving to Switzerland with our furniture and household effects. Do we have to pay customs duty on them?
+    expect_nodes: [domain.customs, role.customs-office, institution.ch-bazg]
+    expect_place_dependence: none
+    blocking: false
+  # UAT-25: official rubbish bags in the city of Zurich.
+  - case_id: waste-bags-zurich
+    question: I just moved into a flat in the city of Zurich. Which rubbish bags do I have to use, what do they cost, and when is the rubbish collected?
+    jurisdiction: {city: Zurich}
+    expect_nodes: [domain.waste, role.waste-service, institution.zh-261-erz]
+    expect_place_dependence: municipality
+  # W-PLACE-1: registration in Wallisellen.
+  - case_id: registration-wallisellen
+    question: I have just moved to Wallisellen. By when do I have to report my move?
+    jurisdiction: {city: Wallisellen}
+    expect_nodes: [domain.registration, role.residents-office, institution.wallisellen-bevoelkerungsdienste]
+    expect_absent: [institution.zh-261-personenmeldeamt]
+    expect_place_dependence: municipality
+  # UAT-12: foreign driving licence in Zurich.
+  - case_id: driving-licence-zurich
+    question: I moved from California to Zurich 14 months ago and still drive on my US licence. Am I still allowed to, and can I still exchange it?
+    jurisdiction: {canton: ZH}
+    expect_nodes: [domain.driving-licence, role.road-traffic-office, institution.zh-strassenverkehrsamt]
+    expect_place_dependence: canton
+  # UAT-32: radio and television fee, the same everywhere.
+  - case_id: serafe-fee
+    question: I don't own a TV or a radio. Do I still have to pay the Serafe invoice, and how much is it?
+    expect_nodes: [domain.radio-tv-fee, role.collection-agency-serafe, institution.ch-serafe]
+    expect_place_dependence: none
+  # UAT-59: marriage in the city of Zurich.
+  # Gap: domain.civil-status has no keyword "marry" or "fiancée" (only "marriage", "wedding"), so the question's
+  # other words select residence, vehicles and pillar 3a and civil status is not reached.
+  - case_id: marriage-zurich
+    question: My fiancée is Brazilian and lives in Brazil; I live in the city of Zurich on a B permit. Can we marry in Zurich, and how early must we start?
+    jurisdiction: {city: Zurich}
+    expect_nodes: [domain.civil-status, role.civil-registry-office, institution.zh-261-zivilstandsamt]
+    expect_place_dependence: municipality
+    blocking: false
+  # UAT-62: unemployment benefit in Zurich. Note: role.regional-employment-centre has no instance, so no RAV is
+  # served; only the cantonal unemployment fund resolves.
+  - case_id: unemployment-zurich
+    question: I came to Zurich ten months ago on a B permit and just lost my job. Do I get unemployment benefit?
+    jurisdiction: {canton: ZH}
+    expect_nodes: [domain.unemployment, role.regional-employment-centre, institution.zh-unemployment-fund]
+    expect_place_dependence: municipality
+  # UAT-10: tax at source in the city of Zurich.
+  - case_id: tax-at-source-zurich
+    question: I'm a Spanish citizen with a B permit working in Zurich, gross salary CHF 135,000. Tax is deducted at source. Do I have to file a tax return?
+    jurisdiction: {city: Zurich}
+    expect_nodes: [domain.taxes, role.cantonal-tax-office, institution.zh-steueramt, institution.zh-261-steueramt]
+    expect_place_dependence: municipality
+  # UAT-114: registration in Lugano, asked in Italian.
+  # Gap: role.residents-office has no instance for Lugano (CH-TI-5192) nor for the canton of Ticino, so no office
+  # resolves; institution.ti-office (which includes the Ufficio del controllo degli abitanti) is linked only as
+  # the cantonal migration office.
+  - case_id: registration-lugano-italian
+    question: Sono cittadino tedesco e mi trasferisco a Lugano. Entro quanti giorni devo annunciare il mio arrivo?
+    jurisdiction: {city: Lugano}
+    expect_nodes: [domain.registration, role.residents-office, institution.ti-office]
+    expect_absent: [institution.zh-261-personenmeldeamt]
+    expect_place_dependence: municipality
+    blocking: false

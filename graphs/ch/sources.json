@@ -1,0 +1,211 @@
+{
+  "schema_version": "source-catalog/v1",
+  "artifact_id": "graph-ch-sources",
+  "version": "draft-2",
+  "knowledge_space_id": "hackathon",
+  "title": "Swiss knowledge graph - sources on how the Confederation, cantons and communes share the tasks",
+  "status": "SOURCES_ONLY",
+  "scope": {
+    "country_code": "CH",
+    "canton_codes": [],
+    "description": "The constitutional division of competences and official plain-language overviews of Swiss federalism; everything else the graph cites is evidence the packs already carry.",
+    "exclusions": [
+      "Pages a pack already cites: the graph cites those through the pack's evidence."
+    ]
+  },
+  "planning_topics": [
+    {
+      "topic_id": "federalism",
+      "label": "Federalism and the levels of the state"
+    }
+  ],
+  "build_notes": [
+    "Scouted and verified on 24 September 2026 by the graph-scout agent: every page carries its text in the server-rendered HTML.",
+    "The Fedlex filestore file of the consolidated version of 3 March 2024 holds the whole constitution; the 2029 expression is a future version and not used.",
+    "draft-2: the constitution is fetched through its undated ELI by the Fedlex plugin; the filestore file denies the downloader."
+  ],
+  "crawl_profiles": {
+    "smoke": {
+      "max_depth": 0,
+      "max_pages": 1,
+      "max_requests": 5,
+      "max_total_bytes": 3000000,
+      "max_response_bytes": 2000000,
+      "max_duration_seconds": 60,
+      "request_timeout_seconds": 15,
+      "delay_seconds": 2,
+      "max_redirects": 2,
+      "max_links_per_page": 200,
+      "max_queued_urls": 50,
+      "max_failures": 2
+    },
+    "sample": {
+      "max_depth": 1,
+      "max_pages": 5,
+      "max_requests": 10,
+      "max_total_bytes": 10000000,
+      "max_response_bytes": 2000000,
+      "max_duration_seconds": 120,
+      "request_timeout_seconds": 15,
+      "delay_seconds": 2,
+      "max_redirects": 2,
+      "max_links_per_page": 500,
+      "max_queued_urls": 100,
+      "max_failures": 3
+    }
+  },
+  "scan_sets": {
+    "federalism": [
+      "ch-fedlex-bv-de",
+      "ch-chch-federalism-de",
+      "ch-chch-federalism-en",
+      "ch-eda-federalism-en"
+    ],
+    "all": [
+      "ch-fedlex-bv-de",
+      "ch-chch-federalism-de",
+      "ch-chch-federalism-en",
+      "ch-eda-federalism-en"
+    ]
+  },
+  "sources": [
+    {
+      "definition": {
+        "source_id": "ch-fedlex-bv-de",
+        "start_url": "https://www.fedlex.admin.ch/eli/cc/1999/404/de",
+        "allowed_hosts": [
+          "www.fedlex.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/cc/1999/404/de"
+        ],
+        "canonical_authority": "Federal Chancellery - Fedlex",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Federal Constitution of the Swiss Confederation (BV), SR 101, consolidated version of 3 March 2024",
+      "authority_level": "federal",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "federalism"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.fedlex.admin.ch/eli/cc/1999/404/de",
+        "located_on": "2026-09-24"
+      },
+      "scan_status": "ready",
+      "notes": "Stable ELI; the Fedlex source plugin selects the consolidated version in force and its HTML. Arts. 3, 5a, 38, 42, 43a, 46, 49, 50, 62 and 121 state the division of competences."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-federalism-de",
+        "start_url": "https://www.ch.ch/de/politisches-system/funktionsweise-und-organisation/foderalismus/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/de/politisches-system/funktionsweise-und-organisation/foderalismus/"
+        ],
+        "canonical_authority": "ch.ch (Federal Chancellery)",
+        "jurisdiction": "CH",
+        "language": "de"
+      },
+      "title": "Schweizerischer Föderalismus",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "federalism"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ch.ch/de/politisches-system/funktionsweise-und-organisation/foderalismus/",
+        "located_on": "2026-09-24"
+      },
+      "scan_status": "ready",
+      "notes": "Three levels, subsidiarity, what the Confederation, the cantons and the communes do."
+    },
+    {
+      "definition": {
+        "source_id": "ch-chch-federalism-en",
+        "start_url": "https://www.ch.ch/en/political-system/operation-and-organisation-of-switzerland/federalism/",
+        "allowed_hosts": [
+          "www.ch.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/en/political-system/operation-and-organisation-of-switzerland/federalism/"
+        ],
+        "canonical_authority": "ch.ch (Federal Chancellery)",
+        "jurisdiction": "CH",
+        "language": "en"
+      },
+      "title": "Swiss Federalism",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "federalism"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ch.ch/en/political-system/operation-and-organisation-of-switzerland/federalism/",
+        "located_on": "2026-09-24"
+      },
+      "scan_status": "ready",
+      "notes": "English version of the ch.ch federalism page."
+    },
+    {
+      "definition": {
+        "source_id": "ch-eda-federalism-en",
+        "start_url": "https://www.aboutswitzerland.eda.admin.ch/en/federalism",
+        "allowed_hosts": [
+          "www.aboutswitzerland.eda.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/en/federalism"
+        ],
+        "canonical_authority": "Federal Department of Foreign Affairs FDFA",
+        "jurisdiction": "CH",
+        "language": "en"
+      },
+      "title": "Federalism (About Switzerland)",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "federalism"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.aboutswitzerland.eda.admin.ch/en/federalism",
+        "located_on": "2026-09-24"
+      },
+      "scan_status": "ready",
+      "notes": "Presence Switzerland's overview; the host may answer 403 to a request without a browser-like Accept header."
+    }
+  ],
+  "parallel_page_groups": [],
+  "evidence_selection_policy": {
+    "status": "PLANNED_NOT_IMPLEMENTED",
+    "eligibility": "Apply explicit scope, jurisdiction, applicability, effective date and source language filters before ranking evidence.",
+    "ranking": "Prefer the narrow official service page over a general landing page when both support the same statement.",
+    "duplicate_support": "Related navigation pages do not count as independent corroboration. Retain the exact cited page and snapshot identity.",
+    "identity": "Documents, snapshots, sections, evidence IDs, URLs, source languages and hashes remain independently identified.",
+    "answer_language": "The calling LLM chooses the answer language and cites the selected original German evidence. English retrieval metadata is not factual evidence."
+  },
+  "language_discovery": {
+    "seed_languages_are_hints": true,
+    "method": "Inspect the saved page language and any visible language navigation. The official municipal pages selected for this MVP are published in German.",
+    "scope": "New language URLs or hosts outside the explicit allowlist require a catalogue update before acquisition.",
+    "parallel_content": "Every language version would receive its own snapshot, hashes and document identity; no translated routes are assumed.",
+    "projection_targets": [
+      "de",
+      "en"
+    ],
+    "evaluated_routes": [],
+    "preferred_seed_language": "de",
+    "selection_policy": "Use the official German page. English concept labels and fact statements are editorial projections and never replace the cited German evidence."
+  }
+}

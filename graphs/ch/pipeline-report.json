@@ -1,0 +1,126 @@
+{
+  "schema_version": "swiss-tip-pipeline-report/v1",
+  "pack": "graph-ch",
+  "root": "C:\\Users\\louis\\Dev\\swiss-ai-weeks\\swiss-tip-mvp",
+  "run": "C:\\Users\\louis\\Dev\\swiss-ai-weeks\\swiss-tip-mvp\\.local\\graph-ch",
+  "started_at": "2026-09-24T14:41:50.575777+00:00",
+  "finished_at": "2026-09-24T14:41:57.797450+00:00",
+  "options": {
+    "download": false,
+    "retry_failed": false,
+    "workers": 1,
+    "scope": "attributed",
+    "thorough": false,
+    "update_curation": false,
+    "release_id": null,
+    "attested_by": null,
+    "source_plugins": true,
+    "obey_robots": true,
+    "stages": "compile..check"
+  },
+  "stages": [
+    {
+      "stage": "acquire",
+      "started_at": "2026-09-24T13:09:26.121600+00:00",
+      "status": "ran",
+      "downloaded": true,
+      "download_exit_code": 1,
+      "targets": 4,
+      "counts": {
+        "saved": 4
+      },
+      "seconds": 23.2
+    },
+    {
+      "stage": "gaps",
+      "started_at": "2026-09-24T13:09:49.340282+00:00",
+      "status": "ran",
+      "targets": 4,
+      "counts": {
+        "status": {
+          "saved": 4
+        },
+        "kind": {
+          "catalogue": 4
+        },
+        "gap": {
+          "javascript-shell": 1,
+          "none": 3
+        },
+        "gap_by_kind": {
+          "catalogue": {
+            "javascript-shell": 1,
+            "none": 3
+          }
+        },
+        "retriable": 0,
+        "not_retriable": 1,
+        "informational": 0,
+        "registry_sources_planned": 4,
+        "registry_sources_not_in_plan": 0,
+        "outstanding": 1,
+        "approved": 0
+      },
+      "seconds": 0.1
+    },
+    {
+      "stage": "extract",
+      "started_at": "2026-09-24T13:09:49.442582+00:00",
+      "status": "ran",
+      "records": 4,
+      "eligible": 3,
+      "blocks": 191,
+      "extracted_now": 4,
+      "reused": 0,
+      "failed_in_selection": 0,
+      "superseded": 0,
+      "unavailable": 2,
+      "seconds": 0.3
+    },
+    {
+      "stage": "validate-text",
+      "started_at": "2026-09-24T13:09:49.788021+00:00",
+      "status": "ran",
+      "records": 4,
+      "blocks": 191,
+      "raw_responses_rehashed": false,
+      "checks": {
+        "records readable": "passed",
+        "content hash, block offsets and block hashes": "passed",
+        "saved responses present with the recorded hash": "skipped",
+        "index matches the records on disk": "passed",
+        "eligible records have a reading view": "passed"
+      },
+      "seconds": 0.1
+    },
+    {
+      "stage": "compile",
+      "started_at": "2026-09-24T14:41:50.575782+00:00",
+      "status": "ran",
+      "graph_id": "ch",
+      "nodes": 238,
+      "edges": 668,
+      "review_statuses": {
+        "human-reviewed": 906
+      },
+      "citation_outcomes": {
+        "same-snapshot": 43,
+        "pack": 1200
+      },
+      "dropped": 0,
+      "content_sha256": "ab224f3ff1aaff4ee8e5cb78025f7e048499f57c1f7ed2d626d4b5e3db70d645",
+      "inputs_sha256": "1a34a47b3e80bc58c629975a6f39fe6a01b15258a022e4a893dcc3cfcd76b876",
+      "seconds": 5.3
+    },
+    {
+      "stage": "check",
+      "started_at": "2026-09-24T14:41:55.840055+00:00",
+      "status": "ran",
+      "cases": 14,
+      "passed": 13,
+      "seconds": 2.0
+    }
+  ],
+  "exit_code": 0,
+  "facts_dropped": 0
+}

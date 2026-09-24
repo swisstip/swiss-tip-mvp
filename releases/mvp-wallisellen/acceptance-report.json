@@ -1,10 +1,10 @@
 {
   "schema_version": "swiss-tip-acceptance-report/v1",
   "pack": "mvp-wallisellen",
-  "release_id": "mvp-wallisellen-2026-09-18-v1",
-  "content_sha256": "e22f60103b1fb9f8ffeeb7506ff1e0d5f983d86c023aeb42b85359f3d610c03f",
+  "release_id": "mvp-wallisellen-2026-09-24-v2",
+  "content_sha256": "cd49bf369ce95013f6e28ddb329a34abef5c6710f720eb4eb37bd401a40d876e",
   "suite_sha256": "96dec905fb4d08b2e19d3e6fb4c10e9a316d5e4a76f7747b2eb6626892ad4216",
-  "checked_at": "2026-09-19T14:08:05.571908+00:00",
+  "checked_at": "2026-09-24T13:58:41.745998+00:00",
   "as_of": "2026-09-16",
   "passed": true,
   "cases": 45,

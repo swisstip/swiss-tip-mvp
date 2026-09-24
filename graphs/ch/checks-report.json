@@ -1,0 +1,95 @@
+{
+  "graph_id": "ch",
+  "content_sha256": "ab224f3ff1aaff4ee8e5cb78025f7e048499f57c1f7ed2d626d4b5e3db70d645",
+  "cases": 14,
+  "passed": 13,
+  "failed_blocking": [],
+  "results": [
+    {
+      "case_id": "czech-registration-zurich",
+      "passed": true,
+      "blocking": true,
+      "problems": []
+    },
+    {
+      "case_id": "registration-without-place",
+      "passed": true,
+      "blocking": true,
+      "problems": []
+    },
+    {
+      "case_id": "third-country-work-permit-zurich",
+      "passed": true,
+      "blocking": true,
+      "problems": []
+    },
+    {
+      "case_id": "naturalisation-wallisellen",
+      "passed": true,
+      "blocking": true,
+      "problems": []
+    },
+    {
+      "case_id": "waste-lugano",
+      "passed": true,
+      "blocking": true,
+      "problems": []
+    },
+    {
+      "case_id": "customs-household-goods",
+      "passed": true,
+      "blocking": false,
+      "problems": []
+    },
+    {
+      "case_id": "waste-bags-zurich",
+      "passed": true,
+      "blocking": true,
+      "problems": []
+    },
+    {
+      "case_id": "registration-wallisellen",
+      "passed": true,
+      "blocking": true,
+      "problems": []
+    },
+    {
+      "case_id": "driving-licence-zurich",
+      "passed": true,
+      "blocking": true,
+      "problems": []
+    },
+    {
+      "case_id": "serafe-fee",
+      "passed": true,
+      "blocking": true,
+      "problems": []
+    },
+    {
+      "case_id": "marriage-zurich",
+      "passed": true,
+      "blocking": false,
+      "problems": []
+    },
+    {
+      "case_id": "unemployment-zurich",
+      "passed": true,
+      "blocking": true,
+      "problems": []
+    },
+    {
+      "case_id": "tax-at-source-zurich",
+      "passed": true,
+      "blocking": true,
+      "problems": []
+    },
+    {
+      "case_id": "registration-lugano-italian",
+      "passed": false,
+      "blocking": false,
+      "problems": [
+        "missing institution.ti-office"
+      ]
+    }
+  ]
+}

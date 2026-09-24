@@ -988,6 +988,7 @@ ranking_policy:
     automatically-derived-unreviewed: 0.6
 place_register: ../../config/places/ch-register.json
 place_aliases: ../../config/places/ch-aliases.json
+knowledge_graph: ../../graphs/ch/graph.json
 question_languages:
 - en
 - de
@@ -1060,11 +1061,13 @@ coverage_policy: report
 boilerplate_min_pages: 5
 topics:
 - topic_id: residence
+  graph_nodes: [domain.residence, domain.registration, domain.work-permits, domain.civil-status]
   title: Residence permits and registration
   description: Federal rules of the Foreign Nationals and Integration Act, the Agreement on the Free Movement of
     Persons with the EU and SEM guidance, Canton of Zurich and City of Zurich procedures, the health-insurance enrolment
     deadline, marriage, and deregistering when leaving the City of Zurich.
 - topic_id: contacts
+  graph_nodes: [domain.residence, domain.registration]
   title: Cantonal migration offices
   description: The migration-office contact of every canton from SEM's directory.
 - topic_id: offices
@@ -1073,74 +1076,91 @@ topics:
     offices the other topics name (Migration Office, Naturalisation Division, Road Traffic Office, Cantonal Tax
     Office, Office for the Economy, SVA Zurich, City of Zurich Population Office and naturalisation office).
 - topic_id: newcomer
+  graph_nodes: [domain.registration, domain.schools]
   title: First steps and life in the City of Zurich
   description: The City of Zurich's newcomer checklist, dogs (city and canton), kindergarten and school holidays,
     school information in other languages, and medical emergencies.
 - topic_id: waste
+  graph_nodes: [domain.waste]
   title: Waste and recycling in the City of Zurich, and waste hand-over in Lugano
   description: Züri-Sack, collections, recycling centres and points, hazardous waste and the ERZ Service Center
     in the City of Zurich; official bags, containers, ecopunti and ecocentri in the City of Lugano.
 - topic_id: vehicles-parking
+  graph_nodes: [domain.vehicles, domain.customs]
   title: Parking, vehicles and moving goods
   description: Blue-zone parking and permits in the City of Zurich; vehicles after a move and vehicle import in
     the Canton of Zurich; customs on household goods when moving to Switzerland.
 - topic_id: household-taxes
+  graph_nodes: [domain.taxes, domain.radio-tv-fee]
   title: Tax return and household fees
   description: The City of Zurich's tax return and tax office, and the federal radio and television fee.
 - topic_id: ahv-pension
+  graph_nodes: [domain.ahv]
   title: AHV, the pillar system and retirement
   description: Who is insured by the old-age and survivors' insurance and who owes contributions, the individual
     account, the reference age and drawing a pension early or late, claiming it, survivors' pensions, coordination
     with other states, and a map of the three pillars (AHV/IV information service, SVA Zurich). The rules, never
     a pension amount.
 - topic_id: social-insurance
+  graph_nodes: [domain.ahv, domain.occupational-pension, domain.pillar-3a]
   title: Social insurance and pillar 3a
   description: AHV refunds, AHV pensions abroad and pension fund cash payment on leaving, and pillar 3a (ZAS, BSV,
     Fedlex, Canton of Zurich). Unemployment has a topic of its own.
 - topic_id: work-unemployment
+  graph_nodes: [domain.unemployment]
   title: Losing a job, the RAV and unemployment insurance
   description: Signing on with the RAV and an unemployment fund, the duties of a jobseeker, the daily allowances,
     interim earnings, insolvency compensation, labour-market measures, the end of the entitlement, EU and EFTA contribution
     periods, short-time work, the job-registration duty and notice periods (SECO, Canton of Zurich). The rules,
     never an amount.
 - topic_id: tax-at-source
+  graph_nodes: [domain.taxes]
   title: Tax at source
   description: Who is taxed at source, when the liability ends and the subsequent ordinary assessment (ESTV, Canton
     of Zurich).
 - topic_id: driving-licence
+  graph_nodes: [domain.driving-licence]
   title: Foreign driving licence
   description: Driving on and exchanging a foreign licence, with or without a control drive (federal, Canton of
     Zurich).
 - topic_id: health-insurance
+  graph_nodes: [domain.health-insurance, domain.accident-insurance]
   title: Health and accident insurance
   description: The insurance duty on arrival, exemptions, premium reduction and accident insurance (FOPH, Canton
     of Zurich, SVA Zurich).
 - topic_id: naturalisation
+  graph_nodes: [domain.naturalisation]
   title: Naturalisation
   description: Ordinary naturalisation and facilitated naturalisation of a Swiss citizen's spouse (SEM, Canton and
     City of Zurich).
 - topic_id: entry-visas
+  graph_nodes: [domain.entry-visas]
   title: Entry and visas
   description: Who needs a visa, the Schengen visa C and the national visa D, the 90-in-180-days rule for short
     stays, entry requirements, the visa application, ETIAS and the Entry/Exit System (SEM, FDFA, VEV).
 - topic_id: political-rights
+  graph_nodes: [domain.political-rights]
   title: Voting rights
   description: Who may vote and elect at federal, cantonal and communal level, foreign nationals' voting rights,
     and how to vote in the Canton of Zurich (Federal Constitution, ch.ch, Constitution of the Canton of Zurich,
     Canton of Zurich).
 - topic_id: family-benefits
+  graph_nodes: [domain.family-allowances]
   title: Family allowances and parental leave
   description: Child and education allowances, maternity, other-parent and adoption leave (FSIO, SVA Zurich).
 - topic_id: housing
+  graph_nodes: [domain.housing]
   title: Renting a home
   description: Lease, deposit, notice, rent increases and defects (Code of Obligations, ch.ch, BWO); the Zurich
     initial-rent form.
 - topic_id: customs
+  graph_nodes: [domain.customs]
   title: 'Customs: travelling, ordering from abroad and moving goods'
   description: The value limit and the duty-free quantities when travelling, how to declare goods, what falls due
     on a consignment ordered abroad, returns and repairs, pets and plants, moving household goods and a vehicle,
     and taking goods out of Switzerland (FOCBS).
 - topic_id: integration
+  graph_nodes: [domain.integration]
   title: Integration offers and German courses
   description: Integration offers and German courses in the Canton of Zurich, first information and counselling
     for newcomers, protection from racist discrimination, migrant associations and contributions to integration

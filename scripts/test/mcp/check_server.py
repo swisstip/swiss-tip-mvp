@@ -136,7 +136,8 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             check(f"initialize: server {init.serverInfo.name} {init.serverInfo.version}", init.serverInfo.name == "swiss-tip")
             tools = (await session.list_tools()).tools
             check("tools advertised: " + ", ".join(t.name for t in tools),
-                  [t.name for t in tools] == ["get_coverage", "search", "resolve", "get_evidence"])
+                  [t.name for t in tools] in (["get_coverage", "search", "resolve", "get_evidence"],
+                                              ["get_knowledge_graph", "get_coverage", "search", "resolve", "get_evidence"]))
 
             root = await session.call_tool("get_coverage", {})
             body = root.structuredContent
