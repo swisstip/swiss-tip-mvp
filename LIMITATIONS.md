@@ -1244,21 +1244,23 @@ does not speak for their canton on those points.
   darf ich ohni Bewilligung i de Schweiz blibe, wenn ich nid schaffe?",
   which the everyday aliases of `aig-short-stay` reach, and paying into
   pillar 3a while unemployed.
-- **Search terms are German and English only.** The 1237 source terms the
-  build counts are copied verbatim from the cited excerpts. The
-  English ones reach 25 of the 151 concepts, those whose federal page has an
-  English version the release cites; the Canton and City of Zurich pages
-  carry none, so a question about a Zurich procedure matches only authored
-  English words, the labels, the sample questions and the statements. French
-  and Italian terms reached, until 23 September 2026, only the cantonal
-  office names. The cantonal wave added 30 copied verbatim from Vaud, Valais
-  and Ticino pages, so a French or Italian question about registering on
-  arrival now finds its concept directly rather than having to be translated
-  into German first; no other subject is reachable in those languages, and
-  `question_languages` stays German and English. Swiss German is covered by
-  three authored spellings
-  for one acceptance case, not generally: an unlisted dialect spelling matches
-  nothing.
+- **Search terms are German and English, with a few French and Italian
+  ones; none are Romansh.** The source terms are copied verbatim from the
+  cited excerpts: 1,708 German on 212 of the 214 concepts and 85 English on
+  25, those whose federal page has an English version the release cites; the
+  Canton and City of Zurich pages carry none, so a question about a Zurich
+  procedure matches only authored English words, the labels, the sample
+  questions and the statements. The French (28 terms on 5 concepts) and
+  Italian (16 on 6) terms sit on the five concepts of registering on
+  arrival, copied from the pages of the French- and Italian-speaking cantons,
+  and, in Italian, on Lugano waste, so a French or Italian question on those
+  subjects finds its concept directly; no other subject is reachable in those
+  languages, and
+  `question_languages` stays German and English. A Romansh question depends
+  entirely on the calling assistant translating its key terms, which the
+  server's instructions ask for; no Romansh question has been tested.
+  Swiss German is covered by three authored spellings for one acceptance
+  case, not generally: an unlisted dialect spelling matches nothing.
 - **Semantic search is optional and off by default.** The prebuilt index of
   the 151 concepts is committed, but embedding an incoming query needs a
   matching local Ollama model. Without it the server uses lexical search. The
@@ -1406,12 +1408,14 @@ does not speak for their canton on those points.
   naturalisation concepts; a longer natural question about an office's
   e-mail address ("… I want to send my documents by e-mail") reads `weak`
   in lexical mode and `strong` in hybrid mode; and a French or Italian
-  question about a covered subject reads `weak` in lexical mode, because the
-  release carries no French or Italian terms. The server therefore names its
-  query languages (German preferred, then English) in its instructions, the
-  `search` description and the coverage root, and a `weak` result allows one
-  search with the key terms translated into German; whether live callers
-  translate was not yet measured. The verdict was not yet measured with a
+  question about a covered subject reads `weak` in lexical mode, except on
+  the few subjects with French or Italian terms (see "Search terms are German
+  and English, with a few French and Italian ones" above). The server
+  therefore names its query languages (German and English) in its
+  instructions, the `search` description and the coverage root, asks for one
+  search with the key terms of a question in any other language translated
+  into German, and a `weak` result allows that one translated search when
+  the first was not; whether live callers translate was not yet measured. The verdict was not yet measured with a
   live caller either.
 - **The ranking prior is small and was not measured on this release.**
   Since 16 September 2026 `search` multiplies a concept's score by a prior

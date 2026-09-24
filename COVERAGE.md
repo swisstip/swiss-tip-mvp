@@ -194,11 +194,18 @@ type D visa threshold, the ETIAS passport validity and a SERAFE page whose
 mobile table shows another fee), nor for the 7 of the SEM citizenship FAQ,
 which has no English version. The SVA Zurich pages declare no language; the
 release records them as German (`page_languages`). A question may be asked in
-English, German or Swiss German: concept discovery carries the 1237 search
-terms the build counts, copied verbatim from the cited excerpts, German except
-for the English ones on 25 concepts, alongside authored everyday words in German and English, at
-least one English and one German sample question on every concept (the build
-checks it), and three Zurich German spellings.
+German, Swiss German, English, French, Italian or Romansh. Concept discovery
+carries the search terms copied verbatim from the cited excerpts - 1,708
+German on 212 of the 214 concepts, 85 English on 25, 28 French on 5 and 16
+Italian on 6, as `get_coverage` reports them - alongside authored everyday
+words in German and English, at least one English and one German sample
+question on every concept (the build checks it), and three Zurich German
+spellings. The server therefore names German and English as its query
+languages and tells the calling assistant to translate the key terms of a
+French, Italian or Romansh question into German before its one search, and
+to answer in the language of the question. Hybrid search also matches some
+French and Italian questions directly, less reliably; with lexical search
+alone, the assistant's translation is what finds the concept.
 
 ## Topics and concepts
 
@@ -435,7 +442,7 @@ The tax facts are procedural (who files, the deadline of the 2025 return,
 filing channels, documents, consequences of not filing); tariffs, rates,
 deductions and amounts of tax are not served.
 
-### Social insurance, pillar 3a and unemployment (`social-insurance`) - 8 concepts
+### Social insurance and pillar 3a (`social-insurance`) - 6 concepts
 
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
@@ -445,8 +452,41 @@ deductions and amounts of tax are not served.
 | `bvg-cash-out-departure` | Cash payment of pension fund assets on leaving Switzerland | CH | 9 |
 | `fza-social-security` | FZA: coordination of social security | CH | 1 |
 | `pillar-3a` | Pillar 3a private pension | CH | 8 |
+
+### AHV, the pillar system and retirement (`ahv-pension`) - 11 concepts
+
+| Concept | Subject | Jurisdiction | Facts |
+| --- | --- | --- | ---: |
+| `ahv-insured-persons` | Who is insured by the AHV | CH | 7 |
+| `ahv-contribution-duty` | Who pays AHV contributions | CH | 13 |
+| `ahv-reference-age` | The reference age, drawing a pension early and deferring it | CH | 8 |
+| `ahv-claiming-a-pension` | Claiming an AHV old-age pension | CH | 4 |
+| `ahv-thirteenth-pension` | The thirteenth AHV old-age pension | CH | 7 |
+| `swiss-social-insurance-map` | How the Swiss social insurance system fits together | CH | 9 |
+| `ahv-individual-account` | The individual AHV account and the account statement | CH-ZH | 5 |
+| `ahv-contribution-gaps` | Gaps in the AHV contribution record | CH-ZH | 5 |
+| `zh-ahv-compensation-office` | SVA Zurich as the cantonal compensation office | CH, CH-ZH | 3 |
+| `ahv-survivors-pensions` | Survivors' pensions - widow's, widower's and orphan's pension | CH | 13 |
+| `ahv-international-coordination` | The AHV across borders - the EU, EFTA and third states | CH, CH-ZH | 16 |
+
+### Losing a job, the RAV and unemployment insurance (`work-unemployment`) - 14 concepts
+
+| Concept | Subject | Jurisdiction | Facts |
+| --- | --- | --- | ---: |
 | `unemployment-benefit` | Unemployment benefit | CH | 9 |
 | `zh-unemployment-benefit` | Unemployment benefit in the Canton of Zurich | CH-ZH | 4 |
+| `unemployment-registration` | Signing on with the RAV and registering for Job-Room | CH | 3 |
+| `unemployment-obligations` | Duty to look for work, applications and proof of efforts | CH, CH-ZH | 21 |
+| `unemployment-daily-allowance` | Waiting days, number of daily allowances and how long they last | CH | 10 |
+| `unemployment-interim-earnings` | Taking a lower-paid job while unemployed | CH | 5 |
+| `job-registration-duty` | Vacancies that must be reported to the RAV first | CH | 8 |
+| `zh-unemployment-registration` | Signing on with the RAV in the Canton of Zurich | CH-ZH | 8 |
+| `short-time-work` | Short-time work compensation, seen from the employee | CH | 10 |
+| `unemployment-labour-market-measures` | Courses, employment programmes and allowances for jobseekers | CH, CH-ZH | 18 |
+| `unemployment-end-of-entitlement` | Running out of unemployment benefit | CH | 13 |
+| `unemployment-insolvency` | When the employer goes bankrupt owing wages | CH, CH-ZH | 17 |
+| `unemployment-eu-efta-mobility` | Unemployment insurance across the EU and EFTA border | CH | 8 |
+| `employment-notice-and-reference` | Notice periods, protection against dismissal, and the work reference | CH | 10 |
 
 ### Tax at source (`tax-at-source`) - 5 concepts
 
@@ -480,15 +520,27 @@ and the amount of tax for a salary are not served.
 | `zh-foreign-licence-exchange` | Exchanging a foreign driving licence in the Canton of Zurich | CH-ZH | 11 |
 | `zh-control-drive` | Control drive for a foreign driving licence in the Canton of Zurich | CH-ZH | 7 |
 
-### Health and accident insurance (`health-insurance`) - 5 concepts
+### Health and accident insurance (`health-insurance`) - 17 concepts
 
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
-| `health-insurance-deadline` | Health insurance duty on taking up residence | CH | 8 |
-| `zh-health-insurance-exemption` | Exemption from the health insurance duty in the Canton of Zurich | CH-ZH | 5 |
+| `health-insurance-deadline` | Health insurance duty on taking up residence | CH | 11 |
+| `zh-health-insurance-exemption` | Exemption from the health insurance duty in the Canton of Zurich | CH-ZH | 7 |
 | `premium-reduction` | Health insurance premium reduction: federal frame | CH | 5 |
 | `zh-premium-reduction` | Premium reduction in the Canton of Zurich | CH-ZH | 8 |
 | `accident-insurance` | Compulsory accident insurance (UVG) and suspending accident cover in health insurance | CH | 7 |
+| `health-insurance-cost-sharing` | What an insured person pays themselves - franchise, retention and hospital contribution | CH | 19 |
+| `health-insurance-premium-regions` | What makes premiums differ - the canton, the premium region and how they are paid | CH | 14 |
+| `health-insurance-models` | Insurance models with a restricted choice of provider | CH | 12 |
+| `health-insurance-unpaid-premiums` | Unpaid premiums, debt enforcement and the suspension of cover | CH | 5 |
+| `health-insurance-benefits` | What basic insurance pays for, and who decides | CH | 5 |
+| `health-insurance-supplementary` | Where supplementary insurance still matters - the free choice of hospital | CH | 2 |
+| `health-insurance-change` | Changing health insurer | CH | 6 |
+| `health-insurance-cross-border-commuter` | Health insurance for cross-border commuters | CH | 7 |
+| `health-insurance-abroad` | What health insurance pays for treatment abroad | CH | 6 |
+| `health-insurance-insured-abroad` | Premiums, premium reduction and cost-sharing for insured people living abroad | CH | 8 |
+| `health-insurance-billing` | Who gets the bill and who pays it | CH | 6 |
+| `health-insurance-service-suspension` | Suspending health insurance during military or civilian service | CH | 5 |
 
 `health-insurance-deadline` and the residence concept
 `health-insurance-enrolment` cite the same FOPH page: the first serves its
