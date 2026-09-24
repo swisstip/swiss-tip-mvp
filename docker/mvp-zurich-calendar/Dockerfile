@@ -16,7 +16,7 @@
 # The build fails when a bundle does not validate: the base image's --health
 # exits 2 unless every bundle it finds is served.
 
-ARG BASE_IMAGE=swiss-tip-calendar-connector:0.3.0
+ARG BASE_IMAGE=swiss-tip-calendar-connector:0.3.1
 FROM ${BASE_IMAGE}
 ARG DATASET_VERSIONS=""
 ARG REVISION=""

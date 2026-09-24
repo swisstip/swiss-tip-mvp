@@ -2,7 +2,7 @@
   "schema_version": "swiss-tip-graph/v1",
   "graph_id": "ch",
   "title": "Switzerland: how the Confederation, the cantons and the communes share the tasks a resident meets",
-  "created_at": "2026-09-24T14:41:54.059715Z",
+  "created_at": "2026-09-24T15:07:04.292694Z",
   "freshness": {
     "snapshot_date": "2026-09-24",
     "max_age_days": 90,
@@ -10,6 +10,7 @@
   },
   "serve": "all",
   "review_statuses": {
+    "automatically-derived-unreviewed": 6,
     "human-reviewed": 906
   },
   "nodes": [
@@ -7374,6 +7375,80 @@
         "notes": [
           "review: confirmed in a bulk review of 300 items"
         ]
+      }
+    },
+    {
+      "node_id": "institution.bs-stadtreinigung",
+      "kind": "institution",
+      "label": "Canton of Basel-Stadt, Civil Engineering Office, city cleaning service",
+      "summary": "Canton of Basel-Stadt, Civil Engineering Office, city cleaning service: the cantonal authority for Canton of Basel-Stadt (CH-BS).",
+      "keywords": [
+        "Kanton Basel-Stadt - Tiefbauamt, Stadtreinigung"
+      ],
+      "level": "cantonal",
+      "place": "CH-BS",
+      "hosts": [
+        "www.bs.ch"
+      ],
+      "evidence_ids": [
+        "graph-mvp-zurich-e-city-basel-waste-collection-1-1"
+      ],
+      "provenance": {
+        "kind": "source-section",
+        "review_status": "automatically-derived-unreviewed",
+        "author": "derive",
+        "source": "derive from mvp-zurich mvp-zurich-2026-09-24-v5",
+        "reviewed_on": null,
+        "reviewed_by": null,
+        "notes": []
+      }
+    },
+    {
+      "node_id": "institution.sg-3203-entsorgung",
+      "kind": "institution",
+      "label": "City of St. Gallen, Waste Disposal (Entsorgung St. Gallen)",
+      "summary": "City of St. Gallen, Waste Disposal (Entsorgung St. Gallen): the municipal authority for St. Gallen (CH-SG-3203).",
+      "keywords": [
+        "Stadt St.Gallen - Entsorgung St.Gallen"
+      ],
+      "level": "municipal",
+      "place": "CH-SG-3203",
+      "hosts": [
+        "www.stadt.sg.ch"
+      ],
+      "evidence_ids": [
+        "graph-mvp-zurich-e-city-st-gallen-waste-collection-1-1"
+      ],
+      "provenance": {
+        "kind": "source-section",
+        "review_status": "automatically-derived-unreviewed",
+        "author": "derive",
+        "source": "derive from mvp-zurich mvp-zurich-2026-09-24-v5",
+        "reviewed_on": null,
+        "reviewed_by": null,
+        "notes": []
+      }
+    },
+    {
+      "node_id": "place.ch-sg-3203",
+      "kind": "place",
+      "label": "St. Gallen (CH-SG-3203)",
+      "summary": "The municipality St. Gallen (CH-SG-3203) in Canton of St. Gallen (CH-SG).",
+      "keywords": [
+        "St. Gallen",
+        "CH-SG-3203"
+      ],
+      "level": "municipal",
+      "place": "CH-SG-3203",
+      "evidence_ids": [],
+      "provenance": {
+        "kind": "source-section",
+        "review_status": "automatically-derived-unreviewed",
+        "author": "derive",
+        "source": "derive from the place register",
+        "reviewed_on": null,
+        "reviewed_by": null,
+        "notes": []
       }
     }
   ],
@@ -21926,6 +22001,63 @@
           "review: confirmed in a bulk review of 5 items"
         ]
       }
+    },
+    {
+      "edge_id": "domain.waste.published_by.institution.bs-stadtreinigung",
+      "from_id": "domain.waste",
+      "relation": "published_by",
+      "to_id": "institution.bs-stadtreinigung",
+      "statement": "Canton of Basel-Stadt, Civil Engineering Office, city cleaning service publishes on waste and recycling for Canton of Basel-Stadt (CH-BS).",
+      "place": "CH-BS",
+      "evidence_ids": [
+        "graph-mvp-zurich-e-city-basel-waste-collection-1-1"
+      ],
+      "provenance": {
+        "kind": "source-section",
+        "review_status": "automatically-derived-unreviewed",
+        "author": "derive",
+        "source": "derive from mvp-zurich mvp-zurich-2026-09-24-v5",
+        "reviewed_on": null,
+        "reviewed_by": null,
+        "notes": []
+      }
+    },
+    {
+      "edge_id": "domain.waste.published_by.institution.sg-3203-entsorgung",
+      "from_id": "domain.waste",
+      "relation": "published_by",
+      "to_id": "institution.sg-3203-entsorgung",
+      "statement": "City of St. Gallen, Waste Disposal (Entsorgung St. Gallen) publishes on waste and recycling for St. Gallen (CH-SG-3203).",
+      "place": "CH-SG-3203",
+      "evidence_ids": [
+        "graph-mvp-zurich-e-city-st-gallen-waste-collection-1-1"
+      ],
+      "provenance": {
+        "kind": "source-section",
+        "review_status": "automatically-derived-unreviewed",
+        "author": "derive",
+        "source": "derive from mvp-zurich mvp-zurich-2026-09-24-v5",
+        "reviewed_on": null,
+        "reviewed_by": null,
+        "notes": []
+      }
+    },
+    {
+      "edge_id": "place.ch-sg-3203.part_of.place.ch-sg",
+      "from_id": "place.ch-sg-3203",
+      "relation": "part_of",
+      "to_id": "place.ch-sg",
+      "statement": "St. Gallen (CH-SG-3203) lies in Canton of St. Gallen (CH-SG).",
+      "evidence_ids": [],
+      "provenance": {
+        "kind": "source-section",
+        "review_status": "automatically-derived-unreviewed",
+        "author": "derive",
+        "source": "derive from the place register",
+        "reviewed_on": null,
+        "reviewed_by": null,
+        "notes": []
+      }
     }
   ],
   "institutions": [
@@ -22013,6 +22145,14 @@
       "institution_id": "bs-office",
       "name": "Canton of Basel-Stadt, Einwohneramt and Migrationsamt",
       "native_name": "Canton Basel-Stadt - Einwohneramt and Migrationsamt",
+      "level": "cantonal",
+      "body": "administration",
+      "jurisdiction": "CH-BS"
+    },
+    {
+      "institution_id": "bs-stadtreinigung",
+      "name": "Canton of Basel-Stadt, Civil Engineering Office, city cleaning service",
+      "native_name": "Kanton Basel-Stadt - Tiefbauamt, Stadtreinigung",
       "level": "cantonal",
       "body": "administration",
       "jurisdiction": "CH-BS"
@@ -22232,6 +22372,14 @@
       "level": "cantonal",
       "body": "administration",
       "jurisdiction": "CH-OW"
+    },
+    {
+      "institution_id": "sg-3203-entsorgung",
+      "name": "City of St. Gallen, Waste Disposal (Entsorgung St. Gallen)",
+      "native_name": "Stadt St.Gallen - Entsorgung St.Gallen",
+      "level": "municipal",
+      "body": "administration",
+      "jurisdiction": "CH-SG-3203"
     },
     {
       "institution_id": "sg-law",
@@ -22595,6 +22743,19 @@
     }
   ],
   "documents": [
+    {
+      "document_id": "doc-01694fa88dc498848d7c",
+      "source_url": "https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html",
+      "document_url": "https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html",
+      "version_uri": null,
+      "title": "Abfuhrplan | stadt.sg.ch",
+      "publisher": "City of St. Gallen, Waste Disposal (Entsorgung St. Gallen)",
+      "institution_id": "sg-3203-entsorgung",
+      "language": "de",
+      "accessed_on": "2026-09-24",
+      "raw_sha256": "283b12b6d62dbec4b5878baf463febaf44d6bcb445b143042d8df4876fe0e9b6",
+      "content_sha256": "d7d16c080409b2ba3736208131cc235eb37ecfd9a8ab7d7180d28b05322fa492"
+    },
     {
       "document_id": "doc-0381589e28bfea532884",
       "source_url": "https://www.wallisellen.ch/bildungueber",
@@ -23621,6 +23782,19 @@
       "accessed_on": "2026-09-15",
       "raw_sha256": "7b4089041a5f1ee4aaa2437836d7fc1be70639bd09577ac32863e379c6a18d57",
       "content_sha256": "5970706f9adb2417490b63a9da27ef6403c898674a415ff6bf5f6465c345dc0b"
+    },
+    {
+      "document_id": "doc-6611780fdbe91520554c",
+      "source_url": "https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr",
+      "document_url": "https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr",
+      "version_uri": null,
+      "title": "Abfallabfuhr | Kanton Basel-Stadt",
+      "publisher": "Canton of Basel-Stadt, Civil Engineering Office, city cleaning service",
+      "institution_id": "bs-stadtreinigung",
+      "language": "de",
+      "accessed_on": "2026-09-24",
+      "raw_sha256": "333481dfba4336ce01db5174e6e2b843a66d32e149c994756e3a2f008c1716a9",
+      "content_sha256": "1a29c9883db6eff019dd17fa1ee9523781614f850b766d793502aad0d69da0ef"
     },
     {
       "document_id": "doc-66449d3f465a2e024a8f",
@@ -29532,6 +29706,31 @@
       }
     },
     {
+      "evidence_id": "graph-mvp-zurich-e-city-basel-waste-collection-1-1",
+      "document_id": "doc-6611780fdbe91520554c",
+      "source_title": "Abfallabfuhr | Kanton Basel-Stadt",
+      "publisher": "Canton of Basel-Stadt, Civil Engineering Office, city cleaning service",
+      "institution_id": "bs-stadtreinigung",
+      "url": "https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr",
+      "language": "de",
+      "accessed_on": "2026-09-24",
+      "start_offset": 938,
+      "end_offset": 1482,
+      "original_excerpt": "Hausmüll, der nicht anderweitig recycelt werden kann, wird in Basel im offizielle Abfallsack entsorgt. Dieser offizielle, blaue Gebührensack der Stadt Basel heisst «BebbiSagg». Es gibt ihn in vier verschiedenen Grössen von 10, 17, 35 und 60 Liter. Bebbi-Säcke erhalten Sie im Detailhandel (z.B. Migros, Coop, Denner) an der Kasse oder beim Amt für Umwelt und Energie am Empfang.\n\nAn den festgelegten Abfuhrtagen Ihres Quartiers können Sie Bebbi-Säcke zweimal in der Woche auf dem Trottoir bereitstellen. Dort sammelt sie die Stadtreinigung ein.",
+      "excerpt_sha256": "9985ba47929f0748ab2449297c146c500f53649ba50296898c203e62ae83dcf9",
+      "block_ids": [
+        "doc-6611780fdbe91520554c:b00028",
+        "doc-6611780fdbe91520554c:b00029"
+      ],
+      "content_sha256": "1a29c9883db6eff019dd17fa1ee9523781614f850b766d793502aad0d69da0ef",
+      "raw_sha256": "333481dfba4336ce01db5174e6e2b843a66d32e149c994756e3a2f008c1716a9",
+      "basis": {
+        "level": "cantonal",
+        "kind": "guidance",
+        "label": "Cantonal authority guidance"
+      }
+    },
+    {
       "evidence_id": "graph-mvp-zurich-e-city-lugano-waste-disposal-1-1",
       "document_id": "doc-432c6b6aadd4da9c3b89",
       "source_title": "City of Lugano: Ordinanza municipale sulla gestione dei rifiuti 4.1.1 of 17 October 2019 (it)",
@@ -29600,6 +29799,30 @@
       ],
       "content_sha256": "bb471fa237af532c3dbf780844efd4b6e699494418dde2b7bfb820a82a1815d0",
       "raw_sha256": "d9522aa02863180e92d55c68013a5a63f23538d704d631dbd36c61363104fe35",
+      "basis": {
+        "level": "municipal",
+        "kind": "guidance",
+        "label": "Municipal authority guidance"
+      }
+    },
+    {
+      "evidence_id": "graph-mvp-zurich-e-city-st-gallen-waste-collection-1-1",
+      "document_id": "doc-01694fa88dc498848d7c",
+      "source_title": "Abfuhrplan | stadt.sg.ch",
+      "publisher": "City of St. Gallen, Waste Disposal (Entsorgung St. Gallen)",
+      "institution_id": "sg-3203-entsorgung",
+      "url": "https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html",
+      "language": "de",
+      "accessed_on": "2026-09-24",
+      "start_offset": 1761,
+      "end_offset": 2037,
+      "original_excerpt": "Die Kehrichtsammlung erfolgt wöchentlich. Der Abfallkalender oder die Abfuhrpläne der einzelnen Strassen enthalten die Daten der Kehrichtabfuhr sowie die Daten der Altpapier-, Karton- und Altmetallsammlungen. Diese Informationen lassen sich auch als Push-Nachricht abonnieren.",
+      "excerpt_sha256": "847207a008229e8f88ab58688df9e1fa998d1405cb178c5a7757414bab895580",
+      "block_ids": [
+        "doc-01694fa88dc498848d7c:b00091"
+      ],
+      "content_sha256": "d7d16c080409b2ba3736208131cc235eb37ecfd9a8ab7d7180d28b05322fa492",
+      "raw_sha256": "283b12b6d62dbec4b5878baf463febaf44d6bcb445b143042d8df4876fe0e9b6",
       "basis": {
         "level": "municipal",
         "kind": "guidance",
@@ -36917,5 +37140,5 @@
       }
     }
   ],
-  "content_sha256": "ab224f3ff1aaff4ee8e5cb78025f7e048499f57c1f7ed2d626d4b5e3db70d645"
+  "content_sha256": "ae463dd21ae9e7abea9695ab4b3dfe1b017db573f2d9d7f98fb2e483f6ef5798"
 }

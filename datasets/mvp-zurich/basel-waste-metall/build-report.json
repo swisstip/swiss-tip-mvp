@@ -1,0 +1,23 @@
+{
+  "dataset_id": "basel-waste-metall",
+  "dataset_version": "2026-09-24-v1",
+  "rows": 52,
+  "repeated_rows_dropped": 0,
+  "postal_codes": 0,
+  "zones": 9,
+  "period": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "sources": [
+    {
+      "url": "https://data.bs.ch/api/explore/v2.1/catalog/datasets/100096/exports/csv?select=zone,termin&where=art%3D%22Metallabfuhr%22%20and%20termin%3E%3Ddate%272026-01-01%27&order_by=zone,termin",
+      "file": "csv",
+      "sha256": "104b47e790a3f91eb24226a1f3311fc307d8b8388dc39ad41948043effd2809c",
+      "bytes": 754,
+      "downloaded_on": "2026-09-24",
+      "fetched": true,
+      "rows": 52
+    }
+  ]
+}

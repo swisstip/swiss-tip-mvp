@@ -1,10 +1,10 @@
 {
   "schema_version": "swiss-tip-pipeline-report/v1",
   "pack": "graph-ch",
-  "root": "C:\\Users\\louis\\Dev\\swiss-ai-weeks\\swiss-tip-mvp",
-  "run": "C:\\Users\\louis\\Dev\\swiss-ai-weeks\\swiss-tip-mvp\\.local\\graph-ch",
-  "started_at": "2026-09-24T14:41:50.575777+00:00",
-  "finished_at": "2026-09-24T14:41:57.797450+00:00",
+  "root": "/mnt/c/Users/louis/Dev/swiss-ai-weeks/swiss-tip-mvp",
+  "run": "/mnt/c/Users/louis/Dev/swiss-ai-weeks/swiss-tip-mvp/.local/graph-ch",
+  "started_at": "2026-09-24T15:06:57.645196+00:00",
+  "finished_at": "2026-09-24T15:07:06.253454+00:00",
   "options": {
     "download": false,
     "retry_failed": false,
@@ -16,7 +16,7 @@
     "attested_by": null,
     "source_plugins": true,
     "obey_robots": true,
-    "stages": "compile..check"
+    "stages": "derive..check"
   },
   "stages": [
     {
@@ -94,31 +94,44 @@
       "seconds": 0.1
     },
     {
+      "stage": "derive",
+      "started_at": "2026-09-24T15:06:57.645201+00:00",
+      "status": "ran",
+      "applied": true,
+      "added": 6,
+      "updated": 0,
+      "kept": 573,
+      "stale": [],
+      "notes": [],
+      "seconds": 4.7
+    },
+    {
       "stage": "compile",
-      "started_at": "2026-09-24T14:41:50.575782+00:00",
+      "started_at": "2026-09-24T15:07:02.347497+00:00",
       "status": "ran",
       "graph_id": "ch",
-      "nodes": 238,
-      "edges": 668,
+      "nodes": 241,
+      "edges": 671,
       "review_statuses": {
+        "automatically-derived-unreviewed": 6,
         "human-reviewed": 906
       },
       "citation_outcomes": {
         "same-snapshot": 43,
-        "pack": 1200
+        "pack": 1204
       },
       "dropped": 0,
-      "content_sha256": "ab224f3ff1aaff4ee8e5cb78025f7e048499f57c1f7ed2d626d4b5e3db70d645",
-      "inputs_sha256": "1a34a47b3e80bc58c629975a6f39fe6a01b15258a022e4a893dcc3cfcd76b876",
-      "seconds": 5.3
+      "content_sha256": "ae463dd21ae9e7abea9695ab4b3dfe1b017db573f2d9d7f98fb2e483f6ef5798",
+      "inputs_sha256": "a7191b6d9a819bbb98bc2fc7fdf1bfe50b25a94e305c18b9633ecec6370feec2",
+      "seconds": 2.9
     },
     {
       "stage": "check",
-      "started_at": "2026-09-24T14:41:55.840055+00:00",
+      "started_at": "2026-09-24T15:07:05.256132+00:00",
       "status": "ran",
       "cases": 14,
       "passed": 13,
-      "seconds": 2.0
+      "seconds": 1.0
     }
   ],
   "exit_code": 0,

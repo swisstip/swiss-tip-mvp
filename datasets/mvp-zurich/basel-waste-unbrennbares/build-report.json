@@ -1,0 +1,23 @@
+{
+  "dataset_id": "basel-waste-unbrennbares",
+  "dataset_version": "2026-09-24-v1",
+  "rows": 116,
+  "repeated_rows_dropped": 0,
+  "postal_codes": 0,
+  "zones": 9,
+  "period": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "sources": [
+    {
+      "url": "https://data.bs.ch/api/explore/v2.1/catalog/datasets/100096/exports/csv?select=zone,termin&where=art%3D%22Unbrennbares%22%20and%20termin%3E%3Ddate%272026-01-01%27&order_by=zone,termin",
+      "file": "csv",
+      "sha256": "ef24d7a1eabe18aceb99a63122d228c1b6e6b4caa0609b1f1b244531d832d5bd",
+      "bytes": 1664,
+      "downloaded_on": "2026-09-24",
+      "fetched": true,
+      "rows": 116
+    }
+  ]
+}

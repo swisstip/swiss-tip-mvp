@@ -1,0 +1,23 @@
+{
+  "dataset_id": "st-gallen-waste-gruengut",
+  "dataset_version": "2026-09-24-v1",
+  "rows": 930,
+  "repeated_rows_dropped": 0,
+  "postal_codes": 0,
+  "zones": 12,
+  "period": {
+    "start": "2026-01-01",
+    "end": "2027-06-30"
+  },
+  "sources": [
+    {
+      "url": "https://daten.stadt.sg.ch/api/explore/v2.1/catalog/datasets/abfuhrdaten-stadt-stgallen-calendar-data/exports/csv?select=abfuhrgebiet,datum&where=sammlung%3D%22Gr%C3%BCngut%22%20and%20datum%3E%3Ddate%272026-01-01%27&order_by=abfuhrgebiet,datum",
+      "file": "csv",
+      "sha256": "1c2d9a10462da17c6951a0117c65abc38d7a8f6021bae4b867fd59594129d8bc",
+      "bytes": 13736,
+      "downloaded_on": "2026-09-24",
+      "fetched": true,
+      "rows": 930
+    }
+  ]
+}

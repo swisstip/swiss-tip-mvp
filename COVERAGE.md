@@ -10,16 +10,16 @@ submission is `mvp-zurich`; `mvp-wallisellen` was a proof of concept that a
 second, municipal pack can be built with the same tooling, is frozen at its
 attested release and is not extended, tested or documented further.
 
-**Release:** `mvp-zurich-2026-09-24-v1` (pack `mvp-zurich`, KB1)<br>
-**Content digest:** `baa03da3f709db46598be6e9515fbe8bf6cb8a3ae2524683ee02388b136fe0fc`<br>
-**Snapshot date:** 23 September 2026, the latest access date of a cited page
-(66 of the 336 were saved on 23 September, 67 on 22 September, 10 on 19
+**Release:** `mvp-zurich-2026-09-24-v5` (pack `mvp-zurich`, KB1)<br>
+**Content digest:** `3100356dd26d1751ac88601c2cd10daf38eb6691ca42ec51715e8832d5770bd9`<br>
+**Snapshot date:** 24 September 2026, the latest access date of a cited page
+(2 of the 338 were saved on 24 September, 66 on 23 September, 67 on 22 September, 10 on 19
 September, 25 on 18 September, 47 on 17 September, 49 on 15 September, 66 on
 11 September and 6 on 10 or 14 September); maximum age 60 days, stale from
-22 November 2026<br>
-**Contents:** 20 topics, 212 concepts, 1,273 facts, 1,531 evidence excerpts
-(1,363 German, 114 English, 43 French, 11 Italian), 336 cited documents<br>
-**Review:** all 1,273 facts are `human-reviewed` by one named reviewer, confirmed
+23 November 2026<br>
+**Contents:** 20 topics, 214 concepts, 1,279 facts, 1,538 evidence excerpts
+(1,370 German, 114 English, 43 French, 11 Italian), 338 cited documents<br>
+**Review:** all 1,279 facts are `human-reviewed` by one named reviewer, confirmed
 in the console: the 104 of the residence and contacts topics on 14 September
 2026, the 149 of the five topics added on 15 September 2026 that day, the
 37 of the 13 `fza-*` concepts, drafted from the Agreement on the Free Movement
@@ -55,7 +55,8 @@ same day, against a brief that put first the two rules the pages turned out not
 to state, then a defect in a publisher's own page that the curation preserves
 rather than hides, then the 22 facts carrying a number. The 5 facts of
 `city-lugano-waste-disposal`, added on 23 September 2026, were confirmed on
-24 September 2026. Not
+24 September 2026, and the 6 of `city-basel-waste-collection` and
+`city-st-gallen-waste-collection` the same day. Not
 a legal review (see [LIMITATIONS.md](LIMITATIONS.md))<br>
 **Places:** the release embeds a place register, so a caller names the
 user's place instead of a code: Switzerland, the 26 cantons and the 2,110
@@ -63,8 +64,8 @@ municipalities of the Federal Statistical Office's register of
 municipalities (snapshot of 18 September 2026), with 115 other-language
 names on 50 of them (see "Jurisdictions and languages")<br>
 **Readiness:** the release is **attested**. `readiness.json` names
-`mvp-zurich-2026-09-24-v1`, attested on 24 September 2026 by the reviewer who
-confirmed its 1,273 facts, recording the content digest above and the digest of
+`mvp-zurich-2026-09-24-v5`, attested on 24 September 2026 by the reviewer who
+confirmed its 1,279 facts, recording the content digest above and the digest of
 the acceptance suite; all six readiness gates passed. It supersedes
 `mvp-zurich-2026-09-23-v19`, so the server with `--require-ready` and the pack
 image now serve registration on arrival in all 26 cantons as well as the
@@ -98,21 +99,33 @@ own page, because the FOPH pages state those figures without a date
 
 ## Scope statement
 
-Foreign nationals and newcomers in Switzerland: federal rules with Canton of
-Zurich and City of Zurich procedures. Entry and visas: the visa duty, the visa
-types C and D, the 90-in-180-days rule, the entry requirements, ETIAS and the
-Entry/Exit System. Residence permits and registration (AIG, the free-movement
-agreement FZA, SEM and ch.ch guidance, Zurich procedures), the
-migration-office contact of every canton, and the Zurich offices' addresses,
-opening hours and contacts. Marriage and leaving the City of Zurich. Family
-allowances and parental leave. Renting a home. Social insurance on leaving,
-pillar 3a and unemployment. Tax at source with its tariff codes and the Zurich
-tariff rules, the City of Zurich tax return and tax office, and the radio and
-television fee. Driving licence, vehicles and household goods after a move,
-and City of Zurich parking permits. Health and accident insurance and premium
-reduction. Naturalisation and voting rights. Life in the City of Zurich: first
-steps, waste and recycling, dogs, kindergarten and school holidays, and
-medical emergencies.
+Everyday administrative life in Switzerland, for people who live here and for people
+moving here, of any nationality: federal rules, how to register on arrival in any of
+the 26 cantons, and the procedures of the Canton of Zurich and the City of Zurich.
+
+Entry and visas: the visa duty, the visa types C and D, the 90-in-180-days rule, the
+entry requirements, ETIAS and the Entry/Exit System. Residence permits and
+registration: the Foreign Nationals and Integration Act, the free-movement agreement
+FZA, SEM and ch.ch guidance, how to register on arrival in every canton and its
+migration-office contact, and the Zurich procedures in full.
+
+Work: losing a job, registering with the RAV and unemployment insurance. Social
+insurance: what happens to the AHV, occupational provision and pillar 3a on leaving
+Switzerland. Health and accident insurance: the insurance duty, premium reduction and
+who is compulsorily insured against accidents.
+
+Taxes and household fees: tax at source with its tariff codes and the Zurich rules,
+the City of Zurich tax return and tax office, and the radio and television fee.
+Customs: travelling and shopping abroad, ordering from abroad, declaring goods, pets
+and plants, and moving household goods.
+
+Family and home: family allowances and parental leave, marriage, renting a home, and
+leaving the City of Zurich. Driving and vehicles: a foreign driving licence, vehicles
+after a move, and City of Zurich parking permits. Naturalisation and voting rights.
+Life in the City of Zurich: first steps, waste and recycling, dogs, kindergarten and
+school holidays, integration offers and German courses, medical emergencies, and the
+offices' addresses and hours. Waste collection in Basel and St. Gallen, and waste
+hand-over in Lugano.
 
 This is the `scope_statement` of the release manifest, served verbatim by
 `get_coverage`. A calling assistant that receives a question outside it is
@@ -125,7 +138,7 @@ told to say so and not to answer from general knowledge.
 | Federal | `CH` |
 | Cantonal | all 26 cantons (`CH-AG` to `CH-ZH`), each carrying the migration-office contact and registration on arrival; only `CH-ZH` carries procedures beyond those |
 | Federal, for daily life | `CH` also carries the radio and television fee (SERAFE) |
-| Municipal | `CH-ZH-261` (City of Zurich); `CH-TI-5192` (City of Lugano) for how waste is handed over only |
+| Municipal | `CH-ZH-261` (City of Zurich); `CH-BS-2701` (City of Basel) and `CH-SG-3203` (City of St. Gallen) for how household waste is collected only; `CH-TI-5192` (City of Lugano) for how waste is handed over only |
 
 Every canton carries two things of its own: its migration-office contact,
 and how a person registers on arrival - the period, the office that receives
@@ -376,7 +389,7 @@ schooling is served as kindergarten entry, the school holidays of 2026/27
 and 2027/28 and the city's information in other languages, not as the
 school system.
 
-### Waste and recycling in the City of Zurich, and waste hand-over in Lugano (`waste`) - 8 concepts
+### Waste and recycling in the City of Zurich, collection in Basel and St. Gallen, and hand-over in Lugano (`waste`) - 10 concepts
 
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
@@ -387,6 +400,8 @@ school system.
 | `city-zurich-recycling-centres` | Recycling centres of the City of Zurich | CH-ZH-261 | 5 |
 | `city-zurich-recycling-points` | Glass, metal, oil, textiles and plastic recycling in the City of Zurich | CH-ZH-261 | 4 |
 | `city-zurich-hazardous-waste` | Hazardous waste in the City of Zurich | CH-ZH-261 | 3 |
+| `city-basel-waste-collection` | Household waste collection and collection zones in the City of Basel | CH-BS-2701 | 3 |
+| `city-st-gallen-waste-collection` | Household waste collection and collection areas in the City of St. Gallen | CH-SG-3203 | 3 |
 | `city-lugano-waste-disposal` | Handing over household, recyclable and bulky waste in the City of Lugano | CH-TI-5192 | 5 |
 
 Collection days are not served for a street: the facts point to the
@@ -395,7 +410,11 @@ publishes no collection day for residents: its facts, four from the municipal
 waste ordinance (Ordinanza 4.1.1) and one from the city's waste page, say that
 household waste goes in the red official bags into containers usable as a rule
 on every day, where recyclables, bulky and garden waste go, and how to get the
-yearly bulky-waste pickup. No other city outside Zurich is served for waste.
+yearly bulky-waste pickup. Basel and St. Gallen publish their dates by
+collection zone: their facts give the bag and set-out rules and how a
+resident finds the zone, and with the calendar connector the dates
+themselves are served by zone (`datasets/README.md`). No other city
+outside Zurich is served for waste.
 
 ### Parking and vehicles (`vehicles-parking`) - 2 concepts
 

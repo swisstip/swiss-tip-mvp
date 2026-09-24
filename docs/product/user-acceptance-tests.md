@@ -1,6 +1,6 @@
 # User acceptance tests
 
-**Last update:** 23 September 2026<br>
+**Last update:** 24 September 2026
 **Scope:** the two standing cases of section 3.3 of the
 [functional specification](https://github.com/swisstip/swiss-tip/blob/main/docs/product/functional-specification.md), four further
 cases chosen because the popular answer misses an exception in the law, a
@@ -2663,6 +2663,25 @@ that residents may, as a rule, use those containers on every day of the week,
 and that bulky and garden waste go only to the ecocentri. The trap is inventing
 a weekly collection day or a street calendar, which is what a general assistant
 does when it answers from other Swiss cities.
+
+### UAT-118: Bin day in Basel
+
+"I just moved to Basel. When is my garbage collected and when do I have to put
+the bags out?" The answer must say that household waste goes in the blue
+Bebbi-Sack, put out on the pavement twice a week, from 19:00 the evening before
+or by 07:00 on the day. It must also say that the days depend on the
+collection zone, which the city's zone search finds from the address. The trap
+is naming a weekday for all of Basel, or answering with the Zurich rule.
+
+### UAT-119: Collection area in St. Gallen
+
+"Wann wird in St. Gallen der Kehricht abgeholt, und wie finde ich heraus,
+welches Abfuhrgebiet ich habe?" (When is household waste collected in
+St. Gallen, and how do I find out which collection area I am in?) The answer
+must say that household waste is collected weekly and that the dates depend on
+the collection area, one of A to K, L Ost and L West. It must say that the
+online collection plan finds the area from the street, and that a street
+directory lists it. The trap is naming one weekday for the whole city.
 
 ## Decline cases
 

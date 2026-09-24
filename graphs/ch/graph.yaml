@@ -8304,6 +8304,72 @@ nodes:
       evidence_id: e-city-lugano-waste-disposal-2-1
       excerpt_sha256: 647cd8763f9d209922b45a9f0232e80fbd1b3b0c69ea7bb81dab41414904c16a
   notes: []
+- node_id: institution.bs-stadtreinigung
+  kind: institution
+  label: Canton of Basel-Stadt, Civil Engineering Office, city cleaning service
+  names: {}
+  summary: 'Canton of Basel-Stadt, Civil Engineering Office, city cleaning service: the cantonal authority for Canton
+    of Basel-Stadt (CH-BS).'
+  keywords:
+  - Kanton Basel-Stadt - Tiefbauamt, Stadtreinigung
+  level: cantonal
+  place: CH-BS
+  hosts:
+  - www.bs.ch
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-24-v5
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-city-basel-waste-collection-1-1
+      excerpt_sha256: 9985ba47929f0748ab2449297c146c500f53649ba50296898c203e62ae83dcf9
+  notes: []
+- node_id: institution.sg-3203-entsorgung
+  kind: institution
+  label: City of St. Gallen, Waste Disposal (Entsorgung St. Gallen)
+  names: {}
+  summary: 'City of St. Gallen, Waste Disposal (Entsorgung St. Gallen): the municipal authority for St. Gallen (CH-SG-3203).'
+  keywords:
+  - Stadt St.Gallen - Entsorgung St.Gallen
+  level: municipal
+  place: CH-SG-3203
+  hosts:
+  - www.stadt.sg.ch
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-24-v5
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-city-st-gallen-waste-collection-1-1
+      excerpt_sha256: 847207a008229e8f88ab58688df9e1fa998d1405cb178c5a7757414bab895580
+  notes: []
+- node_id: place.ch-sg-3203
+  kind: place
+  label: St. Gallen (CH-SG-3203)
+  names: {}
+  summary: The municipality St. Gallen (CH-SG-3203) in Canton of St. Gallen (CH-SG).
+  keywords:
+  - St. Gallen
+  - CH-SG-3203
+  level: municipal
+  place: CH-SG-3203
+  hosts: []
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from the place register
+    notes: []
+  evidence: []
+  notes: []
 edges:
 - edge_id: law.aig.authoritative_source.source.ch-fedlex
   from_id: law.aig
@@ -23021,4 +23087,55 @@ edges:
       pack: mvp-wallisellen
       evidence_id: e-schools-and-careers-1-1
       excerpt_sha256: df950435adfd241436e0ab52aa911024fe47a0ce9ba106347245f453efea90d3
+  notes: []
+- edge_id: domain.waste.published_by.institution.bs-stadtreinigung
+  from_id: domain.waste
+  relation: published_by
+  to_id: institution.bs-stadtreinigung
+  statement: Canton of Basel-Stadt, Civil Engineering Office, city cleaning service publishes on waste and recycling
+    for Canton of Basel-Stadt (CH-BS).
+  place: CH-BS
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-24-v5
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-city-basel-waste-collection-1-1
+      excerpt_sha256: 9985ba47929f0748ab2449297c146c500f53649ba50296898c203e62ae83dcf9
+  notes: []
+- edge_id: domain.waste.published_by.institution.sg-3203-entsorgung
+  from_id: domain.waste
+  relation: published_by
+  to_id: institution.sg-3203-entsorgung
+  statement: City of St. Gallen, Waste Disposal (Entsorgung St. Gallen) publishes on waste and recycling for St.
+    Gallen (CH-SG-3203).
+  place: CH-SG-3203
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-24-v5
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-city-st-gallen-waste-collection-1-1
+      excerpt_sha256: 847207a008229e8f88ab58688df9e1fa998d1405cb178c5a7757414bab895580
+  notes: []
+- edge_id: place.ch-sg-3203.part_of.place.ch-sg
+  from_id: place.ch-sg-3203
+  relation: part_of
+  to_id: place.ch-sg
+  statement: St. Gallen (CH-SG-3203) lies in Canton of St. Gallen (CH-SG).
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from the place register
+    notes: []
+  evidence: []
   notes: []

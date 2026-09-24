@@ -1,0 +1,23 @@
+{
+  "dataset_id": "basel-waste-kehricht",
+  "dataset_version": "2026-09-24-v1",
+  "rows": 808,
+  "repeated_rows_dropped": 0,
+  "postal_codes": 0,
+  "zones": 8,
+  "period": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "sources": [
+    {
+      "url": "https://data.bs.ch/api/explore/v2.1/catalog/datasets/100096/exports/csv?select=zone,termin&where=art%3D%22Kehrichtabfuhr%22%20and%20termin%3E%3Ddate%272026-01-01%27&order_by=zone,termin",
+      "file": "csv",
+      "sha256": "a3f2be191ca207e682053fce07616ebd766005c3cccf9098b13f814056a247ab",
+      "bytes": 11328,
+      "downloaded_on": "2026-09-24",
+      "fetched": true,
+      "rows": 808
+    }
+  ]
+}

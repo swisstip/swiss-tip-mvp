@@ -1,7 +1,7 @@
 {
   "schema_version": "source-catalog/v1",
   "artifact_id": "residence-sources-mvp-zurich",
-  "version": "draft-13",
+  "version": "draft-14",
   "knowledge_space_id": "hackathon",
   "title": "Residence permits, moving to Switzerland and naturalisation - MVP sources (federal and Canton Zurich)",
   "status": "SOURCES_ONLY",
@@ -35,7 +35,7 @@
       "CH-ZG",
       "CH-ZH"
     ],
-    "description": "MVP scope: Swiss federal foundations for residence permits plus Canton of Zurich and City of Zurich entry points, extended on 15 September 2026 with the topics a newly arrived resident meets next (social insurance on arrival and departure, tax at source, the foreign driving licence, health insurance and premium reduction) and with naturalisation, at the same three levels. Other cantons are in the swiss-residence pack. Extended on 17 September 2026 with the contact pages of the Zurich offices these topics name: addresses, opening and telephone hours and directions where published. Extended again on 17 September 2026 with the daily-life duties of a newcomer in the City of Zurich: waste, parking and vehicles, dogs, school, taxes, the radio and television fee and emergencies. Extended on 18 September 2026 with voting rights and the Zurich tax-at-source tariff pages, and with the questions of expats settling in: family allowances and parental leave, housing and rent, customs on moving, marriage, pillar 3a, unemployment, accident insurance and leaving the City of Zurich. Extended on 23 September 2026 with the registration route of all 26 cantons: who takes the registration of an arriving resident and in what order, the deadline each canton states for it, how the canton takes a permit application, its online services and what it publishes about moving in from another canton. Only those subjects are cantonal at that breadth; every other topic of the pack remains federal plus Canton and City of Zurich. Nine cantons publish the deadline only in cantonal law, so consolidated statutes are catalogued beside the service pages. Extended on 23 September 2026 with the waste rules of the City of Lugano: how household waste, separately collected waste and bulky waste are handed over where no collection calendar is published. Every other daily-life topic remains City of Zurich only.",
+    "description": "MVP scope: Swiss federal foundations for residence permits plus Canton of Zurich and City of Zurich entry points, extended on 15 September 2026 with the topics a newly arrived resident meets next (social insurance on arrival and departure, tax at source, the foreign driving licence, health insurance and premium reduction) and with naturalisation, at the same three levels. Other cantons are in the swiss-residence pack. Extended on 17 September 2026 with the contact pages of the Zurich offices these topics name: addresses, opening and telephone hours and directions where published. Extended again on 17 September 2026 with the daily-life duties of a newcomer in the City of Zurich: waste, parking and vehicles, dogs, school, taxes, the radio and television fee and emergencies. Extended on 18 September 2026 with voting rights and the Zurich tax-at-source tariff pages, and with the questions of expats settling in: family allowances and parental leave, housing and rent, customs on moving, marriage, pillar 3a, unemployment, accident insurance and leaving the City of Zurich. Extended on 23 September 2026 with the registration route of all 26 cantons: who takes the registration of an arriving resident and in what order, the deadline each canton states for it, how the canton takes a permit application, its online services and what it publishes about moving in from another canton. Only those subjects are cantonal at that breadth; every other topic of the pack remains federal plus Canton and City of Zurich. Nine cantons publish the deadline only in cantonal law, so consolidated statutes are catalogued beside the service pages. Extended on 23 September 2026 with the waste rules of the City of Lugano: how household waste, separately collected waste and bulky waste are handed over where no collection calendar is published. Every other daily-life topic remains City of Zurich only. Extended on 24 September 2026 with the waste-collection pages of Basel and St. Gallen, whose open-data calendars are served by collection zone.",
     "exclusions": [
       "Tourism unrelated to residence",
       "Full asylum/protection casework",
@@ -480,7 +480,9 @@
       "ch-bazg-en",
       "ch-seco-en",
       "ch-serafe-en",
-      "ch-ahv-iv-en"
+      "ch-ahv-iv-en",
+      "basel-waste",
+      "st-gallen-waste"
     ],
     "multilingual": [
       "ch-sem-residence-de",
@@ -538,7 +540,9 @@
       "zh-vehicles",
       "ch-serafe-household-fee",
       "zurich-city-emergency",
-      "lugano-waste"
+      "lugano-waste",
+      "basel-waste",
+      "st-gallen-waste"
     ],
     "entry": [
       "ch-sem-entry",
@@ -772,7 +776,8 @@
     "Extension of 18 September 2026 (expat life): the Code of Obligations (SR 220) is a legal-basis seed fetched through the Fedlex plugin; ch.ch's pages on renting, marriage and the third pillar, the Federal Office for Housing's page on the reference interest rate, the Canton of Zurich's tenancy forms and unemployment pages, the City of Zurich's marriage and departure pages, the FSIO's pillar 3a FAQ, SECO's unemployment FAQ and the FOPH's accident-insurance pages are registry seeds, with their subpages as explicit links in sources.md. The family allowance, parental leave and customs sources of the earlier extensions join the scan set expat-life unchanged. The draft-7 catalogue is re-planned in place; saved pages, Fedlex documents and text records are kept.",
     "Extension of 19 September 2026 (English versions): the English versions of the SEM, FOPH, FOCBS, SECO and SERAFE pages the release cites, and the German version of the SEM residence overview whose English version it cites, are explicit links in their own section of sources.md, without registry seeds. They were found through the German pages' declared language alternates and checked live; a fact cites the English passage next to the German one only after the two were compared. The SEM residence FAQ has no English version.",
     "Extension of 23 September 2026 (Lugano waste): the City of Lugano's waste pages and its municipal waste ordinance (Ordinanza 4.1.1, PDF) are the registry seed lugano-waste in the scan sets daily-life and all, with the pages as explicit links in sources.md. It is the only municipal source outside the City of Zurich. The draft-13 catalogue is re-planned in place; saved pages and text records are kept.",
-    "Catalogue repair of 23 September 2026: the downloader now attributes every Markdown link to the registry entry whose host and path allowlist contains it, and rejects a link no entry contains. The English versions of 19 September had no registry seeds and two superseded arbeit.swiss paths were outside their entries, so each English host gets a seed of its own (scan set english, language en, the exact listed paths as its allowlist) and the two superseded paths join the allowlist of the entry they were replaced in. No URL was added or removed."
+    "Catalogue repair of 23 September 2026: the downloader now attributes every Markdown link to the registry entry whose host and path allowlist contains it, and rejects a link no entry contains. The English versions of 19 September had no registry seeds and two superseded arbeit.swiss paths were outside their entries, so each English host gets a seed of its own (scan set english, language en, the exact listed paths as its allowlist) and the two superseded paths join the allowlist of the entry they were replaced in. No URL was added or removed.",
+    "Extension of 24 September 2026 (zone calendars): the waste-collection pages of Basel-Stadt and of the City of St. Gallen are the registry seeds basel-waste and st-gallen-waste in the scan sets daily-life and all, with their pages as explicit links in sources.md. The draft-14 catalogue is re-planned in place."
   ],
   "sources": [
     {
@@ -8486,6 +8491,69 @@
       },
       "scan_status": "ready",
       "notes": "English versions of German pages the release cites, found through the German pages' declared language alternates and listed one by one in sources.md. The allowlist holds exactly those paths. Seed added on 23 September 2026 so that the downloader, which now attributes every Markdown link to a registry allowlist, attributes them in English instead of rejecting them."
+    },
+    {
+      "definition": {
+        "source_id": "basel-waste",
+        "start_url": "https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr",
+        "allowed_hosts": [
+          "www.bs.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr"
+        ],
+        "canonical_authority": "Canton of Basel-Stadt - Tiefbauamt, Stadtreinigung",
+        "jurisdiction": "CH-BS",
+        "language": "de"
+      },
+      "title": "Basel-Stadt - waste collection in the City of Basel",
+      "authority_level": "cantonal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://data.bs.ch/explore/dataset/100096/",
+        "located_on": "2026-09-24"
+      },
+      "scan_status": "ready",
+      "notes": "The page behind the open-data collection calendar of the City of Basel (data.bs.ch 100096): household waste twice a week in official bags, when to put them out, and the zone search by address. The dates themselves are served by the calendar connector keyed by zone."
+    },
+    {
+      "definition": {
+        "source_id": "st-gallen-waste",
+        "start_url": "https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html",
+        "allowed_hosts": [
+          "www.stadt.sg.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html",
+          "/home/raum-umwelt/abfall-entsorgung.html"
+        ],
+        "canonical_authority": "City of St. Gallen - Entsorgung St. Gallen",
+        "jurisdiction": "CH-SG",
+        "language": "de"
+      },
+      "title": "City of St. Gallen - waste collection plan",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://daten.stadt.sg.ch/explore/dataset/abfuhrdaten-stadt-stgallen-calendar-data/",
+        "located_on": "2026-09-24"
+      },
+      "scan_status": "ready",
+      "notes": "The page behind the open-data collection calendar of the City of St. Gallen: twelve collection zones, found by street in the Abfuhrplan, and the waste overview. The dates themselves are served by the calendar connector keyed by zone.",
+      "municipality": {
+        "name": "St. Gallen",
+        "bfs_code": "3203"
+      }
     }
   ],
   "parallel_page_groups": [

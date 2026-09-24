@@ -1,0 +1,30 @@
+schema_version: swiss-tip-dataset-curation/v1
+dataset_id: st-gallen-waste-papier
+type: calendar
+title: Paper collection days, City of St. Gallen
+label: Paper (Papier)
+pack: mvp-zurich
+concept_id: city-st-gallen-waste-collection
+jurisdiction: CH-SG-3203
+publisher: Entsorgung St.Gallen (ESG)
+publisher_url: https://daten.stadt.sg.ch/explore/dataset/abfuhrdaten-stadt-stgallen-calendar-data/
+licence: CC-BY-4.0
+refresh: bundled
+sources:
+- url: https://daten.stadt.sg.ch/api/explore/v2.1/catalog/datasets/abfuhrdaten-stadt-stgallen-calendar-data/exports/csv?select=abfuhrgebiet,datum&where=sammlung%3D%22Papier%22%20and%20datum%3E%3Ddate%272026-01-01%27&order_by=abfuhrgebiet,datum
+  sha256: 56e75c34260630598adf221f609174e7e923fcad3833c49590ed5bbcfdbc3afa
+  bytes: 3262
+  downloaded_on: '2026-09-24'
+importer:
+  name: csv-columns
+  columns:
+    zone: abfuhrgebiet
+    date: datum
+period:
+  start: '2026-01-01'
+  end: '2027-06-30'
+zone_lookup_url: https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html
+notes:
+- 'Open Data St. Gallen, dataset "Abfuhrdaten Stadt St.Gallen - calendar data" (Entsorgung St.Gallen, CC BY 4.0):
+  one row per collection area and date, periods July to June, published to 2027-06-30; the source URL exports this
+  type from 2026-01-01. The large dataset abfuhrdaten-stadt-stgallen gives dates one day early and is not used.'

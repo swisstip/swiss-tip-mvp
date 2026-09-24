@@ -1,0 +1,23 @@
+{
+  "dataset_id": "st-gallen-waste-kehricht",
+  "dataset_version": "2026-09-24-v1",
+  "rows": 936,
+  "repeated_rows_dropped": 0,
+  "postal_codes": 0,
+  "zones": 12,
+  "period": {
+    "start": "2026-01-01",
+    "end": "2027-06-30"
+  },
+  "sources": [
+    {
+      "url": "https://daten.stadt.sg.ch/api/explore/v2.1/catalog/datasets/abfuhrdaten-stadt-stgallen-calendar-data/exports/csv?select=abfuhrgebiet,datum&where=sammlung%3D%22Kehricht%22%20and%20datum%3E%3Ddate%272026-01-01%27&order_by=abfuhrgebiet,datum",
+      "file": "csv",
+      "sha256": "8fd771956d5a3eeed7b6964782410d7caec8fa1fd313bb1f919644ab2aebf302",
+      "bytes": 13829,
+      "downloaded_on": "2026-09-24",
+      "fetched": true,
+      "rows": 936
+    }
+  ]
+}

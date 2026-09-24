@@ -31,8 +31,8 @@ scope_statement: |-
   after a move, and City of Zurich parking permits. Naturalisation and voting rights.
   Life in the City of Zurich: first steps, waste and recycling, dogs, kindergarten and
   school holidays, integration offers and German courses, medical emergencies, and the
-  offices' addresses and hours. In the City of Lugano: how household waste, separately
-  collected waste and bulky waste are handed over.
+  offices' addresses and hours. Waste collection in Basel and St. Gallen, and waste
+  hand-over in Lugano.
 out_of_scope:
 - 'Other topics: schooling beyond kindergarten entry and school holidays, the asylum procedure and asylum permits,
   social assistance, debt enforcement, finding a home or a job, and utilities.'
@@ -46,8 +46,8 @@ out_of_scope:
 - The invalidity insurance (IV), the supplementary benefits (EL) and the bridging benefit.
 - Customs tariff numbers and duty rates per product, and the value or treatment of an individual consignment.
 - Beyond registering on arrival and the migration-office contact, cantons other than Zurich, and municipal procedures
-  outside the City of Zurich except how waste is handed over in the City of Lugano; federal rules still apply there
-  and are served with a caveat.
+  outside the City of Zurich except waste in Basel, St. Gallen and Lugano; federal rules still apply there and are
+  served with a caveat.
 - 'Eligibility decisions for a specific person: the rules route population groups to pre-authored statements and
   compute no outcome.'
 - Live data such as current processing times, appointment slots, job vacancies or insurer premiums.
@@ -98,6 +98,7 @@ publishers:
   www.ahv-iv.ch: Informationsstelle AHV/IV, the information service of the compensation offices and IV offices
   www.priminfo.admin.ch: priminfo, the premium information service of the Federal Office of Public Health FOPH
   www.lugano.ch: City of Lugano (Divisione spazi urbani)
+  www.stadt.sg.ch: City of St. Gallen (Entsorgung St. Gallen)
 institutions:
 - institution_id: ch-sem
   name: State Secretariat for Migration SEM
@@ -689,6 +690,22 @@ institutions:
   jurisdiction: CH-TI
   urls:
   - www4.ti.ch
+- institution_id: bs-stadtreinigung
+  name: Canton of Basel-Stadt, Civil Engineering Office, city cleaning service
+  native_name: Kanton Basel-Stadt - Tiefbauamt, Stadtreinigung
+  level: cantonal
+  body: administration
+  jurisdiction: CH-BS
+  urls:
+  - www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit
+- institution_id: sg-3203-entsorgung
+  name: City of St. Gallen, Waste Disposal (Entsorgung St. Gallen)
+  native_name: Stadt St.Gallen - Entsorgung St.Gallen
+  level: municipal
+  body: administration
+  jurisdiction: CH-SG-3203
+  urls:
+  - www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung
 - institution_id: ti-5192-dsu
   name: City of Lugano, Urban Spaces Division (DSU)
   native_name: Città di Lugano - Divisione spazi urbani
@@ -1082,9 +1099,9 @@ topics:
     school information in other languages, and medical emergencies.
 - topic_id: waste
   graph_nodes: [domain.waste]
-  title: Waste and recycling in the City of Zurich, and waste hand-over in Lugano
-  description: Züri-Sack, collections, recycling centres and points, hazardous waste and the ERZ Service Center
-    in the City of Zurich; official bags, containers, ecopunti and ecocentri in the City of Lugano.
+  title: Waste in Zurich, Basel, St. Gallen and Lugano
+  description: 'Zurich: Züri-Sack, collections, recycling, hazardous waste; Basel, St. Gallen: collection zones;
+    Lugano: bags and ecocentri.'
 - topic_id: vehicles-parking
   graph_nodes: [domain.vehicles, domain.customs]
   title: Parking, vehicles and moving goods
@@ -34086,6 +34103,396 @@ concepts:
           Mobile Entsorgungsstellen
 
           Ohne Auto, direkt im Quartier: Entsorgen Sie Sperrgut, Metall, Grubengut und Elektrogeräte im Mobilen Recyclinghof. Gut erhaltene Alltagsgegenstände dürfen Sie beim Tauschplatz gratis abgeben oder mitnehmen. Mindestens einmal im Jahr können Sie Sonderabfall beim Sonderabfallmobil entsorgen.
+- concept_id: city-basel-waste-collection
+  topic_id: waste
+  label: Household waste collection and collection zones in the City of Basel
+  description: The Bebbi-Sack, the two collection days a week, when to put waste out, and how a resident of the
+    City of Basel finds the collection zone that decides the dates.
+  aliases:
+  - garbage collection Basel
+  - waste collection day Basel
+  - when is the rubbish collected in Basel
+  - Bebbi-Sack
+  - Abfuhrtag Basel
+  - Kehricht Basel
+  - Abfuhrzone Basel
+  - Abfuhrplan Basel
+  questions:
+  - When is the household waste collected in Basel, and when do I put the bags out?
+  - Wann wird in Basel der Kehricht abgeholt, und wann stelle ich die Säcke raus?
+  source_terms:
+  - BebbiSagg
+  - Bebbi-Säcke
+  - Trottoir
+  - Stadtreinigung
+  - Abfuhrplan
+  - Abfuhrzone
+  - Zonensuche
+  required_context: []
+  required_user_facts: []
+  notes:
+  - Added on 2026-09-24 as the concept the open-data collection calendar stands behind; the calendar connector serves
+    its dates by collection zone. Facts, description, aliases, questions and source_terms authored by the assistant
+    (Claude) from the saved record; aliases and questions are not taken from the cited pages; source_terms occur
+    verbatim in the cited excerpts and the build verifies them.
+  not_served:
+  - the collection rules of Riehen and Bettingen
+  - bag, vignette and container fees
+  - recycling points and the Abfall-ABC
+  facts:
+  - fact_id: city-basel-waste-collection-1
+    statement: 'City of Basel: household waste goes in the official blue fee bag, the BebbiSagg, sold in 10, 17,
+      35 and 60 litres; on the fixed collection days of their quarter residents put the bags out on the pavement
+      twice a week, and the city cleaning service (Stadtreinigung) collects them.'
+    language: en
+    jurisdiction: CH-BS-2701
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Abfallabfuhr | Kanton Basel-Stadt (https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr),
+        saved 2026-09-24
+      reviewed_on: '2026-09-24'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - Written by the coordinating assistant on 2026-09-24 from the saved record; not reviewed by a person.
+      - 'review: confirmed in a bulk review of 6 facts (Alexander Bobrovsky, 2026-09-24)'
+    evidence:
+    - document_id: doc-6611780fdbe91520554c
+      first_block: 28
+      last_block: 29
+      anchor:
+        source_url: https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr
+        document_id: doc-6611780fdbe91520554c
+        content_sha256: 1a29c9883db6eff019dd17fa1ee9523781614f850b766d793502aad0d69da0ef
+        raw_sha256: 333481dfba4336ce01db5174e6e2b843a66d32e149c994756e3a2f008c1716a9
+        block_ids:
+        - doc-6611780fdbe91520554c:b00028
+        - doc-6611780fdbe91520554c:b00029
+        block_hashes:
+        - 281cadab8a568d77d09cdfcec1d6cde45ab3eb405263de7c2efffb78b69cc147
+        - 2d26c1c91b391e7302177789b655147c319ced28032ddf3352507489200a7a24
+        heading_path:
+        - Abfallabfuhr
+        - Hauskehricht bereitstellen
+        start: 938
+        end: 1482
+        excerpt: |-
+          Hausmüll, der nicht anderweitig recycelt werden kann, wird in Basel im offizielle Abfallsack entsorgt. Dieser offizielle, blaue Gebührensack der Stadt Basel heisst «BebbiSagg». Es gibt ihn in vier verschiedenen Grössen von 10, 17, 35 und 60 Liter. Bebbi-Säcke erhalten Sie im Detailhandel (z.B. Migros, Coop, Denner) an der Kasse oder beim Amt für Umwelt und Energie am Empfang.
+
+          An den festgelegten Abfuhrtagen Ihres Quartiers können Sie Bebbi-Säcke zweimal in der Woche auf dem Trottoir bereitstellen. Dort sammelt sie die Stadtreinigung ein.
+  - fact_id: city-basel-waste-collection-2
+    statement: 'City of Basel: Bebbi bags, green waste, metal, cardboard and paper are put out clearly visible at
+      the roadside from 19:00 on the evening before or by 07:00 at the latest on the collection day; waste put out
+      at the wrong time is unlawful and fined 50 francs.'
+    language: en
+    jurisdiction: CH-BS-2701
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Abfallabfuhr | Kanton Basel-Stadt (https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr),
+        saved 2026-09-24
+      reviewed_on: '2026-09-24'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - Written by the coordinating assistant on 2026-09-24 from the saved record; not reviewed by a person.
+      - 'review: confirmed in a bulk review of 6 facts (Alexander Bobrovsky, 2026-09-24)'
+    evidence:
+    - document_id: doc-6611780fdbe91520554c
+      first_block: 42
+      last_block: 46
+      anchor:
+        source_url: https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr
+        document_id: doc-6611780fdbe91520554c
+        content_sha256: 1a29c9883db6eff019dd17fa1ee9523781614f850b766d793502aad0d69da0ef
+        raw_sha256: 333481dfba4336ce01db5174e6e2b843a66d32e149c994756e3a2f008c1716a9
+        block_ids:
+        - doc-6611780fdbe91520554c:b00042
+        - doc-6611780fdbe91520554c:b00043
+        - doc-6611780fdbe91520554c:b00044
+        - doc-6611780fdbe91520554c:b00045
+        - doc-6611780fdbe91520554c:b00046
+        block_hashes:
+        - a26581298e2f8c9d8be83b253356849b6c8cba8e1e75fb9ef51f206b5f8582c1
+        - 23fe2dfa3f132434197ada00dfde5f506b5c495d490ecf8998f2f51d34d4eb50
+        - 0188d3ae2db91ed2e658d2cc34743e8933bd1f2cf98e7ec908ab0b2144da5f50
+        - 52c7f3410fb988e6b012c315eaa36670e507d0784b8becaf688623270772a0b4
+        - 65e6145480529d4a6f4d87ac6286aff6b0a13ff54e4f8d09c8da7e7c013fac0f
+        heading_path:
+        - Abfallabfuhr
+        - Abfälle rechtzeitig bereitstellen
+        start: 2421
+        end: 3053
+        excerpt: |-
+          Bitte stellen Sie Bebbi-Säcke, Grüngut, Metall, Karton und Papier am Vorabend ab 19 Uhr oder am Abfuhrtag bis spätestens 7 Uhr gut sichtbar am Strassenrand bereit.
+
+          An sehr heissen Sommertagen sammelt die Stadtreinigung Abfälle bereits ab 6 Uhr morgens ein. Bei Tagestemperaturen ab 32° C. sollten Sie Abfälle deshalb möglichst am Vorabend der Abfuhrtage ab 19 Uhr bereitstellen.
+
+          Richtiger Zeitpunkt
+
+          Bitte stellen Sie Ihre Abfälle nicht zu früh oder zu spät auf die Strasse. Wo Abfall herumsteht, sammelt sich rasch weiterer Abfall an.
+
+          Zur falschen Zeit bereitgestellter Abfall ist widerrechtlich und wird mit 50 Franken gebüsst.
+  - fact_id: city-basel-waste-collection-3
+    statement: 'City of Basel: the collection plan (Abfuhrplan) gives the dates on which the city cleaning service
+      collects household waste, paper, cardboard, bulky waste, metal and green waste; a resident unsure which collection
+      zone (Abfuhrzone) their address lies in finds it by entering the address in the zone search (Zonensuche).'
+    language: en
+    jurisdiction: CH-BS-2701
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Abfallabfuhr | Kanton Basel-Stadt (https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr),
+        saved 2026-09-24
+      reviewed_on: '2026-09-24'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - Written by the coordinating assistant on 2026-09-24 from the saved record; not reviewed by a person.
+      - 'review: confirmed in a bulk review of 6 facts (Alexander Bobrovsky, 2026-09-24)'
+    evidence:
+    - document_id: doc-6611780fdbe91520554c
+      first_block: 48
+      last_block: 48
+      anchor:
+        source_url: https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr
+        document_id: doc-6611780fdbe91520554c
+        content_sha256: 1a29c9883db6eff019dd17fa1ee9523781614f850b766d793502aad0d69da0ef
+        raw_sha256: 333481dfba4336ce01db5174e6e2b843a66d32e149c994756e3a2f008c1716a9
+        block_ids:
+        - doc-6611780fdbe91520554c:b00048
+        block_hashes:
+        - d0b1886f6ab7291984b6ce02bd02d1967007a467fb4dd3d8375d73d96d130d1c
+        heading_path:
+        - Abfallabfuhr
+        - Abfuhrpläne
+        start: 3068
+        end: 3217
+        excerpt: Im Abfuhrplan finden Sie die Daten, an denen die Stadtreinigung in Basel Hauskehricht, Papier,
+          Karton, Sperrgut, Metall und Grüngut bei Ihnen abholt.
+    - document_id: doc-6611780fdbe91520554c
+      first_block: 65
+      last_block: 65
+      anchor:
+        source_url: https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr
+        document_id: doc-6611780fdbe91520554c
+        content_sha256: 1a29c9883db6eff019dd17fa1ee9523781614f850b766d793502aad0d69da0ef
+        raw_sha256: 333481dfba4336ce01db5174e6e2b843a66d32e149c994756e3a2f008c1716a9
+        block_ids:
+        - doc-6611780fdbe91520554c:b00065
+        block_hashes:
+        - 59bca60695bfd1d39447992c9c2158e00aae003d89f24832c863831c1f62cae4
+        heading_path:
+        - Abfallabfuhr
+        - Abfuhrpläne
+        - Anmeldung Abfuhrerinnerung
+        start: 3776
+        end: 3929
+        excerpt: Sind Sie nicht sicher, in welcher Abfuhrzone sich Ihre Adresse befindet? Geben Sie in der Zonensuche
+          Ihre Adresse ein, um rasch eine Antwort zu erhalten.
+- concept_id: city-st-gallen-waste-collection
+  topic_id: waste
+  label: Household waste collection and collection areas in the City of St. Gallen
+  description: The weekly household-waste collection, the paper, cardboard and scrap-metal collections, and how
+    a resident of the City of St. Gallen finds the collection area that decides the dates.
+  aliases:
+  - garbage collection St. Gallen
+  - waste collection day St. Gallen
+  - when is the rubbish collected in St. Gallen
+  - Kehricht St. Gallen
+  - Abfuhrtag St. Gallen
+  - Abfuhrplan St. Gallen
+  - Abfuhrgebiet St. Gallen
+  questions:
+  - When is the household waste collected in St. Gallen, and how do I find my collection area?
+  - Wann wird in St. Gallen der Kehricht abgeholt, und wie finde ich mein Abfuhrgebiet?
+  source_terms:
+  - Kehrichtsammlung
+  - Altmetallsammlungen
+  - Abfuhrgebiet
+  - Strassenverzeichnis mit Abfuhrgebiet
+  - iCal-File
+  required_context: []
+  required_user_facts: []
+  notes:
+  - Added on 2026-09-24 as the concept the open-data collection calendar stands behind; the calendar connector serves
+    its dates by collection zone. Facts, description, aliases, questions and source_terms authored by the assistant
+    (Claude) from the saved record; aliases and questions are not taken from the cited pages; source_terms occur
+    verbatim in the cited excerpts and the build verifies them.
+  not_served:
+  - bag and vignette fees
+  - the push and e-mail reminders of the city's app
+  - recycling points
+  facts:
+  - fact_id: city-st-gallen-waste-collection-1
+    statement: 'City of St. Gallen: household waste is collected weekly; the waste calendar and the collection plans
+      of the individual streets hold the dates of the household-waste collection and of the paper, cardboard and
+      scrap-metal collections.'
+    language: en
+    jurisdiction: CH-SG-3203
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Abfuhrplan | Stadt St.Gallen (https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html),
+        saved 2026-09-24
+      reviewed_on: '2026-09-24'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - Written by the coordinating assistant on 2026-09-24 from the saved record; not reviewed by a person.
+      - 'review: confirmed in a bulk review of 6 facts (Alexander Bobrovsky, 2026-09-24)'
+    evidence:
+    - document_id: doc-01694fa88dc498848d7c
+      first_block: 91
+      last_block: 91
+      anchor:
+        source_url: https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html
+        document_id: doc-01694fa88dc498848d7c
+        content_sha256: d7d16c080409b2ba3736208131cc235eb37ecfd9a8ab7d7180d28b05322fa492
+        raw_sha256: 283b12b6d62dbec4b5878baf463febaf44d6bcb445b143042d8df4876fe0e9b6
+        block_ids:
+        - doc-01694fa88dc498848d7c:b00091
+        block_hashes:
+        - 847207a008229e8f88ab58688df9e1fa998d1405cb178c5a7757414bab895580
+        heading_path:
+        - Abfuhrplan
+        start: 1761
+        end: 2037
+        excerpt: Die Kehrichtsammlung erfolgt wöchentlich. Der Abfallkalender oder die Abfuhrpläne der einzelnen
+          Strassen enthalten die Daten der Kehrichtabfuhr sowie die Daten der Altpapier-, Karton- und Altmetallsammlungen.
+          Diese Informationen lassen sich auch als Push-Nachricht abonnieren.
+  - fact_id: city-st-gallen-waste-collection-2
+    statement: 'City of St. Gallen: the online collection plan first asks for the street to determine its collection
+      area (Abfuhrgebiet), then offers the dates for download as an iCal or PDF file.'
+    language: en
+    jurisdiction: CH-SG-3203
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Abfuhrplan | Stadt St.Gallen (https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html),
+        saved 2026-09-24
+      reviewed_on: '2026-09-24'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - Written by the coordinating assistant on 2026-09-24 from the saved record; not reviewed by a person.
+      - 'review: confirmed in a bulk review of 6 facts (Alexander Bobrovsky, 2026-09-24)'
+    evidence:
+    - document_id: doc-01694fa88dc498848d7c
+      first_block: 94
+      last_block: 95
+      anchor:
+        source_url: https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html
+        document_id: doc-01694fa88dc498848d7c
+        content_sha256: d7d16c080409b2ba3736208131cc235eb37ecfd9a8ab7d7180d28b05322fa492
+        raw_sha256: 283b12b6d62dbec4b5878baf463febaf44d6bcb445b143042d8df4876fe0e9b6
+        block_ids:
+        - doc-01694fa88dc498848d7c:b00094
+        - doc-01694fa88dc498848d7c:b00095
+        block_hashes:
+        - f3655dc82d0ae4d04a3ea7bc11515b87189d0abbc5a7233f05e3458041754007
+        - 50bbf6c2d92bfe7176876030993204980fae550a32580534dc1c5adc06d0b0dd
+        heading_path:
+        - Abfuhrplan
+        - 'So verpassen Sie keinen Abfuhrtermin mehr:'
+        - Möchten Sie die Abfuhrdaten in Ihren Kalender importieren oder im PDF Format?
+        start: 2162
+        end: 2329
+        excerpt: |-
+          Erfassen Sie zunächst Ihre Strasse, damit wir Ihr Abfuhrgebiet ermitteln können.
+
+          Danach erscheint eine rote Schaltfläche zum Download als «iCal-File» oder «PDF-File».
+  - fact_id: city-st-gallen-waste-collection-3
+    statement: 'City of St. Gallen: the collection dates are published as a PDF for each collection area (Abfuhrgebiet)
+      - A, B, C, D, E, F, G, H, I, K, L Ost and L West - and a street directory gives the collection area of each
+      street.'
+    language: en
+    jurisdiction: CH-SG-3203
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Abfuhrplan | Stadt St.Gallen (https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html),
+        saved 2026-09-24
+      reviewed_on: '2026-09-24'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - Written by the coordinating assistant on 2026-09-24 from the saved record; not reviewed by a person.
+      - 'review: confirmed in a bulk review of 6 facts (Alexander Bobrovsky, 2026-09-24)'
+    evidence:
+    - document_id: doc-01694fa88dc498848d7c
+      first_block: 105
+      last_block: 118
+      anchor:
+        source_url: https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html
+        document_id: doc-01694fa88dc498848d7c
+        content_sha256: d7d16c080409b2ba3736208131cc235eb37ecfd9a8ab7d7180d28b05322fa492
+        raw_sha256: 283b12b6d62dbec4b5878baf463febaf44d6bcb445b143042d8df4876fe0e9b6
+        block_ids:
+        - doc-01694fa88dc498848d7c:b00105
+        - doc-01694fa88dc498848d7c:b00106
+        - doc-01694fa88dc498848d7c:b00107
+        - doc-01694fa88dc498848d7c:b00108
+        - doc-01694fa88dc498848d7c:b00109
+        - doc-01694fa88dc498848d7c:b00110
+        - doc-01694fa88dc498848d7c:b00111
+        - doc-01694fa88dc498848d7c:b00112
+        - doc-01694fa88dc498848d7c:b00113
+        - doc-01694fa88dc498848d7c:b00114
+        - doc-01694fa88dc498848d7c:b00115
+        - doc-01694fa88dc498848d7c:b00116
+        - doc-01694fa88dc498848d7c:b00117
+        - doc-01694fa88dc498848d7c:b00118
+        block_hashes:
+        - 190c8dee2d112a004f6ffd63e80744a0566d454a6db92e580d563a5cc53a3448
+        - b463b75ef35ed471887f0320e2a59a3bcaa594a176398c87db1344679923b7d3
+        - bec2fd5f378047b9f2a1fbe4ad8e3698bfae48597682ad14c3903262e77f6607
+        - d643eb97fd1c901c93f1b71acd660d4ce116ea5386eb46da9e47fc57c433057e
+        - 76042fdccb74440fd8c7518170466ed3a3a267f8de3d48f686fea16be23aea14
+        - 3dd19ef1481e0697fe18ef4945d3b95948212b2237082cd17625c4963ed6ef69
+        - 38f89f3b9bfb25fed885be5fd1e0a05d79895069d44ba18850d3606a00a005bb
+        - 4de63bdbff452844592b7cf5e33b17fba50edd803f7cfc2d8c03e1f056caa216
+        - 39a2b07ab00d0fd57090d546129329752e43c0fdbe05bcf89801d828729524d3
+        - e63688e6bcce1f08c84b86b34b04f22e75650f3f6fbf9deaa62b80cc94efb7cf
+        - 7bbcfcfb550ca52e02f96a703993e3e22830fcd7b7b0c37a154bb4955b19ca4e
+        - 1af4b82c02c050e93269c2a8f81bedad21fe1a844fcb49fa94bfb77037189cdd
+        - ad60573c33e0eceb065977fe5759d90bdb5317082cf93ff449cfc1414798b022
+        - ae02522bb8ab58b05a3f4be63f5d5db8a5d703e4e9600c8f4dcb4925b50d2a7b
+        heading_path:
+        - Abfuhrplan
+        - E-Mail
+        - Abfuhrdaten nach Abfuhrgebiet als PDF-Version
+        start: 3116
+        end: 3774
+        excerpt: |-
+          Abfuhrdaten nach Abfuhrgebiet als PDF-Version
+
+          Entsorgungsinfo Abfuhrgebiet A (751 kB, PDF)
+
+          Entsorgungsinfo Abfuhrgebiet B (839 kB, PDF)
+
+          Entsorgungsinfo Abfuhrgebiet C (803 kB, PDF)
+
+          Entsorgungsinfo Abfuhrgebiet D (853 kB, PDF)
+
+          Entsorgungsinfo Abfuhrgebiet E (818 kB, PDF)
+
+          Entsorgungsinfo Abfuhrgebiet F (838 kB, PDF)
+
+          Entsorgungsinfo Abfuhrgebiet G (850 kB, PDF)
+
+          Entsorgungsinfo Abfuhrgebiet H (776 kB, PDF)
+
+          Entsorgungsinfo Abfuhrgebiet I (830 kB, PDF)
+
+          Entsorgungsinfo Abfuhrgebiet K (788 kB, PDF)
+
+          Entsorgungsinfo Abfuhrgebiet L Ost (804 kB, PDF)
+
+          Entsorgungsinfo Abfuhrgebiet L West (807 kB, PDF)
+
+          Strassenverzeichnis mit Abfuhrgebiet (112 kB, PDF)
 - concept_id: city-lugano-waste-disposal
   topic_id: waste
   label: Handing over household, recyclable and bulky waste in the City of Lugano
