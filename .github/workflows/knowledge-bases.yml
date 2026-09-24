@@ -43,6 +43,8 @@ jobs:
   packs:
     runs-on: ubuntu-latest
     env:
+      # A push installs this version from PyPI, so it names a version that is published there: the newest one, and
+      # a newer one only once its tag has published it. Code that is not on PyPI yet is checked with code_ref.
       VERSION: ${{ inputs.swisstip_version || '0.2.5' }}
       CODE_REF: ${{ inputs.code_ref }}
     steps:

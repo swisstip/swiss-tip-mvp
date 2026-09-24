@@ -195,7 +195,7 @@ def main(argv=None) -> int:
         served = run(["docker", "logs", name]).stderr.count(" tool=")
         step("the container's log records the check's tool calls", served > 0, f"{served} tool call lines")
 
-        # The licence files come from the basic image, outside the release mount point; the README is the pack's.
+        # The licence files come from the slim MCP image, outside the release mount point; the README is the pack's.
         documents = run(["docker", "exec", name, "ls", "/usr/share/doc/swiss-tip"])
         carried = documents.stdout.split()
         step("the image carries LICENSE and NOTICE", {"LICENSE", "NOTICE"} <= set(carried),

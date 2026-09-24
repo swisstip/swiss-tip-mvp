@@ -1,10 +1,13 @@
 # Repository instructions
 
-**Last update:** 20 September 2026
+**Last update:** 23 September 2026
 
 ## The code
 
-- This repository holds data: the packs under `releases/<pack>/`, the place
+- This repository holds data: the packs under `releases/<pack>/`, their
+  datasets under `datasets/<pack>/<dataset>/` (open-data tables served by a
+  dataset connector behind a concept of the pack, see
+  [datasets/README.md](datasets/README.md)), the place
   register under `config/places/` and the checks of the packs under
   `scripts/test/`. The code that builds and serves the packs is the sibling
   repository [swiss-tip](https://github.com/swisstip/swiss-tip); its
@@ -16,7 +19,8 @@
   packs directory: `--packs-dir <this checkout>` or `SWISSTIP_PACKS`. The
   server takes a pack's `release.json` with `--release`.
 - The runs of the packs (saved pages, text datasets, working files) live
-  under the Git-ignored `.local/<pack>/`, not in the pack folder.
+  under the Git-ignored `.local/<pack>/`, not in the pack folder; the
+  downloaded files of a dataset under `.local/<pack>/datasets/<dataset>/`.
 
 ## Pack files
 

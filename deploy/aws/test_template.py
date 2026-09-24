@@ -113,6 +113,30 @@ class TemplateTests(unittest.TestCase):
         self.assertEqual(secret["Condition"], "HostDemo")
         self.assertEqual(secret["Properties"]["GenerateSecretString"]["If"][0], "DemoPasswordGiven")
 
+    def test_the_calendar_connector_shares_the_server_namespace_behind_its_profile(self):
+        compose = yaml.safe_load(text(HERE / "compose.yaml"))
+        calendar = compose["services"]["calendar"]
+        self.assertEqual(calendar["profiles"], ["calendar"])
+        self.assertEqual(calendar["network_mode"], "service:swiss-tip")
+        self.assertNotIn("ports", calendar)
+        self.assertIn("SWISSTIP_CONNECTORS=${SWISSTIP_CONNECTORS:-}", compose["services"]["swiss-tip"]["environment"])
+        # The profile list and the connector address follow the parameter; the address is loopback, nothing else.
+        profiles = self.variables["Profiles"]["If"]
+        self.assertEqual(profiles[0], "HostDemo")
+        self.assertEqual(profiles[1]["If"], ["HostCalendar", "demo,calendar", "demo"])
+        self.assertEqual(profiles[2]["If"], ["HostCalendar", "calendar", ""])
+        self.assertIn('if [ "$CALENDAR" = yes ]; then\n  echo "SWISSTIP_CONNECTORS=http://127.0.0.1:8100" >> .env', self.rest)
+        self.assertIn("CALENDAR='${Calendar}'", self.head)
+        self.assertEqual(self.template["Parameters"]["Calendar"]["AllowedValues"], ["yes", "no"])
+
+    def test_the_welcome_panel_is_downloaded_or_generic_and_mounted_read_only(self):
+        compose = yaml.safe_load(text(HERE / "compose.yaml"))
+        self.assertEqual(compose["services"]["demo"]["volumes"], ["./welcome.json:/etc/swiss-tip/welcome.json:ro"])
+        self.assertIn("WELCOME_URL='${WelcomeUrl}'", self.head)
+        self.assertIn('curl -fsSL --retry 3 -o welcome.json "$WELCOME_URL"', self.rest)
+        self.assertIn('"questions": []', self.rest)
+        self.assertTrue(self.template["Parameters"]["WelcomeUrl"]["Default"].startswith("https://raw.githubusercontent.com/"))
+
     def test_passwords_reach_the_host_through_their_secrets_only(self):
         parameters = self.template["Parameters"]
         passwords = [name for name in parameters if name.endswith("Password")]

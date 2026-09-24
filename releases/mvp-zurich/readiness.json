@@ -1,36 +1,37 @@
 {
-  "schema_version": "swiss-tip-readiness/v1",
+  "schema_version": "swiss-tip-readiness/v2",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-19-v15",
-  "release_sha256": "9600b89119ab9a58bc1adb8d5d2570d12c23236a5f0677faf4507e563c3e1092",
-  "content_sha256": "7e225933d2ab068edf3f89a9543b45ce97f1fdb192ab743c600e0ec5af9a82ac",
-  "suite_sha256": "86c0709a60d8fab5863e7cee09abaa738fbb78f2718ea7aa73dc28fa5bfdf94d",
-  "attested_at": "2026-09-19T18:46:48.708170Z",
+  "release_id": "mvp-zurich-2026-09-24-v1",
+  "release_sha256": "8bdee776facee183633573323c6c09f8607bf30f785ab229fe22f8aa9aec271f",
+  "content_sha256": "baa03da3f709db46598be6e9515fbe8bf6cb8a3ae2524683ee02388b136fe0fc",
+  "suite_sha256": "539aa78bd36d4c97bace27b8428fa0fa0a11134cd646284477ff291945986651",
+  "suite_file_sha256": "22b57b31d8bb5596a42e16f22fb19e7060c702ff6f2439b1c46a167f6c72e3d9",
+  "attested_at": "2026-09-24T06:47:47.304091Z",
   "attested_by": "Alexander Bobrovsky",
   "gates": [
     {
       "gate": "G1",
       "title": "the release validates against the text dataset and the re-hashed saved responses",
       "status": "passed",
-      "detail": "164 saved responses re-hashed"
+      "detail": "336 saved responses re-hashed"
     },
     {
       "gate": "G2",
-      "title": "the build dropped no fact",
+      "title": "the build report is current and dropped no fact",
       "status": "passed",
-      "detail": "0 dropped"
+      "detail": "all build inputs match; 0 dropped"
     },
     {
       "gate": "G3",
       "title": "every blocking acceptance case passes",
       "status": "passed",
-      "detail": "80 blocking case(s) pass"
+      "detail": "139 blocking case(s) pass"
     },
     {
       "gate": "G4",
       "title": "stale_from lies at least 14 days after the attestation and after the policy date",
       "status": "passed",
-      "detail": "stale from 2026-11-18, runway until 2026-10-03, policy date 2026-09-19"
+      "detail": "stale from 2026-11-22, runway until 2026-10-08, policy date 2026-09-23"
     },
     {
       "gate": "G5",
@@ -46,14 +47,37 @@
     }
   ],
   "cases": {
-    "total": 80,
-    "blocking": 80,
+    "total": 139,
+    "blocking": 139,
     "quarantined": []
   },
   "review_statuses": {
-    "human-reviewed": 601
+    "human-reviewed": 1273
   },
-  "snapshot_date": "2026-09-19",
-  "stale_from": "2026-11-18",
-  "min_runway_days": 14
+  "snapshot_date": "2026-09-23",
+  "stale_from": "2026-11-22",
+  "min_runway_days": 14,
+  "coverage": {
+    "policy": "report",
+    "candidates": 529,
+    "content_sections": 3398,
+    "cited_sections": 858,
+    "dispositioned_sections": 1251,
+    "unclassified_sections": 1289,
+    "clean": false
+  },
+  "semantic_index": {
+    "file_sha256": "847cf893fb1c93ae1f416791515934f038e0cd7c524179e983df39aab49494d7",
+    "content_sha256": "9031254bd4c52946ed950d6ee15a8ade5cade4e05dccc3205b52e40ada5a3ec3",
+    "release_id": "mvp-zurich-2026-09-24-v1",
+    "release_content_sha256": "baa03da3f709db46598be6e9515fbe8bf6cb8a3ae2524683ee02388b136fe0fc",
+    "model": "qwen3-embedding:0.6b",
+    "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "dimension": 1024,
+    "input_version": "concept-text/v1",
+    "query_version": "qwen3-retrieval/v1",
+    "query_prefix_sha256": "225074d96294878a7c9677efb6a083b5fb5e58760fa968f889a1e422b7395551",
+    "min_score": 0.5,
+    "candidate_limit": 10
+  }
 }

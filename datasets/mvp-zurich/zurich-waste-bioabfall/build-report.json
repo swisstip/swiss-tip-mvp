@@ -1,0 +1,22 @@
+{
+  "dataset_id": "zurich-waste-bioabfall",
+  "dataset_version": "2026-09-23-v1",
+  "rows": 1253,
+  "repeated_rows_dropped": 0,
+  "postal_codes": 24,
+  "period": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "sources": [
+    {
+      "url": "https://data.stadt-zuerich.ch/dataset/entsorgungskalender_bioabfall/download/entsorgungskalender_bioabfall_2026.csv",
+      "file": "entsorgungskalender_bioabfall_2026.csv",
+      "sha256": "6040ce9917e5c8e0b6af5416a404d0df0bb0ee62ef4b965845dbeb6731802c0d",
+      "bytes": 23830,
+      "downloaded_on": "2026-09-23",
+      "fetched": true,
+      "rows": 1253
+    }
+  ]
+}

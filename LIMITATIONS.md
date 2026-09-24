@@ -1,16 +1,32 @@
 # Limitations
 
-**Last update:** 20 September 2026
+**Last update:** 24 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
-claim. It applies to the committed release `mvp-zurich-2026-09-19-v15` and is
+claim. It applies to the committed release `mvp-zurich-2026-09-24-v1` and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
-[COVERAGE.md](COVERAGE.md).
+[COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
+outside the submission: its release stays attested and frozen, and nothing
+below is measured on it.
+
+- **Pages the run holds that no fact cites.** Until 22 September 2026 nothing
+  in the pipeline compared the text dataset with the release: the release's
+  document list is derived from its citations, so validating it could not
+  find a saved page outside it. The audit of that day found 29 catalogued
+  German pages and five federal acts fetched and never cited, one of them
+  holding the five-year settlement rule an acceptance case forbade. The build
+  now has a `coverage` stage (`curation-coverage.json` and `.md` next to the
+  release) that lists every content section of every candidate record no
+  fact cites and no disposition in `curation-coverage.yaml` names; the pack
+  runs it under `coverage_policy: report`, so an open section is a number in
+  that report and not yet a build error. The first report and the
+  dispositions written against it are described under "Retrieval
+  limitations".
 
 ## Review status: reviewed by one person, not by a lawyer
 
-**All 601 facts are `human-reviewed`**, by one named reviewer: the 104 facts
+**All 1,273 facts are `human-reviewed`**, by one named reviewer: the 104 facts
 of the residence topic (78) and of the cantonal migration-office contacts
 (26) on 14 September 2026, the 149 facts of the five topics added on
 15 September 2026, social insurance (25), tax at source (26), driving
@@ -39,7 +55,11 @@ same day by five assistant subagents from the saved pages and checked
 statement by statement by the coordinating assistant (family allowances and
 parental leave, renting a home, marriage, leaving the City of Zurich, pillar
 3a, unemployment, accident insurance and customs on moving; 14 concepts), on
-18 September 2026.
+18 September 2026, and the 92 facts of 22 September 2026, confirmed in the
+console that day: the nine of `permit-c-five-years` and
+`zh-permit-c-five-years`, the 77 of the twenty concepts curated from pages
+the catalogue already held, and the six whose review was reopened when a
+second citation of the law was added to them.
 
 Every statement was first written by an assistant reading the cited page and
 choosing the excerpt; for the 149 added facts, the build verified that each
@@ -73,6 +93,28 @@ in the `limitations` of every tool result and in `--health`.
 
 What that review is not:
 
+- **Of the 92 facts of 22 September 2026, in one sitting.** Twenty
+  concepts were drafted that day from pages the catalogue and the text
+  dataset already held; no source was added and no page was fetched. They
+  are the social security agreements (ZAS), the third generation in
+  naturalisation and the City of Zurich's German and civic-knowledge tests,
+  the city citizenship of a Swiss citizen, three Zurich family-reunification
+  routes, the EU/EFTA and third-country permit cards, the conditions of
+  third-country labour-market admission and the Zurich procedure, the
+  cantonal permit card, the entry permits for retirees and close relatives,
+  travel documents, and where a particular item is disposed of in the city.
+  Six facts that a reviewer had confirmed were given a second citation of
+  the law they rest on (BüG, BüV, KVG, DBG) and their review was reopened,
+  because the reviewer had seen the first excerpt only; their statements did
+  not change. The build verified every excerpt and every German search term,
+  and the regression cases were written and measured before the review. The
+  reviewer confirmed all 92 in the console on 22 September 2026, in one
+  sitting and not card by card against the excerpts a second time.
+  The two concepts of the five-year routes by nationality were drafted from
+  SEM's "Ausweis C EU/EFTA" and the Canton of Zurich's
+  "Niederlassungsbewilligung", both already saved, and were confirmed
+  earlier the same day, after the cases UAT-5 (updated), UAT-65, UAT-66 and
+  five regression cases had been written against them.
 - **Not of the English excerpts of 19 September 2026.** On 112 facts the
   English version of the cited federal page stands next to the reviewed
   German excerpt (and on one fact the German version next to a reviewed
@@ -184,6 +226,101 @@ review, which the coverage root no longer carries since release
 | 17 September 2026 | 49 (entry and visas, and two Zurich family-reunification concepts) | in bulk groups |
 | 18 September 2026 | 29 (voting rights, tax-at-source tariffs) | 5 one by one, 24 in bulk groups |
 | 18 September 2026 | 106 (expat life) | in two bulk groups of 100 and 6 |
+| 22 September 2026 | 117 (settlement permit 57, integration 25, naturalisation 19, and 16 across four other topics) | in bulk groups |
+| 23 September 2026 | 113 (customs) | hardest first: the 23 that carry a number, then the five single-page concepts, then the rest |
+| 23 September 2026 | 98 (basic health insurance) | hardest first, against a written brief: the 13 that carry a number, a date or a threshold, then nine recorded judgement calls, then six German legal terms rendered into English, then the rest |
+| 23 September 2026 | 131 (work and unemployment) | hardest first, against a written brief: one decision settling thirteen facts on whether a threshold is a rule or an amount, then the 39 facts carrying a number, then nine recorded judgement calls |
+| 23 September 2026 | 90 (AHV, the pillars and retirement) | hardest first, against a written brief: the two rules the pages turned out not to state, a preserved defect in a publisher's page, then the 22 facts carrying a number and six recorded judgement calls |
+| 23 September 2026 | 124 (registering on arrival in all 26 cantons) | against two written briefs with an English rendering beside each of the 49 French and Italian excerpts, and a per-fact note on the twelve that carry a figure that is not fourteen days, a direction of travel that inverts easily, a duty owed to two offices, or a reading that rests on a canton's law rather than a page a resident would read |
+| 24 September 2026 | 5 (Lugano waste) | in the console |
+
+## Gaps in the Lugano waste extension of 23 September 2026
+
+- **One city outside Zurich, one subject.** A survey of the waste calendars
+  of the ten largest cities after Zurich
+  (`.local/experiments/2026-09-23-waste-calendars-other-cities.md`) found that
+  Lugano alone publishes no collection day, so a general assistant is most
+  likely to invent one there. Only how waste is handed over in Lugano is
+  served. Collection days, recycling points and fees in Basel, Geneva, Bern
+  and every other city remain out of scope and are rejected with
+  `jurisdiction_not_covered`.
+- **What the Lugano facts do not say.** The collection days and times the
+  city's Urban Spaces Division sets, the locations and opening hours of the
+  ecopunti and ecocentri, the bag prices and the basic waste fee are not
+  served, although the saved pages state some of them.
+- **Four facts rest on the ordinance, one on a page.** The ordinance is a
+  13-page PDF whose extracted text is one block per page, so each citation
+  is a whole page. Its reading order was not checked beyond the cited
+  articles.
+- **Colloquial questions match weakly.** A question naming an object
+  ("Dove porto un vecchio divano a Lugano?") has no alias to match and
+  returns a weak match. Questions about collection days, bags, bulky waste
+  or the Ecocard match strongly in English, German and Italian.
+
+## Gaps in the cantonal registration wave of 23 September 2026
+
+- **How these 124 facts were made.** They were proposed by kb-reader
+  subagents, one per saved page, and merged by the coordinating assistant
+  after checking mechanically that every source term occurs verbatim in the
+  cited blocks. That check catches a term that drifted from its evidence, not
+  a statement that misreads it, so it is much weaker than a person reading the
+  statement against its excerpt. All 124 were then confirmed by the named
+  reviewer on 23 September 2026 in the admin console's review queue.
+- **Cover is uneven, because the cantons publish unevenly.** All 25 cantons
+  outside Zurich state a period and all but Appenzell Innerrhoden name the
+  office, but only 15 describe the permit application, 17 the change of canton
+  and 10 an online channel. A concept with no fact for a canton means that
+  canton was not found to publish it, not that no rule exists.
+- **Zurich is not served by these concepts.** Its rule lives in its own,
+  fuller concepts, so resolving a `cantonal-*` concept for Zurich returns
+  `OUT_OF_COVERAGE` with `jurisdiction_not_covered` rather than another
+  canton's period.
+- **Most periods come from a cantonal statute, not from a service page.** Of
+  the cantons in this wave most state the registration period only in their
+  law; several publish service pages that describe the procedure without ever
+  giving a number. The basis (`law`, `directive`, `guidance`, `summary`) is
+  recorded on every excerpt, so a caller can see which kind of source an
+  answer rests on.
+- **The statute excerpts are coarse.** The cantonal collections serve PDFs
+  whose text extracts in large blocks: the largest block of a statute is a
+  median 2,204 characters against 495 for a service page. An excerpt selected
+  around the provision a statement rests on therefore often carries the
+  neighbouring provisions too. Nothing is paraphrased - the excerpt is simply
+  wider than the sentence in question.
+- **A cantonal statute URL pins the version that was read.** Most cantonal
+  collections run the same application, where the page a reader sees is an
+  empty shell and the text arrives from an API that returns the *current*
+  consolidated version behind a numbered version id. Resolving the PDF through
+  that API is how this wave guaranteed it read the version in force; the cost
+  is that the saved URL keeps returning that same version. A later
+  consolidation is published under a new id, so re-fetching the same URL would
+  **not** notice that the law had changed. Freshness measures the age of the
+  saved copy, not whether the law moved.
+- **Jura's statute is not cited at all.** Its collection addresses documents
+  with a query string, which a source URL in this pack may not carry, and four
+  query-free forms all return an error. Jura's facts rest on its service pages
+  only.
+- **Schwyz's Migrationsgesetz is not cited.** Its text appears in this pack's
+  corpus only inside the amendment clause of another act, which would let the
+  release quote an amendment clause as operative law; it is recorded as a
+  catalogue gap instead.
+- **Contradictions within a canton are served, not resolved.** Where a
+  canton's own sources disagree - Appenzell Innerrhoden's eight days against
+  fourteen, Zug's statute against its migration office, Fribourg's commune
+  against its cantonal service, Nidwalden's two live pages on whether a
+  foreign national may use the municipal online service - both facts are
+  served, each scoped to what its source covers and naming it.
+- **French and Italian are indexed, but questions are still asked in German
+  and English.** The wave added 30 French and Italian source terms copied
+  verbatim from Vaud, Valais and Ticino pages, so a French or Italian question
+  about registration now finds its concept directly instead of having to be
+  translated into German first. `question_languages` stays `de` and `en`: the
+  sample questions on every concept are unchanged.
+- **A French or Italian question naming Zurich is served worse than one naming
+  Vaud or Ticino.** It now ranks the `cantonal-*` concepts above Zurich's own,
+  and resolving them for Zurich returns `OUT_OF_COVERAGE`. The caller is
+  refused rather than misinformed, but is not routed to the Zurich concepts
+  that do hold the answer.
 
 ## Gaps in the English versions of 19 September 2026
 
@@ -649,6 +786,55 @@ implemented.
 
 ## Routing defects the regression pack found
 
+- **What the health insurance wave cost the regression pack
+  (23 September 2026).** Taking the topic from eight concepts to seventeen moved
+  the rankings across the whole pack, and the replay of
+  `mvp-zurich-2026-09-23-v13` shows both directions of it. Sixteen quarantined
+  cases now pass lexically and fifteen with hybrid search. Five cases were lost
+  and are quarantined with the measurement behind each: Q-EN-17 and XC-12 still
+  find the concept they ask for and only fell from `strong` to `weak`, because
+  `match_strength` is a share of the lexical weight and the topic grew;
+  Q-EN-79 lost to `health-insurance-deadline`, which now carries the answer at
+  least as well as the two-fact `health-insurance-enrolment` it asks for;
+  Q-DE-13, Q-DE-60 and Q-DE-101 lost lexically to a health insurance concept and
+  pass with hybrid search; XC-13 and XM-16 lost the other way round. Measuring
+  each match named one mechanism: the tokeniser stems to six characters and a
+  short alias contributes each of its tokens on its own, so one everyday German
+  word can carry a concept into an unrelated question - `krank`, `hohe`,
+  `anpass`, `arbeit`. Six aliases written in that wave were removed for it,
+  which recovered XM-16 lexically; `Mutterschaftsurlaub` and
+  `Mutterschaftsleistungen` cannot be separated at all, because six characters
+  make them the same token.
+
+- **What the work and unemployment wave cost the regression pack
+  (23 September 2026).** Almost nothing, in contrast with the health insurance
+  wave the same day. Twelve new concepts and a new topic left the lexical replay
+  of `mvp-zurich-2026-09-23-v16` with no blocking failure at all, and cost the
+  hybrid replay one case: Q-EN-83, where the concept the case asks for is still
+  found and only its `match_strength` fell to weak as the release grew from 183
+  concepts to 195. It is quarantined with that measurement. The difference from
+  the earlier wave is most likely the alias discipline adopted after it - every
+  alias written here is a distinctive compound noun or a full question, and none
+  is a short phrase of common German words of the kind that hijacked four cases
+  in the morning.
+
+- **What the AHV wave cost the regression pack (23 September 2026).** Eleven new
+  concepts and a new topic cost four cases, of which one was repaired at the root
+  and three are held. The repair is the instructive one: the English sample
+  question of `swiss-social-insurance-map` began "I have just moved to Switzerland
+  - can you explain how the pension system works here?", and its everyday tokens
+  took a question about school information in Tamil away from
+  `city-zurich-school-languages`. The question was reworded to name the three
+  pillars and a generic alias dropped, which restored the case - the rule learned
+  for aliases in the health insurance wave applies to sample questions too. A
+  second repair followed after the review, when two generic entries on
+  `health-insurance-billing` were dropped and recovered XM-17. Of the three held,
+  two are share-based strength drops where the concept is still found, and the
+  third, Q-EN-100, is held for a reason worth reading: the concepts that now
+  outrank the expected one are the ones a reader would reach for, but the release
+  answers that question nowhere, so the case waits for a source rather than for a
+  ranking fix.
+
 - **A fact served to a group its statement excludes.**
   `zh-foreign-licence-exchange-11` ("professional drivers other than those
   with a licence from an EU or EFTA state must exchange the licence before
@@ -665,21 +851,191 @@ implemented.
   EU/EFTA labour markets) are routed to `third_country` only and are
   rejected for a UK national with `context_not_covered`. Whether they apply
   to UK nationals is a curation question the release does not answer.
-- **Permit letters F, N and S are not searchable.** `permit-types` lists
-  every permit card, and since release `mvp-zurich-2026-09-19-v10` its
-  search words name the F, N and S cards too ("Ausweis F", "Asylsuchende",
-  "Schutzbedürftige", "F permit provisionally admitted foreigners"). Lexical
-  search drops one-letter words, though, and the embedding does not pick up
-  the letter: "A colleague of mine has an F permit. What kind of permit is
-  that?" still reads `weak` and misses the concept in both modes (46th
-  lexically). The publisher's "vorläufig aufgenommene Ausländer" was left
-  out of the search words because it made the out-of-scope question on
+- **The permit letter S is not searchable lexically; F and N are since
+  22 September 2026.** `permit-types` lists every permit card, and since
+  release `mvp-zurich-2026-09-19-v10` its search words name the F, N and S
+  cards too ("Ausweis F", "Asylsuchende", "Schutzbedürftige", "F permit
+  provisionally admitted foreigners"). Until swisstip-runtime commit 603fa23
+  lexical search dropped one-letter words, so no card letter reached the
+  concept; since then one-character tokens are kept, and "A colleague of mine
+  has an F permit. What kind of permit is that?" ranks `permit-types` third
+  lexically and first in hybrid search, the mode the published image serves
+  (it was 46th). The verdict still reads `weak` in both modes, because "kind"
+  matches the German "Kind" of the family concepts, so Q-EN-76 stays
+  quarantined for that reason. The letter S is a stopword: "s" is the Zurich
+  German article ("Wo isch s Amt z Winterthur?"), so an S card reaches the
+  concept through the embedding only, and a pack that names a type S or Z
+  pays for that choice; the S permit is listed, not published, and OOS-45
+  stays quarantined. The publisher's "vorläufig aufgenommene Ausländer" was
+  left out of the search words because it made the out-of-scope question on
   applying for temporary protection ("vorläufiger Schutz") read `strong`.
+
+## Plain-language sources, and places outside the Canton of Zurich
+
+- **Some statements rest on a publisher's plain-language summary.** The
+  premium-information service priminfo.admin.ch states on every page that it
+  is written in plain language (Leichte Sprache), and ch.ch is the
+  Confederation's portal summary. Where a fact rests on one of them the
+  citation says so, its basis is `summary`, and the conditions and exceptions
+  behind it rest on the authority's own page or on the law. Search weighs an
+  act above a portal summary of the same rule.
+- **Outside the Canton of Zurich the pack publishes the migration-office
+  contact of the canton**, and nothing else cantonal or municipal for that
+  place. A caller in another canton gets the federal facts, that contact, and
+  the caveat `more_specific_jurisdiction_not_published`.
+
+## Customs: what the release does not publish
+
+- **The duty-free quantities per product are not served.** The Federal Office
+  for Customs and Border Security publishes the table of kilos, litres,
+  alcohol strengths and age limits as a graphic, which the text extraction
+  cannot read. `customs-duty-free-quantities` states the rule behind the
+  table - private use free of duty, sensitive goods charged above a quantity,
+  counted per person and per day - and says in its `not_served` that the
+  quantities themselves are not published here. A caller that states them is
+  inventing them, which UAT-73 tests.
+- **Tariff numbers, duty rates per product and the treatment of one
+  particular consignment** are named in `out_of_scope`; DECLINE-11 checks the
+  refusal.
+- **Two cited FOCBS pages date the same period differently.** The FAQ on
+  removal goods counts the two years of uncleared use of a vehicle from the
+  first day of entry; the page on moving with a vehicle counts them from the
+  change of residence. Both statements are served, each from the page that
+  says it, and each names the other in its notes. The release does not
+  resolve the difference, because neither page does.
+
+## Basic health insurance: what the release does not publish
+
+The wave of 23 September 2026 took the `health-insurance` topic from eight
+concepts to seventeen and served much of it from the act and the ordinances
+(KVG, KVV, KLV) beside the Federal Office of Public Health's own pages, because
+those pages state the cost-sharing amounts without a date. Four things are
+deliberately absent, and an answer that supplies them is not coming from this
+release.
+
+- **No premium, and no calculator.** The release publishes what makes premiums
+  differ - the canton, the premium region, the age group, the chosen franchise
+  and model - and never an amount, an average or a rate. The federal premium
+  comparison exists and the release does not reproduce it.
+- **No ombudsman, and no complaint route.** The plain-language portal names an
+  ombudsman as where to go when an insurer does not settle a bill. No official
+  source in this release carries that body, so `health-insurance-billing`
+  declares it as not served, together with how long an insurer may take to
+  reimburse and what to do when the bill cannot be paid.
+- **No European health insurance card.** The card appears in this corpus only on
+  a plain-language page, which may not carry a statement on its own (D4 of the
+  work order). What the release serves instead is the ordinance's own rule: the
+  insurance pays for treatment abroad in an emergency, an emergency needs a
+  temporary stay and a return journey that is not reasonable, there is none
+  where someone travels abroad in order to be treated, and at most twice the
+  Swiss amount is reimbursed.
+- **No division of a monthly premium.** The plain-language portal states that
+  an insurer bills to the day when a child is born at the end of a month, when
+  someone registers mid-month or when someone dies. Neither the act nor the
+  ordinance says so. What the release carries is the day on which cover begins
+  and ends (KVG Art. 5, KVV Art. 7 para. 3), which is the part that is grounded.
+
+Two further boundaries are worth naming. Supplementary insurance is a contract
+under the insurance contract act: the release serves the edge of the compulsory
+insurance against it - that an insurer may refuse an applicant, that the notice
+periods differ, that the old insurer may not make a change of basic insurance
+conditional on giving up the supplementary cover - and not what any policy
+covers. And the financing and supervision of the system, including how the
+Confederation and the cantons share the cost of premium reductions, is
+dispositioned as deferred rather than served, because it is not a question a
+resident asks about their own premium.
+
+## Work and unemployment: what the release does not publish
+
+The wave of 23 September 2026 created the topic `work-unemployment` with twelve
+new concepts and moved the two existing unemployment concepts into it unchanged.
+Five things are deliberately absent.
+
+- **No amount of benefit, and no calculator.** The release carries the rules -
+  the waiting days, the percentages of insured earnings, the frame periods, the
+  numbers of daily allowances - and never what a person will receive. Where a
+  page printed a franc figure the curation quoted it in a reviewer's note rather
+  than in the statement.
+- **No bridging benefit.** A reader curated it in full from the page on the end
+  of the entitlement, with its conditions and its maximum amounts. It is named in
+  `out_of_scope` together with the invalidity insurance and the supplementary
+  benefits, so those facts were removed before the merge and the page section is
+  dispositioned as out of scope.
+- **No social assistance.** The page on the end of the entitlement points people
+  to the social assistance of their municipality, and the release serves that
+  pointer and nothing else - no conditions, no amounts, no procedure. The German
+  word was deliberately kept out of the concept's search terms so that a
+  social-assistance question reaches the gap instead of the concept.
+- **No forms.** The unemployment insurance publishes a page of numbered forms,
+  and forms are named in `out_of_scope`; that page is dispositioned in full.
+- **No employee's share of short-time work, and no consent rule.** The SECO page
+  on short-time work is written for employers and states neither the share of
+  the lost earnings that is compensated nor whether the employee has to agree.
+  Both are declared as not served rather than supplied from the act.
+
+Two boundaries are worth naming. `employment-notice-and-reference` is a bounded
+extract of employment law, not a treatment of it: it carries the four statutory
+notice periods, the three protected periods and the right to a work reference as
+one SECO page prints them, and its `not_served` list names seventeen things it
+does not settle, from abusive dismissal to the contents of a reference. And the
+release states the coordination with the EU and EFTA the way the pages state it -
+work in a member state does **not** by itself create a Swiss claim, which is the
+opposite of what a caller usually assumes.
+
+**A gap left by the extraction.** The table of daily allowance counts by age and
+contribution months was not captured when the SECO page was extracted; only its
+two footnotes survive. The release therefore carries the additional 120 daily
+allowances for older insured persons and the maximum of 180 after a disability
+pension ends, but not the base counts - the core of "how many daily allowances do
+I get". Re-extracting that page would be needed to serve them.
+
+## AHV, the pillars and retirement: what the release does not publish
+
+The wave of 23 September 2026 created the topic `ahv-pension` with eleven
+concepts. Two of the things the wave set out to serve turned out not to be on the
+pages at all, and saying so is more useful than approximating them.
+
+- **No apportionment of a pension between countries.** The plan expected the
+  international concept to state that each state pays its own pension for the
+  periods completed there, and that insurance periods are taken into account for
+  the entitlement. Neither rule appears on either of the two international pages
+  of the AHV/IV information service, which cover only which country's system a
+  person is subject to, postings and the A1 certificate. Nothing was written for
+  them, and `ahv-international-coordination` declares the gap. A caller asking
+  whether their French years count towards a Swiss pension gets no answer from
+  this release, and a regression case is held open over exactly that question.
+- **No reduction or supplement rate for drawing a pension early or late.** The
+  page states only that both are calculated on actuarial principles. The familiar
+  percentages are not served.
+- **No pension or contribution amount, and no calculator.** Where a page printed a
+  franc figure it is quoted in the fact's provenance note rather than in the
+  statement, so a reviewer can see it without the release publishing it.
+- **No invalidity insurance, supplementary benefits or bridging benefit.** All
+  three are named in `out_of_scope` and appear in this topic only as things
+  explicitly not covered - including the rule that the thirteenth pension reaches
+  old-age pensions only, so survivors' and invalidity pensions stay at twelve a
+  year.
+- **Only one of the 26 cantonal compensation offices.** The directory page lists
+  them all with addresses; only the Zurich entry is served, and the office's
+  address and opening hours are left to the Zurich office-contacts topic.
+
+**A defect in a source that the release shows rather than hides.** The page on
+old-age pensions still states the pre-reform reference ages, 64 for women and 65
+for men, in the present tense beside the paragraph giving the rule in force since
+1 January 2025. `ahv-reference-age-2` leads with the rule in force, keeps 64 as
+the base the three-month steps rise from, and reports that the page still carries
+the stale sentence. Both blocks are cited.
+
+**Nine facts are cantonal that read as federal.** The individual AHV account and
+most of the contribution-gap material rest on SVA Zurich pages alone, and the
+build refuses a federal statement resting only on a cantonal source. They are
+served as `CH-ZH`, so a caller outside the Canton of Zurich is told the release
+does not speak for their canton on those points.
 
 ## Retrieval limitations
 
 - **Authored search words are the assistant's, and they move rarity
-  weights.** All 133 concepts carry authored aliases and at least one
+  weights.** All 206 concepts carry authored aliases and at least one
   English and one German sample question; the build refuses a concept
   without one in each language (`question_languages` of the curation, told
   by the questions' function words). On 19 September 2026 the last 13
@@ -728,6 +1084,117 @@ implemented.
   its concept rose to sixth lexically, below concepts that match "wohne",
   "Deutschland", "Stelle" and "Zürich". The pack now passes 539 cases
   lexically and 532 with hybrid search, of 560, with 28 quarantined.
+  Release `mvp-zurich-2026-09-22-v1` shows the same weighting from the other
+  side. Its two settlement-agreement concepts carry the publisher's
+  "Niederlassungsvereinbarung" and "Niederlassungsvertrag", which the
+  six-character prefix stem folds into the same token as
+  "Niederlassungsbewilligung": eleven concepts now carry that stem instead of
+  nine, its rarity weight fell, and the German question "Ab wann erhalte ich
+  die Niederlassungsbewilligung C?" (Q-DE-4) lost `permit-c` from the first
+  three lexical hits. The case was never won on merit: `permit-c`, `family-c`
+  and `tax-at-source-liability` tie on that one stem (8.28 before, 7.76
+  after), while the two concepts that outrank them match `erhalt`, a stem
+  only two concepts carry, and neither of them answers the question. Q-DE-4
+  is quarantined for the lexical mode with that measurement; it passes with
+  hybrid search.
+- **A verdict is release-size dependent, and twenty concepts moved eight of
+  them.** `match_strength` reads `strong` when the anchored weight of the
+  query reaches 1.5 or its lexical share reaches 0.5. The weight is an
+  absolute sum of rarity weights, and every concept added to a topic lowers
+  the weight of the words that topic uses, so a query whose weight sat just
+  above the line crosses it when the release grows. Between
+  `mvp-zurich-2026-09-19-v15` (133 concepts) and
+  `mvp-zurich-2026-09-22-v1` (151), eight questions fell from `strong` to
+  `weak` **without their ranking changing**: Q-DE-37 (1.5574 to 1.4559),
+  Q-EN-99 (1.6017 to 1.4971), Q-IT-7 (1.5165 to 1.4619), XC-39 (1.5002 to
+  1.4559), XC-45 (1.5433 to 1.4174), N-EN-A4 (1.5665 to 1.4803, while its
+  concept rose from third to second), Q-FR-12 (share 0.5000 to 0.4812) and
+  the question of the acceptance case UAT-46 (1.5759 to 1.4258). In every
+  one of them the expected concept is still the first hit. They are
+  quarantined in the regression pack with their measurements; UAT-46 is
+  listed in `scripts/test/packs/test_match_strength.py`, whose question
+  bank otherwise requires a strong verdict. A caller that treats `weak` as
+  "not covered" declines a question the release answers, which is the cost
+  of this drift; raising or normalising the threshold is a change to
+  `service.py` in the code repository and has not been made. The cantonal
+  wave of 23 September 2026 added 124 facts to the residence topic and moved
+  exactly one more: the acceptance case UAT-56 fell to `anchored_weight`
+  1.4386 with `lexical_share` 0.4145, `tenancy-agreement` still its first
+  hit. Measured against the committed release, that and one false positive
+  below are the **only** two verdicts this wave changed. Thirteen further
+  suite questions (UAT-43, 44, 63, 85, 87, 88, 92, 98, 103, 104, 107, 110,
+  111) fail the same test on the committed release and pre-date the wave;
+  they are deliberately **not** allowlisted, so the test still reports them.
+- **The coverage report: 975 units nobody has answered for.** The
+  `coverage` stage joined the text dataset of the run with this release on
+  22 September 2026 (`releases/mvp-zurich/curation-coverage.json` and `.md`).
+  Of 337 candidate records it asks for 2,077 units: 321 pages by their
+  content sections, 15 statutes as one unit each (a curator cites articles
+  from a law; its other articles are not a gap), one tariff page rolled up to
+  its top two heading levels, and 75 sections of repeated site boilerplate
+  set aside and traced to their citations. Nine texts recur on five or more
+  pages: the Migrationsamt's Berninastrasse address with its counter hours
+  (nine pages) and the Stadthaus Einbürgerungen address (five) are each cited
+  once, from the office's own page; the sentence that documents can be handed
+  in at the counter, online or by post is a fact on five of the seven
+  application guides that carry it; four texts are cited nowhere and rightly
+  so (an SVA browser warning, the SEM directive list a navigation rule
+  covers, two variants of the Migrationsamt's notice of a closure on
+  14 September 2026); and an accordion widget instruction on 25 Canton of
+  Zurich pages lies inside cited block ranges on two of them, which a
+  reviewer may narrow. The threshold is the pack's `boilerplate_min_pages`
+  (the default five, counted per host); below it the text index still marks
+  283 sections on 98 candidate records as repeated on two or more pages of
+  their host, and the reading views carry the mark on every block, so a
+  reader knows a card is a card before deciding what to cite. Facts cite 558
+  units; 41 dispositions (23 drafted by the assistant and reviewed and signed
+  by the pack's reviewer on 22 September 2026, two deferrals and sixteen
+  entries recording the reviewer's two scope decisions of the same day)
+  settle 544 more (the French and Italian SEM pages as duplicates of the
+  cited German ones, sixteen hub and link pages as navigation, five asylum
+  pages against the manifest's `asylum` entry, and the integration pages
+  described below); **975 units in 156 documents are
+  unclassified**. Two groups, 309 units, needed a scope decision, taken on
+  22 September 2026. SEM's border-management and air-carrier pages (30 pages,
+  75 units) are deferred by two `deferred` rules until 31 December 2026, when
+  the decision falls due again. Of the Canton of Zurich's 27 integration
+  pages (234 units) the reviewer took the resident-facing seven into scope:
+  30 of their sections are now cited by the 25 facts of the `integration`
+  topic, and the rest of those pages is dispositioned section by section
+  (the other funding areas of the programme and the training offers for
+  authorities as `out_of_scope`, the leads and the pointers that repeat a
+  cited page as `duplicate`, the database widget as `navigation`, and the
+  past calls, the events placeholder and the canton's two reports on racism
+  as `deferred` until 31 December 2026). The other 20 pages, the support
+  system for refugees (Integrationsagenda IAZH) and the cantonal integration
+  programmes, are `out_of_scope` against the manifest entry added that day.
+  The rest is content someone saved and nobody read: among it the SEM FAQ
+  pages, of which the pack cites a handful of answers out of forty to seventy
+  each (128 open units), and 414 units on Canton of Zurich pages. The pack
+  runs the stage under `coverage_policy: report`; the number is a fact about
+  the release, not yet a build error.
+- **Four concepts of 22 September 2026 displaced an expected concept.**
+  `city-zurich-naturalisation-language` and `-civics` pushed
+  `city-zurich-naturalisation` from third to fourth of 44 for the German
+  question of Q-DE-5; `zh-family-fza` took the third place of `fza-overview`
+  for Q-EN-84, which asks about non-discrimination, because its label
+  carries the publisher's "Freizügigkeitsabkommen"; and in hybrid search
+  `zh-third-country-work` displaced `third-country-work-procedure` (Q-EN-9,
+  Q-TR-1) and the three Zurich family concepts displaced `family-b`
+  (CTX-5). All four cases are quarantined with the measurement, and Q-EN-9,
+  Q-TR-1 and CTX-5 pass again in the lexical mode.
+  The pack now passes 556 cases lexically and 555 with hybrid
+  search, of 587, with 44 quarantined. Three more cases were quarantined
+  after the review of 22 September 2026: confirming the new concepts raised
+  their prior from 0.7 to 1.0, and in hybrid search `permit-card-eu-efta`
+  took the fifth place of `permit-renewal` (N-EN-T1), the three Zurich
+  family concepts took all three places of `family-eu-efta` (Q-EN-78) and
+  `naturalisation-third-generation` took the second place of
+  `zh-naturalisation-facilitated` (XM-18). All three still pass lexically.
+  With the tokeniser of swisstip-runtime 603fa23 (one-character tokens kept,
+  22 September 2026) three quarantined cases pass again in both modes and
+  are blocking again: CTX-5, N-EN-A4 and Q-TR-1; the pack passes 557 cases
+  lexically and 553 with hybrid search, of 587, with 41 quarantined.
 - **Lexical search has no spelling tolerance.** A misspelled key word is a
   missing token: "helth insurence" or "renwe" lose the strong match that the
   correctly spelled question gets, and the container's lexical fallback
@@ -748,18 +1215,23 @@ implemented.
   darf ich ohni Bewilligung i de Schweiz blibe, wenn ich nid schaffe?",
   which the everyday aliases of `aig-short-stay` reach, and paying into
   pillar 3a while unemployed.
-- **Search terms are German and English only.** The 1098 German and 85
-  English source terms are copied verbatim from the cited excerpts. The
-  English ones reach 25 of the 133 concepts, those whose federal page has an
+- **Search terms are German and English only.** The 1237 source terms the
+  build counts are copied verbatim from the cited excerpts. The
+  English ones reach 25 of the 151 concepts, those whose federal page has an
   English version the release cites; the Canton and City of Zurich pages
   carry none, so a question about a Zurich procedure matches only authored
   English words, the labels, the sample questions and the statements. French
-  and Italian terms exist only where an excerpt is French or Italian (the
-  cantonal office names). Swiss German is covered by three authored spellings
+  and Italian terms reached, until 23 September 2026, only the cantonal
+  office names. The cantonal wave added 30 copied verbatim from Vaud, Valais
+  and Ticino pages, so a French or Italian question about registering on
+  arrival now finds its concept directly rather than having to be translated
+  into German first; no other subject is reachable in those languages, and
+  `question_languages` stays German and English. Swiss German is covered by
+  three authored spellings
   for one acceptance case, not generally: an unlisted dialect spelling matches
   nothing.
 - **Semantic search is optional and off by default.** The prebuilt index of
-  the 133 concepts is committed, but embedding an incoming query needs a
+  the 151 concepts is committed, but embedding an incoming query needs a
   matching local Ollama model. Without it the server uses lexical search. The
   recorded experiment improved concept discovery on an earlier release, not
   final answers; it has not been evaluated on separate development data, on
@@ -801,9 +1273,9 @@ implemented.
   of the whole release: a subject published for Zurich only still reads
   `strong` for a user in Bern, who learns from `published_elsewhere` and the
   guidance that it is not published for their place. And the code is in
-  packages 0.2.5, which are not on PyPI yet: 0.2.4 and the published images
-  reject a `search` that carries the field, and the image Dockerfiles, which
-  pin 0.2.5, build only once it is published.
+  packages 0.2.5 and later: 0.2.4 and an image built on it reject a `search`
+  that carries the field. The image Dockerfiles pin 0.3.0, which is not on
+  PyPI yet, and build only once it is published.
   Without the field, a question from another canton or municipality ranks the
   Canton and City of Zurich concepts next to the federal ones, and `resolve`
   sorts them out afterwards. Of the 64 cross-jurisdiction questions of the
@@ -846,6 +1318,43 @@ implemented.
   The basis labels of 16 September 2026 add
   about 40 bytes per fact whose basis differs from its concept's, and two
   short fields per citation.
+- **The cantonal route concept outranks the cantonal deadline concept.** The
+  five `cantonal-*` registration concepts describe the same act from different
+  angles, and `cantonal-registration-route` carries the most source terms (23
+  against 16 for `cantonal-registration-deadline`). For a question about how
+  many days a canton gives, the route concept therefore tends to come first and
+  the deadline concept can fall out of the first three hits altogether: no
+  Schwyz wording tried on 23 September 2026 put the deadline concept in the
+  first three in **both** retrieval modes. Resolving the concept serves the
+  right fact, so the release holds the answer and only retrieval is at fault; a
+  caller that searches once and resolves only its first hit gets the office
+  instead of the period. Q-DE-127 is quarantined with the measurement rather
+  than reworded until it passes. Narrowing the route concept's terms would
+  trade one concept's findability for the other's and was not done blind.
+- **Four pre-existing cases were displaced by the new concepts.** XC-23 lost
+  `cantonal-migration-contact` from the first three hybrid hits for a question
+  naming the migration office in Basel, to `cantonal-registration-route` among
+  others - the new concept describes which office receives a report, so it
+  competes directly. Q-AR-1 lost `city-zurich-departure` entirely: all three
+  first hybrid hits for "reporting a move within Switzerland online" are now
+  cantonal concepts this wave added, which is semantically reasonable even
+  though the case wanted the City of Zurich one. Both pass lexically. N-DE-A5
+  ("does Croatia count as EU or as a third state?") lost `permit-types` from
+  the first three lexical hits to `cantonal-permit-application`, which carries
+  both terms in its statements; Q-PT-1 lost `family-separation` from the first
+  three hybrid hits to three free-movement concepts. Both pass in the other
+  mode, both are quarantined with their measurements, and no fact changed.
+- **A second lexical blind spot arrived with a canton's office name.**
+  "Wann hat das Passbüro Zürich offen?" was an off-topic question while no
+  concept mentioned a Passbüro. Schaffhausen's migration office is *called*
+  "Migrationsamt und Passbüro", so since 23 September 2026 the word is
+  genuinely in the corpus: the query reaches `lexical_share` 0.7738 and reads
+  `strong`, with the Zurich population office and the Zurich Migrationsamt
+  contact as its first hits. Zurich's passport office is still not published,
+  and the lexical signals cannot see that the caller named a different
+  canton's word. Dropping the source term does not help, because the word is
+  also in Schaffhausen's served statements, so it is recorded here and pinned
+  by a test rather than worked around.
 - **The match-strength verdict has lexical blind spots and misses
   other-language questions.** Since 16 September 2026 every `search` result
   says whether the question's distinctive words reached a published
@@ -984,23 +1493,43 @@ answer. Recorded runs show three behaviours the release cannot prevent:
 
 - The offline unit tests, the client round trip over stdio (and over HTTP
   against a running container) and the acceptance gate's model-free check
-  (the 80 blocking cases of `releases/mvp-zurich/acceptance.yaml`: 64
+  (the 82 blocking cases of `releases/mvp-zurich/acceptance.yaml`: 66
   questions, 9 resolve declines and 7 search declines) pass without
   network access. They verify the contract, the build, retrieval and, for
-  the 239 claims of the suite, that a served statement and a verbatim phrase
+  the 247 claims of the suite, that a served statement and a verbatim phrase
   of its cited excerpt still say what the expected answer needs; 31 basis
-  expectations in 20 cases pin that the law, a directive, the authority's
+  expectations in 21 cases pin that the law, a directive, the authority's
   own page or its directory entry stays among the served facts, and 15
   cases name facts that must not be served, 13 of them Zurich facts for a
   user in another canton or municipality. The
-  regression pack (480 further questions, twelve of them with the place
-  given in names; 30 of 560 replayed cases quarantined) is not a gate. They do not
+  regression pack (505 further questions, twelve of them with the place
+  given in names; 44 of 587 replayed cases quarantined) is not a gate. They do not
   verify the truth of a statement, and a statement no claim covers rests on
   the human review alone, one person's confirmation and reading.
 - The release's `readiness.json` records that these gates passed on the
   file, with a freshness runway to 17 November 2026; the container serves no
-  release without such a record. The record of 19 September 2026 was
-  attested by the reviewer. The attestation covers the place register only
+  release without such a record. The record of 22 September 2026 was
+  attested by the reviewer after the review of all 712 facts of the release
+  that preceded it. Each release since has waited the same way: the assistant
+  never runs the ready stage, so a release is served only once the reviewer
+  attests it in their own name. `mvp-zurich-2026-09-23-v27`, with all 1,268
+  facts reviewed, was attested on 23 September 2026 and supersedes
+  `mvp-zurich-2026-09-23-v19`. `mvp-zurich-2026-09-24-v1`, which adds the
+  Lugano waste concept with its 5 facts reviewed, was attested on 24 September
+  2026 and supersedes v27.
+- **The coverage root is close to its bound.** `get_coverage` answers in one
+  call under 6 KB, which the pack README promises and the check
+  `scripts/test/packs/test_zurich_release.py` enforces. On this release the
+  root is 6,040 bytes now that every fact is reviewed and the served
+  review-status line names one status; it was 6,074 while the 25 integration
+  facts were open. The check's bound was 6,000 bytes and was raised once to
+  6,144, the binary kilobyte the README means. The integration topic of
+  22 September 2026 pushed the root 194 bytes over that bound, and the bound
+  stayed: the new out-of-scope entry was cut to one line and three
+  limitations were shortened (the review-history pointer, the office-address
+  sentence and the English-excerpt sentence), which paid for the topic and
+  for the scope statement's new clause. The next topic added should trim
+  that text again rather than raise the bound. The attestation covers the place register only
   through the gates: the register's 2,137 places and the other-language
   names were not read by a person. The answer-quality gate (graded
   live-caller runs bound to the release, `acceptance-answers.json`) is

@@ -4,13 +4,13 @@
 # foreign nationals in Switzerland, from residence permits and registration
 # to social insurance, tax at source, the driving licence, health insurance
 # and naturalisation, federal rules with Canton and City of Zurich. The base
-# image (docker/semantic) plus the release, its readiness record and its
+# image (docker/mcp) plus the release, its readiness record and its
 # semantic index, and the image README the pack publishes. The build context
 # is the pack directory, a checkout's releases/mvp-zurich or the same four
 # files downloaded from a GitHub release. Published as ghcr.io/<owner>/swiss-tip:<release_id> by the
 # workflow container-images.yml.
 #
-#   docker build -t swiss-tip-semantic:0.2.5 docker/semantic
+#   docker build -t swiss-tip-mcp:0.3.0 docker/mcp
 #   docker build -f docker/mvp-zurich/Dockerfile -t swiss-tip:mvp-zurich releases/mvp-zurich
 #   docker run --rm -p 8000:8000 swiss-tip:mvp-zurich          MCP on http://127.0.0.1:8000/mcp
 #   docker run --rm -i swiss-tip:mvp-zurich --transport stdio
@@ -19,7 +19,7 @@
 # when a search on the bundled model does not run hybrid (an index for
 # another release or another model digest).
 
-ARG BASE_IMAGE=swiss-tip-semantic:0.2.5
+ARG BASE_IMAGE=swiss-tip-mcp:0.3.0
 FROM ${BASE_IMAGE}
 ARG RELEASE_ID=""
 ARG RELEASE_CONTENT_SHA256=""
@@ -42,7 +42,7 @@ RUN swisstip-mcp --release /srv/swiss-tip/release.json --require-ready --health 
       "Ich bin tschechischer Staatsbürger und beginne nächste Woche in Zürich zu arbeiten. Bis wann muss ich mich anmelden?" \
       "Je suis citoyen tchèque et je commence à travailler à Zurich. Quand dois-je m'annoncer?" \
       "Can my wife join me in Switzerland if I have a B permit?" \
-      "weak:Wie hoch ist die Mehrwertsteuer in der Schweiz?"
+      "weak:Wie wird das Wetter morgen in Zürich?"
 
 ENTRYPOINT ["tini", "--", "with-ollama", "swisstip-mcp", "--release", "/srv/swiss-tip/release.json", "--require-ready", "--semantic-index", "/srv/swiss-tip/semantic-index.json", "--transport", "streamable-http", "--host", "0.0.0.0"]
 CMD []

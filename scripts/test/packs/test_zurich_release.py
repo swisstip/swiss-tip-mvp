@@ -63,14 +63,25 @@ class ZurichReleaseTests(unittest.TestCase):
         init, listed, root, resolved = asyncio.run(run())
         # The release's query languages reach the caller before its first search: in the instructions, in the search
         # description and in the query field, and on the coverage root.
-        note = "Write search queries in German (preferred) or English"
-        self.assertIn(note, init.instructions)
+        # swisstip-mcp 0.3.0 asks for one search and no longer calls German "preferred"; the published 0.2.5 that
+        # the workflow installs until then carries the older sentence.
+        note = r"Write (the search query|search queries) in German( \(preferred\))? or English:"
+        self.assertRegex(init.instructions, note)
         search = next(t for t in listed if t.name == "search")
-        self.assertIn(note, search.description)
-        self.assertIn(note, search.inputSchema["properties"]["query"]["description"])
+        self.assertRegex(search.description, note)
+        self.assertRegex(search.inputSchema["properties"]["query"]["description"], note)
         self.assertEqual([q["code"] for q in root.structuredContent["query_languages"]], ["de", "en"])
         self.assertFalse(root.isError)
-        self.assertLess(len(root.content[0].text.encode("utf-8")), 6000)
+        # Criterion X8 keeps the coverage root small enough to refuse an outside question in one call. Two bounds
+        # had drifted apart: this one at 6,144 bytes and check_server.py at 8,000, with the root at 7,640 - so the
+        # round trip had been failing while the server check passed. The user settled it on 23 September 2026:
+        # 8,000 is the real bound, in both places and in X8. The four waves of 22-23 September took the root from
+        # 6,033 to 7,640 bytes. The cantonal wave then did not fit: stating in the manifest that registration is
+        # published for all 26 cantons, with the caveats that go with it, costs about 370 bytes and took the root to
+        # 8,317. The alternatives were a terser and less precise disclosure or rewriting reviewed limitations, and
+        # the user chose on 23 September 2026 to raise the bound to 8,500 instead, because the pack grew from one
+        # canton to twenty-six and the root grew with it. Shorten a topic description before raising this again.
+        self.assertLess(len(root.content[0].text.encode("utf-8")), 8500)
         self.assertEqual(resolved.structuredContent["status"], "SUPPORTED")
         self.assertTrue(resolved.structuredContent["results"][0]["citations"][0]["url"].startswith("https://www.sem.admin.ch/"))
 

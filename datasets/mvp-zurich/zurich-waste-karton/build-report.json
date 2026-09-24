@@ -1,0 +1,22 @@
+{
+  "dataset_id": "zurich-waste-karton",
+  "dataset_version": "2026-09-23-v1",
+  "rows": 1243,
+  "repeated_rows_dropped": 0,
+  "postal_codes": 24,
+  "period": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "sources": [
+    {
+      "url": "https://data.stadt-zuerich.ch/dataset/entsorgungskalender_karton/download/entsorgungskalender_karton_2026.csv",
+      "file": "entsorgungskalender_karton_2026.csv",
+      "sha256": "7b8f60e4da772d65d5de2bc645783e0c19e7cea620765a54c442480f6830d546",
+      "bytes": 23640,
+      "downloaded_on": "2026-09-23",
+      "fetched": true,
+      "rows": 1243
+    }
+  ]
+}

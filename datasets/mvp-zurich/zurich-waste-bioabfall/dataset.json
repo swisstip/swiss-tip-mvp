@@ -1,0 +1,5077 @@
+{
+  "manifest": {
+    "schema_version": "swiss-tip-dataset/v1",
+    "dataset_id": "zurich-waste-bioabfall",
+    "dataset_version": "2026-09-23-v1",
+    "type": "calendar",
+    "title": "Organic waste collection days, City of Zurich",
+    "label": "Organic waste (Bioabfall)",
+    "pack": "mvp-zurich",
+    "concept_id": "city-zurich-organic-paper-cardboard",
+    "jurisdiction": "CH-ZH-261",
+    "publisher": "Entsorgung + Recycling Zürich (ERZ)",
+    "publisher_url": "https://data.stadt-zuerich.ch/dataset/entsorgungskalender_bioabfall",
+    "licence": "CC0-1.0",
+    "refresh": "bundled",
+    "sources": [
+      {
+        "url": "https://data.stadt-zuerich.ch/dataset/entsorgungskalender_bioabfall/download/entsorgungskalender_bioabfall_2026.csv",
+        "sha256": "6040ce9917e5c8e0b6af5416a404d0df0bb0ee62ef4b965845dbeb6731802c0d",
+        "bytes": 23830,
+        "downloaded_on": "2026-09-23"
+      }
+    ],
+    "period": {
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    },
+    "postal_codes": [
+      "8001",
+      "8002",
+      "8003",
+      "8004",
+      "8005",
+      "8006",
+      "8008",
+      "8032",
+      "8037",
+      "8038",
+      "8041",
+      "8044",
+      "8045",
+      "8046",
+      "8047",
+      "8048",
+      "8049",
+      "8050",
+      "8051",
+      "8052",
+      "8053",
+      "8055",
+      "8057",
+      "8064"
+    ],
+    "row_count": 1253,
+    "created_at": "2026-09-23T07:42:32Z",
+    "limitations": [
+      "Calendar rows are taken from the publisher's file unchanged and are not human-reviewed; the hashes of the downloaded files and the build's checks are the whole gate.",
+      "Postal codes are the publisher's; no register ties them to CH-ZH-261.",
+      "Licence of the rows: CC0-1.0, published by Entsorgung + Recycling Zürich (ERZ) at https://data.stadt-zuerich.ch/dataset/entsorgungskalender_bioabfall."
+    ],
+    "content_sha256": "1fd268c91bb26db3f514c14a17153ba46819da2e58ad21faa7bb0bb90d6ecdf4"
+  },
+  "rows": [
+    {
+      "postal_code": "8001",
+      "date": "2026-01-05"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-01-12"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-01-19"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-01-26"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-02-02"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-02-09"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-02-16"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-02-23"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-03-02"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-03-09"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-03-16"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-03-23"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-03-30"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-04-07"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-04-13"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-04-20"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-04-27"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-05-04"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-05-11"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-05-18"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-05-23"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-06-01"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-06-08"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-06-15"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-06-22"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-06-29"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-07-06"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-07-13"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-07-20"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-07-27"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-08-03"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-08-10"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-08-17"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-08-24"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-08-31"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-09-07"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-09-14"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-09-21"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-09-28"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-10-05"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-10-12"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-10-19"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-10-26"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-11-02"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-11-09"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-11-16"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-11-23"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-11-30"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-12-07"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-12-14"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-12-21"
+    },
+    {
+      "postal_code": "8001",
+      "date": "2026-12-28"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-01-07"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-01-14"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-01-21"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-01-28"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-02-04"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-02-11"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-02-18"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-02-25"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-03-04"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-03-11"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-03-18"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-03-25"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-04-01"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-04-08"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-04-15"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-04-22"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-04-29"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-05-06"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-05-13"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-05-20"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-05-27"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-06-03"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-06-10"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-06-17"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-06-24"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-07-01"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-07-08"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-07-15"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-07-22"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-07-29"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-08-05"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-08-12"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-08-19"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-08-26"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-09-02"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-09-09"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-09-16"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-09-23"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-09-30"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-10-07"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-10-14"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-10-21"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-10-28"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-11-04"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-11-11"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-11-18"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-11-25"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-12-02"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-12-09"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-12-16"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-12-23"
+    },
+    {
+      "postal_code": "8002",
+      "date": "2026-12-30"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-01-07"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-01-14"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-01-21"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-01-28"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-02-04"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-02-11"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-02-18"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-02-25"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-03-04"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-03-11"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-03-18"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-03-25"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-04-01"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-04-08"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-04-15"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-04-22"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-04-29"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-05-06"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-05-13"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-05-20"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-05-27"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-06-03"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-06-10"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-06-17"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-06-24"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-07-01"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-07-08"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-07-15"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-07-22"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-07-29"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-08-05"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-08-12"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-08-19"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-08-26"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-09-02"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-09-09"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-09-16"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-09-23"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-09-30"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-10-07"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-10-14"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-10-21"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-10-28"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-11-04"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-11-11"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-11-18"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-11-25"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-12-02"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-12-09"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-12-16"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-12-23"
+    },
+    {
+      "postal_code": "8003",
+      "date": "2026-12-30"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-01-03"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-01-08"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-01-15"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-01-22"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-01-29"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-02-05"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-02-12"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-02-19"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-02-26"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-03-05"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-03-12"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-03-19"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-03-26"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-04-02"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-04-09"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-04-16"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-04-23"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-04-30"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-05-07"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-05-16"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-05-21"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-05-28"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-06-04"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-06-11"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-06-18"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-06-25"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-07-02"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-07-09"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-07-16"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-07-23"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-07-30"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-08-06"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-08-13"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-08-20"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-08-27"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-09-03"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-09-10"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-09-17"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-09-24"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-10-01"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-10-08"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-10-15"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-10-22"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-10-29"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-11-05"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-11-12"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-11-19"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-11-26"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-12-03"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-12-10"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-12-17"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-12-24"
+    },
+    {
+      "postal_code": "8004",
+      "date": "2026-12-31"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-01-05"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-01-12"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-01-19"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-01-26"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-02-02"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-02-09"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-02-16"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-02-23"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-03-02"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-03-09"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-03-16"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-03-23"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-03-30"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-04-07"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-04-13"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-04-20"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-04-27"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-05-04"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-05-11"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-05-18"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-05-23"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-06-01"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-06-08"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-06-15"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-06-22"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-06-29"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-07-06"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-07-13"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-07-20"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-07-27"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-08-03"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-08-10"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-08-17"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-08-24"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-08-31"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-09-07"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-09-14"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-09-21"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-09-28"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-10-05"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-10-12"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-10-19"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-10-26"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-11-02"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-11-09"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-11-16"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-11-23"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-11-30"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-12-07"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-12-14"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-12-21"
+    },
+    {
+      "postal_code": "8005",
+      "date": "2026-12-28"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-01-06"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-01-13"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-01-20"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-01-27"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-02-03"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-02-10"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-02-17"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-02-24"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-03-03"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-03-10"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-03-17"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-03-24"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-03-31"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-04-07"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-04-14"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-04-21"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-04-28"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-05-05"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-05-12"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-05-19"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-05-26"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-06-02"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-06-09"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-06-16"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-06-23"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-06-30"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-07-07"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-07-14"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-07-21"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-07-28"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-08-04"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-08-11"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-08-18"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-08-25"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-09-01"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-09-08"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-09-15"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-09-22"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-09-29"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-10-06"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-10-13"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-10-20"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-10-27"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-11-03"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-11-10"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-11-17"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-11-24"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-12-01"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-12-08"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-12-15"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-12-22"
+    },
+    {
+      "postal_code": "8006",
+      "date": "2026-12-29"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-01-05"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-01-12"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-01-19"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-01-26"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-02-02"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-02-09"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-02-16"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-02-23"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-03-02"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-03-09"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-03-16"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-03-23"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-03-30"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-04-04"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-04-13"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-04-20"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-04-27"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-05-04"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-05-11"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-05-18"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-05-23"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-06-01"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-06-08"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-06-15"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-06-22"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-06-29"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-07-06"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-07-13"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-07-20"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-07-27"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-08-03"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-08-10"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-08-17"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-08-24"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-08-31"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-09-07"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-09-14"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-09-21"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-09-28"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-10-05"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-10-12"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-10-19"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-10-26"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-11-02"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-11-09"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-11-16"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-11-23"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-11-30"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-12-07"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-12-14"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-12-21"
+    },
+    {
+      "postal_code": "8008",
+      "date": "2026-12-28"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-01-05"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-01-12"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-01-19"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-01-26"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-02-02"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-02-09"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-02-16"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-02-23"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-03-02"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-03-09"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-03-16"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-03-23"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-03-30"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-04-04"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-04-13"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-04-20"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-04-27"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-05-04"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-05-11"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-05-18"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-05-23"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-06-01"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-06-08"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-06-15"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-06-22"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-06-29"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-07-06"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-07-13"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-07-20"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-07-27"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-08-03"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-08-10"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-08-17"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-08-24"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-08-31"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-09-07"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-09-14"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-09-21"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-09-28"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-10-05"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-10-12"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-10-19"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-10-26"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-11-02"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-11-09"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-11-16"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-11-23"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-11-30"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-12-07"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-12-14"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-12-21"
+    },
+    {
+      "postal_code": "8032",
+      "date": "2026-12-28"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-01-06"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-01-13"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-01-20"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-01-27"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-02-03"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-02-10"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-02-17"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-02-24"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-03-03"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-03-10"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-03-17"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-03-24"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-03-31"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-04-07"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-04-14"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-04-21"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-04-28"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-05-05"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-05-12"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-05-19"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-05-26"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-06-02"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-06-09"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-06-16"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-06-23"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-06-30"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-07-07"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-07-14"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-07-21"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-07-28"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-08-04"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-08-11"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-08-18"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-08-25"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-09-01"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-09-08"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-09-15"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-09-22"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-09-29"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-10-06"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-10-13"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-10-20"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-10-27"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-11-03"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-11-10"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-11-17"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-11-24"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-12-01"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-12-08"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-12-15"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-12-22"
+    },
+    {
+      "postal_code": "8037",
+      "date": "2026-12-29"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-01-07"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-01-14"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-01-21"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-01-28"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-02-04"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-02-11"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-02-18"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-02-25"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-03-04"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-03-11"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-03-18"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-03-25"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-04-01"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-04-08"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-04-15"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-04-22"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-04-29"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-05-06"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-05-13"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-05-20"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-05-27"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-06-03"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-06-10"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-06-17"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-06-24"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-07-01"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-07-08"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-07-15"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-07-22"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-07-29"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-08-05"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-08-12"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-08-19"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-08-26"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-09-02"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-09-09"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-09-16"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-09-23"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-09-30"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-10-07"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-10-14"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-10-21"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-10-28"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-11-04"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-11-11"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-11-18"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-11-25"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-12-02"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-12-09"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-12-16"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-12-23"
+    },
+    {
+      "postal_code": "8038",
+      "date": "2026-12-30"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-01-07"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-01-14"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-01-21"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-01-28"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-02-04"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-02-11"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-02-18"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-02-25"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-03-04"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-03-11"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-03-18"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-03-25"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-04-01"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-04-08"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-04-15"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-04-22"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-04-29"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-05-06"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-05-13"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-05-20"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-05-27"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-06-03"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-06-10"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-06-17"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-06-24"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-07-01"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-07-08"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-07-15"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-07-22"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-07-29"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-08-05"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-08-12"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-08-19"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-08-26"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-09-02"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-09-09"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-09-16"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-09-23"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-09-30"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-10-07"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-10-14"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-10-21"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-10-28"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-11-04"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-11-11"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-11-18"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-11-25"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-12-02"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-12-09"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-12-16"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-12-23"
+    },
+    {
+      "postal_code": "8041",
+      "date": "2026-12-30"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-01-06"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-01-13"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-01-20"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-01-27"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-02-03"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-02-10"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-02-17"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-02-24"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-03-03"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-03-10"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-03-17"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-03-24"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-03-31"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-04-07"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-04-14"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-04-21"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-04-28"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-05-05"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-05-12"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-05-19"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-05-26"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-06-02"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-06-09"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-06-16"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-06-23"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-06-30"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-07-07"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-07-14"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-07-21"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-07-28"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-08-04"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-08-11"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-08-18"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-08-25"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-09-01"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-09-08"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-09-15"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-09-22"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-09-29"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-10-06"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-10-13"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-10-20"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-10-27"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-11-03"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-11-10"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-11-17"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-11-24"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-12-01"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-12-08"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-12-15"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-12-22"
+    },
+    {
+      "postal_code": "8044",
+      "date": "2026-12-29"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-01-07"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-01-14"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-01-21"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-01-28"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-02-04"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-02-11"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-02-18"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-02-25"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-03-04"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-03-11"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-03-18"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-03-25"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-04-01"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-04-08"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-04-15"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-04-22"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-04-29"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-05-06"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-05-13"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-05-20"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-05-27"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-06-03"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-06-10"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-06-17"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-06-24"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-07-01"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-07-08"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-07-15"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-07-22"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-07-29"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-08-05"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-08-12"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-08-19"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-08-26"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-09-02"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-09-09"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-09-16"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-09-23"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-09-30"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-10-07"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-10-14"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-10-21"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-10-28"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-11-04"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-11-11"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-11-18"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-11-25"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-12-02"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-12-09"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-12-16"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-12-23"
+    },
+    {
+      "postal_code": "8045",
+      "date": "2026-12-30"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-01-03"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-01-09"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-01-16"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-01-23"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-01-30"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-02-06"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-02-13"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-02-20"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-02-27"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-03-06"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-03-13"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-03-20"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-03-27"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-04-02"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-04-10"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-04-17"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-04-24"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-05-02"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-05-08"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-05-15"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-05-22"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-05-29"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-06-05"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-06-12"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-06-19"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-06-26"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-07-03"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-07-10"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-07-17"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-07-24"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-07-31"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-08-07"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-08-14"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-08-21"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-08-28"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-09-04"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-09-11"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-09-18"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-09-25"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-10-02"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-10-09"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-10-16"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-10-23"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-10-30"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-11-06"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-11-13"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-11-20"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-11-27"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-12-04"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-12-11"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-12-18"
+    },
+    {
+      "postal_code": "8046",
+      "date": "2026-12-28"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-01-03"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-01-08"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-01-15"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-01-22"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-01-29"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-02-05"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-02-12"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-02-19"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-02-26"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-03-05"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-03-12"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-03-19"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-03-26"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-04-02"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-04-09"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-04-16"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-04-23"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-04-30"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-05-07"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-05-16"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-05-21"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-05-28"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-06-04"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-06-11"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-06-18"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-06-25"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-07-02"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-07-09"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-07-16"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-07-23"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-07-30"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-08-06"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-08-13"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-08-20"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-08-27"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-09-03"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-09-10"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-09-17"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-09-24"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-10-01"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-10-08"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-10-15"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-10-22"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-10-29"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-11-05"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-11-12"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-11-19"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-11-26"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-12-03"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-12-10"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-12-17"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-12-24"
+    },
+    {
+      "postal_code": "8047",
+      "date": "2026-12-31"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-01-08"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-01-15"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-01-22"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-01-29"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-02-05"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-02-12"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-02-19"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-02-26"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-03-05"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-03-12"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-03-19"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-03-26"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-04-02"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-04-09"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-04-16"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-04-23"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-04-30"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-05-07"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-05-16"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-05-21"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-05-28"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-06-04"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-06-11"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-06-18"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-06-25"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-07-02"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-07-09"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-07-16"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-07-23"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-07-30"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-08-06"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-08-13"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-08-20"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-08-27"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-09-03"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-09-10"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-09-17"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-09-24"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-10-01"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-10-08"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-10-15"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-10-22"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-10-29"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-11-05"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-11-12"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-11-19"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-11-26"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-12-03"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-12-10"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-12-17"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-12-24"
+    },
+    {
+      "postal_code": "8048",
+      "date": "2026-12-31"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-01-08"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-01-15"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-01-22"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-01-29"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-02-05"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-02-12"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-02-19"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-02-26"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-03-05"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-03-12"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-03-19"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-03-26"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-04-02"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-04-09"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-04-16"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-04-23"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-04-30"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-05-07"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-05-16"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-05-21"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-05-28"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-06-04"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-06-11"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-06-18"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-06-25"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-07-02"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-07-09"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-07-16"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-07-23"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-07-30"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-08-06"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-08-13"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-08-20"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-08-27"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-09-03"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-09-10"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-09-17"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-09-24"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-10-01"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-10-08"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-10-15"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-10-22"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-10-29"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-11-05"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-11-12"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-11-19"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-11-26"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-12-03"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-12-10"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-12-17"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-12-24"
+    },
+    {
+      "postal_code": "8049",
+      "date": "2026-12-31"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-01-03"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-01-09"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-01-16"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-01-23"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-01-30"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-02-06"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-02-13"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-02-20"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-02-27"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-03-06"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-03-13"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-03-20"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-03-27"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-04-04"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-04-10"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-04-17"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-04-24"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-05-02"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-05-08"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-05-15"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-05-22"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-05-29"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-06-05"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-06-12"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-06-19"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-06-26"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-07-03"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-07-10"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-07-17"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-07-24"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-07-31"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-08-07"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-08-14"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-08-21"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-08-28"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-09-04"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-09-11"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-09-18"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-09-25"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-10-02"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-10-09"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-10-16"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-10-23"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-10-30"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-11-06"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-11-13"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-11-20"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-11-27"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-12-04"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-12-11"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-12-18"
+    },
+    {
+      "postal_code": "8050",
+      "date": "2026-12-29"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-01-03"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-01-09"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-01-16"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-01-23"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-01-30"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-02-06"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-02-13"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-02-20"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-02-27"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-03-06"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-03-13"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-03-20"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-03-27"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-04-04"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-04-10"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-04-17"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-04-24"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-05-02"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-05-08"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-05-15"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-05-22"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-05-29"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-06-05"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-06-12"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-06-19"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-06-26"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-07-03"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-07-10"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-07-17"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-07-24"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-07-31"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-08-07"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-08-14"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-08-21"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-08-28"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-09-04"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-09-11"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-09-18"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-09-25"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-10-02"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-10-09"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-10-16"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-10-23"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-10-30"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-11-06"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-11-13"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-11-20"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-11-27"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-12-04"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-12-11"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-12-18"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-12-24"
+    },
+    {
+      "postal_code": "8051",
+      "date": "2026-12-31"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-01-03"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-01-09"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-01-16"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-01-23"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-01-30"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-02-06"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-02-13"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-02-20"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-02-27"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-03-06"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-03-13"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-03-20"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-03-27"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-04-04"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-04-10"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-04-17"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-04-24"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-05-02"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-05-08"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-05-15"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-05-22"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-05-29"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-06-05"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-06-12"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-06-19"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-06-26"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-07-03"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-07-10"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-07-17"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-07-24"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-07-31"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-08-07"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-08-14"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-08-21"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-08-28"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-09-04"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-09-11"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-09-18"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-09-25"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-10-02"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-10-09"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-10-16"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-10-23"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-10-30"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-11-06"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-11-13"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-11-20"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-11-27"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-12-04"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-12-11"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-12-18"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-12-23"
+    },
+    {
+      "postal_code": "8052",
+      "date": "2026-12-30"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-01-05"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-01-12"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-01-19"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-01-26"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-02-02"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-02-09"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-02-16"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-02-23"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-03-02"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-03-09"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-03-16"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-03-23"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-03-30"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-04-08"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-04-13"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-04-20"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-04-27"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-05-04"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-05-11"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-05-18"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-05-23"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-06-01"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-06-08"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-06-15"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-06-22"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-06-29"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-07-06"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-07-13"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-07-20"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-07-27"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-08-03"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-08-10"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-08-17"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-08-24"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-08-31"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-09-07"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-09-14"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-09-21"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-09-28"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-10-05"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-10-12"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-10-19"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-10-26"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-11-02"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-11-09"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-11-16"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-11-23"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-11-30"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-12-07"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-12-14"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-12-21"
+    },
+    {
+      "postal_code": "8053",
+      "date": "2026-12-28"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-01-07"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-01-14"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-01-21"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-01-28"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-02-04"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-02-11"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-02-18"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-02-25"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-03-04"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-03-11"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-03-18"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-03-25"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-04-01"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-04-08"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-04-15"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-04-22"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-04-29"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-05-06"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-05-13"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-05-20"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-05-27"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-06-03"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-06-10"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-06-17"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-06-24"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-07-01"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-07-08"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-07-15"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-07-22"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-07-29"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-08-05"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-08-12"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-08-19"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-08-26"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-09-02"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-09-09"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-09-16"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-09-23"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-09-30"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-10-07"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-10-14"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-10-21"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-10-28"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-11-04"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-11-11"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-11-18"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-11-25"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-12-02"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-12-09"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-12-16"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-12-23"
+    },
+    {
+      "postal_code": "8055",
+      "date": "2026-12-30"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-01-06"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-01-13"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-01-20"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-01-27"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-02-03"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-02-10"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-02-17"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-02-24"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-03-03"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-03-10"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-03-17"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-03-24"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-03-31"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-04-07"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-04-14"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-04-21"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-04-28"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-05-05"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-05-12"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-05-19"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-05-26"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-06-02"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-06-09"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-06-16"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-06-23"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-06-30"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-07-07"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-07-14"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-07-21"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-07-28"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-08-04"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-08-11"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-08-18"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-08-25"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-09-01"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-09-08"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-09-15"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-09-22"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-09-29"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-10-06"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-10-13"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-10-20"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-10-27"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-11-03"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-11-10"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-11-17"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-11-24"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-12-01"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-12-08"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-12-15"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-12-22"
+    },
+    {
+      "postal_code": "8057",
+      "date": "2026-12-29"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-01-03"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-01-08"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-01-15"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-01-22"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-01-29"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-02-05"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-02-12"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-02-19"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-02-26"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-03-05"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-03-12"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-03-19"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-03-26"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-04-02"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-04-09"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-04-16"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-04-23"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-04-30"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-05-07"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-05-16"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-05-21"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-05-28"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-06-04"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-06-11"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-06-18"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-06-25"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-07-02"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-07-09"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-07-16"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-07-23"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-07-30"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-08-06"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-08-13"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-08-20"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-08-27"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-09-03"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-09-10"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-09-17"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-09-24"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-10-01"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-10-08"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-10-15"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-10-22"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-10-29"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-11-05"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-11-12"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-11-19"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-11-26"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-12-03"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-12-10"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-12-17"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-12-24"
+    },
+    {
+      "postal_code": "8064",
+      "date": "2026-12-31"
+    }
+  ]
+}

@@ -1,21 +1,25 @@
 # Coverage
 
-**Last update:** 20 September 2026
+**Last update:** 24 September 2026
 
 What the Swiss TIP MCP server serves today, and what it does not. This file
 describes the committed release that the server loads by default; it is
 updated from that release whenever the knowledge base changes (see
-[AGENTS.md](AGENTS.md), "Coverage and limitations documents").
+[AGENTS.md](AGENTS.md), "Coverage and limitations documents"). The
+submission is `mvp-zurich`; `mvp-wallisellen` was a proof of concept that a
+second, municipal pack can be built with the same tooling, is frozen at its
+attested release and is not extended, tested or documented further.
 
-**Release:** `mvp-zurich-2026-09-19-v15` (pack `mvp-zurich`, KB1)<br>
-**Content digest:** `7e225933d2ab068edf3f89a9543b45ce97f1fdb192ab743c600e0ec5af9a82ac`<br>
-**Snapshot date:** 19 September 2026, the latest access date of a cited page
-(10 of the 164 were saved on 19 September, 25 on 18 September, 46 on 17
-September, 39 on 15 September, 39 on 11 September and 5 on 10 or 14
-September); maximum age 60 days, stale from 18 November 2026<br>
-**Contents:** 16 topics, 133 concepts, 601 facts, 800 evidence excerpts
-(686 German, 114 English), 164 cited documents<br>
-**Review:** all 601 facts `human-reviewed` by one named reviewer, confirmed
+**Release:** `mvp-zurich-2026-09-24-v1` (pack `mvp-zurich`, KB1)<br>
+**Content digest:** `baa03da3f709db46598be6e9515fbe8bf6cb8a3ae2524683ee02388b136fe0fc`<br>
+**Snapshot date:** 23 September 2026, the latest access date of a cited page
+(66 of the 336 were saved on 23 September, 67 on 22 September, 10 on 19
+September, 25 on 18 September, 47 on 17 September, 49 on 15 September, 66 on
+11 September and 6 on 10 or 14 September); maximum age 60 days, stale from
+22 November 2026<br>
+**Contents:** 20 topics, 212 concepts, 1,273 facts, 1,531 evidence excerpts
+(1,363 German, 114 English, 43 French, 11 Italian), 336 cited documents<br>
+**Review:** all 1,273 facts are `human-reviewed` by one named reviewer, confirmed
 in the console: the 104 of the residence and contacts topics on 14 September
 2026, the 149 of the five topics added on 15 September 2026 that day, the
 37 of the 13 `fza-*` concepts, drafted from the Agreement on the Free Movement
@@ -29,26 +33,67 @@ expat-life extension that day (in groups of 100 and 6), most in bulk
 groups. The first 253 were also read card by
 card against their excerpts on 15 September 2026. The 114 excerpts added on
 19 September 2026 (the English versions of federal pages, see "Jurisdictions
-and languages") are not reviewed by a person. Not a legal review (see
-[LIMITATIONS.md](LIMITATIONS.md))<br>
+and languages") are not reviewed by a person. The 92 facts of
+22 September 2026 were confirmed in the console that day: the 9 of
+`permit-c-five-years` and `zh-permit-c-five-years`, the 77 of the twenty
+concepts curated from pages the catalogue already held, and the 6 whose
+review was reopened when a second citation of the law was added to them. The
+25 facts of the integration topic were confirmed in one bulk group on
+22 September 2026. The 113 facts of the customs topic were confirmed on
+23 September 2026, hardest first: the 23 that carry a number, then the five
+concepts that rest on a single page, then the rest; no statement was corrected
+in that review. The 98 facts of the basic health insurance wave were confirmed
+the same day, also hardest first: the 13 that carry a number, a date or a
+threshold, then nine judgement calls the coordinating assistant recorded for
+the reviewer to overturn, then the six German legal terms rendered into
+English, then the rest. The 131 facts of the work and unemployment wave
+followed on 23 September 2026, against a brief that put first the one decision
+settling thirteen of them - whether a threshold that decides which rule applies
+is a rule or an amount - then the 39 facts carrying a number, then nine
+recorded judgement calls. The 90 facts of the AHV and pillars wave followed the
+same day, against a brief that put first the two rules the pages turned out not
+to state, then a defect in a publisher's own page that the curation preserves
+rather than hides, then the 22 facts carrying a number. The 5 facts of
+`city-lugano-waste-disposal`, added on 23 September 2026, were confirmed on
+24 September 2026. Not
+a legal review (see [LIMITATIONS.md](LIMITATIONS.md))<br>
 **Places:** the release embeds a place register, so a caller names the
 user's place instead of a code: Switzerland, the 26 cantons and the 2,110
 municipalities of the Federal Statistical Office's register of
 municipalities (snapshot of 18 September 2026), with 115 other-language
 names on 50 of them (see "Jurisdictions and languages")<br>
-**Readiness:** not yet attested for this release: `readiness.json` still
-names `mvp-zurich-2026-09-19-v10`, so the server with `--require-ready` and
-the pack image refuse the release until the ready stage runs again. No graded
+**Readiness:** the release is **attested**. `readiness.json` names
+`mvp-zurich-2026-09-24-v1`, attested on 24 September 2026 by the reviewer who
+confirmed its 1,273 facts, recording the content digest above and the digest of
+the acceptance suite; all six readiness gates passed. It supersedes
+`mvp-zurich-2026-09-23-v19`, so the server with `--require-ready` and the pack
+image now serve registration on arrival in all 26 cantons as well as the
+customs, health insurance, work and unemployment, and AHV waves; stale from
+22 November 2026. No
+graded
 live-caller session covers the `fza-*` concepts, the office contacts, the
 daily-life topics, the cross-jurisdiction cases, entry and visas, voting
 rights, the tax-at-source tariffs or the expat-life topics<br>
+**Coverage of the run:** `curation-coverage.md` next to the release lists,
+per candidate record of the run, which content sections a fact cites, which a
+disposition in `curation-coverage.yaml` settles and which are open; on this
+release 618 of 2,827 units are cited, 613 dispositioned and 1,596 open, and of
+the 26 pages of the customs topic none is left open;
+repeated boilerplate (contact cards, closure notices) is set aside and traced
+to the page where a fact cites it, so the Migrationsamt address and hours are
+served once, from the office's own page (see [LIMITATIONS.md](LIMITATIONS.md),
+"Retrieval limitations")<br>
 **Publishers and basis:** every cited document names the institution that
-published it (88 federal, 40 cantonal, 36 municipal) and every excerpt what
-it is: 373 facts rest on an authority's own guidance, 77 on an office
+published it (165 federal, 67 cantonal, 40 municipal) and every excerpt what
+it is: 875 facts rest on an authority's own guidance, 74 on an office
 directory (the SEM list of cantonal offices and the Zurich offices' own
-contact entries), 50 on a ch.ch portal summary, 41 on a federal act, 37 on
-the Agreement on the Free Movement of Persons, 14 on a federal ordinance, 7
-on a cantonal directive and 2 on the Constitution of the Canton of Zurich
+contact entries), 66 on a federal act, 50 on a ch.ch or priminfo portal
+summary, 37 on the Agreement on the Free Movement of Persons, 35 on a federal
+ordinance and 7 on a cantonal directive. The health insurance wave of
+23 September 2026 raised the two legal kinds most: the amounts of cost sharing
+and the rules on changing insurer, on treatment abroad and on suspending the
+insurance are served with the KVG, the KVV or the KLV beside the authority's
+own page, because the FOPH pages state those figures without a date
 (see "Cited sources")
 
 ## Scope statement
@@ -78,17 +123,26 @@ told to say so and not to answer from general knowledge.
 | Level | Published values |
 | --- | --- |
 | Federal | `CH` |
-| Cantonal | all 26 cantons (`CH-AG` to `CH-ZH`), of which only `CH-ZH` carries procedures beyond the migration-office contact |
+| Cantonal | all 26 cantons (`CH-AG` to `CH-ZH`), each carrying the migration-office contact and registration on arrival; only `CH-ZH` carries procedures beyond those |
 | Federal, for daily life | `CH` also carries the radio and television fee (SERAFE) |
-| Municipal | `CH-ZH-261` (City of Zurich) |
+| Municipal | `CH-ZH-261` (City of Zurich); `CH-TI-5192` (City of Lugano) for how waste is handed over only |
 
-The residence topic's cantonal and municipal procedures, and every cantonal
-fact of social insurance, unemployment, family allowances, tax at source,
-driving licence, health insurance, naturalisation, voting rights and the
-rental form, every office contact and the cantonal facts of dogs and
-vehicles, are those of Zurich. For another canton `resolve` serves the
-federal facts of these topics and answers the Zurich concepts
-`OUT_OF_COVERAGE`. The Canton of Zurich concepts serve every municipality of
+Every canton carries two things of its own: its migration-office contact,
+and how a person registers on arrival - the period, the office that receives
+the report, how the permit is applied for, what a change of canton requires
+and any online channel (the five `cantonal-*` registration concepts below).
+Everything else cantonal is Zurich's: every cantonal fact of social
+insurance, unemployment, family allowances, tax at source, driving licence,
+health insurance, naturalisation, voting rights and the rental form, every
+office contact and the cantonal facts of dogs and vehicles, and the
+residence topic's remaining cantonal and municipal procedures. For another
+canton `resolve` serves the federal facts of these topics and answers the
+Zurich concepts `OUT_OF_COVERAGE`.
+
+Zurich itself is **not** served by the five `cantonal-*` registration
+concepts: its rule lives in its own, fuller concepts, so resolving a
+`cantonal-*` concept for Zurich returns `OUT_OF_COVERAGE` with
+`jurisdiction_not_covered` rather than another canton's period. The Canton of Zurich concepts serve every municipality of
 the canton; the City of Zurich concepts (naturalisation, marriage, departure, office
 contacts and 16 of the 18 daily-life concepts) serve only `CH-ZH-261`. Facts served for a
 place whose own cantonal or municipal level the topic publishes for Zurich
@@ -116,7 +170,7 @@ that lists them. Gap messages name a place next to its code (`CH-ZH-261
 user anywhere can be placed; it publishes no fact of its own.
 
 Statements are published in English (`en`); the excerpts they cite are in the
-language of the source page, German (`de`) for 686 excerpts. On 112 facts of
+language of the source page, German (`de`) for 1,261 excerpts. On 112 facts of
 27 concepts the English version of the same SEM, FOPH, FOCBS, SECO or SERAFE
 page is cited next to the German excerpt the statement was written from (113
 English excerpts), and on one fact the German SEM residence overview next to
@@ -127,15 +181,15 @@ type D visa threshold, the ETIAS passport validity and a SERAFE page whose
 mobile table shows another fee), nor for the 7 of the SEM citizenship FAQ,
 which has no English version. The SVA Zurich pages declare no language; the
 release records them as German (`page_languages`). A question may be asked in
-English, German or Swiss German: concept discovery carries 1098 German and 85
-English search terms copied verbatim from the cited excerpts (the English ones
-on 25 concepts), alongside authored everyday words in German and English, at
+English, German or Swiss German: concept discovery carries the 1237 search
+terms the build counts, copied verbatim from the cited excerpts, German except
+for the English ones on 25 concepts, alongside authored everyday words in German and English, at
 least one English and one German sample question on every concept (the build
 checks it), and three Zurich German spellings.
 
 ## Topics and concepts
 
-### Residence permits and registration (`residence`) - 61 concepts
+### Residence permits and registration (`residence`) - 73 concepts
 
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
@@ -145,8 +199,12 @@ checks it), and three Zurich German spellings.
 | `aig-registration` | Registration under AIG Article 12 | CH | 2 |
 | `permit-l` | Short-stay permit: AIG Article 32 | CH | 2 |
 | `permit-b` | Residence permit: AIG Article 33 | CH | 2 |
-| `permit-c` | Settlement permit: AIG Article 34 | CH | 3 |
+| `permit-c` | Settlement permit: AIG Article 34 | CH | 4 |
+| `permit-c-five-years` | Settlement permit after five years: states with settlement agreements | CH | 3 |
 | `permit-types` | Foreign-national permit types | CH | 1 |
+| `permit-card-eu-efta` | EU/EFTA permit cards B, L, Ci and G | CH | 4 |
+| `permit-card-third-country` | Third-country permit cards Ci and G | CH | 3 |
+| `travel-documents-foreign-nationals` | Travel documents for foreign nationals | CH | 5 |
 | `permit-renewal` | Renewing a residence permit | CH | 3 |
 | `permit-lost` | Lost or stolen permit | CH | 1 |
 | `aig-study` | Study admission under AIG Article 27 | CH | 2 |
@@ -162,6 +220,7 @@ checks it), and three Zurich German spellings.
 | `canton-change` | Change of canton under AIG Article 37 | CH | 2 |
 | `third-country-work` | Third-country employment admission | CH | 2 |
 | `third-country-work-procedure` | Third-country workers: exemptions, application, visa and registration | CH | 4 |
+| `third-country-work-conditions` | Third-country labour-market admission: the conditions | CH | 8 |
 | `eu-short-employment` | EU/EFTA short employment: notification | CH | 2 |
 | `eu-permit-mobility` | EU/EFTA employment permit: validity and job changes | CH | 1 |
 | `eu-self-employment` | EU/EFTA self-employment: registration and documents | CH | 1 |
@@ -172,17 +231,21 @@ checks it), and three Zurich German spellings.
 | `biometric-permit` | Biometric residence-card data and issuance | CH | 2 |
 | `language-evidence` | Evidence of language skills | CH | 2 |
 | `social-assistance-review` | Social assistance and permit consequences | CH | 1 |
-| `eu-employment-registration-deadline` | EU/EFTA employment: municipal registration deadline after arrival | CH | 2 |
-| `health-insurance-enrolment` | Compulsory health-insurance enrolment timing | CH | 2 |
 | `zh-eu-registration` | Zurich registration for EU/EFTA nationals | CH-ZH | 2 |
 | `zh-eu-l` | Zurich EU/EFTA short-stay employment permit | CH-ZH | 1 |
 | `zh-eu-b` | Zurich EU/EFTA residence employment permit | CH-ZH | 1 |
 | `zh-eu-self-employment` | Zurich EU/EFTA self-employment documentation | CH-ZH | 1 |
 | `zh-eu-nonworking` | Zurich EU/EFTA residence without employment | CH-ZH | 1 |
 | `zh-eu-family-documents` | Zurich EU/EFTA family-reunification documents | CH-ZH | 1 |
+| `zh-third-country-work` | Zurich: working as a third-country national | CH-ZH | 6 |
+| `zh-permit-card` | Zurich: applying for the permit card and the biometrics appointment | CH-ZH | 5 |
+| `zh-entry-permit-non-working` | Zurich: entry permit for retirees and for close relatives in need of care | CH-ZH | 4 |
 | `zh-third-country-retirement` | Zurich third-country retirement applications | CH-ZH | 1 |
+| `zh-permit-c-five-years` | Zurich: settlement permit after five years | CH-ZH | 6 |
 | `city-zurich-arrival` | City of Zurich: registering arrival from abroad | CH-ZH-261 | 1 |
 | `city-zurich-arrival-documents` | City of Zurich: documents for arrival from abroad | CH-ZH-261 | 1 |
+| `eu-employment-registration-deadline` | EU/EFTA employment: municipal registration deadline after arrival | CH | 2 |
+| `health-insurance-enrolment` | Compulsory health-insurance enrolment timing | CH | 2 |
 | `fza-overview` | Agreement on the Free Movement of Persons (FZA): aims and principles | CH | 4 |
 | `fza-entry` | FZA: entry with an identity card or passport | CH | 1 |
 | `fza-job-search` | FZA: staying to look for work | CH | 1 |
@@ -196,6 +259,9 @@ checks it), and three Zurich German spellings.
 | `fza-right-to-remain` | FZA: right to remain after working | CH | 1 |
 | `fza-equal-treatment` | FZA: equal treatment at work | CH | 3 |
 | `zh-family-l-permit` | Zurich: family reunification by holders of a short-stay L permit | CH-ZH | 4 |
+| `zh-family-b-c-permit` | Zurich: family reunification by a B or C permit holder | CH-ZH | 5 |
+| `zh-family-swiss-sponsor` | Zurich: family reunification by a Swiss citizen | CH-ZH | 4 |
+| `zh-family-fza` | Zurich: family reunification under the free movement agreement | CH-ZH | 3 |
 | `zh-family-refugee-asylum` | Zurich: family reunification by recognised refugees granted asylum | CH-ZH | 5 |
 | `marriage-switzerland` | Getting married in Switzerland | CH | 8 |
 | `city-zurich-marriage` | Marriage preparation at the City of Zurich | CH-ZH-261 | 9 |
@@ -231,6 +297,36 @@ the EU member states, and the EFTA Convention is not in the release.
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
 | `cantonal-migration-contact` | Cantonal migration-office contact | all 26 cantons | 26 |
+
+### Registering on arrival in any canton (`residence`) - 5 concepts
+
+One fact per canton per concept, from the canton's own pages and law, for
+the 25 cantons outside Zurich. Cover is uneven because the cantons publish
+unevenly: every one states a period, all but Appenzell Innerrhoden name the
+office, and fewer describe the permit application, the change of canton or
+an online channel. A concept with no fact for a canton means that canton was
+not found to publish it, not that no rule exists.
+
+| Concept | Subject | Jurisdiction | Facts |
+| --- | --- | --- | ---: |
+| `cantonal-registration-deadline` | The period for reporting arrival, and the duty it attaches to | 25 cantons | 39 |
+| `cantonal-registration-route` | Which office receives the report, and in what order | 24 cantons | 35 |
+| `cantonal-permit-application` | How and where the permit is applied for | 15 cantons | 19 |
+| `cantonal-change-of-canton` | What a move from another canton requires | 17 cantons | 18 |
+| `cantonal-online-services` | A named online channel for these duties | 10 cantons | 13 |
+
+Most cantons give **fourteen days**. Two do not: **Ticino and Vaud give
+eight**, and Ticino additionally requires a foreign national settling there
+to notify both the commune's residents' office and the regional foreigners'
+service within them. Schwyz gives an EU or EFTA national fourteen days if
+they came to settle or to work and three months otherwise, and gives
+third-country nationals no day count at all - an event, not a period. Where
+a canton's sources disagree, both are served, each scoped to what its source
+covers.
+
+Most cantons state the period only in their law, so those facts cite a
+cantonal statute rather than a service page; the basis is recorded on every
+excerpt. See LIMITATIONS.md for what that costs.
 
 ### Zurich office contacts (`offices`) - 9 concepts
 
@@ -280,27 +376,33 @@ schooling is served as kindergarten entry, the school holidays of 2026/27
 and 2027/28 and the city's information in other languages, not as the
 school system.
 
-### Waste and recycling in the City of Zurich (`waste`) - 6 concepts
+### Waste and recycling in the City of Zurich, and waste hand-over in Lugano (`waste`) - 8 concepts
 
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
-| `city-zurich-household-waste` | Household waste and the Zueri-Sack in the City of Zurich | CH-ZH-261 | 7 |
+| `city-zurich-waste-sorting` | City of Zurich: where a particular item goes | CH-ZH-261 | 5 |
+| `city-zurich-household-waste` | Household waste and the Züri-Sack in the City of Zurich | CH-ZH-261 | 7 |
 | `city-zurich-organic-paper-cardboard` | Organic waste, paper and cardboard collection in the City of Zurich | CH-ZH-261 | 6 |
 | `city-zurich-bulky-waste-pickup` | Bulky waste pickup in the City of Zurich | CH-ZH-261 | 3 |
 | `city-zurich-recycling-centres` | Recycling centres of the City of Zurich | CH-ZH-261 | 5 |
 | `city-zurich-recycling-points` | Glass, metal, oil, textiles and plastic recycling in the City of Zurich | CH-ZH-261 | 4 |
 | `city-zurich-hazardous-waste` | Hazardous waste in the City of Zurich | CH-ZH-261 | 3 |
+| `city-lugano-waste-disposal` | Handing over household, recyclable and bulky waste in the City of Lugano | CH-TI-5192 | 5 |
 
 Collection days are not served for a street: the facts point to the
-personal disposal calendar and the ERZ app, which compute them.
+personal disposal calendar and the ERZ app, which compute them. Lugano
+publishes no collection day for residents: its facts, four from the municipal
+waste ordinance (Ordinanza 4.1.1) and one from the city's waste page, say that
+household waste goes in the red official bags into containers usable as a rule
+on every day, where recyclables, bulky and garden waste go, and how to get the
+yearly bulky-waste pickup. No other city outside Zurich is served for waste.
 
-### Parking, vehicles and moving goods (`vehicles-parking`) - 3 concepts
+### Parking and vehicles (`vehicles-parking`) - 2 concepts
 
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
 | `city-zurich-parking-permits` | Parking permits and the blue zone in the City of Zurich | CH-ZH-261 | 6 |
 | `zh-vehicle-registration-move` | Vehicles after moving to the Canton of Zurich | CH-ZH | 5 |
-| `moving-goods-customs` | Importing moving goods (household effects and vehicles) when moving to Switzerland | CH | 7 |
 
 ### Tax return and household fees (`household-taxes`) - 3 concepts
 
@@ -314,10 +416,11 @@ The tax facts are procedural (who files, the deadline of the 2025 return,
 filing channels, documents, consequences of not filing); tariffs, rates,
 deductions and amounts of tax are not served.
 
-### Social insurance, pillar 3a and unemployment (`social-insurance`) - 7 concepts
+### Social insurance, pillar 3a and unemployment (`social-insurance`) - 8 concepts
 
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
+| `ahv-agreement-states` | Social security agreements: the states and what they coordinate | CH | 7 |
 | `ahv-contribution-refund` | Refund of AHV contributions on leaving Switzerland | CH | 10 |
 | `ahv-pension-abroad` | AHV pensions and benefits after moving abroad | CH | 6 |
 | `bvg-cash-out-departure` | Cash payment of pension fund assets on leaving Switzerland | CH | 9 |
@@ -373,16 +476,20 @@ and the amount of tax for a salary are not served.
 general statements without a context field, the second its FAQ answers for a
 person whose insurance duty applies.
 
-### Naturalisation (`naturalisation`) - 6 concepts
+### Naturalisation (`naturalisation`) - 10 concepts
 
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
 | `naturalisation-ordinary` | Ordinary naturalisation: federal conditions | CH | 9 |
 | `zh-naturalisation-ordinary` | Ordinary naturalisation in the Canton of Zurich | CH-ZH | 13 |
 | `city-zurich-naturalisation` | Ordinary naturalisation in the City of Zurich | CH-ZH-261 | 8 |
+| `naturalisation-third-generation` | Facilitated naturalisation of the third generation | CH | 4 |
+| `city-zurich-naturalisation-language` | City of Zurich: German for naturalisation | CH-ZH-261 | 4 |
+| `city-zurich-naturalisation-civics` | City of Zurich: the civic knowledge test | CH-ZH-261 | 3 |
 | `naturalisation-facilitated-spouse` | Facilitated naturalisation of the spouse of a Swiss citizen | CH | 9 |
 | `zh-naturalisation-facilitated` | Facilitated naturalisation in the Canton of Zurich | CH-ZH | 5 |
 | `city-zurich-naturalisation-facilitated` | Facilitated naturalisation in the City of Zurich | CH-ZH-261 | 7 |
+| `city-zurich-citizenship-swiss` | City of Zurich: city citizenship for Swiss citizens | CH-ZH-261 | 4 |
 
 ### Entry and visas (`entry-visas`) - 9 concepts
 
@@ -466,6 +573,57 @@ Zurich's duty to notify the initial rent on the official form. Rent levels,
 flats on offer and the address of an individual conciliation authority are
 not served.
 
+### Customs: travelling, ordering from abroad and moving goods (`customs`) - 16 concepts
+
+| Concept | Subject | Jurisdiction | Facts |
+| --- | --- | --- | ---: |
+| `moving-goods-customs` | Importing moving goods (household effects and vehicles) when moving to Switzerland | CH | 17 |
+| `customs-travel-allowance` | The value-free limit for travellers bringing goods into Switzerland | CH | 9 |
+| `customs-goods-counted-toward-allowance` | Which goods count towards the value-free limit | CH | 3 |
+| `customs-import-vat-rate` | The rate of value-added tax on goods brought into Switzerland | CH | 4 |
+| `customs-duty-free-quantities` | Duty-free quantities for food, alcohol and tobacco | CH | 8 |
+| `customs-personal-effects` | Personal effects carried across the border | CH | 4 |
+| `customs-prohibited-restricted-goods` | Goods that may not be brought into Switzerland, or only under conditions | CH | 2 |
+| `customs-declaring-goods` | Declaring goods at the Swiss border | CH | 18 |
+| `customs-internet-orders` | Ordering from abroad by post or courier | CH | 14 |
+| `customs-mail-order-vat` | Mail-order and platform taxation, and why a shop charges Swiss VAT at checkout | CH | 3 |
+| `customs-preferential-origin` | Reduced duty for goods originating in an agreement or developing country | CH | 2 |
+| `customs-moving-vehicle` | Bringing a vehicle when moving to Switzerland | CH | 8 |
+| `customs-moving-animals` | Moving to Switzerland with pets or horses | CH | 4 |
+| `customs-returns-and-repairs` | Sending an item back, and repairs | CH | 11 |
+| `customs-importing-pets` | Bringing a pet into Switzerland, and buying a dog abroad | CH | 8 |
+| `customs-leaving-with-goods` | Leaving Switzerland with goods, and the Swiss VAT refund for a buyer resident abroad | CH | 5 |
+
+The duty-free quantities per product are not served: the customs authority
+publishes that table as a graphic, which the extraction cannot read, and the
+concept says so. Tariff numbers, duty rates per product and the treatment of
+one particular consignment are out of scope.
+
+### Integration offers and German courses (`integration`) - 5 concepts
+
+| Concept | Subject | Jurisdiction | Facts |
+| --- | --- | --- | ---: |
+| `zh-integration-offers` | Finding integration offers and German courses | CH-ZH | 3 |
+| `zh-newcomer-first-information` | First information and counselling for newcomers | CH-ZH | 5 |
+| `zh-racism-protection` | Protection from racist discrimination | CH-ZH | 6 |
+| `zh-migrant-associations` | Platform for migrant associations | CH-ZH | 3 |
+| `zh-integration-project-funding` | Contributions to integration projects | CH-ZH | 8 |
+
+Added on 22 September 2026 from seven pages of the Canton of Zurich's
+Fachstelle Integration that the run had held since the first crawl and that
+no fact cited: the offer database and the free German-course advice in 16
+languages, the municipalities' duty to inform newcomers and the three groups
+the canton names as needing support early, ZüRAS and the national bodies
+against racism with the legal bases (BV Art. 8(2), StGB Art. 261bis, AIG
+Art. 53), the platform for migrant associations, and the project
+contributions under KIP 3 with their amounts, deadlines and applicants. The
+canton's integration funding for municipalities and providers and its
+support system for refugees (Integrationsagenda IAZH) are out of scope by the
+reviewer's decision of 22 September 2026 and are named in the manifest's
+`out_of_scope`; the pages that carry them are dispositioned in
+`curation-coverage.yaml`. Which offers exist in a given municipality, their
+dates and prices, and whether a project is funded are not served.
+
 ## Context fields of the added topics
 
 Four concepts route their facts by a context field the caller derives from
@@ -495,179 +653,208 @@ pillar 3a maximum contributions for 2026 (served until the end of 2026).
 
 ## Cited sources
 
-Every fact cites an exact excerpt of one of these 164 documents, with the URL
+Every fact cites an exact excerpt of one of these 196 documents, with the URL
 and the date the copy was taken. `get_evidence` returns the excerpt in its
 original language.
 
 | Publisher | Document | Language | Accessed |
 | --- | --- | --- | --- |
-| Fedlex (Federal Chancellery) | AIG / LEI / FNIA, SR 142.20 | de | 2026-09-10 |
-| Fedlex (Federal Chancellery) | FZA / ALCP, SR 0.142.112.681 | de | 2026-09-10 |
-| Fedlex (Federal Chancellery) | Ordinance on the Admission of Persons and Vehicles to Road Traffic, SR 741.51 | de | 2026-09-15 |
-| Fedlex (Federal Chancellery) | Tax at Source Ordinance of the FDF, SR 642.118.2 | de | 2026-09-15 |
-| Fedlex (Federal Chancellery) | Vested Benefits Act, SR 831.42 | de | 2026-09-15 |
-| Fedlex (Federal Chancellery) | Ordinance on the refund of AHV contributions paid by foreign nationals, SR 831.131.12 | de | 2026-09-15 |
-| State Secretariat for Migration SEM | Der biometrische Auslaenderausweis | de | 2026-09-11 |
-| State Secretariat for Migration SEM | FAQ - Fragen zur Personenfreizuegigkeit | de | 2026-09-11 |
-| State Secretariat for Migration SEM | FAQ Aufenthalt und Integrationskriterien | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Kantonale Migrations- und Arbeitsmarktbehoerden | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Meldeverfahren fuer kurzfristige Erwerbstaetigkeit | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Nicht-EU/EFTA-Angehoerige | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Residence | en | 2026-09-11 |
-| State Secretariat for Migration SEM | Die Ordentliche Einbuergerung | de | 2026-09-15 |
-| State Secretariat for Migration SEM | FAQ - Schweizer Buergerrecht | de | 2026-09-15 |
-| State Secretariat for Migration SEM | Verheiratet mit einer Schweizerin oder einem Schweizer | de | 2026-09-15 |
-| Canton of Zurich (Migrationsamt) | Aufenthalt fuer EU/EFTA-Staatsangehoerige | de | 2026-09-11 |
-| Canton of Zurich (Migrationsamt) | Aufenthalt ohne Erwerbstaetigkeit fuer Drittstaatsangehoerige | de | 2026-09-11 |
-| City of Zurich (Personenmeldeamt) | Zuzug in die Stadt Zuerich | de | 2026-09-11 |
-| Federal Office of Public Health FOPH | Krankenversicherung: Versicherungspflicht fuer in der Schweiz wohnhafte Versicherte | de | 2026-09-11 |
-| Federal Office of Public Health FOPH | Krankenversicherung: Praemienverbilligung | de | 2026-09-15 |
-| ch.ch (Federal Chancellery) | Als Auslaenderin oder Auslaender in der Schweiz arbeiten | de | 2026-09-14 |
-| ch.ch (Federal Chancellery) | Aufenthaltsbewilligung fuer die Schweiz: Gesuch und Erneuerung | de | 2026-09-14 |
-| ch.ch (Federal Chancellery) | Gesuch um Familiennachzug in die Schweiz | de | 2026-09-14 |
-| ch.ch (Federal Chancellery) | Verlust, Diebstahl, Umtausch des Fuehrerausweises in der Schweiz | de | 2026-09-15 |
-| Zentrale Ausgleichsstelle ZAS | Anspruch auf AHV-Rentenzahlungen ausserhalb der Schweiz | de | 2026-09-15 |
-| Zentrale Ausgleichsstelle ZAS | Rueckverguetungen | de | 2026-09-15 |
-| Zentrale Ausgleichsstelle ZAS | Staatsangehoerigkeit eines Staates mit Sozialversicherungsabkommen (AHV) | de | 2026-09-15 |
-| Bundesamt fuer Sozialversicherungen BSV | Kann ich mein BVG-Altersguthaben bar beziehen, wenn ich die Schweiz endgueltig verlasse? | de | 2026-09-15 |
-| Eidgenoessische Steuerverwaltung ESTV | Schweizerische Quellensteuer QST | de | 2026-09-11 |
-| Canton of Zurich (Kantonales Steueramt) | Merkblatt des kantonalen Steueramtes ueber die Quellenbesteuerung von Arbeitnehmerinnen und Arbeitnehmern | de | 2026-09-15 |
-| Canton of Zurich (Kantonales Steueramt) | Nachtraegliche ordentliche Veranlagung beantragen | de | 2026-09-15 |
-| Canton of Zurich (Kantonales Steueramt) | Quellensteuerpflichtige Personen | de | 2026-09-15 |
-| Canton of Zurich (Strassenverkehrsamt) | Auslaendischen Fuehrerausweis umtauschen | de | 2026-09-15 |
-| Canton of Zurich (Strassenverkehrsamt) | So bereiten Sie sich gut auf Ihre Kontrollfahrt vor | de | 2026-09-15 |
-| Canton of Zurich (Strassenverkehrsamt) | Umtausch eines auslaendischen Fuehrerausweises | de | 2026-09-15 |
-| Canton of Zurich (Gesundheitsdirektion) | Praemienverbilligung Krankenversicherung | de | 2026-09-15 |
-| SVA Zuerich | Krankenversicherungspflicht: Wer kann sich befreien lassen? | de | 2026-09-15 |
-| SVA Zuerich | Praemienverbilligung: Wer hat Anspruch? | de | 2026-09-15 |
-| Canton of Zurich (Gemeindeamt) | Einbuergerungsgesuch einreichen | de | 2026-09-15 |
-| Canton of Zurich (Gemeindeamt) | Erleichterte Einbuergerung | de | 2026-09-15 |
-| Canton of Zurich (Gemeindeamt) | Ordentliche Einbuergerung | de | 2026-09-15 |
-| City of Zurich (Abteilung Einbuergerungen) | Erleichterte Einbuergerung | de | 2026-09-15 |
-| City of Zurich (Abteilung Einbuergerungen) | Ordentliche Einbuergerung | de | 2026-09-15 |
-| Canton of Zurich (Migrationsamt) | Migrationsamt | de | 2026-09-17 |
-| Canton of Zurich (Migrationsamt) | Organisation (des Migrationsamts) | de | 2026-09-17 |
-| Canton of Zurich (Gemeindeamt) | Abteilung Einbuergerungen | de | 2026-09-17 |
-| Canton of Zurich (Strassenverkehrsamt) | Strassenverkehrsamt | de | 2026-09-17 |
-| Canton of Zurich (Strassenverkehrsamt) | Standorte und Oeffnungszeiten des Strassenverkehrsamts | de | 2026-09-17 |
-| Canton of Zurich (Kantonales Steueramt) | Steueramt | de | 2026-09-17 |
-| Canton of Zurich (Kantonales Steueramt) | Quellensteuer | de | 2026-09-15 |
-| Canton of Zurich (Amt fuer Wirtschaft) | Amt fuer Wirtschaft | de | 2026-09-17 |
-| Canton of Zurich (Amt fuer Wirtschaft) | Erwerbstaetigkeit von Auslaenderinnen und Auslaendern | de | 2026-09-17 |
-| SVA Zuerich | Kontakt | de | 2026-09-17 |
-| SVA Zuerich | Beratung vor Ort | de | 2026-09-17 |
-| SVA Zuerich | Telefon | de | 2026-09-17 |
-| SVA Zuerich | Spezielle Oeffnungszeiten | de | 2026-09-17 |
-| City of Zurich (Personenmeldeamt) | Terminpflicht beim Personenmeldeamt | de | 2026-09-17 |
-| City of Zurich (Abteilung Einbuergerungen) | Einbuergerung und Stadtbuergerrecht | de | 2026-09-15 |
-| City of Zurich (Personenmeldeamt) | Erste Schritte | de | 2026-09-17 |
-| City of Zurich (Stadtpolizei) | Hundekontrolle | de | 2026-09-17 |
-| City of Zurich (Stadtpolizei) | Anmeldung eines Hundes bei der Wohngemeinde | de | 2026-09-17 |
-| Canton of Zurich (Veterinaeramt) | Hunde | de | 2026-09-17 |
-| City of Zurich (Schulamt) | Kindergarten | de | 2026-09-17 |
-| City of Zurich (Schulamt) | Einschulung | de | 2026-09-17 |
-| City of Zurich (Schulamt) | Schulferien und schulfreie Tage | de | 2026-09-17 |
-| City of Zurich (Schulamt) | Schulbotschafter*innen - Volksschule in verschiedenen Sprachen erklaert | de | 2026-09-17 |
-| City of Zurich (Schutz & Rettung) | Medizinischer Notfall - richtig handeln | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Zueri-Sack | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Wo und wann entsorgen | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Entsorgungskalender | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Abfuhr Hauskehricht | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Abfuhr Bioabfall | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Kartonsammlung | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Papiersammlung | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Abfuhr Sperrgut, Metall, Elektrogeraete und Grubengut | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Recyclinghof | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Wertstoff-Sammelstellen | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Sonderabfall-Sammelstelle | de | 2026-09-17 |
-| City of Zurich (Entsorgung + Recycling) | Kunststoffsammlung | de | 2026-09-17 |
-| City of Zurich (Dienstabteilung Verkehr) | Parkbewilligungen | de | 2026-09-17 |
-| City of Zurich (Dienstabteilung Verkehr) | Anwohnerparkkarte fuer Privatpersonen und Firmen | de | 2026-09-17 |
-| City of Zurich (Dienstabteilung Verkehr) | Parkscheibe fuer die Blaue Zone | de | 2026-09-17 |
-| City of Zurich (Dienstabteilung Verkehr) | Tagesbewilligungen | de | 2026-09-17 |
-| Canton of Zurich (Strassenverkehrsamt) | Umzug innerhalb oder in den Kanton Zuerich melden | de | 2026-09-17 |
-| Canton of Zurich (Strassenverkehrsamt) | Fahrzeug importieren | de | 2026-09-17 |
-| City of Zurich (Steueramt) | Steuererklaerung fuer natuerliche Personen der Stadt Zuerich | de | 2026-09-17 |
-| City of Zurich (Steueramt) | Kontakte und Oeffnungszeiten des Steueramts | de | 2026-09-17 |
-| SERAFE AG | Abgabeuebersicht | de | 2026-09-17 |
-| SERAFE AG | Grundsatz (Abgabebefreiung) | de | 2026-09-17 |
-| State Secretariat for Migration SEM | Einreisevoraussetzungen nach Staatsangehoerigkeit | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Einreise ohne Visum | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Einreise mit Visum | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Regeln zur Berechnung der Aufenthaltsdauer | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Brauche ich ein ETIAS? | de | 2026-09-11 |
-| State Secretariat for Migration SEM | FAQ - Einreise | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Visumantragsformular | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Schengen-Raum | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Entry/Exit System (EES) | de | 2026-09-11 |
-| Federal Department of Foreign Affairs FDFA | Visabestimmungen fuer die Einreise in die Schweiz | de | 2026-09-17 |
-| Fedlex (Federal Chancellery) | VEV / OEV, SR 142.204 | de | 2026-09-17 |
-| Canton of Zurich (Migrationsamt) | Familiennachzug durch Personen mit einer L-Bewilligung beantragen | de | 2026-09-11 |
-| Canton of Zurich (Migrationsamt) | Familiennachzug durch Fluechtlinge mit Asyl beantragen | de | 2026-09-11 |
-| Fedlex (Federal Chancellery) | Federal Constitution, SR 101 | de | 2026-09-18 |
-| Fedlex (Federal Chancellery) | Constitution of the Canton of Zurich, SR 131.211 | de | 2026-09-18 |
-| ch.ch (Federal Chancellery) | Stimm- und Wahlrecht in der Schweiz | de | 2026-09-18 |
-| Canton of Zurich (Amt fuer Statistik und Daten) | So stimme ich ab | de | 2026-09-18 |
-| Canton of Zurich (Kantonales Steueramt) | Quellensteuer-Tarife | de | 2026-09-18 |
-| Canton of Zurich (Kantonales Steueramt) | Quellensteuertarife ab 2026 - Grundlagen und Berechnungsparameter (PDF) | de | 2026-09-18 |
-| Fedlex (Federal Chancellery) | Code of Obligations, SR 220 | de | 2026-09-18 |
-| FSIO | Familienzulagen - Uebersicht | de | 2026-09-15 |
-| FSIO | Leistungen und Voraussetzungen (Familienzulagen) | de | 2026-09-15 |
-| FSIO | Urlaub und Erwerbsersatz bei Mutterschaft, Vaterschaft und Adoption | de | 2026-09-15 |
-| FSIO | EO bei Mutterschaft | de | 2026-09-15 |
-| FSIO | EO bei Vaterschaft | de | 2026-09-15 |
-| FSIO | EO bei Adoption | de | 2026-09-15 |
-| SVA Zuerich | Familienzulagen: Sinn und Zweck | de | 2026-09-15 |
-| SVA Zuerich | Familienzulagen: Angestellte | de | 2026-09-15 |
-| SVA Zuerich | Familienzulagen: Nichterwerbstaetige | de | 2026-09-15 |
-| ch.ch (Federal Chancellery) | Mietvertrag, Untermietvertrag, Pachtvertrag in der Schweiz | de | 2026-09-18 |
-| ch.ch (Federal Chancellery) | Wohnen: Ruhezeiten, Mietzins und Maengel in der Schweiz | de | 2026-09-18 |
-| Federal Office for Housing BWO | Hypothekarischer Referenzzinssatz | de | 2026-09-18 |
-| Canton of Zurich (Direktion der Justiz und des Innern) | Formulare im Mietwesen | de | 2026-09-18 |
-| ch.ch (Federal Chancellery) | Heiraten in der Schweiz | de | 2026-09-18 |
-| City of Zurich (Zivilstandsamt) | Ehevorbereitung | de | 2026-09-18 |
-| City of Zurich (Zivilstandsamt) | Heiraten mit auslaendischem Pass und Wohnort Zuerich | de | 2026-09-18 |
-| City of Zurich (Zivilstandsamt) | Benoetigte Dokumente fuer die Heirat | de | 2026-09-18 |
-| City of Zurich (Personenmeldeamt) | Wegzug aus der Stadt Zuerich | de | 2026-09-18 |
-| City of Zurich (Steueramt) | Wegzug ins Ausland | de | 2026-09-18 |
-| FSIO | Wer kann eine Saeule 3a (gebundene Selbstvorsorge) einrichten? | de | 2026-09-18 |
-| FSIO | Welche Beitraege kann ich in die Saeule 3a einzahlen? | de | 2026-09-18 |
-| ch.ch (Federal Chancellery) | Die 3. Saeule der Altersvorsorge: 3a und 3b in der Schweiz | de | 2026-09-18 |
-| SECO (arbeit.swiss) | FAQ zur Arbeitslosenentschaedigung | de | 2026-09-18 |
-| SECO (arbeit.swiss) | Anmeldung und Registrierung | de | 2026-09-18 |
-| Canton of Zurich (Amt fuer Wirtschaft) | Arbeitslosenentschaedigung | de | 2026-09-18 |
-| Federal Office of Public Health FOPH | Unfallversicherung: Wer ist obligatorisch versichert? | de | 2026-09-18 |
-| Federal Office of Public Health FOPH | Krankenversicherung: Zur Sistierung der Unfalldeckung berechtigte Versicherte | de | 2026-09-18 |
+| Canton of Zurich, Cantonal Tax Office | Merkblatt des kantonalen Steueramtes über die Quellenbesteuerung von Arbeitnehmerinnen und Arbeitnehmern | Kanton Zürich | de | 2026-09-15 |
+| Canton of Zurich, Cantonal Tax Office | Nachträgliche ordentliche Veranlagung beantragen | Kanton Zürich | de | 2026-09-15 |
+| Canton of Zurich, Cantonal Tax Office | Quellensteuer | Kanton Zürich | de | 2026-09-15 |
+| Canton of Zurich, Cantonal Tax Office | Quellensteuer-Tarife | Kanton Zürich | de | 2026-09-18 |
+| Canton of Zurich, Cantonal Tax Office | Quellensteuerpflichtige Personen | Kanton Zürich | de | 2026-09-15 |
+| Canton of Zurich, Cantonal Tax Office | Steueramt | Kanton Zürich | de | 2026-09-17 |
+| Canton of Zurich, Cantonal Tax Office | Zurich: tax-at-source tariffs from 2026, basis and calculation parameters (PDF) | de | 2026-09-18 |
+| Canton of Zurich, Directorate of Justice and Home Affairs, tenancy forms | Formulare im Mietwesen | Kanton Zürich | de | 2026-09-18 |
+| Canton of Zurich, Health Directorate | Prämienverbilligung Krankenversicherung | Kanton Zürich | de | 2026-09-15 |
+| Canton of Zurich, Migration Office | Aufenthalt für EU/EFTA-Staatsangehörige | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Aufenthalt mit Erwerbstätigkeit für Drittstaatsangehörige | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Aufenthalt ohne Erwerbstätigkeit für Drittstaatsangehörige | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Ausländerausweis beantragen | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Ausländerausweise im Kreditkartenformat | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Biometrietermin verschieben | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Einreisebewilligung für Rentnerinnen und Rentner beantragen | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Einreisebewilligung für nahe Verwandte beantragen | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Familiennachzug durch Flüchtlinge mit Asyl beantragen | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Familiennachzug durch Personen mit einer B- oder C-Bewilligung beantragen | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Familiennachzug durch Personen mit einer L-Bewilligung beantragen | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Familiennachzug durch Schweizer Staatsangehörige beantragen | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Familiennachzug nach dem Freizügigkeitsabkommen beantragen | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Migrationsamt | Kanton Zürich | de | 2026-09-17 |
+| Canton of Zurich, Migration Office | Niederlassungsbewilligung | Kanton Zürich | de | 2026-09-11 |
+| Canton of Zurich, Migration Office | Organisation | Kanton Zürich | de | 2026-09-17 |
+| Canton of Zurich, Office for Municipalities, Naturalisation Division | Abteilung Einbürgerungen | Kanton Zürich | de | 2026-09-17 |
+| Canton of Zurich, Office for Municipalities, Naturalisation Division | Einbürgerungsgesuch einreichen | Kanton Zürich | de | 2026-09-15 |
+| Canton of Zurich, Office for Municipalities, Naturalisation Division | Erleichterte Einbürgerung | Kanton Zürich | de | 2026-09-15 |
+| Canton of Zurich, Office for Municipalities, Naturalisation Division | Ordentliche Einbürgerung | Kanton Zürich | de | 2026-09-15 |
+| Canton of Zurich, Office for the Economy | Amt für Wirtschaft | Kanton Zürich | de | 2026-09-17 |
+| Canton of Zurich, Office for the Economy | Arbeitslosenentschädigung | Kanton Zürich | de | 2026-09-18 |
+| Canton of Zurich, Office for the Economy | Erwerbstätigkeit von Ausländerinnen und Ausländern | Kanton Zürich | de | 2026-09-17 |
+| Canton of Zurich, Road Traffic Office | Ausländischen Führerausweis umtauschen | Kanton Zürich | de | 2026-09-15 |
+| Canton of Zurich, Road Traffic Office | Fahrzeug importieren | Kanton Zürich | de | 2026-09-17 |
+| Canton of Zurich, Road Traffic Office | So bereiten Sie sich gut auf Ihre Kontrollfahrt vor | Kanton Zürich | de | 2026-09-15 |
+| Canton of Zurich, Road Traffic Office | Standorte und Öffnungszeiten des Strassenverkehrsamts | Kanton Zürich | de | 2026-09-17 |
+| Canton of Zurich, Road Traffic Office | Strassenverkehrsamt | Kanton Zürich | de | 2026-09-17 |
+| Canton of Zurich, Road Traffic Office | Umtausch eines ausländischen Führerausweises | Kanton Zürich | de | 2026-09-15 |
+| Canton of Zurich, Road Traffic Office | Umzug innerhalb oder in den Kanton Zürich melden | Kanton Zürich | de | 2026-09-17 |
+| Canton of Zurich, Statistical Office, elections and votes | So stimme ich ab | Kanton Zürich | de | 2026-09-18 |
+| Canton of Zurich, Veterinary Office | Hunde | Kanton Zürich | de | 2026-09-17 |
+| Central Compensation Office CCO | Anspruch auf AHV-Rentenzahlungen ausserhalb der Schweiz | de | 2026-09-15 |
+| Central Compensation Office CCO | Bilaterale Abkommen | de | 2026-09-15 |
+| Central Compensation Office CCO | Rückvergütungen | de | 2026-09-15 |
+| Central Compensation Office CCO | Staatsangehörigkeit eines Staates mit Sozialversicherungsabkommen (AHV) | de | 2026-09-15 |
+| City of Zurich, City Police | Anmeldung eines Hundes bei der Wohngemeinde | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, City Police | Hundekontrolle | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Civil Registry Office | Benötigte Dokumente für die Heirat | Stadt Zürich | de | 2026-09-18 |
+| City of Zurich, Civil Registry Office | Ehevorbereitung | Stadt Zürich | de | 2026-09-18 |
+| City of Zurich, Civil Registry Office | Heiraten mit ausländischem Pass und Wohnort Zürich | Stadt Zürich | de | 2026-09-18 |
+| City of Zurich, Naturalisation Division | Deutschkenntnisse | Stadt Zürich | de | 2026-09-15 |
+| City of Zurich, Naturalisation Division | Einbürgerung und Stadtbürgerrecht | Stadt Zürich | de | 2026-09-15 |
+| City of Zurich, Naturalisation Division | Erleichterte Einbürgerung | Stadt Zürich | de | 2026-09-15 |
+| City of Zurich, Naturalisation Division | Grundkenntnisse | Stadt Zürich | de | 2026-09-15 |
+| City of Zurich, Naturalisation Division | Ordentliche Einbürgerung | Stadt Zürich | de | 2026-09-15 |
+| City of Zurich, Naturalisation Division | Stadtbürgerrecht in der Stadt Zürich beantragen | Stadt Zürich | de | 2026-09-15 |
+| City of Zurich, Population Office | Erste Schritte | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Population Office | Terminpflicht beim Personenmeldeamt | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Population Office | Wegzug aus der Stadt Zürich | Stadt Zürich | de | 2026-09-18 |
+| City of Zurich, Population Office | Zuzug in die Stadt Zürich | Stadt Zürich | de | 2026-09-11 |
+| City of Zurich, Protection and Rescue Zurich | Medizinischer Notfall – richtig handeln | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, School Office | Einschulung | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, School Office | Kindergarten | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, School Office | Schulbotschafter*innen – Volksschule in verschiedenen Sprachen erklärt | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, School Office | Schulferien und schulfreie Tage | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Tax Office | Kontakte und Öffnungszeiten des Steueramts | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Tax Office | Steuererklärung für natürliche Personen der Stadt Zürich | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Tax Office | Wegzug ins Ausland | Stadt Zürich | de | 2026-09-18 |
+| City of Zurich, Traffic Department | Anwohnerparkkarte für Privatpersonen und Firmen | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Traffic Department | Parkbewilligungen | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Traffic Department | Parkscheibe für die Blaue Zone | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Traffic Department | Tagesbewilligungen | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Abfuhr Bioabfall | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Abfuhr Hauskehricht | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Abfuhr Sperrgut, Metall, Elektrogeräte und Grubengut | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Entsorgungskalender | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Gewusst wie | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Kartonsammlung | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Kunststoffsammlung | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Papiersammlung | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Recyclinghof | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Sonderabfall-Sammelstelle | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Wertstoff-Sammelstellen | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Wo und wann entsorgen | Stadt Zürich | de | 2026-09-17 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | Züri-Sack | Stadt Zürich | de | 2026-09-17 |
+| Federal Department of Foreign Affairs FDFA | Visabestimmungen für die Einreise in die Schweiz | de | 2026-09-17 |
+| Federal Office for Customs and Border Security FOCBS | Moving to Switzerland: Procedure | en | 2026-09-11 |
 | Federal Office for Customs and Border Security FOCBS | Umzug in die Schweiz: Vorgehen | de | 2026-09-11 |
-| ch.ch (Federal Chancellery) | Umzug in die Schweiz | de | 2026-09-15 |
-| State Secretariat for Migration SEM | Aufenthalt | de | 2026-09-11 |
-| State Secretariat for Migration SEM | Biometric residence permits for foreign nationals | en | 2026-09-11 |
-| State Secretariat for Migration SEM | Cantonal immigration and employment market authorities | en | 2026-09-11 |
-| State Secretariat for Migration SEM | Do I require an ETIAS? | en | 2026-09-11 |
-| State Secretariat for Migration SEM | Entry requirements by nationality | en | 2026-09-11 |
-| State Secretariat for Migration SEM | Entry with visa | en | 2026-09-11 |
-| State Secretariat for Migration SEM | Entry without visa | en | 2026-09-11 |
-| State Secretariat for Migration SEM | Entry/Exit System (EES) | en | 2026-09-11 |
-| State Secretariat for Migration SEM | FAQ - Entry | en | 2026-09-11 |
-| State Secretariat for Migration SEM | FAQ - Free Movement of Persons | en | 2026-09-11 |
-| State Secretariat for Migration SEM | Non-EU/EFTA nationals | en | 2026-09-11 |
-| State Secretariat for Migration SEM | Rules for calculating the length of stay | en | 2026-09-11 |
-| State Secretariat for Migration SEM | Schengen Area | en | 2026-09-11 |
-| State Secretariat for Migration SEM | Married with a Swiss citizen | en | 2026-09-19 |
-| State Secretariat for Migration SEM | Notification procedure for short-term work in Switzerland | en | 2026-09-19 |
-| State Secretariat for Migration SEM | Ordinary naturalisation | en | 2026-09-19 |
-| Federal Office of Public Health FOPH | Health insurance: Requirement to obtain insurance for persons resident in Switzerland | en | 2026-09-11 |
+| Federal Office for Housing BWO | Hypothekarischer Referenzzinssatz | de | 2026-09-18 |
 | Federal Office of Public Health FOPH | Accident insurance: Who is subject to compulsory insurance? | en | 2026-09-19 |
 | Federal Office of Public Health FOPH | Health insurance: Insured persons eligible to suspend accident cover | en | 2026-09-19 |
 | Federal Office of Public Health FOPH | Health insurance: Premium subsidies | en | 2026-09-19 |
-| Federal Office for Customs and Border Security FOCBS | Moving to Switzerland: Procedure | en | 2026-09-11 |
-| State Secretariat for Economic Affairs SECO, public employment service | FAQs on unemployment benefit | en | 2026-09-19 |
-| State Secretariat for Economic Affairs SECO, public employment service | Signing on and registration | en | 2026-09-19 |
-| SERAFE AG | Basic principle | en | 2026-09-19 |
-| SERAFE AG | Fee overview | en | 2026-09-19 |
-
-Document titles are given here without umlauts; the release, the citations and
-the served excerpts carry the publisher's exact spelling.
+| Federal Office of Public Health FOPH | Health insurance: Requirement to obtain insurance for persons resident in Switzerland | en | 2026-09-11 |
+| Federal Office of Public Health FOPH | Krankenversicherung: Prämienverbilligung | de | 2026-09-15 |
+| Federal Office of Public Health FOPH | Krankenversicherung: Versicherungspflicht für in der Schweiz wohnhafte Versicherte | de | 2026-09-11 |
+| Federal Office of Public Health FOPH | Krankenversicherung: Zur Sistierung der Unfalldeckung berechtigte Versicherte | de | 2026-09-18 |
+| Federal Office of Public Health FOPH | Unfallversicherung: Wer ist obligatorisch versichert? | de | 2026-09-18 |
+| Federal Social Insurance Office FSIO | EO bei Adoption | de | 2026-09-15 |
+| Federal Social Insurance Office FSIO | EO bei Mutterschaft | de | 2026-09-15 |
+| Federal Social Insurance Office FSIO | EO bei Vaterschaft | de | 2026-09-15 |
+| Federal Social Insurance Office FSIO | Familienzulagen - Übersicht | de | 2026-09-15 |
+| Federal Social Insurance Office FSIO | Kann ich mein BVG-Altersguthaben bar beziehen, wenn ich die Schweiz endgültig verlasse? | BSV | de | 2026-09-15 |
+| Federal Social Insurance Office FSIO | Leistungen und Voraussetzungen | de | 2026-09-15 |
+| Federal Social Insurance Office FSIO | Urlaub und Erwerbsersatz bei Mutterschaft, Vaterschaft und Adoption | de | 2026-09-15 |
+| Federal Social Insurance Office FSIO | Welche Beiträge kann ich in die Säule 3a einzahlen? | BSV | de | 2026-09-18 |
+| Federal Social Insurance Office FSIO | Wer kann eine Säule 3a (gebundene Selbstvorsorge) einrichten? | BSV | de | 2026-09-18 |
+| Federal Tax Administration FTA | Schweizerische Quellensteuer QST | de | 2026-09-11 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | AIG / LEI / FNIA, SR 142.20 | de | 2026-09-10 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | FZA / ALCP, SR 0.142.112.681 | de | 2026-09-10 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: Code of Obligations, SR 220 | de | 2026-09-18 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: Constitution of the Canton of Zurich, SR 131.211 | de | 2026-09-18 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: Federal Constitution, SR 101 | de | 2026-09-18 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: Federal Direct Tax Act, SR 642.11 | de | 2026-09-15 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: Health Insurance Act, SR 832.10 | de | 2026-09-15 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: Ordinance on Entry and the Granting of Visas, SR 142.204 | de | 2026-09-17 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: Ordinance on the Admission of Persons and Vehicles to Road Traffic, SR 741.51 | de | 2026-09-15 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: Swiss Citizenship Act, SR 141.0 | de | 2026-09-15 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: Swiss Citizenship Ordinance, SR 141.01 | de | 2026-09-15 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: Tax at Source Ordinance of the FDF, SR 642.118.2 | de | 2026-09-15 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: Vested Benefits Act, SR 831.42 | de | 2026-09-15 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | Fedlex: ordinance on the refund of AHV contributions paid by foreign nationals, SR 831.131.12 | de | 2026-09-15 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | VZAE / OASA, SR 142.201 | de | 2026-09-10 |
+| SERAFE AG, the Confederation's collection agency for the radio and television fee | Abgabeübersicht | de | 2026-09-17 |
+| SERAFE AG, the Confederation's collection agency for the radio and television fee | Basic principle | en | 2026-09-19 |
+| SERAFE AG, the Confederation's collection agency for the radio and television fee | Fee overview | en | 2026-09-19 |
+| SERAFE AG, the Confederation's collection agency for the radio and television fee | Grundsatz | de | 2026-09-17 |
+| SVA Zürich, the cantonal social insurance office | Beratung vor Ort | de | 2026-09-17 |
+| SVA Zürich, the cantonal social insurance office | Familienzulagen: Angestellte | de | 2026-09-15 |
+| SVA Zürich, the cantonal social insurance office | Familienzulagen: Nichterwerbstätige | de | 2026-09-15 |
+| SVA Zürich, the cantonal social insurance office | Familienzulagen: Sinn und Zweck | de | 2026-09-15 |
+| SVA Zürich, the cantonal social insurance office | Kontakt | de | 2026-09-17 |
+| SVA Zürich, the cantonal social insurance office | Krankenversicherungspflicht: Anmeldung | de | 2026-09-15 |
+| SVA Zürich, the cantonal social insurance office | Krankenversicherungspflicht: Wer kann sich befreien lassen? | de | 2026-09-15 |
+| SVA Zürich, the cantonal social insurance office | Prämienverbilligung: Wer hat Anspruch? | de | 2026-09-15 |
+| SVA Zürich, the cantonal social insurance office | Spezielle Öffnungszeiten | de | 2026-09-17 |
+| SVA Zürich, the cantonal social insurance office | Telefon | de | 2026-09-17 |
+| State Secretariat for Economic Affairs SECO, public employment service | Anmeldung und Registrierung | arbeit.swiss | de | 2026-09-18 |
+| State Secretariat for Economic Affairs SECO, public employment service | FAQ zur Arbeitslosenentschädigung | arbeit.swiss | de | 2026-09-18 |
+| State Secretariat for Economic Affairs SECO, public employment service | FAQs on unemployment benefit | arbeit.swiss | en | 2026-09-19 |
+| State Secretariat for Economic Affairs SECO, public employment service | Signing on and registration | arbeit.swiss | en | 2026-09-19 |
+| State Secretariat for Migration SEM | Aufenthalt | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Aufenthaltsbewilligungen für Nicht-EU/EFTA-Angehörige | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Ausländerinnen und Ausländer der dritten Generation | de | 2026-09-15 |
+| State Secretariat for Migration SEM | Ausweis B EU/EFTA (Aufenthaltsbewilligung) | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Ausweis C EU/EFTA (Niederlassungsbewilligung) | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Ausweis Ci (Aufenthaltsbewilligung mit Erwerbstätigkeit) | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Ausweis Ci EU/EFTA (Aufenthaltsbewilligung mit Erwerbstätigkeit) | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Ausweis G (Grenzgängerbewilligung) | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Ausweis G EU/EFTA (Grenzgängerbewilligung) | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Ausweis L EU/EFTA (Kurzaufenthaltsbewilligung) | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Biometric residence permits for foreign nationals | en | 2026-09-11 |
+| State Secretariat for Migration SEM | Brauche ich ein ETIAS? | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Cantonal immigration and employment market authorities | en | 2026-09-11 |
+| State Secretariat for Migration SEM | Der biometrische Ausländerausweis | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Die Ordentliche Einbürgerung | de | 2026-09-15 |
+| State Secretariat for Migration SEM | Do I require an ETIAS? | en | 2026-09-11 |
+| State Secretariat for Migration SEM | Einreise mit Visum | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Einreise ohne Visum | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Einreisevoraussetzungen nach Staatsangehörigkeit | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Entry requirements by nationality | en | 2026-09-11 |
+| State Secretariat for Migration SEM | Entry with visa | en | 2026-09-11 |
+| State Secretariat for Migration SEM | Entry without visa | en | 2026-09-11 |
+| State Secretariat for Migration SEM | Entry/Exit System (EES) | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Entry/Exit System (EES) | en | 2026-09-11 |
+| State Secretariat for Migration SEM | FAQ Aufenthalt und Integrationskriterien | de | 2026-09-11 |
+| State Secretariat for Migration SEM | FAQ – Einreise | de | 2026-09-11 |
+| State Secretariat for Migration SEM | FAQ – Entry | en | 2026-09-11 |
+| State Secretariat for Migration SEM | FAQ – Fragen zur Personenfreizügigkeit | de | 2026-09-11 |
+| State Secretariat for Migration SEM | FAQ – Free Movement of Persons | en | 2026-09-11 |
+| State Secretariat for Migration SEM | FAQ – Schweizer Bürgerrecht | de | 2026-09-15 |
+| State Secretariat for Migration SEM | Grundlagen zur Arbeitsmarktzulassung | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Kantonale Migrations- und Arbeitsmarktbehörden | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Married with a Swiss citizen | en | 2026-09-19 |
+| State Secretariat for Migration SEM | Meldeverfahren für kurzfristige Erwerbstätigkeit | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Nicht-EU/EFTA-Angehörige | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Non-EU/EFTA nationals | en | 2026-09-11 |
+| State Secretariat for Migration SEM | Notification procedure for short-term work in Switzerland | en | 2026-09-19 |
+| State Secretariat for Migration SEM | Ordinary naturalisation | en | 2026-09-19 |
+| State Secretariat for Migration SEM | Regeln zur Berechnung der Aufenthaltsdauer | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Reisedokumente für ausländische Personen | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Residence | en | 2026-09-11 |
+| State Secretariat for Migration SEM | Rules for calculating the length of stay | en | 2026-09-11 |
+| State Secretariat for Migration SEM | Schengen Area | en | 2026-09-11 |
+| State Secretariat for Migration SEM | Schengen-Raum | de | 2026-09-11 |
+| State Secretariat for Migration SEM | Verheiratet mit einer Schweizerin oder einem Schweizer | de | 2026-09-15 |
+| State Secretariat for Migration SEM | Visumantragsformular | de | 2026-09-11 |
+| ch.ch, the information portal of the Confederation, cantons and communes (Federal Chancellery) | Als Ausländerin oder Ausländer in der Schweiz arbeiten | de | 2026-09-14 |
+| ch.ch, the information portal of the Confederation, cantons and communes (Federal Chancellery) | Aufenthaltsbewilligung für die Schweiz: Gesuch und Erneuerung | de | 2026-09-14 |
+| ch.ch, the information portal of the Confederation, cantons and communes (Federal Chancellery) | Die 3. Säule der Altersvorsorge: 3a und 3b in der Schweiz | de | 2026-09-18 |
+| ch.ch, the information portal of the Confederation, cantons and communes (Federal Chancellery) | Gesuch um Familiennachzug in die Schweiz | de | 2026-09-14 |
+| ch.ch, the information portal of the Confederation, cantons and communes (Federal Chancellery) | Heiraten in der Schweiz | de | 2026-09-18 |
+| ch.ch, the information portal of the Confederation, cantons and communes (Federal Chancellery) | Mietvertrag, Untermietvertrag, Pachtvertrag in der Schweiz. | de | 2026-09-18 |
+| ch.ch, the information portal of the Confederation, cantons and communes (Federal Chancellery) | Stimm- und Wahlrecht in der Schweiz | de | 2026-09-18 |
+| ch.ch, the information portal of the Confederation, cantons and communes (Federal Chancellery) | Umzug in die Schweiz | de | 2026-09-15 |
+| ch.ch, the information portal of the Confederation, cantons and communes (Federal Chancellery) | Verlust, Diebstahl, Umtausch des Führerausweises in der Schweiz | de | 2026-09-15 |
+| ch.ch, the information portal of the Confederation, cantons and communes (Federal Chancellery) | Wohnen: Ruhezeiten, Mietzins und Mängel in der Schweiz | de | 2026-09-18 |
 
 ### Who published the pages, and what the excerpts are
 
@@ -677,147 +864,34 @@ the state and the jurisdiction it speaks for:
 
 | Institution | Level | Speaks for | Documents |
 | --- | --- | --- | ---: |
-| State Secretariat for Migration SEM | federal | CH | 35 |
-| Fedlex, the Swiss federal law collection (Federal Chancellery) | federal | CH | 10 |
+| State Secretariat for Migration SEM | federal | CH | 46 |
+| Canton of Zurich, Migration Office | cantonal | CH-ZH | 16 |
+| Fedlex, the Swiss federal law collection (Federal Chancellery) | federal | CH | 15 |
+| City of Zurich, Waste Disposal and Recycling (ERZ) | municipal | CH-ZH-261 | 13 |
 | ch.ch, the information portal of the Confederation, cantons and communes (Federal Chancellery) | federal | CH | 10 |
+| SVA Zürich, the cantonal social insurance office | cantonal | CH-ZH | 10 |
 | Federal Social Insurance Office FSIO | federal | CH | 9 |
-| Central Compensation Office CCO | federal | CH | 3 |
 | Federal Office of Public Health FOPH | federal | CH | 8 |
-| SERAFE AG, the Confederation's collection agency for the radio and television fee | federal | CH | 4 |
-| Federal Department of Foreign Affairs FDFA | federal | CH | 1 |
-| State Secretariat for Economic Affairs SECO, public employment service | federal | CH | 4 |
-| Federal Tax Administration FTA | federal | CH | 1 |
-| Federal Office for Housing BWO | federal | CH | 1 |
-| Federal Office for Customs and Border Security FOCBS | federal | CH | 2 |
-| Canton of Zurich, Road Traffic Office | cantonal | CH-ZH | 7 |
 | Canton of Zurich, Cantonal Tax Office | cantonal | CH-ZH | 7 |
-| SVA Zurich, the cantonal social insurance office | cantonal | CH-ZH | 9 |
-| Canton of Zurich, Migration Office | cantonal | CH-ZH | 6 |
-| Canton of Zurich, Office for Municipalities, Naturalisation Division | cantonal | CH-ZH | 4 |
-| Canton of Zurich, Office for the Economy | cantonal | CH-ZH | 3 |
-| Canton of Zurich, Health Directorate | cantonal | CH-ZH | 1 |
-| Canton of Zurich, Veterinary Office | cantonal | CH-ZH | 1 |
-| Canton of Zurich, Statistical Office, elections and votes | cantonal | CH-ZH | 1 |
-| Canton of Zurich, Directorate of Justice and Home Affairs, tenancy forms | cantonal | CH-ZH | 1 |
-| City of Zurich, Waste Disposal and Recycling (ERZ) | municipal | CH-ZH-261 | 12 |
+| Canton of Zurich, Road Traffic Office | cantonal | CH-ZH | 7 |
+| City of Zurich, Naturalisation Division | municipal | CH-ZH-261 | 6 |
+| State Secretariat for Economic Affairs SECO, public employment service | federal | CH | 4 |
+| SERAFE AG, the Confederation's collection agency for the radio and television fee | federal | CH | 4 |
+| Central Compensation Office CCO | federal | CH | 4 |
+| City of Zurich, Population Office | municipal | CH-ZH-261 | 4 |
 | City of Zurich, School Office | municipal | CH-ZH-261 | 4 |
 | City of Zurich, Traffic Department | municipal | CH-ZH-261 | 4 |
-| City of Zurich, Naturalisation Division | municipal | CH-ZH-261 | 3 |
-| City of Zurich, Population Office | municipal | CH-ZH-261 | 4 |
-| City of Zurich, Civil Registry Office | municipal | CH-ZH-261 | 3 |
-| City of Zurich, City Police | municipal | CH-ZH-261 | 2 |
+| Canton of Zurich, Office for Municipalities, Naturalisation Division | cantonal | CH-ZH | 4 |
 | City of Zurich, Tax Office | municipal | CH-ZH-261 | 3 |
+| City of Zurich, Civil Registry Office | municipal | CH-ZH-261 | 3 |
+| Canton of Zurich, Office for the Economy | cantonal | CH-ZH | 3 |
+| Federal Office for Customs and Border Security FOCBS | federal | CH | 2 |
+| City of Zurich, City Police | municipal | CH-ZH-261 | 2 |
+| Federal Office for Housing BWO | federal | CH | 1 |
+| Federal Department of Foreign Affairs FDFA | federal | CH | 1 |
+| Federal Tax Administration FTA | federal | CH | 1 |
 | City of Zurich, Protection and Rescue Zurich | municipal | CH-ZH-261 | 1 |
-
-SERAFE AG is a company the Confederation mandated to collect the fee, not an
-authority; the release records it as a federal public-law body, the closest
-of its institution kinds (see [LIMITATIONS.md](LIMITATIONS.md)).
-
-Every excerpt also carries its basis, what the excerpt is regardless of the
-page that carries it, and every served fact states the strongest basis among
-its excerpts: on this release the 98 excerpts of the ten Fedlex documents
-are the text of a federal act (the AIG, the Vested Benefits Act, the Federal
-Constitution and the Code of Obligations), of the Constitution of the
-Canton of Zurich (a cantonal act), of a federal ordinance (VZV, QStV, RV-AHV
-and the VEV on entry and visas) or of the Agreement on the Free Movement of
-Persons with its Annex I, each with its article; the 8 excerpts of the
-Zürcher Steuerbuch 87.3 are a cantonal directive; the 52 excerpts of the SEM
-list of cantonal offices (26 of its German and 26 of its English version) and the 68 contact excerpts of the Zurich offices
-(50 of the office contacts, 18 of the daily-life pages) are a directory; the
-58 excerpts of the ch.ch pages are portal summaries of federal rules; the
-other 516, among them the 60 of SEM's entry pages (33 German, 27 English),
-the 3 of the FDFA visa page, the 4 of the Canton of Zurich's voting page, the
-13 of its tax-at-source tariff page and parameter sheet and the 102 of the
-expat-life pages (82 German, 20 English), are the guidance of the authority
-that wrote the page, 13 of them naming the norm they rest on. An English
-excerpt carries the basis of the German excerpt it stands next to. No
-excerpt of a guidance, directory or portal page reproduces a norm verbatim.
-The reading behind these labels is recorded in
-[releases/mvp-zurich/basis-review.md](releases/mvp-zurich/basis-review.md);
-it was made by an assistant and no person has reviewed it; the `directory`
-label of the office-contact and daily-life excerpts was set by the assistant
-when writing them (see
-[LIMITATIONS.md](LIMITATIONS.md)).
-
-The 164 cited documents come from the pack's catalogue of 96 sources, with
-the 173 pages that `sources.md` lists explicitly (the seeds and subpages of
-the extensions of 15, 17 and 18 September 2026, and the English versions of
-19 September 2026), and
-from the pages the catalogue's link-following reached. The release carries,
-for every cited page, the excerpt itself with the URL, the access date and
-the hashes of the excerpt and of the page text as fetched; nothing outside
-the release is needed to serve or to check a citation. The catalogued pages
-that carry no fact, among them the ZAS pages on leaving Switzerland and on
-bilateral agreements, are what a reviewer reads when adding a
-concept; they are not served.
-
-## The served contract
-
-Four tools over stdio or Streamable HTTP (the container image serves the
-latter on `/mcp`), described in
-[docs/architecture/tool-contracts.md](https://github.com/swisstip/swiss-tip/blob/main/docs/architecture/tool-contracts.md) of the code repository:
-
-| Tool | Purpose |
-| --- | --- |
-| `get_coverage` | The scope statement, topics, jurisdictions, languages, freshness and the out-of-scope list, in one call under 6 KB |
-| `search` | Find concepts by text, in English or German, without translating the question first; every result says whether the question's distinctive words reached a published concept (`match_strength`) and, when they did not, carries the scope statement so the caller declines in the same call; with the user's canton or municipality as `jurisdiction`, the concepts published for other places only are named in `published_elsewhere` and not ranked |
-| `resolve` | The facts, evidence and citations for a stated jurisdiction, date and situation, with typed statuses for missing context, out-of-coverage and stale results, a caveat on facts served for a place whose own cantonal or municipal level is published for another place only, guidance for the caller by status (including what to tell the user about review status and translation), the basis of every fact, the publisher's level and jurisdiction on every citation and, where the release declares it, what the concept does not serve |
-| `get_evidence` | The full original-language excerpts behind a fact, each with its basis and its publisher's level |
-
-Every fact `resolve` returns names its `review_status`, with `reviewed_on` and
-`reviewed_by` when a person confirmed it, and the result's disclosures say how
-many of the served statements no person has reviewed. A caller that must not
-pass on an unconfirmed statement sends `reviewed_only`, and a concept whose
-facts are all unreviewed then answers `OUT_OF_COVERAGE` with a
-`review_status_not_met` gap rather than returning them. On this release every
-fact is `human-reviewed`, so `reviewed_only` returns the same facts as a
-request without it. 83 concepts
-(among them 19 of the topics added on 15 September, 8 `fza-*` concepts, the
-office-contact, daily-life, entry-and-visa, voting-rights, tariff and
-expat-life concepts) declare what they do not serve (for example tariff tables and rates,
-amounts, fees, individual eligibility, directions, appointment slots,
-collection days for a street or the dog tax), and `resolve`
-returns that list with the facts.
-
-Every served fact states its basis, once on the concept when all its facts
-share it: `Federal act: AIG, SR 142.20, Art. 12`, `International agreement:
-FZA, SR 0.142.112.681, Annex I, Art. 6 Abs. 1`, `Cantonal directive: Zürcher
-Steuerbuch 87.3, Rz 13 Abs. 1`, `Cantonal authority guidance`, `Portal
-summary of federal rules`. Citations list the page with the strongest basis
-first, and a concept that serves a portal summary next to the law or an
-authority's page tells the caller that the law's excerpt is the more exact
-source. `search` ranks with a small prior for the basis of a concept's facts
-and the review of its statements, never for the level of the publisher.
-
-Default serving needs no model, no credentials and no network.
-Optional hybrid search over local Ollama embeddings is available and off by
-default; the committed index covers the 133 concepts of this release. See
-[packages/runtime/README.md](https://github.com/swisstip/swiss-tip/blob/main/packages/runtime/README.md) of the code repository.
-
-## Not covered
-
-From the release manifest's `out_of_scope`, served to every caller:
-
-- Other topics: schooling beyond kindergarten entry and school holidays,
-  asylum, other social insurance benefits, finding a home, and utilities.
-- The visa and identity-document rules of an individual nationality (SEM's
-  Annex CH-1 lists), the documents, appointments and fees of an individual
-  Swiss representation, and airport-transit visas.
-- Fees and appointment availability for any permit.
-- Annual quotas, the detailed procedure and forms of an office, processing
-  times, and documents beyond those listed on a covered page.
-- Tax tariff tables, rates and deductions, amounts of tax, refunds, pensions,
-  premiums, premium reductions, dog tax or allowances beyond the served
-  statements; calculators.
-- Cantons other than Zurich beyond their migration-office contact, and
-  municipal procedures outside the City of Zurich; federal rules still apply
-  there and are served with a caveat.
-- Eligibility decisions for a specific person: the rules route population
-  groups to pre-authored statements and compute no outcome.
-- Live data such as current processing times, appointment slots or insurer
-  premiums.
-- Any country other than Switzerland, including German and Austrian rules that
-  look similar.
-
-See [LIMITATIONS.md](LIMITATIONS.md) for what is weak or missing inside the
-coverage described here.
+| Canton of Zurich, Health Directorate | cantonal | CH-ZH | 1 |
+| Canton of Zurich, Directorate of Justice and Home Affairs, tenancy forms | cantonal | CH-ZH | 1 |
+| Canton of Zurich, Statistical Office, elections and votes | cantonal | CH-ZH | 1 |
+| Canton of Zurich, Veterinary Office | cantonal | CH-ZH | 1 |

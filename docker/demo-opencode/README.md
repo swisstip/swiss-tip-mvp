@@ -1,6 +1,6 @@
 # Swiss TIP demo image: OpenCode with the Zurich knowledge base
 
-**Last update:** 20 September 2026
+**Last update:** 23 September 2026
 
 A test image, not a release image. It is the `mvp-zurich` pack image with
 the [OpenCode](https://opencode.ai) agent and its web interface on top, so
@@ -37,7 +37,7 @@ sample questions, or ask your own, for example:
 
 Everything but the shim is bound to the loopback interface, so the web
 interface is the only published port. The start script
-([with-opencode.sh](with-opencode.sh)) starts the knowledge base first and
+([with-opencode.sh](https://github.com/swisstip/swiss-tip/blob/main/docker/opencode/with-opencode.sh)) starts the knowledge base first and
 waits until it answers `/health`, then the agent, then the shim. With
 `SWISSTIP_MCP_URL` set, as in the OpenCode image, it starts no knowledge
 base and waits for the `/health` beside that address instead. OpenCode's start banner names its own port, `Web interface:
@@ -91,7 +91,7 @@ go; the welcome panel below still needs the shim.
 
 OpenCode has no setting for a welcome text, so the shim adds one. Every HTML
 page it passes through loads `/swiss-tip/welcome.js`, which the shim serves
-from [welcome.js](welcome.js), preceded by the content of
+from [welcome.js](https://github.com/swisstip/swiss-tip/blob/main/docker/opencode/welcome.js), preceded by the content of
 [welcome.json](welcome.json) and the agent's worktree. The interface's
 content security policy allows scripts from its own origin only, not inline
 ones, so the configuration travels inside that script. The script:
@@ -108,7 +108,12 @@ ones, so the configuration travels inside that script. The script:
 - types a clicked question into the prompt and sends it, after opening a
   new session when the click was on the home screen. It waits for the model
   selector first: a prompt sent before that selector is shown goes to
-  another free model than the configured one.
+  another free model than the configured one;
+- opens the interface with a question already in the prompt when the address
+  carries `?ask=<n>`: a new session is opened and sample question `<n>`,
+  counting from one, is typed and left unsent, so that a demonstration starts
+  armed and one key sends it. `?ask=<text>` takes a question of its own and
+  `&send=1` sends it on load ([the OpenCode image](https://github.com/swisstip/swiss-tip/blob/main/docker/opencode/README.md#opening-the-interface-with-a-question-ready)).
 
 The sample questions are the questions of acceptance cases of the release,
 some slightly shortened (UAT-34, UAT-24, UAT-25, UAT-1, UAT-3, UAT-14 and
@@ -131,7 +136,7 @@ interface works as before. `SWISSTIP_WELCOME=` (empty) turns the panel off.
 The agent answers from the knowledge base only: the baked configuration
 `/etc/swiss-tip/opencode.json` names the loopback MCP server `swiss_tip` as
 its only tool source, and the plugin
-[swiss-tip-tools-only.js](swiss-tip-tools-only.js) refuses every tool call
+[swiss-tip-tools-only.js](https://github.com/swisstip/swiss-tip/blob/main/docker/opencode/swiss-tip-tools-only.js) refuses every tool call
 that is not one of `swiss_tip`'s, before it runs, with an error that sends
 the model back to `swiss_tip`. So there is no shell, no file access and no
 web fetch.
@@ -182,10 +187,10 @@ the agent being up. The shim passes a browser's request on with the
 credentials the browser sent, or none, so the agent itself refuses a visitor
 without the password; only the shim's two calls at start, for the route list
 and the worktree, carry the password themselves. The image's health check
-([opencode_health.py](opencode_health.py)) sends no credentials and takes
+([opencode_health.py](https://github.com/swisstip/swiss-tip/blob/main/docker/opencode/opencode_health.py)) sends no credentials and takes
 401 as alive.
 
-[check_interface.py](check_interface.py) checks a running interface from
+[check_interface.py](https://github.com/swisstip/swiss-tip/blob/main/docker/opencode/check_interface.py) checks a running interface from
 outside, with the standard library only: with `--password` first 401 without
 credentials, then one project to open a session in, `swiss_tip` connected, a
 default model, and the welcome panel with the workspace it registers. It asks
@@ -193,19 +198,21 @@ no question. The image workflow runs it, and it serves a hosted interface as
 well:
 
 ```shell
-python docker/demo-opencode/check_interface.py --url http://127.0.0.1:4096 --password ...
+python <code>/docker/opencode/check_interface.py --url http://127.0.0.1:4096 --password ...
 ```
 
 ## Build
 
 The pack image must exist first; see [../README.md](https://github.com/swisstip/swiss-tip/blob/main/docker/README.md). On
 GitHub, the workflow [Container images](../../.github/workflows/container-images.yml)
-builds, tests and pushes this image with the input `images: all`, on the
+of this repository builds, tests and pushes this image with the input `images: all`, on the
 Zurich pack image of the same run, or `images: demo`, on the one of `ghcr.io`, as
 `ghcr.io/<owner>/swiss-tip-demo:<release_id>`, `:mvp-zurich` and `:latest`. The release image has no `latest`, because it is built for more than one pack; this image is built on `mvp-zurich` only, so `latest` is unambiguous.
 
 ```shell
-docker build -f docker/demo-opencode/Dockerfile -t swiss-tip-demo:mvp-zurich docker/demo-opencode
+docker build -f docker/demo-opencode/Dockerfile \
+  --build-context shared=<code>/docker/opencode \
+  -t swiss-tip-demo:mvp-zurich docker/demo-opencode
 ```
 
 | Build argument | Meaning |

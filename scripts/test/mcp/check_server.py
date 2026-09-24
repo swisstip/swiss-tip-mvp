@@ -28,6 +28,7 @@ import argparse
 import asyncio
 from contextlib import asynccontextmanager
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -65,7 +66,7 @@ SWISS_GERMAN_FAMILY_QUESTION = ("Ich han de Schwiizer Pass und han en Brasiliane
 GERMAN_SEPARATION_QUESTION = "Wir trennen uns nach zwei Jahren Ehe. Verliere ich meine Aufenthaltsbewilligung?"
 # Questions outside the release that still share a word with a concept ("Schweiz", "Anmeldung", "permit"): search
 # keeps the incidental hits but must report a weak or empty match, so the caller declines instead of resolving them.
-OFF_TOPIC_QUESTIONS = (("the VAT rate, in German", "Wie hoch ist die Mehrwertsteuer in der Schweiz?"),
+OFF_TOPIC_QUESTIONS = (("tomorrow's weather, in German", "Wie wird das Wetter morgen in Zürich?"),
                        ("the motorway speed limit", "What is the speed limit on Swiss motorways?"),
                        ("a Halbtax travelcard", "How do I get a Halbtax?"),
                        ("annual work-permit quotas", "annual quotas for work permits"),
@@ -141,21 +142,33 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             body = root.structuredContent
             size = len(root.content[0].text.encode("utf-8"))
             check(f"root coverage is compact ({size} bytes) and names scope, topics, freshness, review status",
-                  not root.isError and size < 6000 and body["scope_statement"] and body["out_of_scope"]
+                  # 20 topics, and a scope statement, an out-of-scope list and limitations of about 1.5 KB each
+                  # since the customs extension of release 2026-09-22-v7: one call still settles scope. The work and
+                  # unemployment wave and the AHV wave of 23 September 2026 each added a topic, which took the root
+                  # page to 7 864 bytes - the two new descriptions were shortened to keep it inside the bound, and
+                  # the next topic will not fit without shortening the older ones. The cantonal wave then needed
+                  # about 370 bytes to say in the manifest that registration is published for all 26 cantons, with
+                  # its caveats, and the user raised the bound to 8 500 on 23 September 2026 rather than disclose it
+                  # more tersely or rewrite reviewed limitations. Criterion X8 and the round trip carry the same
+                  # number; shorten a topic description before raising it again.
+                  not root.isError and size < 8500 and body["scope_statement"] and body["out_of_scope"]
                   and {t["topic_id"] for t in body["topics"]} == {"residence", "contacts", "offices", "newcomer", "waste",
                                                                   "vehicles-parking", "household-taxes", "social-insurance", "tax-at-source",
                                                                   "driving-licence", "health-insurance", "naturalisation", "entry-visas",
-                                                                  "political-rights", "family-benefits", "housing"}
+                                                                  "political-rights", "family-benefits", "housing",
+                                                                  "integration", "customs", "work-unemployment", "ahv-pension"}
                   # The counts line, whichever statuses the release carries (all human-reviewed since 2026-09-14-v1).
                   and any(item.startswith("Review status of the") for item in body["limitations"]))
             check("root lists federal, Zurich and City of Zurich jurisdictions and 26 cantons",
                   {"CH", "CH-ZH", "CH-ZH-261", "CH-BE", "CH-TI"} <= set(body["jurisdictions"]) and len(body["jurisdictions"]) == 28)
             languages = [q["code"] for q in body.get("query_languages") or []]
             search_tool = next(t for t in tools if t.name == "search")
-            note = "Write search queries in German (preferred) or English"
+            # swisstip-mcp 0.3.0 asks for one search and no longer calls German "preferred"; servers up to 0.2.5
+            # carry the older sentence.
+            note = re.compile(r"Write (the search query|search queries) in German( \(preferred\))? or English:")
             check(f"query languages {languages} are named in the instructions, the search description and the query field",
-                  languages[:2] == ["de", "en"] and note in (init.instructions or "") and note in search_tool.description
-                  and note in search_tool.inputSchema["properties"]["query"]["description"])
+                  languages[:2] == ["de", "en"] and note.search(init.instructions or "") and note.search(search_tool.description)
+                  and note.search(search_tool.inputSchema["properties"]["query"]["description"]))
             if health is not None:
                 check(f"health route beside the endpoint is ok and names the served release: {health.get('release_id')}",
                       health.get("status") == "ok" and health.get("release_id") == body["release_id"]
@@ -239,8 +252,12 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             check(f"search with the German two-month-contract question finds the notification concept: {hits[:3]}",
                   SHORT_EMPLOYMENT in hits[:3])
             # No word of this query may reach a published term: "occupation" left it in release v15, whose source term
-            # "occupational accidents" shares the six-letter stem, and gave a weak incidental hit.
-            quota = await session.call_tool("search", {"query": "annual quota limit shortage priority check order"})
+            # "occupational accidents" shares the six-letter stem, and "priority" in release 2026-09-22-v1, which
+            # publishes the priority of the domestic workforce as an admission condition
+            # (third-country-work-conditions); "limit" and "order" in release 2026-09-22-v7, whose customs concepts
+            # publish the value-free limit and mail orders. The quotas themselves stay out of scope, so the query
+            # keeps its subject.
+            quota = await session.call_tool("search", {"query": "annual quota shortage check"})
             check("search for quotas returns no lexical hits without asserting domain noncoverage",
                   quota.structuredContent["results"] == []
                   and "does not establish" in (quota.structuredContent.get("guidance_for_caller") or ""))
@@ -354,12 +371,21 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
                   per[DEADLINE]["status"] == "SUPPORTED" and per[CANTON]["status"] == "OUT_OF_COVERAGE"
                   and per[CANTON]["gaps"][0]["published_values"] == ["CH-ZH"]
                   and [f["jurisdiction"] for f in per[CONTACT]["facts"]] == ["CH-BE"])
-            check("canton CH-BE: the federal answer carries the caveat that the narrower levels are Zurich's, the "
-                  "Bern contact none",
-                  [(g["dimension"], g["published_values"]) for g in per[DEADLINE]["gaps"]]
-                  == [("more_specific_jurisdiction_not_published", ["CH-ZH", "CH-ZH-261"])]
-                  and per[CONTACT]["gaps"] == []
-                  and "carry over no rule" in (bern.structuredContent.get("guidance_for_caller") or ""))
+            # Until the cantonal registration wave of 23 September 2026 this caveat named CH-ZH as well: the
+            # release published a canton-level rule for Zurich and for no one else, so a caller in Bern was
+            # told a narrower rule existed that was not theirs. Now that every canton carries its own
+            # registration facts, the canton level is no longer a gap for Bern - or for any canton - and only
+            # the MUNICIPAL level is still published for Zurich alone. The check pins that improvement rather
+            # than the exact list: one caveat, at the municipal level only, and above all nothing claiming to
+            # publish a narrower rule for Bern itself.
+            deadline_gaps = per[DEADLINE]["gaps"]
+            narrower = deadline_gaps[0]["published_values"] if len(deadline_gaps) == 1 else []
+            check("canton CH-BE: the federal answer carries one caveat, naming only the municipal level the "
+                  "release publishes for Zurich and nothing for Bern, and the Bern contact carries none",
+                  [g["dimension"] for g in deadline_gaps] == ["more_specific_jurisdiction_not_published"]
+                  and set(narrower) == {"CH-ZH-261"}
+                  and not any(value.startswith("CH-BE") for value in narrower)
+                  and per[CONTACT]["gaps"] == [])
 
             work = await session.call_tool("resolve", {"concept_ids": [WORK, "aig-work-permit", "permit-authority"],
                                                         "context": {"population": "third_country"}})

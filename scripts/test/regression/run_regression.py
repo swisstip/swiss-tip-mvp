@@ -23,18 +23,28 @@ from pathlib import Path
 from swisstip.build.acceptance import load_regression
 from swisstip.build.case_catalogue import CATALOGUE_FILE, load_case_catalogue
 from swisstip.runtime.acceptance import check_acceptance, issues_of, regression_report
-from swisstip.runtime.semantic import OllamaEmbedder, SemanticError, SemanticSearch, load_index
+from swisstip.runtime.semantic import (OllamaEmbedder, SemanticError, SemanticSearch, load_index,
+                                       semantic_index_binding)
 from swisstip.runtime.service import ReleaseService
 
 ROOT = Path(__file__).resolve().parents[3]
 
 
-def hybrid_service(pack_dir: Path, ollama_url: str, timeout: float) -> ReleaseService:
+def hybrid_service(pack_dir: Path, ollama_url: str, timeout: float) -> tuple[ReleaseService, dict]:
+    """The service with hybrid search, and the identity of the index bytes and settings it used.
+
+    The binding is returned alongside the service because `regression_report` refuses a hybrid run that cannot say
+    which index bytes and retrieval settings produced it - a report that only says "hybrid" is not reproducible.
+    """
     service = ReleaseService.from_file(pack_dir / "release.json")
-    index = load_index(pack_dir / "semantic-index.json", service.release)
+    index_path = pack_dir / "semantic-index.json"
+    index = load_index(index_path, service.release)
     embedder = OllamaEmbedder(model=index.model, base_url=ollama_url, timeout_seconds=timeout)
-    service.semantic_search = SemanticSearch(index, embedder)
-    return service
+    semantic = SemanticSearch(index, embedder)
+    service.semantic_search = semantic
+    binding = semantic_index_binding(index_path, index, min_score=semantic.min_score,
+                                     candidate_limit=semantic.candidate_limit)
+    return service, binding
 
 
 def main() -> int:
@@ -55,15 +65,18 @@ def main() -> int:
     acceptance, regression, combined = load_regression(pack_dir)
     reports: dict[str, dict | str] = {"lexical": check_acceptance(ReleaseService.from_file(pack_dir / "release.json"), combined)}
     exit_code = 0
+    binding: dict | None = None
     if args.lexical_only:
         reports["hybrid"] = "not run (--lexical-only)"
     else:
         try:
-            reports["hybrid"] = check_acceptance(hybrid_service(pack_dir, args.ollama_url, args.timeout), combined)
+            service, binding = hybrid_service(pack_dir, args.ollama_url, args.timeout)
+            reports["hybrid"] = check_acceptance(service, combined)
         except (OSError, ValueError, SemanticError) as exc:
             reports["hybrid"] = f"semantic search unavailable: {exc}"
+            binding = None
             exit_code = 2
-    report = regression_report(reports, acceptance.digest(), regression.digest())
+    report = regression_report(reports, acceptance.digest(), regression.digest(), semantic_index=binding)
 
     for mode, run in report["runs"].items():
         if "skipped" in run:

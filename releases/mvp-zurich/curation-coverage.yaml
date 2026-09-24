@@ -1,0 +1,2218 @@
+schema_version: swiss-tip-curation-coverage/v1
+pack: mvp-zurich
+dispositions:
+- kind: duplicate
+  reason: The French versions of SEM pages the catalogue lists next to the German ones. The German page is the one
+    the pack reads; no fact cites a French page.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  url_prefix: https://www.sem.admin.ch/sem/fr/
+  known_documents:
+  - doc-0117c398522640c44c08
+  - doc-048744690d286488453e
+  - doc-16d8e1afae29d7d977b4
+  - doc-194e491f8c925efa96fb
+  - doc-1d31a3eb156089c123e9
+  - doc-33f872239bf3efe3c5cc
+  - doc-4ea17df2a9c194d67783
+  - doc-4f183240f35d4bab1cc0
+  - doc-50629e24f1b86bec1914
+  - doc-6dd91f516e84af918c60
+  - doc-74e034de04cd8b479538
+  - doc-7ae1f53555b05619d191
+  - doc-7b83e51360f28b1302ed
+  - doc-be4bf9218731e99a4a57
+  - doc-c2e4c35b44248c1b2668
+  - doc-c3dc9a5f906e7ce2606d
+  - doc-d0beb4aa38aa20b1e4f4
+  - doc-d6df3c6c3ca876302beb
+  - doc-e53da5021749ca35858e
+- kind: duplicate
+  reason: The Italian versions of SEM pages the catalogue lists next to the German ones. The German page is the
+    one the pack reads; no fact cites an Italian page.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  url_prefix: https://www.sem.admin.ch/sem/it/
+  known_documents:
+  - doc-0c9e03199af083cbba3f
+  - doc-107761ad33a669fff298
+  - doc-275ae8b9066eed734108
+  - doc-3384486ff21c7bc1d64a
+  - doc-39475da2259cc28c83e4
+  - doc-3bf3b58af42b55e79a81
+  - doc-454f97f0cfaf731b413c
+  - doc-455bf5c6756d809c19dc
+  - doc-484542e6614be76d48dd
+  - doc-4978b8335c1e8ba92768
+  - doc-4ab22b092a0c691792fb
+  - doc-5d5befec6c41da776c99
+  - doc-8f00a78c7659888ec754
+  - doc-9bcc2f95c51275ac6a60
+  - doc-a9e6402fe06e3918a04c
+  - doc-d050dd07da5f070bb84d
+  - doc-d2802a9e4ee77f963308
+  - doc-d895bfa755508859b386
+  - doc-e8d29a6825f42c558b72
+- kind: navigation
+  reason: 'The chapter pages of the SEM directives: each lists the PDF directives of its chapter, which the catalogue
+    does not fetch. Fetching them is an acquisition change, not a disposition.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  url_prefix: https://www.sem.admin.ch/sem/de/home/publiservice/weisungen-kreisschreiben/
+  known_documents:
+  - doc-0fed00db0de8c1cc9c36
+  - doc-18811da7cc14b6770c42
+  - doc-2075d355d858d6dc04ec
+  - doc-3e35e4bd628c3247cbce
+  - doc-7399de1faad8ce9f6f16
+  - doc-7a532bebbfebfc54c4bb
+  - doc-8e5c32503b2b510b59b9
+  - doc-985aff40081c53ba0cd9
+  - doc-99c4a66431eadf2be274
+  - doc-a008739bb6419e8cc243
+  - doc-c4967480c486df26eb64
+  - doc-c63b137533ec10d98d48
+  - doc-c97d2b08fa899e87b5e5
+  - doc-db6ed19f639ce113dce5
+- kind: navigation
+  reason: Hub of the Migration Office's residence pages; its children are cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-a0e7246112d61ad60df1
+- kind: navigation
+  reason: Hub of the cantonal naturalisation pages; its children are cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-b9be0a62ff2397dbcfee
+- kind: navigation
+  reason: Hub of the integration pages; a link list for practitioners and residents.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-79a45851710a6e6d7971
+- kind: navigation
+  reason: Hub of the City of Zurich waste pages; its children are cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-9d68da869b253d1e73cc
+- kind: navigation
+  reason: Navigation to the fee overview and the legal bases; the fee table itself is not in the extracted text.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-c1f16a788a87f6d16e6b
+- kind: navigation
+  reason: Navigation to the waste-group pages, which are cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-a52da80d7811ee254066
+- kind: navigation
+  reason: Hub of the SEM entry pages; its children are cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-dc5f96bafefd650a52d1
+- kind: navigation
+  reason: Navigation to the entry information pages, which are cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-e7c08d4b66a97a31a498
+- kind: navigation
+  reason: A link list of addresses; the cantonal directory the pack serves is cited from its own page.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-84ef4c65f11f35dbe1fb
+- kind: navigation
+  reason: A link list of addresses; the cantonal directory the pack serves is cited from its own page.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-e183ec4adc565b6cfa57
+- kind: navigation
+  reason: A link to the FDFA representation finder; no content of its own.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-3ac1dc4ed79c8fc24b3b
+- kind: navigation
+  reason: A link to the cantonal authority list; no content of its own.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-ec91d9bae72da425d45e
+- kind: navigation
+  reason: Overview of the EU/EFTA permit cards; each card's page is cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-239b09506fc070827848
+- kind: navigation
+  reason: Overview of the third-country permit cards; the card pages and the roll-out note are cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-f2a82e55188699dfb2c9
+- kind: navigation
+  reason: A page about ordering a brochure in twelve languages; the brochure itself is not in the run.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-dbee3b501bbce48562d2
+- kind: out_of_scope
+  reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-fa315a94917a96e1f096
+  out_of_scope_entry: asylum
+- kind: out_of_scope
+  reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-aae152acfcb887b384fc
+  out_of_scope_entry: asylum
+- kind: out_of_scope
+  reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-0f4b30d945bb1bf6040b
+  out_of_scope_entry: asylum
+- kind: out_of_scope
+  reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-79322d2379e0a3c7a9de
+  out_of_scope_entry: asylum
+- kind: out_of_scope
+  reason: Asylum, provisional admission and undocumented stay are outside the pack's scope.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-94cf8439510adc29ced0
+  out_of_scope_entry: asylum
+- kind: deferred
+  reason: 'SEM''s information for authorities on border management: the Integrated Border Management action plan
+    and its measures, the Schengen information systems, legal bases and data protection. Whether the pack covers
+    border management is undecided (decision deferred on 22 September 2026); excluded until the reaffirm date. Sections
+    a fact already cites stay cited.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  url_prefix: https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise/
+  known_documents:
+  - doc-051f5a29e5ab9e1503c8
+  - doc-052d5b6752ace3f90e06
+  - doc-237dc1ad3f54efc8ca51
+  - doc-276831391d6e09f9fcd3
+  - doc-2a254be149555047da6d
+  - doc-3f11c3eb0a8a0f29f62a
+  - doc-43785a6de114a6d68c27
+  - doc-5df25c52055bb7691111
+  - doc-6a86babfe32aa8ee3a2f
+  - doc-6beed430d9345d0f3ef2
+  - doc-856a2faaea9433f79b38
+  - doc-86f9c9c69f2819c495c2
+  - doc-8e99cc232a1d69cd3892
+  - doc-ab41f4dfe1d7269c7d0e
+  - doc-b393cb8cde53026f81a7
+  - doc-c3cfc1f2725da06bad18
+  - doc-d99fba8a15d4a1e0a452
+  - doc-da639f64abedbf821c94
+  - doc-ddad0900e64e4bf8e1ba
+  - doc-e101f3f21a55444e0289
+  - doc-e1044c27c2b427132169
+  - doc-e2f540317e24e9ee1b0b
+  - doc-e6efd5668e2b9beea894
+  - doc-e8203871a08aa9a49a13
+  reaffirm_by: '2026-12-31'
+- kind: deferred
+  reason: 'SEM''s information for air carriers: the API reporting duty, carrier sanctions (CASA) and the related
+    administrative procedures. Whether the pack covers air-carrier duties is undecided (decision deferred on 22
+    September 2026); excluded until the reaffirm date.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  url_prefix: https://www.sem.admin.ch/sem/de/home/themen/einreise/info-luftverkehr/
+  known_documents:
+  - doc-270fb187245aab308216
+  - doc-37d30d2a65fea6396233
+  - doc-44916bb7a0bec9a4e64c
+  - doc-4e315819e6e32c9890f1
+  - doc-56a56dfa11c3d8ae0db0
+  - doc-90f54f561135075db636
+  reaffirm_by: '2026-12-31'
+- kind: out_of_scope
+  reason: 'The support system for refugees of the Canton of Zurich (Integrationsagenda IAZH) and everything the
+    canton publishes about running it: accredited offer types, accreditation, cost sharing and reporting, trainings
+    and newsletters for case-leading bodies and providers, and the practice recommendations. The reviewer decided
+    on 22 September 2026 that this is outside the pack''s scope; the manifest names it.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  url_prefix: https://www.zh.ch/de/migration-integration/integration/integrationsagenda
+  known_documents:
+  - doc-104abf6c7048b37f09df
+  - doc-208634eba1d97aebfc30
+  - doc-2642590582c26192108d
+  - doc-368c0fba131961f7dc56
+  - doc-3c72847ef089a81809ef
+  - doc-50906cecaa878c115429
+  - doc-666d656c548dad5f38f8
+  - doc-689f2d54395d4f6516b7
+  - doc-7f6365a43b0683ca845c
+  - doc-a12fe8f3ca61a0765af1
+  - doc-a14eb88f2da881e9c8fe
+  - doc-a192c70d4004b7bd03d5
+  - doc-b11cd2f3e9fa9a4c902c
+  - doc-b9d94af8ebac301582da
+  - doc-c50a0804f718793b4cb2
+  - doc-e21bef3c8342c5510aad
+  - doc-eb71073ea8a70a47c7b0
+  - doc-ee0a9e00d0175b0b6155
+  - doc-fd258968991182717e4b
+  out_of_scope_entry: integration funding for municipalities and providers
+- kind: out_of_scope
+  reason: 'The cantonal integration programmes KIP 1 to KIP 3 with their funding, reporting documents and final
+    reports: the canton''s programme machinery for municipalities and providers, not a resident''s question. The
+    offers it finances are served from the offer database page.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-6be9702fb1331355a86f
+  out_of_scope_entry: integration funding for municipalities and providers
+- kind: out_of_scope
+  reason: The remaining funding areas of the cantonal integration programme as the canton describes them for the
+    system (language measures for integration officers and providers, employability, early childhood, living together,
+    interpreting for staff of the regular structures). The information and counselling area of the same page is
+    cited, and the offers themselves are found through the offer database.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-b26607e2d663c7ebc8cc
+  section_ids:
+  - section-0007
+  - section-0016
+  - section-0017
+  - section-0018
+  - section-0019
+  - section-0022
+  out_of_scope_entry: integration funding for municipalities and providers
+- kind: duplicate
+  reason: 'Pointers that repeat content the pack cites from the pages that own it: the language requirements for
+    a permit and for naturalisation (Migration Office, Office for Municipalities), the support of projects (foerderung-integrationsprojekte.html)
+    and the protection from racist discrimination (schutz-vor-rassistischer-diskriminierung.html).'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-b26607e2d663c7ebc8cc
+  section_ids:
+  - section-0015
+  - section-0020
+  - section-0021
+- kind: duplicate
+  reason: The page's own lead, which restates the sections below it that the facts cite.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-5386be4702ee65f46a87
+  section_ids:
+  - section-0007
+- kind: deferred
+  reason: The calls of 2018 to 2023 and the projects they funded. Past calls a resident cannot apply to any more;
+    the pack could summarise them and has not.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-5386be4702ee65f46a87
+  section_ids:
+  - section-0022
+  - section-0024
+  - section-0026
+  reaffirm_by: '2026-12-31'
+- kind: duplicate
+  reason: Who may apply, what is funded, the guidelines, the amount and the deadlines, which the facts cite from
+    foerderung-integrationsprojekte.html; this page repeats them as a step-by-step guide. Its list of required documents
+    is cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-0ab169e59cf112d166c6
+  section_ids:
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+- kind: duplicate
+  reason: Who may apply, what is funded, the guidelines, the amount and the deadlines, which the facts cite from
+    foerderung-integrationsprojekte.html; this page repeats them as a step-by-step guide. Its list of required documents
+    is cited.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-603af2c75387379addec
+  section_ids:
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+- kind: duplicate
+  reason: The page's own lead, which restates the description of the offer database that the first fact cites.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-6b7ab84cf9fe70b4dbb5
+  section_ids:
+  - section-0007
+- kind: navigation
+  reason: 'The embedded search widget of the offer database: its column headers, its paging controls and the search
+    tips for using them. The database''s content is not in the saved page.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-6b7ab84cf9fe70b4dbb5
+  section_ids:
+  - section-0011
+  - section-0012
+  - section-0013
+- kind: out_of_scope
+  reason: 'How municipalities and providers have an out-of-date offer corrected: addressed to the providers of the
+    funded offers, not to residents.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-6b7ab84cf9fe70b4dbb5
+  section_ids:
+  - section-0014
+  out_of_scope_entry: integration funding for municipalities and providers
+- kind: duplicate
+  reason: The page's own lead and its two teasers for the German-course advice and the offer database, which the
+    facts cite from integrationsangebote.html.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-097ba90229a71bb8bdba
+  section_ids:
+  - section-0007
+  - section-0017
+  - section-0018
+- kind: deferred
+  reason: A placeholder announcing that networking events will be announced here; it carries no event and no date
+    today. To be read again when the page names one.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-097ba90229a71bb8bdba
+  section_ids:
+  - section-0013
+  reaffirm_by: '2026-12-31'
+- kind: duplicate
+  reason: The page's own lead, the one-sentence introduction to the counselling offices that the ZüRAS fact cites,
+    and the pointer to the project funding that the pack cites from foerderung-integrationsprojekte.html.
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-5028cb30ffd4a8de19e1
+  section_ids:
+  - section-0007
+  - section-0010
+  - section-0021
+- kind: out_of_scope
+  reason: 'The training offers on racism prevention and dealing with diversity that the Fachstelle Integration lists
+    for authorities and institutions, with its contact for them: addressed to public bodies, not to residents.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-5028cb30ffd4a8de19e1
+  section_ids:
+  - section-0018
+  - section-0019
+  - section-0020
+  out_of_scope_entry: integration funding for municipalities and providers
+- kind: deferred
+  reason: 'The canton''s specialist report and the external expert report behind the postulate 92/2023 on a cantonal
+    action plan against racism: policy documents the pack could summarise and has not.'
+  author: Alexander Bobrovsky
+  date: '2026-09-22'
+  document_id: doc-5028cb30ffd4a8de19e1
+  section_ids:
+  - section-0023
+  reaffirm_by: '2026-12-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-2be14eb81766abd0a5f6
+  section_ids:
+  - section-0002
+  - section-0003
+- kind: navigation
+  reason: 'The caption of an infographic; the figure it shows is cited as text elsewhere.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-2be14eb81766abd0a5f6
+  section_ids:
+  - section-0007
+- kind: duplicate
+  reason: 'Worked examples of the value limit. The rule they illustrate is cited from the section that states it; an example is not a separate rule.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-7979e833d7757cf4f8ab
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+- kind: deferred
+  reason: 'Temporary export of valuable personal items, which the pack does not serve today.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-714a0981c5b41126870d
+  section_ids:
+  - section-0003
+  reaffirm_by: '2027-03-31'
+- kind: out_of_scope
+  reason: 'The import rules of the destination country, which the pack does not publish for any country but Switzerland.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-714a0981c5b41126870d
+  section_ids:
+  - section-0004
+  out_of_scope_entry: 'any country other than Switzerland'
+- kind: navigation
+  reason: 'The office''s opening hours and addresses; the pack publishes office contacts only for the Zurich offices its topics name.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-714a0981c5b41126870d
+  section_ids:
+  - section-0006
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. The general paragraph and the re-export pointer restate what the facts of this concept and of customs-returns-and-repairs already carry from the pages that state them.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-d25c75b6384595c370a9
+  section_ids:
+  - section-0002
+  - section-0004
+  - section-0010
+- kind: deferred
+  reason: 'Import rules that come from legislation outside customs law, such as permits for particular goods; a subject of its own that this wave does not open.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-d25c75b6384595c370a9
+  section_ids:
+  - section-0008
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-49e93adbb7a39f819323
+  section_ids:
+  - section-0002
+- kind: duplicate
+  reason: 'Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-134972557881796cf73c
+  section_ids:
+  - section-0003
+  - section-0006
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. The transport rule is cited from the page on moving with horses and pets.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-851308b9946b3d2ce68b
+  section_ids:
+  - section-0002
+  - section-0010
+- kind: deferred
+  reason: 'A consumer warning about buying a dog abroad and a pointer to the veterinary office''s brochure, rather than an administrative rule; to be looked at again if the pack ever serves animal-welfare guidance.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-851308b9946b3d2ce68b
+  section_ids:
+  - section-0003
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'The title of a downloadable notification form.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-851308b9946b3d2ce68b
+  section_ids:
+  - section-0018
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-ae795262d1d362f6fd9e
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0006
+- kind: deferred
+  reason: 'Sending postal and courier consignments out of Switzerland, which the pack does not serve today.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-ae795262d1d362f6fd9e
+  section_ids:
+  - section-0005
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'Restates the prohibitions and restrictions that customs-prohibited-restricted-goods carries from the page that states them.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-36681bc4d8a8776e8ac7
+  section_ids:
+  - section-0003
+- kind: deferred
+  reason: 'Temporary import as a special case, which the pack does not serve today.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-36681bc4d8a8776e8ac7
+  section_ids:
+  - section-0004
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-62f7e84f493f02430c66
+  section_ids:
+  - section-0002
+- kind: navigation
+  reason: 'The postal address of the customs directorate.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-62f7e84f493f02430c66
+  section_ids:
+  - section-0010
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. The food paragraph restates what customs-duty-free-quantities carries from the page that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-cc8927202fa93a8a8d83
+  section_ids:
+  - section-0002
+  - section-0006
+- kind: deferred
+  reason: 'A consumer warning about buying a dog abroad, and travelling with a pet outside a house move; neither is served today and the pages they point at are not catalogued.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-cc8927202fa93a8a8d83
+  section_ids:
+  - section-0003
+  - section-0005
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-c428011a0852377f3ef6
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0007
+- kind: deferred
+  reason: 'Teasers of FOCBS pages this catalogue does not hold: fuel and vehicle repairs, portable musical instruments, watches, jewellery and precious metals, and food supplies for holiday camps. Each is a subject of its own and a later wave can take it; citing the teaser would state the rule at second hand.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-c428011a0852377f3ef6
+  section_ids:
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-e591b902722f45df8802
+  section_ids:
+  - section-0002
+- kind: deferred
+  reason: 'Import and re-export handled by a courier firm, and goods returned to a sender inside Switzerland; neither is served today.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-e591b902722f45df8802
+  section_ids:
+  - section-0007
+  - section-0009
+  - section-0010
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'Form titles; the forms themselves are named in the facts that cite the sections above them.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-7a32f11d4eabd2a4e1f6
+  section_ids:
+  - section-0005
+  - section-0007
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-fd3729f23cb003146146
+  section_ids:
+  - section-0002
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-c53e2f40414767a5ee38
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+- kind: deferred
+  reason: 'The pre-check of removal goods, a service the pack does not describe today.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-fb507812b97f72bfba2c
+  section_ids:
+  - section-0006
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-a0307125a8f264f4f84d
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+- kind: deferred
+  reason: 'Taking removal goods out of Switzerland; the pack serves moving to Switzerland and the departure side only for the topics it already names.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-a0307125a8f264f4f84d
+  section_ids:
+  - section-0005
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it. Teaser tiles of a navigation page: each summarises another FOCBS page that this catalogue also holds and that the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-59089a1125b8a26db80f
+  section_ids:
+  - section-0002
+  - section-0004
+  - section-0007
+- kind: deferred
+  reason: 'Cross-border private flights, entering by private boat, temporary admission under ZAVV or a Carnet ATA, and the complaints procedure; each is a subject of its own that this wave does not open, and the pages behind the teasers are not catalogued.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-59089a1125b8a26db80f
+  section_ids:
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-0780a5be8f74ec787b10
+  section_ids:
+  - section-0002
+- kind: duplicate
+  reason: 'Worked examples of the value limit. The rule they illustrate is cited from the section that states it; an example is not a separate rule. The online-shopping paragraph points at the pages on ordering from abroad, which the facts cite directly.'
+  author: 'assistant (Claude), coordinating the customs wave'
+  date: '2026-09-23'
+  document_id: doc-12771c5fcbdee5f520a5
+  section_ids:
+  - section-0006
+  - section-0007
+  - section-0009
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0004
+- kind: out_of_scope
+  reason: 'What the federal premium calculator can do. The release publishes the rules and not the prices, and names no calculator''s behaviour.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0007
+  out_of_scope_entry: 'every calculator'
+- kind: navigation
+  reason: 'Boxes for ordering printed material and for asking the publisher a question.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0008
+  - section-0068
+  - section-0069
+- kind: navigation
+  reason: 'A pointer to where information on health insurance can be found, rather than a rule.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0010
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. These answers restate the duty to insure, its three-month deadline, the consequence of a late registration, the free choice among insurers and their duty to accept, the exemptions, the end of the insurance and the case of a move abroad, all of which health-insurance-deadline, health-insurance-enrolment, zh-health-insurance-exemption and health-insurance-insured-abroad carry.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0018
+  - section-0019
+  - section-0020
+  - section-0021
+  - section-0022
+  - section-0027
+- kind: deferred
+  reason: 'Whether the insurer may charge a whole month''s premium when a child is born at the end of a month, when someone registers in Switzerland mid-month or when someone dies at the start of one. The reviewer asked on 23 September 2026 for this to be served, but neither the act nor the ordinance states how the monthly premium is divided; what is grounded is that cover begins and ends on a named day, which health-insurance-deadline now carries. To be looked at again if a rule on the division of the premium is found.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0015
+  - section-0016
+  - section-0017
+  reaffirm_by: '2027-03-31'
+- kind: deferred
+  reason: 'What to do when an insurer does not answer an application to join. A complaint route, which the release does not serve for any authority or insurer.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0023
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Suspending the accident cover and suspending the insurance during long service are carried by accident-insurance and by health-insurance-service-suspension, the second of which this wave added from the act and the ordinance.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0024
+  - section-0025
+- kind: deferred
+  reason: 'Whether the duty to insure continues during a temporary stay abroad for travel or study. Neighbouring on health-insurance-abroad, which serves what the insurance pays abroad rather than who remains subject to the duty while away.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0026
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Every one of these answers on cost sharing - the franchise and the retention and their caps, the hospital contribution, maternity, bathing cures and aids, the franchise on a change of insurer or across the turn of the year, the combination with a model or a bonus insurance, and the retention of 40 per cent - is carried by health-insurance-cost-sharing, which holds nineteen facts.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0029
+  - section-0030
+  - section-0031
+  - section-0032
+  - section-0033
+  - section-0034
+  - section-0035
+  - section-0036
+  - section-0037
+  - section-0038
+  - section-0039
+  - section-0040
+  - section-0041
+  - section-0042
+  - section-0043
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. The notice periods, the effect of a late joining and the hand-over between the old and the new insurer are carried by health-insurance-change, which rests on Art. 7 of the act rather than on this page''s calendar dates.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0046
+  - section-0047
+  - section-0048
+  - section-0049
+  - section-0050
+  - section-0051
+  - section-0053
+  - section-0055
+  - section-0056
+- kind: deferred
+  reason: 'The notice periods of a supplementary insurance, which is a contract under the insurance contract act and not part of the compulsory insurance this release serves.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0052
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. That arrears block a change of insurer is carried by health-insurance-unpaid-premiums from Art. 64a para. 6 of the act.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0054
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Whether a supplementary insurance is still needed for the free choice of hospital is carried by health-insurance-supplementary.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0058
+- kind: deferred
+  reason: 'Treatment abroad. What the release serves of this answer - the emergency, what counts as one and the ceiling of twice the Swiss amount - it carries from Art. 36 of the ordinance. The rest of the section is the European health insurance card and the coordination rules, which the reviewer decided on 23 September 2026 to leave not served because they appear only on a plain-language page and D4 forbids that as a lone source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0060
+  reaffirm_by: '2027-03-31'
+- kind: deferred
+  reason: 'Medicines and aids bought abroad. The reviewer decided on 23 September 2026 to leave this out of the wave.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0061
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. The reimbursement principle and the two systems by which a bill is settled are carried by health-insurance-billing from Art. 42 of the act, which this wave added.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0063
+  - section-0064
+  - section-0065
+- kind: deferred
+  reason: 'The tiers soldant, a third way of settling a bill that Art. 42 of the act does not name; the release carries the two systems the act sets up.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0066
+  reaffirm_by: '2027-03-31'
+- kind: deferred
+  reason: 'What the billing systems mean in practice - how long an insurer usually takes to reimburse, what to do when the bill cannot be paid, and the ombudsman. None of it is in the act or the ordinance, and the ombudsman has no source in this release at all, so health-insurance-billing declares all three as not served.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-107094215a49831a8c83
+  section_ids:
+  - section-0067
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. The franchise and the retention, the worked example, the three model families and the routes to a lower premium are carried by health-insurance-cost-sharing, health-insurance-models, health-insurance-change and premium-reduction.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e735f7a09d6dd3ae6741
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0020
+  - section-0021
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Dropping the accident cover when the employer insures it is carried by accident-insurance, which also states the threshold in hours; this page''s plain-language twin states that threshold more loosely and was deliberately not cited for it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e735f7a09d6dd3ae6741
+  section_ids:
+  - section-0018
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Suspending the insurance during service is carried by health-insurance-service-suspension from Art. 3 para. 4 of the act and Art. 10a of the ordinance, which this wave added.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e735f7a09d6dd3ae6741
+  section_ids:
+  - section-0019
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. What basic insurance is and pays for, what the insured pays themselves, the three model families and the right to change insurer are carried by health-insurance-benefits, health-insurance-cost-sharing, health-insurance-models and health-insurance-change.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-5e5954d1f6e0e96050f7
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0018
+- kind: duplicate
+  reason: 'A worked example of the franchise that was deliberately not cited: it has the insurer pay the rest of the bill without mentioning the retention of 10 per cent, which contradicts health-insurance-cost-sharing-3. The same page''s other example, and the one on the page about saving, are arithmetically complete.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-5e5954d1f6e0e96050f7
+  section_ids:
+  - section-0010
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. The change of insurer, of franchise and of model, and the warning about arrears, are carried by health-insurance-change, health-insurance-cost-sharing, health-insurance-models and health-insurance-unpaid-premiums, each from the act or the ordinance rather than from this page''s calendar dates.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e3a0c411d388f9d8af8f
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. What a premium reduction is, who grants it, the cantons'' competence and the joint institution for people abroad are carried by premium-reduction and health-insurance-insured-abroad.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-0c3c607cd47664b50658
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0010
+  - section-0012
+  - section-0013
+  - section-0014
+- kind: deferred
+  reason: 'The table of the premium-reduction office of every canton. Group E of the work order extends the pack to all 26 cantons; this table is read in that wave rather than here, where only the Zurich office is served.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-0c3c607cd47664b50658
+  section_ids:
+  - section-0009
+  reaffirm_by: '2027-03-31'
+- kind: deferred
+  reason: 'How the Confederation and the cantons finance the premium reduction between them. The financing of the system is not a question a resident asks about their own premium.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-0c3c607cd47664b50658
+  section_ids:
+  - section-0015
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'A list of links to further pages.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-0c3c607cd47664b50658
+  section_ids:
+  - section-0016
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. Who must be insured in Switzerland while living abroad, the limited offer of insurers, the premium per state of residence and who grants the premium reduction are carried by health-insurance-insured-abroad.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-2e4546e6622f10a0de97
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+- kind: out_of_scope
+  reason: 'An overview of the premiums for each state of residence. The release carries the rule that the premium follows the state of residence and not the amounts.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-2e4546e6622f10a0de97
+  section_ids:
+  - section-0013
+  out_of_scope_entry: 'insurance premiums and premium reductions'
+- kind: navigation
+  reason: 'A list of links to further pages.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-2e4546e6622f10a0de97
+  section_ids:
+  - section-0014
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0002
+- kind: navigation
+  reason: 'The heading of a link to the list of cantonal authorities.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0003
+- kind: duplicate
+  reason: 'When the insurance of a cross-border commuter begins and ends, which health-insurance-deadline now carries from Art. 5 of the act and Art. 7 of the ordinance.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0005
+- kind: deferred
+  reason: 'Cross-border commuters from a state outside the EU, EFTA and the United Kingdom, whom health-insurance-cross-border-commuter declares as not served because the right of option rests on agreements that do not reach them.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0008
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0024
+  - section-0025
+  - section-0026
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-73316a716c25d7263406
+  section_ids:
+  - section-0027
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-b78c155affebebdb3ac3
+  section_ids:
+  - section-0002
+- kind: deferred
+  reason: 'How the tariffs between insurers and providers are set and approved. A question about the machinery of the system rather than about what a resident pays or receives.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-b78c155affebebdb3ac3
+  section_ids:
+  - section-0004
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The question lines of the page''s accordion on medicines, vaccinations and maternity benefits; the answers behind them are cited from the sections that state them, and health-insurance-benefits and health-insurance-cost-sharing carry them.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-b78c155affebebdb3ac3
+  section_ids:
+  - section-0012
+  - section-0016
+  - section-0017
+- kind: navigation
+  reason: 'A newsletter box and the publisher''s postal address block.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-b78c155affebebdb3ac3
+  section_ids:
+  - section-0022
+  - section-0031
+- kind: duplicate
+  reason: 'The phases of the premium approval process, which health-insurance-premium-regions carries in five facts added in this wave - who calculates, who submits, what the office examines, that cost coverage is kept per canton, and that the office approves and publishes.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-d27fc848afce0db98807
+  section_ids:
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0009
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-d27fc848afce0db98807
+  section_ids:
+  - section-0032
+- kind: deferred
+  reason: 'How the Confederation and the cantons finance the premium reduction, and how the office monitors it. The financing and the supervision of the system are not questions a resident asks about their own premium.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-d43ca41415a4f2f2c9c3
+  section_ids:
+  - section-0005
+  - section-0006
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-d43ca41415a4f2f2c9c3
+  section_ids:
+  - section-0015
+- kind: deferred
+  reason: 'The English version of the financing and monitoring sections, deferred for the same reason as the German page.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-380255d8847870b7c0f3
+  section_ids:
+  - section-0005
+  - section-0006
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'An empty leading section and the publisher''s postal address block.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-380255d8847870b7c0f3
+  section_ids:
+  - section-0001
+  - section-0013
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-38f8f9f8e3a5024b8196
+  section_ids:
+  - section-0005
+- kind: deferred
+  reason: 'Advice on looking after one''s health, on asking a pharmacy about a minor complaint and on getting a second opinion before an operation. The page frames all three as advice rather than as entitlements, and the second opinion it makes conditional on asking the insurer, so none of them is a rule the release can state.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-38f8f9f8e3a5024b8196
+  section_ids:
+  - section-0006
+  - section-0007
+  - section-0008
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The publisher''s plain-language rendering of a rule the release already carries from the authority''s own page or from the act and the ordinance. Under D4 of the work order a plain-language page is evidence for everyday wording, which this wave took as aliases, and not for the rule itself. What a supplementary insurance is, and that it sits outside the compulsory insurance, is carried by health-insurance-supplementary and health-insurance-benefits.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-faac7633f8f4608f6d70
+  section_ids:
+  - section-0005
+  - section-0006
+- kind: deferred
+  reason: 'What the supplementary policies cover and how they are cancelled. Supplementary insurance is a contract under the insurance contract act; the release serves the boundary of the compulsory insurance and not the private policies beyond it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-faac7633f8f4608f6d70
+  section_ids:
+  - section-0007
+  - section-0008
+  reaffirm_by: '2027-03-31'
+- kind: out_of_scope
+  reason: 'The average premium as a statistical measure, the year''s rise in per cent and the standard premium. The release carries what makes premiums differ and never an amount or a rate.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-bad28b3d0044b0143434
+  section_ids:
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  out_of_scope_entry: 'insurance premiums and premium reductions'
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-fcdb3a04d407cd5a1875
+  section_ids:
+  - section-0002
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-fcdb3a04d407cd5a1875
+  section_ids:
+  - section-0003
+  - section-0004
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-a2ba95d86bd9041085b6
+  section_ids:
+  - section-0004
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-a2ba95d86bd9041085b6
+  section_ids:
+  - section-0005
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-c91304c05bdefe12e21b
+  section_ids:
+  - section-0002
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-c91304c05bdefe12e21b
+  section_ids:
+  - section-0004
+- kind: duplicate
+  reason: 'When the duty to insure ends, which health-insurance-deadline now carries from Art. 5 para. 3 of the act and Art. 7 para. 3 of the ordinance.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e494fce7ee1b673e639f
+  section_ids:
+  - section-0004
+- kind: out_of_scope
+  reason: 'The insurance of people staying without papers, which the pack does not serve.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-e494fce7ee1b673e639f
+  section_ids:
+  - section-0005
+  out_of_scope_entry: 'asylum'
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-1631ee5aec5b0914091c
+  section_ids:
+  - section-0008
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-1631ee5aec5b0914091c
+  section_ids:
+  - section-0009
+- kind: duplicate
+  reason: 'Who is not compulsorily insured against accidents, which accident-insurance carries.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-6e45b9e28dd55e61b3a3
+  section_ids:
+  - section-0003
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-6e45b9e28dd55e61b3a3
+  section_ids:
+  - section-0006
+- kind: duplicate
+  reason: 'The English version of the section on who is not compulsorily insured against accidents, which accident-insurance carries from the German page.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-f373f87980ac42c88f80
+  section_ids:
+  - section-0003
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-f373f87980ac42c88f80
+  section_ids:
+  - section-0006
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-10dfed4288411da300f1
+  section_ids:
+  - section-0008
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-10dfed4288411da300f1
+  section_ids:
+  - section-0009
+- kind: duplicate
+  reason: 'The higher retention on a medicine that can be exchanged for a generic, which health-insurance-cost-sharing carries.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-7e46ce8537f76f1736a8
+  section_ids:
+  - section-0005
+- kind: duplicate
+  reason: 'A teaser tile summarising another page this catalogue holds and whose own sections the facts cite directly. Citing the summary instead of the page that states the rule would put the release one step further from the source.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-d6ba6d241671ed943a29
+  section_ids:
+  - section-0014
+- kind: duplicate
+  reason: 'The page''s own lead-in, which summarises the sections below; the rule it summarises is cited from the section that states it.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-0b415d97d57dc63b4f38
+  section_ids:
+  - section-0002
+- kind: navigation
+  reason: 'The publisher''s postal address block, repeated across the site.'
+  author: 'assistant (Claude), coordinating the health insurance wave'
+  date: '2026-09-23'
+  document_id: doc-53179c28edeeaf2a28d0
+  section_ids:
+  - section-0011
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-0e3d386866774ee970c5
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-5c6344ffc116c19c01ef
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-66bfe101b39f2d0ea6a9
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-69d73af6c8ae2501ff76
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0018
+  - section-0019
+  - section-0020
+  - section-0021
+  - section-0022
+  - section-0023
+  - section-0025
+  - section-0026
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-6f212eeca0d54d0940e8
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-730eeba6699b03eb852e
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-736b05711af66d1d9cc5
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-75ee6bba762275baf94b
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0018
+  - section-0019
+  - section-0020
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-785e76133e7f71f8767e
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-7d0664abd7ab474e510d
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-8348f22bf583137fd376
+  section_ids:
+  - section-0002
+  - section-0004
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-92859f76d868578d25ad
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0007
+  - section-0008
+  - section-0009
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-953725399cc1315ca3d5
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-b925ff104dcd837ffd4c
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0007
+  - section-0008
+  - section-0010
+  - section-0011
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0018
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-ce6137f089827679b46b
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0008
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0014
+  - section-0016
+  - section-0017
+  - section-0018
+  - section-0019
+  - section-0020
+- kind: duplicate
+  reason: 'The English versions of the arbeit.swiss pages the catalogue lists next to the German ones. The German page is the one the facts of this wave are written from and cite; the English excerpts are added beside them in the language-variant pass, as they were for the federal pages on 19 September 2026. No fact cites an English page today.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-f09b8685193e7b48365e
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0018
+  - section-0019
+  - section-0020
+  - section-0021
+  - section-0022
+  - section-0023
+  - section-0024
+  - section-0025
+- kind: navigation
+  reason: 'The directory of the fourteen regional employment centres of the canton - for each one an address, a telephone number, an e-mail address and a link to book the registration interview. This pack publishes office contacts only for the offices its own topics name, and zh-unemployment-registration serves how a person finds the centre responsible for them instead of listing all fourteen.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-e992d7aaf1b359dc413c
+  section_ids:
+  - section-0011
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0017
+  - section-0019
+  - section-0020
+  - section-0021
+  - section-0023
+  - section-0025
+  - section-0026
+  - section-0027
+  - section-0029
+  - section-0031
+  - section-0032
+  - section-0033
+  - section-0035
+  - section-0037
+  - section-0038
+  - section-0039
+  - section-0041
+  - section-0043
+  - section-0044
+  - section-0045
+  - section-0047
+  - section-0049
+  - section-0050
+  - section-0051
+  - section-0053
+  - section-0055
+  - section-0056
+  - section-0057
+  - section-0059
+  - section-0060
+  - section-0061
+  - section-0063
+  - section-0064
+  - section-0065
+  - section-0067
+  - section-0069
+  - section-0070
+  - section-0071
+  - section-0073
+  - section-0075
+  - section-0076
+  - section-0077
+  - section-0079
+  - section-0081
+  - section-0082
+  - section-0083
+  - section-0085
+  - section-0087
+  - section-0088
+  - section-0089
+  - section-0091
+  - section-0093
+  - section-0094
+  - section-0095
+  - section-0097
+- kind: out_of_scope
+  reason: 'The bridging benefit for people whose entitlement ends from the age of 60.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-ea8ce303e3ee8fb3a83a
+  section_ids:
+  - section-0039
+  out_of_scope_entry: 'the bridging benefit'
+- kind: out_of_scope
+  reason: 'The forms of the claim and the monthly declaration, and the documents to attach.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-ea8ce303e3ee8fb3a83a
+  section_ids:
+  - section-0018
+  - section-0022
+  - section-0032
+  - section-0033
+  - section-0035
+  out_of_scope_entry: 'forms'
+- kind: deferred
+  reason: 'What happens to the entitlement during holidays, illness, accident, service, maternity or paternity, care leave for a seriously ill child, and when the employer pays the wage late. Each is a rule of its own that this wave did not open; the federal concepts carry only the illness and accident limits of unemployment-daily-allowance.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-ea8ce303e3ee8fb3a83a
+  section_ids:
+  - section-0041
+  - section-0042
+  - section-0043
+  - section-0044
+  - section-0045
+  - section-0046
+  - section-0047
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'Links to explanatory videos.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-ea8ce303e3ee8fb3a83a
+  section_ids:
+  - section-0011
+  - section-0049
+- kind: duplicate
+  reason: 'The canton''s step-by-step guide to claiming unemployment benefit. Its rules - the conditions, the calculation of the daily allowances, the waiting days, the sanctions and the interim earnings - are the federal rules, which unemployment-daily-allowance, unemployment-obligations and unemployment-interim-earnings carry from the pages that state them, and zh-unemployment-benefit carries the cantonal part.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-ea8ce303e3ee8fb3a83a
+  section_ids:
+  - section-0007
+  - section-0010
+  - section-0014
+  - section-0017
+  - section-0023
+  - section-0024
+  - section-0025
+  - section-0026
+  - section-0027
+  - section-0028
+  - section-0029
+  - section-0030
+  - section-0034
+  - section-0036
+  - section-0037
+  - section-0040
+  - section-0048
+- kind: out_of_scope
+  reason: 'The electronic services and the list of the forms of unemployment insurance, each entry a form title with its number. Forms are named in out_of_scope, and the release serves the rules rather than the paperwork that implements them.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-692db70e280fde89bae7
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0018
+  - section-0019
+  - section-0020
+  - section-0021
+  - section-0022
+  - section-0023
+  - section-0024
+  - section-0025
+  out_of_scope_entry: 'forms'
+- kind: duplicate
+  reason: 'The same list of frequently asked questions as doc-3582d03d795fd5c90cf8, which the catalogue holds under its second URL. unemployment-daily-allowance cites the other document, and citing this one as well would put the same excerpt in the release twice.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-7b05677a02154e1aae90
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0018
+  - section-0019
+  - section-0020
+- kind: duplicate
+  reason: 'The same page on signing on and registering as doc-8de36911a6bb5dda59d4, which the catalogue holds under its second URL.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-a562c9bc875f8a37ca25
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+- kind: deferred
+  reason: 'How the enforcement of the job-registration duty is monitored and what the monitoring found. A question about the administration of the rule rather than about what an employer or a jobseeker has to do.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-7154ef3247e430ac8763
+  section_ids:
+  - section-0007
+  - section-0008
+  - section-0009
+  - section-0010
+  - section-0011
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0018
+  - section-0019
+  - section-0020
+  - section-0021
+  - section-0022
+  - section-0023
+  - section-0025
+  - section-0026
+  reaffirm_by: '2027-03-31'
+- kind: deferred
+  reason: 'Job boards, internet job search and the workplaces the centre provides for applying. Practical help rather than a rule, and the release does not point at job platforms.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-a7b0f3605efd15fe02e9
+  section_ids:
+  - section-0018
+  - section-0019
+  - section-0033
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The canton''s description of what the regional employment centre does for a jobseeker. The duties it states are carried by unemployment-obligations, which took the cantonal facts of this page, and the placement services by zh-unemployment-registration and job-registration-duty.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-a7b0f3605efd15fe02e9
+  section_ids:
+  - section-0008
+  - section-0010
+  - section-0012
+  - section-0013
+  - section-0014
+  - section-0015
+  - section-0023
+  - section-0024
+  - section-0026
+  - section-0027
+  - section-0028
+  - section-0029
+  - section-0030
+  - section-0032
+- kind: deferred
+  reason: 'The recognition of professional qualifications, in Switzerland and abroad. A subject of its own that this wave did not open.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-d679ed2cf42c3e618024
+  section_ids:
+  - section-0010
+  - section-0011
+  reaffirm_by: '2027-03-31'
+- kind: deferred
+  reason: 'The posting of workers to and from Switzerland, which concerns an employer sending an employee rather than a person looking for work.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-d679ed2cf42c3e618024
+  section_ids:
+  - section-0013
+  - section-0014
+  reaffirm_by: '2027-03-31'
+- kind: deferred
+  reason: 'The cross-border commuter sections - social insurance, health insurance and home office. The health insurance side is served by health-insurance-cross-border-commuter from the authority''s own page; the rest is not served.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-d679ed2cf42c3e618024
+  section_ids:
+  - section-0015
+  - section-0016
+  - section-0017
+  - section-0018
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The overview of looking for work and of living and working in the EU, EFTA and Switzerland, which unemployment-eu-efta-mobility carries from the sections that state it.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-d679ed2cf42c3e618024
+  section_ids:
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0007
+  - section-0008
+- kind: out_of_scope
+  reason: 'Employment under protection status S, which belongs to the asylum side that this pack does not serve.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-6a4c4aa06458f9782f9a
+  section_ids:
+  - section-0010
+  out_of_scope_entry: 'asylum'
+- kind: navigation
+  reason: 'A list of the languages the page is available in.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-6a4c4aa06458f9782f9a
+  section_ids:
+  - section-0009
+- kind: duplicate
+  reason: 'The same rule the concepts of this wave carry from the sections that state it. This page restates it without adding a condition. The remaining sections of the list of frequently asked questions belong to the eligibility conditions that unemployment-benefit carries, to the obligations, the interim earnings and the appeals, each served or declared by its own concept.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-3582d03d795fd5c90cf8
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0008
+  - section-0011
+  - section-0012
+  - section-0016
+  - section-0017
+  - section-0018
+  - section-0019
+  - section-0020
+- kind: navigation
+  reason: 'The title and date of the leaflet on the portable document U1.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-c0870773e4981e460538
+  section_ids:
+  - section-0008
+  - section-0013
+- kind: duplicate
+  reason: 'The page on returning to Switzerland; unemployment-eu-efta-mobility carries its rules on the Swiss claim, the portable documents and the export of benefit from the sections that state them.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-c0870773e4981e460538
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0009
+  - section-0014
+- kind: duplicate
+  reason: 'The page on counselling and placement by the regional employment centre. Its sections on the measures belong to unemployment-labour-market-measures, those on registration to unemployment-registration, and the duty it states is carried by unemployment-obligations.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-39345c8ba13993912a74
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0004
+  - section-0005
+  - section-0006
+  - section-0007
+  - section-0008
+- kind: deferred
+  reason: 'Looking for work in a third country outside the EU and EFTA, the trainee agreements and the recognition of Swiss diplomas abroad. Subjects of their own that this wave did not open.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-80a38229617ee48b2792
+  section_ids:
+  - section-0005
+  - section-0007
+  - section-0008
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The page on looking for work abroad; unemployment-eu-efta-mobility carries what it states about EURES and the EU and EFTA.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-80a38229617ee48b2792
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0006
+- kind: out_of_scope
+  reason: 'The application forms the page links.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-1ab3b64956708c04d398
+  section_ids:
+  - section-0007
+  out_of_scope_entry: 'forms'
+- kind: duplicate
+  reason: 'The page on the benefits of unemployment insurance; its rules are carried by unemployment-interim-earnings, unemployment-insolvency and unemployment-eu-efta-mobility from the sections that state them.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-1ab3b64956708c04d398
+  section_ids:
+  - section-0003
+  - section-0006
+  - section-0008
+- kind: deferred
+  reason: 'The information events the cantonal unemployment fund holds for the employees of a company facing bankruptcy; an offer rather than a rule, and its dates are not published here.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-0683c2c38c53009db6b6
+  section_ids:
+  - section-0023
+  - section-0024
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The canton''s page on insolvency compensation, whose rules unemployment-insolvency carries in twelve cantonal facts including the sixty-day deadline.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-0683c2c38c53009db6b6
+  section_ids:
+  - section-0007
+  - section-0009
+- kind: duplicate
+  reason: 'The page on jobseeker registration; unemployment-registration carries the registration itself and job-registration-duty the head start it describes.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-026d5accf4c3cd0d8c95
+  section_ids:
+  - section-0002
+  - section-0003
+  - section-0005
+- kind: duplicate
+  reason: 'The page on signing on and registering, whose rules unemployment-registration carries.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-8de36911a6bb5dda59d4
+  section_ids:
+  - section-0002
+  - section-0004
+- kind: navigation
+  reason: 'The brochure on short-time work compensation and the electronic services for it, each a document or service title rather than a statement.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-2b61f79eb218ff041f86
+  section_ids:
+  - section-0004
+  - section-0005
+- kind: duplicate
+  reason: 'The page''s own lead-in or a section heading with no statement of its own; the rules it introduces are cited from the sections that state them.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-1dc7548e6096cef67224
+  section_ids:
+  - section-0002
+- kind: deferred
+  reason: 'The canton''s information on tenders for providers of labour-market measures. Provider-facing rather than resident-facing.'
+  author: 'assistant (Claude), coordinating the work and unemployment wave'
+  date: '2026-09-23'
+  document_id: doc-62225ba0cbeb8a9399bb
+  section_ids:
+  - section-0015
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'A pointer to another page of the same site, with no rule of its own.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-83832fea8301efd1719c
+  section_ids:
+  - section-0115
+  - section-0116
+  - section-0117
+- kind: duplicate
+  reason: 'The exempt amount for people working past the reference age, which ahv-contribution-duty carries as a rule without the figure.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-83832fea8301efd1719c
+  section_ids:
+  - section-0107
+- kind: deferred
+  reason: 'The employer''s side of the AHV contributions - how an employer settles the contributory wages, what counts as the relevant wage, the advance payments, the employer audit and the redistribution of the carbon levy. The release serves what a resident owes and how they register, not how a business accounts for its staff.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-83832fea8301efd1719c
+  section_ids:
+  - section-0101
+  - section-0103
+  - section-0104
+  - section-0105
+  - section-0106
+  - section-0108
+  - section-0109
+  - section-0111
+  - section-0112
+  - section-0113
+  reaffirm_by: '2027-03-31'
+- kind: navigation
+  reason: 'A pointer to another page of the same site, with no rule of its own.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-e175c611718f9609a0b9
+  section_ids:
+  - section-0109
+  - section-0110
+- kind: duplicate
+  reason: 'The cantonal page on contributions in international situations, whose rules ahv-international-coordination carries - the posting and the A1 certificate from the federal pages, and the multi-state worker and the accompanying spouse from this page.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-e175c611718f9609a0b9
+  section_ids:
+  - section-0100
+  - section-0101
+  - section-0103
+- kind: navigation
+  reason: 'A pointer to another page of the same site, with no rule of its own.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-6d655671e0529ee14212
+  section_ids:
+  - section-0105
+  - section-0106
+- kind: deferred
+  reason: 'The compensation for the higher reference age under the AHV reform - the transitional supplement for the affected cohorts of women. ahv-reference-age declares it as not served, because the federal pages of this wave do not state its conditions.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-6d655671e0529ee14212
+  section_ids:
+  - section-0101
+  reaffirm_by: '2027-03-31'
+- kind: duplicate
+  reason: 'The cantonal page on the old-age pension, whose rules ahv-claiming-a-pension and zh-ahv-compensation-office carry.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-6d655671e0529ee14212
+  section_ids:
+  - section-0100
+  - section-0103
+- kind: duplicate
+  reason: 'The cantonal page on the individual account, whose rules ahv-individual-account and ahv-contribution-gaps carry.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-fc1639f7f1a1a8970db4
+  section_ids:
+  - section-0108
+  - section-0109
+- kind: duplicate
+  reason: 'The cantonal office''s pages on family allowances. The pack serves family allowances in its family-benefits topic from the sources that wave read; citing these as well would put the same rules in the release twice under a second publisher.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-9dcc42de170c42587893
+  section_ids:
+  - section-0100
+  - section-0103
+  - section-0105
+  - section-0106
+  - section-0107
+  - section-0108
+  - section-0110
+  - section-0111
+- kind: duplicate
+  reason: 'The cantonal office''s pages on family allowances. The pack serves family allowances in its family-benefits topic from the sources that wave read; citing these as well would put the same rules in the release twice under a second publisher.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-711c3b23431a89847e6a
+  section_ids:
+  - section-0100
+  - section-0103
+  - section-0104
+  - section-0107
+  - section-0108
+- kind: duplicate
+  reason: 'The cantonal office''s pages on family allowances. The pack serves family allowances in its family-benefits topic from the sources that wave read; citing these as well would put the same rules in the release twice under a second publisher.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-95f7b9e0abaf0fee231e
+  section_ids:
+  - section-0100
+  - section-0103
+  - section-0105
+  - section-0107
+- kind: duplicate
+  reason: 'The cantonal office''s page on who may be exempted from the health insurance duty, which zh-health-insurance-exemption serves from the canton''s own decision pages, and which the health-insurance topic covers federally.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-6ea083d5d353d3a54bc0
+  section_ids:
+  - section-0100
+  - section-0106
+  - section-0109
+  - section-0110
+- kind: duplicate
+  reason: 'The cantonal office''s page on registering for health insurance and on the premium reduction, both served by the health-insurance topic and by zh-premium-reduction.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-42e6fd401649e8cf7deb
+  section_ids:
+  - section-0105
+  - section-0106
+- kind: duplicate
+  reason: 'The cantonal office''s page on who is entitled to a premium reduction, which zh-premium-reduction and premium-reduction serve.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-ee6f2bede39a79b1f3af
+  section_ids:
+  - section-0100
+  - section-0101
+  - section-0114
+  - section-0115
+- kind: navigation
+  reason: 'The office''s contact, telephone and walk-in advice pages. The pack serves Zurich office contacts in a topic of its own, and this wave deliberately curated no address, telephone number or opening hours from the AHV pages.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-ec81df68e0c715a60928
+  section_ids:
+  - section-0103
+  - section-0104
+  - section-0105
+- kind: navigation
+  reason: 'The office''s contact, telephone and walk-in advice pages. The pack serves Zurich office contacts in a topic of its own, and this wave deliberately curated no address, telephone number or opening hours from the AHV pages.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-e0dd90106b3c8eff3235
+  section_ids:
+  - section-0099
+  - section-0106
+  - section-0107
+- kind: navigation
+  reason: 'The office''s contact, telephone and walk-in advice pages. The pack serves Zurich office contacts in a topic of its own, and this wave deliberately curated no address, telephone number or opening hours from the AHV pages.'
+  author: 'assistant (Claude), coordinating the AHV and pillars wave'
+  date: '2026-09-23'
+  document_id: doc-e47f41de157a031ee350
+  section_ids:
+  - section-0099
+  - section-0102

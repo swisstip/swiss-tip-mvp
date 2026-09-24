@@ -115,8 +115,11 @@ Built for the **Swiss {ai} Weeks** hackathon in Zurich, 24 and 25 September
 - **Checked:** every push that changes a pack replays its acceptance suite
   and regression pack and runs the round trips against the served release
   ([knowledge-bases.yml](.github/workflows/knowledge-bases.yml)); the
-  container images are built, tested and pushed by
-  [container-images.yml](.github/workflows/container-images.yml).
+  pack images and the demo image are built, tested and pushed by
+  [container-images.yml](.github/workflows/container-images.yml), on the
+  images without a release that the code repository's
+  [workflow of the same name](https://github.com/swisstip/swiss-tip/blob/main/.github/workflows/container-images.yml)
+  pushes.
 
 What the packs cover is in [COVERAGE.md](COVERAGE.md); what is weak or
 missing is in [LIMITATIONS.md](LIMITATIONS.md). The facts were reviewed by

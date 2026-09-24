@@ -1,28 +1,30 @@
 # User acceptance tests
 
-**Last update:** 19 September 2026<br>
+**Last update:** 23 September 2026<br>
 **Scope:** the two standing cases of section 3.3 of the
 [functional specification](https://github.com/swisstip/swiss-tip/blob/main/docs/product/functional-specification.md), four further
 cases chosen because the popular answer misses an exception in the law, a
 Swiss citizen's question in Zurich
 German about a residence permit for a foreign spouse, and their edge cases,
-as a user would experience them through an MCP-capable assistant; and, for
-the extension of KB1 by the moving-to-Switzerland topics and
-naturalisation decided on 15 September 2026, ten further cases (UAT-8 to
-UAT-17) specified before the release that serves them exists; six
-office-contact cases (UAT-18 to UAT-23) added with the Zurich office
-contacts on 17 September 2026, four of them with a negative answer the
-cited page states; eleven daily-life cases (UAT-24 to UAT-34) added the same
-day with the topics waste, parking, vehicles, dogs, kindergarten, the tax
-return, the radio and television fee and medical emergencies; ten
+as a user would experience them through an MCP-capable assistant; ten cases
+on the moving-to-Switzerland topics and naturalisation (UAT-8 to UAT-17);
+six office-contact cases (UAT-18 to UAT-23), four of them with a negative
+answer the cited page states; eleven daily-life cases (UAT-24 to UAT-34) on
+waste, parking, vehicles, dogs, kindergarten, the tax return, the radio and
+television fee and medical emergencies; ten
 cross-jurisdiction cases (UAT-35 to UAT-44) asked from another canton or
 from a Zurich municipality other than the city, which expect everything the
 release serves for that place and nothing published for another; six
 entry-and-visa cases (UAT-45 to UAT-50); three cases on voting rights and the
-tax-at-source tariff (UAT-51 to UAT-53) and eleven expat-life cases (UAT-54 to
-UAT-64) added on 18 September 2026; and sixteen
+tax-at-source tariff (UAT-51 to UAT-53); eleven expat-life cases (UAT-54 to
+UAT-64); two settlement-permit cases on the five-year routes by nationality
+(UAT-65 and UAT-66); five cases on the integration offers of the Canton of
+Zurich (UAT-67 to UAT-71); nine customs cases on travelling, ordering from
+abroad and moving goods (UAT-72 to UAT-80); eight cases on basic health
+insurance, its cost sharing, models, change of insurer and cover abroad
+(UAT-81 to UAT-88); and nineteen
 server-only decline cases (DECLINE-1 to
-DECLINE-9 and SEARCH-DECLINE-1 to SEARCH-DECLINE-7) that check the server
+DECLINE-12 and SEARCH-DECLINE-1 to SEARCH-DECLINE-7) that check the server
 rejects a request the release does not cover, at the resolve step and at
 the search step.<br>
 **System under test:** the Swiss TIP MCP server (`apps/mcp-server`) on the
@@ -82,7 +84,7 @@ citation, context and efficiency requirements below apply in both modes.
 | UAT-2e | Third-country national (an Indian citizen), in German: may I work in Switzerland, under which conditions | Mixing in EU/EFTA rules; inventing quotas and procedures; translating the question into English before searching, and answering in English, although the release carries German aliases and the search accepts German | `third-country-work`, `aig-work-permit`, `permit-authority`, `permit-b` |
 | UAT-3 | B permit holder wants to bring a 13-year-old child after four years | A plain yes; the twelve-month deadline for children over twelve is missed | `family-deadlines`, `family-b` |
 | UAT-4 | Spouse of a Swiss citizen separating after two years of marriage | Three years of marriage treated as the only route; loss predicted as certain | `family-separation`, `family-swiss` |
-| UAT-5 | Ten years in Switzerland, three on an L permit: C permit now? | Counting presence instead of the last five continuous years on B; quoting a five-year rule from memory | `permit-c` |
+| UAT-5 | Ten years in Switzerland, three on an L permit: C permit now? | Counting presence instead of the last five continuous years on B; carrying the five-year rule over to a nationality the served list does not name | `permit-c`, `permit-c-five-years` |
 | UAT-6 | B permit holder about to need social assistance: is the permit revoked? | Automatic revocation asserted | `social-assistance-review`, `permit-b` |
 | UAT-7 | Swiss citizen, in Zurich German: residence permit for a Brazilian spouse, and by when to claim reunification | Applying the Art. 44 conditions (housing, income, language) to a Swiss sponsor; translating the dialect into English before searching | `family-swiss`, `family-deadlines`, `permit-authority` |
 | UAT-8 | German citizen leaving for good: can the AHV contributions be refunded | A plain yes with the refund form; the refund exists only for nationals of states without a social security agreement and of the named agreement states | `ahv-contribution-refund`, `ahv-pension-abroad` (planned) |
@@ -142,6 +144,13 @@ citation, context and efficiency requirements below apply in both modes.
 | UAT-62 | Ten months of work on a B permit, job lost: unemployment benefit? | A plain yes because of the B permit, ignoring the 12 months of contributions | `unemployment-benefit`, `zh-unemployment-benefit` |
 | UAT-63 | Cleaner working six hours a week: insured for a skiing accident? | The employer's insurance assumed to cover leisure accidents whatever the hours | `accident-insurance` |
 | UAT-64 | Moving from Munich with furniture and a car, in German: customs duty? | Duty on everything, or duty-free without prior use and the form | `moving-goods-customs` |
+| UAT-65 | German citizen, five years in Zurich: settlement permit already, or only after ten years? | The ten-year rule applied to every nationality; a language certificate asked of a German national | `permit-c-five-years`, `zh-permit-c-five-years` |
+| UAT-66 | US citizen, five years in Zurich, after an Italian colleague's remark: does the five-year route apply? | Ten years because the user is a third-country national; the language exemption carried over from Germany, Austria and Liechtenstein | `zh-permit-c-five-years` |
+| UAT-67 | Brazilian newcomer in Winterthur looking for a German course and for advice on choosing one | The cantonal database only, although Winterthur keeps its own; invented course names, dates or prices | `zh-integration-offers` |
+| UAT-68 | Family on a family-reunification permit, two weeks in the canton: whose job is it to inform them? | The Migration Office named as the body that informs about integration offers; a welcome talk promised | `zh-newcomer-first-information` |
+| UAT-69 | Remarks about skin colour at work: is it racist discrimination, and who advises? | A definition without an address; the described behaviour called punishable although Article 261bis covers acts in public | `zh-racism-protection` |
+| UAT-70 | Association in Uster asking for 4,000 francs for a neighbourhood festival | The 31 October deadline or the 50,000-franc maximum of the larger projects; the money promised | `zh-integration-project-funding` |
+| UAT-71 | Tamil associations in the canton: are there any, and how to find one? | Associations named from general knowledge; or claiming the canton has no directory | `zh-migrant-associations` |
 
 ## Acceptance criteria that apply to every case
 
@@ -162,8 +171,9 @@ bytes of returned tool-output strings: 20,000 and 30,000 bytes respectively,
 excluding transport framing.
 
 A7, for UAT-3 to UAT-6, UAT-8 to UAT-17, the daily-life cases with a
-named trap (UAT-24 to UAT-26, UAT-28 to UAT-30, UAT-32 and UAT-33) and the
-cross-jurisdiction cases UAT-40 and UAT-43: the grounded answer states the
+named trap (UAT-24 to UAT-26, UAT-28 to UAT-30, UAT-32 and UAT-33), the
+cross-jurisdiction cases UAT-40 and UAT-43 and the settlement-permit cases
+UAT-65 and UAT-66: the grounded answer states the
 exception in the law that the popular answer misses. The control run without
 the server shows whether the model states it on its own; the comparison is
 part of the record, not of the verdict.
@@ -219,7 +229,7 @@ to bring); it must not add anything the release does not serve.
 | --- | --- | --- |
 | 1c | Arrival date equals the first working day | Registration must be complete before work starts, which is the arrival day itself; the answer says so and notes that registration is possible only after the actual move-in |
 | 1d | Arrival on a day the office is closed (weekend) | The deadline is not moved; the answer names the last office day before the binding limit and says opening hours and appointment availability are not covered (out of scope) |
-| 1e | Contract of up to three months | Covered since release v5: `eu-short-employment` with `population = eu_efta` is `SUPPORTED` with the notification procedure (the employer notifies online by the day before work starts; no permit; longer employment needs a residence permit), and the deadline concept's `employment_duration` instruction points to it; the assistant states the notification instead of the 14-day rule. Pinned in the round-trip check |
+| 1e | Contract of up to three months | Covered: `eu-short-employment` with `population = eu_efta` is `SUPPORTED` with the notification procedure (the employer notifies online by the day before work starts; no permit; longer employment needs a residence permit), and the deadline concept's `employment_duration` instruction points to it; the assistant states the notification instead of the 14-day rule. Pinned in the round-trip check |
 | 1f | Third-country national (for example an Indian citizen) asks the same question | `population = third_country`: the EU/EFTA deadline concept is `OUT_OF_COVERAGE` with `context_not_covered` naming `population=eu_efta`; the federal registration duty (`aig-registration`) and the third-country work admission still apply; the answer must not state the 14-day EU/EFTA rule as applicable |
 | 1g | Nationality not stated | The deadline concept returns `NEEDS_CONTEXT` for `population` with the allowed values; the assistant asks whether the user is an EU/EFTA citizen before answering |
 | 1h | The user lives in another canton (Bern) | Federal facts `SUPPORTED` at `CH (federal)`; the Zurich concepts `OUT_OF_COVERAGE` with `jurisdiction_not_covered` naming `CH-ZH`; the Bern migration-office contact is served; the answer gives the federal rule and says no cantonal procedure is published for Bern |
@@ -229,7 +239,7 @@ to bring); it must not add anything the release does not serve.
 | 1o | A quarter given as the city (`{"canton": "Kanton Zürich", "city": "Oerlikon"}`) | A quarter is not a municipality: `executed_scope.not_recognised` names `city: Oerlikon`, the request runs for `CH-ZH`, the cantonal facts are served and the guidance says which place the result is for and that the municipality's official name resolves the city's facts. Pinned in the round-trip check |
 | 1p | A name several municipalities share (`{"city": "Buchs"}`) | `INVALID_ARGUMENT` on `jurisdiction.city` listing Buchs (AG), Buchs (SG) and Buchs (ZH) with their codes; the assistant asks for the canton. Pinned in the round-trip check |
 | 1k | Applicability date after 13 November 2026 (`as_of` later than `stale_from`) | Status `STALE`: the facts are served with a freshness warning naming the snapshot date; the answer passes the warning on |
-| 1l | UK citizen taking up new employment | Covered since release v5: `uk-new-employment` with `population = uk_new` (valid from 1 January 2021) is `SUPPORTED` (no notification procedure, a work permit under the AIG applied for by the Swiss employer), and the EU/EFTA deadline concept is `OUT_OF_COVERAGE` with `context_not_covered` for `uk_new`; the assistant does not treat the user as EU/EFTA. Pinned in the round-trip check |
+| 1l | UK citizen taking up new employment | Covered: `uk-new-employment` with `population = uk_new` (valid from 1 January 2021) is `SUPPORTED` (no notification procedure, a work permit under the AIG applied for by the Swiss employer), and the EU/EFTA deadline concept is `OUT_OF_COVERAGE` with `context_not_covered` for `uk_new`; the assistant does not treat the user as EU/EFTA. Pinned in the round-trip check |
 | 1m | The user asks the fee or the processing time | Out of scope by name; the assistant quotes the scope statement and does not guess |
 
 ## UAT-2e: third-country national asking about a work permit, in German
@@ -379,7 +389,7 @@ route: important personal reasons requiring continued residence.
 | 4c | The spouse holds a C permit instead of Swiss citizenship | Art. 50 covers the Art. 43 route as well; `family-c` replaces `family-swiss` |
 | 4d | The spouse holds a B permit | Art. 50 covers the Art. 44 route; `family-b` replaces `family-swiss` |
 | 4e | The user asks whether domestic violence counts as an important reason | The release does not assess it and says so; the alternative exists in the served statement |
-| 4f | The same question in German ("Wir trennen uns nach zwei Jahren Ehe. Verliere ich meine Aufenthaltsbewilligung?") | Default lexical search, untranslated, ranks `family-separation` first through the authored everyday aliases of release v4 (`Trennung`, `Scheidung`); the source terms alone (`Auflösung der Ehe`) did not, because the question uses neither word. Pinned in the round-trip check; optional hybrid rankings are recorded separately |
+| 4f | The same question in German ("Wir trennen uns nach zwei Jahren Ehe. Verliere ich meine Aufenthaltsbewilligung?") | Default lexical search, untranslated, ranks `family-separation` first through the authored everyday aliases (`Trennung`, `Scheidung`), which the source terms alone (`Auflösung der Ehe`) do not do, because the question uses neither word. Pinned in the round-trip check; optional hybrid rankings are recorded separately |
 
 ## UAT-5: settlement permit after years on a short-stay permit
 
@@ -388,37 +398,41 @@ unconditional permit; ten years on L or B permits with the last five years
 continuously on B, integration and no revocation grounds; paragraphs 3 and 4
 offer shorter routes so ten years is not universal; temporary stays do not
 count toward the continuous five years, education stays count under a
-condition).
+condition) and, since 22 September 2026, the five-year routes by nationality
+(`permit-c-five-years`: SEM's list of the states whose nationals reach the
+settlement permit after five years, and that the free movement agreement
+itself carries no settlement provisions).
 
 **User:** "I am an Indian citizen. I have lived in Switzerland for ten years:
 three years on an L permit and then seven years on a B permit. Can I apply
 for a C permit now?"
 
 **The trap.** The popular answer counts ten years of presence and says yes,
-or quotes the five-year rule of EU/EFTA and some other nationals from
-memory. The law asks for the last five years continuously on a residence
-permit, excludes temporary stays from that period, and makes the ten years
-a baseline rather than a universal rule.
+or carries the five-year rule of the settlement-agreement states over to a
+nationality the served list does not name. The law asks for the last five
+years continuously on a residence permit, excludes temporary stays from that
+period, and makes the ten years a baseline rather than a universal rule.
 
 **Expected**
 
-- The assistant resolves `permit-c` (no context).
+- The assistant resolves `permit-c` and `permit-c-five-years`.
 - The answer states the Art. 34(2) conditions: ten years on L or B permits,
-  the last five continuous on B, integration, no revocation grounds; that
-  temporary stays do not count toward the continuous five years; and that
-  shorter routes exist in the law but are not published in this release,
-  so it does not quote a five-year rule for any nationality.
+  the last five continuous on B, integration, no revocation grounds; and that
+  temporary stays do not count toward the continuous five years.
+- It says why the five-year route does not help this user: it rests on
+  settlement agreements, and the served list of those states does not name
+  India.
 - Applied to the user: seven continuous years on B satisfy the five-year
   condition and the ten-year total is met; integration and revocation
   grounds remain to be assessed by the authority.
-- It cites the Fedlex AIG page.
+- It cites the Fedlex AIG page and the SEM page.
 
 | ID | Variation | Expected |
 | --- | --- | --- |
 | 5a | Five years on L, five on B | Ten years met, five continuous years on B met on the day; same caveats |
 | 5b | Eight years on B with a one-year gap abroad in the last five | The continuous five-year condition is the issue; the release states the condition and does not decide the gap |
 | 5c | Four years of studies, then six years on B | Education stays count only when followed by two uninterrupted years with a residence permit for a durable stay; the assistant states the condition rather than adding the years |
-| 5d | EU/EFTA citizen asks the same | The release publishes no nationality-based shorter period; the assistant says so rather than quoting five years from memory |
+| 5d | EU/EFTA citizen asks the same | Covered since 22 September 2026: if the state is on the served list the five-year route applies (UAT-65), and for the EU states the list does not name, the ten-year rule stands |
 | 5e | The user asks whether a C permit can be taken away | Not published (revocation grounds are referenced, not served); the assistant says so |
 
 ## UAT-6: social assistance and the permit
@@ -452,7 +466,7 @@ not automatic, and decided case by case and proportionately.
 | 6b | EU/EFTA citizen | The same statement; no EU/EFTA-specific rule is served |
 | 6c | The user asks for the amount or duration that triggers consequences | Not published; the assistant says so instead of inventing a threshold |
 | 6d | The user asks whether unemployment benefit counts as social assistance | Not published; declined by name |
-| 6e | The same question in German ("Ich habe eine B-Bewilligung und habe meine Stelle verloren. Wenn ich Sozialhilfe beziehen muss, wird meine Bewilligung widerrufen?") | Default lexical search, untranslated, ranks `social-assistance-review` first through the authored aliases of release v4 (`Sozialhilfe beziehen`, `Stelle verloren`); against v3 the shared source term `Sozialhilfe` placed the retirement and permit concepts ahead of it. Pinned in the round-trip check; optional hybrid rankings are recorded separately |
+| 6e | The same question in German ("Ich habe eine B-Bewilligung und habe meine Stelle verloren. Wenn ich Sozialhilfe beziehen muss, wird meine Bewilligung widerrufen?") | Default lexical search, untranslated, ranks `social-assistance-review` first through the authored aliases (`Sozialhilfe beziehen`, `Stelle verloren`); the shared source term `Sozialhilfe` alone places the retirement and permit concepts ahead of it. Pinned in the round-trip check; optional hybrid rankings are recorded separately |
 
 ## UAT-7: Swiss citizen asking in Zurich German about a residence permit for a foreign spouse
 
@@ -464,23 +478,22 @@ years; for Swiss family members the deadline starts with entry or the
 creation of the family relationship; late reunification only for important
 family reasons) and the issuing authority (`permit-authority`). The Zurich
 family-documents concept (`zh-eu-family-documents`) is published for EU/EFTA
-nationals only. Until release v2 none of the family concepts carried a
-German term, and the German `Familiennachzug` stems to `famili`, which does
-not meet the English `family`, so a German search found no family concept.
-Since release v3 every concept carries source terms
-copied from its excerpts (`family-swiss`: `Familienangehörige von
-Schweizerinnen und Schweizern`, `Ehegatten`, `zusammenwohnen`;
-`family-deadlines`: `Frist für den Familiennachzug`, `fünf Jahren`,
-`Kinder über zwölf Jahre`), and lexical `search` weighs a token by its rarity, so
-the Standard German form of this question ranks `family-swiss` first.
-Since release v4 `family-swiss` also carries the everyday words
-(`geheiratet`, `mit Schweizerin verheiratet`) and the three Zurich German
-spellings of this question (`Schwiizer`, `Schwiizerin`, `ghüratet`) as
-authored aliases, so default lexical search ranks `family-swiss` first for
-the dialect question as typed as well; `Ufenthaltsbewilligung` still
-matches no indexed term. Those aliases do not establish coverage of other
-dialect spellings. Optional hybrid search can rank a dialect query through
-embeddings, with its actual mode and results recorded separately.
+nationals only. The German `Familiennachzug` stems to `famili`, which does
+not meet the English `family`, so a German search finds no family concept
+through the English label alone. Every concept carries source terms copied
+from its excerpts (`family-swiss`: `Familienangehörige von Schweizerinnen
+und Schweizern`, `Ehegatten`, `zusammenwohnen`; `family-deadlines`: `Frist
+für den Familiennachzug`, `fünf Jahren`, `Kinder über zwölf Jahre`), and
+lexical `search` weighs a token by its rarity, so the Standard German form
+of this question ranks `family-swiss` first. `family-swiss` also carries the
+everyday words (`geheiratet`, `mit Schweizerin verheiratet`) and the three
+Zurich German spellings of this question (`Schwiizer`, `Schwiizerin`,
+`ghüratet`) as authored aliases, so default lexical search ranks
+`family-swiss` first for the dialect question as typed as well;
+`Ufenthaltsbewilligung` still matches no indexed term. Those aliases do not
+establish coverage of other dialect spellings. Optional hybrid search can
+rank a dialect query through embeddings, with its actual mode and results
+recorded separately.
 
 **User:** "Ich han de Schwiizer Pass und han en Brasilianer ghüratet. Er
 wohnt no in São Paulo und sött jetzt zu mir nach Züri zügle. Was bruuchts,
@@ -500,10 +513,9 @@ deadline runs from the marriage or the entry.
 matter of course. The case shows what a dialect question does to the caller
 and to the server: whether the caller sends it as typed, normalises it to
 Standard German or translates it into English, and what the server finds in
-each form. Against release v2, where the family concepts had no German
-term, the German forms found nothing useful and the record shows how the
-caller recovered; the same run against release v3, with the source terms,
-is the after-run of that comparison.
+each form. Without a German term on the family concepts the German forms
+find nothing useful, which is what the source terms and the authored aliases
+are for.
 
 **Expected**
 
@@ -526,30 +538,26 @@ is the after-run of that comparison.
 | 7b | The couple married more than five years ago and the spouse never moved | The deadline has run out; late reunification only for important family reasons; the release does not assess them |
 | 7c | The sponsor holds a C permit, not Swiss citizenship | `family-c` (Art. 43, `sponsor_status = c`) replaces `family-swiss`; the same deadlines |
 | 7d | The user asks which documents to bring or how long the office takes | Not published for a third-country spouse of a Swiss citizen; declined by name (documents beyond the covered pages, fees and processing times are out of scope) |
-| 7e | The same question in Standard German | The same answer expectation; since release v3 default lexical search ranks `family-swiss` first for the Standard German question, before the Zurich registration concepts the question also touches; pinned in the round-trip check together with the dialect form since v4. Optional hybrid rankings are recorded separately |
+| 7e | The same question in Standard German | The same answer expectation; default lexical search ranks `family-swiss` first for the Standard German question, before the Zurich registration concepts the question also touches; pinned in the round-trip check together with the dialect form. Optional hybrid rankings are recorded separately |
 
 ## Extension cases: moving to Switzerland and naturalisation
 
-UAT-8 to UAT-17 specify the extension of KB1 decided on 15 September 2026:
-the topics a newly arrived resident meets after registration (social
-insurance on arrival and departure, tax at source, the foreign driving
-licence, health insurance and premium reduction) and naturalisation, at the
-same three levels as the residence topic. The current release serves them
-with assistant-authored facts that one person confirmed in bulk groups and
-then read card by card; the
-sources are catalogued in
+UAT-8 to UAT-17 cover the topics a newly arrived resident meets after
+registration (social insurance on arrival and departure, tax at source, the
+foreign driving licence, health insurance and premium reduction) and
+naturalisation, at the same three levels as the residence topic. The current
+release serves them with assistant-authored facts that one person confirmed
+in bulk groups and then read card by card; the sources are catalogued in
 `releases/mvp-zurich/sources.json` (scan sets `moving` and
 `naturalisation`), listed page by page in `sources.md` and saved in the
 pack's run. The concept IDs below are the concept IDs of the curation file
-and of the acceptance suite. The seven expectations that no saved page
-stated, listed in [LIMITATIONS.md](../../LIMITATIONS.md) under "Gaps in the
-extension of 15 September 2026", were corrected in the paragraphs below on
-15 September 2026 after the review; the release serves what the pages
-state. Each case names the pages its expected answer
-was checked against on 15 September 2026, so the reviewer can see whether
-the saved page still states it. Budgets and criteria A1 to A6 are those of
-the single-turn cases; A7 applies to every case of this section, A8 to
-UAT-11 and UAT-17.
+and of the acceptance suite. The expectations that no saved page states are
+listed in [LIMITATIONS.md](../../LIMITATIONS.md) as gaps of this extension;
+the paragraphs below state what the pages state. Each case names the pages
+its expected answer was checked against, so the reviewer can see whether the
+saved page still states it. Budgets and criteria A1 to A6 are those of the
+single-turn cases; A7 applies to every case of this section, A8 to UAT-11
+and UAT-17.
 
 ### UAT-8: refund of AHV contributions on leaving Switzerland
 
@@ -960,7 +968,7 @@ counts residence in the same municipality, the city its own).
 | 16b | Arrived at the age of 10, now 19 | The years between 8 and 18 count double; at least six actual years; the release does not compute the total |
 | 16c | Holds the C permit, lives in Wallisellen for three years | Federal and cantonal conditions `SUPPORTED`; the city concept `OUT_OF_COVERAGE`; the municipality's own conditions are not published here (the Wallisellen pack has its entry point) |
 | 16d | The user asks what the knowledge test asks | Only what the served page states; no questions are invented |
-| 16e | The user asks the fee | The served amounts are the canton's (CHF 500, CHF 250 under 25, none under 20), the Confederation's (CHF 100, CHF 150 for a couple, CHF 50 under 18) and, since release `mvp-zurich-2026-09-17-v2`, the city's (none under 25, CHF 500 over 25, read from the page's fee table) |
+| 16e | The user asks the fee | The served amounts are the canton's (CHF 500, CHF 250 under 25, none under 20), the Confederation's (CHF 100, CHF 150 for a couple, CHF 50 under 18) and the city's (none under 25, CHF 500 over 25, read from the page's fee table) |
 | 16f | EU citizen asks the same | The same conditions; the release publishes no nationality-based route |
 
 ### UAT-17: facilitated naturalisation of a Swiss citizen's spouse, in German
@@ -1018,8 +1026,8 @@ ordinary procedure only.
 
 ## Office-contact cases
 
-UAT-18 to UAT-23 check the contact facts of the Zurich offices added on
-17 September 2026 (topic `offices`): plain lookups of an address and of
+UAT-18 to UAT-23 check the contact facts of the Zurich offices (topic
+`offices`): plain lookups of an address and of
 opening or telephone hours, and questions whose correct answer is negative
 because the office's own page says so. Criterion A9 applies to the negative
 ones: a negative the cited page states is reported as the office's
@@ -1169,16 +1177,15 @@ answer in English.
 
 ## Daily-life cases
 
-UAT-24 to UAT-34 check the daily-life topics added on 17 September 2026
-(`newcomer`, `waste`, `vehicles-parking`, `household-taxes`) and, in UAT-34,
-the Road Traffic Office's opening hours of the office-contact topic: plain
-lookups a newcomer asks in the first weeks, most with a trap a generic
-answer falls into. The facts were written by the assistant from the saved
-pages and confirmed by one reviewer on 17 September 2026; the cases were
-written after that review. Budgets and criteria A1 to A6 are those of the
-single-turn cases; A7 applies where a trap is named, A8 to UAT-29 and
-UAT-31, A9 to UAT-27, UAT-31 and UAT-34. UAT-24, UAT-25 and UAT-34 are
-sample questions of the demo image's welcome panel
+UAT-24 to UAT-34 check the daily-life topics (`newcomer`, `waste`,
+`vehicles-parking`, `household-taxes`) and, in UAT-34, the Road Traffic
+Office's opening hours of the office-contact topic: plain lookups a newcomer
+asks in the first weeks, most with a trap a generic answer falls into. The
+facts were written by the assistant from the saved pages and confirmed by
+one reviewer. Budgets and criteria A1 to A6 are those of the single-turn
+cases; A7 applies where a trap is named, A8 to UAT-29 and UAT-31, A9 to
+UAT-27, UAT-31 and UAT-34. UAT-24, UAT-25 and UAT-34 are sample questions of
+the demo image's welcome panel
 ([docker/demo-opencode/](../../docker/demo-opencode/README.md)).
 
 ### UAT-24: moving into the City of Zurich with a dog
@@ -1439,19 +1446,19 @@ cantonal or municipal part is not published for the user's place and to
 carry nothing over. A topic that serves every canton equally deeply (the
 cantonal migration offices, UAT-41) carries no such gap.
 
-The `accept` stage replays each case for the user's place: the concepts
-that apply must be `SUPPORTED` with the claims of the expected answer and,
-where the topic holds a Zurich level, with that gap; the
-Zurich concepts a caller might request alongside must be `OUT_OF_COVERAGE`
-with `jurisdiction_not_covered`, and `must_not_serve` names the Zurich facts
-no step may return. The live run adds must-not patterns for the Zurich
-details most likely to be carried over and the harness check that no
-resolve that returned facts ran for another place. Budgets and criteria A1
-to A6 are those of the single-turn cases; A7 applies to UAT-40 and UAT-43,
-A8 to UAT-37, UAT-40 and UAT-44. The search queries are planned key terms
-that find the applicable concept among the first three hits in lexical and
-in hybrid mode; they are sent without a `jurisdiction`, which `search` has
-accepted since 19 September 2026, so a Zurich concept may rank above it.
+The `accept` stage replays each case for the user's place: the concepts that
+apply must be `SUPPORTED` with the claims of the expected answer and, where
+the topic holds a Zurich level, with that gap; the Zurich concepts a caller
+might request alongside must be `OUT_OF_COVERAGE` with
+`jurisdiction_not_covered`, and `must_not_serve` names the Zurich facts no
+step may return. The live run adds must-not patterns for the Zurich details
+most likely to be carried over and the harness check that no resolve that
+returned facts ran for another place. Budgets and criteria A1 to A6 are
+those of the single-turn cases; A7 applies to UAT-40 and UAT-43, A8 to
+UAT-37, UAT-40 and UAT-44. The search queries are planned key terms that
+find the applicable concept among the first three hits in lexical and in
+hybrid mode; they are sent without a `jurisdiction`, which `search` also
+accepts, so a Zurich concept may rank above it.
 
 A rule that holds in all of Switzerland or in the whole canton is served
 elsewhere only if the release cites a source of that level for it. The
@@ -1747,11 +1754,10 @@ keeping the Lucerne plates.
 ## Entry-and-visa cases
 
 UAT-45 to UAT-50 check the `entry-visas` topic and the two Zurich
-family-reunification concepts added on 17 September 2026 from SEM's entry
-pages, the FDFA visa page and the Ordinance on Entry and the Granting of
-Visas (VEV, SR 142.204). The facts were written by the assistant from the
-saved pages and confirmed by one reviewer on 17 September 2026; the cases
-were written after that review. Budgets and criteria A1 to A6 are those of
+family-reunification concepts, built from SEM's entry pages, the FDFA visa
+page and the Ordinance on Entry and the Granting of Visas (VEV,
+SR 142.204). The facts were written by the assistant from the saved pages
+and confirmed by one reviewer. Budgets and criteria A1 to A6 are those of
 the single-turn cases; A7 applies to all six, because each names a trap, and
 A9 to UAT-49, where the release serves the rule but not the answer for a
 single nationality. The topic is federal, so every case resolves for the
@@ -1886,15 +1892,14 @@ of payslips, a language certificate).
 ## Voting-rights and tax-at-source tariff cases
 
 UAT-51 to UAT-53 check the `political-rights` topic and the two
-tax-at-source tariff concepts added on 18 September 2026 from the Federal
-Constitution, the Constitution of the Canton of Zurich, ch.ch, the Canton of
-Zurich's voting page, the Tax at Source Ordinance and the Canton of Zurich's
-tariff page and 2026 parameter sheet. The facts were written by the
-assistant from the saved pages and confirmed by one reviewer on
-18 September 2026; the cases were written before that review. Budgets and criteria A1 to A6 are those of the
-single-turn cases; A7 applies to all three, A8 to UAT-53 and A10 to UAT-52
-(Winterthur) and UAT-53 (Bern). UAT-51 replaces the voting question that
-DECLINE-1 used to decline.
+tax-at-source tariff concepts, built from the Federal Constitution, the
+Constitution of the Canton of Zurich, ch.ch, the Canton of Zurich's voting
+page, the Tax at Source Ordinance and the Canton of Zurich's tariff page and
+2026 parameter sheet. The facts were written by the assistant from the saved
+pages and confirmed by one reviewer. Budgets and criteria A1 to A6 are those
+of the single-turn cases; A7 applies to all three, A8 to UAT-53 and A10 to
+UAT-52 (Winterthur) and UAT-53 (Bern). UAT-51 asks the voting question,
+which the release covers; DECLINE-1 declines a rent question instead.
 
 ### UAT-51: voting in the city elections after twelve years on a C permit
 
@@ -1974,16 +1979,15 @@ knowledge.
 ## Expat-life cases
 
 UAT-54 to UAT-64 check the topics `family-benefits` and `housing` and the
-concepts added on 18 September 2026 to the residence, social-insurance,
-health-insurance and vehicles topics (marriage, leaving the City of Zurich,
-pillar 3a, unemployment, accident insurance, customs on moving). The facts
-were drafted by assistant subagents, checked against their excerpts by the
-coordinating assistant and confirmed by one reviewer on 18 September 2026;
-the cases were written before that review. Budgets and criteria A1 to A6 are those of the
-single-turn cases; A7 applies to all eleven, A8 to UAT-57 and UAT-64, A10 to
-UAT-58 (Winterthur). The questions, expected answers, traps and claims are in
-`releases/mvp-zurich/acceptance.yaml`; the index above gives each case's
-trap and served concepts.
+concepts of the residence, social-insurance, health-insurance and vehicles
+topics that cover marriage, leaving the City of Zurich, pillar 3a,
+unemployment, accident insurance and customs on moving. The facts were
+drafted by assistant subagents, checked against their excerpts by the
+coordinating assistant and confirmed by one reviewer. Budgets and criteria
+A1 to A6 are those of the single-turn cases; A7 applies to all eleven, A8 to
+UAT-57 and UAT-64, A10 to UAT-58 (Winterthur). The questions, expected
+answers, traps and claims are in `releases/mvp-zurich/acceptance.yaml`; the
+index above gives each case's trap and served concepts.
 
 ### UAT-54: family allowance for a 17-year-old in Zurich
 
@@ -2048,6 +2052,618 @@ a week with the same employer; below that through the health insurance.
 Duty-free with the move of residence, 6 months of prior use and continued
 use, form 18.44 at the entry customs office, within two years of the move.
 
+## Settlement-permit cases
+
+UAT-65 and UAT-66 check the two concepts added on 22 September 2026,
+`permit-c-five-years` (SEM) and `zh-permit-c-five-years` (the Migration
+Office of the Canton of Zurich), which publish the five-year routes to the
+settlement permit that rest on settlement agreements and treaties. Until
+then the release served the ten-year rule of AIG Art. 34 alone, and the
+recorded UAT-5 sessions showed a caller inventing the exclusion it could
+not read anywhere ("there are no special EU/EFTA shortcuts that apply to
+you"). Both pages were already in the catalogue and the text dataset; no
+source was added. Budgets and criteria A1 to A6 are those of the
+single-turn cases, A7 applies to both. The nine facts are
+`assistant-authored-unreviewed` until the reviewer confirms them, so both
+cases run against unreviewed statements and every result's `limitations`
+says so. The questions, expected answers, traps and claims are in
+`releases/mvp-zurich/acceptance.yaml`.
+
+Neither case decides an application: the pages state conditions, and
+whether a particular person meets them is the Migration Office's
+assessment. The distinction the Migration Office's own directive draws
+between an agreement that confers an entitlement and a treaty that does not
+is **not** published here: the web pages put both lists under "can obtain",
+and the release says no more than they do.
+
+### UAT-65: German citizen after five years in Zurich
+
+"As a German citizen with five years in Zurich, can I get the settlement
+permit already, or only after ten years?" Germany is on the list of
+countries with a settlement agreement; five years of uninterrupted
+residence, the integration criteria and no grounds for revocation; German
+nationals submit no language evidence. SEM's page names Germany in the same
+five-year list.
+
+### UAT-66: US citizen asking about the five-year settlement permit
+
+"I'm American and have been living in Zurich for five years. My Italian
+colleague told me she can apply for the C permit now. Does that apply to me
+too?" The Canton of Zurich lists the United States of America among the
+countries with settlement treaties, so the five-year route is open on the
+same conditions; unlike the colleague and unlike German, Austrian and
+Liechtenstein nationals, the user submits evidence of German at A2 spoken
+and A1 written. SEM's five-year list is the EU/EFTA one and does not name
+the United States.
+
+### UAT-67: Newcomer looking for a German course
+
+"I moved to Winterthur from Brazil last month and my German is poor. Where do
+I find a German course, and is there someone who can advise me which one
+fits?" The offer database of the Fachstelle Integration lists what the canton
+finances with the municipalities, searched by category and municipality. For
+choosing a course there is advice: many municipalities have integration
+contact persons, and where a municipality has none the cantonal
+German-course advice is free and available in 16 languages; the canton also
+keeps a German-course and language-examination database. Winterthur is one of
+the two cities with their own databases, which the answer should name.
+
+### UAT-68: Who informs a newly arrived family
+
+"We arrived in the Canton of Zurich two weeks ago on a family reunification
+permit. Nobody has told us anything about courses or counselling. Whose job is
+that?" The municipalities inform newly arrived migrants soon after arrival,
+give a first orientation and arrange access to German courses where needed;
+the canton supports them with a guide. People in family reunification are one
+of the three groups the canton names as needing support early. For further
+advice there are the regular services and migration-specific counselling, for
+which the Fachstelle keeps a list updated at least once a year and with no
+claim to completeness.
+
+### UAT-69: Where to turn after racist discrimination
+
+"My colleague keeps making remarks about my skin colour and my manager laughs
+along. Is that racist discrimination, and who advises me in Zurich?" The
+canton counts demeaning statements as a form of racist discrimination and
+names the workplace as a place where it occurs. ZüRAS advises those affected,
+in several languages and free for people living in the canton, run by the AOZ
+on behalf of canton and city. Beyond the canton there are the counselling
+network for victims of racism and the reporting platform for online hate
+speech. The legal bases are BV Art. 8(2), StGB Art. 261bis for acts committed
+in public, and AIG Art. 53; whether this case is punishable is not the
+service's to decide.
+
+### UAT-70: An association asks for project money
+
+"Our association in Uster wants to run a neighbourhood festival for Swiss and
+migrant families and needs about 4,000 francs. Can the Canton of Zurich
+contribute, and how do we apply?" Yes in principle: non-profit organisations
+seated in the canton can apply, and the festival falls under the priority
+"living together and participation". At 4,000 francs it is a small project:
+up to 5,000 francs, rolling while funds last, simplified rules, a budget on
+the mandatory template, and a web form that cannot be saved in between. The
+deadline of 31 October 2026 and the 50,000-franc maximum belong to the larger
+projects.
+
+### UAT-71: Finding an association of one's own community
+
+"Are there Tamil associations in the Canton of Zurich, and how do I find one
+near me?" The release does not publish associations by community; it publishes
+the platform for migrant associations, searchable by criteria such as
+municipality or region, on which associations register themselves. The answer
+points at the platform instead of naming associations.
+
+## Customs cases
+
+UAT-72 to UAT-80 check the eight concepts of the `customs` topic added on
+22 September 2026 from the pages of the Federal Office for Customs and Border
+Security. Until then the release served one customs statement, inside the
+moving topics: what happens to household goods on a move. The recorded UAT-64
+session showed the gap - a caller asked about furniture and a car and got the
+removal-goods rule with nothing about the value limit, the quantities or what
+a parcel costs. Budgets and criteria A1 to A6 are those of the single-turn
+cases. The facts are `assistant-authored-unreviewed` until the reviewer
+confirms them, so every result's `limitations` says so. The questions,
+expected answers, traps and claims are in
+`releases/mvp-zurich/acceptance.yaml`.
+
+Two boundaries run through the whole group. The value limit and the duty-free
+quantities are separate limits that both apply, and a traveller's allowance
+says nothing about a consignment that arrives by post. And the release
+publishes the rules, never the outcome for one item: tariff numbers, duty
+rates per product and the treatment of an individual consignment are out of
+scope, which DECLINE-11 checks.
+
+### UAT-72: Two people, one coffee machine
+
+"My partner and I are driving to Konstanz on Saturday. If we buy a coffee
+machine together for 280 euros, are we under the limit because there are two
+of us?" No. The value-free limit applies per person and per day to goods in
+private use or given as gifts, and the allowances of several travellers
+cannot be added together for one item, so the machine is declared and import
+tax falls due on its whole value. The trap is the arithmetic the question
+invites: two allowances, therefore nothing to declare. The answer states the
+limit the page gives and says which of the two rules - per person, not per
+item - decides the case.
+
+### UAT-73: Meat and wine on the way back from Italy
+
+"We are driving back from Italy with about four kilos of meat, six litres of
+wine and a bottle of grappa. What do we have to declare?" The release
+publishes the rule and not the table. Goods brought in for private use or as a
+gift are free of duty except for sensitive goods, on which duty falls due
+above a quantity; the quantities count per person and per day; animal products
+may be brought in only from the countries the page lists; and once the total
+value carried passes the value limit, value-added tax is due on everything
+carried, food included. The FOCBS publishes the quantities themselves as a
+graphic, so no fact carries them and the concept says so in its `not_served`.
+The trap is the one a general model walks into every time: confident numbers -
+a kilo of meat, five litres of wine, two hundred cigarettes - that the release
+cannot support. A correct answer gives the rules it has, says that the
+quantities per product are not published here, and invents none.
+
+### UAT-74: Declaring a bicycle before the border
+
+"I am bringing a bicycle worth 900 francs back from Germany tomorrow. Can I
+declare it online before I get there, or do I have to stop at the border?"
+Both work: the QuickZoll app declares the goods and takes the payment before
+or at the crossing, and at a staffed crossing the red channel does the same
+in person. The green channel is not a choice for goods above the limits. The
+trap is treating the green channel or an unstaffed crossing as permission not
+to declare; the answer names what the page says not declaring means.
+
+### UAT-75: A laptop ordered from a German shop
+
+"I ordered a laptop for 900 euros from a German shop. What will I pay on top
+of the price when it arrives?" Import tax on the value of the consignment,
+the carrier's own clearance charge, which is not a tax, and customs duty
+where the goods carry one. The recipient is the importer, which is why the
+bill arrives here. The trap is the traveller's value limit: it applies to
+goods a person carries across, not to a consignment, so a caller who answers
+"under 150 francs, so nothing to pay" is wrong twice over - wrong rule, and
+the limit is not a threshold for the tax either.
+
+### UAT-76: Sometimes a charge, sometimes not
+
+"I order small things from a platform abroad. Sometimes there is a charge and
+sometimes there is not. Why?" Two different reasons, and the answer must
+separate them. A consignment is not taxed when the tax that would be due
+stays under the amount the page names - a threshold on the tax, not on the
+price. And a seller or platform that is registered for Swiss VAT charges the
+tax at the sale and imports in its own name, so nothing more is collected at
+the border. The trap is stating a single price limit under which everything
+arrives free.
+
+### UAT-77: Sending a jacket back
+
+"I am sending a jacket back to Germany that I paid tax and duty on when it
+arrived. Do I get that money back?" Under the conditions the page states, and
+only against the declaration and the evidence it names - it is not automatic
+and not a refund the carrier makes. The same section covers goods sent abroad
+for repair. The trap is the assumption that a return cancels the import by
+itself.
+
+### UAT-78: Furniture and a car from Boston
+
+"We are moving from Boston to Zurich in November with our furniture and our
+car. What does customs want?" Removal goods come in free of duty when they
+were used before the move and are kept afterwards, declared with the
+inventory and the form the page names, within the window it states; a vehicle
+is removal goods too but carries its own conditions; goods inherited abroad
+follow a separate rule. The trap is the single sentence the release served
+before this wave, which named the relief and none of its conditions: the
+answer must state the used-before-and-kept-after condition and the window,
+and must not promise that the car is simply free.
+
+### UAT-79: Arriving with two dogs
+
+"We are moving to Zurich with our two dogs. What do we need at the border,
+and what do we have to do once we are here?" Two different sets of rules, and
+the answer must give both without mixing them: at the border the
+identification and the rabies vaccination the page requires, with the number
+of animals that still counts as a private import; in the city, the
+registration and the dog rules the release already publishes. The trap is
+answering only one of the two, or treating the city's registration as a
+customs formality.
+
+### UAT-80: A visitor taking a watch home
+
+"A friend visiting from London bought a watch here. Can she get the Swiss VAT
+back when she flies home?" Yes, under the export conditions the page states:
+a buyer resident abroad, the goods leaving within the period it names, the
+minimum amount and the export document confirmed as the page describes. The
+trap is generalising the refund to anyone leaving the country: a person
+resident in Switzerland taking their own goods abroad is the other rule on
+the same page, and it does not refund the tax.
+
+## Basic health insurance cases
+
+UAT-81 to UAT-88 check the eight concepts added to the `health-insurance` topic on
+23 September 2026 from the pages of the Federal Office of Public Health and the
+premium-information service priminfo. Until then the release served the insurance
+duty, the Zurich exemption, premium reduction federally and in Zurich, and accident
+insurance: a newcomer learned that they must insure themselves within three months
+and nothing about what the insurance then costs them, what it pays for, or how to
+change it. Budgets and criteria A1 to A6 are those of the single-turn cases. The
+facts are `assistant-authored-unreviewed` until the reviewer confirms them, so every
+result's `limitations` says so.
+
+Two boundaries run through the group. Every condition rests on an excerpt of the
+authority's own page or of the law; where a priminfo page says the same thing in
+plain language it stands beside that excerpt and never alone, and the basis served
+with the citation says which is which. And the release publishes the rules, never the
+prices: premiums, premium reductions and the comparison calculator are out of scope,
+which DECLINE-12 checks.
+
+### UAT-81: A broken arm and the bill
+
+"My son fell off his bike and the bill is 1,200 francs. We have the lowest franchise.
+What do we actually have to pay ourselves?" The answer must separate the two parts of
+cost sharing - the franchise the insured pays first, then the retention as a
+percentage of what remains, up to its annual cap - and must say that children are
+treated differently from adults. Where the answer gives an amount it must be the
+amount the cited page states, with the year it applies to. The trap is treating the
+franchise as the whole of the cost sharing, or quoting an adult's cap for a child.
+
+### UAT-82: The cheaper family-doctor model
+
+"My insurer offers a family-doctor model that is 15 per cent cheaper. What am I giving
+up?" The answer must say what restricting the choice of provider means in practice:
+the insured undertakes to contact the named first point of contact before any other
+treatment, the insurer grants a discount for that, and the model binds the insured for
+the period the contract states. The release carries no discount percentage, so the
+answer must not confirm, correct or invent one; it may repeat the caller's own figure
+only as the caller's. The trap is presenting the discount without the obligation,
+claiming the choice of doctor is unaffected, or stating a percentage as if the release
+held it.
+
+### UAT-83: Changing insurer after a rise
+
+"My premium is going up again. Can I switch insurer, and by when?" The answer must
+give the two notice periods the act sets apart: the ordinary one of three months to the
+end of a calendar half-year, and the shorter one that the announcement of a new premium
+opens - one month's notice to the end of the month before the month from which the new
+premium applies. It may work that second period out for the usual case, where premiums
+apply from 1 January and notice therefore has to be given by the end of November, but it
+must not present that date as the only rule. It must add that the new insurer may not
+refuse an applicant for basic insurance, that the old cover runs until the new insurer
+has confirmed cover without interruption, and that the old insurer may not make the
+change conditional on giving up a supplementary insurance. The trap is saying the
+insured can leave at any time, or that a poor claims history can be refused.
+
+### UAT-84: Why my premium differs from my colleague's
+
+"My colleague lives two towns away and pays less than I do for the same insurer. How is
+that possible?" The answer must name the three things that make premiums differ - the
+canton, the premium region within it, and the age group - and say who sets the regions.
+It must not state a premium: the release publishes the rules and points at the official
+comparison for the prices, which it does not carry. The trap is inventing a figure, or
+explaining the difference by the insurer alone.
+
+### UAT-85: Glasses, and whether supplementary insurance is needed
+
+"Does basic insurance pay for my glasses, and do I need supplementary insurance?" The
+answer must say that basic insurance covers the same defined benefits everywhere, that
+the list is set federally and not by the insurer, and that supplementary insurance is a
+different contract which an insurer may refuse. Where the cited pages do not say
+whether one particular item is covered, the answer must say so rather than guess. The
+trap is answering the glasses question from general knowledge.
+
+### UAT-86: Months of unpaid premiums
+
+"I lost my job and have not paid my premiums for four months. Can they cancel my
+insurance?" The answer must give the sequence the page states - reminder, then debt
+enforcement - and say what the canton does with a list of defaulters and what remains
+covered while the arrears stand. It must add that the arrears block a change of insurer
+until they are paid in full, which is what a caller reaches for next, and that arrears
+for the children alone do not block the parent's own change. The trap is saying that
+cover simply ends, which is what a general answer assumes, or sending the caller off to
+a cheaper insurer they cannot join.
+
+### UAT-87: Living in Germany, working in Zurich
+
+"I live in Konstanz and start work in Zurich next month. Which country's health
+insurance do I take?" The answer must start from the place-of-work principle, which
+makes Swiss insurance the rule, then name the right of option that the agreements with
+the neighbouring states open, and the three months from the start of the employment
+relationship within which an application for exemption has to be filed with the
+authority of the canton of work. It must say that a merely tacit exercise of the option
+is not legally valid, so a commuter who never filed can still be insured in Switzerland,
+and it must say that the family members are covered by the same duty. The release does
+not say whether an option once validly exercised can be reversed or used again, so the
+answer must not claim either. The trap is answering "Switzerland, because you work
+there" without the option, or asserting that the choice is made once and for all.
+
+### UAT-88: Three weeks in Italy
+
+"We are going to Italy for three weeks. Are we covered if something happens?" The
+answer must say that basic insurance pays for treatment given abroad in an emergency,
+and must give the test the ordinance sets for one: the person needs treatment during a
+temporary stay abroad and a return journey to Switzerland is not reasonable. It must say
+that there is no emergency where someone travels abroad in order to be treated, and it
+must give the ceiling - at most twice what the same treatment would be reimbursed at in
+Switzerland. The release does not carry the European health insurance card or the
+coordination rules of the agreement with the EU, so an answer that leans on the card
+rather than on the emergency rule is wrong even where it sounds right. The trap is
+promising that everything is covered anywhere, or presenting the card as the instrument
+the release describes.
+
+### UAT-89: A pensioner in Portugal
+
+"I have retired to Portugal and kept my Swiss health insurance. Why is my premium not
+the one I paid in Zurich, and can I still get a premium reduction?" The answer must say
+that a person living in an EU or EFTA state or the United Kingdom pays the premium that
+applies to their state of residence, that the insurer calculates a separate premium per
+state from the costs there, and that for pensioners the premium reduction is the
+Confederation's business, carried out by the joint institution under the health
+insurance act, rather than the canton's. It must not name an amount for any country:
+the release carries the rule and not the price. The trap is applying the Zurich premium
+or the cantonal premium reduction to someone who no longer lives in Switzerland.
+
+### UAT-90: A bill from the doctor, not from the insurer
+
+"My doctor sent the bill to me and not to my health insurer. Is that allowed?" The
+answer must say that this is the ordinary case: unless the insurer and the provider have
+agreed otherwise, the insured person owes the provider and then has a claim for
+reimbursement against the insurer, and the other arrangement, under which the insurer is
+billed directly, exists by agreement and covers the insurer's share for inpatient care.
+It must add that the bill has to be detailed and comprehensible and to carry what is
+needed to check how the payment was calculated. The release does not carry how long an
+insurer may take to reimburse, what to do when the bill cannot be paid, or any ombudsman,
+and the answer must not invent them. The trap is telling the caller the doctor made a
+mistake.
+
+### UAT-91: Four months of service
+
+"I am starting four months of civilian service. Do I keep paying my health insurance?"
+The answer must give the threshold - the duty to insure is suspended for people subject
+to the military insurance for more than 60 consecutive days - and the step the caller has
+to take themselves: telling their insurer at least eight weeks before it begins, failing
+which the insurer stops charging only from the next date it can manage, at the latest
+eight weeks after being told. The trap is answering that premiums simply continue, or
+that the suspension happens by itself without the caller doing anything.
+## Work and unemployment cases
+
+Written on 23 September 2026 before the pages were curated, so that the cases
+ask what a person out of work actually asks and not what the release happens to
+carry. The topic `work-unemployment` is new; `unemployment-benefit` and
+`zh-unemployment-benefit` move into it unchanged, and UAT-62 already covers the
+contribution period, so these cases do not repeat it.
+
+The release publishes the rules of unemployment insurance and never an amount
+of daily allowance: `out_of_scope` names benefit amounts and every calculator.
+Where a case says the answer must not give a figure, that is the point of the
+case.
+
+### UAT-92: The day the notice arrives
+
+"I got my notice this morning. My last working day is at the end of November.
+What do I have to do, and when?" The answer must put the registration first and
+tie it to a date: a person threatened with unemployment registers with the RAV
+as early as possible, and at the latest on the first day for which they claim
+benefit, so registration belongs in the notice period and not after the last
+working day. It must say that registration and the claim are two steps, and that
+an unemployment fund is chosen. The trap is telling the caller to wait until the
+employment ends, which costs them benefit days.
+
+### UAT-93: How many applications, and can I say no
+
+"How many job applications do I have to write each month, and can I refuse a job
+that pays less than my old one?" The answer must give the duty to look for work
+before and during unemployment and say that the RAV agrees the number of
+applications rather than the law fixing one, that appointments at the RAV are
+part of the duty, and that work is suitable within limits the rules set - a job
+is not unsuitable merely because it pays less. It must name suspension days as
+the consequence of a breach. The trap is inventing a fixed number of
+applications a month.
+
+### UAT-94: How long the benefit runs
+
+"How long can I draw unemployment benefit, and how much will I get?" The answer
+must give the structure and not a figure: waiting days before the first payment,
+a number of daily allowances that depends on age and on months of contribution,
+the two-year frame, and that the benefit is a percentage of insured earnings
+with a higher percentage for a person with a maintenance obligation towards
+children. It must not compute an amount in francs for the caller. The trap is
+producing a monthly figure, or a single duration that ignores age and
+contribution months.
+
+### UAT-95: A job that pays less
+
+"I have been offered a job that pays about half my old salary. If I take it, do
+I lose my unemployment benefit?" The answer must explain interim earnings: the
+insurance makes up part of the difference rather than the benefit simply
+stopping, so taking the lower-paid job is not the loss the caller fears. It must
+say that the interim earnings have to be declared. The trap is answering that
+any work ends the entitlement.
+
+### UAT-96: The employer goes bankrupt owing wages
+
+"My employer went bankrupt and still owes me two months' wages. Is that lost?"
+The answer must name insolvency compensation as the benefit for exactly this,
+say which body it is claimed from and that it is claimed within a deadline, and
+point to the Canton of Zurich's own route for a person living there. The trap is
+treating it as ordinary unemployment benefit, or as a matter for the courts
+alone.
+
+### UAT-97: A course while unemployed
+
+"Can I do a course while I am unemployed, and who pays for it?" The answer must
+name the labour-market measures - courses, employment programmes and the
+allowances - say that the RAV decides on them rather than the jobseeker
+enrolling freely, and mention that allowances exist for a trial period or for
+commuting. The trap is promising that any course the caller chooses will be
+paid.
+
+### UAT-98: The benefit runs out
+
+"My daily allowances run out in two months and I still have no job. What
+happens then?" The answer must say what ending the entitlement means, what the
+RAV still offers afterwards, and that support beyond unemployment insurance is a
+matter for the canton or municipality. Social assistance is named in
+`out_of_scope`, so the answer must say the release does not cover it rather than
+explain how to claim it. The trap is explaining social assistance.
+
+### UAT-99: Three years working in Germany
+
+"I worked in Germany for three years and moved to Zurich two months ago. Does
+that time count if I lose my job here?" The answer must name the coordination
+with the EU and EFTA: contribution periods completed in a member state can be
+taken into account, the portable document U1 is how they are evidenced, and a
+person who wants to look for work in another state while drawing Swiss benefit
+needs the portable document U2. It must not promise that the German period
+counts unconditionally. The trap is answering only from the Swiss contribution
+period and ignoring the coordination entirely.
+
+### UAT-100: Hours cut to sixty per cent
+
+"My employer has cut everyone to 60 per cent and says we are on short-time work.
+What does that mean for me?" The answer must say that short-time work
+compensation is applied for by the employer and not by the employee, that it
+covers a share of the earnings lost, and that the employee has to consent to it.
+The trap is telling the employee to apply themselves, or treating it as
+unemployment benefit.
+
+### UAT-101: Seeing vacancies before everyone else
+
+"A friend said jobseekers registered with the RAV see some vacancies before they
+are public. Is that true?" The answer must give the job-registration duty:
+occupations with unemployment above a threshold must be reported to the RAV
+before being advertised elsewhere, and jobseekers registered with the public
+placement service get access first for a period. It must not state the threshold
+percentage or the head-start period unless the cited page states them. The trap
+is dismissing it as a rumour.
+
+### UAT-102: Which RAV, in Winterthur
+
+"I live in Winterthur and have to sign on. Which RAV do I go to, and which
+unemployment fund?" The answer must say how the responsible RAV is found for a
+place of residence in the Canton of Zurich, that the jobseeker chooses an
+unemployment fund at registration, and that the cantonal office offers
+counselling and qualification. It must not name an office for a place outside
+the Canton of Zurich as if the release covered it. The trap is inventing a
+street address for the Winterthur RAV.
+
+## AHV, the pillars and retirement cases
+
+Written on 23 September 2026 before the pages were curated. The topic
+`ahv-pension` is new. The release already serves what happens when a person
+*leaves* Switzerland - the refund of contributions, the agreement states, the
+pension abroad, the pension-fund cash payment - so these cases ask about being
+here: who is insured, what is owed, what the record shows, and what happens at
+the reference age.
+
+The release publishes the rules and never a pension amount, and it does not
+cover the invalidity insurance, the supplementary benefits or the bridging
+benefit. Where a case says the answer must not give a figure or must decline a
+neighbouring benefit, that is the point of the case.
+
+### UAT-103: Not working, and asked to pay AHV
+
+"I moved to Zurich with my husband and I don't work. Someone told me I still
+have to pay AHV. Is that right?" The answer must say that insurance follows
+residence and not employment, so a person living in Switzerland is insured even
+without earnings, and that a non-employed person owes contributions in their own
+right - while naming the exception for a spouse whose partner's contributions
+count for both. It must say which office the person deals with. The trap is
+answering that only employees pay, which is what most newcomers assume.
+
+### UAT-104: Going self-employed
+
+"I am leaving my job to work for myself. What changes for my AHV?" The answer
+must say that a self-employed person registers with a compensation office and
+owes the contributions themselves, where an employee splits them with the
+employer, and must say what decides whether the authority accepts someone as
+self-employed. It must not state a contribution rate or a franc amount unless
+the cited page prints it. The trap is treating the change as automatic, or
+giving a rate the pages do not carry.
+
+### UAT-105: Checking the record
+
+"How do I find out how much I have paid into the AHV over the years?" The answer
+must name the individual account and the account statement, say that it is
+ordered free of charge from a compensation office, and say what the AHV number
+is for. It must say which office holds the account. The trap is confusing the
+account statement with a forecast of the pension, which is a different thing and
+which this release does not serve.
+
+### UAT-106: Eight years abroad
+
+"I lived abroad for eight years before moving here. Will that reduce my
+pension?" The answer must say that a full pension requires a complete
+contribution record, that a missing year reduces the pension, and how a gap can
+be closed where the rules allow it. It must point the person at checking their
+individual account early rather than at the moment of retirement. It must not
+compute the reduction. The trap is promising that years abroad count, or
+quantifying the cut.
+
+### UAT-107: When can I stop
+
+"I am 63. Can I retire now, and what does it cost me?" The answer must give the
+reference age and the transitional rules that apply to women of the affected
+cohorts, say that the pension can be drawn early or deferred, and say what each
+does to it in the terms the page uses. It must not produce a percentage or an
+amount unless the cited page prints it, and must not confuse the AHV reference
+age with the rules of an occupational pension fund. The trap is a single
+retirement age with no transitional rule.
+
+### UAT-108: Turning sixty-five next spring
+
+"I reach the reference age next March. Does the pension come automatically?"
+The answer must say that it does not - the pension is claimed, some months
+before the reference age, from the compensation office that holds the record -
+and say what the person needs for the claim. The trap is telling the caller to
+wait for a letter.
+
+### UAT-109: After a death in the family
+
+"My husband died last month. Is there anything from the AHV for me and our two
+children?" The answer must name the widow's, widower's and orphan's pensions,
+give the conditions the page states and say what ends them. Where the answer
+touches the invalidity insurance or the supplementary benefits it must say the
+release does not cover them rather than explain them. The trap is explaining
+supplementary benefits, or promising a widower the same conditions as a widow
+without checking what the page says.
+
+### UAT-110: A career in two countries
+
+"I worked in Italy for fifteen years and in Switzerland for twenty. Who pays my
+pension?" The answer must say that under the coordination with the EU and EFTA
+each state pays its own pension for the periods completed there, that periods
+can be taken into account for the entitlement, and that contributions are not
+refunded to nationals of Switzerland or an EU or EFTA state. It must distinguish
+that from a third state with an agreement and from one without. The trap is
+promising one combined pension from Switzerland.
+
+### UAT-111: How does any of this work
+
+"I have just moved to Switzerland. Can you explain how the pension system works
+here?" The answer must lay out the three pillars and say which risk each covers,
+and name the other branches - unemployment, accident, health and loss of
+earnings - as parts of the same system. It must stay at the level of the map and
+not drift into the rules of one branch. The trap is answering only about the
+AHV, or inventing a pillar structure the pages do not state.
+
+### UAT-112: Which office in Zurich
+
+"Who do I contact about my AHV in Zurich, and how do I get my account
+statement?" The answer must name the cantonal compensation office for the Canton
+of Zurich, say who registers there, and say how the account statement is
+requested. It must not name a compensation office for a place outside the canton
+as if the release covered it. The trap is inventing an address or a form number.
+
+### UAT-117: Waste day in Lugano
+
+"Mi sono appena trasferita a Lugano. In che giorno passa la raccolta dei rifiuti
+e dove metto i sacchi?" (I have just moved to Lugano. On which day is the waste
+collected, and where do I put the bags?) Lugano publishes no collection day for
+residents. The answer must say that household waste goes only in the official
+red bags, into the underground or semi-underground containers. It must say
+that residents may, as a rule, use those containers on every day of the week,
+and that bulky and garden waste go only to the ecocentri. The trap is inventing
+a weekly collection day or a street calendar, which is what a general assistant
+does when it answers from other Swiss cities.
+
 ## Decline cases
 
 These cases check that the server rejects a request the release does not
@@ -2070,12 +2686,12 @@ mode.
 
 | ID | Question | Request | Expected rejection |
 | --- | --- | --- | --- |
-| DECLINE-1 | "My 13-year-old daughter is moving with us to the city of Zurich. How does she get into a Gymnasium?" (a topic outside the release; until 18 September 2026 the voting question that is now UAT-51, then a rent question the housing topic now covers) | `gymnasium-admission`, a guessed concept ID, for `CH-ZH-261` | `OUT_OF_COVERAGE`, `concept_not_published` listing the published concept IDs |
+| DECLINE-1 | "My 13-year-old daughter is moving with us to the city of Zurich. How does she get into a Gymnasium?" (a topic outside the release) | `gymnasium-admission`, a guessed concept ID, for `CH-ZH-261` | `OUT_OF_COVERAGE`, `concept_not_published` listing the published concept IDs |
 | DECLINE-2 | "Ich bin tschechische Staatsbürgerin und fange nächste Woche in München an zu arbeiten. Bis wann muss ich mich dort anmelden?" (another country) | `eu-employment-registration-deadline` for `country_code: DE`, `population: eu_efta` | `OUT_OF_COVERAGE`, `jurisdiction_not_covered` with the published value `CH` |
 | DECLINE-3 | "I'm an Italian citizen and moved to Geneva last week for a new job. Which office do I register with, and what is the procedure there?" (another canton) | `eu-employment-registration-deadline`, `zh-eu-registration`, `cantonal-migration-contact` for `CH-GE`, `population: eu_efta` | `zh-eu-registration` `OUT_OF_COVERAGE`, `jurisdiction_not_covered`; the federal deadline `SUPPORTED` with the caveat `more_specific_jurisdiction_not_published` naming `CH-ZH` and `CH-ZH-261`, and SEM's Geneva migration-office contact `SUPPORTED` |
 | DECLINE-4 | "I'm moving from Milan to Winterthur for a job. Do I need an appointment at the Kreisbüro before I register?" (a municipality other than the City of Zurich) | `zh-eu-registration`, `city-zurich-arrival` for `CH-ZH-230`, `population: eu_efta`, `arrival_origin: abroad` | `city-zurich-arrival` `OUT_OF_COVERAGE`, `jurisdiction_not_covered` naming `CH-ZH-261`; the cantonal concept `SUPPORTED` with the caveat `more_specific_jurisdiction_not_published` naming `CH-ZH-261` |
 | DECLINE-5 | "I'm a German citizen with a job offer in Zurich. Does my employer have to prove that nobody in Switzerland is available for the job?" (a rule for another population group) | `third-country-work` for `CH-ZH`, `population: eu_efta` | `OUT_OF_COVERAGE`, `context_not_covered` naming `population=third_country` |
-| SEARCH-DECLINE-1 | "Wie hoch ist die Mehrwertsteuer in der Schweiz?" (another tax) | `search` with the question | `match_strength` `weak`, the scope statement in the result |
+| SEARCH-DECLINE-1 | "Wie hoch ist die Erbschaftssteuer?" (another tax) | `search` with the question | `match_strength` `weak`, the scope statement in the result. Until the customs cases of 22 September 2026 this case asked "Wie hoch ist die Mehrwertsteuer in der Schweiz?"; the release now publishes the rate of the tax on imports, so that question is covered and was replaced, as X1 prescribes |
 | SEARCH-DECLINE-2 | "What is the speed limit on Swiss motorways?" (road traffic beyond the driving licence) | `search` | `weak` |
 | SEARCH-DECLINE-3 | "How do I get a Halbtax?" (public transport) | `search` | `weak` |
 | SEARCH-DECLINE-4 | "annual quotas for work permits" (named in `out_of_scope`) | `search` | `weak`; the work-permit concepts stay listed as incidental hits |
@@ -2086,6 +2702,11 @@ mode.
 | SEARCH-DECLINE-7 | "What are the opening hours of the Zurich city library?" | `search` | `weak` |
 | DECLINE-8 | "Wir wohnen in Wädenswil. Wann sind die Herbstferien 2026, und ab wann geht meine Tochter, die im Juni vier wird, in den Kindergarten?" (City of Zurich school dates asked for another Zurich municipality) | `city-zurich-school-holidays`, `city-zurich-kindergarten` for `CH-ZH-293` | both `OUT_OF_COVERAGE`, `jurisdiction_not_covered` naming `CH-ZH-261`; no cantonal or federal concept covers school dates, so nothing is served |
 | DECLINE-9 | "Which rubbish bags do I have to use in Basel, and what do they cost?" (City of Zurich waste rules asked for another canton) | `city-zurich-household-waste` for `CH-BS-2701` | `OUT_OF_COVERAGE`, `jurisdiction_not_covered`; nothing is served |
+| DECLINE-10 | "Which accredited IAZH offer types can I assign a refugee to, and how is the cost shared with the canton?" (the canton's integration funding and its refugee support system, named in `out_of_scope`) | `zh-iazh-accredited-offers` for `CH-ZH` | `OUT_OF_COVERAGE`, `concept_not_published` |
+| DECLINE-11 | "How much duty do I pay per kilo on a leather handbag from Italy, and what is its tariff number?" (tariff numbers and duty rates per product, named in `out_of_scope`) | `customs-tariff-rate`, a guessed concept ID, for `CH` | `OUT_OF_COVERAGE`, `concept_not_published` listing the published concept IDs; the customs concepts stay available for the rules they do publish |
+| DECLINE-12 | "Which insurer is cheapest for me at 8006 Zurich with a 2,500-franc franchise?" (premium amounts and the comparison calculator, named in `out_of_scope`) | `health-insurance-premium` and `premium-calculator`, guessed concept IDs, for `CH-ZH-261` | `OUT_OF_COVERAGE`, `concept_not_published` for both; the health-insurance concepts stay available for the rules they do publish |
+| DECLINE-13 | "Wie viel Arbeitslosengeld bekomme ich pro Monat bei einem Lohn von 7'000 Franken?" (the amount of a daily allowance, named in `out_of_scope`) | `unemployment-daily-allowance-amount` and `unemployment-calculator`, guessed concept IDs, for `CH-ZH` | `OUT_OF_COVERAGE`, `concept_not_published` for both; the unemployment concepts stay available for the rules they do publish |
+| DECLINE-14 | "Wie hoch wird meine AHV-Rente sein, wenn ich mit 65 aufhöre?" (a pension amount and an individual calculation, named in `out_of_scope`) | `ahv-pension-amount` and `ahv-pension-calculator`, guessed concept IDs, for `CH-ZH` | `OUT_OF_COVERAGE`, `concept_not_published` for both; the AHV concepts stay available for the rules they do publish |
 
 DECLINE-3, DECLINE-4 and DECLINE-6 to DECLINE-9 check the rejection of a
 Zurich concept for another place at the server alone. The cross-jurisdiction
@@ -2101,23 +2722,22 @@ freshness window (`STALE`) by the round-trip check.
 
 | ID | Case | Expected |
 | --- | --- | --- |
-| X1 | Question outside the topics (housing and rent, schooling) | The coverage root's `out_of_scope` names it; the assistant follows `out_of_scope_response` and makes no further call. A `search` for it reports `match_strength` `weak` or `none` and carries the scope statement (SEARCH-DECLINE-1 to 5). Taxes and driving licences were the examples until 15 September 2026 and voting rights until 18 September 2026; each became a topic |
+| X1 | Question outside the topics (housing and rent, schooling) | The coverage root's `out_of_scope` names it; the assistant follows `out_of_scope_response` and makes no further call. A `search` for it reports `match_strength` `weak` or `none` and carries the scope statement (SEARCH-DECLINE-1 to 5). An example that becomes a topic is replaced by one the release does not cover |
 | X2 | Question about another country (Germany, Austria) | `jurisdiction_not_covered` with published value `CH`; declined by name. Also DECLINE-2 |
 | X3 | Unknown concept ID in a resolve | `concept_not_published` gap listing the published IDs; the other concepts of the same call are unaffected |
 | X4 | Unknown context field | `context_not_covered` naming the known fields |
 | X5 | A fact ID passed to `get_evidence` | The fact's evidence is returned; an unknown ID is an `INVALID_ARGUMENT` error |
 | X6 | Malformed request (unknown field, empty list, six evidence IDs) | `INVALID_ARGUMENT` with the field path; nothing is served |
 | X7 | Unknown release ID | `RELEASE_UNAVAILABLE` naming the active release |
-| X8 | Coverage root size | Under 6 KB, so one call suffices to refuse an outside question |
+| X8 | Coverage root size | Under 8.5 KB, so one call suffices to refuse an outside question. Raised from 6 KB to 8 KB on 23 September 2026, when the two committed bounds were found drifted apart at 6,144 and 8,000 and the four waves of 22-23 September had taken the root to 7,640 bytes; raised again to 8.5 KB the same day, when disclosing registration coverage for all 26 cantons in the manifest took the root to 8,317 |
 
 ## Execution records
 
-On release `mvp-zurich-2026-09-15-v2` (the current `…-v3` carries the same
-facts and evidence; only the review notes and the served limitations line
-changed) every case has three graded live
+On release `mvp-zurich-2026-09-15-v2` every case has three graded live
 runs (UAT-8 four) through OpenCode with the model
-`opencode/ling-3.0-flash-fin-free`, recorded on 15 September 2026
-(record `.local/experiments/2026-09-15-opencode-kb1-extension-acceptance.md`):
+`opencode/ling-3.0-flash-fin-free`
+(record `.local/experiments/2026-09-15-opencode-kb1-extension-acceptance.md`);
+the runs have not been repeated on a later release:
 the trap held in 50 of 52 sessions; every criterion was met in 8 (UAT-12
 three times, UAT-11 twice, UAT-9, UAT-14 and UAT-15 once); 38 sessions
 added a specific no tool result supports (A1, A3); 32 exceeded the call or
@@ -2128,11 +2748,7 @@ to UAT-17 were in Portuguese and one to UAT-7 not in German (A8); UAT-13
 twice missed the single-attempt rule because the caller never resolved
 `zh-control-drive` (A7). UAT-1's turn-2 deadlines were right in all six
 scenarios. The grades are in `releases/mvp-zurich/acceptance-answers.json`;
-the suite's `answer_check` stays `advisory`. The earlier runs on the
-published image of 14 September are in
-that record `.local/experiments/2026-09-14-container-http-acceptance.md`.
-
-Earlier runs: history.
+the suite's `answer_check` stays `advisory`.
 
 Edge cases 1e, 1g, 1h, 1j, 1k, 1l, 2a, 2b, the search step of 2e, the search steps
 of UAT-7 in English, Standard German and Zurich German, the German search
@@ -2148,7 +2764,6 @@ queries of 2e, UAT-7, UAT-11, UAT-17, UAT-22, UAT-23, UAT-29, UAT-31, UAT-37, UA
 answers the served facts must state; format in
 [acceptance-gate.md](https://github.com/swisstip/swiss-tip/blob/main/docs/architecture/acceptance-gate.md)), and the OpenCode
 harness runs the same cases' questions through a live model with the
-patterns and criteria of their `answer` blocks. 2e and UAT-7 have recorded runs (see the
-history); 1c to 1f, 1i, 1l, 1m, 2c, 2d, 2f, 2g, 2h, X1 and the remaining edge
+patterns and criteria of their `answer` blocks. 2e and UAT-7 have recorded runs; 1c to 1f, 1i, 1l, 1m, 2c, 2d, 2f, 2g, 2h, X1 and the remaining edge
 cases of UAT-3 to UAT-7 are specified here and not yet part of a recorded
 run. The decline cases have no live run by design.

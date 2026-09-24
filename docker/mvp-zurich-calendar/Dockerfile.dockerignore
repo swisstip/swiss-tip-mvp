@@ -1,0 +1,4 @@
+# The context is the pack's datasets directory; the image needs the bundles,
+# not the curation files or the build reports.
+*
+!*/dataset.json

@@ -7,7 +7,9 @@
 # container with a baked configuration whose only tool source is that
 # server, and its web interface is the one port the image publishes.
 #
-#   docker build -f docker/demo-opencode/Dockerfile -t swiss-tip-demo:mvp-zurich docker/demo-opencode
+#   docker build -f docker/demo-opencode/Dockerfile \
+#     --build-context shared=<code>/docker/opencode \
+#     -t swiss-tip-demo:mvp-zurich docker/demo-opencode
 #   docker run --rm -p 127.0.0.1:4096:4096 swiss-tip-demo:mvp-zurich      GUI on http://127.0.0.1:4096
 #
 # The image carries no credentials. Without an API key OpenCode uses the
@@ -18,7 +20,13 @@
 # Unlike the pack images, this one needs the network at run time: the model
 # is called over the internet. Only the knowledge base is local.
 #
-# The build context is this directory. The OpenCode binary is the platform
+# Two build contexts. This directory holds what belongs to the pack: the
+# welcome panel with its coverage text and sample questions, and the image
+# README. The named context "shared" is the code repository's
+# docker/opencode (swisstip/swiss-tip), which holds the agent configuration,
+# the plugin, the start script, the proxy shim and the panel script that this
+# image shares with the swiss-tip-opencode image; they live there once and
+# are not copied into this repository. The OpenCode binary is the platform
 # package of the npm release, downloaded by digest; no Node.js is installed.
 
 ARG BASE_IMAGE=swiss-tip:mvp-zurich
@@ -66,23 +74,27 @@ ENV OPENCODE_PORT=4096 \
     OPENCODE_CONFIG=/etc/swiss-tip/opencode.json
 
 USER root
-# The directories are made here, because COPY would create /etc/swiss-tip
-# unreadable (0644), as the basic image notes for its documents directory.
+# The directories are made here, because a COPY --chmod=644 creates the
+# directories it needs with that mode too, and an unreadable /etc/swiss-tip or
+# /usr/local/lib/swiss-tip stops the runtime user from reading what is in it,
+# as the slim MCP image notes for its documents directory. The base image
+# happens to carry /usr/local/lib/swiss-tip already; naming it here means the
+# build does not depend on that.
 # There is no browser in the container, and opencode web starts one; the
 # link makes that a silent success instead of a logged stack trace. Git is
 # for the workspace below, not for the agent, which has no shell.
 RUN apt-get update \
  && apt-get install -y --no-install-recommends git \
  && rm -rf /var/lib/apt/lists/* \
- && mkdir -p /etc/swiss-tip /home/swisstip/workspace \
+ && mkdir -p /etc/swiss-tip /usr/local/lib/swiss-tip /home/swisstip/workspace \
  && chown -R swisstip /home/swisstip \
  && ln -s /bin/true /usr/local/bin/xdg-open
 
 COPY --from=opencode /out/opencode /usr/local/bin/opencode
-COPY --chmod=644 opencode.json /etc/swiss-tip/opencode.json
+COPY --from=shared --chmod=644 opencode.json /etc/swiss-tip/opencode.json
 COPY --chmod=644 README.md /usr/share/doc/swiss-tip/demo-opencode.md
-COPY --chmod=755 with-opencode.sh /usr/local/bin/with-opencode
-COPY --chmod=644 opencode_web_shim.py opencode_health.py welcome.js swiss-tip-tools-only.js /usr/local/lib/swiss-tip/
+COPY --from=shared --chmod=755 with-opencode.sh /usr/local/bin/with-opencode
+COPY --from=shared --chmod=644 opencode_web_shim.py opencode_health.py welcome.js swiss-tip-tools-only.js /usr/local/lib/swiss-tip/
 COPY --chmod=644 welcome.json /etc/swiss-tip/welcome.json
 
 USER 10001
