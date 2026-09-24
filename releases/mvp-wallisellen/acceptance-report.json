@@ -1,0 +1,2806 @@
+{
+  "schema_version": "swiss-tip-acceptance-report/v1",
+  "pack": "mvp-wallisellen",
+  "release_id": "mvp-wallisellen-2026-09-18-v1",
+  "content_sha256": "e22f60103b1fb9f8ffeeb7506ff1e0d5f983d86c023aeb42b85359f3d610c03f",
+  "suite_sha256": "96dec905fb4d08b2e19d3e6fb4c10e9a316d5e4a76f7747b2eb6626892ad4216",
+  "checked_at": "2026-09-19T14:08:05.571908+00:00",
+  "as_of": "2026-09-16",
+  "passed": true,
+  "cases": 45,
+  "blocking": 45,
+  "failed": [],
+  "quarantined": [],
+  "quarantined_failed": [],
+  "results": [
+    {
+      "case_id": "W-UAT-1",
+      "label": "international move versus eUmzug",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Umzug melden 14 Tage eUmzugCH",
+          "expect_concept": "moving-registration",
+          "hits": [
+            "moving-registration",
+            "digital-city-services"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-registration": []
+          },
+          "facts": {
+            "moving-registration": [
+              "moving-registration-1",
+              "moving-registration-2",
+              "moving-registration-3",
+              "moving-registration-4",
+              "moving-registration-5",
+              "moving-registration-6"
+            ]
+          },
+          "bases": {
+            "moving-registration": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The move must be reported within 14 days",
+          "concept": "moving-registration",
+          "fact_ids": [
+            "moving-registration-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Arrivals from abroad register in person",
+          "concept": "moving-registration",
+          "fact_ids": [
+            "moving-registration-4"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-UAT-2",
+      "label": "Wallisellen is not the City of Zurich",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "moving-registration": [
+              "jurisdiction_not_covered"
+            ]
+          },
+          "facts": {
+            "moving-registration": []
+          },
+          "bases": {
+            "moving-registration": []
+          },
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-261",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "moving-registration": [
+              "jurisdiction_not_covered"
+            ]
+          },
+          "facts": {
+            "moving-registration": []
+          },
+          "bases": {
+            "moving-registration": []
+          },
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration",
+            "population-services"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "SUPPORTED",
+            "population-services": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-registration": [],
+            "population-services": []
+          },
+          "facts": {
+            "moving-registration": [
+              "moving-registration-1",
+              "moving-registration-2",
+              "moving-registration-3",
+              "moving-registration-4",
+              "moving-registration-5",
+              "moving-registration-6"
+            ],
+            "population-services": [
+              "population-services-1",
+              "population-services-2",
+              "population-services-3"
+            ]
+          },
+          "bases": {
+            "moving-registration": [
+              "Municipal authority guidance"
+            ],
+            "population-services": [
+              "Municipal authority guidance",
+              "Municipal authority guidance, referring to revidierte Hundeverordnung (per 1. Juni 2025)"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-3",
+      "label": "municipal tax rate is not an all-in rate",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Steuerfuss 2026 Wallisellen",
+          "expect_concept": "tax-rate-and-finance",
+          "hits": [
+            "tax-rate-and-finance",
+            "city-council"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "tax-rate-and-finance"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "tax-rate-and-finance": "SUPPORTED"
+          },
+          "gaps": {
+            "tax-rate-and-finance": []
+          },
+          "facts": {
+            "tax-rate-and-finance": [
+              "tax-rate-and-finance-1",
+              "tax-rate-and-finance-2"
+            ]
+          },
+          "bases": {
+            "tax-rate-and-finance": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The political municipality's 2026 rate is 93 percent",
+          "concept": "tax-rate-and-finance",
+          "fact_ids": [
+            "tax-rate-and-finance-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The cantonal rate is 95 percent",
+          "concept": "tax-rate-and-finance",
+          "fact_ids": [
+            "tax-rate-and-finance-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The combined rate without church taxes is 188 percent",
+          "concept": "tax-rate-and-finance",
+          "fact_ids": [
+            "tax-rate-and-finance-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-UAT-4",
+      "label": "LUNAplus eligibility and funding",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "LUNAplus Alter Senioren",
+          "expect_concept": "older-resident-services",
+          "hits": [
+            "older-resident-services"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "older-resident-services"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "older-resident-services": "SUPPORTED"
+          },
+          "gaps": {
+            "older-resident-services": []
+          },
+          "facts": {
+            "older-resident-services": [
+              "older-resident-services-1",
+              "older-resident-services-2",
+              "older-resident-services-3"
+            ]
+          },
+          "bases": {
+            "older-resident-services": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "LUNAplus is free",
+          "concept": "older-resident-services",
+          "fact_ids": [
+            "older-resident-services-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "LUNAplus is for people of retirement age",
+          "concept": "older-resident-services",
+          "fact_ids": [
+            "older-resident-services-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "LUNAplus is funded by a private Wallisellen foundation",
+          "concept": "older-resident-services",
+          "fact_ids": [
+            "older-resident-services-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-UAT-5",
+      "label": "published museum hours are not a live guarantee",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Ortsmuseum private event",
+          "expect_concept": "facilities-museum-and-culture",
+          "hits": [
+            "facilities-museum-and-culture",
+            "schools-and-careers"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "facilities-museum-and-culture"
+          ],
+          "as_of": "2026-11-01",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "facilities-museum-and-culture": "STALE"
+          },
+          "gaps": {
+            "facilities-museum-and-culture": []
+          },
+          "facts": {
+            "facilities-museum-and-culture": [
+              "facilities-museum-and-culture-1",
+              "facilities-museum-and-culture-2",
+              "facilities-museum-and-culture-3",
+              "facilities-museum-and-culture-4",
+              "facilities-museum-and-culture-5"
+            ]
+          },
+          "bases": {
+            "facilities-museum-and-culture": [
+              "Municipal authority directory",
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The museum opens on the first Sunday of the month with free admission",
+          "concept": "facilities-museum-and-culture",
+          "fact_ids": [
+            "facilities-museum-and-culture-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The museum is listed as rentable for private celebrations",
+          "concept": "facilities-museum-and-culture",
+          "fact_ids": [
+            "facilities-museum-and-culture-4"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-UAT-6",
+      "label": "naturalisation entry point is not an eligibility decision",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Einbürgerung Voraussetzungen",
+          "expect_concept": "naturalisation",
+          "hits": [
+            "civil-status-and-naturalisation",
+            "naturalisation"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "weak",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "naturalisation"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "naturalisation": "SUPPORTED"
+          },
+          "gaps": {
+            "naturalisation": []
+          },
+          "facts": {
+            "naturalisation": [
+              "naturalisation-1",
+              "naturalisation-2",
+              "naturalisation-3",
+              "naturalisation-4",
+              "naturalisation-5",
+              "naturalisation-6",
+              "naturalisation-7"
+            ]
+          },
+          "bases": {
+            "naturalisation": [
+              "Municipal authority directory",
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Ten years of residence in Switzerland are required of foreign nationals",
+          "concept": "naturalisation",
+          "fact_ids": [
+            "naturalisation-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Two years of residence in Wallisellen are required of foreign nationals",
+          "concept": "naturalisation",
+          "fact_ids": [
+            "naturalisation-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "A C permit is required of foreign nationals",
+          "concept": "naturalisation",
+          "fact_ids": [
+            "naturalisation-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-UAT-7",
+      "label": "household waste in the yellow area, set-out time and glass",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "household waste glass fee bag set out time",
+          "expect_concept": "waste-set-out-rules-and-fees",
+          "hits": [
+            "waste-set-out-rules-and-fees",
+            "waste-categories",
+            "waste-collection-schedule"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "search",
+          "query": "Kehrichtabfuhr Gebiet Gelb",
+          "expect_concept": "waste-collection-schedule",
+          "hits": [
+            "waste-collection-schedule",
+            "waste-disposal-services",
+            "waste-set-out-rules-and-fees"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "waste-collection-schedule",
+            "waste-set-out-rules-and-fees"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "waste-collection-schedule": "SUPPORTED",
+            "waste-set-out-rules-and-fees": "SUPPORTED"
+          },
+          "gaps": {
+            "waste-collection-schedule": [],
+            "waste-set-out-rules-and-fees": []
+          },
+          "facts": {
+            "waste-collection-schedule": [
+              "waste-collection-schedule-1",
+              "waste-collection-schedule-2",
+              "waste-collection-schedule-3",
+              "waste-collection-schedule-4",
+              "waste-collection-schedule-5",
+              "waste-collection-schedule-6",
+              "waste-collection-schedule-7",
+              "waste-collection-schedule-8"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "waste-set-out-rules-and-fees-1",
+              "waste-set-out-rules-and-fees-2",
+              "waste-set-out-rules-and-fees-3",
+              "waste-set-out-rules-and-fees-4",
+              "waste-set-out-rules-and-fees-5"
+            ]
+          },
+          "bases": {
+            "waste-collection-schedule": [
+              "Municipal authority guidance"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Household waste is collected on Thursdays in Gebiet Gelb",
+          "concept": "waste-collection-schedule",
+          "fact_ids": [
+            "waste-collection-schedule-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The listed household-waste dates of Gebiet Gelb start on 17 September 2026",
+          "concept": "waste-collection-schedule",
+          "fact_ids": [
+            "waste-collection-schedule-3"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Household waste is put out by 6.30 on the collection day",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-3"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "No glass or metal in the household waste",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-PROBE-1",
+      "label": "emergency numbers recovered from the page's data table",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "ambulance emergency number",
+          "expect_concept": "emergency-numbers",
+          "hits": [
+            "emergency-numbers",
+            "health-and-care",
+            "administration-contacts"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "emergency-numbers"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "emergency-numbers": "SUPPORTED"
+          },
+          "gaps": {
+            "emergency-numbers": []
+          },
+          "facts": {
+            "emergency-numbers": [
+              "emergency-numbers-1",
+              "emergency-numbers-2",
+              "emergency-numbers-3"
+            ]
+          },
+          "bases": {
+            "emergency-numbers": [
+              "Municipal authority directory"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The ambulance number is 144",
+          "concept": "emergency-numbers",
+          "fact_ids": [
+            "emergency-numbers-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The police number is 117",
+          "concept": "emergency-numbers",
+          "fact_ids": [
+            "emergency-numbers-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The fire brigade number is 118",
+          "concept": "emergency-numbers",
+          "fact_ids": [
+            "emergency-numbers-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-PROBE-2",
+      "label": "small renovation: permit entry point only",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "small renovation building permit",
+          "expect_concept": "building-and-spatial-planning",
+          "hits": [
+            "building-and-spatial-planning",
+            "naturalisation"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "building-and-spatial-planning"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "building-and-spatial-planning": "SUPPORTED"
+          },
+          "gaps": {
+            "building-and-spatial-planning": []
+          },
+          "facts": {
+            "building-and-spatial-planning": [
+              "building-and-spatial-planning-1",
+              "building-and-spatial-planning-2"
+            ]
+          },
+          "bases": {
+            "building-and-spatial-planning": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The building page is the entry point for building permits",
+          "concept": "building-and-spatial-planning",
+          "fact_ids": [
+            "building-and-spatial-planning-2"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-PROBE-3",
+      "label": "school placement is not served",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "schools-and-careers"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "schools-and-careers": "SUPPORTED"
+          },
+          "gaps": {
+            "schools-and-careers": []
+          },
+          "facts": {
+            "schools-and-careers": [
+              "schools-and-careers-1",
+              "schools-and-careers-2",
+              "schools-and-careers-3"
+            ]
+          },
+          "bases": {
+            "schools-and-careers": [
+              "Municipal authority directory",
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-PROBE-4",
+      "label": "next waste pickup: dates by area, no area for an address",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "next household waste pickup",
+          "expect_concept": "waste-collection-schedule",
+          "hits": [
+            "waste-collection-schedule",
+            "waste-disposal-services",
+            "waste-categories"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "waste-collection-schedule",
+            "waste-disposal-services"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "waste-collection-schedule": "SUPPORTED",
+            "waste-disposal-services": "SUPPORTED"
+          },
+          "gaps": {
+            "waste-collection-schedule": [],
+            "waste-disposal-services": []
+          },
+          "facts": {
+            "waste-collection-schedule": [
+              "waste-collection-schedule-1",
+              "waste-collection-schedule-2",
+              "waste-collection-schedule-3",
+              "waste-collection-schedule-4",
+              "waste-collection-schedule-5",
+              "waste-collection-schedule-6",
+              "waste-collection-schedule-7",
+              "waste-collection-schedule-8"
+            ],
+            "waste-disposal-services": [
+              "waste-disposal-services-1",
+              "waste-disposal-services-2",
+              "waste-disposal-services-3",
+              "waste-disposal-services-4",
+              "waste-disposal-services-5",
+              "waste-disposal-services-6"
+            ]
+          },
+          "bases": {
+            "waste-collection-schedule": [
+              "Municipal authority guidance"
+            ],
+            "waste-disposal-services": [
+              "Municipal authority directory",
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Household waste is collected on Wednesdays in Gebiet Blau and on Thursdays in Gebiet Gelb",
+          "concept": "waste-collection-schedule",
+          "fact_ids": [
+            "waste-collection-schedule-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The listed household-waste dates of Gebiet Blau include 23 September 2026",
+          "concept": "waste-collection-schedule",
+          "fact_ids": [
+            "waste-collection-schedule-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Collection is organised by the areas Gebiet Blau and Gebiet Gelb",
+          "concept": "waste-disposal-services",
+          "fact_ids": [
+            "waste-disposal-services-3"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "All collection dates can be taken over into the user's calendar",
+          "concept": "waste-disposal-services",
+          "fact_ids": [
+            "waste-disposal-services-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-PROBE-5",
+      "label": "waste calendar and collection reminders",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Entsorgungskalender Sammeltermine",
+          "expect_concept": "waste-disposal-services",
+          "hits": [
+            "waste-disposal-services"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "waste-disposal-services"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "waste-disposal-services": "SUPPORTED"
+          },
+          "gaps": {
+            "waste-disposal-services": []
+          },
+          "facts": {
+            "waste-disposal-services": [
+              "waste-disposal-services-1",
+              "waste-disposal-services-2",
+              "waste-disposal-services-3",
+              "waste-disposal-services-4",
+              "waste-disposal-services-5",
+              "waste-disposal-services-6"
+            ]
+          },
+          "bases": {
+            "waste-disposal-services": [
+              "Municipal authority directory",
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The collection dates can be imported into an electronic calendar",
+          "concept": "waste-disposal-services",
+          "fact_ids": [
+            "waste-disposal-services-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Email reminders go to users with an account",
+          "concept": "waste-disposal-services",
+          "fact_ids": [
+            "waste-disposal-services-2"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-PROBE-6",
+      "label": "city president and council legislature, stale from 16 October 2026",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Stadtpraesident Stadtrat 2026",
+          "expect_concept": "city-council",
+          "hits": [
+            "city-council",
+            "administration-contacts",
+            "tax-rate-and-finance"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "city-council"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "city-council": "SUPPORTED"
+          },
+          "gaps": {
+            "city-council": []
+          },
+          "facts": {
+            "city-council": [
+              "city-council-1",
+              "city-council-2"
+            ]
+          },
+          "bases": {
+            "city-council": [
+              "Municipal authority directory"
+            ]
+          },
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "city-council"
+          ],
+          "as_of": "2026-10-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "city-council": "STALE"
+          },
+          "gaps": {
+            "city-council": []
+          },
+          "facts": {
+            "city-council": [
+              "city-council-1",
+              "city-council-2"
+            ]
+          },
+          "bases": {
+            "city-council": [
+              "Municipal authority directory"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The city president is Adrian Bangerter",
+          "concept": "city-council",
+          "fact_ids": [
+            "city-council-1",
+            "city-council-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The legislature runs from 2026 to 2030",
+          "concept": "city-council",
+          "fact_ids": [
+            "city-council-1",
+            "city-council-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-PROBE-7",
+      "label": "only human-reviewed facts, which every fact of the pack is",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-registration": []
+          },
+          "facts": {
+            "moving-registration": [
+              "moving-registration-1",
+              "moving-registration-2",
+              "moving-registration-3",
+              "moving-registration-4",
+              "moving-registration-5",
+              "moving-registration-6"
+            ]
+          },
+          "bases": {
+            "moving-registration": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "A move can be reported through the eUmzugCH portal",
+          "concept": "moving-registration",
+          "fact_ids": [
+            "moving-registration-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "A person moving from abroad registers in person",
+          "concept": "moving-registration",
+          "fact_ids": [
+            "moving-registration-4"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-PROBE-8",
+      "label": "a directory is not a complete, current list",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [],
+      "claims": []
+    },
+    {
+      "case_id": "W-PROBE-9",
+      "label": "collection dates in the yellow zone, asked in English",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "household waste collection dates in the yellow zone",
+          "expect_concept": "waste-collection-schedule",
+          "hits": [
+            "waste-collection-schedule",
+            "waste-disposal-services",
+            "waste-categories"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "search",
+          "query": "yellow zone",
+          "expect_concept": "waste-collection-schedule",
+          "hits": [
+            "waste-collection-schedule",
+            "waste-disposal-services"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "waste-collection-schedule"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "waste-collection-schedule": "SUPPORTED"
+          },
+          "gaps": {
+            "waste-collection-schedule": []
+          },
+          "facts": {
+            "waste-collection-schedule": [
+              "waste-collection-schedule-1",
+              "waste-collection-schedule-2",
+              "waste-collection-schedule-3",
+              "waste-collection-schedule-4",
+              "waste-collection-schedule-5",
+              "waste-collection-schedule-6",
+              "waste-collection-schedule-7",
+              "waste-collection-schedule-8"
+            ]
+          },
+          "bases": {
+            "waste-collection-schedule": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Household waste in Gebiet Gelb is collected on Thursdays, including 17 September 2026",
+          "concept": "waste-collection-schedule",
+          "fact_ids": [
+            "waste-collection-schedule-3"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The paper collection covers both areas on 24 October 2026",
+          "concept": "waste-collection-schedule",
+          "fact_ids": [
+            "waste-collection-schedule-7"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-PROBE-10",
+      "label": "waste bag and bulky-waste stamp prices",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "How much does a waste bag cost?",
+          "expect_concept": "waste-set-out-rules-and-fees",
+          "hits": [
+            "waste-set-out-rules-and-fees"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "search",
+          "query": "Gebührensack Preis Sperrgut",
+          "expect_concept": "waste-set-out-rules-and-fees",
+          "hits": [
+            "waste-set-out-rules-and-fees"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "waste-set-out-rules-and-fees"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "waste-set-out-rules-and-fees": "SUPPORTED"
+          },
+          "gaps": {
+            "waste-set-out-rules-and-fees": []
+          },
+          "facts": {
+            "waste-set-out-rules-and-fees": [
+              "waste-set-out-rules-and-fees-1",
+              "waste-set-out-rules-and-fees-2",
+              "waste-set-out-rules-and-fees-3",
+              "waste-set-out-rules-and-fees-4",
+              "waste-set-out-rules-and-fees-5"
+            ]
+          },
+          "bases": {
+            "waste-set-out-rules-and-fees": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The 35-litre fee bag costs CHF 1.85, according to the leaflet dated 2022",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "One bulky-waste stamp per 5 kg, CHF 2.10 each, at most 40 kg per item",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-2"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Household and bulky waste must be put out by 6.30 on the collection day",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-UAT-1e1",
+      "label": "address change within Wallisellen",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-registration": []
+          },
+          "facts": {
+            "moving-registration": [
+              "moving-registration-1",
+              "moving-registration-2",
+              "moving-registration-3",
+              "moving-registration-4",
+              "moving-registration-5",
+              "moving-registration-6"
+            ]
+          },
+          "bases": {
+            "moving-registration": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-1e2",
+      "label": "weekly resident",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-registration": []
+          },
+          "facts": {
+            "moving-registration": [
+              "moving-registration-1",
+              "moving-registration-2",
+              "moving-registration-3",
+              "moving-registration-4",
+              "moving-registration-5",
+              "moving-registration-6"
+            ]
+          },
+          "bases": {
+            "moving-registration": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-1e3",
+      "label": "moving abroad",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-registration": []
+          },
+          "facts": {
+            "moving-registration": [
+              "moving-registration-1",
+              "moving-registration-2",
+              "moving-registration-3",
+              "moving-registration-4",
+              "moving-registration-5",
+              "moving-registration-6"
+            ]
+          },
+          "bases": {
+            "moving-registration": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-1e4",
+      "label": "moving with a child after a separation",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-registration": []
+          },
+          "facts": {
+            "moving-registration": [
+              "moving-registration-1",
+              "moving-registration-2",
+              "moving-registration-3",
+              "moving-registration-4",
+              "moving-registration-5",
+              "moving-registration-6"
+            ]
+          },
+          "bases": {
+            "moving-registration": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-3e1",
+      "label": "individual tax bill",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-3e2",
+      "label": "tax rate including church tax",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "tax-rate-and-finance"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "tax-rate-and-finance": "SUPPORTED"
+          },
+          "gaps": {
+            "tax-rate-and-finance": []
+          },
+          "facts": {
+            "tax-rate-and-finance": [
+              "tax-rate-and-finance-1",
+              "tax-rate-and-finance-2"
+            ]
+          },
+          "bases": {
+            "tax-rate-and-finance": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-3e3",
+      "label": "budget result versus audited accounts",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "tax-rate-and-finance"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "tax-rate-and-finance": "SUPPORTED"
+          },
+          "gaps": {
+            "tax-rate-and-finance": []
+          },
+          "facts": {
+            "tax-rate-and-finance": [
+              "tax-rate-and-finance-1",
+              "tax-rate-and-finance-2"
+            ]
+          },
+          "bases": {
+            "tax-rate-and-finance": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-4e1",
+      "label": "LUNAplus at 64",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "older-resident-services"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "older-resident-services": "SUPPORTED"
+          },
+          "gaps": {
+            "older-resident-services": []
+          },
+          "facts": {
+            "older-resident-services": [
+              "older-resident-services-1",
+              "older-resident-services-2",
+              "older-resident-services-3"
+            ]
+          },
+          "bases": {
+            "older-resident-services": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-4e2",
+      "label": "LUNAplus ride tomorrow",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "older-resident-services"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "older-resident-services": "SUPPORTED"
+          },
+          "gaps": {
+            "older-resident-services": []
+          },
+          "facts": {
+            "older-resident-services": [
+              "older-resident-services-1",
+              "older-resident-services-2",
+              "older-resident-services-3"
+            ]
+          },
+          "bases": {
+            "older-resident-services": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-4e3",
+      "label": "supplementary benefits",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "older-resident-services"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "older-resident-services": "SUPPORTED"
+          },
+          "gaps": {
+            "older-resident-services": []
+          },
+          "facts": {
+            "older-resident-services": [
+              "older-resident-services-1",
+              "older-resident-services-2",
+              "older-resident-services-3"
+            ]
+          },
+          "bases": {
+            "older-resident-services": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-5e1",
+      "label": "museum on a Sunday without a date",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "facilities-museum-and-culture"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "facilities-museum-and-culture": "SUPPORTED"
+          },
+          "gaps": {
+            "facilities-museum-and-culture": []
+          },
+          "facts": {
+            "facilities-museum-and-culture": [
+              "facilities-museum-and-culture-1",
+              "facilities-museum-and-culture-2",
+              "facilities-museum-and-culture-3",
+              "facilities-museum-and-culture-4",
+              "facilities-museum-and-culture-5"
+            ]
+          },
+          "bases": {
+            "facilities-museum-and-culture": [
+              "Municipal authority directory",
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-5e2",
+      "label": "booking the forest cabin",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "facilities-museum-and-culture"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "facilities-museum-and-culture": "SUPPORTED"
+          },
+          "gaps": {
+            "facilities-museum-and-culture": []
+          },
+          "facts": {
+            "facilities-museum-and-culture": [
+              "facilities-museum-and-culture-1",
+              "facilities-museum-and-culture-2",
+              "facilities-museum-and-culture-3",
+              "facilities-museum-and-culture-4",
+              "facilities-museum-and-culture-5"
+            ]
+          },
+          "bases": {
+            "facilities-museum-and-culture": [
+              "Municipal authority directory",
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-5e3",
+      "label": "museum entry always free",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "facilities-museum-and-culture"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "facilities-museum-and-culture": "SUPPORTED"
+          },
+          "gaps": {
+            "facilities-museum-and-culture": []
+          },
+          "facts": {
+            "facilities-museum-and-culture": [
+              "facilities-museum-and-culture-1",
+              "facilities-museum-and-culture-2",
+              "facilities-museum-and-culture-3",
+              "facilities-museum-and-culture-4",
+              "facilities-museum-and-culture-5"
+            ]
+          },
+          "bases": {
+            "facilities-museum-and-culture": [
+              "Municipal authority directory",
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-6e1",
+      "label": "naturalisation route for a Swiss citizen",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "naturalisation"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "naturalisation": "SUPPORTED"
+          },
+          "gaps": {
+            "naturalisation": []
+          },
+          "facts": {
+            "naturalisation": [
+              "naturalisation-1",
+              "naturalisation-2",
+              "naturalisation-3",
+              "naturalisation-4",
+              "naturalisation-5",
+              "naturalisation-6",
+              "naturalisation-7"
+            ]
+          },
+          "bases": {
+            "naturalisation": [
+              "Municipal authority directory",
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-6e2",
+      "label": "naturalisation route for a foreign national",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "naturalisation"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "naturalisation": "SUPPORTED"
+          },
+          "gaps": {
+            "naturalisation": []
+          },
+          "facts": {
+            "naturalisation": [
+              "naturalisation-1",
+              "naturalisation-2",
+              "naturalisation-3",
+              "naturalisation-4",
+              "naturalisation-5",
+              "naturalisation-6",
+              "naturalisation-7"
+            ]
+          },
+          "bases": {
+            "naturalisation": [
+              "Municipal authority directory",
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-6e3",
+      "label": "rejected application",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [],
+      "claims": []
+    },
+    {
+      "case_id": "W-UAT-7e1",
+      "label": "green waste in winter and plastic bags",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "green waste winter plastic bags",
+          "expect_concept": "waste-set-out-rules-and-fees",
+          "hits": [
+            "waste-set-out-rules-and-fees",
+            "waste-collection-schedule",
+            "waste-categories"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "waste-set-out-rules-and-fees"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "waste-set-out-rules-and-fees": "SUPPORTED"
+          },
+          "gaps": {
+            "waste-set-out-rules-and-fees": []
+          },
+          "facts": {
+            "waste-set-out-rules-and-fees": [
+              "waste-set-out-rules-and-fees-1",
+              "waste-set-out-rules-and-fees-2",
+              "waste-set-out-rules-and-fees-3",
+              "waste-set-out-rules-and-fees-4",
+              "waste-set-out-rules-and-fees-5"
+            ]
+          },
+          "bases": {
+            "waste-set-out-rules-and-fees": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Green waste is picked up twice a month from December to February, in official containers",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-3"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Compostable bags, never plastic bags",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-5"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-UAT-7e2",
+      "label": "cardboard is not collected with the paper",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Can I put my cardboard boxes out with the paper collection?",
+          "expect_concept": "waste-set-out-rules-and-fees",
+          "hits": [
+            "waste-set-out-rules-and-fees",
+            "waste-collection-schedule",
+            "waste-categories"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "waste-collection-schedule",
+            "waste-set-out-rules-and-fees"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "waste-collection-schedule": "SUPPORTED",
+            "waste-set-out-rules-and-fees": "SUPPORTED"
+          },
+          "gaps": {
+            "waste-collection-schedule": [],
+            "waste-set-out-rules-and-fees": []
+          },
+          "facts": {
+            "waste-collection-schedule": [
+              "waste-collection-schedule-1",
+              "waste-collection-schedule-2",
+              "waste-collection-schedule-3",
+              "waste-collection-schedule-4",
+              "waste-collection-schedule-5",
+              "waste-collection-schedule-6",
+              "waste-collection-schedule-7",
+              "waste-collection-schedule-8"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "waste-set-out-rules-and-fees-1",
+              "waste-set-out-rules-and-fees-2",
+              "waste-set-out-rules-and-fees-3",
+              "waste-set-out-rules-and-fees-4",
+              "waste-set-out-rules-and-fees-5"
+            ]
+          },
+          "bases": {
+            "waste-collection-schedule": [
+              "Municipal authority guidance"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Cardboard has its own collection dates by area",
+          "concept": "waste-collection-schedule",
+          "fact_ids": [
+            "waste-collection-schedule-6"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The paper collection is on Saturdays for both areas",
+          "concept": "waste-collection-schedule",
+          "fact_ids": [
+            "waste-collection-schedule-7"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Cardboard dry, folded and tied; paper bundled, not in paper bags, by 8.00",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-UAT-7e3",
+      "label": "the chipping service is not free",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Is the Häckseldienst free, and when is the next one?",
+          "expect_concept": "waste-set-out-rules-and-fees",
+          "hits": [
+            "waste-set-out-rules-and-fees",
+            "waste-collection-schedule"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "weak",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "waste-collection-schedule",
+            "waste-set-out-rules-and-fees"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "waste-collection-schedule": "SUPPORTED",
+            "waste-set-out-rules-and-fees": "SUPPORTED"
+          },
+          "gaps": {
+            "waste-collection-schedule": [],
+            "waste-set-out-rules-and-fees": []
+          },
+          "facts": {
+            "waste-collection-schedule": [
+              "waste-collection-schedule-1",
+              "waste-collection-schedule-2",
+              "waste-collection-schedule-3",
+              "waste-collection-schedule-4",
+              "waste-collection-schedule-5",
+              "waste-collection-schedule-6",
+              "waste-collection-schedule-7",
+              "waste-collection-schedule-8"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "waste-set-out-rules-and-fees-1",
+              "waste-set-out-rules-and-fees-2",
+              "waste-set-out-rules-and-fees-3",
+              "waste-set-out-rules-and-fees-4",
+              "waste-set-out-rules-and-fees-5"
+            ]
+          },
+          "bases": {
+            "waste-collection-schedule": [
+              "Municipal authority guidance"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The chipping service costs CHF 30 per registration for 15 minutes, then CHF 20",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-4"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The listed chipping date is 4 November 2026, on registration",
+          "concept": "waste-collection-schedule",
+          "fact_ids": [
+            "waste-collection-schedule-8"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-UAT-7e4",
+      "label": "old paint and medicines go to the special-waste truck",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Where can I get rid of old paint and leftover medicines?",
+          "expect_concept": "waste-set-out-rules-and-fees",
+          "hits": [
+            "waste-set-out-rules-and-fees"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "waste-collection-schedule",
+            "waste-set-out-rules-and-fees"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "waste-collection-schedule": "SUPPORTED",
+            "waste-set-out-rules-and-fees": "SUPPORTED"
+          },
+          "gaps": {
+            "waste-collection-schedule": [],
+            "waste-set-out-rules-and-fees": []
+          },
+          "facts": {
+            "waste-collection-schedule": [
+              "waste-collection-schedule-1",
+              "waste-collection-schedule-2",
+              "waste-collection-schedule-3",
+              "waste-collection-schedule-4",
+              "waste-collection-schedule-5",
+              "waste-collection-schedule-6",
+              "waste-collection-schedule-7",
+              "waste-collection-schedule-8"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "waste-set-out-rules-and-fees-1",
+              "waste-set-out-rules-and-fees-2",
+              "waste-set-out-rules-and-fees-3",
+              "waste-set-out-rules-and-fees-4",
+              "waste-set-out-rules-and-fees-5"
+            ]
+          },
+          "bases": {
+            "waste-collection-schedule": [
+              "Municipal authority guidance"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The Sonderabfallmobil at the Stadthaus takes medicines and paints",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-4"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The listed Sonderabfallmobil date is 4 December 2026, 8.00-11.30",
+          "concept": "waste-collection-schedule",
+          "fact_ids": [
+            "waste-collection-schedule-8"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-UAT-7e5",
+      "label": "next paper collection, asked in German with a date",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Wann ist die nächste Papiersammlung",
+          "expect_concept": "waste-collection-schedule",
+          "hits": [
+            "waste-collection-schedule",
+            "waste-set-out-rules-and-fees"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "weak",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "search",
+          "query": "Papier bereitstellen",
+          "expect_concept": "waste-set-out-rules-and-fees",
+          "hits": [
+            "waste-set-out-rules-and-fees",
+            "waste-collection-schedule"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "waste-collection-schedule",
+            "waste-set-out-rules-and-fees"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "waste-collection-schedule": "SUPPORTED",
+            "waste-set-out-rules-and-fees": "SUPPORTED"
+          },
+          "gaps": {
+            "waste-collection-schedule": [],
+            "waste-set-out-rules-and-fees": []
+          },
+          "facts": {
+            "waste-collection-schedule": [
+              "waste-collection-schedule-1",
+              "waste-collection-schedule-2",
+              "waste-collection-schedule-3",
+              "waste-collection-schedule-4",
+              "waste-collection-schedule-5",
+              "waste-collection-schedule-6",
+              "waste-collection-schedule-7",
+              "waste-collection-schedule-8"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "waste-set-out-rules-and-fees-1",
+              "waste-set-out-rules-and-fees-2",
+              "waste-set-out-rules-and-fees-3",
+              "waste-set-out-rules-and-fees-4",
+              "waste-set-out-rules-and-fees-5"
+            ]
+          },
+          "bases": {
+            "waste-collection-schedule": [
+              "Municipal authority guidance"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The next paper collection after 16 September 2026 is on 19 September 2026",
+          "concept": "waste-collection-schedule",
+          "fact_ids": [
+            "waste-collection-schedule-7"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Paper is bundled, not in paper bags, and out by 8.00",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-3"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-UAT-7e6",
+      "label": "a broken toaster is not household waste",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "My toaster is broken. Can I throw it in the household waste?",
+          "expect_concept": "waste-categories",
+          "hits": [
+            "waste-categories",
+            "waste-collection-schedule",
+            "waste-disposal-services"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "weak",
+          "expect_strength": null,
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "waste-disposal-services",
+            "waste-set-out-rules-and-fees"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "waste-disposal-services": "SUPPORTED",
+            "waste-set-out-rules-and-fees": "SUPPORTED"
+          },
+          "gaps": {
+            "waste-disposal-services": [],
+            "waste-set-out-rules-and-fees": []
+          },
+          "facts": {
+            "waste-disposal-services": [
+              "waste-disposal-services-1",
+              "waste-disposal-services-2",
+              "waste-disposal-services-3",
+              "waste-disposal-services-4",
+              "waste-disposal-services-5",
+              "waste-disposal-services-6"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "waste-set-out-rules-and-fees-1",
+              "waste-set-out-rules-and-fees-2",
+              "waste-set-out-rules-and-fees-3",
+              "waste-set-out-rules-and-fees-4",
+              "waste-set-out-rules-and-fees-5"
+            ]
+          },
+          "bases": {
+            "waste-disposal-services": [
+              "Municipal authority directory",
+              "Municipal authority guidance"
+            ],
+            "waste-set-out-rules-and-fees": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "No metal or non-combustible material in the household waste",
+          "concept": "waste-set-out-rules-and-fees",
+          "fact_ids": [
+            "waste-set-out-rules-and-fees-3"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The ReparierBar repairs electronic items free of charge",
+          "concept": "waste-disposal-services",
+          "fact_ids": [
+            "waste-disposal-services-6"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-DECLINE-1",
+      "label": "Rejected: a neighbouring municipality (Dübendorf)",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-191",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "moving-registration": [
+              "jurisdiction_not_covered"
+            ]
+          },
+          "facts": {
+            "moving-registration": []
+          },
+          "bases": {
+            "moving-registration": []
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-DECLINE-2",
+      "label": "Rejected: a topic the release does not publish (insurer premiums)",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "health-insurance-premiums"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "health-insurance-premiums": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "health-insurance-premiums": [
+              "concept_not_published"
+            ]
+          },
+          "facts": {
+            "health-insurance-premiums": []
+          },
+          "bases": {
+            "health-insurance-premiums": []
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-PLACE-1",
+      "label": "The place given in names: Wallisellen, in English and in German",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-registration": []
+          },
+          "facts": {
+            "moving-registration": [
+              "moving-registration-1",
+              "moving-registration-2",
+              "moving-registration-3",
+              "moving-registration-4",
+              "moving-registration-5",
+              "moving-registration-6"
+            ]
+          },
+          "bases": {
+            "moving-registration": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-registration": []
+          },
+          "facts": {
+            "moving-registration": [
+              "moving-registration-1",
+              "moving-registration-2",
+              "moving-registration-3",
+              "moving-registration-4",
+              "moving-registration-5",
+              "moving-registration-6"
+            ]
+          },
+          "bases": {
+            "moving-registration": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-registration": []
+          },
+          "facts": {
+            "moving-registration": [
+              "moving-registration-1",
+              "moving-registration-2",
+              "moving-registration-3",
+              "moving-registration-4",
+              "moving-registration-5",
+              "moving-registration-6"
+            ]
+          },
+          "bases": {
+            "moving-registration": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The move must be reported within 14 days",
+          "concept": "moving-registration",
+          "fact_ids": [
+            "moving-registration-1",
+            "moving-registration-1",
+            "moving-registration-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "W-PLACE-2",
+      "label": "Rejected: another municipality given by name (Dübendorf, the City of Zurich)",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-191",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "moving-registration": [
+              "jurisdiction_not_covered"
+            ]
+          },
+          "facts": {
+            "moving-registration": []
+          },
+          "bases": {
+            "moving-registration": []
+          },
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-261",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "moving-registration": [
+              "jurisdiction_not_covered"
+            ]
+          },
+          "facts": {
+            "moving-registration": []
+          },
+          "bases": {
+            "moving-registration": []
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-PLACE-3",
+      "label": "A place the register cannot place: a misspelling, a postcode, a shared name, another canton, another country",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH",
+          "not_recognised": {
+            "city": "Walisellen"
+          },
+          "statuses": {
+            "moving-registration": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "moving-registration": [
+              "jurisdiction_not_covered"
+            ]
+          },
+          "facts": {
+            "moving-registration": []
+          },
+          "bases": {
+            "moving-registration": []
+          },
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH",
+          "not_recognised": {
+            "city": "8304"
+          },
+          "statuses": {
+            "moving-registration": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "moving-registration": [
+              "jurisdiction_not_covered"
+            ]
+          },
+          "facts": {
+            "moving-registration": []
+          },
+          "bases": {
+            "moving-registration": []
+          },
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "error": "INVALID_ARGUMENT",
+          "error_paths": [
+            "jurisdiction.city"
+          ],
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "error": "INVALID_ARGUMENT",
+          "error_paths": [
+            "jurisdiction.city"
+          ],
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": null,
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "moving-registration": [
+              "jurisdiction_not_covered"
+            ]
+          },
+          "facts": {
+            "moving-registration": []
+          },
+          "bases": {
+            "moving-registration": []
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "W-PLACE-4",
+      "label": "The place comes from the user's words only: a move within Switzerland to Wallisellen",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "moving-registration"
+          ],
+          "as_of": "2026-09-16",
+          "scope": "CH-ZH-69",
+          "not_recognised": {},
+          "statuses": {
+            "moving-registration": "SUPPORTED"
+          },
+          "gaps": {
+            "moving-registration": []
+          },
+          "facts": {
+            "moving-registration": [
+              "moving-registration-1",
+              "moving-registration-2",
+              "moving-registration-3",
+              "moving-registration-4",
+              "moving-registration-5",
+              "moving-registration-6"
+            ]
+          },
+          "bases": {
+            "moving-registration": [
+              "Municipal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The move must be reported within 14 days",
+          "concept": "moving-registration",
+          "fact_ids": [
+            "moving-registration-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "A move can be reported through the eUmzugCH portal",
+          "concept": "moving-registration",
+          "fact_ids": [
+            "moving-registration-2"
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

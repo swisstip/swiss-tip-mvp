@@ -1,0 +1,59 @@
+{
+  "schema_version": "swiss-tip-readiness/v1",
+  "pack": "mvp-wallisellen",
+  "release_id": "mvp-wallisellen-2026-09-18-v1",
+  "release_sha256": "338f45fabdb41b3973ebd5e45a6e5fa09e5c9d6c9ac0d14963c20d40bec791a7",
+  "content_sha256": "e22f60103b1fb9f8ffeeb7506ff1e0d5f983d86c023aeb42b85359f3d610c03f",
+  "suite_sha256": "96dec905fb4d08b2e19d3e6fb4c10e9a316d5e4a76f7747b2eb6626892ad4216",
+  "attested_at": "2026-09-19T14:08:05.575461Z",
+  "attested_by": "Alexander Bobrovsky",
+  "gates": [
+    {
+      "gate": "G1",
+      "title": "the release validates against the text dataset and the re-hashed saved responses",
+      "status": "passed",
+      "detail": "48 saved responses re-hashed"
+    },
+    {
+      "gate": "G2",
+      "title": "the build dropped no fact",
+      "status": "passed",
+      "detail": "0 dropped"
+    },
+    {
+      "gate": "G3",
+      "title": "every blocking acceptance case passes",
+      "status": "passed",
+      "detail": "45 blocking case(s) pass"
+    },
+    {
+      "gate": "G4",
+      "title": "stale_from lies at least 14 days after the attestation and after the policy date",
+      "status": "passed",
+      "detail": "stale from 2026-10-16, runway until 2026-10-03, policy date 2026-09-16"
+    },
+    {
+      "gate": "G5",
+      "title": "the graded live-caller sessions meet the answer policy (answer_check advisory)",
+      "status": "passed",
+      "detail": "no acceptance-answers.json"
+    },
+    {
+      "gate": "G6",
+      "title": "the committed acceptance report is the report of this release and this suite",
+      "status": "passed",
+      "detail": "acceptance-report.json matches"
+    }
+  ],
+  "cases": {
+    "total": 45,
+    "blocking": 45,
+    "quarantined": []
+  },
+  "review_statuses": {
+    "human-reviewed": 99
+  },
+  "snapshot_date": "2026-09-16",
+  "stale_from": "2026-10-16",
+  "min_runway_days": 14
+}
