@@ -151,6 +151,9 @@ ZURICH_NAMES = {
     "french-valais-canton-change": "UAT-116",
     # The Lugano waste case of 24 September 2026, not yet run.
     "italian-lugano-waste": "UAT-117",
+    # The Basel and St. Gallen waste cases of 24 September 2026, not yet run.
+    "basel-waste-collection": "UAT-118",
+    "german-st-gallen-waste": "UAT-119",
 }
 
 # The general criteria of docs/product/user-acceptance-tests.md, quoted in the grading packets by ID.
