@@ -159,10 +159,11 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
                                                                   "integration", "customs", "work-unemployment", "ahv-pension"}
                   # The counts line, whichever statuses the release carries (all human-reviewed since 2026-09-14-v1).
                   and any(item.startswith("Review status of the") for item in body["limitations"]))
-            # The City of Lugano (CH-TI-5192) joined with its waste concept in release 2026-09-24-v1.
-            check("root lists federal, Zurich, City of Zurich and City of Lugano jurisdictions and 26 cantons",
-                  {"CH", "CH-ZH", "CH-ZH-261", "CH-BE", "CH-TI", "CH-TI-5192"} <= set(body["jurisdictions"])
-                  and len(body["jurisdictions"]) == 29)
+            # The City of Lugano (CH-TI-5192) joined with its waste concept in release 2026-09-24-v1, the cities of
+            # Basel (CH-BS-2701) and St. Gallen (CH-SG-3203) with their collection calendars in 2026-09-24-v5.
+            check("root lists federal, Zurich, City of Zurich, Lugano, Basel and St. Gallen jurisdictions and 26 cantons",
+                  {"CH", "CH-ZH", "CH-ZH-261", "CH-BE", "CH-TI", "CH-TI-5192", "CH-BS-2701", "CH-SG-3203"}
+                  <= set(body["jurisdictions"]) and len(body["jurisdictions"]) == 31)
             languages = [q["code"] for q in body.get("query_languages") or []]
             search_tool = next(t for t in tools if t.name == "search")
             # swisstip-mcp 0.3.0 asks for one search and no longer calls German "preferred"; servers up to 0.2.5
