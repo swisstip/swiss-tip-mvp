@@ -1,10 +1,12 @@
 # Build the container images that hold a pack on one runner, test them, and
 # push them to GitHub Container Registry. Started by hand; choose which images:
 #
-#   all              both packs and the demo, in that order
-#   packs            both packs
+#   all              the Zurich pack, the demo and the calendar image, in that order
+#   packs            the Zurich pack
 #   mvp-zurich       one pack
-#   mvp-wallisellen  one pack
+#   mvp-wallisellen  one pack, by name only: out of the hackathon scope, and its readiness record (v1, attested
+#                    19 September 2026) does not attest the semantic index that swisstip-mcp 0.3.0 requires
+#                    to serve hybrid, so its image exits at start until the pack is re-attested
 #   demo             the OpenCode demo image, on the Zurich pack image in ghcr.io
 #   calendar         the Zurich calendar image: the pack's dataset bundles on the calendar connector image in ghcr.io
 #
@@ -137,8 +139,8 @@ jobs:
         run: |
           demo=0; calendar=0
           case "$IMAGES" in
-            all)             packs="mvp-zurich mvp-wallisellen"; demo=1; calendar=1 ;;
-            packs)           packs="mvp-zurich mvp-wallisellen" ;;
+            all)             packs="mvp-zurich"; demo=1; calendar=1 ;;
+            packs)           packs="mvp-zurich" ;;
             mvp-zurich|mvp-wallisellen) packs="$IMAGES" ;;
             demo)            packs=""; demo=1 ;;
             calendar)        packs=""; calendar=1 ;;
