@@ -1,9 +1,10 @@
-# Swiss TIP on one public host: the MCP server and the embedding sidecar of
-# the repository's compose.yaml, with Caddy in front as the only published
-# service, the OpenCode web interface behind the profile "demo" and the
-# pack's calendar connector behind the profile "calendar". The
-# CloudFormation template beside this file writes it to /opt/swiss-tip with
-# the Caddyfile and an .env; it also runs anywhere else Docker does.
+# Swiss TIP on one public host: the pack's release image, which carries the
+# MCP server, its embedding model on a loopback Ollama and, for a pack with
+# datasets, the calendar connector on loopback too, with Caddy in front as
+# the only published service and the OpenCode web interface behind the
+# profile "demo". The CloudFormation template beside this file writes it to
+# /opt/swiss-tip with the Caddyfile and an .env; it also runs anywhere else
+# Docker does.
 #
 #   SWISSTIP_MCP_SITE    the MCP server's site address: a domain whose DNS
 #                        points here, served over HTTPS with a certificate
@@ -12,14 +13,11 @@
 #                        port that is not published, so it is not served
 #   COMPOSE_PROFILES     demo to start the web interface, which then refuses
 #                        to start without OPENCODE_SERVER_PASSWORD; its user
-#                        name is opencode, or OPENCODE_SERVER_USERNAME;
-#                        calendar to start the pack's calendar connector
-#                        (swiss-tip-calendar:<pack>), which the server
-#                        registers through SWISSTIP_CONNECTORS
-#   SWISSTIP_CONNECTORS  http://127.0.0.1:8100 with the profile calendar: the
-#                        connector shares the server's network namespace and
-#                        is reachable from nowhere else; empty (default): no
-#                        connector, no lookup tool
+#                        name is opencode, or OPENCODE_SERVER_USERNAME
+#   SWISSTIP_CONNECTORS  unset (default): the image starts the calendar
+#                        connector it carries and the server offers the
+#                        lookup tool; set, even empty, it is passed on as it
+#                        is, and empty means no connector and four tools
 #   SWISSTIP_MCP_USERNAME, SWISSTIP_MCP_PASSWORD
 #                        both set: the MCP site asks for them (basic
 #                        credentials); both empty (default): it is open
@@ -27,26 +25,15 @@
 #                        (the pack's coverage text and sample questions); the
 #                        template downloads the pack's one, or writes the
 #                        generic panel when the download fails
-#   SWISSTIP_PACK, SWISSTIP_REGISTRY   as in the repository's compose.yaml
+#   SWISSTIP_PACK, SWISSTIP_REGISTRY   the image is <registry>/swiss-tip:<pack>
 name: swiss-tip
 
 services:
   swiss-tip:
-    image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip:${SWISSTIP_PACK:-mvp-zurich}-slim
-    command: ["--semantic-index", "/srv/swiss-tip/semantic-index.json"]
+    image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip:${SWISSTIP_PACK:-mvp-zurich}
+    # A name without a value reaches the container only when .env sets it; unset, the image decides.
     environment:
-      - SWISSTIP_CONNECTORS=${SWISSTIP_CONNECTORS:-}
-    restart: unless-stopped
-
-  embeddings:
-    image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip-ollama:qwen3-embedding-0.6b
-    network_mode: "service:swiss-tip"
-    restart: unless-stopped
-
-  calendar:
-    profiles: ["calendar"]
-    image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip-calendar:${SWISSTIP_PACK:-mvp-zurich}
-    network_mode: "service:swiss-tip"
+      - SWISSTIP_CONNECTORS
     restart: unless-stopped
 
   demo:
