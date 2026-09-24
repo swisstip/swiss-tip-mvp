@@ -113,21 +113,23 @@ class TemplateTests(unittest.TestCase):
         self.assertEqual(secret["Condition"], "HostDemo")
         self.assertEqual(secret["Properties"]["GenerateSecretString"]["If"][0], "DemoPasswordGiven")
 
-    def test_the_calendar_connector_shares_the_server_namespace_behind_its_profile(self):
+    def test_one_pack_image_carries_the_model_and_the_calendar(self):
         compose = yaml.safe_load(text(HERE / "compose.yaml"))
-        calendar = compose["services"]["calendar"]
-        self.assertEqual(calendar["profiles"], ["calendar"])
-        self.assertEqual(calendar["network_mode"], "service:swiss-tip")
-        self.assertNotIn("ports", calendar)
-        self.assertIn("SWISSTIP_CONNECTORS=${SWISSTIP_CONNECTORS:-}", compose["services"]["swiss-tip"]["environment"])
-        # The profile list and the connector address follow the parameter; the address is loopback, nothing else.
-        profiles = self.variables["Profiles"]["If"]
-        self.assertEqual(profiles[0], "HostDemo")
-        self.assertEqual(profiles[1]["If"], ["HostCalendar", "demo,calendar", "demo"])
-        self.assertEqual(profiles[2]["If"], ["HostCalendar", "calendar", ""])
-        self.assertIn('if [ "$CALENDAR" = yes ]; then\n  echo "SWISSTIP_CONNECTORS=http://127.0.0.1:8100" >> .env', self.rest)
+        # The server, the web interface and Caddy: no sidecar, no connector container, and the image is not slim.
+        self.assertEqual(set(compose["services"]), {"swiss-tip", "demo", "caddy"})
+        server = compose["services"]["swiss-tip"]
+        self.assertEqual(server["image"], "${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip:${SWISSTIP_PACK:-mvp-zurich}")
+        self.assertNotIn("command", server)
+        # The variable without a value: unset in .env, the image starts its own connector; set, even empty, it wins.
+        self.assertEqual(server["environment"], ["SWISSTIP_CONNECTORS"])
+        self.assertEqual(self.variables["Profiles"]["If"], ["HostDemo", "demo", ""])
+        self.assertIn('if [ "$CALENDAR" = no ]; then\n  echo "SWISSTIP_CONNECTORS=" >> .env', self.rest)
         self.assertIn("CALENDAR='${Calendar}'", self.head)
         self.assertEqual(self.template["Parameters"]["Calendar"]["AllowedValues"], ["yes", "no"])
+        # The watchdog restarts the server when the model inside it does not answer.
+        watchdog = heredoc(self.rest, "SWISSTIP_WATCHDOG")
+        self.assertIn("http://127.0.0.1:11434/api/version", watchdog)
+        self.assertIn("docker compose restart swiss-tip", watchdog)
 
     def test_the_welcome_panel_is_downloaded_or_generic_and_mounted_read_only(self):
         compose = yaml.safe_load(text(HERE / "compose.yaml"))

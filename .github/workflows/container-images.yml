@@ -68,7 +68,7 @@ on:
       swisstip_mcp_version:
         description: swisstip-mcp version (the tag of both MCP images in ghcr.io)
         type: string
-        default: 0.3.1
+        default: 0.3.2
       package_index:
         description: Index the check client is installed from; testpypi rehearses a version that is not released yet
         type: choice
@@ -211,9 +211,13 @@ jobs:
             # The release image: swiss-tip:<release_id>, swiss-tip:content-<digest> and the pack's moving tag swiss-tip:<pack>.
             tags="$PACK_IMAGE:$release_id $PACK_IMAGE:content-${digest:0:12} $PACK_IMAGE:$pack"
             tag_args=""; for tag in $tags; do tag_args="$tag_args -t $tag"; done
-            # The build itself fails unless the release is ready and a check search runs hybrid on the bundled model.
-            docker build -f "docker/$pack/Dockerfile" \
-              --build-arg BASE_IMAGE="$MCP_IMAGE:$VERSION" \
+            # The build itself fails unless the release is ready and a check search runs hybrid on the bundled model,
+            # and, for a pack with datasets, unless every bundle registers with the server through the calendar
+            # connector the image carries beside it (the second build context "datasets").
+            datasets_args=""
+            if ls datasets/"$pack"/*/dataset.json > /dev/null 2>&1; then datasets_args="--build-context datasets=datasets/$pack"; fi
+            docker build -f "docker/$pack/Dockerfile" $datasets_args \
+              --build-arg BASE_IMAGE="$MCP_IMAGE:$VERSION" --build-arg PACKAGE_INDEX="$INDEX_URL" \
               --build-arg RELEASE_ID="$release_id" --build-arg RELEASE_CONTENT_SHA256="$digest" \
               --build-arg REVISION="$GITHUB_SHA" \
               $tag_args "releases/$pack"
@@ -224,7 +228,7 @@ jobs:
             echo "$pack search mode: $mode"
             if [ "$mode" != hybrid ]; then docker logs "$pack" | tail -40; exit 1; fi
             if [ "$pack" = mvp-zurich ]; then
-              python scripts/test/mcp/check_server.py --url "http://127.0.0.1:$port/mcp"
+              python scripts/test/mcp/check_server.py --url "http://127.0.0.1:$port/mcp" --require-lookup
             fi
             docker rm -f "$pack"
             echo "$tags" >> "$RUNNER_TEMP/push.txt"
@@ -310,7 +314,9 @@ jobs:
           # compose.yaml runs both: every bundle must be bound to its concept.
           versions=$(python -c "import json, glob; print('-'.join(sorted({json.load(open(p, encoding='utf-8'))['manifest']['dataset_version'] for p in glob.glob('datasets/mvp-zurich/*/dataset.json')})))")
           [ -n "$versions" ] || { echo "no dataset bundle under datasets/mvp-zurich"; exit 1; }
-          echo "::group::calendar $versions"
+          # Every bundle the image carries must end up registered with the server, whatever their number.
+          bundles=$(ls -d datasets/mvp-zurich/*/dataset.json | wc -l)
+          echo "::group::calendar $versions ($bundles bundles)"
           tags="$CALENDAR_IMAGE:mvp-zurich $CALENDAR_IMAGE:mvp-zurich-$versions"
           tag_args=""; for tag in $tags; do tag_args="$tag_args -t $tag"; done
           docker build -f docker/mvp-zurich-calendar/Dockerfile \
@@ -326,7 +332,7 @@ jobs:
           docker compose -f code/compose.yaml --profile calendar up -d --wait || { docker compose -f code/compose.yaml --profile calendar logs | tail -60; exit 1; }
           registered=$(curl -fs "http://127.0.0.1:$SWISSTIP_PORT/health" | python -c "import json, sys; c = json.load(sys.stdin)['connectors']; print(c[0]['status'], len(c[0]['registered']), len(c[0]['rejected']))")
           echo "server connectors: $registered"
-          [ "$registered" = "ok 5 0" ] || { docker compose -f code/compose.yaml --profile calendar logs | tail -60; exit 1; }
+          [ "$registered" = "ok $bundles 0" ] || { docker compose -f code/compose.yaml --profile calendar logs | tail -60; exit 1; }
           docker compose -f code/compose.yaml --profile calendar down
           echo "$tags" >> "$RUNNER_TEMP/push.txt"
           echo "::endgroup::"
