@@ -19,27 +19,41 @@ The pages that answer these questions are authoritative, but they are
 scattered across dozens of sites, mostly in German, and written for people
 who already know which authority they belong to.
 
-The idea of `mvp-zurich` is one pack that answers across all three levels -
-federal rules, the Canton of Zurich and the City of Zurich - for a foreign
-national living in Zurich.
+`mvp-zurich` is one pack that answers across all three levels - federal
+rules, the Canton of Zurich and the City of Zurich - for a foreign national
+living in Zurich. It is built, reviewed and served.
 
-### Proposed topics
+### Current coverage
+
+**Release `mvp-zurich-2026-09-24-v1`:** 20 topics, 212 concepts and **1,273
+facts, all reviewed by one named person**, cited to 1,531 excerpts (1,363
+German, 114 English, 43 French, 11 Italian) across 336 official documents.
+Source snapshot 23 September 2026, stale from 22 November 2026. Jurisdictions:
+federal rules and arrival registration for all 26 cantons, the full procedures
+of the Canton of Zurich and the City of Zurich, and waste hand-over in the City
+of Lugano. The full, current account - what is served and what is not - is in
+[COVERAGE.md](COVERAGE.md); the running server reports it live through
+`get_coverage` and `/health`.
+
+### Topics
 
 | | |
 | --- | --- |
-| Entry and visas | Residence permits and registration |
-| Cantonal migration offices | Zurich office contacts |
-| First steps and life in the city | Waste and recycling |
-| Parking, vehicles and moving goods | Renting a home |
-| Tax at source | Tax return and household fees |
-| Social insurance, pillar 3a, unemployment | Health and accident insurance |
-| Family allowances and parental leave | Foreign driving licence |
-| Naturalisation | Voting rights |
+| Residence permits and registration | Cantonal migration offices |
+| Zurich office contacts | First steps and life in the City of Zurich |
+| Waste and recycling (City of Zurich) and Lugano hand-over | Parking, vehicles and moving goods |
+| Tax return and household fees | AHV, the pillar system and retirement |
+| Social insurance and pillar 3a | Losing a job, the RAV and unemployment insurance |
+| Tax at source | Foreign driving licence |
+| Health and accident insurance | Naturalisation |
+| Entry and visas | Voting rights |
+| Family allowances and parental leave | Renting a home |
+| Customs: travelling, ordering from abroad, moving goods | Integration offers and German courses |
 
-### Proposed concepts
+### Example concepts
 
 A topic is a heading; a concept is one question a person actually asks, with
-the facts that answer it. Some of the concepts these topics would carry:
+the facts that answer it. Some of the concepts these topics carry:
 
 - **Residence permits and registration** - who issues a permit; registration
   deadlines; short-stay, residence and settlement permits; family reunification.
@@ -54,7 +68,7 @@ the facts that answer it. Some of the concepts these topics would carry:
 - **Renting a home** - what belongs in a tenancy agreement; deposit,
   subletting and termination; rent increases and the reference interest rate.
 
-### Proposed sources
+### Sources
 
 Only official publishers, at the level that actually owns the rule:
 
@@ -108,10 +122,13 @@ Built for the **Swiss {ai} Weeks** hackathon in Zurich, 24 and 25 September
 
 ## Status
 
-- **Served and reviewed:** `mvp-zurich`, the pack described above, with
-  every fact reviewed by one person and an attested readiness record.
-- **Served on request and reviewed:** `mvp-wallisellen`, a municipal pack
-  whose facts an assistant wrote and one person reviewed.
+- **The submission — served and reviewed:** `mvp-zurich`, release
+  `mvp-zurich-2026-09-24-v1`, the pack described above: 20 topics, 212
+  concepts, 1,273 facts, every fact reviewed by one named person, with an
+  attested readiness record.
+- **Proof of concept — frozen:** `mvp-wallisellen` (99 facts, German), a
+  municipal pack whose facts an assistant wrote and one person reviewed;
+  it shows the same tooling builds a second pack and is not extended further.
 - **Checked:** every push that changes a pack replays its acceptance suite
   and regression pack and runs the round trips against the served release
   ([knowledge-bases.yml](.github/workflows/knowledge-bases.yml)); the
