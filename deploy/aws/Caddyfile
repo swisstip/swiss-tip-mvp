@@ -1,0 +1,22 @@
+# Caddy in front of Swiss TIP. A site address that is a domain is served over
+# HTTPS with a certificate Caddy obtains and renews (the DNS name must point
+# at this host, ports 80 and 443 open); :80 is plain HTTP on every name.
+# Upstream names are resolved per request, so the demo site stays
+# configured while the demo container is absent and answers 502 then.
+
+# caddy-start.sh writes auth/mcp.caddy when the MCP site has a name and a
+# password; a pattern that matches no file imports nothing.
+{$SWISSTIP_MCP_SITE} {
+	import /etc/caddy/auth/mcp*.caddy
+	encode zstd gzip
+	reverse_proxy swiss-tip:8000
+	log
+}
+
+# The web interface asks for basic credentials itself (OPENCODE_SERVER_PASSWORD).
+# Its event stream is passed on as it arrives.
+{$SWISSTIP_DEMO_SITE} {
+	reverse_proxy demo:4096 {
+		flush_interval -1
+	}
+}

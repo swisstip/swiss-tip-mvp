@@ -1,0 +1,70 @@
+# Swiss TIP on one public host: the MCP server and the embedding sidecar of
+# the repository's compose.yaml, with Caddy in front as the only published
+# service, and the OpenCode web interface behind the profile "demo". The
+# CloudFormation template beside this file writes it to /opt/swiss-tip with
+# the Caddyfile and an .env; it also runs anywhere else Docker does.
+#
+#   SWISSTIP_MCP_SITE    the MCP server's site address: a domain whose DNS
+#                        points here, served over HTTPS with a certificate
+#                        Caddy obtains, or :80 (default) for plain HTTP
+#   SWISSTIP_DEMO_SITE   the same for the web interface; the default is a
+#                        port that is not published, so it is not served
+#   COMPOSE_PROFILES     demo to start the web interface, which then refuses
+#                        to start without OPENCODE_SERVER_PASSWORD; its user
+#                        name is opencode, or OPENCODE_SERVER_USERNAME
+#   SWISSTIP_MCP_USERNAME, SWISSTIP_MCP_PASSWORD
+#                        both set: the MCP site asks for them (basic
+#                        credentials); both empty (default): it is open
+#   SWISSTIP_PACK, SWISSTIP_REGISTRY   as in the repository's compose.yaml
+name: swiss-tip
+
+services:
+  swiss-tip:
+    image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip:${SWISSTIP_PACK:-mvp-zurich}-slim
+    command: ["--semantic-index", "/srv/swiss-tip/semantic-index.json"]
+    restart: unless-stopped
+
+  embeddings:
+    image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip-ollama:qwen3-embedding-0.6b
+    network_mode: "service:swiss-tip"
+    restart: unless-stopped
+
+  demo:
+    profiles: ["demo"]
+    image: ${SWISSTIP_REGISTRY:-ghcr.io/swisstip}/swiss-tip-opencode:latest
+    environment:
+      - SWISSTIP_MCP_URL=http://swiss-tip:8000/mcp
+      - SWISSTIP_REQUIRE_PASSWORD=1
+      - SWISSTIP_DEMO_MODEL
+      - OPENCODE_SERVER_USERNAME
+      - OPENCODE_SERVER_PASSWORD
+      - OPENCODE_API_KEY
+    depends_on:
+      swiss-tip:
+        condition: service_healthy
+    restart: unless-stopped
+
+  caddy:
+    image: caddy:2.11
+    entrypoint: ["/bin/sh", "/etc/caddy/caddy-start.sh"]
+    environment:
+      - SWISSTIP_MCP_SITE=${SWISSTIP_MCP_SITE:-:80}
+      - SWISSTIP_DEMO_SITE=${SWISSTIP_DEMO_SITE:-:4096}
+      - SWISSTIP_MCP_USERNAME
+      - SWISSTIP_MCP_PASSWORD
+    ports:
+      - "${SWISSTIP_HTTP_PORT:-80}:80"
+      - "${SWISSTIP_HTTPS_PORT:-443}:443"
+      - "${SWISSTIP_HTTPS_PORT:-443}:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./caddy-start.sh:/etc/caddy/caddy-start.sh:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - swiss-tip
+    restart: unless-stopped
+
+volumes:
+  caddy-data:
+  caddy-config:

@@ -1,0 +1,14 @@
+# The context is this directory: the baked OpenCode configuration, the start
+# script, the shim with its welcome panel, the health check, the plugin that
+# refuses the built-in tools and the image README. The OpenCode
+# binary comes from the npm registry, the knowledge release from the base
+# image.
+*
+!opencode.json
+!with-opencode.sh
+!opencode_web_shim.py
+!opencode_health.py
+!welcome.js
+!swiss-tip-tools-only.js
+!welcome.json
+!README.md
