@@ -405,8 +405,17 @@ September). With `SWISSTIP_CONNECTORS=` in `.env` the server came up with
 `connectors: []`. With Ollama killed inside the container, the watchdog's
 check failed, its restart brought the model back, and the next check passed.
 `cfn-lint` 1.57.0 reports nothing for the template in `eu-central-1`,
-`eu-central-2` and `us-east-1`. Not yet run in an AWS account, neither on a
-new stack nor as the move of the running host.
+`eu-central-2` and `us-east-1`. The same evening the running host of 23
+September (`t3.small`, Free plan) was moved by hand as
+[Operate](#operate) describes for a host set up with the slim image: three
+containers (server, web interface, Caddy), the server healthy with the
+connector, Ollama and the server started in that order and the model loaded
+in 5.7 s; `/health` over HTTPS named release `mvp-zurich-2026-09-24-v5`
+ready, `search.configured_mode: hybrid` and the connector `ok` with 15
+datasets; `check_server.py --require-hybrid --require-lookup` passed with 0
+failures, every search hybrid and the lookup for 8001 answered 28
+September. The host then had 311 MB of memory available and 758 MB of swap
+in use. A new stack created from the template has not been run.
 
 Not tested: `SslipNames` and a stack created with it, the certificate from
 Let's Encrypt for a domain of one's own, the Route 53 records,
