@@ -310,7 +310,9 @@ jobs:
           # compose.yaml runs both: every bundle must be bound to its concept.
           versions=$(python -c "import json, glob; print('-'.join(sorted({json.load(open(p, encoding='utf-8'))['manifest']['dataset_version'] for p in glob.glob('datasets/mvp-zurich/*/dataset.json')})))")
           [ -n "$versions" ] || { echo "no dataset bundle under datasets/mvp-zurich"; exit 1; }
-          echo "::group::calendar $versions"
+          # Every bundle the image carries must end up registered with the server, whatever their number.
+          bundles=$(ls -d datasets/mvp-zurich/*/dataset.json | wc -l)
+          echo "::group::calendar $versions ($bundles bundles)"
           tags="$CALENDAR_IMAGE:mvp-zurich $CALENDAR_IMAGE:mvp-zurich-$versions"
           tag_args=""; for tag in $tags; do tag_args="$tag_args -t $tag"; done
           docker build -f docker/mvp-zurich-calendar/Dockerfile \
@@ -326,7 +328,7 @@ jobs:
           docker compose -f code/compose.yaml --profile calendar up -d --wait || { docker compose -f code/compose.yaml --profile calendar logs | tail -60; exit 1; }
           registered=$(curl -fs "http://127.0.0.1:$SWISSTIP_PORT/health" | python -c "import json, sys; c = json.load(sys.stdin)['connectors']; print(c[0]['status'], len(c[0]['registered']), len(c[0]['rejected']))")
           echo "server connectors: $registered"
-          [ "$registered" = "ok 5 0" ] || { docker compose -f code/compose.yaml --profile calendar logs | tail -60; exit 1; }
+          [ "$registered" = "ok $bundles 0" ] || { docker compose -f code/compose.yaml --profile calendar logs | tail -60; exit 1; }
           docker compose -f code/compose.yaml --profile calendar down
           echo "$tags" >> "$RUNNER_TEMP/push.txt"
           echo "::endgroup::"
