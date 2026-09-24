@@ -1,0 +1,349 @@
+{
+  "schema_version": "swiss-tip-acceptance-answers/v1",
+  "pack": "mvp-zurich",
+  "release_id": "mvp-zurich-2026-09-16-v2",
+  "content_sha256": "cbb8fa2d8591f2c62ac5de98688ee710c2f10ca7b055f7001e1f744687a326f4",
+  "suite_sha256": "5895a391f2242d7ff0c40f9312f9cc777736b66f7e2be20846cff8659e83c03a",
+  "aggregated_at": "2026-09-16T17:37:14.866554Z",
+  "cases": {
+    "UAT-1": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 0,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"appointment slots can fill up quickly\" (work-first, turn 2) -- no tool output says anything about appointment scarcity or urgency at the Personenmeldeamt; the served fact only states that an appointment is required and registration is impossible without one",
+        "\"municipal registration offices are closed on weekends\" (work-first, turn 2) -- no tool output in this packet says anything about office weekend hours or closures",
+        "\"a different notification procedure applies\" for a contract of 3 months or less (fourteen-days-first, turn 1) -- the eu-short-employment concept that describes a notification procedure was never returned by any search or resolve call in this packet, so nothing served supports this specific claim",
+        "\"confirmed by human reviewers on 14 September 2026\" (fourteen-days-first, turn 2) -- the limitations state the relevant facts were confirmed and read against excerpts on 15 September 2026 (fza-* facts on 16 September), not 14 September",
+        "\"slots can fill up quickly\" (work-first, turn 2) -- no tool output says anything about appointment availability or scheduling pressure at the Personenmeldeamt, only that an appointment is required"
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\zurich-registration\\run-20260916-165257-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\zurich-registration\\run-20260916-170828-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\zurich-registration\\run-20260916-171716-real-remote-r3"
+      ]
+    },
+    "UAT-10": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 2,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "https://www.zh.ch/de/steuern-finanzen/steuern.html -- the answer's closing disclaimer links this general Zurich tax page as the office to consult for complex situations, but no search or resolve call in the packet returned this URL; only the specific quellensteuer/zstb-87-3 pages, estv.admin.ch/de/quellensteuer and the Fedlex QStV page were served"
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\tax-at-source-threshold\\run-20260916-165916-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\tax-at-source-threshold\\run-20260916-171432-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\tax-at-source-threshold\\run-20260916-172416-real-remote-r3"
+      ]
+    },
+    "UAT-11": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 0,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "'empfehle ich, sich nach der Eheschliessung bei der zuständigen cantonalen Steuerbehörde zu melden' -- no tool output supports proactively notifying the cantonal tax office after marriage; the only served contact instruction is to contact the municipality of residence, and only if the tax return fails to arrive.",
+        "'Ich empfehle, nach der Heirat Ihre Wohnortgemeinde und das kantonale Steueramt Zürich über die Situation zu informieren' -- no tool output supports proactively notifying the cantonal tax office after marriage; the served fact only requires contacting the municipality of residence, and only if the tax return fails to arrive.",
+        "'Kontaktieren Sie das kantonale Steueramt Zürich ... um die genaue Abrechnung und die Fristen für die ordentliche Veranlagung zu klären' -- no tool output supports proactively contacting the cantonal tax office after the wedding; the served instruction is only to contact the municipality, and only if the tax return fails to arrive.",
+        "'Danach gelten die regulären Steuersätze des Kantons Zürich (progressiv), und die steuerlichen Umstände beider Ehepartner werden berücksichtigt' -- the tool output explicitly lists 'whether a couple pays more or less tax after the marriage' as not served, so this claim about progressive joint taxation is unsupported."
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\german-tax-at-source-marriage\\run-20260916-170434-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\german-tax-at-source-marriage\\run-20260916-171447-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\german-tax-at-source-marriage\\run-20260916-172435-real-remote-r3"
+      ]
+    },
+    "UAT-12": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 2,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"https://www.zh.ch/de/mobilitaet/fuehrerausweis-fahren-lernen/auslaendischer-fuehrerausweis/auslaendlichen-fuehrerausweis-umtauschen.html\" -- misspells the served URL (...auslaendischen-fuehrerausweis-umtauschen.html); the server never returned this exact URL, as the packet's own unserved-URL check confirms."
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\foreign-licence-twelve-months\\run-20260916-170558-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\foreign-licence-twelve-months\\run-20260916-171502-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\foreign-licence-twelve-months\\run-20260916-172452-real-remote-r3"
+      ]
+    },
+    "UAT-13": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 1,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"A second list (Andorra, Australia, Israel, Japan, Canada, Republic of Korea, Morocco, Monaco, New Zealand, San Marino, Singapore, Taiwan, Tunisia, USA) -- also exchanged without a control drive\" -- no tool output in this session names any such list or countries; the resolved facts state only a binary EU/EEA-state-or-other split.",
+        "\"EU/EFTA states + Great Britain -- exchanged without a test\" -- the served fact names only an EU or EEA state (Iceland, Liechtenstein, Norway); Great Britain is not mentioned in any served fact.",
+        "\"Zurich's 'listed' countries list (which covers places like Australia, Canada, Japan, USA, Singapore, etc.)\" -- the resolve call in this session used licence_state \"other\" and returned no list of listed-state names; no search hit or fact in this packet names any country on that list, so the specific countries are invented."
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\control-drive-licence\\run-20260916-170615-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\control-drive-licence\\run-20260916-171535-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\control-drive-licence\\run-20260916-172508-real-remote-r3"
+      ]
+    },
+    "UAT-14": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 1,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"As a third-country national holding a B permit with gainful employment in Switzerland\" -- the question never states the user is employed and no tool output supplies this; the release separately lists lump-sum-taxed non-working residents as an exemption-adjacent group, so employment status is not a safe assumption."
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\health-insurance-first-months\\run-20260916-170632-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\health-insurance-first-months\\run-20260916-171550-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\health-insurance-first-months\\run-20260916-172525-real-remote-r3"
+      ]
+    },
+    "UAT-15": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 2,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"If you're taxed at source (which is likely as a newcomer)\" -- no tool output supports an inference that the user is likely taxed at source; the served fact only states the rule that applies if a person is taxed at source"
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\premium-reduction-arrival\\run-20260916-170652-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\premium-reduction-arrival\\run-20260916-171606-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\premium-reduction-arrival\\run-20260916-172549-real-remote-r3"
+      ]
+    },
+    "UAT-16": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 0,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"generally possible after 5 years of residence under federal rules\" (converting the B permit to a C permit) -- no tool output in this session covers settlement-permit (C permit) acquisition conditions or timing; only naturalisation conditions were resolved.",
+        "\"typically 5-10 years depending on nationality/treaty... Since you're Turkish, this is likely relevant\" -- no tool output covers C-permit acquisition timing or ties it to Turkish nationality.",
+        "\"the bilateral agreements between Switzerland and Turkey\" -- no tool output mentions any such agreement.",
+        "\"commonly 5 years for EU/EFTA nationals... non-EU nationals like Turkish citizens may need 10 years\" -- no tool output in this session covers settlement-permit acquisition timelines; the later note that the service lacks Turkish-specific criteria does not retract the numbers already asserted."
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\naturalisation-b-permit\\run-20260916-170715-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\naturalisation-b-permit\\run-20260916-171640-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\naturalisation-b-permit\\run-20260916-172604-real-remote-r3"
+      ]
+    },
+    "UAT-17": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 0,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"Gemeinsame Kindererziehung, falls zutreffend\" listed as an integration criterion to check -- no tool output mentions joint child-rearing among the integration conditions",
+        "\"sich an die Einbürgerungsabteilung der Stadt Zürich zu wenden\" -- no tool output names this department; the served facts only refer generically to 'the City of Zurich' conducting the integration interview",
+        "\"eine direkte Rücksprache mit der SEM oder dem Bürgeramt Zürich\" -- no tool output names a 'Bürgeramt Zürich'; the served facts name SEM, the cantonal Gemeindeamt and generically 'the City of Zurich', not a Bürgeramt",
+        "\"Schweizerpartner ist von Anfang an Schweizer/in\" marked as fulfilled (Ja) for the exclusion condition -- the user never stated the spouse's citizenship history and no tool output confirms it; the sibling runs of this case hedge the same point with '(vorausgesetzt)', this one asserts it as settled"
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\german-facilitated-naturalisation\\run-20260916-170806-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\german-facilitated-naturalisation\\run-20260916-171700-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\german-facilitated-naturalisation\\run-20260916-172620-real-remote-r3"
+      ]
+    },
+    "UAT-2e": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 2,
+      "criteria_pass": 0,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "'D-Visum für Erwerbstätige' as the specific visa the user will need -- no tool output names a visa category; the served fact only says a visa may be needed depending on nationality.",
+        "'(Prioritätsprüfung / Bevorzugungsverfahren)' as the name of the employer's market test -- no tool output uses this term for the duty to show no suitable candidate is available.",
+        "'Kurzfristiger Aufenthalt (bis 1 Jahr)' as the L permit's validity period -- no tool output gives a duration for any permit type.",
+        "'Kurzaufenthaltsvisum oder ein nationales Visum für den Zweck der Beschäftigung' as the specific visa route -- no tool output names a visa category, only that one may be needed depending on nationality.",
+        "'Bundesgesetz über die Aus- und Wanderbevölkerung' as the AIG's title, and '(Prioritätsprüfung)' as the market-test's name -- neither wording appears in the served text, which only cites 'AIG Article 11' and describes the duty without naming it.",
+        "'Aufenthaltsbewilligung B, die an die Beschäftigung gebunden ist und jährlich erneuert wird' and the process table's 'Aufenthaltsbewilligung B erhalten | Einwohnergemeinde / SEM' -- no served fact in this session gives renewal terms or names the municipality/SEM as issuer; the served fact names the cantonal migration and labour-market authority as who the employer applies to.",
+        "\"Kurzaufenthaltvisum (Typ C) ... wird bei der schweizerischen Vertretung im Heimatland beantragt\" -- no tool output names a visa type or an application office; the served fact only says a visa may be needed depending on nationality.",
+        "\"Kontingent: ... begrenzt (Jahreskontingent)\" -- the served fact says only that the number of permits is limited, not that it is an annual quota; the expected answer explicitly says no quotas should be given.",
+        "\"Sie wird in der Regel zusammen mit der Arbeitsbewilligung beantragt\" -- no tool output states the B permit is usually applied for jointly with the work permit.",
+        "\"C-Bewilligung (Niederlassungsbewilligung) ... nach mehreren Jahren Aufenthalt\" -- this session's tool output names C only as a card type in the permit-types fact, with no timing rule attached."
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\german-work-permit\\run-20260916-165408-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\german-work-permit\\run-20260916-170925-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\german-work-permit\\run-20260916-171810-real-remote-r3"
+      ]
+    },
+    "UAT-3": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 2,
+      "criteria_pass": 0,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"Contact the Migration Authority (Migration Amt) in the Canton of Zurich\" -- no tool output in this packet names this or any office for handling family-reunification applications.",
+        "\"Contact the cantonal migration authority (Ausländerbehörde) in Zurich\" -- no tool output in this packet names this or any office for handling family-reunification applications.",
+        "\"consult a specialist immigration lawyer (Fachanwalt für Ausländerrecht)\" -- presented as part of the route to follow but this professional title is not served by any tool result.",
+        "\"Prepare documentation proving family relationship (birth certificate, possibly translated and legalised)\" -- the served family-requirements fact only says a confirmation that the family relationship exists is needed; it never names a birth certificate or a translation/legalisation step."
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\family-child-deadline\\run-20260916-165436-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\family-child-deadline\\run-20260916-170953-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\family-child-deadline\\run-20260916-171836-real-remote-r3"
+      ]
+    },
+    "UAT-4": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 0,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"can include factors such as: Length of residence in Switzerland, Degree of integration (language, employment, social ties), Presence of children, Professional and personal circumstances\" -- no tool output enumerates what qualifies as 'important personal reasons'; the served fact only states this is a separate alternative to the three-year rule, without listing criteria for it.",
+        "\"Contact the Migration Authority of the Canton of Zurich (Migration des Kantons Zürich)\" -- the served fact only says to notify \"the cantonal migration authority\"; no tool output supplies this specific office title.",
+        "\"the Migration Authority of the Canton of Zurich (Migration des Kantons Zürich)\" -- the same invented office title; no served fact or citation names this office."
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\marriage-separation\\run-20260916-165452-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\marriage-separation\\run-20260916-171011-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\marriage-separation\\run-20260916-171902-real-remote-r3"
+      ]
+    },
+    "UAT-5": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 0,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"You must apply to your canton's migration office\" -- no tool output names an application office or authority for the C permit.",
+        "\"Third-country nationals like yourself are ... there are no special EU/EFTA shortcuts that apply to you\" -- no tool output states this exclusion rule for third-country nationals.",
+        "\"Apply for the C permit at your local migration office (Ausländerbehörde) well before your current B permit expires\" -- no tool output names an application office or timing procedure for the C permit.",
+        "\"The final decision rests with your cantonal migration office\" / \"I recommend contacting your cantonal migration office\" -- no tool output in this packet names a migration office or decision authority for the C permit."
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\settlement-after-l-permit\\run-20260916-165539-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\settlement-after-l-permit\\run-20260916-171042-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\settlement-after-l-permit\\run-20260916-171920-real-remote-r3"
+      ]
+    },
+    "UAT-6": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 0,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"you typically have a 14-day grace period to report the change\" -- no tool output states any reporting deadline.",
+        "\"a period (often up to 6 months for EU/EFTA nationals) to find new employment before your permit status could be affected\" -- no tool output states a job-search grace period.",
+        "\"The Canton of Zurich's Migration Services (Migrationsdienste)\" / \"the Migrationsdienste des Kantons Zürich\" -- the served fact and excerpt name only the generic cantonal migration authority, not this specific office.",
+        "\"distinction between receiving ALV unemployment insurance ... and social assistance (Sozialhilfe/Wohngeld from the municipality)\" -- no tool output mentions ALV or Wohngeld or draws this distinction",
+        "\"AIG Article 33, paragraphs 3-5\" -- the served permit-b facts describe the renewal and integration rule but cite no paragraph numbers",
+        "\"registrations with RAV — Regionales Arbeitsvermittlungszentrum\" -- RAV is not named in any tool output",
+        "\"Keep your health insurance — it's mandatory regardless of employment status\" -- no health-insurance concept was served in this session"
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\social-assistance-permit\\run-20260916-165633-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\social-assistance-permit\\run-20260916-171137-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\social-assistance-permit\\run-20260916-172022-real-remote-r3"
+      ]
+    },
+    "UAT-7": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 0,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"Visum, wo erforderlich isch (für Brasilianer isch dä in der Regel nötig)\" (a visa is normally required for Brazilians) -- inferred from the spouse's nationality; the served fact only says 'a visa where required' without naming Brazil",
+        "\"Visum (für Brasilianer wird's bruucht – das wird vor de Aiisereis über d'Schweizer Botschaft z São Paulo uusgstellt)\" -- no tool output names an embassy, consulate, or pre-entry visa-issuing procedure",
+        "\"Si als Schwiizer Schponsor bewerfet de Familienachzug vor de Aiisereis bei de SEM ... die prüft d Voraussetzige\" (the sponsor applies to SEM, which reviews the conditions) -- no tool output gives SEM this role for family-swiss/family-requirements; SEM's application role is served only for the unrelated facilitated-naturalisation concept, and the expected route is the cantonal migration office",
+        "\"De Nöi bechunnt e B-Ufenthaltsbewillig\" (the spouse receives a B permit) -- the served fact only says the permit type follows the sponsor's own permit, without naming B for a Swiss sponsor",
+        "\"d Partneri bekommt i de Regel en Niederlassungsbewilligung (C)\" (the spouse typically gets a settlement permit C) -- no tool output states a C permit; the served fact only says the permit type follows the sponsor's own permit",
+        "\"innerhalb vo 14 Täg im Personenmeldeamt vo de Wohngmäind aamelde\" applied to the spouse's own arrival -- the only served 14-day registration deadline is for third-country workers taking up employment (ch.ch 'in der Schweiz arbeiten'), not a family member joining a Swiss citizen",
+        "\"über d Schwyzer Botschaft\" (filed via the Swiss Embassy) -- no tool output names an embassy or pre-entry filing office",
+        "\"kene Arbeitgebüür nötig\" (no employer fee needed) -- no tool output discusses employer fees for this scenario; appears carried over from the unrelated third-country-work-procedure concept"
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\swiss-german-family-permit\\run-20260916-165656-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\swiss-german-family-permit\\run-20260916-171207-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\swiss-german-family-permit\\run-20260916-172149-real-remote-r3"
+      ]
+    },
+    "UAT-8": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 1,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"They count toward your AHV pension if you ever return to Switzerland\" -- ahv-pension-abroad was only an unresolved search hit (label/description) in this session; no resolve call returned a fact that EU/EFTA nationals' contributions carry over to a future AHV pension.",
+        "\"they generally continue to count toward any future AHV pension entitlement you may claim later (whether in Switzerland or under a bilateral agreement)\" -- ahv-pension-abroad was only a search hit label in this session (never resolved), so no served fact establishes that an EU/EFTA leaver's contributions carry over to a future pension."
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\ahv-refund-leaving\\run-20260916-165750-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\ahv-refund-leaving\\run-20260916-171356-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\ahv-refund-leaving\\run-20260916-172337-real-remote-r3"
+      ]
+    },
+    "UAT-9": {
+      "runs": 3,
+      "graded": 3,
+      "trap_held": 3,
+      "criteria_pass": 1,
+      "models": [
+        "opencode/ling-3.0-flash-fin-free"
+      ],
+      "unsupported_claims": [
+        "\"Germany generally requires compulsory occupational pension coverage, so this likely applies to you as an employee\" -- the resolve result lists 'whether the person remains compulsorily insured in the destination state' as not_served; no tool output states German coverage requirements",
+        "\"(e.g., if you're self-employed)\" given as the example of not being compulsorily insured in Germany -- no tool output supports self-employment as the relevant test",
+        "\"are you an employee earning above the marginal earnings threshold\" -- invents a specific German legal threshold that no tool output mentions",
+        "\"Since you're starting a job in Munich, you will almost certainly be compulsorily covered by German pension insurance\" -- the resolve result lists 'whether the person remains compulsorily insured in the destination state' as not_served; no tool output supports this near-certainty",
+        "\"Not all pension funds split their capital this way, so you'd need to check with your fund whether that portion exists\" -- no served fact describes how pension funds structure mandatory vs. extra-mandatory capital"
+      ],
+      "run_folders": [
+        ".local\\mock-mcp\\runs-image-2026-09-16\\pension-fund-cash-out\\run-20260916-165810-real-remote-r1",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\pension-fund-cash-out\\run-20260916-171411-real-remote-r2",
+        ".local\\mock-mcp\\runs-image-2026-09-16\\pension-fund-cash-out\\run-20260916-172400-real-remote-r3"
+      ]
+    }
+  }
+}
