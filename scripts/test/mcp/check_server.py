@@ -3,6 +3,7 @@
     ./.venv/Scripts/python.exe scripts/test/mcp/check_server.py [--release releases/mvp-zurich/release.json]
     ./.venv/Scripts/python.exe scripts/test/mcp/check_server.py --url https://<host>/mcp
     ./.venv/Scripts/python.exe scripts/test/mcp/check_server.py --url http://127.0.0.1:8000/mcp --require-hybrid
+    ./.venv/Scripts/python.exe scripts/test/mcp/check_server.py --url http://127.0.0.1:8000/mcp --require-lookup
     ./.venv/Scripts/python.exe scripts/test/mcp/check_server.py --url https://<host>/mcp --username ... --password ...
 
 Without --url it starts the server as a stdio subprocess; with --url it
@@ -12,7 +13,10 @@ URL) and also checks the /health route beside the endpoint; --username and
 asks for them (deploy/aws). With
 --require-hybrid every search of the round trip must report retrieval_mode
 hybrid, which proves that the server reaches its embedding model (the
-embedding sidecar of compose.yaml, or the Ollama of a pack image). It lists the tools, reads the coverage root
+embedding sidecar of compose.yaml, or the Ollama of a pack image). The fifth tool lookup is listed while the
+server has the pack's calendar connector (the pack image carries it); when it is listed, resolve must offer the
+Zurich calendars and a lookup must answer with a date, and --require-lookup fails a server without it. It lists
+the tools, reads the coverage root
 and topic pages, runs search and resolve for the two standing cases
 (Czech-citizen registration in Zurich, a third-country national's work
 permit asked in German), the Swiss citizen's family question
@@ -108,7 +112,7 @@ async def connect(release: Path, url: str | None, auth: tuple[str, str] | None =
 
 
 async def run(release: Path, url: str | None = None, require_hybrid: bool = False,
-              auth: tuple[str, str] | None = None) -> int:
+              auth: tuple[str, str] | None = None, require_lookup: bool = False) -> int:
     failures = []
     retrieval_modes = []
 
@@ -135,8 +139,10 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             init = await session.initialize()
             check(f"initialize: server {init.serverInfo.name} {init.serverInfo.version}", init.serverInfo.name == "swiss-tip")
             tools = (await session.list_tools()).tools
-            check("tools advertised: " + ", ".join(t.name for t in tools),
-                  [t.name for t in tools] == ["get_coverage", "search", "resolve", "get_evidence"])
+            four = ["get_coverage", "search", "resolve", "get_evidence"]
+            names = [t.name for t in tools]
+            check("tools advertised: " + ", ".join(names),
+                  names == four + ["lookup"] if require_lookup else names in (four, four + ["lookup"]))
 
             root = await session.call_tool("get_coverage", {})
             body = root.structuredContent
@@ -453,6 +459,18 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             other = await session.call_tool("get_coverage", {"release_id": "other"})
             check("unknown release_id -> isError RELEASE_UNAVAILABLE",
                   other.isError and other.structuredContent["error"]["code"] == "RELEASE_UNAVAILABLE")
+            if "lookup" in names:
+                # The Zurich organic-waste calendar behind its concept, as LOOKUP-1 of the acceptance suite asks it.
+                offered = await session.call_tool("resolve", {"concept_ids": ["city-zurich-organic-paper-cardboard"],
+                                                              "jurisdiction": {"city": "Zurich"}})
+                lookups = [] if offered.isError else offered.structuredContent["results"][0].get("lookups") or []
+                check(f"resolve offers the Zurich calendars: {', '.join(item['dataset_id'] for item in lookups)}",
+                      "zurich-waste-bioabfall" in [item["dataset_id"] for item in lookups])
+                found = await session.call_tool("lookup", {"dataset_id": "zurich-waste-bioabfall", "postal_code": "8001",
+                                                           "limit": 1})
+                events = [] if found.isError else found.structuredContent.get("events") or []
+                check(f"lookup of the next organic waste collection in 8001: {events[0]['date'] if events else found.structuredContent}",
+                      not found.isError and found.structuredContent["status"] == "SUPPORTED" and len(events) == 1)
             if require_hybrid:
                 check(f"all {len(retrieval_modes)} searches ran hybrid: {sorted(set(map(str, retrieval_modes)))}",
                       retrieval_modes and set(retrieval_modes) == {"hybrid"})
@@ -467,13 +485,15 @@ def main(argv=None) -> int:
     parser.add_argument("--url", help="Streamable HTTP endpoint of a running server, for example http://127.0.0.1:8000/mcp")
     parser.add_argument("--require-hybrid", action="store_true",
                         help="fail unless every search reports retrieval_mode hybrid (a server with its embedding model)")
+    parser.add_argument("--require-lookup", action="store_true",
+                        help="fail unless the server lists lookup (a server with the pack's calendar connector)")
     parser.add_argument("--username", help="with --url: the name of basic credentials, when the endpoint asks for them")
     parser.add_argument("--password", help="with --url: the password that goes with --username")
     args = parser.parse_args(argv)
     if bool(args.username) != bool(args.password) or (args.username and not args.url):
         parser.error("--username and --password go together, and with --url")
     auth = (args.username, args.password) if args.username else None
-    return asyncio.run(run(args.release.resolve(), args.url, args.require_hybrid, auth))
+    return asyncio.run(run(args.release.resolve(), args.url, args.require_hybrid, auth, args.require_lookup))
 
 
 if __name__ == "__main__":

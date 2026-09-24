@@ -68,7 +68,7 @@ on:
       swisstip_mcp_version:
         description: swisstip-mcp version (the tag of both MCP images in ghcr.io)
         type: string
-        default: 0.3.1
+        default: 0.3.2
       package_index:
         description: Index the check client is installed from; testpypi rehearses a version that is not released yet
         type: choice
@@ -211,9 +211,13 @@ jobs:
             # The release image: swiss-tip:<release_id>, swiss-tip:content-<digest> and the pack's moving tag swiss-tip:<pack>.
             tags="$PACK_IMAGE:$release_id $PACK_IMAGE:content-${digest:0:12} $PACK_IMAGE:$pack"
             tag_args=""; for tag in $tags; do tag_args="$tag_args -t $tag"; done
-            # The build itself fails unless the release is ready and a check search runs hybrid on the bundled model.
-            docker build -f "docker/$pack/Dockerfile" \
-              --build-arg BASE_IMAGE="$MCP_IMAGE:$VERSION" \
+            # The build itself fails unless the release is ready and a check search runs hybrid on the bundled model,
+            # and, for a pack with datasets, unless every bundle registers with the server through the calendar
+            # connector the image carries beside it (the second build context "datasets").
+            datasets_args=""
+            if ls datasets/"$pack"/*/dataset.json > /dev/null 2>&1; then datasets_args="--build-context datasets=datasets/$pack"; fi
+            docker build -f "docker/$pack/Dockerfile" $datasets_args \
+              --build-arg BASE_IMAGE="$MCP_IMAGE:$VERSION" --build-arg PACKAGE_INDEX="$INDEX_URL" \
               --build-arg RELEASE_ID="$release_id" --build-arg RELEASE_CONTENT_SHA256="$digest" \
               --build-arg REVISION="$GITHUB_SHA" \
               $tag_args "releases/$pack"
@@ -224,7 +228,7 @@ jobs:
             echo "$pack search mode: $mode"
             if [ "$mode" != hybrid ]; then docker logs "$pack" | tail -40; exit 1; fi
             if [ "$pack" = mvp-zurich ]; then
-              python scripts/test/mcp/check_server.py --url "http://127.0.0.1:$port/mcp"
+              python scripts/test/mcp/check_server.py --url "http://127.0.0.1:$port/mcp" --require-lookup
             fi
             docker rm -f "$pack"
             echo "$tags" >> "$RUNNER_TEMP/push.txt"

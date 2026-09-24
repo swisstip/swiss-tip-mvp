@@ -1303,7 +1303,7 @@ does not speak for their canton on those points.
   `strong` for a user in Bern, who learns from `published_elsewhere` and the
   guidance that it is not published for their place. And the code is in
   packages 0.2.5 and later: 0.2.4 and an image built on it reject a `search`
-  that carries the field. The image Dockerfiles pin 0.3.1, which is not on
+  that carries the field. The image Dockerfiles pin 0.3.2, which is not on
   PyPI yet, and build only once it is published.
   Without the field, a question from another canton or municipality ranks the
   Canton and City of Zurich concepts next to the federal ones, and `resolve`

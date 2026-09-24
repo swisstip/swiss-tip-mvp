@@ -7,8 +7,9 @@ ghcr.io/swisstip/swiss-tip:mvp-zurich-2026-09-18-v10
 Swiss TIP, the Swisscom Trusted Information Platform, is an MCP (Model
 Context Protocol) server that gives AI assistants grounded access to
 official Swiss public information. This image contains the server, one
-curated, versioned knowledge release and a bundled local embedding model
-for hybrid concept search, and nothing else: no credentials and no network
+curated, versioned knowledge release, a bundled local embedding model
+for hybrid concept search and the calendar connector with the pack's
+waste-collection calendars, and nothing else: no credentials and no network
 access are needed to serve it. The tags ending in `-slim` name the same
 server and release without the embedding model, which a second container
 supplies (see "Two containers" below).
@@ -17,7 +18,7 @@ The server does not write answers. The assistant that calls it interprets
 the question and composes the reply. The server supplies the facts that
 apply to a stated place, date and situation, the exact excerpts of the
 official pages they come from, the citations, and a typed statement of what
-is missing or not covered. It offers four read-only tools:
+is missing or not covered. It offers five read-only tools:
 
 | Tool | What it returns |
 | --- | --- |
@@ -25,6 +26,7 @@ is missing or not covered. It offers four read-only tools:
 | `search` | Concepts matching a question, in English or German, with the context each concept needs; lexical matching fused with the bundled embedding model's ranking |
 | `resolve` | For concept IDs, the place the user lives in (a canton and a city by name, or their codes), a date and the user's situation: the facts, each with the basis of its excerpt (a federal act and its article, an ordinance, the free-movement agreement, a cantonal directive, an authority's guidance, a portal summary), the citations with the publisher's level and jurisdiction, and a status: `SUPPORTED`, `NEEDS_CONTEXT` (naming the missing field), `OUT_OF_COVERAGE` (naming what is covered) or `STALE` |
 | `get_evidence` | The full original-language excerpts behind facts or citations, each with its basis and publisher |
+| `lookup` | The next collection dates of a waste-collection calendar (Zurich by postal code, Basel and St. Gallen by collection zone) that `resolve` offers on a waste concept, with the publisher and licence of the open dataset |
 
 ## The bundled knowledge base
 
@@ -313,6 +315,11 @@ Options:
   loopback address only). `search.configured_mode` in `/health` reports it;
   the first search after a start loads the model and takes a few seconds.
   The image is about 700 MB and starts in about ten seconds.
+- **Calendars.** The calendar connector runs beside the server in the
+  same container, on the loopback address only, and is registered before
+  the server starts: `connectors` in `/health` lists its 15 calendars.
+  `docker run --rm -p 8000:8000 -e SWISSTIP_CONNECTORS= <image>` leaves it
+  out, and the server lists the four other tools.
 - **Port.** The server listens on `$PORT`, 8000 by default:
   `docker run --rm -e PORT=9000 -p 9000:9000 <image>`. Hosts that set `PORT`
   themselves (for example Google Cloud Run) need no extra setting.
