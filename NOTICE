@@ -1,0 +1,16 @@
+Swiss TIP - Swisscom Trusted Information Platform
+Copyright 2026 The UBS Hackathon 2026 team: Alexander Bobrovsky and contributors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The source catalogues under releases/ contain URLs and planning metadata
+only. A release bundle that quotes excerpts of official publications of the
+Swiss Confederation, the cantons or municipalities reproduces those texts as
+cited evidence with their source URLs and access times; they remain the
+property of their publishers and are not relicensed under the Apache
+License. Consult the publishers' terms of use before redistributing them.
+
+The place register under config/places/ is derived from the register of
+municipalities of the Federal Statistical Office (Amtliches
+Gemeindeverzeichnis), read from its public API; the URL, access date and
+hash of the response are recorded in the file.
