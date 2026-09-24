@@ -1,6 +1,6 @@
 # Coverage
 
-**Last update:** 23 September 2026
+**Last update:** 24 September 2026
 
 What the Swiss TIP MCP server serves today, and what it does not. This file
 describes the committed release that the server loads by default; it is
@@ -10,16 +10,16 @@ submission is `mvp-zurich`; `mvp-wallisellen` was a proof of concept that a
 second, municipal pack can be built with the same tooling, is frozen at its
 attested release and is not extended, tested or documented further.
 
-**Release:** `mvp-zurich-2026-09-23-v27` (pack `mvp-zurich`, KB1)<br>
-**Content digest:** `d3e5c31a0715bd41647378f829b93fb297eccef16f98bbf1fd59161e6566c94c`<br>
+**Release:** `mvp-zurich-2026-09-24-v1` (pack `mvp-zurich`, KB1)<br>
+**Content digest:** `baa03da3f709db46598be6e9515fbe8bf6cb8a3ae2524683ee02388b136fe0fc`<br>
 **Snapshot date:** 23 September 2026, the latest access date of a cited page
-(64 of the 334 were saved on 23 September, 67 on 22 September, 10 on 19
+(66 of the 336 were saved on 23 September, 67 on 22 September, 10 on 19
 September, 25 on 18 September, 47 on 17 September, 49 on 15 September, 66 on
 11 September and 6 on 10 or 14 September); maximum age 60 days, stale from
 22 November 2026<br>
-**Contents:** 20 topics, 211 concepts, 1,268 facts, 1,526 evidence excerpts
-(1,261 German, 114 English), 272 cited documents<br>
-**Review:** all 1,144 facts are `human-reviewed` by one named reviewer, confirmed
+**Contents:** 20 topics, 212 concepts, 1,273 facts, 1,531 evidence excerpts
+(1,363 German, 114 English, 43 French, 11 Italian), 336 cited documents<br>
+**Review:** all 1,273 facts are `human-reviewed` by one named reviewer, confirmed
 in the console: the 104 of the residence and contacts topics on 14 September
 2026, the 149 of the five topics added on 15 September 2026 that day, the
 37 of the 13 `fza-*` concepts, drafted from the Agreement on the Free Movement
@@ -53,7 +53,9 @@ is a rule or an amount - then the 39 facts carrying a number, then nine
 recorded judgement calls. The 90 facts of the AHV and pillars wave followed the
 same day, against a brief that put first the two rules the pages turned out not
 to state, then a defect in a publisher's own page that the curation preserves
-rather than hides, then the 22 facts carrying a number. Not
+rather than hides, then the 22 facts carrying a number. The 5 facts of
+`city-lugano-waste-disposal`, added on 23 September 2026, were confirmed on
+24 September 2026. Not
 a legal review (see [LIMITATIONS.md](LIMITATIONS.md))<br>
 **Places:** the release embeds a place register, so a caller names the
 user's place instead of a code: Switzerland, the 26 cantons and the 2,110
@@ -61,8 +63,8 @@ municipalities of the Federal Statistical Office's register of
 municipalities (snapshot of 18 September 2026), with 115 other-language
 names on 50 of them (see "Jurisdictions and languages")<br>
 **Readiness:** the release is **attested**. `readiness.json` names
-`mvp-zurich-2026-09-23-v27`, attested on 23 September 2026 by the reviewer who
-confirmed its 1,268 facts, recording the content digest above and the digest of
+`mvp-zurich-2026-09-24-v1`, attested on 24 September 2026 by the reviewer who
+confirmed its 1,273 facts, recording the content digest above and the digest of
 the acceptance suite; all six readiness gates passed. It supersedes
 `mvp-zurich-2026-09-23-v19`, so the server with `--require-ready` and the pack
 image now serve registration on arrival in all 26 cantons as well as the
@@ -123,7 +125,7 @@ told to say so and not to answer from general knowledge.
 | Federal | `CH` |
 | Cantonal | all 26 cantons (`CH-AG` to `CH-ZH`), each carrying the migration-office contact and registration on arrival; only `CH-ZH` carries procedures beyond those |
 | Federal, for daily life | `CH` also carries the radio and television fee (SERAFE) |
-| Municipal | `CH-ZH-261` (City of Zurich) |
+| Municipal | `CH-ZH-261` (City of Zurich); `CH-TI-5192` (City of Lugano) for how waste is handed over only |
 
 Every canton carries two things of its own: its migration-office contact,
 and how a person registers on arrival - the period, the office that receives
@@ -374,7 +376,7 @@ schooling is served as kindergarten entry, the school holidays of 2026/27
 and 2027/28 and the city's information in other languages, not as the
 school system.
 
-### Waste and recycling in the City of Zurich (`waste`) - 7 concepts
+### Waste and recycling in the City of Zurich, and waste hand-over in Lugano (`waste`) - 8 concepts
 
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
@@ -385,9 +387,15 @@ school system.
 | `city-zurich-recycling-centres` | Recycling centres of the City of Zurich | CH-ZH-261 | 5 |
 | `city-zurich-recycling-points` | Glass, metal, oil, textiles and plastic recycling in the City of Zurich | CH-ZH-261 | 4 |
 | `city-zurich-hazardous-waste` | Hazardous waste in the City of Zurich | CH-ZH-261 | 3 |
+| `city-lugano-waste-disposal` | Handing over household, recyclable and bulky waste in the City of Lugano | CH-TI-5192 | 5 |
 
 Collection days are not served for a street: the facts point to the
-personal disposal calendar and the ERZ app, which compute them.
+personal disposal calendar and the ERZ app, which compute them. Lugano
+publishes no collection day for residents: its facts, four from the municipal
+waste ordinance (Ordinanza 4.1.1) and one from the city's waste page, say that
+household waste goes in the red official bags into containers usable as a rule
+on every day, where recyclables, bulky and garden waste go, and how to get the
+yearly bulky-waste pickup. No other city outside Zurich is served for waste.
 
 ### Parking and vehicles (`vehicles-parking`) - 2 concepts
 

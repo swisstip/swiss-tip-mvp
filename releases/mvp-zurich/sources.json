@@ -1,7 +1,7 @@
 {
   "schema_version": "source-catalog/v1",
   "artifact_id": "residence-sources-mvp-zurich",
-  "version": "draft-12",
+  "version": "draft-13",
   "knowledge_space_id": "hackathon",
   "title": "Residence permits, moving to Switzerland and naturalisation - MVP sources (federal and Canton Zurich)",
   "status": "SOURCES_ONLY",
@@ -35,7 +35,7 @@
       "CH-ZG",
       "CH-ZH"
     ],
-    "description": "MVP scope: Swiss federal foundations for residence permits plus Canton of Zurich and City of Zurich entry points, extended on 15 September 2026 with the topics a newly arrived resident meets next (social insurance on arrival and departure, tax at source, the foreign driving licence, health insurance and premium reduction) and with naturalisation, at the same three levels. Other cantons are in the swiss-residence pack. Extended on 17 September 2026 with the contact pages of the Zurich offices these topics name: addresses, opening and telephone hours and directions where published. Extended again on 17 September 2026 with the daily-life duties of a newcomer in the City of Zurich: waste, parking and vehicles, dogs, school, taxes, the radio and television fee and emergencies. Extended on 18 September 2026 with voting rights and the Zurich tax-at-source tariff pages, and with the questions of expats settling in: family allowances and parental leave, housing and rent, customs on moving, marriage, pillar 3a, unemployment, accident insurance and leaving the City of Zurich. Extended on 23 September 2026 with the registration route of all 26 cantons: who takes the registration of an arriving resident and in what order, the deadline each canton states for it, how the canton takes a permit application, its online services and what it publishes about moving in from another canton. Only those subjects are cantonal at that breadth; every other topic of the pack remains federal plus Canton and City of Zurich. Nine cantons publish the deadline only in cantonal law, so consolidated statutes are catalogued beside the service pages.",
+    "description": "MVP scope: Swiss federal foundations for residence permits plus Canton of Zurich and City of Zurich entry points, extended on 15 September 2026 with the topics a newly arrived resident meets next (social insurance on arrival and departure, tax at source, the foreign driving licence, health insurance and premium reduction) and with naturalisation, at the same three levels. Other cantons are in the swiss-residence pack. Extended on 17 September 2026 with the contact pages of the Zurich offices these topics name: addresses, opening and telephone hours and directions where published. Extended again on 17 September 2026 with the daily-life duties of a newcomer in the City of Zurich: waste, parking and vehicles, dogs, school, taxes, the radio and television fee and emergencies. Extended on 18 September 2026 with voting rights and the Zurich tax-at-source tariff pages, and with the questions of expats settling in: family allowances and parental leave, housing and rent, customs on moving, marriage, pillar 3a, unemployment, accident insurance and leaving the City of Zurich. Extended on 23 September 2026 with the registration route of all 26 cantons: who takes the registration of an arriving resident and in what order, the deadline each canton states for it, how the canton takes a permit application, its online services and what it publishes about moving in from another canton. Only those subjects are cantonal at that breadth; every other topic of the pack remains federal plus Canton and City of Zurich. Nine cantons publish the deadline only in cantonal law, so consolidated statutes are catalogued beside the service pages. Extended on 23 September 2026 with the waste rules of the City of Lugano: how household waste, separately collected waste and bulky waste are handed over where no collection calendar is published. Every other daily-life topic remains City of Zurich only.",
     "exclusions": [
       "Tourism unrelated to residence",
       "Full asylum/protection casework",
@@ -473,7 +473,14 @@
       "vd-arrival-other-canton",
       "vd-population-office",
       "ne-permit-management",
-      "ne-studying"
+      "ne-studying",
+      "lugano-waste",
+      "ch-sem-en",
+      "ch-bag-en",
+      "ch-bazg-en",
+      "ch-seco-en",
+      "ch-serafe-en",
+      "ch-ahv-iv-en"
     ],
     "multilingual": [
       "ch-sem-residence-de",
@@ -530,7 +537,8 @@
       "zurich-city-taxes",
       "zh-vehicles",
       "ch-serafe-household-fee",
-      "zurich-city-emergency"
+      "zurich-city-emergency",
+      "lugano-waste"
     ],
     "entry": [
       "ch-sem-entry",
@@ -736,6 +744,14 @@
       "vd-population-office",
       "ne-permit-management",
       "ne-studying"
+    ],
+    "english": [
+      "ch-sem-en",
+      "ch-bag-en",
+      "ch-bazg-en",
+      "ch-seco-en",
+      "ch-serafe-en",
+      "ch-ahv-iv-en"
     ]
   },
   "build_notes": [
@@ -754,7 +770,9 @@
     "Extension of 17 September 2026 (entry and visas): the SEM pages on entry with and without a visa, the 90-in-180-days stay rule, ETIAS, the Entry/Exit System, the Schengen area and the visa application, and the FDFA visa page are explicit links in sources.md, under the existing seeds ch-sem-entry and ch-sem-entry-faq and the new seed ch-eda-visa. The Canton of Zurich pages on family reunification by holders of an L permit and by recognised refugees are explicit links under the existing seed zh-family. The Ordinance on Entry and the Granting of Visas (VEV, SR 142.204) is the new legal-basis seed ch-fedlex-vev and is fetched through the Fedlex plugin like the other acts. The scan set entry selects these seeds. The draft-5 catalogue needs a new run directory; the draft-4 run is carried over with its hashes before the new pages are downloaded.",
     "Extension of 18 September 2026 (voting rights and tax-at-source tariffs): the Federal Constitution (SR 101) and the Constitution of the Canton of Zurich (SR 131.211) are legal-basis seeds fetched through the Fedlex plugin; the Canton of Zurich page on who may vote and the ch.ch page on the right to vote are registry seeds; the Canton of Zurich tariff page and the calculation parameters of the current tax-at-source tariffs (PDF) are explicit links under the existing seed zh-tax-at-source, whose path allowlist gains the tax-at-source document folder. The tariff tables themselves stay out. The scan set voting-tax selects these seeds. The draft-6 catalogue is re-planned in place; saved pages, Fedlex documents and text records are kept.",
     "Extension of 18 September 2026 (expat life): the Code of Obligations (SR 220) is a legal-basis seed fetched through the Fedlex plugin; ch.ch's pages on renting, marriage and the third pillar, the Federal Office for Housing's page on the reference interest rate, the Canton of Zurich's tenancy forms and unemployment pages, the City of Zurich's marriage and departure pages, the FSIO's pillar 3a FAQ, SECO's unemployment FAQ and the FOPH's accident-insurance pages are registry seeds, with their subpages as explicit links in sources.md. The family allowance, parental leave and customs sources of the earlier extensions join the scan set expat-life unchanged. The draft-7 catalogue is re-planned in place; saved pages, Fedlex documents and text records are kept.",
-    "Extension of 19 September 2026 (English versions): the English versions of the SEM, FOPH, FOCBS, SECO and SERAFE pages the release cites, and the German version of the SEM residence overview whose English version it cites, are explicit links in their own section of sources.md, without registry seeds. They were found through the German pages' declared language alternates and checked live; a fact cites the English passage next to the German one only after the two were compared. The SEM residence FAQ has no English version."
+    "Extension of 19 September 2026 (English versions): the English versions of the SEM, FOPH, FOCBS, SECO and SERAFE pages the release cites, and the German version of the SEM residence overview whose English version it cites, are explicit links in their own section of sources.md, without registry seeds. They were found through the German pages' declared language alternates and checked live; a fact cites the English passage next to the German one only after the two were compared. The SEM residence FAQ has no English version.",
+    "Extension of 23 September 2026 (Lugano waste): the City of Lugano's waste pages and its municipal waste ordinance (Ordinanza 4.1.1, PDF) are the registry seed lugano-waste in the scan sets daily-life and all, with the pages as explicit links in sources.md. It is the only municipal source outside the City of Zurich. The draft-13 catalogue is re-planned in place; saved pages and text records are kept.",
+    "Catalogue repair of 23 September 2026: the downloader now attributes every Markdown link to the registry entry whose host and path allowlist contains it, and rejects a link no entry contains. The English versions of 19 September had no registry seeds and two superseded arbeit.swiss paths were outside their entries, so each English host gets a seed of its own (scan set english, language en, the exact listed paths as its allowlist) and the two superseded paths join the allowlist of the entry they were replaced in. No URL was added or removed."
   ],
   "sources": [
     {
@@ -3559,7 +3577,8 @@
           "www.arbeit.swiss"
         ],
         "allowed_path_prefixes": [
-          "/de/stellensuchende/faq-zur-arbeitslosenentschaedigung"
+          "/de/stellensuchende/faq-zur-arbeitslosenentschaedigung",
+          "/de/faq-zur-arbeitslosenentschaedigung"
         ],
         "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
         "jurisdiction": "CH",
@@ -3710,7 +3729,8 @@
           "www.arbeit.swiss"
         ],
         "allowed_path_prefixes": [
-          "/de/stellensuchende/anmeldung-und-registrierung"
+          "/de/stellensuchende/anmeldung-und-registrierung",
+          "/de/anmeldung-und-registrierung"
         ],
         "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
         "jurisdiction": "CH",
@@ -8216,6 +8236,256 @@
       },
       "scan_status": "ready",
       "notes": "The plainest statement of the arrival duty the canton makes: 'apres votre arrivee, annoncez-vous dans les 14 jours aupres du controle des habitants de votre commune', with the documents to present. Scoped to students, so a fact resting on it must say so rather than generalising. Neuchatel's consolidated law (RSN 132.0, art. 40 for arrival and art. 50 for departure, Etat au 1er janvier 2026) states the same period and is NOT catalogued: the site allows it through `Allow: /DATA/`, but our robots parser reads the preceding `Disallow: /` first and refuses it. The departure period therefore has no citable source in this pack."
+    },
+    {
+      "definition": {
+        "source_id": "lugano-waste",
+        "start_url": "https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/",
+        "allowed_hosts": [
+          "www.lugano.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/temi-servizi/energia-ambiente/rifiuti/",
+          "/law/16371927/"
+        ],
+        "canonical_authority": "City of Lugano - Divisione spazi urbani (DSU)",
+        "jurisdiction": "CH-TI",
+        "language": "it"
+      },
+      "title": "City of Lugano - waste disposal and the municipal waste ordinance",
+      "authority_level": "municipal",
+      "source_kind": "official_guidance",
+      "priority": "P1",
+      "topic_hints": [
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/",
+        "located_on": "2026-09-23"
+      },
+      "scan_status": "ready",
+      "notes": "Lugano publishes no collection calendar: household waste goes in the official red bags into underground or semi-underground containers, as a rule on any day (Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4); separately collected waste goes to the Ecopunti and Ecocentri, bulky and garden waste only to the Ecocentri. The ordinance PDF has extractable text. Found in a survey of the waste calendars of the ten largest cities after Zurich on 23 September 2026.",
+      "municipality": {
+        "name": "Lugano",
+        "bfs_code": "5192"
+      }
+    },
+    {
+      "definition": {
+        "source_id": "ch-sem-en",
+        "start_url": "https://www.sem.admin.ch/sem/en/home/integration-einbuergerung/schweizer-werden/ordentlich.html",
+        "allowed_hosts": [
+          "www.sem.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/sem/en/home/integration-einbuergerung/schweizer-werden/ordentlich.html",
+          "/sem/en/home/integration-einbuergerung/schweizer-werden/verheiratet.html",
+          "/sem/en/home/integration-einbuergerung/schweizer-werden/faq.html",
+          "/sem/en/home/themen/fza_schweiz-eu-efta/meldeverfahren.html",
+          "/sem/en/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html",
+          "/sem/en/home/themen/arbeit/nicht-eu_efta-angehoerige.html",
+          "/sem/en/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+          "/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat.html",
+          "/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/ohne-visum.html",
+          "/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum.html",
+          "/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/mit-visum/aufenthaltsrechner.html",
+          "/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/etias.html",
+          "/sem/en/home/themen/einreise/faq.html",
+          "/sem/en/home/themen/einreise/visumantragsformular.html",
+          "/sem/en/home/themen/einreise/fachinfo-einreise/schengen.html",
+          "/sem/en/home/themen/einreise/fachinfo-einreise/informationssysteme-schengen/ees.html"
+        ],
+        "canonical_authority": "State Secretariat for Migration (SEM)",
+        "jurisdiction": "CH",
+        "language": "en"
+      },
+      "title": "SEM - English versions of the pages the release cites",
+      "authority_level": "federal",
+      "source_kind": "authority_directory",
+      "priority": "P2",
+      "topic_hints": [
+        "competent-authorities"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "located_on": "2026-09-19"
+      },
+      "scan_status": "ready",
+      "notes": "English versions of German pages the release cites, found through the German pages' declared language alternates and listed one by one in sources.md. The allowlist holds exactly those paths. Seed added on 23 September 2026 so that the downloader, which now attributes every Markdown link to a registry allowlist, attributes them in English instead of rejecting them."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bag-en",
+        "start_url": "https://www.bag.admin.ch/en/health-insurance-requirement-to-obtain-insurance-for-persons-resident-in-switzerland",
+        "allowed_hosts": [
+          "www.bag.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/en/health-insurance-requirement-to-obtain-insurance-for-persons-resident-in-switzerland",
+          "/en/health-insurance-premium-subsidies",
+          "/en/accident-insurance-who-is-subject-to-compulsory-insurance",
+          "/en/health-insurance-insured-persons-eligible-to-suspend-accident-cover"
+        ],
+        "canonical_authority": "Federal Office of Public Health (FOPH/BAG)",
+        "jurisdiction": "CH",
+        "language": "en"
+      },
+      "title": "FOPH - English versions of the pages the release cites",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P2",
+      "topic_hints": [
+        "health-insurance"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bag.admin.ch/de/krankenversicherung-versicherungspflicht-fuer-in-der-schweiz-wohnhafte-versicherte",
+        "located_on": "2026-09-19"
+      },
+      "scan_status": "ready",
+      "notes": "English versions of German pages the release cites, found through the German pages' declared language alternates and listed one by one in sources.md. The allowlist holds exactly those paths. Seed added on 23 September 2026 so that the downloader, which now attributes every Markdown link to a registry allowlist, attributes them in English instead of rejecting them."
+    },
+    {
+      "definition": {
+        "source_id": "ch-bazg-en",
+        "start_url": "https://www.bazg.admin.ch/en/relocation-import-switzerland-procedure",
+        "allowed_hosts": [
+          "www.bazg.admin.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/en/relocation-import-switzerland-procedure"
+        ],
+        "canonical_authority": "Federal Office for Customs and Border Security (FOCBS/BAZG)",
+        "jurisdiction": "CH",
+        "language": "en"
+      },
+      "title": "FOCBS - English versions of the pages the release cites",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P2",
+      "topic_hints": [
+        "registration-moving"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.bazg.admin.ch/de/vorgehen-umzug-in-die-schweiz",
+        "located_on": "2026-09-19"
+      },
+      "scan_status": "ready",
+      "notes": "English versions of German pages the release cites, found through the German pages' declared language alternates and listed one by one in sources.md. The allowlist holds exactly those paths. Seed added on 23 September 2026 so that the downloader, which now attributes every Markdown link to a registry allowlist, attributes them in English instead of rejecting them."
+    },
+    {
+      "definition": {
+        "source_id": "ch-seco-en",
+        "start_url": "https://www.arbeit.swiss/en/jobseekers/faqs-on-unemployment-benefit",
+        "allowed_hosts": [
+          "www.arbeit.swiss"
+        ],
+        "allowed_path_prefixes": [
+          "/en/jobseekers/faqs-on-unemployment-benefit",
+          "/en/jobseekers/signing-on-and-registration",
+          "/en/career-counselling-and-job-placement",
+          "/en/eservices-and-forms-for-unemployment-benefit",
+          "/en/eures-professional-mobility-in-the-euefta",
+          "/en/expiry-of-unemployment-benefit",
+          "/en/faqs-on-unemployment-benefit",
+          "/en/first-steps-after-dismissal",
+          "/en/insurance-benefits",
+          "/en/job-registration-requirement",
+          "/en/labor-market-measures",
+          "/en/looking-for-work-abroad",
+          "/en/registration-job-seekers",
+          "/en/returning-to-switzerland",
+          "/en/short-time-working-compensation",
+          "/en/signing-on-and-registration"
+        ],
+        "canonical_authority": "State Secretariat for Economic Affairs SECO - public employment service",
+        "jurisdiction": "CH",
+        "language": "en"
+      },
+      "title": "SECO (arbeit.swiss) - English versions of the pages the release cites",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P2",
+      "topic_hints": [
+        "work-unemployment"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.arbeit.swiss/de/stellensuchende/faq-zur-arbeitslosenentschaedigung",
+        "located_on": "2026-09-19"
+      },
+      "scan_status": "ready",
+      "notes": "English versions of German pages the release cites, found through the German pages' declared language alternates and listed one by one in sources.md. The allowlist holds exactly those paths. Seed added on 23 September 2026 so that the downloader, which now attributes every Markdown link to a registry allowlist, attributes them in English instead of rejecting them."
+    },
+    {
+      "definition": {
+        "source_id": "ch-serafe-en",
+        "start_url": "https://www.serafe.ch/en/the-fee/fee-overview/",
+        "allowed_hosts": [
+          "www.serafe.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/en/the-fee/fee-overview/",
+          "/en/exemption-from-the-fee/basic-principle/"
+        ],
+        "canonical_authority": "SERAFE AG - collection agency for the radio and television fee, appointed by the Confederation",
+        "jurisdiction": "CH",
+        "language": "en"
+      },
+      "title": "SERAFE - English versions of the pages the release cites",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P2",
+      "topic_hints": [
+        "tax-social-insurance",
+        "daily-life"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.serafe.ch/de/abgabe/abgabeuebersicht/",
+        "located_on": "2026-09-19"
+      },
+      "scan_status": "ready",
+      "notes": "English versions of German pages the release cites, found through the German pages' declared language alternates and listed one by one in sources.md. The allowlist holds exactly those paths. Seed added on 23 September 2026 so that the downloader, which now attributes every Markdown link to a registry allowlist, attributes them in English instead of rejecting them."
+    },
+    {
+      "definition": {
+        "source_id": "ch-ahv-iv-en",
+        "start_url": "https://www.ahv-iv.ch/en/Contacts/Cantonal-compensation-offices",
+        "allowed_hosts": [
+          "www.ahv-iv.ch"
+        ],
+        "allowed_path_prefixes": [
+          "/en/Contacts/Cantonal-compensation-offices",
+          "/en/Social-insurances/Glossary",
+          "/en/Social-insurances/Old-age-and-survivorss-insurance-OASI/13-AHV-Rente-en-US",
+          "/en/Social-insurances/Old-age-and-survivorss-insurance-OASI/Stabilisation-of-the-OASI-AHV-21",
+          "/en/Social-insurances/Other-types-of-social-insurances/Accident-and-occupational-diseases-incurance-UV",
+          "/en/Social-insurances/Other-types-of-social-insurances/Health-insurance-KV",
+          "/en/Social-insurances/Other-types-of-social-insurances/Occupational-benefit-plan-BV",
+          "/en/Social-insurances/Other-types-of-social-insurances/Unemployment-insurance-ALV"
+        ],
+        "canonical_authority": "Informationsstelle AHV/IV",
+        "jurisdiction": "CH",
+        "language": "en"
+      },
+      "title": "Informationsstelle AHV/IV - English versions of the pages the release cites",
+      "authority_level": "federal",
+      "source_kind": "official_guidance",
+      "priority": "P2",
+      "topic_hints": [
+        "ahv-pension"
+      ],
+      "discovery": {
+        "method": "official_page_link",
+        "reference_url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/Allgemeines",
+        "located_on": "2026-09-19"
+      },
+      "scan_status": "ready",
+      "notes": "English versions of German pages the release cites, found through the German pages' declared language alternates and listed one by one in sources.md. The allowlist holds exactly those paths. Seed added on 23 September 2026 so that the downloader, which now attributes every Markdown link to a registry allowlist, attributes them in English instead of rejecting them."
     }
   ],
   "parallel_page_groups": [

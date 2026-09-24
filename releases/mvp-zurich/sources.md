@@ -22,7 +22,9 @@ customs, the AHV and the pillars, and basic health insurance (`work`,
 `customs`, `ahv` and `health-insurance-extension` scan sets), and repoints
 the two SECO pages that arbeit.swiss moved. The extension of 23 September 2026 adds the registration route of all 26 cantons
 (`cantons` scan set), in German, French and Italian, with consolidated cantonal
-statutes where a canton publishes the deadline nowhere else. Every page is German
+statutes where a canton publishes the deadline nowhere else. A further extension
+that day adds the waste rules of the City of Lugano, the only municipal source
+outside the City of Zurich (`daily-life` scan set). Every page is German
 unless the link says otherwise.
 
 ## Naturalisation
@@ -211,6 +213,15 @@ Federal (SERAFE AG, the collection agency the Confederation appointed):
 
 - [SERAFE: the household radio and television fee](https://www.serafe.ch/de/abgabe/abgabeuebersicht/)
 - [SERAFE: exemption from the fee](https://www.serafe.ch/de/abgabebefreiung/grundsatz/)
+
+City of Lugano (extension of 23 September 2026): Lugano publishes no
+collection calendar, so its pages and its municipal waste ordinance are the
+source for how waste is handed over there. The ecopunti map is left out.
+
+- [City of Lugano: waste (it)](https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/)
+- [City of Lugano: waste management, official bags and bulky-waste pickup (it)](https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/gestione-rifiuti/)
+- [City of Lugano: ecopunti and ecocentri (it)](https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/ecopunti-ecocentri/)
+- [City of Lugano: Ordinanza municipale sulla gestione dei rifiuti 4.1.1 of 17 October 2019 (it)](https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019)
 
 ## Entry and visas
 
@@ -456,7 +467,9 @@ translation list, or for SERAFE the site navigation) and checked live on
 19 September 2026. A fact cites the English passage next to the German one
 only after the two were compared; the German page stays the one the fact was
 written from. Pages marked (imported) were saved by the imported crawl of 11
-September 2026 and are not fetched again.
+September 2026 and are not fetched again. Each host's English pages are one
+registry seed whose allowlist holds exactly the paths listed here (`english`
+scan set).
 
 State Secretariat for Migration (SEM):
 

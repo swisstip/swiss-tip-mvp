@@ -7365,6 +7365,41 @@ cases:
     criteria: [A1, A2, A3, A4, A5, A6]
     must_mention: {before: préalable|beforehand|before}
     must_not: {invented_deadline: 14 jours|quatorze jours}
+- case_id: UAT-117
+  label: 'Lugano: no collection day to wait for'
+  spec: docs/product/user-acceptance-tests.md#uat-117-waste-day-in-lugano
+  question: Mi sono appena trasferita a Lugano. In che giorno passa la raccolta dei rifiuti e dove metto i sacchi?
+  expected_answer: Lugano sets no public collection day for residents to wait for. Household waste goes only in the
+    official red bags, into the underground or semi-underground containers, which may as a rule be used on every day
+    of the week; recyclables go to the ecopunti or ecocentri, and bulky and garden waste only to the ecocentri. The
+    city empties the containers on a plan its Urban Spaces Division sets, as a rule Monday to Saturday.
+  trap: Inventing a weekly collection day or a street calendar for Lugano, or telling the user to put bags out on the
+    street, which the ordinance forbids.
+  language: it
+  steps:
+  - search:
+      query: Abito a Lugano, in che giorno passa la raccolta dei rifiuti?
+      expect_concept: city-lugano-waste-disposal
+      expect_strength: strong
+  - resolve:
+      concept_ids: [city-lugano-waste-disposal]
+      jurisdiction: {canton_code: CH-TI, municipality_id: CH-TI-5192}
+      expect_status: {city-lugano-waste-disposal: SUPPORTED}
+  claims:
+  - claim: The containers may be used on every day of the week
+    concept: city-lugano-waste-disposal
+    fact_id: city-lugano-waste-disposal-1
+    statement_contains: ['every day of the week']
+    excerpt_contains: ['tutti i giorni della settimana']
+  - claim: Bulky and garden waste go only to the ecocentri
+    concept: city-lugano-waste-disposal
+    fact_id: city-lugano-waste-disposal-3
+    statement_contains: ['only to the Ecocentri']
+    excerpt_contains: ['unicamente negli']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention: {bags: sacchi ufficiali|sacco rosso|sacchi rossi|red bags, containers: contenitori|containers}
+    must_not: {invented_day: ogni lunedì|ogni martedì|ogni mercoledì|ogni giovedì|ogni venerdì}
 - case_id: DECLINE-15
   label: No online registration channel published for Uri
   spec: docs/product/user-acceptance-tests.md#decline-cases

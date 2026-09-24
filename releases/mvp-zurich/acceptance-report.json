@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-acceptance-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-23-v27",
-  "content_sha256": "d3e5c31a0715bd41647378f829b93fb297eccef16f98bbf1fd59161e6566c94c",
-  "suite_sha256": "13ed4d5998a844474964b60f3c1165013a47d0be2b8a53b41e44b5a60647b3a0",
-  "checked_at": "2026-09-23T18:23:40.746323+00:00",
+  "release_id": "mvp-zurich-2026-09-24-v1",
+  "content_sha256": "baa03da3f709db46598be6e9515fbe8bf6cb8a3ae2524683ee02388b136fe0fc",
+  "suite_sha256": "539aa78bd36d4c97bace27b8428fa0fa0a11134cd646284477ff291945986651",
+  "checked_at": "2026-09-24T06:47:47.295300+00:00",
   "as_of": "2026-09-23",
   "passed": true,
-  "cases": 138,
-  "blocking": 138,
+  "cases": 139,
+  "blocking": 139,
   "failed": [],
   "quarantined": [],
   "quarantined_failed": [],
@@ -3097,8 +3097,8 @@
           "expect_concept": "city-zurich-household-waste",
           "hits": [
             "city-zurich-household-waste",
-            "city-zurich-organic-paper-cardboard",
-            "city-zurich-waste-sorting"
+            "city-lugano-waste-disposal",
+            "city-zurich-organic-paper-cardboard"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -5548,7 +5548,7 @@
           "hits": [
             "cantonal-permit-application",
             "aig-short-stay",
-            "health-insurance-cross-border-commuter"
+            "city-lugano-waste-disposal"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -11436,6 +11436,79 @@
           "concept": "cantonal-permit-application",
           "fact_ids": [
             "cantonal-permit-application-vs-change"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-117",
+      "label": "Lugano: no collection day to wait for",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Abito a Lugano, in che giorno passa la raccolta dei rifiuti?",
+          "expect_concept": "city-lugano-waste-disposal",
+          "hits": [
+            "city-lugano-waste-disposal"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "city-lugano-waste-disposal"
+          ],
+          "as_of": "2026-09-23",
+          "scope": "CH-TI-5192",
+          "not_recognised": {},
+          "statuses": {
+            "city-lugano-waste-disposal": "SUPPORTED"
+          },
+          "gaps": {
+            "city-lugano-waste-disposal": []
+          },
+          "facts": {
+            "city-lugano-waste-disposal": [
+              "city-lugano-waste-disposal-1",
+              "city-lugano-waste-disposal-2",
+              "city-lugano-waste-disposal-3",
+              "city-lugano-waste-disposal-4",
+              "city-lugano-waste-disposal-5"
+            ]
+          },
+          "bases": {
+            "city-lugano-waste-disposal": [
+              "Municipal authority guidance",
+              "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 12 cpv. 1 and 3",
+              "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 3",
+              "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 1 and 5",
+              "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 2 and 3"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The containers may be used on every day of the week",
+          "concept": "city-lugano-waste-disposal",
+          "fact_ids": [
+            "city-lugano-waste-disposal-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "Bulky and garden waste go only to the ecocentri",
+          "concept": "city-lugano-waste-disposal",
+          "fact_ids": [
+            "city-lugano-waste-disposal-3"
           ],
           "passed": true
         }

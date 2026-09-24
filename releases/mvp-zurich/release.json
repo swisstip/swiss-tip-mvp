@@ -1,11 +1,11 @@
 {
   "manifest": {
     "schema_version": "swiss-tip-release/v2",
-    "release_id": "mvp-zurich-2026-09-23-v27",
+    "release_id": "mvp-zurich-2026-09-24-v1",
     "pack": "mvp-zurich",
     "title": "Living in Switzerland: entry and residence, work and unemployment, social insurance\nand pensions, health and accident insurance, taxes and household fees, customs,\nhousing and family, naturalisation and voting rights, and daily life - federal rules,\nregistering in all 26 cantons, and the procedures of the Canton and City of Zurich",
-    "created_at": "2026-09-23T18:07:49.552115Z",
-    "scope_statement": "Everyday administrative life in Switzerland, for people who live here and for people\nmoving here, of any nationality: federal rules, how to register on arrival in any of\nthe 26 cantons, and the procedures of the Canton of Zurich and the City of Zurich.\n\nEntry and visas: the visa duty, the visa types C and D, the 90-in-180-days rule, the\nentry requirements, ETIAS and the Entry/Exit System. Residence permits and\nregistration: the Foreign Nationals and Integration Act, the free-movement agreement\nFZA, SEM and ch.ch guidance, how to register on arrival in every canton and its\nmigration-office contact, and the Zurich procedures in full.\n\nWork: losing a job, registering with the RAV and unemployment insurance. Social\ninsurance: what happens to the AHV, occupational provision and pillar 3a on leaving\nSwitzerland. Health and accident insurance: the insurance duty, premium reduction and\nwho is compulsorily insured against accidents.\n\nTaxes and household fees: tax at source with its tariff codes and the Zurich rules,\nthe City of Zurich tax return and tax office, and the radio and television fee.\nCustoms: travelling and shopping abroad, ordering from abroad, declaring goods, pets\nand plants, and moving household goods.\n\nFamily and home: family allowances and parental leave, marriage, renting a home, and\nleaving the City of Zurich. Driving and vehicles: a foreign driving licence, vehicles\nafter a move, and City of Zurich parking permits. Naturalisation and voting rights.\nLife in the City of Zurich: first steps, waste and recycling, dogs, kindergarten and\nschool holidays, integration offers and German courses, medical emergencies, and the\noffices' addresses and hours.",
+    "created_at": "2026-09-24T06:44:19.728194Z",
+    "scope_statement": "Everyday administrative life in Switzerland, for people who live here and for people\nmoving here, of any nationality: federal rules, how to register on arrival in any of\nthe 26 cantons, and the procedures of the Canton of Zurich and the City of Zurich.\n\nEntry and visas: the visa duty, the visa types C and D, the 90-in-180-days rule, the\nentry requirements, ETIAS and the Entry/Exit System. Residence permits and\nregistration: the Foreign Nationals and Integration Act, the free-movement agreement\nFZA, SEM and ch.ch guidance, how to register on arrival in every canton and its\nmigration-office contact, and the Zurich procedures in full.\n\nWork: losing a job, registering with the RAV and unemployment insurance. Social\ninsurance: what happens to the AHV, occupational provision and pillar 3a on leaving\nSwitzerland. Health and accident insurance: the insurance duty, premium reduction and\nwho is compulsorily insured against accidents.\n\nTaxes and household fees: tax at source with its tariff codes and the Zurich rules,\nthe City of Zurich tax return and tax office, and the radio and television fee.\nCustoms: travelling and shopping abroad, ordering from abroad, declaring goods, pets\nand plants, and moving household goods.\n\nFamily and home: family allowances and parental leave, marriage, renting a home, and\nleaving the City of Zurich. Driving and vehicles: a foreign driving licence, vehicles\nafter a move, and City of Zurich parking permits. Naturalisation and voting rights.\nLife in the City of Zurich: first steps, waste and recycling, dogs, kindergarten and\nschool holidays, integration offers and German courses, medical emergencies, and the\noffices' addresses and hours. In the City of Lugano: how household waste, separately\ncollected waste and bulky waste are handed over.",
     "out_of_scope": [
       "Other topics: schooling beyond kindergarten entry and school holidays, the asylum procedure and asylum permits, social assistance, debt enforcement, finding a home or a job, and utilities.",
       "Fees and appointment availability for any permit or office.",
@@ -13,7 +13,7 @@
       "Benefit amounts and individual calculations: tax tariff tables, rates and deductions, amounts of tax and refunds, pension amounts, insurance premiums and premium reductions, unemployment daily-allowance amounts and dog tax; every calculator.",
       "The invalidity insurance (IV), the supplementary benefits (EL) and the bridging benefit.",
       "Customs tariff numbers and duty rates per product, and the value or treatment of an individual consignment.",
-      "Beyond registering on arrival and the migration-office contact, cantons other than Zurich, and municipal procedures outside the City of Zurich; federal rules still apply there and are served with a caveat.",
+      "Beyond registering on arrival and the migration-office contact, cantons other than Zurich, and municipal procedures outside the City of Zurich except how waste is handed over in the City of Lugano; federal rules still apply there and are served with a caveat.",
       "Eligibility decisions for a specific person: the rules route population groups to pre-authored statements and compute no outcome.",
       "Live data such as current processing times, appointment slots, job vacancies or insurer premiums.",
       "Any country other than Switzerland, including German and Austrian rules that look similar.",
@@ -43,6 +43,7 @@
       "CH-SZ",
       "CH-TG",
       "CH-TI",
+      "CH-TI-5192",
       "CH-UR",
       "CH-VD",
       "CH-VS",
@@ -62,20 +63,20 @@
       "stale_from": "2026-11-22"
     },
     "provenance_kinds": {
-      "curated-statement": 1268
+      "curated-statement": 1273
     },
     "review_statuses": {
-      "human-reviewed": 1268
+      "human-reviewed": 1273
     },
     "institution_levels": {
       "federal": 165,
       "cantonal": 129,
-      "municipal": 40
+      "municipal": 42
     },
     "basis_kinds": {
-      "guidance": 947,
+      "guidance": 948,
       "act": 107,
-      "ordinance": 43,
+      "ordinance": 47,
       "summary": 50,
       "treaty": 37,
       "directory": 77,
@@ -116,8 +117,8 @@
       "Some statements rest on a publisher's plain-language summary (priminfo.admin.ch, ch.ch); the conditions and exceptions behind them rest on the authority's own page or on the law, and every citation names which of the two it is.",
       "For every canton the pack publishes the migration-office contact and registration on arrival: period, office, permit application, change of canton, online channel. Cover is uneven because the cantons publish unevenly, and a missing fact means that canton was not found to publish it. Anything else cantonal or municipal is served with a caveat. Most periods come from a cantonal statute; LIMITATIONS.md has the detail."
     ],
-    "acceptance_suite_sha256": "13ed4d5998a844474964b60f3c1165013a47d0be2b8a53b41e44b5a60647b3a0",
-    "content_sha256": "d3e5c31a0715bd41647378f829b93fb297eccef16f98bbf1fd59161e6566c94c"
+    "acceptance_suite_sha256": "539aa78bd36d4c97bace27b8428fa0fa0a11134cd646284477ff291945986651",
+    "content_sha256": "baa03da3f709db46598be6e9515fbe8bf6cb8a3ae2524683ee02388b136fe0fc"
   },
   "documents": [
     {
@@ -1226,6 +1227,19 @@
       "content_sha256": "e8624283a17ebd78f6de9b36ec9b5738220f96fa0982cc12a9ba9cba5b95c813"
     },
     {
+      "document_id": "doc-432c6b6aadd4da9c3b89",
+      "source_url": "https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019",
+      "document_url": "https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019",
+      "version_uri": null,
+      "title": "City of Lugano: Ordinanza municipale sulla gestione dei rifiuti 4.1.1 of 17 October 2019 (it)",
+      "publisher": "City of Lugano, municipal law collection",
+      "institution_id": "ti-5192-law",
+      "language": "it",
+      "accessed_on": "2026-09-23",
+      "raw_sha256": "b908a31abbf0fd2295419321028df1556107046a38aad91d1390a2932e8b66f5",
+      "content_sha256": "2313fdb4c00f046c31bbb4520d0a667d25e38cde3d2f4e0c20c670d19e8dba3b"
+    },
+    {
       "document_id": "doc-4405a0d68192037f30b3",
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/online-schalter/personenmeldeamt-terminpflicht.html",
       "document_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/online-schalter/personenmeldeamt-terminpflicht.html",
@@ -1952,6 +1966,19 @@
       "accessed_on": "2026-09-18",
       "raw_sha256": "60e3a344c41908103bbf5833cbf0681b3f2d4c28793830e4e53e3ad867a9f95e",
       "content_sha256": "8630c6cd3a8467a38902ae5196b8be7eb2859239b4244bffe78be8c1f9146a3c"
+    },
+    {
+      "document_id": "doc-6dd7cb61202ebf90b7a2",
+      "source_url": "https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/gestione-rifiuti/",
+      "document_url": "https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/gestione-rifiuti/",
+      "version_uri": null,
+      "title": "Gestione dei rifiuti | lugano.ch",
+      "publisher": "City of Lugano, Urban Spaces Division (DSU)",
+      "institution_id": "ti-5192-dsu",
+      "language": "it",
+      "accessed_on": "2026-09-23",
+      "raw_sha256": "d9522aa02863180e92d55c68013a5a63f23538d704d631dbd36c61363104fe35",
+      "content_sha256": "bb471fa237af532c3dbf780844efd4b6e699494418dde2b7bfb820a82a1815d0"
     },
     {
       "document_id": "doc-6e45b9e28dd55e61b3a3",
@@ -4486,8 +4513,8 @@
     },
     {
       "topic_id": "waste",
-      "title": "Waste and recycling in the City of Zurich",
-      "description": "Züri-Sack, collections, recycling centres and points, hazardous waste and the ERZ Service Center."
+      "title": "Waste and recycling in the City of Zurich, and waste hand-over in Lugano",
+      "description": "Züri-Sack, collections, recycling centres and points, hazardous waste and the ERZ Service Center in the City of Zurich; official bags, containers, ecopunti and ecocentri in the City of Lugano."
     },
     {
       "topic_id": "vehicles-parking",
@@ -10746,6 +10773,60 @@
       "not_served": [
         "the dates of the hazardous waste mobile",
         "business registration numbers"
+      ]
+    },
+    {
+      "concept_id": "city-lugano-waste-disposal",
+      "topic_id": "waste",
+      "label": "Handing over household, recyclable and bulky waste in the City of Lugano",
+      "description": "How waste is handed over in the City of Lugano: the official red bags in the containers, which may be used on any day, recyclables at the ecopunti and ecocentri, bulky and garden waste only at the ecocentri with the Ecocard, and the yearly home pickup of bulky waste.",
+      "aliases": [
+        "garbage collection Lugano",
+        "waste collection day Lugano",
+        "rubbish bags Lugano",
+        "red waste bag Lugano",
+        "raccolta rifiuti Lugano",
+        "giorno di raccolta rifiuti Lugano",
+        "calendario rifiuti Lugano",
+        "sacco rosso Lugano",
+        "Kehricht Lugano",
+        "Abfuhr Lugano",
+        "Abfallsack Lugano",
+        "sacchi ufficiali",
+        "RSU",
+        "contenitori interrati",
+        "Ecopunti",
+        "Ecocentri",
+        "rifiuti ingombranti domestici",
+        "scarti vegetali",
+        "Ecocard",
+        "ritiro annuale"
+      ],
+      "questions": [
+        "When is the garbage collected in Lugano, and where do I put my waste bags?",
+        "Wann wird in Lugano der Kehricht abgeholt, und wohin bringe ich meine Abfallsäcke?"
+      ],
+      "jurisdictions": [
+        "CH-TI-5192"
+      ],
+      "required_context": [],
+      "context_schema": {},
+      "fact_ids": [
+        "city-lugano-waste-disposal-1",
+        "city-lugano-waste-disposal-2",
+        "city-lugano-waste-disposal-3",
+        "city-lugano-waste-disposal-4",
+        "city-lugano-waste-disposal-5"
+      ],
+      "required_user_facts": [],
+      "decision_rule": null,
+      "notes": [
+        "Added on 2026-09-23 after a survey of the waste calendars of the ten largest cities after Zurich (.local/experiments/2026-09-23-waste-calendars-other-cities.md) found that Lugano publishes no collection calendar. Facts, description, aliases, questions and source_terms authored by the assistant (Claude) from the saved records; aliases and questions are not taken from the cited pages; source_terms occur verbatim in the cited excerpts and the build verifies them."
+      ],
+      "not_served": [
+        "the collection days and times, which the Divisione spazi urbani sets",
+        "the locations and opening hours of the ecopunti and ecocentri",
+        "the price of the official bags and the basic waste fee"
       ]
     },
     {
@@ -30785,6 +30866,160 @@
         "reviewed_by": "Alexander Bobrovsky",
         "notes": [
           "review: confirmed in a bulk review of 35 facts (Alexander Bobrovsky, 2026-09-17)"
+        ],
+        "basis": {
+          "level": "municipal",
+          "kind": "guidance",
+          "label": "Municipal authority guidance"
+        }
+      }
+    },
+    {
+      "fact_id": "city-lugano-waste-disposal-1",
+      "concept_id": "city-lugano-waste-disposal",
+      "statement": "City of Lugano: household waste may only be put in the official red bags, which must be deposited in the containers provided for them; depositing waste in the underground or semi-underground containers is, as a rule, allowed on every day of the week.",
+      "language": "en",
+      "jurisdiction": "CH-TI-5192",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-city-lugano-waste-disposal-1-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1 | Città di Lugano (https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019), saved 2026-09-23",
+        "reviewed_on": "2026-09-24",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "Written by the coordinating assistant on 2026-09-23 from the saved record; not reviewed by a person.",
+          "review: confirmed in a bulk review of 5 facts (Alexander Bobrovsky, 2026-09-24)"
+        ],
+        "basis": {
+          "level": "municipal",
+          "kind": "ordinance",
+          "norm": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 1 and 5",
+          "label": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 1 and 5"
+        }
+      }
+    },
+    {
+      "fact_id": "city-lugano-waste-disposal-2",
+      "concept_id": "city-lugano-waste-disposal",
+      "statement": "City of Lugano: the city collects waste on public roads and on private roads open to traffic according to a plan set by its Urban Spaces Division (DSU), as a rule from Monday to Saturday; the DSU sets the collection days and times.",
+      "language": "en",
+      "jurisdiction": "CH-TI-5192",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-city-lugano-waste-disposal-2-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1 | Città di Lugano (https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019), saved 2026-09-23",
+        "reviewed_on": "2026-09-24",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "Written by the coordinating assistant on 2026-09-23 from the saved record; not reviewed by a person.",
+          "review: confirmed in a bulk review of 5 facts (Alexander Bobrovsky, 2026-09-24)"
+        ],
+        "basis": {
+          "level": "municipal",
+          "kind": "ordinance",
+          "norm": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 3",
+          "label": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 3"
+        }
+      }
+    },
+    {
+      "fact_id": "city-lugano-waste-disposal-3",
+      "concept_id": "city-lugano-waste-disposal",
+      "statement": "City of Lugano: recyclable or separately collected waste must not go in with household waste; it is taken to the Ecopunti and/or the Ecocentri, while bulky household waste and garden waste from private persons may be taken only to the Ecocentri.",
+      "language": "en",
+      "jurisdiction": "CH-TI-5192",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-city-lugano-waste-disposal-3-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1 | Città di Lugano (https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019), saved 2026-09-23",
+        "reviewed_on": "2026-09-24",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "Written by the coordinating assistant on 2026-09-23 from the saved record; not reviewed by a person.",
+          "review: confirmed in a bulk review of 5 facts (Alexander Bobrovsky, 2026-09-24)"
+        ],
+        "basis": {
+          "level": "municipal",
+          "kind": "ordinance",
+          "norm": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 2 and 3",
+          "label": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 2 and 3"
+        }
+      }
+    },
+    {
+      "fact_id": "city-lugano-waste-disposal-4",
+      "concept_id": "city-lugano-waste-disposal",
+      "statement": "City of Lugano: the Ecocentri may be entered only by showing the attendant a card called the Ecocard; one Ecocard is issued to each household and to each single adult.",
+      "language": "en",
+      "jurisdiction": "CH-TI-5192",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-city-lugano-waste-disposal-4-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1 | Città di Lugano (https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019), saved 2026-09-23",
+        "reviewed_on": "2026-09-24",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "Written by the coordinating assistant on 2026-09-23 from the saved record; not reviewed by a person.",
+          "review: confirmed in a bulk review of 5 facts (Alexander Bobrovsky, 2026-09-24)"
+        ],
+        "basis": {
+          "level": "municipal",
+          "kind": "ordinance",
+          "norm": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 12 cpv. 1 and 3",
+          "label": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 12 cpv. 1 and 3"
+        }
+      }
+    },
+    {
+      "fact_id": "city-lugano-waste-disposal-5",
+      "concept_id": "city-lugano-waste-disposal",
+      "statement": "City of Lugano: a person whose proven difficulties prevent them, alone or through others, from taking bulky non-recyclable waste to the ecocentri can request one pickup of bulky waste a year, in writing to the Urban Spaces Division (Divisione spazi urbani).",
+      "language": "en",
+      "jurisdiction": "CH-TI-5192",
+      "condition": null,
+      "valid_from": null,
+      "valid_through": null,
+      "evidence_ids": [
+        "e-city-lugano-waste-disposal-5-1"
+      ],
+      "provenance": {
+        "kind": "curated-statement",
+        "review_status": "human-reviewed",
+        "author": "assistant (Claude), reading the saved official pages",
+        "source": "Gestione dei rifiuti | lugano.ch (https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/gestione-rifiuti/), saved 2026-09-23",
+        "reviewed_on": "2026-09-24",
+        "reviewed_by": "Alexander Bobrovsky",
+        "notes": [
+          "Written by the coordinating assistant on 2026-09-23 from the saved record; not reviewed by a person.",
+          "review: confirmed in a bulk review of 5 facts (Alexander Bobrovsky, 2026-09-24)"
         ],
         "basis": {
           "level": "municipal",
@@ -70850,6 +71085,131 @@
       }
     },
     {
+      "evidence_id": "e-city-lugano-waste-disposal-1-1",
+      "document_id": "doc-432c6b6aadd4da9c3b89",
+      "source_title": "City of Lugano: Ordinanza municipale sulla gestione dei rifiuti 4.1.1 of 17 October 2019 (it)",
+      "publisher": "City of Lugano, municipal law collection",
+      "institution_id": "ti-5192-law",
+      "url": "https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019",
+      "language": "it",
+      "accessed_on": "2026-09-23",
+      "start_offset": 1909,
+      "end_offset": 4427,
+      "original_excerpt": "P. 2 di 13\nCittà di Lugano\nwww.lugano.ch \nOrdinanza 4.1.1\n3\nI giorni e gli orari di raccolta sono stabiliti dalla DSU.\nArt. 4 Modalità di consegna\n1 Per i RSU possono essere impiegati esclusivamente i sacchi ufficiali di\ncolore rosso. Gli stessi devono essere depositati nei contenitori adibiti a\ntale scopo.\n2\nI rifiuti riciclabili o per i quali è disponibile una raccolta differenziata non\npossono essere mischiati e smaltiti assieme ai RSU, ma devono essere\nraccolti separatamente e consegnati negli appositi punti per la raccolta\ndifferenziata.\n3\nI rifiuti raccolti separatamente vanno consegnati negli Ecopunti e/o negli\nEcocentri; i rifiuti ingombranti domestici e gli scarti vegetali prodotti dai\nprivati vanno consegnati unicamente negli Ecocentri.\n4\nIl Municipio può istituire altre strutture, oltre a quelle previste dal\nRegolamento, in cui consegnare particolari categorie di rifiuti,\nsegnatamente presso aree di consegna temporanee o presso privati\nautorizzati.\n5\nIl deposito dei rifiuti nei contenitori interrati o seminterrati è autorizzato,\ndi regola, tutti i giorni della settimana. Il Municipio può, quando\nnecessario, limitare l'accesso ai contenitori a determinati orari e/o giorni,\nsegnatamente per tutelare la pubblica quiete e l'ordine pubblico.\n6\nIl cartone va tagliato in pezzi in misura adeguata ed inserito nei contenitori\nappositi per la raccolta della carta e del cartone, oppure consegnato agli\nEcocentri.\nArt. 5 Eccezioni ai principi di raccolta e smaltimento\n1\nIl Municipio può stabilire modalità di raccolta e di consegna differenti da\nquelle previste dalla presente Ordinanza, e porre ulteriori condizioni\nspeciali, localmente e/o a titolo transitorio, in casi particolari, previa\ncomunicazione alla cittadinanza interessata dalla misura.\n2 Nel caso in cui la viabilità e l'accessibilità a determinati fondi e/o strade\nrisultasse ostacolata o difficoltosa, come pure in presenza di cause di forza\nmaggiore o altri eventi eccezionali, il servizio di raccolta dei rifiuti può\nessere temporaneamente limitato o sospeso, anche senza preavviso agli\nutenti.\n3\nIl Municipio autorizza in casi eccezionali, i produttori di grandi quantità di\nrifiuti a usufruire del servizio di raccolta. In tal caso viene stipulata\nun'apposita convenzione.\nArt. 6 Contenitori su proprietà privata\n1 Al momento della costruzione o della ristrutturazione di un immobile (con\naumento sostanziale dell'utenza da servire), su richiesta della DSU, il\nproprietario è tenuto a posare, a sue spese, sulla sua proprietà,",
+      "excerpt_sha256": "7400d916106502d8d19c2d679407f6037b2a43db5936868f36bd800bd0306b28",
+      "block_ids": [
+        "doc-432c6b6aadd4da9c3b89:b00002"
+      ],
+      "content_sha256": "2313fdb4c00f046c31bbb4520d0a667d25e38cde3d2f4e0c20c670d19e8dba3b",
+      "raw_sha256": "b908a31abbf0fd2295419321028df1556107046a38aad91d1390a2932e8b66f5",
+      "basis": {
+        "level": "municipal",
+        "kind": "ordinance",
+        "norm": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 1 and 5",
+        "label": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 1 and 5"
+      }
+    },
+    {
+      "evidence_id": "e-city-lugano-waste-disposal-2-1",
+      "document_id": "doc-432c6b6aadd4da9c3b89",
+      "source_title": "City of Lugano: Ordinanza municipale sulla gestione dei rifiuti 4.1.1 of 17 October 2019 (it)",
+      "publisher": "City of Lugano, municipal law collection",
+      "institution_id": "ti-5192-law",
+      "url": "https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019",
+      "language": "it",
+      "accessed_on": "2026-09-23",
+      "start_offset": 0,
+      "end_offset": 4427,
+      "original_excerpt": "P. 1 di 13\nCittà di Lugano\nwww.lugano.ch \nOrdinanza 4.1.1\nOrdinanza municipale sulla gestione dei\nrifiuti\ndel 17 ottobre 2019\nIl Municipio di Lugano, richiamati gli artt. 107 cpv. 2, 192 della Legge organica\ncomunale del 10 marzo 1987 (LOC), 24 del Regolamento di applicazione della\nlegge organica comunale del 30 giugno 1987 (RALOC), la Legge federale sulla\nprotezione dell'ambiente del 7 ottobre 1983 (LPAmb), la Legge cantonale di\napplicazione della Legge federale sulla protezione dell'ambiente del 24 marzo\n2004 (LALPAmb), e il Regolamento sulla gestione dei rifiuti del 13 maggio 2019\nordina:\nCAPITOLO I\nDisposizioni generali\nArt. 1 Campo di applicazione\n1 La presente Ordinanza disciplina la raccolta e lo smaltimento dei rifiuti,\nl'accesso alle infrastrutture di raccolta dei rifiuti e le tasse di raccolta.\n2 Sono oggetto di raccolta i rifiuti urbani, i rifiuti domestici (o rifiuti solidi\nurbani, in seguito RSU), i rifiuti ingombranti domestici, i rifiuti raccolti\nseparatamente e gli scarti vegetali.\n3 Sono di principio esclusi dalla raccolta i rifiuti industriali o aziendali e i\nrifiuti speciali, che vanno smaltiti dai detentori a proprie spese, secondo le\nprescrizioni federali e cantonali applicabili. Sono inoltre esclusi i rifiuti di\ncui all'art. 18 del Regolamento. In casi particolari, il Municipio autorizza la\nconsegna di tali rifiuti al servizio di raccolta o nei centri di raccolta del\nComune.\nArt. 2 Delega\nLa Divisione spazi urbani (in seguito DSU) esercita le competenze delegategli\ndalla presente Ordinanza.\nArt. 3 Giorni e orari di raccolta\n1 La raccolta avviene sulle strade pubbliche e su quelle private aperte al\npubblico transito, normalmente accessibili ai mezzi di raccolta, secondo un\npiano stabilito dalla DSU.\n2 Di regola, la raccolta ha luogo dal lunedì al sabato. Nel caso di giorni\nfestivi infrasettimanali, può aver luogo il giorno precedente o quello\nsuccessivo.\n\nP. 2 di 13\nCittà di Lugano\nwww.lugano.ch \nOrdinanza 4.1.1\n3\nI giorni e gli orari di raccolta sono stabiliti dalla DSU.\nArt. 4 Modalità di consegna\n1 Per i RSU possono essere impiegati esclusivamente i sacchi ufficiali di\ncolore rosso. Gli stessi devono essere depositati nei contenitori adibiti a\ntale scopo.\n2\nI rifiuti riciclabili o per i quali è disponibile una raccolta differenziata non\npossono essere mischiati e smaltiti assieme ai RSU, ma devono essere\nraccolti separatamente e consegnati negli appositi punti per la raccolta\ndifferenziata.\n3\nI rifiuti raccolti separatamente vanno consegnati negli Ecopunti e/o negli\nEcocentri; i rifiuti ingombranti domestici e gli scarti vegetali prodotti dai\nprivati vanno consegnati unicamente negli Ecocentri.\n4\nIl Municipio può istituire altre strutture, oltre a quelle previste dal\nRegolamento, in cui consegnare particolari categorie di rifiuti,\nsegnatamente presso aree di consegna temporanee o presso privati\nautorizzati.\n5\nIl deposito dei rifiuti nei contenitori interrati o seminterrati è autorizzato,\ndi regola, tutti i giorni della settimana. Il Municipio può, quando\nnecessario, limitare l'accesso ai contenitori a determinati orari e/o giorni,\nsegnatamente per tutelare la pubblica quiete e l'ordine pubblico.\n6\nIl cartone va tagliato in pezzi in misura adeguata ed inserito nei contenitori\nappositi per la raccolta della carta e del cartone, oppure consegnato agli\nEcocentri.\nArt. 5 Eccezioni ai principi di raccolta e smaltimento\n1\nIl Municipio può stabilire modalità di raccolta e di consegna differenti da\nquelle previste dalla presente Ordinanza, e porre ulteriori condizioni\nspeciali, localmente e/o a titolo transitorio, in casi particolari, previa\ncomunicazione alla cittadinanza interessata dalla misura.\n2 Nel caso in cui la viabilità e l'accessibilità a determinati fondi e/o strade\nrisultasse ostacolata o difficoltosa, come pure in presenza di cause di forza\nmaggiore o altri eventi eccezionali, il servizio di raccolta dei rifiuti può\nessere temporaneamente limitato o sospeso, anche senza preavviso agli\nutenti.\n3\nIl Municipio autorizza in casi eccezionali, i produttori di grandi quantità di\nrifiuti a usufruire del servizio di raccolta. In tal caso viene stipulata\nun'apposita convenzione.\nArt. 6 Contenitori su proprietà privata\n1 Al momento della costruzione o della ristrutturazione di un immobile (con\naumento sostanziale dell'utenza da servire), su richiesta della DSU, il\nproprietario è tenuto a posare, a sue spese, sulla sua proprietà,",
+      "excerpt_sha256": "647cd8763f9d209922b45a9f0232e80fbd1b3b0c69ea7bb81dab41414904c16a",
+      "block_ids": [
+        "doc-432c6b6aadd4da9c3b89:b00001",
+        "doc-432c6b6aadd4da9c3b89:b00002"
+      ],
+      "content_sha256": "2313fdb4c00f046c31bbb4520d0a667d25e38cde3d2f4e0c20c670d19e8dba3b",
+      "raw_sha256": "b908a31abbf0fd2295419321028df1556107046a38aad91d1390a2932e8b66f5",
+      "basis": {
+        "level": "municipal",
+        "kind": "ordinance",
+        "norm": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 3",
+        "label": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 3"
+      }
+    },
+    {
+      "evidence_id": "e-city-lugano-waste-disposal-3-1",
+      "document_id": "doc-432c6b6aadd4da9c3b89",
+      "source_title": "City of Lugano: Ordinanza municipale sulla gestione dei rifiuti 4.1.1 of 17 October 2019 (it)",
+      "publisher": "City of Lugano, municipal law collection",
+      "institution_id": "ti-5192-law",
+      "url": "https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019",
+      "language": "it",
+      "accessed_on": "2026-09-23",
+      "start_offset": 1909,
+      "end_offset": 4427,
+      "original_excerpt": "P. 2 di 13\nCittà di Lugano\nwww.lugano.ch \nOrdinanza 4.1.1\n3\nI giorni e gli orari di raccolta sono stabiliti dalla DSU.\nArt. 4 Modalità di consegna\n1 Per i RSU possono essere impiegati esclusivamente i sacchi ufficiali di\ncolore rosso. Gli stessi devono essere depositati nei contenitori adibiti a\ntale scopo.\n2\nI rifiuti riciclabili o per i quali è disponibile una raccolta differenziata non\npossono essere mischiati e smaltiti assieme ai RSU, ma devono essere\nraccolti separatamente e consegnati negli appositi punti per la raccolta\ndifferenziata.\n3\nI rifiuti raccolti separatamente vanno consegnati negli Ecopunti e/o negli\nEcocentri; i rifiuti ingombranti domestici e gli scarti vegetali prodotti dai\nprivati vanno consegnati unicamente negli Ecocentri.\n4\nIl Municipio può istituire altre strutture, oltre a quelle previste dal\nRegolamento, in cui consegnare particolari categorie di rifiuti,\nsegnatamente presso aree di consegna temporanee o presso privati\nautorizzati.\n5\nIl deposito dei rifiuti nei contenitori interrati o seminterrati è autorizzato,\ndi regola, tutti i giorni della settimana. Il Municipio può, quando\nnecessario, limitare l'accesso ai contenitori a determinati orari e/o giorni,\nsegnatamente per tutelare la pubblica quiete e l'ordine pubblico.\n6\nIl cartone va tagliato in pezzi in misura adeguata ed inserito nei contenitori\nappositi per la raccolta della carta e del cartone, oppure consegnato agli\nEcocentri.\nArt. 5 Eccezioni ai principi di raccolta e smaltimento\n1\nIl Municipio può stabilire modalità di raccolta e di consegna differenti da\nquelle previste dalla presente Ordinanza, e porre ulteriori condizioni\nspeciali, localmente e/o a titolo transitorio, in casi particolari, previa\ncomunicazione alla cittadinanza interessata dalla misura.\n2 Nel caso in cui la viabilità e l'accessibilità a determinati fondi e/o strade\nrisultasse ostacolata o difficoltosa, come pure in presenza di cause di forza\nmaggiore o altri eventi eccezionali, il servizio di raccolta dei rifiuti può\nessere temporaneamente limitato o sospeso, anche senza preavviso agli\nutenti.\n3\nIl Municipio autorizza in casi eccezionali, i produttori di grandi quantità di\nrifiuti a usufruire del servizio di raccolta. In tal caso viene stipulata\nun'apposita convenzione.\nArt. 6 Contenitori su proprietà privata\n1 Al momento della costruzione o della ristrutturazione di un immobile (con\naumento sostanziale dell'utenza da servire), su richiesta della DSU, il\nproprietario è tenuto a posare, a sue spese, sulla sua proprietà,",
+      "excerpt_sha256": "7400d916106502d8d19c2d679407f6037b2a43db5936868f36bd800bd0306b28",
+      "block_ids": [
+        "doc-432c6b6aadd4da9c3b89:b00002"
+      ],
+      "content_sha256": "2313fdb4c00f046c31bbb4520d0a667d25e38cde3d2f4e0c20c670d19e8dba3b",
+      "raw_sha256": "b908a31abbf0fd2295419321028df1556107046a38aad91d1390a2932e8b66f5",
+      "basis": {
+        "level": "municipal",
+        "kind": "ordinance",
+        "norm": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 2 and 3",
+        "label": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 2 and 3"
+      }
+    },
+    {
+      "evidence_id": "e-city-lugano-waste-disposal-4-1",
+      "document_id": "doc-432c6b6aadd4da9c3b89",
+      "source_title": "City of Lugano: Ordinanza municipale sulla gestione dei rifiuti 4.1.1 of 17 October 2019 (it)",
+      "publisher": "City of Lugano, municipal law collection",
+      "institution_id": "ti-5192-law",
+      "url": "https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019",
+      "language": "it",
+      "accessed_on": "2026-09-23",
+      "start_offset": 8923,
+      "end_offset": 11119,
+      "original_excerpt": "P. 5 di 13\nCittà di Lugano\nwww.lugano.ch \nOrdinanza 4.1.1\n3 Le ditte di giardinaggio, forestali e quelle che in genere svolgono attività\ndi giardinaggio a titolo professionale, non possono consegnare al\nComune gli scarti vegetali provenienti dalla propria attività.\nArt. 12 Ecocard\n1 L'accesso agli Ecocentri è consentito unicamente mediante la\npresentazione all'addetto di un'apposita tessera, denominata Ecocard.\n2 L'addetto verifica la validità della tessera. In caso di dubbio, egli è\nlegittimato ad accertare l'identità e il domicilio dell'utente.\n3 Viene distribuita una Ecocard a ogni famiglia e alle persone sole\nmaggiorenni. Su richiesta, viene data anche ai proprietari delle residenze\nsecondarie, agli amministratori di immobili, nonché alle ditte aventi diritto.\n4\nIl costo per la sostituzione della Ecocard ammonta a:\nCHF 40.-- cadauna in caso di perdita;\nCHF 20.-- cadauna in caso di danneggiamento (obbligo restitutzione\ndella tessera danneggiata);\nCHF 40.-- per ogni Ecocard supplementare.\n5 È vietata la cessione della Ecocard a terzi non aventi diritto, nonché la\nduplicazione della stessa. L'importo minimo della multa per le infrazioni a\nquesta disposizione è di CHF 300.--. Restano inoltre riservate le\ndisposizioni del diritto penale.\n6 Ai fini del rilascio e della successiva gestione delle Ecocard, la DSU è\nautorizzata a richiedere ed ottenere dagli Uffici controllo abitanti del\nComune di Lugano e dei Comuni convenzionati, i dati personali necessari\nrelativi agli aventi diritto di accesso agli Ecocentri. Essa è pure autorizzata\nad elaborare statistiche sulle consegne e sui quartieri di provenienza degli\nutenti.\nSezione 3\nCategorie di rifiuti\nArt. 13 Rifiuti ammessi 4\n1 Presso gli Ecocentri possono essere depositate le seguenti tipologie di\nrifiuti, inclusi alcuni rifiuti speciali determinati in deroga all'art. 1 cpv. 2:\ncarta e cartone;\nvetro;\nalluminio e latta;\nferro;\nlegno e derivati del legno (esclusi grossi rami e ceppaie);\nmateriale ingombrante non riciclabile;\nbottiglie per bevande in PET;\noli minerali e vegetali;\nelettrodomestici, apparecchi elettrici ed elettronici;\nscarti vegetali provenienti da piccoli lavori di giardinaggio eseguiti da\nprivati;",
+      "excerpt_sha256": "eb54e158f6e9f128aebd60b1a421842791b6e5035fefe247d6987cc9d0a53fc6",
+      "block_ids": [
+        "doc-432c6b6aadd4da9c3b89:b00005"
+      ],
+      "content_sha256": "2313fdb4c00f046c31bbb4520d0a667d25e38cde3d2f4e0c20c670d19e8dba3b",
+      "raw_sha256": "b908a31abbf0fd2295419321028df1556107046a38aad91d1390a2932e8b66f5",
+      "basis": {
+        "level": "municipal",
+        "kind": "ordinance",
+        "norm": "Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 12 cpv. 1 and 3",
+        "label": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 12 cpv. 1 and 3"
+      }
+    },
+    {
+      "evidence_id": "e-city-lugano-waste-disposal-5-1",
+      "document_id": "doc-6dd7cb61202ebf90b7a2",
+      "source_title": "Gestione dei rifiuti | lugano.ch",
+      "publisher": "City of Lugano, Urban Spaces Division (DSU)",
+      "institution_id": "ti-5192-dsu",
+      "url": "https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/gestione-rifiuti/",
+      "language": "it",
+      "accessed_on": "2026-09-23",
+      "start_offset": 16880,
+      "end_offset": 17227,
+      "original_excerpt": "In caso di comprovate difficoltà che impediscono al cittadino di provvedere individualmente o tramite terzi al trasporto e alla consegna negli ecocentri, è possibile richiedere un ritiro annuale per gli ingombranti, cioè i rifiuti non riciclabili di grandi dimensioni. Le richieste devono essere inoltrate per iscritto alla Divisione spazi urbani.",
+      "excerpt_sha256": "9f2fce3b329bcd99b52c3b701efd32dbe4d4506b5c22d1d9764ff02c3297bd6b",
+      "block_ids": [
+        "doc-6dd7cb61202ebf90b7a2:b00349"
+      ],
+      "content_sha256": "bb471fa237af532c3dbf780844efd4b6e699494418dde2b7bfb820a82a1815d0",
+      "raw_sha256": "d9522aa02863180e92d55c68013a5a63f23538d704d631dbd36c61363104fe35",
+      "basis": {
+        "level": "municipal",
+        "kind": "guidance",
+        "label": "Municipal authority guidance"
+      }
+    },
+    {
       "evidence_id": "e-city-zurich-parking-permits-1-1",
       "document_id": "doc-5f9c03deab1696cbe981",
       "source_title": "Parkscheibe für die Blaue Zone | Stadt Zürich",
@@ -94768,6 +95128,22 @@
       "level": "cantonal",
       "body": "law_collection",
       "jurisdiction": "CH-TG"
+    },
+    {
+      "institution_id": "ti-5192-dsu",
+      "name": "City of Lugano, Urban Spaces Division (DSU)",
+      "native_name": "Città di Lugano - Divisione spazi urbani",
+      "level": "municipal",
+      "body": "administration",
+      "jurisdiction": "CH-TI-5192"
+    },
+    {
+      "institution_id": "ti-5192-law",
+      "name": "City of Lugano, municipal law collection",
+      "native_name": "Città di Lugano - Leggi e regolamenti",
+      "level": "municipal",
+      "body": "law_collection",
+      "jurisdiction": "CH-TI-5192"
     },
     {
       "institution_id": "ti-law",

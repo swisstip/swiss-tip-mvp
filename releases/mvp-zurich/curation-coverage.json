@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-curation-coverage-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-23-v27",
-  "content_sha256": "d3e5c31a0715bd41647378f829b93fb297eccef16f98bbf1fd59161e6566c94c",
-  "text_index_sha256": "fbb71ddf95776f578e682fb8754dc6c900ecc9571831bb19424d700ca12992d3",
+  "release_id": "mvp-zurich-2026-09-24-v1",
+  "content_sha256": "baa03da3f709db46598be6e9515fbe8bf6cb8a3ae2524683ee02388b136fe0fc",
+  "text_index_sha256": "b0c3d1bd8771246063a040e57c8e3f8c142ccd91bb34339655cf2199ef5064bd",
   "dispositions_sha256": "4a4939b3e0fd4a6bcb57e36d496e8adf31b35b33fc698cf9e56db28a68158ae8",
   "dispositions": 216,
   "policy": "report",
-  "today": "2026-09-23",
-  "generated_at": "2026-09-23T18:07:55.093750+00:00",
+  "today": "2026-09-24",
+  "generated_at": "2026-09-24T06:44:28.538754+00:00",
   "rules": {
     "reference_kinds": [
       "plugin-document"
@@ -18,16 +18,16 @@
     "repeated_match_share": 0.5
   },
   "counts": {
-    "candidates": 526,
+    "candidates": 529,
     "units": {
-      "section": 507,
+      "section": 510,
       "document": 17,
       "rolled_up": 2
     },
-    "content_sections": 3344,
-    "cited_sections": 856,
+    "content_sections": 3398,
+    "cited_sections": 858,
     "dispositioned_sections": 1251,
-    "unclassified_sections": 1237,
+    "unclassified_sections": 1289,
     "boilerplate_sections": 160,
     "repeated_texts": 16,
     "repeated_by_citation": {
@@ -36,10 +36,10 @@
       "cited_once": 3
     },
     "documents": {
-      "unclassified": 39,
+      "unclassified": 40,
       "empty": 44,
-      "partly_cited": 135,
-      "cited": 84,
+      "partly_cited": 136,
+      "cited": 85,
       "cited_and_dispositioned": 73,
       "dispositioned": 151
     },
@@ -6784,6 +6784,800 @@
           "characters": 89,
           "section_ids": [
             "section-0004"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-432c6b6aadd4da9c3b89",
+      "source_url": "https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019",
+      "title": "City of Lugano: Ordinanza municipale sulla gestione dei rifiuti 4.1.1 of 17 October 2019 (it)",
+      "source_ids": [
+        "lugano-waste"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-522f7b0b089a9505a87e",
+      "source_url": "https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/",
+      "title": "Rifiuti | lugano.ch",
+      "source_ids": [
+        "lugano-waste"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0024",
+          "heading_path": [
+            "Rifiuti",
+            "Guardie ecologiche"
+          ],
+          "first_block": 270,
+          "last_block": 276,
+          "characters": 2023,
+          "section_ids": [
+            "section-0024"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-35709959562cee4124cd",
+      "source_url": "https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/ecopunti-ecocentri/",
+      "title": "Ecocentri ed ecopunti | lugano.ch",
+      "source_ids": [
+        "lugano-waste"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 21,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 21,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0018",
+          "heading_path": [
+            "Ecocentri ed ecopunti"
+          ],
+          "first_block": 265,
+          "last_block": 266,
+          "characters": 178,
+          "section_ids": [
+            "section-0018"
+          ]
+        },
+        {
+          "section_id": "section-0019",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Ecopunti"
+          ],
+          "first_block": 267,
+          "last_block": 269,
+          "characters": 233,
+          "section_ids": [
+            "section-0019"
+          ]
+        },
+        {
+          "section_id": "section-0020",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Ecocentri"
+          ],
+          "first_block": 270,
+          "last_block": 271,
+          "characters": 162,
+          "section_ids": [
+            "section-0020"
+          ]
+        },
+        {
+          "section_id": "section-0021",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Delega per la consegna di materiale all'ecocentro"
+          ],
+          "first_block": 272,
+          "last_block": 274,
+          "characters": 147,
+          "section_ids": [
+            "section-0021"
+          ]
+        },
+        {
+          "section_id": "section-0022",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Giorni e orari di apertura"
+          ],
+          "first_block": 275,
+          "last_block": 278,
+          "characters": 487,
+          "section_ids": [
+            "section-0022"
+          ]
+        },
+        {
+          "section_id": "section-0023",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Giorni e orari di apertura",
+            "Ecocentro Breganzona"
+          ],
+          "first_block": 279,
+          "last_block": 280,
+          "characters": 40,
+          "section_ids": [
+            "section-0023"
+          ]
+        },
+        {
+          "section_id": "section-0024",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Accesso"
+          ],
+          "first_block": 281,
+          "last_block": 297,
+          "characters": 526,
+          "section_ids": [
+            "section-0024"
+          ]
+        },
+        {
+          "section_id": "section-0025",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Sede"
+          ],
+          "first_block": 298,
+          "last_block": 299,
+          "characters": 50,
+          "section_ids": [
+            "section-0025"
+          ]
+        },
+        {
+          "section_id": "section-0026",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Sede",
+            "Ecocentro Cadro"
+          ],
+          "first_block": 300,
+          "last_block": 301,
+          "characters": 37,
+          "section_ids": [
+            "section-0026"
+          ]
+        },
+        {
+          "section_id": "section-0027",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Accesso"
+          ],
+          "first_block": 302,
+          "last_block": 318,
+          "characters": 526,
+          "section_ids": [
+            "section-0027"
+          ]
+        },
+        {
+          "section_id": "section-0028",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Sede"
+          ],
+          "first_block": 319,
+          "last_block": 320,
+          "characters": 48,
+          "section_ids": [
+            "section-0028"
+          ]
+        },
+        {
+          "section_id": "section-0030",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Accesso"
+          ],
+          "first_block": 322,
+          "last_block": 338,
+          "characters": 526,
+          "section_ids": [
+            "section-0030"
+          ]
+        },
+        {
+          "section_id": "section-0031",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Sede"
+          ],
+          "first_block": 339,
+          "last_block": 340,
+          "characters": 46,
+          "section_ids": [
+            "section-0031"
+          ]
+        },
+        {
+          "section_id": "section-0032",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Sede",
+            "Ecocentro Pambio-Noranco"
+          ],
+          "first_block": 341,
+          "last_block": 342,
+          "characters": 83,
+          "section_ids": [
+            "section-0032"
+          ]
+        },
+        {
+          "section_id": "section-0033",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Accesso"
+          ],
+          "first_block": 343,
+          "last_block": 359,
+          "characters": 526,
+          "section_ids": [
+            "section-0033"
+          ]
+        },
+        {
+          "section_id": "section-0034",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Sede"
+          ],
+          "first_block": 360,
+          "last_block": 361,
+          "characters": 49,
+          "section_ids": [
+            "section-0034"
+          ]
+        },
+        {
+          "section_id": "section-0036",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Accesso"
+          ],
+          "first_block": 363,
+          "last_block": 379,
+          "characters": 526,
+          "section_ids": [
+            "section-0036"
+          ]
+        },
+        {
+          "section_id": "section-0037",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Sede"
+          ],
+          "first_block": 380,
+          "last_block": 381,
+          "characters": 48,
+          "section_ids": [
+            "section-0037"
+          ]
+        },
+        {
+          "section_id": "section-0039",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Accesso"
+          ],
+          "first_block": 383,
+          "last_block": 399,
+          "characters": 526,
+          "section_ids": [
+            "section-0039"
+          ]
+        },
+        {
+          "section_id": "section-0040",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Sede"
+          ],
+          "first_block": 400,
+          "last_block": 401,
+          "characters": 78,
+          "section_ids": [
+            "section-0040"
+          ]
+        },
+        {
+          "section_id": "section-0071",
+          "heading_path": [
+            "Ecocentri ed ecopunti",
+            "Mappa",
+            "Besso",
+            "Contatti"
+          ],
+          "first_block": 1394,
+          "last_block": 1396,
+          "characters": 108,
+          "section_ids": [
+            "section-0071"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-6dd7cb61202ebf90b7a2",
+      "source_url": "https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/gestione-rifiuti/",
+      "title": "Gestione dei rifiuti | lugano.ch",
+      "source_ids": [
+        "lugano-waste"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 32,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 31,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0018",
+          "heading_path": [
+            "Gestione dei rifiuti"
+          ],
+          "first_block": 265,
+          "last_block": 267,
+          "characters": 427,
+          "section_ids": [
+            "section-0018"
+          ]
+        },
+        {
+          "section_id": "section-0019",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base"
+          ],
+          "first_block": 268,
+          "last_block": 269,
+          "characters": 364,
+          "section_ids": [
+            "section-0019"
+          ]
+        },
+        {
+          "section_id": "section-0020",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Tassa base rifiuti 2026: informazioni per chi deve segnalare modifiche alla banca dati dell’Ufficio controllo abitanti"
+          ],
+          "first_block": 270,
+          "last_block": 272,
+          "characters": 78,
+          "section_ids": [
+            "section-0020"
+          ]
+        },
+        {
+          "section_id": "section-0021",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Disposizioni per le abitazioni primarie e secondarie"
+          ],
+          "first_block": 273,
+          "last_block": 275,
+          "characters": 886,
+          "section_ids": [
+            "section-0021"
+          ]
+        },
+        {
+          "section_id": "section-0022",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "La tassa base è obbligatoria? Va pagata anche se si paga già per il sacco gravato da tassa?"
+          ],
+          "first_block": 276,
+          "last_block": 277,
+          "characters": 43,
+          "section_ids": [
+            "section-0022"
+          ]
+        },
+        {
+          "section_id": "section-0023",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "È prevista una riduzione o un condono della tassa base (ad esempio per persone in AVS, con la complementare, in assistenza, in difficoltà economica)?"
+          ],
+          "first_block": 278,
+          "last_block": 279,
+          "characters": 59,
+          "section_ids": [
+            "section-0023"
+          ]
+        },
+        {
+          "section_id": "section-0024",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "È possibile pagare pro-rata della tassa base rifiuti?"
+          ],
+          "first_block": 280,
+          "last_block": 281,
+          "characters": 708,
+          "section_ids": [
+            "section-0024"
+          ]
+        },
+        {
+          "section_id": "section-0025",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Cosa succede se un membro del nucleo familiare lascia il domicilio a lungo termine (ad es. per motivi di studio), cambiando così il numero dei componenti del nucleo familiare? L’importo della tassa base rifiuti può essere modificato?"
+          ],
+          "first_block": 282,
+          "last_block": 283,
+          "characters": 190,
+          "section_ids": [
+            "section-0025"
+          ]
+        },
+        {
+          "section_id": "section-0026",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "In caso di co-locazione è possibile richiedere la suddivisione della fattura sui vari membri?"
+          ],
+          "first_block": 284,
+          "last_block": 285,
+          "characters": 143,
+          "section_ids": [
+            "section-0026"
+          ]
+        },
+        {
+          "section_id": "section-0027",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Disposizioni per le attività economiche"
+          ],
+          "first_block": 286,
+          "last_block": 287,
+          "characters": 37,
+          "section_ids": [
+            "section-0027"
+          ]
+        },
+        {
+          "section_id": "section-0028",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Per quale motivo ricevo la fattura se l’attività è svolta presso il mio domicilio?"
+          ],
+          "first_block": 288,
+          "last_block": 289,
+          "characters": 251,
+          "section_ids": [
+            "section-0028"
+          ]
+        },
+        {
+          "section_id": "section-0029",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Lavoro nello stesso luogo/spazio con un’altra persona: perché riceviamo due fatture?"
+          ],
+          "first_block": 290,
+          "last_block": 291,
+          "characters": 274,
+          "section_ids": [
+            "section-0029"
+          ]
+        },
+        {
+          "section_id": "section-0030",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "La mia attività non genera alcun tipo di rifiuto: posso chiedere l’esonero?"
+          ],
+          "first_block": 292,
+          "last_block": 293,
+          "characters": 213,
+          "section_ids": [
+            "section-0030"
+          ]
+        },
+        {
+          "section_id": "section-0031",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "La mia attività non genera nessun guadagno: posso chiedere l’esonero?"
+          ],
+          "first_block": 294,
+          "last_block": 295,
+          "characters": 179,
+          "section_ids": [
+            "section-0031"
+          ]
+        },
+        {
+          "section_id": "section-0032",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "La mia attività ha l’operatività con sede fuori Comune: posso chiedere l’esonero?"
+          ],
+          "first_block": 296,
+          "last_block": 297,
+          "characters": 46,
+          "section_ids": [
+            "section-0032"
+          ]
+        },
+        {
+          "section_id": "section-0033",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Se una persona ha un’attività accessoria, come viene gestita?"
+          ],
+          "first_block": 298,
+          "last_block": 302,
+          "characters": 404,
+          "section_ids": [
+            "section-0033"
+          ]
+        },
+        {
+          "section_id": "section-0034",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Ho sospeso temporaneamente l’attività: posso chiedere la riduzione o l’esonero?"
+          ],
+          "first_block": 303,
+          "last_block": 304,
+          "characters": 91,
+          "section_ids": [
+            "section-0034"
+          ]
+        },
+        {
+          "section_id": "section-0035",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Ricevo la fattura per un’attività che non esiste più: cosa devo fare?"
+          ],
+          "first_block": 305,
+          "last_block": 307,
+          "characters": 517,
+          "section_ids": [
+            "section-0035"
+          ]
+        },
+        {
+          "section_id": "section-0036",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Apertura o chiusura dell’attività durante l’anno: la tassa è ridotta?"
+          ],
+          "first_block": 308,
+          "last_block": 309,
+          "characters": 160,
+          "section_ids": [
+            "section-0036"
+          ]
+        },
+        {
+          "section_id": "section-0037",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "La società (fatta eccezione per gli indipendenti) non dispone di unità lavorative: può chiedere la riduzione della tassa?"
+          ],
+          "first_block": 310,
+          "last_block": 311,
+          "characters": 691,
+          "section_ids": [
+            "section-0037"
+          ]
+        },
+        {
+          "section_id": "section-0038",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "La fattura di un anno precedente è errata: posso chiederne il ricalcolo?"
+          ],
+          "first_block": 312,
+          "last_block": 313,
+          "characters": 339,
+          "section_ids": [
+            "section-0038"
+          ]
+        },
+        {
+          "section_id": "section-0039",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Ho cambiato indirizzo o sede all’interno del Comune: la tassa viene adeguata?"
+          ],
+          "first_block": 314,
+          "last_block": 315,
+          "characters": 109,
+          "section_ids": [
+            "section-0039"
+          ]
+        },
+        {
+          "section_id": "section-0040",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Se non aggiorno i miei dati, rischio delle sanzioni?"
+          ],
+          "first_block": 316,
+          "last_block": 319,
+          "characters": 738,
+          "section_ids": [
+            "section-0040"
+          ]
+        },
+        {
+          "section_id": "section-0042",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Per economie domestiche e residenze secondarie"
+          ],
+          "first_block": 321,
+          "last_block": 325,
+          "characters": 251,
+          "section_ids": [
+            "section-0042"
+          ]
+        },
+        {
+          "section_id": "section-0043",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa base",
+            "Per attività economiche"
+          ],
+          "first_block": 326,
+          "last_block": 334,
+          "characters": 1163,
+          "section_ids": [
+            "section-0043"
+          ]
+        },
+        {
+          "section_id": "section-0044",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa sul sacco"
+          ],
+          "first_block": 335,
+          "last_block": 339,
+          "characters": 1118,
+          "section_ids": [
+            "section-0044"
+          ]
+        },
+        {
+          "section_id": "section-0045",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa sul sacco",
+            "Sacchi ufficiali dei rifiuti: lista dei punti vendita"
+          ],
+          "first_block": 340,
+          "last_block": 341,
+          "characters": 11,
+          "section_ids": [
+            "section-0045"
+          ]
+        },
+        {
+          "section_id": "section-0046",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Tassa sul sacco",
+            "Misure di sostegno"
+          ],
+          "first_block": 342,
+          "last_block": 345,
+          "characters": 685,
+          "section_ids": [
+            "section-0046"
+          ]
+        },
+        {
+          "section_id": "section-0047",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Ingombranti e manifestazioni"
+          ],
+          "first_block": 346,
+          "last_block": 347,
+          "characters": 26,
+          "section_ids": [
+            "section-0047"
+          ]
+        },
+        {
+          "section_id": "section-0049",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Ingombranti e manifestazioni",
+            "Stoviglie riutilizzabili per manifestazioni con affluenza di oltre 200 persone"
+          ],
+          "first_block": 350,
+          "last_block": 351,
+          "characters": 688,
+          "section_ids": [
+            "section-0049"
+          ]
+        },
+        {
+          "section_id": "section-0051",
+          "heading_path": [
+            "Gestione dei rifiuti",
+            "Ingombranti e manifestazioni",
+            "Contatti"
+          ],
+          "first_block": 359,
+          "last_block": 361,
+          "characters": 108,
+          "section_ids": [
+            "section-0051"
           ]
         }
       ]
@@ -18007,36 +18801,6 @@
       ]
     },
     {
-      "document_id": "doc-745148c5fe3663cb880f",
-      "source_url": "https://www.stadt-zuerich.ch/de/stadtleben/notfall.html",
-      "title": "Notfall | Stadt Zürich",
-      "source_ids": [],
-      "attribution_kind": "unplanned",
-      "unit": "section",
-      "units": 1,
-      "cited": 0,
-      "dispositioned": 0,
-      "boilerplate": 0,
-      "unclassified": 1,
-      "dispositions": {},
-      "status": "unclassified",
-      "unclassified_sections": [
-        {
-          "section_id": "section-0002",
-          "heading_path": [
-            "Navigation",
-            "Sprunglink"
-          ],
-          "first_block": 2,
-          "last_block": 6,
-          "characters": 591,
-          "section_ids": [
-            "section-0002"
-          ]
-        }
-      ]
-    },
-    {
       "document_id": "doc-e4da66bbcba8f30ed8f7",
       "source_url": "https://www.stadt-zuerich.ch/de/stadtleben/notfall/notfaelle/medizinischer-notfall.html",
       "title": "Medizinischer Notfall – richtig handeln | Stadt Zürich",
@@ -27176,12 +27940,12 @@
     {
       "source_id": "(discovered)",
       "title": null,
-      "documents": 130,
-      "units": 1001,
+      "documents": 129,
+      "units": 1000,
       "cited": 328,
       "dispositioned": 211,
       "boilerplate": 47,
-      "unclassified": 462,
+      "unclassified": 461,
       "status": "partly_covered"
     },
     {
@@ -27482,6 +28246,17 @@
       "status": "boilerplate_only"
     },
     {
+      "source_id": "ch-ahv-iv-en",
+      "title": "Informationsstelle AHV/IV - English versions of the pages the release cites",
+      "documents": 0,
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "no_documents"
+    },
+    {
       "source_id": "ch-ahv-iv-glossar",
       "title": "Glossary of the Swiss social insurance system",
       "documents": 1,
@@ -27557,6 +28332,17 @@
       "boilerplate": 0,
       "unclassified": 0,
       "status": "cited"
+    },
+    {
+      "source_id": "ch-bag-en",
+      "title": "FOPH - English versions of the pages the release cites",
+      "documents": 0,
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "no_documents"
     },
     {
       "source_id": "ch-bag-grenzgaenger",
@@ -27733,6 +28519,17 @@
       "boilerplate": 1,
       "unclassified": 0,
       "status": "cited"
+    },
+    {
+      "source_id": "ch-bazg-en",
+      "title": "FOCBS - English versions of the pages the release cites",
+      "documents": 0,
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "no_documents"
     },
     {
       "source_id": "ch-bazg-faq-umzugsgut",
@@ -28505,6 +29302,17 @@
       "status": "cited"
     },
     {
+      "source_id": "ch-seco-en",
+      "title": "SECO (arbeit.swiss) - English versions of the pages the release cites",
+      "documents": 0,
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "no_documents"
+    },
+    {
       "source_id": "ch-seco-erste-schritte",
       "title": "First steps after notice of termination",
       "documents": 1,
@@ -28670,6 +29478,17 @@
       "status": "dispositioned"
     },
     {
+      "source_id": "ch-sem-en",
+      "title": "SEM - English versions of the pages the release cites",
+      "documents": 0,
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "no_documents"
+    },
+    {
       "source_id": "ch-sem-entry",
       "title": "Entry and visa information",
       "documents": 35,
@@ -28789,6 +29608,17 @@
       "boilerplate": 0,
       "unclassified": 33,
       "status": "partly_covered"
+    },
+    {
+      "source_id": "ch-serafe-en",
+      "title": "SERAFE - English versions of the pages the release cites",
+      "documents": 0,
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "no_documents"
     },
     {
       "source_id": "ch-serafe-household-fee",
@@ -28987,6 +29817,17 @@
       "boilerplate": 0,
       "unclassified": 0,
       "status": "cited"
+    },
+    {
+      "source_id": "lugano-waste",
+      "title": "City of Lugano - waste disposal and the municipal waste ordinance",
+      "documents": 4,
+      "units": 55,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 53,
+      "status": "partly_covered"
     },
     {
       "source_id": "ne-permit-management",

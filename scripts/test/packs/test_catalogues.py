@@ -29,7 +29,10 @@ class CommittedCatalogueTests(unittest.TestCase):
 
     def test_the_zurich_catalogue_carries_its_extensions(self) -> None:
         mvp = load_source_catalog(MVP)
-        self.assertEqual(len(mvp["sources"]), 251)
+        # 251 sources, then on 23 September 2026 the City of Lugano's waste source (daily-life) and one registry
+        # seed per host for the English versions (english), which the downloader now needs to attribute them.
+        self.assertEqual(len(mvp["sources"]), 258)
+        self.assertEqual(len(set(mvp["scan_sets"]["english"])), 6)
         scan_sets = mvp["scan_sets"]
         self.assertLessEqual({"smoke", "federal", "zurich", "multilingual", "moving", "naturalisation", "contacts",
                               "daily-life", "entry", "voting-tax", "expat-life", "cantons", "all"}, set(scan_sets))
@@ -46,7 +49,7 @@ class CommittedCatalogueTests(unittest.TestCase):
         extension = set(scan_sets["moving"]) | set(scan_sets["naturalisation"])
         self.assertEqual(len(extension), 25)
         self.assertEqual(len(set(scan_sets["contacts"])), 8)
-        self.assertEqual(len(set(scan_sets["daily-life"])), 10)
+        self.assertEqual(len(set(scan_sets["daily-life"])), 11)
         voting_tax = set(scan_sets["voting-tax"]) - extension
         self.assertEqual(voting_tax, {"ch-fedlex-bv", "zh-fedlex-kv", "zh-voting", "ch-chch-voting"})
         source_ids = {entry["definition"]["source_id"] for entry in mvp["sources"]}
@@ -61,7 +64,7 @@ class CommittedCatalogueTests(unittest.TestCase):
                 self.assertEqual(download_cli.main(["--catalogue", str(MVP), "--output", str(output)]), 0)
                 fetch.assert_not_called()
             plan = json.loads((output / "plan.json").read_text(encoding="utf-8"))
-            self.assertEqual(len(plan["targets"]), 251)
+            self.assertEqual(len(plan["targets"]), 258)
             self.assertEqual(plan["catalog_ref"]["artifact_id"], "residence-sources-mvp-zurich")
             fedlex = [s["url"] for s in json.loads((output / "plugin-plan.json").read_text(encoding="utf-8"))["sources"]]
             # the VEV joined the eleven Fedlex documents on 17 September 2026, the two constitutions and the Code of

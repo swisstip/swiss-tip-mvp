@@ -1,9 +1,9 @@
 # Limitations
 
-**Last update:** 23 September 2026
+**Last update:** 24 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
-claim. It applies to the committed release `mvp-zurich-2026-09-23-v19` and is
+claim. It applies to the committed release `mvp-zurich-2026-09-24-v1` and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
 [COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
@@ -26,7 +26,7 @@ below is measured on it.
 
 ## Review status: reviewed by one person, not by a lawyer
 
-**All 1,268 facts are `human-reviewed`**, by one named reviewer: the 104 facts
+**All 1,273 facts are `human-reviewed`**, by one named reviewer: the 104 facts
 of the residence topic (78) and of the cantonal migration-office contacts
 (26) on 14 September 2026, the 149 facts of the five topics added on
 15 September 2026, social insurance (25), tax at source (26), driving
@@ -232,6 +232,30 @@ review, which the coverage root no longer carries since release
 | 23 September 2026 | 131 (work and unemployment) | hardest first, against a written brief: one decision settling thirteen facts on whether a threshold is a rule or an amount, then the 39 facts carrying a number, then nine recorded judgement calls |
 | 23 September 2026 | 90 (AHV, the pillars and retirement) | hardest first, against a written brief: the two rules the pages turned out not to state, a preserved defect in a publisher's page, then the 22 facts carrying a number and six recorded judgement calls |
 | 23 September 2026 | 124 (registering on arrival in all 26 cantons) | against two written briefs with an English rendering beside each of the 49 French and Italian excerpts, and a per-fact note on the twelve that carry a figure that is not fourteen days, a direction of travel that inverts easily, a duty owed to two offices, or a reading that rests on a canton's law rather than a page a resident would read |
+| 24 September 2026 | 5 (Lugano waste) | in the console |
+
+## Gaps in the Lugano waste extension of 23 September 2026
+
+- **One city outside Zurich, one subject.** A survey of the waste calendars
+  of the ten largest cities after Zurich
+  (`.local/experiments/2026-09-23-waste-calendars-other-cities.md`) found that
+  Lugano alone publishes no collection day, so a general assistant is most
+  likely to invent one there. Only how waste is handed over in Lugano is
+  served. Collection days, recycling points and fees in Basel, Geneva, Bern
+  and every other city remain out of scope and are rejected with
+  `jurisdiction_not_covered`.
+- **What the Lugano facts do not say.** The collection days and times the
+  city's Urban Spaces Division sets, the locations and opening hours of the
+  ecopunti and ecocentri, the bag prices and the basic waste fee are not
+  served, although the saved pages state some of them.
+- **Four facts rest on the ordinance, one on a page.** The ordinance is a
+  13-page PDF whose extracted text is one block per page, so each citation
+  is a whole page. Its reading order was not checked beyond the cited
+  articles.
+- **Colloquial questions match weakly.** A question naming an object
+  ("Dove porto un vecchio divano a Lugano?") has no alias to match and
+  returns a weak match. Questions about collection days, bags, bulky waste
+  or the Ecocard match strongly in English, German and Italian.
 
 ## Gaps in the cantonal registration wave of 23 September 2026
 
@@ -1490,7 +1514,9 @@ answer. Recorded runs show three behaviours the release cannot prevent:
   never runs the ready stage, so a release is served only once the reviewer
   attests it in their own name. `mvp-zurich-2026-09-23-v27`, with all 1,268
   facts reviewed, was attested on 23 September 2026 and supersedes
-  `mvp-zurich-2026-09-23-v19`.
+  `mvp-zurich-2026-09-23-v19`. `mvp-zurich-2026-09-24-v1`, which adds the
+  Lugano waste concept with its 5 facts reviewed, was attested on 24 September
+  2026 and supersedes v27.
 - **The coverage root is close to its bound.** `get_coverage` answers in one
   call under 6 KB, which the pack README promises and the check
   `scripts/test/packs/test_zurich_release.py` enforces. On this release the

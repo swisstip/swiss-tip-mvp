@@ -1,6 +1,6 @@
 # User acceptance tests
 
-**Last update:** 22 September 2026<br>
+**Last update:** 23 September 2026<br>
 **Scope:** the two standing cases of section 3.3 of the
 [functional specification](https://github.com/swisstip/swiss-tip/blob/main/docs/product/functional-specification.md), four further
 cases chosen because the popular answer misses an exception in the law, a
@@ -2652,6 +2652,17 @@ of Zurich, say who registers there, and say how the account statement is
 requested. It must not name a compensation office for a place outside the canton
 as if the release covered it. The trap is inventing an address or a form number.
 
+### UAT-117: Waste day in Lugano
+
+"Mi sono appena trasferita a Lugano. In che giorno passa la raccolta dei rifiuti
+e dove metto i sacchi?" (I have just moved to Lugano. On which day is the waste
+collected, and where do I put the bags?) Lugano publishes no collection day for
+residents. The answer must say that household waste goes only in the official
+red bags, into the underground or semi-underground containers. It must say
+that residents may, as a rule, use those containers on every day of the week,
+and that bulky and garden waste go only to the ecocentri. The trap is inventing
+a weekly collection day or a street calendar, which is what a general assistant
+does when it answers from other Swiss cities.
 
 ## Decline cases
 

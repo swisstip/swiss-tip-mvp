@@ -1,8 +1,8 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-23-v27` (content `d3e5c31a0715`), policy `report`, not clean, 216 disposition(s), generated 2026-09-23T18:07:55.
+Release `mvp-zurich-2026-09-24-v1` (content `baa03da3f709`), policy `report`, not clean, 216 disposition(s), generated 2026-09-24T06:44:28.
 
-526 candidate records ({'section': 507, 'document': 17, 'rolled_up': 2}) with 3344 units a curator answers for: 856 cited, 1251 dispositioned, **1237 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 39, 'empty': 44, 'partly_cited': 135, 'cited': 84, 'cited_and_dispositioned': 73, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
+529 candidate records ({'section': 510, 'document': 17, 'rolled_up': 2}) with 3398 units a curator answers for: 858 cited, 1251 dispositioned, **1289 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 40, 'empty': 44, 'partly_cited': 136, 'cited': 85, 'cited_and_dispositioned': 73, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 
 ## Documents
 
@@ -16,6 +16,8 @@ Release `mvp-zurich-2026-09-23-v27` (content `d3e5c31a0715`), policy `report`, n
 | unclassified | [Heiraten in der Schweiz](https://www.ch.ch/de/familie-und-partnerschaft/heirat--konkubinat--partenariat/heiraten/) `doc-1763e58f746ce7c2100a` | section | 2 | 0 | 0 | 0 | 2 | ch-chch-marriage |
 | unclassified | [Miete](https://www.ch.ch/de/wohnen/miete/) `doc-fabe4f3082ee4b4931b7` | section | 2 | 0 | 0 | 0 | 2 | ch-chch-housing |
 | unclassified | [Wohnen: Ruhezeiten, Mietzins und Mängel in der Schweiz](https://www.ch.ch/de/wohnen/miete/larm--mangel--mietzins/) `doc-10bb67123311f6518f86` | section | 2 | 0 | 0 | 0 | 2 |  |
+| unclassified | [Rifiuti / lugano.ch](https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/) `doc-522f7b0b089a9505a87e` | section | 1 | 0 | 0 | 0 | 1 | lugano-waste |
+| unclassified | [Ecocentri ed ecopunti / lugano.ch](https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/ecopunti-ecocentri/) `doc-35709959562cee4124cd` | section | 21 | 0 | 0 | 0 | 21 | lugano-waste |
 | unclassified | [Aufenthaltsbewilligung (Ausweis B)](https://www.migration.sid.be.ch/de/start/aufenthalt/ausweis-b.html) `doc-b43396324f38f0112c65` | section | 3 | 0 | 0 | 0 | 3 | be-permit-b |
 | unclassified | [Personnes issues d'un État de l'UE/AELE](https://www.migration.sid.be.ch/fr/start/einreise/buerger-eu-efta.html) `doc-a24d379984bea6e97df4` | section | 3 | 0 | 0 | 0 | 3 | be-entry-eu-efta-fr |
 | unclassified | [Wie werde ich Schweizerin oder Schweizer](https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden.html) `doc-a51c61294f44050bec82` | section | 7 | 0 | 0 | 0 | 7 | ch-sem-citizenship |
@@ -38,7 +40,6 @@ Release `mvp-zurich-2026-09-23-v27` (content `d3e5c31a0715`), policy `report`, n
 | unclassified | [Permit S (people in need of protection)](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/nicht_eu_efta/ausweis_s__schutzbeduerftige.html) `doc-d5d2d1e57acb1b6f54c1` | section | 1 | 0 | 0 | 0 | 1 | ch-sem-residence-en |
 | unclassified | ["Sans-Papiers" in Switzerland](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/sans-papiers.html) `doc-2979c6530d0fc2938338` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-residence-en |
 | unclassified | [Visa Application Form](https://www.sem.admin.ch/sem/en/home/themen/einreise/visumantragsformular.html) `doc-daf8dfc81039a2f8289c` | section | 1 | 0 | 0 | 0 | 1 |  |
-| unclassified | [Notfall / Stadt Zürich](https://www.stadt-zuerich.ch/de/stadtleben/notfall.html) `doc-745148c5fe3663cb880f` | section | 1 | 0 | 0 | 0 | 1 |  |
 | unclassified | [Verlassen der Schweiz](https://www.zas.admin.ch/de/verlassen-der-schweiz) `doc-2762a65962b06c05dc9e` | section | 6 | 0 | 0 | 0 | 6 |  |
 | unclassified | [Steueramt / Kanton Zürich](https://www.zh.ch/de/finanzdirektion/steueramt.html) `doc-b30d930e5eb4e146f3c0` | section | 10 | 0 | 0 | 0 | 10 | zh-steueramt-office |
 | unclassified | [Familiennachzug von Drittstaatsangehörigen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen.html) `doc-0f4f03404f99ee66351b` | section | 12 | 0 | 0 | 1 | 11 | zh-family |
@@ -81,6 +82,7 @@ Release `mvp-zurich-2026-09-23-v27` (content `d3e5c31a0715`), policy `report`, n
 | partly_cited | [Annoncer mon départ à l'OCPM / ge.ch](https://www.ge.ch/annoncer-mon-depart-ocpm) `doc-a7aa9034e802ad023fb2` | section | 3 | 1 | 0 | 0 | 2 | ge-departure |
 | partly_cited | [Aufenthaltsbewilligung / hallo.sg.ch](https://www.hallo.sg.ch/de/zusammenleben/leben-in-st-gallen/aufenthaltsbewilligung.html) `doc-87bd1ae131b394947426` | section | 22 | 3 | 0 | 0 | 19 | sg-newcomer-permit |
 | partly_cited | [Contrôle des habitants - République et Canton du Jura](https://www.jura.ch/fr/Autorites/Administration/DSJP/SPOP/Controle-des-habitants/Controle-des-habitants.html) `doc-3ca5baea976a4719565c` | section | 4 | 1 | 0 | 0 | 3 | ju-residents-office |
+| partly_cited | [Gestione dei rifiuti / lugano.ch](https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/gestione-rifiuti/) `doc-6dd7cb61202ebf90b7a2` | section | 32 | 1 | 0 | 0 | 31 | lugano-waste |
 | partly_cited | [Einreise für Bürger/innen von EU-/EFTA-Staaten](https://www.migration.sid.be.ch/de/start/einreise/buerger-eu-efta.html) `doc-ef8e74af38d086f3a1af` | section | 3 | 1 | 0 | 0 | 2 | be-entry-eu-efta |
 | partly_cited | [Étudier à Neuchâtel / ne.ch](https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/etudier-neuchatel) `doc-05ca6b1f1d0609c5358f` | section | 13 | 1 | 0 | 0 | 12 | ne-studying |
 | partly_cited | [Gérer et renouveler votre permis actuel / ne.ch](https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/permis-de-sejour/gerer-et-renouveler-votre-permis-actuel) `doc-2518b46b4d52603fce96` | section | 12 | 3 | 0 | 0 | 9 | ne-permit-management |
@@ -489,6 +491,7 @@ Release `mvp-zurich-2026-09-23-v27` (content `d3e5c31a0715`), policy `report`, n
 | cited | [Changement de canton ressortissant UE-27/AELE / Etat de Fribourg](https://www.fr.ch/vie-quotidienne/demarches-et-documents/changement-de-canton-ressortissant-ue-27aele) `doc-674225ac43786b5d211d` | section | 1 | 1 | 0 | 0 | 0 | fr-change-of-canton |
 | cited | [Si j'arrive dans le canton de Fribourg pour un séjour de plus de 3 mois (depuis l'étranger ou un autre canton) et si je suis ressortissant UE/AELE / Etat de Fribourg](https://www.fr.ch/vie-quotidienne/demarches-et-documents/etrangers/ressortissante-etrangerere-a-qui-dois-je-madresser/si-jarrive-dans-le-canton-de-fribourg-pour-un-sejour-de-plus-de-3-mois-depuis-letranger-ou-un-autre-canton-et-si-je-suis-ressortissant) `doc-2a813d10788c0f4c00ba` | section | 1 | 1 | 0 | 0 | 0 | fr-arrival-eu-efta |
 | cited | [St. Gallen - Gesetz ueber Niederlassung und Aufenthalt (sGS 453.1), arts. 3 and 6](https://www.gesetzessammlung.sg.ch/api/de/versions/2506/pdf_file_with_annexes) `doc-30d29fac2c81ff92aaf0` | section | 1 | 1 | 0 | 0 | 0 | sg-residence-law |
+| cited | [City of Lugano: Ordinanza municipale sulla gestione dei rifiuti 4.1.1 of 17 October 2019 (it)](https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019) `doc-432c6b6aadd4da9c3b89` | section | 1 | 1 | 0 | 0 | 0 | lugano-waste |
 | cited | [Einreise für Bürger/innen von Drittstaaten](https://www.migration.sid.be.ch/de/start/einreise/buerger-drittstaaten.html) `doc-6038442651e07dc6a567` | section | 2 | 2 | 0 | 0 | 0 | be-entry-third-country |
 | cited | [Ausweis Ci EU/EFTA (Aufenthaltsbewilligung mit Erwerbstätigkeit)](https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_ci_eu_efta.html) `doc-a08db9ee519e5d5386e4` | section | 1 | 1 | 0 | 0 | 0 | ch-sem-eu-efta, ch-sem-residence-de |
 | cited | [Aufenthaltsbewilligungen für Nicht-EU/EFTA-Angehörige](https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta.html) `doc-f2a82e55188699dfb2c9` | section | 1 | 1 | 0 | 0 | 0 | ch-sem-third-country |
@@ -761,6 +764,59 @@ Release `mvp-zurich-2026-09-23-v27` (content `d3e5c31a0715`), policy `report`, n
 | `doc-3ca5baea976a4719565c` | section-0001 | Canton du Jura | 1-113 | 852 |
 | `doc-3ca5baea976a4719565c` | section-0003 | Canton du Jura > Contrôle des habitants > Rôle du Service de la population | 120-133 | 262 |
 | `doc-3ca5baea976a4719565c` | section-0004 | Canton du Jura > Liens rapides | 134-155 | 89 |
+| `doc-522f7b0b089a9505a87e` | section-0024 | Rifiuti > Guardie ecologiche | 270-276 | 2023 |
+| `doc-35709959562cee4124cd` | section-0018 | Ecocentri ed ecopunti | 265-266 | 178 |
+| `doc-35709959562cee4124cd` | section-0019 | Ecocentri ed ecopunti > Ecopunti | 267-269 | 233 |
+| `doc-35709959562cee4124cd` | section-0020 | Ecocentri ed ecopunti > Ecocentri | 270-271 | 162 |
+| `doc-35709959562cee4124cd` | section-0021 | Ecocentri ed ecopunti > Delega per la consegna di materiale all'ecocentro | 272-274 | 147 |
+| `doc-35709959562cee4124cd` | section-0022 | Ecocentri ed ecopunti > Giorni e orari di apertura | 275-278 | 487 |
+| `doc-35709959562cee4124cd` | section-0023 | Ecocentri ed ecopunti > Giorni e orari di apertura > Ecocentro Breganzona | 279-280 | 40 |
+| `doc-35709959562cee4124cd` | section-0024 | Ecocentri ed ecopunti > Accesso | 281-297 | 526 |
+| `doc-35709959562cee4124cd` | section-0025 | Ecocentri ed ecopunti > Sede | 298-299 | 50 |
+| `doc-35709959562cee4124cd` | section-0026 | Ecocentri ed ecopunti > Sede > Ecocentro Cadro | 300-301 | 37 |
+| `doc-35709959562cee4124cd` | section-0027 | Ecocentri ed ecopunti > Accesso | 302-318 | 526 |
+| `doc-35709959562cee4124cd` | section-0028 | Ecocentri ed ecopunti > Sede | 319-320 | 48 |
+| `doc-35709959562cee4124cd` | section-0030 | Ecocentri ed ecopunti > Accesso | 322-338 | 526 |
+| `doc-35709959562cee4124cd` | section-0031 | Ecocentri ed ecopunti > Sede | 339-340 | 46 |
+| `doc-35709959562cee4124cd` | section-0032 | Ecocentri ed ecopunti > Sede > Ecocentro Pambio-Noranco | 341-342 | 83 |
+| `doc-35709959562cee4124cd` | section-0033 | Ecocentri ed ecopunti > Accesso | 343-359 | 526 |
+| `doc-35709959562cee4124cd` | section-0034 | Ecocentri ed ecopunti > Sede | 360-361 | 49 |
+| `doc-35709959562cee4124cd` | section-0036 | Ecocentri ed ecopunti > Accesso | 363-379 | 526 |
+| `doc-35709959562cee4124cd` | section-0037 | Ecocentri ed ecopunti > Sede | 380-381 | 48 |
+| `doc-35709959562cee4124cd` | section-0039 | Ecocentri ed ecopunti > Accesso | 383-399 | 526 |
+| `doc-35709959562cee4124cd` | section-0040 | Ecocentri ed ecopunti > Sede | 400-401 | 78 |
+| `doc-35709959562cee4124cd` | section-0071 | Ecocentri ed ecopunti > Mappa > Besso > Contatti | 1394-1396 | 108 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0018 | Gestione dei rifiuti | 265-267 | 427 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0019 | Gestione dei rifiuti > Tassa base | 268-269 | 364 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0020 | Gestione dei rifiuti > Tassa base > Tassa base rifiuti 2026: informazioni per chi deve segnalare modifiche alla banca dati dell’Ufficio controllo abitanti | 270-272 | 78 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0021 | Gestione dei rifiuti > Tassa base > Disposizioni per le abitazioni primarie e secondarie | 273-275 | 886 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0022 | Gestione dei rifiuti > Tassa base > La tassa base è obbligatoria? Va pagata anche se si paga già per il sacco gravato da tassa? | 276-277 | 43 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0023 | Gestione dei rifiuti > Tassa base > È prevista una riduzione o un condono della tassa base (ad esempio per persone in AVS, con la complementare, in assistenza, in difficoltà economica)? | 278-279 | 59 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0024 | Gestione dei rifiuti > Tassa base > È possibile pagare pro-rata della tassa base rifiuti? | 280-281 | 708 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0025 | Gestione dei rifiuti > Tassa base > Cosa succede se un membro del nucleo familiare lascia il domicilio a lungo termine (ad es. per motivi di studio), cambiando così il numero dei componenti del nucleo familiare? L’importo della tassa base rifiuti può essere modificato? | 282-283 | 190 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0026 | Gestione dei rifiuti > Tassa base > In caso di co-locazione è possibile richiedere la suddivisione della fattura sui vari membri? | 284-285 | 143 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0027 | Gestione dei rifiuti > Tassa base > Disposizioni per le attività economiche | 286-287 | 37 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0028 | Gestione dei rifiuti > Tassa base > Per quale motivo ricevo la fattura se l’attività è svolta presso il mio domicilio? | 288-289 | 251 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0029 | Gestione dei rifiuti > Tassa base > Lavoro nello stesso luogo/spazio con un’altra persona: perché riceviamo due fatture? | 290-291 | 274 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0030 | Gestione dei rifiuti > Tassa base > La mia attività non genera alcun tipo di rifiuto: posso chiedere l’esonero? | 292-293 | 213 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0031 | Gestione dei rifiuti > Tassa base > La mia attività non genera nessun guadagno: posso chiedere l’esonero? | 294-295 | 179 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0032 | Gestione dei rifiuti > Tassa base > La mia attività ha l’operatività con sede fuori Comune: posso chiedere l’esonero? | 296-297 | 46 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0033 | Gestione dei rifiuti > Tassa base > Se una persona ha un’attività accessoria, come viene gestita? | 298-302 | 404 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0034 | Gestione dei rifiuti > Tassa base > Ho sospeso temporaneamente l’attività: posso chiedere la riduzione o l’esonero? | 303-304 | 91 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0035 | Gestione dei rifiuti > Tassa base > Ricevo la fattura per un’attività che non esiste più: cosa devo fare? | 305-307 | 517 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0036 | Gestione dei rifiuti > Tassa base > Apertura o chiusura dell’attività durante l’anno: la tassa è ridotta? | 308-309 | 160 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0037 | Gestione dei rifiuti > Tassa base > La società (fatta eccezione per gli indipendenti) non dispone di unità lavorative: può chiedere la riduzione della tassa? | 310-311 | 691 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0038 | Gestione dei rifiuti > Tassa base > La fattura di un anno precedente è errata: posso chiederne il ricalcolo? | 312-313 | 339 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0039 | Gestione dei rifiuti > Tassa base > Ho cambiato indirizzo o sede all’interno del Comune: la tassa viene adeguata? | 314-315 | 109 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0040 | Gestione dei rifiuti > Tassa base > Se non aggiorno i miei dati, rischio delle sanzioni? | 316-319 | 738 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0042 | Gestione dei rifiuti > Tassa base > Per economie domestiche e residenze secondarie | 321-325 | 251 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0043 | Gestione dei rifiuti > Tassa base > Per attività economiche | 326-334 | 1163 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0044 | Gestione dei rifiuti > Tassa sul sacco | 335-339 | 1118 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0045 | Gestione dei rifiuti > Tassa sul sacco > Sacchi ufficiali dei rifiuti: lista dei punti vendita | 340-341 | 11 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0046 | Gestione dei rifiuti > Tassa sul sacco > Misure di sostegno | 342-345 | 685 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0047 | Gestione dei rifiuti > Ingombranti e manifestazioni | 346-347 | 26 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0049 | Gestione dei rifiuti > Ingombranti e manifestazioni > Stoviglie riutilizzabili per manifestazioni con affluenza di oltre 200 persone | 350-351 | 688 |
+| `doc-6dd7cb61202ebf90b7a2` | section-0051 | Gestione dei rifiuti > Ingombranti e manifestazioni > Contatti | 359-361 | 108 |
 | `doc-b43396324f38f0112c65` | section-0003 | Aufenthaltsbewilligung (Ausweis B) > Inhalt | 20-29 | 562 |
 | `doc-b43396324f38f0112c65` | section-0004 | Aufenthaltsbewilligung (Ausweis B) > Eine Aufenthaltsbewilligung erhalten | 30-32 | 458 |
 | `doc-b43396324f38f0112c65` | section-0005 | Aufenthaltsbewilligung (Ausweis B) > Ihre Aufenthaltsbewilligung verlängern | 33-34 | 475 |
@@ -1307,7 +1363,6 @@ Release `mvp-zurich-2026-09-23-v27` (content `d3e5c31a0715`), policy `report`, n
 | `doc-5447fac13d7896291834` | section-0004 | Navigation > Sprunglink > Mehrfamilien- und Geschäftshäuser, sowie Stockwerkeigentum zu Geschäftszwecken | 57-60 | 1194 |
 | `doc-6ab71ca3fb50a015de81` | section-0002 | Navigation > Sprunglink | 2-6 | 714 |
 | `doc-7502be9969bff24a2962` | section-0004 | Navigation > Sprunglink > Hinweis: | 18-38 | 2216 |
-| `doc-745148c5fe3663cb880f` | section-0002 | Navigation > Sprunglink | 2-6 | 591 |
 | `doc-1c102c7c0dd9484cfbb9` | section-0002 | Navigation > Sprunglink | 2-6 | 706 |
 | `doc-8782b52e7e4ded9957f5` | section-0010 | Drittstaatsangehörige > Einreise | 185-187 | 479 |
 | `doc-8782b52e7e4ded9957f5` | section-0013 | Drittstaatsangehörige > Aufenthalt ohne Erwerbstätigkeit | 192-193 | 138 |
@@ -1804,7 +1859,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 
 | Status | Source | Documents | Units | Cited | Dispositioned | Boilerplate | Unclassified |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| partly_covered | `(discovered)`  | 130 | 1001 | 328 | 211 | 47 | 462 |
+| partly_covered | `(discovered)`  | 129 | 1000 | 328 | 211 | 47 | 461 |
 | cited | `ag-change-of-canton` Aargau - Reporting a move, change of canton | 1 | 1 | 1 | 0 | 0 | 0 |
 | boilerplate_only | `ag-register-law` Aargau - Register- und Meldegesetz (SAR 122.200), para 14 | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ag-residence` Aargau - Residence hub | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -1832,6 +1887,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | boilerplate_only | `ch-ahv-iv-alv` Unemployment insurance (ALV) in the social insurance system | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-ausgleichskassen` Directory of the cantonal compensation offices | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-bvg` Occupational pensions (BV), the second pillar | 1 | 0 | 0 | 0 | 0 | 0 |
+| no_documents | `ch-ahv-iv-en` Informationsstelle AHV/IV - English versions of the pages the release cites | 0 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-glossar` Glossary of the Swiss social insurance system | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-hinterlassenenrenten` AHV: widow's, widower's and orphan's pensions | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-international-drittstaaten` Social insurance between Switzerland and third states | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -1839,6 +1895,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | boilerplate_only | `ch-ahv-iv-kv` Health insurance (KV) in the social insurance system | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-uv` Accident insurance (UV) in the social insurance system | 1 | 0 | 0 | 0 | 0 | 0 |
 | cited | `ch-bag-accident-insurance` Accident insurance: who is compulsorily insured | 1 | 3 | 1 | 2 | 0 | 0 |
+| no_documents | `ch-bag-en` FOPH - English versions of the pages the release cites | 0 | 0 | 0 | 0 | 0 | 0 |
 | cited | `ch-bag-grenzgaenger` Health insurance for cross-border commuters and the right of option | 1 | 12 | 4 | 8 | 0 | 0 |
 | cited | `ch-bag-health-insurance` Health insurance for persons resident in Switzerland | 1 | 5 | 3 | 2 | 1 | 0 |
 | cited | `ch-bag-kostenbeteiligung` Cost sharing for insured persons resident in Switzerland | 1 | 4 | 3 | 1 | 1 | 0 |
@@ -1855,6 +1912,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | cited | `ch-bazg-ausreise-privatwaren` Leaving Switzerland with private goods | 1 | 5 | 2 | 3 | 1 | 0 |
 | cited | `ch-bazg-briefe-pakete` Receiving letters and parcels from abroad | 1 | 12 | 8 | 4 | 1 | 0 |
 | cited | `ch-bazg-einfuhrsteuer` Import tax: VAT on imported goods | 1 | 1 | 1 | 0 | 1 | 0 |
+| no_documents | `ch-bazg-en` FOCBS - English versions of the pages the release cites | 0 | 0 | 0 | 0 | 0 | 0 |
 | dispositioned | `ch-bazg-faq-umzugsgut` FAQ on removal goods | 1 | 1 | 0 | 1 | 1 | 0 |
 | cited | `ch-bazg-flugreisen` Importing goods when travelling by air | 1 | 4 | 3 | 1 | 1 | 0 |
 | cited | `ch-bazg-freimengen-allgemein` Duty-free quantities and value limits: general information | 1 | 6 | 3 | 3 | 1 | 0 |
@@ -1925,6 +1983,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | dispositioned | `ch-seco-anmeldung-registrierung` Signing on with the municipality and the RAV | 1 | 4 | 0 | 4 | 1 | 0 |
 | cited | `ch-seco-arbeitsmarktliche-massnahmen` Labour market measures: courses, employment programmes and allowances | 1 | 7 | 7 | 0 | 1 | 0 |
 | cited | `ch-seco-aussteuerung` Running out of unemployment benefit | 1 | 3 | 3 | 0 | 1 | 0 |
+| no_documents | `ch-seco-en` SECO (arbeit.swiss) - English versions of the pages the release cites | 0 | 0 | 0 | 0 | 0 | 0 |
 | cited | `ch-seco-erste-schritte` First steps after notice of termination | 1 | 8 | 7 | 1 | 1 | 0 |
 | dispositioned | `ch-seco-eservices-formulare` eServices and forms for unemployment benefit | 1 | 23 | 0 | 23 | 1 | 0 |
 | cited | `ch-seco-kurzarbeit` Short-time work compensation (KAE) | 1 | 7 | 5 | 2 | 1 | 0 |
@@ -1940,6 +1999,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | partly_covered | `ch-sem-biometric-documents` Biometric residence permits | 1 | 6 | 2 | 0 | 0 | 4 |
 | nothing | `ch-sem-citizenship` Acquiring Swiss citizenship (ordinary and facilitated naturalisation) | 1 | 7 | 0 | 0 | 0 | 7 |
 | dispositioned | `ch-sem-directives` SEM directives - foreign nationals | 14 | 37 | 0 | 37 | 0 | 0 |
+| no_documents | `ch-sem-en` SEM - English versions of the pages the release cites | 0 | 0 | 0 | 0 | 0 | 0 |
 | partly_covered | `ch-sem-entry` Entry and visa information | 35 | 84 | 0 | 77 | 0 | 7 |
 | partly_covered | `ch-sem-entry-faq` Entry FAQ | 1 | 74 | 12 | 0 | 0 | 62 |
 | partly_covered | `ch-sem-eu-efta` Residence permits for EU/EFTA nationals | 6 | 11 | 5 | 2 | 0 | 4 |
@@ -1951,6 +2011,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | dispositioned | `ch-sem-residence-it` SEM residence overview (it) | 19 | 88 | 0 | 88 | 0 | 0 |
 | partly_covered | `ch-sem-third-country` Residence permits for non-EU/EFTA nationals | 6 | 10 | 3 | 5 | 0 | 2 |
 | partly_covered | `ch-sem-work-third-country` Admission to work for non-EU/EFTA nationals | 3 | 42 | 9 | 0 | 0 | 33 |
+| no_documents | `ch-serafe-en` SERAFE - English versions of the pages the release cites | 0 | 0 | 0 | 0 | 0 | 0 |
 | cited | `ch-serafe-household-fee` Radio and television fee for households | 1 | 2 | 2 | 0 | 0 | 0 |
 | partly_covered | `ch-zas-contribution-refund` Refund of AHV contributions on leaving Switzerland | 1 | 10 | 3 | 0 | 0 | 7 |
 | cited | `fr-arrival-eu-efta` Fribourg - Arriving for more than three months, EU/EFTA | 1 | 1 | 1 | 0 | 0 | 0 |
@@ -1969,6 +2030,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | boilerplate_only | `lu-change-of-canton` Lucerne - Change of canton | 1 | 0 | 0 | 0 | 0 | 0 |
 | cited | `lu-eu-efta-leaflet` Lucerne - Merkblatt: residence permit for EU/EFTA nationals | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `lu-settlement-law` Lucerne - Gesetz ueber die Niederlassung und den Aufenthalt (SRL 5), paras 3, 5 and 7 | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `lugano-waste` City of Lugano - waste disposal and the municipal waste ordinance | 4 | 55 | 2 | 0 | 0 | 53 |
 | partly_covered | `ne-permit-management` Neuchatel - Managing and renewing your permit, with the change-of-canton rule | 1 | 12 | 3 | 0 | 0 | 9 |
 | partly_covered | `ne-studying` Neuchatel - Studying in Neuchatel: announcing arrival and what to bring | 1 | 13 | 1 | 0 | 0 | 12 |
 | boilerplate_only | `nw-residence` Nidwalden - Residence, registration and change of canton | 1 | 0 | 0 | 0 | 0 | 0 |

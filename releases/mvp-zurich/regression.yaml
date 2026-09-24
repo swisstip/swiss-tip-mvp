@@ -13660,3 +13660,78 @@ cases:
       jurisdiction: {canton_code: CH-ZH}
       expect_status: {cantonal-registration-deadline: OUT_OF_COVERAGE}
       expect_gap: {cantonal-registration-deadline: jurisdiction_not_covered}
+- case_id: XC-48
+  label: 'Another city, English: when the garbage is collected in Lugano'
+  question: When is the garbage collected in Lugano, and where do I put my waste bags?
+  language: en
+  expected_answer: Search finds city-lugano-waste-disposal with a strong match; resolve for the city of Lugano
+    serves the red official bags in the containers, usable on every day of the week.
+  steps:
+  - search:
+      query: When is the garbage collected in Lugano, and where do I put my waste bags?
+      expect_concept: city-lugano-waste-disposal
+      expect_strength: strong
+  - resolve:
+      concept_ids: [city-lugano-waste-disposal]
+      jurisdiction: {canton_code: CH-TI, municipality_id: CH-TI-5192}
+      expect_status: {city-lugano-waste-disposal: SUPPORTED}
+  claims:
+  - claim: Household waste goes only in the official red bags into the containers
+    concept: city-lugano-waste-disposal
+    fact_id: city-lugano-waste-disposal-1
+    statement_contains:
+    - official red bags
+- case_id: XC-49
+  label: 'Another city, German: bulky waste in Lugano'
+  question: Wohin bringe ich in Lugano Sperrgut und Gartenabfälle?
+  language: de
+  expected_answer: Search finds city-lugano-waste-disposal with a strong match; resolve for the city of Lugano
+    serves the rule that bulky household and garden waste go only to the ecocentri.
+  steps:
+  - search:
+      query: Where do I take bulky waste in Lugano?
+      translated: true
+      expect_concept: city-lugano-waste-disposal
+      expect_strength: strong
+  - resolve:
+      concept_ids: [city-lugano-waste-disposal]
+      jurisdiction: {canton_code: CH-TI, municipality_id: CH-TI-5192}
+      expect_status: {city-lugano-waste-disposal: SUPPORTED}
+  claims:
+  - claim: Bulky household and garden waste go only to the ecocentri
+    concept: city-lugano-waste-disposal
+    fact_id: city-lugano-waste-disposal-3
+    statement_contains:
+    - only to the Ecocentri
+- case_id: XC-50
+  label: 'Another city, Italian: getting into a Lugano ecocentro'
+  question: Cosa mi serve per entrare in un ecocentro a Lugano?
+  language: it
+  expected_answer: Search finds city-lugano-waste-disposal; resolve for the city of Lugano serves the Ecocard
+    rule.
+  steps:
+  - search:
+      query: Cosa mi serve per entrare in un ecocentro a Lugano?
+      expect_concept: city-lugano-waste-disposal
+  - resolve:
+      concept_ids: [city-lugano-waste-disposal]
+      jurisdiction: {canton_code: CH-TI, municipality_id: CH-TI-5192}
+      expect_status: {city-lugano-waste-disposal: SUPPORTED}
+  claims:
+  - claim: Entry needs the Ecocard
+    concept: city-lugano-waste-disposal
+    fact_id: city-lugano-waste-disposal-4
+    statement_contains:
+    - Ecocard
+- case_id: OOS-66
+  label: 'Rejected: the Lugano waste rules asked for Zurich'
+  question: Ich wohne in Zürich. Darf ich meinen Abfallsack jeden Tag in den Container werfen?
+  language: de
+  expected_answer: The Lugano waste concept is rejected for the City of Zurich (jurisdiction_not_covered); the
+    Zurich household-waste concept serves Zurich.
+  steps:
+  - resolve:
+      concept_ids: [city-lugano-waste-disposal]
+      jurisdiction: {canton_code: CH-ZH, municipality_id: CH-ZH-261}
+      expect_status: {city-lugano-waste-disposal: OUT_OF_COVERAGE}
+      expect_gap: {city-lugano-waste-disposal: jurisdiction_not_covered}

@@ -1,13 +1,13 @@
 {
-  "release_id": "mvp-zurich-2026-09-23-v27",
-  "built_at": "2026-09-23T18:07:49.552115+00:00",
+  "release_id": "mvp-zurich-2026-09-24-v1",
+  "built_at": "2026-09-24T06:44:19.728194+00:00",
   "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich\\text",
-  "concepts": 211,
-  "facts": 1268,
-  "evidence": 1526,
-  "documents": 334,
+  "concepts": 212,
+  "facts": 1273,
+  "evidence": 1531,
+  "documents": 336,
   "citation_outcomes": {
-    "same-snapshot": 1526
+    "same-snapshot": 1531
   },
   "dropped": [],
   "facts_resolved": [
@@ -12912,6 +12912,107 @@
           ],
           "warnings": [],
           "institution_id": "zh-261-erz",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
+      "fact_id": "city-lugano-waste-disposal-1",
+      "citations": [
+        {
+          "document_id": "doc-432c6b6aadd4da9c3b89",
+          "outcome": "same-snapshot",
+          "start": 1909,
+          "end": 4427,
+          "block_ids": [
+            "doc-432c6b6aadd4da9c3b89:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "ti-5192-law",
+          "basis": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 1 and 5",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 1 and 5"
+    },
+    {
+      "fact_id": "city-lugano-waste-disposal-2",
+      "citations": [
+        {
+          "document_id": "doc-432c6b6aadd4da9c3b89",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 4427,
+          "block_ids": [
+            "doc-432c6b6aadd4da9c3b89:b00001",
+            "doc-432c6b6aadd4da9c3b89:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "ti-5192-law",
+          "basis": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 3",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 3"
+    },
+    {
+      "fact_id": "city-lugano-waste-disposal-3",
+      "citations": [
+        {
+          "document_id": "doc-432c6b6aadd4da9c3b89",
+          "outcome": "same-snapshot",
+          "start": 1909,
+          "end": 4427,
+          "block_ids": [
+            "doc-432c6b6aadd4da9c3b89:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "ti-5192-law",
+          "basis": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 2 and 3",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 4 cpv. 2 and 3"
+    },
+    {
+      "fact_id": "city-lugano-waste-disposal-4",
+      "citations": [
+        {
+          "document_id": "doc-432c6b6aadd4da9c3b89",
+          "outcome": "same-snapshot",
+          "start": 8923,
+          "end": 11119,
+          "block_ids": [
+            "doc-432c6b6aadd4da9c3b89:b00005"
+          ],
+          "warnings": [],
+          "institution_id": "ti-5192-law",
+          "basis": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 12 cpv. 1 and 3",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal ordinance: Ordinanza municipale sulla gestione dei rifiuti 4.1.1, art. 12 cpv. 1 and 3"
+    },
+    {
+      "fact_id": "city-lugano-waste-disposal-5",
+      "citations": [
+        {
+          "document_id": "doc-6dd7cb61202ebf90b7a2",
+          "outcome": "same-snapshot",
+          "start": 16880,
+          "end": 17227,
+          "block_ids": [
+            "doc-6dd7cb61202ebf90b7a2:b00349"
+          ],
+          "warnings": [],
+          "institution_id": "ti-5192-dsu",
           "basis": "Municipal authority guidance",
           "basis_rule": "default",
           "basis_warnings": []
@@ -31946,8 +32047,8 @@
       "basis": "Cantonal authority guidance"
     }
   ],
-  "source_terms": 1720,
-  "questions": 478,
+  "source_terms": 1729,
+  "questions": 480,
   "institutions": [
     {
       "institution_id": "ag-law",
@@ -32314,6 +32415,22 @@
       "name": "Canton of Thurgau, systematic collection of law",
       "level": "cantonal",
       "jurisdiction": "CH-TG",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ti-5192-dsu",
+      "name": "City of Lugano, Urban Spaces Division (DSU)",
+      "level": "municipal",
+      "jurisdiction": "CH-TI-5192",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "ti-5192-law",
+      "name": "City of Lugano, municipal law collection",
+      "level": "municipal",
+      "jurisdiction": "CH-TI-5192",
       "documents": 1,
       "from_catalogue": false
     },
@@ -33068,6 +33185,12 @@
       "institution_rule": "registry rule svazurich.ch"
     },
     {
+      "document_id": "doc-432c6b6aadd4da9c3b89",
+      "source_url": "https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019",
+      "institution_id": "ti-5192-law",
+      "institution_rule": "registry rule www.lugano.ch/law"
+    },
+    {
       "document_id": "doc-4405a0d68192037f30b3",
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/online-schalter/personenmeldeamt-terminpflicht.html",
       "institution_id": "zh-261-personenmeldeamt",
@@ -33402,6 +33525,12 @@
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/heiraten/dokumente.html",
       "institution_id": "zh-261-zivilstandsamt",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/heiraten"
+    },
+    {
+      "document_id": "doc-6dd7cb61202ebf90b7a2",
+      "source_url": "https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/gestione-rifiuti/",
+      "institution_id": "ti-5192-dsu",
+      "institution_rule": "registry rule www.lugano.ch/temi-servizi/energia-ambiente/rifiuti"
     },
     {
       "document_id": "doc-6e45b9e28dd55e61b3a3",
@@ -34563,9 +34692,9 @@
     }
   ],
   "basis_kinds": {
-    "guidance": 947,
+    "guidance": 948,
     "act": 107,
-    "ordinance": 43,
+    "ordinance": 47,
     "summary": 50,
     "treaty": 37,
     "directory": 77,
@@ -34579,9 +34708,9 @@
     "aliases": 115
   },
   "validation_issues": [],
-  "content_sha256": "d3e5c31a0715bd41647378f829b93fb297eccef16f98bbf1fd59161e6566c94c",
-  "release_sha256": "c66d7c4faa23deda651ac569728e890d2503467170e2803dcb29c5a5864c17f0",
-  "curation_sha256": "0807c8b32c879b8a837a42dc6b12636be63c0d5db577abb750ff4041fab06c4a",
-  "text_index_sha256": "fbb71ddf95776f578e682fb8754dc6c900ecc9571831bb19424d700ca12992d3",
-  "acceptance_suite_sha256": "13ed4d5998a844474964b60f3c1165013a47d0be2b8a53b41e44b5a60647b3a0"
+  "content_sha256": "baa03da3f709db46598be6e9515fbe8bf6cb8a3ae2524683ee02388b136fe0fc",
+  "release_sha256": "8bdee776facee183633573323c6c09f8607bf30f785ab229fe22f8aa9aec271f",
+  "curation_sha256": "53c96f8cdda29c2b0285ba1a7ed3e92d7ced5b25932c59f6535e8b19acfb10ef",
+  "text_index_sha256": "b0c3d1bd8771246063a040e57c8e3f8c142ccd91bb34339655cf2199ef5064bd",
+  "acceptance_suite_sha256": "539aa78bd36d4c97bace27b8428fa0fa0a11134cd646284477ff291945986651"
 }

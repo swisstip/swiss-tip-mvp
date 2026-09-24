@@ -3,8 +3,8 @@
   "pack": "mvp-zurich",
   "root": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\swiss-tip-mvp",
   "run": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich",
-  "started_at": "2026-09-23T18:23:38.308768+00:00",
-  "finished_at": "2026-09-23T18:24:47.664902+00:00",
+  "started_at": "2026-09-24T06:47:44.939640+00:00",
+  "finished_at": "2026-09-24T06:47:53.738307+00:00",
   "options": {
     "download": false,
     "retry_failed": false,
@@ -12,7 +12,7 @@
     "scope": "attributed",
     "thorough": false,
     "update_curation": false,
-    "release_id": "mvp-zurich-2026-09-23-v27",
+    "release_id": null,
     "attested_by": "Alexander Bobrovsky",
     "source_plugins": true,
     "stages": "accept..ready"
@@ -20,47 +20,51 @@
   "stages": [
     {
       "stage": "acquire",
-      "started_at": "2026-09-23T07:15:47.851524+00:00",
+      "started_at": "2026-09-23T19:58:37.880193+00:00",
       "status": "ran",
       "downloaded": true,
       "download_exit_code": 1,
-      "targets": 635,
+      "targets": 710,
       "counts": {
-        "saved": 624,
-        "not_saved": 5,
+        "saved": 696,
+        "not_saved": 8,
         "pending": 6
       },
-      "seconds": 104.6
+      "seconds": 174.7
     },
     {
       "stage": "gaps",
-      "started_at": "2026-09-23T07:17:32.462232+00:00",
+      "started_at": "2026-09-23T20:01:32.554651+00:00",
       "status": "ran",
-      "targets": 635,
+      "targets": 710,
       "counts": {
         "status": {
-          "saved": 624,
-          "not_saved": 5,
+          "saved": 696,
+          "not_saved": 8,
           "pending": 6
         },
         "kind": {
-          "catalogue": 310,
+          "catalogue": 385,
           "in-scope": 152,
           "language-variant": 173
         },
         "gap": {
-          "none": 610,
+          "none": 682,
           "javascript-shell-resolved": 11,
           "not-found": 5,
           "not-attempted": 6,
-          "javascript-shell": 3
+          "javascript-shell": 3,
+          "robots-unavailable": 2,
+          "transient-network": 1
         },
         "gap_by_kind": {
           "catalogue": {
-            "none": 292,
+            "none": 364,
             "javascript-shell-resolved": 11,
             "not-found": 1,
-            "not-attempted": 6
+            "not-attempted": 6,
+            "robots-unavailable": 2,
+            "transient-network": 1
           },
           "in-scope": {
             "none": 148,
@@ -71,36 +75,36 @@
             "javascript-shell": 3
           }
         },
-        "retriable": 6,
+        "retriable": 9,
         "not_retriable": 8,
         "informational": 11,
-        "registry_sources_planned": 180,
-        "registry_sources_not_in_plan": 0,
-        "outstanding": 14,
+        "registry_sources_planned": 252,
+        "registry_sources_not_in_plan": 6,
+        "outstanding": 17,
         "approved": 0
       },
-      "seconds": 18.0
+      "seconds": 16.6
     },
     {
       "stage": "extract",
-      "started_at": "2026-09-23T12:53:10.001613+00:00",
+      "started_at": "2026-09-23T20:03:09.879137+00:00",
       "status": "ran",
-      "records": 730,
-      "eligible": 713,
-      "blocks": 140634,
-      "extracted_now": 0,
-      "reused": 727,
+      "records": 734,
+      "eligible": 717,
+      "blocks": 142750,
+      "extracted_now": 4,
+      "reused": 726,
       "failed_in_selection": 0,
-      "superseded": 3,
-      "unavailable": 9,
-      "seconds": 11.6
+      "superseded": 4,
+      "unavailable": 8,
+      "seconds": 20.3
     },
     {
       "stage": "validate-text",
-      "started_at": "2026-09-23T12:53:21.615631+00:00",
+      "started_at": "2026-09-23T20:03:30.169936+00:00",
       "status": "ran",
-      "records": 730,
-      "blocks": 140634,
+      "records": 734,
+      "blocks": 142750,
       "raw_responses_rehashed": false,
       "checks": {
         "records readable": "passed",
@@ -109,51 +113,51 @@
         "index matches the records on disk": "passed",
         "eligible records have a reading view": "passed"
       },
-      "seconds": 6.3
+      "seconds": 4.8
     },
     {
       "stage": "build",
-      "started_at": "2026-09-23T18:07:44.230882+00:00",
+      "started_at": "2026-09-24T06:44:14.164808+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-23-v27",
-      "concepts": 211,
-      "facts": 1268,
-      "evidence": 1526,
-      "documents": 334,
+      "release_id": "mvp-zurich-2026-09-24-v1",
+      "concepts": 212,
+      "facts": 1273,
+      "evidence": 1531,
+      "documents": 336,
       "citation_outcomes": {
-        "same-snapshot": 1526
+        "same-snapshot": 1531
       },
       "dropped": 0,
-      "curation_updated": false,
-      "inputs_sha256": "a15d81b98d35d8f0c878c68191e7c80da3a1323065e30751315e59b55c625c06",
-      "seconds": 6.8
+      "curation_updated": true,
+      "inputs_sha256": "abf91d343d5c5d699f24d1df9ff7facab95349ffbdecf08b9882b94923d09373",
+      "seconds": 10.0
     },
     {
       "stage": "validate-release",
-      "started_at": "2026-09-23T18:07:51.039896+00:00",
+      "started_at": "2026-09-24T06:44:24.130715+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-23-v27",
+      "release_id": "mvp-zurich-2026-09-24-v1",
       "checked_against_text": true,
       "saved_responses_rehashed": false,
       "seconds": 1.1
     },
     {
       "stage": "coverage",
-      "started_at": "2026-09-23T18:07:52.182853+00:00",
+      "started_at": "2026-09-24T06:44:25.269674+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-23-v27",
+      "release_id": "mvp-zurich-2026-09-24-v1",
       "policy": "report",
       "clean": false,
-      "candidates": 526,
+      "candidates": 529,
       "units": {
-        "section": 507,
+        "section": 510,
         "document": 17,
         "rolled_up": 2
       },
-      "content_sections": 3344,
-      "cited_sections": 856,
+      "content_sections": 3398,
+      "cited_sections": 858,
       "dispositioned_sections": 1251,
-      "unclassified_sections": 1237,
+      "unclassified_sections": 1289,
       "boilerplate_sections": 160,
       "repeated_texts": 16,
       "repeated_by_citation": {
@@ -162,10 +166,10 @@
         "cited_once": 3
       },
       "documents": {
-        "unclassified": 39,
+        "unclassified": 40,
         "empty": 44,
-        "partly_cited": 135,
-        "cited": 84,
+        "partly_cited": 136,
+        "cited": 85,
         "cited_and_dispositioned": 73,
         "dispositioned": 151
       },
@@ -176,18 +180,18 @@
         "new_under_rule": 0,
         "unused_rule": 0
       },
-      "seconds": 2.9
+      "seconds": 3.3
     },
     {
       "stage": "health",
-      "started_at": "2026-09-23T18:07:55.119732+00:00",
+      "started_at": "2026-09-24T06:44:28.571928+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-23-v27",
+      "release_id": "mvp-zurich-2026-09-24-v1",
       "topics": 20,
-      "concepts": 211,
-      "facts": 1268,
-      "evidence": 1526,
-      "jurisdictions": 28,
+      "concepts": 212,
+      "facts": 1273,
+      "evidence": 1531,
+      "jurisdictions": 29,
       "languages": [
         "de",
         "en",
@@ -196,33 +200,33 @@
       ],
       "stale_from": "2026-11-22",
       "review_statuses": {
-        "human-reviewed": 1268
+        "human-reviewed": 1273
       },
       "institution_levels": {
         "federal": 165,
         "cantonal": 129,
-        "municipal": 40
+        "municipal": 42
       },
       "basis_kinds": {
-        "guidance": 947,
+        "guidance": 948,
         "act": 107,
-        "ordinance": 43,
+        "ordinance": 47,
         "summary": 50,
         "treaty": 37,
         "directory": 77,
         "directive": 7
       },
-      "seconds": 1.7
+      "seconds": 1.9
     },
     {
       "stage": "accept",
-      "started_at": "2026-09-23T18:23:38.308775+00:00",
+      "started_at": "2026-09-24T06:47:44.939647+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-23-v27",
-      "suite_sha256": "13ed4d5998a844474964b60f3c1165013a47d0be2b8a53b41e44b5a60647b3a0",
+      "release_id": "mvp-zurich-2026-09-24-v1",
+      "suite_sha256": "539aa78bd36d4c97bace27b8428fa0fa0a11134cd646284477ff291945986651",
       "as_of": "2026-09-23",
-      "cases": 138,
-      "blocking": 138,
+      "cases": 139,
+      "blocking": 139,
       "failed": [],
       "quarantined": [],
       "quarantined_failed": [],
@@ -230,12 +234,12 @@
     },
     {
       "stage": "ready",
-      "started_at": "2026-09-23T18:23:40.755330+00:00",
+      "started_at": "2026-09-24T06:47:47.304028+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-23-v27",
-      "release_sha256": "c66d7c4faa23deda651ac569728e890d2503467170e2803dcb29c5a5864c17f0",
+      "release_id": "mvp-zurich-2026-09-24-v1",
+      "release_sha256": "8bdee776facee183633573323c6c09f8607bf30f785ab229fe22f8aa9aec271f",
       "attested_by": "Alexander Bobrovsky",
-      "attested_at": "2026-09-23T18:23:40.755396+00:00",
+      "attested_at": "2026-09-24T06:47:47.304091+00:00",
       "gates": {
         "G1": "passed",
         "G2": "passed",
@@ -245,12 +249,12 @@
         "G6": "passed"
       },
       "cases": {
-        "total": 138,
-        "blocking": 138,
+        "total": 139,
+        "blocking": 139,
         "quarantined": []
       },
       "stale_from": "2026-11-22",
-      "seconds": 66.9
+      "seconds": 6.4
     }
   ],
   "exit_code": 0,
