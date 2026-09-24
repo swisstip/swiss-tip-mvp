@@ -1,6 +1,6 @@
 # Regression pack runner
 
-**Last update:** 20 September 2026
+**Last update:** 24 September 2026
 
 `run_regression.py` replays a pack's regression pack, its `acceptance.yaml`
 and `regression.yaml` together, against the committed release, with no model:
@@ -55,3 +55,22 @@ or either suite, and commit the report and the page with the change: the
 committed-pack test fails while the report names another release or suite, or
 while the page is not the one the committed files render. The output lists
 quarantined cases that now pass; make them blocking in `regression.yaml`.
+
+## The knowledge graph
+
+`run_graph_regression.py` asks the knowledge graph in the pack's release
+every question of the same two suites, as a caller following the server's
+instructions would, and judges the orientation against what the suites
+already expect; it needs no expectations of its own and no model. A question
+whose search expects a concept must reach a domain its topic bridges to
+(`graph_nodes`) among the first three, with the topic in `covered_topics`; a
+question the release declines must not be pointed at a covered topic with a
+strong match. It writes `releases/<pack>/graph-regression-report.json`, a
+measurement to compare graphs and matching methods, not a gate.
+
+```sh
+./.venv/Scripts/python.exe scripts/test/regression/run_graph_regression.py --pack mvp-zurich
+```
+
+The design is section 10 of
+[docs/architecture/knowledge-graph.md](https://github.com/swisstip/swiss-tip/blob/main/docs/architecture/knowledge-graph.md).
