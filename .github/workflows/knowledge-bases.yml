@@ -26,7 +26,7 @@ on:
       swisstip_version:
         description: swisstip-core, swisstip-mcp and swisstip-builder version from PyPI
         type: string
-        default: "0.2.5"
+        default: "0.3.0"
       code_ref:
         description: Instead of PyPI, a branch, tag or commit of swisstip/swiss-tip to install the code from (empty means PyPI)
         type: string
@@ -45,7 +45,7 @@ jobs:
     env:
       # A push installs this version from PyPI, so it names a version that is published there: the newest one, and
       # a newer one only once its tag has published it. Code that is not on PyPI yet is checked with code_ref.
-      VERSION: ${{ inputs.swisstip_version || '0.2.5' }}
+      VERSION: ${{ inputs.swisstip_version || '0.3.0' }}
       CODE_REF: ${{ inputs.code_ref }}
     steps:
       - uses: actions/checkout@v7

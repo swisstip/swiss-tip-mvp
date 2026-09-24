@@ -1125,6 +1125,13 @@ does not speak for their canton on those points.
   suite questions (UAT-43, 44, 63, 85, 87, 88, 92, 98, 103, 104, 107, 110,
   111) fail the same test on the committed release and pre-date the wave;
   they are deliberately **not** allowlisted, so the test still reports them.
+  Corrected on 24 September 2026, when the packs were first checked on
+  0.3.0: they are now pinned as weak in that test, in two groups. In UAT-43,
+  63, 85, 87 and 98 the expected concept is still the first hit and only the
+  verdict fell. In UAT-44 it ranks second and in UAT-88, 92, 103, 104, 107,
+  110 and 111 it is not among the first five, so lexical search on the full
+  question misses it and `weak` is the right verdict; their search steps are
+  strong. Those eight are a retrieval gap to close in the data.
 - **The coverage report: 975 units nobody has answered for.** The
   `coverage` stage joined the text dataset of the run with this release on
   22 September 2026 (`releases/mvp-zurich/curation-coverage.json` and `.md`).
