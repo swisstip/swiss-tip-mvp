@@ -1,8 +1,8 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-24-v1` (content `baa03da3f709`), policy `report`, not clean, 216 disposition(s), generated 2026-09-24T06:44:28.
+Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, not clean, 216 disposition(s), generated 2026-09-24T12:53:13.
 
-529 candidate records ({'section': 510, 'document': 17, 'rolled_up': 2}) with 3398 units a curator answers for: 858 cited, 1251 dispositioned, **1289 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 40, 'empty': 44, 'partly_cited': 136, 'cited': 85, 'cited_and_dispositioned': 73, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
+532 candidate records ({'section': 513, 'document': 17, 'rolled_up': 2}) with 3423 units a curator answers for: 864 cited, 1251 dispositioned, **1308 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 41, 'empty': 44, 'partly_cited': 138, 'cited': 85, 'cited_and_dispositioned': 73, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 
 ## Documents
 
@@ -40,6 +40,7 @@ Release `mvp-zurich-2026-09-24-v1` (content `baa03da3f709`), policy `report`, no
 | unclassified | [Permit S (people in need of protection)](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/nicht_eu_efta/ausweis_s__schutzbeduerftige.html) `doc-d5d2d1e57acb1b6f54c1` | section | 1 | 0 | 0 | 0 | 1 | ch-sem-residence-en |
 | unclassified | ["Sans-Papiers" in Switzerland](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/sans-papiers.html) `doc-2979c6530d0fc2938338` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-residence-en |
 | unclassified | [Visa Application Form](https://www.sem.admin.ch/sem/en/home/themen/einreise/visumantragsformular.html) `doc-daf8dfc81039a2f8289c` | section | 1 | 0 | 0 | 0 | 1 |  |
+| unclassified | [Abfall und Entsorgung / stadt.sg.ch](https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung.html) `doc-a06914acd2b83b94aa53` | section | 2 | 0 | 0 | 0 | 2 | st-gallen-waste |
 | unclassified | [Verlassen der Schweiz](https://www.zas.admin.ch/de/verlassen-der-schweiz) `doc-2762a65962b06c05dc9e` | section | 6 | 0 | 0 | 0 | 6 |  |
 | unclassified | [Steueramt / Kanton Zürich](https://www.zh.ch/de/finanzdirektion/steueramt.html) `doc-b30d930e5eb4e146f3c0` | section | 10 | 0 | 0 | 0 | 10 | zh-steueramt-office |
 | unclassified | [Familiennachzug von Drittstaatsangehörigen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen.html) `doc-0f4f03404f99ee66351b` | section | 12 | 0 | 0 | 1 | 11 | zh-family |
@@ -62,6 +63,7 @@ Release `mvp-zurich-2026-09-24-v1` (content `baa03da3f709`), policy `report`, no
 | partly_cited | [Moving to Switzerland: Procedure](https://www.bazg.admin.ch/en/relocation-import-switzerland-procedure) `doc-c232814a873fa3014a6e` | section | 6 | 4 | 0 | 0 | 2 |  |
 | partly_cited | [Einreise und Aufenthalt / Kanton Basel-Stadt](https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/einreise-und-aufenthalt) `doc-b8e80712d932400cd49a` | section | 48 | 4 | 0 | 0 | 44 | bs-entry-residence |
 | partly_cited | [Zuzug in den Kanton Basel-Stadt / Kanton Basel-Stadt](https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/zuzug-den-kanton-basel-stadt) `doc-cff5ab3ec851efa60538` | section | 21 | 5 | 0 | 0 | 16 | bs-registration-arrival |
+| partly_cited | [Abfallabfuhr / Kanton Basel-Stadt](https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr) `doc-6611780fdbe91520554c` | section | 19 | 5 | 0 | 0 | 14 | basel-waste |
 | partly_cited | [EO bei Adoption](https://www.bsv.admin.ch/de/eo-bei-adoption) `doc-3ea9b1655f1a9db36e5e` | section | 7 | 2 | 0 | 0 | 5 |  |
 | partly_cited | [EO bei Mutterschaft](https://www.bsv.admin.ch/de/eo-bei-mutterschaft) `doc-bc31bd2012fbdd654c09` | section | 9 | 4 | 0 | 0 | 5 |  |
 | partly_cited | [EO bei Vaterschaft](https://www.bsv.admin.ch/de/eo-bei-vaterschaft) `doc-859ecc73c600eb5a82a2` | section | 8 | 3 | 0 | 0 | 5 |  |
@@ -139,6 +141,7 @@ Release `mvp-zurich-2026-09-24-v1` (content `baa03da3f709`), policy `report`, no
 | partly_cited | [Parkbewilligungen / Stadt Zürich](https://www.stadt-zuerich.ch/de/mobilitaet/parkieren/parkbewilligungen.html) `doc-6ab71ca3fb50a015de81` | section | 6 | 5 | 0 | 0 | 1 | zurich-city-parking-permits |
 | partly_cited | [Tagesbewilligungen / Stadt Zürich](https://www.stadt-zuerich.ch/de/mobilitaet/parkieren/parkbewilligungen/tagesbewilligungen.html) `doc-7502be9969bff24a2962` | section | 3 | 2 | 0 | 0 | 1 |  |
 | partly_cited | [Recyclinghof / Stadt Zürich](https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/wo-und-wann-entsorgen/recyclinghof.html) `doc-1c102c7c0dd9484cfbb9` | section | 5 | 4 | 0 | 0 | 1 |  |
+| partly_cited | [Abfuhrplan / stadt.sg.ch](https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html) `doc-01694fa88dc498848d7c` | section | 4 | 1 | 0 | 0 | 3 | st-gallen-waste |
 | partly_cited | [Drittstaatsangehörige – Kanton Schwyz](https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/drittstaatsangehoerige.html/8756-8758-8802-10373-10961-10965-10970) `doc-8782b52e7e4ded9957f5` | section | 7 | 2 | 0 | 0 | 5 | sz-third-country |
 | partly_cited | [EU/EFTA-Staatsangehörige – Kanton Schwyz](https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/euefta-staatsangehoerige.html/8756-8758-8802-10373-10961-10965-10969) `doc-777e3094d0c258479141` | section | 8 | 2 | 0 | 0 | 6 | sz-eu-efta |
 | partly_cited | [Kanton Uri - Migration](https://www.ur.ch/arbeit/6424) `doc-e48acba56a5956163cca` | section | 19 | 3 | 0 | 0 | 16 | ur-migration |
@@ -643,6 +646,20 @@ Release `mvp-zurich-2026-09-24-v1` (content `baa03da3f709`), policy `report`, no
 | `doc-cff5ab3ec851efa60538` | section-0023 | Zuzug in den Kanton Basel-Stadt > Öffnungszeiten Einwohneramt > Öffnungszeiten | 109-116 | 324 |
 | `doc-cff5ab3ec851efa60538` | section-0024 | Zuzug in den Kanton Basel-Stadt > Für dieses Thema zuständig | 117-118 | 12 |
 | `doc-cff5ab3ec851efa60538` | section-0025 | Zuzug in den Kanton Basel-Stadt > Inhalt aktualisiert | 119-120 | 10 |
+| `doc-6611780fdbe91520554c` | section-0001 | (no heading) | 1-2 | 44 |
+| `doc-6611780fdbe91520554c` | section-0004 | Abfallabfuhr | 13-26 | 376 |
+| `doc-6611780fdbe91520554c` | section-0006 | Abfallabfuhr > Hauskehricht bereitstellen > Container / Datenchip | 35-37 | 156 |
+| `doc-6611780fdbe91520554c` | section-0007 | Abfallabfuhr > Hauskehricht bereitstellen > Pilotversuch Unterflurcontainer im Bachlettenquartier | 38-40 | 171 |
+| `doc-6611780fdbe91520554c` | section-0011 | Abfallabfuhr > Abfuhrpläne > Basler Abfuhrpläne 2026 als PDF-Datei | 51-61 | 347 |
+| `doc-6611780fdbe91520554c` | section-0013 | Abfallabfuhr > Abfallgebühren | 70-71 | 236 |
+| `doc-6611780fdbe91520554c` | section-0033 | Abfallabfuhr > Fragen und Antworten > Wir entsorgen unsere Bebbi-Säcke in einem Container. Müssen wir ab 1. Januar 2026 einen Chip montieren lassen? | 154-157 | 163 |
+| `doc-6611780fdbe91520554c` | section-0034 | Abfallabfuhr > Dräggwägg App | 158-164 | 419 |
+| `doc-6611780fdbe91520554c` | section-0035 | Abfallabfuhr > Sperrgut, Grüngut und Unbrennbares abholen lassen | 165-173 | 416 |
+| `doc-6611780fdbe91520554c` | section-0036 | Abfallabfuhr > Häckseldienst | 174-180 | 579 |
+| `doc-6611780fdbe91520554c` | section-0037 | Abfallabfuhr > Häckseldienst > Private Abhol- und Recycling-Services | 181-184 | 232 |
+| `doc-6611780fdbe91520554c` | section-0038 | Abfallabfuhr > Poster für das Treppenhaus | 185-186 | 164 |
+| `doc-6611780fdbe91520554c` | section-0043 | Abfallabfuhr > Für dieses Thema zuständig | 194-195 | 10 |
+| `doc-6611780fdbe91520554c` | section-0044 | Abfallabfuhr > Inhalt aktualisiert | 196-197 | 10 |
 | `doc-3f3d4751491356fbdf8a` | section-0001 | (no heading) | 1-6 | 2461 |
 | `doc-08accda64b5e8e778ea6` | section-0002 | Alters- und Hinterlassenenversicherung (AHV) - Übersicht | 18-19 | 444 |
 | `doc-08accda64b5e8e778ea6` | section-0003 | Alters- und Hinterlassenenversicherung (AHV) - Übersicht > Leistungen der AHV | 20-22 | 161 |
@@ -1364,6 +1381,11 @@ Release `mvp-zurich-2026-09-24-v1` (content `baa03da3f709`), policy `report`, no
 | `doc-6ab71ca3fb50a015de81` | section-0002 | Navigation > Sprunglink | 2-6 | 714 |
 | `doc-7502be9969bff24a2962` | section-0004 | Navigation > Sprunglink > Hinweis: | 18-38 | 2216 |
 | `doc-1c102c7c0dd9484cfbb9` | section-0002 | Navigation > Sprunglink | 2-6 | 706 |
+| `doc-a06914acd2b83b94aa53` | section-0002 | Abfall und Entsorgung | 90-101 | 199 |
+| `doc-a06914acd2b83b94aa53` | section-0003 | Abfall und Entsorgung > Aktuelles / Projekte von Entsorgung St.Gallen | 102-107 | 206 |
+| `doc-01694fa88dc498848d7c` | section-0006 | Abfuhrplan > Push-Nachricht | 97-101 | 474 |
+| `doc-01694fa88dc498848d7c` | section-0007 | Abfuhrplan > E-Mail | 102-104 | 224 |
+| `doc-01694fa88dc498848d7c` | section-0009 | Abfuhrplan > E-Mail > Recycling-Abholservice | 119-120 | 200 |
 | `doc-8782b52e7e4ded9957f5` | section-0010 | Drittstaatsangehörige > Einreise | 185-187 | 479 |
 | `doc-8782b52e7e4ded9957f5` | section-0013 | Drittstaatsangehörige > Aufenthalt ohne Erwerbstätigkeit | 192-193 | 138 |
 | `doc-8782b52e7e4ded9957f5` | section-0014 | Drittstaatsangehörige > Familiennachzug | 194-202 | 984 |
@@ -1869,6 +1891,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | boilerplate_only | `ai-settlement-decree` Appenzell Innerrhoden - Standeskommissionsbeschluss ueber Niederlassung und Aufenthalt (GS 142.001), art. 2 | 1 | 0 | 0 | 0 | 0 | 0 |
 | cited | `ar-register-law` Appenzell Ausserrhoden - Registergesetz (bGS 122.1), art. 5 | 1 | 1 | 1 | 0 | 0 | 0 |
 | partly_covered | `ar-third-country` Appenzell Ausserrhoden - Third-country nationals: forms and documents | 1 | 5 | 1 | 0 | 0 | 4 |
+| partly_covered | `basel-waste` Basel-Stadt - waste collection in the City of Basel | 1 | 19 | 5 | 0 | 0 | 14 |
 | partly_covered | `be-entry-eu-efta` Bern - Entry for EU/EFTA nationals, 14 days to the commune | 1 | 3 | 1 | 0 | 0 | 2 |
 | nothing | `be-entry-eu-efta-fr` Bern - Entree pour les ressortissants UE/AELE | 1 | 3 | 0 | 0 | 0 | 3 |
 | cited | `be-entry-third-country` Bern - Entry for third-country nationals | 1 | 2 | 2 | 0 | 0 | 0 |
@@ -2047,6 +2070,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | partly_covered | `so-change-of-canton` Solothurn - Change of canton | 1 | 3 | 1 | 0 | 0 | 2 |
 | boilerplate_only | `so-commune-law` Solothurn - Gemeindegesetz (BGS 131.1), para 3 | 1 | 0 | 0 | 0 | 0 | 0 |
 | partly_covered | `so-entry-registration` Solothurn - Entry, with the An-/Abmeldung duty and the deadline | 1 | 7 | 1 | 0 | 0 | 6 |
+| partly_covered | `st-gallen-waste` City of St. Gallen - waste collection plan | 2 | 6 | 1 | 0 | 0 | 5 |
 | partly_covered | `sz-eu-efta` Schwyz - EU/EFTA nationals: the two-tier deadline | 1 | 8 | 2 | 0 | 0 | 6 |
 | cited | `sz-reporting-law` Schwyz - Gesetz ueber das Einwohnermeldewesen (SRSZ 111.110), para 10 | 1 | 1 | 1 | 0 | 0 | 0 |
 | partly_covered | `sz-third-country` Schwyz - Third-country nationals | 1 | 7 | 2 | 0 | 0 | 5 |

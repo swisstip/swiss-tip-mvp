@@ -3,7 +3,7 @@
 **Last update:** 24 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
-claim. It applies to the committed release `mvp-zurich-2026-09-24-v1` and is
+claim. It applies to the committed release `mvp-zurich-2026-09-24-v5` and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
 [COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
@@ -26,7 +26,7 @@ below is measured on it.
 
 ## Review status: reviewed by one person, not by a lawyer
 
-**All 1,273 facts are `human-reviewed`**, by one named reviewer: the 104 facts
+**All 1,279 facts are `human-reviewed`**, by one named reviewer: the 104 facts
 of the residence topic (78) and of the cantonal migration-office contacts
 (26) on 14 September 2026, the 149 facts of the five topics added on
 15 September 2026, social insurance (25), tax at source (26), driving
@@ -233,6 +233,28 @@ review, which the coverage root no longer carries since release
 | 23 September 2026 | 90 (AHV, the pillars and retirement) | hardest first, against a written brief: the two rules the pages turned out not to state, a preserved defect in a publisher's page, then the 22 facts carrying a number and six recorded judgement calls |
 | 23 September 2026 | 124 (registering on arrival in all 26 cantons) | against two written briefs with an English rendering beside each of the 49 French and Italian excerpts, and a per-fact note on the twelve that carry a figure that is not fourteen days, a direction of travel that inverts easily, a duty owed to two offices, or a reading that rests on a canton's law rather than a page a resident would read |
 | 24 September 2026 | 5 (Lugano waste) | in the console |
+| 24 September 2026 | 6 (Basel and St. Gallen waste collection) | in the console |
+
+## Gaps in the Basel and St. Gallen collection calendars of 24 September 2026
+
+- **The zone is the user's word.** Both cities publish their dates by
+  collection zone, not by postal code, and most residents do not know
+  their zone. The offer names the city's page that finds it from the
+  address; nothing checks that the zone a user gives is the one of their
+  address, and a wrong zone returns the dates of another zone.
+- **Six facts, three per city.** They cover the bag and set-out rules
+  (Basel), the weekly collection (St. Gallen) and how a resident finds the
+  zone. Fees, containers, recycling points and the rules of Riehen and
+  Bettingen are not served.
+- **The dates are unreviewed rows.** The ten calendars are the portals'
+  CSV exports as downloaded on 24 September 2026 (CC BY 4.0), pinned by
+  hash; Basel publishes 2026 only, St. Gallen to June 2027. Basel's zone
+  GUF has no household-waste dates, so a lookup there answers
+  `zone_not_covered`.
+- **A quarantined case.** The two new concepts moved the rarity weights
+  enough to push XM-19, a Hinwil road-traffic-office question, from 1.514
+  to 1.491 against the lexical bound of 1.5; it is quarantined, and hybrid
+  search still judges it strong.
 
 ## Gaps in the Lugano waste extension of 23 September 2026
 
@@ -241,9 +263,9 @@ review, which the coverage root no longer carries since release
   (`.local/experiments/2026-09-23-waste-calendars-other-cities.md`) found that
   Lugano alone publishes no collection day, so a general assistant is most
   likely to invent one there. Only how waste is handed over in Lugano is
-  served. Collection days, recycling points and fees in Basel, Geneva, Bern
-  and every other city remain out of scope and are rejected with
-  `jurisdiction_not_covered`.
+  served here. Basel and St. Gallen have their own collection concepts
+  since 24 September 2026; Geneva, Bern and every other city remain out of
+  scope and are rejected with `jurisdiction_not_covered`.
 - **What the Lugano facts do not say.** The collection days and times the
   city's Urban Spaces Division sets, the locations and opening hours of the
   ecopunti and ecocentri, the bag prices and the basic waste fee are not
@@ -1281,7 +1303,7 @@ does not speak for their canton on those points.
   `strong` for a user in Bern, who learns from `published_elsewhere` and the
   guidance that it is not published for their place. And the code is in
   packages 0.2.5 and later: 0.2.4 and an image built on it reject a `search`
-  that carries the field. The image Dockerfiles pin 0.3.0, which is not on
+  that carries the field. The image Dockerfiles pin 0.3.1, which is not on
   PyPI yet, and build only once it is published.
   Without the field, a question from another canton or municipality ranks the
   Canton and City of Zurich concepts next to the federal ones, and `resolve`
@@ -1523,7 +1545,9 @@ answer. Recorded runs show three behaviours the release cannot prevent:
   facts reviewed, was attested on 23 September 2026 and supersedes
   `mvp-zurich-2026-09-23-v19`. `mvp-zurich-2026-09-24-v1`, which adds the
   Lugano waste concept with its 5 facts reviewed, was attested on 24 September
-  2026 and supersedes v27.
+  2026 and supersedes v27; `mvp-zurich-2026-09-24-v5`, which adds the Basel and
+  St. Gallen collection concepts with their 6 facts reviewed, was attested the
+  same day and supersedes it.
 - **The coverage root is close to its bound.** `get_coverage` answers in one
   call under 6 KB, which the pack README promises and the check
   `scripts/test/packs/test_zurich_release.py` enforces. On this release the

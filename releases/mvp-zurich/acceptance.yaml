@@ -7400,6 +7400,171 @@ cases:
     criteria: [A1, A2, A3, A4, A5, A6]
     must_mention: {bags: sacchi ufficiali|sacco rosso|sacchi rossi|red bags, containers: contenitori|containers}
     must_not: {invented_day: ogni lunedì|ogni martedì|ogni mercoledì|ogni giovedì|ogni venerdì}
+- case_id: UAT-118
+  label: 'Basel: when the bags go out, and the zone that decides the day'
+  spec: docs/product/user-acceptance-tests.md#uat-118-bin-day-in-basel
+  question: I just moved to Basel. When is my garbage collected and when do I have to put the bags out?
+  expected_answer: Household waste goes in the blue Bebbi-Sack, put out on the pavement twice a week on the collection
+    days of the quarter, from 19:00 the evening before or by 07:00 on the day; the days depend on the collection zone,
+    which the city's zone search finds from the address. The answer asks for the zone or points to the zone search
+    rather than naming a weekday.
+  trap: Naming a collection weekday for Basel without knowing the zone, or giving the Zurich rule and the Zuri-Sack.
+  language: en
+  steps:
+  - search:
+      query: I just moved to Basel. When is my garbage collected and when do I have to put the bags out?
+      expect_concept: city-basel-waste-collection
+      expect_strength: strong
+  - resolve:
+      concept_ids: [city-basel-waste-collection]
+      jurisdiction: {city: Basel}
+      expect_status: {city-basel-waste-collection: SUPPORTED}
+  claims:
+  - claim: Bags go out from 19:00 the evening before or by 07:00 on the day
+    concept: city-basel-waste-collection
+    fact_id: city-basel-waste-collection-2
+    statement_contains: ['from 19:00', 'by 07:00']
+    excerpt_contains: ['ab 19 Uhr', 'bis spätestens 7 Uhr']
+  - claim: The zone search finds the zone from the address
+    concept: city-basel-waste-collection
+    fact_id: city-basel-waste-collection-3
+    statement_contains: ['zone search']
+    excerpt_contains: ['Zonensuche']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention: {zone: zone|Zone, time: '19'}
+- case_id: UAT-119
+  label: 'St. Gallen: collection areas by street'
+  spec: docs/product/user-acceptance-tests.md#uat-119-collection-area-in-st-gallen
+  question: Wann wird in St. Gallen der Kehricht abgeholt, und wie finde ich heraus, welches Abfuhrgebiet ich habe?
+  expected_answer: Household waste is collected weekly; the dates depend on the collection area (Abfuhrgebiet), one of
+    A to K, L Ost and L West, which the online collection plan finds from the street and a street directory lists.
+  trap: Naming a weekday for the whole city, or a postal-code rule borrowed from Zurich.
+  language: de
+  steps:
+  - search:
+      query: Wann wird in St. Gallen der Kehricht abgeholt, und wie finde ich heraus, welches Abfuhrgebiet ich habe?
+      expect_concept: city-st-gallen-waste-collection
+      expect_strength: strong
+  - resolve:
+      concept_ids: [city-st-gallen-waste-collection]
+      jurisdiction: {city: St. Gallen}
+      expect_status: {city-st-gallen-waste-collection: SUPPORTED}
+  claims:
+  - claim: Household waste is collected weekly
+    concept: city-st-gallen-waste-collection
+    fact_id: city-st-gallen-waste-collection-1
+    statement_contains: ['collected weekly']
+    excerpt_contains: ['wöchentlich']
+  - claim: Twelve collection areas, with a street directory
+    concept: city-st-gallen-waste-collection
+    fact_id: city-st-gallen-waste-collection-3
+    statement_contains: ['L Ost and L West']
+    excerpt_contains: ['Abfuhrgebiet L West', 'Strassenverzeichnis mit Abfuhrgebiet']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention: {area: Abfuhrgebiet|collection area, weekly: wöchentlich|jede Woche|weekly}
+- case_id: LOOKUP-1
+  label: Next organic waste collection in 8001
+  spec: dataset-connectors
+  question: When is the next organic waste collection in 8001?
+  expected_answer: The rule of the organic-waste concept, then the next collection day the City of Zurich publishes for
+    postal code 8001 on the as-of date, cited to the Open Data Zürich dataset page, named as published rows that no
+    person reviewed.
+  trap: A generic answer guesses a weekday from memory or from the interval between dates.
+  steps:
+  - search:
+      query: When is the next organic waste collection in 8001?
+      expect_concept: city-zurich-organic-paper-cardboard
+  - resolve:
+      concept_ids: [city-zurich-organic-paper-cardboard]
+      jurisdiction: {city: Zurich}
+      expect_status: {city-zurich-organic-paper-cardboard: SUPPORTED}
+  - lookup:
+      dataset_id: zurich-waste-bioabfall
+      postal_code: '8001'
+      as_of: '2026-09-23'
+      limit: 1
+      expect_status: SUPPORTED
+      expect_first_date: '2026-09-28'
+- case_id: LOOKUP-2
+  label: A postal code outside the city
+  spec: dataset-connectors
+  question: When is the next organic waste collection in 8304?
+  expected_answer: No date - 8304 is not a postal code the City of Zurich publishes a calendar for; the caller says so
+    and derives no date.
+  trap: A generic answer serves a Zurich date for a Wallisellen postal code.
+  steps:
+  - lookup:
+      dataset_id: zurich-waste-bioabfall
+      postal_code: '8304'
+      as_of: '2026-09-23'
+      expect_status: OUT_OF_COVERAGE
+      expect_gap: postal_code_not_covered
+- case_id: LOOKUP-3
+  label: Next year before its calendar is published
+  spec: dataset-connectors
+  question: When is organic waste collected in 8001 in January 2027?
+  expected_answer: Not published yet - the 2026 file ends on 31 December 2026; the caller says the publisher has not
+    published that period.
+  trap: A generic answer extrapolates the weekly rhythm into next year.
+  steps:
+  - lookup:
+      dataset_id: zurich-waste-bioabfall
+      postal_code: '8001'
+      as_of: '2026-09-23'
+      start: '2027-01-01'
+      end: '2027-01-31'
+      expect_status: OUT_OF_COVERAGE
+      expect_gap: period_not_published
+- case_id: LOOKUP-4
+  label: Next household waste collection in Basel zone B
+  spec: dataset-connectors
+  question: I live in Basel, zone B. When is the next household waste collection?
+  expected_answer: The next date Basel-Stadt publishes for zone B on the as-of date, cited to the Open Data Basel-Stadt
+    dataset page, named as published rows that no person reviewed.
+  trap: A generic answer names a weekday for all of Basel.
+  steps:
+  - resolve:
+      concept_ids: [city-basel-waste-collection]
+      jurisdiction: {city: Basel}
+      expect_status: {city-basel-waste-collection: SUPPORTED}
+  - lookup:
+      dataset_id: basel-waste-kehricht
+      zone: Zone B
+      as_of: '2026-09-25'
+      limit: 1
+      expect_status: SUPPORTED
+      expect_first_date: '2026-09-28'
+- case_id: LOOKUP-5
+  label: Next paper collection in St. Gallen area L West, spelled loosely
+  spec: dataset-connectors
+  question: Ich wohne in St. Gallen im Abfuhrgebiet l-west. Wann ist die nächste Papiersammlung?
+  expected_answer: The next paper collection St. Gallen publishes for area L West on the as-of date, cited to the Open
+    Data St. Gallen dataset page.
+  trap: A generic answer guesses a monthly date.
+  steps:
+  - lookup:
+      dataset_id: st-gallen-waste-papier
+      zone: l-west
+      as_of: '2026-09-24'
+      limit: 1
+      expect_status: SUPPORTED
+      expect_first_date: '2026-11-03'
+- case_id: LOOKUP-6
+  label: A zone Basel does not have
+  spec: dataset-connectors
+  question: I live in Basel in zone 7. When is the next household waste collection?
+  expected_answer: No date - Basel has no zone 7; the caller lists the zones and gives the zone search, and derives no
+    date.
+  trap: A generic answer maps "zone 7" to some weekday.
+  steps:
+  - lookup:
+      dataset_id: basel-waste-kehricht
+      zone: '7'
+      as_of: '2026-09-24'
+      expect_status: OUT_OF_COVERAGE
+      expect_gap: zone_not_covered
 - case_id: DECLINE-15
   label: No online registration channel published for Uri
   spec: docs/product/user-acceptance-tests.md#decline-cases

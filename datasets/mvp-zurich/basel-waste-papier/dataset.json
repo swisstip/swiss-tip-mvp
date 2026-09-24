@@ -1,0 +1,513 @@
+{
+  "manifest": {
+    "schema_version": "swiss-tip-dataset/v1",
+    "dataset_id": "basel-waste-papier",
+    "dataset_version": "2026-09-24-v1",
+    "type": "calendar",
+    "title": "Paper and cardboard collection days, City of Basel",
+    "label": "Paper and cardboard (Papierabfuhr)",
+    "pack": "mvp-zurich",
+    "concept_id": "city-basel-waste-collection",
+    "jurisdiction": "CH-BS-2701",
+    "publisher": "Tiefbauamt Basel-Stadt, Stadtreinigung",
+    "publisher_url": "https://data.bs.ch/explore/dataset/100096/",
+    "licence": "CC-BY-4.0",
+    "refresh": "bundled",
+    "sources": [
+      {
+        "url": "https://data.bs.ch/api/explore/v2.1/catalog/datasets/100096/exports/csv?select=zone,termin&where=art%3D%22Papierabfuhr%22%20and%20termin%3E%3Ddate%272026-01-01%27&order_by=zone,termin",
+        "sha256": "25ac4d542c8c617cce8337d7ab537d12e5274ffe2c05eb9f7f8e49a7650099b5",
+        "bytes": 1652,
+        "downloaded_on": "2026-09-24"
+      }
+    ],
+    "period": {
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    },
+    "postal_codes": [],
+    "key": "zone",
+    "zones": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "GUF",
+      "H"
+    ],
+    "zone_lookup_url": "https://www.bs.ch/apps/zonensuche",
+    "row_count": 115,
+    "created_at": "2026-09-24T11:30:53Z",
+    "limitations": [
+      "Calendar rows are taken from the publisher's file unchanged and are not human-reviewed; the hashes of the downloaded files and the build's checks are the whole gate.",
+      "Zones are the publisher's, and the user states their own zone; nothing checks that it is the zone of their address, which the publisher's page https://www.bs.ch/apps/zonensuche finds.",
+      "Licence of the rows: CC-BY-4.0, published by Tiefbauamt Basel-Stadt, Stadtreinigung at https://data.bs.ch/explore/dataset/100096/."
+    ],
+    "content_sha256": "29fd51db1f9d38fb2ead5493132ac1f161898939f642a11449f0eafb08aad471"
+  },
+  "rows": [
+    {
+      "zone": "A",
+      "date": "2026-01-07"
+    },
+    {
+      "zone": "A",
+      "date": "2026-02-04"
+    },
+    {
+      "zone": "A",
+      "date": "2026-03-11"
+    },
+    {
+      "zone": "A",
+      "date": "2026-04-08"
+    },
+    {
+      "zone": "A",
+      "date": "2026-05-06"
+    },
+    {
+      "zone": "A",
+      "date": "2026-06-03"
+    },
+    {
+      "zone": "A",
+      "date": "2026-07-01"
+    },
+    {
+      "zone": "A",
+      "date": "2026-07-29"
+    },
+    {
+      "zone": "A",
+      "date": "2026-08-26"
+    },
+    {
+      "zone": "A",
+      "date": "2026-09-23"
+    },
+    {
+      "zone": "A",
+      "date": "2026-10-21"
+    },
+    {
+      "zone": "A",
+      "date": "2026-11-18"
+    },
+    {
+      "zone": "A",
+      "date": "2026-12-16"
+    },
+    {
+      "zone": "B",
+      "date": "2026-01-07"
+    },
+    {
+      "zone": "B",
+      "date": "2026-02-04"
+    },
+    {
+      "zone": "B",
+      "date": "2026-03-11"
+    },
+    {
+      "zone": "B",
+      "date": "2026-04-08"
+    },
+    {
+      "zone": "B",
+      "date": "2026-05-06"
+    },
+    {
+      "zone": "B",
+      "date": "2026-06-03"
+    },
+    {
+      "zone": "B",
+      "date": "2026-07-01"
+    },
+    {
+      "zone": "B",
+      "date": "2026-07-29"
+    },
+    {
+      "zone": "B",
+      "date": "2026-08-26"
+    },
+    {
+      "zone": "B",
+      "date": "2026-09-23"
+    },
+    {
+      "zone": "B",
+      "date": "2026-10-21"
+    },
+    {
+      "zone": "B",
+      "date": "2026-11-18"
+    },
+    {
+      "zone": "B",
+      "date": "2026-12-16"
+    },
+    {
+      "zone": "C",
+      "date": "2026-01-28"
+    },
+    {
+      "zone": "C",
+      "date": "2026-03-04"
+    },
+    {
+      "zone": "C",
+      "date": "2026-04-01"
+    },
+    {
+      "zone": "C",
+      "date": "2026-04-29"
+    },
+    {
+      "zone": "C",
+      "date": "2026-05-27"
+    },
+    {
+      "zone": "C",
+      "date": "2026-06-24"
+    },
+    {
+      "zone": "C",
+      "date": "2026-07-22"
+    },
+    {
+      "zone": "C",
+      "date": "2026-08-19"
+    },
+    {
+      "zone": "C",
+      "date": "2026-09-16"
+    },
+    {
+      "zone": "C",
+      "date": "2026-10-14"
+    },
+    {
+      "zone": "C",
+      "date": "2026-11-11"
+    },
+    {
+      "zone": "C",
+      "date": "2026-12-09"
+    },
+    {
+      "zone": "D",
+      "date": "2026-01-28"
+    },
+    {
+      "zone": "D",
+      "date": "2026-03-04"
+    },
+    {
+      "zone": "D",
+      "date": "2026-04-01"
+    },
+    {
+      "zone": "D",
+      "date": "2026-04-29"
+    },
+    {
+      "zone": "D",
+      "date": "2026-05-27"
+    },
+    {
+      "zone": "D",
+      "date": "2026-06-24"
+    },
+    {
+      "zone": "D",
+      "date": "2026-07-22"
+    },
+    {
+      "zone": "D",
+      "date": "2026-08-19"
+    },
+    {
+      "zone": "D",
+      "date": "2026-09-16"
+    },
+    {
+      "zone": "D",
+      "date": "2026-10-14"
+    },
+    {
+      "zone": "D",
+      "date": "2026-11-11"
+    },
+    {
+      "zone": "D",
+      "date": "2026-12-09"
+    },
+    {
+      "zone": "E",
+      "date": "2026-01-21"
+    },
+    {
+      "zone": "E",
+      "date": "2026-02-18"
+    },
+    {
+      "zone": "E",
+      "date": "2026-03-25"
+    },
+    {
+      "zone": "E",
+      "date": "2026-04-22"
+    },
+    {
+      "zone": "E",
+      "date": "2026-05-20"
+    },
+    {
+      "zone": "E",
+      "date": "2026-06-17"
+    },
+    {
+      "zone": "E",
+      "date": "2026-07-15"
+    },
+    {
+      "zone": "E",
+      "date": "2026-08-12"
+    },
+    {
+      "zone": "E",
+      "date": "2026-09-09"
+    },
+    {
+      "zone": "E",
+      "date": "2026-10-07"
+    },
+    {
+      "zone": "E",
+      "date": "2026-11-04"
+    },
+    {
+      "zone": "E",
+      "date": "2026-12-02"
+    },
+    {
+      "zone": "E",
+      "date": "2026-12-30"
+    },
+    {
+      "zone": "F",
+      "date": "2026-01-21"
+    },
+    {
+      "zone": "F",
+      "date": "2026-02-18"
+    },
+    {
+      "zone": "F",
+      "date": "2026-03-25"
+    },
+    {
+      "zone": "F",
+      "date": "2026-04-22"
+    },
+    {
+      "zone": "F",
+      "date": "2026-05-20"
+    },
+    {
+      "zone": "F",
+      "date": "2026-06-17"
+    },
+    {
+      "zone": "F",
+      "date": "2026-07-15"
+    },
+    {
+      "zone": "F",
+      "date": "2026-08-12"
+    },
+    {
+      "zone": "F",
+      "date": "2026-09-09"
+    },
+    {
+      "zone": "F",
+      "date": "2026-10-07"
+    },
+    {
+      "zone": "F",
+      "date": "2026-11-04"
+    },
+    {
+      "zone": "F",
+      "date": "2026-12-02"
+    },
+    {
+      "zone": "F",
+      "date": "2026-12-30"
+    },
+    {
+      "zone": "G",
+      "date": "2026-01-14"
+    },
+    {
+      "zone": "G",
+      "date": "2026-02-11"
+    },
+    {
+      "zone": "G",
+      "date": "2026-03-18"
+    },
+    {
+      "zone": "G",
+      "date": "2026-04-15"
+    },
+    {
+      "zone": "G",
+      "date": "2026-05-13"
+    },
+    {
+      "zone": "G",
+      "date": "2026-06-10"
+    },
+    {
+      "zone": "G",
+      "date": "2026-07-08"
+    },
+    {
+      "zone": "G",
+      "date": "2026-08-05"
+    },
+    {
+      "zone": "G",
+      "date": "2026-09-02"
+    },
+    {
+      "zone": "G",
+      "date": "2026-09-30"
+    },
+    {
+      "zone": "G",
+      "date": "2026-10-28"
+    },
+    {
+      "zone": "G",
+      "date": "2026-11-25"
+    },
+    {
+      "zone": "G",
+      "date": "2026-12-23"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-01-14"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-02-11"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-03-18"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-04-15"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-05-13"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-06-10"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-07-08"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-08-05"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-09-02"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-09-30"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-10-28"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-11-25"
+    },
+    {
+      "zone": "GUF",
+      "date": "2026-12-23"
+    },
+    {
+      "zone": "H",
+      "date": "2026-01-14"
+    },
+    {
+      "zone": "H",
+      "date": "2026-02-11"
+    },
+    {
+      "zone": "H",
+      "date": "2026-03-18"
+    },
+    {
+      "zone": "H",
+      "date": "2026-04-15"
+    },
+    {
+      "zone": "H",
+      "date": "2026-05-13"
+    },
+    {
+      "zone": "H",
+      "date": "2026-06-10"
+    },
+    {
+      "zone": "H",
+      "date": "2026-07-08"
+    },
+    {
+      "zone": "H",
+      "date": "2026-08-05"
+    },
+    {
+      "zone": "H",
+      "date": "2026-09-02"
+    },
+    {
+      "zone": "H",
+      "date": "2026-09-30"
+    },
+    {
+      "zone": "H",
+      "date": "2026-10-28"
+    },
+    {
+      "zone": "H",
+      "date": "2026-11-25"
+    },
+    {
+      "zone": "H",
+      "date": "2026-12-23"
+    }
+  ]
+}

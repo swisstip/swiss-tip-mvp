@@ -1,6 +1,6 @@
 # MVP Zurich source inventory: moving to Switzerland and naturalisation
 
-**Last update:** 23 September 2026
+**Last update:** 24 September 2026
 
 The 35 residence sources of the rehearsal are registry seeds in `sources.json`
 only; their in-scope pages came from the imported crawl of 11 September 2026.
@@ -222,6 +222,13 @@ source for how waste is handed over there. The ecopunti map is left out.
 - [City of Lugano: waste management, official bags and bulky-waste pickup (it)](https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/gestione-rifiuti/)
 - [City of Lugano: ecopunti and ecocentri (it)](https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/ecopunti-ecocentri/)
 - [City of Lugano: Ordinanza municipale sulla gestione dei rifiuti 4.1.1 of 17 October 2019 (it)](https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019)
+
+Cities whose collection calendars the calendar connector serves by zone (extension of 24 September 2026):
+the page behind each open-data calendar, for the rule and the way a resident finds their zone.
+
+- [Basel-Stadt: waste collection and the zone search](https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr)
+- [City of St. Gallen: collection plan and zones](https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung/Abfuhrplan.html)
+- [City of St. Gallen: waste and disposal](https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung.html)
 
 ## Entry and visas
 

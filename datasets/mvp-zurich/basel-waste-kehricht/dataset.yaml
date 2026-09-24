@@ -1,0 +1,30 @@
+schema_version: swiss-tip-dataset-curation/v1
+dataset_id: basel-waste-kehricht
+type: calendar
+title: Household waste collection days, City of Basel
+label: Household waste (Kehricht)
+pack: mvp-zurich
+concept_id: city-basel-waste-collection
+jurisdiction: CH-BS-2701
+publisher: Tiefbauamt Basel-Stadt, Stadtreinigung
+publisher_url: https://data.bs.ch/explore/dataset/100096/
+licence: CC-BY-4.0
+refresh: bundled
+sources:
+- url: https://data.bs.ch/api/explore/v2.1/catalog/datasets/100096/exports/csv?select=zone,termin&where=art%3D%22Kehrichtabfuhr%22%20and%20termin%3E%3Ddate%272026-01-01%27&order_by=zone,termin
+  sha256: a3f2be191ca207e682053fce07616ebd766005c3cccf9098b13f814056a247ab
+  bytes: 11328
+  downloaded_on: '2026-09-24'
+importer:
+  name: csv-columns
+  columns:
+    zone: zone
+    date: termin
+period:
+  start: '2026-01-01'
+  end: '2026-12-31'
+zone_lookup_url: https://www.bs.ch/apps/zonensuche
+notes:
+- 'Open Data Basel-Stadt, dataset 100096 "Abfuhrtermine" (Tiefbauamt, CC BY 4.0): one table of every collection
+  since 2017 with date, type and zone A-H or GUF; the source URL exports this type from 2026-01-01. Zone boundaries
+  are dataset 100095; a resident finds their zone with the city''s zone search.'
