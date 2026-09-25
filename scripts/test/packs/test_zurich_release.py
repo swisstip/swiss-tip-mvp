@@ -1,5 +1,5 @@
-"""The Zurich release as the server serves it: it is ready, it answers the standing question over stdio with the
-coverage root under its size limit, and the frozen retrieval fixture of the code repository still refers to
+"""The Zurich release as the server serves it: it is ready, it answers the standing question over stdio, its
+coverage root stays under its size limit, and the frozen retrieval fixture of the code repository still refers to
 concepts and facts it publishes. The server itself is tested on synthetic fixtures in the code repository
 (apps/mcp-server/tests and packages/runtime/tests); the server has no default release, so every command here
 names this one."""
@@ -15,6 +15,7 @@ from pathlib import Path
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
+from swisstip.core.contracts import GetCoverageRequest
 from swisstip.core.release import load_release
 from swisstip.mcp_server.server import health, main
 from swisstip.runtime.search_cli import load_cases
@@ -62,7 +63,7 @@ class ZurichReleaseTests(unittest.TestCase):
 
         init, listed, root, resolved = asyncio.run(run())
         # The release's query languages reach the caller before its first search: in the instructions, in the search
-        # description and in the query field, and on the coverage root.
+        # description and in the query field, and on the coverage root where the server lists get_coverage.
         # swisstip-mcp 0.3.0 asks for one search and no longer calls German "preferred"; the published 0.2.5 that
         # the workflow installs until then carries the older sentence.
         note = r"Write (the search query|search queries) in German( \(preferred\))? or English:"
@@ -70,8 +71,13 @@ class ZurichReleaseTests(unittest.TestCase):
         search = next(t for t in listed if t.name == "search")
         self.assertRegex(search.description, note)
         self.assertRegex(search.inputSchema["properties"]["query"]["description"], note)
-        self.assertEqual([q["code"] for q in root.structuredContent["query_languages"]], ["de", "en"])
-        self.assertFalse(root.isError)
+        # swisstip-mcp hides get_coverage unless started with --with-coverage; servers up to 0.3.3 list it.
+        if "get_coverage" in [t.name for t in listed]:
+            self.assertFalse(root.isError)
+            self.assertEqual([q["code"] for q in root.structuredContent["query_languages"]], ["de", "en"])
+        else:
+            self.assertTrue(root.isError)
+            self.assertNotIn("get_coverage", init.instructions)
         # Criterion X8 keeps the coverage root small enough to refuse an outside question in one call. Two bounds
         # had drifted apart: this one at 6,144 bytes and check_server.py at 8,000, with the root at 7,640 - so the
         # round trip had been failing while the server check passed. The user settled it on 23 September 2026:
@@ -83,8 +89,11 @@ class ZurichReleaseTests(unittest.TestCase):
         # canton to twenty-six and the root grew with it. The school holidays of 25 September 2026 took it to 8,592:
         # the new topic, one scope sentence and seven main-town jurisdiction codes. Offered a trim of three phrases
         # of the scope statement, the user chose on 25 September 2026 to raise the bound to 8,700 and keep the
-        # wording. Shorten a topic description before raising this again.
-        self.assertLess(len(root.content[0].text.encode("utf-8")), 8700)
+        # wording. Shorten a topic description before raising this again. The root is measured on the library, which
+        # serves it whether or not the server lists get_coverage.
+        page = ReleaseService.from_file(RELEASE).get_coverage(GetCoverageRequest())
+        text = json.dumps(page.model_dump(mode="json", exclude_none=True), ensure_ascii=False, separators=(",", ":"))
+        self.assertLess(len(text.encode("utf-8")), 8700)
         self.assertEqual(resolved.structuredContent["status"], "SUPPORTED")
         self.assertTrue(resolved.structuredContent["results"][0]["citations"][0]["url"].startswith("https://www.sem.admin.ch/"))
 

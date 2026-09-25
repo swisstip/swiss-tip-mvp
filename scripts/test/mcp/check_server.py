@@ -16,8 +16,8 @@ hybrid, which proves that the server reaches its embedding model (the
 embedding sidecar of compose.yaml, or the Ollama of a pack image). The fifth tool lookup is listed while the
 server has the pack's calendar connector (the pack image carries it); when it is listed, resolve must offer the
 Zurich calendars and a lookup must answer with a date, and --require-lookup fails a server without it. It lists
-the tools, reads the coverage root
-and topic pages, runs search and resolve for the two standing cases
+the tools, checks that get_coverage is hidden (or, with --with-coverage or on a
+server that lists it, reads the coverage root and topic pages), runs search and resolve for the two standing cases
 (Czech-citizen registration in Zurich, a third-country national's work
 permit asked in German), the Swiss citizen's family question
 in English, Standard German and Zurich German, the German forms of the
@@ -89,6 +89,8 @@ SHORT_EMPLOYMENT = "eu-short-employment"
 UK_EMPLOYMENT = "uk-new-employment"
 NOTIFICATION_QUESTION = ("Ich bin EU-Bürgerin und habe einen Arbeitsvertrag für zwei Monate in Zürich. Brauche ich eine "
                          "Bewilligung oder reicht das Meldeverfahren?")
+# Arguments the stdio server is started with; --with-coverage adds get_coverage and the checks of its pages.
+EXTRA: list[str] = []
 
 
 @asynccontextmanager
@@ -96,7 +98,7 @@ async def connect(release: Path, url: str | None, auth: tuple[str, str] | None =
     """Yield the MCP streams and, for a URL, the payload of the /health route beside the endpoint."""
     if url is None:
         params = StdioServerParameters(command=sys.executable,
-                                       args=["-m", "swisstip.mcp_server.server", "--release", str(release)],
+                                       args=["-m", "swisstip.mcp_server.server", "--release", str(release), *EXTRA],
                                        env={"PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1"})
         async with stdio_client(params) as (read, write):
             yield read, write, None
@@ -139,67 +141,82 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             init = await session.initialize()
             check(f"initialize: server {init.serverInfo.name} {init.serverInfo.version}", init.serverInfo.name == "swiss-tip")
             tools = (await session.list_tools()).tools
-            four = ["get_coverage", "search", "resolve", "get_evidence"]
+            # swisstip-mcp hides get_coverage unless started with --with-coverage; servers up to 0.3.3 list it.
+            three = ["search", "resolve", "get_evidence"]
             names = [t.name for t in tools]
+            core = [name for name in names if name != "lookup"]
+            coverage = "get_coverage" in names
             check("tools advertised: " + ", ".join(names),
-                  names == four + ["lookup"] if require_lookup else names in (four, four + ["lookup"]))
+                  core in (three, ["get_coverage", *three])
+                  and names[len(core):] in ([["lookup"]] if require_lookup else ([], ["lookup"])))
 
-            root = await session.call_tool("get_coverage", {})
-            body = root.structuredContent
-            size = len(root.content[0].text.encode("utf-8"))
-            check(f"root coverage is compact ({size} bytes) and names scope, topics, freshness, review status",
-                  # 20 topics, and a scope statement, an out-of-scope list and limitations of about 1.5 KB each
-                  # since the customs extension of release 2026-09-22-v7: one call still settles scope. The work and
-                  # unemployment wave and the AHV wave of 23 September 2026 each added a topic, which took the root
-                  # page to 7 864 bytes - the two new descriptions were shortened to keep it inside the bound, and
-                  # the next topic will not fit without shortening the older ones. The cantonal wave then needed
-                  # about 370 bytes to say in the manifest that registration is published for all 26 cantons, with
-                  # its caveats, and the user raised the bound to 8 500 on 23 September 2026 rather than disclose it
-                  # more tersely or rewrite reviewed limitations. Criterion X8 and the round trip carry the same
-                  # number; shorten a topic description before raising it again. The school holidays of
-                  # 25 September 2026 added a topic, one scope sentence and seven main-town jurisdictions, 8 592 bytes
-                  # in all, and the user raised the bound to 8 700 rather than trim the scope statement; serving the
-                  # main towns' dates canton-wide dropped the seven jurisdictions again.
-                  not root.isError and size < 8700 and body["scope_statement"] and body["out_of_scope"]
-                  and {t["topic_id"] for t in body["topics"]} == {"residence", "contacts", "offices", "newcomer", "waste",
-                                                                  "vehicles-parking", "household-taxes", "social-insurance", "tax-at-source",
-                                                                  "driving-licence", "health-insurance", "naturalisation", "entry-visas",
-                                                                  "political-rights", "family-benefits", "housing",
-                                                                  "integration", "customs", "work-unemployment", "ahv-pension",
-                                                                  "school-holidays"}
-                  # The counts line, whichever statuses the release carries (all human-reviewed since 2026-09-14-v1).
-                  and any(item.startswith("Review status of the") for item in body["limitations"]))
-            # The City of Lugano (CH-TI-5192) joined with its waste concept in release 2026-09-24-v1, the cities of
-            # Basel (CH-BS-2701) and St. Gallen (CH-SG-3203) with their collection calendars in 2026-09-24-v5. The
-            # school holidays publish a main town's dates for its whole canton, labelled as the town's, so they add
-            # no municipality.
-            check("root lists federal, Zurich, City of Zurich, Lugano, Basel and St. Gallen jurisdictions and 26 cantons",
-                  {"CH", "CH-ZH", "CH-ZH-261", "CH-BE", "CH-TI", "CH-TI-5192", "CH-BS-2701", "CH-SG-3203"}
-                  <= set(body["jurisdictions"]) and len(body["jurisdictions"]) == 31)
-            languages = [q["code"] for q in body.get("query_languages") or []]
+            if not coverage:
+                refused = await session.call_tool("get_coverage", {})
+                check("the hidden get_coverage is refused with a typed error and named nowhere in the instructions",
+                      refused.isError and refused.structuredContent["error"]["code"] == "INVALID_ARGUMENT"
+                      and "get_coverage" not in (init.instructions or ""))
             search_tool = next(t for t in tools if t.name == "search")
             # swisstip-mcp 0.3.0 asks for one search and no longer calls German "preferred"; servers up to 0.2.5
             # carry the older sentence.
             note = re.compile(r"Write (the search query|search queries) in German( \(preferred\))? or English:")
-            check(f"query languages {languages} are named in the instructions, the search description and the query field",
-                  languages[:2] == ["de", "en"] and note.search(init.instructions or "") and note.search(search_tool.description)
+            check("the query languages are named in the instructions, the search description and the query field",
+                  note.search(init.instructions or "") and note.search(search_tool.description)
                   and note.search(search_tool.inputSchema["properties"]["query"]["description"]))
-            if health is not None:
-                check(f"health route beside the endpoint is ok and names the served release: {health.get('release_id')}",
-                      health.get("status") == "ok" and health.get("release_id") == body["release_id"]
-                      and health.get("facts", 0) > 0)
+            # The scope statement callers get: the instructions end with it, whitespace folded.
+            scope = " ".join((init.instructions or "").partition("Scope: ")[2].split("\n")[0].split())
 
-            topic = await session.call_tool("get_coverage", {"parent_id": "residence"})
-            concepts = {c["concept_id"]: c for c in topic.structuredContent["concepts"]}
-            size = len(topic.content[0].text.encode("utf-8"))
-            check(f"topic page lists {len(concepts)} concepts with descriptions in {size} bytes",
-                  not topic.isError and {DEADLINE, CANTON, CITY, WORK} <= set(concepts)
-                  and all(c["description"] for c in concepts.values()) and size < 60000)
-            check("deadline concept requires population; the listing leaves aliases and the context schema to search",
-                  concepts[DEADLINE]["required_context"] == ["population"]
-                  and not {"aliases", "context_schema"} & set(concepts[DEADLINE]))
+            if coverage:
+                root = await session.call_tool("get_coverage", {})
+                body = root.structuredContent
+                size = len(root.content[0].text.encode("utf-8"))
+                check(f"root coverage is compact ({size} bytes) and names scope, topics, freshness, review status",
+                      # 20 topics, and a scope statement, an out-of-scope list and limitations of about 1.5 KB each
+                      # since the customs extension of release 2026-09-22-v7: one call still settles scope. The work and
+                      # unemployment wave and the AHV wave of 23 September 2026 each added a topic, which took the root
+                      # page to 7 864 bytes - the two new descriptions were shortened to keep it inside the bound, and
+                      # the next topic will not fit without shortening the older ones. The cantonal wave then needed
+                      # about 370 bytes to say in the manifest that registration is published for all 26 cantons, with
+                      # its caveats, and the user raised the bound to 8 500 on 23 September 2026 rather than disclose it
+                      # more tersely or rewrite reviewed limitations. Criterion X8 and the round trip carry the same
+                      # number; shorten a topic description before raising it again. The school holidays of
+                      # 25 September 2026 added a topic, one scope sentence and seven main-town jurisdictions, 8 592 bytes
+                      # in all, and the user raised the bound to 8 700 rather than trim the scope statement; serving the
+                      # main towns' dates canton-wide dropped the seven jurisdictions again.
+                      not root.isError and size < 8700 and body["scope_statement"] and body["out_of_scope"]
+                      and {t["topic_id"] for t in body["topics"]} == {"residence", "contacts", "offices", "newcomer", "waste",
+                                                                      "vehicles-parking", "household-taxes", "social-insurance", "tax-at-source",
+                                                                      "driving-licence", "health-insurance", "naturalisation", "entry-visas",
+                                                                      "political-rights", "family-benefits", "housing",
+                                                                      "integration", "customs", "work-unemployment", "ahv-pension",
+                                                                      "school-holidays"}
+                      # The counts line, whichever statuses the release carries (all human-reviewed since 2026-09-14-v1).
+                      and any(item.startswith("Review status of the") for item in body["limitations"]))
+                # The City of Lugano (CH-TI-5192) joined with its waste concept in release 2026-09-24-v1, the cities of
+                # Basel (CH-BS-2701) and St. Gallen (CH-SG-3203) with their collection calendars in 2026-09-24-v5. The
+                # school holidays publish a main town's dates for its whole canton, labelled as the town's, so they add
+                # no municipality.
+                check("root lists federal, Zurich, City of Zurich, Lugano, Basel and St. Gallen jurisdictions and 26 cantons",
+                      {"CH", "CH-ZH", "CH-ZH-261", "CH-BE", "CH-TI", "CH-TI-5192", "CH-BS-2701", "CH-SG-3203"}
+                      <= set(body["jurisdictions"]) and len(body["jurisdictions"]) == 31)
+                check("the coverage root names German and English as query languages",
+                      [q["code"] for q in body.get("query_languages") or []][:2] == ["de", "en"])
+                topic =await session.call_tool("get_coverage", {"parent_id": "residence"})
+                concepts = {c["concept_id"]: c for c in topic.structuredContent["concepts"]}
+                size = len(topic.content[0].text.encode("utf-8"))
+                check(f"topic page lists {len(concepts)} concepts with descriptions in {size} bytes",
+                      not topic.isError and {DEADLINE, CANTON, CITY, WORK} <= set(concepts)
+                      and all(c["description"] for c in concepts.values()) and size < 60000)
+                check("deadline concept requires population; the listing leaves aliases and the context schema to search",
+                      concepts[DEADLINE]["required_context"] == ["population"]
+                      and not {"aliases", "context_schema"} & set(concepts[DEADLINE]))
+                check("the scope statement of the instructions is the coverage root's",
+                      scope == " ".join(body["scope_statement"].split()))
 
             found = await session.call_tool("search", {"query": QUESTION})
+            if health is not None:
+                check(f"health route beside the endpoint is ok and names the served release: {health.get('release_id')}",
+                      health.get("status") == "ok" and health.get("release_id") == found.structuredContent["release_id"]
+                      and health.get("facts", 0) > 0)
             hits = [h["concept_id"] for h in found.structuredContent["results"]]
             check(f"search for the Czech question ranks the deadline concept first: {hits[:3]}", hits and hits[0] == DEADLINE)
             check("search also finds the Zurich cantonal concept", CANTON in hits)
@@ -236,7 +253,8 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
                       body.get("match_strength") in ("weak", "none")
                       and ("Weak candidates" in (body.get("guidance_for_caller") or "")
                            or "does not establish" in (body.get("guidance_for_caller") or ""))
-                      and body.get("scope_statement") == root.structuredContent["scope_statement"])
+                      and " ".join((body.get("scope_statement") or "").split()) == scope
+                      and bool(body.get("out_of_scope") or not coverage))
             work_terms = await session.call_tool("search", {"query": WORK_PERMIT_TERMS, "limit": 5})
             hits = [h["concept_id"] for h in work_terms.structuredContent["results"]]
             check(f"search for the work-permit terms finds the third-country concept: {hits[:3]}", WORK in hits[:3])
@@ -462,7 +480,7 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             extra = await session.call_tool("resolve", {"concept_ids": [DEADLINE], "surprise": 1})
             check("unknown request field -> isError naming the field",
                   extra.isError and extra.structuredContent["error"]["issues"][0]["path"] == "surprise")
-            other = await session.call_tool("get_coverage", {"release_id": "other"})
+            other = await session.call_tool("get_evidence", {"evidence_ids": ids[:1], "release_id": "other"})
             check("unknown release_id -> isError RELEASE_UNAVAILABLE",
                   other.isError and other.structuredContent["error"]["code"] == "RELEASE_UNAVAILABLE")
             if "lookup" in names:
@@ -493,12 +511,16 @@ def main(argv=None) -> int:
                         help="fail unless every search reports retrieval_mode hybrid (a server with its embedding model)")
     parser.add_argument("--require-lookup", action="store_true",
                         help="fail unless the server lists lookup (a server with the pack's calendar connector)")
+    parser.add_argument("--with-coverage", action="store_true",
+                        help="without --url: start the server with get_coverage listed, and check its pages as well")
     parser.add_argument("--username", help="with --url: the name of basic credentials, when the endpoint asks for them")
     parser.add_argument("--password", help="with --url: the password that goes with --username")
     args = parser.parse_args(argv)
     if bool(args.username) != bool(args.password) or (args.username and not args.url):
         parser.error("--username and --password go together, and with --url")
     auth = (args.username, args.password) if args.username else None
+    if args.with_coverage:
+        EXTRA.append("--with-coverage")
     return asyncio.run(run(args.release.resolve(), args.url, args.require_hybrid, auth, args.require_lookup))
 
 
