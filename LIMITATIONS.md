@@ -1,9 +1,9 @@
 # Limitations
 
-**Last update:** 24 September 2026
+**Last update:** 25 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
-claim. It applies to the committed release `mvp-zurich-2026-09-24-v5` and is
+claim. It applies to the committed release `mvp-zurich-2026-09-25-v1` and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
 [COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
@@ -26,7 +26,7 @@ below is measured on it.
 
 ## Review status: reviewed by one person, not by a lawyer
 
-**All 1,279 facts are `human-reviewed`**, by one named reviewer: the 104 facts
+**All 1,286 facts are `human-reviewed`**, by one named reviewer: the 104 facts
 of the residence topic (78) and of the cantonal migration-office contacts
 (26) on 14 September 2026, the 149 facts of the five topics added on
 15 September 2026, social insurance (25), tax at source (26), driving
@@ -234,6 +234,7 @@ review, which the coverage root no longer carries since release
 | 23 September 2026 | 124 (registering on arrival in all 26 cantons) | against two written briefs with an English rendering beside each of the 49 French and Italian excerpts, and a per-fact note on the twelve that carry a figure that is not fourteen days, a direction of travel that inverts easily, a duty owed to two offices, or a reading that rests on a canton's law rather than a page a resident would read |
 | 24 September 2026 | 5 (Lugano waste) | in the console |
 | 24 September 2026 | 6 (Basel and St. Gallen waste collection) | in the console |
+| 25 September 2026 | 7 (banned dog breeds in the Canton of Zurich) | in one bulk group in the console |
 
 ## Gaps in the Basel and St. Gallen collection calendars of 24 September 2026
 
@@ -582,8 +583,8 @@ review, which the coverage root no longer carries since release
 - **City of Zurich only.** Waste, parking, kindergarten, school holidays,
   the tax return, the tax office and the medical emergency page are the
   City of Zurich's; `resolve` refuses them for another municipality. The dog
-  training duty and the vehicle procedures are cantonal and serve the whole
-  canton; the Serafe fee is federal.
+  training duty, the ban of the breeds of list II and the vehicle procedures
+  are cantonal and serve the whole canton; the Serafe fee is federal.
 - **Collection days are not served.** The waste facts point to the personal
   disposal calendar and the ERZ app; a collection day for a street is
   computed there and not in the release.
@@ -1246,7 +1247,7 @@ does not speak for their canton on those points.
   pillar 3a while unemployed.
 - **Search terms are German and English, with a few French and Italian
   ones; none are Romansh.** The source terms are copied verbatim from the
-  cited excerpts: 1,708 German on 212 of the 214 concepts and 85 English on
+  cited excerpts: 1,716 German on 213 of the 215 concepts and 85 English on
   25, those whose federal page has an English version the release cites; the
   Canton and City of Zurich pages carry none, so a question about a Zurich
   procedure matches only authored English words, the labels, the sample
@@ -1551,7 +1552,9 @@ answer. Recorded runs show three behaviours the release cannot prevent:
   Lugano waste concept with its 5 facts reviewed, was attested on 24 September
   2026 and supersedes v27; `mvp-zurich-2026-09-24-v5`, which adds the Basel and
   St. Gallen collection concepts with their 6 facts reviewed, was attested the
-  same day and supersedes it.
+  same day and supersedes it; `mvp-zurich-2026-09-25-v1`, which adds the Canton of
+  Zurich's banned dog breeds with their 7 facts reviewed, was attested on 25
+  September 2026 and supersedes v5.
 - **The coverage root is close to its bound.** `get_coverage` answers in one
   call under 6 KB, which the pack README promises and the check
   `scripts/test/packs/test_zurich_release.py` enforces. On this release the

@@ -1,7 +1,7 @@
 {
   "schema_version": "source-catalog/v1",
   "artifact_id": "residence-sources-mvp-zurich",
-  "version": "draft-14",
+  "version": "draft-15",
   "knowledge_space_id": "hackathon",
   "title": "Residence permits, moving to Switzerland and naturalisation - MVP sources (federal and Canton Zurich)",
   "status": "SOURCES_ONLY",
@@ -777,7 +777,8 @@
     "Extension of 19 September 2026 (English versions): the English versions of the SEM, FOPH, FOCBS, SECO and SERAFE pages the release cites, and the German version of the SEM residence overview whose English version it cites, are explicit links in their own section of sources.md, without registry seeds. They were found through the German pages' declared language alternates and checked live; a fact cites the English passage next to the German one only after the two were compared. The SEM residence FAQ has no English version.",
     "Extension of 23 September 2026 (Lugano waste): the City of Lugano's waste pages and its municipal waste ordinance (Ordinanza 4.1.1, PDF) are the registry seed lugano-waste in the scan sets daily-life and all, with the pages as explicit links in sources.md. It is the only municipal source outside the City of Zurich. The draft-13 catalogue is re-planned in place; saved pages and text records are kept.",
     "Catalogue repair of 23 September 2026: the downloader now attributes every Markdown link to the registry entry whose host and path allowlist contains it, and rejects a link no entry contains. The English versions of 19 September had no registry seeds and two superseded arbeit.swiss paths were outside their entries, so each English host gets a seed of its own (scan set english, language en, the exact listed paths as its allowlist) and the two superseded paths join the allowlist of the entry they were replaced in. No URL was added or removed.",
-    "Extension of 24 September 2026 (zone calendars): the waste-collection pages of Basel-Stadt and of the City of St. Gallen are the registry seeds basel-waste and st-gallen-waste in the scan sets daily-life and all, with their pages as explicit links in sources.md. The draft-14 catalogue is re-planned in place."
+    "Extension of 24 September 2026 (zone calendars): the waste-collection pages of Basel-Stadt and of the City of St. Gallen are the registry seeds basel-waste and st-gallen-waste in the scan sets daily-life and all, with their pages as explicit links in sources.md. The draft-14 catalogue is re-planned in place.",
+    "Extension of 25 September 2026 (banned dog breeds): the Canton of Zurich's page on banned dog breeds, linked from the cantonal dog page (seed zh-dogs), is an explicit link in sources.md and joins the path allowlist of zh-dogs, so that the breed ban of the cantonal dog ordinance is served for the whole canton from a cantonal source. The draft-15 catalogue is re-planned in place."
   ],
   "sources": [
     {
@@ -2979,7 +2980,8 @@
           "www.zh.ch"
         ],
         "allowed_path_prefixes": [
-          "/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html"
+          "/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html",
+          "/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html"
         ],
         "canonical_authority": "Canton Zurich - Veterinary Office",
         "jurisdiction": "CH-ZH",

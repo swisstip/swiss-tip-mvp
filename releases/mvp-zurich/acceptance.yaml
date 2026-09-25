@@ -7464,6 +7464,91 @@ cases:
   answer:
     criteria: [A1, A2, A3, A4, A5, A6]
     must_mention: {area: Abfuhrgebiet|collection area, weekly: wöchentlich|jede Woche|weekly}
+- case_id: UAT-120
+  label: 'Moving to the City of Zurich with a Rottweiler: a banned breed'
+  spec: docs/product/user-acceptance-tests.md#uat-120-moving-to-zurich-with-a-rottweiler
+  question: I plan to bring my Rottweiler from Pargue to cita of Zuerich - what is the procedure?
+  expected_answer: The Rottweiler has been on breed-type list II of the Canton of Zurich since 1 January 2025, and
+    nobody may move into the canton with a dog of that list, crosses with at least ten percent included, and no test
+    or temperament assessment makes an exception, so there is no procedure for bringing it; the registration and
+    customs steps do not apply. The Canton of Zurich page on banned dog breeds is cited.
+  trap: Listing the registration steps (dog control within ten days, AMICUS, the courses) and the import rules as if
+    the dog could be brought, or naming the ban only after the procedure. The misspellings Pargue and cita must not
+    stop the search.
+  steps:
+  - search:
+      query: I plan to bring my Rottweiler from Pargue to cita of Zuerich - what is the procedure?
+      jurisdiction: {city: Zurich}
+      expect_concept: zh-banned-dog-breeds
+      expect_strength: strong
+  - resolve:
+      concept_ids: [zh-banned-dog-breeds, city-zurich-dog-registration]
+      jurisdiction: {city: Zurich}
+      context: {arrival_origin: abroad}
+      expect_status:
+        zh-banned-dog-breeds: SUPPORTED
+        city-zurich-dog-registration: SUPPORTED
+  claims:
+  - claim: Nobody may move into the canton with a dog of breed-type list II
+    concept: zh-banned-dog-breeds
+    fact_id: zh-banned-dog-breeds-1
+    statement_contains: ['nobody may move into the Canton of Zurich with a dog of these breeds']
+    excerpt_contains: ['Mit einem Hund dieser Rassen darf man nicht in den Kanton Zürich ziehen']
+  - claim: The Rottweiler is on the list since 1 January 2025
+    concept: zh-banned-dog-breeds
+    fact_id: zh-banned-dog-breeds-2
+    statement_contains: ['Rottweiler (since 1 January 2025)']
+    excerpt_contains: ['Rottweiler (seit 1. Januar 2025)']
+  - claim: No test makes an exception
+    concept: zh-banned-dog-breeds
+    fact_id: zh-banned-dog-breeds-3
+    statement_contains: ['no test or temperament assessment']
+    excerpt_contains: ['Man kann keine Prüfung oder Wesensbeurteilung machen']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      banned: banned|prohibited|not allowed|not permitted|cannot|may not|verboten
+      rottweiler: Rottweiler
+      list_ii: list II|Rassetypenliste|since 1 January 2025|seit dem 1\. Januar 2025|seit 1\. Januar 2025
+    must_not:
+      register_as_if_allowed: (?:you (?:must|need to|have to)|first,?) register (?:the|your) (?:dog|Rottweiler)
+    cites:
+      banned_breeds_page: zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen
+    resolved: [zh-banned-dog-breeds]
+- case_id: UAT-121
+  label: 'Moving to Winterthur with a Rottweiler: the cantonal ban outside the City of Zurich'
+  spec: docs/product/user-acceptance-tests.md#uat-121-moving-to-winterthur-with-a-rottweiler
+  question: We are moving from Germany to Winterthur with our Rottweiler. Is that allowed?
+  expected_answer: No. The ban of breed-type list II is cantonal and applies in Winterthur as everywhere in the Canton
+    of Zurich; the Rottweiler has been on the list since 1 January 2025 and nobody may move into the canton with one.
+    The Canton of Zurich page on banned dog breeds is cited; nothing published for the City of Zurich only is served.
+  trap: Answering that the ban is a City of Zurich rule, or giving the City of Zurich's registration steps for
+    Winterthur.
+  steps:
+  - search:
+      query: We are moving from Germany to Winterthur with our Rottweiler. Is that allowed?
+      jurisdiction: {city: Winterthur}
+      expect_concept: zh-banned-dog-breeds
+      expect_strength: strong
+  - resolve:
+      concept_ids: [zh-banned-dog-breeds]
+      jurisdiction: {city: Winterthur}
+      expect_status:
+        zh-banned-dog-breeds: SUPPORTED
+  claims:
+  - claim: Nobody may move into the canton with a dog of breed-type list II
+    concept: zh-banned-dog-breeds
+    fact_id: zh-banned-dog-breeds-1
+    statement_contains: ['nobody may move into the Canton of Zurich with a dog of these breeds']
+    excerpt_contains: ['Mit einem Hund dieser Rassen darf man nicht in den Kanton Zürich ziehen']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6, A10]
+    must_mention:
+      banned: banned|prohibited|not allowed|not permitted|cannot|may not|verboten
+      rottweiler: Rottweiler
+    cites:
+      banned_breeds_page: zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen
+    resolved: [zh-banned-dog-breeds]
 - case_id: LOOKUP-1
   label: Next organic waste collection in 8001
   spec: dataset-connectors

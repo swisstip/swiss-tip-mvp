@@ -30299,13 +30299,9 @@ concepts:
   - Hundekontrolle Stadt Zürich
   - Hund Zuzug
   - Leinenpflicht Wald
-  - verbotene Hunderassen Zürich
-  - Listenhunde Zürich
-  - banned dog breeds Zurich
-  - dangerous dog breeds
   questions:
   - I am moving to Zurich with my dog. Where and by when do I have to register it?
-  - Welche Hunderassen sind im Kanton Zürich verboten?
+  - Wo und bis wann muss ich meinen Hund in der Stadt Zürich anmelden?
   source_terms:
   - Hundekontrolle
   - AMICUS
@@ -30313,12 +30309,14 @@ concepts:
   - Kommissariat Verwaltungspolizei
   - Hohenbühlstrasse 15
   - Leinenpflicht
-  - Rottweiler
-  - Rassetypenliste
   - Hundeverordnung
   required_context: []
   required_user_facts: []
   notes:
+  - On 2026-09-24 the assistant moved the banned-breed aliases, the German question on banned breeds and the source
+    terms Rottweiler and Rassetypenliste to zh-banned-dog-breeds, put the ban first among the facts so that a caller
+    resolving only this concept reads it before the registration steps, and authored the German question on registering
+    a dog; the facts are unchanged.
   - Facts, description, aliases, questions and source_terms authored by the assistant (Claude) on 2026-09-17 from
     the saved pages for the daily-life extension; assistant-authored-unreviewed until the review queue confirms
     them. Aliases and questions are not taken from the cited pages; source_terms occur verbatim in the cited excerpts
@@ -30328,6 +30326,98 @@ concepts:
   - keeper permits for breeds of list I
   - opening hours of the dog control
   facts:
+  - fact_id: city-zurich-dog-registration-5
+    statement: 'City of Zurich, under the cantonal dog ordinance: breeding, acquiring and moving in with dogs of
+      breed-type list II is banned: American Bull Terrier, American Bully, American Pit Bull Terrier, American Staffordshire
+      Terrier, Bandog, Basicdog, Bull Terrier, Pit Bull Terrier, Rottweiler (since 1 January 2025), Staffordshire
+      Bull Terrier, Swiss Blue Bully and Swiss Champagner Bully, and any cross with at least 10 percent of their
+      blood.'
+    language: en
+    jurisdiction: CH-ZH-261
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Hundekontrolle | Stadt Zürich (https://www.stadt-zuerich.ch/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle.html),
+        saved 2026-09-17
+      reviewed_on: '2026-09-17'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - 'review: confirmed in a bulk review of 10 facts (Alexander Bobrovsky, 2026-09-17)'
+    evidence:
+    - document_id: doc-d7209d912cce37d4bddd
+      first_block: 58
+      last_block: 71
+      anchor:
+        source_url: https://www.stadt-zuerich.ch/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle.html
+        document_id: doc-d7209d912cce37d4bddd
+        content_sha256: aa2249e0b126871f192738c304246fd26f8435bb27cd7d3c8b7f41ec712aa4e0
+        raw_sha256: 54d3ae3c341947c8037b94f1920e3995a03164457a8a96dc859d4139c2961131
+        block_ids:
+        - doc-d7209d912cce37d4bddd:b00058
+        - doc-d7209d912cce37d4bddd:b00059
+        - doc-d7209d912cce37d4bddd:b00060
+        - doc-d7209d912cce37d4bddd:b00061
+        - doc-d7209d912cce37d4bddd:b00062
+        - doc-d7209d912cce37d4bddd:b00063
+        - doc-d7209d912cce37d4bddd:b00064
+        - doc-d7209d912cce37d4bddd:b00065
+        - doc-d7209d912cce37d4bddd:b00066
+        - doc-d7209d912cce37d4bddd:b00067
+        - doc-d7209d912cce37d4bddd:b00068
+        - doc-d7209d912cce37d4bddd:b00069
+        - doc-d7209d912cce37d4bddd:b00070
+        - doc-d7209d912cce37d4bddd:b00071
+        block_hashes:
+        - 7b553bce272fcf7d9a0a96b8ea185c875989436a740e4347f5550aa78f913395
+        - 030678390e774508d637098f66bc95f13bc615d2ba25e1043e4587b9c278c3cb
+        - 3b2a2dca219d74cfa0a8a5a632ddf79836f64cf4ac04c72046f457661920c810
+        - 81ea7fdc580be2d3a6c47d023784ceabc03abdb38bfd164a617c3fcba72c111c
+        - 442b3e50f10e2025082f188b704ecf8f311e98ac4197f643198d661f9786c16a
+        - 5eebdab1f9962748fbc3c47ffbda73f5198ad772a3feacefc0832f3388536119
+        - 32103a7ea92d95610cfc0404e9a33b8dbae99a44816fcca57f3d56cc59f7cc5d
+        - 2e47a75c773bcff1f51a9680ce550e8b6f4da6fa78399cba4ec20b2e0f59d96b
+        - 9d38f50219d671f9006a17308e23ebc5971d59cb5098b3f2a82015071c694264
+        - 25508e7e8877c747a8382741be86d6359ad8313f1307e09091e0c1cee30f1fd1
+        - a29d47794ca5846822af11d652fe9baffa7261f7896872f12c825193507fdb5f
+        - 2f8cab089859243c48c091b2e00eaf40277bf9cc516b155b84d43695162f84c7
+        - ba3f80ce64023c0017501562cb6b0d96f7b26877fb0eb84c80265bba8dc1611b
+        - 915c3420104fae74c8ebbc5c4df10c4022524ef47869a7558b9fb68beb8628aa
+        heading_path:
+        - Navigation
+        - Sprunglink
+        - Kommissariat Verwaltungspolizei
+        - Informationen zur Hindernisfreiheit
+        start: 5689
+        end: 6250
+        excerpt: |-
+          In der Hundeverordnung des Kantons Zürich sind unter § 5 Hunderassen der Rassetypenliste II aufgeführt, deren Zucht, Erwerb und Zuzug verboten sind. Seit dem 01. Januar 2025 sind Rottweiler auf der Rassentypliste ll.
+
+          American Bull Terrier
+
+          American Bully
+
+          American Pit Bull Terrier
+
+          American Staffordshire Terrier
+
+          Bandog
+
+          Basicdog
+
+          Bull Terrier
+
+          Pit Bull Terrier
+
+          Rottweiler
+
+          Staffordshire Bull Terrier
+
+          Swiss Blue Bully
+
+          Swiss Champagner Bully
+
+          Neben diesen Hunden sind auch alle Mischlinge mit mindestens 10 Prozent Blutanteil der genannten Rassen verboten.
   - fact_id: city-zurich-dog-registration-1
     statement: 'City of Zurich: every dog older than three months must be registered by its keeper with the dog
       control of the City Police within ten days of moving in or taking the dog over; the City Police keeps the
@@ -30585,78 +30675,189 @@ concepts:
         excerpt: 'Seite vorlesen Anmeldung eines Hundes bei der Wohngemeinde Jeder Hund im Alter von über drei Monaten
           muss bei der Hundekontrolle innert zehn Tagen vom Haltenden angemeldet werden. Leinenpflicht: Vom 1. April
           bis 31. Juli müssen Hunde im Wald angeleint werden. Mehr Infos'
-  - fact_id: city-zurich-dog-registration-5
-    statement: 'City of Zurich, under the cantonal dog ordinance: breeding, acquiring and moving in with dogs of
-      breed-type list II is banned: American Bull Terrier, American Bully, American Pit Bull Terrier, American Staffordshire
-      Terrier, Bandog, Basicdog, Bull Terrier, Pit Bull Terrier, Rottweiler (since 1 January 2025), Staffordshire
-      Bull Terrier, Swiss Blue Bully and Swiss Champagner Bully, and any cross with at least 10 percent of their
-      blood.'
+- concept_id: zh-banned-dog-breeds
+  topic_id: newcomer
+  label: Banned dog breeds in the Canton of Zurich (breed-type list II, Rottweiler)
+  description: Which dog breeds may not be bred, bought or brought along when moving into the Canton of Zurich (breed-type
+    list II of the cantonal dog ordinance, Rottweiler since 1 January 2025), crosses, the rules for visitors and
+    the Rottweiler transition; check this before the registration steps of a dog.
+  aliases:
+  - banned dog breeds Zurich
+  - dangerous dog breeds
+  - dog breed ban Zurich
+  - bring a Rottweiler to Zurich
+  - move to Zurich with a Rottweiler
+  - Rottweiler ban
+  - pit bull Zurich
+  - visit Zurich with a banned dog
+  - verbotene Hunderassen Zürich
+  - Listenhunde Zürich
+  - Kampfhunde Zürich
+  - Rottweiler Verbot
+  - Rassetypenliste II
+  questions:
+  - Can I move to Zurich with my Rottweiler?
+  - Welche Hunderassen sind im Kanton Zürich verboten?
+  source_terms:
+  - Rottweiler
+  - Rassetypenliste
+  - Hundeverordnung
+  - Mischlinge
+  - Haltebewilligung
+  - Wesensbeurteilung
+  - Phänotypisierung
+  - Maulkorb
+  - Veterinäramt
+  required_context: []
+  required_user_facts: []
+  notes:
+  - Authored by the assistant (Claude) on 2026-09-25 from the Canton of Zurich's page on banned dog breeds, added
+    to the catalogue in draft-15 for this concept, so that the ban is its own search hit, is served for the whole
+    canton and a caller asked for the procedure of moving in with a banned breed reads the ban, not only the registration
+    steps. It replaces the City-only draft city-zurich-banned-dog-breeds of 2026-09-24, which was never released.
+    Aliases and questions are authored, not taken from the cited page; source_terms occur verbatim in the cited
+    excerpts and the build verifies them.
+  not_served:
+  - breed-type list I and the keeper permit it requires
+  - the Führbarkeitstest of the Rottweiler keeper permit beyond its mention
+  facts:
+  - fact_id: zh-banned-dog-breeds-1
+    statement: 'Canton of Zurich, under § 5 of the cantonal dog ordinance: dogs of breed-type list II may not be
+      bred, bought or brought into the canton from elsewhere, and nobody may move into the Canton of Zurich with
+      a dog of these breeds.'
     language: en
-    jurisdiction: CH-ZH-261
+    jurisdiction: CH-ZH
     provenance:
       kind: curated-statement
       review_status: human-reviewed
       author: assistant (Claude), reading the saved official pages
-      source: Hundekontrolle | Stadt Zürich (https://www.stadt-zuerich.ch/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle.html),
-        saved 2026-09-17
-      reviewed_on: '2026-09-17'
+      source: Verbotene Hunderassen | Kanton Zürich (https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html),
+        saved 2026-09-25
+      reviewed_on: '2026-09-25'
       reviewed_by: Alexander Bobrovsky
       notes:
-      - 'review: confirmed in a bulk review of 10 facts (Alexander Bobrovsky, 2026-09-17)'
+      - 'review: confirmed in a bulk review of 7 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
-    - document_id: doc-d7209d912cce37d4bddd
-      first_block: 58
+    - document_id: doc-65987b111d4d5880a8b7
+      first_block: 49
+      anchor:
+        source_url: https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html
+        document_id: doc-65987b111d4d5880a8b7
+        content_sha256: 2e511d8974f7390f03fd70278e5cd0d1e66b12340be9cbc6eca014444b5b06d9
+        raw_sha256: 879f767322b6d99dbdd5e375d674c5f96ced4f55bda323869da0bc87a16c8665
+        block_ids:
+        - doc-65987b111d4d5880a8b7:b00049
+        block_hashes:
+        - c0d1f533342b4fafd7e96864cfeae609cdbaa9b2398611aab511c427b8d5ffdf
+        heading_path:
+        - Verbotene Hunderassen
+        start: 1083
+        end: 1404
+        excerpt: Im Kanton Zürich darf man nicht alle Hunde halten. In der Hundeverordnung des Kantons Zürich steht
+          in § 5, dass es Hunderassen gibt, die zur Rassetypenliste II gehören. Bei diesen Hunden besteht ein höheres
+          Risiko. Man darf diese Hunde nicht züchten, nicht kaufen und nicht aus anderen Orten in den Kanton Zürich
+          bringen.
+      basis:
+        kind: guidance
+        refers_to: Hundeverordnung des Kantons Zürich, § 5
+    - document_id: doc-65987b111d4d5880a8b7
+      first_block: 73
+      anchor:
+        source_url: https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html
+        document_id: doc-65987b111d4d5880a8b7
+        content_sha256: 2e511d8974f7390f03fd70278e5cd0d1e66b12340be9cbc6eca014444b5b06d9
+        raw_sha256: 879f767322b6d99dbdd5e375d674c5f96ced4f55bda323869da0bc87a16c8665
+        block_ids:
+        - doc-65987b111d4d5880a8b7:b00073
+        block_hashes:
+        - 657d26f024fbbaafda43a386dc9c5d0a784706e3300469f63b72a9c5a2c6e3d4
+        heading_path:
+        - Verbotene Hunderassen
+        - Im Kanton Zürich sind folgende Hunderasssen verboten
+        - Keine Haltebewilligung für Hunde der Rassetypenliste II
+        start: 2293
+        end: 2517
+        excerpt: Hunderassen, die auf der Rassetypenliste II stehen, sind im Kanton Zürich verboten. Auf dieser
+          Liste stehen Hunde, die ein grösseres Risiko darstellen. Mit einem Hund dieser Rassen darf man nicht in
+          den Kanton Zürich ziehen.
+      basis:
+        kind: guidance
+        refers_to: Hundeverordnung des Kantons Zürich, § 5
+  - fact_id: zh-banned-dog-breeds-2
+    statement: 'Canton of Zurich: breed-type list II names American Bull Terrier, American Bully, American Bully
+      XXL, American Pit Bull Terrier, American Pocket Bully, American Staffordshire Terrier, Bandog, Basicdog, Bull
+      Terrier, Pit Bull Terrier, Rottweiler (since 1 January 2025), Staffordshire Bull Terrier, Swiss Blue Bully
+      and Swiss Champagner Bully; the canton states that the list is not complete.'
+    language: en
+    jurisdiction: CH-ZH
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Verbotene Hunderassen | Kanton Zürich (https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html),
+        saved 2026-09-25
+      reviewed_on: '2026-09-25'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - 'review: confirmed in a bulk review of 7 facts (Alexander Bobrovsky, 2026-09-25)'
+    evidence:
+    - document_id: doc-65987b111d4d5880a8b7
+      first_block: 57
       last_block: 71
       anchor:
-        source_url: https://www.stadt-zuerich.ch/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle.html
-        document_id: doc-d7209d912cce37d4bddd
-        content_sha256: aa2249e0b126871f192738c304246fd26f8435bb27cd7d3c8b7f41ec712aa4e0
-        raw_sha256: 54d3ae3c341947c8037b94f1920e3995a03164457a8a96dc859d4139c2961131
+        source_url: https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html
+        document_id: doc-65987b111d4d5880a8b7
+        content_sha256: 2e511d8974f7390f03fd70278e5cd0d1e66b12340be9cbc6eca014444b5b06d9
+        raw_sha256: 879f767322b6d99dbdd5e375d674c5f96ced4f55bda323869da0bc87a16c8665
         block_ids:
-        - doc-d7209d912cce37d4bddd:b00058
-        - doc-d7209d912cce37d4bddd:b00059
-        - doc-d7209d912cce37d4bddd:b00060
-        - doc-d7209d912cce37d4bddd:b00061
-        - doc-d7209d912cce37d4bddd:b00062
-        - doc-d7209d912cce37d4bddd:b00063
-        - doc-d7209d912cce37d4bddd:b00064
-        - doc-d7209d912cce37d4bddd:b00065
-        - doc-d7209d912cce37d4bddd:b00066
-        - doc-d7209d912cce37d4bddd:b00067
-        - doc-d7209d912cce37d4bddd:b00068
-        - doc-d7209d912cce37d4bddd:b00069
-        - doc-d7209d912cce37d4bddd:b00070
-        - doc-d7209d912cce37d4bddd:b00071
+        - doc-65987b111d4d5880a8b7:b00057
+        - doc-65987b111d4d5880a8b7:b00058
+        - doc-65987b111d4d5880a8b7:b00059
+        - doc-65987b111d4d5880a8b7:b00060
+        - doc-65987b111d4d5880a8b7:b00061
+        - doc-65987b111d4d5880a8b7:b00062
+        - doc-65987b111d4d5880a8b7:b00063
+        - doc-65987b111d4d5880a8b7:b00064
+        - doc-65987b111d4d5880a8b7:b00065
+        - doc-65987b111d4d5880a8b7:b00066
+        - doc-65987b111d4d5880a8b7:b00067
+        - doc-65987b111d4d5880a8b7:b00068
+        - doc-65987b111d4d5880a8b7:b00069
+        - doc-65987b111d4d5880a8b7:b00070
+        - doc-65987b111d4d5880a8b7:b00071
         block_hashes:
-        - 7b553bce272fcf7d9a0a96b8ea185c875989436a740e4347f5550aa78f913395
+        - 58ea1f031d432339adbb1c7ccd6795ac70eb61e868bba8d55d95398d446288be
         - 030678390e774508d637098f66bc95f13bc615d2ba25e1043e4587b9c278c3cb
         - 3b2a2dca219d74cfa0a8a5a632ddf79836f64cf4ac04c72046f457661920c810
+        - 299d39892641cd642d7fc5fa7e34d9294c99cd1e06ac906fc2b288efbc5147b6
         - 81ea7fdc580be2d3a6c47d023784ceabc03abdb38bfd164a617c3fcba72c111c
+        - 387b632adc1b7789e117a5f412542a49761c69baac9c9f1937914296a28372fa
         - 442b3e50f10e2025082f188b704ecf8f311e98ac4197f643198d661f9786c16a
         - 5eebdab1f9962748fbc3c47ffbda73f5198ad772a3feacefc0832f3388536119
         - 32103a7ea92d95610cfc0404e9a33b8dbae99a44816fcca57f3d56cc59f7cc5d
         - 2e47a75c773bcff1f51a9680ce550e8b6f4da6fa78399cba4ec20b2e0f59d96b
         - 9d38f50219d671f9006a17308e23ebc5971d59cb5098b3f2a82015071c694264
-        - 25508e7e8877c747a8382741be86d6359ad8313f1307e09091e0c1cee30f1fd1
+        - 21530628351636e29c872901d5759aa82281592c552973d87bcaee244d8617d4
         - a29d47794ca5846822af11d652fe9baffa7261f7896872f12c825193507fdb5f
         - 2f8cab089859243c48c091b2e00eaf40277bf9cc516b155b84d43695162f84c7
         - ba3f80ce64023c0017501562cb6b0d96f7b26877fb0eb84c80265bba8dc1611b
-        - 915c3420104fae74c8ebbc5c4df10c4022524ef47869a7558b9fb68beb8628aa
         heading_path:
-        - Navigation
-        - Sprunglink
-        - Kommissariat Verwaltungspolizei
-        - Informationen zur Hindernisfreiheit
-        start: 5689
-        end: 6250
+        - Verbotene Hunderassen
+        - Im Kanton Zürich sind folgende Hunderasssen verboten
+        start: 1624
+        end: 2234
         excerpt: |-
-          In der Hundeverordnung des Kantons Zürich sind unter § 5 Hunderassen der Rassetypenliste II aufgeführt, deren Zucht, Erwerb und Zuzug verboten sind. Seit dem 01. Januar 2025 sind Rottweiler auf der Rassentypliste ll.
+          Seit 2010 dürfen nicht alle Hunde im Kanton Zürich gehalten werden. Es ist verboten, Hunde zu züchten, zu halten oder in den Kanton zu holen, die auf der Rassetypenliste II stehen. Diese Liste enthält Hunderassen, bei denen ein höheres Risiko besteht. Bitte schauen Sie sich die Liste an. Sie ist nicht vollständig.
 
           American Bull Terrier
 
           American Bully
 
+          American Bully XXL
+
           American Pit Bull Terrier
+
+          American Pocket Bully
 
           American Staffordshire Terrier
 
@@ -30668,15 +30869,314 @@ concepts:
 
           Pit Bull Terrier
 
-          Rottweiler
+          Rottweiler (seit 1. Januar 2025)
 
           Staffordshire Bull Terrier
 
           Swiss Blue Bully
 
           Swiss Champagner Bully
+  - fact_id: zh-banned-dog-breeds-3
+    statement: 'Canton of Zurich: no test or temperament assessment allows a dog of a banned breed to be kept; the
+      only exception is for keepers who already had a dog of a breed newly added to breed-type list II, who can
+      apply for a keeper permit within a set period.'
+    language: en
+    jurisdiction: CH-ZH
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Verbotene Hunderassen | Kanton Zürich (https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html),
+        saved 2026-09-25
+      reviewed_on: '2026-09-25'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - 'review: confirmed in a bulk review of 7 facts (Alexander Bobrovsky, 2026-09-25)'
+    evidence:
+    - document_id: doc-65987b111d4d5880a8b7
+      first_block: 75
+      last_block: 76
+      anchor:
+        source_url: https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html
+        document_id: doc-65987b111d4d5880a8b7
+        content_sha256: 2e511d8974f7390f03fd70278e5cd0d1e66b12340be9cbc6eca014444b5b06d9
+        raw_sha256: 879f767322b6d99dbdd5e375d674c5f96ced4f55bda323869da0bc87a16c8665
+        block_ids:
+        - doc-65987b111d4d5880a8b7:b00075
+        - doc-65987b111d4d5880a8b7:b00076
+        block_hashes:
+        - ef3a4ae382272cc94e2b457ffaec44baed3264dad12d70990c4b49065d7fa3df
+        - 2f14d1cb02c45dcd968883eeb2589ffbc3433104cc81c6a05055247d0253a1f8
+        heading_path:
+        - Verbotene Hunderassen
+        - Im Kanton Zürich sind folgende Hunderasssen verboten
+        - Keine Haltebewilligung für Hunde der Rassetypenliste II
+        start: 2630
+        end: 2982
+        excerpt: |-
+          Man kann keine Prüfung oder Wesensbeurteilung machen, um doch einen Hund der verbotenen Rassen zu halten. Das ist nicht erlaubt.
 
-          Neben diesen Hunden sind auch alle Mischlinge mit mindestens 10 Prozent Blutanteil der genannten Rassen verboten.
+          Es gibt eine Ausnahme: Wenn eine Rasse neu auf die Rassetypenliste II kommt, können die Halterinnen und Halter, die schon vorher einen solchen Hund hatten, innerhalb einer bestimmten Frist eine Haltebewilligung beantragen.
+  - fact_id: zh-banned-dog-breeds-4
+    statement: 'Canton of Zurich: crosses with at least ten percent blood of a banned breed may not be kept either;
+      a dog that looks as if it could belong to a banned breed, without sufficient proof of its descent, must be
+      reported to the Veterinary Office, which decides from its appearance whether it belongs to a banned breed
+      (phenotyping).'
+    language: en
+    jurisdiction: CH-ZH
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Verbotene Hunderassen | Kanton Zürich (https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html),
+        saved 2026-09-25
+      reviewed_on: '2026-09-25'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - 'review: confirmed in a bulk review of 7 facts (Alexander Bobrovsky, 2026-09-25)'
+    evidence:
+    - document_id: doc-65987b111d4d5880a8b7
+      first_block: 78
+      last_block: 79
+      anchor:
+        source_url: https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html
+        document_id: doc-65987b111d4d5880a8b7
+        content_sha256: 2e511d8974f7390f03fd70278e5cd0d1e66b12340be9cbc6eca014444b5b06d9
+        raw_sha256: 879f767322b6d99dbdd5e375d674c5f96ced4f55bda323869da0bc87a16c8665
+        block_ids:
+        - doc-65987b111d4d5880a8b7:b00078
+        - doc-65987b111d4d5880a8b7:b00079
+        block_hashes:
+        - 87139a88dbf77599d2c5b46c2c4b6e7804a3c77c872abdabdec7395e586f6ddd
+        - b3d7efb531dc7018c51f785eea7c8d596d8e1432a75f618f4be313f0c35cc7d5
+        heading_path:
+        - Verbotene Hunderassen
+        - Im Kanton Zürich sind folgende Hunderasssen verboten
+        - Mischlinge von verbotenen Hunderassen
+        start: 3023
+        end: 3539
+        excerpt: |-
+          Im Kanton Zürich sind nicht nur die oben genannten Hunderassen verboten. Auch Mischlinge, die mindestens zehn Prozent Blut von einer dieser verbotenen Rassen haben, dürfen nicht gehalten werden.
+
+          Wenn ein Hund so aussieht, als könnte er zu den verbotenen Rassen gehören und es gibt keine ausreichenden Nachweise über seine Abstammung, muss man sich beim Veterinäramt melden. Das Veterinäramt schaut dann, wie der Hund aussieht, und entscheidet, ob er zu den verbotenen Rassen gehört. Dies nennt man Phänotypisierung.
+  - fact_id: zh-banned-dog-breeds-5
+    statement: 'Canton of Zurich: keepers who do not live in the canton may stay in it with a dog of a banned breed
+      only for a short time: at most 30 days a year, always with a lead and a muzzle in public space, and they may
+      have the dog kept there only temporarily.'
+    language: en
+    jurisdiction: CH-ZH
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Verbotene Hunderassen | Kanton Zürich (https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html),
+        saved 2026-09-25
+      reviewed_on: '2026-09-25'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - 'review: confirmed in a bulk review of 7 facts (Alexander Bobrovsky, 2026-09-25)'
+    evidence:
+    - document_id: doc-65987b111d4d5880a8b7
+      first_block: 81
+      last_block: 85
+      anchor:
+        source_url: https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html
+        document_id: doc-65987b111d4d5880a8b7
+        content_sha256: 2e511d8974f7390f03fd70278e5cd0d1e66b12340be9cbc6eca014444b5b06d9
+        raw_sha256: 879f767322b6d99dbdd5e375d674c5f96ced4f55bda323869da0bc87a16c8665
+        block_ids:
+        - doc-65987b111d4d5880a8b7:b00081
+        - doc-65987b111d4d5880a8b7:b00082
+        - doc-65987b111d4d5880a8b7:b00083
+        - doc-65987b111d4d5880a8b7:b00084
+        - doc-65987b111d4d5880a8b7:b00085
+        block_hashes:
+        - 23a60ed6b5f3024b666fcf4fa248a9834b16f507b2a4e08d0fd5a1434a7de64a
+        - 497cfe3c7a017625ab088400ad7bc4b5f8391b0481485d99c56e1c963bcbfa95
+        - b6c9c82a388b67610385c2b208390dd9af9ee3ab64cca65aa388e37181ca63ec
+        - 5f23bef23fd2beb1641020e4837f4d2a49018fdbe6af631378e34d95e7d93ec9
+        - 5d694d633a5c1db179a6589efb633c1b3d975116aa839de370287472e4558aa1
+        heading_path:
+        - Verbotene Hunderassen
+        - Im Kanton Zürich sind folgende Hunderasssen verboten
+        - Zu Besuch im Kanton Zürich
+        start: 3569
+        end: 3949
+        excerpt: |-
+          Hundehalterinnen und Hundehalter, die nicht im Kanton Zürich wohnen, dürfen mit einem Hund der verbotenen Rassen nur kurze Zeit im Kanton Zürich bleiben.
+
+          Für sie gilt dann:
+
+          Im öffentlichen Raum müssen sie immer eine Leine und einen Maulkorb benutzen.
+
+          Sie dürfen höchstens 30 Tage im Jahr im Kanton Zürich bleiben.
+
+          Sie dürfen den Hund dort auch nur vorübergehend halten lassen.
+  - fact_id: zh-banned-dog-breeds-6
+    statement: 'Canton of Zurich: the cantonal government decided on 18 December 2024 to put the Rottweiler on breed-type
+      list II from 1 January 2025; keepers whose Rottweiler was registered in the canton before 1 January 2025 had
+      to apply for a keeper permit, with a temperament assessment, by 30 June 2025, and a Rottweiler without a valid
+      keeper permit may no longer be kept in the canton.'
+    language: en
+    jurisdiction: CH-ZH
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Verbotene Hunderassen | Kanton Zürich (https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html),
+        saved 2026-09-25
+      reviewed_on: '2026-09-25'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - 'review: confirmed in a bulk review of 7 facts (Alexander Bobrovsky, 2026-09-25)'
+    evidence:
+    - document_id: doc-65987b111d4d5880a8b7
+      first_block: 89
+      last_block: 93
+      anchor:
+        source_url: https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html
+        document_id: doc-65987b111d4d5880a8b7
+        content_sha256: 2e511d8974f7390f03fd70278e5cd0d1e66b12340be9cbc6eca014444b5b06d9
+        raw_sha256: 879f767322b6d99dbdd5e375d674c5f96ced4f55bda323869da0bc87a16c8665
+        block_ids:
+        - doc-65987b111d4d5880a8b7:b00089
+        - doc-65987b111d4d5880a8b7:b00090
+        - doc-65987b111d4d5880a8b7:b00091
+        - doc-65987b111d4d5880a8b7:b00092
+        - doc-65987b111d4d5880a8b7:b00093
+        block_hashes:
+        - 23ee44422c61c8de1bced08d8c633469f129c930d669ed9dc0432c909405c61d
+        - 0b4ee69b64089762d86e51eaec16f81c5f49d50e6060d898b3d99657d18dc49f
+        - 8731ccbc64b7f5e515561d721fd22f85d49f79407e1cfb1691bb29610510bb7b
+        - 9689692383378a318756f190f1d8aa3fe832313dcc0b7d8386c655505d19682b
+        - f4b1e319ecbfd64e70f65fa09c24044543f9a6f178eee923032818d1fb190658
+        heading_path:
+        - Verbotene Hunderassen
+        - Rottweiler seit 1. Januar 2025 auf Rassetypenliste II
+        start: 4410
+        end: 5176
+        excerpt: |-
+          Deshalb hat der Regierungsrat am 18. Dezember 2024 beschlossen: Ab dem 1. Januar 2025 darf man keine neuen Rottweiler mehr kaufen. Ausserdem hat er die Rasse Rottweiler auf die Rassetypenliste II gesetzt.
+
+          Haltebewilligung für Rottweiler, die vor dem 1. Januar 2025 im Kanton Zürich registriert waren
+
+          Personen, die einen Rottweiler besitzen und ihren Hund schon vor dem 1. Januar 2025 im Kanton Zürich angemeldet hatten, mussten bis zum 30. Juni 2025 eine Erlaubnis (Haltebewilligung) beantragen. Das galt, wenn sie auch weiterhin mit ihrem Hund im Kanton Zürich wohnen wollten.
+
+          Auch Mischlinge, die mehr als zehn Prozent Rottweilerblut haben, brauchen diese Erlaubnis.
+
+          Im Bewilligungsverfahren muss der Hund auf sein Verhalten geprüft werden (Wesensbeurteilung).
+    - document_id: doc-65987b111d4d5880a8b7
+      first_block: 98
+      last_block: 99
+      anchor:
+        source_url: https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html
+        document_id: doc-65987b111d4d5880a8b7
+        content_sha256: 2e511d8974f7390f03fd70278e5cd0d1e66b12340be9cbc6eca014444b5b06d9
+        raw_sha256: 879f767322b6d99dbdd5e375d674c5f96ced4f55bda323869da0bc87a16c8665
+        block_ids:
+        - doc-65987b111d4d5880a8b7:b00098
+        - doc-65987b111d4d5880a8b7:b00099
+        block_hashes:
+        - 33806268802501089a2b5fea158945eabe958c3175ea1b49017fd36b4d483981
+        - 56ef1a3d25db950750550a3ab55d08652321a7e7074f53d89b1eaf4c51eae8dc
+        heading_path:
+        - Verbotene Hunderassen
+        - Rottweiler seit 1. Januar 2025 auf Rassetypenliste II
+        - Verbotene Haltung von Rottweilern
+        start: 5623
+        end: 5954
+        excerpt: |-
+          Wenn Rottweiler schon vor dem 1. Januar 2025 im Kanton Zürich gelebt haben, aber bis zum 30. Juni 2025 keine Haltebewilligung für sie beantragt wurde, ist das verboten. Gegen diese Hundehaltenden gibt es verwaltungsrechtliche Massnahmen.
+
+          Rottweiler ohne gültige Haltebewilligung dürfen im Kanton Zürich nicht mehr gehalten werden.
+  - fact_id: zh-banned-dog-breeds-7
+    statement: 'Canton of Zurich: the Veterinary Office (Veterinäramt), Waltersbachstrasse 5, 8090 Zürich, telephone
+      +41 43 259 41 41, e-mail kanzlei@veta.zh.ch, is open Monday to Friday 08.30 to 12.00 and 13.30 to 17.00.'
+    language: en
+    jurisdiction: CH-ZH
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Verbotene Hunderassen | Kanton Zürich (https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html),
+        saved 2026-09-25
+      reviewed_on: '2026-09-25'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - 'review: confirmed in a bulk review of 7 facts (Alexander Bobrovsky, 2026-09-25)'
+    evidence:
+    - document_id: doc-65987b111d4d5880a8b7
+      first_block: 125
+      last_block: 138
+      anchor:
+        source_url: https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html
+        document_id: doc-65987b111d4d5880a8b7
+        content_sha256: 2e511d8974f7390f03fd70278e5cd0d1e66b12340be9cbc6eca014444b5b06d9
+        raw_sha256: 879f767322b6d99dbdd5e375d674c5f96ced4f55bda323869da0bc87a16c8665
+        block_ids:
+        - doc-65987b111d4d5880a8b7:b00125
+        - doc-65987b111d4d5880a8b7:b00126
+        - doc-65987b111d4d5880a8b7:b00127
+        - doc-65987b111d4d5880a8b7:b00128
+        - doc-65987b111d4d5880a8b7:b00129
+        - doc-65987b111d4d5880a8b7:b00130
+        - doc-65987b111d4d5880a8b7:b00131
+        - doc-65987b111d4d5880a8b7:b00132
+        - doc-65987b111d4d5880a8b7:b00133
+        - doc-65987b111d4d5880a8b7:b00134
+        - doc-65987b111d4d5880a8b7:b00135
+        - doc-65987b111d4d5880a8b7:b00136
+        - doc-65987b111d4d5880a8b7:b00137
+        - doc-65987b111d4d5880a8b7:b00138
+        block_hashes:
+        - 33fe2bb46cb6e7594f669e9c13104fbfa98609bf70c068b459e03fbe42a38562
+        - 79e5cf20de0ba4547fa0d44be6753dbcf6b68f53d1ad2622e5a01cf77ae5905a
+        - 89ac0fafa0670dfca62325a453474c49a344d17b288e54aa47981b8af7c9659d
+        - 733708871f4e0f378f85729a08806147efc7532a550ad5ac544c642f1d958422
+        - c93285e4769386e0c6a1b4cef947ffbebac339d36ff7dd5df53993fcd03e7747
+        - 00c159c6838697ff0916ea9f6bb83f5729a765512433c7eb23435cc2db50f7f9
+        - fa6906d76ee94d4e8d05a2424fb89005840522ab6dec0ee8055247424977169e
+        - 677199eb600291214717e4490d2a3ea9ec7d5fe3e0df040ea06661dbe0fea07b
+        - fa6906d76ee94d4e8d05a2424fb89005840522ab6dec0ee8055247424977169e
+        - cb9b4e4525b530df9022d3052efb370a76a28ce8a54e8e4c18d93b4f1deb8859
+        - 22311af0e6fb4890ca4ba0dbd44dc22f415ae64d6c4487f610781b8d64341196
+        - f8f768a236394e3d0f87bb3c9bf72f91b796777bfff6b4943afc659ec0b9a326
+        - 2fae6fb30b0d0077f771923d6d037d8e43c45e6078e2b3c31637a489c029cee5
+        - d2c019eb1fbadba2cc2dde68c6d0e55a251ea10a0912df87512b0b66d367e92b
+        heading_path:
+        - Verbotene Hunderassen
+        - Kontakt
+        - Veterinäramt
+        start: 7627
+        end: 7964
+        excerpt: |-
+          Veterinäramt
+
+          Adresse
+
+          Waltersbachstrasse 5 8090 Zürich
+
+          Route (Google)
+
+          Adresse kopieren
+
+          Adresse wurde kopiert Adresse konnte nicht kopiert werden
+
+          Telefon
+
+          +41 43 259 41 41
+
+          Telefon
+
+          Öffnungszeiten
+
+          Montag bis Freitag 08.30 bis 12.00 Uhr und 13.30 bis 17.00 Uhr
+
+          Öffnungszeiten Feiertage und Notfallkontakt
+
+          E-Mail
+
+          kanzlei@veta.zh.ch
 - concept_id: zh-dog-keeping
   topic_id: newcomer
   label: Keeping a dog in the Canton of Zurich

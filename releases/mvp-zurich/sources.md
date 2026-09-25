@@ -1,6 +1,6 @@
 # MVP Zurich source inventory: moving to Switzerland and naturalisation
 
-**Last update:** 24 September 2026
+**Last update:** 25 September 2026
 
 The 35 residence sources of the rehearsal are registry seeds in `sources.json`
 only; their in-scope pages came from the imported crawl of 11 September 2026.
@@ -206,6 +206,7 @@ City of Zurich:
 Canton of Zurich:
 
 - [Zurich: keeping a dog](https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html)
+- [Zurich: banned dog breeds](https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html)
 - [Zurich: reporting a move with a vehicle](https://www.zh.ch/de/mobilitaet/fahrzeuge-kontrollschilder/umzug-melden.html)
 - [Zurich: importing a vehicle](https://www.zh.ch/de/mobilitaet/fahrzeuge-kontrollschilder/import-fahrzeuge/fahrzeug-importieren.html)
 

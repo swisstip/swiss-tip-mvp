@@ -1,6 +1,6 @@
 # User acceptance tests
 
-**Last update:** 24 September 2026
+**Last update:** 25 September 2026
 **Scope:** the two standing cases of section 3.3 of the
 [functional specification](https://github.com/swisstip/swiss-tip/blob/main/docs/product/functional-specification.md), four further
 cases chosen because the popular answer misses an exception in the law, a
@@ -2682,6 +2682,29 @@ must say that household waste is collected weekly and that the dates depend on
 the collection area, one of A to K, L Ost and L West. It must say that the
 online collection plan finds the area from the street, and that a street
 directory lists it. The trap is naming one weekday for the whole city.
+
+### UAT-120: Moving to Zurich with a Rottweiler
+
+"I plan to bring my Rottweiler from Pargue to cita of Zuerich - what is the
+procedure?" The misspellings are the user's and stay in the query. The answer
+must open with the ban: the Rottweiler has been on breed-type list II of the
+cantonal dog ordinance since 1 January 2025. Nobody may move into the Canton
+of Zurich with a dog of that list, crosses with at least ten percent of their
+blood included, and no test or temperament assessment makes an exception.
+There is therefore no procedure for bringing the dog. The trap is listing the
+registration steps (the dog control within ten days, AMICUS, the courses) and
+the import rules as if the dog could come, or naming the ban only after them.
+Search must rank `zh-banned-dog-breeds` among the first three hits, and the
+answer must cite the Canton of Zurich page on banned dog breeds.
+
+### UAT-121: Moving to Winterthur with a Rottweiler
+
+"We are moving from Germany to Winterthur with our Rottweiler. Is that
+allowed?" The answer must say no: the ban of breed-type list II is cantonal
+and applies in Winterthur as everywhere in the Canton of Zurich, and it must
+cite the Canton of Zurich page on banned dog breeds. The trap is calling the
+ban a City of Zurich rule, or giving the City of Zurich's registration steps
+for Winterthur.
 
 ## Decline cases
 

@@ -1,8 +1,8 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, not clean, 216 disposition(s), generated 2026-09-24T12:53:13.
+Release `mvp-zurich-2026-09-25-v1` (content `7b29674a6774`), policy `report`, not clean, 216 disposition(s), generated 2026-09-25T03:35:17.
 
-532 candidate records ({'section': 513, 'document': 17, 'rolled_up': 2}) with 3423 units a curator answers for: 864 cited, 1251 dispositioned, **1308 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 41, 'empty': 44, 'partly_cited': 138, 'cited': 85, 'cited_and_dispositioned': 73, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
+533 candidate records ({'section': 514, 'document': 17, 'rolled_up': 2}) with 3433 units a curator answers for: 872 cited, 1251 dispositioned, **1310 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 41, 'empty': 44, 'partly_cited': 139, 'cited': 85, 'cited_and_dispositioned': 73, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 
 ## Documents
 
@@ -186,6 +186,7 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | partly_cited | [Quellensteuer-Tarife / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/quellensteuer-tarife.html) `doc-fce27b72dc3a3a90a70f` | section | 16 | 14 | 0 | 1 | 1 |  |
 | partly_cited | [Merkblatt des kantonalen Steueramtes über die Quellenbesteuerung von Arbeitnehmerinnen und Arbeitnehmern / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-87-3.html) `doc-afaa2c9780fc736c5705` | section | 17 | 3 | 0 | 0 | 14 | zh-tax-at-source-directive |
 | partly_cited | [Hunde / Kanton Zürich](https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html) `doc-cfa52df67bc1a2de79f0` | section | 33 | 9 | 0 | 1 | 23 | zh-dogs |
+| partly_cited | [Verbotene Hunderassen / Kanton Zürich](https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html) `doc-65987b111d4d5880a8b7` | section | 10 | 8 | 0 | 0 | 2 | zh-dogs |
 | partly_cited | [Ufficio della migrazione - SPOP (DI) - Repubblica e Cantone Ticino](https://www4.ti.ch/di/spop/chi-siamo/ufficio-della-migrazione) `doc-6672da80799a61b7cd84` | section | 14 | 1 | 0 | 0 | 13 | ti-migration-office |
 | empty | [Appenzell Innerrhoden - Verordnung zum Registerharmonisierungsgesetz (GS 172.910), art. 7](https://ai.clex.ch/api/de/versions/1133/pdf_file_with_annexes) `doc-34b1360ccad23a5bcac2` | section | 0 | 0 | 0 | 0 | 0 | ai-register-ordinance |
 | empty | [Appenzell Innerrhoden - Standeskommissionsbeschluss ueber Niederlassung und Aufenthalt (GS 142.001), art. 2](https://ai.clex.ch/api/de/versions/1513/pdf_file_with_annexes) `doc-109429437bfcbc983275` | section | 0 | 0 | 0 | 0 | 0 | ai-settlement-decree |
@@ -1829,6 +1830,8 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-cfa52df67bc1a2de79f0` | section-0041 | Hunde > Was Sie wissen sollten > Verbotene Geräte > Bewilligungspflicht | 209-210 | 496 |
 | `doc-cfa52df67bc1a2de79f0` | section-0042 | Hunde > Was Sie wissen sollten > Verbotene Geräte > Dokumentationspflicht | 211-217 | 312 |
 | `doc-cfa52df67bc1a2de79f0` | section-0043 | Hunde > Was Sie wissen sollten > Leinenpflicht im Wald und am Waldrand | 218-222 | 398 |
+| `doc-65987b111d4d5880a8b7` | section-0015 | Verbotene Hunderassen > Rottweiler seit 1. Januar 2025 auf Rassetypenliste II > Besonderes Vorgehen bei Rottweilern unter 15 Monaten | 94-96 | 352 |
+| `doc-65987b111d4d5880a8b7` | section-0017 | Verbotene Hunderassen > Wesensbeurteilung als Führbarkeitstest – Zielsetzung und Ablauf | 100-118 | 1305 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0008 | Amt für Wirtschaft > Diese Seite ist verfügbar in: | 49-52 | 217 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0011 | Amt für Wirtschaft > Über uns | 67-70 | 1084 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0012 | Amt für Wirtschaft > Über uns > Dr. Fabian Streiff | 71-73 | 37 |
@@ -2099,7 +2102,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | cited | `zh-awa-qualifizierung` Zurich: qualification offers for jobseekers | 1 | 8 | 7 | 1 | 0 | 0 |
 | cited | `zh-awa-zustaendiges-rav` Zurich: finding the responsible RAV | 1 | 1 | 1 | 0 | 0 | 0 |
 | partly_covered | `zh-biometric-documents` Zurich - Biometric residence documents | 2 | 18 | 7 | 0 | 3 | 11 |
-| partly_covered | `zh-dogs` Zurich - keeping a dog (cantonal rules) | 1 | 32 | 9 | 0 | 1 | 23 |
+| partly_covered | `zh-dogs` Zurich - keeping a dog (cantonal rules) | 2 | 42 | 17 | 0 | 1 | 25 |
 | partly_covered | `zh-eu-efta` Zurich - Residence for EU/EFTA nationals | 2 | 18 | 11 | 0 | 3 | 7 |
 | partly_covered | `zh-family` Zurich - Family reunification for third-country nationals | 4 | 32 | 19 | 0 | 15 | 13 |
 | cited | `zh-fedlex-kv` Constitution of the Canton of Zurich (KV), SR 131.211 (federally guaranteed cantonal constitution) | 1 | 1 | 1 | 0 | 0 | 0 |

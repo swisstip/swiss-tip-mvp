@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-curation-coverage-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-24-v5",
-  "content_sha256": "3100356dd26d1751ac88601c2cd10daf38eb6691ca42ec51715e8832d5770bd9",
-  "text_index_sha256": "18e7ddd3e1baac8680a3ddece5860c2a100e61ba64855c354d976d2c65b52b05",
+  "release_id": "mvp-zurich-2026-09-25-v1",
+  "content_sha256": "7b29674a6774c3b7c3b12181902817df174a2555de16686570a1d6e30cc40c0f",
+  "text_index_sha256": "4243aef7b81d5fecf0ac8e768f8a8fb635db7d24db11762ec3666af43aed00cf",
   "dispositions_sha256": "4a4939b3e0fd4a6bcb57e36d496e8adf31b35b33fc698cf9e56db28a68158ae8",
   "dispositions": 216,
   "policy": "report",
-  "today": "2026-09-24",
-  "generated_at": "2026-09-24T12:53:13.784001+00:00",
+  "today": "2026-09-25",
+  "generated_at": "2026-09-25T03:35:17.828752+00:00",
   "rules": {
     "reference_kinds": [
       "plugin-document"
@@ -18,16 +18,16 @@
     "repeated_match_share": 0.5
   },
   "counts": {
-    "candidates": 532,
+    "candidates": 533,
     "units": {
-      "section": 513,
+      "section": 514,
       "document": 17,
       "rolled_up": 2
     },
-    "content_sections": 3423,
-    "cited_sections": 864,
+    "content_sections": 3433,
+    "cited_sections": 872,
     "dispositioned_sections": 1251,
-    "unclassified_sections": 1308,
+    "unclassified_sections": 1310,
     "boilerplate_sections": 160,
     "repeated_texts": 16,
     "repeated_by_citation": {
@@ -38,7 +38,7 @@
     "documents": {
       "unclassified": 41,
       "empty": 44,
-      "partly_cited": 138,
+      "partly_cited": 139,
       "cited": 85,
       "cited_and_dispositioned": 73,
       "dispositioned": 151
@@ -27724,6 +27724,52 @@
       ]
     },
     {
+      "document_id": "doc-65987b111d4d5880a8b7",
+      "source_url": "https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html",
+      "title": "Verbotene Hunderassen | Kanton Zürich",
+      "source_ids": [
+        "zh-dogs"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 10,
+      "cited": 8,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 2,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Verbotene Hunderassen",
+            "Rottweiler seit 1. Januar 2025 auf Rassetypenliste II",
+            "Besonderes Vorgehen bei Rottweilern unter 15 Monaten"
+          ],
+          "first_block": 94,
+          "last_block": 96,
+          "characters": 352,
+          "section_ids": [
+            "section-0015"
+          ]
+        },
+        {
+          "section_id": "section-0017",
+          "heading_path": [
+            "Verbotene Hunderassen",
+            "Wesensbeurteilung als Führbarkeitstest – Zielsetzung und Ablauf"
+          ],
+          "first_block": 100,
+          "last_block": 118,
+          "characters": 1305,
+          "section_ids": [
+            "section-0017"
+          ]
+        }
+      ]
+    },
+    {
       "document_id": "doc-6ac4fb95eb9bd1acf968",
       "source_url": "https://www.zh.ch/de/volkswirtschaftsdirektion/amt-fuer-wirtschaft.html",
       "title": "Amt für Wirtschaft | Kanton Zürich",
@@ -30643,12 +30689,12 @@
     {
       "source_id": "zh-dogs",
       "title": "Zurich - keeping a dog (cantonal rules)",
-      "documents": 1,
-      "units": 32,
-      "cited": 9,
+      "documents": 2,
+      "units": 42,
+      "cited": 17,
       "dispositioned": 0,
       "boilerplate": 1,
-      "unclassified": 23,
+      "unclassified": 25,
       "status": "partly_covered"
     },
     {
