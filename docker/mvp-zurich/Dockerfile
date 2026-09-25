@@ -30,6 +30,11 @@
 # a search on the bundled model does not run hybrid (an index for another
 # release or another model digest), and when a dataset bundle does not
 # validate or does not bind to a concept of the release.
+#
+# The workflow builds it for linux/amd64 and linux/arm64. The platform that
+# is not the runner's runs these checks under emulation, where one embedding
+# takes several seconds, so its check search waits 120 seconds per call
+# instead of the 10 the server waits.
 
 ARG BASE_IMAGE=swiss-tip-mcp:0.3.2
 FROM ${BASE_IMAGE}
@@ -38,6 +43,8 @@ ARG RELEASE_CONTENT_SHA256=""
 ARG REVISION=""
 # Empty is PyPI. Another index is used with PyPI behind it, as for the base images.
 ARG PACKAGE_INDEX=""
+ARG BUILDPLATFORM
+ARG TARGETPLATFORM
 LABEL org.opencontainers.image.title="Swiss TIP MCP server with the mvp-zurich knowledge release" \
       org.opencontainers.image.description="MCP server for foreign nationals in Switzerland: residence permits and registration, social insurance on arrival and departure, tax at source, the foreign driving licence, health insurance and premium reduction, and naturalisation (federal rules, Canton and City of Zurich), every fact human-reviewed and cited to an official page, with hybrid lexical and semantic concept search on a bundled local embedding model and the waste-collection calendars of Zurich, Basel and St. Gallen behind the lookup tool. Streamable HTTP on port 8000 at /mcp, or stdio with --transport stdio. The image README is /srv/swiss-tip/README.md, the licence and notices are in /usr/share/doc/swiss-tip/, and the labels swiss-tip.release.id and swiss-tip.release.content-sha256 name the bundled release." \
       org.opencontainers.image.licenses="Apache-2.0" \
@@ -88,7 +95,7 @@ COPY --from=datasets --chown=10001:10001 . /srv/swiss-tip/datasets/
 RUN swisstip-mcp --release /srv/swiss-tip/release.json --require-ready --health > /dev/null \
  && python -c "import json, sys; m = json.load(open(sys.argv[1], encoding='utf-8'))['manifest']; got = (m['release_id'], m['content_sha256']); sys.exit(0 if all(w in ('', g) for w, g in zip(sys.argv[2:], got)) else 'release.json is %s %s, the build arguments name %s %s' % (*got, *sys.argv[2:]))" \
       /srv/swiss-tip/release.json "${RELEASE_ID}" "${RELEASE_CONTENT_SHA256}" \
- && SWISSTIP_REQUIRE_SEMANTIC=1 with-ollama python /usr/local/lib/swiss-tip/check_semantic.py \
+ && if [ "${TARGETPLATFORM}" = "${BUILDPLATFORM}" ]; then check_timeout=10; else check_timeout=120; fi  && SWISSTIP_REQUIRE_SEMANTIC=1 SWISSTIP_CHECK_TIMEOUT="$check_timeout" with-ollama python /usr/local/lib/swiss-tip/check_semantic.py \
       /srv/swiss-tip/release.json /srv/swiss-tip/semantic-index.json \
       "Ich bin tschechischer Staatsbürger und beginne nächste Woche in Zürich zu arbeiten. Bis wann muss ich mich anmelden?" \
       "Je suis citoyen tchèque et je commence à travailler à Zurich. Quand dois-je m'annoncer?" \

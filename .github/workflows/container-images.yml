@@ -55,6 +55,18 @@
 # swiss-tip.release.id, swiss-tip.release.content-sha256); the pack, slim and
 # demo images carry this repository's commit as
 # org.opencontainers.image.revision.
+#
+# The pack, slim and calendar images are built for linux/amd64 and
+# linux/arm64, so an Apple silicon Mac runs them natively; the base images of
+# the code repository must have been pushed for both. The runner keeps both
+# platforms under one tag in the containerd image store and runs arm64 under
+# QEMU: every test above runs on amd64, the build checks (a ready release,
+# the hybrid check search, the calendars registered) run on both, and each
+# image is started once more on arm64 and must report healthy. Under QEMU
+# one embedding takes several seconds, so the pack image's check search
+# waits longer there (docker/mvp-zurich/Dockerfile) and its arm64 start is
+# given --semantic-timeout 120. docker push then sends both platforms. The
+# demo image stays amd64 only: it carries the linux-x64 OpenCode binary.
 name: Container images
 
 on:
@@ -68,7 +80,7 @@ on:
       swisstip_mcp_version:
         description: swisstip-mcp version (the tag of both MCP images in ghcr.io)
         type: string
-        default: 0.3.3
+        default: 0.3.4
       package_index:
         description: Index the check client is installed from; testpypi rehearses a version that is not released yet
         type: choice
@@ -186,6 +198,21 @@ jobs:
           python -m pip install ${INDEX_URL:+--index-url "$INDEX_URL" --extra-index-url https://pypi.org/simple/} \
             "swisstip-mcp==$VERSION"
 
+      # Both platforms under one tag need the containerd image store; arm64 runs under QEMU.
+      - name: Use the containerd image store
+        run: |
+          python -c "import json, pathlib; p = pathlib.Path('/etc/docker/daemon.json'); c = json.loads(p.read_text()) if p.exists() else {}; c.setdefault('features', {})['containerd-snapshotter'] = True; print(json.dumps(c))" \
+            > "$RUNNER_TEMP/daemon.json"
+          sudo mv "$RUNNER_TEMP/daemon.json" /etc/docker/daemon.json
+          sudo systemctl restart docker
+          docker info --format '{{ json .DriverStatus }}' | grep -q containerd.snapshotter \
+            || { echo "the Docker daemon does not use the containerd image store"; exit 1; }
+          echo "PLATFORMS=linux/amd64,linux/arm64" >> "$GITHUB_ENV"
+
+      - uses: docker/setup-qemu-action@v4
+        with:
+          platforms: arm64
+
       - uses: docker/login-action@v4
         with:
           registry: ghcr.io
@@ -216,7 +243,7 @@ jobs:
             # connector the image carries beside it (the second build context "datasets").
             datasets_args=""
             if ls datasets/"$pack"/*/dataset.json > /dev/null 2>&1; then datasets_args="--build-context datasets=datasets/$pack"; fi
-            docker build -f "docker/$pack/Dockerfile" $datasets_args \
+            docker build --platform "$PLATFORMS" -f "docker/$pack/Dockerfile" $datasets_args \
               --build-arg BASE_IMAGE="$MCP_IMAGE:$VERSION" --build-arg PACKAGE_INDEX="$INDEX_URL" \
               --build-arg RELEASE_ID="$release_id" --build-arg RELEASE_CONTENT_SHA256="$digest" \
               --build-arg REVISION="$GITHUB_SHA" \
@@ -231,6 +258,17 @@ jobs:
               python scripts/test/mcp/check_server.py --url "http://127.0.0.1:$port/mcp" --require-lookup
             fi
             docker rm -f "$pack"
+            # arm64 under QEMU: the server's warm-up embedding needs more than its 10 seconds there.
+            docker run -d --name "$pack-arm64" --platform linux/arm64 -p "$port:8000" "$PACK_IMAGE:$release_id" --semantic-timeout 120
+            for attempt in $(seq 1 90); do
+              curl -m 5 -fs -o /dev/null "http://127.0.0.1:$port/health" && break
+              [ "$(docker inspect --format '{{.State.Running}}' "$pack-arm64")" = true ] || break; sleep 5
+            done
+            health=$(curl -m 5 -fs "http://127.0.0.1:$port/health" | python -c "import json, sys; h = json.load(sys.stdin); print(h['status'], h['search']['configured_mode'], *[c['status'] for c in h.get('connectors', [])])") \
+              || { docker logs "$pack-arm64" | tail -40; exit 1; }
+            echo "$pack arm64 ($(docker exec "$pack-arm64" uname -m)): $health"
+            case "$health" in "ok hybrid"*) ;; *) docker logs "$pack-arm64" | tail -40; exit 1 ;; esac
+            docker rm -f "$pack-arm64"
             echo "$tags" >> "$RUNNER_TEMP/push.txt"
             echo "::endgroup::"
 
@@ -239,7 +277,7 @@ jobs:
             # unless the release is ready and the semantic index was built for exactly this release.
             slim_tags="$PACK_IMAGE:$release_id-slim $PACK_IMAGE:$pack-slim"
             slim_tag_args=""; for tag in $slim_tags; do slim_tag_args="$slim_tag_args -t $tag"; done
-            docker build -f code/docker/slim/Dockerfile \
+            docker build --platform "$PLATFORMS" -f code/docker/slim/Dockerfile \
               --build-arg BASE_IMAGE="$MCP_IMAGE:$VERSION-slim" --build-arg PACK="$pack" \
               --build-arg RELEASE_ID="$release_id" --build-arg RELEASE_CONTENT_SHA256="$digest" \
               --build-arg REVISION="$GITHUB_SHA" \
@@ -261,6 +299,14 @@ jobs:
               python scripts/test/mcp/check_server.py --url "http://127.0.0.1:$SWISSTIP_PORT/mcp" --require-hybrid
             fi
             docker compose -f code/compose.yaml down
+            # arm64 under QEMU, on its own: lexical search, the release ready.
+            docker run -d --name "$pack-slim-arm64" --platform linux/arm64 -p "$SWISSTIP_PORT:8000" "$PACK_IMAGE:$release_id-slim"
+            for attempt in $(seq 1 120); do curl -m 5 -fs -o /dev/null "http://127.0.0.1:$SWISSTIP_PORT/health" && break; sleep 1; done
+            status=$(curl -m 5 -fs "http://127.0.0.1:$SWISSTIP_PORT/health" | python -c "import json, sys; print(json.load(sys.stdin)['status'])") \
+              || { docker logs "$pack-slim-arm64" | tail -40; exit 1; }
+            echo "$pack slim arm64 ($(docker exec "$pack-slim-arm64" uname -m)): $status"
+            [ "$status" = ok ] || { docker logs "$pack-slim-arm64" | tail -40; exit 1; }
+            docker rm -f "$pack-slim-arm64"
             echo "$slim_tags" >> "$RUNNER_TEMP/push.txt"
             echo "::endgroup::"
           done
@@ -319,14 +365,17 @@ jobs:
           echo "::group::calendar $versions ($bundles bundles)"
           tags="$CALENDAR_IMAGE:mvp-zurich $CALENDAR_IMAGE:mvp-zurich-$versions"
           tag_args=""; for tag in $tags; do tag_args="$tag_args -t $tag"; done
-          docker build -f docker/mvp-zurich-calendar/Dockerfile \
+          docker build --platform "$PLATFORMS" -f docker/mvp-zurich-calendar/Dockerfile \
             --build-arg BASE_IMAGE="$CONNECTOR_IMAGE:$VERSION" \
             --build-arg DATASET_VERSIONS="$versions" --build-arg REVISION="$GITHUB_SHA" \
             $tag_args datasets/mvp-zurich
-          docker run -d --name calendar -p 8130:8100 "$CALENDAR_IMAGE:mvp-zurich"
-          for attempt in $(seq 1 60); do curl -fs -o /dev/null http://127.0.0.1:8130/health && break; sleep 1; done
-          python code/scripts/test/connector/check_connector.py --url http://127.0.0.1:8130 || { docker logs calendar | tail -40; exit 1; }
-          docker rm -f calendar
+          for platform in linux/amd64 linux/arm64; do
+            docker run -d --name calendar --platform "$platform" -p 8130:8100 "$CALENDAR_IMAGE:mvp-zurich"
+            for attempt in $(seq 1 120); do curl -fs -o /dev/null http://127.0.0.1:8130/health && break; sleep 1; done
+            echo "$platform: $(docker exec calendar uname -m)"
+            python code/scripts/test/connector/check_connector.py --url http://127.0.0.1:8130 || { docker logs calendar | tail -40; exit 1; }
+            docker rm -f calendar
+          done
           # Beside the server: the slim image of the pack, the sidecar and the connector, as compose.yaml runs them.
           export SWISSTIP_REGISTRY="$REGISTRY" SWISSTIP_PACK=mvp-zurich SWISSTIP_PORT=8180 SWISSTIP_CONNECTORS=http://127.0.0.1:8100
           docker compose -f code/compose.yaml --profile calendar up -d --wait || { docker compose -f code/compose.yaml --profile calendar logs | tail -60; exit 1; }
@@ -340,8 +389,15 @@ jobs:
       - name: Push the tested images
         if: inputs.push
         run: |
+          # From the containerd image store a push sends every platform the tag holds: amd64 and arm64, and amd64
+          # alone for the demo image. The registry must then list what the run built.
           for tag in $(cat "$RUNNER_TEMP/push.txt"); do
             docker push "$tag"
+            case "$tag" in "$DEMO_IMAGE":*) continue ;; esac
+            platforms=$(docker buildx imagetools inspect --format '{{ range .Manifest.Manifests }}{{ .Platform.OS }}/{{ .Platform.Architecture }} {{ end }}' "$tag") \
+              || { echo "$tag was pushed as a single-platform image"; exit 1; }
+            echo "$tag: $platforms"
+            case "$platforms" in *linux/amd64*linux/arm64*|*linux/arm64*linux/amd64*) ;; *) echo "$tag was pushed without both platforms"; exit 1 ;; esac
           done
 
       - name: Summary
