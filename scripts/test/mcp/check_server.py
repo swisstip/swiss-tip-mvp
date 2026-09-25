@@ -156,20 +156,27 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
                   # about 370 bytes to say in the manifest that registration is published for all 26 cantons, with
                   # its caveats, and the user raised the bound to 8 500 on 23 September 2026 rather than disclose it
                   # more tersely or rewrite reviewed limitations. Criterion X8 and the round trip carry the same
-                  # number; shorten a topic description before raising it again.
+                  # number; shorten a topic description before raising it again. The school holidays of
+                  # 25 September 2026 added a topic, one scope sentence and seven main-town jurisdictions, 8 592 bytes
+                  # in all, and the user raised the bound to 8 700 rather than trim the scope statement.
                   not root.isError and size < 8700 and body["scope_statement"] and body["out_of_scope"]
                   and {t["topic_id"] for t in body["topics"]} == {"residence", "contacts", "offices", "newcomer", "waste",
                                                                   "vehicles-parking", "household-taxes", "social-insurance", "tax-at-source",
                                                                   "driving-licence", "health-insurance", "naturalisation", "entry-visas",
                                                                   "political-rights", "family-benefits", "housing",
-                                                                  "integration", "customs", "work-unemployment", "ahv-pension"}
+                                                                  "integration", "customs", "work-unemployment", "ahv-pension",
+                                                                  "school-holidays"}
                   # The counts line, whichever statuses the release carries (all human-reviewed since 2026-09-14-v1).
                   and any(item.startswith("Review status of the") for item in body["limitations"]))
             # The City of Lugano (CH-TI-5192) joined with its waste concept in release 2026-09-24-v1, the cities of
-            # Basel (CH-BS-2701) and St. Gallen (CH-SG-3203) with their collection calendars in 2026-09-24-v5.
-            check("root lists federal, Zurich, City of Zurich, Lugano, Basel and St. Gallen jurisdictions and 26 cantons",
-                  {"CH", "CH-ZH", "CH-ZH-261", "CH-BE", "CH-TI", "CH-TI-5192", "CH-BS-2701", "CH-SG-3203"}
-                  <= set(body["jurisdictions"]) and len(body["jurisdictions"]) == 31)
+            # Basel (CH-BS-2701) and St. Gallen (CH-SG-3203) with their collection calendars in 2026-09-24-v5. The
+            # school holidays of 2026-09-25-v2 added seven main towns whose dates are served where the municipalities
+            # set their own: Appenzell, Fribourg, Chur, Luzern, Sarnen, Solothurn and Schwyz.
+            check("root lists federal, Zurich, City of Zurich, Lugano, Basel, St. Gallen and seven main-town "
+                  "jurisdictions and 26 cantons",
+                  {"CH", "CH-ZH", "CH-ZH-261", "CH-BE", "CH-TI", "CH-TI-5192", "CH-BS-2701", "CH-SG-3203",
+                   "CH-AI-3101", "CH-FR-2196", "CH-GR-3901", "CH-LU-1061", "CH-OW-1407", "CH-SO-2601", "CH-SZ-1372"}
+                  <= set(body["jurisdictions"]) and len(body["jurisdictions"]) == 38)
             languages = [q["code"] for q in body.get("query_languages") or []]
             search_tool = next(t for t in tools if t.name == "search")
             # swisstip-mcp 0.3.0 asks for one search and no longer calls German "preferred"; servers up to 0.2.5
