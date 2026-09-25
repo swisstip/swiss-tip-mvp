@@ -1,10 +1,10 @@
 {
   "manifest": {
     "schema_version": "swiss-tip-release/v1",
-    "release_id": "mvp-wallisellen-2026-09-24-v3",
+    "release_id": "mvp-wallisellen-2026-09-25-v1",
     "pack": "mvp-wallisellen",
     "title": "Stadt Wallisellen - municipal services, civic life and local information",
-    "created_at": "2026-09-24T15:07:19.324492Z",
+    "created_at": "2026-09-25T08:30:10.760986Z",
     "scope_statement": "Official Stadt Wallisellen information for residents and visitors: city contact and digital services; moving, population and civil-status services; waste, energy and climate; building, housing, public space and mobility; taxes and municipal finance; the city council, municipal assembly and legal collection; schools and careers advice; family, older-person, health, youth and volunteering services; leisure, sport, facilities and culture; and selected official facts about Wallisellen's geography, population and business support.",
     "out_of_scope": [
       "Procedures or rules whose authoritative publisher is the Canton of Zurich, the Confederation or another municipality.",
@@ -72,7 +72,7 @@
       "A directory page proves that the city publishes that directory and its visible summary, not that every linked item is complete or currently available.",
       "Some tables on the city's pages are filled in by the browser; their rows were read from the data embedded in the saved page, so a row the browser would render differently can differ from the live page."
     ],
-    "content_sha256": "9f6ec165aa2287889ee8f818c1fc678622482312400ea32786bb94f0c47f420a"
+    "content_sha256": "e22a228060c1c4def22095121c3fbe268377c5ff2bb4bc994caf70586548ac1f"
   },
   "documents": [
     {
@@ -16533,15 +16533,15 @@
     "schema_version": "swiss-tip-graph/v1",
     "graph_id": "ch",
     "title": "Switzerland: how the Confederation, the cantons and the communes share the tasks a resident meets",
-    "created_at": "2026-09-24T15:07:04.292694Z",
+    "created_at": "2026-09-25T08:17:20.071398Z",
     "freshness": {
-      "snapshot_date": "2026-09-24",
+      "snapshot_date": "2026-09-25",
       "max_age_days": 90,
-      "stale_from": "2026-12-23"
+      "stale_from": "2026-12-24"
     },
     "serve": "all",
     "review_statuses": {
-      "automatically-derived-unreviewed": 6,
+      "automatically-derived-unreviewed": 17,
       "human-reviewed": 906
     },
     "nodes": [
@@ -23928,7 +23928,7 @@
           "kind": "source-section",
           "review_status": "automatically-derived-unreviewed",
           "author": "derive",
-          "source": "derive from mvp-zurich mvp-zurich-2026-09-24-v5",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
           "reviewed_on": null,
           "reviewed_by": null,
           "notes": []
@@ -23954,7 +23954,7 @@
           "kind": "source-section",
           "review_status": "automatically-derived-unreviewed",
           "author": "derive",
-          "source": "derive from mvp-zurich mvp-zurich-2026-09-24-v5",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
           "reviewed_on": null,
           "reviewed_by": null,
           "notes": []
@@ -23977,6 +23977,196 @@
           "review_status": "automatically-derived-unreviewed",
           "author": "derive",
           "source": "derive from the place register",
+          "reviewed_on": null,
+          "reviewed_by": null,
+          "notes": []
+        }
+      },
+      {
+        "node_id": "institution.catalogue-ag-school-holidays",
+        "kind": "institution",
+        "label": "Canton Aargau - Departement Bildung, Kultur und Sport",
+        "summary": "Canton Aargau - Departement Bildung, Kultur und Sport: the cantonal authority for Canton of Aargau (CH-AG).",
+        "level": "cantonal",
+        "place": "CH-AG",
+        "hosts": [
+          "www.schulen-aargau.ch"
+        ],
+        "evidence_ids": [
+          "graph-mvp-zurich-e-ag-school-holidays-1-1"
+        ],
+        "provenance": {
+          "kind": "source-section",
+          "review_status": "automatically-derived-unreviewed",
+          "author": "derive",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
+          "reviewed_on": null,
+          "reviewed_by": null,
+          "notes": []
+        }
+      },
+      {
+        "node_id": "institution.catalogue-ai-school-holidays",
+        "kind": "institution",
+        "label": "Canton Appenzell Innerrhoden - Erziehungsdepartement",
+        "summary": "Canton Appenzell Innerrhoden - Erziehungsdepartement: the cantonal authority for Canton of Appenzell Innerrhoden (CH-AI).",
+        "level": "cantonal",
+        "place": "CH-AI",
+        "hosts": [
+          "ai.ch"
+        ],
+        "evidence_ids": [
+          "graph-mvp-zurich-e-ai-school-holidays-1-1"
+        ],
+        "provenance": {
+          "kind": "source-section",
+          "review_status": "automatically-derived-unreviewed",
+          "author": "derive",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
+          "reviewed_on": null,
+          "reviewed_by": null,
+          "notes": []
+        }
+      },
+      {
+        "node_id": "institution.catalogue-be-school-holidays",
+        "kind": "institution",
+        "label": "Canton Bern - Bildungs- und Kulturdirektion, Amt fuer Kindergarten, Volksschule und Beratung",
+        "summary": "Canton Bern - Bildungs- und Kulturdirektion, Amt fuer Kindergarten, Volksschule und Beratung: the cantonal authority for Canton of Bern / Berne (CH-BE).",
+        "level": "cantonal",
+        "place": "CH-BE",
+        "hosts": [
+          "www.akvb-gemeinden.bkd.be.ch"
+        ],
+        "evidence_ids": [
+          "graph-mvp-zurich-e-be-school-holidays-1-1"
+        ],
+        "provenance": {
+          "kind": "source-section",
+          "review_status": "automatically-derived-unreviewed",
+          "author": "derive",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
+          "reviewed_on": null,
+          "reviewed_by": null,
+          "notes": []
+        }
+      },
+      {
+        "node_id": "institution.catalogue-lu-school-holidays",
+        "kind": "institution",
+        "label": "Canton Lucerne - Dienststelle Volksschulbildung",
+        "summary": "Canton Lucerne - Dienststelle Volksschulbildung: the cantonal authority for Canton of Luzern (CH-LU).",
+        "level": "cantonal",
+        "place": "CH-LU",
+        "hosts": [
+          "volksschulbildung.lu.ch"
+        ],
+        "evidence_ids": [
+          "graph-mvp-zurich-e-lu-school-holidays-1-1"
+        ],
+        "provenance": {
+          "kind": "source-section",
+          "review_status": "automatically-derived-unreviewed",
+          "author": "derive",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
+          "reviewed_on": null,
+          "reviewed_by": null,
+          "notes": []
+        }
+      },
+      {
+        "node_id": "institution.catalogue-tg-school-holidays",
+        "kind": "institution",
+        "label": "Canton Thurgau - Amt fuer Volksschule",
+        "summary": "Canton Thurgau - Amt fuer Volksschule: the cantonal authority for Canton of Thurgau (CH-TG).",
+        "level": "cantonal",
+        "place": "CH-TG",
+        "hosts": [
+          "av.tg.ch"
+        ],
+        "evidence_ids": [
+          "graph-mvp-zurich-e-tg-school-holidays-1-1"
+        ],
+        "provenance": {
+          "kind": "source-section",
+          "review_status": "automatically-derived-unreviewed",
+          "author": "derive",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
+          "reviewed_on": null,
+          "reviewed_by": null,
+          "notes": []
+        }
+      },
+      {
+        "node_id": "institution.catalogue-zh-school-holidays",
+        "kind": "institution",
+        "label": "Canton of Zurich (Migrationsamt; Kantonales Steueramt; Strassenverkehrsamt; Gesundheitsdirektion; Gemeindeamt, Abteilung Einbürgerungen; Amt für Wirtschaft; Amt für Statistik und Daten)",
+        "summary": "Canton of Zurich (Migrationsamt; Kantonales Steueramt; Strassenverkehrsamt; Gesundheitsdirektion; Gemeindeamt, Abteilung Einbürgerungen; Amt für Wirtschaft; Amt für Statistik und Daten): the cantonal authority for Canton of Zürich (CH-ZH).",
+        "level": "cantonal",
+        "place": "CH-ZH",
+        "hosts": [
+          "www.zh.ch"
+        ],
+        "evidence_ids": [
+          "graph-mvp-zurich-e-zh-school-holidays-1-1"
+        ],
+        "provenance": {
+          "kind": "source-section",
+          "review_status": "automatically-derived-unreviewed",
+          "author": "derive",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
+          "reviewed_on": null,
+          "reviewed_by": null,
+          "notes": []
+        }
+      },
+      {
+        "node_id": "institution.gl-office",
+        "kind": "institution",
+        "label": "Canton of Glarus, Abteilung Migration",
+        "summary": "Canton of Glarus, Abteilung Migration: the cantonal authority for Canton of Glarus (CH-GL).",
+        "keywords": [
+          "Canton Glarus - Abteilung Migration"
+        ],
+        "level": "cantonal",
+        "place": "CH-GL",
+        "hosts": [
+          "www.gl.ch"
+        ],
+        "evidence_ids": [
+          "graph-mvp-zurich-e-gl-school-holidays-1-1"
+        ],
+        "provenance": {
+          "kind": "source-section",
+          "review_status": "automatically-derived-unreviewed",
+          "author": "derive",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
+          "reviewed_on": null,
+          "reviewed_by": null,
+          "notes": []
+        }
+      },
+      {
+        "node_id": "institution.gr-office",
+        "kind": "institution",
+        "label": "Canton of Graubuenden, Amt fuer Migration und Zivilrecht",
+        "summary": "Canton of Graubuenden, Amt fuer Migration und Zivilrecht: the cantonal authority for Canton of Graubünden / Grigioni / Grischun (CH-GR).",
+        "keywords": [
+          "Canton Graubuenden - Amt fuer Migration und Zivilrecht"
+        ],
+        "level": "cantonal",
+        "place": "CH-GR",
+        "hosts": [
+          "www.gr.ch"
+        ],
+        "evidence_ids": [
+          "graph-mvp-zurich-e-gr-school-holidays-1-1"
+        ],
+        "provenance": {
+          "kind": "source-section",
+          "review_status": "automatically-derived-unreviewed",
+          "author": "derive",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
           "reviewed_on": null,
           "reviewed_by": null,
           "notes": []
@@ -38547,7 +38737,7 @@
           "kind": "source-section",
           "review_status": "automatically-derived-unreviewed",
           "author": "derive",
-          "source": "derive from mvp-zurich mvp-zurich-2026-09-24-v5",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
           "reviewed_on": null,
           "reviewed_by": null,
           "notes": []
@@ -38567,7 +38757,7 @@
           "kind": "source-section",
           "review_status": "automatically-derived-unreviewed",
           "author": "derive",
-          "source": "derive from mvp-zurich mvp-zurich-2026-09-24-v5",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
           "reviewed_on": null,
           "reviewed_by": null,
           "notes": []
@@ -38585,6 +38775,66 @@
           "review_status": "automatically-derived-unreviewed",
           "author": "derive",
           "source": "derive from the place register",
+          "reviewed_on": null,
+          "reviewed_by": null,
+          "notes": []
+        }
+      },
+      {
+        "edge_id": "role.cantonal-migration-office.instance.institution.gl-office",
+        "from_id": "role.cantonal-migration-office",
+        "relation": "instance",
+        "to_id": "institution.gl-office",
+        "statement": "For Canton of Glarus (CH-GL), the cantonal migration office is Canton of Glarus, Abteilung Migration.",
+        "place": "CH-GL",
+        "evidence_ids": [
+          "graph-mvp-zurich-e-gl-school-holidays-1-1"
+        ],
+        "provenance": {
+          "kind": "source-section",
+          "review_status": "automatically-derived-unreviewed",
+          "author": "derive",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
+          "reviewed_on": null,
+          "reviewed_by": null,
+          "notes": []
+        }
+      },
+      {
+        "edge_id": "role.cantonal-migration-office.instance.institution.gr-office",
+        "from_id": "role.cantonal-migration-office",
+        "relation": "instance",
+        "to_id": "institution.gr-office",
+        "statement": "For Canton of Graubünden / Grigioni / Grischun (CH-GR), the cantonal migration office is Canton of Graubuenden, Amt fuer Migration und Zivilrecht.",
+        "place": "CH-GR",
+        "evidence_ids": [
+          "graph-mvp-zurich-e-gr-school-holidays-1-1"
+        ],
+        "provenance": {
+          "kind": "source-section",
+          "review_status": "automatically-derived-unreviewed",
+          "author": "derive",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
+          "reviewed_on": null,
+          "reviewed_by": null,
+          "notes": []
+        }
+      },
+      {
+        "edge_id": "role.collection-agency-serafe.instance.institution.ch-serafe",
+        "from_id": "role.collection-agency-serafe",
+        "relation": "instance",
+        "to_id": "institution.ch-serafe",
+        "statement": "For Switzerland, the radio and television fee agency (serafe) is SERAFE AG, the Confederation's collection agency for the radio and television fee.",
+        "place": "CH",
+        "evidence_ids": [
+          "graph-mvp-zurich-e-radio-tv-household-fee-1-1"
+        ],
+        "provenance": {
+          "kind": "source-section",
+          "review_status": "automatically-derived-unreviewed",
+          "author": "derive",
+          "source": "derive from mvp-zurich mvp-zurich-2026-09-25-v3",
           "reviewed_on": null,
           "reviewed_by": null,
           "notes": []
@@ -38687,6 +38937,48 @@
         "level": "cantonal",
         "body": "administration",
         "jurisdiction": "CH-BS"
+      },
+      {
+        "institution_id": "catalogue-ag-school-holidays",
+        "name": "Canton Aargau - Departement Bildung, Kultur und Sport",
+        "level": "cantonal",
+        "body": "administration",
+        "jurisdiction": "CH-AG"
+      },
+      {
+        "institution_id": "catalogue-ai-school-holidays",
+        "name": "Canton Appenzell Innerrhoden - Erziehungsdepartement",
+        "level": "cantonal",
+        "body": "administration",
+        "jurisdiction": "CH-AI"
+      },
+      {
+        "institution_id": "catalogue-be-school-holidays",
+        "name": "Canton Bern - Bildungs- und Kulturdirektion, Amt fuer Kindergarten, Volksschule und Beratung",
+        "level": "cantonal",
+        "body": "administration",
+        "jurisdiction": "CH-BE"
+      },
+      {
+        "institution_id": "catalogue-lu-school-holidays",
+        "name": "Canton Lucerne - Dienststelle Volksschulbildung",
+        "level": "cantonal",
+        "body": "administration",
+        "jurisdiction": "CH-LU"
+      },
+      {
+        "institution_id": "catalogue-tg-school-holidays",
+        "name": "Canton Thurgau - Amt fuer Volksschule",
+        "level": "cantonal",
+        "body": "administration",
+        "jurisdiction": "CH-TG"
+      },
+      {
+        "institution_id": "catalogue-zh-school-holidays",
+        "name": "Canton of Zurich (Migrationsamt; Kantonales Steueramt; Strassenverkehrsamt; Gesundheitsdirektion; Gemeindeamt, Abteilung Einbürgerungen; Amt für Wirtschaft; Amt für Statistik und Daten)",
+        "level": "cantonal",
+        "body": "administration",
+        "jurisdiction": "CH-ZH"
       },
       {
         "institution_id": "ch-ahv-iv",
@@ -38833,11 +39125,27 @@
         "jurisdiction": "CH-GL"
       },
       {
+        "institution_id": "gl-office",
+        "name": "Canton of Glarus, Abteilung Migration",
+        "native_name": "Canton Glarus - Abteilung Migration",
+        "level": "cantonal",
+        "body": "administration",
+        "jurisdiction": "CH-GL"
+      },
+      {
         "institution_id": "gr-law",
         "name": "Canton of Graubuenden, systematic collection of law",
         "native_name": "Canton Graubuenden - Buendner Rechtsbuch",
         "level": "cantonal",
         "body": "law_collection",
+        "jurisdiction": "CH-GR"
+      },
+      {
+        "institution_id": "gr-office",
+        "name": "Canton of Graubuenden, Amt fuer Migration und Zivilrecht",
+        "native_name": "Canton Graubuenden - Amt fuer Migration und Zivilrecht",
+        "level": "cantonal",
+        "body": "administration",
         "jurisdiction": "CH-GR"
       },
       {
@@ -39301,6 +39609,19 @@
         "content_sha256": "51b2963f7459953a4e8aa8175eec3edce1f32cec638093ca3088d05db1c123a6"
       },
       {
+        "document_id": "doc-03e5f92d8234569ca2c9",
+        "source_url": "https://www.zh.ch/de/bildung/bildungssystem/schulferien.html",
+        "document_url": "https://www.zh.ch/de/bildung/bildungssystem/schulferien.html",
+        "version_uri": null,
+        "title": "Schulferien | Kanton Zürich",
+        "publisher": "Canton of Zurich (Migrationsamt; Kantonales Steueramt; Strassenverkehrsamt; Gesundheitsdirektion; Gemeindeamt, Abteilung Einbürgerungen; Amt für Wirtschaft; Amt für Statistik und Daten)",
+        "institution_id": "catalogue-zh-school-holidays",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "raw_sha256": "e48179f7e2298c0a40c69250d800f14d7ea33be45fd949cd168e0ba784121abe",
+        "content_sha256": "7d27ecd2534227061386c65af71fb07da7af9e8dfa1c2ca18db28945a681bd27"
+      },
+      {
         "document_id": "doc-0683c2c38c53009db6b6",
         "source_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung/entschaedigung-insolvenz-arbeitgeber.html",
         "document_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung/entschaedigung-insolvenz-arbeitgeber.html",
@@ -39481,6 +39802,19 @@
         "accessed_on": "2026-09-22",
         "raw_sha256": "611bbb3663788152d8c7944606c57d47235aa1fff921b2be7b99796b628697e0",
         "content_sha256": "b65ce813270e0ec4893017a65dea3b44d5336c4072f87a069e9e568c5f351b52"
+      },
+      {
+        "document_id": "doc-1bb7f341023575f1bf35",
+        "source_url": "https://www.gl.ch/public/upload/assets/64288/Ferienpl%C3%A4ne_2026-2029.pdf?fp=1",
+        "document_url": "https://www.gl.ch/public/upload/assets/64288/Ferienpl%C3%A4ne_2026-2029.pdf?fp=1",
+        "version_uri": null,
+        "title": "Glarus: school holidays, document 1",
+        "publisher": "Canton of Glarus, Abteilung Migration",
+        "institution_id": "gl-office",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "raw_sha256": "a5a41d534b7417699b0bb726962e9b10d0f44668b32b28aa00de5492e7e73b3d",
+        "content_sha256": "9761f9a7dec7e896a1468ba77ef06d09b2eaf4101285d20e8e4da4f563745371"
       },
       {
         "document_id": "doc-1bc7c301f281e3894bc3",
@@ -39767,6 +40101,19 @@
         "accessed_on": "2026-09-18",
         "raw_sha256": "4f2461cad773759dd734f8fba80dcc0de72e2757ce721314ac2cdc195207bd1a",
         "content_sha256": "0cbeb7be2aa69e271733b44542e272ed1460ac130c3774c520b6a234fb165f01"
+      },
+      {
+        "document_id": "doc-2ff2e21602a6fedd2e63",
+        "source_url": "https://www.gr.ch/DE/institutionen/verwaltung/ekud/avs/Volksschule/SB_Ferienplaene_2026_2027_de.pdf",
+        "document_url": "https://www.gr.ch/DE/institutionen/verwaltung/ekud/avs/Volksschule/SB_Ferienplaene_2026_2027_de.pdf",
+        "version_uri": null,
+        "title": "Graubuenden: school holidays, document 1",
+        "publisher": "Canton of Graubuenden, Amt fuer Migration und Zivilrecht",
+        "institution_id": "gr-office",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "raw_sha256": "4a2cae1d89b30178630f72b683899dbe36bc708019b777704925cfa70a0cef10",
+        "content_sha256": "d3d17180da3df791e47d73907310bb864dde5793c4d2af485c6656a923af3a55"
       },
       {
         "document_id": "doc-30d29fac2c81ff92aaf0",
@@ -40144,6 +40491,19 @@
         "accessed_on": "2026-09-23",
         "raw_sha256": "bd8e3feb5dc95873cf4ed38b951ee18d686f7ea09a9ec2fbd2e5c49cb5247d96",
         "content_sha256": "bf15089773a53c468970cc2d7dbcae39682b9e4d19372702c4e866f5f1209569"
+      },
+      {
+        "document_id": "doc-54b1d21f0a18aafea5f2",
+        "source_url": "https://www.akvb-gemeinden.bkd.be.ch/de/start/organisation-finanzierung/schulorganisation/schulferienplanung.html",
+        "document_url": "https://www.akvb-gemeinden.bkd.be.ch/de/start/organisation-finanzierung/schulorganisation/schulferienplanung.html",
+        "version_uri": null,
+        "title": "Schulferienplanung",
+        "publisher": "Canton Bern - Bildungs- und Kulturdirektion, Amt fuer Kindergarten, Volksschule und Beratung",
+        "institution_id": "catalogue-be-school-holidays",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "raw_sha256": "58b31bcdfc5516eca97a4b41ada8a9cbb62a7f1b3bbeb6723b3dacd52cf718e8",
+        "content_sha256": "0d2d9ab99d62f419933b9494a2ba1f11017256ca485a1ce6a012665c65b52652"
       },
       {
         "document_id": "doc-54dc28822feaaa90ba5a",
@@ -41134,6 +41494,32 @@
         "content_sha256": "a2c6a7ff7f21880044cf0d8d2287993b55603ac6ad6600ddf5d53f2d68171611"
       },
       {
+        "document_id": "doc-ac07ed9e0adcf7733be7",
+        "source_url": "https://ai.ch/themen/bildung/eltern-und-schule/ferienplan/ftw-simplelayout-filelistingblock/ferienplan-ai_2026-2029.pdf/download",
+        "document_url": "https://ai.ch/themen/bildung/eltern-und-schule/ferienplan/ftw-simplelayout-filelistingblock/ferienplan-ai_2026-2029.pdf/@@download/file/Ferienplan%20AI_2026-2029.pdf",
+        "version_uri": null,
+        "title": "Appenzell Innerrhoden: school holidays, document 1",
+        "publisher": "Canton Appenzell Innerrhoden - Erziehungsdepartement",
+        "institution_id": "catalogue-ai-school-holidays",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "raw_sha256": "16192b6f574129167556221df6213cc8ff479bc8cea1519caa83500b20d67487",
+        "content_sha256": "86cfde7347ae51ff0c50ee941775f8077bf02648024a8e301f922664a3934de9"
+      },
+      {
+        "document_id": "doc-ad8ea3ece5a5571e7061",
+        "source_url": "https://www.schulen-aargau.ch/regelschule/schulorganisation/planung-ressourcen/stunden-ferienplanung",
+        "document_url": "https://www.schulen-aargau.ch/regelschule/schulorganisation/planung-ressourcen/stunden-ferienplanung",
+        "version_uri": null,
+        "title": "Kanton Aargau Schulportal - Stunden- und Ferienplanung",
+        "publisher": "Canton Aargau - Departement Bildung, Kultur und Sport",
+        "institution_id": "catalogue-ag-school-holidays",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "raw_sha256": "c4cf0576bc46d5ce86620ad25f2ee1b97a79607ddc3ebe2a1d99ed4606b0b644",
+        "content_sha256": "5a392e1549ebfff19e2e12dd5952eb1b89acc4dc5fa11bcbe3c2ca8a12983644"
+      },
+      {
         "document_id": "doc-af5d9087266c17e8fe30",
         "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
         "document_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
@@ -41223,6 +41609,19 @@
         "accessed_on": "2026-09-15",
         "raw_sha256": "8ae4252ded224b417508b33668f10b9d1153f1350a5731f8663ab975ca43ef3c",
         "content_sha256": "20afb2d38f5df8fe0ef99bc144359e3eba917ce468ef51ef10a138ff25bf2611"
+      },
+      {
+        "document_id": "doc-b479d922978177220567",
+        "source_url": "https://volksschulbildung.lu.ch/syst_schulen/ss_schulsystem/ss_syst_ferien",
+        "document_url": "https://volksschulbildung.lu.ch/syst_schulen/ss_schulsystem/ss_syst_ferien",
+        "version_uri": null,
+        "title": "Schulferien - Kanton Luzern",
+        "publisher": "Canton Lucerne - Dienststelle Volksschulbildung",
+        "institution_id": "catalogue-lu-school-holidays",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "raw_sha256": "61bb21aa8a472500fd4d850de2e15d7f9de3d20ce3affed5f8b9f3fd6ba99322",
+        "content_sha256": "0e24dde9f7e02c77d67325a7ebf25328c933cbcabb4da05fb0a2d59c06dc5720"
       },
       {
         "document_id": "doc-b8e80712d932400cd49a",
@@ -42159,6 +42558,19 @@
         "accessed_on": "2026-09-23",
         "raw_sha256": "c937543c129eb0192f24dc6e9517df4439acf7ecdec31d3e759477767e74e428",
         "content_sha256": "2b739680d02ea8652e2c3904a9e5c6397fc52e12636b95f1e06fd84e6bdfb0ce"
+      },
+      {
+        "document_id": "doc-f7342b1cfc928dd69209",
+        "source_url": "https://av.tg.ch/public/upload/assets/179040/Ferienplan_SJ_2026_2027.pdf?fp=1",
+        "document_url": "https://av.tg.ch/public/upload/assets/179040/Ferienplan_SJ_2026_2027.pdf?fp=1",
+        "version_uri": null,
+        "title": "Thurgau: school holidays, document 1",
+        "publisher": "Canton Thurgau - Amt fuer Volksschule",
+        "institution_id": "catalogue-tg-school-holidays",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "raw_sha256": "1733ac3e075ca3ce362063c188091153baa4a839f5f9eb6f86189feaab857ab5",
+        "content_sha256": "a6248c77687aa073fc27279bd505e63ba156d353bd90a48a496dfeae86e634d6"
       },
       {
         "document_id": "doc-fae6f7f3a76e1bc84804",
@@ -43859,6 +44271,38 @@
         }
       },
       {
+        "evidence_id": "graph-mvp-zurich-e-ag-school-holidays-1-1",
+        "document_id": "doc-ad8ea3ece5a5571e7061",
+        "source_title": "Kanton Aargau Schulportal - Stunden- und Ferienplanung",
+        "publisher": "Canton Aargau - Departement Bildung, Kultur und Sport",
+        "institution_id": "catalogue-ag-school-holidays",
+        "url": "https://www.schulen-aargau.ch/regelschule/schulorganisation/planung-ressourcen/stunden-ferienplanung",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "start_offset": 2417,
+        "end_offset": 3859,
+        "original_excerpt": "Das Volksschulgesetz regelt das Schuljahr und die Schulferien. Dabei gibt es kantonal festgelegte Ferien sowie Ferien, die durch die Gemeinden angesetzt werden können. Je zwei Wochen Frühlings-, Herbst- und Weihnachtsferien sowie drei Wochen Sommerferien werden einheitlich durch den Erziehungsrat festgelegt. Die restlichen vier Ferienwochen legen die Gemeinden selber fest.\n\nKantonal geregelte Ferien\n\nKantonal geregelt ist der Beginn des Schuljahres. Zudem finden die Frühlingsferien, ein Teil der Sommer- bzw. Herbstferien und die Weihnachtsferien im ganzen Kanton zur gleichen Zeit statt.\n\nKantonal einheitliche Feriendaten Schuljahr bis 2034/35 (PDF, 3 Seiten, 17 KB)\n\nSemesterende\n\nDas erste Semester endet am 31. Januar. Das erste Semesterende muss nicht zwingend mit den Sportferien zusammenfallen. Vielmehr ist es das Stichdatum für den Zwischenbericht wie auch für allfällige Kündigungen auf Ende Semester.\n\nDas zweite Schulhalbjahr endet mit Beginn der Sommerferien.\n\nFerien durch Gemeinde festgelegt\n\nDie Gemeinden sind frei in der Ansetzung der vier restlichen Ferienwochen unter Berücksichtigung der traditionellen Daten der Bezirke und der lokalen Begebenheiten. Dies betrifft den Beginn der zweiwöchigen Sportferien und die Dauer der Sommerferien (4 oder 5 Wochen) bzw. Herbstferien (2 oder 3 Wochen). Es wird empfohlen, sich regional abzusprechen (Regionalplanungsverbände, Austausch der Gemeinderäte Bildung oder ähnliche).",
+        "excerpt_sha256": "7635f5eaddc0862b2c4463aec14295c1293ac15f052188cfebb206ff46945fc1",
+        "block_ids": [
+          "doc-ad8ea3ece5a5571e7061:b00045",
+          "doc-ad8ea3ece5a5571e7061:b00046",
+          "doc-ad8ea3ece5a5571e7061:b00047",
+          "doc-ad8ea3ece5a5571e7061:b00048",
+          "doc-ad8ea3ece5a5571e7061:b00049",
+          "doc-ad8ea3ece5a5571e7061:b00050",
+          "doc-ad8ea3ece5a5571e7061:b00051",
+          "doc-ad8ea3ece5a5571e7061:b00052",
+          "doc-ad8ea3ece5a5571e7061:b00053"
+        ],
+        "content_sha256": "5a392e1549ebfff19e2e12dd5952eb1b89acc4dc5fa11bcbe3c2ca8a12983644",
+        "raw_sha256": "c4cf0576bc46d5ce86620ad25f2ee1b97a79607ddc3ebe2a1d99ed4606b0b644",
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      },
+      {
         "evidence_id": "graph-mvp-zurich-e-ahv-agreement-states-1-1",
         "document_id": "doc-d7cabca9200534ba2f45",
         "source_title": "Staatsangehörigkeit eines Staates mit Sozialversicherungsabkommen (AHV)",
@@ -44327,6 +44771,30 @@
         }
       },
       {
+        "evidence_id": "graph-mvp-zurich-e-ai-school-holidays-1-1",
+        "document_id": "doc-ac07ed9e0adcf7733be7",
+        "source_title": "Appenzell Innerrhoden: school holidays, document 1",
+        "publisher": "Canton Appenzell Innerrhoden - Erziehungsdepartement",
+        "institution_id": "catalogue-ai-school-holidays",
+        "url": "https://ai.ch/themen/bildung/eltern-und-schule/ferienplan/ftw-simplelayout-filelistingblock/ferienplan-ai_2026-2029.pdf/@@download/file/Ferienplan%20AI_2026-2029.pdf",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "start_offset": 0,
+        "end_offset": 1738,
+        "original_excerpt": "AI 220.0-18-1420505 1-1\nErziehungsdepartement\nLandesschulkommission\nFerienpläne\nSchuljahr\n2026/2027\nInnerer Landesteil\ninkl. Gymnasium Appenzell\nBezirk\nOberegg\nerster Ferientag letzter Ferientag erster Ferientag letzter Ferientag\nErster Schultag Mo, 17. August 2026 Mo, 10. August 2026\nHerbst Sa, 03.10.2026 So, 18.10.2026 Sa, 26.09.2026 So, 18.10.2026\nWeihnachten Sa, 19.12.2026 So, 03.01.2027 Sa, 19.12.2026 So, 03.01.2027\nSportferien Fr, 05.02.2027 So, 14.02.2027 Sa, 30.01.2027 So, 07.02.2027\nFrühling Sa, 10.04.2027 So, 25.04.2027 Sa, 10.04.2027 So, 25.04.2027\nSommer Sa, 03.07.2027 So, 15.08.2027 Sa, 10.07.2027 So, 15.08.2027\nSchuljahr\n2027/2028\nInnerer Landesteil\ninkl. Gymnasium Appenzell\nBezirk\nOberegg\nerster Ferientag letzter Ferientag erster Ferientag letzter Ferientag\nErster Schultag Mo, 16. August 2027 Mo, 16. August 2027\nHerbst Sa, 02.10.2027 So, 17.10.2027 Sa, 02.10.2027 So, 24.10.2027\nWeihnachten Sa, 18.12.2027 So, 02.01.2028 Sa, 18.12.2027 So, 02.01.2028\nSportferien Fr, 25.02.2028 So, 05.03.2028 Sa, 29.01.2028 So, 06.02.2028\nFrühling Sa, 08.04.2028 So, 23.04.2028 Sa, 08.04.2028 So, 23.04.2028\nSommer Sa, 01.07.2028 So, 13.08.2028 Sa, 08.07.2028 So, 13.08.2028\nSchuljahr\n2028/2029\nInnerer Landesteil\ninkl. Gymnasium Appenzell\nBezirk\nOberegg\nerster Ferientag letzter Ferientag erster Ferientag letzter Ferientag\nErster Schultag Mo, 14. August 2028 Mo, 14. August 2028\nHerbst Sa, 07.10.2028 So, 22.10.2028 Sa, 30.09.2028 So, 22.10.2028\nWeihnachten Sa, 23.12.2028 So, 07.01.2029 Sa, 23.12.2028 So, 07.01.2029\nSportferien Fr, 09.02.2029 So, 18.02.2029 Sa, 27.01.2029 So, 04.02.2029\nFrühling Sa, 07.04.2029 So, 22.04.2029 Sa, 07.04.2029 So, 22.04.2029\nSommer Sa, 30.06.2029 So, 12.08.2029 Sa, 07.07.2029 So, 12.08.2029",
+        "excerpt_sha256": "86cfde7347ae51ff0c50ee941775f8077bf02648024a8e301f922664a3934de9",
+        "block_ids": [
+          "doc-ac07ed9e0adcf7733be7:b00001"
+        ],
+        "content_sha256": "86cfde7347ae51ff0c50ee941775f8077bf02648024a8e301f922664a3934de9",
+        "raw_sha256": "16192b6f574129167556221df6213cc8ff479bc8cea1519caa83500b20d67487",
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      },
+      {
         "evidence_id": "graph-mvp-zurich-e-aig-registration-1-1",
         "document_id": "doc-fc0686a4061f390100e7",
         "source_title": "AIG / LEI / FNIA, SR 142.20",
@@ -44455,6 +44923,31 @@
           "kind": "act",
           "norm": "AIG, SR 142.20, Art. 11 Abs. 2 und 3",
           "label": "Federal act: AIG, SR 142.20, Art. 11 Abs. 2 und 3"
+        }
+      },
+      {
+        "evidence_id": "graph-mvp-zurich-e-be-school-holidays-1-1",
+        "document_id": "doc-54b1d21f0a18aafea5f2",
+        "source_title": "Schulferienplanung",
+        "publisher": "Canton Bern - Bildungs- und Kulturdirektion, Amt fuer Kindergarten, Volksschule und Beratung",
+        "institution_id": "catalogue-be-school-holidays",
+        "url": "https://www.akvb-gemeinden.bkd.be.ch/de/start/organisation-finanzierung/schulorganisation/schulferienplanung.html",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "start_offset": 381,
+        "end_offset": 762,
+        "original_excerpt": "Die Bildungs- und Kulturdirektion legt die Ferien der Volksschulen im Kanton Bern fest. Dabei können regionale Unterschiede berücksichtigt werden.\n\nIm deutschsprachigen Kantonsteil gilt der Ferienkalender nach Kalenderwochenzählung (DIN-Norm). Der Ferienkalender für den französischsprachigen Teil des Kantons orientiert sich an den Ferienregelungen der Kantone Jura und Neuenburg.",
+        "excerpt_sha256": "4004177063ad6b46a9c9eda393d64656612534535ee82f61981935d1c47b93ef",
+        "block_ids": [
+          "doc-54b1d21f0a18aafea5f2:b00021",
+          "doc-54b1d21f0a18aafea5f2:b00022"
+        ],
+        "content_sha256": "0d2d9ab99d62f419933b9494a2ba1f11017256ca485a1ce6a012665c65b52652",
+        "raw_sha256": "58b31bcdfc5516eca97a4b41ada8a9cbb62a7f1b3bbeb6723b3dacd52cf718e8",
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
         }
       },
       {
@@ -48371,6 +48864,54 @@
         }
       },
       {
+        "evidence_id": "graph-mvp-zurich-e-gl-school-holidays-1-1",
+        "document_id": "doc-1bb7f341023575f1bf35",
+        "source_title": "Glarus: school holidays, document 1",
+        "publisher": "Canton of Glarus, Abteilung Migration",
+        "institution_id": "gl-office",
+        "url": "https://www.gl.ch/public/upload/assets/64288/Ferienpl%C3%A4ne_2026-2029.pdf?fp=1",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "start_offset": 0,
+        "end_offset": 1980,
+        "original_excerpt": "* An der Gewerblich-Industriellen Berufsfachschule in Ziegelbrücke ist der Landsgemeindemontag nicht schulfrei.\nFerienpläne und Brückentage im Kanton Glarus \n(gemäss Artikel 91 Bildungsgesetz)\nerster Ferientag letzter Ferientag Kalenderw.\n2026\nWinterferien Sa 24.01.26 So 01.02.26 05\n» Fasnachtsmontag 16.2.\nFrühlingsferien Fr 03.04.26 So 19.04.26 15–16\n» Karfreitag 3.4., Ostermontag 6.4, Näfelser Fahrt 9.4., Landsgemeindemontag 4.5.*, Auffahrt 14.5., Brückentag 15.5., \nPfingstmontag 25.5.\nSommerferien Sa 27.06.26 So 09.08.26 27–32\nHerbstferien Sa 03.10.26 So 18.10.26 41–42\nWeihnachtsferien 2026/27 Do 24.12.26 So 10.01.27\n2027\nWinterferien Sa 30.01.27 So 07.02.27 05\n» Fasnachtsmontag 8.2\nFrühlingsferien Do 01.04.27 So 18.04.27 14–15\n» Karfreitag 26.3., Ostermontag 29.3., Näfelser Fahrt 1.4., Landsgemeindemontag 3.5.*, Auffahrt 6.5., Brückentag 7.5., \nPfingstmontag 17.5.\nSommerferien Sa 03.07.27 So 15.08.27 27–32\nHerbstferien Sa 09.10.27 So 24.10.27 41–42\n» Allerheiligen 1.11. (Montag)\nWeihnachtsferien 2027/28 Fr 24.12.27 So 09.01.28\n2028\nWinterferien Sa 29.01.28 So 06.02.28 05\n» Fasnachtsmontag 28.2\nFrühlingsferien Do 06.04.28 So 23.04.28 15–16\n» Näfelser Fahrt 6.4, Karfreitag 14.4., Ostermontag 17.4., Landsgemeindemontag 8.5.*, Auffahrt 25.5., Brückentag 26.5., \nPfingstmontag 5.6.\nSommerferien Sa 01.07.28 So 13.08.28 27–32\nHerbstferien Sa 07.10.28 So 22.10.28 41–42\n» Allerheiligen 1.11. (Mittwoch)\nWeihnachtsferien 2028/29 Sa 23.12.28 So 07.01.29\n2029\nWinterferien Sa 27.01.29 So 04.02.29 05\n» Fasnachtsmontag 12.2.\nFrühlingsferien Fr 30.03.29 So 15.04.29 14–15\n» Karfreitag 30.3., Ostermontag 2.4., Näfelser Fahrt 5.4., Landsgemeindemontag 7.5.*, Auffahrt 10.5., Brückentag 11.5., \nPfingstmontag 21.5.\nSommerferien Sa 30.06.29 So 12.08.29 27–32\nHerbstferien Sa 06.10.29 So 21.10.29 41–42\n» Allerheiligen 1.11., Brückentag 2.11. \nWeihnachtsferien 2029/30 Sa 22.12.29 So 06.01.30\nGlarus, 2. Februar 2026 Departement Bildung und Kultur\nKaspar Becker\nLandammann",
+        "excerpt_sha256": "9761f9a7dec7e896a1468ba77ef06d09b2eaf4101285d20e8e4da4f563745371",
+        "block_ids": [
+          "doc-1bb7f341023575f1bf35:b00001"
+        ],
+        "content_sha256": "9761f9a7dec7e896a1468ba77ef06d09b2eaf4101285d20e8e4da4f563745371",
+        "raw_sha256": "a5a41d534b7417699b0bb726962e9b10d0f44668b32b28aa00de5492e7e73b3d",
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      },
+      {
+        "evidence_id": "graph-mvp-zurich-e-gr-school-holidays-1-1",
+        "document_id": "doc-2ff2e21602a6fedd2e63",
+        "source_title": "Graubuenden: school holidays, document 1",
+        "publisher": "Canton of Graubuenden, Amt fuer Migration und Zivilrecht",
+        "institution_id": "gr-office",
+        "url": "https://www.gr.ch/DE/institutionen/verwaltung/ekud/avs/Volksschule/SB_Ferienplaene_2026_2027_de.pdf",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "start_offset": 0,
+        "end_offset": 5770,
+        "original_excerpt": "Schul- und Ferienplan Schuljahr 2026/27 Kanton Graubünden\nPlan da scola e da vacanzas onn da scola 2026/27 Chantun GrischunSettimane di scuola e di vacanze nell'anno scolastico 2026/27 Cantone dei Grigioni\nHerbstferien Weihnachtsferien Sportferien Frühlingsferien\nvon bis von bis von bis von bis\nvacanzas d'atun vacanzas da Nadal vacanzas da sport vacanzas da primavaira\ndals als dals als dals als dals als\ndal al dal al dal al dal al\n107 Arosa 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 8 01.05.27 23.05.27 7 09.07.27 39 16.08.27 1\n107 Arosa (Mittelschanfigg) 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 09.05.27 8 02.07.27 39 16.08.27 1\n111 Avers 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 09.05.27 8 02.07.27 39 16.08.27 1\n337 Bergün Filisur 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 8.5 06.03.27 14.03.27 7 01.05.27 16.05.27 7 02.07.27 39 16.08.27 1113 Bever 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 8.5 06.03.27 14.03.27 8 08.05.27 30.05.27 6 09.07.27 39 16.08.27 4\n115 Bonaduz 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 6 17.04.27 02.05.27 9 02.07.27 39 16.08.27 1\n326 Bregaglia 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 8.5 06.03.27 14.03.27 8 08.05.27 16.05.27 6 25.06.27 39 16.08.27 5\n327 Bregaglia/Maloja 17.08.26 8 10.10.26 25.10.26 8 23.12.26 05.01.27 8.5 06.03.27 14.03.27 8 08.05.27 23.05.27 6 02.07.27 39 16.08.27 5118 Breil/Brigels 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 02.05.27 8 25.06.27 39 16.08.27 3328 Brusio 17.08.26 8 10.10.26 25.10.26 8 23.12.26 05.01.27 6.5 20.02.27 28.02.27 8 24.04.27 02.05.27 8 25.06.27 39 16.08.27 5\n329 Cama 24.08.26 10 31.10.26 08.11.26 10 24.12.26 06.01.27 4.5 06.02.27 14.02.27 6 26.03.27 04.04.27 12 25.06.27 39 23.08.27 5\n131 Cazis 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 09.05.27 8 02.07.27 39 16.08.27 1\n256 Celerina/Schlarigna 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 8.5 06.03.27 14.03.27 8 08.05.27 30.05.27 6 09.07.27 39 16.08.27 4\n132 Chur 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 6 17.04.27 02.05.27 9 02.07.27 39 16.08.27 1\n133 Churwalden 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 09.05.27 8 02.07.27 39 16.08.27 1445 Consorzi da scola Laax-Falera-Sagogn-Schluein 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 09.05.27 8 02.07.27 39 16.08.27 3440 Consorzi da scola Sumvitg-Trun 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 02.05.27 8 25.06.27 39 16.08.27 3\n437 Consorzi da scola Val Alvra dafora 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 8.5 06.03.27 14.03.27 7 01.05.27 16.05.27 7 02.07.27 39 16.08.27 1\n390 Consorzi da scoula La Plaiv Suot Funtauna Merla Zuoz 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 9 08.05.27 30.05.27 6 09.07.27 39 16.08.27 4\n135 Conters 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 09.05.27 8 02.07.27 39 16.08.27 2\n331 Corporazione di comuni moesani SEC/SAP 24.08.26 10 31.10.26 08.11.26 10 24.12.26 06.01.27 4.5 06.02.27 14.02.27 6 26.03.27 04.04.27 12 25.06.27 39 23.08.27 5\n330 Corporazione scolastica Valle Calanca 24.08.26 10 31.10.26 08.11.26 10 24.12.26 06.01.27 4.5 06.02.27 14.02.27 6 26.03.27 04.04.27 12 25.06.27 39 23.08.27 5138 Davos 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 16.05.27 8 09.07.27 39 16.08.27 2\n139 Disentis/Mustér 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 02.05.27 8 25.06.27 39 16.08.27 3140 Domat/Ems 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 6 17.04.27 02.05.27 9 02.07.27 39 16.08.27 2\n331 Domleschg 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 09.05.27 8 02.07.27 39 16.08.27 1146 Felsberg 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 6 17.04.27 02.05.27 9 02.07.27 39 16.08.27 2\n151 Flims 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 6 17.04.27 02.05.27 9 02.07.27 39 16.08.27 2\n156 Fürstenau 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 09.05.27 8 02.07.27 39 16.08.27 1\n420 Gemeindeschule Albula/Alvra 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 8.5 06.03.27 14.03.27 7 01.05.27 16.05.27 7 02.07.27 39 16.08.27 1\n332 Grono 24.08.26 10 31.10.26 08.11.26 10 24.12.26 06.01.27 4.5 06.02.27 14.02.27 6 26.03.27 04.04.27 12 25.06.27 39 23.08.27 5\n329 Ilanz/Glion 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 09.05.27 8 02.07.27 39 16.08.27 3\n332 Klosters 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 09.05.27 8 02.07.27 39 16.08.27 2\n169 Küblis 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 7.5 27.02.27 07.03.27 7 24.04.27 09.05.27 8 02.07.27 39 16.08.27 2\n219 La Punt-Chamues-ch 17.08.26 8 10.10.26 25.10.26 8.5 23.12.26 05.01.27 8.5 06.03.27 14.03.27 8 08.05.27 30.05.27 6 09.07.27 39 16.08.27 4\ndistretto no. ente scolastico inizio anno 26/27\nsettimane\nsettimane\nsettimane\nsettimane\nsettimane fine della scuola\n totale \nsettimane inizio anno 27/28 vacanze autunnali vacanze di Natale vacanze sportive vacanze primaverili\ndistrict no. instituziun responsabla per la scola entsch. onn 26/27\njamnas\njamnas\njamnas\njamnas\njamnasfin digl onn da scola\n total \njamnas entsch. onn 27/28\nBezirk Nr. Schulträgerschaft Schul- beginn 26/27 Anz. SW Anz. SW Anz. SW Anz. SW Anz. SW Schul- schluss Total SW Schul- beginn 27/28",
+        "excerpt_sha256": "ac8325495f7484d95245ae30de3959012c2aeeda81390b80710be55a55f0fb0e",
+        "block_ids": [
+          "doc-2ff2e21602a6fedd2e63:b00001"
+        ],
+        "content_sha256": "d3d17180da3df791e47d73907310bb864dde5793c4d2af485c6656a923af3a55",
+        "raw_sha256": "4a2cae1d89b30178630f72b683899dbe36bc708019b777704925cfa70a0cef10",
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      },
+      {
         "evidence_id": "graph-mvp-zurich-e-health-insurance-benefits-5-2",
         "document_id": "doc-e4821453f6936b7c292f",
         "source_title": "Fedlex: Ordinance on Benefits in Compulsory Health Insurance, KLV, SR 832.112.31",
@@ -48845,6 +49386,37 @@
           "kind": "act",
           "norm": "AIG, SR 142.20, Art. 58a",
           "label": "Federal act: AIG, SR 142.20, Art. 58a"
+        }
+      },
+      {
+        "evidence_id": "graph-mvp-zurich-e-lu-school-holidays-1-1",
+        "document_id": "doc-b479d922978177220567",
+        "source_title": "Schulferien - Kanton Luzern",
+        "publisher": "Canton Lucerne - Dienststelle Volksschulbildung",
+        "institution_id": "catalogue-lu-school-holidays",
+        "url": "https://volksschulbildung.lu.ch/syst_schulen/ss_schulsystem/ss_syst_ferien",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "start_offset": 508,
+        "end_offset": 876,
+        "original_excerpt": "Ferien\n\nPro Schuljahr haben die Schülerinnen und Schüler insgesamt 14 Wochen Ferien.\n\nHerbst: zwei oder drei Wochen\n\nWeihnachten: zwei Wochen\n\nFasnachtszeit: zwei Wochen nacheinander oder aufgeteilt in eine Woche Fasnachtsferien und eine Woche Sportferien\n\nFrühlingsferien: zwei Wochen\n\nSommer: fünf oder sechs Wochen\n\nFerienplan 2026/27 der Gemeinden im Kanton Luzern",
+        "excerpt_sha256": "b0ce1582a440f00564cd39f93d8e16394011ee5c31413ba443c19c6610f683a0",
+        "block_ids": [
+          "doc-b479d922978177220567:b00029",
+          "doc-b479d922978177220567:b00030",
+          "doc-b479d922978177220567:b00031",
+          "doc-b479d922978177220567:b00032",
+          "doc-b479d922978177220567:b00033",
+          "doc-b479d922978177220567:b00034",
+          "doc-b479d922978177220567:b00035",
+          "doc-b479d922978177220567:b00036"
+        ],
+        "content_sha256": "0e24dde9f7e02c77d67325a7ebf25328c933cbcabb4da05fb0a2d59c06dc5720",
+        "raw_sha256": "61bb21aa8a472500fd4d850de2e15d7f9de3d20ce3affed5f8b9f3fd6ba99322",
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
         }
       },
       {
@@ -51021,6 +51593,30 @@
         }
       },
       {
+        "evidence_id": "graph-mvp-zurich-e-tg-school-holidays-1-1",
+        "document_id": "doc-f7342b1cfc928dd69209",
+        "source_title": "Thurgau: school holidays, document 1",
+        "publisher": "Canton Thurgau - Amt fuer Volksschule",
+        "institution_id": "catalogue-tg-school-holidays",
+        "url": "https://av.tg.ch/public/upload/assets/179040/Ferienplan_SJ_2026_2027.pdf?fp=1",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "start_offset": 0,
+        "end_offset": 943,
+        "original_excerpt": "Amt für Volksschule\nFerientermine Schuljahr 2026/2027\nGemäss § 17 Abs. 4 RRV VG legt das Departement für Erziehung und Kultur die\nFerientermine der Volksschule fest und erlässt ergänzende Regelungen.\nDie Sekundarschülerinnen und -schüler der Volksschulgemeinde Neunforn besuchen \ndie Sekundarschule im zürcherischen Ossingen. Deshalb richten sie ihre Ferientermine \nnach deren Regelung. \nFür das Schuljahr 2026/2027 gelten nachfolgende Ferientermine:\nFerien Volksschule Thurgau\ngenerell\nAbweichende Termine\nVSG Neunforn\nSchulbeginn Mo, 10.08.2026\nHerbstferien Mo, 05.10.2026 – So, 18.10.2026\nWeihnachtsferien Mo, 21.12.2026 – So, 03.01.2027\nSportferien Mo, 01.02.2027 – So, 07.02.2027 Mo, 22.02.2027 – So, 07.03.2027\nFrühlingsferien Fr, 26.03.2027 – So, 11.04.2027 Keine Frühlingsferien\nPfingstferien Do, 06.05.2027 – Mo, 17.05.2027 Mo, 24.05.2027 – So, 06.06.2027\nSommerferien Mo, 12.07.2027 – So, 15.08.2027\nFrauenfeld, 12. August 2025 / DEM",
+        "excerpt_sha256": "a6248c77687aa073fc27279bd505e63ba156d353bd90a48a496dfeae86e634d6",
+        "block_ids": [
+          "doc-f7342b1cfc928dd69209:b00001"
+        ],
+        "content_sha256": "a6248c77687aa073fc27279bd505e63ba156d353bd90a48a496dfeae86e634d6",
+        "raw_sha256": "1733ac3e075ca3ce362063c188091153baa4a839f5f9eb6f86189feaab857ab5",
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      },
+      {
         "evidence_id": "graph-mvp-zurich-e-third-country-work-conditions-1-1",
         "document_id": "doc-e5e7b97428984c9f26c5",
         "source_title": "Grundlagen zur Arbeitsmarktzulassung",
@@ -52834,6 +53430,38 @@
         }
       },
       {
+        "evidence_id": "graph-mvp-zurich-e-zh-school-holidays-1-1",
+        "document_id": "doc-03e5f92d8234569ca2c9",
+        "source_title": "Schulferien | Kanton Zürich",
+        "publisher": "Canton of Zurich (Migrationsamt; Kantonales Steueramt; Strassenverkehrsamt; Gesundheitsdirektion; Gemeindeamt, Abteilung Einbürgerungen; Amt für Wirtschaft; Amt für Statistik und Daten)",
+        "institution_id": "catalogue-zh-school-holidays",
+        "url": "https://www.zh.ch/de/bildung/bildungssystem/schulferien.html",
+        "language": "de",
+        "accessed_on": "2026-09-25",
+        "start_offset": 1082,
+        "end_offset": 1682,
+        "original_excerpt": "Im Kanton Zürich bestimmen die Volksschulen ihre Ferien und schulfreien Tage selbst. Nur der Schulbeginn und die Weihnachtsferien sind verbindlich. Für die Mittel- und Berufsfachschulen legt die Bildungsdirektion die Feriendaten fest.\n\nAuf dieser Seite\n\nFeriendaten\n\nVolksschule\n\nMittel- und Berufsfachschulen\n\nKontakt\n\nNews\n\nFeriendaten\n\nDie Schulferien im Kanton Zürich dauern höchstens 13 Wochen pro Schuljahr. Gemäss Bildungsgesetz (BiG) §7 wird der Schuljahresbeginn für die Volksschule und die Berufs- und Mittelschulen festgesetzt. Die Weihnachtsferien werden im Kanton einheitlich festgelegt.",
+        "excerpt_sha256": "97d3c060b16f2a29fc8b61c32bc09f9775b5928f4faa9243455a4b33e04c4669",
+        "block_ids": [
+          "doc-03e5f92d8234569ca2c9:b00049",
+          "doc-03e5f92d8234569ca2c9:b00050",
+          "doc-03e5f92d8234569ca2c9:b00051",
+          "doc-03e5f92d8234569ca2c9:b00052",
+          "doc-03e5f92d8234569ca2c9:b00053",
+          "doc-03e5f92d8234569ca2c9:b00054",
+          "doc-03e5f92d8234569ca2c9:b00055",
+          "doc-03e5f92d8234569ca2c9:b00056",
+          "doc-03e5f92d8234569ca2c9:b00057"
+        ],
+        "content_sha256": "7d27ecd2534227061386c65af71fb07da7af9e8dfa1c2ca18db28945a681bd27",
+        "raw_sha256": "e48179f7e2298c0a40c69250d800f14d7ea33be45fd949cd168e0ba784121abe",
+        "basis": {
+          "level": "cantonal",
+          "kind": "guidance",
+          "label": "Cantonal authority guidance"
+        }
+      },
+      {
         "evidence_id": "graph-mvp-zurich-e-zh-tax-at-source-liability-1-1",
         "document_id": "doc-4ba41844a0259a01bd2d",
         "source_title": "Quellensteuerpflichtige Personen | Kanton Zürich",
@@ -53671,6 +54299,6 @@
         }
       }
     ],
-    "content_sha256": "ae463dd21ae9e7abea9695ab4b3dfe1b017db573f2d9d7f98fb2e483f6ef5798"
+    "content_sha256": "76021b399a86a44163509135d94b3aab4f8ffe9f7f7151a569aa45b4e4f911c4"
   }
 }

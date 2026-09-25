@@ -1,10 +1,10 @@
 {
   "schema_version": "swiss-tip-acceptance-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-25-v3",
-  "content_sha256": "f8264c6ff2ba5d1a1b7bd92524a6175ebf8eae3130f7dc653930589001f6c26b",
+  "release_id": "mvp-zurich-2026-09-25-v4",
+  "content_sha256": "cdcd9d49d5575d33fbe947be02cd54d49d6170515d1c081edffce259fe6f1bc3",
   "suite_sha256": "a4058a69cb1a4891cc4e5bc69c934da355fbd2b9336b03fe6ccfe3bf35a033f5",
-  "checked_at": "2026-09-25T07:28:27.589470+00:00",
+  "checked_at": "2026-09-25T08:30:28.756420+00:00",
   "as_of": "2026-09-25",
   "passed": true,
   "cases": 154,

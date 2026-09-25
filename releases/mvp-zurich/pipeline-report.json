@@ -1,10 +1,10 @@
 {
   "schema_version": "swiss-tip-pipeline-report/v1",
   "pack": "mvp-zurich",
-  "root": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\swiss-tip-mvp",
-  "run": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich",
-  "started_at": "2026-09-25T07:28:24.965876+00:00",
-  "finished_at": "2026-09-25T07:28:32.918405+00:00",
+  "root": "/mnt/c/Users/louis/Dev/swiss-ai-weeks/swiss-tip-mvp",
+  "run": "/mnt/c/Users/louis/Dev/swiss-ai-weeks/swiss-tip-mvp/.local/mvp-zurich",
+  "started_at": "2026-09-25T08:30:27.097537+00:00",
+  "finished_at": "2026-09-25T08:30:28.770567+00:00",
   "options": {
     "download": false,
     "retry_failed": false,
@@ -13,9 +13,10 @@
     "thorough": false,
     "update_curation": false,
     "release_id": null,
-    "attested_by": "Alexander Bobrovsky",
+    "attested_by": null,
     "source_plugins": true,
-    "stages": "accept..ready"
+    "obey_robots": true,
+    "stages": "accept..accept"
   },
   "stages": [
     {
@@ -222,9 +223,9 @@
     },
     {
       "stage": "accept",
-      "started_at": "2026-09-25T07:28:24.965889+00:00",
+      "started_at": "2026-09-25T08:30:27.097541+00:00",
       "status": "ran",
-      "release_id": "mvp-zurich-2026-09-25-v3",
+      "release_id": "mvp-zurich-2026-09-25-v4",
       "suite_sha256": "a4058a69cb1a4891cc4e5bc69c934da355fbd2b9336b03fe6ccfe3bf35a033f5",
       "as_of": "2026-09-25",
       "cases": 154,
@@ -232,7 +233,7 @@
       "failed": [],
       "quarantined": [],
       "quarantined_failed": [],
-      "seconds": 2.6
+      "seconds": 1.7
     },
     {
       "stage": "ready",
