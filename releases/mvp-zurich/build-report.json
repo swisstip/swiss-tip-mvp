@@ -1,13 +1,13 @@
 {
-  "release_id": "mvp-zurich-2026-09-24-v5",
-  "built_at": "2026-09-24T12:53:05.365959+00:00",
+  "release_id": "mvp-zurich-2026-09-25-v3",
+  "built_at": "2026-09-25T07:24:52.805930+00:00",
   "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich\\text",
-  "concepts": 214,
-  "facts": 1279,
-  "evidence": 1538,
-  "documents": 338,
+  "concepts": 238,
+  "facts": 1345,
+  "evidence": 1615,
+  "documents": 375,
   "citation_outcomes": {
-    "same-snapshot": 1538
+    "same-snapshot": 1615
   },
   "dropped": [],
   "facts_resolved": [
@@ -11204,6 +11204,39 @@
       "basis": "Municipal authority guidance"
     },
     {
+      "fact_id": "city-zurich-dog-registration-5",
+      "citations": [
+        {
+          "document_id": "doc-d7209d912cce37d4bddd",
+          "outcome": "same-snapshot",
+          "start": 5689,
+          "end": 6250,
+          "block_ids": [
+            "doc-d7209d912cce37d4bddd:b00058",
+            "doc-d7209d912cce37d4bddd:b00059",
+            "doc-d7209d912cce37d4bddd:b00060",
+            "doc-d7209d912cce37d4bddd:b00061",
+            "doc-d7209d912cce37d4bddd:b00062",
+            "doc-d7209d912cce37d4bddd:b00063",
+            "doc-d7209d912cce37d4bddd:b00064",
+            "doc-d7209d912cce37d4bddd:b00065",
+            "doc-d7209d912cce37d4bddd:b00066",
+            "doc-d7209d912cce37d4bddd:b00067",
+            "doc-d7209d912cce37d4bddd:b00068",
+            "doc-d7209d912cce37d4bddd:b00069",
+            "doc-d7209d912cce37d4bddd:b00070",
+            "doc-d7209d912cce37d4bddd:b00071"
+          ],
+          "warnings": [],
+          "institution_id": "zh-261-stadtpolizei",
+          "basis": "Municipal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Municipal authority guidance"
+    },
+    {
       "fact_id": "city-zurich-dog-registration-1",
       "citations": [
         {
@@ -11346,37 +11379,210 @@
       "basis": "Municipal authority guidance"
     },
     {
-      "fact_id": "city-zurich-dog-registration-5",
+      "fact_id": "zh-banned-dog-breeds-1",
       "citations": [
         {
-          "document_id": "doc-d7209d912cce37d4bddd",
+          "document_id": "doc-65987b111d4d5880a8b7",
           "outcome": "same-snapshot",
-          "start": 5689,
-          "end": 6250,
+          "start": 1083,
+          "end": 1404,
           "block_ids": [
-            "doc-d7209d912cce37d4bddd:b00058",
-            "doc-d7209d912cce37d4bddd:b00059",
-            "doc-d7209d912cce37d4bddd:b00060",
-            "doc-d7209d912cce37d4bddd:b00061",
-            "doc-d7209d912cce37d4bddd:b00062",
-            "doc-d7209d912cce37d4bddd:b00063",
-            "doc-d7209d912cce37d4bddd:b00064",
-            "doc-d7209d912cce37d4bddd:b00065",
-            "doc-d7209d912cce37d4bddd:b00066",
-            "doc-d7209d912cce37d4bddd:b00067",
-            "doc-d7209d912cce37d4bddd:b00068",
-            "doc-d7209d912cce37d4bddd:b00069",
-            "doc-d7209d912cce37d4bddd:b00070",
-            "doc-d7209d912cce37d4bddd:b00071"
+            "doc-65987b111d4d5880a8b7:b00049"
           ],
           "warnings": [],
-          "institution_id": "zh-261-stadtpolizei",
-          "basis": "Municipal authority guidance",
+          "institution_id": "zh-veterinaeramt",
+          "basis": "Cantonal authority guidance, referring to Hundeverordnung des Kantons Zürich, § 5",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-65987b111d4d5880a8b7",
+          "outcome": "same-snapshot",
+          "start": 2293,
+          "end": 2517,
+          "block_ids": [
+            "doc-65987b111d4d5880a8b7:b00073"
+          ],
+          "warnings": [],
+          "institution_id": "zh-veterinaeramt",
+          "basis": "Cantonal authority guidance, referring to Hundeverordnung des Kantons Zürich, § 5",
+          "basis_rule": "citation",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance, referring to Hundeverordnung des Kantons Zürich, § 5"
+    },
+    {
+      "fact_id": "zh-banned-dog-breeds-2",
+      "citations": [
+        {
+          "document_id": "doc-65987b111d4d5880a8b7",
+          "outcome": "same-snapshot",
+          "start": 1624,
+          "end": 2234,
+          "block_ids": [
+            "doc-65987b111d4d5880a8b7:b00057",
+            "doc-65987b111d4d5880a8b7:b00058",
+            "doc-65987b111d4d5880a8b7:b00059",
+            "doc-65987b111d4d5880a8b7:b00060",
+            "doc-65987b111d4d5880a8b7:b00061",
+            "doc-65987b111d4d5880a8b7:b00062",
+            "doc-65987b111d4d5880a8b7:b00063",
+            "doc-65987b111d4d5880a8b7:b00064",
+            "doc-65987b111d4d5880a8b7:b00065",
+            "doc-65987b111d4d5880a8b7:b00066",
+            "doc-65987b111d4d5880a8b7:b00067",
+            "doc-65987b111d4d5880a8b7:b00068",
+            "doc-65987b111d4d5880a8b7:b00069",
+            "doc-65987b111d4d5880a8b7:b00070",
+            "doc-65987b111d4d5880a8b7:b00071"
+          ],
+          "warnings": [],
+          "institution_id": "zh-veterinaeramt",
+          "basis": "Cantonal authority guidance",
           "basis_rule": "default",
           "basis_warnings": []
         }
       ],
-      "basis": "Municipal authority guidance"
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-banned-dog-breeds-3",
+      "citations": [
+        {
+          "document_id": "doc-65987b111d4d5880a8b7",
+          "outcome": "same-snapshot",
+          "start": 2630,
+          "end": 2982,
+          "block_ids": [
+            "doc-65987b111d4d5880a8b7:b00075",
+            "doc-65987b111d4d5880a8b7:b00076"
+          ],
+          "warnings": [],
+          "institution_id": "zh-veterinaeramt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-banned-dog-breeds-4",
+      "citations": [
+        {
+          "document_id": "doc-65987b111d4d5880a8b7",
+          "outcome": "same-snapshot",
+          "start": 3023,
+          "end": 3539,
+          "block_ids": [
+            "doc-65987b111d4d5880a8b7:b00078",
+            "doc-65987b111d4d5880a8b7:b00079"
+          ],
+          "warnings": [],
+          "institution_id": "zh-veterinaeramt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-banned-dog-breeds-5",
+      "citations": [
+        {
+          "document_id": "doc-65987b111d4d5880a8b7",
+          "outcome": "same-snapshot",
+          "start": 3569,
+          "end": 3949,
+          "block_ids": [
+            "doc-65987b111d4d5880a8b7:b00081",
+            "doc-65987b111d4d5880a8b7:b00082",
+            "doc-65987b111d4d5880a8b7:b00083",
+            "doc-65987b111d4d5880a8b7:b00084",
+            "doc-65987b111d4d5880a8b7:b00085"
+          ],
+          "warnings": [],
+          "institution_id": "zh-veterinaeramt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-banned-dog-breeds-6",
+      "citations": [
+        {
+          "document_id": "doc-65987b111d4d5880a8b7",
+          "outcome": "same-snapshot",
+          "start": 4410,
+          "end": 5176,
+          "block_ids": [
+            "doc-65987b111d4d5880a8b7:b00089",
+            "doc-65987b111d4d5880a8b7:b00090",
+            "doc-65987b111d4d5880a8b7:b00091",
+            "doc-65987b111d4d5880a8b7:b00092",
+            "doc-65987b111d4d5880a8b7:b00093"
+          ],
+          "warnings": [],
+          "institution_id": "zh-veterinaeramt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-65987b111d4d5880a8b7",
+          "outcome": "same-snapshot",
+          "start": 5623,
+          "end": 5954,
+          "block_ids": [
+            "doc-65987b111d4d5880a8b7:b00098",
+            "doc-65987b111d4d5880a8b7:b00099"
+          ],
+          "warnings": [],
+          "institution_id": "zh-veterinaeramt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-banned-dog-breeds-7",
+      "citations": [
+        {
+          "document_id": "doc-65987b111d4d5880a8b7",
+          "outcome": "same-snapshot",
+          "start": 7627,
+          "end": 7964,
+          "block_ids": [
+            "doc-65987b111d4d5880a8b7:b00125",
+            "doc-65987b111d4d5880a8b7:b00126",
+            "doc-65987b111d4d5880a8b7:b00127",
+            "doc-65987b111d4d5880a8b7:b00128",
+            "doc-65987b111d4d5880a8b7:b00129",
+            "doc-65987b111d4d5880a8b7:b00130",
+            "doc-65987b111d4d5880a8b7:b00131",
+            "doc-65987b111d4d5880a8b7:b00132",
+            "doc-65987b111d4d5880a8b7:b00133",
+            "doc-65987b111d4d5880a8b7:b00134",
+            "doc-65987b111d4d5880a8b7:b00135",
+            "doc-65987b111d4d5880a8b7:b00136",
+            "doc-65987b111d4d5880a8b7:b00137",
+            "doc-65987b111d4d5880a8b7:b00138"
+          ],
+          "warnings": [],
+          "institution_id": "zh-veterinaeramt",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
     },
     {
       "fact_id": "zh-dog-keeping-1",
@@ -32198,10 +32404,1492 @@
         }
       ],
       "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ag-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-ad8ea3ece5a5571e7061",
+          "outcome": "same-snapshot",
+          "start": 2417,
+          "end": 3859,
+          "block_ids": [
+            "doc-ad8ea3ece5a5571e7061:b00045",
+            "doc-ad8ea3ece5a5571e7061:b00046",
+            "doc-ad8ea3ece5a5571e7061:b00047",
+            "doc-ad8ea3ece5a5571e7061:b00048",
+            "doc-ad8ea3ece5a5571e7061:b00049",
+            "doc-ad8ea3ece5a5571e7061:b00050",
+            "doc-ad8ea3ece5a5571e7061:b00051",
+            "doc-ad8ea3ece5a5571e7061:b00052",
+            "doc-ad8ea3ece5a5571e7061:b00053"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-ag-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ag-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-3533393b10ed5e6ff13c",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1491,
+          "block_ids": [
+            "doc-3533393b10ed5e6ff13c:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-ag-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ag-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-3533393b10ed5e6ff13c",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 5138,
+          "block_ids": [
+            "doc-3533393b10ed5e6ff13c:b00001",
+            "doc-3533393b10ed5e6ff13c:b00002",
+            "doc-3533393b10ed5e6ff13c:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-ag-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ai-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-ac07ed9e0adcf7733be7",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1738,
+          "block_ids": [
+            "doc-ac07ed9e0adcf7733be7:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-ai-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ai-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-ac07ed9e0adcf7733be7",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1738,
+          "block_ids": [
+            "doc-ac07ed9e0adcf7733be7:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-ai-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ai-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-bd8de67ee7b289c4e582",
+          "outcome": "same-snapshot",
+          "start": 713,
+          "end": 902,
+          "block_ids": [
+            "doc-bd8de67ee7b289c4e582:b00031"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-ai-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ar-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-1e60f0fe770614df362d",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1676,
+          "block_ids": [
+            "doc-1e60f0fe770614df362d:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "ar-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ar-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-1e60f0fe770614df362d",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1676,
+          "block_ids": [
+            "doc-1e60f0fe770614df362d:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "ar-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ar-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-3f726984bb17fa45fae2",
+          "outcome": "same-snapshot",
+          "start": 9147,
+          "end": 9387,
+          "block_ids": [
+            "doc-3f726984bb17fa45fae2:b00331"
+          ],
+          "warnings": [],
+          "institution_id": "ar-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "be-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-54b1d21f0a18aafea5f2",
+          "outcome": "same-snapshot",
+          "start": 381,
+          "end": 762,
+          "block_ids": [
+            "doc-54b1d21f0a18aafea5f2:b00021",
+            "doc-54b1d21f0a18aafea5f2:b00022"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-be-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "be-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-54b1d21f0a18aafea5f2",
+          "outcome": "same-snapshot",
+          "start": 775,
+          "end": 1638,
+          "block_ids": [
+            "doc-54b1d21f0a18aafea5f2:b00024",
+            "doc-54b1d21f0a18aafea5f2:b00025",
+            "doc-54b1d21f0a18aafea5f2:b00026",
+            "doc-54b1d21f0a18aafea5f2:b00027",
+            "doc-54b1d21f0a18aafea5f2:b00028"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-be-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "bs-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-734ed8f8b6957ecd419b",
+          "outcome": "same-snapshot",
+          "start": 342,
+          "end": 1050,
+          "block_ids": [
+            "doc-734ed8f8b6957ecd419b:b00013",
+            "doc-734ed8f8b6957ecd419b:b00014",
+            "doc-734ed8f8b6957ecd419b:b00015",
+            "doc-734ed8f8b6957ecd419b:b00016",
+            "doc-734ed8f8b6957ecd419b:b00017",
+            "doc-734ed8f8b6957ecd419b:b00018",
+            "doc-734ed8f8b6957ecd419b:b00019",
+            "doc-734ed8f8b6957ecd419b:b00020",
+            "doc-734ed8f8b6957ecd419b:b00021",
+            "doc-734ed8f8b6957ecd419b:b00022",
+            "doc-734ed8f8b6957ecd419b:b00023",
+            "doc-734ed8f8b6957ecd419b:b00024",
+            "doc-734ed8f8b6957ecd419b:b00025"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "bs-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-734ed8f8b6957ecd419b",
+          "outcome": "same-snapshot",
+          "start": 2887,
+          "end": 3056,
+          "block_ids": [
+            "doc-734ed8f8b6957ecd419b:b00056"
+          ],
+          "warnings": [],
+          "institution_id": "bs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "fr-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-5b948596184f32ade62a",
+          "outcome": "same-snapshot",
+          "start": 2502,
+          "end": 3410,
+          "block_ids": [
+            "doc-5b948596184f32ade62a:b00092",
+            "doc-5b948596184f32ade62a:b00093",
+            "doc-5b948596184f32ade62a:b00094",
+            "doc-5b948596184f32ade62a:b00095",
+            "doc-5b948596184f32ade62a:b00096",
+            "doc-5b948596184f32ade62a:b00097",
+            "doc-5b948596184f32ade62a:b00098"
+          ],
+          "warnings": [],
+          "institution_id": "fr-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "fr-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-5b948596184f32ade62a",
+          "outcome": "same-snapshot",
+          "start": 5853,
+          "end": 6798,
+          "block_ids": [
+            "doc-5b948596184f32ade62a:b00120",
+            "doc-5b948596184f32ade62a:b00121",
+            "doc-5b948596184f32ade62a:b00122",
+            "doc-5b948596184f32ade62a:b00123",
+            "doc-5b948596184f32ade62a:b00124",
+            "doc-5b948596184f32ade62a:b00125",
+            "doc-5b948596184f32ade62a:b00126",
+            "doc-5b948596184f32ade62a:b00127",
+            "doc-5b948596184f32ade62a:b00128",
+            "doc-5b948596184f32ade62a:b00129",
+            "doc-5b948596184f32ade62a:b00130",
+            "doc-5b948596184f32ade62a:b00131",
+            "doc-5b948596184f32ade62a:b00132",
+            "doc-5b948596184f32ade62a:b00133",
+            "doc-5b948596184f32ade62a:b00134",
+            "doc-5b948596184f32ade62a:b00135",
+            "doc-5b948596184f32ade62a:b00136",
+            "doc-5b948596184f32ade62a:b00137"
+          ],
+          "warnings": [],
+          "institution_id": "fr-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "fr-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-5b948596184f32ade62a",
+          "outcome": "same-snapshot",
+          "start": 1909,
+          "end": 2500,
+          "block_ids": [
+            "doc-5b948596184f32ade62a:b00087",
+            "doc-5b948596184f32ade62a:b00088",
+            "doc-5b948596184f32ade62a:b00089",
+            "doc-5b948596184f32ade62a:b00090",
+            "doc-5b948596184f32ade62a:b00091"
+          ],
+          "warnings": [],
+          "institution_id": "fr-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-5b948596184f32ade62a",
+          "outcome": "same-snapshot",
+          "start": 5315,
+          "end": 5809,
+          "block_ids": [
+            "doc-5b948596184f32ade62a:b00116",
+            "doc-5b948596184f32ade62a:b00117"
+          ],
+          "warnings": [],
+          "institution_id": "fr-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ge-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-55565f47952f0c156ddc",
+          "outcome": "same-snapshot",
+          "start": 1493,
+          "end": 2163,
+          "block_ids": [
+            "doc-55565f47952f0c156ddc:b00063",
+            "doc-55565f47952f0c156ddc:b00064",
+            "doc-55565f47952f0c156ddc:b00065",
+            "doc-55565f47952f0c156ddc:b00066",
+            "doc-55565f47952f0c156ddc:b00067",
+            "doc-55565f47952f0c156ddc:b00068",
+            "doc-55565f47952f0c156ddc:b00069",
+            "doc-55565f47952f0c156ddc:b00070",
+            "doc-55565f47952f0c156ddc:b00071"
+          ],
+          "warnings": [],
+          "institution_id": "ge-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ge-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-b5ce884470e08165049b",
+          "outcome": "same-snapshot",
+          "start": 1493,
+          "end": 2208,
+          "block_ids": [
+            "doc-b5ce884470e08165049b:b00063",
+            "doc-b5ce884470e08165049b:b00064",
+            "doc-b5ce884470e08165049b:b00065",
+            "doc-b5ce884470e08165049b:b00066",
+            "doc-b5ce884470e08165049b:b00067",
+            "doc-b5ce884470e08165049b:b00068",
+            "doc-b5ce884470e08165049b:b00069",
+            "doc-b5ce884470e08165049b:b00070",
+            "doc-b5ce884470e08165049b:b00071"
+          ],
+          "warnings": [],
+          "institution_id": "ge-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "gl-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-1bb7f341023575f1bf35",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1980,
+          "block_ids": [
+            "doc-1bb7f341023575f1bf35:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "gl-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "gl-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-1bb7f341023575f1bf35",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1980,
+          "block_ids": [
+            "doc-1bb7f341023575f1bf35:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "gl-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "gl-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-1bb7f341023575f1bf35",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1980,
+          "block_ids": [
+            "doc-1bb7f341023575f1bf35:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "gl-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "gr-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-2ff2e21602a6fedd2e63",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 5770,
+          "block_ids": [
+            "doc-2ff2e21602a6fedd2e63:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "gr-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "gr-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-2ff2e21602a6fedd2e63",
+          "outcome": "same-snapshot",
+          "start": 15262,
+          "end": 19417,
+          "block_ids": [
+            "doc-2ff2e21602a6fedd2e63:b00004"
+          ],
+          "warnings": [],
+          "institution_id": "gr-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "gr-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-2ff2e21602a6fedd2e63",
+          "outcome": "same-snapshot",
+          "start": 15262,
+          "end": 19417,
+          "block_ids": [
+            "doc-2ff2e21602a6fedd2e63:b00004"
+          ],
+          "warnings": [],
+          "institution_id": "gr-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ju-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-e359a74600c284917a73",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 3802,
+          "block_ids": [
+            "doc-e359a74600c284917a73:b00001",
+            "doc-e359a74600c284917a73:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "ju-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ju-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-e359a74600c284917a73",
+          "outcome": "same-snapshot",
+          "start": 1606,
+          "end": 3802,
+          "block_ids": [
+            "doc-e359a74600c284917a73:b00002"
+          ],
+          "warnings": [],
+          "institution_id": "ju-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ju-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-e359a74600c284917a73",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1604,
+          "block_ids": [
+            "doc-e359a74600c284917a73:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "ju-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "lu-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-b479d922978177220567",
+          "outcome": "same-snapshot",
+          "start": 508,
+          "end": 876,
+          "block_ids": [
+            "doc-b479d922978177220567:b00029",
+            "doc-b479d922978177220567:b00030",
+            "doc-b479d922978177220567:b00031",
+            "doc-b479d922978177220567:b00032",
+            "doc-b479d922978177220567:b00033",
+            "doc-b479d922978177220567:b00034",
+            "doc-b479d922978177220567:b00035",
+            "doc-b479d922978177220567:b00036"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-lu-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "lu-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-51f6d982a96f267438dd",
+          "outcome": "same-snapshot",
+          "start": 4704,
+          "end": 7294,
+          "block_ids": [
+            "doc-51f6d982a96f267438dd:b00003"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-lu-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "lu-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-f177cf3144433b6362c8",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 2019,
+          "block_ids": [
+            "doc-f177cf3144433b6362c8:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-lu-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ne-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-bab5b6d448e11e089463",
+          "outcome": "same-snapshot",
+          "start": 13991,
+          "end": 14871,
+          "block_ids": [
+            "doc-bab5b6d448e11e089463:b00566"
+          ],
+          "warnings": [],
+          "institution_id": "ne-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ne-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-bab5b6d448e11e089463",
+          "outcome": "same-snapshot",
+          "start": 14899,
+          "end": 15784,
+          "block_ids": [
+            "doc-bab5b6d448e11e089463:b00568"
+          ],
+          "warnings": [],
+          "institution_id": "ne-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ow-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-85d5963479028cf874d6",
+          "outcome": "same-snapshot",
+          "start": 8895,
+          "end": 9339,
+          "block_ids": [
+            "doc-85d5963479028cf874d6:b00386",
+            "doc-85d5963479028cf874d6:b00387",
+            "doc-85d5963479028cf874d6:b00388",
+            "doc-85d5963479028cf874d6:b00389",
+            "doc-85d5963479028cf874d6:b00390",
+            "doc-85d5963479028cf874d6:b00391"
+          ],
+          "warnings": [],
+          "institution_id": "ow-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ow-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-85d5963479028cf874d6",
+          "outcome": "same-snapshot",
+          "start": 9341,
+          "end": 9832,
+          "block_ids": [
+            "doc-85d5963479028cf874d6:b00392",
+            "doc-85d5963479028cf874d6:b00393",
+            "doc-85d5963479028cf874d6:b00394"
+          ],
+          "warnings": [],
+          "institution_id": "ow-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ow-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-85d5963479028cf874d6",
+          "outcome": "same-snapshot",
+          "start": 9341,
+          "end": 9419,
+          "block_ids": [
+            "doc-85d5963479028cf874d6:b00392"
+          ],
+          "warnings": [],
+          "institution_id": "ow-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-85d5963479028cf874d6",
+          "outcome": "same-snapshot",
+          "start": 9834,
+          "end": 9889,
+          "block_ids": [
+            "doc-85d5963479028cf874d6:b00395"
+          ],
+          "warnings": [],
+          "institution_id": "ow-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "sg-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-44856eb284742541aac1",
+          "outcome": "same-snapshot",
+          "start": 1736,
+          "end": 3127,
+          "block_ids": [
+            "doc-44856eb284742541aac1:b00093",
+            "doc-44856eb284742541aac1:b00094",
+            "doc-44856eb284742541aac1:b00095",
+            "doc-44856eb284742541aac1:b00096",
+            "doc-44856eb284742541aac1:b00097",
+            "doc-44856eb284742541aac1:b00098"
+          ],
+          "warnings": [],
+          "institution_id": "sg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "sg-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-44856eb284742541aac1",
+          "outcome": "same-snapshot",
+          "start": 1867,
+          "end": 2996,
+          "block_ids": [
+            "doc-44856eb284742541aac1:b00095",
+            "doc-44856eb284742541aac1:b00096",
+            "doc-44856eb284742541aac1:b00097"
+          ],
+          "warnings": [],
+          "institution_id": "sg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "sg-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-44856eb284742541aac1",
+          "outcome": "same-snapshot",
+          "start": 1867,
+          "end": 2996,
+          "block_ids": [
+            "doc-44856eb284742541aac1:b00095",
+            "doc-44856eb284742541aac1:b00096",
+            "doc-44856eb284742541aac1:b00097"
+          ],
+          "warnings": [],
+          "institution_id": "sg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "so-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-50439566010e6ba832cc",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 2089,
+          "block_ids": [
+            "doc-50439566010e6ba832cc:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "so-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "so-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-e1eb503483b47c350410",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1690,
+          "block_ids": [
+            "doc-e1eb503483b47c350410:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "so-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "so-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-871ec5cc0f3bb6f78f04",
+          "outcome": "same-snapshot",
+          "start": 3503,
+          "end": 3578,
+          "block_ids": [
+            "doc-871ec5cc0f3bb6f78f04:b00144"
+          ],
+          "warnings": [],
+          "institution_id": "so-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "sz-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-5e48ba3fde2fdcfd67b1",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 5316,
+          "block_ids": [
+            "doc-5e48ba3fde2fdcfd67b1:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "sz-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "sz-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-5e48ba3fde2fdcfd67b1",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 5316,
+          "block_ids": [
+            "doc-5e48ba3fde2fdcfd67b1:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "sz-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "tg-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-f7342b1cfc928dd69209",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 943,
+          "block_ids": [
+            "doc-f7342b1cfc928dd69209:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-tg-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-dc236f8ebaa114f9d103",
+          "outcome": "same-snapshot",
+          "start": 629,
+          "end": 829,
+          "block_ids": [
+            "doc-dc236f8ebaa114f9d103:b00031",
+            "doc-dc236f8ebaa114f9d103:b00032",
+            "doc-dc236f8ebaa114f9d103:b00033",
+            "doc-dc236f8ebaa114f9d103:b00034",
+            "doc-dc236f8ebaa114f9d103:b00035",
+            "doc-dc236f8ebaa114f9d103:b00036",
+            "doc-dc236f8ebaa114f9d103:b00037"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-tg-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "tg-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-f7342b1cfc928dd69209",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 943,
+          "block_ids": [
+            "doc-f7342b1cfc928dd69209:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-tg-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "tg-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-54f8c6594b6dec6cf465",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 4468,
+          "block_ids": [
+            "doc-54f8c6594b6dec6cf465:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-tg-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ti-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-8f24e9474861251a3470",
+          "outcome": "same-snapshot",
+          "start": 715,
+          "end": 1509,
+          "block_ids": [
+            "doc-8f24e9474861251a3470:b00026",
+            "doc-8f24e9474861251a3470:b00027",
+            "doc-8f24e9474861251a3470:b00028",
+            "doc-8f24e9474861251a3470:b00029",
+            "doc-8f24e9474861251a3470:b00030",
+            "doc-8f24e9474861251a3470:b00031",
+            "doc-8f24e9474861251a3470:b00032",
+            "doc-8f24e9474861251a3470:b00033",
+            "doc-8f24e9474861251a3470:b00034",
+            "doc-8f24e9474861251a3470:b00035",
+            "doc-8f24e9474861251a3470:b00036",
+            "doc-8f24e9474861251a3470:b00037",
+            "doc-8f24e9474861251a3470:b00038",
+            "doc-8f24e9474861251a3470:b00039",
+            "doc-8f24e9474861251a3470:b00040",
+            "doc-8f24e9474861251a3470:b00041"
+          ],
+          "warnings": [],
+          "institution_id": "ti-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ti-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-8f24e9474861251a3470",
+          "outcome": "same-snapshot",
+          "start": 553,
+          "end": 689,
+          "block_ids": [
+            "doc-8f24e9474861251a3470:b00024"
+          ],
+          "warnings": [],
+          "institution_id": "ti-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-8f24e9474861251a3470",
+          "outcome": "same-snapshot",
+          "start": 1657,
+          "end": 2067,
+          "block_ids": [
+            "doc-8f24e9474861251a3470:b00047"
+          ],
+          "warnings": [],
+          "institution_id": "ti-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ur-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-77bf695ff5ac6cd6225c",
+          "outcome": "same-snapshot",
+          "start": 7341,
+          "end": 8429,
+          "block_ids": [
+            "doc-77bf695ff5ac6cd6225c:b00348",
+            "doc-77bf695ff5ac6cd6225c:b00349",
+            "doc-77bf695ff5ac6cd6225c:b00350",
+            "doc-77bf695ff5ac6cd6225c:b00351"
+          ],
+          "warnings": [],
+          "institution_id": "ur-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "vd-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-31a3f9574b1249010554",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1831,
+          "block_ids": [
+            "doc-31a3f9574b1249010554:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-ea71df7c8f0a65729db4",
+          "outcome": "same-snapshot",
+          "start": 4216,
+          "end": 4383,
+          "block_ids": [
+            "doc-ea71df7c8f0a65729db4:b00082",
+            "doc-ea71df7c8f0a65729db4:b00083",
+            "doc-ea71df7c8f0a65729db4:b00084"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-8a48a12f6bf0a9f37a41",
+          "outcome": "same-snapshot",
+          "start": 3958,
+          "end": 4213,
+          "block_ids": [
+            "doc-8a48a12f6bf0a9f37a41:b00077",
+            "doc-8a48a12f6bf0a9f37a41:b00078",
+            "doc-8a48a12f6bf0a9f37a41:b00079",
+            "doc-8a48a12f6bf0a9f37a41:b00080",
+            "doc-8a48a12f6bf0a9f37a41:b00081"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "vd-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-31a3f9574b1249010554",
+          "outcome": "same-snapshot",
+          "start": 0,
+          "end": 1831,
+          "block_ids": [
+            "doc-31a3f9574b1249010554:b00001"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-8a48a12f6bf0a9f37a41",
+          "outcome": "same-snapshot",
+          "start": 4215,
+          "end": 4380,
+          "block_ids": [
+            "doc-8a48a12f6bf0a9f37a41:b00082",
+            "doc-8a48a12f6bf0a9f37a41:b00083",
+            "doc-8a48a12f6bf0a9f37a41:b00084"
+          ],
+          "warnings": [],
+          "institution_id": "vd-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "vs-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-73da12f38afbc83227a3",
+          "outcome": "same-snapshot",
+          "start": 835,
+          "end": 1646,
+          "block_ids": [
+            "doc-73da12f38afbc83227a3:b00037",
+            "doc-73da12f38afbc83227a3:b00038",
+            "doc-73da12f38afbc83227a3:b00039",
+            "doc-73da12f38afbc83227a3:b00040",
+            "doc-73da12f38afbc83227a3:b00041",
+            "doc-73da12f38afbc83227a3:b00042",
+            "doc-73da12f38afbc83227a3:b00043",
+            "doc-73da12f38afbc83227a3:b00044",
+            "doc-73da12f38afbc83227a3:b00045",
+            "doc-73da12f38afbc83227a3:b00046",
+            "doc-73da12f38afbc83227a3:b00047",
+            "doc-73da12f38afbc83227a3:b00048",
+            "doc-73da12f38afbc83227a3:b00049",
+            "doc-73da12f38afbc83227a3:b00050",
+            "doc-73da12f38afbc83227a3:b00051"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-eb029f233a55e3ec9866",
+          "outcome": "same-snapshot",
+          "start": 1140,
+          "end": 1221,
+          "block_ids": [
+            "doc-eb029f233a55e3ec9866:b00048",
+            "doc-eb029f233a55e3ec9866:b00049",
+            "doc-eb029f233a55e3ec9866:b00050"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "vs-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-73da12f38afbc83227a3",
+          "outcome": "same-snapshot",
+          "start": 1135,
+          "end": 1567,
+          "block_ids": [
+            "doc-73da12f38afbc83227a3:b00039",
+            "doc-73da12f38afbc83227a3:b00040",
+            "doc-73da12f38afbc83227a3:b00041",
+            "doc-73da12f38afbc83227a3:b00042",
+            "doc-73da12f38afbc83227a3:b00043",
+            "doc-73da12f38afbc83227a3:b00044",
+            "doc-73da12f38afbc83227a3:b00045",
+            "doc-73da12f38afbc83227a3:b00046",
+            "doc-73da12f38afbc83227a3:b00047",
+            "doc-73da12f38afbc83227a3:b00048"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-eb029f233a55e3ec9866",
+          "outcome": "same-snapshot",
+          "start": 742,
+          "end": 1138,
+          "block_ids": [
+            "doc-eb029f233a55e3ec9866:b00037",
+            "doc-eb029f233a55e3ec9866:b00038",
+            "doc-eb029f233a55e3ec9866:b00039",
+            "doc-eb029f233a55e3ec9866:b00040",
+            "doc-eb029f233a55e3ec9866:b00041",
+            "doc-eb029f233a55e3ec9866:b00042",
+            "doc-eb029f233a55e3ec9866:b00043",
+            "doc-eb029f233a55e3ec9866:b00044",
+            "doc-eb029f233a55e3ec9866:b00045",
+            "doc-eb029f233a55e3ec9866:b00046",
+            "doc-eb029f233a55e3ec9866:b00047"
+          ],
+          "warnings": [],
+          "institution_id": "vs-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zg-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-e09073daa7f1d2628967",
+          "outcome": "same-snapshot",
+          "start": 13588,
+          "end": 15453,
+          "block_ids": [
+            "doc-e09073daa7f1d2628967:b00337",
+            "doc-e09073daa7f1d2628967:b00338"
+          ],
+          "warnings": [],
+          "institution_id": "zg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zg-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-e09073daa7f1d2628967",
+          "outcome": "same-snapshot",
+          "start": 13588,
+          "end": 15453,
+          "block_ids": [
+            "doc-e09073daa7f1d2628967:b00337",
+            "doc-e09073daa7f1d2628967:b00338"
+          ],
+          "warnings": [],
+          "institution_id": "zg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zg-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-e09073daa7f1d2628967",
+          "outcome": "same-snapshot",
+          "start": 15681,
+          "end": 15902,
+          "block_ids": [
+            "doc-e09073daa7f1d2628967:b00344"
+          ],
+          "warnings": [],
+          "institution_id": "zg-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-school-holidays-1",
+      "citations": [
+        {
+          "document_id": "doc-03e5f92d8234569ca2c9",
+          "outcome": "same-snapshot",
+          "start": 1082,
+          "end": 1682,
+          "block_ids": [
+            "doc-03e5f92d8234569ca2c9:b00049",
+            "doc-03e5f92d8234569ca2c9:b00050",
+            "doc-03e5f92d8234569ca2c9:b00051",
+            "doc-03e5f92d8234569ca2c9:b00052",
+            "doc-03e5f92d8234569ca2c9:b00053",
+            "doc-03e5f92d8234569ca2c9:b00054",
+            "doc-03e5f92d8234569ca2c9:b00055",
+            "doc-03e5f92d8234569ca2c9:b00056",
+            "doc-03e5f92d8234569ca2c9:b00057"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-zh-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-school-holidays-2",
+      "citations": [
+        {
+          "document_id": "doc-03e5f92d8234569ca2c9",
+          "outcome": "same-snapshot",
+          "start": 8264,
+          "end": 10263,
+          "block_ids": [
+            "doc-03e5f92d8234569ca2c9:b00098",
+            "doc-03e5f92d8234569ca2c9:b00099",
+            "doc-03e5f92d8234569ca2c9:b00100",
+            "doc-03e5f92d8234569ca2c9:b00101"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-zh-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "zh-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-03e5f92d8234569ca2c9",
+          "outcome": "same-snapshot",
+          "start": 10265,
+          "end": 12072,
+          "block_ids": [
+            "doc-03e5f92d8234569ca2c9:b00102",
+            "doc-03e5f92d8234569ca2c9:b00103"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-zh-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
     }
   ],
-  "source_terms": 1741,
-  "questions": 484,
+  "source_terms": 1890,
+  "questions": 532,
   "institutions": [
     {
       "institution_id": "ag-law",
@@ -32248,7 +33936,7 @@
       "name": "Canton of Appenzell Ausserrhoden, Amt fuer Inneres, Abteilung Migration",
       "level": "cantonal",
       "jurisdiction": "CH-AR",
-      "documents": 1,
+      "documents": 3,
       "from_catalogue": false
     },
     {
@@ -32288,7 +33976,7 @@
       "name": "Canton of Basel-Stadt, Einwohneramt and Migrationsamt",
       "level": "cantonal",
       "jurisdiction": "CH-BS",
-      "documents": 2,
+      "documents": 3,
       "from_catalogue": false
     },
     {
@@ -32298,6 +33986,54 @@
       "jurisdiction": "CH-BS",
       "documents": 1,
       "from_catalogue": false
+    },
+    {
+      "institution_id": "catalogue-ag-school-holidays",
+      "name": "Canton Aargau - Departement Bildung, Kultur und Sport",
+      "level": "cantonal",
+      "jurisdiction": "CH-AG",
+      "documents": 2,
+      "from_catalogue": true
+    },
+    {
+      "institution_id": "catalogue-ai-school-holidays",
+      "name": "Canton Appenzell Innerrhoden - Erziehungsdepartement",
+      "level": "cantonal",
+      "jurisdiction": "CH-AI",
+      "documents": 2,
+      "from_catalogue": true
+    },
+    {
+      "institution_id": "catalogue-be-school-holidays",
+      "name": "Canton Bern - Bildungs- und Kulturdirektion, Amt fuer Kindergarten, Volksschule und Beratung",
+      "level": "cantonal",
+      "jurisdiction": "CH-BE",
+      "documents": 1,
+      "from_catalogue": true
+    },
+    {
+      "institution_id": "catalogue-lu-school-holidays",
+      "name": "Canton Lucerne - Dienststelle Volksschulbildung",
+      "level": "cantonal",
+      "jurisdiction": "CH-LU",
+      "documents": 3,
+      "from_catalogue": true
+    },
+    {
+      "institution_id": "catalogue-tg-school-holidays",
+      "name": "Canton Thurgau - Amt fuer Volksschule",
+      "level": "cantonal",
+      "jurisdiction": "CH-TG",
+      "documents": 3,
+      "from_catalogue": true
+    },
+    {
+      "institution_id": "catalogue-zh-school-holidays",
+      "name": "Canton of Zurich (Migrationsamt; Kantonales Steueramt; Strassenverkehrsamt; Gesundheitsdirektion; Gemeindeamt, Abteilung Einbürgerungen; Amt für Wirtschaft; Amt für Statistik und Daten)",
+      "level": "cantonal",
+      "jurisdiction": "CH-ZH",
+      "documents": 1,
+      "from_catalogue": true
     },
     {
       "institution_id": "ch-ahv-iv",
@@ -32416,7 +34152,7 @@
       "name": "Canton of Fribourg, Service de la population et des migrants (SPoMi)",
       "level": "cantonal",
       "jurisdiction": "CH-FR",
-      "documents": 2,
+      "documents": 3,
       "from_catalogue": false
     },
     {
@@ -32432,12 +34168,20 @@
       "name": "Canton of Geneva, Office cantonal de la population et des migrations (OCPM)",
       "level": "cantonal",
       "jurisdiction": "CH-GE",
-      "documents": 2,
+      "documents": 4,
       "from_catalogue": false
     },
     {
       "institution_id": "gl-law",
       "name": "Canton of Glarus, systematic collection of law",
+      "level": "cantonal",
+      "jurisdiction": "CH-GL",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
+      "institution_id": "gl-office",
+      "name": "Canton of Glarus, Abteilung Migration",
       "level": "cantonal",
       "jurisdiction": "CH-GL",
       "documents": 1,
@@ -32452,11 +34196,19 @@
       "from_catalogue": false
     },
     {
+      "institution_id": "gr-office",
+      "name": "Canton of Graubuenden, Amt fuer Migration und Zivilrecht",
+      "level": "cantonal",
+      "jurisdiction": "CH-GR",
+      "documents": 1,
+      "from_catalogue": false
+    },
+    {
       "institution_id": "ju-office",
       "name": "Canton of Jura, Service de la population (SPOP)",
       "level": "cantonal",
       "jurisdiction": "CH-JU",
-      "documents": 1,
+      "documents": 2,
       "from_catalogue": false
     },
     {
@@ -32480,7 +34232,7 @@
       "name": "Canton of Neuchatel, Service des migrations",
       "level": "cantonal",
       "jurisdiction": "CH-NE",
-      "documents": 2,
+      "documents": 3,
       "from_catalogue": false
     },
     {
@@ -32512,7 +34264,7 @@
       "name": "Canton of Obwalden, Amt fuer Arbeit, Abteilung Migration",
       "level": "cantonal",
       "jurisdiction": "CH-OW",
-      "documents": 1,
+      "documents": 2,
       "from_catalogue": false
     },
     {
@@ -32536,7 +34288,7 @@
       "name": "Canton of St. Gallen, Migrationsamt",
       "level": "cantonal",
       "jurisdiction": "CH-SG",
-      "documents": 2,
+      "documents": 3,
       "from_catalogue": false
     },
     {
@@ -32568,7 +34320,7 @@
       "name": "Canton of Solothurn, Migrationsamt",
       "level": "cantonal",
       "jurisdiction": "CH-SO",
-      "documents": 2,
+      "documents": 5,
       "from_catalogue": false
     },
     {
@@ -32576,7 +34328,7 @@
       "name": "Canton of Schwyz, Amt fuer Migration",
       "level": "cantonal",
       "jurisdiction": "CH-SZ",
-      "documents": 3,
+      "documents": 4,
       "from_catalogue": false
     },
     {
@@ -32616,7 +34368,7 @@
       "name": "Canton of Ticino, Ufficio della migrazione and Ufficio del controllo degli abitanti",
       "level": "cantonal",
       "jurisdiction": "CH-TI",
-      "documents": 1,
+      "documents": 2,
       "from_catalogue": false
     },
     {
@@ -32632,7 +34384,7 @@
       "name": "Canton of Uri, Amt fuer Arbeit und Migration, Abteilung Migration",
       "level": "cantonal",
       "jurisdiction": "CH-UR",
-      "documents": 1,
+      "documents": 2,
       "from_catalogue": false
     },
     {
@@ -32640,7 +34392,7 @@
       "name": "Canton of Vaud, Service de la population (SPOP)",
       "level": "cantonal",
       "jurisdiction": "CH-VD",
-      "documents": 4,
+      "documents": 7,
       "from_catalogue": false
     },
     {
@@ -32656,7 +34408,7 @@
       "name": "Canton of Valais, Service de la population et des migrations (SPM)",
       "level": "cantonal",
       "jurisdiction": "CH-VS",
-      "documents": 3,
+      "documents": 5,
       "from_catalogue": false
     },
     {
@@ -32672,7 +34424,7 @@
       "name": "Canton of Zug, Amt fuer Migration",
       "level": "cantonal",
       "jurisdiction": "CH-ZG",
-      "documents": 1,
+      "documents": 2,
       "from_catalogue": false
     },
     {
@@ -32832,13 +34584,11 @@
       "name": "Canton of Zurich, Veterinary Office",
       "level": "cantonal",
       "jurisdiction": "CH-ZH",
-      "documents": 1,
+      "documents": 2,
       "from_catalogue": false
     }
   ],
   "institutions_unused": [
-    "gl-office",
-    "gr-office",
     "sz-law",
     "tg-office"
   ],
@@ -32860,6 +34610,12 @@
       "source_url": "https://www.arbeit.swiss/de/stellensuchende/registrierung-stellensuchende",
       "institution_id": "ch-seco",
       "institution_rule": "registry rule www.arbeit.swiss"
+    },
+    {
+      "document_id": "doc-03e5f92d8234569ca2c9",
+      "source_url": "https://www.zh.ch/de/bildung/bildungssystem/schulferien.html",
+      "institution_id": "catalogue-zh-school-holidays",
+      "institution_rule": "catalogue source zh-school-holidays"
     },
     {
       "document_id": "doc-0586681c531b3efb3582",
@@ -33006,6 +34762,12 @@
       "institution_rule": "registry rule www.arbeit.swiss"
     },
     {
+      "document_id": "doc-1bb7f341023575f1bf35",
+      "source_url": "https://www.gl.ch/public/upload/assets/64288/Ferienpl%C3%A4ne_2026-2029.pdf?fp=1",
+      "institution_id": "gl-office",
+      "institution_rule": "registry rule www.gl.ch"
+    },
+    {
       "document_id": "doc-1bc7c301f281e3894bc3",
       "source_url": "https://www.eda.admin.ch/de/visabestimmungen-fuer-die-einreise-in-die-schweiz",
       "institution_id": "ch-eda",
@@ -33052,6 +34814,12 @@
       "source_url": "https://www.gesetzessammlung.bs.ch/api/de/versions/6200/pdf_file_with_annexes",
       "institution_id": "bs-law",
       "institution_rule": "registry rule www.gesetzessammlung.bs.ch"
+    },
+    {
+      "document_id": "doc-1e60f0fe770614df362d",
+      "source_url": "https://ar.ch/fileadmin/user_upload/Departement_Bildung_Kultur/Amt_fuer_Volksschule/eHandbuch_Volksschule/2026-06-23_FerienrichtdatenVolksschulenAppenzellAusserrhoden_v1.3.pdf",
+      "institution_id": "ar-office",
+      "institution_rule": "registry rule ar.ch"
     },
     {
       "document_id": "doc-1f8ba8d4751763edd1b3",
@@ -33222,6 +34990,12 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/heiraten"
     },
     {
+      "document_id": "doc-2ff2e21602a6fedd2e63",
+      "source_url": "https://www.gr.ch/DE/institutionen/verwaltung/ekud/avs/Volksschule/SB_Ferienplaene_2026_2027_de.pdf",
+      "institution_id": "gr-office",
+      "institution_rule": "registry rule www.gr.ch"
+    },
+    {
       "document_id": "doc-306220963987e76fd3d5",
       "source_url": "https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/wo-und-wann-entsorgen/abfuhr-bioabfall.html",
       "institution_id": "zh-261-erz",
@@ -33232,6 +35006,12 @@
       "source_url": "https://www.gesetzessammlung.sg.ch/api/de/versions/2506/pdf_file_with_annexes",
       "institution_id": "sg-law",
       "institution_rule": "registry rule www.gesetzessammlung.sg.ch"
+    },
+    {
+      "document_id": "doc-31a3f9574b1249010554",
+      "source_url": "https://www.vd.ch/fileadmin/user_upload/themes/formation/Vacances_scolaires/def_calendrier_vacances_scolaires_2023_2031.pdf",
+      "institution_id": "vd-office",
+      "institution_rule": "registry rule www.vd.ch"
     },
     {
       "document_id": "doc-31ee33d8007b771265da",
@@ -33256,6 +35036,12 @@
       "source_url": "https://ai.clex.ch/api/de/versions/1133/pdf_file_with_annexes",
       "institution_id": "ai-law",
       "institution_rule": "registry rule ai.clex.ch"
+    },
+    {
+      "document_id": "doc-3533393b10ed5e6ff13c",
+      "source_url": "https://www.schulen-aargau.ch/media/schulen-aargau/schulorganisation/ressourcen-planung/stunden-ferienplanung/bksvs-kantonal-einheitlicher-ferienplan.pdf",
+      "institution_id": "catalogue-ag-school-holidays",
+      "institution_rule": "catalogue source ag-school-holidays"
     },
     {
       "document_id": "doc-353f6cf9d61da86ca82c",
@@ -33336,6 +35122,12 @@
       "institution_rule": "registry rule www.bsv.admin.ch"
     },
     {
+      "document_id": "doc-3f726984bb17fa45fae2",
+      "source_url": "https://ar.ch/verwaltung/departement-bildung-und-kultur/amt-fuer-volksschule-und-sport/ehandbuch-volksschule/schulbetrieb/regelungen/",
+      "institution_id": "ar-office",
+      "institution_rule": "registry rule ar.ch"
+    },
+    {
       "document_id": "doc-3fe8c1612d3a52906267",
       "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/biometrische-auslaenderausweise/biometrie.html",
       "institution_id": "zh-migrationsamt",
@@ -33370,6 +35162,12 @@
       "source_url": "https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/online-schalter/personenmeldeamt-terminpflicht.html",
       "institution_id": "zh-261-personenmeldeamt",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/online-schalter/personenmeldeamt"
+    },
+    {
+      "document_id": "doc-44856eb284742541aac1",
+      "source_url": "https://www.sg.ch/bildung-sport/volksschule/aus-dem-amt/ferienplan.html",
+      "institution_id": "sg-office",
+      "institution_rule": "registry rule www.sg.ch"
     },
     {
       "document_id": "doc-44d8e11b55a80a28ff81",
@@ -33450,6 +35248,12 @@
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/integration/"
     },
     {
+      "document_id": "doc-50439566010e6ba832cc",
+      "source_url": "https://so.ch/fileadmin/internet/dbk/dbk-vsa/Schulsystem/Ferienplan/Schulferienplan_2026_2027.pdf",
+      "institution_id": "so-office",
+      "institution_rule": "registry rule so.ch"
+    },
+    {
       "document_id": "doc-50452600d419ef7376d6",
       "source_url": "https://www.ch.ch/de/pensionierung/altersvorsorge/3-saule--private-vorsorge-/",
       "institution_id": "ch-chch",
@@ -33472,6 +35276,12 @@
       "source_url": "https://www.sem.admin.ch/sem/en/home/themen/einreise/faq.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-51f6d982a96f267438dd",
+      "source_url": "https://volksschulbildung.lu.ch/-/media/Volksschulbildung/Dokumente/syst_schulen/ss_schulsystem/schulferien/ferienplan_gemeinden_sj26_27.pdf?rev=82d2e9ac96974eb08407799e305a05d0",
+      "institution_id": "catalogue-lu-school-holidays",
+      "institution_rule": "catalogue source lu-school-holidays"
     },
     {
       "document_id": "doc-53179c28edeeaf2a28d0",
@@ -33498,10 +35308,28 @@
       "institution_rule": "registry rule www.ai.ch"
     },
     {
+      "document_id": "doc-54b1d21f0a18aafea5f2",
+      "source_url": "https://www.akvb-gemeinden.bkd.be.ch/de/start/organisation-finanzierung/schulorganisation/schulferienplanung.html",
+      "institution_id": "catalogue-be-school-holidays",
+      "institution_rule": "catalogue source be-school-holidays"
+    },
+    {
       "document_id": "doc-54dc28822feaaa90ba5a",
       "source_url": "https://bgs.zg.ch/api/de/versions/2741/pdf_file_with_annexes",
       "institution_id": "zg-law",
       "institution_rule": "registry rule bgs.zg.ch"
+    },
+    {
+      "document_id": "doc-54f8c6594b6dec6cf465",
+      "source_url": "https://av.tg.ch/public/upload/assets/8713/10_Jahresplan_Schulferien_Volksschule_2023_-_2033.pdf?fp=4",
+      "institution_id": "catalogue-tg-school-holidays",
+      "institution_rule": "catalogue source tg-school-holidays"
+    },
+    {
+      "document_id": "doc-55565f47952f0c156ddc",
+      "source_url": "https://www.ge.ch/vacances-scolaires-jours-feries/vacances-scolaires-2026-2027",
+      "institution_id": "ge-office",
+      "institution_rule": "registry rule www.ge.ch"
     },
     {
       "document_id": "doc-561b0e2fb8c75967f0cd",
@@ -33540,6 +35368,12 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung"
     },
     {
+      "document_id": "doc-5b948596184f32ade62a",
+      "source_url": "https://www.fr.ch/de/bkad/schulferien",
+      "institution_id": "fr-office",
+      "institution_rule": "registry rule www.fr.ch"
+    },
+    {
       "document_id": "doc-5ba510af38c7a4246318",
       "source_url": "https://www.ch.ch/de/wohnen/miete/mietvertrag-und-pachtvertrag/",
       "institution_id": "ch-chch",
@@ -33562,6 +35396,12 @@
       "source_url": "https://www.bsv.admin.ch/de/familienzulagen",
       "institution_id": "ch-bsv",
       "institution_rule": "registry rule www.bsv.admin.ch"
+    },
+    {
+      "document_id": "doc-5e48ba3fde2fdcfd67b1",
+      "source_url": "https://www.sz.ch/public/upload/assets/85734/Ferienplan_Schuljahr_2026-2027.pdf?fp=1783576959567",
+      "institution_id": "sz-office",
+      "institution_rule": "registry rule www.sz.ch"
     },
     {
       "document_id": "doc-5f038736fe92a346d1a5",
@@ -33616,6 +35456,12 @@
       "source_url": "https://www.sem.admin.ch/sem/en/home/themen/einreise/info-einreise/voraussetzungen-nach-staat/ohne-visum.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-65987b111d4d5880a8b7",
+      "source_url": "https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html",
+      "institution_id": "zh-veterinaeramt",
+      "institution_rule": "registry rule www.zh.ch/de/umwelt-tiere/tiere"
     },
     {
       "document_id": "doc-65c87384f0b1a34d6d51",
@@ -33768,6 +35614,12 @@
       "institution_rule": "registry rule www.bag.admin.ch"
     },
     {
+      "document_id": "doc-734ed8f8b6957ecd419b",
+      "source_url": "https://www.bs.ch/themen/bildung-und-kinderbetreuung/schulferien",
+      "institution_id": "bs-office",
+      "institution_rule": "registry rule www.bs.ch"
+    },
+    {
       "document_id": "doc-737c6bb8c76b847b0b77",
       "source_url": "https://www.fedlex.admin.ch/eli/cc/2018/493/de",
       "institution_id": "ch-fedlex",
@@ -33778,6 +35630,12 @@
       "source_url": "https://www.sem.admin.ch/sem/en/home/themen/einreise/fachinfo-einreise/schengen.html",
       "institution_id": "ch-sem",
       "institution_rule": "registry rule www.sem.admin.ch"
+    },
+    {
+      "document_id": "doc-73da12f38afbc83227a3",
+      "source_url": "https://www.vs.ch/web/se/plans-de-scolarite",
+      "institution_id": "vs-office",
+      "institution_rule": "registry rule www.vs.ch"
     },
     {
       "document_id": "doc-7502be9969bff24a2962",
@@ -33808,6 +35666,12 @@
       "source_url": "https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/euefta-staatsangehoerige.html/8756-8758-8802-10373-10961-10965-10969",
       "institution_id": "sz-office",
       "institution_rule": "registry rule www.sz.ch"
+    },
+    {
+      "document_id": "doc-77bf695ff5ac6cd6225c",
+      "source_url": "https://www.ur.ch/dienstleistungen/3125",
+      "institution_id": "ur-office",
+      "institution_rule": "registry rule www.ur.ch"
     },
     {
       "document_id": "doc-77c2c422cf2c1e926181",
@@ -33906,6 +35770,18 @@
       "institution_rule": "registry rule www.bsv.admin.ch"
     },
     {
+      "document_id": "doc-85d5963479028cf874d6",
+      "source_url": "https://www.ow.ch/dienstleistungen/5276",
+      "institution_id": "ow-office",
+      "institution_rule": "registry rule www.ow.ch"
+    },
+    {
+      "document_id": "doc-871ec5cc0f3bb6f78f04",
+      "source_url": "https://so.ch/verwaltung/departement-fuer-bildung-kultur-und-sport/volksschulamt/aktuell/ferienplan/",
+      "institution_id": "so-office",
+      "institution_rule": "registry rule so.ch"
+    },
+    {
       "document_id": "doc-87739a2bc2f8480d2c1e",
       "source_url": "https://gesetze.gl.ch/api/de/versions/2346/pdf_file_with_annexes",
       "institution_id": "gl-law",
@@ -33922,6 +35798,12 @@
       "source_url": "https://www.hallo.sg.ch/de/zusammenleben/leben-in-st-gallen/aufenthaltsbewilligung.html",
       "institution_id": "sg-office",
       "institution_rule": "registry rule www.hallo.sg.ch"
+    },
+    {
+      "document_id": "doc-8a48a12f6bf0a9f37a41",
+      "source_url": "https://www.vd.ch/formation/jours-feries-et-vacances-scolaires/jours-feries-et-vacances-scolaires-2027",
+      "institution_id": "vd-office",
+      "institution_rule": "registry rule www.vd.ch"
     },
     {
       "document_id": "doc-8d3859d1014df2992f75",
@@ -33952,6 +35834,12 @@
       "source_url": "https://www.zh.ch/de/mobilitaet/fahrzeuge-kontrollschilder/umzug-melden.html",
       "institution_id": "zh-strassenverkehrsamt",
       "institution_rule": "registry rule www.zh.ch/de/mobilitaet/"
+    },
+    {
+      "document_id": "doc-8f24e9474861251a3470",
+      "source_url": "https://www4.ti.ch/decs/cosa-facciamo/calendario-scolastico/2026-2027",
+      "institution_id": "ti-office",
+      "institution_rule": "registry rule www4.ti.ch"
     },
     {
       "document_id": "doc-9108317b2ccbef351701",
@@ -34170,6 +36058,18 @@
       "institution_rule": "registry rule www.zas.admin.ch"
     },
     {
+      "document_id": "doc-ac07ed9e0adcf7733be7",
+      "source_url": "https://ai.ch/themen/bildung/eltern-und-schule/ferienplan/ftw-simplelayout-filelistingblock/ferienplan-ai_2026-2029.pdf/download",
+      "institution_id": "catalogue-ai-school-holidays",
+      "institution_rule": "catalogue source ai-school-holidays"
+    },
+    {
+      "document_id": "doc-ad8ea3ece5a5571e7061",
+      "source_url": "https://www.schulen-aargau.ch/regelschule/schulorganisation/planung-ressourcen/stunden-ferienplanung",
+      "institution_id": "catalogue-ag-school-holidays",
+      "institution_rule": "catalogue source ag-school-holidays"
+    },
+    {
       "document_id": "doc-af5d9087266c17e8fe30",
       "source_url": "https://www.sem.admin.ch/sem/de/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
       "institution_id": "ch-sem",
@@ -34230,6 +36130,18 @@
       "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
+      "document_id": "doc-b479d922978177220567",
+      "source_url": "https://volksschulbildung.lu.ch/syst_schulen/ss_schulsystem/ss_syst_ferien",
+      "institution_id": "catalogue-lu-school-holidays",
+      "institution_rule": "catalogue source lu-school-holidays"
+    },
+    {
+      "document_id": "doc-b5ce884470e08165049b",
+      "source_url": "https://www.ge.ch/vacances-scolaires-jours-feries/vacances-scolaires-2027-2028",
+      "institution_id": "ge-office",
+      "institution_rule": "registry rule www.ge.ch"
+    },
+    {
       "document_id": "doc-b78c155affebebdb3ac3",
       "source_url": "https://www.bag.admin.ch/de/krankenversicherung-leistungen-und-tarife",
       "institution_id": "ch-bag",
@@ -34260,6 +36172,12 @@
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung"
     },
     {
+      "document_id": "doc-bab5b6d448e11e089463",
+      "source_url": "https://www.ne.ch/themes/scolarite-et-formation/calendrier-et-vacances-scolaires",
+      "institution_id": "ne-office",
+      "institution_rule": "registry rule www.ne.ch"
+    },
+    {
       "document_id": "doc-bc31bd2012fbdd654c09",
       "source_url": "https://www.bsv.admin.ch/de/eo-bei-mutterschaft",
       "institution_id": "ch-bsv",
@@ -34270,6 +36188,12 @@
       "source_url": "https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-fluechtlinge-mit-asyl-beantragen.html",
       "institution_id": "zh-migrationsamt",
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
+    },
+    {
+      "document_id": "doc-bd8de67ee7b289c4e582",
+      "source_url": "https://ai.ch/themen/bildung/eltern-und-schule/ferienplan",
+      "institution_id": "catalogue-ai-school-holidays",
+      "institution_rule": "catalogue source ai-school-holidays"
     },
     {
       "document_id": "doc-be1e21dbb97154b03ae1",
@@ -34554,6 +36478,12 @@
       "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
+      "document_id": "doc-dc236f8ebaa114f9d103",
+      "source_url": "https://av.tg.ch/themen/ferienplan.html/13415",
+      "institution_id": "catalogue-tg-school-holidays",
+      "institution_rule": "catalogue source tg-school-holidays"
+    },
+    {
       "document_id": "doc-dccf33fdeb5e8071c812",
       "source_url": "https://www.sem.admin.ch/sem/en/home/themen/aufenthalt.html",
       "institution_id": "ch-sem",
@@ -34596,6 +36526,12 @@
       "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
+      "document_id": "doc-e09073daa7f1d2628967",
+      "source_url": "https://zg.ch/de/bildung/bildungssystem/schulferien",
+      "institution_id": "zg-office",
+      "institution_rule": "registry rule zg.ch"
+    },
+    {
       "document_id": "doc-e0dd90106b3c8eff3235",
       "source_url": "https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/beratung-vor-ort.html",
       "institution_id": "zh-sva",
@@ -34614,10 +36550,22 @@
       "institution_rule": "registry rule svazurich.ch"
     },
     {
+      "document_id": "doc-e1eb503483b47c350410",
+      "source_url": "https://so.ch/fileadmin/internet/dbk/dbk-vsa/Schulsystem/Ferienplan/Schulferienplan_2027_2028.pdf",
+      "institution_id": "so-office",
+      "institution_rule": "registry rule so.ch"
+    },
+    {
       "document_id": "doc-e30a59b82e3b4a5c109d",
       "source_url": "https://www.stadt-zuerich.ch/de/bildung/volksschule/schullaufbahn/einschulung.html",
       "institution_id": "zh-261-schulamt",
       "institution_rule": "registry rule www.stadt-zuerich.ch/de/bildung/volksschule"
+    },
+    {
+      "document_id": "doc-e359a74600c284917a73",
+      "source_url": "https://www.jura.ch/Htdocs/Files/v/ca2ea0d3a2bfa03c9e1eb6e8eb38dc9331cc48d72921290dcbd8005fd551eb81.pdf/Vacances-scolaires.pdf",
+      "institution_id": "ju-office",
+      "institution_rule": "registry rule www.jura.ch"
     },
     {
       "document_id": "doc-e47f41de157a031ee350",
@@ -34692,10 +36640,22 @@
       "institution_rule": "registry rule www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit"
     },
     {
+      "document_id": "doc-ea71df7c8f0a65729db4",
+      "source_url": "https://www.vd.ch/formation/jours-feries-et-vacances-scolaires/jours-feries-et-vacances-scolaires-2026",
+      "institution_id": "vd-office",
+      "institution_rule": "registry rule www.vd.ch"
+    },
+    {
       "document_id": "doc-ea8ce303e3ee8fb3a83a",
       "source_url": "https://www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit/arbeitslosenentschaedigung.html",
       "institution_id": "zh-awa",
       "institution_rule": "registry rule www.zh.ch/de/wirtschaft-arbeit/stellensuche-arbeitslosigkeit"
+    },
+    {
+      "document_id": "doc-eb029f233a55e3ec9866",
+      "source_url": "https://www.vs.ch/de/web/se/plans-de-scolarite",
+      "institution_id": "vs-office",
+      "institution_rule": "registry rule www.vs.ch"
     },
     {
       "document_id": "doc-eb17cee7f400a35afcc8",
@@ -34764,6 +36724,12 @@
       "institution_rule": "registry rule www.fedlex.admin.ch"
     },
     {
+      "document_id": "doc-f177cf3144433b6362c8",
+      "source_url": "https://volksschulbildung.lu.ch/-/media/Volksschulbildung/Dokumente/syst_schulen/ss_schulsystem/schulferien/feriendaten_volksschulen_kt_luzern.pdf?rev=3c8d9abafea74ccca4dc2772f3399bf8",
+      "institution_id": "catalogue-lu-school-holidays",
+      "institution_rule": "catalogue source lu-school-holidays"
+    },
+    {
       "document_id": "doc-f2a82e55188699dfb2c9",
       "source_url": "https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta.html",
       "institution_id": "ch-sem",
@@ -34810,6 +36776,12 @@
       "source_url": "https://migrationsamt.sh.ch/erwerbstatige-eu-efta",
       "institution_id": "sh-office",
       "institution_rule": "registry rule migrationsamt.sh.ch"
+    },
+    {
+      "document_id": "doc-f7342b1cfc928dd69209",
+      "source_url": "https://av.tg.ch/public/upload/assets/179040/Ferienplan_SJ_2026_2027.pdf?fp=1",
+      "institution_id": "catalogue-tg-school-holidays",
+      "institution_rule": "catalogue source tg-school-holidays"
     },
     {
       "document_id": "doc-f90a4619e9f1d8370d4b",
@@ -34873,7 +36845,7 @@
     }
   ],
   "basis_kinds": {
-    "guidance": 954,
+    "guidance": 1020,
     "act": 107,
     "ordinance": 47,
     "summary": 50,
@@ -34889,9 +36861,9 @@
     "aliases": 115
   },
   "validation_issues": [],
-  "content_sha256": "3100356dd26d1751ac88601c2cd10daf38eb6691ca42ec51715e8832d5770bd9",
-  "release_sha256": "d3d924a99b3d33c6176a35e989ad15f2c7758fac451e66d8ad62b67e829e3505",
-  "curation_sha256": "0564bd341918d4beba7918abb0f2cf001231f10df0124ae7b7dde7155f94f645",
-  "text_index_sha256": "18e7ddd3e1baac8680a3ddece5860c2a100e61ba64855c354d976d2c65b52b05",
-  "acceptance_suite_sha256": "d57a958e263d4a3fe6c6d1804b0779d7a0561ec63453b223dd061af43e89288f"
+  "content_sha256": "f8264c6ff2ba5d1a1b7bd92524a6175ebf8eae3130f7dc653930589001f6c26b",
+  "release_sha256": "edac0312d4238eafabe67bca4faca5dec843ab0bd5ec15ef65ea8b6022c7fc90",
+  "curation_sha256": "de92555125c3c9965074f6ba420d377945bb1213bb497ab9acd4a22b04d5b002",
+  "text_index_sha256": "5c18e853d4ae8bca70f6e563dbbd9845dbf26239d9648f492f2771587ca18c30",
+  "acceptance_suite_sha256": "a4058a69cb1a4891cc4e5bc69c934da355fbd2b9336b03fe6ccfe3bf35a033f5"
 }

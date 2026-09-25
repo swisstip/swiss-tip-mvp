@@ -2966,29 +2966,28 @@ cases:
   label: 'English: banned dog breeds'
   question: Which dog breeds are banned in Zurich?
   language: en
-  expected_answer: Search finds city-zurich-dog-registration with a strong match; resolve serves the list
+  expected_answer: Search finds zh-banned-dog-breeds with a strong match; resolve serves the list
     II breeds, Rottweiler since 2025.
   steps:
   - search:
       query: Which dog breeds are banned in Zurich?
-      expect_concept: city-zurich-dog-registration
+      expect_concept: zh-banned-dog-breeds
       expect_strength: strong
   - resolve:
       concept_ids:
-      - city-zurich-dog-registration
+      - zh-banned-dog-breeds
       jurisdiction:
         canton_code: CH-ZH
-        municipality_id: CH-ZH-261
       expect_status:
-        city-zurich-dog-registration: SUPPORTED
+        zh-banned-dog-breeds: SUPPORTED
   claims:
   - claim: banned dog breeds
-    concept: city-zurich-dog-registration
-    fact_id: city-zurich-dog-registration-5
+    concept: zh-banned-dog-breeds
+    fact_id: zh-banned-dog-breeds-2
     statement_contains:
     - Rottweiler (since 1 January 2025)
     excerpt_contains:
-    - Seit dem 01. Januar 2025 sind Rottweiler auf der Rassentypliste
+    - Rottweiler (seit 1. Januar 2025)
 - case_id: Q-EN-36
   label: 'English: fee for an organic waste container'
   question: How much is the fee for an organic waste bin in Zurich?

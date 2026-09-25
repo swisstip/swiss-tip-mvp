@@ -1,6 +1,6 @@
 # Coverage
 
-**Last update:** 24 September 2026
+**Last update:** 25 September 2026
 
 What the Swiss TIP MCP server serves today, and what it does not. This file
 describes the committed release that the server loads by default; it is
@@ -10,16 +10,16 @@ submission is `mvp-zurich`; `mvp-wallisellen` was a proof of concept that a
 second, municipal pack can be built with the same tooling, is frozen at its
 attested release and is not extended, tested or documented further.
 
-**Release:** `mvp-zurich-2026-09-24-v5` (pack `mvp-zurich`, KB1)<br>
-**Content digest:** `3100356dd26d1751ac88601c2cd10daf38eb6691ca42ec51715e8832d5770bd9`<br>
-**Snapshot date:** 24 September 2026, the latest access date of a cited page
-(2 of the 338 were saved on 24 September, 66 on 23 September, 67 on 22 September, 10 on 19
+**Release:** `mvp-zurich-2026-09-25-v3` (pack `mvp-zurich`, KB1)<br>
+**Content digest:** `f8264c6ff2ba5d1a1b7bd92524a6175ebf8eae3130f7dc653930589001f6c26b`<br>
+**Snapshot date:** 25 September 2026, the latest access date of a cited page
+(37 of the 375 were saved on 25 September, 2 on 24 September, 66 on 23 September, 67 on 22 September, 10 on 19
 September, 25 on 18 September, 47 on 17 September, 49 on 15 September, 66 on
 11 September and 6 on 10 or 14 September); maximum age 60 days, stale from
-23 November 2026<br>
-**Contents:** 20 topics, 214 concepts, 1,279 facts, 1,538 evidence excerpts
-(1,370 German, 114 English, 43 French, 11 Italian), 338 cited documents<br>
-**Review:** all 1,279 facts are `human-reviewed` by one named reviewer, confirmed
+24 November 2026<br>
+**Contents:** 21 topics, 238 concepts, 1,345 facts, 1,615 evidence excerpts
+(1,430 German, 114 English, 57 French, 14 Italian), 375 cited documents<br>
+**Review:** all 1,345 facts are `human-reviewed` by one named reviewer, confirmed
 in the console: the 104 of the residence and contacts topics on 14 September
 2026, the 149 of the five topics added on 15 September 2026 that day, the
 37 of the 13 `fza-*` concepts, drafted from the Agreement on the Free Movement
@@ -56,7 +56,11 @@ to state, then a defect in a publisher's own page that the curation preserves
 rather than hides, then the 22 facts carrying a number. The 5 facts of
 `city-lugano-waste-disposal`, added on 23 September 2026, were confirmed on
 24 September 2026, and the 6 of `city-basel-waste-collection` and
-`city-st-gallen-waste-collection` the same day. Not
+`city-st-gallen-waste-collection` the same day. The 7 facts of
+`zh-banned-dog-breeds`, added on 25 September 2026, were confirmed in one bulk
+group that day, and the 57 of the school-holiday topic in two bulk groups the
+same day; the 11 of them restated for the whole canton and 2 new ones were
+confirmed again in one bulk group that day. Not
 a legal review (see [LIMITATIONS.md](LIMITATIONS.md))<br>
 **Places:** the release embeds a place register, so a caller names the
 user's place instead of a code: Switzerland, the 26 cantons and the 2,110
@@ -64,13 +68,13 @@ municipalities of the Federal Statistical Office's register of
 municipalities (snapshot of 18 September 2026), with 115 other-language
 names on 50 of them (see "Jurisdictions and languages")<br>
 **Readiness:** the release is **attested**. `readiness.json` names
-`mvp-zurich-2026-09-24-v5`, attested on 24 September 2026 by the reviewer who
-confirmed its 1,279 facts, recording the content digest above and the digest of
+`mvp-zurich-2026-09-25-v3`, attested on 25 September 2026 by the reviewer who
+confirmed its 1,345 facts, recording the content digest above and the digest of
 the acceptance suite; all six readiness gates passed. It supersedes
-`mvp-zurich-2026-09-23-v19`, so the server with `--require-ready` and the pack
-image now serve registration on arrival in all 26 cantons as well as the
-customs, health insurance, work and unemployment, and AHV waves; stale from
-22 November 2026. No
+`mvp-zurich-2026-09-24-v5` and adds the Canton of Zurich's banned dog breeds
+and the school holidays of 23 cantons (v2), then serves the main towns' dates
+for their whole canton (v3);
+stale from 24 November 2026. No
 graded
 live-caller session covers the `fza-*` concepts, the office contacts, the
 daily-life topics, the cross-jurisdiction cases, entry and visas, voting
@@ -195,9 +199,9 @@ mobile table shows another fee), nor for the 7 of the SEM citizenship FAQ,
 which has no English version. The SVA Zurich pages declare no language; the
 release records them as German (`page_languages`). A question may be asked in
 German, Swiss German, English, French, Italian or Romansh. Concept discovery
-carries the search terms copied verbatim from the cited excerpts - 1,708
-German on 212 of the 214 concepts, 85 English on 25, 28 French on 5 and 16
-Italian on 6, as `get_coverage` reports them - alongside authored everyday
+carries the search terms copied verbatim from the cited excerpts - 1,823
+German on 231 of the 238 concepts, 85 English on 25, 59 French on 10 and 22
+Italian on 7, as `get_coverage` reports them - alongside authored everyday
 words in German and English, at least one English and one German sample
 question on every concept (the build checks it), and three Zurich German
 spellings. The server therefore names German and English as its query
@@ -376,13 +380,14 @@ served until the end of their year. Since release `mvp-zurich-2026-09-17-v2`
 the City of Zurich naturalisation office's telephone hours are served too,
 read from a data table of its page.
 
-### First steps and life in the City of Zurich (`newcomer`) - 7 concepts
+### First steps and life in the City of Zurich (`newcomer`) - 8 concepts
 
 | Concept | Subject | Jurisdiction | Facts |
 | --- | --- | --- | ---: |
 | `city-zurich-first-steps` | First steps after moving to the City of Zurich | CH-ZH-261 | 7 |
 | `city-zurich-dog-registration` | Registering a dog in the City of Zurich | CH-ZH-261 | 5 |
 | `zh-dog-keeping` | Keeping a dog in the Canton of Zurich | CH-ZH | 5 |
+| `zh-banned-dog-breeds` | Banned dog breeds in the Canton of Zurich (breed-type list II, Rottweiler) | CH-ZH | 7 |
 | `city-zurich-kindergarten` | Kindergarten and school entry in the City of Zurich | CH-ZH-261 | 7 |
 | `city-zurich-school-holidays` | School holidays in the City of Zurich | CH-ZH-261 | 3 |
 | `city-zurich-school-languages` | Public school explained in other languages (City of Zurich) | CH-ZH-261 | 2 |
@@ -391,10 +396,50 @@ read from a data table of its page.
 The first-steps checklist of the City of Zurich names what a newcomer
 arranges beyond registration (electricity and water, vehicles, health
 insurance, the service booklet, self-employment, school); the dog concepts
-add the city's registration and the canton's training duty of 1 June 2025;
+add the city's registration, the canton's training duty of 1 June 2025 and
+the canton's ban of the breeds of list II, the Rottweiler among them since
+1 January 2025, which also bars moving into the canton with such a dog;
 schooling is served as kindergarten entry, the school holidays of 2026/27
 and 2027/28 and the city's information in other languages, not as the
 school system.
+
+### School holidays of the cantons (`school-holidays`) - 23 concepts
+
+| Concept | Subject | Jurisdiction | Facts |
+| --- | --- | --- | ---: |
+| `zh-school-holidays` | Canton of Zurich: who sets the holidays; Mittelschulen and Berufsfachschulen | CH-ZH | 3 |
+| `be-school-holidays` | Canton of Bern: who sets the holidays and the frame, no dates | CH-BE | 2 |
+| `lu-school-holidays` | Canton of Lucerne: the frame, the town of Luzern's dates 2026/27, the canton's plan 2027/28 | CH-LU | 3 |
+| `ur-school-holidays` | Canton of Uri: who sets the holidays, no dates | CH-UR | 1 |
+| `sz-school-holidays` | Canton of Schwyz: who sets the plans; the town of Schwyz's dates 2026/27 | CH-SZ | 2 |
+| `ow-school-holidays` | Canton of Obwalden: the principles; the plan without Engelberg 2026/27; Engelberg's own plan | CH-OW | 3 |
+| `gl-school-holidays` | Canton of Glarus: 2026/27 and 2027/28 | CH-GL | 3 |
+| `zg-school-holidays` | Canton of Zug: 2026/27 and 2027/28 | CH-ZG | 3 |
+| `fr-school-holidays` | Canton of Fribourg: the three calendars; the general calendar 2026/27 and 2027/28 | CH-FR | 3 |
+| `so-school-holidays` | Canton of Solothurn: the town of Solothurn's dates 2026/27 and 2027/28 | CH-SO | 3 |
+| `bs-school-holidays` | Canton of Basel-Stadt: 14 weeks, shared with Basel-Landschaft, no dates | CH-BS | 2 |
+| `ar-school-holidays` | Canton of Appenzell Ausserrhoden: indicative dates 2026/27 and 2027/28 | CH-AR | 3 |
+| `ai-school-holidays` | Canton of Appenzell Innerrhoden: the inner part's dates; the outer part differs | CH-AI | 3 |
+| `sg-school-holidays` | Canton of St. Gallen: 2026/27 and 2027/28 without the sports holidays | CH-SG | 3 |
+| `gr-school-holidays` | Canton of Graubuenden: plans by school authority; Chur's dates 2026/27 and 2027/28 school start | CH-GR | 3 |
+| `ag-school-holidays` | Canton of Aargau: the uniform weeks of 2026/27 and 2027/28 | CH-AG | 3 |
+| `tg-school-holidays` | Canton of Thurgau: 2026/27 and 2027/28 | CH-TG | 3 |
+| `ti-school-holidays` | Canton of Ticino: the school calendar 2026/27 | CH-TI | 2 |
+| `vd-school-holidays` | Canton of Vaud: 2026/27 and 2027/28 | CH-VD | 2 |
+| `vs-school-holidays` | Canton of Valais: the published plans and where to ask, no dates | CH-VS | 2 |
+| `ne-school-holidays` | Canton of Neuchatel: 2026/27 and 2027/28 | CH-NE | 2 |
+| `ge-school-holidays` | Canton of Geneva: 2026/27 and 2027/28 | CH-GE | 2 |
+| `ju-school-holidays` | Canton of Jura: who sets the holidays; 2026/27 and 2027/28 | CH-JU | 3 |
+
+Each canton's school-holiday page and the documents it links are the
+sources, read on 25 September 2026. Where a canton publishes one calendar,
+the dates are served for the canton. Where its municipalities or regions
+set their own, the main town's dates (or the majority calendar's) are
+served for the whole canton, each statement naming whose dates they are,
+with a canton-wide fact that other municipalities or regions may differ. Basel-Landschaft, Schaffhausen
+and Nidwalden have no concept, and seven cantons are served without full
+dates (see [LIMITATIONS.md](LIMITATIONS.md), "Gaps in the school holidays
+of 25 September 2026").
 
 ### Waste and recycling in the City of Zurich, collection in Basel and St. Gallen, and hand-over in Lugano (`waste`) - 10 concepts
 

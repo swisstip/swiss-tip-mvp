@@ -7464,6 +7464,210 @@ cases:
   answer:
     criteria: [A1, A2, A3, A4, A5, A6]
     must_mention: {area: Abfuhrgebiet|collection area, weekly: wöchentlich|jede Woche|weekly}
+- case_id: UAT-120
+  label: 'Moving to the City of Zurich with a Rottweiler: a banned breed'
+  spec: docs/product/user-acceptance-tests.md#uat-120-moving-to-zurich-with-a-rottweiler
+  question: I plan to bring my Rottweiler from Pargue to cita of Zuerich - what is the procedure?
+  expected_answer: The Rottweiler has been on breed-type list II of the Canton of Zurich since 1 January 2025, and
+    nobody may move into the canton with a dog of that list, crosses with at least ten percent included, and no test
+    or temperament assessment makes an exception, so there is no procedure for bringing it; the registration and
+    customs steps do not apply. The Canton of Zurich page on banned dog breeds is cited.
+  trap: Listing the registration steps (dog control within ten days, AMICUS, the courses) and the import rules as if
+    the dog could be brought, or naming the ban only after the procedure. The misspellings Pargue and cita must not
+    stop the search.
+  steps:
+  - search:
+      query: I plan to bring my Rottweiler from Pargue to cita of Zuerich - what is the procedure?
+      jurisdiction: {city: Zurich}
+      expect_concept: zh-banned-dog-breeds
+      expect_strength: strong
+  - resolve:
+      concept_ids: [zh-banned-dog-breeds, city-zurich-dog-registration]
+      jurisdiction: {city: Zurich}
+      context: {arrival_origin: abroad}
+      expect_status:
+        zh-banned-dog-breeds: SUPPORTED
+        city-zurich-dog-registration: SUPPORTED
+  claims:
+  - claim: Nobody may move into the canton with a dog of breed-type list II
+    concept: zh-banned-dog-breeds
+    fact_id: zh-banned-dog-breeds-1
+    statement_contains: ['nobody may move into the Canton of Zurich with a dog of these breeds']
+    excerpt_contains: ['Mit einem Hund dieser Rassen darf man nicht in den Kanton Zürich ziehen']
+  - claim: The Rottweiler is on the list since 1 January 2025
+    concept: zh-banned-dog-breeds
+    fact_id: zh-banned-dog-breeds-2
+    statement_contains: ['Rottweiler (since 1 January 2025)']
+    excerpt_contains: ['Rottweiler (seit 1. Januar 2025)']
+  - claim: No test makes an exception
+    concept: zh-banned-dog-breeds
+    fact_id: zh-banned-dog-breeds-3
+    statement_contains: ['no test or temperament assessment']
+    excerpt_contains: ['Man kann keine Prüfung oder Wesensbeurteilung machen']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      banned: banned|prohibited|not allowed|not permitted|cannot|may not|verboten
+      rottweiler: Rottweiler
+      list_ii: list II|Rassetypenliste|since 1 January 2025|seit dem 1\. Januar 2025|seit 1\. Januar 2025
+    must_not:
+      register_as_if_allowed: (?:you (?:must|need to|have to)|first,?) register (?:the|your) (?:dog|Rottweiler)
+    cites:
+      banned_breeds_page: zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen
+    resolved: [zh-banned-dog-breeds]
+- case_id: UAT-121
+  label: 'Moving to Winterthur with a Rottweiler: the cantonal ban outside the City of Zurich'
+  spec: docs/product/user-acceptance-tests.md#uat-121-moving-to-winterthur-with-a-rottweiler
+  question: We are moving from Germany to Winterthur with our Rottweiler. Is that allowed?
+  expected_answer: No. The ban of breed-type list II is cantonal and applies in Winterthur as everywhere in the Canton
+    of Zurich; the Rottweiler has been on the list since 1 January 2025 and nobody may move into the canton with one.
+    The Canton of Zurich page on banned dog breeds is cited; nothing published for the City of Zurich only is served.
+  trap: Answering that the ban is a City of Zurich rule, or giving the City of Zurich's registration steps for
+    Winterthur.
+  steps:
+  - search:
+      query: We are moving from Germany to Winterthur with our Rottweiler. Is that allowed?
+      jurisdiction: {city: Winterthur}
+      expect_concept: zh-banned-dog-breeds
+      expect_strength: strong
+  - resolve:
+      concept_ids: [zh-banned-dog-breeds]
+      jurisdiction: {city: Winterthur}
+      expect_status:
+        zh-banned-dog-breeds: SUPPORTED
+  claims:
+  - claim: Nobody may move into the canton with a dog of breed-type list II
+    concept: zh-banned-dog-breeds
+    fact_id: zh-banned-dog-breeds-1
+    statement_contains: ['nobody may move into the Canton of Zurich with a dog of these breeds']
+    excerpt_contains: ['Mit einem Hund dieser Rassen darf man nicht in den Kanton Zürich ziehen']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6, A10]
+    must_mention:
+      banned: banned|prohibited|not allowed|not permitted|cannot|may not|verboten
+      rottweiler: Rottweiler
+    cites:
+      banned_breeds_page: zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen
+    resolved: [zh-banned-dog-breeds]
+- case_id: UAT-122
+  label: 'Geneva: the autumn holidays 2026'
+  spec: docs/product/user-acceptance-tests.md#uat-122-autumn-holidays-in-geneva
+  question: When are the autumn school holidays 2026 in Geneva?
+  expected_answer: Monday 19 October to Friday 23 October 2026, one week, from the Canton of Geneva's page of the
+    school year 2026/27, which is canton-wide.
+  trap: Two weeks of autumn holidays in October, as in most German-speaking cantons, or the dates of another canton.
+  steps:
+  - search:
+      query: When are the autumn school holidays 2026 in Geneva?
+      jurisdiction: {city: Genève}
+      expect_concept: ge-school-holidays
+      expect_strength: strong
+  - resolve:
+      concept_ids: [ge-school-holidays]
+      jurisdiction: {city: Genève}
+      expect_status: {ge-school-holidays: SUPPORTED}
+  claims:
+  - claim: Autumn holidays 19 to 23 October 2026
+    concept: ge-school-holidays
+    fact_id: ge-school-holidays-1
+    statement_contains: ['autumn holidays 19 October to 23 October 2026']
+    excerpt_contains: ["Vacances d'automne du lundi 19 octobre 2026 au vendredi 23 octobre 2026"]
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      dates: '19\.?\s*(?:October|octobre|Oktober|10\.).{0,40}23'
+    cites: {geneva_page: ge.ch/vacances-scolaires-jours-feries/vacances-scolaires-2026-2027}
+    resolved: [ge-school-holidays]
+- case_id: UAT-123
+  label: 'Lucerne: the summer holidays 2027 of the town'
+  spec: docs/product/user-acceptance-tests.md#uat-123-summer-holidays-in-the-town-of-lucerne
+  question: Wann beginnen die Sommerferien 2027 in der Stadt Luzern?
+  expected_answer: Saturday 3 July 2027, until 15 August 2027, from the town of Luzern's row of the cantonal plan by
+    municipality; the dates differ by municipality in the Canton of Lucerne.
+  trap: One date for the whole canton, although Lucerne's municipalities set their own holidays.
+  language: de
+  steps:
+  - search:
+      query: Wann beginnen die Sommerferien 2027 in der Stadt Luzern?
+      jurisdiction: {city: Luzern}
+      expect_concept: lu-school-holidays
+      expect_strength: strong
+  - resolve:
+      concept_ids: [lu-school-holidays]
+      jurisdiction: {city: Luzern}
+      expect_status: {lu-school-holidays: SUPPORTED}
+  claims:
+  - claim: Summer holidays of the town from 3 July 2027
+    concept: lu-school-holidays
+    fact_id: lu-school-holidays-2
+    statement_contains: ['Sommerferien 03.07.2027 to 15.08.2027']
+    excerpt_contains: ['Luzern 17.08.2026 03.07.2027']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      start: '3\.\s*(?:Juli|July|7\.)|03\.07\.2027'
+    resolved: [lu-school-holidays]
+- case_id: UAT-124
+  label: 'Emmen: the town of Luzern''s dates, labelled, for another municipality of Lucerne'
+  spec: docs/product/user-acceptance-tests.md#uat-124-school-holidays-in-emmen
+  question: When are the autumn school holidays 2026 in Emmen?
+  expected_answer: The release serves the town of Luzern's dates for the whole Canton of Lucerne, labelled as the
+    town's (autumn holidays 26.9. to 11.10.2026), with the canton's statement that each municipality sets its own
+    holidays; the answer gives Luzern's dates as Luzern's and says that Emmen's own dates can differ.
+  trap: Presenting the town of Luzern's dates as Emmen's own, or giving no date at all.
+  steps:
+  - resolve:
+      concept_ids: [lu-school-holidays]
+      jurisdiction: {city: Emmen}
+      expect_status: {lu-school-holidays: SUPPORTED}
+  claims:
+  - claim: The municipalities set their own holidays
+    concept: lu-school-holidays
+    fact_id: lu-school-holidays-1
+    statement_contains: ['school holidays are set per municipality']
+  - claim: The town of Luzern's dates, labelled as the town's
+    concept: lu-school-holidays
+    fact_id: lu-school-holidays-2
+    statement_contains: ['dates of the town of Luzern', 'autumn holidays 26.09.2026 to 11.10.2026']
+    excerpt_contains: ['Luzern 17.08.2026 03.07.2027']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6, A10]
+    must_mention:
+      luzern: Luzern|Lucerne
+      may_differ: differ|own dates|set (?:their|its) own|abweich|eigene
+    resolved: [lu-school-holidays]
+- case_id: UAT-125
+  label: 'Scuol, asked in Romansh: Chur''s dates for Graubuenden, labelled'
+  spec: docs/product/user-acceptance-tests.md#uat-125-autumn-holidays-in-scuol
+  question: Cura èn las vacanzas d'atun 2026 per la scola da Scuol?
+  expected_answer: In Romansh, the autumn holidays of Chur, the main town, 10.10. to 25.10.2026, which the release
+    serves for the whole Canton of Graubuenden, and that each school authority has its own plan, so Scuol's dates
+    can differ and the canton's plan is the source to check.
+  trap: Presenting Chur's dates as Scuol's own, answering in another language, or giving no date.
+  language: rm
+  steps:
+  - search:
+      query: Herbstferien 2026 Schule Scuol
+      translated: true
+      retrieval: hybrid
+      jurisdiction: {city: Scuol}
+      expect_concept: gr-school-holidays
+      expect_strength: strong
+  - resolve:
+      concept_ids: [gr-school-holidays]
+      jurisdiction: {city: Scuol}
+      expect_status: {gr-school-holidays: SUPPORTED}
+  claims:
+  - claim: Chur's autumn holidays, labelled as Chur's
+    concept: gr-school-holidays
+    fact_id: gr-school-holidays-2
+    statement_contains: ['dates of Chur', 'autumn holidays 10.10. to 25.10.2026']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6, A10]
+    must_mention:
+      chur: Chur|Cuira
+      dates: '10\.\s?10\.'
+    resolved: [gr-school-holidays]
 - case_id: LOOKUP-1
   label: Next organic waste collection in 8001
   spec: dataset-connectors
@@ -7579,3 +7783,17 @@ cases:
       jurisdiction: {canton_code: CH-UR}
       expect_status: {cantonal-online-services: OUT_OF_COVERAGE}
       expect_gap: {cantonal-online-services: jurisdiction_not_covered}
+- case_id: DECLINE-16
+  label: No school holidays published for Basel-Landschaft
+  spec: docs/product/user-acceptance-tests.md#decline-cases
+  question: Wann sind die Herbstferien 2026 in Liestal?
+  expected_answer: The release publishes no school holidays for Basel-Landschaft (its page refused the download), so
+    resolving the neighbouring Basel-Stadt concept for Liestal returns OUT_OF_COVERAGE with jurisdiction_not_covered;
+    the answer says the release does not cover it rather than borrowing Basel-Stadt's statements.
+  language: de
+  steps:
+  - resolve:
+      concept_ids: [bs-school-holidays]
+      jurisdiction: {city: Liestal}
+      expect_status: {bs-school-holidays: OUT_OF_COVERAGE}
+      expect_gap: {bs-school-holidays: jurisdiction_not_covered}

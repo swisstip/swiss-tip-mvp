@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-curation-coverage-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-24-v5",
-  "content_sha256": "3100356dd26d1751ac88601c2cd10daf38eb6691ca42ec51715e8832d5770bd9",
-  "text_index_sha256": "18e7ddd3e1baac8680a3ddece5860c2a100e61ba64855c354d976d2c65b52b05",
+  "release_id": "mvp-zurich-2026-09-25-v3",
+  "content_sha256": "f8264c6ff2ba5d1a1b7bd92524a6175ebf8eae3130f7dc653930589001f6c26b",
+  "text_index_sha256": "5c18e853d4ae8bca70f6e563dbbd9845dbf26239d9648f492f2771587ca18c30",
   "dispositions_sha256": "4a4939b3e0fd4a6bcb57e36d496e8adf31b35b33fc698cf9e56db28a68158ae8",
   "dispositions": 216,
   "policy": "report",
-  "today": "2026-09-24",
-  "generated_at": "2026-09-24T12:53:13.784001+00:00",
+  "today": "2026-09-25",
+  "generated_at": "2026-09-25T07:25:01.824714+00:00",
   "rules": {
     "reference_kinds": [
       "plugin-document"
@@ -18,17 +18,17 @@
     "repeated_match_share": 0.5
   },
   "counts": {
-    "candidates": 532,
+    "candidates": 580,
     "units": {
-      "section": 513,
+      "section": 561,
       "document": 17,
       "rolled_up": 2
     },
-    "content_sections": 3423,
-    "cited_sections": 864,
+    "content_sections": 3641,
+    "cited_sections": 931,
     "dispositioned_sections": 1251,
-    "unclassified_sections": 1308,
-    "boilerplate_sections": 160,
+    "unclassified_sections": 1459,
+    "boilerplate_sections": 161,
     "repeated_texts": 16,
     "repeated_by_citation": {
       "cited_nowhere": 11,
@@ -36,10 +36,10 @@
       "cited_once": 3
     },
     "documents": {
-      "unclassified": 41,
-      "empty": 44,
-      "partly_cited": 138,
-      "cited": 85,
+      "unclassified": 51,
+      "partly_cited": 158,
+      "cited": 98,
+      "empty": 49,
       "cited_and_dispositioned": 73,
       "dispositioned": 151
     },
@@ -125,6 +125,68 @@
       ]
     },
     {
+      "document_id": "doc-bd8de67ee7b289c4e582",
+      "source_url": "https://ai.ch/themen/bildung/eltern-und-schule/ferienplan",
+      "title": "Ferienplan und schulfreie Tage — Appenzell Innerrhoden",
+      "source_ids": [
+        "ai-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 3,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 2,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0005",
+          "heading_path": [
+            "Ferienplan und schulfreie Tage",
+            "Zuständige Stelle"
+          ],
+          "first_block": 33,
+          "last_block": 38,
+          "characters": 83,
+          "section_ids": [
+            "section-0005"
+          ]
+        },
+        {
+          "section_id": "section-0006",
+          "heading_path": [
+            "Ferienplan und schulfreie Tage"
+          ],
+          "first_block": 39,
+          "last_block": 49,
+          "characters": 285,
+          "section_ids": [
+            "section-0006"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-ac07ed9e0adcf7733be7",
+      "source_url": "https://ai.ch/themen/bildung/eltern-und-schule/ferienplan/ftw-simplelayout-filelistingblock/ferienplan-ai_2026-2029.pdf/download",
+      "title": "Appenzell Innerrhoden: school holidays, document 1",
+      "source_ids": [
+        "ai-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
       "document_id": "doc-34b1360ccad23a5bcac2",
       "source_url": "https://ai.clex.ch/api/de/versions/1133/pdf_file_with_annexes",
       "title": "Appenzell Innerrhoden - Verordnung zum Registerharmonisierungsgesetz (GS 172.910), art. 7",
@@ -159,6 +221,200 @@
       "dispositions": {},
       "status": "empty",
       "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-1e60f0fe770614df362d",
+      "source_url": "https://ar.ch/fileadmin/user_upload/Departement_Bildung_Kultur/Amt_fuer_Volksschule/eHandbuch_Volksschule/2026-06-23_FerienrichtdatenVolksschulenAppenzellAusserrhoden_v1.3.pdf",
+      "title": "Appenzell Ausserrhoden: school holidays, document 1",
+      "source_ids": [
+        "ar-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-3f726984bb17fa45fae2",
+      "source_url": "https://ar.ch/verwaltung/departement-bildung-und-kultur/amt-fuer-volksschule-und-sport/ehandbuch-volksschule/schulbetrieb/regelungen/",
+      "title": "Regelungen - Appenzell Ausserrhoden",
+      "source_ids": [
+        "ar-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 13,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 12,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0009",
+          "heading_path": [
+            "Inhalt",
+            "Pfadnavigation"
+          ],
+          "first_block": 285,
+          "last_block": 292,
+          "characters": 21,
+          "section_ids": [
+            "section-0009"
+          ]
+        },
+        {
+          "section_id": "section-0012",
+          "heading_path": [
+            "Regelungen",
+            "Datenschutz"
+          ],
+          "first_block": 306,
+          "last_block": 308,
+          "characters": 94,
+          "section_ids": [
+            "section-0012"
+          ]
+        },
+        {
+          "section_id": "section-0013",
+          "heading_path": [
+            "Regelungen",
+            "Jokerhalbtage"
+          ],
+          "first_block": 309,
+          "last_block": 313,
+          "characters": 573,
+          "section_ids": [
+            "section-0013"
+          ]
+        },
+        {
+          "section_id": "section-0014",
+          "heading_path": [
+            "Regelungen",
+            "Kindes- und Erwachsenenschutzbehörde / Kindesschutz"
+          ],
+          "first_block": 314,
+          "last_block": 321,
+          "characters": 1239,
+          "section_ids": [
+            "section-0014"
+          ]
+        },
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Regelungen",
+            "Krisenintervention"
+          ],
+          "first_block": 322,
+          "last_block": 325,
+          "characters": 863,
+          "section_ids": [
+            "section-0015"
+          ]
+        },
+        {
+          "section_id": "section-0016",
+          "heading_path": [
+            "Regelungen",
+            "Melde- und Mitwirkungspflicht bei Verfahren der KESB"
+          ],
+          "first_block": 326,
+          "last_block": 327,
+          "characters": 52,
+          "section_ids": [
+            "section-0016"
+          ]
+        },
+        {
+          "section_id": "section-0017",
+          "heading_path": [
+            "Regelungen",
+            "Papiersammlungen durch Schulen"
+          ],
+          "first_block": 328,
+          "last_block": 329,
+          "characters": 24,
+          "section_ids": [
+            "section-0017"
+          ]
+        },
+        {
+          "section_id": "section-0019",
+          "heading_path": [
+            "Regelungen",
+            "Schulweg"
+          ],
+          "first_block": 332,
+          "last_block": 333,
+          "characters": 57,
+          "section_ids": [
+            "section-0019"
+          ]
+        },
+        {
+          "section_id": "section-0020",
+          "heading_path": [
+            "Regelungen",
+            "Sexuelle Handlungen / Belästigungen / Gewalt"
+          ],
+          "first_block": 334,
+          "last_block": 336,
+          "characters": 194,
+          "section_ids": [
+            "section-0020"
+          ]
+        },
+        {
+          "section_id": "section-0021",
+          "heading_path": [
+            "Regelungen",
+            "Umgang mit religiösen Fragestellungen"
+          ],
+          "first_block": 337,
+          "last_block": 339,
+          "characters": 142,
+          "section_ids": [
+            "section-0021"
+          ]
+        },
+        {
+          "section_id": "section-0022",
+          "heading_path": [
+            "Regelungen",
+            "Vorgehen bei Verdacht auf Straftaten"
+          ],
+          "first_block": 340,
+          "last_block": 341,
+          "characters": 51,
+          "section_ids": [
+            "section-0022"
+          ]
+        },
+        {
+          "section_id": "section-0024",
+          "heading_path": [
+            "Regelungen",
+            "Zusätzliche Informationen",
+            "Amt für Volksschule und Sport"
+          ],
+          "first_block": 343,
+          "last_block": 348,
+          "characters": 74,
+          "section_ids": [
+            "section-0024"
+          ]
+        }
+      ]
     },
     {
       "document_id": "doc-1c6f5fde53430f3e283a",
@@ -249,6 +505,135 @@
       "dispositions": {},
       "status": "cited",
       "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-f7342b1cfc928dd69209",
+      "source_url": "https://av.tg.ch/public/upload/assets/179040/Ferienplan_SJ_2026_2027.pdf?fp=1",
+      "title": "Thurgau: school holidays, document 1",
+      "source_ids": [
+        "tg-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-54f8c6594b6dec6cf465",
+      "source_url": "https://av.tg.ch/public/upload/assets/8713/10_Jahresplan_Schulferien_Volksschule_2023_-_2033.pdf?fp=4",
+      "title": "Thurgau: school holidays, document 2",
+      "source_ids": [
+        "tg-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-dc236f8ebaa114f9d103",
+      "source_url": "https://av.tg.ch/themen/ferienplan.html/13415",
+      "title": "Ferienplan",
+      "source_ids": [
+        "tg-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 7,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 6,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 16,
+          "characters": 26,
+          "section_ids": [
+            "section-0001"
+          ]
+        },
+        {
+          "section_id": "section-0006",
+          "heading_path": [
+            "Ferienplan"
+          ],
+          "first_block": 27,
+          "last_block": 29,
+          "characters": 213,
+          "section_ids": [
+            "section-0006"
+          ]
+        },
+        {
+          "section_id": "section-0009",
+          "heading_path": [
+            "Ferienplan",
+            "Rechtliche Grundlagen"
+          ],
+          "first_block": 42,
+          "last_block": 43,
+          "characters": 44,
+          "section_ids": [
+            "section-0009"
+          ]
+        },
+        {
+          "section_id": "section-0010",
+          "heading_path": [
+            "Ferienplan",
+            "Verwandte Themen"
+          ],
+          "first_block": 44,
+          "last_block": 47,
+          "characters": 45,
+          "section_ids": [
+            "section-0010"
+          ]
+        },
+        {
+          "section_id": "section-0023",
+          "heading_path": [
+            "Ferienplan",
+            "Footer",
+            "Öffnungszeiten Sekretariat"
+          ],
+          "first_block": 68,
+          "last_block": 78,
+          "characters": 10,
+          "section_ids": [
+            "section-0023"
+          ]
+        },
+        {
+          "section_id": "section-0024",
+          "heading_path": [
+            "Stichwortverzeichnis"
+          ],
+          "first_block": 79,
+          "last_block": 80,
+          "characters": 14,
+          "section_ids": [
+            "section-0024"
+          ]
+        }
+      ]
     },
     {
       "document_id": "doc-d8abd396531de40dcbd2",
@@ -832,6 +1217,42 @@
       "unclassified_sections": []
     },
     {
+      "document_id": "doc-50439566010e6ba832cc",
+      "source_url": "https://so.ch/fileadmin/internet/dbk/dbk-vsa/Schulsystem/Ferienplan/Schulferienplan_2026_2027.pdf",
+      "title": "Solothurn: school holidays, document 1",
+      "source_ids": [
+        "so-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "empty",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-e1eb503483b47c350410",
+      "source_url": "https://so.ch/fileadmin/internet/dbk/dbk-vsa/Schulsystem/Ferienplan/Schulferienplan_2027_2028.pdf",
+      "title": "Solothurn: school holidays, document 2",
+      "source_ids": [
+        "so-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "empty",
+      "unclassified_sections": []
+    },
+    {
       "document_id": "doc-10f9280753a0262e0d1d",
       "source_url": "https://so.ch/verwaltung/departement-des-innern/migrationsamt/aufenthalt-und-integration/kantonswechsel/",
       "title": "Kantonswechsel - Kanton Solothurn",
@@ -968,6 +1389,38 @@
           "characters": 157,
           "section_ids": [
             "section-0011"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-871ec5cc0f3bb6f78f04",
+      "source_url": "https://so.ch/verwaltung/departement-fuer-bildung-kultur-und-sport/volksschulamt/aktuell/ferienplan/",
+      "title": "Ferienplan - Kanton Solothurn",
+      "source_ids": [
+        "so-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 2,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0008",
+          "heading_path": [
+            "Ferienplan",
+            "Volksschulamt"
+          ],
+          "first_block": 161,
+          "last_block": 167,
+          "characters": 146,
+          "section_ids": [
+            "section-0008"
           ]
         }
       ]
@@ -1257,6 +1710,60 @@
         "duplicate": 8
       },
       "status": "cited_and_dispositioned",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-f177cf3144433b6362c8",
+      "source_url": "https://volksschulbildung.lu.ch/-/media/Volksschulbildung/Dokumente/syst_schulen/ss_schulsystem/schulferien/feriendaten_volksschulen_kt_luzern.pdf?rev=3c8d9abafea74ccca4dc2772f3399bf8",
+      "title": "Lucerne: school holidays, document 2",
+      "source_ids": [
+        "lu-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-51f6d982a96f267438dd",
+      "source_url": "https://volksschulbildung.lu.ch/-/media/Volksschulbildung/Dokumente/syst_schulen/ss_schulsystem/schulferien/ferienplan_gemeinden_sj26_27.pdf?rev=82d2e9ac96974eb08407799e305a05d0",
+      "title": "Lucerne: school holidays, document 1",
+      "source_ids": [
+        "lu-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "empty",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-b479d922978177220567",
+      "source_url": "https://volksschulbildung.lu.ch/syst_schulen/ss_schulsystem/ss_syst_ferien",
+      "title": "Schulferien - Kanton Luzern",
+      "source_ids": [
+        "lu-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "empty",
       "unclassified_sections": []
     },
     {
@@ -1830,6 +2337,38 @@
           "characters": 285,
           "section_ids": [
             "section-0009"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-54b1d21f0a18aafea5f2",
+      "source_url": "https://www.akvb-gemeinden.bkd.be.ch/de/start/organisation-finanzierung/schulorganisation/schulferienplanung.html",
+      "title": "Schulferienplanung",
+      "source_ids": [
+        "be-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 3,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0005",
+          "heading_path": [
+            "Schulferienplanung",
+            "Ferienordnung 2026 bis 2032"
+          ],
+          "first_block": 29,
+          "last_block": 30,
+          "characters": 27,
+          "section_ids": [
+            "section-0005"
           ]
         }
       ]
@@ -3442,6 +3981,143 @@
       "dispositions": {},
       "status": "cited",
       "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-734ed8f8b6957ecd419b",
+      "source_url": "https://www.bs.ch/themen/bildung-und-kinderbetreuung/schulferien",
+      "title": "Schulferien | Kanton Basel-Stadt",
+      "source_ids": [
+        "bs-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 12,
+      "cited": 3,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 9,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 2,
+          "characters": 44,
+          "section_ids": [
+            "section-0001"
+          ]
+        },
+        {
+          "section_id": "section-0007",
+          "heading_path": [
+            "Schulferien",
+            "Schulferien im iCalender-Format",
+            "Schulferien-Kalender abonnieren"
+          ],
+          "first_block": 28,
+          "last_block": 31,
+          "characters": 299,
+          "section_ids": [
+            "section-0007"
+          ]
+        },
+        {
+          "section_id": "section-0008",
+          "heading_path": [
+            "Schulferien",
+            "Schulferien im iCalender-Format",
+            "So richten Sie das Schulferien-Kalender-Abo ein"
+          ],
+          "first_block": 32,
+          "last_block": 37,
+          "characters": 548,
+          "section_ids": [
+            "section-0008"
+          ]
+        },
+        {
+          "section_id": "section-0011",
+          "heading_path": [
+            "Schulferien",
+            "Schulferien 2028"
+          ],
+          "first_block": 40,
+          "last_block": 41,
+          "characters": 51,
+          "section_ids": [
+            "section-0011"
+          ]
+        },
+        {
+          "section_id": "section-0012",
+          "heading_path": [
+            "Schulferien",
+            "Betreuung in den Schulferien"
+          ],
+          "first_block": 42,
+          "last_block": 47,
+          "characters": 175,
+          "section_ids": [
+            "section-0012"
+          ]
+        },
+        {
+          "section_id": "section-0013",
+          "heading_path": [
+            "Schulferien",
+            "Familienurlaub (Jokertage)"
+          ],
+          "first_block": 48,
+          "last_block": 54,
+          "characters": 354,
+          "section_ids": [
+            "section-0013"
+          ]
+        },
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Schulferien",
+            "Schulferien in anderen Kantonen",
+            "Erziehungsdepartement"
+          ],
+          "first_block": 58,
+          "last_block": 60,
+          "characters": 25,
+          "section_ids": [
+            "section-0015"
+          ]
+        },
+        {
+          "section_id": "section-0016",
+          "heading_path": [
+            "Schulferien",
+            "Schulferien in anderen Kantonen",
+            "Öffnungszeiten"
+          ],
+          "first_block": 61,
+          "last_block": 63,
+          "characters": 144,
+          "section_ids": [
+            "section-0016"
+          ]
+        },
+        {
+          "section_id": "section-0017",
+          "heading_path": [
+            "Schulferien",
+            "Für dieses Thema zuständig"
+          ],
+          "first_block": 64,
+          "last_block": 65,
+          "characters": 21,
+          "section_ids": [
+            "section-0017"
+          ]
+        }
+      ]
     },
     {
       "document_id": "doc-b8e80712d932400cd49a",
@@ -6447,6 +7123,556 @@
       "unclassified_sections": []
     },
     {
+      "document_id": "doc-5b948596184f32ade62a",
+      "source_url": "https://www.fr.ch/de/bkad/schulferien",
+      "title": "Schulferien | Staat Freiburg",
+      "source_ids": [
+        "fr-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 39,
+      "cited": 8,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 31,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0008",
+          "heading_path": [
+            "Schulferien",
+            "Kalender Murten 2026/2027"
+          ],
+          "first_block": 100,
+          "last_block": 101,
+          "characters": 136,
+          "section_ids": [
+            "section-0008"
+          ]
+        },
+        {
+          "section_id": "section-0009",
+          "heading_path": [
+            "Schulferien",
+            "Kalender Murten 2026/2027",
+            "Schulfeiertage 2026/2027"
+          ],
+          "first_block": 102,
+          "last_block": 103,
+          "characters": 173,
+          "section_ids": [
+            "section-0009"
+          ]
+        },
+        {
+          "section_id": "section-0010",
+          "heading_path": [
+            "Schulferien",
+            "Kalender Murten 2026/2027",
+            "Schulferien 2026/2027"
+          ],
+          "first_block": 104,
+          "last_block": 107,
+          "characters": 538,
+          "section_ids": [
+            "section-0010"
+          ]
+        },
+        {
+          "section_id": "section-0011",
+          "heading_path": [
+            "Schulferien",
+            "Kalender Kerzers 2026/2027"
+          ],
+          "first_block": 108,
+          "last_block": 109,
+          "characters": 140,
+          "section_ids": [
+            "section-0011"
+          ]
+        },
+        {
+          "section_id": "section-0012",
+          "heading_path": [
+            "Schulferien",
+            "Kalender Kerzers 2026/2027",
+            "Schulfeiertage 2026/2027 - Kerzers"
+          ],
+          "first_block": 110,
+          "last_block": 111,
+          "characters": 169,
+          "section_ids": [
+            "section-0012"
+          ]
+        },
+        {
+          "section_id": "section-0013",
+          "heading_path": [
+            "Schulferien",
+            "Kalender Kerzers 2026/2027",
+            "Schulferien 2026/2027 - Kerzers"
+          ],
+          "first_block": 112,
+          "last_block": 115,
+          "characters": 500,
+          "section_ids": [
+            "section-0013"
+          ]
+        },
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030"
+          ],
+          "first_block": 118,
+          "last_block": 119,
+          "characters": 18,
+          "section_ids": [
+            "section-0015"
+          ]
+        },
+        {
+          "section_id": "section-0019",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Murten 2027/2028"
+          ],
+          "first_block": 138,
+          "last_block": 139,
+          "characters": 136,
+          "section_ids": [
+            "section-0019"
+          ]
+        },
+        {
+          "section_id": "section-0020",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Murten 2027/2028",
+            "Schulfeiertage"
+          ],
+          "first_block": 140,
+          "last_block": 144,
+          "characters": 155,
+          "section_ids": [
+            "section-0020"
+          ]
+        },
+        {
+          "section_id": "section-0021",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Murten 2027/2028",
+            "Schulferien"
+          ],
+          "first_block": 145,
+          "last_block": 153,
+          "characters": 518,
+          "section_ids": [
+            "section-0021"
+          ]
+        },
+        {
+          "section_id": "section-0023",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Kerzers 2027/2028",
+            "Schulfeiertage"
+          ],
+          "first_block": 155,
+          "last_block": 159,
+          "characters": 152,
+          "section_ids": [
+            "section-0023"
+          ]
+        },
+        {
+          "section_id": "section-0024",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Kerzers 2027/2028",
+            "Schulferien"
+          ],
+          "first_block": 160,
+          "last_block": 169,
+          "characters": 523,
+          "section_ids": [
+            "section-0024"
+          ]
+        },
+        {
+          "section_id": "section-0025",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Allgemeiner Kalender 2028/2029"
+          ],
+          "first_block": 170,
+          "last_block": 171,
+          "characters": 128,
+          "section_ids": [
+            "section-0025"
+          ]
+        },
+        {
+          "section_id": "section-0026",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Allgemeiner Kalender 2028/2029",
+            "Schulfeiertage"
+          ],
+          "first_block": 172,
+          "last_block": 178,
+          "characters": 229,
+          "section_ids": [
+            "section-0026"
+          ]
+        },
+        {
+          "section_id": "section-0027",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Allgemeiner Kalender 2028/2029",
+            "Schulferien"
+          ],
+          "first_block": 179,
+          "last_block": 187,
+          "characters": 500,
+          "section_ids": [
+            "section-0027"
+          ]
+        },
+        {
+          "section_id": "section-0028",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Murten 2028/2029"
+          ],
+          "first_block": 188,
+          "last_block": 189,
+          "characters": 136,
+          "section_ids": [
+            "section-0028"
+          ]
+        },
+        {
+          "section_id": "section-0029",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Murten 2028/2029",
+            "Schulfeiertage"
+          ],
+          "first_block": 190,
+          "last_block": 194,
+          "characters": 154,
+          "section_ids": [
+            "section-0029"
+          ]
+        },
+        {
+          "section_id": "section-0030",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Murten 2028/2029",
+            "Schulferien"
+          ],
+          "first_block": 195,
+          "last_block": 203,
+          "characters": 518,
+          "section_ids": [
+            "section-0030"
+          ]
+        },
+        {
+          "section_id": "section-0032",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Kerzers 2028/2029",
+            "Schulfeiertage"
+          ],
+          "first_block": 205,
+          "last_block": 209,
+          "characters": 151,
+          "section_ids": [
+            "section-0032"
+          ]
+        },
+        {
+          "section_id": "section-0033",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Kerzers 2028/2029",
+            "Schulferien"
+          ],
+          "first_block": 210,
+          "last_block": 217,
+          "characters": 412,
+          "section_ids": [
+            "section-0033"
+          ]
+        },
+        {
+          "section_id": "section-0034",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Allgemeiner Kalender 2029/2030"
+          ],
+          "first_block": 218,
+          "last_block": 219,
+          "characters": 128,
+          "section_ids": [
+            "section-0034"
+          ]
+        },
+        {
+          "section_id": "section-0035",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Allgemeiner Kalender 2029/2030",
+            "Schulfeiertage"
+          ],
+          "first_block": 220,
+          "last_block": 226,
+          "characters": 232,
+          "section_ids": [
+            "section-0035"
+          ]
+        },
+        {
+          "section_id": "section-0036",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Allgemeiner Kalender 2029/2030",
+            "Schulferien"
+          ],
+          "first_block": 227,
+          "last_block": 235,
+          "characters": 487,
+          "section_ids": [
+            "section-0036"
+          ]
+        },
+        {
+          "section_id": "section-0037",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Murten 2029/2030"
+          ],
+          "first_block": 236,
+          "last_block": 237,
+          "characters": 136,
+          "section_ids": [
+            "section-0037"
+          ]
+        },
+        {
+          "section_id": "section-0038",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Murten 2029/2030",
+            "Schulfeiertage"
+          ],
+          "first_block": 238,
+          "last_block": 242,
+          "characters": 154,
+          "section_ids": [
+            "section-0038"
+          ]
+        },
+        {
+          "section_id": "section-0039",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Murten 2029/2030",
+            "Schulferien"
+          ],
+          "first_block": 243,
+          "last_block": 251,
+          "characters": 509,
+          "section_ids": [
+            "section-0039"
+          ]
+        },
+        {
+          "section_id": "section-0041",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Kerzers 2029/2030",
+            "Schulfeiertage"
+          ],
+          "first_block": 253,
+          "last_block": 257,
+          "characters": 156,
+          "section_ids": [
+            "section-0041"
+          ]
+        },
+        {
+          "section_id": "section-0042",
+          "heading_path": [
+            "Schulferien",
+            "Kalender 2027 - 2030",
+            "Kalender Kerzers 2029/2030",
+            "Schulferien"
+          ],
+          "first_block": 258,
+          "last_block": 266,
+          "characters": 502,
+          "section_ids": [
+            "section-0042"
+          ]
+        },
+        {
+          "section_id": "section-0043",
+          "heading_path": [
+            "Schulferien",
+            "Termine für die Schulferien der Sekundarstufe II und der Berufsausbildung"
+          ],
+          "first_block": 267,
+          "last_block": 269,
+          "characters": 74,
+          "section_ids": [
+            "section-0043"
+          ]
+        },
+        {
+          "section_id": "section-0044",
+          "heading_path": [
+            "Schulferien",
+            "Feiertage"
+          ],
+          "first_block": 270,
+          "last_block": 271,
+          "characters": 9,
+          "section_ids": [
+            "section-0044"
+          ]
+        },
+        {
+          "section_id": "section-0045",
+          "heading_path": [
+            "Schulferien",
+            "Wie werden Schulkalender erstellt?"
+          ],
+          "first_block": 272,
+          "last_block": 286,
+          "characters": 472,
+          "section_ids": [
+            "section-0045"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-497cd1127acfc6a9d06b",
+      "source_url": "https://www.fr.ch/de/document/508641",
+      "title": "Fribourg: school holidays, document 2",
+      "source_ids": [
+        "fr-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 1,
+          "characters": 2265,
+          "section_ids": [
+            "section-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-2c1462e242fd9c817b18",
+      "source_url": "https://www.fr.ch/de/document/508691",
+      "title": "Fribourg: school holidays, document 1",
+      "source_ids": [
+        "fr-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 2,
+          "characters": 2254,
+          "section_ids": [
+            "section-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-451d875c7bdce57805c4",
+      "source_url": "https://www.fr.ch/de/document/513516",
+      "title": "Fribourg: school holidays, document 3",
+      "source_ids": [
+        "fr-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 1,
+          "characters": 2225,
+          "section_ids": [
+            "section-0001"
+          ]
+        }
+      ]
+    },
+    {
       "document_id": "doc-674225ac43786b5d211d",
       "source_url": "https://www.fr.ch/vie-quotidienne/demarches-et-documents/changement-de-canton-ressortissant-ue-27aele",
       "title": "Changement de canton ressortissant UE-27/AELE | Etat de Fribourg",
@@ -6569,6 +7795,93 @@
       ]
     },
     {
+      "document_id": "doc-90a68d7539a87a8b2ee3",
+      "source_url": "https://www.ge.ch/document/39850/telecharger",
+      "title": "Geneva: school holidays, document 2",
+      "source_ids": [
+        "ge-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 1,
+          "characters": 2604,
+          "section_ids": [
+            "section-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-55565f47952f0c156ddc",
+      "source_url": "https://www.ge.ch/vacances-scolaires-jours-feries/vacances-scolaires-2026-2027",
+      "title": "Vacances scolaires 2026-2027 | ge.ch",
+      "source_ids": [
+        "ge-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 2,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 51,
+          "characters": 26,
+          "section_ids": [
+            "section-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-b5ce884470e08165049b",
+      "source_url": "https://www.ge.ch/vacances-scolaires-jours-feries/vacances-scolaires-2027-2028",
+      "title": "Vacances scolaires 2027-2028 | ge.ch",
+      "source_ids": [
+        "ge-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 2,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 51,
+          "characters": 26,
+          "section_ids": [
+            "section-0001"
+          ]
+        }
+      ]
+    },
+    {
       "document_id": "doc-1de266bfefd7cb3ab142",
       "source_url": "https://www.gesetzessammlung.bs.ch/api/de/versions/6200/pdf_file_with_annexes",
       "title": "Basel-Stadt - Gesetz ueber Niederlassung und Aufenthalt (SG 122.200), para 4",
@@ -6603,6 +7916,95 @@
       "dispositions": {},
       "status": "cited",
       "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-1bb7f341023575f1bf35",
+      "source_url": "https://www.gl.ch/public/upload/assets/64288/Ferienpl%C3%A4ne_2026-2029.pdf?fp=1",
+      "title": "Glarus: school holidays, document 1",
+      "source_ids": [
+        "gl-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-2f692439232eadbe9c8e",
+      "source_url": "https://www.gl.ch/verwaltung/staatskanzlei/oeffentliche-feiertage.html/1335",
+      "title": "Öffentliche Feiertage – Kanton Glarus",
+      "source_ids": [
+        "gl-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 4,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 4,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0007",
+          "heading_path": [
+            "Öffentliche Feiertage",
+            "Öffentliche Ruhetage, arbeitsfreie Tage der Verwaltung im 2026"
+          ],
+          "first_block": 98,
+          "last_block": 99,
+          "characters": 502,
+          "section_ids": [
+            "section-0007"
+          ]
+        },
+        {
+          "section_id": "section-0008",
+          "heading_path": [
+            "Öffentliche Feiertage",
+            "Öffentliche Ruhetage, arbeitsfreie Tage der Verwaltung im 2027"
+          ],
+          "first_block": 100,
+          "last_block": 101,
+          "characters": 491,
+          "section_ids": [
+            "section-0008"
+          ]
+        },
+        {
+          "section_id": "section-0009",
+          "heading_path": [
+            "Öffentliche Feiertage",
+            "Öffentliche Ruhetage, arbeitsfreie Tage der Verwaltung im 2028"
+          ],
+          "first_block": 102,
+          "last_block": 103,
+          "characters": 497,
+          "section_ids": [
+            "section-0009"
+          ]
+        },
+        {
+          "section_id": "section-0010",
+          "heading_path": [
+            "Öffentliche Feiertage",
+            "Öffentliche Ruhetage, arbeitsfreie Tage der Verwaltung im 2029"
+          ],
+          "first_block": 104,
+          "last_block": 114,
+          "characters": 642,
+          "section_ids": [
+            "section-0010"
+          ]
+        }
+      ]
     },
     {
       "document_id": "doc-cb07b45b2872d40435a6",
@@ -6656,6 +8058,42 @@
       "unclassified": 0,
       "dispositions": {},
       "status": "empty",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-3b455445ed31b627bbd0",
+      "source_url": "https://www.gr.ch/DE/institutionen/verwaltung/ekud/avs/Schulbetrieb/schulorganisation/Seiten/Schulbetrieb.aspx",
+      "title": "Schulbetrieb - Schulorganisation",
+      "source_ids": [
+        "gr-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "empty",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-2ff2e21602a6fedd2e63",
+      "source_url": "https://www.gr.ch/DE/institutionen/verwaltung/ekud/avs/Volksschule/SB_Ferienplaene_2026_2027_de.pdf",
+      "title": "Graubuenden: school holidays, document 1",
+      "source_ids": [
+        "gr-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
       "unclassified_sections": []
     },
     {
@@ -6928,6 +8366,110 @@
           "characters": 92,
           "section_ids": [
             "section-0038"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-e359a74600c284917a73",
+      "source_url": "https://www.jura.ch/Htdocs/Files/v/ca2ea0d3a2bfa03c9e1eb6e8eb38dc9331cc48d72921290dcbd8005fd551eb81.pdf/Vacances-scolaires.pdf",
+      "title": "Jura: school holidays, document 1",
+      "source_ids": [
+        "ju-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-9eb48de5e06aef5987e0",
+      "source_url": "https://www.jura.ch/fr/Autorites/Administration/DFNS/Formation-postobligatoire-SFP/CEJEF/Vacances-scolaires/Vacances-scolaires.html",
+      "title": "Vacances scolaires - République et Canton du Jura",
+      "source_ids": [
+        "ju-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 5,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 5,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [
+            "Canton du Jura"
+          ],
+          "first_block": 1,
+          "last_block": 130,
+          "characters": 1291,
+          "section_ids": [
+            "section-0001"
+          ]
+        },
+        {
+          "section_id": "section-0003",
+          "heading_path": [
+            "Canton du Jura",
+            "Vacances scolaires",
+            "Vacances scolaires 2026"
+          ],
+          "first_block": 132,
+          "last_block": 133,
+          "characters": 752,
+          "section_ids": [
+            "section-0003"
+          ]
+        },
+        {
+          "section_id": "section-0004",
+          "heading_path": [
+            "Canton du Jura",
+            "Vacances scolaires",
+            "Vacances scolaires 2027"
+          ],
+          "first_block": 134,
+          "last_block": 135,
+          "characters": 749,
+          "section_ids": [
+            "section-0004"
+          ]
+        },
+        {
+          "section_id": "section-0005",
+          "heading_path": [
+            "Canton du Jura",
+            "Vacances scolaires",
+            "Document"
+          ],
+          "first_block": 136,
+          "last_block": 148,
+          "characters": 82,
+          "section_ids": [
+            "section-0005"
+          ]
+        },
+        {
+          "section_id": "section-0006",
+          "heading_path": [
+            "Canton du Jura",
+            "Liens rapides"
+          ],
+          "first_block": 149,
+          "last_block": 170,
+          "characters": 89,
+          "section_ids": [
+            "section-0006"
           ]
         }
       ]
@@ -7967,6 +9509,35 @@
       ]
     },
     {
+      "document_id": "doc-8b330c514802de42155d",
+      "source_url": "https://www.ne.ch/sites/default/files/2025-08/CalendrierScolaire2019-2030.pdf",
+      "title": "Neuchatel: school holidays, document 1",
+      "source_ids": [
+        "ne-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 1,
+          "characters": 3761,
+          "section_ids": [
+            "section-0001"
+          ]
+        }
+      ]
+    },
+    {
       "document_id": "doc-05ca6b1f1d0609c5358f",
       "source_url": "https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/etudier-neuchatel",
       "title": "Étudier à Neuchâtel | ne.ch",
@@ -8271,6 +9842,190 @@
           "characters": 65,
           "section_ids": [
             "section-0013"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-bab5b6d448e11e089463",
+      "source_url": "https://www.ne.ch/themes/scolarite-et-formation/calendrier-et-vacances-scolaires",
+      "title": "Calendrier et vacances scolaires | ne.ch",
+      "source_ids": [
+        "ne-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 6,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 4,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 557,
+          "characters": 57,
+          "section_ids": [
+            "section-0001"
+          ]
+        },
+        {
+          "section_id": "section-0002",
+          "heading_path": [
+            "Calendrier et vacances scolaires"
+          ],
+          "first_block": 558,
+          "last_block": 564,
+          "characters": 330,
+          "section_ids": [
+            "section-0002"
+          ]
+        },
+        {
+          "section_id": "section-0005",
+          "heading_path": [
+            "Calendrier et vacances scolaires",
+            "Année scolaire 2028–2029"
+          ],
+          "first_block": 569,
+          "last_block": 570,
+          "characters": 884,
+          "section_ids": [
+            "section-0005"
+          ]
+        },
+        {
+          "section_id": "section-0006",
+          "heading_path": [
+            "Calendrier et vacances scolaires",
+            "Année scolaire 2029–2030"
+          ],
+          "first_block": 571,
+          "last_block": 592,
+          "characters": 889,
+          "section_ids": [
+            "section-0006"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-85d5963479028cf874d6",
+      "source_url": "https://www.ow.ch/dienstleistungen/5276",
+      "title": "Obwalden - Schulferienplan",
+      "source_ids": [
+        "ow-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 8,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 7,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0005",
+          "heading_path": [
+            "Kopfzeile",
+            "LOGIN mit Benutzerkonto",
+            "Haben Sie noch kein Benutzerkonto?"
+          ],
+          "first_block": 361,
+          "last_block": 362,
+          "characters": 223,
+          "section_ids": [
+            "section-0005"
+          ]
+        },
+        {
+          "section_id": "section-0007",
+          "heading_path": [
+            "Kopfzeile",
+            "LOGIN mit Benutzerkonto",
+            "Öffnungszeiten"
+          ],
+          "first_block": 367,
+          "last_block": 368,
+          "characters": 115,
+          "section_ids": [
+            "section-0007"
+          ]
+        },
+        {
+          "section_id": "section-0011",
+          "heading_path": [
+            "Schulferienplan",
+            "Zugehörige Objekte",
+            "Dokumente"
+          ],
+          "first_block": 399,
+          "last_block": 400,
+          "characters": 247,
+          "section_ids": [
+            "section-0011"
+          ]
+        },
+        {
+          "section_id": "section-0012",
+          "heading_path": [
+            "Schulferienplan",
+            "Zugehörige Objekte",
+            "Personen"
+          ],
+          "first_block": 401,
+          "last_block": 402,
+          "characters": 99,
+          "section_ids": [
+            "section-0012"
+          ]
+        },
+        {
+          "section_id": "section-0013",
+          "heading_path": [
+            "Schulferienplan",
+            "Zugehörige Objekte",
+            "Amtsstellen"
+          ],
+          "first_block": 403,
+          "last_block": 404,
+          "characters": 126,
+          "section_ids": [
+            "section-0013"
+          ]
+        },
+        {
+          "section_id": "section-0014",
+          "heading_path": [
+            "Schulferienplan",
+            "Zugehörige Objekte",
+            "Departemente"
+          ],
+          "first_block": 405,
+          "last_block": 406,
+          "characters": 85,
+          "section_ids": [
+            "section-0014"
+          ]
+        },
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Schulferienplan",
+            "Zugehörige Objekte",
+            "Publikationen"
+          ],
+          "first_block": 407,
+          "last_block": 408,
+          "characters": 40,
+          "section_ids": [
+            "section-0015"
           ]
         }
       ]
@@ -8582,6 +10337,177 @@
       "dispositions": {},
       "status": "empty",
       "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-3533393b10ed5e6ff13c",
+      "source_url": "https://www.schulen-aargau.ch/media/schulen-aargau/schulorganisation/ressourcen-planung/stunden-ferienplanung/bksvs-kantonal-einheitlicher-ferienplan.pdf",
+      "title": "Aargau: school holidays, document 1",
+      "source_ids": [
+        "ag-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-ad8ea3ece5a5571e7061",
+      "source_url": "https://www.schulen-aargau.ch/regelschule/schulorganisation/planung-ressourcen/stunden-ferienplanung",
+      "title": "Kanton Aargau Schulportal - Stunden- und Ferienplanung",
+      "source_ids": [
+        "ag-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 14,
+      "cited": 4,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 10,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0006",
+          "heading_path": [
+            "Stunden- und Ferienplanung",
+            "Gehe zu"
+          ],
+          "first_block": 27,
+          "last_block": 31,
+          "characters": 386,
+          "section_ids": [
+            "section-0006"
+          ]
+        },
+        {
+          "section_id": "section-0007",
+          "heading_path": [
+            "Stunden- und Ferienplanung",
+            "Stundenplan"
+          ],
+          "first_block": 32,
+          "last_block": 40,
+          "characters": 992,
+          "section_ids": [
+            "section-0007"
+          ]
+        },
+        {
+          "section_id": "section-0008",
+          "heading_path": [
+            "Stunden- und Ferienplanung",
+            "Stundenplan",
+            "Hinweis:Stundenplangestaltung am Kindergarten"
+          ],
+          "first_block": 41,
+          "last_block": 43,
+          "characters": 141,
+          "section_ids": [
+            "section-0008"
+          ]
+        },
+        {
+          "section_id": "section-0013",
+          "heading_path": [
+            "Stunden- und Ferienplanung",
+            "Ferien",
+            "Vorinformation der Eltern"
+          ],
+          "first_block": 54,
+          "last_block": 57,
+          "characters": 767,
+          "section_ids": [
+            "section-0013"
+          ]
+        },
+        {
+          "section_id": "section-0014",
+          "heading_path": [
+            "Stunden- und Ferienplanung",
+            "Feiertage und schulfreie Tage"
+          ],
+          "first_block": 58,
+          "last_block": 62,
+          "characters": 697,
+          "section_ids": [
+            "section-0014"
+          ]
+        },
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Stunden- und Ferienplanung",
+            "Feiertage und schulfreie Tage",
+            "Hinweis:Anhörung zur Abschaffung des freien Nachmittags am 1. Mai"
+          ],
+          "first_block": 63,
+          "last_block": 69,
+          "characters": 816,
+          "section_ids": [
+            "section-0015"
+          ]
+        },
+        {
+          "section_id": "section-0016",
+          "heading_path": [
+            "Stunden- und Ferienplanung",
+            "Feiertage und schulfreie Tage",
+            "Hinweis:1. Mai"
+          ],
+          "first_block": 70,
+          "last_block": 71,
+          "characters": 82,
+          "section_ids": [
+            "section-0016"
+          ]
+        },
+        {
+          "section_id": "section-0017",
+          "heading_path": [
+            "Stunden- und Ferienplanung",
+            "Feiertage in Bezirken bzw. Gemeinden"
+          ],
+          "first_block": 72,
+          "last_block": 74,
+          "characters": 702,
+          "section_ids": [
+            "section-0017"
+          ]
+        },
+        {
+          "section_id": "section-0018",
+          "heading_path": [
+            "Stunden- und Ferienplanung",
+            "Schulfreie Tage"
+          ],
+          "first_block": 75,
+          "last_block": 78,
+          "characters": 641,
+          "section_ids": [
+            "section-0018"
+          ]
+        },
+        {
+          "section_id": "section-0019",
+          "heading_path": [
+            "Stunden- und Ferienplanung",
+            "Schulschluss vor den Sommerferien"
+          ],
+          "first_block": 79,
+          "last_block": 81,
+          "characters": 411,
+          "section_ids": [
+            "section-0019"
+          ]
+        }
+      ]
     },
     {
       "document_id": "doc-a51c61294f44050bec82",
@@ -17739,6 +19665,38 @@
       ]
     },
     {
+      "document_id": "doc-44856eb284742541aac1",
+      "source_url": "https://www.sg.ch/bildung-sport/volksschule/aus-dem-amt/ferienplan.html",
+      "title": "Ferienplan | sg.ch",
+      "source_ids": [
+        "sg-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 3,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0005",
+          "heading_path": [
+            "Ferienplan",
+            "Noch offene Fragen?"
+          ],
+          "first_block": 99,
+          "last_block": 103,
+          "characters": 74,
+          "section_ids": [
+            "section-0005"
+          ]
+        }
+      ]
+    },
+    {
       "document_id": "doc-c33d3808823882dbd8a6",
       "source_url": "https://www.sg.ch/sicherheit/einreise-aufenthalt-ausreise/bewilligugnen-eu-efta.html",
       "title": "Bewilligungen EU-/EFTA-Staaten | sg.ch",
@@ -19436,11 +21394,287 @@
       ]
     },
     {
+      "document_id": "doc-bf1cd0c996f355eee6cc",
+      "source_url": "https://www.sz.ch/behoerden/verwaltung/bildungsdepartement/amt-fuer-volksschulen-und-sport/schulorganisation.html/8756-8758-8802-9466-9467-12773",
+      "title": "Schulorganisation – Kanton Schwyz",
+      "source_ids": [
+        "sz-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 18,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 18,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0010",
+          "heading_path": [
+            "Schulorganisation"
+          ],
+          "first_block": 184,
+          "last_block": 185,
+          "characters": 194,
+          "section_ids": [
+            "section-0010"
+          ]
+        },
+        {
+          "section_id": "section-0011",
+          "heading_path": [
+            "Schulorganisation",
+            "Schuladressen"
+          ],
+          "first_block": 186,
+          "last_block": 191,
+          "characters": 317,
+          "section_ids": [
+            "section-0011"
+          ]
+        },
+        {
+          "section_id": "section-0012",
+          "heading_path": [
+            "Schulorganisation",
+            "Ferien und Schulhalbtage"
+          ],
+          "first_block": 192,
+          "last_block": 195,
+          "characters": 122,
+          "section_ids": [
+            "section-0012"
+          ]
+        },
+        {
+          "section_id": "section-0013",
+          "heading_path": [
+            "Schulorganisation",
+            "Ferienplan"
+          ],
+          "first_block": 196,
+          "last_block": 197,
+          "characters": 263,
+          "section_ids": [
+            "section-0013"
+          ]
+        },
+        {
+          "section_id": "section-0014",
+          "heading_path": [
+            "Schulorganisation",
+            "Wegweiser"
+          ],
+          "first_block": 198,
+          "last_block": 199,
+          "characters": 146,
+          "section_ids": [
+            "section-0014"
+          ]
+        },
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Schulorganisation",
+            "Bildungsstatistik des Kantons Schwyz"
+          ],
+          "first_block": 200,
+          "last_block": 201,
+          "characters": 169,
+          "section_ids": [
+            "section-0015"
+          ]
+        },
+        {
+          "section_id": "section-0016",
+          "heading_path": [
+            "Schulorganisation",
+            "Bildungsstatistik ansehen"
+          ],
+          "first_block": 202,
+          "last_block": 203,
+          "characters": 105,
+          "section_ids": [
+            "section-0016"
+          ]
+        },
+        {
+          "section_id": "section-0021",
+          "heading_path": [
+            "Schulorganisation",
+            "Archiv"
+          ],
+          "first_block": 231,
+          "last_block": 232,
+          "characters": 333,
+          "section_ids": [
+            "section-0021"
+          ]
+        },
+        {
+          "section_id": "section-0022",
+          "heading_path": [
+            "Schulorganisation",
+            "Flüchtlingskinder"
+          ],
+          "first_block": 233,
+          "last_block": 237,
+          "characters": 405,
+          "section_ids": [
+            "section-0022"
+          ]
+        },
+        {
+          "section_id": "section-0025",
+          "heading_path": [
+            "Schulorganisation",
+            "Kinder aus der Ukraine",
+            "Unterricht"
+          ],
+          "first_block": 242,
+          "last_block": 246,
+          "characters": 746,
+          "section_ids": [
+            "section-0025"
+          ]
+        },
+        {
+          "section_id": "section-0026",
+          "heading_path": [
+            "Schulorganisation",
+            "Kinder aus der Ukraine",
+            "Weitere Informationen"
+          ],
+          "first_block": 247,
+          "last_block": 250,
+          "characters": 245,
+          "section_ids": [
+            "section-0026"
+          ]
+        },
+        {
+          "section_id": "section-0027",
+          "heading_path": [
+            "Schulorganisation",
+            "Präventionsstelle sexuelle Gewalt an Kindern"
+          ],
+          "first_block": 251,
+          "last_block": 254,
+          "characters": 569,
+          "section_ids": [
+            "section-0027"
+          ]
+        },
+        {
+          "section_id": "section-0028",
+          "heading_path": [
+            "Schulorganisation",
+            "Präventionsstelle sexuelle Gewalt an Kindern",
+            "Schulnetz21"
+          ],
+          "first_block": 255,
+          "last_block": 257,
+          "characters": 188,
+          "section_ids": [
+            "section-0028"
+          ]
+        },
+        {
+          "section_id": "section-0029",
+          "heading_path": [
+            "Schulorganisation",
+            "Fachberatung PH Schwyz"
+          ],
+          "first_block": 258,
+          "last_block": 259,
+          "characters": 229,
+          "section_ids": [
+            "section-0029"
+          ]
+        },
+        {
+          "section_id": "section-0030",
+          "heading_path": [
+            "Schulorganisation",
+            "Weiterbildung PH Schwyz"
+          ],
+          "first_block": 260,
+          "last_block": 261,
+          "characters": 137,
+          "section_ids": [
+            "section-0030"
+          ]
+        },
+        {
+          "section_id": "section-0031",
+          "heading_path": [
+            "Schulorganisation",
+            "Weitere Informationen"
+          ],
+          "first_block": 262,
+          "last_block": 265,
+          "characters": 344,
+          "section_ids": [
+            "section-0031"
+          ]
+        },
+        {
+          "section_id": "section-0035",
+          "heading_path": [
+            "Schulorganisation",
+            "Sidebar",
+            "Adresse",
+            "Amt für Volksschulen und Sport"
+          ],
+          "first_block": 272,
+          "last_block": 274,
+          "characters": 140,
+          "section_ids": [
+            "section-0035"
+          ]
+        },
+        {
+          "section_id": "section-0036",
+          "heading_path": [
+            "Schulorganisation",
+            "Sidebar",
+            "Öffnungszeiten"
+          ],
+          "first_block": 275,
+          "last_block": 278,
+          "characters": 116,
+          "section_ids": [
+            "section-0036"
+          ]
+        }
+      ]
+    },
+    {
       "document_id": "doc-61348efdcfb8b7cd0f29",
       "source_url": "https://www.sz.ch/public/upload/assets/33326/111_110.pdf",
       "title": "Schwyz - Gesetz ueber das Einwohnermeldewesen (SRSZ 111.110), para 10",
       "source_ids": [
         "sz-reporting-law"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-5e48ba3fde2fdcfd67b1",
+      "source_url": "https://www.sz.ch/public/upload/assets/85734/Ferienplan_Schuljahr_2026-2027.pdf?fp=1783576959567",
+      "title": "Schwyz: school holidays, document 1",
+      "source_ids": [
+        "sz-school-holidays"
       ],
       "attribution_kind": "catalogue",
       "unit": "section",
@@ -19636,6 +21870,35 @@
           "characters": 119,
           "section_ids": [
             "section-0019"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-bcad62a7178b1f891e57",
+      "source_url": "https://www.ur.ch/_docn/449362/Ferienplan_2026_2027_nach_Gemeinden.pdf",
+      "title": "Uri: school holidays, document 1",
+      "source_ids": [
+        "ur-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 2,
+          "characters": 2635,
+          "section_ids": [
+            "section-0001"
           ]
         }
       ]
@@ -19867,6 +22130,77 @@
       ]
     },
     {
+      "document_id": "doc-77bf695ff5ac6cd6225c",
+      "source_url": "https://www.ur.ch/dienstleistungen/3125",
+      "title": "Kanton Uri - Ferienplan",
+      "source_ids": [
+        "ur-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 6,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 4,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0010",
+          "heading_path": [
+            "Modal-Suche",
+            "Hauptinhalt"
+          ],
+          "first_block": 342,
+          "last_block": 347,
+          "characters": 8,
+          "section_ids": [
+            "section-0010"
+          ]
+        },
+        {
+          "section_id": "section-0013",
+          "heading_path": [
+            "Ferienplan",
+            "Personen"
+          ],
+          "first_block": 352,
+          "last_block": 353,
+          "characters": 90,
+          "section_ids": [
+            "section-0013"
+          ]
+        },
+        {
+          "section_id": "section-0014",
+          "heading_path": [
+            "Ferienplan",
+            "Ämter"
+          ],
+          "first_block": 354,
+          "last_block": 355,
+          "characters": 77,
+          "section_ids": [
+            "section-0014"
+          ]
+        },
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Ferienplan",
+            "Themen"
+          ],
+          "first_block": 356,
+          "last_block": 357,
+          "characters": 29,
+          "section_ids": [
+            "section-0015"
+          ]
+        }
+      ]
+    },
+    {
       "document_id": "doc-c8b9a1ea9ffc2b4e0c88",
       "source_url": "https://www.vd.ch/deiep/spop",
       "title": "Service de la population (SPOP) | État de Vaud",
@@ -20030,6 +22364,192 @@
           "characters": 230,
           "section_ids": [
             "section-0024"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-31a3f9574b1249010554",
+      "source_url": "https://www.vd.ch/fileadmin/user_upload/themes/formation/Vacances_scolaires/def_calendrier_vacances_scolaires_2023_2031.pdf",
+      "title": "Vaud: school holidays, document 2",
+      "source_ids": [
+        "vd-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-ea71df7c8f0a65729db4",
+      "source_url": "https://www.vd.ch/formation/jours-feries-et-vacances-scolaires/jours-feries-et-vacances-scolaires-2026",
+      "title": "Jours fériés et vacances scolaires 2026 | État de Vaud",
+      "source_ids": [
+        "vd-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 6,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 5,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0010",
+          "heading_path": [
+            "Jours fériés et vacances scolaires 2026",
+            "Jours fériés officiels 2026"
+          ],
+          "first_block": 66,
+          "last_block": 74,
+          "characters": 294,
+          "section_ids": [
+            "section-0010"
+          ]
+        },
+        {
+          "section_id": "section-0012",
+          "heading_path": [
+            "Jours fériés et vacances scolaires 2026",
+            "Documents"
+          ],
+          "first_block": 85,
+          "last_block": 88,
+          "characters": 130,
+          "section_ids": [
+            "section-0012"
+          ]
+        },
+        {
+          "section_id": "section-0013",
+          "heading_path": [
+            "Jours fériés et vacances scolaires 2026",
+            "Comment intégrer les périodes de vacances dans votre agenda électronique ?"
+          ],
+          "first_block": 89,
+          "last_block": 93,
+          "characters": 472,
+          "section_ids": [
+            "section-0013"
+          ]
+        },
+        {
+          "section_id": "section-0014",
+          "heading_path": [
+            "Jours fériés et vacances scolaires 2026",
+            "Raccourci"
+          ],
+          "first_block": 94,
+          "last_block": 95,
+          "characters": 18,
+          "section_ids": [
+            "section-0014"
+          ]
+        },
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Jours fériés et vacances scolaires 2026",
+            "Loi sur le personnel de l’Etat de Vaud"
+          ],
+          "first_block": 96,
+          "last_block": 97,
+          "characters": 388,
+          "section_ids": [
+            "section-0015"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-8a48a12f6bf0a9f37a41",
+      "source_url": "https://www.vd.ch/formation/jours-feries-et-vacances-scolaires/jours-feries-et-vacances-scolaires-2027",
+      "title": "Jours fériés et vacances scolaires 2027 | État de Vaud",
+      "source_ids": [
+        "vd-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 6,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 5,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0010",
+          "heading_path": [
+            "Jours fériés et vacances scolaires 2027",
+            "Jours fériés officiels 2027"
+          ],
+          "first_block": 66,
+          "last_block": 74,
+          "characters": 293,
+          "section_ids": [
+            "section-0010"
+          ]
+        },
+        {
+          "section_id": "section-0012",
+          "heading_path": [
+            "Jours fériés et vacances scolaires 2027",
+            "Documents"
+          ],
+          "first_block": 85,
+          "last_block": 88,
+          "characters": 130,
+          "section_ids": [
+            "section-0012"
+          ]
+        },
+        {
+          "section_id": "section-0013",
+          "heading_path": [
+            "Jours fériés et vacances scolaires 2027",
+            "Comment intégrer les périodes de vacances dans votre agenda électronique ?"
+          ],
+          "first_block": 89,
+          "last_block": 93,
+          "characters": 472,
+          "section_ids": [
+            "section-0013"
+          ]
+        },
+        {
+          "section_id": "section-0014",
+          "heading_path": [
+            "Jours fériés et vacances scolaires 2027",
+            "Raccourci"
+          ],
+          "first_block": 94,
+          "last_block": 95,
+          "characters": 18,
+          "section_ids": [
+            "section-0014"
+          ]
+        },
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Jours fériés et vacances scolaires 2027",
+            "Loi sur le personnel de l’Etat de Vaud"
+          ],
+          "first_block": 96,
+          "last_block": 97,
+          "characters": 388,
+          "section_ids": [
+            "section-0015"
           ]
         }
       ]
@@ -20210,6 +22730,42 @@
           ]
         }
       ]
+    },
+    {
+      "document_id": "doc-eb029f233a55e3ec9866",
+      "source_url": "https://www.vs.ch/de/web/se/plans-de-scolarite",
+      "title": "Schul- und Ferienplan - - vs.ch",
+      "source_ids": [
+        "vs-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-73da12f38afbc83227a3",
+      "source_url": "https://www.vs.ch/web/se/plans-de-scolarite",
+      "title": "Plans de scolarité - - vs.ch",
+      "source_ids": [
+        "vs-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 2,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "dispositions": {},
+      "status": "cited",
+      "unclassified_sections": []
     },
     {
       "document_id": "doc-ce9cb3adfb5045bb45fc",
@@ -20636,6 +23192,141 @@
       "dispositions": {},
       "status": "cited",
       "unclassified_sections": []
+    },
+    {
+      "document_id": "doc-03e5f92d8234569ca2c9",
+      "source_url": "https://www.zh.ch/de/bildung/bildungssystem/schulferien.html",
+      "title": "Schulferien | Kanton Zürich",
+      "source_ids": [
+        "zh-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 14,
+      "cited": 5,
+      "dispositioned": 0,
+      "boilerplate": 1,
+      "unclassified": 8,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0010",
+          "heading_path": [
+            "Schulferien",
+            "Volksschule"
+          ],
+          "first_block": 58,
+          "last_block": 61,
+          "characters": 572,
+          "section_ids": [
+            "section-0010"
+          ]
+        },
+        {
+          "section_id": "section-0011",
+          "heading_path": [
+            "Schulferien",
+            "Volksschule",
+            "Planungshilfe für die Schulgemeinden"
+          ],
+          "first_block": 62,
+          "last_block": 64,
+          "characters": 362,
+          "section_ids": [
+            "section-0011"
+          ]
+        },
+        {
+          "section_id": "section-0012",
+          "heading_path": [
+            "Schulferien",
+            "Volksschule",
+            "Weitere schulfreie Tage und gemeindeeigene Weiterbildung"
+          ],
+          "first_block": 65,
+          "last_block": 66,
+          "characters": 388,
+          "section_ids": [
+            "section-0012"
+          ]
+        },
+        {
+          "section_id": "section-0013",
+          "heading_path": [
+            "Schulferien",
+            "Volksschule",
+            "Weitere schulfreie Tage und gemeindeeigene Weiterbildung",
+            "Weitere schulfreie Tage"
+          ],
+          "first_block": 67,
+          "last_block": 69,
+          "characters": 277,
+          "section_ids": [
+            "section-0013"
+          ]
+        },
+        {
+          "section_id": "section-0014",
+          "heading_path": [
+            "Schulferien",
+            "Volksschule",
+            "Weitere schulfreie Tage und gemeindeeigene Weiterbildung",
+            "Gemeinsame Tätigkeiten während der Schulferien"
+          ],
+          "first_block": 70,
+          "last_block": 72,
+          "characters": 390,
+          "section_ids": [
+            "section-0014"
+          ]
+        },
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Schulferien",
+            "Volksschule",
+            "Weitere schulfreie Tage und gemeindeeigene Weiterbildung",
+            "Gemeindeeigene Weiterbildungen"
+          ],
+          "first_block": 73,
+          "last_block": 75,
+          "characters": 471,
+          "section_ids": [
+            "section-0015"
+          ]
+        },
+        {
+          "section_id": "section-0016",
+          "heading_path": [
+            "Schulferien",
+            "Volksschule",
+            "Weitere schulfreie Tage und gemeindeeigene Weiterbildung",
+            "Unterschiede zwischen weiteren schulfreien Tagen und gemeindeeigenen Weiterbildungen"
+          ],
+          "first_block": 76,
+          "last_block": 92,
+          "characters": 2527,
+          "section_ids": [
+            "section-0016"
+          ]
+        },
+        {
+          "section_id": "section-0017",
+          "heading_path": [
+            "Schulferien",
+            "Volksschule",
+            "Weitere schulfreie Tage und gemeindeeigene Weiterbildung",
+            "Schlussfolgerungen"
+          ],
+          "first_block": 93,
+          "last_block": 97,
+          "characters": 1209,
+          "section_ids": [
+            "section-0017"
+          ]
+        }
+      ]
     },
     {
       "document_id": "doc-a8114f7c75c808af1403",
@@ -27724,6 +30415,52 @@
       ]
     },
     {
+      "document_id": "doc-65987b111d4d5880a8b7",
+      "source_url": "https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html",
+      "title": "Verbotene Hunderassen | Kanton Zürich",
+      "source_ids": [
+        "zh-dogs"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 10,
+      "cited": 8,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 2,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0015",
+          "heading_path": [
+            "Verbotene Hunderassen",
+            "Rottweiler seit 1. Januar 2025 auf Rassetypenliste II",
+            "Besonderes Vorgehen bei Rottweilern unter 15 Monaten"
+          ],
+          "first_block": 94,
+          "last_block": 96,
+          "characters": 352,
+          "section_ids": [
+            "section-0015"
+          ]
+        },
+        {
+          "section_id": "section-0017",
+          "heading_path": [
+            "Verbotene Hunderassen",
+            "Wesensbeurteilung als Führbarkeitstest – Zielsetzung und Ablauf"
+          ],
+          "first_block": 100,
+          "last_block": 118,
+          "characters": 1305,
+          "section_ids": [
+            "section-0017"
+          ]
+        }
+      ]
+    },
+    {
       "document_id": "doc-6ac4fb95eb9bd1acf968",
       "source_url": "https://www.zh.ch/de/volkswirtschaftsdirektion/amt-fuer-wirtschaft.html",
       "title": "Amt für Wirtschaft | Kanton Zürich",
@@ -27969,6 +30706,74 @@
       "unclassified_sections": []
     },
     {
+      "document_id": "doc-8f24e9474861251a3470",
+      "source_url": "https://www4.ti.ch/decs/cosa-facciamo/calendario-scolastico/2026-2027",
+      "title": "2026/2027 - DECS (DECS) - Repubblica e Cantone Ticino",
+      "source_ids": [
+        "ti-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 10,
+      "cited": 6,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 4,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 1,
+          "characters": 44,
+          "section_ids": [
+            "section-0001"
+          ]
+        },
+        {
+          "section_id": "section-0011",
+          "heading_path": [
+            "Calendario scolastico 2026/2027",
+            "Applicazione mobile"
+          ],
+          "first_block": 53,
+          "last_block": 54,
+          "characters": 200,
+          "section_ids": [
+            "section-0011"
+          ]
+        },
+        {
+          "section_id": "section-0016",
+          "heading_path": [
+            "Calendario scolastico 2026/2027",
+            "Social media"
+          ],
+          "first_block": 67,
+          "last_block": 68,
+          "characters": 197,
+          "section_ids": [
+            "section-0016"
+          ]
+        },
+        {
+          "section_id": "section-0017",
+          "heading_path": [
+            "Calendario scolastico 2026/2027",
+            "Condividi"
+          ],
+          "first_block": 69,
+          "last_block": 76,
+          "characters": 80,
+          "section_ids": [
+            "section-0017"
+          ]
+        }
+      ]
+    },
+    {
       "document_id": "doc-6672da80799a61b7cd84",
       "source_url": "https://www4.ti.ch/di/spop/chi-siamo/ufficio-della-migrazione",
       "title": "Ufficio della migrazione - SPOP (DI) - Repubblica e Cantone Ticino",
@@ -28158,6 +30963,92 @@
       ]
     },
     {
+      "document_id": "doc-91983dceb9b36ae32b2e",
+      "source_url": "https://www4.ti.ch/fileadmin/DECS/calendario_scolastico/Calendario_scolastico_2026_2027.pdf",
+      "title": "Ticino: school holidays, document 1",
+      "source_ids": [
+        "ti-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 1,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "dispositions": {},
+      "status": "unclassified",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0001",
+          "heading_path": [],
+          "first_block": 1,
+          "last_block": 1,
+          "characters": 1605,
+          "section_ids": [
+            "section-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "document_id": "doc-e09073daa7f1d2628967",
+      "source_url": "https://zg.ch/de/bildung/bildungssystem/schulferien",
+      "title": "Schulferien",
+      "source_ids": [
+        "zg-school-holidays"
+      ],
+      "attribution_kind": "catalogue",
+      "unit": "section",
+      "units": 5,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 3,
+      "dispositions": {},
+      "status": "partly_cited",
+      "unclassified_sections": [
+        {
+          "section_id": "section-0002",
+          "heading_path": [
+            "Schulferien"
+          ],
+          "first_block": 324,
+          "last_block": 334,
+          "characters": 81,
+          "section_ids": [
+            "section-0002"
+          ]
+        },
+        {
+          "section_id": "section-0004",
+          "heading_path": [
+            "Schulferien",
+            "Ferienpläne"
+          ],
+          "first_block": 339,
+          "last_block": 341,
+          "characters": 67,
+          "section_ids": [
+            "section-0004"
+          ]
+        },
+        {
+          "section_id": "section-0006",
+          "heading_path": [
+            "Schulferien",
+            "Schulaufsicht"
+          ],
+          "first_block": 348,
+          "last_block": 357,
+          "characters": 225,
+          "section_ids": [
+            "section-0006"
+          ]
+        }
+      ]
+    },
+    {
       "document_id": "doc-d93f4248701c364d8108",
       "source_url": "https://zg.ch/de/migration-integration/einreise-und-aufenthalt/einreise-eu-efta-staatsangehoerige",
       "title": "Einreise EU/EFTA-Staatsangehörige",
@@ -28287,6 +31178,17 @@
       "status": "boilerplate_only"
     },
     {
+      "source_id": "ag-school-holidays",
+      "title": "Aargau - school holidays",
+      "documents": 2,
+      "units": 15,
+      "cited": 5,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 10,
+      "status": "partly_covered"
+    },
+    {
       "source_id": "ai-foreign-workers",
       "title": "Appenzell Innerrhoden - Working as a foreign national (eight days)",
       "documents": 1,
@@ -28320,6 +31222,17 @@
       "status": "partly_covered"
     },
     {
+      "source_id": "ai-school-holidays",
+      "title": "Appenzell Innerrhoden - school holidays",
+      "documents": 2,
+      "units": 4,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 2,
+      "status": "partly_covered"
+    },
+    {
       "source_id": "ai-settlement-decree",
       "title": "Appenzell Innerrhoden - Standeskommissionsbeschluss ueber Niederlassung und Aufenthalt (GS 142.001), art. 2",
       "documents": 1,
@@ -28340,6 +31253,17 @@
       "boilerplate": 0,
       "unclassified": 0,
       "status": "cited"
+    },
+    {
+      "source_id": "ar-school-holidays",
+      "title": "Appenzell Ausserrhoden - school holidays",
+      "documents": 2,
+      "units": 14,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 12,
+      "status": "partly_covered"
     },
     {
       "source_id": "ar-third-country",
@@ -28408,6 +31332,17 @@
       "status": "nothing"
     },
     {
+      "source_id": "be-school-holidays",
+      "title": "Bern - school holidays",
+      "documents": 1,
+      "units": 3,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "status": "partly_covered"
+    },
+    {
       "source_id": "be-settlement-law",
       "title": "Bern - Gesetz ueber Niederlassung und Aufenthalt (BSG 122.11), art. 1",
       "documents": 1,
@@ -28428,6 +31363,17 @@
       "boilerplate": 0,
       "unclassified": 0,
       "status": "cited"
+    },
+    {
+      "source_id": "bl-school-holidays",
+      "title": "Basel-Landschaft - school holidays",
+      "documents": 0,
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "no_documents"
     },
     {
       "source_id": "bs-entry-residence",
@@ -28460,6 +31406,17 @@
       "dispositioned": 0,
       "boilerplate": 0,
       "unclassified": 16,
+      "status": "partly_covered"
+    },
+    {
+      "source_id": "bs-school-holidays",
+      "title": "Basel-Stadt - school holidays",
+      "documents": 1,
+      "units": 12,
+      "cited": 3,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 9,
       "status": "partly_covered"
     },
     {
@@ -29992,6 +32949,17 @@
       "status": "boilerplate_only"
     },
     {
+      "source_id": "fr-school-holidays",
+      "title": "Fribourg - school holidays",
+      "documents": 4,
+      "units": 42,
+      "cited": 8,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 34,
+      "status": "partly_covered"
+    },
+    {
       "source_id": "ge-arrival",
       "title": "Geneva - Announcing your arrival to the OCPM, 14 days",
       "documents": 1,
@@ -30036,6 +33004,17 @@
       "status": "cited"
     },
     {
+      "source_id": "ge-school-holidays",
+      "title": "Geneva - school holidays",
+      "documents": 3,
+      "units": 5,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 3,
+      "status": "partly_covered"
+    },
+    {
       "source_id": "gl-register-law",
       "title": "Glarus - Einfuehrungsgesetz zum Registerharmonisierungsgesetz (GS I C/21/2), art. 4",
       "documents": 1,
@@ -30056,6 +33035,17 @@
       "boilerplate": 0,
       "unclassified": 0,
       "status": "no_documents"
+    },
+    {
+      "source_id": "gl-school-holidays",
+      "title": "Glarus - school holidays",
+      "documents": 2,
+      "units": 5,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 4,
+      "status": "partly_covered"
     },
     {
       "source_id": "gr-register-law",
@@ -30080,6 +33070,17 @@
       "status": "boilerplate_only"
     },
     {
+      "source_id": "gr-school-holidays",
+      "title": "Graubuenden - school holidays",
+      "documents": 2,
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "cited"
+    },
+    {
       "source_id": "gr-third-country-registration",
       "title": "Graubuenden - Registration for third-country nationals, 14 days",
       "documents": 1,
@@ -30102,6 +33103,17 @@
       "status": "partly_covered"
     },
     {
+      "source_id": "ju-school-holidays",
+      "title": "Jura - school holidays",
+      "documents": 2,
+      "units": 6,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 5,
+      "status": "partly_covered"
+    },
+    {
       "source_id": "lu-change-of-canton",
       "title": "Lucerne - Change of canton",
       "documents": 1,
@@ -30116,6 +33128,17 @@
       "source_id": "lu-eu-efta-leaflet",
       "title": "Lucerne - Merkblatt: residence permit for EU/EFTA nationals",
       "documents": 1,
+      "units": 1,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "cited"
+    },
+    {
+      "source_id": "lu-school-holidays",
+      "title": "Lucerne - school holidays",
+      "documents": 3,
       "units": 1,
       "cited": 1,
       "dispositioned": 0,
@@ -30157,6 +33180,17 @@
       "status": "partly_covered"
     },
     {
+      "source_id": "ne-school-holidays",
+      "title": "Neuchatel - school holidays",
+      "documents": 2,
+      "units": 7,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 5,
+      "status": "partly_covered"
+    },
+    {
       "source_id": "ne-studying",
       "title": "Neuchatel - Studying in Neuchatel: announcing arrival and what to bring",
       "documents": 1,
@@ -30177,6 +33211,17 @@
       "boilerplate": 0,
       "unclassified": 0,
       "status": "boilerplate_only"
+    },
+    {
+      "source_id": "nw-school-holidays",
+      "title": "Nidwalden - school holidays",
+      "documents": 0,
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "no_documents"
     },
     {
       "source_id": "nw-settlement-law",
@@ -30223,6 +33268,17 @@
       "status": "boilerplate_only"
     },
     {
+      "source_id": "ow-school-holidays",
+      "title": "Obwalden - school holidays",
+      "documents": 1,
+      "units": 8,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 7,
+      "status": "partly_covered"
+    },
+    {
       "source_id": "sg-newcomer-permit",
       "title": "St. Gallen - Residence permit, newcomer platform",
       "documents": 1,
@@ -30254,6 +33310,17 @@
       "boilerplate": 0,
       "unclassified": 0,
       "status": "cited"
+    },
+    {
+      "source_id": "sg-school-holidays",
+      "title": "St. Gallen - school holidays",
+      "documents": 1,
+      "units": 3,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
+      "status": "partly_covered"
     },
     {
       "source_id": "sh-change-of-canton",
@@ -30289,6 +33356,17 @@
       "status": "partly_covered"
     },
     {
+      "source_id": "sh-school-holidays",
+      "title": "Schaffhausen - school holidays",
+      "documents": 0,
+      "units": 0,
+      "cited": 0,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "no_documents"
+    },
+    {
       "source_id": "so-change-of-canton",
       "title": "Solothurn - Change of canton",
       "documents": 1,
@@ -30319,6 +33397,17 @@
       "dispositioned": 0,
       "boilerplate": 0,
       "unclassified": 6,
+      "status": "partly_covered"
+    },
+    {
+      "source_id": "so-school-holidays",
+      "title": "Solothurn - school holidays",
+      "documents": 3,
+      "units": 2,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 1,
       "status": "partly_covered"
     },
     {
@@ -30353,6 +33442,17 @@
       "boilerplate": 0,
       "unclassified": 0,
       "status": "cited"
+    },
+    {
+      "source_id": "sz-school-holidays",
+      "title": "Schwyz - school holidays",
+      "documents": 2,
+      "units": 19,
+      "cited": 1,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 18,
+      "status": "partly_covered"
     },
     {
       "source_id": "sz-third-country",
@@ -30399,6 +33499,17 @@
       "status": "no_documents"
     },
     {
+      "source_id": "tg-school-holidays",
+      "title": "Thurgau - school holidays",
+      "documents": 3,
+      "units": 9,
+      "cited": 3,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 6,
+      "status": "partly_covered"
+    },
+    {
       "source_id": "ti-migration-office",
       "title": "Ticino - Ufficio della migrazione",
       "documents": 1,
@@ -30421,6 +33532,17 @@
       "status": "boilerplate_only"
     },
     {
+      "source_id": "ti-school-holidays",
+      "title": "Ticino - school holidays",
+      "documents": 2,
+      "units": 11,
+      "cited": 6,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 5,
+      "status": "partly_covered"
+    },
+    {
       "source_id": "ur-migration",
       "title": "Uri - Migration: permits for EU/EFTA and third-country nationals",
       "documents": 1,
@@ -30441,6 +33563,17 @@
       "boilerplate": 0,
       "unclassified": 0,
       "status": "boilerplate_only"
+    },
+    {
+      "source_id": "ur-school-holidays",
+      "title": "Uri - school holidays",
+      "documents": 2,
+      "units": 7,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 5,
+      "status": "partly_covered"
     },
     {
       "source_id": "vd-arrival-other-canton",
@@ -30484,6 +33617,17 @@
       "dispositioned": 0,
       "boilerplate": 0,
       "unclassified": 5,
+      "status": "partly_covered"
+    },
+    {
+      "source_id": "vd-school-holidays",
+      "title": "Vaud - school holidays",
+      "documents": 3,
+      "units": 13,
+      "cited": 3,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 10,
       "status": "partly_covered"
     },
     {
@@ -30531,6 +33675,17 @@
       "status": "cited"
     },
     {
+      "source_id": "vs-school-holidays",
+      "title": "Valais - school holidays",
+      "documents": 2,
+      "units": 3,
+      "cited": 3,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 0,
+      "status": "cited"
+    },
+    {
       "source_id": "zg-commune-law",
       "title": "Zug - Gemeindegesetz (BGS 171.1), para 57a",
       "documents": 1,
@@ -30562,6 +33717,17 @@
       "boilerplate": 0,
       "unclassified": 0,
       "status": "cited"
+    },
+    {
+      "source_id": "zg-school-holidays",
+      "title": "Zug - school holidays",
+      "documents": 1,
+      "units": 5,
+      "cited": 2,
+      "dispositioned": 0,
+      "boilerplate": 0,
+      "unclassified": 3,
+      "status": "partly_covered"
     },
     {
       "source_id": "zh-awa-anmeldung-rav",
@@ -30643,12 +33809,12 @@
     {
       "source_id": "zh-dogs",
       "title": "Zurich - keeping a dog (cantonal rules)",
-      "documents": 1,
-      "units": 32,
-      "cited": 9,
+      "documents": 2,
+      "units": 42,
+      "cited": 17,
       "dispositioned": 0,
       "boilerplate": 1,
-      "unclassified": 23,
+      "unclassified": 25,
       "status": "partly_covered"
     },
     {
@@ -30781,6 +33947,17 @@
       "dispositioned": 0,
       "boilerplate": 0,
       "unclassified": 1,
+      "status": "partly_covered"
+    },
+    {
+      "source_id": "zh-school-holidays",
+      "title": "Zurich - school holidays",
+      "documents": 1,
+      "units": 13,
+      "cited": 5,
+      "dispositioned": 0,
+      "boilerplate": 1,
+      "unclassified": 8,
       "status": "partly_covered"
     },
     {
@@ -31245,9 +34422,9 @@
     {
       "status": "cited_on_several_pages",
       "host": "www.zh.ch",
-      "pages": 28,
+      "pages": 29,
       "heading_path": [
-        "Prämienverbilligung",
+        "Schulferien",
         "Weiterführende Informationen"
       ],
       "text": "verwenden sie die akkordeon-bedienelemente, um die sichtbarkeit der jeweiligen panels (unterhalb der bedienelemente) umzuschalten.",

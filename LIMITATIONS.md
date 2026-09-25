@@ -1,9 +1,9 @@
 # Limitations
 
-**Last update:** 24 September 2026
+**Last update:** 25 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
-claim. It applies to the committed release `mvp-zurich-2026-09-24-v5` and is
+claim. It applies to the committed release `mvp-zurich-2026-09-25-v3` and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
 [COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
@@ -26,7 +26,7 @@ below is measured on it.
 
 ## Review status: reviewed by one person, not by a lawyer
 
-**All 1,279 facts are `human-reviewed`**, by one named reviewer: the 104 facts
+**All 1,345 facts are `human-reviewed`**, by one named reviewer: the 104 facts
 of the residence topic (78) and of the cantonal migration-office contacts
 (26) on 14 September 2026, the 149 facts of the five topics added on
 15 September 2026, social insurance (25), tax at source (26), driving
@@ -234,6 +234,56 @@ review, which the coverage root no longer carries since release
 | 23 September 2026 | 124 (registering on arrival in all 26 cantons) | against two written briefs with an English rendering beside each of the 49 French and Italian excerpts, and a per-fact note on the twelve that carry a figure that is not fourteen days, a direction of travel that inverts easily, a duty owed to two offices, or a reading that rests on a canton's law rather than a page a resident would read |
 | 24 September 2026 | 5 (Lugano waste) | in the console |
 | 24 September 2026 | 6 (Basel and St. Gallen waste collection) | in the console |
+| 25 September 2026 | 7 (banned dog breeds in the Canton of Zurich) | in one bulk group in the console |
+| 25 September 2026 | 57 (school holidays of 23 cantons) | in two bulk groups in the console, after two assistant checks against the excerpts corrected 16 |
+| 25 September 2026 | 13 (11 holiday facts restated for the whole canton, 2 new) | in one bulk group in the console |
+
+## Gaps in the school holidays of 25 September 2026
+
+- **Three cantons are not served.** Basel-Landschaft answers HTTP 403 to the
+  crawler and to a browser User-Agent; Schaffhausen's page is a JavaScript
+  application with no content in the saved HTML; Nidwalden states its dates
+  only in a PDF the page links through JavaScript, and the known link
+  answers 404. `resolve` has no concept for them.
+- **Four cantons are served without dates.** robots.txt disallows the
+  paths of the Bern and Valais PDFs that hold the dates, and the pipeline
+  obeys it; Basel-Stadt publishes its dates only as open data (a CSV the
+  release does not cite); Uri's table by municipality prints most dates as
+  bare day numbers whose months could not be assigned with certainty. These
+  four serve who sets the holidays or what the page states, not a date.
+- **One school year only.** Schwyz, Obwalden and Ticino are served for
+  2026/27 only, and Graubuenden for 2026/27 with only the school start of
+  2027/28: the documents for the second year were not found or not saved.
+- **One town's dates for the whole canton.** Where municipalities set the
+  dates (Lucerne, Solothurn, Schwyz, Graubuenden), the main town's dates are
+  served for every place in the canton; where the canton publishes regions
+  (Fribourg, Obwalden, Appenzell Innerrhoden), the majority calendar is. Each
+  statement names whose dates they are, and a canton-wide fact says that
+  other municipalities or regions may differ, but a place asked about can
+  have other dates: Scuol's sports holidays in the Graubuenden plan differ
+  from Chur's, and the region of Murten/Morat, Engelberg and the outer part
+  of Appenzell Innerrhoden have calendars of their own that are not served.
+  The reviewer chose this over serving no date for those places. Lucerne's
+  2027/28 dates are the canton's plan, which a municipality may depart
+  from.
+- **Partial calendars.** The Canton of Zurich serves who sets the holidays
+  and the dates of its Mittelschulen and Berufsfachschulen; the public
+  schools set their own, and only the City of Zurich's are served (in
+  `city-zurich-school-holidays`). St. Gallen's and Aargau's municipalities
+  set the sports holidays and part of the other weeks, which are not
+  served. Appenzell Ausserrhoden's dates are indicative (Ferienrichtdaten),
+  and its municipalities may set two of the thirteen weeks themselves.
+- **Drafted by assistants, checked twice, reviewed once.** The 57 facts
+  were drafted by four assistant sessions from the saved text, then checked
+  against the cited excerpts by two further sessions, which corrected 16 of
+  them (among them a Vaud Easter date taken from the wrong year's column and
+  two Solothurn end dates taken from the next year's start column), before
+  the reviewer confirmed all 57 in two bulk groups.
+- **A browser User-Agent for two hosts.** www.gl.ch and the tg.ch sites
+  reset the connection for the crawler's self-identifying User-Agent, so
+  their catalogue entries are fetched with a browser's; robots.txt is still
+  read for the crawler's own name, and each attempt records the User-Agent
+  it sent.
 
 ## Gaps in the Basel and St. Gallen collection calendars of 24 September 2026
 
@@ -582,8 +632,8 @@ review, which the coverage root no longer carries since release
 - **City of Zurich only.** Waste, parking, kindergarten, school holidays,
   the tax return, the tax office and the medical emergency page are the
   City of Zurich's; `resolve` refuses them for another municipality. The dog
-  training duty and the vehicle procedures are cantonal and serve the whole
-  canton; the Serafe fee is federal.
+  training duty, the ban of the breeds of list II and the vehicle procedures
+  are cantonal and serve the whole canton; the Serafe fee is federal.
 - **Collection days are not served.** The waste facts point to the personal
   disposal calendar and the ERZ app; a collection day for a street is
   computed there and not in the release.
@@ -1246,14 +1296,14 @@ does not speak for their canton on those points.
   pillar 3a while unemployed.
 - **Search terms are German and English, with a few French and Italian
   ones; none are Romansh.** The source terms are copied verbatim from the
-  cited excerpts: 1,708 German on 212 of the 214 concepts and 85 English on
+  cited excerpts: 1,823 German on 231 of the 238 concepts and 85 English on
   25, those whose federal page has an English version the release cites; the
   Canton and City of Zurich pages carry none, so a question about a Zurich
   procedure matches only authored English words, the labels, the sample
-  questions and the statements. The French (28 terms on 5 concepts) and
-  Italian (16 on 6) terms sit on the five concepts of registering on
-  arrival, copied from the pages of the French- and Italian-speaking cantons,
-  and, in Italian, on Lugano waste, so a French or Italian question on those
+  questions and the statements. The French (59 terms on 10 concepts) and
+  Italian (22 on 7) terms sit on the concepts of registering on arrival
+  and of the school holidays, copied from the pages of the French- and
+  Italian-speaking cantons, and, in Italian, on Lugano waste, so a French or Italian question on those
   subjects finds its concept directly; no other subject is reachable in those
   languages, and
   `question_languages` stays German and English. A Romansh question depends
@@ -1551,13 +1601,21 @@ answer. Recorded runs show three behaviours the release cannot prevent:
   Lugano waste concept with its 5 facts reviewed, was attested on 24 September
   2026 and supersedes v27; `mvp-zurich-2026-09-24-v5`, which adds the Basel and
   St. Gallen collection concepts with their 6 facts reviewed, was attested the
-  same day and supersedes it.
+  same day and supersedes it; `mvp-zurich-2026-09-25-v1`, which adds the Canton of
+  Zurich's banned dog breeds with their 7 facts reviewed, was attested on 25
+  September 2026 and supersedes v5; `mvp-zurich-2026-09-25-v2`, which adds the
+  school holidays of 23 cantons with their 57 facts reviewed, was attested the
+  same day and supersedes v1; `mvp-zurich-2026-09-25-v3`, which serves the main
+  towns' holiday dates for their whole canton with 13 facts reviewed again,
+  was attested the same day and supersedes v2.
 - **The coverage root is close to its bound.** `get_coverage` answers in one
-  call under 6 KB, which the pack README promises and the check
+  call under 8,700 bytes, which the check
   `scripts/test/packs/test_zurich_release.py` enforces. On this release the
-  root is 6,040 bytes now that every fact is reviewed and the served
-  review-status line names one status; it was 6,074 while the 25 integration
-  facts were open. The check's bound was 6,000 bytes and was raised once to
+  root is 8,535 bytes; the school holidays of 25 September 2026 took it to
+  8,592 (the topic, one scope sentence and seven main-town jurisdiction codes,
+  which release v3 dropped again), and the reviewer raised the bound from
+  8,500 to 8,700 rather than trim the scope statement. Earlier, the root was 6,040 bytes once every integration fact
+  was reviewed. The check's bound was 6,000 bytes and was raised once to
   6,144, the binary kilobyte the README means. The integration topic of
   22 September 2026 pushed the root 194 bytes over that bound, and the bound
   stayed: the new out-of-scope entry was cut to one line and three

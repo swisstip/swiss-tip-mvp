@@ -1,6 +1,6 @@
 # User acceptance tests
 
-**Last update:** 24 September 2026
+**Last update:** 25 September 2026
 **Scope:** the two standing cases of section 3.3 of the
 [functional specification](https://github.com/swisstip/swiss-tip/blob/main/docs/product/functional-specification.md), four further
 cases chosen because the popular answer misses an exception in the law, a
@@ -2683,6 +2683,63 @@ the collection area, one of A to K, L Ost and L West. It must say that the
 online collection plan finds the area from the street, and that a street
 directory lists it. The trap is naming one weekday for the whole city.
 
+### UAT-120: Moving to Zurich with a Rottweiler
+
+"I plan to bring my Rottweiler from Pargue to cita of Zuerich - what is the
+procedure?" The misspellings are the user's and stay in the query. The answer
+must open with the ban: the Rottweiler has been on breed-type list II of the
+cantonal dog ordinance since 1 January 2025. Nobody may move into the Canton
+of Zurich with a dog of that list, crosses with at least ten percent of their
+blood included, and no test or temperament assessment makes an exception.
+There is therefore no procedure for bringing the dog. The trap is listing the
+registration steps (the dog control within ten days, AMICUS, the courses) and
+the import rules as if the dog could come, or naming the ban only after them.
+Search must rank `zh-banned-dog-breeds` among the first three hits, and the
+answer must cite the Canton of Zurich page on banned dog breeds.
+
+### UAT-121: Moving to Winterthur with a Rottweiler
+
+"We are moving from Germany to Winterthur with our Rottweiler. Is that
+allowed?" The answer must say no: the ban of breed-type list II is cantonal
+and applies in Winterthur as everywhere in the Canton of Zurich, and it must
+cite the Canton of Zurich page on banned dog breeds. The trap is calling the
+ban a City of Zurich rule, or giving the City of Zurich's registration steps
+for Winterthur.
+
+### UAT-122: Autumn holidays in Geneva
+
+"When are the autumn school holidays 2026 in Geneva?" The answer must give
+Monday 19 October to Friday 23 October 2026, one week, from the Canton of
+Geneva's page of the school year 2026/27. The trap is two weeks in October,
+as in most German-speaking cantons.
+
+### UAT-123: Summer holidays in the town of Lucerne
+
+"Wann beginnen die Sommerferien 2027 in der Stadt Luzern?" (When do the
+summer holidays 2027 start in the town of Lucerne?) The answer must give
+Saturday 3 July 2027, until 15 August 2027, from the town of Luzern's row
+of the canton's plan by municipality. The trap is one date for the whole
+canton, whose municipalities set their own holidays.
+
+### UAT-124: School holidays in Emmen
+
+"When are the autumn school holidays 2026 in Emmen?" The release serves the
+town of Luzern's dates for the whole Canton of Lucerne, labelled as the
+town's (autumn holidays 26 September to 11 October 2026), with the canton's
+statement that each municipality sets its own holidays. The answer must give
+them as Luzern's and say that Emmen's own dates can differ. The trap is
+presenting Luzern's dates as Emmen's own, or giving no date.
+
+### UAT-125: Autumn holidays in Scuol
+
+"Cura èn las vacanzas d'atun 2026 per la scola da Scuol?" (When are the
+autumn school holidays 2026 in Scuol?, in Romansh) The answer must be in
+Romansh and give the autumn holidays of Chur, the main town, 10 to 25
+October 2026, which the release serves for the whole Canton of Graubuenden,
+and say that each school authority has its own plan, so Scuol's dates can
+differ. The trap is presenting Chur's dates as Scuol's own, answering in
+another language, or giving no date.
+
 ## Decline cases
 
 These cases check that the server rejects a request the release does not
@@ -2748,7 +2805,7 @@ freshness window (`STALE`) by the round-trip check.
 | X5 | A fact ID passed to `get_evidence` | The fact's evidence is returned; an unknown ID is an `INVALID_ARGUMENT` error |
 | X6 | Malformed request (unknown field, empty list, six evidence IDs) | `INVALID_ARGUMENT` with the field path; nothing is served |
 | X7 | Unknown release ID | `RELEASE_UNAVAILABLE` naming the active release |
-| X8 | Coverage root size | Under 8.5 KB, so one call suffices to refuse an outside question. Raised from 6 KB to 8 KB on 23 September 2026, when the two committed bounds were found drifted apart at 6,144 and 8,000 and the four waves of 22-23 September had taken the root to 7,640 bytes; raised again to 8.5 KB the same day, when disclosing registration coverage for all 26 cantons in the manifest took the root to 8,317 |
+| X8 | Coverage root size | Under 8.7 KB, so one call suffices to refuse an outside question. Raised from 6 KB to 8 KB on 23 September 2026, when the two committed bounds were found drifted apart at 6,144 and 8,000 and the four waves of 22-23 September had taken the root to 7,640 bytes; raised again to 8.5 KB the same day, when disclosing registration coverage for all 26 cantons in the manifest took the root to 8,317; raised to 8.7 KB on 25 September 2026, when the school holidays of 23 cantons took it to 8,592 |
 
 ## Execution records
 

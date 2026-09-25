@@ -80,8 +80,11 @@ class ZurichReleaseTests(unittest.TestCase):
         # published for all 26 cantons, with the caveats that go with it, costs about 370 bytes and took the root to
         # 8,317. The alternatives were a terser and less precise disclosure or rewriting reviewed limitations, and
         # the user chose on 23 September 2026 to raise the bound to 8,500 instead, because the pack grew from one
-        # canton to twenty-six and the root grew with it. Shorten a topic description before raising this again.
-        self.assertLess(len(root.content[0].text.encode("utf-8")), 8500)
+        # canton to twenty-six and the root grew with it. The school holidays of 25 September 2026 took it to 8,592:
+        # the new topic, one scope sentence and seven main-town jurisdiction codes. Offered a trim of three phrases
+        # of the scope statement, the user chose on 25 September 2026 to raise the bound to 8,700 and keep the
+        # wording. Shorten a topic description before raising this again.
+        self.assertLess(len(root.content[0].text.encode("utf-8")), 8700)
         self.assertEqual(resolved.structuredContent["status"], "SUPPORTED")
         self.assertTrue(resolved.structuredContent["results"][0]["citations"][0]["url"].startswith("https://www.sem.admin.ch/"))
 

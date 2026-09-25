@@ -31,8 +31,9 @@ class CommittedCatalogueTests(unittest.TestCase):
         mvp = load_source_catalog(MVP)
         # 251 sources, then on 23 September 2026 the City of Lugano's waste source (daily-life) and one registry
         # seed per host for the English versions (english), which the downloader now needs to attribute them; on
-        # 24 September 2026 the waste-collection pages of Basel and St. Gallen (daily-life).
-        self.assertEqual(len(mvp["sources"]), 260)
+        # 24 September 2026 the waste-collection pages of Basel and St. Gallen (daily-life); on 25 September 2026
+        # the school-holiday page of each of the 26 cantons (school-holidays).
+        self.assertEqual(len(mvp["sources"]), 286)
         self.assertEqual(len(set(mvp["scan_sets"]["english"])), 6)
         scan_sets = mvp["scan_sets"]
         self.assertLessEqual({"smoke", "federal", "zurich", "multilingual", "moving", "naturalisation", "contacts",
@@ -45,6 +46,14 @@ class CommittedCatalogueTests(unittest.TestCase):
                     if s["definition"]["source_id"] in set(scan_sets["cantons"])}
         self.assertEqual(len(cantonal), 25)
         self.assertNotIn("CH-ZH", cantonal)
+        # The school holidays of 25 September 2026: one seed per canton. GL and TG reset the connection for the
+        # crawler and are fetched with a browser User-Agent; BL, SH and NW could not be fetched and stay recorded.
+        holidays = [s for s in mvp["sources"] if s["definition"]["source_id"] in set(scan_sets["school-holidays"])]
+        self.assertEqual(len({s["definition"]["jurisdiction"] for s in holidays}), 26)
+        self.assertEqual({s["definition"]["source_id"] for s in holidays if s.get("user_agent") == "browser"},
+                         {"gl-school-holidays", "tg-school-holidays"})
+        self.assertEqual({s["definition"]["source_id"] for s in holidays if s["scan_status"] == "needs_access_review"},
+                         {"bl-school-holidays", "sh-school-holidays", "nw-school-holidays"})
         # The extensions of 15 September (topics), 17 September (office contacts, daily life) and 18 September
         # (voting rights and the tax-at-source tariff) name these sources.
         extension = set(scan_sets["moving"]) | set(scan_sets["naturalisation"])
@@ -65,7 +74,7 @@ class CommittedCatalogueTests(unittest.TestCase):
                 self.assertEqual(download_cli.main(["--catalogue", str(MVP), "--output", str(output)]), 0)
                 fetch.assert_not_called()
             plan = json.loads((output / "plan.json").read_text(encoding="utf-8"))
-            self.assertEqual(len(plan["targets"]), 260)
+            self.assertEqual(len(plan["targets"]), 286)
             self.assertEqual(plan["catalog_ref"]["artifact_id"], "residence-sources-mvp-zurich")
             fedlex = [s["url"] for s in json.loads((output / "plugin-plan.json").read_text(encoding="utf-8"))["sources"]]
             # the VEV joined the eleven Fedlex documents on 17 September 2026, the two constitutions and the Code of

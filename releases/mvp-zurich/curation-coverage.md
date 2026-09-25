@@ -1,8 +1,8 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, not clean, 216 disposition(s), generated 2026-09-24T12:53:13.
+Release `mvp-zurich-2026-09-25-v3` (content `f8264c6ff2ba`), policy `report`, not clean, 216 disposition(s), generated 2026-09-25T07:25:01.
 
-532 candidate records ({'section': 513, 'document': 17, 'rolled_up': 2}) with 3423 units a curator answers for: 864 cited, 1251 dispositioned, **1308 unclassified**; 160 boilerplate sections were not asked for. Documents: {'unclassified': 41, 'empty': 44, 'partly_cited': 138, 'cited': 85, 'cited_and_dispositioned': 73, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
+580 candidate records ({'section': 561, 'document': 17, 'rolled_up': 2}) with 3641 units a curator answers for: 931 cited, 1251 dispositioned, **1459 unclassified**; 161 boilerplate sections were not asked for. Documents: {'unclassified': 51, 'partly_cited': 158, 'cited': 98, 'empty': 49, 'cited_and_dispositioned': 73, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 
 ## Documents
 
@@ -16,10 +16,17 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | unclassified | [Heiraten in der Schweiz](https://www.ch.ch/de/familie-und-partnerschaft/heirat--konkubinat--partenariat/heiraten/) `doc-1763e58f746ce7c2100a` | section | 2 | 0 | 0 | 0 | 2 | ch-chch-marriage |
 | unclassified | [Miete](https://www.ch.ch/de/wohnen/miete/) `doc-fabe4f3082ee4b4931b7` | section | 2 | 0 | 0 | 0 | 2 | ch-chch-housing |
 | unclassified | [Wohnen: Ruhezeiten, Mietzins und Mängel in der Schweiz](https://www.ch.ch/de/wohnen/miete/larm--mangel--mietzins/) `doc-10bb67123311f6518f86` | section | 2 | 0 | 0 | 0 | 2 |  |
+| unclassified | [Fribourg: school holidays, document 2](https://www.fr.ch/de/document/508641) `doc-497cd1127acfc6a9d06b` | section | 1 | 0 | 0 | 0 | 1 | fr-school-holidays |
+| unclassified | [Fribourg: school holidays, document 1](https://www.fr.ch/de/document/508691) `doc-2c1462e242fd9c817b18` | section | 1 | 0 | 0 | 0 | 1 | fr-school-holidays |
+| unclassified | [Fribourg: school holidays, document 3](https://www.fr.ch/de/document/513516) `doc-451d875c7bdce57805c4` | section | 1 | 0 | 0 | 0 | 1 | fr-school-holidays |
+| unclassified | [Geneva: school holidays, document 2](https://www.ge.ch/document/39850/telecharger) `doc-90a68d7539a87a8b2ee3` | section | 1 | 0 | 0 | 0 | 1 | ge-school-holidays |
+| unclassified | [Öffentliche Feiertage – Kanton Glarus](https://www.gl.ch/verwaltung/staatskanzlei/oeffentliche-feiertage.html/1335) `doc-2f692439232eadbe9c8e` | section | 4 | 0 | 0 | 0 | 4 | gl-school-holidays |
+| unclassified | [Vacances scolaires - République et Canton du Jura](https://www.jura.ch/fr/Autorites/Administration/DFNS/Formation-postobligatoire-SFP/CEJEF/Vacances-scolaires/Vacances-scolaires.html) `doc-9eb48de5e06aef5987e0` | section | 5 | 0 | 0 | 0 | 5 | ju-school-holidays |
 | unclassified | [Rifiuti / lugano.ch](https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/) `doc-522f7b0b089a9505a87e` | section | 1 | 0 | 0 | 0 | 1 | lugano-waste |
 | unclassified | [Ecocentri ed ecopunti / lugano.ch](https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/ecopunti-ecocentri/) `doc-35709959562cee4124cd` | section | 21 | 0 | 0 | 0 | 21 | lugano-waste |
 | unclassified | [Aufenthaltsbewilligung (Ausweis B)](https://www.migration.sid.be.ch/de/start/aufenthalt/ausweis-b.html) `doc-b43396324f38f0112c65` | section | 3 | 0 | 0 | 0 | 3 | be-permit-b |
 | unclassified | [Personnes issues d'un État de l'UE/AELE](https://www.migration.sid.be.ch/fr/start/einreise/buerger-eu-efta.html) `doc-a24d379984bea6e97df4` | section | 3 | 0 | 0 | 0 | 3 | be-entry-eu-efta-fr |
+| unclassified | [Neuchatel: school holidays, document 1](https://www.ne.ch/sites/default/files/2025-08/CalendrierScolaire2019-2030.pdf) `doc-8b330c514802de42155d` | section | 1 | 0 | 0 | 0 | 1 | ne-school-holidays |
 | unclassified | [Wie werde ich Schweizerin oder Schweizer](https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden.html) `doc-a51c61294f44050bec82` | section | 7 | 0 | 0 | 0 | 7 | ch-sem-citizenship |
 | unclassified | [Verfahren](https://www.sem.admin.ch/sem/de/home/themen/arbeit/nicht-eu_efta-angehoerige/verfahrensablauf.html) `doc-d730abb70b2cd9d7b687` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-work-third-country |
 | unclassified | [Fachinformationen zur Einreise in die Schweiz oder den Schengen-Raum](https://www.sem.admin.ch/sem/de/home/themen/einreise/fachinfo-einreise.html) `doc-df95692fe72c9af232f2` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-entry |
@@ -41,6 +48,8 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | unclassified | ["Sans-Papiers" in Switzerland](https://www.sem.admin.ch/sem/en/home/themen/aufenthalt/sans-papiers.html) `doc-2979c6530d0fc2938338` | section | 2 | 0 | 0 | 0 | 2 | ch-sem-residence-en |
 | unclassified | [Visa Application Form](https://www.sem.admin.ch/sem/en/home/themen/einreise/visumantragsformular.html) `doc-daf8dfc81039a2f8289c` | section | 1 | 0 | 0 | 0 | 1 |  |
 | unclassified | [Abfall und Entsorgung / stadt.sg.ch](https://www.stadt.sg.ch/home/raum-umwelt/abfall-entsorgung.html) `doc-a06914acd2b83b94aa53` | section | 2 | 0 | 0 | 0 | 2 | st-gallen-waste |
+| unclassified | [Schulorganisation – Kanton Schwyz](https://www.sz.ch/behoerden/verwaltung/bildungsdepartement/amt-fuer-volksschulen-und-sport/schulorganisation.html/8756-8758-8802-9466-9467-12773) `doc-bf1cd0c996f355eee6cc` | section | 18 | 0 | 0 | 0 | 18 | sz-school-holidays |
+| unclassified | [Uri: school holidays, document 1](https://www.ur.ch/_docn/449362/Ferienplan_2026_2027_nach_Gemeinden.pdf) `doc-bcad62a7178b1f891e57` | section | 1 | 0 | 0 | 0 | 1 | ur-school-holidays |
 | unclassified | [Verlassen der Schweiz](https://www.zas.admin.ch/de/verlassen-der-schweiz) `doc-2762a65962b06c05dc9e` | section | 6 | 0 | 0 | 0 | 6 |  |
 | unclassified | [Steueramt / Kanton Zürich](https://www.zh.ch/de/finanzdirektion/steueramt.html) `doc-b30d930e5eb4e146f3c0` | section | 10 | 0 | 0 | 0 | 10 | zh-steueramt-office |
 | unclassified | [Familiennachzug von Drittstaatsangehörigen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen.html) `doc-0f4f03404f99ee66351b` | section | 12 | 0 | 0 | 1 | 11 | zh-family |
@@ -48,8 +57,12 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | unclassified | [Strassenverkehrsamt / Kanton Zürich](https://www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt.html) `doc-40854d7d26db9f3bba00` | section | 12 | 0 | 0 | 1 | 11 | zh-strassenverkehrsamt-office |
 | unclassified | [Quellensteuer / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer.html) `doc-aaca2a8359cc911aa50f` | rolled_up | 6 | 0 | 0 | 0 | 6 | zh-tax-at-source |
 | unclassified | [Amt für Wirtschaft / Kanton Zürich](https://www.zh.ch/de/volkswirtschaftsdirektion/amt-fuer-wirtschaft.html) `doc-6ac4fb95eb9bd1acf968` | section | 6 | 0 | 0 | 0 | 6 | zh-awa-office |
+| unclassified | [Ticino: school holidays, document 1](https://www4.ti.ch/fileadmin/DECS/calendario_scolastico/Calendario_scolastico_2026_2027.pdf) `doc-91983dceb9b36ae32b2e` | section | 1 | 0 | 0 | 0 | 1 | ti-school-holidays |
 | unclassified | [Einreise EU/EFTA-Staatsangehörige](https://zg.ch/de/migration-integration/einreise-und-aufenthalt/einreise-eu-efta-staatsangehoerige) `doc-d93f4248701c364d8108` | section | 5 | 0 | 0 | 0 | 5 | zg-entry-eu-efta |
+| partly_cited | [Ferienplan und schulfreie Tage — Appenzell Innerrhoden](https://ai.ch/themen/bildung/eltern-und-schule/ferienplan) `doc-bd8de67ee7b289c4e582` | section | 3 | 1 | 0 | 0 | 2 | ai-school-holidays |
+| partly_cited | [Regelungen - Appenzell Ausserrhoden](https://ar.ch/verwaltung/departement-bildung-und-kultur/amt-fuer-volksschule-und-sport/ehandbuch-volksschule/schulbetrieb/regelungen/) `doc-3f726984bb17fa45fae2` | section | 13 | 1 | 0 | 0 | 12 | ar-school-holidays |
 | partly_cited | [Drittstaatsangehörige - Appenzell Ausserrhoden](https://ar.ch/verwaltung/departement-inneres-und-sicherheit/amt-fuer-inneres/abteilung-migration/einreise-und-aufenthalt/drittstaatsangehoerige/) `doc-1c6f5fde53430f3e283a` | section | 5 | 1 | 0 | 0 | 4 | ar-third-country |
+| partly_cited | [Ferienplan](https://av.tg.ch/themen/ferienplan.html/13415) `doc-dc236f8ebaa114f9d103` | section | 7 | 1 | 0 | 0 | 6 | tg-school-holidays |
 | partly_cited | [Welche Beiträge kann ich in die Säule 3a einzahlen? / BSV](https://faq.bsv.admin.ch/de/3-saeule/welche-beitraege-kann-ich-die-saeule-3a-einzahlen) `doc-cb064208c75c37b62929` | section | 3 | 1 | 0 | 0 | 2 |  |
 | partly_cited | [Wer kann eine Säule 3a (gebundene Selbstvorsorge) einrichten? / BSV](https://faq.bsv.admin.ch/de/3-saeule/wer-kann-eine-saeule-3a-gebundene-selbstvorsorge-einrichten) `doc-ed67ab05b41d46594ed8` | section | 3 | 1 | 0 | 0 | 2 | ch-bsv-pillar-3a |
 | partly_cited | [Kann ich mein BVG-Altersguthaben bar beziehen, wenn ich die Schweiz endgültig verlasse? / BSV](https://faq.bsv.admin.ch/de/berufliche-vorsorge-und-3-saeule/kann-ich-mein-bvg-altersguthaben-bar-beziehen-wenn-ich-die-schweiz) `doc-07709682168602d2fb3f` | section | 3 | 1 | 0 | 0 | 2 | ch-bsv-bvg-departure |
@@ -57,10 +70,13 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | partly_cited | [Migrationsamt: Gesuch einreichen](https://migrationsamt.sh.ch/kantonswechsel-fuer-drittstaatsangehoerige) `doc-72ec61f7171b5d31d318` | section | 4 | 1 | 0 | 0 | 3 | sh-change-of-canton |
 | partly_cited | [Kantonswechsel - Kanton Solothurn](https://so.ch/verwaltung/departement-des-innern/migrationsamt/aufenthalt-und-integration/kantonswechsel/) `doc-10f9280753a0262e0d1d` | section | 3 | 1 | 0 | 0 | 2 | so-change-of-canton |
 | partly_cited | [Einreise - Kanton Solothurn](https://so.ch/verwaltung/departement-des-innern/migrationsamt/einreise/) `doc-a06a78b6403bde7dbc64` | section | 7 | 1 | 0 | 0 | 6 | so-entry-registration |
+| partly_cited | [Ferienplan - Kanton Solothurn](https://so.ch/verwaltung/departement-fuer-bildung-kultur-und-sport/volksschulamt/aktuell/ferienplan/) `doc-871ec5cc0f3bb6f78f04` | section | 2 | 1 | 0 | 0 | 1 | so-school-holidays |
 | partly_cited | [Arbeiten — Appenzell Innerrhoden](https://www.ai.ch/themen/auslaender/arbeiten) `doc-be1e21dbb97154b03ae1` | section | 9 | 2 | 0 | 0 | 7 | ai-foreign-workers |
 | partly_cited | [An-, Ab- und Ummelden — Appenzell Innerrhoden](https://www.ai.ch/themen/persoenliches/wohnen-und-umziehen/an-und-abmelden) `doc-549a0c80ca63f55e8541` | section | 4 | 3 | 0 | 0 | 1 | ai-registration |
+| partly_cited | [Schulferienplanung](https://www.akvb-gemeinden.bkd.be.ch/de/start/organisation-finanzierung/schulorganisation/schulferienplanung.html) `doc-54b1d21f0a18aafea5f2` | section | 3 | 2 | 0 | 0 | 1 | be-school-holidays |
 | partly_cited | [Health insurance: Requirement to obtain insurance for persons resident in Switzerland](https://www.bag.admin.ch/en/health-insurance-requirement-to-obtain-insurance-for-persons-resident-in-switzerland) `doc-a824ca812a50553956ef` | section | 6 | 3 | 0 | 0 | 3 |  |
 | partly_cited | [Moving to Switzerland: Procedure](https://www.bazg.admin.ch/en/relocation-import-switzerland-procedure) `doc-c232814a873fa3014a6e` | section | 6 | 4 | 0 | 0 | 2 |  |
+| partly_cited | [Schulferien / Kanton Basel-Stadt](https://www.bs.ch/themen/bildung-und-kinderbetreuung/schulferien) `doc-734ed8f8b6957ecd419b` | section | 12 | 3 | 0 | 0 | 9 | bs-school-holidays |
 | partly_cited | [Einreise und Aufenthalt / Kanton Basel-Stadt](https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/einreise-und-aufenthalt) `doc-b8e80712d932400cd49a` | section | 48 | 4 | 0 | 0 | 44 | bs-entry-residence |
 | partly_cited | [Zuzug in den Kanton Basel-Stadt / Kanton Basel-Stadt](https://www.bs.ch/themen/persoenliches-und-wohnen/zuzug-und-aufenthalt/zuzug-den-kanton-basel-stadt) `doc-cff5ab3ec851efa60538` | section | 21 | 5 | 0 | 0 | 16 | bs-registration-arrival |
 | partly_cited | [Abfallabfuhr / Kanton Basel-Stadt](https://www.bs.ch/themen/umwelt-und-bauen/abfall-und-sauberkeit/abfallabfuhr) `doc-6611780fdbe91520554c` | section | 19 | 5 | 0 | 0 | 14 | basel-waste |
@@ -80,15 +96,21 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | partly_cited | [Mietvertrag, Untermietvertrag, Pachtvertrag in der Schweiz.](https://www.ch.ch/de/wohnen/miete/mietvertrag-und-pachtvertrag/) `doc-5ba510af38c7a4246318` | section | 6 | 2 | 0 | 0 | 4 |  |
 | partly_cited | [Visabestimmungen für die Einreise in die Schweiz](https://www.eda.admin.ch/de/visabestimmungen-fuer-die-einreise-in-die-schweiz) `doc-1bc7c301f281e3894bc3` | section | 7 | 3 | 0 | 0 | 4 | ch-eda-visa |
 | partly_cited | [Schweizerische Quellensteuer QST](https://www.estv.admin.ch/de/quellensteuer) `doc-4f9c56f3313549edc7e8` | section | 15 | 2 | 0 | 0 | 13 | ch-estv-tax-at-source |
+| partly_cited | [Schulferien / Staat Freiburg](https://www.fr.ch/de/bkad/schulferien) `doc-5b948596184f32ade62a` | section | 39 | 8 | 0 | 0 | 31 | fr-school-holidays |
 | partly_cited | [Annoncer mon arrivée à l'OCPM / ge.ch](https://www.ge.ch/annoncer-mon-arrivee-ocpm) `doc-47f3b81937bf5d0dbe98` | section | 3 | 1 | 0 | 0 | 2 | ge-arrival |
 | partly_cited | [Annoncer mon départ à l'OCPM / ge.ch](https://www.ge.ch/annoncer-mon-depart-ocpm) `doc-a7aa9034e802ad023fb2` | section | 3 | 1 | 0 | 0 | 2 | ge-departure |
+| partly_cited | [Vacances scolaires 2026-2027 / ge.ch](https://www.ge.ch/vacances-scolaires-jours-feries/vacances-scolaires-2026-2027) `doc-55565f47952f0c156ddc` | section | 2 | 1 | 0 | 0 | 1 | ge-school-holidays |
+| partly_cited | [Vacances scolaires 2027-2028 / ge.ch](https://www.ge.ch/vacances-scolaires-jours-feries/vacances-scolaires-2027-2028) `doc-b5ce884470e08165049b` | section | 2 | 1 | 0 | 0 | 1 | ge-school-holidays |
 | partly_cited | [Aufenthaltsbewilligung / hallo.sg.ch](https://www.hallo.sg.ch/de/zusammenleben/leben-in-st-gallen/aufenthaltsbewilligung.html) `doc-87bd1ae131b394947426` | section | 22 | 3 | 0 | 0 | 19 | sg-newcomer-permit |
 | partly_cited | [Contrôle des habitants - République et Canton du Jura](https://www.jura.ch/fr/Autorites/Administration/DSJP/SPOP/Controle-des-habitants/Controle-des-habitants.html) `doc-3ca5baea976a4719565c` | section | 4 | 1 | 0 | 0 | 3 | ju-residents-office |
 | partly_cited | [Gestione dei rifiuti / lugano.ch](https://www.lugano.ch/temi-servizi/energia-ambiente/rifiuti/gestione-rifiuti/) `doc-6dd7cb61202ebf90b7a2` | section | 32 | 1 | 0 | 0 | 31 | lugano-waste |
 | partly_cited | [Einreise für Bürger/innen von EU-/EFTA-Staaten](https://www.migration.sid.be.ch/de/start/einreise/buerger-eu-efta.html) `doc-ef8e74af38d086f3a1af` | section | 3 | 1 | 0 | 0 | 2 | be-entry-eu-efta |
 | partly_cited | [Étudier à Neuchâtel / ne.ch](https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/etudier-neuchatel) `doc-05ca6b1f1d0609c5358f` | section | 13 | 1 | 0 | 0 | 12 | ne-studying |
 | partly_cited | [Gérer et renouveler votre permis actuel / ne.ch](https://www.ne.ch/themes/migration-et-integration/sejour-et-etablissement/permis-de-sejour/gerer-et-renouveler-votre-permis-actuel) `doc-2518b46b4d52603fce96` | section | 12 | 3 | 0 | 0 | 9 | ne-permit-management |
+| partly_cited | [Calendrier et vacances scolaires / ne.ch](https://www.ne.ch/themes/scolarite-et-formation/calendrier-et-vacances-scolaires) `doc-bab5b6d448e11e089463` | section | 6 | 2 | 0 | 0 | 4 | ne-school-holidays |
+| partly_cited | [Obwalden - Schulferienplan](https://www.ow.ch/dienstleistungen/5276) `doc-85d5963479028cf874d6` | section | 8 | 1 | 0 | 0 | 7 | ow-school-holidays |
 | partly_cited | [Obwalden - Abteilung Migration](https://www.ow.ch/fachbereiche/1822) `doc-95bb19b74e800e719113` | section | 7 | 1 | 0 | 0 | 6 | ow-migration-office |
+| partly_cited | [Kanton Aargau Schulportal - Stunden- und Ferienplanung](https://www.schulen-aargau.ch/regelschule/schulorganisation/planung-ressourcen/stunden-ferienplanung) `doc-ad8ea3ece5a5571e7061` | section | 14 | 4 | 0 | 0 | 10 | ag-school-holidays |
 | partly_cited | [Ausländerinnen und Ausländer der dritten Generation](https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden/3-generation.html) `doc-d7418165689182dcd557` | section | 5 | 4 | 0 | 0 | 1 |  |
 | partly_cited | [FAQ – Schweizer Bürgerrecht](https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden/faq.html) `doc-f518332d10e4a45bf74d` | section | 5 | 2 | 0 | 0 | 3 |  |
 | partly_cited | [Die Ordentliche Einbürgerung](https://www.sem.admin.ch/sem/de/home/integration-einbuergerung/schweizer-werden/ordentlich.html) `doc-3a2ab21bc9b8328039ad` | section | 7 | 5 | 0 | 0 | 2 |  |
@@ -126,6 +148,7 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | partly_cited | [FAQ – Free Movement of Persons](https://www.sem.admin.ch/sem/en/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz/faq.html) `doc-9108317b2ccbef351701` | section | 26 | 1 | 0 | 0 | 25 |  |
 | partly_cited | [Notification procedure for short-term work in Switzerland](https://www.sem.admin.ch/sem/en/home/themen/fza_schweiz-eu-efta/meldeverfahren.html) `doc-d9800378b0f5ad0049df` | section | 20 | 3 | 0 | 0 | 17 |  |
 | partly_cited | [Fee overview](https://www.serafe.ch/en/the-fee/fee-overview/) `doc-ec719a25b2c525bfa22e` | section | 2 | 1 | 0 | 0 | 1 |  |
+| partly_cited | [Ferienplan / sg.ch](https://www.sg.ch/bildung-sport/volksschule/aus-dem-amt/ferienplan.html) `doc-44856eb284742541aac1` | section | 3 | 2 | 0 | 0 | 1 | sg-school-holidays |
 | partly_cited | [Bewilligungen EU-/EFTA-Staaten / sg.ch](https://www.sg.ch/sicherheit/einreise-aufenthalt-ausreise/bewilligugnen-eu-efta.html) `doc-c33d3808823882dbd8a6` | section | 17 | 2 | 0 | 0 | 15 | sg-permits-eu-efta |
 | partly_cited | [Schulferien und schulfreie Tage / Stadt Zürich](https://www.stadt-zuerich.ch/de/bildung/volksschule/schulferien.html) `doc-7da0b6b1bae122f7b6bc` | section | 5 | 3 | 0 | 0 | 2 |  |
 | partly_cited | [Schulbotschafter*innen – Volksschule in verschiedenen Sprachen erklärt / Stadt Zürich](https://www.stadt-zuerich.ch/de/bildung/volksschule/schulorganisation/verschiedene-sprachen.html) `doc-eb9ac50fa8014bdcea2c` | section | 3 | 2 | 0 | 0 | 1 |  |
@@ -145,7 +168,10 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | partly_cited | [Drittstaatsangehörige – Kanton Schwyz](https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/drittstaatsangehoerige.html/8756-8758-8802-10373-10961-10965-10970) `doc-8782b52e7e4ded9957f5` | section | 7 | 2 | 0 | 0 | 5 | sz-third-country |
 | partly_cited | [EU/EFTA-Staatsangehörige – Kanton Schwyz](https://www.sz.ch/verwaltung/volkswirtschaftsdepartement/amt-fuer-migration/auslaenderwesen/euefta-staatsangehoerige.html/8756-8758-8802-10373-10961-10965-10969) `doc-777e3094d0c258479141` | section | 8 | 2 | 0 | 0 | 6 | sz-eu-efta |
 | partly_cited | [Kanton Uri - Migration](https://www.ur.ch/arbeit/6424) `doc-e48acba56a5956163cca` | section | 19 | 3 | 0 | 0 | 16 | ur-migration |
+| partly_cited | [Kanton Uri - Ferienplan](https://www.ur.ch/dienstleistungen/3125) `doc-77bf695ff5ac6cd6225c` | section | 6 | 2 | 0 | 0 | 4 | ur-school-holidays |
 | partly_cited | [Service de la population (SPOP) / État de Vaud](https://www.vd.ch/deiep/spop) `doc-c8b9a1ea9ffc2b4e0c88` | section | 13 | 2 | 0 | 0 | 11 | vd-population-office |
+| partly_cited | [Jours fériés et vacances scolaires 2026 / État de Vaud](https://www.vd.ch/formation/jours-feries-et-vacances-scolaires/jours-feries-et-vacances-scolaires-2026) `doc-ea71df7c8f0a65729db4` | section | 6 | 1 | 0 | 0 | 5 | vd-school-holidays |
+| partly_cited | [Jours fériés et vacances scolaires 2027 / État de Vaud](https://www.vd.ch/formation/jours-feries-et-vacances-scolaires/jours-feries-et-vacances-scolaires-2027) `doc-8a48a12f6bf0a9f37a41` | section | 6 | 1 | 0 | 0 | 5 | vd-school-holidays |
 | partly_cited | [Arrivée d'un autre canton / État de Vaud](https://www.vd.ch/population/population-etrangere/entree-et-sejour/union-europeenne/arrivee-dun-autre-canton) `doc-3844053afd11f3382d02` | section | 8 | 4 | 0 | 0 | 4 | vd-arrival-other-canton |
 | partly_cited | [Annoncer son changement d'adresse au contrôle des habitants / État de Vaud](https://www.vd.ch/prestation/annoncer-son-changement-dadresse-au-controle-des-habitants) `doc-2c3e1bfd065668a5ca8d` | section | 7 | 2 | 0 | 0 | 5 | vd-registration-service |
 | partly_cited | [Permis de séjour - SPM - vs.ch](https://www.vs.ch/web/spm/permis-de-s%C3%A9jour) `doc-1295d214764a7279a7a5` | section | 4 | 1 | 0 | 0 | 3 | vs-residence-permit |
@@ -153,6 +179,7 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | partly_cited | [Bilaterale Abkommen](https://www.zas.admin.ch/de/bilaterale-abkommen) `doc-ab60e3608ad2acda5817` | section | 2 | 1 | 0 | 0 | 1 |  |
 | partly_cited | [Rückvergütungen](https://www.zas.admin.ch/de/rueckverguetungen) `doc-8e0f49bbd6375b07eb5b` | section | 10 | 3 | 0 | 0 | 7 | ch-zas-contribution-refund |
 | partly_cited | [Staatsangehörigkeit eines Staates mit Sozialversicherungsabkommen (AHV)](https://www.zas.admin.ch/de/staatsangehoerigkeit-eines-staates-mit-sozialversicherungsabkommen-ahv) `doc-d7cabca9200534ba2f45` | section | 4 | 2 | 0 | 0 | 2 |  |
+| partly_cited | [Schulferien / Kanton Zürich](https://www.zh.ch/de/bildung/bildungssystem/schulferien.html) `doc-03e5f92d8234569ca2c9` | section | 14 | 5 | 0 | 1 | 8 | zh-school-holidays |
 | partly_cited | [Abteilung Einbürgerungen / Kanton Zürich](https://www.zh.ch/de/direktion-der-justiz-und-des-innern/gemeindeamt/abteilung-einbuergerungen.html) `doc-a8114f7c75c808af1403` | section | 4 | 1 | 0 | 0 | 3 | zh-gemeindeamt-naturalisation-office |
 | partly_cited | [Formulare im Mietwesen / Kanton Zürich](https://www.zh.ch/de/direktion-der-justiz-und-des-innern/generalsekretariat/formulare-mietwesen.html) `doc-a379c01c8039df677bd9` | section | 4 | 3 | 0 | 0 | 1 | zh-rental-forms |
 | partly_cited | [Prämienverbilligung Krankenversicherung / Kanton Zürich](https://www.zh.ch/de/gesundheit/praemienverbilligung_krankenversicherung.html) `doc-e78639e34eda3a059e76` | section | 13 | 3 | 0 | 1 | 9 | zh-premium-reduction |
@@ -186,7 +213,10 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | partly_cited | [Quellensteuer-Tarife / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/quellensteuer-tarife.html) `doc-fce27b72dc3a3a90a70f` | section | 16 | 14 | 0 | 1 | 1 |  |
 | partly_cited | [Merkblatt des kantonalen Steueramtes über die Quellenbesteuerung von Arbeitnehmerinnen und Arbeitnehmern / Kanton Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-87-3.html) `doc-afaa2c9780fc736c5705` | section | 17 | 3 | 0 | 0 | 14 | zh-tax-at-source-directive |
 | partly_cited | [Hunde / Kanton Zürich](https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html) `doc-cfa52df67bc1a2de79f0` | section | 33 | 9 | 0 | 1 | 23 | zh-dogs |
+| partly_cited | [Verbotene Hunderassen / Kanton Zürich](https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen.html) `doc-65987b111d4d5880a8b7` | section | 10 | 8 | 0 | 0 | 2 | zh-dogs |
+| partly_cited | [2026/2027 - DECS (DECS) - Repubblica e Cantone Ticino](https://www4.ti.ch/decs/cosa-facciamo/calendario-scolastico/2026-2027) `doc-8f24e9474861251a3470` | section | 10 | 6 | 0 | 0 | 4 | ti-school-holidays |
 | partly_cited | [Ufficio della migrazione - SPOP (DI) - Repubblica e Cantone Ticino](https://www4.ti.ch/di/spop/chi-siamo/ufficio-della-migrazione) `doc-6672da80799a61b7cd84` | section | 14 | 1 | 0 | 0 | 13 | ti-migration-office |
+| partly_cited | [Schulferien](https://zg.ch/de/bildung/bildungssystem/schulferien) `doc-e09073daa7f1d2628967` | section | 5 | 2 | 0 | 0 | 3 | zg-school-holidays |
 | empty | [Appenzell Innerrhoden - Verordnung zum Registerharmonisierungsgesetz (GS 172.910), art. 7](https://ai.clex.ch/api/de/versions/1133/pdf_file_with_annexes) `doc-34b1360ccad23a5bcac2` | section | 0 | 0 | 0 | 0 | 0 | ai-register-ordinance |
 | empty | [Appenzell Innerrhoden - Standeskommissionsbeschluss ueber Niederlassung und Aufenthalt (GS 142.001), art. 2](https://ai.clex.ch/api/de/versions/1513/pdf_file_with_annexes) `doc-109429437bfcbc983275` | section | 0 | 0 | 0 | 0 | 0 | ai-settlement-decree |
 | empty | [Fribourg - Loi sur le controle des habitants (RSF 114.21.1), art. 5](https://bdlf.fr.ch/api/fr/versions/8129/pdf_file_with_annexes) `doc-d8abd396531de40dcbd2` | section | 0 | 0 | 0 | 0 | 0 | fr-residents-law |
@@ -202,6 +232,10 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | empty | [Kantonswechsel - Kanton Luzern](https://migration.lu.ch/Weitere_Aufenthaltsgruende/Kantonswechsel) `doc-752e202b64913e2a772e` | section | 0 | 0 | 0 | 0 | 0 | lu-change-of-canton |
 | empty | [Schaffhausen - Gemeindegesetz (SHR 120.100), art. 89](https://rechtsbuch.sh.ch/api/de/versions/2055/pdf_file_with_annexes) `doc-a0271537b3b11fa7e458` | section | 0 | 0 | 0 | 0 | 0 | sh-register-law |
 | empty | [Uri - Kantonales Registerharmonisierungsgesetz (RB 1.4201), arts. 19 and 21](https://rechtsbuch.ur.ch/api/de/versions/1048/pdf_file_with_annexes) `doc-eb17cee7f400a35afcc8` | section | 0 | 0 | 0 | 0 | 0 | ur-register-law |
+| empty | [Solothurn: school holidays, document 1](https://so.ch/fileadmin/internet/dbk/dbk-vsa/Schulsystem/Ferienplan/Schulferienplan_2026_2027.pdf) `doc-50439566010e6ba832cc` | section | 0 | 0 | 0 | 0 | 0 | so-school-holidays |
+| empty | [Solothurn: school holidays, document 2](https://so.ch/fileadmin/internet/dbk/dbk-vsa/Schulsystem/Ferienplan/Schulferienplan_2027_2028.pdf) `doc-e1eb503483b47c350410` | section | 0 | 0 | 0 | 0 | 0 | so-school-holidays |
+| empty | [Lucerne: school holidays, document 1](https://volksschulbildung.lu.ch/-/media/Volksschulbildung/Dokumente/syst_schulen/ss_schulsystem/schulferien/ferienplan_gemeinden_sj26_27.pdf?rev=82d2e9ac96974eb08407799e305a05d0) `doc-51f6d982a96f267438dd` | section | 0 | 0 | 0 | 0 | 0 | lu-school-holidays |
+| empty | [Schulferien - Kanton Luzern](https://volksschulbildung.lu.ch/syst_schulen/ss_schulsystem/ss_syst_ferien) `doc-b479d922978177220567` | section | 0 | 0 | 0 | 0 | 0 | lu-school-holidays |
 | empty | [Aufenthalt - Kanton Aargau](https://www.ag.ch/de/themen/migration-integration/aufenthalt) `doc-5e26ce255621c25bed94` | section | 0 | 0 | 0 | 0 | 0 | ag-residence |
 | empty | [Kantonale Ausgleichskassen / Kontakte / Informationsstelle AHV/IV](https://www.ahv-iv.ch/de/Kontakte/Kantonale-Ausgleichskassen) `doc-1c84e95cb180bec1d402` | section | 0 | 0 | 0 | 0 | 0 | ch-ahv-iv-ausgleichskassen |
 | empty | [13. AHV Rente](https://www.ahv-iv.ch/de/Sozialversicherungen/Alters-und-Hinterlassenenversicherung-AHV/13-AHV-Rente) `doc-7adfbb6dd2e5e60a711d` | section | 0 | 0 | 0 | 0 | 0 | ch-ahv-iv-13-ahv-rente |
@@ -230,6 +264,7 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | empty | [Graubuenden - Einwohnerregistergesetz (BR 171.200), art. 13](https://www.gr-lex.gr.ch/api/de/versions/3576/pdf_file_with_annexes) `doc-cb07b45b2872d40435a6` | section | 0 | 0 | 0 | 0 | 0 | gr-register-law |
 | empty | [Graubuenden - Legge sui registri degli abitanti (BR 171.200), art. 13](https://www.gr-lex.gr.ch/api/it/versions/3576/pdf_file_with_annexes) `doc-2e637daee2e1b719ca8f` | section | 0 | 0 | 0 | 0 | 0 | gr-register-law-it |
 | empty | [Für Drittstaatsangehörige](https://www.gr.ch/DE/institutionen/verwaltung/djsg/afm/dienstleistungen/Einreise_Aufenthalt/Einreise-Anmeldung/Seiten/Drittstaaten.aspx) `doc-2fabd322f34a2803e36e` | section | 0 | 0 | 0 | 0 | 0 | gr-third-country-registration |
+| empty | [Schulbetrieb - Schulorganisation](https://www.gr.ch/DE/institutionen/verwaltung/ekud/avs/Schulbetrieb/schulorganisation/Seiten/Schulbetrieb.aspx) `doc-3b455445ed31b627bbd0` | section | 0 | 0 | 0 | 0 | 0 | gr-school-holidays |
 | empty | [Thurgau - Einwohnerregistergesetz (RB 142.15), para 7](https://www.rechtsbuch.tg.ch/api/de/versions/2440/pdf_file_with_annexes) `doc-233657084673f1db58c3` | section | 0 | 0 | 0 | 0 | 0 | tg-register-law |
 | cited_and_dispositioned | [Kontakt](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt.html) `doc-ec81df68e0c715a60928` | section | 7 | 3 | 3 | 1 | 0 | zh-sva-contact |
 | cited_and_dispositioned | [Beratung vor Ort](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/beratung-vor-ort.html) `doc-e0dd90106b3c8eff3235` | section | 7 | 3 | 3 | 1 | 0 |  |
@@ -455,7 +490,11 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | dispositioned | [Kantonaler Angebotskatalog IAZH / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/integrationsagenda/online-handbuch-iazh/kantonaler-angebotskatalog-iazh.html) `doc-3c72847ef089a81809ef` | section | 18 | 0 | 18 | 0 | 0 | zh-integration |
 | dispositioned | [Kantonale Integrationsprogramme / Kanton Zürich](https://www.zh.ch/de/migration-integration/integration/kantonale-integrationsprogramme.html) `doc-6be9702fb1331355a86f` | section | 12 | 0 | 12 | 0 | 0 | zh-integration |
 | dispositioned | [Erwerbstätigkeit von Ausländerinnen und Ausländern / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/erwerbstaetigkeit-auslaender.html) `doc-6a4c4aa06458f9782f9a` | section | 3 | 0 | 2 | 1 | 0 | zh-work-permits-contact |
+| cited | [Appenzell Innerrhoden: school holidays, document 1](https://ai.ch/themen/bildung/eltern-und-schule/ferienplan/ftw-simplelayout-filelistingblock/ferienplan-ai_2026-2029.pdf/download) `doc-ac07ed9e0adcf7733be7` | section | 1 | 1 | 0 | 0 | 0 | ai-school-holidays |
+| cited | [Appenzell Ausserrhoden: school holidays, document 1](https://ar.ch/fileadmin/user_upload/Departement_Bildung_Kultur/Amt_fuer_Volksschule/eHandbuch_Volksschule/2026-06-23_FerienrichtdatenVolksschulenAppenzellAusserrhoden_v1.3.pdf) `doc-1e60f0fe770614df362d` | section | 1 | 1 | 0 | 0 | 0 | ar-school-holidays |
 | cited | [Appenzell Ausserrhoden - Registergesetz (bGS 122.1), art. 5](https://ar.clex.ch/api/de/versions/1275/pdf_file_with_annexes) `doc-c32553ea05e1587a60d4` | section | 1 | 1 | 0 | 0 | 0 | ar-register-law |
+| cited | [Thurgau: school holidays, document 1](https://av.tg.ch/public/upload/assets/179040/Ferienplan_SJ_2026_2027.pdf?fp=1) `doc-f7342b1cfc928dd69209` | section | 1 | 1 | 0 | 0 | 0 | tg-school-holidays |
+| cited | [Thurgau: school holidays, document 2](https://av.tg.ch/public/upload/assets/8713/10_Jahresplan_Schulferien_Volksschule_2023_-_2033.pdf?fp=4) `doc-54f8c6594b6dec6cf465` | section | 1 | 1 | 0 | 0 | 0 | tg-school-holidays |
 | cited | [Zug - Gemeindegesetz (BGS 171.1), para 57a](https://bgs.zg.ch/api/de/versions/2741/pdf_file_with_annexes) `doc-54dc28822feaaa90ba5a` | section | 1 | 1 | 0 | 0 | 0 | zg-commune-law |
 | cited | [Basel-Landschaft - Anmeldungs- und Registergesetz (SGS 111), para 5](https://bl.clex.ch/api/de/versions/4008/pdf_file_with_annexes) `doc-4245741446f67432de2a` | section | 1 | 1 | 0 | 0 | 0 | bl-registration-law |
 | cited | [Zug - Merkblatt Umzug/Zuzug](https://cdn.zg.ch/dam/jcr:ceef462f-5c3b-4a56-952e-78268e405057/Merkblatt%20Umzug.pdf) `doc-bef10a9532d3e65ed421` | section | 1 | 1 | 0 | 0 | 0 | zg-moving-leaflet |
@@ -464,6 +503,7 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | cited | [rsGE F 2 25: Loi d'application de la loi fédérale sur l'harmonisation des registres des habitants et d'autres registres officiels de personnes (LaLHR)](https://silgeneve.ch/legis/data/rsg_f2_25.htm) `doc-9bfb342bd18631c49022` | section | 1 | 1 | 0 | 0 | 0 | ge-register-law |
 | cited | [Lucerne - Gesetz ueber die Niederlassung und den Aufenthalt (SRL 5), paras 3, 5 and 7](https://srl.lu.ch/api/de/versions/4184/pdf_file_with_annexes) `doc-c14d4fcf6d9df22c9586` | section | 1 | 1 | 0 | 0 | 0 | lu-settlement-law |
 | cited | [Spezielle Öffnungszeiten](https://svazurich.ch/ueber-uns/sva-zuerich/kontakt/oeffnungszeiten-ueber-die-feiertage.html) `doc-71f912c1a94b986fba26` | section | 3 | 2 | 0 | 1 | 0 |  |
+| cited | [Lucerne: school holidays, document 2](https://volksschulbildung.lu.ch/-/media/Volksschulbildung/Dokumente/syst_schulen/ss_schulsystem/schulferien/feriendaten_volksschulen_kt_luzern.pdf?rev=3c8d9abafea74ccca4dc2772f3399bf8) `doc-f177cf3144433b6362c8` | section | 1 | 1 | 0 | 0 | 0 | lu-school-holidays |
 | cited | [Umzug - Kanton Aargau](https://www.ag.ch/de/themen/migration-integration/aufenthalt/aenderungen-melden/umzug) `doc-982717e0d014321c6da6` | section | 1 | 1 | 0 | 0 | 0 | ag-change-of-canton |
 | cited | [Arbeitsmarktliche Massnahmen / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/arbeitsmarktliche-massnahmen) `doc-c7a12895306cc102368c` | section | 8 | 7 | 0 | 1 | 0 | ch-seco-arbeitsmarktliche-massnahmen |
 | cited | [Aussteuerung / arbeit.swiss](https://www.arbeit.swiss/de/stellensuchende/aussteuerung) `doc-22bc49b84a2599a63d5b` | section | 4 | 3 | 0 | 1 | 0 | ch-seco-aussteuerung |
@@ -494,8 +534,12 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | cited | [Changement de canton ressortissant UE-27/AELE / Etat de Fribourg](https://www.fr.ch/vie-quotidienne/demarches-et-documents/changement-de-canton-ressortissant-ue-27aele) `doc-674225ac43786b5d211d` | section | 1 | 1 | 0 | 0 | 0 | fr-change-of-canton |
 | cited | [Si j'arrive dans le canton de Fribourg pour un séjour de plus de 3 mois (depuis l'étranger ou un autre canton) et si je suis ressortissant UE/AELE / Etat de Fribourg](https://www.fr.ch/vie-quotidienne/demarches-et-documents/etrangers/ressortissante-etrangerere-a-qui-dois-je-madresser/si-jarrive-dans-le-canton-de-fribourg-pour-un-sejour-de-plus-de-3-mois-depuis-letranger-ou-un-autre-canton-et-si-je-suis-ressortissant) `doc-2a813d10788c0f4c00ba` | section | 1 | 1 | 0 | 0 | 0 | fr-arrival-eu-efta |
 | cited | [St. Gallen - Gesetz ueber Niederlassung und Aufenthalt (sGS 453.1), arts. 3 and 6](https://www.gesetzessammlung.sg.ch/api/de/versions/2506/pdf_file_with_annexes) `doc-30d29fac2c81ff92aaf0` | section | 1 | 1 | 0 | 0 | 0 | sg-residence-law |
+| cited | [Glarus: school holidays, document 1](https://www.gl.ch/public/upload/assets/64288/Ferienpl%C3%A4ne_2026-2029.pdf?fp=1) `doc-1bb7f341023575f1bf35` | section | 1 | 1 | 0 | 0 | 0 | gl-school-holidays |
+| cited | [Graubuenden: school holidays, document 1](https://www.gr.ch/DE/institutionen/verwaltung/ekud/avs/Volksschule/SB_Ferienplaene_2026_2027_de.pdf) `doc-2ff2e21602a6fedd2e63` | section | 1 | 1 | 0 | 0 | 0 | gr-school-holidays |
+| cited | [Jura: school holidays, document 1](https://www.jura.ch/Htdocs/Files/v/ca2ea0d3a2bfa03c9e1eb6e8eb38dc9331cc48d72921290dcbd8005fd551eb81.pdf/Vacances-scolaires.pdf) `doc-e359a74600c284917a73` | section | 1 | 1 | 0 | 0 | 0 | ju-school-holidays |
 | cited | [City of Lugano: Ordinanza municipale sulla gestione dei rifiuti 4.1.1 of 17 October 2019 (it)](https://www.lugano.ch/law/16371927/4-1-1-Ordinanza-municipale-sulla-gestione-dei-rifiuti-del-17-ottobre-2019) `doc-432c6b6aadd4da9c3b89` | section | 1 | 1 | 0 | 0 | 0 | lugano-waste |
 | cited | [Einreise für Bürger/innen von Drittstaaten](https://www.migration.sid.be.ch/de/start/einreise/buerger-drittstaaten.html) `doc-6038442651e07dc6a567` | section | 2 | 2 | 0 | 0 | 0 | be-entry-third-country |
+| cited | [Aargau: school holidays, document 1](https://www.schulen-aargau.ch/media/schulen-aargau/schulorganisation/ressourcen-planung/stunden-ferienplanung/bksvs-kantonal-einheitlicher-ferienplan.pdf) `doc-3533393b10ed5e6ff13c` | section | 1 | 1 | 0 | 0 | 0 | ag-school-holidays |
 | cited | [Ausweis Ci EU/EFTA (Aufenthaltsbewilligung mit Erwerbstätigkeit)](https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/eu_efta/ausweis_ci_eu_efta.html) `doc-a08db9ee519e5d5386e4` | section | 1 | 1 | 0 | 0 | 0 | ch-sem-eu-efta, ch-sem-residence-de |
 | cited | [Aufenthaltsbewilligungen für Nicht-EU/EFTA-Angehörige](https://www.sem.admin.ch/sem/de/home/themen/aufenthalt/nicht_eu_efta.html) `doc-f2a82e55188699dfb2c9` | section | 1 | 1 | 0 | 0 | 0 | ch-sem-third-country |
 | cited | [Einreisevoraussetzungen nach Staatsangehörigkeit](https://www.sem.admin.ch/sem/de/home/themen/einreise/info-einreise/voraussetzungen-nach-staat.html) `doc-b0ef88194507d1fe1877` | section | 2 | 2 | 0 | 0 | 0 |  |
@@ -534,7 +578,11 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | cited | [Wertstoff-Sammelstellen / Stadt Zürich](https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/wo-und-wann-entsorgen/wertstoff-sammelstellen.html) `doc-2232cee16e0fe716cda6` | section | 2 | 2 | 0 | 0 | 0 |  |
 | cited | [Züri-Sack / Stadt Zürich](https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/zueri-sack.html) `doc-fae6f7f3a76e1bc84804` | section | 1 | 1 | 0 | 0 | 0 |  |
 | cited | [Schwyz - Gesetz ueber das Einwohnermeldewesen (SRSZ 111.110), para 10](https://www.sz.ch/public/upload/assets/33326/111_110.pdf) `doc-61348efdcfb8b7cd0f29` | section | 1 | 1 | 0 | 0 | 0 | sz-reporting-law |
+| cited | [Schwyz: school holidays, document 1](https://www.sz.ch/public/upload/assets/85734/Ferienplan_Schuljahr_2026-2027.pdf?fp=1783576959567) `doc-5e48ba3fde2fdcfd67b1` | section | 1 | 1 | 0 | 0 | 0 | sz-school-holidays |
+| cited | [Vaud: school holidays, document 2](https://www.vd.ch/fileadmin/user_upload/themes/formation/Vacances_scolaires/def_calendrier_vacances_scolaires_2023_2031.pdf) `doc-31a3f9574b1249010554` | section | 1 | 1 | 0 | 0 | 0 | vd-school-holidays |
 | cited | [Changement d'adresse / État de Vaud](https://www.vd.ch/population/controle-des-habitants/changement-dadresse) `doc-8d3859d1014df2992f75` | section | 4 | 4 | 0 | 0 | 0 | vd-change-of-address |
+| cited | [Schul- und Ferienplan - - vs.ch](https://www.vs.ch/de/web/se/plans-de-scolarite) `doc-eb029f233a55e3ec9866` | section | 1 | 1 | 0 | 0 | 0 | vs-school-holidays |
+| cited | [Plans de scolarité - - vs.ch](https://www.vs.ch/web/se/plans-de-scolarite) `doc-73da12f38afbc83227a3` | section | 2 | 2 | 0 | 0 | 0 | vs-school-holidays |
 | cited | [Changement de canton - SPM - vs.ch](https://www.vs.ch/web/spm/changement-de-canton1) `doc-ce9cb3adfb5045bb45fc` | section | 2 | 2 | 0 | 0 | 0 | vs-change-of-canton |
 | cited | [Contrôle de l'habitant - SPM - vs.ch](https://www.vs.ch/web/spm/contr%C3%B4le-de-l-habitant) `doc-94c45c58dc090ae784f9` | section | 1 | 1 | 0 | 0 | 0 | vs-residents-office |
 | cited | [Zurich: tax-at-source tariffs from 2026, basis and calculation parameters (PDF)](https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/quellensteuer/quellensteuertarif/2026/grundlagen_und_berechnungsparameter_2026.pdf) `doc-d302fc15f2741ef0caf4` | section | 1 | 1 | 0 | 0 | 0 |  |
@@ -549,10 +597,30 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-bdd6d7641abbeb965bc6` | section-0012 | Einreise > Informationen zur Einreise | 82-96 | 421 |
 | `doc-bdd6d7641abbeb965bc6` | section-0013 | Einreise > Auskünfte | 97-101 | 872 |
 | `doc-bdd6d7641abbeb965bc6` | section-0016 | Einreise > Medienmitteilungen | 113-119 | 312 |
+| `doc-bd8de67ee7b289c4e582` | section-0005 | Ferienplan und schulfreie Tage > Zuständige Stelle | 33-38 | 83 |
+| `doc-bd8de67ee7b289c4e582` | section-0006 | Ferienplan und schulfreie Tage | 39-49 | 285 |
+| `doc-3f726984bb17fa45fae2` | section-0009 | Inhalt > Pfadnavigation | 285-292 | 21 |
+| `doc-3f726984bb17fa45fae2` | section-0012 | Regelungen > Datenschutz | 306-308 | 94 |
+| `doc-3f726984bb17fa45fae2` | section-0013 | Regelungen > Jokerhalbtage | 309-313 | 573 |
+| `doc-3f726984bb17fa45fae2` | section-0014 | Regelungen > Kindes- und Erwachsenenschutzbehörde / Kindesschutz | 314-321 | 1239 |
+| `doc-3f726984bb17fa45fae2` | section-0015 | Regelungen > Krisenintervention | 322-325 | 863 |
+| `doc-3f726984bb17fa45fae2` | section-0016 | Regelungen > Melde- und Mitwirkungspflicht bei Verfahren der KESB | 326-327 | 52 |
+| `doc-3f726984bb17fa45fae2` | section-0017 | Regelungen > Papiersammlungen durch Schulen | 328-329 | 24 |
+| `doc-3f726984bb17fa45fae2` | section-0019 | Regelungen > Schulweg | 332-333 | 57 |
+| `doc-3f726984bb17fa45fae2` | section-0020 | Regelungen > Sexuelle Handlungen / Belästigungen / Gewalt | 334-336 | 194 |
+| `doc-3f726984bb17fa45fae2` | section-0021 | Regelungen > Umgang mit religiösen Fragestellungen | 337-339 | 142 |
+| `doc-3f726984bb17fa45fae2` | section-0022 | Regelungen > Vorgehen bei Verdacht auf Straftaten | 340-341 | 51 |
+| `doc-3f726984bb17fa45fae2` | section-0024 | Regelungen > Zusätzliche Informationen > Amt für Volksschule und Sport | 343-348 | 74 |
 | `doc-1c6f5fde53430f3e283a` | section-0009 | Inhalt > Pfadnavigation | 285-292 | 15 |
 | `doc-1c6f5fde53430f3e283a` | section-0013 | Drittstaatsangehörige > Merkblätter | 313-326 | 698 |
 | `doc-1c6f5fde53430f3e283a` | section-0014 | Drittstaatsangehörige > Weiterführende Links zur Einreise in die Schweiz | 327-328 | 29 |
 | `doc-1c6f5fde53430f3e283a` | section-0016 | Drittstaatsangehörige > Zusätzliche Informationen > Abteilung Migration | 330-337 | 129 |
+| `doc-dc236f8ebaa114f9d103` | section-0001 | (no heading) | 1-16 | 26 |
+| `doc-dc236f8ebaa114f9d103` | section-0006 | Ferienplan | 27-29 | 213 |
+| `doc-dc236f8ebaa114f9d103` | section-0009 | Ferienplan > Rechtliche Grundlagen | 42-43 | 44 |
+| `doc-dc236f8ebaa114f9d103` | section-0010 | Ferienplan > Verwandte Themen | 44-47 | 45 |
+| `doc-dc236f8ebaa114f9d103` | section-0023 | Ferienplan > Footer > Öffnungszeiten Sekretariat | 68-78 | 10 |
+| `doc-dc236f8ebaa114f9d103` | section-0024 | Stichwortverzeichnis | 79-80 | 14 |
 | `doc-cb064208c75c37b62929` | section-0001 | (no heading) | 1-1 | 17 |
 | `doc-cb064208c75c37b62929` | section-0004 | Welche Beiträge kann ich in die Säule 3a einzahlen? > Weiterführende Fragen | 8-12 | 212 |
 | `doc-ed67ab05b41d46594ed8` | section-0001 | (no heading) | 1-1 | 17 |
@@ -573,6 +641,7 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-a06a78b6403bde7dbc64` | section-0007 | Einreise > Aufenthalt mit oder ohne Arbeit | 88-90 | 226 |
 | `doc-a06a78b6403bde7dbc64` | section-0009 | Einreise > Direkter Kontakt | 94-95 | 73 |
 | `doc-a06a78b6403bde7dbc64` | section-0011 | Einreise > Migrationsamt | 98-105 | 157 |
+| `doc-871ec5cc0f3bb6f78f04` | section-0008 | Ferienplan > Volksschulamt | 161-167 | 146 |
 | `doc-be1e21dbb97154b03ae1` | section-0006 | Arbeiten > Erwerbstätigkeit mit Schutzstatus S | 39-40 | 263 |
 | `doc-be1e21dbb97154b03ae1` | section-0007 | Arbeiten > Bewilligungstypen | 41-43 | 1222 |
 | `doc-be1e21dbb97154b03ae1` | section-0008 | Arbeiten > Merkblätter Arbeitsbewilligung | 44-45 | 348 |
@@ -581,11 +650,21 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-be1e21dbb97154b03ae1` | section-0011 | Arbeiten > Zuständige Stelle > Ansprechperson | 55-57 | 103 |
 | `doc-be1e21dbb97154b03ae1` | section-0015 | Arbeiten | 65-75 | 285 |
 | `doc-549a0c80ca63f55e8541` | section-0009 | An-, Ab- und Ummelden | 64-74 | 285 |
+| `doc-54b1d21f0a18aafea5f2` | section-0005 | Schulferienplanung > Ferienordnung 2026 bis 2032 | 29-30 | 27 |
 | `doc-a824ca812a50553956ef` | section-0004 | Health insurance: Requirement to obtain insurance for persons resident in Switzerland > End of compulsory insurance | 22-25 | 335 |
 | `doc-a824ca812a50553956ef` | section-0005 | Health insurance: Requirement to obtain insurance for persons resident in Switzerland > Undocumented migrants | 26-27 | 586 |
 | `doc-a824ca812a50553956ef` | section-0030 | Health insurance: Requirement to obtain insurance for persons resident in Switzerland > Federal Office of Public Health FOPH | 74-78 | 187 |
 | `doc-c232814a873fa3014a6e` | section-0006 | Moving to Switzerland: Procedure > Preliminary examination of relocation file | 28-33 | 682 |
 | `doc-c232814a873fa3014a6e` | section-0012 | Moving to Switzerland: Procedure > Further information > Opening hours | 44-48 | 70 |
+| `doc-734ed8f8b6957ecd419b` | section-0001 | (no heading) | 1-2 | 44 |
+| `doc-734ed8f8b6957ecd419b` | section-0007 | Schulferien > Schulferien im iCalender-Format > Schulferien-Kalender abonnieren | 28-31 | 299 |
+| `doc-734ed8f8b6957ecd419b` | section-0008 | Schulferien > Schulferien im iCalender-Format > So richten Sie das Schulferien-Kalender-Abo ein | 32-37 | 548 |
+| `doc-734ed8f8b6957ecd419b` | section-0011 | Schulferien > Schulferien 2028 | 40-41 | 51 |
+| `doc-734ed8f8b6957ecd419b` | section-0012 | Schulferien > Betreuung in den Schulferien | 42-47 | 175 |
+| `doc-734ed8f8b6957ecd419b` | section-0013 | Schulferien > Familienurlaub (Jokertage) | 48-54 | 354 |
+| `doc-734ed8f8b6957ecd419b` | section-0015 | Schulferien > Schulferien in anderen Kantonen > Erziehungsdepartement | 58-60 | 25 |
+| `doc-734ed8f8b6957ecd419b` | section-0016 | Schulferien > Schulferien in anderen Kantonen > Öffnungszeiten | 61-63 | 144 |
+| `doc-734ed8f8b6957ecd419b` | section-0017 | Schulferien > Für dieses Thema zuständig | 64-65 | 21 |
 | `doc-b8e80712d932400cd49a` | section-0001 | (no heading) | 1-2 | 44 |
 | `doc-b8e80712d932400cd49a` | section-0004 | Einreise und Aufenthalt | 13-30 | 523 |
 | `doc-b8e80712d932400cd49a` | section-0005 | Einreise und Aufenthalt > Einreise und Aufenthalt: Das Wichtigste in Kürze | 31-32 | 461 |
@@ -755,10 +834,51 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-4f9c56f3313549edc7e8` | section-0018 | Schweizerische Quellensteuer QST > Häufige Anliegen > Übersicht über die Grundlagen für die Berechnung der Quellensteuertarife des Bundes im Steuerjahr 2026 | 48-49 | 25 |
 | `doc-4f9c56f3313549edc7e8` | section-0031 | Schweizerische Quellensteuer QST > Häufige Anliegen > Archiv > Auskunftsstellen/Bezugprovisionen/Kirchensteuer 2026 | 73-74 | 29 |
 | `doc-4f9c56f3313549edc7e8` | section-0043 | Schweizerische Quellensteuer QST > Häufige Anliegen > Archiv > Quellensteuertarife für Vorsorgeleistungen ab 2026 | 96-97 | 29 |
+| `doc-5b948596184f32ade62a` | section-0008 | Schulferien > Kalender Murten 2026/2027 | 100-101 | 136 |
+| `doc-5b948596184f32ade62a` | section-0009 | Schulferien > Kalender Murten 2026/2027 > Schulfeiertage 2026/2027 | 102-103 | 173 |
+| `doc-5b948596184f32ade62a` | section-0010 | Schulferien > Kalender Murten 2026/2027 > Schulferien 2026/2027 | 104-107 | 538 |
+| `doc-5b948596184f32ade62a` | section-0011 | Schulferien > Kalender Kerzers 2026/2027 | 108-109 | 140 |
+| `doc-5b948596184f32ade62a` | section-0012 | Schulferien > Kalender Kerzers 2026/2027 > Schulfeiertage 2026/2027 - Kerzers | 110-111 | 169 |
+| `doc-5b948596184f32ade62a` | section-0013 | Schulferien > Kalender Kerzers 2026/2027 > Schulferien 2026/2027 - Kerzers | 112-115 | 500 |
+| `doc-5b948596184f32ade62a` | section-0015 | Schulferien > Kalender 2027 - 2030 | 118-119 | 18 |
+| `doc-5b948596184f32ade62a` | section-0019 | Schulferien > Kalender 2027 - 2030 > Kalender Murten 2027/2028 | 138-139 | 136 |
+| `doc-5b948596184f32ade62a` | section-0020 | Schulferien > Kalender 2027 - 2030 > Kalender Murten 2027/2028 > Schulfeiertage | 140-144 | 155 |
+| `doc-5b948596184f32ade62a` | section-0021 | Schulferien > Kalender 2027 - 2030 > Kalender Murten 2027/2028 > Schulferien | 145-153 | 518 |
+| `doc-5b948596184f32ade62a` | section-0023 | Schulferien > Kalender 2027 - 2030 > Kalender Kerzers 2027/2028 > Schulfeiertage | 155-159 | 152 |
+| `doc-5b948596184f32ade62a` | section-0024 | Schulferien > Kalender 2027 - 2030 > Kalender Kerzers 2027/2028 > Schulferien | 160-169 | 523 |
+| `doc-5b948596184f32ade62a` | section-0025 | Schulferien > Kalender 2027 - 2030 > Allgemeiner Kalender 2028/2029 | 170-171 | 128 |
+| `doc-5b948596184f32ade62a` | section-0026 | Schulferien > Kalender 2027 - 2030 > Allgemeiner Kalender 2028/2029 > Schulfeiertage | 172-178 | 229 |
+| `doc-5b948596184f32ade62a` | section-0027 | Schulferien > Kalender 2027 - 2030 > Allgemeiner Kalender 2028/2029 > Schulferien | 179-187 | 500 |
+| `doc-5b948596184f32ade62a` | section-0028 | Schulferien > Kalender 2027 - 2030 > Kalender Murten 2028/2029 | 188-189 | 136 |
+| `doc-5b948596184f32ade62a` | section-0029 | Schulferien > Kalender 2027 - 2030 > Kalender Murten 2028/2029 > Schulfeiertage | 190-194 | 154 |
+| `doc-5b948596184f32ade62a` | section-0030 | Schulferien > Kalender 2027 - 2030 > Kalender Murten 2028/2029 > Schulferien | 195-203 | 518 |
+| `doc-5b948596184f32ade62a` | section-0032 | Schulferien > Kalender 2027 - 2030 > Kalender Kerzers 2028/2029 > Schulfeiertage | 205-209 | 151 |
+| `doc-5b948596184f32ade62a` | section-0033 | Schulferien > Kalender 2027 - 2030 > Kalender Kerzers 2028/2029 > Schulferien | 210-217 | 412 |
+| `doc-5b948596184f32ade62a` | section-0034 | Schulferien > Kalender 2027 - 2030 > Allgemeiner Kalender 2029/2030 | 218-219 | 128 |
+| `doc-5b948596184f32ade62a` | section-0035 | Schulferien > Kalender 2027 - 2030 > Allgemeiner Kalender 2029/2030 > Schulfeiertage | 220-226 | 232 |
+| `doc-5b948596184f32ade62a` | section-0036 | Schulferien > Kalender 2027 - 2030 > Allgemeiner Kalender 2029/2030 > Schulferien | 227-235 | 487 |
+| `doc-5b948596184f32ade62a` | section-0037 | Schulferien > Kalender 2027 - 2030 > Kalender Murten 2029/2030 | 236-237 | 136 |
+| `doc-5b948596184f32ade62a` | section-0038 | Schulferien > Kalender 2027 - 2030 > Kalender Murten 2029/2030 > Schulfeiertage | 238-242 | 154 |
+| `doc-5b948596184f32ade62a` | section-0039 | Schulferien > Kalender 2027 - 2030 > Kalender Murten 2029/2030 > Schulferien | 243-251 | 509 |
+| `doc-5b948596184f32ade62a` | section-0041 | Schulferien > Kalender 2027 - 2030 > Kalender Kerzers 2029/2030 > Schulfeiertage | 253-257 | 156 |
+| `doc-5b948596184f32ade62a` | section-0042 | Schulferien > Kalender 2027 - 2030 > Kalender Kerzers 2029/2030 > Schulferien | 258-266 | 502 |
+| `doc-5b948596184f32ade62a` | section-0043 | Schulferien > Termine für die Schulferien der Sekundarstufe II und der Berufsausbildung | 267-269 | 74 |
+| `doc-5b948596184f32ade62a` | section-0044 | Schulferien > Feiertage | 270-271 | 9 |
+| `doc-5b948596184f32ade62a` | section-0045 | Schulferien > Wie werden Schulkalender erstellt? | 272-286 | 472 |
+| `doc-497cd1127acfc6a9d06b` | section-0001 | (no heading) | 1-1 | 2265 |
+| `doc-2c1462e242fd9c817b18` | section-0001 | (no heading) | 1-2 | 2254 |
+| `doc-451d875c7bdce57805c4` | section-0001 | (no heading) | 1-1 | 2225 |
 | `doc-47f3b81937bf5d0dbe98` | section-0001 | (no heading) | 1-51 | 26 |
 | `doc-47f3b81937bf5d0dbe98` | section-0004 | Annoncer mon arrivée à l'OCPM > L'essentiel en bref > Voir aussi | 97-100 | 140 |
 | `doc-a7aa9034e802ad023fb2` | section-0001 | (no heading) | 1-51 | 26 |
 | `doc-a7aa9034e802ad023fb2` | section-0004 | Annoncer mon départ à l'OCPM > L'essentiel en bref > Voir aussi | 87-90 | 119 |
+| `doc-90a68d7539a87a8b2ee3` | section-0001 | (no heading) | 1-1 | 2604 |
+| `doc-55565f47952f0c156ddc` | section-0001 | (no heading) | 1-51 | 26 |
+| `doc-b5ce884470e08165049b` | section-0001 | (no heading) | 1-51 | 26 |
+| `doc-2f692439232eadbe9c8e` | section-0007 | Öffentliche Feiertage > Öffentliche Ruhetage, arbeitsfreie Tage der Verwaltung im 2026 | 98-99 | 502 |
+| `doc-2f692439232eadbe9c8e` | section-0008 | Öffentliche Feiertage > Öffentliche Ruhetage, arbeitsfreie Tage der Verwaltung im 2027 | 100-101 | 491 |
+| `doc-2f692439232eadbe9c8e` | section-0009 | Öffentliche Feiertage > Öffentliche Ruhetage, arbeitsfreie Tage der Verwaltung im 2028 | 102-103 | 497 |
+| `doc-2f692439232eadbe9c8e` | section-0010 | Öffentliche Feiertage > Öffentliche Ruhetage, arbeitsfreie Tage der Verwaltung im 2029 | 104-114 | 642 |
 | `doc-87bd1ae131b394947426` | section-0001 | (no heading) | 1-101 | 35 |
 | `doc-87bd1ae131b394947426` | section-0007 | Aufenthaltsbewilligung | 289-297 | 474 |
 | `doc-87bd1ae131b394947426` | section-0008 | Aufenthaltsbewilligung > Staatsangehörige der EU/EFTA | 298-305 | 480 |
@@ -778,6 +898,11 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-87bd1ae131b394947426` | section-0035 | Aufenthaltsbewilligung > Textalternative zum Video > Erklärfilme Asylverfahren Schweiz - diverse Sprachen | 430-434 | 182 |
 | `doc-87bd1ae131b394947426` | section-0036 | Aufenthaltsbewilligung > Textalternative zum Video > Personen aus der Ukraine | 435-443 | 584 |
 | `doc-87bd1ae131b394947426` | section-0038 | Aufenthaltsbewilligung > Kontaktstellen | 447-448 | 92 |
+| `doc-9eb48de5e06aef5987e0` | section-0001 | Canton du Jura | 1-130 | 1291 |
+| `doc-9eb48de5e06aef5987e0` | section-0003 | Canton du Jura > Vacances scolaires > Vacances scolaires 2026 | 132-133 | 752 |
+| `doc-9eb48de5e06aef5987e0` | section-0004 | Canton du Jura > Vacances scolaires > Vacances scolaires 2027 | 134-135 | 749 |
+| `doc-9eb48de5e06aef5987e0` | section-0005 | Canton du Jura > Vacances scolaires > Document | 136-148 | 82 |
+| `doc-9eb48de5e06aef5987e0` | section-0006 | Canton du Jura > Liens rapides | 149-170 | 89 |
 | `doc-3ca5baea976a4719565c` | section-0001 | Canton du Jura | 1-113 | 852 |
 | `doc-3ca5baea976a4719565c` | section-0003 | Canton du Jura > Contrôle des habitants > Rôle du Service de la population | 120-133 | 262 |
 | `doc-3ca5baea976a4719565c` | section-0004 | Canton du Jura > Liens rapides | 134-155 | 89 |
@@ -842,6 +967,7 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-a24d379984bea6e97df4` | section-0003 | Personnes issues d'un État de l'UE/AELE > Contenu | 20-25 | 710 |
 | `doc-a24d379984bea6e97df4` | section-0005 | Personnes issues d'un État de l'UE/AELE > Avec une activité lucrative > Jusqu'à 90 jours | 27-29 | 270 |
 | `doc-a24d379984bea6e97df4` | section-0006 | Personnes issues d'un État de l'UE/AELE > Avec une activité lucrative > Plus de 90 jours | 30-32 | 625 |
+| `doc-8b330c514802de42155d` | section-0001 | (no heading) | 1-1 | 3761 |
 | `doc-05ca6b1f1d0609c5358f` | section-0001 | (no heading) | 1-558 | 57 |
 | `doc-05ca6b1f1d0609c5358f` | section-0002 | Étudier à Neuchâtel | 559-563 | 566 |
 | `doc-05ca6b1f1d0609c5358f` | section-0003 | Étudier à Neuchâtel > Conditions de base et règles de la formation | 564-569 | 603 |
@@ -863,12 +989,33 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-2518b46b4d52603fce96` | section-0011 | Gérer et renouveler votre permis actuel > Contact et horaires > Service des migrations | 606-609 | 83 |
 | `doc-2518b46b4d52603fce96` | section-0012 | Gérer et renouveler votre permis actuel > Contact et horaires > Téléphone | 610-613 | 36 |
 | `doc-2518b46b4d52603fce96` | section-0013 | Gérer et renouveler votre permis actuel > Contact et horaires > Horaires d'ouverture des guichets | 614-636 | 65 |
+| `doc-bab5b6d448e11e089463` | section-0001 | (no heading) | 1-557 | 57 |
+| `doc-bab5b6d448e11e089463` | section-0002 | Calendrier et vacances scolaires | 558-564 | 330 |
+| `doc-bab5b6d448e11e089463` | section-0005 | Calendrier et vacances scolaires > Année scolaire 2028–2029 | 569-570 | 884 |
+| `doc-bab5b6d448e11e089463` | section-0006 | Calendrier et vacances scolaires > Année scolaire 2029–2030 | 571-592 | 889 |
+| `doc-85d5963479028cf874d6` | section-0005 | Kopfzeile > LOGIN mit Benutzerkonto > Haben Sie noch kein Benutzerkonto? | 361-362 | 223 |
+| `doc-85d5963479028cf874d6` | section-0007 | Kopfzeile > LOGIN mit Benutzerkonto > Öffnungszeiten | 367-368 | 115 |
+| `doc-85d5963479028cf874d6` | section-0011 | Schulferienplan > Zugehörige Objekte > Dokumente | 399-400 | 247 |
+| `doc-85d5963479028cf874d6` | section-0012 | Schulferienplan > Zugehörige Objekte > Personen | 401-402 | 99 |
+| `doc-85d5963479028cf874d6` | section-0013 | Schulferienplan > Zugehörige Objekte > Amtsstellen | 403-404 | 126 |
+| `doc-85d5963479028cf874d6` | section-0014 | Schulferienplan > Zugehörige Objekte > Departemente | 405-406 | 85 |
+| `doc-85d5963479028cf874d6` | section-0015 | Schulferienplan > Zugehörige Objekte > Publikationen | 407-408 | 40 |
 | `doc-95bb19b74e800e719113` | section-0005 | Kopfzeile > LOGIN mit Benutzerkonto > Haben Sie noch kein Benutzerkonto? | 361-362 | 223 |
 | `doc-95bb19b74e800e719113` | section-0007 | Kopfzeile > LOGIN mit Benutzerkonto > Öffnungszeiten | 367-368 | 115 |
 | `doc-95bb19b74e800e719113` | section-0011 | Abteilung Migration > Öffnungszeiten | 400-402 | 166 |
 | `doc-95bb19b74e800e719113` | section-0012 | Abteilung Migration > Personen | 403-404 | 584 |
 | `doc-95bb19b74e800e719113` | section-0014 | Abteilung Migration > Zugehörige Objekte > Dienstleistungen | 406-407 | 200 |
 | `doc-95bb19b74e800e719113` | section-0015 | Abteilung Migration > Zugehörige Objekte > Publikationen | 408-409 | 1679 |
+| `doc-ad8ea3ece5a5571e7061` | section-0006 | Stunden- und Ferienplanung > Gehe zu | 27-31 | 386 |
+| `doc-ad8ea3ece5a5571e7061` | section-0007 | Stunden- und Ferienplanung > Stundenplan | 32-40 | 992 |
+| `doc-ad8ea3ece5a5571e7061` | section-0008 | Stunden- und Ferienplanung > Stundenplan > Hinweis:Stundenplangestaltung am Kindergarten | 41-43 | 141 |
+| `doc-ad8ea3ece5a5571e7061` | section-0013 | Stunden- und Ferienplanung > Ferien > Vorinformation der Eltern | 54-57 | 767 |
+| `doc-ad8ea3ece5a5571e7061` | section-0014 | Stunden- und Ferienplanung > Feiertage und schulfreie Tage | 58-62 | 697 |
+| `doc-ad8ea3ece5a5571e7061` | section-0015 | Stunden- und Ferienplanung > Feiertage und schulfreie Tage > Hinweis:Anhörung zur Abschaffung des freien Nachmittags am 1. Mai | 63-69 | 816 |
+| `doc-ad8ea3ece5a5571e7061` | section-0016 | Stunden- und Ferienplanung > Feiertage und schulfreie Tage > Hinweis:1. Mai | 70-71 | 82 |
+| `doc-ad8ea3ece5a5571e7061` | section-0017 | Stunden- und Ferienplanung > Feiertage in Bezirken bzw. Gemeinden | 72-74 | 702 |
+| `doc-ad8ea3ece5a5571e7061` | section-0018 | Stunden- und Ferienplanung > Schulfreie Tage | 75-78 | 641 |
+| `doc-ad8ea3ece5a5571e7061` | section-0019 | Stunden- und Ferienplanung > Schulschluss vor den Sommerferien | 79-81 | 411 |
 | `doc-a51c61294f44050bec82` | section-0011 | Wie werde ich Schweizerin oder Schweizer | 81-85 | 494 |
 | `doc-a51c61294f44050bec82` | section-0012 | Wie werde ich Schweizerin oder Schweizer > Bürgerrecht durch Abstammung | 86-87 | 488 |
 | `doc-a51c61294f44050bec82` | section-0013 | Wie werde ich Schweizerin oder Schweizer > Bürgerrecht durch Einbürgerung oder Wiedereinbürgerung | 88-92 | 950 |
@@ -1323,6 +1470,7 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-d9800378b0f5ad0049df` | section-0030 | Notification procedure for short-term work in Switzerland > Further information > VAT obligations | 186-188 | 311 |
 | `doc-d9800378b0f5ad0049df` | section-0032 | Notification procedure for short-term work in Switzerland > United Kingdom > Service provision from the UK | 192-194 | 543 |
 | `doc-ec719a25b2c525bfa22e` | section-0003 | Fee overview > The amount of the fee is determined by the Federal Council. From 1 January 2021, the fee will be: | 23-25 | 271 |
+| `doc-44856eb284742541aac1` | section-0005 | Ferienplan > Noch offene Fragen? | 99-103 | 74 |
 | `doc-c33d3808823882dbd8a6` | section-0004 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen | 74-86 | 872 |
 | `doc-c33d3808823882dbd8a6` | section-0007 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Einreise mit Erwerbstätigkeit | 93-100 | 1417 |
 | `doc-c33d3808823882dbd8a6` | section-0008 | Bewilligungen EU-/EFTA-Staaten > Weitere Informationen > Textalternative zum Video | 101-109 | 851 |
@@ -1386,6 +1534,24 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-01694fa88dc498848d7c` | section-0006 | Abfuhrplan > Push-Nachricht | 97-101 | 474 |
 | `doc-01694fa88dc498848d7c` | section-0007 | Abfuhrplan > E-Mail | 102-104 | 224 |
 | `doc-01694fa88dc498848d7c` | section-0009 | Abfuhrplan > E-Mail > Recycling-Abholservice | 119-120 | 200 |
+| `doc-bf1cd0c996f355eee6cc` | section-0010 | Schulorganisation | 184-185 | 194 |
+| `doc-bf1cd0c996f355eee6cc` | section-0011 | Schulorganisation > Schuladressen | 186-191 | 317 |
+| `doc-bf1cd0c996f355eee6cc` | section-0012 | Schulorganisation > Ferien und Schulhalbtage | 192-195 | 122 |
+| `doc-bf1cd0c996f355eee6cc` | section-0013 | Schulorganisation > Ferienplan | 196-197 | 263 |
+| `doc-bf1cd0c996f355eee6cc` | section-0014 | Schulorganisation > Wegweiser | 198-199 | 146 |
+| `doc-bf1cd0c996f355eee6cc` | section-0015 | Schulorganisation > Bildungsstatistik des Kantons Schwyz | 200-201 | 169 |
+| `doc-bf1cd0c996f355eee6cc` | section-0016 | Schulorganisation > Bildungsstatistik ansehen | 202-203 | 105 |
+| `doc-bf1cd0c996f355eee6cc` | section-0021 | Schulorganisation > Archiv | 231-232 | 333 |
+| `doc-bf1cd0c996f355eee6cc` | section-0022 | Schulorganisation > Flüchtlingskinder | 233-237 | 405 |
+| `doc-bf1cd0c996f355eee6cc` | section-0025 | Schulorganisation > Kinder aus der Ukraine > Unterricht | 242-246 | 746 |
+| `doc-bf1cd0c996f355eee6cc` | section-0026 | Schulorganisation > Kinder aus der Ukraine > Weitere Informationen | 247-250 | 245 |
+| `doc-bf1cd0c996f355eee6cc` | section-0027 | Schulorganisation > Präventionsstelle sexuelle Gewalt an Kindern | 251-254 | 569 |
+| `doc-bf1cd0c996f355eee6cc` | section-0028 | Schulorganisation > Präventionsstelle sexuelle Gewalt an Kindern > Schulnetz21 | 255-257 | 188 |
+| `doc-bf1cd0c996f355eee6cc` | section-0029 | Schulorganisation > Fachberatung PH Schwyz | 258-259 | 229 |
+| `doc-bf1cd0c996f355eee6cc` | section-0030 | Schulorganisation > Weiterbildung PH Schwyz | 260-261 | 137 |
+| `doc-bf1cd0c996f355eee6cc` | section-0031 | Schulorganisation > Weitere Informationen | 262-265 | 344 |
+| `doc-bf1cd0c996f355eee6cc` | section-0035 | Schulorganisation > Sidebar > Adresse > Amt für Volksschulen und Sport | 272-274 | 140 |
+| `doc-bf1cd0c996f355eee6cc` | section-0036 | Schulorganisation > Sidebar > Öffnungszeiten | 275-278 | 116 |
 | `doc-8782b52e7e4ded9957f5` | section-0010 | Drittstaatsangehörige > Einreise | 185-187 | 479 |
 | `doc-8782b52e7e4ded9957f5` | section-0013 | Drittstaatsangehörige > Aufenthalt ohne Erwerbstätigkeit | 192-193 | 138 |
 | `doc-8782b52e7e4ded9957f5` | section-0014 | Drittstaatsangehörige > Familiennachzug | 194-202 | 984 |
@@ -1397,6 +1563,7 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-777e3094d0c258479141` | section-0014 | EU/EFTA-Staatsangehörige > Familiennachzug | 201-207 | 1038 |
 | `doc-777e3094d0c258479141` | section-0018 | EU/EFTA-Staatsangehörige > Sidebar > Adresse > Amt für Migration | 213-215 | 122 |
 | `doc-777e3094d0c258479141` | section-0019 | EU/EFTA-Staatsangehörige > Sidebar > Öffnungszeiten | 216-219 | 119 |
+| `doc-bcad62a7178b1f891e57` | section-0001 | (no heading) | 1-2 | 2635 |
 | `doc-e48acba56a5956163cca` | section-0010 | Modal-Suche > Hauptinhalt | 342-348 | 8 |
 | `doc-e48acba56a5956163cca` | section-0011 | Migration | 349-350 | 366 |
 | `doc-e48acba56a5956163cca` | section-0012 | Migration > 1. Besuchsaufenthalt | 351-362 | 1236 |
@@ -1413,6 +1580,10 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-e48acba56a5956163cca` | section-0026 | Migration > Wichtige Links | 481-482 | 1179 |
 | `doc-e48acba56a5956163cca` | section-0027 | Migration > Personen | 483-484 | 550 |
 | `doc-e48acba56a5956163cca` | section-0028 | Migration > Abteilungen | 485-486 | 72 |
+| `doc-77bf695ff5ac6cd6225c` | section-0010 | Modal-Suche > Hauptinhalt | 342-347 | 8 |
+| `doc-77bf695ff5ac6cd6225c` | section-0013 | Ferienplan > Personen | 352-353 | 90 |
+| `doc-77bf695ff5ac6cd6225c` | section-0014 | Ferienplan > Ämter | 354-355 | 77 |
+| `doc-77bf695ff5ac6cd6225c` | section-0015 | Ferienplan > Themen | 356-357 | 29 |
 | `doc-c8b9a1ea9ffc2b4e0c88` | section-0012 | Service de la population (SPOP) > Actualités > Avant-projet de loi sur le service des habitants en consultation | 75-78 | 678 |
 | `doc-c8b9a1ea9ffc2b4e0c88` | section-0013 | Service de la population (SPOP) > Actualités > Inauguration des nouvelles installations du Centre de biométrie et des documents d’identité | 79-82 | 790 |
 | `doc-c8b9a1ea9ffc2b4e0c88` | section-0014 | Service de la population (SPOP) > Actualités > Inauguration de l'état civil cantonal | 83-86 | 578 |
@@ -1424,6 +1595,16 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-c8b9a1ea9ffc2b4e0c88` | section-0022 | Service de la population (SPOP) > Prestations | 121-127 | 240 |
 | `doc-c8b9a1ea9ffc2b4e0c88` | section-0023 | Service de la population (SPOP) > Bases Légales | 128-142 | 901 |
 | `doc-c8b9a1ea9ffc2b4e0c88` | section-0024 | Service de la population (SPOP) > Publications | 143-147 | 230 |
+| `doc-ea71df7c8f0a65729db4` | section-0010 | Jours fériés et vacances scolaires 2026 > Jours fériés officiels 2026 | 66-74 | 294 |
+| `doc-ea71df7c8f0a65729db4` | section-0012 | Jours fériés et vacances scolaires 2026 > Documents | 85-88 | 130 |
+| `doc-ea71df7c8f0a65729db4` | section-0013 | Jours fériés et vacances scolaires 2026 > Comment intégrer les périodes de vacances dans votre agenda électronique ? | 89-93 | 472 |
+| `doc-ea71df7c8f0a65729db4` | section-0014 | Jours fériés et vacances scolaires 2026 > Raccourci | 94-95 | 18 |
+| `doc-ea71df7c8f0a65729db4` | section-0015 | Jours fériés et vacances scolaires 2026 > Loi sur le personnel de l’Etat de Vaud | 96-97 | 388 |
+| `doc-8a48a12f6bf0a9f37a41` | section-0010 | Jours fériés et vacances scolaires 2027 > Jours fériés officiels 2027 | 66-74 | 293 |
+| `doc-8a48a12f6bf0a9f37a41` | section-0012 | Jours fériés et vacances scolaires 2027 > Documents | 85-88 | 130 |
+| `doc-8a48a12f6bf0a9f37a41` | section-0013 | Jours fériés et vacances scolaires 2027 > Comment intégrer les périodes de vacances dans votre agenda électronique ? | 89-93 | 472 |
+| `doc-8a48a12f6bf0a9f37a41` | section-0014 | Jours fériés et vacances scolaires 2027 > Raccourci | 94-95 | 18 |
+| `doc-8a48a12f6bf0a9f37a41` | section-0015 | Jours fériés et vacances scolaires 2027 > Loi sur le personnel de l’Etat de Vaud | 96-97 | 388 |
 | `doc-3844053afd11f3382d02` | section-0013 | Arrivée d'un autre canton > Documents à fournir > S'agissant des titulaires d'autorisations de courte durée (permis L UE/AELE) ou de séjour (permis B UE/AELE) : | 76-77 | 110 |
 | `doc-3844053afd11f3382d02` | section-0014 | Arrivée d'un autre canton > Documents à fournir > Si prise d'emploi simultanée à la demande alors que le but du séjour initial n'était pas lié à la prise d'une activité lucrative : | 78-79 | 225 |
 | `doc-3844053afd11f3382d02` | section-0018 | Arrivée d'un autre canton > Législation | 91-95 | 382 |
@@ -1455,6 +1636,14 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-2762a65962b06c05dc9e` | section-0004 | Verlassen der Schweiz > Reise von unbefristeter Dauer / Globetrotter | 19-22 | 266 |
 | `doc-2762a65962b06c05dc9e` | section-0005 | Verlassen der Schweiz > Studierende | 23-25 | 293 |
 | `doc-2762a65962b06c05dc9e` | section-0006 | Verlassen der Schweiz > Auswanderung (Entsendung) | 26-29 | 264 |
+| `doc-03e5f92d8234569ca2c9` | section-0010 | Schulferien > Volksschule | 58-61 | 572 |
+| `doc-03e5f92d8234569ca2c9` | section-0011 | Schulferien > Volksschule > Planungshilfe für die Schulgemeinden | 62-64 | 362 |
+| `doc-03e5f92d8234569ca2c9` | section-0012 | Schulferien > Volksschule > Weitere schulfreie Tage und gemeindeeigene Weiterbildung | 65-66 | 388 |
+| `doc-03e5f92d8234569ca2c9` | section-0013 | Schulferien > Volksschule > Weitere schulfreie Tage und gemeindeeigene Weiterbildung > Weitere schulfreie Tage | 67-69 | 277 |
+| `doc-03e5f92d8234569ca2c9` | section-0014 | Schulferien > Volksschule > Weitere schulfreie Tage und gemeindeeigene Weiterbildung > Gemeinsame Tätigkeiten während der Schulferien | 70-72 | 390 |
+| `doc-03e5f92d8234569ca2c9` | section-0015 | Schulferien > Volksschule > Weitere schulfreie Tage und gemeindeeigene Weiterbildung > Gemeindeeigene Weiterbildungen | 73-75 | 471 |
+| `doc-03e5f92d8234569ca2c9` | section-0016 | Schulferien > Volksschule > Weitere schulfreie Tage und gemeindeeigene Weiterbildung > Unterschiede zwischen weiteren schulfreien Tagen und gemeindeeigenen Weiterbildungen | 76-92 | 2527 |
+| `doc-03e5f92d8234569ca2c9` | section-0017 | Schulferien > Volksschule > Weitere schulfreie Tage und gemeindeeigene Weiterbildung > Schlussfolgerungen | 93-97 | 1209 |
 | `doc-a8114f7c75c808af1403` | section-0007 | Abteilung Einbürgerungen | 48-49 | 76 |
 | `doc-a8114f7c75c808af1403` | section-0010 | Abteilung Einbürgerungen > Das Team | 56-57 | 1796 |
 | `doc-a8114f7c75c808af1403` | section-0011 | Abteilung Einbürgerungen > Das Team > Einbürgerung | 58-60 | 251 |
@@ -1829,12 +2018,18 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-cfa52df67bc1a2de79f0` | section-0041 | Hunde > Was Sie wissen sollten > Verbotene Geräte > Bewilligungspflicht | 209-210 | 496 |
 | `doc-cfa52df67bc1a2de79f0` | section-0042 | Hunde > Was Sie wissen sollten > Verbotene Geräte > Dokumentationspflicht | 211-217 | 312 |
 | `doc-cfa52df67bc1a2de79f0` | section-0043 | Hunde > Was Sie wissen sollten > Leinenpflicht im Wald und am Waldrand | 218-222 | 398 |
+| `doc-65987b111d4d5880a8b7` | section-0015 | Verbotene Hunderassen > Rottweiler seit 1. Januar 2025 auf Rassetypenliste II > Besonderes Vorgehen bei Rottweilern unter 15 Monaten | 94-96 | 352 |
+| `doc-65987b111d4d5880a8b7` | section-0017 | Verbotene Hunderassen > Wesensbeurteilung als Führbarkeitstest – Zielsetzung und Ablauf | 100-118 | 1305 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0008 | Amt für Wirtschaft > Diese Seite ist verfügbar in: | 49-52 | 217 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0011 | Amt für Wirtschaft > Über uns | 67-70 | 1084 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0012 | Amt für Wirtschaft > Über uns > Dr. Fabian Streiff | 71-73 | 37 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0015 | Amt für Wirtschaft > Über uns > Tripartite Kommission | 87-89 | 136 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0016 | Amt für Wirtschaft > Über uns > Einigungsamt | 90-92 | 158 |
 | `doc-6ac4fb95eb9bd1acf968` | section-0017 | Amt für Wirtschaft > Über uns > Offene Stellen im AWI | 93-95 | 43 |
+| `doc-8f24e9474861251a3470` | section-0001 | (no heading) | 1-1 | 44 |
+| `doc-8f24e9474861251a3470` | section-0011 | Calendario scolastico 2026/2027 > Applicazione mobile | 53-54 | 200 |
+| `doc-8f24e9474861251a3470` | section-0016 | Calendario scolastico 2026/2027 > Social media | 67-68 | 197 |
+| `doc-8f24e9474861251a3470` | section-0017 | Calendario scolastico 2026/2027 > Condividi | 69-76 | 80 |
 | `doc-6672da80799a61b7cd84` | section-0001 | (no heading) | 1-1 | 44 |
 | `doc-6672da80799a61b7cd84` | section-0005 | Ufficio della migrazione | 16-17 | 166 |
 | `doc-6672da80799a61b7cd84` | section-0006 | Ufficio della migrazione > Organizzazione | 18-33 | 434 |
@@ -1848,6 +2043,10 @@ Release `mvp-zurich-2026-09-24-v5` (content `3100356dd26d`), policy `report`, no
 | `doc-6672da80799a61b7cd84` | section-0016 | Ufficio della migrazione > Applicazione mobile | 69-70 | 200 |
 | `doc-6672da80799a61b7cd84` | section-0021 | Ufficio della migrazione > Social media | 83-84 | 197 |
 | `doc-6672da80799a61b7cd84` | section-0022 | Ufficio della migrazione > Condividi | 85-92 | 80 |
+| `doc-91983dceb9b36ae32b2e` | section-0001 | (no heading) | 1-1 | 1605 |
+| `doc-e09073daa7f1d2628967` | section-0002 | Schulferien | 324-334 | 81 |
+| `doc-e09073daa7f1d2628967` | section-0004 | Schulferien > Ferienpläne | 339-341 | 67 |
+| `doc-e09073daa7f1d2628967` | section-0006 | Schulferien > Schulaufsicht | 348-357 | 225 |
 | `doc-d93f4248701c364d8108` | section-0002 | Einreise EU/EFTA-Staatsangehörige | 324-334 | 251 |
 | `doc-d93f4248701c364d8108` | section-0003 | Einreise EU/EFTA-Staatsangehörige > Unselbstständige Erwerbstätigkeit | 335-336 | 137 |
 | `doc-d93f4248701c364d8108` | section-0010 | Einreise EU/EFTA-Staatsangehörige > Erwerbsloser Aufenthalt | 360-366 | 429 |
@@ -1871,7 +2070,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | cited_nowhere | www.priminfo.admin.ch | 8 | - | Priminfo | unternavigation |
 | cited_nowhere | www.bag.admin.ch | 7 | - | Krankenversicherung: Kostenbeteiligung für in der Schweiz wohnhafte Versicherte > Bundesamt für Gesundheit BAG | direktionsbereich kranken- und unfallversicherung abteilung versicherungsaufsicht schwarzenburgstras |
 | cited_nowhere | www.zh.ch | 5 | - | Familiennachzug beantragen > Anleitung > Migrationsamt > Spezielle Öffnungszeiten | unser amt ist am montag, 14. september ab 11.30 uhr geschlossen. ab dienstag, 15. september 2026 sin |
-| cited_on_several_pages | www.zh.ch | 28 | [Erwerbstätigkeit von Ausländerinnen und Ausländern / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/erwerbstaetigkeit-auslaender.html); [Standorte und Öffnungszeiten des Strassenverkehrsamts / Kanton Zürich](https://www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt/standorte-oeffnungszeiten.html) | Prämienverbilligung > Weiterführende Informationen | verwenden sie die akkordeon-bedienelemente, um die sichtbarkeit der jeweiligen panels (unterhalb der |
+| cited_on_several_pages | www.zh.ch | 29 | [Erwerbstätigkeit von Ausländerinnen und Ausländern / Kanton Zürich](https://www.zh.ch/de/wirtschaft-arbeit/erwerbstaetigkeit-auslaender.html); [Standorte und Öffnungszeiten des Strassenverkehrsamts / Kanton Zürich](https://www.zh.ch/de/sicherheitsdirektion/strassenverkehrsamt/standorte-oeffnungszeiten.html) | Schulferien > Weiterführende Informationen | verwenden sie die akkordeon-bedienelemente, um die sichtbarkeit der jeweiligen panels (unterhalb der |
 | cited_on_several_pages | www.zh.ch | 7 | [Familiennachzug durch Personen mit einer L-Bewilligung beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-l-bewilligung-beantragen.html); [Einreisebewilligung für Rentnerinnen und Rentner beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/aufenthalt-ohne-erwerbstaetigkeit-fuer-drittstaatsangehoerige/einreisebewilligung-fuer-rentnerinnen-und-rentner-beantragen.html); [Familiennachzug durch Schweizer Staatsangehörige beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-schweizer-staatsangehoerige-beantragen.html); [Familiennachzug nach dem Freizügigkeitsabkommen beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-nach-dem-freizuegigkeitsabkommen-beantragen.html); [Familiennachzug durch Personen mit einer B- oder C-Bewilligung beantragen / Kanton Zürich](https://www.zh.ch/de/migration-integration/aufenthalt/familiennachzug-von-drittstaatsangehoerigen/familiennachzug-durch-personen-mit-einer-b-oder-c-bewilligung-beantragen.html) | Einreisebewilligung für nahe Verwandte beantragen > Anleitung > Nutzungsmöglichkeiten | sie können uns die vollständigen unterlagen direkt am schalter, online oder per post einreichen. |
 | cited_once | www.zh.ch | 9 | [Migrationsamt / Kanton Zürich](https://www.zh.ch/de/sicherheitsdirektion/migrationsamt.html) | Bewilligung beantragen > Anleitung > Migrationsamt > Adresse | berninastrasse 45 postfach 8090 zürich route (google) adresse wurde kopiert adresse konnte nicht kop |
 | cited_once | www.stadt-zuerich.ch | 5 | [Einbürgerung und Stadtbürgerrecht / Stadt Zürich](https://www.stadt-zuerich.ch/de/lebenslagen/einwohner-services/einbuergerung.html) | Navigation > Sprunglink > Stadtkanzlei | stadthaus einbürgerungen stadthausquai 17 8001 zürich telefon +41 44 412 31 09 |
@@ -1885,22 +2084,28 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | cited | `ag-change-of-canton` Aargau - Reporting a move, change of canton | 1 | 1 | 1 | 0 | 0 | 0 |
 | boilerplate_only | `ag-register-law` Aargau - Register- und Meldegesetz (SAR 122.200), para 14 | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ag-residence` Aargau - Residence hub | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `ag-school-holidays` Aargau - school holidays | 2 | 15 | 5 | 0 | 0 | 10 |
 | partly_covered | `ai-foreign-workers` Appenzell Innerrhoden - Working as a foreign national (eight days) | 1 | 9 | 2 | 0 | 0 | 7 |
 | boilerplate_only | `ai-register-ordinance` Appenzell Innerrhoden - Verordnung zum Registerharmonisierungsgesetz (GS 172.910), art. 7 | 1 | 0 | 0 | 0 | 0 | 0 |
 | partly_covered | `ai-registration` Appenzell Innerrhoden - Registering and deregistering (fourteen days) | 1 | 4 | 3 | 0 | 0 | 1 |
+| partly_covered | `ai-school-holidays` Appenzell Innerrhoden - school holidays | 2 | 4 | 2 | 0 | 0 | 2 |
 | boilerplate_only | `ai-settlement-decree` Appenzell Innerrhoden - Standeskommissionsbeschluss ueber Niederlassung und Aufenthalt (GS 142.001), art. 2 | 1 | 0 | 0 | 0 | 0 | 0 |
 | cited | `ar-register-law` Appenzell Ausserrhoden - Registergesetz (bGS 122.1), art. 5 | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `ar-school-holidays` Appenzell Ausserrhoden - school holidays | 2 | 14 | 2 | 0 | 0 | 12 |
 | partly_covered | `ar-third-country` Appenzell Ausserrhoden - Third-country nationals: forms and documents | 1 | 5 | 1 | 0 | 0 | 4 |
 | partly_covered | `basel-waste` Basel-Stadt - waste collection in the City of Basel | 1 | 19 | 5 | 0 | 0 | 14 |
 | partly_covered | `be-entry-eu-efta` Bern - Entry for EU/EFTA nationals, 14 days to the commune | 1 | 3 | 1 | 0 | 0 | 2 |
 | nothing | `be-entry-eu-efta-fr` Bern - Entree pour les ressortissants UE/AELE | 1 | 3 | 0 | 0 | 0 | 3 |
 | cited | `be-entry-third-country` Bern - Entry for third-country nationals | 1 | 2 | 2 | 0 | 0 | 0 |
 | nothing | `be-permit-b` Bern - Residence permit B, with the change-of-canton rule | 1 | 3 | 0 | 0 | 0 | 3 |
+| partly_covered | `be-school-holidays` Bern - school holidays | 1 | 3 | 2 | 0 | 0 | 1 |
 | cited | `be-settlement-law` Bern - Gesetz ueber Niederlassung und Aufenthalt (BSG 122.11), art. 1 | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `bl-registration-law` Basel-Landschaft - Anmeldungs- und Registergesetz (SGS 111), para 5 | 1 | 1 | 1 | 0 | 0 | 0 |
+| no_documents | `bl-school-holidays` Basel-Landschaft - school holidays | 0 | 0 | 0 | 0 | 0 | 0 |
 | partly_covered | `bs-entry-residence` Basel-Stadt - Entry and residence, EU/EFTA and third country | 1 | 48 | 4 | 0 | 0 | 44 |
 | boilerplate_only | `bs-register-law` Basel-Stadt - Gesetz ueber Niederlassung und Aufenthalt (SG 122.200), para 4 | 1 | 0 | 0 | 0 | 0 | 0 |
 | partly_covered | `bs-registration-arrival` Basel-Stadt - Moving to the canton, registration and deadline | 1 | 21 | 5 | 0 | 0 | 16 |
+| partly_covered | `bs-school-holidays` Basel-Stadt - school holidays | 1 | 12 | 3 | 0 | 0 | 9 |
 | boilerplate_only | `ch-ahv-iv-13-ahv-rente` The thirteenth AHV pension payment | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-ahv-21` AHV 21: reference age 65 and the transitional rules | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ch-ahv-iv-ahv-allgemeines` AHV: general information and who is insured | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -2040,58 +2245,77 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | cited | `fr-arrival-eu-efta` Fribourg - Arriving for more than three months, EU/EFTA | 1 | 1 | 1 | 0 | 0 | 0 |
 | cited | `fr-change-of-canton` Fribourg - Change of canton, EU-27/EFTA | 1 | 1 | 1 | 0 | 0 | 0 |
 | boilerplate_only | `fr-residents-law` Fribourg - Loi sur le controle des habitants (RSF 114.21.1), art. 5 | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `fr-school-holidays` Fribourg - school holidays | 4 | 42 | 8 | 0 | 0 | 34 |
 | partly_covered | `ge-arrival` Geneva - Announcing your arrival to the OCPM, 14 days | 1 | 3 | 1 | 0 | 0 | 2 |
 | cited | `ge-confederates-law` Geneva - Loi sur le sejour et l'etablissement des Confederes (rsGE F 2 05), art. 1 | 1 | 1 | 1 | 0 | 0 | 0 |
 | partly_covered | `ge-departure` Geneva - Announcing your departure to the OCPM | 1 | 3 | 1 | 0 | 0 | 2 |
 | cited | `ge-register-law` Geneva - Loi d'application de la LHR (rsGE F 2 25), art. 5 | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `ge-school-holidays` Geneva - school holidays | 3 | 5 | 2 | 0 | 0 | 3 |
 | boilerplate_only | `gl-register-law` Glarus - Einfuehrungsgesetz zum Registerharmonisierungsgesetz (GS I C/21/2), art. 4 | 1 | 0 | 0 | 0 | 0 | 0 |
 | no_documents | `gl-residence` Glarus - Residence: permit duty and the order of steps | 0 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `gl-school-holidays` Glarus - school holidays | 2 | 5 | 1 | 0 | 0 | 4 |
 | boilerplate_only | `gr-register-law` Graubuenden - Einwohnerregistergesetz (BR 171.200), art. 13 | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `gr-register-law-it` Graubuenden - Legge sui registri degli abitanti (BR 171.200), art. 13 | 1 | 0 | 0 | 0 | 0 | 0 |
+| cited | `gr-school-holidays` Graubuenden - school holidays | 2 | 1 | 1 | 0 | 0 | 0 |
 | boilerplate_only | `gr-third-country-registration` Graubuenden - Registration for third-country nationals, 14 days | 1 | 0 | 0 | 0 | 0 | 0 |
 | partly_covered | `ju-residents-office` Jura - Controle des habitants: duty, deadline and documents | 1 | 4 | 1 | 0 | 0 | 3 |
+| partly_covered | `ju-school-holidays` Jura - school holidays | 2 | 6 | 1 | 0 | 0 | 5 |
 | boilerplate_only | `lu-change-of-canton` Lucerne - Change of canton | 1 | 0 | 0 | 0 | 0 | 0 |
 | cited | `lu-eu-efta-leaflet` Lucerne - Merkblatt: residence permit for EU/EFTA nationals | 1 | 1 | 1 | 0 | 0 | 0 |
+| cited | `lu-school-holidays` Lucerne - school holidays | 3 | 1 | 1 | 0 | 0 | 0 |
 | cited | `lu-settlement-law` Lucerne - Gesetz ueber die Niederlassung und den Aufenthalt (SRL 5), paras 3, 5 and 7 | 1 | 1 | 1 | 0 | 0 | 0 |
 | partly_covered | `lugano-waste` City of Lugano - waste disposal and the municipal waste ordinance | 4 | 55 | 2 | 0 | 0 | 53 |
 | partly_covered | `ne-permit-management` Neuchatel - Managing and renewing your permit, with the change-of-canton rule | 1 | 12 | 3 | 0 | 0 | 9 |
+| partly_covered | `ne-school-holidays` Neuchatel - school holidays | 2 | 7 | 2 | 0 | 0 | 5 |
 | partly_covered | `ne-studying` Neuchatel - Studying in Neuchatel: announcing arrival and what to bring | 1 | 13 | 1 | 0 | 0 | 12 |
 | boilerplate_only | `nw-residence` Nidwalden - Residence, registration and change of canton | 1 | 0 | 0 | 0 | 0 | 0 |
+| no_documents | `nw-school-holidays` Nidwalden - school holidays | 0 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `nw-settlement-law` Nidwalden - Gesetz ueber Niederlassung und Aufenthalt (NG 122.1), arts. 4 and 5 | 1 | 0 | 0 | 0 | 0 | 0 |
 | partly_covered | `ow-migration-office` Obwalden - Abteilung Migration | 1 | 7 | 1 | 0 | 0 | 6 |
 | boilerplate_only | `ow-register-ordinance` Obwalden - Einwohnerregisterverordnung (GDB 113.11), arts. 10 and 11 | 1 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `ow-residence-permit` Obwalden - Residence permit and family reunification | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `ow-school-holidays` Obwalden - school holidays | 1 | 8 | 1 | 0 | 0 | 7 |
 | partly_covered | `sg-newcomer-permit` St. Gallen - Residence permit, newcomer platform | 1 | 22 | 3 | 0 | 0 | 19 |
 | partly_covered | `sg-permits-eu-efta` St. Gallen - Permits for EU/EFTA nationals, change of canton | 1 | 17 | 2 | 0 | 0 | 15 |
 | cited | `sg-residence-law` St. Gallen - Gesetz ueber Niederlassung und Aufenthalt (sGS 453.1), arts. 3 and 6 | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `sg-school-holidays` St. Gallen - school holidays | 1 | 3 | 2 | 0 | 0 | 1 |
 | partly_covered | `sh-change-of-canton` Schaffhausen - Change of canton for third-country nationals | 1 | 4 | 1 | 0 | 0 | 3 |
 | boilerplate_only | `sh-register-law` Schaffhausen - Gemeindegesetz (SHR 120.100), art. 89 | 1 | 0 | 0 | 0 | 0 | 0 |
 | partly_covered | `sh-registration-eu-efta` Schaffhausen - Employed EU/EFTA nationals, the two steps and the deadline | 1 | 4 | 1 | 0 | 0 | 3 |
+| no_documents | `sh-school-holidays` Schaffhausen - school holidays | 0 | 0 | 0 | 0 | 0 | 0 |
 | partly_covered | `so-change-of-canton` Solothurn - Change of canton | 1 | 3 | 1 | 0 | 0 | 2 |
 | boilerplate_only | `so-commune-law` Solothurn - Gemeindegesetz (BGS 131.1), para 3 | 1 | 0 | 0 | 0 | 0 | 0 |
 | partly_covered | `so-entry-registration` Solothurn - Entry, with the An-/Abmeldung duty and the deadline | 1 | 7 | 1 | 0 | 0 | 6 |
+| partly_covered | `so-school-holidays` Solothurn - school holidays | 3 | 2 | 1 | 0 | 0 | 1 |
 | partly_covered | `st-gallen-waste` City of St. Gallen - waste collection plan | 2 | 6 | 1 | 0 | 0 | 5 |
 | partly_covered | `sz-eu-efta` Schwyz - EU/EFTA nationals: the two-tier deadline | 1 | 8 | 2 | 0 | 0 | 6 |
 | cited | `sz-reporting-law` Schwyz - Gesetz ueber das Einwohnermeldewesen (SRSZ 111.110), para 10 | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `sz-school-holidays` Schwyz - school holidays | 2 | 19 | 1 | 0 | 0 | 18 |
 | partly_covered | `sz-third-country` Schwyz - Third-country nationals | 1 | 7 | 2 | 0 | 0 | 5 |
 | no_documents | `tg-change-of-canton` Thurgau - Change of canton | 0 | 0 | 0 | 0 | 0 | 0 |
 | boilerplate_only | `tg-register-law` Thurgau - Einwohnerregistergesetz (RB 142.15), para 7 | 1 | 0 | 0 | 0 | 0 | 0 |
 | no_documents | `tg-registration-employment` Thurgau - Entry with employment: registration and permit application in one act | 0 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `tg-school-holidays` Thurgau - school holidays | 3 | 9 | 3 | 0 | 0 | 6 |
 | partly_covered | `ti-migration-office` Ticino - Ufficio della migrazione | 1 | 14 | 1 | 0 | 0 | 13 |
 | boilerplate_only | `ti-registration-regulation` Ticino - Regolamento sul controllo degli abitanti (RL 144.110), arts. 12, 13 and 20 | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `ti-school-holidays` Ticino - school holidays | 2 | 11 | 6 | 0 | 0 | 5 |
 | partly_covered | `ur-migration` Uri - Migration: permits for EU/EFTA and third-country nationals | 1 | 19 | 3 | 0 | 0 | 16 |
 | boilerplate_only | `ur-register-law` Uri - Kantonales Registerharmonisierungsgesetz (RB 1.4201), arts. 19 and 21 | 1 | 0 | 0 | 0 | 0 | 0 |
+| partly_covered | `ur-school-holidays` Uri - school holidays | 2 | 7 | 2 | 0 | 0 | 5 |
 | partly_covered | `vd-arrival-other-canton` Vaud - Arriving from another canton, EU/EFTA | 1 | 8 | 4 | 0 | 0 | 4 |
 | cited | `vd-change-of-address` Vaud - Announcing arrival to the commune within 8 days | 1 | 4 | 4 | 0 | 0 | 0 |
 | partly_covered | `vd-population-office` Vaud - Service de la population (SPOP) | 1 | 13 | 2 | 0 | 0 | 11 |
 | partly_covered | `vd-registration-service` Vaud - The registration transaction and its documents | 1 | 7 | 2 | 0 | 0 | 5 |
+| partly_covered | `vd-school-holidays` Vaud - school holidays | 3 | 13 | 3 | 0 | 0 | 10 |
 | cited | `vs-change-of-canton` Valais - Change of canton | 1 | 2 | 2 | 0 | 0 | 0 |
 | partly_covered | `vs-residence-permit` Valais - Residence permit, 14 days from arrival | 1 | 4 | 1 | 0 | 0 | 3 |
 | boilerplate_only | `vs-residents-law` Valais - Loi sur le controle de l'habitant (RS/VS 176.1), art. 7 | 1 | 0 | 0 | 0 | 0 | 0 |
 | cited | `vs-residents-office` Valais - Contact the commune, not the canton | 1 | 1 | 1 | 0 | 0 | 0 |
+| cited | `vs-school-holidays` Valais - school holidays | 2 | 3 | 3 | 0 | 0 | 0 |
 | cited | `zg-commune-law` Zug - Gemeindegesetz (BGS 171.1), para 57a | 1 | 1 | 1 | 0 | 0 | 0 |
 | nothing | `zg-entry-eu-efta` Zug - Entry for EU/EFTA nationals, registration forms | 1 | 5 | 0 | 0 | 0 | 5 |
 | cited | `zg-moving-leaflet` Zug - Merkblatt Umzug/Zuzug | 1 | 1 | 1 | 0 | 0 | 0 |
+| partly_covered | `zg-school-holidays` Zug - school holidays | 1 | 5 | 2 | 0 | 0 | 3 |
 | cited | `zh-awa-anmeldung-rav` Zurich: signing on with the RAV and choosing an unemployment fund | 1 | 64 | 5 | 59 | 1 | 0 |
 | cited | `zh-awa-beratung-vermittlung` Zurich: counselling and placement for jobseekers | 1 | 22 | 5 | 17 | 2 | 0 |
 | cited | `zh-awa-insolvenzentschaedigung` Zurich: insolvency compensation when the employer fails | 1 | 13 | 9 | 4 | 1 | 0 |
@@ -2099,7 +2323,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | cited | `zh-awa-qualifizierung` Zurich: qualification offers for jobseekers | 1 | 8 | 7 | 1 | 0 | 0 |
 | cited | `zh-awa-zustaendiges-rav` Zurich: finding the responsible RAV | 1 | 1 | 1 | 0 | 0 | 0 |
 | partly_covered | `zh-biometric-documents` Zurich - Biometric residence documents | 2 | 18 | 7 | 0 | 3 | 11 |
-| partly_covered | `zh-dogs` Zurich - keeping a dog (cantonal rules) | 1 | 32 | 9 | 0 | 1 | 23 |
+| partly_covered | `zh-dogs` Zurich - keeping a dog (cantonal rules) | 2 | 42 | 17 | 0 | 1 | 25 |
 | partly_covered | `zh-eu-efta` Zurich - Residence for EU/EFTA nationals | 2 | 18 | 11 | 0 | 3 | 7 |
 | partly_covered | `zh-family` Zurich - Family reunification for third-country nationals | 4 | 32 | 19 | 0 | 15 | 13 |
 | cited | `zh-fedlex-kv` Constitution of the Canton of Zurich (KV), SR 131.211 (federally guaranteed cantonal constitution) | 1 | 1 | 1 | 0 | 0 | 0 |
@@ -2112,6 +2336,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | partly_covered | `zh-overview` Zurich - Residence overview | 8 | 47 | 31 | 3 | 23 | 13 |
 | partly_covered | `zh-premium-reduction` Zurich - premium reduction for health insurance | 1 | 12 | 3 | 0 | 1 | 9 |
 | partly_covered | `zh-rental-forms` Zurich - forms in tenancy matters (initial rent form) | 1 | 4 | 3 | 0 | 0 | 1 |
+| partly_covered | `zh-school-holidays` Zurich - school holidays | 1 | 13 | 5 | 0 | 1 | 8 |
 | partly_covered | `zh-settlement` Zurich - settlement permit | 1 | 15 | 6 | 0 | 1 | 9 |
 | nothing | `zh-steueramt-office` Zurich - Cantonal Tax Office: contact and office hours | 1 | 10 | 0 | 0 | 0 | 10 |
 | nothing | `zh-strassenverkehrsamt-office` Zurich - Road Traffic Office: contact, locations and opening hours | 1 | 11 | 0 | 0 | 1 | 11 |
