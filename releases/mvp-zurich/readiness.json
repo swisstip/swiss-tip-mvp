@@ -1,19 +1,19 @@
 {
   "schema_version": "swiss-tip-readiness/v2",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-25-v1",
-  "release_sha256": "da34afede00c6297cfd4a0881926911a1cf386712fb7881b2d9b6546abdec108",
-  "content_sha256": "7b29674a6774c3b7c3b12181902817df174a2555de16686570a1d6e30cc40c0f",
-  "suite_sha256": "9409107870f5931e5ce5b6345042a9f08eb6594203aece0d2114185a12ed6a68",
-  "suite_file_sha256": "d55fbc57c2e33157cc2cf16b3a777888c882c787fc3b1e523605cd5329732dd9",
-  "attested_at": "2026-09-25T03:39:32.502742Z",
+  "release_id": "mvp-zurich-2026-09-25-v2",
+  "release_sha256": "959b1cb5bedada56a2b15c00bcd479788342839760f687ba1e39cfc1f755ffe2",
+  "content_sha256": "a236f1b35de4dea7486a04972ce4ebe7153b0f0fc48c05cdca434124fe2bebdb",
+  "suite_sha256": "be7e6e68c41043248395f0b7b8e39d2f8425ee45e48ada6d24d24611c139788a",
+  "suite_file_sha256": "de834e384a6825ae32cdcf443fc3ff30dec4d7287abfb33263d0323a4e98acce",
+  "attested_at": "2026-09-25T05:10:10.507980Z",
   "attested_by": "Alexander Bobrovsky",
   "gates": [
     {
       "gate": "G1",
       "title": "the release validates against the text dataset and the re-hashed saved responses",
       "status": "passed",
-      "detail": "339 saved responses re-hashed"
+      "detail": "374 saved responses re-hashed"
     },
     {
       "gate": "G2",
@@ -25,7 +25,7 @@
       "gate": "G3",
       "title": "every blocking acceptance case passes",
       "status": "passed",
-      "detail": "149 blocking case(s) pass"
+      "detail": "153 blocking case(s) pass"
     },
     {
       "gate": "G4",
@@ -47,30 +47,30 @@
     }
   ],
   "cases": {
-    "total": 149,
-    "blocking": 149,
+    "total": 153,
+    "blocking": 153,
     "quarantined": []
   },
   "review_statuses": {
-    "human-reviewed": 1286
+    "human-reviewed": 1343
   },
   "snapshot_date": "2026-09-25",
   "stale_from": "2026-11-24",
   "min_runway_days": 14,
   "coverage": {
     "policy": "report",
-    "candidates": 533,
-    "content_sections": 3433,
-    "cited_sections": 872,
+    "candidates": 580,
+    "content_sections": 3641,
+    "cited_sections": 930,
     "dispositioned_sections": 1251,
-    "unclassified_sections": 1310,
+    "unclassified_sections": 1460,
     "clean": false
   },
   "semantic_index": {
-    "file_sha256": "a246a16d34b9a0506b71e575ad83cac89be94f2236a6ecc9a91420d7acf90378",
-    "content_sha256": "695424b50efd9c5e2f98bb0162f91de31a3b633517c4d0dd12f23d070d57a5c9",
-    "release_id": "mvp-zurich-2026-09-25-v1",
-    "release_content_sha256": "7b29674a6774c3b7c3b12181902817df174a2555de16686570a1d6e30cc40c0f",
+    "file_sha256": "4339f832cb84071a2ba9341428712783ef1dd9bf8f2a94f9dd094b42184d583a",
+    "content_sha256": "8f6ba70383291e22a6b9e543aa3e2f6774f854a37059e4ee0f81c0d7886633f6",
+    "release_id": "mvp-zurich-2026-09-25-v2",
+    "release_content_sha256": "a236f1b35de4dea7486a04972ce4ebe7153b0f0fc48c05cdca434124fe2bebdb",
     "model": "qwen3-embedding:0.6b",
     "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
     "dimension": 1024,

@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-acceptance-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-25-v1",
-  "content_sha256": "7b29674a6774c3b7c3b12181902817df174a2555de16686570a1d6e30cc40c0f",
-  "suite_sha256": "9409107870f5931e5ce5b6345042a9f08eb6594203aece0d2114185a12ed6a68",
-  "checked_at": "2026-09-25T03:39:32.490551+00:00",
+  "release_id": "mvp-zurich-2026-09-25-v2",
+  "content_sha256": "a236f1b35de4dea7486a04972ce4ebe7153b0f0fc48c05cdca434124fe2bebdb",
+  "suite_sha256": "be7e6e68c41043248395f0b7b8e39d2f8425ee45e48ada6d24d24611c139788a",
+  "checked_at": "2026-09-25T05:10:10.498496+00:00",
   "as_of": "2026-09-25",
   "passed": true,
-  "cases": 149,
-  "blocking": 149,
+  "cases": 153,
+  "blocking": 153,
   "failed": [],
   "quarantined": [],
   "quarantined_failed": [],
@@ -5547,9 +5547,9 @@
           "query": "annual quotas for work permits",
           "expect_concept": null,
           "hits": [
-            "cantonal-permit-application",
             "aig-short-stay",
-            "city-lugano-waste-disposal"
+            "cantonal-permit-application",
+            "health-insurance-cross-border-commuter"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "weak",
@@ -6219,7 +6219,7 @@
           "hits": [
             "zh-tax-at-source-tariffs",
             "zh-tax-at-source-ordinary-assessment",
-            "zh-tax-at-source-liability"
+            "city-zurich-tax-office-contact"
           ],
           "retrieval_mode": "lexical",
           "match_strength": "strong",
@@ -6410,8 +6410,8 @@
           "query": "family allowance education allowance Zurich",
           "expect_concept": "zh-family-allowances",
           "hits": [
-            "family-allowances",
             "zh-family-allowances",
+            "family-allowances",
             "unemployment-labour-market-measures"
           ],
           "retrieval_mode": "lexical",
@@ -11828,6 +11828,190 @@
       ]
     },
     {
+      "case_id": "UAT-122",
+      "label": "Geneva: the autumn holidays 2026",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "When are the autumn school holidays 2026 in Geneva?",
+          "expect_concept": "ge-school-holidays",
+          "hits": [
+            "ge-school-holidays",
+            "health-insurance-abroad"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true,
+          "jurisdiction": {
+            "city": "Genève"
+          },
+          "published_elsewhere": [
+            "gl-school-holidays",
+            "sg-school-holidays"
+          ]
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "ge-school-holidays"
+          ],
+          "as_of": "2026-09-25",
+          "scope": "CH-GE-6621",
+          "not_recognised": {},
+          "statuses": {
+            "ge-school-holidays": "SUPPORTED"
+          },
+          "gaps": {
+            "ge-school-holidays": [
+              "more_specific_jurisdiction_not_published"
+            ]
+          },
+          "facts": {
+            "ge-school-holidays": [
+              "ge-school-holidays-1",
+              "ge-school-holidays-2"
+            ]
+          },
+          "bases": {
+            "ge-school-holidays": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Autumn holidays 19 to 23 October 2026",
+          "concept": "ge-school-holidays",
+          "fact_ids": [
+            "ge-school-holidays-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-123",
+      "label": "Lucerne: the summer holidays 2027 of the town",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Wann beginnen die Sommerferien 2027 in der Stadt Luzern?",
+          "expect_concept": "lu-school-holidays",
+          "hits": [
+            "lu-school-holidays",
+            "family-deadlines",
+            "health-insurance-cost-sharing"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "strong",
+          "expect_strength": "strong",
+          "passed": true,
+          "jurisdiction": {
+            "city": "Luzern"
+          },
+          "published_elsewhere": [
+            "so-school-holidays",
+            "ag-school-holidays"
+          ]
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "lu-school-holidays"
+          ],
+          "as_of": "2026-09-25",
+          "scope": "CH-LU-1061",
+          "not_recognised": {},
+          "statuses": {
+            "lu-school-holidays": "SUPPORTED"
+          },
+          "gaps": {
+            "lu-school-holidays": []
+          },
+          "facts": {
+            "lu-school-holidays": [
+              "lu-school-holidays-1",
+              "lu-school-holidays-2",
+              "lu-school-holidays-3"
+            ]
+          },
+          "bases": {
+            "lu-school-holidays": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Summer holidays of the town from 3 July 2027",
+          "concept": "lu-school-holidays",
+          "fact_ids": [
+            "lu-school-holidays-2"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-124",
+      "label": "Emmen: no town dates for another municipality of Lucerne",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "lu-school-holidays"
+          ],
+          "as_of": "2026-09-25",
+          "scope": "CH-LU-1024",
+          "not_recognised": {},
+          "statuses": {
+            "lu-school-holidays": "SUPPORTED"
+          },
+          "gaps": {
+            "lu-school-holidays": [
+              "more_specific_jurisdiction_not_published"
+            ]
+          },
+          "facts": {
+            "lu-school-holidays": [
+              "lu-school-holidays-1",
+              "lu-school-holidays-3"
+            ]
+          },
+          "bases": {
+            "lu-school-holidays": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The municipalities set their own holidays",
+          "concept": "lu-school-holidays",
+          "fact_ids": [
+            "lu-school-holidays-1"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
       "case_id": "LOOKUP-1",
       "label": "Next organic waste collection in 8001",
       "blocking": true,
@@ -12036,6 +12220,40 @@
           },
           "bases": {
             "cantonal-online-services": []
+          },
+          "passed": true
+        }
+      ],
+      "claims": []
+    },
+    {
+      "case_id": "DECLINE-16",
+      "label": "No school holidays published for Basel-Landschaft",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "bs-school-holidays"
+          ],
+          "as_of": "2026-09-25",
+          "scope": "CH-BL-2829",
+          "not_recognised": {},
+          "statuses": {
+            "bs-school-holidays": "OUT_OF_COVERAGE"
+          },
+          "gaps": {
+            "bs-school-holidays": [
+              "jurisdiction_not_covered"
+            ]
+          },
+          "facts": {
+            "bs-school-holidays": []
+          },
+          "bases": {
+            "bs-school-holidays": []
           },
           "passed": true
         }

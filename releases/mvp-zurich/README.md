@@ -22,7 +22,7 @@ is missing or not covered. It offers five read-only tools:
 
 | Tool | What it returns |
 | --- | --- |
-| `get_coverage` | The scope statement, topics, jurisdictions, languages, freshness and out-of-scope list in one call under 6 KB; with a topic ID, that topic's concepts |
+| `get_coverage` | The scope statement, topics, jurisdictions, languages, freshness and out-of-scope list in one call under 8.7 KB; with a topic ID, that topic's concepts |
 | `search` | Concepts matching a question, in English or German, with the context each concept needs; lexical matching fused with the bundled embedding model's ranking |
 | `resolve` | For concept IDs, the place the user lives in (a canton and a city by name, or their codes), a date and the user's situation: the facts, each with the basis of its excerpt (a federal act and its article, an ordinance, the free-movement agreement, a cantonal directive, an authority's guidance, a portal summary), the citations with the publisher's level and jurisdiction, and a status: `SUPPORTED`, `NEEDS_CONTEXT` (naming the missing field), `OUT_OF_COVERAGE` (naming what is covered) or `STALE` |
 | `get_evidence` | The full original-language excerpts behind facts or citations, each with its basis and publisher |

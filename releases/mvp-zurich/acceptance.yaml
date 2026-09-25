@@ -7549,6 +7549,89 @@ cases:
     cites:
       banned_breeds_page: zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde/verbotene-hunderassen
     resolved: [zh-banned-dog-breeds]
+- case_id: UAT-122
+  label: 'Geneva: the autumn holidays 2026'
+  spec: docs/product/user-acceptance-tests.md#uat-122-autumn-holidays-in-geneva
+  question: When are the autumn school holidays 2026 in Geneva?
+  expected_answer: Monday 19 October to Friday 23 October 2026, one week, from the Canton of Geneva's page of the
+    school year 2026/27, which is canton-wide.
+  trap: Two weeks of autumn holidays in October, as in most German-speaking cantons, or the dates of another canton.
+  steps:
+  - search:
+      query: When are the autumn school holidays 2026 in Geneva?
+      jurisdiction: {city: Genève}
+      expect_concept: ge-school-holidays
+      expect_strength: strong
+  - resolve:
+      concept_ids: [ge-school-holidays]
+      jurisdiction: {city: Genève}
+      expect_status: {ge-school-holidays: SUPPORTED}
+  claims:
+  - claim: Autumn holidays 19 to 23 October 2026
+    concept: ge-school-holidays
+    fact_id: ge-school-holidays-1
+    statement_contains: ['autumn holidays 19 October to 23 October 2026']
+    excerpt_contains: ["Vacances d'automne du lundi 19 octobre 2026 au vendredi 23 octobre 2026"]
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      dates: '19\.?\s*(?:October|octobre|Oktober|10\.).{0,40}23'
+    cites: {geneva_page: ge.ch/vacances-scolaires-jours-feries/vacances-scolaires-2026-2027}
+    resolved: [ge-school-holidays]
+- case_id: UAT-123
+  label: 'Lucerne: the summer holidays 2027 of the town'
+  spec: docs/product/user-acceptance-tests.md#uat-123-summer-holidays-in-the-town-of-lucerne
+  question: Wann beginnen die Sommerferien 2027 in der Stadt Luzern?
+  expected_answer: Saturday 3 July 2027, until 15 August 2027, from the town of Luzern's row of the cantonal plan by
+    municipality; the dates differ by municipality in the Canton of Lucerne.
+  trap: One date for the whole canton, although Lucerne's municipalities set their own holidays.
+  language: de
+  steps:
+  - search:
+      query: Wann beginnen die Sommerferien 2027 in der Stadt Luzern?
+      jurisdiction: {city: Luzern}
+      expect_concept: lu-school-holidays
+      expect_strength: strong
+  - resolve:
+      concept_ids: [lu-school-holidays]
+      jurisdiction: {city: Luzern}
+      expect_status: {lu-school-holidays: SUPPORTED}
+  claims:
+  - claim: Summer holidays of the town from 3 July 2027
+    concept: lu-school-holidays
+    fact_id: lu-school-holidays-2
+    statement_contains: ['Sommerferien 03.07.2027 to 15.08.2027']
+    excerpt_contains: ['Luzern 17.08.2026 03.07.2027']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6]
+    must_mention:
+      start: '3\.\s*(?:Juli|July|7\.)|03\.07\.2027'
+    resolved: [lu-school-holidays]
+- case_id: UAT-124
+  label: 'Emmen: no town dates for another municipality of Lucerne'
+  spec: docs/product/user-acceptance-tests.md#uat-124-school-holidays-in-emmen
+  question: When are the autumn school holidays 2026 in Emmen?
+  expected_answer: The release publishes Lucerne's holiday dates by municipality only for the town of Luzern; for
+    Emmen it serves that the municipalities set their own holidays and the canton's frame (14 weeks), and the
+    cantonal plan for 2027/28, not the town of Luzern's 2026/27 dates.
+  trap: Serving the town of Luzern's dates as Emmen's.
+  steps:
+  - resolve:
+      concept_ids: [lu-school-holidays]
+      jurisdiction: {city: Emmen}
+      expect_status: {lu-school-holidays: SUPPORTED}
+  claims:
+  - claim: The municipalities set their own holidays
+    concept: lu-school-holidays
+    fact_id: lu-school-holidays-1
+    statement_contains: ['school holidays are set per municipality']
+  must_not_serve:
+  - lu-school-holidays-2
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6, A10]
+    must_not:
+      luzern_dates_for_emmen: '26\.0?9\.2026|26 September 2026'
+    resolved: [lu-school-holidays]
 - case_id: LOOKUP-1
   label: Next organic waste collection in 8001
   spec: dataset-connectors
@@ -7664,3 +7747,17 @@ cases:
       jurisdiction: {canton_code: CH-UR}
       expect_status: {cantonal-online-services: OUT_OF_COVERAGE}
       expect_gap: {cantonal-online-services: jurisdiction_not_covered}
+- case_id: DECLINE-16
+  label: No school holidays published for Basel-Landschaft
+  spec: docs/product/user-acceptance-tests.md#decline-cases
+  question: Wann sind die Herbstferien 2026 in Liestal?
+  expected_answer: The release publishes no school holidays for Basel-Landschaft (its page refused the download), so
+    resolving the neighbouring Basel-Stadt concept for Liestal returns OUT_OF_COVERAGE with jurisdiction_not_covered;
+    the answer says the release does not cover it rather than borrowing Basel-Stadt's statements.
+  language: de
+  steps:
+  - resolve:
+      concept_ids: [bs-school-holidays]
+      jurisdiction: {city: Liestal}
+      expect_status: {bs-school-holidays: OUT_OF_COVERAGE}
+      expect_gap: {bs-school-holidays: jurisdiction_not_covered}

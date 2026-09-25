@@ -2706,6 +2706,29 @@ cite the Canton of Zurich page on banned dog breeds. The trap is calling the
 ban a City of Zurich rule, or giving the City of Zurich's registration steps
 for Winterthur.
 
+### UAT-122: Autumn holidays in Geneva
+
+"When are the autumn school holidays 2026 in Geneva?" The answer must give
+Monday 19 October to Friday 23 October 2026, one week, from the Canton of
+Geneva's page of the school year 2026/27. The trap is two weeks in October,
+as in most German-speaking cantons.
+
+### UAT-123: Summer holidays in the town of Lucerne
+
+"Wann beginnen die Sommerferien 2027 in der Stadt Luzern?" (When do the
+summer holidays 2027 start in the town of Lucerne?) The answer must give
+Saturday 3 July 2027, until 15 August 2027, from the town of Luzern's row
+of the canton's plan by municipality. The trap is one date for the whole
+canton, whose municipalities set their own holidays.
+
+### UAT-124: School holidays in Emmen
+
+"When are the autumn school holidays 2026 in Emmen?" The release serves the
+dates by municipality only for the town of Luzern, so for Emmen it serves
+that the municipalities set their own holidays, the canton's frame and the
+canton's plan for 2027/28, and never the town of Luzern's 2026/27 dates.
+The trap is giving Luzern's dates as Emmen's.
+
 ## Decline cases
 
 These cases check that the server rejects a request the release does not
@@ -2771,7 +2794,7 @@ freshness window (`STALE`) by the round-trip check.
 | X5 | A fact ID passed to `get_evidence` | The fact's evidence is returned; an unknown ID is an `INVALID_ARGUMENT` error |
 | X6 | Malformed request (unknown field, empty list, six evidence IDs) | `INVALID_ARGUMENT` with the field path; nothing is served |
 | X7 | Unknown release ID | `RELEASE_UNAVAILABLE` naming the active release |
-| X8 | Coverage root size | Under 8.5 KB, so one call suffices to refuse an outside question. Raised from 6 KB to 8 KB on 23 September 2026, when the two committed bounds were found drifted apart at 6,144 and 8,000 and the four waves of 22-23 September had taken the root to 7,640 bytes; raised again to 8.5 KB the same day, when disclosing registration coverage for all 26 cantons in the manifest took the root to 8,317 |
+| X8 | Coverage root size | Under 8.7 KB, so one call suffices to refuse an outside question. Raised from 6 KB to 8 KB on 23 September 2026, when the two committed bounds were found drifted apart at 6,144 and 8,000 and the four waves of 22-23 September had taken the root to 7,640 bytes; raised again to 8.5 KB the same day, when disclosing registration coverage for all 26 cantons in the manifest took the root to 8,317; raised to 8.7 KB on 25 September 2026, when the school holidays of 23 cantons took it to 8,592 |
 
 ## Execution records
 
