@@ -74,6 +74,8 @@ role_rules:
   - zh-261-schulamt
   role.cantonal-integration-office:
   - zh-fachstelle-integration
+  role.collection-agency-serafe:
+  - ch-serafe
 nodes:
 - node_id: level.federal
   kind: level
@@ -8320,7 +8322,7 @@ nodes:
     kind: source-section
     review_status: automatically-derived-unreviewed
     author: derive
-    source: derive from mvp-zurich mvp-zurich-2026-09-24-v5
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
     notes: []
   evidence:
   - pack:
@@ -8343,7 +8345,7 @@ nodes:
     kind: source-section
     review_status: automatically-derived-unreviewed
     author: derive
-    source: derive from mvp-zurich mvp-zurich-2026-09-24-v5
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
     notes: []
   evidence:
   - pack:
@@ -8369,6 +8371,190 @@ nodes:
     source: derive from the place register
     notes: []
   evidence: []
+  notes: []
+- node_id: institution.catalogue-ag-school-holidays
+  kind: institution
+  label: Canton Aargau - Departement Bildung, Kultur und Sport
+  names: {}
+  summary: 'Canton Aargau - Departement Bildung, Kultur und Sport: the cantonal authority for Canton of Aargau (CH-AG).'
+  keywords: []
+  level: cantonal
+  place: CH-AG
+  hosts:
+  - www.schulen-aargau.ch
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-ag-school-holidays-1-1
+      excerpt_sha256: 7635f5eaddc0862b2c4463aec14295c1293ac15f052188cfebb206ff46945fc1
+  notes: []
+- node_id: institution.catalogue-ai-school-holidays
+  kind: institution
+  label: Canton Appenzell Innerrhoden - Erziehungsdepartement
+  names: {}
+  summary: 'Canton Appenzell Innerrhoden - Erziehungsdepartement: the cantonal authority for Canton of Appenzell
+    Innerrhoden (CH-AI).'
+  keywords: []
+  level: cantonal
+  place: CH-AI
+  hosts:
+  - ai.ch
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-ai-school-holidays-1-1
+      excerpt_sha256: 86cfde7347ae51ff0c50ee941775f8077bf02648024a8e301f922664a3934de9
+  notes: []
+- node_id: institution.catalogue-be-school-holidays
+  kind: institution
+  label: Canton Bern - Bildungs- und Kulturdirektion, Amt fuer Kindergarten, Volksschule und Beratung
+  names: {}
+  summary: 'Canton Bern - Bildungs- und Kulturdirektion, Amt fuer Kindergarten, Volksschule und Beratung: the cantonal
+    authority for Canton of Bern / Berne (CH-BE).'
+  keywords: []
+  level: cantonal
+  place: CH-BE
+  hosts:
+  - www.akvb-gemeinden.bkd.be.ch
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-be-school-holidays-1-1
+      excerpt_sha256: 4004177063ad6b46a9c9eda393d64656612534535ee82f61981935d1c47b93ef
+  notes: []
+- node_id: institution.catalogue-lu-school-holidays
+  kind: institution
+  label: Canton Lucerne - Dienststelle Volksschulbildung
+  names: {}
+  summary: 'Canton Lucerne - Dienststelle Volksschulbildung: the cantonal authority for Canton of Luzern (CH-LU).'
+  keywords: []
+  level: cantonal
+  place: CH-LU
+  hosts:
+  - volksschulbildung.lu.ch
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-lu-school-holidays-1-1
+      excerpt_sha256: b0ce1582a440f00564cd39f93d8e16394011ee5c31413ba443c19c6610f683a0
+  notes: []
+- node_id: institution.catalogue-tg-school-holidays
+  kind: institution
+  label: Canton Thurgau - Amt fuer Volksschule
+  names: {}
+  summary: 'Canton Thurgau - Amt fuer Volksschule: the cantonal authority for Canton of Thurgau (CH-TG).'
+  keywords: []
+  level: cantonal
+  place: CH-TG
+  hosts:
+  - av.tg.ch
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-tg-school-holidays-1-1
+      excerpt_sha256: a6248c77687aa073fc27279bd505e63ba156d353bd90a48a496dfeae86e634d6
+  notes: []
+- node_id: institution.catalogue-zh-school-holidays
+  kind: institution
+  label: Canton of Zurich (Migrationsamt; Kantonales Steueramt; Strassenverkehrsamt; Gesundheitsdirektion; Gemeindeamt,
+    Abteilung Einbürgerungen; Amt für Wirtschaft; Amt für Statistik und Daten)
+  names: {}
+  summary: 'Canton of Zurich (Migrationsamt; Kantonales Steueramt; Strassenverkehrsamt; Gesundheitsdirektion; Gemeindeamt,
+    Abteilung Einbürgerungen; Amt für Wirtschaft; Amt für Statistik und Daten): the cantonal authority for Canton
+    of Zürich (CH-ZH).'
+  keywords: []
+  level: cantonal
+  place: CH-ZH
+  hosts:
+  - www.zh.ch
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-zh-school-holidays-1-1
+      excerpt_sha256: 97d3c060b16f2a29fc8b61c32bc09f9775b5928f4faa9243455a4b33e04c4669
+  notes: []
+- node_id: institution.gl-office
+  kind: institution
+  label: Canton of Glarus, Abteilung Migration
+  names: {}
+  summary: 'Canton of Glarus, Abteilung Migration: the cantonal authority for Canton of Glarus (CH-GL).'
+  keywords:
+  - Canton Glarus - Abteilung Migration
+  level: cantonal
+  place: CH-GL
+  hosts:
+  - www.gl.ch
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-gl-school-holidays-1-1
+      excerpt_sha256: 9761f9a7dec7e896a1468ba77ef06d09b2eaf4101285d20e8e4da4f563745371
+  notes: []
+- node_id: institution.gr-office
+  kind: institution
+  label: Canton of Graubuenden, Amt fuer Migration und Zivilrecht
+  names: {}
+  summary: 'Canton of Graubuenden, Amt fuer Migration und Zivilrecht: the cantonal authority for Canton of Graubünden
+    / Grigioni / Grischun (CH-GR).'
+  keywords:
+  - Canton Graubuenden - Amt fuer Migration und Zivilrecht
+  level: cantonal
+  place: CH-GR
+  hosts:
+  - www.gr.ch
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-gr-school-holidays-1-1
+      excerpt_sha256: ac8325495f7484d95245ae30de3959012c2aeeda81390b80710be55a55f0fb0e
   notes: []
 edges:
 - edge_id: law.aig.authoritative_source.source.ch-fedlex
@@ -23099,7 +23285,7 @@ edges:
     kind: source-section
     review_status: automatically-derived-unreviewed
     author: derive
-    source: derive from mvp-zurich mvp-zurich-2026-09-24-v5
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
     notes: []
   evidence:
   - pack:
@@ -23118,7 +23304,7 @@ edges:
     kind: source-section
     review_status: automatically-derived-unreviewed
     author: derive
-    source: derive from mvp-zurich mvp-zurich-2026-09-24-v5
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
     notes: []
   evidence:
   - pack:
@@ -23138,4 +23324,60 @@ edges:
     source: derive from the place register
     notes: []
   evidence: []
+  notes: []
+- edge_id: role.cantonal-migration-office.instance.institution.gl-office
+  from_id: role.cantonal-migration-office
+  relation: instance
+  to_id: institution.gl-office
+  statement: For Canton of Glarus (CH-GL), the cantonal migration office is Canton of Glarus, Abteilung Migration.
+  place: CH-GL
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-gl-school-holidays-1-1
+      excerpt_sha256: 9761f9a7dec7e896a1468ba77ef06d09b2eaf4101285d20e8e4da4f563745371
+  notes: []
+- edge_id: role.cantonal-migration-office.instance.institution.gr-office
+  from_id: role.cantonal-migration-office
+  relation: instance
+  to_id: institution.gr-office
+  statement: For Canton of Graubünden / Grigioni / Grischun (CH-GR), the cantonal migration office is Canton of
+    Graubuenden, Amt fuer Migration und Zivilrecht.
+  place: CH-GR
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-gr-school-holidays-1-1
+      excerpt_sha256: ac8325495f7484d95245ae30de3959012c2aeeda81390b80710be55a55f0fb0e
+  notes: []
+- edge_id: role.collection-agency-serafe.instance.institution.ch-serafe
+  from_id: role.collection-agency-serafe
+  relation: instance
+  to_id: institution.ch-serafe
+  statement: For Switzerland, the radio and television fee agency (serafe) is SERAFE AG, the Confederation's collection
+    agency for the radio and television fee.
+  place: CH
+  provenance:
+    kind: source-section
+    review_status: automatically-derived-unreviewed
+    author: derive
+    source: derive from mvp-zurich mvp-zurich-2026-09-25-v3
+    notes: []
+  evidence:
+  - pack:
+      pack: mvp-zurich
+      evidence_id: e-radio-tv-household-fee-1-1
+      excerpt_sha256: 4db4aac3eb9a1b44c170e59a9f9b3be78d8ccabd14a424f396593b2a93d91b0e
   notes: []

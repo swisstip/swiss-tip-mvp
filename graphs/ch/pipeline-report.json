@@ -3,8 +3,8 @@
   "pack": "graph-ch",
   "root": "/mnt/c/Users/louis/Dev/swiss-ai-weeks/swiss-tip-mvp",
   "run": "/mnt/c/Users/louis/Dev/swiss-ai-weeks/swiss-tip-mvp/.local/graph-ch",
-  "started_at": "2026-09-24T15:06:57.645196+00:00",
-  "finished_at": "2026-09-24T15:07:06.253454+00:00",
+  "started_at": "2026-09-25T08:18:06.253955+00:00",
+  "finished_at": "2026-09-25T08:18:07.172517+00:00",
   "options": {
     "download": false,
     "retry_failed": false,
@@ -16,7 +16,7 @@
     "attested_by": null,
     "source_plugins": true,
     "obey_robots": true,
-    "stages": "derive..check"
+    "stages": "check..check"
   },
   "stages": [
     {
@@ -127,11 +127,11 @@
     },
     {
       "stage": "check",
-      "started_at": "2026-09-24T15:07:05.256132+00:00",
+      "started_at": "2026-09-25T08:18:06.253962+00:00",
       "status": "ran",
       "cases": 14,
       "passed": 13,
-      "seconds": 1.0
+      "seconds": 0.9
     }
   ],
   "exit_code": 0,
