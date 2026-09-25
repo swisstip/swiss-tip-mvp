@@ -139,10 +139,12 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
             init = await session.initialize()
             check(f"initialize: server {init.serverInfo.name} {init.serverInfo.version}", init.serverInfo.name == "swiss-tip")
             tools = (await session.list_tools()).tools
+            # get_knowledge_graph comes first when the release carries a knowledge graph.
             four = ["get_coverage", "search", "resolve", "get_evidence"]
             names = [t.name for t in tools]
+            base = names[1:] if names[:1] == ["get_knowledge_graph"] else names
             check("tools advertised: " + ", ".join(names),
-                  names == four + ["lookup"] if require_lookup else names in (four, four + ["lookup"]))
+                  base == four + ["lookup"] if require_lookup else base in (four, four + ["lookup"]))
 
             root = await session.call_tool("get_coverage", {})
             body = root.structuredContent

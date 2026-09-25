@@ -1,10 +1,10 @@
 {
   "schema_version": "swiss-tip-pipeline-report/v1",
   "pack": "mvp-wallisellen",
-  "root": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026",
-  "run": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-wallisellen",
-  "started_at": "2026-09-19T14:08:05.159459+00:00",
-  "finished_at": "2026-09-19T14:08:11.329857+00:00",
+  "root": "/mnt/c/Users/louis/Dev/swiss-ai-weeks/swiss-tip-mvp",
+  "run": "/mnt/c/Users/louis/Dev/swiss-ai-weeks/swiss-tip-mvp/.local/mvp-wallisellen",
+  "started_at": "2026-09-25T08:30:50.520690+00:00",
+  "finished_at": "2026-09-25T08:30:50.920172+00:00",
   "options": {
     "download": false,
     "retry_failed": false,
@@ -13,8 +13,10 @@
     "thorough": false,
     "update_curation": false,
     "release_id": null,
-    "attested_by": "Alexander Bobrovsky",
-    "stages": "accept..ready"
+    "attested_by": null,
+    "source_plugins": true,
+    "obey_robots": true,
+    "stages": "accept..accept"
   },
   "stages": [
     {
@@ -142,9 +144,9 @@
     },
     {
       "stage": "accept",
-      "started_at": "2026-09-19T14:08:05.159474+00:00",
+      "started_at": "2026-09-25T08:30:50.520697+00:00",
       "status": "ran",
-      "release_id": "mvp-wallisellen-2026-09-18-v1",
+      "release_id": "mvp-wallisellen-2026-09-25-v1",
       "suite_sha256": "96dec905fb4d08b2e19d3e6fb4c10e9a316d5e4a76f7747b2eb6626892ad4216",
       "as_of": "2026-09-16",
       "cases": 45,

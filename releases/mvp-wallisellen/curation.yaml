@@ -97,27 +97,34 @@ page_languages:
   www.wallisellen.ch: de
 place_register: ../../config/places/ch-register.json
 place_aliases: ../../config/places/ch-aliases.json
+knowledge_graph: ../../graphs/ch/graph.json
 context_fields: {}
 topics:
 - topic_id: city-services
+  graph_nodes: [domain.registration]
   title: City services and contact
   description: Contact details, opening hours, the online counter and high-level digital service routes.
 - topic_id: registration-civil-status
+  graph_nodes: [domain.registration, domain.civil-status, domain.naturalisation]
   title: Registration and civil status
   description: Moving, population services, civil-status questions, deaths and naturalisation entry points.
 - topic_id: waste-environment
+  graph_nodes: [domain.waste]
   title: Waste, energy and environment
   description: Disposal services, collection information, accepted waste categories, energy and climate programmes.
 - topic_id: construction-mobility
   title: Construction, housing and mobility
   description: Building and spatial planning, housing, streets, parking, transport planning and winter maintenance.
 - topic_id: taxes-finance
+  graph_nodes: [domain.taxes]
   title: Taxes and municipal finance
   description: Municipal tax support, the published tax rate, budget and accounts figures.
 - topic_id: politics-administration
+  graph_nodes: [domain.political-rights]
   title: Politics and administration
   description: The city council, municipal assembly and searchable municipal legal collection.
 - topic_id: education
+  graph_nodes: [domain.schools]
   title: Education and careers
   description: Wallisellen school services, other education entry points and the responsible careers advice centre.
 - topic_id: family-social-health
