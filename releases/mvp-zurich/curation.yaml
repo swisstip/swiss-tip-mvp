@@ -78502,8 +78502,8 @@ concepts:
 - concept_id: ai-school-holidays
   topic_id: school-holidays
   label: School holidays in the Canton of Appenzell Innerrhoden
-  description: School holiday dates of the inner part of Appenzell Innerrhoden (Innerer Landesteil), served for
-    Appenzell, for 2026/27 and 2027/28; Bezirk Oberegg is not served.
+  description: School holidays of the inner part of Appenzell Innerrhoden for 2026/27 and 2027/28, served for the
+    whole canton, and that the outer part has other dates.
   aliases:
   - school holidays Appenzell Innerrhoden
   - school vacation Appenzell
@@ -78534,18 +78534,20 @@ concepts:
     the saved pages, so no fact about who sets the holidays is included.
   - 'Verification of 2026-09-25: no cited block says that the village of Appenzell lies in the Innerer Landesteil;
     the dates are served for Appenzell (CH-AI-3101) on that geographic reading, which the reviewer should confirm.'
+  - '2026-09-25: the dates are served for the whole canton on the reviewer''s decision; the place inferences of
+    the first draft are no longer needed.'
   not_served:
   - the school holiday dates of Bezirk Oberegg (the outer part of the canton)
   - school years other than 2026/27 and 2027/28
   - who sets the holidays (not stated on the saved pages)
   facts:
   - fact_id: ai-school-holidays-1
-    statement: 'Appenzell Innerrhoden, inner part of the canton (Innerer Landesteil), served here for Appenzell,
-      the main town, school year 2026/27: school starts on 17 August 2026; autumn holidays 3 October to 18 October
-      2026; Christmas holidays 19 December 2026 to 3 January 2027; sports holidays 5 February to 14 February 2027;
-      spring holidays 10 April to 25 April 2027; summer holidays 3 July to 15 August 2027.'
+    statement: 'Canton of Appenzell Innerrhoden, dates of the inner part of the canton (Innerer Landesteil; the
+      outer part has other dates), school year 2026/27: school starts on 17 August 2026; autumn holidays 3 October
+      to 18 October 2026; Christmas holidays 19 December 2026 to 3 January 2027; sports holidays 5 February to 14
+      February 2027; spring holidays 10 April to 25 April 2027; summer holidays 3 July to 15 August 2027.'
     language: en
-    jurisdiction: CH-AI-3101
+    jurisdiction: CH-AI
     valid_through: '2027-08-15'
     provenance:
       kind: curated-statement
@@ -78557,6 +78559,10 @@ concepts:
       reviewed_by: Alexander Bobrovsky
       notes:
       - 'review: confirmed in a bulk review of 50 facts (Alexander Bobrovsky, 2026-09-25)'
+      - '2026-09-25: moved from the main town''s jurisdiction to the canton''s on the reviewer''s decision that
+        these dates answer for the whole canton, labelled as whose dates they are; the statement changed, so the
+        fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
     - document_id: doc-ac07ed9e0adcf7733be7
       first_block: 1
@@ -78617,12 +78623,12 @@ concepts:
           Frühling Sa, 07.04.2029 So, 22.04.2029 Sa, 07.04.2029 So, 22.04.2029
           Sommer Sa, 30.06.2029 So, 12.08.2029 Sa, 07.07.2029 So, 12.08.2029
   - fact_id: ai-school-holidays-2
-    statement: 'Appenzell Innerrhoden, inner part of the canton (Innerer Landesteil), served here for Appenzell,
-      the main town, school year 2027/28: school starts on 16 August 2027; autumn holidays 2 October to 17 October
-      2027; Christmas holidays 18 December 2027 to 2 January 2028; sports holidays 25 February to 5 March 2028;
-      spring holidays 8 April to 23 April 2028; summer holidays 1 July to 13 August 2028.'
+    statement: 'Canton of Appenzell Innerrhoden, dates of the inner part of the canton (Innerer Landesteil; the
+      outer part has other dates), school year 2027/28: school starts on 16 August 2027; autumn holidays 2 October
+      to 17 October 2027; Christmas holidays 18 December 2027 to 2 January 2028; sports holidays 25 February to
+      5 March 2028; spring holidays 8 April to 23 April 2028; summer holidays 1 July to 13 August 2028.'
     language: en
-    jurisdiction: CH-AI-3101
+    jurisdiction: CH-AI
     valid_through: '2028-08-13'
     provenance:
       kind: curated-statement
@@ -78634,6 +78640,10 @@ concepts:
       reviewed_by: Alexander Bobrovsky
       notes:
       - 'review: confirmed in a bulk review of 50 facts (Alexander Bobrovsky, 2026-09-25)'
+      - '2026-09-25: moved from the main town''s jurisdiction to the canton''s on the reviewer''s decision that
+        these dates answer for the whole canton, labelled as whose dates they are; the statement changed, so the
+        fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
     - document_id: doc-ac07ed9e0adcf7733be7
       first_block: 1
@@ -78693,6 +78703,41 @@ concepts:
           Sportferien Fr, 09.02.2029 So, 18.02.2029 Sa, 27.01.2029 So, 04.02.2029
           Frühling Sa, 07.04.2029 So, 22.04.2029 Sa, 07.04.2029 So, 22.04.2029
           Sommer Sa, 30.06.2029 So, 12.08.2029 Sa, 07.07.2029 So, 12.08.2029
+  - fact_id: ai-school-holidays-3
+    statement: 'Canton of Appenzell Innerrhoden: the holiday plan is fixed for three school years at a time, and
+      the holidays fall at different times in the inner and the outer part of the canton (innerer und äusserer Landesteil).'
+    language: en
+    jurisdiction: CH-AI
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Ferienplan | Kanton Appenzell Innerrhoden (https://ai.ch/themen/bildung/eltern-und-schule/ferienplan),
+        saved 2026-09-25
+      reviewed_on: '2026-09-25'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - '2026-09-25: added on the reviewer''s decision that these dates answer for the whole canton, labelled as
+        whose dates they are; the statement changed, so the fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
+    evidence:
+    - document_id: doc-bd8de67ee7b289c4e582
+      first_block: 31
+      anchor:
+        source_url: https://ai.ch/themen/bildung/eltern-und-schule/ferienplan
+        document_id: doc-bd8de67ee7b289c4e582
+        content_sha256: 61ecd75f49ed2ce42c623eda92c77b48e87ea872f26307229f18107e5775e89b
+        raw_sha256: 8c406bb0e56c17aa8c0de5be6d906b3fddf42827fa57d96609ba75f0bbf2b550
+        block_ids:
+        - doc-bd8de67ee7b289c4e582:b00031
+        block_hashes:
+        - 8da8657c1eaac88f7396ec00ca7a3eabef737801f1a33052e632a6d69869e83e
+        heading_path:
+        - Ferienplan und schulfreie Tage
+        start: 713
+        end: 902
+        excerpt: Der Ferienplan wird immer über einen Zeitraum von drei Schuljahren fixiert und hier publiziert.
+          Bitte beachten Sie die unterschiedlichen Ferienzeitpunkte im inneren und äusseren Landesteil.
 - concept_id: ar-school-holidays
   topic_id: school-holidays
   label: School holidays in the Canton of Appenzell Ausserrhoden
@@ -79210,8 +79255,8 @@ concepts:
 - concept_id: fr-school-holidays
   topic_id: school-holidays
   label: School holidays in the Canton of Fribourg
-  description: School holidays under the general calendar (Fribourg, the main town) for 2026/27 and 2027/28, and
-    why the canton also has separate Murten/Morat and Kerzers calendars.
+  description: The general school calendar of the Canton of Fribourg for 2026/27 and 2027/28, and the separate Murten/Morat
+    and Kerzers calendars it does not cover.
   aliases:
   - school holidays Fribourg
   - school vacation Fribourg
@@ -79253,14 +79298,14 @@ concepts:
   - Sekundarstufe II and Berufsbildung (vocational) holiday dates
   facts:
   - fact_id: fr-school-holidays-1
-    statement: 'Fribourg (main town of the Canton of Fribourg, general calendar for all municipalities except the
-      Murten/Morat and Kerzers regions), school year 2026/27: school runs 27 August 2026 to 9 July 2027 (last school
-      day); autumn holidays 12 to 23 October 2026; Christmas holidays 21 December 2026 to 1 January 2027; carnival
-      holidays 8 to 12 February 2027; Easter holidays 26 March to 9 April 2027; also free: All Saints 1 November
-      2026, Immaculate Conception 8 December 2026, Ascension 6 May and bridge day 7 May, Whit Monday 17 May, Corpus
-      Christi 27 May 2027.'
+    statement: 'Canton of Fribourg, general calendar (all municipalities except the Murten/Morat and Kerzers regions,
+      which have their own), school year 2026/27: school runs 27 August 2026 to 9 July 2027 (last school day); autumn
+      holidays 12 to 23 October 2026; Christmas holidays 21 December 2026 to 1 January 2027; carnival holidays 8
+      to 12 February 2027; Easter holidays 26 March to 9 April 2027; also free: All Saints 1 November 2026, Immaculate
+      Conception 8 December 2026, Ascension 6 May and bridge day 7 May, Whit Monday 17 May, Corpus Christi 27 May
+      2027.'
     language: en
-    jurisdiction: CH-FR-2196
+    jurisdiction: CH-FR
     valid_through: '2027-07-09'
     provenance:
       kind: curated-statement
@@ -79271,6 +79316,10 @@ concepts:
       reviewed_by: Alexander Bobrovsky
       notes:
       - 'review: confirmed in a bulk review of 50 facts (Alexander Bobrovsky, 2026-09-25)'
+      - '2026-09-25: moved from the main town''s jurisdiction to the canton''s on the reviewer''s decision that
+        these dates answer for the whole canton, labelled as whose dates they are; the statement changed, so the
+        fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
     - document_id: doc-5b948596184f32ade62a
       first_block: 92
@@ -79312,14 +79361,14 @@ concepts:
           9. April 2027 (inklusive)\tAllgemein\nLetzter Schultag\t9. Juli 2027\t9. Juli 2027\tAllgemein\n\nAllgemeiner\
           \ Schulkalender 2026/27 (PDF, 53.4k)"
   - fact_id: fr-school-holidays-2
-    statement: 'Fribourg (main town of the Canton of Fribourg, general calendar for all municipalities except the
-      Murten/Morat and Kerzers regions), school year 2027/28: school starts 26 August 2027 and ends 7 July 2028
-      (last school day); autumn holidays 18 to 29 October 2027; Christmas holidays 20 to 31 December 2027; carnival
-      holidays 28 February to 3 March 2028; Easter holidays 14 to 28 April 2028; also free: All Saints 1 November
-      2027, Immaculate Conception 8 December 2027, Ascension 25 May and bridge day 26 May, Whit Monday 5 June, Corpus
-      Christi 15 June 2028.'
+    statement: 'Canton of Fribourg, general calendar (all municipalities except the Murten/Morat and Kerzers regions,
+      which have their own), school year 2027/28: school starts 26 August 2027 and ends 7 July 2028 (last school
+      day); autumn holidays 18 to 29 October 2027; Christmas holidays 20 to 31 December 2027; carnival holidays
+      28 February to 3 March 2028; Easter holidays 14 to 28 April 2028; also free: All Saints 1 November 2027, Immaculate
+      Conception 8 December 2027, Ascension 25 May and bridge day 26 May, Whit Monday 5 June, Corpus Christi 15
+      June 2028.'
     language: en
-    jurisdiction: CH-FR-2196
+    jurisdiction: CH-FR
     valid_through: '2028-07-07'
     provenance:
       kind: curated-statement
@@ -79330,6 +79379,10 @@ concepts:
       reviewed_by: Alexander Bobrovsky
       notes:
       - 'review: confirmed in a bulk review of 50 facts (Alexander Bobrovsky, 2026-09-25)'
+      - '2026-09-25: moved from the main town''s jurisdiction to the canton''s on the reviewer''s decision that
+        these dates answer for the whole canton, labelled as whose dates they are; the statement changed, so the
+        fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
     - document_id: doc-5b948596184f32ade62a
       first_block: 120
@@ -79876,8 +79929,8 @@ concepts:
 - concept_id: gr-school-holidays
   topic_id: school-holidays
   label: School holidays in the Canton of Graubünden
-  description: Who governs Graubünden's per-municipality school-holiday plan, and Chur's dates for 2026/27; no 2027/28
-    Graubünden plan is published, so only Chur's 2027/28 school start is served.
+  description: Graubünden's plan by school authority, and Chur's dates for 2026/27 with the 2027/28 school start,
+    served for the whole canton.
   aliases:
   - school holidays Graubünden
   - school holidays Chur
@@ -79914,7 +79967,7 @@ concepts:
   not_served:
   - who legally sets the Graubünden school holidays (the saved pages do not state this)
   - the full 2027/28 holiday dates for Chur (no 2027/28 plan is published)
-  - dates for any Graubünden municipality other than Chur
+  - the own dates of the other school authorities, where they differ from Chur's
   - Romansh- and Italian-region specific holiday variants (e.g. Moesano, Grigioni italiano)
   facts:
   - fact_id: gr-school-holidays-1
@@ -80006,11 +80059,12 @@ concepts:
           \ Nr. Schulträgerschaft Schul- beginn 26/27 Anz. SW Anz. SW Anz. SW Anz. SW Anz. SW Schul- schluss Total\
           \ SW Schul- beginn 27/28"
   - fact_id: gr-school-holidays-2
-    statement: 'Chur (main town of the Canton of Graubünden), school year 2026/27: school starts on 17.8.2026; autumn
-      holidays 10.10. to 25.10.2026; Christmas holidays 23.12.2026 to 5.1.2027; sports holidays 27.2. to 7.3.2027;
-      spring holidays 17.4. to 2.5.2027; school ends for the summer holidays on 2.7.2027.'
+    statement: 'Canton of Graubünden, dates of Chur (the main town; each school authority has its own plan), school
+      year 2026/27: school starts on 17.8.2026; autumn holidays 10.10. to 25.10.2026; Christmas holidays 23.12.2026
+      to 5.1.2027; sports holidays 27.2. to 7.3.2027; spring holidays 17.4. to 2.5.2027; school ends for the summer
+      holidays on 2.7.2027.'
     language: en
-    jurisdiction: CH-GR-3901
+    jurisdiction: CH-GR
     provenance:
       kind: curated-statement
       review_status: human-reviewed
@@ -80021,6 +80075,10 @@ concepts:
       reviewed_by: Alexander Bobrovsky
       notes:
       - 'review: confirmed in a bulk review of 50 facts (Alexander Bobrovsky, 2026-09-25)'
+      - '2026-09-25: moved from the main town''s jurisdiction to the canton''s on the reviewer''s decision that
+        these dates answer for the whole canton, labelled as whose dates they are; the statement changed, so the
+        fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
     - document_id: doc-2ff2e21602a6fedd2e63
       first_block: 4
@@ -80078,9 +80136,10 @@ concepts:
           \ 02.07.27 39 16.08.27 1\nBezirkNr. Schulträgerschaft\nSchulbeginn\n26/27\nSchulschluss Total SW\nSchulbeginn\
           \ 27/28"
   - fact_id: gr-school-holidays-3
-    statement: 'Chur (main town of the Canton of Graubünden), school year 2027/28: school starts on 16.8.2027.'
+    statement: 'Canton of Graubünden, dates of Chur (the main town; each school authority has its own plan), school
+      year 2027/28: school starts on 16.8.2027.'
     language: en
-    jurisdiction: CH-GR-3901
+    jurisdiction: CH-GR
     provenance:
       kind: curated-statement
       review_status: human-reviewed
@@ -80091,6 +80150,10 @@ concepts:
       reviewed_by: Alexander Bobrovsky
       notes:
       - 'review: confirmed in a bulk review of 50 facts (Alexander Bobrovsky, 2026-09-25)'
+      - '2026-09-25: moved from the main town''s jurisdiction to the canton''s on the reviewer''s decision that
+        these dates answer for the whole canton, labelled as whose dates they are; the statement changed, so the
+        fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
     - document_id: doc-2ff2e21602a6fedd2e63
       first_block: 4
@@ -80508,8 +80571,8 @@ concepts:
 - concept_id: lu-school-holidays
   topic_id: school-holidays
   label: School holidays in the Canton of Lucerne
-  description: Who sets school holidays in the Canton of Lucerne (per municipality) and the total weeks per year,
-    plus the Lucerne town dates for 2026/27 and 2027/28.
+  description: Who sets school holidays in the Canton of Lucerne (each municipality) and the weeks per year; the
+    town of Luzern's dates for 2026/27 and the canton's plan for 2027/28, for the whole canton.
   aliases:
   - school holidays canton Lucerne
   - school vacation Lucerne
@@ -80545,7 +80608,7 @@ concepts:
     plan (Ferienplan ab Schuljahr 2026/27 bis und mit 2031/32) names no municipality, and only 2026/27 has a table
     by municipality. Fact 2 cites page 3 of the municipal table, where the Luzern row stands.'
   not_served:
-  - the dates of municipalities other than Lucerne (town)
+  - the own dates of the other municipalities, where they differ from the town of Luzern's
   - school years other than 2026/27 and 2027/28
   - the Jokertage rule (up to four half-days per year, set by each municipality's Bildungskommission)
   facts:
@@ -80615,12 +80678,12 @@ concepts:
 
           Ferienplan 2026/27 der Gemeinden im Kanton Luzern
   - fact_id: lu-school-holidays-2
-    statement: 'Luzern (main town of the Canton of Lucerne), school year 2026/27: school begins 17.08.2026 and ends
-      03.07.2027; autumn holidays 26.09.2026 to 11.10.2026; Christmas holidays 19.12.2026 to 03.01.2027; Sportferien/
-      Fasnachtsferien 30.01.2027 to 14.02.2027; Frühlingsferien 26.03.2027 to 11.04.2027; Sommerferien 03.07.2027
-      to 15.08.2027.'
+    statement: 'Canton of Lucerne, dates of the town of Luzern (the main town; the other municipalities set their
+      own), school year 2026/27: school begins 17.08.2026 and ends 03.07.2027; autumn holidays 26.09.2026 to 11.10.2026;
+      Christmas holidays 19.12.2026 to 03.01.2027; Sportferien/ Fasnachtsferien 30.01.2027 to 14.02.2027; Frühlingsferien
+      26.03.2027 to 11.04.2027; Sommerferien 03.07.2027 to 15.08.2027.'
     language: en
-    jurisdiction: CH-LU-1061
+    jurisdiction: CH-LU
     valid_through: '2027-08-15'
     provenance:
       kind: curated-statement
@@ -80632,6 +80695,10 @@ concepts:
       reviewed_by: Alexander Bobrovsky
       notes:
       - 'review: confirmed in a bulk review of 50 facts (Alexander Bobrovsky, 2026-09-25)'
+      - '2026-09-25: moved from the main town''s jurisdiction to the canton''s on the reviewer''s decision that
+        these dates answer for the whole canton, labelled as whose dates they are; the statement changed, so the
+        fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
     - document_id: doc-51f6d982a96f267438dd
       first_block: 3
@@ -81019,8 +81086,8 @@ concepts:
 - concept_id: ow-school-holidays
   topic_id: school-holidays
   label: School holidays in the Canton of Obwalden
-  description: 'Canton of Obwalden: cantonal holiday-timing principles, and the Sarnen (general, non-Engelberg)
-    school-holiday dates for 2026/27.'
+  description: 'Canton of Obwalden: the holiday principles, the 2026/27 plan of the public schools without Engelberg,
+    and that Engelberg has its own plan.'
   aliases:
   - school holidays canton Obwalden
   - school vacation Obwalden
@@ -81051,6 +81118,8 @@ concepts:
     in the general (non-Engelberg) table used here.
   - 'Verification of 2026-09-25: no cited block names Sarnen; fact 2 serves the plan of the Volksschule without
     Engelberg for Sarnen because the plan covers every Obwalden public school except Engelberg''s.'
+  - '2026-09-25: the dates are served for the whole canton on the reviewer''s decision; the place inferences of
+    the first draft are no longer needed.'
   not_served:
   - school year 2027/28 (not saved as a separate document)
   - the Volksschule Engelberg / Gymnasium Stiftsschule Engelberg holiday dates
@@ -81112,13 +81181,13 @@ concepts:
 
           Sommerferien: beginnen zwischen dem 2. bis 10. Juli; dauern sechs Wochen
   - fact_id: ow-school-holidays-2
-    statement: 'Sarnen (main town of the Canton of Obwalden), under the plan for the Volksschule without Engelberg,
-      the Kantonsschule and the Berufs- und Weiterbildungszentrum, school year 2026/2027: begins 17.08.2026; Herbstferien
+    statement: 'Canton of Obwalden, plan for the Volksschule without Engelberg, the Kantonsschule and the Berufs-
+      und Weiterbildungszentrum (Engelberg has its own plan), school year 2026/2027: begins 17.08.2026; Herbstferien
       25.09.2026 (start coincides with the Bruderklausen holiday) to 11.10.2026; Weihnachtsferien 24.12.2026 to
       06.01.2027; Fasnachtsferien 30.01.2027 to 14.02.2027; Osterferien 26.03.2027 to 11.04.2027; Sommerferien 03.07.2027
       to 15.08.2027.'
     language: en
-    jurisdiction: CH-OW-1407
+    jurisdiction: CH-OW
     valid_through: '2027-08-15'
     provenance:
       kind: curated-statement
@@ -81129,6 +81198,10 @@ concepts:
       reviewed_by: Alexander Bobrovsky
       notes:
       - 'review: confirmed in a bulk review of 50 facts (Alexander Bobrovsky, 2026-09-25)'
+      - '2026-09-25: moved from the main town''s jurisdiction to the canton''s on the reviewer''s decision that
+        these dates answer for the whole canton, labelled as whose dates they are; the statement changed, so the
+        fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
     - document_id: doc-85d5963479028cf874d6
       first_block: 392
@@ -81155,6 +81228,56 @@ concepts:
           \ 2026*\tSO, 11. Oktober 2026\nWeihnachtsferien\tDO, 24. Dezember 2026\tMI, 06. Januar 2027\nFasnachtsferien\t\
           SA, 30. Januar 2027\tSO, 14. Februar 2027\nOsterferien\tFR, 26. März 2027\tSO, 11. April 2027\nSommerferien\t\
           SA, 03. Juli 2027\tSO, 15. August 2027\n\n*Ferienbeginn mit Feiertag (Bruderklausen)"
+  - fact_id: ow-school-holidays-3
+    statement: 'Canton of Obwalden: the Volksschule Engelberg and the Gymnasium Stiftsschule Engelberg have a school-holiday
+      plan of their own, separate from the plan of the other public schools, the Kantonsschule and the Berufs- und
+      Weiterbildungszentrum.'
+    language: en
+    jurisdiction: CH-OW
+    provenance:
+      kind: curated-statement
+      review_status: human-reviewed
+      author: assistant (Claude), reading the saved official pages
+      source: Schulferienplan | Kanton Obwalden (https://www.ow.ch/dienstleistungen/5276), saved 2026-09-25
+      reviewed_on: '2026-09-25'
+      reviewed_by: Alexander Bobrovsky
+      notes:
+      - '2026-09-25: added on the reviewer''s decision that these dates answer for the whole canton, labelled as
+        whose dates they are; the statement changed, so the fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
+    evidence:
+    - document_id: doc-85d5963479028cf874d6
+      first_block: 392
+      anchor:
+        source_url: https://www.ow.ch/dienstleistungen/5276
+        document_id: doc-85d5963479028cf874d6
+        content_sha256: 35adac94e4d36bc9cd8c19614b4df8792d015e66e70c34a103d7ccbbd9eb7d2b
+        raw_sha256: e55b165bde30526128b88695f66a1dc707e0c578092539c931334e6935276124
+        block_ids:
+        - doc-85d5963479028cf874d6:b00392
+        block_hashes:
+        - a23babd254d720d1548c6166147a506d6541287fd2f5bf8276086b88cf77b8cb
+        heading_path:
+        - Schulferienplan
+        start: 9341
+        end: 9419
+        excerpt: Volksschule (ohne Engelberg), Kantonsschule, Berufs- und Weiterbildungszentrum
+    - document_id: doc-85d5963479028cf874d6
+      first_block: 395
+      anchor:
+        source_url: https://www.ow.ch/dienstleistungen/5276
+        document_id: doc-85d5963479028cf874d6
+        content_sha256: 35adac94e4d36bc9cd8c19614b4df8792d015e66e70c34a103d7ccbbd9eb7d2b
+        raw_sha256: e55b165bde30526128b88695f66a1dc707e0c578092539c931334e6935276124
+        block_ids:
+        - doc-85d5963479028cf874d6:b00395
+        block_hashes:
+        - cd5abd2bbba1009f12bd8425c1ee536e29d61c9aaf66fc9eb7d7b260a77ef08b
+        heading_path:
+        - Schulferienplan
+        start: 9834
+        end: 9889
+        excerpt: Volksschule Engelberg, Gymnasium Stiftsschule Engelberg
 - concept_id: sg-school-holidays
   topic_id: school-holidays
   label: School holidays in the Canton of St. Gallen
@@ -81354,8 +81477,8 @@ concepts:
 - concept_id: so-school-holidays
   topic_id: school-holidays
   label: School holidays in the Canton of Solothurn
-  description: School holiday dates for the town of Solothurn for 2026/27 and 2027/28, and that holiday dates differ
-    by municipality (Schulträger) across the canton.
+  description: The town of Solothurn's school holidays for 2026/27 and 2027/28, served for the whole canton, and
+    that the dates differ by municipality and region.
   aliases:
   - school holidays Solothurn
   - school vacation Solothurn
@@ -81385,17 +81508,18 @@ concepts:
     holiday day (a Monday) to the last holiday day (a Friday), and are published "ohne Gewähr" (without guarantee,
     to be checked against the relevant Schulträger); a reviewer should check the figures against the source PDFs.
   not_served:
-  - holiday dates of municipalities other than Solothurn
+  - the own dates of the other municipalities, where they differ from the town of Solothurn's
   - school years other than 2026/27 and 2027/28
   - Mittelschulen and Berufsfachschulen holiday dates
   facts:
   - fact_id: so-school-holidays-1
-    statement: 'Solothurn (town, main town of the Canton of Solothurn), school year 2026/27: school starts 10 August
-      2026; autumn holidays 28 September to 16 October 2026; Christmas holidays 21 December 2026 to 1 January 2027;
-      winter holidays 8 to 19 February 2027; spring holidays 12 to 23 April 2027; summer holidays 12 July to 13
-      August 2027; the 2027/28 school year starts 16 August 2027.'
+    statement: 'Canton of Solothurn, dates of the town of Solothurn (the main town; the dates differ by municipality
+      and region), school year 2026/27: school starts 10 August 2026; autumn holidays 28 September to 16 October
+      2026; Christmas holidays 21 December 2026 to 1 January 2027; winter holidays 8 to 19 February 2027; spring
+      holidays 12 to 23 April 2027; summer holidays 12 July to 13 August 2027; the 2027/28 school year starts 16
+      August 2027.'
     language: en
-    jurisdiction: CH-SO-2601
+    jurisdiction: CH-SO
     valid_through: '2027-08-13'
     provenance:
       kind: curated-statement
@@ -81407,6 +81531,10 @@ concepts:
       reviewed_by: Alexander Bobrovsky
       notes:
       - 'review: confirmed in a bulk review of 50 facts (Alexander Bobrovsky, 2026-09-25)'
+      - '2026-09-25: moved from the main town''s jurisdiction to the canton''s on the reviewer''s decision that
+        these dates answer for the whole canton, labelled as whose dates they are; the statement changed, so the
+        fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
     - document_id: doc-50439566010e6ba832cc
       first_block: 1
@@ -81444,12 +81572,12 @@ concepts:
           \ die Feriendaten allenfalls mit den Angaben des entsprechenden Schulträgers ab.\nVolksschulamt VSA\n\
           vsa@dbk.so.ch 1 / 8 Ferienplan SJ 2026/2027"
   - fact_id: so-school-holidays-2
-    statement: 'Solothurn (town, main town of the Canton of Solothurn), school year 2027/28: school starts 16 August
-      2027; autumn holidays 4 to 22 October 2027; Christmas holidays 27 December 2027 to 7 January 2028; winter
-      holidays 7 to 18 February 2028; spring holidays 10 to 21 April 2028; summer holidays 10 July to 11 August
-      2028; the 2028/29 school year starts 16 August 2028.'
+    statement: 'Canton of Solothurn, dates of the town of Solothurn (the main town; the dates differ by municipality
+      and region), school year 2027/28: school starts 16 August 2027; autumn holidays 4 to 22 October 2027; Christmas
+      holidays 27 December 2027 to 7 January 2028; winter holidays 7 to 18 February 2028; spring holidays 10 to
+      21 April 2028; summer holidays 10 July to 11 August 2028; the 2028/29 school year starts 16 August 2028.'
     language: en
-    jurisdiction: CH-SO-2601
+    jurisdiction: CH-SO
     valid_through: '2028-08-11'
     provenance:
       kind: curated-statement
@@ -81461,6 +81589,10 @@ concepts:
       reviewed_by: Alexander Bobrovsky
       notes:
       - 'review: confirmed in a bulk review of 50 facts (Alexander Bobrovsky, 2026-09-25)'
+      - '2026-09-25: moved from the main town''s jurisdiction to the canton''s on the reviewer''s decision that
+        these dates answer for the whole canton, labelled as whose dates they are; the statement changed, so the
+        fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
     - document_id: doc-e1eb503483b47c350410
       first_block: 1
@@ -81527,8 +81659,8 @@ concepts:
 - concept_id: sz-school-holidays
   topic_id: school-holidays
   label: School holidays in the Canton of Schwyz
-  description: 'Canton of Schwyz: each school''s Schulrat sets the binding holiday plan; the Schwyz (town) dates
-    for school year 2026/27.'
+  description: 'Canton of Schwyz: each school''s Schulrat sets the binding plan; the town of Schwyz''s dates for
+    2026/27, served for the whole canton.'
   aliases:
   - school holidays canton Schwyz
   - school vacation Schwyz
@@ -81559,7 +81691,7 @@ concepts:
     directly from its row without ambiguity (full day.month.year format throughout).
   not_served:
   - school year 2027/28 (no saved table)
-  - the dates of districts and municipalities other than Schwyz (town)
+  - the own dates of the other districts and municipalities, where they differ from Schwyz's
   - the differing dates for other schools listed in the same table (e.g. Einsiedeln, Höfe, the vocational and special
     schools)
   facts:
@@ -81647,11 +81779,12 @@ concepts:
           \ \nab Woche 18\nDie folgenden Angaben sind eine Zusammenstellung ohne Gewähr. Verbindlich sind die von\
           \ den Schulräten erlassenen Ferienpläne.\nFerienplan_Schuljahr_26-27_2026-09-16"
   - fact_id: sz-school-holidays-2
-    statement: 'Schwyz (main town of the Canton of Schwyz), school year 2026/27: school begins 17.08.2026; Herbstferien
-      28.09. to 09.10.2026; Weihnachtsferien 21.12.2026 to 06.01.2027; Sportferien 01.03. to 05.03.2027; Frühlingsferien
-      03.05. to 14.05.2027; last school day 09.07.2027.'
+    statement: 'Canton of Schwyz, dates of Schwyz (the main town; other schools and municipalities have their own
+      plans), school year 2026/27: school begins 17.08.2026; Herbstferien 28.09. to 09.10.2026; Weihnachtsferien
+      21.12.2026 to 06.01.2027; Sportferien 01.03. to 05.03.2027; Frühlingsferien 03.05. to 14.05.2027; last school
+      day 09.07.2027.'
     language: en
-    jurisdiction: CH-SZ-1372
+    jurisdiction: CH-SZ
     provenance:
       kind: curated-statement
       review_status: human-reviewed
@@ -81662,6 +81795,10 @@ concepts:
       reviewed_by: Alexander Bobrovsky
       notes:
       - 'review: confirmed in a bulk review of 50 facts (Alexander Bobrovsky, 2026-09-25)'
+      - '2026-09-25: moved from the main town''s jurisdiction to the canton''s on the reviewer''s decision that
+        these dates answer for the whole canton, labelled as whose dates they are; the statement changed, so the
+        fact is open for review again.'
+      - 'review: confirmed in a bulk review of 13 facts (Alexander Bobrovsky, 2026-09-25)'
     evidence:
     - document_id: doc-5e48ba3fde2fdcfd67b1
       first_block: 1

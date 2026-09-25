@@ -7608,13 +7608,13 @@ cases:
       start: '3\.\s*(?:Juli|July|7\.)|03\.07\.2027'
     resolved: [lu-school-holidays]
 - case_id: UAT-124
-  label: 'Emmen: no town dates for another municipality of Lucerne'
+  label: 'Emmen: the town of Luzern''s dates, labelled, for another municipality of Lucerne'
   spec: docs/product/user-acceptance-tests.md#uat-124-school-holidays-in-emmen
   question: When are the autumn school holidays 2026 in Emmen?
-  expected_answer: The release publishes Lucerne's holiday dates by municipality only for the town of Luzern; for
-    Emmen it serves that the municipalities set their own holidays and the canton's frame (14 weeks), and the
-    cantonal plan for 2027/28, not the town of Luzern's 2026/27 dates.
-  trap: Serving the town of Luzern's dates as Emmen's.
+  expected_answer: The release serves the town of Luzern's dates for the whole Canton of Lucerne, labelled as the
+    town's (autumn holidays 26.9. to 11.10.2026), with the canton's statement that each municipality sets its own
+    holidays; the answer gives Luzern's dates as Luzern's and says that Emmen's own dates can differ.
+  trap: Presenting the town of Luzern's dates as Emmen's own, or giving no date at all.
   steps:
   - resolve:
       concept_ids: [lu-school-holidays]
@@ -7625,13 +7625,49 @@ cases:
     concept: lu-school-holidays
     fact_id: lu-school-holidays-1
     statement_contains: ['school holidays are set per municipality']
-  must_not_serve:
-  - lu-school-holidays-2
+  - claim: The town of Luzern's dates, labelled as the town's
+    concept: lu-school-holidays
+    fact_id: lu-school-holidays-2
+    statement_contains: ['dates of the town of Luzern', 'autumn holidays 26.09.2026 to 11.10.2026']
+    excerpt_contains: ['Luzern 17.08.2026 03.07.2027']
   answer:
     criteria: [A1, A2, A3, A4, A5, A6, A10]
-    must_not:
-      luzern_dates_for_emmen: '26\.0?9\.2026|26 September 2026'
+    must_mention:
+      luzern: Luzern|Lucerne
+      may_differ: differ|own dates|set (?:their|its) own|abweich|eigene
     resolved: [lu-school-holidays]
+- case_id: UAT-125
+  label: 'Scuol, asked in Romansh: Chur''s dates for Graubuenden, labelled'
+  spec: docs/product/user-acceptance-tests.md#uat-125-autumn-holidays-in-scuol
+  question: Cura èn las vacanzas d'atun 2026 per la scola da Scuol?
+  expected_answer: In Romansh, the autumn holidays of Chur, the main town, 10.10. to 25.10.2026, which the release
+    serves for the whole Canton of Graubuenden, and that each school authority has its own plan, so Scuol's dates
+    can differ and the canton's plan is the source to check.
+  trap: Presenting Chur's dates as Scuol's own, answering in another language, or giving no date.
+  language: rm
+  steps:
+  - search:
+      query: Herbstferien 2026 Schule Scuol
+      translated: true
+      retrieval: hybrid
+      jurisdiction: {city: Scuol}
+      expect_concept: gr-school-holidays
+      expect_strength: strong
+  - resolve:
+      concept_ids: [gr-school-holidays]
+      jurisdiction: {city: Scuol}
+      expect_status: {gr-school-holidays: SUPPORTED}
+  claims:
+  - claim: Chur's autumn holidays, labelled as Chur's
+    concept: gr-school-holidays
+    fact_id: gr-school-holidays-2
+    statement_contains: ['dates of Chur', 'autumn holidays 10.10. to 25.10.2026']
+  answer:
+    criteria: [A1, A2, A3, A4, A5, A6, A10]
+    must_mention:
+      chur: Chur|Cuira
+      dates: '10\.\s?10\.'
+    resolved: [gr-school-holidays]
 - case_id: LOOKUP-1
   label: Next organic waste collection in 8001
   spec: dataset-connectors

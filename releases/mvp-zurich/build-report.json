@@ -1,13 +1,13 @@
 {
-  "release_id": "mvp-zurich-2026-09-25-v2",
-  "built_at": "2026-09-25T05:02:51.919210+00:00",
+  "release_id": "mvp-zurich-2026-09-25-v3",
+  "built_at": "2026-09-25T07:24:52.805930+00:00",
   "text_dataset": "C:\\Users\\bobro\\OneDrive\\Developer\\Hackathon2026\\.local\\mvp-zurich\\text",
   "concepts": 238,
-  "facts": 1343,
-  "evidence": 1612,
-  "documents": 374,
+  "facts": 1345,
+  "evidence": 1615,
+  "documents": 375,
   "citation_outcomes": {
-    "same-snapshot": 1612
+    "same-snapshot": 1615
   },
   "dropped": [],
   "facts_resolved": [
@@ -32516,6 +32516,26 @@
       "basis": "Cantonal authority guidance"
     },
     {
+      "fact_id": "ai-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-bd8de67ee7b289c4e582",
+          "outcome": "same-snapshot",
+          "start": 713,
+          "end": 902,
+          "block_ids": [
+            "doc-bd8de67ee7b289c4e582:b00031"
+          ],
+          "warnings": [],
+          "institution_id": "catalogue-ai-school-holidays",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
       "fact_id": "ar-school-holidays-1",
       "citations": [
         {
@@ -33155,6 +33175,40 @@
             "doc-85d5963479028cf874d6:b00392",
             "doc-85d5963479028cf874d6:b00393",
             "doc-85d5963479028cf874d6:b00394"
+          ],
+          "warnings": [],
+          "institution_id": "ow-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        }
+      ],
+      "basis": "Cantonal authority guidance"
+    },
+    {
+      "fact_id": "ow-school-holidays-3",
+      "citations": [
+        {
+          "document_id": "doc-85d5963479028cf874d6",
+          "outcome": "same-snapshot",
+          "start": 9341,
+          "end": 9419,
+          "block_ids": [
+            "doc-85d5963479028cf874d6:b00392"
+          ],
+          "warnings": [],
+          "institution_id": "ow-office",
+          "basis": "Cantonal authority guidance",
+          "basis_rule": "default",
+          "basis_warnings": []
+        },
+        {
+          "document_id": "doc-85d5963479028cf874d6",
+          "outcome": "same-snapshot",
+          "start": 9834,
+          "end": 9889,
+          "block_ids": [
+            "doc-85d5963479028cf874d6:b00395"
           ],
           "warnings": [],
           "institution_id": "ow-office",
@@ -33946,7 +34000,7 @@
       "name": "Canton Appenzell Innerrhoden - Erziehungsdepartement",
       "level": "cantonal",
       "jurisdiction": "CH-AI",
-      "documents": 1,
+      "documents": 2,
       "from_catalogue": true
     },
     {
@@ -36136,6 +36190,12 @@
       "institution_rule": "registry rule www.zh.ch/de/migration-integration/"
     },
     {
+      "document_id": "doc-bd8de67ee7b289c4e582",
+      "source_url": "https://ai.ch/themen/bildung/eltern-und-schule/ferienplan",
+      "institution_id": "catalogue-ai-school-holidays",
+      "institution_rule": "catalogue source ai-school-holidays"
+    },
+    {
       "document_id": "doc-be1e21dbb97154b03ae1",
       "source_url": "https://www.ai.ch/themen/auslaender/arbeiten",
       "institution_id": "ai-office",
@@ -36785,7 +36845,7 @@
     }
   ],
   "basis_kinds": {
-    "guidance": 1018,
+    "guidance": 1020,
     "act": 107,
     "ordinance": 47,
     "summary": 50,
@@ -36801,9 +36861,9 @@
     "aliases": 115
   },
   "validation_issues": [],
-  "content_sha256": "a236f1b35de4dea7486a04972ce4ebe7153b0f0fc48c05cdca434124fe2bebdb",
-  "release_sha256": "959b1cb5bedada56a2b15c00bcd479788342839760f687ba1e39cfc1f755ffe2",
-  "curation_sha256": "9750eda855f5358d822d424c2b86f18aa8c9918ee0248ef1be697ca2b86d8b6a",
+  "content_sha256": "f8264c6ff2ba5d1a1b7bd92524a6175ebf8eae3130f7dc653930589001f6c26b",
+  "release_sha256": "edac0312d4238eafabe67bca4faca5dec843ab0bd5ec15ef65ea8b6022c7fc90",
+  "curation_sha256": "de92555125c3c9965074f6ba420d377945bb1213bb497ab9acd4a22b04d5b002",
   "text_index_sha256": "5c18e853d4ae8bca70f6e563dbbd9845dbf26239d9648f492f2771587ca18c30",
-  "acceptance_suite_sha256": "be7e6e68c41043248395f0b7b8e39d2f8425ee45e48ada6d24d24611c139788a"
+  "acceptance_suite_sha256": "a4058a69cb1a4891cc4e5bc69c934da355fbd2b9336b03fe6ccfe3bf35a033f5"
 }

@@ -3,7 +3,7 @@
 **Last update:** 25 September 2026
 
 What the Swiss TIP MCP server does not do well, does not do yet, or does not
-claim. It applies to the committed release `mvp-zurich-2026-09-25-v2` and is
+claim. It applies to the committed release `mvp-zurich-2026-09-25-v3` and is
 updated whenever the knowledge base changes (see [AGENTS.md](AGENTS.md),
 "Coverage and limitations documents"). What the server does cover is in
 [COVERAGE.md](COVERAGE.md). `mvp-wallisellen` was a proof of concept and is
@@ -26,7 +26,7 @@ below is measured on it.
 
 ## Review status: reviewed by one person, not by a lawyer
 
-**All 1,343 facts are `human-reviewed`**, by one named reviewer: the 104 facts
+**All 1,345 facts are `human-reviewed`**, by one named reviewer: the 104 facts
 of the residence topic (78) and of the cantonal migration-office contacts
 (26) on 14 September 2026, the 149 facts of the five topics added on
 15 September 2026, social insurance (25), tax at source (26), driving
@@ -236,6 +236,7 @@ review, which the coverage root no longer carries since release
 | 24 September 2026 | 6 (Basel and St. Gallen waste collection) | in the console |
 | 25 September 2026 | 7 (banned dog breeds in the Canton of Zurich) | in one bulk group in the console |
 | 25 September 2026 | 57 (school holidays of 23 cantons) | in two bulk groups in the console, after two assistant checks against the excerpts corrected 16 |
+| 25 September 2026 | 13 (11 holiday facts restated for the whole canton, 2 new) | in one bulk group in the console |
 
 ## Gaps in the school holidays of 25 September 2026
 
@@ -253,15 +254,18 @@ review, which the coverage root no longer carries since release
 - **One school year only.** Schwyz, Obwalden and Ticino are served for
   2026/27 only, and Graubuenden for 2026/27 with only the school start of
   2027/28: the documents for the second year were not found or not saved.
-- **The main town, not the canton.** Where municipalities set the dates
-  (Lucerne, Solothurn, Schwyz, Graubuenden) or the canton publishes regions
-  (Fribourg, Obwalden, Appenzell Innerrhoden), only the main town's dates
-  are served, under its own jurisdiction; any other municipality gets the
-  canton-wide facts only. That Fribourg follows the general calendar,
-  Sarnen the plan without Engelberg and Appenzell the inner part of its
-  canton is the assistant's reading of the pages, which none of them states
-  about the town; the reviewer confirmed it. Lucerne's 2027/28 dates are the
-  canton's plan, which a municipality may depart from.
+- **One town's dates for the whole canton.** Where municipalities set the
+  dates (Lucerne, Solothurn, Schwyz, Graubuenden), the main town's dates are
+  served for every place in the canton; where the canton publishes regions
+  (Fribourg, Obwalden, Appenzell Innerrhoden), the majority calendar is. Each
+  statement names whose dates they are, and a canton-wide fact says that
+  other municipalities or regions may differ, but a place asked about can
+  have other dates: Scuol's sports holidays in the Graubuenden plan differ
+  from Chur's, and the region of Murten/Morat, Engelberg and the outer part
+  of Appenzell Innerrhoden have calendars of their own that are not served.
+  The reviewer chose this over serving no date for those places. Lucerne's
+  2027/28 dates are the canton's plan, which a municipality may depart
+  from.
 - **Partial calendars.** The Canton of Zurich serves who sets the holidays
   and the dates of its Mittelschulen and Berufsfachschulen; the public
   schools set their own, and only the City of Zurich's are served (in
@@ -1601,14 +1605,16 @@ answer. Recorded runs show three behaviours the release cannot prevent:
   Zurich's banned dog breeds with their 7 facts reviewed, was attested on 25
   September 2026 and supersedes v5; `mvp-zurich-2026-09-25-v2`, which adds the
   school holidays of 23 cantons with their 57 facts reviewed, was attested the
-  same day and supersedes v1.
+  same day and supersedes v1; `mvp-zurich-2026-09-25-v3`, which serves the main
+  towns' holiday dates for their whole canton with 13 facts reviewed again,
+  was attested the same day and supersedes v2.
 - **The coverage root is close to its bound.** `get_coverage` answers in one
   call under 8,700 bytes, which the check
   `scripts/test/packs/test_zurich_release.py` enforces. On this release the
-  root is 8,592 bytes; the school holidays of 25 September 2026 added 238
-  (the topic, one scope sentence and seven main-town jurisdiction codes), and
-  the reviewer raised the bound from 8,500 to 8,700 rather than trim the scope
-  statement. Earlier, the root was 6,040 bytes once every integration fact
+  root is 8,535 bytes; the school holidays of 25 September 2026 took it to
+  8,592 (the topic, one scope sentence and seven main-town jurisdiction codes,
+  which release v3 dropped again), and the reviewer raised the bound from
+  8,500 to 8,700 rather than trim the scope statement. Earlier, the root was 6,040 bytes once every integration fact
   was reviewed. The check's bound was 6,000 bytes and was raised once to
   6,144, the binary kilobyte the README means. The integration topic of
   22 September 2026 pushed the root 194 bytes over that bound, and the bound

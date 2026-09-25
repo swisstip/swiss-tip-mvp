@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-acceptance-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-25-v2",
-  "content_sha256": "a236f1b35de4dea7486a04972ce4ebe7153b0f0fc48c05cdca434124fe2bebdb",
-  "suite_sha256": "be7e6e68c41043248395f0b7b8e39d2f8425ee45e48ada6d24d24611c139788a",
-  "checked_at": "2026-09-25T05:10:10.498496+00:00",
+  "release_id": "mvp-zurich-2026-09-25-v3",
+  "content_sha256": "f8264c6ff2ba5d1a1b7bd92524a6175ebf8eae3130f7dc653930589001f6c26b",
+  "suite_sha256": "a4058a69cb1a4891cc4e5bc69c934da355fbd2b9336b03fe6ccfe3bf35a033f5",
+  "checked_at": "2026-09-25T07:28:27.589470+00:00",
   "as_of": "2026-09-25",
   "passed": true,
-  "cases": 153,
-  "blocking": 153,
+  "cases": 154,
+  "blocking": 154,
   "failed": [],
   "quarantined": [],
   "quarantined_failed": [],
@@ -11866,9 +11866,7 @@
             "ge-school-holidays": "SUPPORTED"
           },
           "gaps": {
-            "ge-school-holidays": [
-              "more_specific_jurisdiction_not_published"
-            ]
+            "ge-school-holidays": []
           },
           "facts": {
             "ge-school-holidays": [
@@ -11965,7 +11963,7 @@
     },
     {
       "case_id": "UAT-124",
-      "label": "Emmen: no town dates for another municipality of Lucerne",
+      "label": "Emmen: the town of Luzern's dates, labelled, for another municipality of Lucerne",
       "blocking": true,
       "passed": true,
       "issues": [],
@@ -11982,13 +11980,12 @@
             "lu-school-holidays": "SUPPORTED"
           },
           "gaps": {
-            "lu-school-holidays": [
-              "more_specific_jurisdiction_not_published"
-            ]
+            "lu-school-holidays": []
           },
           "facts": {
             "lu-school-holidays": [
               "lu-school-holidays-1",
+              "lu-school-holidays-2",
               "lu-school-holidays-3"
             ]
           },
@@ -12006,6 +12003,88 @@
           "concept": "lu-school-holidays",
           "fact_ids": [
             "lu-school-holidays-1"
+          ],
+          "passed": true
+        },
+        {
+          "claim": "The town of Luzern's dates, labelled as the town's",
+          "concept": "lu-school-holidays",
+          "fact_ids": [
+            "lu-school-holidays-2"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case_id": "UAT-125",
+      "label": "Scuol, asked in Romansh: Chur's dates for Graubuenden, labelled",
+      "blocking": true,
+      "passed": true,
+      "issues": [],
+      "steps": [
+        {
+          "tool": "search",
+          "query": "Herbstferien 2026 Schule Scuol",
+          "expect_concept": "gr-school-holidays",
+          "hits": [
+            "gr-school-holidays",
+            "naturalisation-third-generation",
+            "language-evidence"
+          ],
+          "retrieval_mode": "lexical",
+          "match_strength": "weak",
+          "expect_strength": "strong",
+          "passed": true,
+          "translated": true,
+          "jurisdiction": {
+            "city": "Scuol"
+          },
+          "published_elsewhere": [
+            "ag-school-holidays",
+            "gl-school-holidays",
+            "lu-school-holidays"
+          ],
+          "judged": false,
+          "unjudged_issues": [
+            "UAT-125 (Scuol, asked in Romansh: Chur's dates for Graubuenden, labelled): search 'Herbstferien 2026 Schule Scuol' reports match_strength weak, expected strong (signals {'lexical_share': 0.3397, 'anchored_weight': 0.8485})"
+          ]
+        },
+        {
+          "tool": "resolve",
+          "concept_ids": [
+            "gr-school-holidays"
+          ],
+          "as_of": "2026-09-25",
+          "scope": "CH-GR-3762",
+          "not_recognised": {},
+          "statuses": {
+            "gr-school-holidays": "SUPPORTED"
+          },
+          "gaps": {
+            "gr-school-holidays": []
+          },
+          "facts": {
+            "gr-school-holidays": [
+              "gr-school-holidays-1",
+              "gr-school-holidays-2",
+              "gr-school-holidays-3"
+            ]
+          },
+          "bases": {
+            "gr-school-holidays": [
+              "Cantonal authority guidance"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Chur's autumn holidays, labelled as Chur's",
+          "concept": "gr-school-holidays",
+          "fact_ids": [
+            "gr-school-holidays-2"
           ],
           "passed": true
         }

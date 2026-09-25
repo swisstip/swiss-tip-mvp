@@ -158,7 +158,8 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
                   # more tersely or rewrite reviewed limitations. Criterion X8 and the round trip carry the same
                   # number; shorten a topic description before raising it again. The school holidays of
                   # 25 September 2026 added a topic, one scope sentence and seven main-town jurisdictions, 8 592 bytes
-                  # in all, and the user raised the bound to 8 700 rather than trim the scope statement.
+                  # in all, and the user raised the bound to 8 700 rather than trim the scope statement; serving the
+                  # main towns' dates canton-wide dropped the seven jurisdictions again.
                   not root.isError and size < 8700 and body["scope_statement"] and body["out_of_scope"]
                   and {t["topic_id"] for t in body["topics"]} == {"residence", "contacts", "offices", "newcomer", "waste",
                                                                   "vehicles-parking", "household-taxes", "social-insurance", "tax-at-source",
@@ -170,13 +171,11 @@ async def run(release: Path, url: str | None = None, require_hybrid: bool = Fals
                   and any(item.startswith("Review status of the") for item in body["limitations"]))
             # The City of Lugano (CH-TI-5192) joined with its waste concept in release 2026-09-24-v1, the cities of
             # Basel (CH-BS-2701) and St. Gallen (CH-SG-3203) with their collection calendars in 2026-09-24-v5. The
-            # school holidays of 2026-09-25-v2 added seven main towns whose dates are served where the municipalities
-            # set their own: Appenzell, Fribourg, Chur, Luzern, Sarnen, Solothurn and Schwyz.
-            check("root lists federal, Zurich, City of Zurich, Lugano, Basel, St. Gallen and seven main-town "
-                  "jurisdictions and 26 cantons",
-                  {"CH", "CH-ZH", "CH-ZH-261", "CH-BE", "CH-TI", "CH-TI-5192", "CH-BS-2701", "CH-SG-3203",
-                   "CH-AI-3101", "CH-FR-2196", "CH-GR-3901", "CH-LU-1061", "CH-OW-1407", "CH-SO-2601", "CH-SZ-1372"}
-                  <= set(body["jurisdictions"]) and len(body["jurisdictions"]) == 38)
+            # school holidays publish a main town's dates for its whole canton, labelled as the town's, so they add
+            # no municipality.
+            check("root lists federal, Zurich, City of Zurich, Lugano, Basel and St. Gallen jurisdictions and 26 cantons",
+                  {"CH", "CH-ZH", "CH-ZH-261", "CH-BE", "CH-TI", "CH-TI-5192", "CH-BS-2701", "CH-SG-3203"}
+                  <= set(body["jurisdictions"]) and len(body["jurisdictions"]) == 31)
             languages = [q["code"] for q in body.get("query_languages") or []]
             search_tool = next(t for t in tools if t.name == "search")
             # swisstip-mcp 0.3.0 asks for one search and no longer calls German "preferred"; servers up to 0.2.5

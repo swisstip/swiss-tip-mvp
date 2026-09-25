@@ -1,14 +1,14 @@
 {
   "schema_version": "swiss-tip-curation-coverage-report/v1",
   "pack": "mvp-zurich",
-  "release_id": "mvp-zurich-2026-09-25-v2",
-  "content_sha256": "a236f1b35de4dea7486a04972ce4ebe7153b0f0fc48c05cdca434124fe2bebdb",
+  "release_id": "mvp-zurich-2026-09-25-v3",
+  "content_sha256": "f8264c6ff2ba5d1a1b7bd92524a6175ebf8eae3130f7dc653930589001f6c26b",
   "text_index_sha256": "5c18e853d4ae8bca70f6e563dbbd9845dbf26239d9648f492f2771587ca18c30",
   "dispositions_sha256": "4a4939b3e0fd4a6bcb57e36d496e8adf31b35b33fc698cf9e56db28a68158ae8",
   "dispositions": 216,
   "policy": "report",
   "today": "2026-09-25",
-  "generated_at": "2026-09-25T05:03:01.531591+00:00",
+  "generated_at": "2026-09-25T07:25:01.824714+00:00",
   "rules": {
     "reference_kinds": [
       "plugin-document"
@@ -25,9 +25,9 @@
       "rolled_up": 2
     },
     "content_sections": 3641,
-    "cited_sections": 930,
+    "cited_sections": 931,
     "dispositioned_sections": 1251,
-    "unclassified_sections": 1460,
+    "unclassified_sections": 1459,
     "boilerplate_sections": 161,
     "repeated_texts": 16,
     "repeated_by_citation": {
@@ -36,10 +36,10 @@
       "cited_once": 3
     },
     "documents": {
-      "unclassified": 52,
+      "unclassified": 51,
+      "partly_cited": 158,
       "cited": 98,
       "empty": 49,
-      "partly_cited": 157,
       "cited_and_dispositioned": 73,
       "dispositioned": 151
     },
@@ -134,25 +134,13 @@
       "attribution_kind": "catalogue",
       "unit": "section",
       "units": 3,
-      "cited": 0,
+      "cited": 1,
       "dispositioned": 0,
       "boilerplate": 0,
-      "unclassified": 3,
+      "unclassified": 2,
       "dispositions": {},
-      "status": "unclassified",
+      "status": "partly_cited",
       "unclassified_sections": [
-        {
-          "section_id": "section-0004",
-          "heading_path": [
-            "Ferienplan und schulfreie Tage"
-          ],
-          "first_block": 30,
-          "last_block": 32,
-          "characters": 333,
-          "section_ids": [
-            "section-0004"
-          ]
-        },
         {
           "section_id": "section-0005",
           "heading_path": [
@@ -31238,10 +31226,10 @@
       "title": "Appenzell Innerrhoden - school holidays",
       "documents": 2,
       "units": 4,
-      "cited": 1,
+      "cited": 2,
       "dispositioned": 0,
       "boilerplate": 0,
-      "unclassified": 3,
+      "unclassified": 2,
       "status": "partly_covered"
     },
     {

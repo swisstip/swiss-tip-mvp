@@ -2724,10 +2724,21 @@ canton, whose municipalities set their own holidays.
 ### UAT-124: School holidays in Emmen
 
 "When are the autumn school holidays 2026 in Emmen?" The release serves the
-dates by municipality only for the town of Luzern, so for Emmen it serves
-that the municipalities set their own holidays, the canton's frame and the
-canton's plan for 2027/28, and never the town of Luzern's 2026/27 dates.
-The trap is giving Luzern's dates as Emmen's.
+town of Luzern's dates for the whole Canton of Lucerne, labelled as the
+town's (autumn holidays 26 September to 11 October 2026), with the canton's
+statement that each municipality sets its own holidays. The answer must give
+them as Luzern's and say that Emmen's own dates can differ. The trap is
+presenting Luzern's dates as Emmen's own, or giving no date.
+
+### UAT-125: Autumn holidays in Scuol
+
+"Cura èn las vacanzas d'atun 2026 per la scola da Scuol?" (When are the
+autumn school holidays 2026 in Scuol?, in Romansh) The answer must be in
+Romansh and give the autumn holidays of Chur, the main town, 10 to 25
+October 2026, which the release serves for the whole Canton of Graubuenden,
+and say that each school authority has its own plan, so Scuol's dates can
+differ. The trap is presenting Chur's dates as Scuol's own, answering in
+another language, or giving no date.
 
 ## Decline cases
 

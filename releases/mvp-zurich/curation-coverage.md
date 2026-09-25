@@ -1,15 +1,14 @@
 # Curation coverage: mvp-zurich
 
-Release `mvp-zurich-2026-09-25-v2` (content `a236f1b35de4`), policy `report`, not clean, 216 disposition(s), generated 2026-09-25T05:03:01.
+Release `mvp-zurich-2026-09-25-v3` (content `f8264c6ff2ba`), policy `report`, not clean, 216 disposition(s), generated 2026-09-25T07:25:01.
 
-580 candidate records ({'section': 561, 'document': 17, 'rolled_up': 2}) with 3641 units a curator answers for: 930 cited, 1251 dispositioned, **1460 unclassified**; 161 boilerplate sections were not asked for. Documents: {'unclassified': 52, 'cited': 98, 'empty': 49, 'partly_cited': 157, 'cited_and_dispositioned': 73, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
+580 candidate records ({'section': 561, 'document': 17, 'rolled_up': 2}) with 3641 units a curator answers for: 931 cited, 1251 dispositioned, **1459 unclassified**; 161 boilerplate sections were not asked for. Documents: {'unclassified': 51, 'partly_cited': 158, 'cited': 98, 'empty': 49, 'cited_and_dispositioned': 73, 'dispositioned': 151}. Findings: {'stale': 0, 'expired': 0, 'unknown_out_of_scope_entry': 0, 'new_under_rule': 0, 'unused_rule': 0}.
 
 ## Documents
 
 | Status | Document | Unit | Units | Cited | Dispositioned | Boilerplate | Unclassified | Sources |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
 | unclassified | [Einreise](http://www.sem.admin.ch/sem/de/home/themen/einreise.html) `doc-bdd6d7641abbeb965bc6` | section | 4 | 0 | 0 | 0 | 4 | ch-sem-entry |
-| unclassified | [Ferienplan und schulfreie Tage — Appenzell Innerrhoden](https://ai.ch/themen/bildung/eltern-und-schule/ferienplan) `doc-bd8de67ee7b289c4e582` | section | 3 | 0 | 0 | 0 | 3 | ai-school-holidays |
 | unclassified | [BSV: types and rates of family allowances per canton, 2026 (PDF)](https://www.bsv.admin.ch/dam/de/sd-web/acU7RgJgeisY/Arten%20und%20Ans%C3%A4tze%20der%20Familienzulagen_2026.pdf) `doc-3f3d4751491356fbdf8a` | section | 1 | 0 | 0 | 0 | 1 |  |
 | unclassified | [Alters- und Hinterlassenenversicherung (AHV) - Übersicht](https://www.bsv.admin.ch/de/ahv-uebersicht) `doc-08accda64b5e8e778ea6` | section | 7 | 0 | 0 | 0 | 7 | ch-bsv-ahv |
 | unclassified | [Gesuch um ordentliche oder erleichterte Einbürgerung in der Schweiz](https://www.ch.ch/de/auslander-in-der-schweiz/einburgerung/) `doc-5115531c627ecfe1109e` | section | 5 | 0 | 0 | 0 | 5 | ch-chch-naturalisation |
@@ -60,6 +59,7 @@ Release `mvp-zurich-2026-09-25-v2` (content `a236f1b35de4`), policy `report`, no
 | unclassified | [Amt für Wirtschaft / Kanton Zürich](https://www.zh.ch/de/volkswirtschaftsdirektion/amt-fuer-wirtschaft.html) `doc-6ac4fb95eb9bd1acf968` | section | 6 | 0 | 0 | 0 | 6 | zh-awa-office |
 | unclassified | [Ticino: school holidays, document 1](https://www4.ti.ch/fileadmin/DECS/calendario_scolastico/Calendario_scolastico_2026_2027.pdf) `doc-91983dceb9b36ae32b2e` | section | 1 | 0 | 0 | 0 | 1 | ti-school-holidays |
 | unclassified | [Einreise EU/EFTA-Staatsangehörige](https://zg.ch/de/migration-integration/einreise-und-aufenthalt/einreise-eu-efta-staatsangehoerige) `doc-d93f4248701c364d8108` | section | 5 | 0 | 0 | 0 | 5 | zg-entry-eu-efta |
+| partly_cited | [Ferienplan und schulfreie Tage — Appenzell Innerrhoden](https://ai.ch/themen/bildung/eltern-und-schule/ferienplan) `doc-bd8de67ee7b289c4e582` | section | 3 | 1 | 0 | 0 | 2 | ai-school-holidays |
 | partly_cited | [Regelungen - Appenzell Ausserrhoden](https://ar.ch/verwaltung/departement-bildung-und-kultur/amt-fuer-volksschule-und-sport/ehandbuch-volksschule/schulbetrieb/regelungen/) `doc-3f726984bb17fa45fae2` | section | 13 | 1 | 0 | 0 | 12 | ar-school-holidays |
 | partly_cited | [Drittstaatsangehörige - Appenzell Ausserrhoden](https://ar.ch/verwaltung/departement-inneres-und-sicherheit/amt-fuer-inneres/abteilung-migration/einreise-und-aufenthalt/drittstaatsangehoerige/) `doc-1c6f5fde53430f3e283a` | section | 5 | 1 | 0 | 0 | 4 | ar-third-country |
 | partly_cited | [Ferienplan](https://av.tg.ch/themen/ferienplan.html/13415) `doc-dc236f8ebaa114f9d103` | section | 7 | 1 | 0 | 0 | 6 | tg-school-holidays |
@@ -597,7 +597,6 @@ Release `mvp-zurich-2026-09-25-v2` (content `a236f1b35de4`), policy `report`, no
 | `doc-bdd6d7641abbeb965bc6` | section-0012 | Einreise > Informationen zur Einreise | 82-96 | 421 |
 | `doc-bdd6d7641abbeb965bc6` | section-0013 | Einreise > Auskünfte | 97-101 | 872 |
 | `doc-bdd6d7641abbeb965bc6` | section-0016 | Einreise > Medienmitteilungen | 113-119 | 312 |
-| `doc-bd8de67ee7b289c4e582` | section-0004 | Ferienplan und schulfreie Tage | 30-32 | 333 |
 | `doc-bd8de67ee7b289c4e582` | section-0005 | Ferienplan und schulfreie Tage > Zuständige Stelle | 33-38 | 83 |
 | `doc-bd8de67ee7b289c4e582` | section-0006 | Ferienplan und schulfreie Tage | 39-49 | 285 |
 | `doc-3f726984bb17fa45fae2` | section-0009 | Inhalt > Pfadnavigation | 285-292 | 21 |
@@ -2089,7 +2088,7 @@ Texts that recur on 5 or more candidate pages of one host and were set aside as 
 | partly_covered | `ai-foreign-workers` Appenzell Innerrhoden - Working as a foreign national (eight days) | 1 | 9 | 2 | 0 | 0 | 7 |
 | boilerplate_only | `ai-register-ordinance` Appenzell Innerrhoden - Verordnung zum Registerharmonisierungsgesetz (GS 172.910), art. 7 | 1 | 0 | 0 | 0 | 0 | 0 |
 | partly_covered | `ai-registration` Appenzell Innerrhoden - Registering and deregistering (fourteen days) | 1 | 4 | 3 | 0 | 0 | 1 |
-| partly_covered | `ai-school-holidays` Appenzell Innerrhoden - school holidays | 2 | 4 | 1 | 0 | 0 | 3 |
+| partly_covered | `ai-school-holidays` Appenzell Innerrhoden - school holidays | 2 | 4 | 2 | 0 | 0 | 2 |
 | boilerplate_only | `ai-settlement-decree` Appenzell Innerrhoden - Standeskommissionsbeschluss ueber Niederlassung und Aufenthalt (GS 142.001), art. 2 | 1 | 0 | 0 | 0 | 0 | 0 |
 | cited | `ar-register-law` Appenzell Ausserrhoden - Registergesetz (bGS 122.1), art. 5 | 1 | 1 | 1 | 0 | 0 | 0 |
 | partly_covered | `ar-school-holidays` Appenzell Ausserrhoden - school holidays | 2 | 14 | 2 | 0 | 0 | 12 |
