@@ -2,11 +2,13 @@
 
 **Last update:** 27 September 2026
 
-A planned pack: official public information for everyone who lives in a
-Polish city, served by the same server and built by the same pipeline as
-`mvp-zurich`. Nothing of it is implemented yet. This folder holds no
-catalogue, curation file, release or report, and the code does not yet
-accept Polish jurisdictions (see "Prerequisites in the code").
+A pack in preparation: official public information for everyone who lives
+in a Polish city, served by the same server and built by the same pipeline
+as `mvp-zurich`. Its first topic group, civic participation, has a source
+catalogue, a downloaded run and an acceptance-test document (see "Civic
+participation"). There is no curation file, release or report yet, and the
+server does not yet accept Polish jurisdictions (see "Prerequisites in the
+code").
 
 ## Why
 
@@ -38,8 +40,11 @@ questions whose answer depends on where the resident lives:
 | --- | --- | --- |
 | National (`państwo`) | 1 | Days off, Sunday trading, the minimum wage |
 | Voivodeship (`województwo`) | 16 | Winter school holidays, the anti-smog resolution |
-| County (`powiat`) | about 380 | Vehicle registration, driving licences |
-| Commune (`gmina`) | about 2,477 | Waste fees and how they are calculated, clean transport zones, a city's own anti-smog rules, the participatory budget and the local initiative |
+| County (`powiat`) | 380 | Vehicle registration, driving licences |
+| Commune (`gmina`) | 2,479 | Waste fees and how they are calculated, clean transport zones, a city's own anti-smog rules, the participatory budget and the local initiative |
+
+The counts are those of the GUS TERYT register (TERC) as of 1 January
+2026, downloaded on 27 September 2026 into `.local/mvp-poland/places/`.
 
 The first places are the City of Kraków (Małopolskie), the City of Warsaw
 (Mazowieckie) and the City of Katowice (Śląskie): three voivodeships and
@@ -65,12 +70,17 @@ decision to confirm.
 ## Candidate sources
 
 - `gov.pl` and its office sites, `podatki.gov.pl`
-- ISAP and Dziennik Ustaw for acts and ordinances, cited by ELI
+- Acts and ordinances of Dziennik Ustaw through the Sejm's ELI API
+  (`api.sejm.gov.pl`), which serves the same PDFs; ISAP and
+  dziennikustaw.gov.pl disallow every crawler in robots.txt
+- Council resolutions as published in the voivodeships' official journals
 - The voivodeship assemblies' anti-smog resolutions, and the voivodeship
   portals (`powietrze.malopolska.pl`, `powietrze.slaskie.pl`)
 - The Public Information Bulletin (BIP) of each city, and the city portals
-  (`krakow.pl`, `bip.krakow.pl`, `um.warszawa.pl`, `warszawa19115.pl`,
-  `katowice.eu`)
+  (`krakow.pl`, `bip.krakow.pl`, `warszawa19115.pl`, `katowice.eu`);
+  `um.warszawa.pl` and its document and district servers answer every
+  request with a JavaScript challenge, so they are catalogued but not
+  fetched
 - The GUS TERYT register for the place register
 - Open data on `dane.gov.pl` for dataset connectors (waste-collection
   calendars, as in `mvp-zurich`), where a city publishes it
@@ -80,11 +90,16 @@ Poland (Art. 4 of the copyright act), so quoting excerpts is on firm ground.
 
 ## Prerequisites in the code
 
-These change the code repository, not this pack, and are not started:
+These change the code repository, not this pack. The source catalogue
+already accepts a Polish scope with declared levels, and the downloader
+saves the DOCX resolutions some city offices publish; the rest is not
+started:
 
 - **Jurisdiction codes.** `packages/core` accepts only `CH` codes of up to
-  three levels. Poland needs a fourth level and TERYT-based codes, for
-  example `PL`, `PL-12`, `PL-12-61`, `PL-12-61-01`.
+  three levels. Poland needs a fourth level and TERYT-based codes, one
+  segment per level: `PL`, `PL-12` (Małopolskie), `PL-12-61` (the county
+  of Kraków), `PL-12-61-011` (the commune of Kraków, the last three digits
+  of its TERYT code).
 - **Institution levels.** `InstitutionLevel` is fixed to federal, cantonal
   and municipal; Poland needs national, voivodeship, county and commune.
 - **Place register.** An importer for TERYT next to the BFS importer, with
@@ -115,7 +130,7 @@ from the saved pages and reviewed before they become claims.
 | *Kiedy moje dziecko ma ferie zimowe w 2027 roku?* | Śląskie 18-31 January, Mazowieckie 1-14 February, Małopolskie 15-28 February 2027 | One date for the whole country |
 | *Czy w niedzielę 13 grudnia 2026 r. sklepy będą otwarte?* | Yes: a trading Sunday (6, 13 and 20 December 2026) | The general Sunday trading ban |
 | *Mój szef mówi, że 24 grudnia normalnie pracujemy, bo to nie jest święto. Czy ma rację?* | No: since 2025, 24 December is a statutory day off, with sector exceptions | The rule before 2025 |
-| *Mam pomysł na zieleniec na moim osiedlu. Jak mogę go zgłosić do miasta i do kiedy?* | To be curated per city: the participatory budget's current edition and dates, and the local initiative | One generic procedure, or last year's dates |
+| *Mam pomysł na zieleniec na moim osiedlu. Jak mogę go zgłosić do miasta i do kiedy?* | Per city: the participatory budget's current edition and dates, and the local initiative (the civic-participation cases below give each city's rules) | One generic procedure, or last year's dates |
 
 The Katowice answer on clean transport zones rests on the sources naming
 only Warsaw and Kraków as cities with a zone in force; it must be confirmed

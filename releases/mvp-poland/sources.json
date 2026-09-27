@@ -1,0 +1,1295 @@
+{
+  "schema_version": "source-catalog/v1",
+  "artifact_id": "civic-sources-mvp-poland",
+  "version": "draft-1",
+  "knowledge_space_id": "hackathon",
+  "title": "Civic participation in Kraków, Warsaw and Katowice - official sources",
+  "status": "SOURCES_ONLY",
+  "scope": {
+    "country_code": "PL",
+    "levels": [
+      "national",
+      "voivodeship",
+      "county",
+      "commune"
+    ],
+    "region_codes": [
+      "PL-12-61-011",
+      "PL-14-65-011",
+      "PL-24-69-011"
+    ],
+    "description": "How residents of Kraków, Warsaw and Katowice take part in their city: the participatory budget, the local initiative and grants for non-governmental organisations, public consultations, district and neighbourhood councils, the citizens' resolution initiative, the debate on the report on the state of the city and council sessions; with the national acts that set the common rules.",
+    "exclusions": [
+      "Individual projects, votes, grant offers and their outcomes, except the published results of an edition.",
+      "Authenticated application and voting portals, and third-party platforms (witkac.pl, the eNGO generator, streaming services) except as named channels.",
+      "Local referendums, petitions, youth and senior councils (not researched yet).",
+      "Other Polish municipalities."
+    ]
+  },
+  "planning_topics": [
+    {
+      "topic_id": "participatory-budget",
+      "label": "Participatory budget"
+    },
+    {
+      "topic_id": "local-initiative-and-grants",
+      "label": "Local initiative and grants for NGOs"
+    },
+    {
+      "topic_id": "consultations-and-resident-voice",
+      "label": "Consultations and resident voice"
+    }
+  ],
+  "language_discovery": {
+    "seed_languages_are_hints": true,
+    "method": "Inspect the saved page language and any visible language navigation.",
+    "scope": "New language URLs or hosts outside the explicit allowlist require a catalogue update before acquisition.",
+    "parallel_content": "Every language version would receive its own snapshot, hashes and document identity.",
+    "projection_targets": [
+      "pl",
+      "en"
+    ],
+    "evaluated_routes": [],
+    "preferred_seed_language": "pl",
+    "selection_policy": "Use the official Polish page. English labels are editorial projections and never replace the cited Polish evidence."
+  },
+  "crawl_profiles": {
+    "smoke": {
+      "max_depth": 0,
+      "max_pages": 1,
+      "max_requests": 5,
+      "max_total_bytes": 3000000,
+      "max_response_bytes": 2000000,
+      "max_duration_seconds": 60,
+      "request_timeout_seconds": 15,
+      "delay_seconds": 2,
+      "max_redirects": 2,
+      "max_links_per_page": 200,
+      "max_queued_urls": 50,
+      "max_failures": 2
+    }
+  },
+  "scan_sets": {
+    "smoke": [
+      "pl-sejm-eli",
+      "krakow-budget"
+    ],
+    "national": [
+      "pl-sejm-eli",
+      "pl-gov-pozytek"
+    ],
+    "krakow": [
+      "krakow-bip",
+      "krakow-budget",
+      "krakow-civic",
+      "krakow-ngo",
+      "krakow-co",
+      "krakow-files",
+      "krakow-portal",
+      "krakow-journal-2026-511"
+    ],
+    "warszawa": [
+      "warszawa-bip",
+      "warszawa-um",
+      "warszawa-cdn",
+      "warszawa-districts",
+      "warszawa-19115",
+      "warszawa-journal-2013-8442",
+      "warszawa-journal-2019-13009",
+      "warszawa-journal-2019-4814",
+      "warszawa-journal-2022-4668",
+      "warszawa-journal-2022-7718",
+      "warszawa-journal-2024-10017"
+    ],
+    "katowice": [
+      "katowice-bip",
+      "katowice-bo",
+      "katowice-portal",
+      "katowice-katoobywatel",
+      "katowice-pks",
+      "katowice-journal-2013-4873",
+      "katowice-journal-2021-7673",
+      "katowice-journal-2022-6249",
+      "katowice-journal-2019-2065",
+      "katowice-journal-2020-1538",
+      "katowice-journal-2020-5506",
+      "katowice-journal-2022-1582",
+      "katowice-journal-2025-5981",
+      "katowice-journal-2025-653",
+      "katowice-journal-2024-1878",
+      "katowice-journal-2019-1783",
+      "katowice-journal-2014-2787"
+    ],
+    "all": [
+      "pl-sejm-eli",
+      "pl-gov-pozytek",
+      "krakow-bip",
+      "krakow-budget",
+      "krakow-civic",
+      "krakow-ngo",
+      "krakow-co",
+      "krakow-files",
+      "krakow-portal",
+      "warszawa-bip",
+      "warszawa-um",
+      "warszawa-cdn",
+      "warszawa-districts",
+      "warszawa-19115",
+      "katowice-bip",
+      "katowice-bo",
+      "katowice-portal",
+      "katowice-katoobywatel",
+      "katowice-pks",
+      "katowice-journal-2013-4873",
+      "katowice-journal-2021-7673",
+      "katowice-journal-2022-6249",
+      "katowice-journal-2019-2065",
+      "katowice-journal-2020-1538",
+      "katowice-journal-2020-5506",
+      "katowice-journal-2022-1582",
+      "katowice-journal-2025-5981",
+      "katowice-journal-2025-653",
+      "krakow-journal-2026-511",
+      "warszawa-journal-2013-8442",
+      "warszawa-journal-2019-13009",
+      "warszawa-journal-2019-4814",
+      "warszawa-journal-2022-4668",
+      "warszawa-journal-2022-7718",
+      "warszawa-journal-2024-10017",
+      "katowice-journal-2024-1878",
+      "katowice-journal-2019-1783",
+      "katowice-journal-2014-2787"
+    ]
+  },
+  "build_notes": [
+    "The registry names one entry per official host of a city, with the city as its jurisdiction, one entry per council resolution in a voivodeship's official journal, and the national acts through the Sejm's ELI API.",
+    "sources.md lists the exact pages the research of 27 September 2026 opened and a verifier confirmed; the downloader snapshots only those URLs and the registry seeds, and follows no link.",
+    "Ready means eligible for a bounded request, not an assertion that the live page is complete or unchanged."
+  ],
+  "parallel_page_groups": [],
+  "sources": [
+    {
+      "definition": {
+        "source_id": "pl-sejm-eli",
+        "start_url": "https://api.sejm.gov.pl/eli/acts/DU/2025/1338/text.pdf",
+        "allowed_hosts": [
+          "api.sejm.gov.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/eli/acts"
+        ],
+        "canonical_authority": "Kancelaria Sejmu (ELI API of Dziennik Ustaw)",
+        "jurisdiction": "PL",
+        "language": "pl"
+      },
+      "title": "Ustawa o działalności pożytku publicznego i o wolontariacie, tekst jednolity (Dz.U. 2025 poz. 1338)",
+      "authority_level": "national",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice",
+        "local-initiative-and-grants",
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://api.sejm.gov.pl/eli/acts/DU/2025/1338/text.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Official PDFs of Dziennik Ustaw positions through the Sejm's ELI API; the same bytes as dziennikustaw.gov.pl, whose robots.txt, like ISAP's, disallows every crawler. The API publishes no robots.txt."
+    },
+    {
+      "definition": {
+        "source_id": "pl-gov-pozytek",
+        "start_url": "https://www.gov.pl/web/pozytek/juz-od-wrzesnia-nowe-rozwiazania-dla-organizacji-pozarzadowych",
+        "allowed_hosts": [
+          "www.gov.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/web/pozytek"
+        ],
+        "canonical_authority": "Departament Pożytku Publicznego (gov.pl/web/pozytek)",
+        "jurisdiction": "PL",
+        "language": "pl"
+      },
+      "title": "Już od września nowe rozwiązania dla organizacji pozarządowych! (03.08.2026)",
+      "authority_level": "national",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice",
+        "local-initiative-and-grants",
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://www.gov.pl/web/pozytek/juz-od-wrzesnia-nowe-rozwiazania-dla-organizacji-pozarzadowych",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "National guidance on the public benefit act and its 2026 amendment."
+    },
+    {
+      "definition": {
+        "source_id": "krakow-bip",
+        "start_url": "https://bip.krakow.pl/zarzadzenie/2026/628/w_sprawie_wprowadzenia_Regulaminu_przeprowadzania_otwartych_konkursow_ofert_w_Gminie_Miejskiej_Krakow_w_roku_2026.html",
+        "allowed_hosts": [
+          "www.bip.krakow.pl",
+          "bip.krakow.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Gmina Miejska Kraków",
+        "jurisdiction": "PL-12-61-011",
+        "language": "pl"
+      },
+      "title": "Zarządzenie Nr 628/2026 PMK z 26.03.2026 - Regulamin otwartych konkursów ofert 2026 - record",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice",
+        "local-initiative-and-grants",
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://bip.krakow.pl/zarzadzenie/2026/628/w_sprawie_wprowadzenia_Regulaminu_przeprowadzania_otwartych_konkursow_ofert_w_Gminie_Miejskiej_Krakow_w_roku_2026.html",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Public Information Bulletin of the City of Kraków: council resolutions, orders, services, minutes."
+    },
+    {
+      "definition": {
+        "source_id": "krakow-budget",
+        "start_url": "https://budzet.krakow.pl/307557,artykul,dla-autorow-projektow.html",
+        "allowed_hosts": [
+          "budzet.krakow.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Gmina Miejska Kraków",
+        "jurisdiction": "PL-12-61-011",
+        "language": "pl"
+      },
+      "title": "Jak zacząć z Budżetem Obywatelskim (Dla autorów projektów)",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://budzet.krakow.pl/307557,artykul,dla-autorow-projektow.html",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Participatory budget portal of the City of Kraków."
+    },
+    {
+      "definition": {
+        "source_id": "krakow-civic",
+        "start_url": "https://obywatelski.krakow.pl/243496,artykul,aktualne.html",
+        "allowed_hosts": [
+          "obywatelski.krakow.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Gmina Miejska Kraków",
+        "jurisdiction": "PL-12-61-011",
+        "language": "pl"
+      },
+      "title": "Konsultacje społeczne - Aktualne (Obywatelski Kraków)",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice",
+        "local-initiative-and-grants"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://obywatelski.krakow.pl/243496,artykul,aktualne.html",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Civic Kraków portal: consultations and the local initiative."
+    },
+    {
+      "definition": {
+        "source_id": "krakow-ngo",
+        "start_url": "https://ngo.krakow.pl/aktualnosci/335876,52,komunikat,male_granty___wieksze_mozliwosci__zmiany_w_art__19a_juz_obowiazuja.html",
+        "allowed_hosts": [
+          "ngo.krakow.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Gmina Miejska Kraków",
+        "jurisdiction": "PL-12-61-011",
+        "language": "pl"
+      },
+      "title": "Małe granty - większe możliwości: zmiany w art. 19a już obowiązują",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "local-initiative-and-grants"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://ngo.krakow.pl/aktualnosci/335876,52,komunikat,male_granty___wieksze_mozliwosci__zmiany_w_art__19a_juz_obowiazuja.html",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "The city's portal for non-governmental organisations."
+    },
+    {
+      "definition": {
+        "source_id": "krakow-co",
+        "start_url": "https://co.krakow.pl/fundusze_dla_ngo/306180,2085,komunikat,wazny_komunikat__nowe_zasady_skladania_ofert_na__male_granty%E2%80%9D__art__19a_.html",
+        "allowed_hosts": [
+          "co.krakow.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Gmina Miejska Kraków",
+        "jurisdiction": "PL-12-61-011",
+        "language": "pl"
+      },
+      "title": "Ważny komunikat: Nowe zasady składania ofert na „małe granty” (art. 19a)",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "local-initiative-and-grants"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://co.krakow.pl/fundusze_dla_ngo/306180,2085,komunikat,wazny_komunikat__nowe_zasady_skladania_ofert_na__male_granty%E2%80%9D__art__19a_.html",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Centrum Obywatelskie (civic centre) portal of the City of Kraków."
+    },
+    {
+      "definition": {
+        "source_id": "krakow-files",
+        "start_url": "https://plikimpi.krakow.pl/zalacznik/546699",
+        "allowed_hosts": [
+          "plikimpi.krakow.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Gmina Miejska Kraków",
+        "jurisdiction": "PL-12-61-011",
+        "language": "pl"
+      },
+      "title": "Tabela: kwota ogółem dla dzielnicy, minimalna i maksymalna wartość jednego projektu (13. edycja)",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "local-initiative-and-grants",
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://plikimpi.krakow.pl/zalacznik/546699",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Attachment server of the Kraków city portals."
+    },
+    {
+      "definition": {
+        "source_id": "krakow-portal",
+        "start_url": "https://krakow.pl/aktualnosci/334571,29,komunikat,54_mln_zl_w_twoich_rekach___krakow_glosuje_w_budzecie_obywatelskim.html",
+        "allowed_hosts": [
+          "www.krakow.pl",
+          "krakow.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Gmina Miejska Kraków",
+        "jurisdiction": "PL-12-61-011",
+        "language": "pl"
+      },
+      "title": "54 mln zł w Twoich rękach - Kraków głosuje w budżecie obywatelskim (2026-08-20, updated 2026-09-27)",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice",
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://krakow.pl/aktualnosci/334571,29,komunikat,54_mln_zl_w_twoich_rekach___krakow_glosuje_w_budzecie_obywatelskim.html",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Main portal of the City of Kraków; news items are labelled as such."
+    },
+    {
+      "definition": {
+        "source_id": "warszawa-bip",
+        "start_url": "https://bip.warszawa.pl/dzielnice",
+        "allowed_hosts": [
+          "bip.warszawa.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Miasto Stołeczne Warszawa",
+        "jurisdiction": "PL-14-65-011",
+        "language": "pl"
+      },
+      "title": "Dzielnice - BIP m.st. Warszawy",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice",
+        "local-initiative-and-grants"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://bip.warszawa.pl/dzielnice",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Public Information Bulletin of the City of Warsaw. Plain clients meet a WAF on some documents and a session cookie on some records; fetched with the browser User-Agent, robots.txt allows every agent.",
+      "user_agent": "browser"
+    },
+    {
+      "definition": {
+        "source_id": "warszawa-um",
+        "start_url": "https://um.warszawa.pl/-/prezydent-rafal-trzaskowski-z-wotum-zaufania-i-absolutorium",
+        "allowed_hosts": [
+          "um.warszawa.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Miasto Stołeczne Warszawa",
+        "jurisdiction": "PL-14-65-011",
+        "language": "pl"
+      },
+      "title": "Prezydent Rafał Trzaskowski z wotum zaufania i absolutorium",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice",
+        "local-initiative-and-grants",
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://um.warszawa.pl/-/prezydent-rafal-trzaskowski-z-wotum-zaufania-i-absolutorium",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Not fetched: the host answers every request, robots.txt included, with an AWS WAF JavaScript challenge (HTTP 202, empty body), so the crawler's robots check fails closed. A browser-rendering adapter is needed; the research read these pages in a headless browser on 27 September 2026."
+    },
+    {
+      "definition": {
+        "source_id": "warszawa-cdn",
+        "start_url": "https://cdn.um.warszawa.pl/documents/57254/125266192/Uchwa%C5%82a+Rady+m.st.+Warszawy+z+dnia+11+kwietnia+2019+r.+w+sprawie+konsultacji+spo%C5%82ecznych+z+mieszka%C5%84cami+m.st.+Warszawy+w+formie+bud%C5%BCetu+obywatelskiego+%28uwzgl%C4%99dnia+zmiany+z+2024+roku%29.doc/4bca3581-017e-5b92-728b-d4870cc828d9",
+        "allowed_hosts": [
+          "cdn.um.warszawa.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Miasto Stołeczne Warszawa",
+        "jurisdiction": "PL-14-65-011",
+        "language": "pl"
+      },
+      "title": "Tekst ujednolicony uchwały nr XI/218/2019 Rady m.st. Warszawy z 11 kwietnia 2019 r. w sprawie konsultacji społecznych z mieszkańcami m.st. Warszawy w formie budżetu obywatelskiego (uwzględnia zmiany z 2024 r.)",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://cdn.um.warszawa.pl/documents/57254/125266192/Uchwa%C5%82a+Rady+m.st.+Warszawy+z+dnia+11+kwietnia+2019+r.+w+sprawie+konsultacji+spo%C5%82ecznych+z+mieszka%C5%84cami+m.st.+Warszawy+w+formie+bud%C5%BCetu+obywatelskiego+%28uwzgl%C4%99dnia+zmiany+z+2024+roku%29.doc/4bca3581-017e-5b92-728b-d4870cc828d9",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Not fetched: the host answers every request, robots.txt included, with an AWS WAF JavaScript challenge (HTTP 202, empty body), so the crawler's robots check fails closed. A browser-rendering adapter is needed; the research read these pages in a headless browser on 27 September 2026."
+    },
+    {
+      "definition": {
+        "source_id": "warszawa-districts",
+        "start_url": "https://pragapld.um.warszawa.pl/wybory-do-rad-osiedli-2026",
+        "allowed_hosts": [
+          "srodmiescie.um.warszawa.pl",
+          "pragapld.um.warszawa.pl",
+          "wawer.um.warszawa.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Miasto Stołeczne Warszawa (district offices)",
+        "jurisdiction": "PL-14-65-011",
+        "language": "pl"
+      },
+      "title": "Wybory do Rad Osiedli 2026 - Praga-Południe",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://pragapld.um.warszawa.pl/wybory-do-rad-osiedli-2026",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "manual_adapter_required",
+      "notes": "Not fetched: the host answers every request, robots.txt included, with an AWS WAF JavaScript challenge (HTTP 202, empty body), so the crawler's robots check fails closed. A browser-rendering adapter is needed; the research read these pages in a headless browser on 27 September 2026."
+    },
+    {
+      "definition": {
+        "source_id": "warszawa-19115",
+        "start_url": "https://warszawa19115.pl/-/czym-sa-konsultacje-spoleczne",
+        "allowed_hosts": [
+          "warszawa19115.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Miasto Stołeczne Warszawa",
+        "jurisdiction": "PL-14-65-011",
+        "language": "pl"
+      },
+      "title": "Czym są konsultacje społeczne (Warszawa 19115)",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice",
+        "local-initiative-and-grants"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://warszawa19115.pl/-/czym-sa-konsultacje-spoleczne",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Warszawa 19115 service cards."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-bip",
+        "start_url": "https://bip.katowice.eu/Lists/Dokumenty/Attachments/111746/sesja%20VII-128-19.pdf",
+        "allowed_hosts": [
+          "bip.katowice.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Miasto Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Uchwała Nr VII/128/19 Rady Miasta Katowice z dnia 25 kwietnia 2019 r. w sprawie szczegółowych zasad wnoszenia inicjatyw obywatelskich…",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice",
+        "local-initiative-and-grants"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://bip.katowice.eu/Lists/Dokumenty/Attachments/111746/sesja%20VII-128-19.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Public Information Bulletin of the City of Katowice."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-bo",
+        "start_url": "https://bo.katowice.eu/",
+        "allowed_hosts": [
+          "bo.katowice.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Miasto Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Budżet Obywatelski | Zielony Budżet - Katowice (strona główna)",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://bo.katowice.eu/",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Participatory budget and Green Budget portal of the City of Katowice."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-portal",
+        "start_url": "https://katowice.eu/SiteAssets/dla-mieszka%c5%84ca/zaanga%c5%bcuj-si%c4%99/inicjatywa-lokalna/Wzor%20wniosku%20o%20inicjatyw%c4%99%20lokaln%c4%85.pdf",
+        "allowed_hosts": [
+          "katowice.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Miasto Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Wzór wniosku o inicjatywę lokalną (formularz + imienna lista poparcia)",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice",
+        "local-initiative-and-grants"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://katowice.eu/SiteAssets/dla-mieszka%c5%84ca/zaanga%c5%bcuj-si%c4%99/inicjatywa-lokalna/Wzor%20wniosku%20o%20inicjatyw%c4%99%20lokaln%c4%85.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "Main portal of the City of Katowice; robots.txt asks for a 10-second crawl delay."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-katoobywatel",
+        "start_url": "https://katoobywatel.katowice.eu/niezbednik/budzet-obywatelski/",
+        "allowed_hosts": [
+          "katoobywatel.katowice.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Miasto Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Budżet Obywatelski (w tym Zielony Budżet) - KATOobywatel",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice",
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://katoobywatel.katowice.eu/niezbednik/budzet-obywatelski/",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "KATOobywatel civic guide of the City of Katowice."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-pks",
+        "start_url": "https://pks.katowice.eu/",
+        "allowed_hosts": [
+          "pks.katowice.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/"
+        ],
+        "canonical_authority": "Miasto Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Platforma Konsultacji Społecznych Urzędu Miasta Katowice (forum)",
+      "authority_level": "commune",
+      "source_kind": "official_guidance",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://pks.katowice.eu/",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "The city's public consultation platform."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2013-4873",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2013/4873/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2013/4873"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Uchwała Nr XXXVIII/860/13 Rady Miasta Katowice z dnia 26 czerwca 2013 r. w sprawie zasad i trybów przeprowadzania konsultacji z mieszkańcami miasta Katowice (Dz. Urz. Woj. Śl. 2013 poz. 4873)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2013/4873/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2021-7673",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2021/7673/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2021/7673"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Uchwała Nr XLI/891/21 Rady Miasta Katowice z dnia 25 listopada 2021 r. w sprawie nadania Statutu Dzielnicy nr 1 Śródmieście",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2021/7673/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2022-6249",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2022/6249/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2022/6249"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Obwieszczenie Rady Miasta Katowice z dnia 28 września 2022 r. - jednolity tekst Statutu miasta Katowice (Dz. Urz. Woj. Śl. 2022 poz. 6249)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2022/6249/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2019-2065",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2019/2065/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2019/2065"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Uchwała nr V/80/19 Rady Miasta Katowice z dnia 7 marca 2019 r. w sprawie określenia zasad i trybu Budżetu Obywatelskiego w Katowicach (Dz. Urz. Woj. Śl. 2019 poz. 2065)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2019/2065/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2020-1538",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2020/1538/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2020/1538"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Uchwała nr XVI/396/20 Rady Miasta Katowice z dnia 13 lutego 2020 r. zmieniająca uchwałę w sprawie określenia zasad i trybu Budżetu Obywatelskiego w Katowicach",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2020/1538/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2020-5506",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2020/5506/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2020/5506"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Uchwała nr XXI/514/20 Rady Miasta Katowice z dnia 30 czerwca 2020 r. w sprawie trybu i szczegółowych kryteriów oceny wniosków o realizację zadań publicznych w ramach inicjatywy lokalnej (Dz. Urz. Woj. Śl. 2020 poz. 5506)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "local-initiative-and-grants"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2020/5506/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2022-1582",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2022/1582/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2022/1582"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Uchwała nr XLIV/996/22 Rady Miasta Katowice z dnia 3 marca 2022 r. zmieniająca uchwałę w sprawie określenia zasad i trybu Budżetu Obywatelskiego w Katowicach",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2022/1582/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2025-5981",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2025/5981/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2025/5981"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Dz. Urz. Woj. Śl. z 2025 r. poz. 5981 (Uchwała XXI/355/25)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "local-initiative-and-grants"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2025/5981/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2025-653",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2025/653/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2025/653"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Uchwała nr XI/195/25 Rady Miasta Katowice z dnia 23 stycznia 2025 r. zmieniająca uchwałę w sprawie określenia zasad i trybu Budżetu Obywatelskiego w Katowicach",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2025/653/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "krakow-journal-2026-511",
+        "start_url": "https://edziennik.malopolska.uw.gov.pl/WDU_K/2026/511/akt.pdf",
+        "allowed_hosts": [
+          "edziennik.malopolska.uw.gov.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_K/2026/511"
+        ],
+        "canonical_authority": "Rada Miasta Krakowa",
+        "jurisdiction": "PL-12-61-011",
+        "language": "pl"
+      },
+      "title": "Dziennik Urzędowy Województwa Małopolskiego 2026 poz. 511 - Uchwała nr XLV/926/26 RMK",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://edziennik.malopolska.uw.gov.pl/WDU_K/2026/511/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Małopolskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "warszawa-journal-2013-8442",
+        "start_url": "https://edziennik.mazowieckie.pl/WDU_W/2013/8442/akt.pdf",
+        "allowed_hosts": [
+          "edziennik.mazowieckie.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_W/2013/8442"
+        ],
+        "canonical_authority": "Rada Miasta Stołecznego Warszawy",
+        "jurisdiction": "PL-14-65-011",
+        "language": "pl"
+      },
+      "title": "Uchwała Nr LXI/1691/2013 Rady Miasta Stołecznego Warszawy z dnia 11 lipca 2013 r. w sprawie zasad i trybu przeprowadzania konsultacji z mieszkańcami m.st. Warszawy (Dz. Urz. Woj. Maz. 2013 poz. 8442)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://edziennik.mazowieckie.pl/WDU_W/2013/8442/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Mazowieckiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "warszawa-journal-2019-13009",
+        "start_url": "https://edziennik.mazowieckie.pl/WDU_W/2019/13009/akt.pdf",
+        "allowed_hosts": [
+          "edziennik.mazowieckie.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_W/2019/13009"
+        ],
+        "canonical_authority": "Rada Miasta Stołecznego Warszawy",
+        "jurisdiction": "PL-14-65-011",
+        "language": "pl"
+      },
+      "title": "Uchwała Nr XXI/540/2019 Rady Miasta Stołecznego Warszawy z dnia 7 listopada 2019 r. w sprawie realizacji obywatelskiej inicjatywy uchwałodawczej (Dz. Urz. Woj. Maz. 2019 poz. 13009)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://edziennik.mazowieckie.pl/WDU_W/2019/13009/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Mazowieckiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "warszawa-journal-2019-4814",
+        "start_url": "https://edziennik.mazowieckie.pl/WDU_W/2019/4814/oryginal/akt.pdf",
+        "allowed_hosts": [
+          "edziennik.mazowieckie.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_W/2019/4814"
+        ],
+        "canonical_authority": "Rada Miasta Stołecznego Warszawy",
+        "jurisdiction": "PL-14-65-011",
+        "language": "pl"
+      },
+      "title": "Uchwała nr XI/218/2019 Rady Miasta Stołecznego Warszawy z dnia 11 kwietnia 2019 r. (Dz. Urz. Woj. Maz. 2019 poz. 4814)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://edziennik.mazowieckie.pl/WDU_W/2019/4814/oryginal/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Mazowieckiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "warszawa-journal-2022-4668",
+        "start_url": "https://edziennik.mazowieckie.pl/WDU_W/2022/4668/akt.pdf",
+        "allowed_hosts": [
+          "edziennik.mazowieckie.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_W/2022/4668"
+        ],
+        "canonical_authority": "Rada Miasta Stołecznego Warszawy",
+        "jurisdiction": "PL-14-65-011",
+        "language": "pl"
+      },
+      "title": "Uchwała Nr LXIII/2076/2022 Rady m.st. Warszawy z 7 kwietnia 2022 r. zmieniająca uchwałę w sprawie zasad i trybu przeprowadzania konsultacji (Dz. Urz. Woj. Maz. 2022 poz. 4668)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://edziennik.mazowieckie.pl/WDU_W/2022/4668/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Mazowieckiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "warszawa-journal-2022-7718",
+        "start_url": "https://edziennik.mazowieckie.pl/WDU_W/2022/7718/akt.pdf",
+        "allowed_hosts": [
+          "edziennik.mazowieckie.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_W/2022/7718"
+        ],
+        "canonical_authority": "Rada Miasta Stołecznego Warszawy",
+        "jurisdiction": "PL-14-65-011",
+        "language": "pl"
+      },
+      "title": "Uchwała Nr LXVII/2222/2022 Rady m.st. Warszawy z 7 lipca 2022 r. zmieniająca uchwałę w sprawie zasad i trybu przeprowadzania konsultacji (Dz. Urz. Woj. Maz. 2022 poz. 7718)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://edziennik.mazowieckie.pl/WDU_W/2022/7718/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Mazowieckiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "warszawa-journal-2024-10017",
+        "start_url": "https://edziennik.mazowieckie.pl/WDU_W/2024/10017/oryginal/akt.pdf",
+        "allowed_hosts": [
+          "edziennik.mazowieckie.pl"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_W/2024/10017"
+        ],
+        "canonical_authority": "Rada Miasta Stołecznego Warszawy",
+        "jurisdiction": "PL-14-65-011",
+        "language": "pl"
+      },
+      "title": "Uchwała nr XI/379/2024 Rady Miasta Stołecznego Warszawy z 17 października 2024 r. zmieniająca uchwałę w sprawie konsultacji społecznych ... w formie budżetu obywatelskiego (Dz. Urz. Woj. Maz. 2024 poz. 10017)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "participatory-budget"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://edziennik.mazowieckie.pl/WDU_W/2024/10017/oryginal/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Mazowieckiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2024-1878",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2024/1878/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2024/1878"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Uchwała Nr LXXIV/1516/24 (amendment of the District 1 statute)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2024/1878/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2019-1783",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2019/1783/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2019/1783"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Rozstrzygnięcie nadzorcze: nieważność uchwały IV/65/19 (citizens' initiative)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2019/1783/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    },
+    {
+      "definition": {
+        "source_id": "katowice-journal-2014-2787",
+        "start_url": "https://dzienniki.slask.eu/WDU_S/2014/2787/akt.pdf",
+        "allowed_hosts": [
+          "dzienniki.slask.eu"
+        ],
+        "allowed_path_prefixes": [
+          "/WDU_S/2014/2787"
+        ],
+        "canonical_authority": "Rada Miasta Katowice",
+        "jurisdiction": "PL-24-69-011",
+        "language": "pl"
+      },
+      "title": "Uchwała Nr XLIX/1147/14 (amendment of the consultation resolution XXXVIII/860/13)",
+      "authority_level": "commune",
+      "source_kind": "legislation",
+      "priority": "P0",
+      "topic_hints": [
+        "consultations-and-resident-voice"
+      ],
+      "discovery": {
+        "method": "official_search_result",
+        "reference_url": "https://dzienniki.slask.eu/WDU_S/2014/2787/akt.pdf",
+        "located_on": "2026-09-27"
+      },
+      "scan_status": "ready",
+      "notes": "A council resolution as published in the Dziennik Urzędowy Województwa Śląskiego, the official journal that gives it force."
+    }
+  ]
+}
