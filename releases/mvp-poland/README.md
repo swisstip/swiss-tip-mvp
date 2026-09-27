@@ -20,16 +20,23 @@ one answer for the whole country. The pack serves the rule that applies to
 the resident's own city, with the excerpt of the official page it comes
 from, and says when a city is not covered.
 
-It answers two HackYeah challenges:
+Two HackYeah tasks (3-4 October 2026, Kraków) match it. The event allows
+one project per task and discourages entering one project in two, so the
+pack enters one of them; the choice is recorded in the implementation plan
+of the code repository:
 
-- **Smart City** - technology that makes everyday life in a city easier,
-  with communication with citizens and public services named in the brief:
-  grounded answers to residents' questions about their own city.
-- **Connecting residents' needs with knowledge and people ready to act** -
-  the civic instruments through which a resident's idea reaches the city
-  (the participatory budget, the local initiative, grants for social
-  organisations) differ by city and are rarely known; the pack states, per
-  city, what exists, who runs it and by when to apply.
+- **Smart City**, an open task with a 5 000 PLN pool: "technology that
+  helps cities work better", with communication with citizens, public
+  services and access to information named in the brief. Grounded answers
+  to residents' questions about their own city, from the waste fee to the
+  winter holidays.
+- **HubMI.pl**, a partner task with a 15 000 PLN pool: "connect residents'
+  needs more effectively with knowledge, proven solutions, and people ready
+  to take action". The civic instruments through which a resident's idea
+  reaches the city (the participatory budget, the local initiative, grants
+  for social organisations) differ by city and are rarely known; the pack
+  states, per city, what exists, who runs it and by when to apply. The
+  task's own rules and jury are published no later than 3 October.
 
 ## Scope
 
@@ -62,10 +69,15 @@ Planned topics:
 | Civic participation | The participatory budget (who may propose and vote, the dates), the local initiative, open calls for social organisations |
 | Days and dates | Days off, trading Sundays |
 
-Evidence is in Polish. Statements are planned in Polish, with English
-aliases and sample questions, so that the pack serves residents in their
-own language; `mvp-zurich` states its facts in English, so this is a
-decision to confirm.
+Evidence is in Polish only: every excerpt is cut from a Polish official
+page and stays the authoritative text. Statements, aliases and sample
+questions are in English, as editorial translations and summaries of the
+excerpts, as in `mvp-zurich`; source terms are copied in Polish from the
+excerpts, and sample questions are also written in Polish. The release
+names English and Polish as its query languages, so the calling model is
+told to call the tools in either. The pack is built at HackYeah as a proof
+of concept on the code prepared before it, and its facts are reviewed by
+the same named person as `mvp-zurich`.
 
 ## Civic participation
 
@@ -97,7 +109,10 @@ the three cities and under the national acts.
     `--browser-host`: 46 pages, each a plain response to the crawler's own
     request with the session's cookie, robots.txt obeyed.
   - 16 of the 22 are on `bo.katowice.eu`, the Katowice participatory-budget
-    portal, which mostly did not accept connections that day.
+    portal, which mostly did not accept connections that day. The Katowice
+    budget cases PL-CIV-10 to PL-CIV-13 cite it; the council's budget
+    resolutions are saved from the city's Public Information Bulletin,
+    which answered every request.
   - 4 are on `cdn.um.warszawa.pl`, Warsaw's document server. It publishes no
     robots.txt of its own: the request redirects to the city portal's home
     page, and the crawler fails closed on a robots.txt it cannot read. Two
@@ -106,7 +121,8 @@ the three cities and under the national acts.
     edition and the mayor's consolidated order 825/2019 are not.
   - 2 are on gov.pl, whose robots.txt redirects to
     `/static/code/robots.txt`, outside the entry's allowlist; the next
-    catalogue version adds that path.
+    catalogue version adds that path. PL-CIV-14 cites one of them beside
+    the act itself, which is saved.
 - **Text dataset.** `.local/mvp-poland/text/`, extractor 0.2.2, validated:
   249 records (155 HTML, 81 PDF, 13 DOCX), 248 extracted with 31,653 blocks
   and 4.0 million characters. The one without text is Warsaw's consolidated
@@ -123,9 +139,9 @@ the three cities and under the national acts.
   portals (`powietrze.malopolska.pl`, `powietrze.slaskie.pl`)
 - The Public Information Bulletin (BIP) of each city, and the city portals
   (`krakow.pl`, `bip.krakow.pl`, `warszawa19115.pl`, `katowice.eu`);
-  `um.warszawa.pl` and its document and district servers answer every
-  request with a JavaScript challenge, so they are catalogued but not
-  fetched
+  `um.warszawa.pl` and its district servers answer every request with a
+  JavaScript challenge and are fetched through the downloader's browser
+  session; its document server `cdn.um.warszawa.pl` is not (see "Run")
 - The GUS TERYT register for the place register
 - Open data on `dane.gov.pl` for dataset connectors (waste-collection
   calendars, as in `mvp-zurich`), where a city publishes it
@@ -183,11 +199,18 @@ on the city's own pages.
 
 ## Next steps
 
-1. Build the prerequisites in the code repository, with tests on a
-   synthetic Polish pack.
-2. Curate the civic-participation facts from the text dataset, review them
-   and turn the 40 cases into `acceptance.yaml`; build, index and attest as
-   for `mvp-zurich`.
-3. Write the acceptance-test documents and catalogues of the other topics
-   (waste, mobility, air and heating, schools, days and dates) before their
-   pages are fetched.
+1. Before the event: build the prerequisites in the code repository, with
+   tests on a synthetic Polish pack; retry the download of `bo.katowice.eu`
+   and add the gov.pl robots path to the catalogue; restate the date-bound
+   cases of the acceptance-test document as of 3 October 2026 and choose
+   the cases the demo will show.
+2. At the event, as the proof of concept: curate the civic-participation
+   facts from the text dataset, the participatory budget of Kraków first
+   (its sources are complete and the event is in Kraków), then the national
+   acts, then Warsaw and Katowice as far as the review allows; review, turn
+   the reviewed cases into `acceptance.yaml`, build, index and attest as
+   for `mvp-zurich`; record the screenshots and the video for the
+   submission.
+3. Afterwards: the acceptance-test documents and catalogues of the other
+   topics (waste, mobility, air and heating, schools, days and dates)
+   before their pages are fetched.

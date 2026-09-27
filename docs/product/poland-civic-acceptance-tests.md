@@ -100,9 +100,23 @@ new ones:
   PL-CIV-21, is a scan without a text layer; its original and amendment
   must be found in the voivodeship's journal.
 - **Katowice.** The participatory-budget portal `bo.katowice.eu` mostly did
-  not accept connections on 27 September 2026, so most of its pages are
-  not saved yet; the Katowice budget cases need a retry of the download
-  before their facts can be curated.
+  not accept connections on 27 September 2026: 12 of its 28 pages are
+  saved. PL-CIV-10 to PL-CIV-13 cite it, so they need a retry of the
+  download before their facts can be curated; the council's budget
+  resolutions are saved from the Public Information Bulletin, which
+  answered every request.
+- **National guidance.** The two gov.pl pages on the 2026 amendment are not
+  saved, because the site's robots.txt redirects outside the entry's
+  allowlist; PL-CIV-14 rests on the act itself, which is saved.
+- **Date-bound answers.** The pack is first shown at HackYeah on 3-4
+  October 2026, and several answers written on 27 September are out of
+  date by then: Kraków's voting closed on 28 September (PL-CIV-2 and
+  PL-CIV-4; the list of projects to be carried out is due by 13 November),
+  Katowice's consultation on the 2027 cooperation programme closed on 29
+  September (PL-CIV-26), and Katowice's 2027 local-initiative call opens
+  on 1 October (PL-CIV-23 and PL-CIV-25). These cases are restated as of
+  3 October before they become claims, and every replay states its date in
+  the request.
 - **Not yet published** (recheck on these dates): Kraków's 14th edition of
   the participatory budget; Warsaw's announcement for the 2028 budget (late
   October 2026); Katowice's 2027 local-initiative call (from 1 October
