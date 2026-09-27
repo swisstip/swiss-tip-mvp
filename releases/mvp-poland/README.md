@@ -67,6 +67,51 @@ aliases and sample questions, so that the pack serves residents in their
 own language; `mvp-zurich` states its facts in English, so this is a
 decision to confirm.
 
+## Civic participation
+
+The first topic group: the participatory budget, the local initiative and
+grants for non-governmental organisations, and consultations and the
+resident's voice (district councils, the citizens' resolution initiative,
+the debate on the report on the state of the city, council sessions), for
+the three cities and under the national acts.
+
+- **Acceptance-test document.**
+  [poland-civic-acceptance-tests.md](../../docs/product/poland-civic-acceptance-tests.md)
+  holds 40 trap questions in Polish with their expected answers, researched
+  on 27 September 2026 from official pages and checked by an independent
+  second reading; no person has reviewed them yet.
+- **Catalogue.** `sources.json` (catalogue `draft-1`) has 38 registry
+  entries: the national acts through the Sejm's ELI API, the national
+  guidance on gov.pl, one entry per official host of each city, and one per
+  council resolution in a voivodeship's official journal. `sources.md`
+  lists the 270 exact pages; 39 of them are on Warsaw hosts behind a bot
+  challenge and are catalogued as `manual_adapter_required`. Their notes,
+  and the *not fetched* marks in `sources.md`, predate the browser session
+  that now fetches them; the next catalogue version updates them together
+  with the gov.pl allowlist below.
+- **Run.** Downloaded on 27 September 2026 into `.local/mvp-poland/`, with
+  retries: of 271 targets, 249 are saved (82 MB) and 22 are not saved.
+  - The Warsaw hosts behind the challenge (`um.warszawa.pl`, its district
+    servers) and the record pages of Warsaw's Public Information Bulletin,
+    which answer an empty body without a session cookie, were fetched with
+    `--browser-host`: 46 pages, each a plain response to the crawler's own
+    request with the session's cookie, robots.txt obeyed.
+  - 16 of the 22 are on `bo.katowice.eu`, the Katowice participatory-budget
+    portal, which mostly did not accept connections that day.
+  - 4 are on `cdn.um.warszawa.pl`, Warsaw's document server. It publishes no
+    robots.txt of its own: the request redirects to the city portal's home
+    page, and the crawler fails closed on a robots.txt it cannot read. Two
+    of the four documents (the budget resolution and its amendment) are
+    saved from the voivodeship's journal instead; the report on the 13th
+    edition and the mayor's consolidated order 825/2019 are not.
+  - 2 are on gov.pl, whose robots.txt redirects to
+    `/static/code/robots.txt`, outside the entry's allowlist; the next
+    catalogue version adds that path.
+- **Text dataset.** `.local/mvp-poland/text/`, extractor 0.2.2, validated:
+  249 records (155 HTML, 81 PDF, 13 DOCX), 248 extracted with 31,653 blocks
+  and 4.0 million characters. The one without text is Warsaw's consolidated
+  local-initiative resolution, a scan without a text layer.
+
 ## Candidate sources
 
 - `gov.pl` and its office sites, `podatki.gov.pl`
@@ -138,10 +183,11 @@ on the city's own pages.
 
 ## Next steps
 
-1. Decide the first scope with the team and write the acceptance-test
-   document before any page is fetched.
-2. Build the prerequisites in the code repository, with tests on a
+1. Build the prerequisites in the code repository, with tests on a
    synthetic Polish pack.
-3. Write `sources.json` for the chosen scope and run the bounded download
-   into `.local/mvp-poland/`.
-4. Curate, review, build and attest as for `mvp-zurich`.
+2. Curate the civic-participation facts from the text dataset, review them
+   and turn the 40 cases into `acceptance.yaml`; build, index and attest as
+   for `mvp-zurich`.
+3. Write the acceptance-test documents and catalogues of the other topics
+   (waste, mobility, air and heating, schools, days and dates) before their
+   pages are fetched.

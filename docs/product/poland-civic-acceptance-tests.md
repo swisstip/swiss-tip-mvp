@@ -89,12 +89,20 @@ most four tool calls. Most need one `search` and one `resolve`.
 The research left these open; they limit the cases above rather than add
 new ones:
 
-- **Warsaw.** The city portal `um.warszawa.pl` and its document server are
-  behind a bot challenge that the crawler cannot pass, so the pages of the
-  participatory budget, the NGO portal and the council's own pages are
-  listed but not saved. The Warsaw answers must be curated from the
-  Public Information Bulletin, the 19115 cards and the resolutions in the
-  voivodeship's official journal, or wait for a browser-rendering adapter.
+- **Warsaw.** The city portal `um.warszawa.pl`, its district servers and
+  the record pages of its Public Information Bulletin are saved through the
+  downloader's browser session. Warsaw's document server is not: it
+  publishes no robots.txt of its own, so the report on the 13th edition of
+  the participatory budget and the mayor's consolidated order 825/2019 are
+  missing, and the cases that cite them (PL-CIV-6, PL-CIV-8 and PL-CIV-9)
+  must be curated from the resolutions and the portal pages. The
+  consolidated local-initiative resolution, cited by PL-CIV-19 and
+  PL-CIV-21, is a scan without a text layer; its original and amendment
+  must be found in the voivodeship's journal.
+- **Katowice.** The participatory-budget portal `bo.katowice.eu` mostly did
+  not accept connections on 27 September 2026, so most of its pages are
+  not saved yet; the Katowice budget cases need a retry of the download
+  before their facts can be curated.
 - **Not yet published** (recheck on these dates): Kraków's 14th edition of
   the participatory budget; Warsaw's announcement for the 2028 budget (late
   October 2026); Katowice's 2027 local-initiative call (from 1 October
