@@ -151,26 +151,34 @@ Poland (Art. 4 of the copyright act), so quoting excerpts is on firm ground.
 
 ## Prerequisites in the code
 
-These change the code repository, not this pack. The source catalogue
-already accepts a Polish scope with declared levels, and the downloader
-saves the DOCX resolutions some city offices publish; the rest is not
-started:
+These change the code repository, not this pack; the design is
+`docs/architecture/country-profiles.md` of swiss-tip. Built and tested so
+far:
 
-- **Jurisdiction codes.** `packages/core` accepts only `CH` codes of up to
-  three levels. Poland needs a fourth level and TERYT-based codes, one
-  segment per level: `PL`, `PL-12` (Małopolskie), `PL-12-61` (the county
-  of Kraków), `PL-12-61-011` (the commune of Kraków, the last three digits
-  of its TERYT code).
-- **Institution levels.** `InstitutionLevel` is fixed to federal, cantonal
-  and municipal; Poland needs national, voivodeship, county and commune.
-- **Place register.** An importer for TERYT next to the BFS importer, with
-  its files under `config/places/`.
-- **Basis labels.** `ustawa`, `rozporządzenie`, `akt prawa miejscowego`
-  (a voivodeship assembly's or commune council's `uchwała`), authority
-  guidance.
-- **Polish search.** Lexical search counts matching tokens, and Polish
-  inflects (`opłata`, `opłaty`, `opłatę`). It needs lemmatisation or
-  stemming, measured on a Polish regression pack.
+- **Catalogue and download.** The source catalogue accepts a Polish scope
+  with declared levels; the downloader saves DOCX resolutions and fetches
+  hosts behind a bot challenge through a browser session.
+- **Jurisdiction codes and levels.** A release may declare its country's
+  hierarchy: four levels (national, voivodeship, county, commune) and codes
+  with one segment per level, zeros kept: `PL`, `PL-12` (małopolskie),
+  `PL-12-61` (the county of Kraków), `PL-12-61-011` (the commune of Kraków,
+  the last three digits of its TERYT code). Validation, basis labels
+  ("Commune ordinance", "National act") and the place index follow it.
+- **Place register.** The TERC importer; its dry run on the register of
+  1 January 2026 is in `.local/mvp-poland/places/`, with a draft of the
+  hand-written aliases (English names of the voivodeships and the three
+  cities). The committed `config/places/pl-register.json` and
+  `pl-aliases.json` are written at the event.
+
+Not yet built:
+
+- **Served texts and Polish search.** The server's instructions and tool
+  descriptions for a Polish release, Polish stopwords, the "call every tool
+  in English or Polish" note; Polish inflection (`opłata`, `opłaty`,
+  `opłatę`) is left to the six-character prefix, source terms and aliases
+  until measured on a Polish regression pack.
+- **The build of a Polish release** and the console's handling of Polish
+  sources and facts.
 - **Context vocabulary.** The resident's situation as the rules name it,
   for example the type of building (block of flats or single-family
   house), whether bio-waste is composted at home, the fuel and emission
